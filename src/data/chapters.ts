@@ -30,20 +30,6 @@ Geometric analysis uses geometric intuition to solve analytic problems. The conn
         `,
       },
       {
-        id: "math-branches-visual",
-        title: "The Three Branches of Mathematics",
-        type: "interactive",
-        content: "Interactive visualization of the three main branches of mathematics and their interconnections",
-        component: "MathBranchesVisualizer",
-      },
-      {
-        id: "algebra-vs-geometry",
-        title: "Algebra vs Geometry: A Visual Proof",
-        type: "interactive",
-        content: "Interactive visualization showing how algebraic identities have geometric interpretations",
-        component: "CommutativePropertyDemo",
-      },
-      {
         id: "questions-mathematicians-ask",
         title: "The Questions Mathematicians Ask",
         type: "text",
@@ -113,20 +99,6 @@ Or between:
 Notation is not just shorthand - it shapes how we think. The right notation suggests the right generalizations.
         `,
       },
-      {
-        id: "notation-evolution",
-        title: "How Notation Evolved",
-        type: "interactive",
-        content: "Explore the evolution of mathematical notation from words to symbols",
-        component: "NotationEvolution",
-      },
-      {
-        id: "quantifiers",
-        title: "Quantifiers: ∀ and ∃",
-        type: "interactive",
-        content: "Interactive exploration of universal and existential quantifiers",
-        component: "QuantifierDemo",
-      },
     ],
     exercises: [
       {
@@ -173,20 +145,6 @@ Operations on sets:
 - Intersection: A ∩ B = {x : x ∈ A and x ∈ B}
 - Complement: Aᶜ = {x : x ∉ A}
         `,
-      },
-      {
-        id: "set-operations",
-        title: "Visualizing Set Operations",
-        type: "interactive",
-        content: "Interactive visualizer for union, intersection, difference, and complement",
-        component: "SetOperationsVisualizer",
-      },
-      {
-        id: "functions",
-        title: "Functions: Mappings Between Sets",
-        type: "interactive",
-        content: "Interactive function visualizer",
-        component: "FunctionVisualizer",
       },
     ],
     exercises: [
@@ -264,13 +222,7 @@ But natural numbers have limitations:
 Each limitation led to the creation of new number systems.
         `,
       },
-      {
-        id: "number-systems-evolution",
-        title: "The Evolution of Number Systems",
-        type: "interactive",
-        content: "Interactive timeline of number system development",
-        component: "NumberSystemsTimeline",
-      },
+
     ],
     exercises: [
       {

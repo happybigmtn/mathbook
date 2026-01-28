@@ -4,6 +4,7 @@ import "../styles/globals.css"
 import { Navigation } from "@/components/Navigation"
 import { ProgressProvider } from "@/components/ProgressProvider"
 import { ThemeProvider } from "@/components/ThemeProvider"
+import { KeyboardNavigation } from "@/components/KeyboardNavigation"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -47,6 +48,7 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <ProgressProvider>
+            <KeyboardNavigation />
             <Navigation />
             <main className="pt-16">
               {children}
