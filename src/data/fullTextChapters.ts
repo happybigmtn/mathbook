@@ -617,6 +617,255 @@ The abstract approach reveals deep connections between seemingly unrelated field
   ],
 }
 
+// III.1 Euler's Identity - Full Text
+export const eulerIdentityFullText: FullTextChapter = {
+  id: "euler-identity",
+  title: "Euler's Identity",
+  description: "The most beautiful equation in mathematics.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 1,
+  content: [
+    {
+      id: "the-identity",
+      title: "e^(iπ) + 1 = 0",
+      type: "text",
+      content: "The equation that connects five fundamental constants.",
+      fullText: `Euler's identity is often called the most beautiful equation in mathematics. It connects five fundamental constants:
+
+- e: the base of natural logarithms (~2.718...)
+- i: the imaginary unit (i² = -1)
+- π: the ratio of circle's circumference to diameter (~3.141...)
+- 1: the multiplicative identity
+- 0: the additive identity
+
+This identity emerges from Euler's formula: e^(iθ) = cos(θ) + i·sin(θ)
+
+**Understanding the Formula**
+
+When θ = π, we have:
+e^(iπ) = cos(π) + i·sin(π) = -1 + i·0 = -1
+
+Therefore: e^(iπ) + 1 = 0
+
+**Why This Matters**
+
+This equation unites three major areas of mathematics:
+- Exponential growth (e)
+- Trigonometry (sin, cos)
+- Complex numbers (i)
+
+It shows that these seemingly unrelated constants are deeply connected through the geometry of the complex plane.
+
+**The Complex Plane**
+
+Complex numbers can be represented as points in a 2D plane, where the x-axis is real and the y-axis is imaginary. Multiplying by e^(iθ) rotates a point by angle θ around the origin.
+
+So e^(iπ) represents a rotation by 180°, which takes the point 1 to the point -1.`,
+      annotations: [
+        createAnnotation("euler-1", "visual", "Picture the complex plane: 1 is at (1,0). Multiply by e^(iπ) and you rotate 180° to (-1,0). Add 1 and you land at 0—the origin."),
+        createAnnotation("euler-2", "analogy", "Euler's formula is like a universal translator: it converts between the 'language' of exponentials and the 'language' of rotation/trigonometry."),
+        createAnnotation("euler-3", "deep-dive", "Richard Feynman called this 'the most remarkable formula in mathematics.' It appears in quantum mechanics, signal processing, and anywhere waves meet exponentials."),
+      ],
+    },
+    {
+      id: "visual-understanding",
+      title: "Visual Understanding",
+      type: "interactive",
+      content: "Interactive visualization of Euler's formula",
+      component: "EulersFormulaDemo",
+      annotations: [
+        createAnnotation("euler-vis-1", "visual", "As θ increases from 0 to 2π, e^(iθ) traces a unit circle in the complex plane. At θ=π, we're halfway around at -1."),
+      ],
+    },
+  ],
+  exercises: [
+    {
+      id: "ex-euler-1",
+      title: "Euler's Formula",
+      difficulty: "medium",
+      type: "interactive",
+      question: "Using Euler's formula e^(iθ) = cos(θ) + i·sin(θ), what is e^(iπ)?",
+      answer: "-1",
+      hint: "Substitute θ = π. What are cos(π) and sin(π)?",
+      explanation: "e^(iπ) = cos(π) + i·sin(π) = -1 + i·0 = -1. Therefore e^(iπ) + 1 = 0.",
+      points: 20,
+    },
+  ],
+}
+
+// III.2 Golden Ratio - Full Text
+export const goldenRatioFullText: FullTextChapter = {
+  id: "golden-ratio",
+  title: "The Golden Ratio (φ)",
+  description: "The most aesthetically pleasing ratio in mathematics.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 3,
+  content: [
+    {
+      id: "what-is-phi",
+      title: "φ = (1 + √5) / 2 ≈ 1.618...",
+      type: "text",
+      content: "The divine proportion found in nature and art.",
+      fullText: `The golden ratio φ has fascinated mathematicians, artists, and architects for centuries. It is defined as:
+
+φ = (1 + √5) / 2 ≈ 1.618033988...
+
+**Properties of φ**
+
+The golden ratio has remarkable mathematical properties:
+
+- φ² = φ + 1
+- 1/φ = φ - 1 ≈ 0.618...
+- φ = 1 + 1/(1 + 1/(1 + 1/(1 + ...))) [continued fraction]
+
+**Where φ Appears**
+
+**Geometry**: In a regular pentagon, the ratio of diagonal to side is φ. The pentagram (five-pointed star) is filled with golden ratios.
+
+**Fibonacci Connection**: As n grows large, the ratio Fₙ₊₁/Fₙ approaches φ. For example: 8/5 = 1.6, 13/8 = 1.625, 21/13 ≈ 1.615, getting closer to 1.618...
+
+**Art and Architecture**: The Parthenon, Leonardo da Vinci's works, and many modern designs incorporate φ. Whether this is intentional or coincidental is debated.
+
+**Nature**: Spiral patterns in shells, arrangement of leaves on stems (phyllotaxis), and branching patterns often approximate φ.
+
+**The Golden Rectangle**
+
+A rectangle with sides in ratio φ:1 has a unique property: if you remove a square from it, the remaining rectangle also has sides in ratio φ:1. This process can be repeated infinitely, generating a logarithmic spiral.`,
+      annotations: [
+        createAnnotation("phi-1", "visual", "The golden rectangle: remove a square, and what's left is another golden rectangle. Repeat forever, and the corners trace a logarithmic spiral—found in nautilus shells and hurricanes."),
+        createAnnotation("phi-2", "analogy", "φ is like a mathematical echo chamber: 1/φ = φ - 1. This self-similarity makes it appear naturally in recursive processes like population growth and plant branching."),
+        createAnnotation("phi-3", "deep-dive", "The 'aesthetic appeal' of φ is controversial. Studies show people prefer rectangles closer to 1.5:1 or 1.75:1. The golden ratio's fame may be more mythology than mathematics."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.3 Fibonacci Sequence - Full Text
+export const fibonacciFullText: FullTextChapter = {
+  id: "fibonacci",
+  title: "The Fibonacci Sequence",
+  description: "A sequence where each number is the sum of the two preceding ones.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 4,
+  content: [
+    {
+      id: "fibonacci-definition",
+      title: "1, 1, 2, 3, 5, 8, 13, 21, 34, ...",
+      type: "text",
+      content: "Nature's favorite number sequence.",
+      fullText: `The Fibonacci sequence is defined by:
+- F₁ = 1, F₂ = 1
+- Fₙ = Fₙ₋₁ + Fₙ₋₂ for n > 2
+
+Each number is the sum of the two preceding ones. The sequence begins: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144...
+
+**Amazing Properties**
+
+**Sum Formula**: The sum of the first n Fibonacci numbers equals Fₙ₊₂ - 1.
+Example: 1+1+2+3+5+8 = 20 = 21-1 = F₈ - 1
+
+**Sum of Squares**: The sum of squares of the first n Fibonacci numbers equals Fₙ × Fₙ₊₁.
+Example: 1²+1²+2²+3²+5² = 1+1+4+9+25 = 40 = 5×8 = F₅ × F₆
+
+**Golden Ratio Connection**: The ratio Fₙ₊₁/Fₙ approaches φ (the golden ratio) as n → ∞.
+
+**Nature's Patterns**
+
+The sequence appears surprisingly often:
+- **Phyllotaxis**: Arrangement of leaves on stems often follows Fibonacci patterns (1, 2, 3, 5, 8 leaves per rotation)
+- **Spirals**: Sunflower seed spirals often count 34 and 55 (consecutive Fibonacci)
+- **Breeding**: Fibonacci introduced the sequence modeling rabbit populations (unrealistically but influentially)
+
+**Mathematical Importance**
+
+The Fibonacci sequence appears in:
+- Efficient algorithms (Fibonacci search)
+- Financial modeling
+- Computer science (Fibonacci heaps)
+- Art and architecture (proportions)`,
+      annotations: [
+        createAnnotation("fib-1", "visual", "Plant spirals: count spirals clockwise and counter-clockwise on a sunflower—you'll likely get consecutive Fibonacci numbers (like 34 and 55)."),
+        createAnnotation("fib-2", "analogy", "The Fibonacci sequence is like a population where each pair of rabbits produces one new pair every generation after maturing. It grows exponentially, but not as fast as 2ⁿ."),
+        createAnnotation("fib-3", "deep-dive", "Binet's formula gives Fₙ exactly: Fₙ = (φⁿ - (1-φ)ⁿ)/√5. Even though Fibonacci numbers are integers, they're built from the golden ratio!"),
+      ],
+    },
+  ],
+  exercises: [
+    {
+      id: "ex-fib-1",
+      title: "Fibonacci Sum",
+      difficulty: "medium",
+      type: "interactive",
+      question: "What is the sum of the first 6 Fibonacci numbers (1+1+2+3+5+8)?",
+      answer: "20",
+      hint: "Use the formula: sum = F₈ - 1",
+      explanation: "The sum of first n Fibonacci numbers equals Fₙ₊₂ - 1. So 1+1+2+3+5+8 = F₈ - 1 = 21 - 1 = 20.",
+      points: 15,
+    },
+  ],
+}
+
+// III.4 Infinity - Full Text
+export const infinityFullText: FullTextChapter = {
+  id: "infinity",
+  title: "Infinity",
+  description: "The concept of the unbounded and unlimited.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 5,
+  content: [
+    {
+      id: "understanding-infinity",
+      title: "Different Sizes of Infinity",
+      type: "text",
+      content: "Not all infinities are created equal.",
+      fullText: `Infinity is not a number—it's a concept. But remarkably, there are different sizes of infinity!
+
+**ℵ₀ (Aleph-null): Countable Infinity**
+
+The smallest infinity is the cardinality of the natural numbers ℕ = {1, 2, 3, ...}.
+
+Sets with cardinality ℵ₀:
+- Natural numbers
+- Integers (positive, negative, and zero)
+- Rational numbers (fractions)
+
+These are "countable" because you can list them in a sequence and eventually reach any element (given infinite time).
+
+**ℵ₁: The Next Infinity**
+
+Georg Cantor proved that the real numbers ℝ are "more infinite" than the natural numbers. The cardinality of ℝ is 2^ℵ₀, which may or may not equal ℵ₁ (this is the Continuum Hypothesis).
+
+**Cantor's Diagonal Argument**
+
+Cantor showed you can't pair up real numbers with natural numbers:
+1. Suppose you have a list of all real numbers between 0 and 1
+2. Create a new number that differs from the nth number in its nth decimal place
+3. This new number isn't on your list!
+
+Therefore, no list can contain all real numbers—they're uncountable.
+
+**Larger Infinities**
+
+For any set S, the power set P(S) has strictly greater cardinality. So there's an infinite hierarchy: ℵ₀ < 2^ℵ₀ < 2^(2^ℵ₀) < ...
+
+**Hilbert's Hotel**
+
+A hotel with infinitely many rooms (ℵ₀) can accommodate infinitely many new guests—even when full! Just move guest in room n to room 2n, freeing all odd rooms. This shows ℵ₀ + ℵ₀ = ℵ₀.`,
+      annotations: [
+        createAnnotation("inf-1", "visual", "Hilbert's Hotel: infinity plus infinity equals infinity. Even infinity times infinity equals infinity. But 2^infinity is strictly bigger—there's no bijection between a set and its power set."),
+        createAnnotation("inf-2", "analogy", "Countable infinity is like a discrete line of people you can count one by one. Uncountable infinity is like a continuous line—you can't even name the 'next' point after any given point."),
+        createAnnotation("inf-3", "deep-dive", "Cantor's work on infinity was controversial—some called it 'corrupting youth.' He suffered from depression, possibly exacerbated by resistance to his ideas. Now his set theory is foundational."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // III.51 Pi - Full Text
 export const piFullText: FullTextChapter = {
   id: "pi",
@@ -880,9 +1129,11 @@ The crisis in foundations led to deeper understanding, even if it didn't provide
 
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
+  // Part I: Introduction
   whatIsMathematicsFullText,
   languageAndGrammarFullText,
   fundamentalDefinitionsFullText,
+  // Part II: Origins of Modern Mathematics
   fromNumbersToNumberSystemsFullText,
   geometryOriginsFullText,
   abstractAlgebraDevelopmentFullText,
@@ -890,7 +1141,12 @@ export const fullTextChapters: FullTextChapter[] = [
   rigorInAnalysisFullText,
   ideaOfProofFullText,
   foundationsCrisisFullText,
+  // Part III: Mathematical Concepts
+  eulerIdentityFullText,
   piFullText,
+  goldenRatioFullText,
+  fibonacciFullText,
+  infinityFullText,
 ]
 
 // Helper to get full text chapter by ID
