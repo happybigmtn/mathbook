@@ -2864,6 +2864,245 @@ The difference d - λ between largest and second-largest eigenvalues controls ex
   exercises: [],
 }
 
+// III.2 The Axiom of Determinacy - Full Text
+export const axiomOfDeterminacyFullText: FullTextChapter = {
+  id: "axiom-of-determinacy",
+  title: "The Axiom of Determinacy",
+  description: "An alternative to the Axiom of Choice with surprising consequences.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 2,
+  content: [
+    {
+      id: "determinacy-intro",
+      title: "Infinite Games",
+      type: "text",
+      content: "When every infinite game has a winner.",
+      fullText: `Consider an infinite game between two players, A and B. They take turns naming natural numbers, generating an infinite sequence. Player A wins if this sequence belongs to a predetermined set S; otherwise B wins.
+
+**Example Game**: A wins if the sequence is eventually periodic (like 1, 2, 3, 4, 5, 4, 5, 4, 5, ...). B wins otherwise.
+
+**Analysis**: Eventually periodic sequences are rare. Player B can ensure the sequence never becomes periodic by always playing a number different from what would create a period. So B has a winning strategy.
+
+**Determined Games**: A game is **determined** if one player has a winning strategy.
+
+**The Axiom of Determinacy (AD)**
+
+**AD states**: Every infinite game of this type is determined.
+
+**Relationship to Axiom of Choice**
+
+AD contradicts the Axiom of Choice (AC). With AC, one can construct non-determined games using a well-ordering argument.
+
+**Surprising Consequences of AD**
+
+If we assume AD (instead of AC):
+
+1. **All sets of reals are Lebesgue measurable**: No more Banach-Tarski paradox!
+
+2. **Every set has the property of Baire**: Sets are almost open.
+
+3. **The perfect set property**: Every uncountable set of reals contains a perfect subset.
+
+**Connection to Large Cardinals**
+
+AD is connected to the existence of large cardinals:
+- AD implies the existence of inner models with measurable cardinals
+- The consistency of AD follows from large cardinal axioms
+- Projective Determinacy (a weaker form) is provable from large cardinals
+
+**Why This Matters**
+
+AD provides an alternative foundation for mathematics where pathological sets (non-measurable, etc.) cannot exist. While contradicting AC, it leads to a "nicer" universe of sets with better regularity properties.
+
+**The Definability Hierarchy**
+
+AD applies to different levels of the projective hierarchy:
+- Borel determinacy: Provable in ZFC (Zermelo-Fraenkel with Choice)
+- Analytic determinacy: Requires mild large cardinals
+- Projective determinacy: Requires strong large cardinal axioms
+- Full AD: Contradicts AC`,
+      annotations: [
+        createAnnotation("det-1", "visual", "An infinite game is like a chess game that never ends. One player tries to force the game into a 'winning region' (set S), while the other tries to escape forever. AD says one player must have a forced win—no draws possible."),
+        createAnnotation("det-2", "analogy", "AD is like saying every bet can be won. If A bets on a set S and B bets against it, someone must have a winning strategy. The universe doesn't allow 'unresolvable' infinite games."),
+        createAnnotation("det-3", "deep-dive", "AD shows that the Axiom of Choice creates 'weird' sets that cause problems. Without AC (but with AD), all sets of reals behave nicely—they're measurable, have the Baire property, etc. It's a trade-off between choice and regularity!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.16 Differential Forms and Integration - Full Text
+export const differentialFormsFullText: FullTextChapter = {
+  id: "differential-forms",
+  title: "Differential Forms and Integration",
+  description: "Generalizing integration to higher dimensions and manifolds.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 16,
+  content: [
+    {
+      id: "diff-forms-intro",
+      title: "Beyond Single-Variable Calculus",
+      type: "text",
+      content: "Three concepts of integration diverge in higher dimensions.",
+      fullText: `In single-variable calculus, three integration concepts are closely related:
+
+1. **Indefinite integral** ∫f(x)dx (antiderivative)
+2. **Unsigned definite integral** ∫_[a,b] f(x)dx (area/mass)
+3. **Signed definite integral** ∫_a^b f(x)dx (work)
+
+The Fundamental Theorem connects them: ∫_a^b f(x)dx = F(b) - F(a).
+
+**In Higher Dimensions**
+
+These three concepts diverge significantly:
+
+**Indefinite integrals** → Solutions to differential equations, connections, vector fields
+
+**Unsigned integrals** → Lebesgue integral on measure spaces
+
+**Signed integrals** → Integration of differential forms (our focus)
+
+**What Are Differential Forms?**
+
+A **differential k-form** is an object that can be integrated over k-dimensional oriented manifolds.
+
+**Key Insight**: Forms are designed to make the Fundamental Theorem hold in all dimensions.
+
+**Example: Work in Physics**
+
+In 1D: Work = ∫_a^b f(x)dx (force × displacement)
+
+In nD: Work = ∫_γ ω where:
+- γ is a path from a to b
+- ω is a 1-form representing the force field
+
+**The Magic: Stokes' Theorem**
+
+∫_M dω = ∫_{∂M} ω
+
+This generalizes:
+- Fundamental Theorem of Calculus (k=1)
+- Green's Theorem (k=2 in plane)
+- Divergence Theorem (k=3)
+- Classical Stokes' Theorem (k=2 in 3D)
+
+**Why Orientation Matters**
+
+Integrating over reversed path gives negative result:
+∫_{-γ} ω = -∫_γ ω
+
+This distinguishes forms from unsigned integrals.
+
+**de Rham Cohomology**
+
+Forms that are closed (dω = 0) but not exact (ω ≠ dη) measure topological obstructions. This connects analysis to topology!
+
+**Physical Applications**
+
+- **Electromagnetism**: Maxwell's equations in form notation
+- **Fluid dynamics**: Vorticity, circulation
+- **Thermodynamics**: State variables, exact differentials
+- **General relativity**: Curvature forms`,
+      annotations: [
+        createAnnotation("forms-1", "visual", "A k-form is like a 'measuring device' for k-dimensional volumes. A 1-form measures along curves, a 2-form measures across surfaces, etc. The exterior derivative d increases the dimension by 1."),
+        createAnnotation("forms-2", "analogy", "Stokes' theorem is like accounting: what accumulates inside (integral of derivative) equals what flows through the boundary. Whether it's money, fluid, or energy—the principle is the same!"),
+        createAnnotation("forms-3", "deep-dive", "de Rham's theorem: the space of closed forms modulo exact forms is isomorphic to singular cohomology. This is profound—it means topology (holes) can be detected by solving differential equations!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.25 The Fast Fourier Transform - Full Text
+export const fastFourierTransformFullText: FullTextChapter = {
+  id: "fast-fourier-transform",
+  title: "The Fast Fourier Transform",
+  description: "An efficient algorithm for computing Fourier transforms.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 25,
+  content: [
+    {
+      id: "fft-intro",
+      title: "Making Fourier Transforms Practical",
+      type: "text",
+      content: "From O(n²) to O(n log n) revolutionized signal processing.",
+      fullText: `The Fast Fourier Transform (FFT) is an algorithm that computes the discrete Fourier transform (DFT) efficiently. It revolutionized digital signal processing, making Fourier analysis practical for large datasets.
+
+**The Discrete Fourier Transform (DFT)**
+
+For a sequence x₀, x₁, ..., x_{n-1}, the DFT is:
+
+X_k = Σ_{j=0}^{n-1} x_j · e^(-2πijk/n)
+
+for k = 0, 1, ..., n-1.
+
+**Naive Computation**: O(n²) operations—too slow for large n.
+
+**The FFT Insight**
+
+When n is a power of 2, the DFT can be computed recursively using divide-and-conquer.
+
+**The Algorithm**
+
+1. **Split**: Separate even and odd indices
+   - Even: x₀, x₂, x₄, ...
+   - Odd: x₁, x₃, x₅, ...
+
+2. **Conquer**: Compute DFT of each half (recursively)
+
+3. **Combine**: 
+   X_k = E_k + ω^k · O_k
+   X_{k+n/2} = E_k - ω^k · O_k
+   
+   where ω = e^(-2πi/n) and E, O are DFTs of even/odd parts.
+
+**Complexity: O(n log n)**
+
+Each level: O(n) operations
+Number of levels: log₂(n)
+Total: O(n log n)—dramatically faster than O(n²)!
+
+**Example**: For n = 1,048,576 (2²⁰):
+- Naive: ~10¹² operations
+- FFT: ~20 × 10⁶ operations
+- Speedup: 50,000×
+
+**Butterfly Diagram**
+
+The computation forms a pattern of "butterflies"—operations that combine two inputs into two outputs. This structure enables:
+- In-place computation (minimal memory)
+- Parallel processing
+- Hardware optimization
+
+**Applications**
+
+The FFT enables:
+- **Digital audio**: MP3, AAC compression
+- **Image processing**: JPEG, filtering
+- **Telecommunications**: OFDM (WiFi, 4G/5G)
+- **Astronomy**: Processing telescope data
+- **Medical imaging**: MRI reconstruction
+- **Cryptography**: Fast polynomial multiplication
+
+**Variants**
+
+- **Cooley-Tukey**: Most common, n = power of 2
+- **Bluestein's algorithm**: Arbitrary n
+- **Prime-factor algorithm**: n = product of coprime factors
+- **Multidimensional FFT**: For images, video`,
+      annotations: [
+        createAnnotation("fft-1", "visual", "The FFT is like sorting a deck of cards by repeatedly splitting in half, sorting each half, then merging. The 'butterfly' operations interleave results from even and odd positions at each level."),
+        createAnnotation("fft-2", "analogy", "Computing DFT naively is like calculating every pairwise distance in a city—O(n²). FFT is like using a subway system with transfers—O(n log n). Much faster for big cities (large n)!"),
+        createAnnotation("fft-3", "deep-dive", "The FFT connects to polynomial evaluation and interpolation. Multiplying two polynomials is O(n²) normally, but O(n log n) using FFT—transform to value representation, multiply pointwise, transform back. This is crucial for cryptography!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   // Part I: Introduction
@@ -2909,6 +3148,9 @@ export const fullTextChapters: FullTextChapter[] = [
   calabiYauFullText,
   fuchsianGroupsFullText,
   expandersFullText,
+  axiomOfDeterminacyFullText,
+  differentialFormsFullText,
+  fastFourierTransformFullText,
 ]
 
 // Helper to get full text chapter by ID
