@@ -2147,6 +2147,186 @@ The crisis in foundations led to deeper understanding, even if it didn't provide
   exercises: [],
 }
 
+// III.86 The Spectrum - Full Text
+export const spectrumFullText: FullTextChapter = {
+  id: "spectrum",
+  title: "The Spectrum",
+  description: "Generalizing eigenvalues to infinite-dimensional spaces.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 86,
+  content: [
+    {
+      id: "what-is-spectrum",
+      title: "Beyond Eigenvalues",
+      type: "text",
+      content: "Extending the concept of eigenvalues to operators on infinite-dimensional spaces.",
+      fullText: `In linear algebra, eigenvalues and eigenvectors play a central role. For a linear map T : V → V on a finite-dimensional vector space, an eigenvector e satisfies T(e) = λe for some scalar λ (the eigenvalue).
+
+**The Problem in Infinite Dimensions**
+
+For operators on infinite-dimensional Banach spaces, not every operator has eigenvalues.
+
+**Example**: Let X = C[0,1] be the space of continuous functions on [0,1]. Define the multiplication operator Mᵤ by Mᵤ(f)(t) = u(t)f(t).
+
+If u(t) = t, then Mᵤ has **no eigenvalues**. Why? If Mᵤ(f) = λf, then (t-λ)f(t) = 0 for all t, so f(t) = 0 for all t ≠ λ. By continuity, f ≡ 0.
+
+**Definition of Spectrum**
+
+For an operator T on a complex Banach space X, the **spectrum** Sp(T) is the set of all complex numbers λ such that T - λI is **not invertible**.
+
+**Key Properties**:
+
+1. **In finite dimensions**: Sp(T) = set of eigenvalues
+2. **In infinite dimensions**: Sp(T) contains eigenvalues but may be larger
+3. **Always nonempty**: By Liouville's theorem applied to (λI - T)⁻¹
+4. **Compact**: The spectrum is always a bounded, closed (compact) subset of ℂ
+
+**Example**: The right-shift operator S on ℓ² defined by S(ξ₁, ξ₂, ...) = (0, ξ₁, ξ₂, ...) has spectrum {λ : |λ| ≤ 1}, but no eigenvalues!
+
+**Importance**
+
+The spectrum generalizes eigenvalues and is crucial for:
+- Spectral theory
+- Functional analysis
+- Quantum mechanics (energy levels)
+- Differential equations`,
+      annotations: [
+        createAnnotation("spectrum-1", "visual", "Think of eigenvalues as 'special directions' where a transformation acts by simple scaling. In infinite dimensions, these directions might not exist, but the spectrum captures something similar."),
+        createAnnotation("spectrum-2", "analogy", "The spectrum is like the 'DNA' of an operator. Just as DNA identifies an organism, the spectrum (often) identifies an operator up to similarity."),
+        createAnnotation("spectrum-3", "deep-dive", "The multiplication operator Mᵤ with u(t)=t has spectrum equal to the range of u: [0,1]. This connects operator theory to the geometry of functions!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.90 Topological Spaces - Full Text
+export const topologicalSpacesFullText: FullTextChapter = {
+  id: "topological-spaces",
+  title: "Topological Spaces",
+  description: "The most general setting for studying continuity.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 90,
+  content: [
+    {
+      id: "topology-def",
+      title: "What is a Topological Space?",
+      type: "text",
+      content: "Defining continuity without distance.",
+      fullText: `A topological space is the most general context in which one can define continuity.
+
+**The Standard Definition**
+
+A function f : ℝ → ℝ is continuous if: for every ε > 0, there exists δ > 0 such that |x - x'| < δ implies |f(x) - f(x')| < ε.
+
+This definition uses the notion of "closeness" via the distance |·|. But what if we're not in ℝ?
+
+**The Key Insight: Open Sets**
+
+We can characterize continuity using open sets:
+f is continuous ⟺ f⁻¹(U) is open for every open set U
+
+**Definition**
+
+A **topological space** is a set X together with a collection U of subsets (called "open sets") satisfying:
+
+1. **∅ and X are open**
+2. **Arbitrary unions**: If {Uᵢ}ᵢ∈I are open, so is ∪ᵢ∈I Uᵢ
+3. **Finite intersections**: If U₁, ..., Uₖ are open, so is U₁ ∩ ··· ∩ Uₖ
+
+**Closed Sets**
+
+A set is **closed** if its complement is open. Note: "closed" ≠ "not open"!
+- In ℝ: [0, 1) is neither open nor closed
+- ∅ is both open and closed
+
+**Hausdorff Spaces**
+
+A space is **Hausdorff** if for any distinct x₁, x₂, there exist disjoint open sets U₁, U₂ with x₁ ∈ U₁ and x₂ ∈ U₂.
+
+ℝ is Hausdorff. Some topological spaces are not.
+
+**Why This Matters**
+
+Topological spaces allow us to study continuity, convergence, and connectedness in the most general setting possible—on any set, not just those with a notion of distance.`,
+      annotations: [
+        createAnnotation("topo-1", "visual", "Open sets are like 'fuzzy' neighborhoods. A point in an open set has wiggle room in all directions. Closed sets are 'solid'—their boundaries are included."),
+        createAnnotation("topo-2", "analogy", "Topologies are like different notions of 'nearness.' The discrete topology (all sets open) says no two points are close. The trivial topology (only ∅ and X open) says all points are glued together."),
+        createAnnotation("topo-3", "deep-dive", "The power of topology: you can define continuity without measuring distance! This lets mathematicians study spaces where 'distance' doesn't make sense, like spaces of functions or shapes."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.92 Trigonometric Functions - Full Text
+export const trigonometricFunctionsFullText: FullTextChapter = {
+  id: "trigonometric-functions",
+  title: "Trigonometric Functions",
+  description: "The fundamental periodic functions of mathematics.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 92,
+  content: [
+    {
+      id: "trig-def",
+      title: "Sine and Cosine",
+      type: "text",
+      content: "From geometry to analysis.",
+      fullText: `The trigonometric functions sin and cos, along with tan, cot, sec, and cosec, are fundamental to mathematics.
+
+**Geometric Definition**
+
+Using radians (arc length on unit circle):
+- sin θ = y-coordinate of point at angle θ
+- cos θ = x-coordinate of point at angle θ
+
+**Analytic Definition**
+
+The power series definitions:
+
+sin(x) = x - x³/3! + x⁵/5! - x⁷/7! + ···
+
+cos(x) = 1 - x²/2! + x⁴/4! - x⁶/6! + ···
+
+These converge for all x ∈ ℝ (and define sin, cos for complex x too).
+
+**Differential Equation Definition**
+
+sin is the unique solution to y'' = -y with y(0) = 0, y'(0) = 1.
+
+cos is the unique solution to y'' = -y with y(0) = 1, y'(0) = 0.
+
+**Key Properties**
+
+- **Periodicity**: sin(x + 2π) = sin(x), cos(x + 2π) = cos(x)
+- **Pythagorean identity**: sin²(x) + cos²(x) = 1
+- **Derivatives**: d/dx sin(x) = cos(x), d/dx cos(x) = -sin(x)
+
+**Euler's Formula**
+
+e^(ix) = cos(x) + i sin(x)
+
+This connects trigonometry to complex exponentials—one of the most important formulas in mathematics.
+
+**Applications**
+
+- **Geometry**: Triangles, circles, waves
+- **Physics**: Harmonic motion, waves, oscillations
+- **Engineering**: Signal processing, control systems
+- **Music**: Harmonics, sound waves`,
+      annotations: [
+        createAnnotation("trig-1", "visual", "On the unit circle, angle θ corresponds to arc length θ (in radians). The point on the circle has coordinates (cos θ, sin θ)—x is horizontal, y is vertical."),
+        createAnnotation("trig-2", "analogy", "Sine and cosine are like a point moving in a circle: as one goes up, the other goes right. They're 90° out of phase—like two dancers performing the same routine but starting at different times."),
+        createAnnotation("trig-3", "deep-dive", "The power series show sin and cos are 'built' from polynomials. The alternating signs create the oscillation. This analytic view lets us extend them to complex numbers—unthinkable from geometry alone!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   // Part I: Introduction
@@ -2182,6 +2362,9 @@ export const fullTextChapters: FullTextChapter[] = [
   ricciFlowFullText,
   schrodingerEquationFullText,
   simplexAlgorithmFullText,
+  spectrumFullText,
+  topologicalSpacesFullText,
+  trigonometricFunctionsFullText,
 ]
 
 // Helper to get full text chapter by ID
