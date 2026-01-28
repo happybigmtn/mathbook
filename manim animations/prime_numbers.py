@@ -98,15 +98,16 @@ class PrimeNumbersScene(Scene):
 
         self.play(*[Write(n) for n in numbers], run_time=2)
 
-        # Cross out multiples
+        # Cross out multiples - position labels on the right side to avoid overlap
         sieve_text = Text("Cross out multiples:", font_size=22)
-        sieve_text.next_to(sieve_title, DOWN, buff=0.3)
-        sieve_text.to_edge(LEFT, buff=1)
+        sieve_text.to_edge(RIGHT, buff=0.5)
+        sieve_text.shift(UP * 2)
         self.play(Write(sieve_text))
 
         # Cross out multiples of 2
         cross_2 = MathTex(r"\times 2", font_size=18, color=RED)
-        cross_2.next_to(sieve_text, DOWN)
+        cross_2.next_to(sieve_text, DOWN, buff=0.3)
+        cross_2.align_to(sieve_text, LEFT)
         self.play(Write(cross_2))
 
         for i, num in enumerate(numbers):
@@ -123,7 +124,8 @@ class PrimeNumbersScene(Scene):
 
         # Cross out multiples of 3
         cross_3 = MathTex(r"\times 3", font_size=18, color=ORANGE)
-        cross_3.next_to(cross_2, DOWN)
+        cross_3.next_to(cross_2, DOWN, buff=0.3)
+        cross_3.align_to(sieve_text, LEFT)
         self.play(Write(cross_3))
 
         for i, num in enumerate(numbers):
@@ -140,7 +142,8 @@ class PrimeNumbersScene(Scene):
 
         # Cross out multiples of 5
         cross_5 = MathTex(r"\times 5", font_size=18, color=PURPLE)
-        cross_5.next_to(cross_3, DOWN)
+        cross_5.next_to(cross_3, DOWN, buff=0.3)
+        cross_5.align_to(sieve_text, LEFT)
         self.play(Write(cross_5))
 
         for i, num in enumerate(numbers):
@@ -157,7 +160,8 @@ class PrimeNumbersScene(Scene):
 
         # Highlight remaining primes
         remaining = Text("Remaining = Primes!", font_size=22, color=GREEN)
-        remaining.next_to(cross_5, DOWN)
+        remaining.next_to(cross_5, DOWN, buff=0.3)
+        remaining.align_to(sieve_text, LEFT)
         self.play(Write(remaining))
 
         # Circle the primes

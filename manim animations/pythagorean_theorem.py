@@ -130,7 +130,7 @@ class PythagoreanTheoremScene(Scene):
         self.play(Create(big_square), Write(big_label))
 
         # Divide into sections and place 4 triangles
-        # Calculate positions for 4 copies of the triangle
+        # Calculate positions for 4 copies of the triangle - fixed positions
         tri1 = Polygon(
             np.array([-1.75, -1.25, 0]),
             np.array([0.25, -1.25, 0]),

@@ -74,7 +74,7 @@ class GoldenRatioScene(Scene):
         spiral_title.next_to(title, DOWN, buff=0.5)
         self.play(Write(spiral_title))
 
-        # Draw golden rectangles
+        # Draw golden rectangles with evolving spiral
         rectangles = VGroup()
         arcs = VGroup()
 
@@ -104,6 +104,7 @@ class GoldenRatioScene(Scene):
             ),
         ]
 
+        # Draw one rectangle and arc at a time to show evolution
         for i, (size, pos) in enumerate(zip(sizes, positions)):
             if i == 0:
                 rect = Square(side_length=size, color=BLUE, stroke_width=2)
@@ -117,7 +118,10 @@ class GoldenRatioScene(Scene):
             rect.move_to(pos + np.array([size / 2, size / 2, 0]) if i == 0 else pos)
             rectangles.add(rect)
 
-            # Add quarter circle arc
+            # Draw rectangle
+            self.play(Create(rect), run_time=0.5)
+
+            # Add and draw quarter circle arc immediately after rectangle
             if i < len(sizes) - 1:
                 arc = Arc(
                     radius=size,
@@ -128,9 +132,8 @@ class GoldenRatioScene(Scene):
                 )
                 arc.shift(pos)
                 arcs.add(arc)
+                self.play(Create(arc), run_time=0.5)
 
-        self.play(*[Create(rect) for rect in rectangles], run_time=2)
-        self.play(*[Create(arc) for arc in arcs], run_time=2)
         self.wait(2)
 
         self.play(FadeOut(rectangles), FadeOut(arcs), FadeOut(spiral_title))

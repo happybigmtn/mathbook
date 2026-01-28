@@ -4,6 +4,7 @@ Manim animation for the commutative property of multiplication
 
 from manim import *
 
+
 class CommutativePropertyScene(Scene):
     def construct(self):
         # Title
@@ -54,7 +55,7 @@ class CommutativePropertyScene(Scene):
         self.wait(1)
 
         # Count total
-        total = MathTex(f"\\text{{Total}} = {a} \\times {b} = {a*b}")
+        total = MathTex(f"\\text{{Total}} = {a} \\times {b} = {a * b}")
         total.next_to(grid, DOWN, buff=0.5)
         self.play(Write(total))
         self.wait(1)
@@ -64,6 +65,30 @@ class CommutativePropertyScene(Scene):
             FadeOut(row_label),
             FadeOut(col_label),
             FadeOut(total),
+        )
+
+        # Rotate grid concept
+        transform_text = Text("Rotate the grid...", font_size=36)
+        transform_text.to_edge(UP, buff=1)
+        self.play(Write(transform_text))
+
+        # Show rotated - actually rotate and move the grid
+        rotated_grid = grid.copy()
+        rotated_grid.move_to(grid.get_center() + RIGHT * 5)
+
+        self.play(
+            grid.animate.rotate(PI / 2).move_to(grid.get_center() + RIGHT * 5),
+        )
+
+        new_row_label = MathTex(f"{b} \text{{ rows}}")
+        new_row_label.next_to(grid, LEFT)
+
+        new_col_label = MathTex(f"{a} \text{{ columns}}")
+        new_col_label.next_to(grid, UP)
+
+        self.play(
+            Write(new_row_label),
+            Write(new_col_label),
         )
 
         # Rotate grid concept
@@ -87,14 +112,14 @@ class CommutativePropertyScene(Scene):
             Write(new_col_label),
         )
 
-        new_total = MathTex(f"{b} \\times {a} = {a*b}")
+        new_total = MathTex(f"{b} \\times {a} = {a * b}")
         new_total.next_to(rotated_grid, DOWN, buff=0.5)
         self.play(Write(new_total))
 
         self.wait(2)
 
         # Final conclusion
-        conclusion = MathTex(f"{a} \\times {b} = {b} \\times {a} = {a*b}")
+        conclusion = MathTex(f"{a} \\times {b} = {b} \\times {a} = {a * b}")
         conclusion.scale(1.5)
         conclusion.move_to(ORIGIN)
 
