@@ -21,6 +21,7 @@ import {
   GeometryTypesVisualizer,
   LimitsAndContinuityVisualizer,
   NumberSystemsVisualizer,
+  GroupTheoryVisualizer,
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
@@ -43,6 +44,7 @@ const componentMap: Record<string, React.ComponentType> = {
   GeometryTypesVisualizer,
   LimitsAndContinuityVisualizer,
   NumberSystemsVisualizer,
+  GroupTheoryVisualizer,
 }
 
 interface ChapterContentProps {

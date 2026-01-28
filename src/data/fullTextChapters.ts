@@ -518,6 +518,17 @@ The third feature is adequate definitions. Euclid offered definitions that were 
       ],
     },
     {
+      id: "three-geometries",
+      title: "The Three Geometries",
+      type: "interactive",
+      content: "Interactive visualization comparing Euclidean, Hyperbolic, and Elliptic geometries",
+      component: "GeometryTypesVisualizer",
+      annotations: [
+        createAnnotation("geo-viz-1", "visual", "Euclidean geometry (flat): one parallel through a point. Hyperbolic (saddle): infinitely many parallels. Elliptic (sphere): no parallels—all lines meet."),
+        createAnnotation("geo-viz-2", "note", "Triangle angle sums differ: Euclidean = 180°, Hyperbolic < 180°, Elliptic > 180°. This is how you measure curvature!"),
+      ],
+    },
+    {
       id: "parallel-postulate",
       title: "The Parallel Postulate",
       type: "text",
@@ -653,6 +664,17 @@ The abstract approach reveals deep connections between seemingly unrelated field
         createAnnotation("group-1", "visual", "The four group axioms are like the rules of a club: (1) if you combine two members you get a member, (2) grouping doesn't matter, (3) there's a 'do nothing' member, (4) every member can leave."),
         createAnnotation("group-2", "analogy", "Symmetry operations on a snowflake form a group. Rotate 60°, flip, rotate back—these operations compose just like numbers add and multiply."),
         createAnnotation("group-3", "deep-dive", "Noether's theorem: symmetry → conservation law. This is why physics works—rotate space and physics stays the same, so angular momentum is conserved."),
+      ],
+    },
+    {
+      id: "group-interactive",
+      title: "Exploring Group Operations",
+      type: "interactive",
+      content: "Interactive Cayley table and symmetry composition explorer",
+      component: "GroupTheoryVisualizer",
+      annotations: [
+        createAnnotation("group-int-1", "visual", "The Cayley table shows all possible compositions. Notice the pattern: rotating then reflecting gives different results than reflecting then rotating—order matters!"),
+        createAnnotation("group-int-2", "note", "Try r ∘ s₁ vs s₁ ∘ r. They're different! This shows the group is non-abelian (not commutative)."),
       ],
     },
   ],
