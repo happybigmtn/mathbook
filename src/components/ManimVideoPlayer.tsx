@@ -1,8 +1,8 @@
 "use client"
 
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import { motion } from "framer-motion"
-import { Play, Pause, Volume2, VolumeX, Maximize } from "lucide-react"
+import { Play, Pause, Volume2, VolumeX, Maximize, Film } from "lucide-react"
 
 interface ManimVideoPlayerProps {
   src: string
@@ -14,7 +14,21 @@ export function ManimVideoPlayer({ src, title, description }: ManimVideoPlayerPr
   const [isPlaying, setIsPlaying] = useState(false)
   const [isMuted, setIsMuted] = useState(true)
   const [progress, setProgress] = useState(0)
+  const [videoExists, setVideoExists] = useState<boolean | null>(null)
   const videoRef = useRef<HTMLVideoElement>(null)
+
+  useEffect(() => {
+    // Check if video exists
+    const checkVideo = async () => {
+      try {
+        const response = await fetch(src, { method: 'HEAD' })
+        setVideoExists(response.ok)
+      } catch {
+        setVideoExists(false)
+      }
+    }
+    checkVideo()
+  }, [src])
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -49,6 +63,23 @@ export function ManimVideoPlayer({ src, title, description }: ManimVideoPlayerPr
     }
   }
 
+  if (videoExists === false) {
+    return (
+      <div className="bg-card/50 rounded-xl overflow-hidden">
+        <div className="relative aspect-video bg-muted flex flex-col items-center justify-center p-8 text-center">
+          <Film className="w-16 h-16 text-muted-foreground mb-4" />
+          <h4 className="text-lg font-semibold mb-2">{title || "Animation"}</h4>
+          <p className="text-sm text-muted-foreground max-w-md">
+            {description || "This Manim animation is coming soon! The visualization is being rendered."}
+          </p>
+          <p className="text-xs text-muted-foreground mt-4">
+            Animation: {src.split('/').pop()?.replace('.webm', '')}
+          </p>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="bg-card/50 rounded-xl overflow-hidden">
       <div className="relative aspect-video bg-black">
@@ -58,6 +89,7 @@ export function ManimVideoPlayer({ src, title, description }: ManimVideoPlayerPr
           className="w-full h-full"
           onTimeUpdate={handleTimeUpdate}
           onEnded={() => setIsPlaying(false)}
+          onError={() => setVideoExists(false)}
           muted={isMuted}
           loop
         />
