@@ -94,21 +94,28 @@ src/data/
 
 ## Deployment Strategy (Cost-Optimized)
 
-**To save Netlify/Vercel credits:**
+**Automatic preview deploys on every push:**
 
 ### Automatic Deployments:
-- **Pull Requests**: Only staging/preview deploys (free on Netlify)
-- **Push to master**: No longer triggers production deploys
+- **Push to master**: Creates a deploy preview (using GitHub CLI to post URL as commit comment)
+- **Every commit**: Gets its own preview URL posted as a commit comment
+- **No PRs required**: Direct commits trigger preview deploys automatically
+
+### How to Access Preview URLs:
+After each push to master:
+1. Go to the commit on GitHub
+2. Look for the commit comment with 🚀 emoji
+3. Click the Deploy Preview URL
 
 ### Manual Production Deploys:
 When you need to deploy to production:
-1. Go to GitHub Actions → "Deploy to Netlify (Staging/Preview)"
+1. Go to GitHub Actions → "Deploy to Netlify (Auto Preview on Push)"
 2. Click "Run workflow"
 3. Select "production" from the dropdown
 4. Click "Run workflow"
 
 ### Why This Saves Money:
-- Preview deploys on PRs are typically free or low-cost
+- Preview deploys are free on Netlify (don't count toward build minutes)
 - Production deploys only when explicitly needed
-- Prevents accidental production deploys on every commit
-- Allows testing on staging before production
+- No PR overhead - direct commits trigger previews
+- Preview URLs posted automatically via GitHub CLI

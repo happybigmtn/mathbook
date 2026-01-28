@@ -1,8 +1,8 @@
-name: Deploy to Netlify (Staging/Preview)
+name: Deploy to Netlify (Auto Preview on Push)
 
 on:
-  # Only deploy previews for pull requests (staging)
-  pull_request:
+  # Deploy preview on every push to master
+  push:
     branches: [ master, main ]
   # Manual production deploy only (saves credits)
   workflow_dispatch:
@@ -19,7 +19,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
+      
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -36,23 +38,34 @@ jobs:
     - name: Build project
       run: npm run build
       
-    # Staging/Preview deploy for PRs
+    # Deploy preview on every push to master
     - name: Deploy to Netlify (Preview)
-      if: github.event_name == 'pull_request'
+      if: github.event_name == 'push'
+      id: netlify_deploy
       uses: nwtgck/actions-netlify@v3.0
       with:
         publish-dir: './dist'
         production-deploy: false
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        deploy-message: "Preview deploy from PR #${{ github.event.pull_request.number }}"
-        enable-pull-request-comment: true
-        enable-commit-comment: true
-        overwrites-pull-request-comment: true
+        deploy-message: "Preview deploy from commit ${{ github.sha }}"
+        enable-pull-request-comment: false
+        enable-commit-comment: false
+        overwrites-pull-request-comment: false
       env:
         NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       timeout-minutes: 5
       
+    # Post preview URL as commit comment using GitHub CLI
+    - name: Comment preview URL on commit
+      if: github.event_name == 'push' && steps.netlify_deploy.outputs.deploy-url != ''
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEPLOY_URL: ${{ steps.netlify_deploy.outputs.deploy-url }}
+        COMMIT_SHA: ${{ github.sha }}
+      run: |
+        echo "🚀 Deploy Preview URL: $DEPLOY_URL" | gh commit comment $COMMIT_SHA --body -
+        
     # Production deploy only on manual trigger
     - name: Deploy to Netlify (Production)
       if: github.event_name == 'workflow_dispatch' && github.event.inputs.deploy_type == 'production'
