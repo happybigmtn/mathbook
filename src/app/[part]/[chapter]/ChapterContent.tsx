@@ -17,6 +17,9 @@ import {
   MathBranchesVisualizer,
   SetOperationsVisualizer,
   NotationEvolution,
+  PrimeNumbersVisualizer,
+  GeometryTypesVisualizer,
+  LimitsAndContinuityVisualizer,
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
@@ -35,6 +38,9 @@ const componentMap: Record<string, React.ComponentType> = {
   MathBranchesVisualizer,
   SetOperationsVisualizer,
   NotationEvolution,
+  PrimeNumbersVisualizer,
+  GeometryTypesVisualizer,
+  LimitsAndContinuityVisualizer,
 }
 
 interface ChapterContentProps {

@@ -2327,6 +2327,220 @@ This connects trigonometry to complex exponentials—one of the most important f
   exercises: [],
 }
 
+// III.35 Hamiltonians - Full Text
+export const hamiltoniansFullText: FullTextChapter = {
+  id: "hamiltonians",
+  title: "Hamiltonians",
+  description: "The unifying concept across all of physics.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 35,
+  content: [
+    {
+      id: "hamiltonian-concept",
+      title: "The Hamiltonian",
+      type: "text",
+      content: "A single object controlling the evolution of physical systems.",
+      fullText: `Despite the diversity of physical theories—classical mechanics, quantum mechanics, statistical mechanics—they share a remarkable unifying theme: the Hamiltonian.
+
+**What is a Hamiltonian?**
+
+The Hamiltonian H represents the **total energy** of a system. It controls:
+- How the system evolves over time
+- What steady states are possible
+- Conservation laws and symmetries
+
+**Classical Mechanics**
+
+H = H(q, p) is a function of positions q and momenta p.
+
+Hamilton's equations:
+dq/dt = ∂H/∂p
+dp/dt = -∂H/∂q
+
+These are equivalent to Newton's laws but reveal deeper structure.
+
+**Quantum Mechanics**
+
+H becomes an operator. The wave function ψ evolves by:
+
+iℏ ∂ψ/∂t = Hψ
+
+This is the Schrödinger equation! The Hamiltonian determines quantum dynamics.
+
+**Statistical Mechanics**
+
+Probability of microstate ∝ e^(-H/kT)
+
+The Hamiltonian determines thermal equilibrium.
+
+**Key Properties**
+
+**Energy Conservation**: dH/dt = 0 (when H doesn't explicitly depend on time)
+
+**Symmetries**: Symmetries of H induce conservation laws (Noether's theorem)
+- Rotational symmetry → Angular momentum conservation
+- Translation symmetry → Momentum conservation
+- Time symmetry → Energy conservation
+
+**Mathematical Importance**
+
+Hamiltonians appear in:
+- Dynamical systems
+- Symplectic geometry
+- Operator algebras
+- Spectral theory
+- Representation theory
+
+They bridge physics and pure mathematics, connecting seemingly unrelated fields.`,
+      annotations: [
+        createAnnotation("hamil-1", "visual", "Think of the Hamiltonian as the 'engine' of a physical system. Different systems have different engines, but they all use the same 'fuel' (energy) and follow similar rules."),
+        createAnnotation("hamil-2", "analogy", "The Hamiltonian is like a recipe: it tells you the ingredients (positions and momenta) and how they combine (the equations of motion). Different cuisines (classical, quantum, statistical) use the same recipe structure."),
+        createAnnotation("hamil-3", "deep-dive", "Noether's theorem: every symmetry of the Hamiltonian corresponds to a conservation law. This is why energy, momentum, and angular momentum are conserved—because the laws of physics have time, space, and rotation symmetry!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.36 The Heat Equation - Full Text
+export const heatEquationFullText: FullTextChapter = {
+  id: "heat-equation",
+  title: "The Heat Equation",
+  description: "The fundamental equation of diffusion and smoothing.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 36,
+  content: [
+    {
+      id: "heat-eq-def",
+      title: "The Heat Equation",
+      type: "text",
+      content: "Fourier's equation describing how heat spreads.",
+      fullText: `The heat equation, first proposed by Fourier, describes how heat (or any diffusing quantity) spreads through a medium.
+
+**The Equation**
+
+∂u/∂t = Δu
+
+Where:
+- u(t, x) is temperature at time t, position x
+- Δ is the Laplacian: Δu = ∂²u/∂x² + ∂²u/∂y² + ∂²u/∂z²
+
+**Physical Interpretation**
+
+Heat flows from hot to cold. The rate of change of temperature is proportional to how "curved" the temperature distribution is.
+
+- Where u is concave (Δu > 0): temperature increases
+- Where u is convex (Δu < 0): temperature decreases
+- Where u is flat (Δu = 0): steady state
+
+**Key Properties**
+
+**Smoothing**: The heat equation instantly smooths rough initial data. Discontinuities disappear.
+
+**Maximum Principle**: The maximum temperature can only decrease (or stay constant), never increase.
+
+**Infinite Speed**: Heat spreads infinitely fast (though exponentially small at large distances).
+
+**Fundamental Solution**
+
+For initial point source, the solution is the Gaussian:
+
+u(t, x) = (4πt)^(-n/2) e^(-|x|²/(4t))
+
+This spreads out as time progresses.
+
+**Applications**
+
+The heat equation appears in:
+- **Physics**: Heat conduction, diffusion
+- **Finance**: Black-Scholes option pricing
+- **Geometry**: Curve shortening, Ricci flow
+- **Probability**: Brownian motion
+- **Image processing**: Noise reduction
+
+**Connection to Fourier Analysis**
+
+Fourier invented his transform to solve the heat equation. The equation motivated an entire branch of mathematics!`,
+      annotations: [
+        createAnnotation("heat-1", "visual", "The heat equation is like a smoothing iron: it takes rough, bumpy data and irons it flat over time. Sharp corners become rounded; peaks spread out."),
+        createAnnotation("heat-2", "analogy", "Imagine dye dropped in water. It spreads from concentrated spots to fill the container evenly. The heat equation describes this 'wanting to be uniform' behavior."),
+        createAnnotation("heat-3", "deep-dive", "The heat equation is the prototypical parabolic PDE. It's well-posed forward in time (prediction) but ill-posed backward (can't uniquely determine initial state from final state). This reflects the arrow of time!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.49 Linear and Nonlinear Waves and Solitons - Full Text
+export const wavesAndSolitonsFullText: FullTextChapter = {
+  id: "waves-and-solitons",
+  title: "Linear and Nonlinear Waves and Solitons",
+  description: "Waves that maintain their shape while traveling at constant speed.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 49,
+  content: [
+    {
+      id: "solitons-discovery",
+      title: "The Great Wave of Translation",
+      type: "text",
+      content: "John Scott Russell's discovery of solitary waves.",
+      fullText: `In 1834, Scottish engineer John Scott Russell observed something extraordinary on the Edinburgh-Glasgow canal:
+
+**Russell's Account**:
+
+"I was observing the motion of a boat which was rapidly drawn along a narrow channel by a pair of horses, when the boat suddenly stopped—not so the mass of water in the channel which it had put in motion; it accumulated round the prow of the vessel in a state of violent agitation, then suddenly leaving it behind, rolled forward with great velocity, assuming the form of a large solitary elevation, a rounded, smooth and well-defined heap of water, which continued its course along the channel apparently without change of form or diminution of speed."
+
+Russell followed this wave on horseback for one or two miles. It maintained its shape and speed—a highly unusual phenomenon!
+
+**What Makes Solitons Special?**
+
+Ordinary water waves disperse: a single bump breaks into smaller ripples. But Russell's "Wave of Translation" stayed intact.
+
+**Mathematical Explanation**
+
+The Korteweg-de Vries (KdV) equation describes shallow water waves:
+
+∂u/∂t + ∂³u/∂x³ + 6u ∂u/∂x = 0
+
+This nonlinear equation has solutions that are:
+- Localized (decay at infinity)
+- Stable (maintain shape)
+- Particle-like (interact elastically)
+
+**Soliton Interactions**
+
+When two solitons collide:
+- They pass through each other
+- Each maintains its shape and speed
+- Only a phase shift occurs
+
+This is like particles, not waves!
+
+**Applications**
+
+Solitons appear in:
+- **Water waves**: Canal waves, tsunamis
+- **Optical fibers**: Information transmission
+- **Plasma physics**: Ion acoustic waves
+- **Quantum field theory**: Particle models
+- **Biology**: Energy transport in proteins
+
+**Why the Controversy?**
+
+Russell's observations were doubted by mathematicians like Stokes and Airy because linear wave theory couldn't explain them. It took until 1895 (Korteweg and de Vries) for a mathematical theory, and until the 1960s for full recognition of their importance.`,
+      annotations: [
+        createAnnotation("soliton-1", "visual", "A soliton is like a ghost: it passes through other solitons unchanged. Imagine two smoke rings colliding and emerging intact—that's a soliton interaction!"),
+        createAnnotation("soliton-2", "analogy", "Linear waves are like conversations in a crowded room: they get jumbled. Solitons are like polite speakers taking turns: each message stays clear even when they 'collide.'"),
+        createAnnotation("soliton-3", "deep-dive", "The KdV equation is 'completely integrable'—it has infinitely many conservation laws. This hidden structure explains why solitons are so stable. It's a rare property among nonlinear PDEs!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   // Part I: Introduction
@@ -2365,6 +2579,9 @@ export const fullTextChapters: FullTextChapter[] = [
   spectrumFullText,
   topologicalSpacesFullText,
   trigonometricFunctionsFullText,
+  hamiltoniansFullText,
+  heatEquationFullText,
+  wavesAndSolitonsFullText,
 ]
 
 // Helper to get full text chapter by ID
