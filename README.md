@@ -8,12 +8,14 @@ An interactive, visual exploration of mathematics based on *The Princeton Compan
 
 ## Features
 
+- **Full Text Integration**: Complete book text with two-column Feynman-style annotations
 - **Interactive Visualizations**: 3Blue1Brown-style animations and interactive demos
 - **Feynman-Style Explanations**: Clear, intuitive explanations that build true understanding
 - **Hands-On Exercises**: Interactive problems with immediate feedback
 - **Progress Tracking**: Track your learning journey with achievements
 - **Comprehensive Coverage**: All 8 parts of the Princeton Companion
 - **Responsive Design**: Works on desktop, tablet, and mobile
+- **Automated CI/CD**: Auto-deploy on every push to GitHub
 
 ## Tech Stack
 
@@ -62,13 +64,25 @@ The static site will be generated in the `dist` directory.
 
 ## Deployment
 
-### Vercel
+### Automated CI/CD (Recommended)
+
+This project includes GitHub Actions workflows for automatic deployment:
+
+1. **Push to GitHub** - Every push to `master` automatically triggers deployment
+2. **Setup secrets** - Add your deployment credentials as GitHub secrets
+3. **Done!** - Your site deploys automatically
+
+See [CICD_SETUP.md](./CICD_SETUP.md) for detailed configuration instructions.
+
+### Manual Deployment
+
+#### Vercel
 
 1. Push your code to GitHub
 2. Import the repository on Vercel
 3. Deploy!
 
-### Netlify
+#### Netlify
 
 1. Push your code to GitHub
 2. Connect the repository on Netlify
