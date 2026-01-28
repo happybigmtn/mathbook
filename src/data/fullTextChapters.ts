@@ -341,11 +341,90 @@ More abstractly, functions capture the idea of transformation. Geometry studies 
   ],
 }
 
+// II.1 From Numbers to Number Systems - Full Text
+export const fromNumbersToNumberSystemsFullText: FullTextChapter = {
+  id: "from-numbers-to-number-systems",
+  title: "From Numbers to Number Systems",
+  description: "The evolution of numbers from counting to complex numbers.",
+  part: "part-02",
+  partTitle: "Origins of Modern Mathematics",
+  order: 1,
+  content: [
+    {
+      id: "numbers-early-math",
+      title: "Numbers in Early Mathematics",
+      type: "text",
+      content: "How ancient civilizations developed number systems.",
+      fullText: `People have been writing numbers down for as long as they have been writing. In every civilization that has developed a way of recording information, we also find a way of recording numbers. Some scholars even argue that numbers came first.
+
+It is fairly clear that numbers first arose as adjectives: they specified how many or how much of something there was. Thus, it was possible to talk about three apricots, say, long before it was possible to talk about the number 3. But once the concept of "threeness" is on the table, so that the same adjective specifies three fish and three horses, and once a written symbol such as "3" is developed that can be used in all of those instances, the conditions exist for 3 itself to emerge as an independent entity. Once it does, we are doing mathematics.
+
+This process seems to have repeated itself many times when new kinds of numbers have been introduced: first a number is used, then it is represented symbolically, and finally it comes to be conceived as a thing in itself and as part of a system of similar entities.
+
+The earliest mathematical documents we know about go back to the civilizations of the ancient Middle East, in Egypt and in Mesopotamia. In both cultures, a scribal class developed. Scribes were responsible for keeping records, which often required them to do arithmetic and solve simple mathematical problems.
+
+Numbers were used both for counting and for measuring, so a need for fractional numbers must have come up fairly early. Fractions are complicated to write down, and computing with them can be difficult. Hence, the problem of "broken numbers" may well have been the first really challenging mathematical problem.
+
+In Egypt, the fundamental notion was "the nth part," as in "the third part of six is two." In this language, one would express the idea of dividing 7 by 3 as, "What is the third part of seven?" The answer is, "Two and the third."
+
+In Mesopotamia, we find a very different idea. The Babylonians had a way to generate symbols for all the numbers from 1 to 59. For larger numbers, they used a positional system much like the one we use today, but based on 60 rather than 10. So something like 1, 20 means one sixty and twenty units, that is, 1 × 60 + 20 = 80. The same system was then extended to fractions, so that one half was represented as thirty sixtieths.
+
+The Mesopotamian way of writing numbers is called a sexagesimal place-value system by analogy with the system we use today, which is, of course, a decimal place-value system.
+
+The fact that we still divide an hour into sixty minutes and a minute into sixty seconds goes back, via the Greek astronomers, to the Babylonian sexagesimal fractions; almost four thousand years later, we are still influenced by the Babylonian scribes.`,
+      annotations: [
+        createAnnotation("early-1", "visual", "Numbers started as adjectives ('three apricots') before becoming abstract entities. This abstraction is what makes mathematics powerful—'3' applies to anything, not just fruit."),
+        createAnnotation("early-2", "analogy", "Egyptian fractions are like splitting a pizza: the 'third part' is one of three equal slices. Babylonian base-60 is like our clocks—60 seconds, 60 minutes, inherited from them."),
+        createAnnotation("early-3", "deep-dive", "The base-60 system survives today in time and angles (360°). The Babylonians chose 60 because it has many divisors (2, 3, 4, 5, 6, 10, 12, 15, 20, 30), making fractions easier."),
+      ],
+    },
+    {
+      id: "incommensurable",
+      title: "Lengths Are Not Numbers",
+      type: "text",
+      content: "The Greek discovery that changed mathematics forever.",
+      fullText: `Things get more complicated with the mathematics of classical Greek and Hellenistic civilizations. The Greeks, of course, are famous for coming up with the first mathematical proofs. They were the first to attempt to do mathematics in a rigorously deductive way, using clear initial assumptions and careful statements.
+
+Sometime before the fourth century BCE, the Greeks made the fundamental discovery of "incommensurable magnitudes." That is, they discovered that it is not always possible to express two given lengths as (integer) multiples of a third length. It is not just that lengths and numbers are conceptually distinct things (though this was important too). The Greeks had found a proof that one cannot use numbers to represent lengths.
+
+Suppose, they argued, you have two line segments. If their lengths are both given by numbers, then those numbers will at worst involve some fractions. By changing the unit of length, then, we can make sure that both of the lengths correspond to whole numbers. In other words, it must be possible to choose a unit length so that each of our segments consists of a whole number multiple of the unit. The two segments, then, could be "measured together," i.e., would be "commensurable."
+
+Now here's the catch: the Greeks could prove that this was not always the case. Their standard example had to do with the side and the diagonal of a square. We do not know exactly how they first established that these two segments are not commensurable, but it might have been something like this: if you subtract the side from the diagonal, you will get a segment shorter than either of them; if both side and diagonal are measured by a common unit, then so is the difference. Now repeat the argument: take the remainder and subtract it from the side until we get a second remainder smaller than the first.
+
+It turns out to be quite easy to show that this process will never terminate; instead, it will produce smaller and smaller remainder segments. Eventually, the remainder segment will be smaller than the unit that supposedly measures it a whole number of times. That is impossible (no whole number is smaller than 1, after all), and hence we can conclude that the common unit does not, in fact, exist.
+
+Of course, the diagonal does in fact have a length. Today, we would say that if the length of the side is one unit, then the length of the diagonal is √2 units, and we would interpret this argument as showing that the number √2 is not a fraction. The Greeks did not quite see in what sense √2 could be a number. Instead, it was a length, or, even better, the ratio between the length of the diagonal and the length of the side.
+
+The conclusion, then, is that lengths are not numbers: instead, they are some other kind of magnitude. But now we are faced with a proliferation of magnitudes: numbers, lengths, areas, angles, volumes, etc. Each of these must be taken as a different kind of quantity, not comparable with the others.`,
+      annotations: [
+        createAnnotation("incom-1", "visual", "The diagonal of a unit square has length √2. If you try to measure it with the side (length 1), you get leftover pieces. The Greeks proved you can never fit a whole number of sides into the diagonal exactly."),
+        createAnnotation("incom-2", "analogy", "Incommensurable lengths are like trying to measure a circle's diameter using only arc lengths—you need a different 'unit' (π) because they don't share a common measure."),
+        createAnnotation("incom-3", "deep-dive", "This discovery was a crisis for the Pythagoreans, who believed 'all is number.' The existence of √2 as an irrational number shattered their worldview and forced mathematics to expand beyond fractions."),
+      ],
+    },
+  ],
+  exercises: [
+    {
+      id: "ex-2-1-1",
+      title: "Egyptian Fractions",
+      difficulty: "medium",
+      type: "multiple-choice",
+      question: "In the Egyptian system, how would you express 2/5?",
+      options: ["The fifth and the tenth", "The third and the fifteenth", "Two fifth parts", "One half and one tenth"],
+      answer: "The third and the fifteenth",
+      hint: "Egyptians never used the same fraction twice, and preferred small denominators.",
+      explanation: "2/5 = 1/3 + 1/15. The Egyptians would write this as 'the third and the fifteenth' because they never repeated the same fraction type.",
+      points: 15,
+    },
+  ],
+}
+
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   whatIsMathematicsFullText,
   languageAndGrammarFullText,
   fundamentalDefinitionsFullText,
+  fromNumbersToNumberSystemsFullText,
 ]
 
 // Helper to get full text chapter by ID

@@ -75,12 +75,12 @@ export function FeynmanLayout({ children, annotations = [], className = "" }: Fe
                   initial={{ opacity: 0, x: 10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
-                  className={`p-3 rounded-md border-l-3 ${annotationStyles[annotation.type]} text-xs leading-relaxed`}
+                  className={`p-3 rounded-md border-l-3 ${annotationStyles[annotation.type]} text-sm leading-relaxed`}
                 >
                   <div className="flex items-start gap-2">
-                    <Icon className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 opacity-70" />
+                     <Icon className="w-4 h-4 mt-0.5 flex-shrink-0 opacity-70" />
                     <div>
-                      <span className="font-semibold opacity-70 block mb-1 text-[10px] uppercase tracking-wide">
+                      <span className="font-semibold opacity-70 block mb-1 text-xs uppercase tracking-wide">
                         {typeLabels[annotation.type]}
                       </span>
                       {annotation.content}
