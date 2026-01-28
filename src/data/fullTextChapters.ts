@@ -1293,6 +1293,8 @@ export const fullTextChapters: FullTextChapter[] = [
   goldenRatioFullText,
   fibonacciFullText,
   infinityFullText,
+  ellipticCurvesFullText,
+  euclideanAlgorithmFullText,
 ]
 
 // Helper to get full text chapter by ID
