@@ -3,6 +3,7 @@
 import { ReactNode } from "react"
 import { motion } from "framer-motion"
 import { Lightbulb, Eye, BookOpen, AlertCircle, Layers } from "lucide-react"
+import { InlineMath, BlockMath } from "react-katex"
 
 export interface Annotation {
   id: string
@@ -10,10 +11,61 @@ export interface Annotation {
   content: string
 }
 
-interface FeynmanLayoutProps {
-  children: ReactNode
-  annotations?: Annotation[]
-  className?: string
+// Component to render text with KaTeX math support
+function MathContent({ content }: { content: string }) {
+  const parts: Array<{ type: 'text' | 'inline' | 'block'; content: string }> = []
+  let remaining = content
+  
+  while (remaining.length > 0) {
+    const blockMatch = remaining.match(/^(.*?)\$\$([\s\S]*?)\$\$/)
+    if (blockMatch) {
+      if (blockMatch[1]) {
+        parts.push({ type: 'text', content: blockMatch[1] })
+      }
+      parts.push({ type: 'block', content: blockMatch[2].trim() })
+      remaining = remaining.slice(blockMatch[0].length)
+      continue
+    }
+    
+    const inlineMatch = remaining.match(/^(.*?)\$([^$\n]+?)\$/)
+    if (inlineMatch) {
+      if (inlineMatch[1]) {
+        parts.push({ type: 'text', content: inlineMatch[1] })
+      }
+      parts.push({ type: 'inline', content: inlineMatch[2] })
+      remaining = remaining.slice(inlineMatch[0].length)
+      continue
+    }
+    
+    if (remaining) {
+      parts.push({ type: 'text', content: remaining })
+    }
+    break
+  }
+  
+  return (
+    <>
+      {parts.map((part, index) => {
+        if (part.type === 'inline') {
+          return <InlineMath key={index} math={part.content} />
+        } else if (part.type === 'block') {
+          return <BlockMath key={index} math={part.content} />
+        } else {
+          const formattedText = part.content
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/_(.*?)_/g, '<em>$1</em>')
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-primary hover:underline">$1</a>')
+          
+          return (
+            <span
+              key={index}
+              dangerouslySetInnerHTML={{ __html: formattedText }}
+            />
+          )
+        }
+      })}
+    </>
+  )
 }
 
 const annotationIcons = {
@@ -40,85 +92,62 @@ const typeLabels = {
   "deep-dive": "Deep Dive",
 }
 
-export function FeynmanLayout({ children, annotations = [], className = "" }: FeynmanLayoutProps) {
-  // Filter out any old-style annotations
+interface AnnotationsListProps {
+  annotations: Annotation[]
+  className?: string
+}
+
+export function AnnotationsList({ annotations = [], className = "" }: AnnotationsListProps) {
   const validAnnotations = annotations.filter(a => 
     ["visual", "analogy", "note", "warning", "deep-dive"].includes(a.type)
   )
 
-  return (
-    <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 ${className}`}>
-      {/* Main Content - Left Column */}
-      <div className="lg:col-span-8">
-        <div className="prose-content">
-          {children}
-        </div>
-      </div>
+  if (validAnnotations.length === 0) return null
 
-      {/* Annotations - Right Column */}
-      <div className="lg:col-span-4">
-        <div className="sticky top-24 space-y-4">
-          <h3 className="meta-text mb-4">
-            Annotations
-          </h3>
-          
-          {validAnnotations.length === 0 ? (
-            <div className="text-muted-foreground text-sm italic p-4 border border-dashed border-border/50 rounded-sm">
-              No annotations for this section.
+  return (
+    <div className={`space-y-3 mt-6 ${className}`}>
+      <h4 className="meta-text text-xs uppercase tracking-wider">
+        Annotations
+      </h4>
+      
+      {validAnnotations.map((annotation, index) => {
+        const Icon = annotationIcons[annotation.type]
+        return (
+          <motion.div
+            key={annotation.id}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.05 }}
+            className={`p-3 rounded-sm border-l-2 ${annotationStyles[annotation.type]} text-sm leading-relaxed`}
+          >
+            <div className="flex items-start gap-2">
+              <Icon className="w-3.5 h-3.5 mt-0.5 flex-shrink-0 text-muted-foreground" />
+              <div className="flex-1">
+                <span className="text-[10px] uppercase tracking-wider text-muted-foreground block mb-1">
+                  {typeLabels[annotation.type]}
+                </span>
+                <span className="text-muted-foreground">
+                  <MathContent content={annotation.content} />
+                </span>
+              </div>
             </div>
-          ) : (
-            validAnnotations.map((annotation, index) => {
-              const Icon = annotationIcons[annotation.type]
-              return (
-                <motion.div
-                  key={annotation.id}
-                  initial={{ opacity: 0, x: 10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                  className={`p-4 rounded-sm border-l-2 ${annotationStyles[annotation.type]} text-sm leading-relaxed`}
-                >
-                  <div className="flex items-start gap-3">
-                    <Icon className="w-4 h-4 mt-0.5 flex-shrink-0 text-muted-foreground" />
-                    <div>
-                      <span className="meta-text block mb-1">
-                        {typeLabels[annotation.type]}
-                      </span>
-                      <span className="text-muted-foreground">{annotation.content}</span>
-                    </div>
-                  </div>
-                </motion.div>
-              )
-            })
-          )}
-        </div>
-      </div>
+          </motion.div>
+        )
+      })}
     </div>
   )
 }
 
-interface FullTextSectionProps {
-  title: string
-  content: ReactNode
-  annotations?: Annotation[]
-  sectionNumber?: number
+interface FeynmanLayoutProps {
+  children: ReactNode
+  className?: string
 }
 
-export function FullTextSection({ title, content, annotations, sectionNumber }: FullTextSectionProps) {
+export function FeynmanLayout({ children, className = "" }: FeynmanLayoutProps) {
   return (
-    <section className="py-8 border-b border-border/30 last:border-b-0">
-      <div className="mb-6">
-        {sectionNumber && (
-          <span className="meta-text mb-2 block">
-            Section {sectionNumber}
-          </span>
-        )}
-        <h2 className="text-2xl font-serif font-medium text-foreground/90">{title}</h2>
-      </div>
-      
-      <FeynmanLayout annotations={annotations}>
-        {content}
-      </FeynmanLayout>
-    </section>
+    <div className={`prose-content ${className}`}>
+      {children}
+    </div>
   )
 }
 

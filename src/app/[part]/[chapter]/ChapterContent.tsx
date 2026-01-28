@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowLeft, ArrowRight, CheckCircle, Trophy, FileText, StickyNote, ChevronLeft, Maximize2, Minimize2 } from "lucide-react"
 import { getChapterById, getChaptersByPart } from "@/data/chapters"
 import { getFullTextChapterById, hasFullText } from "@/data/fullTextChapters"
+import { getFeynmanChapterById, hasFeynmanContent } from "@/data/feynmanChapters"
 import { InlineMath, BlockMath } from "react-katex"
 import "katex/dist/katex.min.css"
 
@@ -31,7 +32,7 @@ import {
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
-import { FeynmanLayout, FullTextSection } from "@/components/FeynmanLayout"
+import { FeynmanLayout, AnnotationsList } from "@/components/FeynmanLayout"
 import { useState } from "react"
 
 // Component to render text with KaTeX math support
@@ -129,6 +130,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
   const fullTextChapter = getFullTextChapterById(chapterId)
   
   const hasFullTextContent = hasFullText(chapterId)
+  const hasFeynman = hasFeynmanContent(chapterId)
   const [showFullText, setShowFullText] = useState(false)
   const [useFullWidth, setUseFullWidth] = useState(false)
   const { userState } = useProgress()
@@ -156,7 +158,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
   const totalExercises = chapter.exercises.length
   const progressPercentage = totalExercises > 0 ? (completedExercises / totalExercises) * 100 : 0
 
-  // Render verbatim book text (Full Text tab)
+  // Render verbatim book text (Full Text tab) with annotations
   const renderFullTextContent = () => {
     if (!fullTextChapter) return (
       <div className="text-center py-12">
@@ -204,6 +206,10 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                     )
                   })}
                 </div>
+                {/* Annotations for this section */}
+                {section.annotations && section.annotations.length > 0 && (
+                  <AnnotationsList annotations={section.annotations} />
+                )}
               </section>
             ) : section.type === "interactive" && section.component ? (
               <section className="py-8 border-b border-border/30 last:border-b-0">
@@ -219,6 +225,10 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                     return Component ? <Component /> : null
                   })()}
                 </div>
+                {/* Annotations for this section */}
+                {section.annotations && section.annotations.length > 0 && (
+                  <AnnotationsList annotations={section.annotations} />
+                )}
               </section>
             ) : null}
           </motion.div>
@@ -227,9 +237,11 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
     )
   }
 
-  // Render Feynman content (detailed explanations with visualizations)
+  // Render Feynman content (written from scratch, NO annotations, with visualizations)
   const renderFeynmanContent = () => {
-    if (!fullTextChapter) return (
+    const feynmanChapter = getFeynmanChapterById(chapterId)
+    
+    if (!feynmanChapter) return (
       <div className="text-center py-12">
         <p className="text-muted-foreground">Feynman explanation coming soon.</p>
       </div>
@@ -237,21 +249,24 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
 
     return (
       <div className="space-y-0">
-        {fullTextChapter.content.map((section, index) => (
+        {feynmanChapter.content.map((section, index) => (
           <motion.div
             key={section.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: index * 0.1 }}
           >
-            {section.type === "text" && section.fullText ? (
-              <FullTextSection
-                title={section.title}
-                sectionNumber={index + 1}
-                annotations={section.annotations}
-                content={
+            {section.type === "text" ? (
+              <section className="py-8 border-b border-border/30 last:border-b-0">
+                <div className="mb-6">
+                  <span className="meta-text mb-2 block">
+                    Section {index + 1}
+                  </span>
+                  <h2 className="text-2xl font-serif font-medium text-foreground/90">{section.title}</h2>
+                </div>
+                <FeynmanLayout>
                   <div className="prose-content">
-                    {section.fullText.split("\n\n").map((paragraph, pIndex) => {
+                    {section.content.split("\n\n").map((paragraph, pIndex) => {
                       // Check for headers/subsections
                       if (paragraph.startsWith("**") && paragraph.endsWith("**") && !paragraph.slice(2, -2).includes("**")) {
                         const headerText = paragraph.slice(2, -2)
@@ -273,8 +288,8 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                       )
                     })}
                   </div>
-                }
-              />
+                </FeynmanLayout>
+              </section>
             ) : section.type === "interactive" && section.component ? (
               <section className="py-8 border-b border-border/30 last:border-b-0">
                 <div className="mb-6">
@@ -283,14 +298,12 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                   </span>
                   <h2 className="text-2xl font-serif font-medium text-foreground/90">{section.title}</h2>
                 </div>
-                <FeynmanLayout annotations={section.annotations}>
-                  <div className="w-full">
-                    {(() => {
-                      const Component = componentMap[section.component]
-                      return Component ? <Component /> : null
-                    })()}
-                  </div>
-                </FeynmanLayout>
+                <div className="w-full">
+                  {(() => {
+                    const Component = componentMap[section.component]
+                    return Component ? <Component /> : null
+                  })()}
+                </div>
               </section>
             ) : null}
           </motion.div>
@@ -373,7 +386,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
             )}
 
             {/* View Toggle */}
-            {hasFullTextContent && (
+            {(hasFullTextContent || hasFeynman) && (
               <div className="mt-8 flex items-center justify-center gap-4">
                 <div className="flex items-center gap-1 bg-muted rounded-sm p-1">
                   <button
@@ -399,6 +412,25 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                     Full Text
                   </button>
                 </div>
+                
+                {/* Width Toggle */}
+                <button
+                  onClick={() => setUseFullWidth(!useFullWidth)}
+                  className="flex items-center gap-2 px-3 py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  title={useFullWidth ? "Switch to narrow width" : "Switch to full width"}
+                >
+                  {useFullWidth ? (
+                    <>
+                      <Minimize2 className="w-4 h-4" />
+                      <span className="hidden sm:inline">Narrow</span>
+                    </>
+                  ) : (
+                    <>
+                      <Maximize2 className="w-4 h-4" />
+                      <span className="hidden sm:inline">Wide</span>
+                    </>
+                  )}
+                </button>
               </div>
             )}
           </motion.div>

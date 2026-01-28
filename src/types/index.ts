@@ -113,3 +113,22 @@ export interface FullTextSection {
 export interface FullTextChapter extends Chapter {
   content: FullTextSection[]
 }
+
+export interface FeynmanSection {
+  id: string
+  title: string
+  type: 'text' | 'interactive' | 'animation'
+  content: string
+  component?: string
+  data?: unknown
+}
+
+export interface FeynmanChapter {
+  id: string
+  title: string
+  description: string
+  part: string
+  partTitle: string
+  order: number
+  content: FeynmanSection[]
+}
