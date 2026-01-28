@@ -1307,6 +1307,206 @@ The skein relation lets you reduce any knot to simpler ones. Starting from the u
   exercises: [],
 }
 
+// III.47 L-Functions - Full Text
+export const lFunctionsFullText: FullTextChapter = {
+  id: "l-functions",
+  title: "L-Functions",
+  description: "Packaging sequences of numbers into rich analytic objects.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 47,
+  content: [
+    {
+      id: "what-are-l-functions",
+      title: "What Are L-Functions?",
+      type: "text",
+      content: "Encoding sequences into analytic functions.",
+      fullText: `Given a sequence a₁, a₂, a₃, ..., we can package it into a Dirichlet series:
+
+L(s) = a₁/1^s + a₂/2^s + a₃/3^s + ... = Σ(n≥1) aₙ/n^s
+
+This converges for sufficiently large s and can be a very rich object even if the original sequence is simple.
+
+**The Riemann Zeta Function**
+
+The prototypical example is when aₙ = 1 for all n:
+
+ζ(s) = 1 + 1/2^s + 1/3^s + 1/4^s + ...
+
+This is the famous Riemann zeta function. It converges when s > 1 and Euler showed:
+- ζ(2) = π²/6
+- ζ(4) = π⁴/90
+- ζ(12) = 691π¹²/638512875
+
+**What Makes a "Good" L-Function?**
+
+Not every Dirichlet series deserves to be called an L-function. Good L-functions typically have:
+
+1. **Euler product**: An infinite product over primes
+   ζ(s) = Π_p (1 - p^(-s))^(-1)
+
+2. **Analytic continuation**: Can be extended to almost all of ℂ
+
+3. **Functional equation**: Relates L(s) to L(k-s) for some k
+
+**The Riemann Hypothesis**
+
+The most famous open problem about L-functions: all non-trivial zeros of ζ(s) have real part equal to 1/2.
+
+This has implications for the distribution of prime numbers. If true, it gives the best possible error term for the prime number theorem.
+
+**Applications**
+
+L-functions connect:
+- Number theory (primes, arithmetic progressions)
+- Algebra (Galois representations)
+- Analysis (complex function theory)
+- Geometry (elliptic curves, modular forms)
+
+They are central to the Langlands program, which seeks to unify different areas of mathematics.`,
+      annotations: [
+        createAnnotation("lfunc-1", "visual", "An L-function is like a zip file for a sequence: it compresses infinitely many numbers into one function. Just as a zip file preserves all data, the L-function encodes everything about the sequence."),
+        createAnnotation("lfunc-2", "analogy", "The Euler product is like prime factorization for functions. Just as every integer factors uniquely into primes, every L-function factors into 'prime' components indexed by primes."),
+        createAnnotation("lfunc-3", "deep-dive", "The Riemann Hypothesis is worth $1 million (Clay Millennium Prize). It's been checked for the first 10 trillion zeros, but a proof remains elusive. It says all non-trivial zeros line up on the 'critical line' Re(s) = 1/2."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.54 Matroids - Full Text
+export const matroidsFullText: FullTextChapter = {
+  id: "matroids",
+  title: "Matroids",
+  description: "Abstract structures generalizing the notion of linear independence.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 54,
+  content: [
+    {
+      id: "what-are-matroids",
+      title: "What Are Matroids?",
+      type: "text",
+      content: "Generalizing linear independence.",
+      fullText: `A matroid is a structure that abstracts and generalizes the notion of linear independence in vector spaces. It was introduced by Hassler Whitney in 1935.
+
+**Definition**
+
+A matroid M on a ground set E is a collection of subsets of E called independent sets, satisfying:
+
+1. **The empty set is independent**: ∅ is in the collection
+
+2. **Hereditary property**: If A is independent and B ⊆ A, then B is independent
+
+3. **Exchange property**: If A and B are independent with |A| < |B|, then there exists x in B\A such that A ∪ {x} is independent
+
+**Examples**
+
+**Vector Matroid**: Given a matrix, the independent sets are the linearly independent sets of columns.
+
+**Graphic Matroid**: Given a graph, the independent sets are the forests (acyclic subgraphs). The circuits are the cycles.
+
+**Uniform Matroid**: U_{k,n} has ground set of size n, and a set is independent if it has at most k elements.
+
+**Key Concepts**
+
+- **Bases**: Maximal independent sets. All bases have the same size (the rank).
+- **Circuits**: Minimal dependent sets.
+- **Rank**: The size of any basis.
+- **Closure**: The set of all elements that, when added to a set, create a dependency.
+
+**Why Matroids Matter**
+
+Matroids appear in:
+- **Graph theory**: Spanning trees, network flows
+- **Linear algebra**: Vector spaces over any field
+- **Combinatorics**: Greedy algorithms, optimization
+- **Geometry**: Arrangements of hyperplanes
+
+**Optimization**
+
+Matroids are important because many optimization problems can be solved efficiently on matroids using greedy algorithms. If you can phrase your problem as a matroid, you can often find the optimal solution easily.`,
+      annotations: [
+        createAnnotation("matroid-1", "visual", "Think of a matroid as a board game: the ground set is your pieces, and independent sets are legal configurations. The rules (hereditary and exchange) ensure you can always build up to a maximal configuration."),
+        createAnnotation("matroid-2", "analogy", "In a graphic matroid, forests are independent and cycles are dependent. Just as you can't add an edge to a spanning tree without creating a cycle, you can't add an element to a basis without creating a dependency."),
+        createAnnotation("matroid-3", "deep-dive", "Matroid theory unifies results from graph theory, linear algebra, and combinatorics. A theorem proved for matroids automatically applies to all these areas simultaneously!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.71 Probability Distributions - Full Text
+export const probabilityDistributionsFullText: FullTextChapter = {
+  id: "probability-distributions",
+  title: "Probability Distributions",
+  description: "Mathematical models of random phenomena.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 71,
+  content: [
+    {
+      id: "prob-dist-basics",
+      title: "Discrete Distributions",
+      type: "text",
+      content: "Modeling random outcomes with probability.",
+      fullText: `When we toss a coin, we don't know if it will land heads or tails. But if tossed many times, the proportion of heads is very likely to be close to 1/2.
+
+**Sample Spaces**
+
+A probability distribution assigns probabilities to outcomes in a sample space Ω.
+
+For a fair coin: Ω = {H, T} with P(H) = P(T) = 1/2
+
+**Bernoulli Distribution**
+
+Models a single trial with two outcomes (success/failure):
+- P(X = 1) = p (success)
+- P(X = 0) = 1 - p (failure)
+
+**Binomial Distribution**
+
+Models the number of successes in n independent Bernoulli trials:
+
+P(X = k) = (n choose k) p^k (1-p)^(n-k)
+
+For n = 5, p = 1/2: P(exactly 2 heads) = (5 choose 2)(1/2)^5 = 10/32
+
+**Geometric Distribution**
+
+Models the number of trials until first success:
+
+P(X = k) = (1-p)^(k-1) p
+
+The expected number of coin tosses to get heads is 2 (when p = 1/2).
+
+**Poisson Distribution**
+
+Models rare events occurring at constant rate λ:
+
+P(X = k) = e^(-λ) λ^k / k!
+
+Used for: radioactive decay, call centers, traffic accidents.
+
+**Continuous Distributions**
+
+**Normal (Gaussian) Distribution**
+
+The bell curve: f(x) = (1/√(2πσ²)) e^(-(x-μ)²/(2σ²))
+
+Models: measurement errors, heights, test scores, Brownian motion.
+
+**Central Limit Theorem**: Averages of independent random variables tend toward normal distribution, regardless of the original distribution. This explains why the normal distribution appears everywhere!`,
+      annotations: [
+        createAnnotation("prob-1", "visual", "The binomial distribution for coin tosses: as n grows, the distribution (number of heads) becomes increasingly bell-shaped. This illustrates the Central Limit Theorem—the binomial approaches the normal distribution."),
+        createAnnotation("prob-2", "analogy", "Probability distributions are like recipes for randomness. The Bernoulli is like flipping a biased coin once. The binomial is like flipping it n times and counting heads. The Poisson is like waiting for rare events."),
+        createAnnotation("prob-3", "deep-dive", "The Central Limit Theorem explains why the normal distribution appears everywhere—from measurement errors to stock prices to biological traits. It's a mathematical law of nature: averages converge to normal, regardless of the underlying distribution!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // III.41 Irrational and Transcendental Numbers - Full Text
 export const irrationalNumbersFullText: FullTextChapter = {
   id: "irrational-numbers",
@@ -1719,7 +1919,10 @@ export const fullTextChapters: FullTextChapter[] = [
   compactnessFullText,
   fourierTransformFullText,
   gammaFunctionFullText,
+  lFunctionsFullText,
+  matroidsFullText,
   knotPolynomialsFullText,
+  probabilityDistributionsFullText,
   irrationalNumbersFullText,
   lieTheoryFullText,
 ]
