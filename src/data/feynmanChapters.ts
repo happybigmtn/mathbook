@@ -3507,3 +3507,13 @@ export function getFullTextChapterById(id: string): FullTextChapter | undefined 
 export function hasFullText(id: string): boolean {
   return fullTextChapters.some((chapter) => chapter.id === id)
 }
+
+// Helper to get Feynman chapter by ID
+export function getFeynmanChapterById(id: string): FullTextChapter | undefined {
+  return fullTextChapters.find((chapter) => chapter.id === id)
+}
+
+// Helper to check if a chapter has Feynman content
+export function hasFeynman(id: string): boolean {
+  return fullTextChapters.some((chapter) => chapter.id === id)
+}

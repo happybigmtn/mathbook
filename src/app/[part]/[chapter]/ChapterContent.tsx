@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowLeft, ArrowRight, CheckCircle, Trophy, FileText, StickyNote, ChevronLeft } from "lucide-react"
 import { getChapterById, getChaptersByPart } from "@/data/chapters"
 import { getFullTextChapterById, hasFullText } from "@/data/fullTextChapters"
+
 import {
   CommutativePropertyDemo,
   FunctionVisualizer,
@@ -55,8 +56,9 @@ interface ChapterContentProps {
 export default function ChapterContent({ partId, chapterId }: ChapterContentProps) {
   const chapter = getChapterById(chapterId)
   const fullTextChapter = getFullTextChapterById(chapterId)
+  
   const hasFullTextContent = hasFullText(chapterId)
-  const [showFullText, setShowFullText] = useState(true)
+  const [showFullText, setShowFullText] = useState(false)
   const { userState } = useProgress()
 
   if (!chapter) {
@@ -82,9 +84,87 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
   const totalExercises = chapter.exercises.length
   const progressPercentage = totalExercises > 0 ? (completedExercises / totalExercises) * 100 : 0
 
-  // Render full text content with annotations
+  // Render verbatim book text (Full Text tab)
   const renderFullTextContent = () => {
-    if (!fullTextChapter) return null
+    if (!fullTextChapter) return (
+      <div className="text-center py-12">
+        <p className="text-muted-foreground">Full text content coming soon.</p>
+      </div>
+    )
+
+    return (
+      <div className="space-y-0">
+        {fullTextChapter.content.map((section, index) => (
+          <motion.div
+            key={section.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            {section.type === "text" && section.fullText ? (
+              <section className="py-8 border-b border-border/30 last:border-b-0">
+                <div className="mb-6">
+                  <span className="meta-text mb-2 block">
+                    Section {index + 1}
+                  </span>
+                  <h2 className="text-2xl font-serif font-medium text-foreground/90">{section.title}</h2>
+                </div>
+                <div className="prose-content">
+                  {section.fullText.split("\n\n").map((paragraph, pIndex) => {
+                    // Check for headers/subsections (lines starting with **)
+                    if (paragraph.startsWith("**") && paragraph.endsWith("**") && !paragraph.slice(2, -2).includes("**")) {
+                      const headerText = paragraph.slice(2, -2)
+                      return (
+                        <h3 key={pIndex} className="text-xl font-semibold text-foreground/90 mt-8 mb-4">
+                          {headerText}
+                        </h3>
+                      )
+                    }
+                    
+                    // Regular paragraph with markdown-like formatting
+                    let formattedText = paragraph
+                      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+                      .replace(/_(.*?)_/g, "<em>$1</em>")
+                    
+                    return (
+                      <p
+                        key={pIndex}
+                        className="mb-6 leading-relaxed text-muted-foreground text-lg"
+                        dangerouslySetInnerHTML={{ __html: formattedText }}
+                      />
+                    )
+                  })}
+                </div>
+              </section>
+            ) : section.type === "interactive" && section.component ? (
+              <section className="py-8 border-b border-border/30 last:border-b-0">
+                <div className="mb-6">
+                  <span className="meta-text mb-2 block">
+                    Section {index + 1}
+                  </span>
+                  <h2 className="text-2xl font-serif font-medium text-foreground/90">{section.title}</h2>
+                </div>
+                <div className="w-full">
+                  {(() => {
+                    const Component = componentMap[section.component]
+                    return Component ? <Component /> : null
+                  })()}
+                </div>
+              </section>
+            ) : null}
+          </motion.div>
+        ))}
+      </div>
+    )
+  }
+
+  // Render Feynman content (detailed explanations with visualizations)
+  const renderFeynmanContent = () => {
+    if (!fullTextChapter) return (
+      <div className="text-center py-12">
+        <p className="text-muted-foreground">Feynman explanation coming soon.</p>
+      </div>
+    )
 
     return (
       <div className="space-y-0">
@@ -103,9 +183,8 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                 content={
                   <div className="prose-content">
                     {section.fullText.split("\n\n").map((paragraph, pIndex) => {
-                      // Check for headers/subsections (lines starting with **)
+                      // Check for headers/subsections
                       if (paragraph.startsWith("**") && paragraph.endsWith("**") && !paragraph.slice(2, -2).includes("**")) {
-                        // This is a header like "**The Path to Rigor**"
                         const headerText = paragraph.slice(2, -2)
                         return (
                           <h3 key={pIndex} className="text-xl font-semibold text-foreground/90 mt-8 mb-4">
@@ -148,43 +227,6 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                 </FeynmanLayout>
               </section>
             ) : null}
-          </motion.div>
-        ))}
-      </div>
-    )
-  }
-
-  // Render summary content (original format)
-  const renderSummaryContent = () => {
-    return (
-      <div className="space-y-8">
-        {chapter.content.map((section, index) => (
-          <motion.div
-            key={section.id}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-          >
-            <h2 className="subsection-title">{section.title}</h2>
-
-            {section.type === "text" && (
-              <div className="prose-content">
-                {section.content.split("\n\n").map((paragraph, i) => (
-                  <p key={i} className="mb-6 leading-relaxed text-muted-foreground whitespace-pre-line">
-                    {paragraph}
-                  </p>
-                ))}
-              </div>
-            )}
-
-            {section.type === "interactive" && section.component && (
-              <div className="mt-6">
-                {(() => {
-                  const Component = componentMap[section.component]
-                  return Component ? <Component /> : null
-                })()}
-              </div>
-            )}
           </motion.div>
         ))}
       </div>
@@ -277,7 +319,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                                }`}
                   >
                     <StickyNote className="w-4 h-4" />
-                    Summary
+                    Feynman
                   </button>
                   <button
                     onClick={() => setShowFullText(true)}
@@ -297,7 +339,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
 
           {/* Content */}
           <div className="prose-content">
-            {showFullText && hasFullTextContent ? renderFullTextContent() : renderSummaryContent()}
+            {showFullText ? renderFullTextContent() : renderFeynmanContent()}
           </div>
 
           {/* End marker */}
