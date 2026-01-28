@@ -2191,6 +2191,17 @@ Note the insistence on finiteness: finiteness in writing the algorithm and finit
         createAnnotation("algo-3", "deep-dive", "The word 'calculus' comes from Latin 'calculus' meaning small stone—ancient mathematicians literally calculated by moving pebbles on counting boards."),
       ],
     },
+    {
+      id: "sorting-algorithms",
+      title: "Visualizing Algorithms: Sorting",
+      type: "interactive",
+      content: "Interactive visualization of sorting algorithms",
+      component: "AlgorithmVisualizer",
+      annotations: [
+        createAnnotation("sort-1", "visual", "Watch how Bubble Sort, Selection Sort, and Insertion Sort work step by step. Each algorithm approaches the problem differently but achieves the same result."),
+        createAnnotation("sort-2", "note", "All three algorithms shown have O(n²) complexity in the worst case, meaning they slow down dramatically as the list grows. This is why we use faster algorithms like QuickSort or MergeSort for large datasets."),
+      ],
+    },
   ],
   exercises: [],
 }
