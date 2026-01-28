@@ -1676,6 +1676,216 @@ Every Lie group has an associated Lie algebra, which is the tangent space at the
   exercises: [],
 }
 
+// III.78 Ricci Flow - Full Text
+export const ricciFlowFullText: FullTextChapter = {
+  id: "ricci-flow",
+  title: "Ricci Flow",
+  description: "Smoothing out geometry to understand topology.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 78,
+  content: [
+    {
+      id: "ricci-flow-intro",
+      title: "Smoothing Geometry",
+      type: "text",
+      content: "Using heat equation techniques to simplify manifolds.",
+      fullText: `Ricci flow is a technique that takes an arbitrary Riemannian manifold and smooths out its geometry to make it look more symmetric. It has proven to be a very useful tool in understanding topology.
+
+**Two-Dimensional Case (Surfaces)**
+
+For a surface, the metric determines distance, angle, and area. The scalar curvature R(x) at a point measures how the area of a small disk deviates from the Euclidean value πr²:
+
+- **Positive curvature**: Area < πr² (like a sphere)
+- **Negative curvature**: Area > πr² (like a saddle)
+- **Zero curvature**: Area = πr² (like a plane)
+
+**The Ricci Flow Equation**
+
+The Ricci flow evolves the metric g according to:
+
+∂g/∂t = -2 Ric(g)
+
+where Ric(g) is the Ricci curvature tensor. This is like a heat equation for geometry—curvature "flows" from regions of high curvature to regions of low curvature.
+
+**What Happens Under Ricci Flow**
+
+- **Sphere**: Shrinks to a point in finite time
+- **Torus**: Converges to flat metric
+- **Higher genus surfaces**: Expands and converges to metric of constant negative curvature
+
+**The Poincaré Conjecture**
+
+Grigori Perelman used Ricci flow (with surgery to handle singularities) to prove the Poincaré Conjecture in 2003:
+
+Every simply connected, closed 3-manifold is homeomorphic to the 3-sphere.
+
+This was one of the Millennium Prize Problems. Perelman declined the $1 million prize and the Fields Medal.
+
+**Key Insight**
+
+Ricci flow tends to make manifolds more uniform. By understanding what happens as the flow evolves (and performing "surgery" when singularities form), we can classify manifolds.`,
+      annotations: [
+        createAnnotation("ricci-1", "visual", "Ricci flow is like heat flowing through a material: high-curvature regions (like sharp peaks) smooth out over time, distributing curvature more evenly across the manifold."),
+        createAnnotation("ricci-2", "analogy", "Imagine a lumpy, irregular ball of clay. Ricci flow is like rotating the ball and letting centrifugal force smooth out the lumps. Eventually, it becomes perfectly spherical—or reveals the underlying topology."),
+        createAnnotation("ricci-3", "deep-dive", "Perelman's proof required 'surgery'—cutting out singularities before they form and capping them off. This was the key insight that allowed Ricci flow to succeed where other methods failed."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.83 The Schrödinger Equation - Full Text
+export const schrodingerEquationFullText: FullTextChapter = {
+  id: "schrodinger-equation",
+  title: "The Schrödinger Equation",
+  description: "The fundamental equation of quantum mechanics.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 83,
+  content: [
+    {
+      id: "schrodinger-basics",
+      title: "Quantum Dynamics",
+      type: "text",
+      content: "How quantum systems evolve over time.",
+      fullText: `The Schrödinger equation is the most fundamental equation in non-relativistic quantum mechanics, playing the same role as Newton's laws in classical mechanics.
+
+**Classical vs. Quantum**
+
+In classical mechanics, a particle has definite position q(t) and momentum p(t). The state is a point in phase space.
+
+In quantum mechanics, the state is described by a wave function ψ(t,x)—a complex-valued function evolving over time.
+
+**The Equation**
+
+iℏ ∂ψ/∂t = Ĥψ
+
+where:
+- i is the imaginary unit
+- ℏ is Planck's constant (reduced)
+- Ĥ is the Hamiltonian operator
+- ψ is the wave function
+
+**Hamiltonian Operator**
+
+For a particle of mass m in potential V(x):
+
+Ĥ = -ℏ²/2m ∇² + V(x)
+
+The first term is kinetic energy, the second is potential energy.
+
+**Key Features**
+
+**Superposition**: If ψ₁ and ψ₂ are solutions, so is aψ₁ + bψ₂ (for complex numbers a, b).
+
+**Probability**: |ψ(t,x)|² gives the probability density of finding the particle at position x at time t.
+
+**Uncertainty**: Position and momentum cannot both be known precisely. This is a mathematical property of the Fourier transform underlying the theory.
+
+**Stationary States**
+
+If ψ(t,x) = e^(-iEt/ℏ) φ(x), we get the time-independent Schrödinger equation:
+
+Ĥφ = Eφ
+
+These are eigenvalue problems. The allowed energies E are quantized!
+
+**Applications**
+
+- Atomic structure (hydrogen atom)
+- Chemical bonding
+- Solid state physics (semiconductors)
+- Quantum computing
+- Spectral analysis`,
+      annotations: [
+        createAnnotation("schrod-1", "visual", "The wave function ψ is like a wave spread through space. The Schrödinger equation tells us how this wave evolves—like ripples on a pond, but governed by quantum rules rather than classical mechanics."),
+        createAnnotation("schrod-2", "analogy", "In classical physics, a particle has a definite location (like a ball). In quantum mechanics, it's like a fog—spread out with different densities (probability). The Schrödinger equation tells the fog how to flow."),
+        createAnnotation("schrod-3", "deep-dive", "The imaginary unit 'i' in the equation is crucial—it makes the evolution unitary (probability-preserving). Without it, probabilities wouldn't sum to 1, and quantum mechanics wouldn't work!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.84 The Simplex Algorithm - Full Text
+export const simplexAlgorithmFullText: FullTextChapter = {
+  id: "simplex-algorithm",
+  title: "The Simplex Algorithm",
+  description: "The preeminent tool for solving linear programming problems.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 84,
+  content: [
+    {
+      id: "linear-programming",
+      title: "Linear Programming",
+      type: "text",
+      content: "Optimizing linear functions subject to linear constraints.",
+      fullText: `The simplex algorithm is the preeminent tool for solving linear programming problems—mathematical problems arising in business, science, and technology.
+
+**What is Linear Programming?**
+
+We want to maximize (or minimize) a linear function subject to linear constraints.
+
+**Example: The Diet Problem**
+
+Find quantities of foods to satisfy minimum daily nutrient requirements at least cost. This was posed by the U.S. Air Force in 1947.
+
+**The Setup**
+
+Given:
+- Vector b ∈ ℝᵐ (constraint limits)
+- Vector c ∈ ℝⁿ (objective coefficients)
+- Matrix A (m × n constraint matrix)
+
+Find nonnegative x₁, ..., xₙ to:
+- **Maximize**: c₁x₁ + ... + cₙxₙ
+- **Subject to**: aᵢ₁x₁ + ... + aᵢₙxₙ ≤ bᵢ for i = 1, ..., m
+- **And**: xⱼ ≥ 0 for all j
+
+**The Geometry**
+
+The constraints define a feasible region—a convex polytope in ℝⁿ. The optimal solution always occurs at a vertex (corner point) of this region.
+
+**Slack Variables**
+
+We convert inequalities to equalities by adding slack variables:
+
+aᵢ₁x₁ + ... + aᵢₙxₙ + sᵢ = bᵢ
+
+Now we have a system of equations with more variables than equations.
+
+**The Simplex Method**
+
+1. Start at a basic feasible solution (vertex)
+2. Check if current solution is optimal
+3. If not, move to an adjacent vertex that improves the objective
+4. Repeat until optimal
+
+The algorithm moves along edges of the polytope from vertex to vertex, improving the objective at each step.
+
+**Efficiency**
+
+In practice, the simplex method is remarkably fast, even though worst-case complexity is exponential. Interior point methods offer polynomial-time alternatives for very large problems.
+
+**Applications**
+
+- Resource allocation
+- Portfolio optimization
+- Production planning
+- Network flows
+- Game theory`,
+      annotations: [
+        createAnnotation("simplex-1", "visual", "The simplex algorithm walks along the edges of a high-dimensional polytope, moving from corner to corner like a mountaineer ascending peaks. Each vertex represents a potential solution; edges represent valid moves."),
+        createAnnotation("simplex-2", "analogy", "Linear programming is like packing a knapsack: you want to maximize value (objective) subject to weight limits (constraints), and you can only take whole items or fractions of them."),
+        createAnnotation("simplex-3", "deep-dive", "Despite exponential worst-case behavior, the simplex method works incredibly well in practice. Randomized polynomial-time variants exist, and interior-point methods provide theoretical guarantees for large-scale problems."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // III.51 Pi - Full Text
 export const piFullText: FullTextChapter = {
   id: "pi",
@@ -1969,6 +2179,9 @@ export const fullTextChapters: FullTextChapter[] = [
   probabilityDistributionsFullText,
   irrationalNumbersFullText,
   lieTheoryFullText,
+  ricciFlowFullText,
+  schrodingerEquationFullText,
+  simplexAlgorithmFullText,
 ]
 
 // Helper to get full text chapter by ID
