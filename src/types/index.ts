@@ -13,9 +13,10 @@ export interface Chapter {
 export interface Section {
   id: string
   title: string
-  type: 'text' | 'interactive' | 'animation' | 'exercise'
+  type: 'text' | 'interactive' | 'animation' | 'exercise' | 'manim'
   content: string
   component?: string
+  animation?: string
   data?: unknown
 }
 
@@ -102,11 +103,12 @@ export interface Annotation {
 export interface FullTextSection {
   id: string
   title: string
-  type: 'text' | 'interactive' | 'animation' | 'exercise'
+  type: 'text' | 'interactive' | 'animation' | 'exercise' | 'manim'
   content: string
   fullText?: string
   annotations?: Annotation[]
   component?: string
+  animation?: string
   data?: unknown
 }
 

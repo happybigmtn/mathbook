@@ -33,6 +33,7 @@ import {
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
 import { FeynmanLayout, AnnotationsList } from "@/components/FeynmanLayout"
+import { ManimVideoPlayer } from "@/components/ManimVideoPlayer"
 import { useState } from "react"
 
 // Component to render text with KaTeX math support
@@ -230,6 +231,26 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                   <AnnotationsList annotations={section.annotations} />
                 )}
               </section>
+            ) : section.type === "manim" && section.animation ? (
+              <section className="py-8 border-b border-border/30 last:border-b-0">
+                <div className="mb-6">
+                  <span className="meta-text mb-2 block">
+                    Section {index + 1}
+                  </span>
+                  <h2 className="text-2xl font-serif font-medium text-foreground/90">{section.title}</h2>
+                </div>
+                <div className="w-full">
+                  <ManimVideoPlayer 
+                    src={`/animations/${section.animation}.webm`}
+                    title={section.title}
+                    description={section.content}
+                  />
+                </div>
+                {/* Annotations for this section */}
+                {section.annotations && section.annotations.length > 0 && (
+                  <AnnotationsList annotations={section.annotations} />
+                )}
+              </section>
             ) : null}
           </motion.div>
         ))}
@@ -303,6 +324,22 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                     const Component = componentMap[section.component]
                     return Component ? <Component /> : null
                   })()}
+                </div>
+              </section>
+            ) : section.type === "manim" && section.animation ? (
+              <section className="py-8 border-b border-border/30 last:border-b-0">
+                <div className="mb-6">
+                  <span className="meta-text mb-2 block">
+                    Section {index + 1}
+                  </span>
+                  <h2 className="text-2xl font-serif font-medium text-foreground/90">{section.title}</h2>
+                </div>
+                <div className="w-full">
+                  <ManimVideoPlayer 
+                    src={`/animations/${section.animation}.webm`}
+                    title={section.title}
+                    description={section.content}
+                  />
                 </div>
               </section>
             ) : null}
