@@ -5,7 +5,6 @@ import Link from "next/link"
 import { ArrowLeft, ArrowRight, CheckCircle, Trophy, FileText, StickyNote, ChevronLeft } from "lucide-react"
 import { getChapterById, getChaptersByPart } from "@/data/chapters"
 import { getFullTextChapterById, hasFullText } from "@/data/fullTextChapters"
-import { getFeynmanChapterById, hasFeynman } from "@/data/feynmanChapters"
 
 import {
   CommutativePropertyDemo,
@@ -24,6 +23,7 @@ import {
   LimitsAndContinuityVisualizer,
   NumberSystemsVisualizer,
   GroupTheoryVisualizer,
+  AlgorithmVisualizer,
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
@@ -47,6 +47,7 @@ const componentMap: Record<string, React.ComponentType> = {
   LimitsAndContinuityVisualizer,
   NumberSystemsVisualizer,
   GroupTheoryVisualizer,
+  AlgorithmVisualizer,
 }
 
 interface ChapterContentProps {
@@ -57,10 +58,8 @@ interface ChapterContentProps {
 export default function ChapterContent({ partId, chapterId }: ChapterContentProps) {
   const chapter = getChapterById(chapterId)
   const fullTextChapter = getFullTextChapterById(chapterId)
-  const feynmanChapter = getFeynmanChapterById(chapterId)
   
   const hasFullTextContent = hasFullText(chapterId)
-  const hasFeynmanContent = hasFeynman(chapterId)
   const [showFullText, setShowFullText] = useState(false)
   const { userState } = useProgress()
 
