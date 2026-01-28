@@ -2251,6 +2251,17 @@ This definition removes all ambiguity:
         createAnnotation("calculus-3", "deep-dive", "Weierstrass's ε-δ definition was shocking in its time—no pictures, no intuition, just pure logical precision. It transformed analysis from an art to a rigorous science."),
       ],
     },
+    {
+      id: "epsilon-delta-visualization",
+      title: "The ε-δ Definition in Action",
+      type: "interactive",
+      content: "Interactive visualization of the epsilon-delta definition of limits",
+      component: "LimitsAndContinuityVisualizer",
+      annotations: [
+        createAnnotation("epsilon-delta-1", "visual", "Adjust ε (epsilon) to see how close f(x) must be to the limit L. Then watch how the corresponding δ (delta) ensures that when x is within δ of a, f(x) is within ε of L."),
+        createAnnotation("epsilon-delta-2", "note", "The blue band shows the ε-tolerance around L. The green band shows the δ-precision around a. The definition guarantees that the green band always maps into the blue band."),
+      ],
+    },
   ],
   exercises: [],
 }
