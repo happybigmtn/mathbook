@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle, Trophy, FileText, StickyNote } from "lucide-react"
+import { ArrowLeft, ArrowRight, CheckCircle, Trophy, FileText, StickyNote, ChevronLeft } from "lucide-react"
 import { getChapterById, getChaptersByPart } from "@/data/chapters"
 import { getFullTextChapterById, hasFullText } from "@/data/fullTextChapters"
 import {
@@ -17,7 +17,7 @@ import {
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
-import { FeynmanLayout, FullTextSection, Highlight, Definition, TheoremBox } from "@/components/FeynmanLayout"
+import { FeynmanLayout, FullTextSection } from "@/components/FeynmanLayout"
 import { useState } from "react"
 
 const componentMap: Record<string, React.ComponentType> = {
@@ -45,9 +45,9 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
 
   if (!chapter) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex items-center justify-center px-4">
         <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Chapter not found</h1>
+          <h1 className="text-2xl font-serif font-medium mb-4">Chapter not found</h1>
           <Link href="/" className="btn-primary">
             Go Home
           </Link>
@@ -85,7 +85,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                 sectionNumber={index + 1}
                 annotations={section.annotations}
                 content={
-                  <div className="space-y-4">
+                  <div className="prose-content">
                     {section.fullText.split("\n\n").map((paragraph, pIndex) => {
                       // Check for special formatting
                       if (paragraph.startsWith("**") && paragraph.includes("**")) {
@@ -93,9 +93,10 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                         if (paragraph.toLowerCase().includes("definition")) {
                           const content = paragraph.replace(/\*\*/g, "")
                           return (
-                            <Definition key={pIndex} term="">
-                              {content}
-                            </Definition>
+                            <div key={pIndex} className="my-6 p-4 bg-muted/50 border-l-2 border-primary rounded-r-sm">
+                              <p className="text-sm font-medium text-foreground/90 mb-1">Definition</p>
+                              <p className="text-muted-foreground">{content}</p>
+                            </div>
                           )
                         }
                       }
@@ -108,7 +109,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                       return (
                         <p
                           key={pIndex}
-                          className="mb-4 leading-relaxed text-foreground/90"
+                          className="mb-6 leading-relaxed text-muted-foreground text-lg"
                           dangerouslySetInnerHTML={{ __html: formattedText }}
                         />
                       )
@@ -117,12 +118,12 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                 }
               />
             ) : section.type === "interactive" && section.component ? (
-              <section className="py-8 border-b border-border last:border-b-0">
+              <section className="py-8 border-b border-border/30 last:border-b-0">
                 <div className="mb-6">
-                  <span className="text-sm text-muted-foreground font-mono mb-2 block">
+                  <span className="meta-text mb-2 block">
                     Section {index + 1}
                   </span>
-                  <h2 className="text-2xl font-bold">{section.title}</h2>
+                  <h2 className="text-2xl font-serif font-medium text-foreground/90">{section.title}</h2>
                 </div>
                 <FeynmanLayout annotations={section.annotations}>
                   <div className="w-full">
@@ -154,9 +155,9 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
             <h2 className="subsection-title">{section.title}</h2>
 
             {section.type === "text" && (
-              <div className="prose prose-invert max-w-none">
+              <div className="prose-content">
                 {section.content.split("\n\n").map((paragraph, i) => (
-                  <p key={i} className="body-text mb-4 whitespace-pre-line">
+                  <p key={i} className="mb-6 leading-relaxed text-muted-foreground whitespace-pre-line">
                     {paragraph}
                   </p>
                 ))}
@@ -164,7 +165,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
             )}
 
             {section.type === "interactive" && section.component && (
-              <div className="mt-4">
+              <div className="mt-6">
                 {(() => {
                   const Component = componentMap[section.component]
                   return Component ? <Component /> : null
@@ -178,99 +179,119 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
   }
 
   return (
-    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-      <div className={`mx-auto transition-all duration-300 ${showFullText && hasFullTextContent ? 'max-w-7xl' : 'max-w-4xl'}`}>
+    <div className="min-h-screen py-8 md:py-12 px-4 sm:px-6 lg:px-8">
+      <div className={`mx-auto transition-all duration-300 ${showFullText && hasFullTextContent ? 'max-w-6xl' : 'max-w-3xl'}`}>
+        
         {/* Breadcrumb */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="flex items-center gap-2 text-sm text-muted-foreground mb-6"
+          className="flex items-center gap-2 text-sm text-muted-foreground mb-8"
         >
           <Link href="/" className="hover:text-foreground transition-colors">
             Home
           </Link>
-          <span>/</span>
+          <span className="text-border">/</span>
           <Link href={`/${partId}`} className="hover:text-foreground transition-colors">
             {chapter.partTitle}
           </Link>
-          <span>/</span>
-          <span className="text-foreground">{chapter.title}</span>
+          <span className="text-border">/</span>
+          <span className="text-foreground/80">{chapter.title}</span>
         </motion.div>
 
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="mb-8"
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-math-blue to-math-purple
-                            flex items-center justify-center">
-              <BookOpen className="w-5 h-5 text-white" />
-            </div>
-            <div>
-              <p className="text-sm text-muted-foreground">{chapter.partTitle}</p>
-              <h1 className="text-3xl md:text-4xl font-bold">{chapter.title}</h1>
-            </div>
-          </div>
-          <p className="text-lg text-muted-foreground">{chapter.description}</p>
-
-          {/* Progress bar */}
-          {totalExercises > 0 && (
-            <div className="mt-4 flex items-center gap-4">
-              <div className="flex-1 progress-bar">
-                <div
-                  className="progress-fill"
-                  style={{ width: `${progressPercentage}%` }}
-                />
+        {/* Main Content Card */}
+        <div className="content-card">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mb-10 pb-8 border-b border-border/30"
+          >
+            <div className="text-center">
+              <div className="meta-text mb-4">
+                {chapter.partTitle}
               </div>
-              <div className="flex items-center gap-2 text-sm">
-                <Trophy className="w-4 h-4 text-yellow-500" />
-                <span>
-                  {completedExercises}/{totalExercises} exercises
-                </span>
-              </div>
-            </div>
-          )}
-
-          {/* View Toggle */}
-          {hasFullTextContent && (
-            <div className="mt-6 flex items-center gap-4">
-              <div className="flex items-center gap-2 bg-card rounded-lg p-1 border border-border">
-                <button
-                  onClick={() => setShowFullText(false)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all ${
-                    !showFullText 
-                      ? 'bg-math-blue text-white shadow-md' 
-                      : 'text-muted-foreground hover:text-foreground'
-                  }`}
-                >
-                  <StickyNote className="w-4 h-4" />
-                  <span className="text-sm font-medium">Summary</span>
-                </button>
-                <button
-                  onClick={() => setShowFullText(true)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all ${
-                    showFullText 
-                      ? 'bg-math-blue text-white shadow-md' 
-                      : 'text-muted-foreground hover:text-foreground'
-                  }`}
-                >
-                  <FileText className="w-4 h-4" />
-                  <span className="text-sm font-medium">Full Text</span>
-                </button>
-              </div>
-              {showFullText && (
-                <span className="text-sm text-muted-foreground">
-                  Feynman-style annotations enabled
-                </span>
+              
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-medium text-foreground/90 mb-4">
+                {chapter.title}
+              </h1>
+              
+              {chapter.description && (
+                <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                  {chapter.description}
+                </p>
               )}
-            </div>
-          )}
-        </motion.div>
 
-        {/* Content */}
-        {showFullText && hasFullTextContent ? renderFullTextContent() : renderSummaryContent()}
+              <div className="mt-6 flex items-center justify-center gap-4 text-sm text-muted-foreground">
+                <span className="font-mono text-xs">
+                  {chapter.content.length} sections
+                </span>
+                <span className="text-border">·</span>
+                <span className="font-mono text-xs">
+                  {chapter.exercises.length} exercises
+                </span>
+              </div>
+            </div>
+
+            {/* Progress bar */}
+            {totalExercises > 0 && (
+              <div className="mt-8 flex items-center gap-4 max-w-md mx-auto">
+                <div className="flex-1 progress-bar">
+                  <div
+                    className="progress-fill"
+                    style={{ width: `${progressPercentage}%` }}
+                  />
+                </div>
+                <div className="flex items-center gap-2 text-sm">
+                  <Trophy className="w-4 h-4 text-muted-foreground" />
+                  <span className="font-mono text-xs">
+                    {completedExercises}/{totalExercises}
+                  </span>
+                </div>
+              </div>
+            )}
+
+            {/* View Toggle */}
+            {hasFullTextContent && (
+              <div className="mt-8 flex items-center justify-center gap-4">
+                <div className="flex items-center gap-1 bg-muted rounded-sm p-1">
+                  <button
+                    onClick={() => setShowFullText(false)}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-sm transition-all text-sm
+                               ${!showFullText 
+                                 ? 'bg-card text-foreground shadow-sm' 
+                                 : 'text-muted-foreground hover:text-foreground'
+                               }`}
+                  >
+                    <StickyNote className="w-4 h-4" />
+                    Summary
+                  </button>
+                  <button
+                    onClick={() => setShowFullText(true)}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-sm transition-all text-sm
+                               ${showFullText 
+                                 ? 'bg-card text-foreground shadow-sm' 
+                                 : 'text-muted-foreground hover:text-foreground'
+                               }`}
+                  >
+                    <FileText className="w-4 h-4" />
+                    Full Text
+                  </button>
+                </div>
+              </div>
+            )}
+          </motion.div>
+
+          {/* Content */}
+          <div className="prose-content">
+            {showFullText && hasFullTextContent ? renderFullTextContent() : renderSummaryContent()}
+          </div>
+
+          {/* End marker */}
+          <div className="mt-12 pt-8 border-t border-border/30 text-center">
+            <span className="meta-text">╌╌ END ╌╌</span>
+          </div>
+        </div>
 
         {/* Exercises */}
         {chapter.exercises.length > 0 && (
@@ -278,24 +299,26 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="mt-12"
+            className="mt-8"
           >
-            <h2 className="subsection-title flex items-center gap-2">
-              <CheckCircle className="w-6 h-6 text-math-green" />
-              Exercises
-            </h2>
-            <p className="text-muted-foreground mb-6">
-              Test your understanding with these interactive exercises.
-            </p>
+            <div className="content-card">
+              <h2 className="subsection-title flex items-center gap-2 mb-6">
+                <CheckCircle className="w-5 h-5 text-muted-foreground" />
+                Exercises
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Test your understanding with these interactive exercises.
+              </p>
 
-            <div className="space-y-4">
-              {chapter.exercises.map((exercise) => (
-                <ExerciseCard
-                  key={exercise.id}
-                  exercise={exercise}
-                  chapterId={chapterId}
-                />
-              ))}
+              <div className="space-y-4">
+                {chapter.exercises.map((exercise) => (
+                  <ExerciseCard
+                    key={exercise.id}
+                    exercise={exercise}
+                    chapterId={chapterId}
+                  />
+                ))}
+              </div>
             </div>
           </motion.div>
         )}
@@ -305,15 +328,18 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="mt-12 pt-8 border-t border-border flex justify-between"
+          className="mt-8 flex flex-col sm:flex-row justify-between gap-4"
         >
           {prevChapter ? (
             <Link
               href={`/${partId}/${prevChapter.id}`}
               className="btn-secondary"
             >
-              <ArrowLeft className="w-4 h-4" />
-              {prevChapter.title}
+              <ChevronLeft className="w-4 h-4" />
+              <div className="flex flex-col items-start">
+                <span className="text-xs text-muted-foreground">Previous</span>
+                <span className="font-medium">{prevChapter.title}</span>
+              </div>
             </Link>
           ) : (
             <div />
@@ -321,10 +347,13 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
           {nextChapter ? (
             <Link
               href={`/${partId}/${nextChapter.id}`}
-              className="btn-primary"
+              className="btn-primary sm:flex-row-reverse"
             >
-              {nextChapter.title}
               <ArrowRight className="w-4 h-4" />
+              <div className="flex flex-col items-start sm:items-end">
+                <span className="text-xs text-muted-foreground">Next</span>
+                <span className="font-medium">{nextChapter.title}</span>
+              </div>
             </Link>
           ) : (
             <div />

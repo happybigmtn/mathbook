@@ -2,41 +2,31 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { BookOpen, ChevronRight } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import { getAllParts, getChaptersByPart } from "@/data/chapters"
 import { useProgress } from "@/components/ProgressProvider"
-
-const partColors: Record<string, string> = {
-  "part-01": "from-blue-500 to-cyan-500",
-  "part-02": "from-purple-500 to-pink-500",
-  "part-03": "from-orange-500 to-red-500",
-  "part-04": "from-green-500 to-emerald-500",
-  "part-05": "from-yellow-500 to-amber-500",
-  "part-06": "from-indigo-500 to-violet-500",
-  "part-07": "from-rose-500 to-pink-500",
-  "part-08": "from-teal-500 to-cyan-500",
-}
 
 export default function PartsPage() {
   const parts = getAllParts()
   const { userState } = useProgress()
 
   return (
-    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-12"
+          className="text-center mb-16"
         >
-          <h1 className="section-title">Table of Contents</h1>
-          <p className="body-text max-w-2xl mx-auto">
+          <p className="meta-text mb-4">Table of Contents</p>
+          <h1 className="section-title">Eight Parts</h1>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
             Explore all eight parts of The Princeton Companion to Mathematics.
             Track your progress as you learn.
           </p>
         </motion.div>
 
-        <div className="space-y-8">
+        <div className="space-y-4">
           {parts.map((part, index) => {
             const chapters = getChaptersByPart(part.id)
             const totalExercises = chapters.reduce(
@@ -57,21 +47,20 @@ export default function PartsPage() {
                 key={part.id}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.1 }}
+                transition={{ delay: index * 0.05 }}
               >
                 <Link href={`/${part.id}`}>
                   <div className="concept-card group">
                     <div className="flex items-start justify-between">
                       <div className="flex items-start gap-4">
-                        <div
-                          className={`w-14 h-14 rounded-xl bg-gradient-to-br ${partColors[part.id]} 
-                                      flex items-center justify-center flex-shrink-0
-                                      group-hover:scale-110 transition-transform`}
-                        >
-                          <BookOpen className="w-7 h-7 text-white" />
+                        <div className="flex-shrink-0">
+                          <span className="font-mono text-xs text-muted-foreground">
+                            Part {part.id.replace("part-0", "").replace("part-", "")}
+                          </span>
                         </div>
-                        <div>
-                          <h2 className="text-xl font-semibold mb-1 group-hover:text-primary transition-colors">
+                        <div className="flex-1">
+                          <h2 className="text-lg font-serif font-medium text-foreground/90 mb-1 
+                                          group-hover:text-primary transition-colors">
                             {part.title}
                           </h2>
                           <p className="text-sm text-muted-foreground mb-3">
@@ -79,21 +68,21 @@ export default function PartsPage() {
                           </p>
                           {totalExercises > 0 && (
                             <div className="flex items-center gap-3">
-                              <div className="w-32 progress-bar">
+                              <div className="w-24 h-1 bg-muted rounded-full overflow-hidden">
                                 <div
-                                  className="progress-fill"
+                                  className="h-full bg-foreground transition-all duration-500"
                                   style={{ width: `${progressPercentage}%` }}
                                 />
                               </div>
-                              <span className="text-xs text-muted-foreground">
-                                {completedExercises}/{totalExercises} completed
+                              <span className="text-xs text-muted-foreground font-mono">
+                                {completedExercises}/{totalExercises}
                               </span>
                             </div>
                           )}
                         </div>
                       </div>
-                      <ChevronRight className="w-6 h-6 text-muted-foreground group-hover:text-primary 
-                                               group-hover:translate-x-1 transition-all" />
+                      <ChevronRight className="w-5 h-5 text-muted-foreground group-hover:text-foreground 
+                                               group-hover:translate-x-1 transition-all flex-shrink-0" />
                     </div>
                   </div>
                 </Link>

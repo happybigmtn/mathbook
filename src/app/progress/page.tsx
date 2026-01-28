@@ -1,9 +1,10 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Trophy, Target, Flame, Star, BookOpen, CheckCircle } from "lucide-react"
+import { Trophy, Flame, Star, BookOpen, CheckCircle, Target, ArrowRight } from "lucide-react"
 import { useProgress } from "@/components/ProgressProvider"
 import { chapters } from "@/data/chapters"
+import Link from "next/link"
 
 export default function ProgressPage() {
   const { userState } = useProgress()
@@ -19,42 +20,39 @@ export default function ProgressPage() {
 
   const stats = [
     {
-      label: "Total Points",
+      label: "Points",
       value: userState.totalPoints,
       icon: Trophy,
-      color: "text-yellow-500",
     },
     {
-      label: "Exercises Completed",
+      label: "Completed",
       value: `${completedExercises}/${totalExercises}`,
       icon: CheckCircle,
-      color: "text-math-green",
     },
     {
-      label: "Chapters Started",
+      label: "Chapters",
       value: Object.keys(userState.progress).length,
       icon: BookOpen,
-      color: "text-math-blue",
     },
     {
-      label: "Current Streak",
-      value: `${userState.streak} days`,
+      label: "Streak",
+      value: `${userState.streak}d`,
       icon: Flame,
-      color: "text-orange-500",
     },
   ]
 
   return (
-    <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+    <div className="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
+          <p className="meta-text mb-4">Track Your Journey</p>
           <h1 className="section-title">Your Progress</h1>
-          <p className="body-text max-w-xl mx-auto">
-            Track your journey through mathematics. Every exercise completed brings you closer to mastery.
+          <p className="text-muted-foreground max-w-xl mx-auto">
+            Every exercise completed brings you closer to mastery.
           </p>
         </motion.div>
 
@@ -67,9 +65,9 @@ export default function ProgressPage() {
         >
           {stats.map((stat) => (
             <div key={stat.label} className="concept-card text-center">
-              <stat.icon className={`w-8 h-8 mx-auto mb-2 ${stat.color}`} />
-              <p className="text-2xl font-bold">{stat.value}</p>
-              <p className="text-sm text-muted-foreground">{stat.label}</p>
+              <stat.icon className="w-5 h-5 mx-auto mb-2 text-muted-foreground" />
+              <p className="text-2xl font-serif font-medium text-foreground/90">{stat.value}</p>
+              <p className="text-xs text-muted-foreground font-mono uppercase">{stat.label}</p>
             </div>
           ))}
         </motion.div>
@@ -82,9 +80,10 @@ export default function ProgressPage() {
           className="mb-12"
         >
           <h2 className="subsection-title flex items-center gap-2 mb-6">
-            <Star className="w-6 h-6 text-yellow-500" />
+            <Star className="w-5 h-5 text-muted-foreground" />
             Achievements
           </h2>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
               {
@@ -134,22 +133,22 @@ export default function ProgressPage() {
                 }`}
               >
                 <div
-                  className={`w-12 h-12 rounded-xl flex items-center justify-center ${
+                  className={`w-10 h-10 rounded-sm flex items-center justify-center flex-shrink-0 ${
                     achievement.unlocked
-                      ? "bg-gradient-to-br from-yellow-400 to-orange-500"
-                      : "bg-muted"
+                      ? "bg-foreground text-background"
+                      : "bg-muted text-muted-foreground"
                   }`}
                 >
-                  <Trophy className="w-6 h-6 text-white" />
+                  <Trophy className="w-4 h-4" />
                 </div>
-                <div>
-                  <h3 className="font-semibold">{achievement.name}</h3>
+                <div className="flex-1">
+                  <h3 className="font-medium text-foreground/90">{achievement.name}</h3>
                   <p className="text-sm text-muted-foreground">
                     {achievement.description}
                   </p>
                 </div>
                 {achievement.unlocked && (
-                  <CheckCircle className="w-5 h-5 text-math-green ml-auto" />
+                  <CheckCircle className="w-4 h-4 text-muted-foreground flex-shrink-0" />
                 )}
               </div>
             ))}
@@ -161,16 +160,19 @@ export default function ProgressPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
-          className="concept-card glow-effect text-center"
+          className="text-center"
         >
-          <Target className="w-12 h-12 mx-auto mb-4 text-primary" />
-          <h2 className="text-xl font-semibold mb-2">Keep Learning!</h2>
-          <p className="text-muted-foreground mb-4">
-            You&apos;re making great progress. Continue your journey through mathematics.
-          </p>
-          <a href="/part-01/what-is-mathematics-about" className="btn-primary">
-            Continue Learning
-          </a>
+          <div className="content-card">
+            <Target className="w-8 h-8 mx-auto mb-4 text-muted-foreground" />
+            <h2 className="text-xl font-serif font-medium text-foreground/90 mb-2">Keep Learning</h2>
+            <p className="text-muted-foreground mb-6">
+              You&apos;re making great progress. Continue your journey through mathematics.
+            </p>
+            <Link href="/part-01/what-is-mathematics-about" className="btn-primary">
+              Continue
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </motion.div>
       </div>
     </div>

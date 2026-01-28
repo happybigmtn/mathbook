@@ -4,29 +4,100 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: 222 47% 6%;
-    --foreground: 210 40% 98%;
-    --card: 222 47% 8%;
-    --card-foreground: 210 40% 98%;
-    --popover: 222 47% 8%;
-    --popover-foreground: 210 40% 98%;
-    --primary: 217 91% 60%;
-    --primary-foreground: 222 47% 6%;
-    --secondary: 217 33% 17%;
-    --secondary-foreground: 210 40% 98%;
-    --muted: 217 33% 17%;
-    --muted-foreground: 215 20% 65%;
-    --accent: 262 83% 58%;
-    --accent-foreground: 210 40% 98%;
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
-    --border: 217 33% 17%;
-    --input: 217 33% 17%;
-    --ring: 217 91% 60%;
-    --radius: 0.75rem;
-  }
+/* CSS Variables for Light, Beige, and Dark themes */
+:root {
+  /* Light Mode (Default) */
+  --background: 0 0% 100%;
+  --foreground: 220 20% 10%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 20% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 20% 10%;
+  --primary: 220 70% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 220 14% 96%;
+  --secondary-foreground: 220 20% 10%;
+  --muted: 220 14% 96%;
+  --muted-foreground: 220 10% 45%;
+  --accent: 220 14% 96%;
+  --accent-foreground: 220 20% 10%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 220 13% 91%;
+  --input: 220 13% 91%;
+  --ring: 220 70% 50%;
+  --radius: 0.5rem;
+
+  /* Math colors - light mode */
+  --math-blue: #2563eb;
+  --math-purple: #7c3aed;
+  --math-green: #16a34a;
+  --math-orange: #ea580c;
+  --math-pink: #db2777;
+  --math-cyan: #0891b2;
+}
+
+/* Beige/Sepia Mode */
+[data-theme="beige"] {
+  --background: 40 33% 96%;
+  --foreground: 35 25% 15%;
+  --card: 40 30% 98%;
+  --card-foreground: 35 25% 15%;
+  --popover: 40 30% 98%;
+  --popover-foreground: 35 25% 15%;
+  --primary: 35 60% 35%;
+  --primary-foreground: 40 33% 96%;
+  --secondary: 35 20% 92%;
+  --secondary-foreground: 35 25% 15%;
+  --muted: 35 20% 92%;
+  --muted-foreground: 35 15% 40%;
+  --accent: 35 20% 92%;
+  --accent-foreground: 35 25% 15%;
+  --destructive: 0 60% 50%;
+  --destructive-foreground: 40 33% 96%;
+  --border: 35 15% 85%;
+  --input: 35 15% 85%;
+  --ring: 35 60% 35%;
+
+  /* Math colors - beige mode (muted) */
+  --math-blue: #1e40af;
+  --math-purple: #6b21a8;
+  --math-green: #15803d;
+  --math-orange: #c2410c;
+  --math-pink: #be185d;
+  --math-cyan: #0e7490;
+}
+
+/* Dark Mode */
+[data-theme="dark"],
+.dark {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+  --card: 222 47% 8%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222 47% 8%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 217 91% 60%;
+  --primary-foreground: 222 47% 6%;
+  --secondary: 217 33% 17%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217 33% 17%;
+  --muted-foreground: 215 20% 65%;
+  --accent: 262 83% 58%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --ring: 217 91% 60%;
+
+  /* Math colors - dark mode (bright) */
+  --math-blue: #3b82f6;
+  --math-purple: #8b5cf6;
+  --math-green: #22c55e;
+  --math-orange: #f97316;
+  --math-pink: #ec4899;
+  --math-cyan: #06b6d4;
 }
 
 @layer base {
@@ -35,6 +106,7 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
+    font-feature-settings: "liga" 1, "calt" 1;
   }
   html {
     scroll-behavior: smooth;
@@ -42,99 +114,139 @@
 }
 
 @layer components {
-  .math-container {
-    @apply font-math text-lg;
+  /* Content card with makingsoftware.com style */
+  .content-card {
+    @apply bg-card rounded-sm shadow-[0px_1px_4px_1px_rgba(0,0,0,0.05),0px_1px_1px_0px_rgba(0,0,0,0.50),0px_-1px_1px_1px_rgba(255,255,255,0.50)_inset] 
+           border border-border/20 p-8 md:p-12 lg:p-16;
   }
 
-  .concept-card {
-    @apply bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-6 
-           hover:border-primary/50 transition-all duration-300;
+  [data-theme="beige"] .content-card {
+    @apply shadow-[0px_1px_4px_1px_rgba(139,119,101,0.05),0px_1px_1px_0px_rgba(139,119,101,0.30),0px_-1px_1px_1px_rgba(255,252,245,0.50)_inset];
   }
 
-  .interactive-canvas {
-    @apply rounded-xl border border-border/50 bg-black/20;
+  [data-theme="dark"] .content-card {
+    @apply shadow-none border-border/50;
   }
 
-  .gradient-text {
-    @apply bg-gradient-to-r from-math-blue via-math-purple to-math-pink 
-           bg-clip-text text-transparent;
+  /* Chapter paper style */
+  .chapter-paper {
+    @apply bg-card relative;
   }
 
-  .glow-effect {
-    @apply relative;
-  }
-
-  .glow-effect::before {
-    content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-math-blue/20 to-math-purple/20 
-           blur-xl rounded-xl -z-10;
-  }
-
+  /* Navigation link with elegant underline */
   .nav-link {
-    @apply text-muted-foreground hover:text-foreground transition-colors 
+    @apply text-muted-foreground hover:text-foreground transition-colors duration-200
            relative after:absolute after:bottom-0 after:left-0 after:w-0 
-           after:h-0.5 after:bg-primary after:transition-all hover:after:w-full;
+           after:h-px after:bg-foreground after:transition-all after:duration-300 hover:after:w-full;
   }
 
   .nav-link.active {
     @apply text-foreground after:w-full;
   }
 
+  /* Typography styles */
   .section-title {
-    @apply text-4xl md:text-5xl font-bold gradient-text mb-6;
+    @apply text-4xl md:text-5xl font-serif font-medium text-foreground/90 mb-6 leading-tight;
   }
 
   .subsection-title {
-    @apply text-2xl md:text-3xl font-semibold text-foreground mb-4;
+    @apply text-2xl md:text-3xl font-serif font-medium text-foreground/90 mb-4 leading-tight;
   }
 
   .body-text {
     @apply text-muted-foreground leading-relaxed text-lg;
   }
 
-  .exercise-card {
-    @apply bg-gradient-to-br from-card to-card/80 border border-border/50 
-           rounded-xl p-6 hover:shadow-lg hover:shadow-primary/5 
-           transition-all duration-300;
+  .meta-text {
+    @apply font-mono text-[0.6875rem] uppercase tracking-wider text-muted-foreground;
   }
 
+  /* Math container */
+  .math-container {
+    @apply font-math text-lg;
+  }
+
+  /* Concept card - elegant minimal style */
+  .concept-card {
+    @apply bg-card border border-border/30 rounded-sm p-6 
+           hover:border-foreground/20 transition-all duration-300
+           hover:shadow-sm;
+  }
+
+  [data-theme="beige"] .concept-card {
+    @apply border-stone-300/50 hover:border-stone-500/30;
+  }
+
+  /* Exercise card */
+  .exercise-card {
+    @apply bg-card border border-border/30 rounded-sm p-6
+           hover:border-foreground/20 transition-all duration-300;
+  }
+
+  /* Interactive canvas */
+  .interactive-canvas {
+    @apply rounded-sm border border-border/50 bg-muted/30;
+  }
+
+  /* Buttons */
   .btn-primary {
-    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium
-           hover:bg-primary/90 transition-colors inline-flex items-center gap-2;
+    @apply bg-foreground text-background px-6 py-3 rounded-sm font-medium
+           hover:bg-foreground/90 transition-all duration-200 inline-flex items-center gap-2;
   }
 
   .btn-secondary {
-    @apply bg-secondary text-secondary-foreground px-6 py-3 rounded-lg font-medium
-           hover:bg-secondary/80 transition-colors inline-flex items-center gap-2;
+    @apply bg-transparent border border-border text-foreground px-6 py-3 rounded-sm font-medium
+           hover:bg-muted transition-all duration-200 inline-flex items-center gap-2;
   }
 
+  /* Progress bar */
   .progress-bar {
-    @apply h-2 bg-muted rounded-full overflow-hidden;
+    @apply h-1 bg-muted rounded-full overflow-hidden;
   }
 
   .progress-fill {
-    @apply h-full bg-gradient-to-r from-math-blue to-math-purple 
-           transition-all duration-500;
+    @apply h-full bg-foreground transition-all duration-500;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-[var(--math-blue)] via-[var(--math-purple)] to-[var(--math-pink)] 
+           bg-clip-text text-transparent;
+  }
+
+  [data-theme="beige"] .gradient-text {
+    @apply from-[var(--math-blue)] to-[var(--math-purple)];
+  }
+
+  /* Glow effect */
+  .glow-effect {
+    @apply relative;
+  }
+
+  .glow-effect::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r from-[var(--math-blue)]/10 to-[var(--math-purple)]/10 
+           blur-2xl rounded-sm -z-10;
   }
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: hsl(var(--background));
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: hsl(var(--muted));
-  border-radius: 4px;
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: hsl(var(--muted-foreground));
+  background: hsl(var(--muted-foreground) / 0.5);
 }
 
 /* KaTeX customizations */
@@ -148,7 +260,7 @@
   overflow-y: hidden;
 }
 
-/* Animation utilities */
+/* Animations */
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -158,11 +270,75 @@
   50% { transform: translateY(-20px); }
 }
 
-.animate-glow {
-  animation: glow 2s ease-in-out infinite alternate;
+/* Theme transition */
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-@keyframes glow {
-  from { box-shadow: 0 0 10px hsl(var(--primary) / 0.3); }
-  to { box-shadow: 0 0 30px hsl(var(--primary) / 0.6); }
+/* Prose styles for content */
+.prose-content h1 {
+  @apply text-4xl md:text-5xl font-serif font-medium text-foreground/90 mb-8 leading-tight;
+}
+
+.prose-content h2 {
+  @apply text-2xl md:text-3xl font-serif font-medium text-foreground/90 mt-12 mb-6 leading-tight;
+}
+
+.prose-content h3 {
+  @apply text-xl md:text-2xl font-serif font-medium text-foreground/90 mt-8 mb-4;
+}
+
+.prose-content p {
+  @apply text-muted-foreground leading-relaxed text-lg mb-6;
+}
+
+.prose-content ul {
+  @apply list-disc list-inside space-y-2 mb-6 text-muted-foreground;
+}
+
+.prose-content ol {
+  @apply list-decimal list-inside space-y-2 mb-6 text-muted-foreground;
+}
+
+.prose-content code {
+  @apply bg-muted px-1.5 py-0.5 rounded text-sm font-mono;
+}
+
+.prose-content pre {
+  @apply bg-muted p-4 rounded-sm overflow-x-auto mb-6;
+}
+
+.prose-content blockquote {
+  @apply border-l-2 border-foreground/20 pl-6 italic text-foreground/80 my-8;
+}
+
+.prose-content a {
+  @apply text-primary hover:underline;
+}
+
+/* Theme indicator for beige mode - subtle warm tint */
+[data-theme="beige"] body {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+}
+
+[data-theme="beige"] .prose-content p {
+  @apply text-stone-700;
+}
+
+[data-theme="beige"] .prose-content h1,
+[data-theme="beige"] .prose-content h2,
+[data-theme="beige"] .prose-content h3 {
+  @apply text-stone-800;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .content-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+  }
 }

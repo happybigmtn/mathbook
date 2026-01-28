@@ -46,9 +46,11 @@ export function ExerciseCard({ exercise, chapterId }: ExerciseCardProps) {
       case "easy":
         return "text-math-green"
       case "medium":
-        return "text-yellow-500"
+        return "text-yellow-600"
       case "hard":
         return "text-red-500"
+      default:
+        return "text-muted-foreground"
     }
   }
 
@@ -56,18 +58,18 @@ export function ExerciseCard({ exercise, chapterId }: ExerciseCardProps) {
     <div className="exercise-card">
       <div className="flex items-start justify-between mb-4">
         <div>
-          <h4 className="font-semibold text-lg">{exercise.title}</h4>
-          <div className="flex items-center gap-2 mt-1">
-            <span className={`text-xs font-medium uppercase ${getDifficultyColor()}`}>
+          <h4 className="font-medium text-foreground/90 mb-1">{exercise.title}</h4>
+          <div className="flex items-center gap-2">
+            <span className={`text-xs font-mono uppercase ${getDifficultyColor()}`}>
               {exercise.difficulty}
             </span>
-            <span className="text-xs text-muted-foreground">•</span>
-            <span className="text-xs text-muted-foreground">{exercise.points} points</span>
+            <span className="text-xs text-muted-foreground">·</span>
+            <span className="text-xs text-muted-foreground font-mono">{exercise.points} pts</span>
             {isCompleted && (
               <>
-                <span className="text-xs text-muted-foreground">•</span>
-                <span className="text-xs text-math-green flex items-center gap-1">
-                  <Check className="w-3 h-3" /> Completed
+                <span className="text-xs text-muted-foreground">·</span>
+                <span className="text-xs text-math-green flex items-center gap-1 font-mono">
+                  <Check className="w-3 h-3" /> Done
                 </span>
               </>
             )}
@@ -75,14 +77,14 @@ export function ExerciseCard({ exercise, chapterId }: ExerciseCardProps) {
         </div>
         <button
           onClick={() => setShowHint(!showHint)}
-          className="p-2 rounded-lg hover:bg-muted transition-colors"
+          className="p-2 rounded-sm hover:bg-muted transition-colors"
           title="Show hint"
         >
-          <Lightbulb className="w-5 h-5 text-yellow-500" />
+          <Lightbulb className="w-4 h-4 text-muted-foreground" />
         </button>
       </div>
 
-      <p className="text-muted-foreground mb-4">{exercise.question}</p>
+      <p className="text-muted-foreground mb-4 text-sm leading-relaxed">{exercise.question}</p>
 
       {/* Hint */}
       <AnimatePresence>
@@ -91,11 +93,11 @@ export function ExerciseCard({ exercise, chapterId }: ExerciseCardProps) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="mb-4 p-3 bg-yellow-500/10 rounded-lg border border-yellow-500/30"
+            className="mb-4 p-3 bg-muted/50 rounded-sm border-l-2 border-primary"
           >
             <p className="text-sm flex items-start gap-2">
-              <HelpCircle className="w-4 h-4 text-yellow-500 mt-0.5 flex-shrink-0" />
-              <span>{exercise.hint}</span>
+              <HelpCircle className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0" />
+              <span className="text-muted-foreground">{exercise.hint}</span>
             </p>
           </motion.div>
         )}
@@ -113,11 +115,11 @@ export function ExerciseCard({ exercise, chapterId }: ExerciseCardProps) {
                   setIsCorrect(null)
                 }}
                 disabled={isCompleted}
-                className={`w-full p-3 text-left rounded-lg border transition-colors ${
-                  answer === option
-                    ? "border-primary bg-primary/10"
-                    : "border-border hover:border-primary/50"
-                } ${isCompleted ? "opacity-50 cursor-not-allowed" : ""}`}
+                className={`w-full p-3 text-left rounded-sm border transition-all text-sm
+                           ${answer === option
+                             ? "border-foreground bg-foreground/5"
+                             : "border-border/50 hover:border-foreground/30"
+                           } ${isCompleted ? "opacity-50 cursor-not-allowed" : ""}`}
               >
                 {option}
               </button>
@@ -133,14 +135,14 @@ export function ExerciseCard({ exercise, chapterId }: ExerciseCardProps) {
             }}
             disabled={isCompleted}
             placeholder="Enter your answer..."
-            className="flex-1 px-4 py-3 bg-background border border-border rounded-lg 
-                       focus:outline-none focus:ring-2 focus:ring-primary/50"
+            className="flex-1 px-4 py-3 bg-background border border-border/50 rounded-sm 
+                       focus:outline-none focus:border-foreground/30 text-sm"
           />
         )}
         <button
           onClick={checkAnswer}
           disabled={!answer || isCompleted}
-          className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
+          className="btn-primary text-sm disabled:opacity-50 disabled:cursor-not-allowed"
         >
           Check
         </button>
@@ -153,22 +155,22 @@ export function ExerciseCard({ exercise, chapterId }: ExerciseCardProps) {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className={`p-4 rounded-lg mb-4 ${
+            className={`p-4 rounded-sm mb-4 border-l-2 ${
               isCorrect
-                ? "bg-math-green/20 border border-math-green/50"
-                : "bg-red-500/20 border border-red-500/50"
+                ? "bg-math-green/10 border-math-green"
+                : "bg-red-500/10 border-red-500"
             }`}
           >
             <div className="flex items-center gap-2 mb-2">
               {isCorrect ? (
                 <>
-                  <Check className="w-5 h-5 text-math-green" />
-                  <span className="font-semibold text-math-green">Correct!</span>
+                  <Check className="w-4 h-4 text-math-green" />
+                  <span className="font-medium text-math-green text-sm">Correct!</span>
                 </>
               ) : (
                 <>
-                  <X className="w-5 h-5 text-red-500" />
-                  <span className="font-semibold text-red-500">Not quite right</span>
+                  <X className="w-4 h-4 text-red-500" />
+                  <span className="font-medium text-red-500 text-sm">Not quite right</span>
                 </>
               )}
             </div>
@@ -191,9 +193,9 @@ export function ExerciseCard({ exercise, chapterId }: ExerciseCardProps) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="p-4 bg-primary/10 rounded-lg"
+            className="p-4 bg-muted/50 rounded-sm border-l-2 border-primary"
           >
-            <p className="text-sm font-medium mb-1">Explanation:</p>
+            <p className="meta-text mb-1">Explanation</p>
             <p className="text-sm text-muted-foreground">{exercise.explanation}</p>
           </motion.div>
         )}
