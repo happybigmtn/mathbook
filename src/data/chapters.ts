@@ -30,6 +30,13 @@ Geometric analysis uses geometric intuition to solve analytic problems. The conn
         `,
       },
       {
+        id: "math-branches-visual",
+        title: "The Three Branches of Mathematics",
+        type: "interactive",
+        content: "Interactive visualization of the three main branches of mathematics and their interconnections",
+        component: "MathBranchesVisualizer",
+      },
+      {
         id: "algebra-vs-geometry",
         title: "Algebra vs Geometry: A Visual Proof",
         type: "interactive",
@@ -107,6 +114,13 @@ Notation is not just shorthand - it shapes how we think. The right notation sugg
         `,
       },
       {
+        id: "notation-evolution",
+        title: "How Notation Evolved",
+        type: "interactive",
+        content: "Explore the evolution of mathematical notation from words to symbols",
+        component: "NotationEvolution",
+      },
+      {
         id: "quantifiers",
         title: "Quantifiers: ∀ and ∃",
         type: "interactive",
@@ -159,6 +173,13 @@ Operations on sets:
 - Intersection: A ∩ B = {x : x ∈ A and x ∈ B}
 - Complement: Aᶜ = {x : x ∉ A}
         `,
+      },
+      {
+        id: "set-operations",
+        title: "Visualizing Set Operations",
+        type: "interactive",
+        content: "Interactive visualizer for union, intersection, difference, and complement",
+        component: "SetOperationsVisualizer",
       },
       {
         id: "functions",

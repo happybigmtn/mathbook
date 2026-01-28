@@ -14,6 +14,9 @@ import {
   PiVisualization,
   PythagoreanTheoremDemo,
   EuclideanConstructions,
+  MathBranchesVisualizer,
+  SetOperationsVisualizer,
+  NotationEvolution,
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
@@ -29,6 +32,9 @@ const componentMap: Record<string, React.ComponentType> = {
   PiVisualization,
   PythagoreanTheoremDemo,
   EuclideanConstructions,
+  MathBranchesVisualizer,
+  SetOperationsVisualizer,
+  NotationEvolution,
 }
 
 interface ChapterContentProps {

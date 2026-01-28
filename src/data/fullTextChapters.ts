@@ -1172,6 +1172,141 @@ This decomposes f into a superposition of complex exponentials e^(2πixξ) at di
   exercises: [],
 }
 
+// III.31 Gamma Function - Full Text
+export const gammaFunctionFullText: FullTextChapter = {
+  id: "gamma-function",
+  title: "The Gamma Function",
+  description: "Extending the factorial to all complex numbers.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 31,
+  content: [
+    {
+      id: "gamma-def",
+      title: "Extending Factorials",
+      type: "text",
+      content: "The factorial function generalized to complex numbers.",
+      fullText: `If n is a positive integer, then its factorial n! is the product 1 × 2 × · · · × n. The first eight factorials are 1, 2, 6, 24, 120, 720, 5040, and 40320.
+
+The gamma function Γ extends the factorial to all complex numbers (except non-positive integers). It is defined by:
+
+Γ(s) = ∫₀^∞ x^(s-1) e^(-x) dx
+
+**Key Property**
+
+Integration by parts shows that:
+Γ(s) = (s-1)Γ(s-1)
+
+This is exactly what we need if we want to think of Γ(s) as "(s-1)!"
+
+**Values at Integers**
+
+For positive integers n:
+Γ(n) = (n-1)!
+
+So Γ(1) = 0! = 1, Γ(2) = 1! = 1, Γ(3) = 2! = 2, etc.
+
+**Famous Values**
+
+**Γ(1/2) = √π**
+
+This is equivalent to the fact that the area under the normal distribution curve is 1. It connects the gamma function to π!
+
+**Reflection Formula**
+
+Γ(s)Γ(1-s) = π / sin(πs)
+
+This shows a deep connection between the gamma function and trigonometric functions.
+
+**Analytic Continuation**
+
+The integral definition only works when Re(s) > 0. But we can extend Γ to all complex numbers (except 0, -1, -2, ...) using the functional equation Γ(s) = Γ(s+1)/s. This creates simple poles at non-positive integers.
+
+**Why Γ is Natural**
+
+Bohr-Mollerup theorem: If f:(0,∞) → (0,∞) satisfies:
+1. f(x+1) = xf(x)
+2. f(1) = 1
+3. log f is convex
+
+Then f = Γ. This characterizes Γ as the "smoothest" extension of factorial.`,
+      annotations: [
+        createAnnotation("gamma-1", "visual", "Γ(x) for real x > 0 smoothly interpolates between integer factorials. At x=1/2, it hits √π—connecting factorials to the area of the Gaussian curve."),
+        createAnnotation("gamma-2", "analogy", "The gamma function is like a continuous bridge between discrete islands (integer factorials). It fills in all the gaps with the smoothest possible curve."),
+        createAnnotation("gamma-3", "deep-dive", "Γ(1/2) = √π appears in the normal distribution. This is why π shows up in probability and statistics, not just geometry!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.44 Knot Polynomials - Full Text
+export const knotPolynomialsFullText: FullTextChapter = {
+  id: "knot-polynomials",
+  title: "Knot Polynomials",
+  description: "Using algebra to distinguish different knots.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 44,
+  content: [
+    {
+      id: "knots-basics",
+      title: "Knots and Links",
+      type: "text",
+      content: "Distinguishing entangled loops using algebra.",
+      fullText: `A knot is a closed curve in three-dimensional space that never meets itself. A link is several such curves, all disjoint from one another.
+
+**Examples**
+
+- **Unknot**: A simple circle (not knotted at all)
+- **Trefoil**: The simplest nontrivial knot
+- **Figure-eight**: Another simple knot
+- **Hopf link**: Two circles linked together
+- **Whitehead link**: Two circles with more complex linking
+
+**The Fundamental Problem**
+
+How do we know if two knots are different? They may look different, but can one be deformed into the other without cutting?
+
+**Invariants**
+
+We need invariants: mathematical entities assigned to knots that don't change under deformation. If two knots have different invariants, they cannot be the same.
+
+**The Alexander Polynomial (1926)**
+
+J.W. Alexander discovered a polynomial invariant derived from algebraic topology. It satisfies a skein relation—a way to compute the polynomial by looking at how strands cross.
+
+**The Jones Polynomial (1984)**
+
+Vaughan Jones discovered a new polynomial invariant that revolutionized knot theory. It can distinguish knots that the Alexander polynomial cannot.
+
+**The HOMFLY Polynomial (1984)**
+
+Named after its discoverers (Hoste, Ocneanu, Millett, Freyd, Lickorish, Yetter), this polynomial generalizes both Alexander and Jones polynomials.
+
+For an oriented link L, the HOMFLY polynomial P(L) is a polynomial in variables v and z satisfying:
+
+- P(unknot) = 1
+- v^(-1)P(L+) - vP(L-) = zP(L0)
+
+Where L+, L-, L0 are three links identical except at one crossing:
+  - L+ has a positive crossing
+  - L- has a negative crossing  
+  - L0 has the crossing "smoothed" out
+
+**Why It Works**
+
+The skein relation lets you reduce any knot to simpler ones. Starting from the unknot and applying the relation recursively, you can compute the polynomial for any knot.`,
+      annotations: [
+        createAnnotation("knot-1", "visual", "Knot polynomials are like fingerprints for knots. Two knots might look different in pictures, but if their polynomials differ, they're definitely different knots."),
+        createAnnotation("knot-2", "analogy", "The skein relation is like a genealogy: you trace a knot back to simpler ancestors (the unknot) using rules at each crossing."),
+        createAnnotation("knot-3", "deep-dive", "Knot theory has applications in DNA topology (how DNA coils), quantum field theory (Chern-Simons theory), and even protein folding!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // III.41 Irrational and Transcendental Numbers - Full Text
 export const irrationalNumbersFullText: FullTextChapter = {
   id: "irrational-numbers",
@@ -1583,6 +1718,8 @@ export const fullTextChapters: FullTextChapter[] = [
   braidGroupsFullText,
   compactnessFullText,
   fourierTransformFullText,
+  gammaFunctionFullText,
+  knotPolynomialsFullText,
   irrationalNumbersFullText,
   lieTheoryFullText,
 ]
