@@ -4,10 +4,9 @@ import type { FullTextChapter, Annotation } from "@/types"
 function createAnnotation(
   id: string,
   type: Annotation["type"],
-  content: string,
-  reference?: string
+  content: string
 ): Annotation {
-  return { id, type, content, reference }
+  return { id, type, content }
 }
 
 // I.1 What Is Mathematics About? - Full Text
@@ -30,8 +29,8 @@ The most obvious way of classifying mathematics is by its subject matter, and th
 
 The last section of Part I, entitled The General Goals of Mathematical Research, looks at the subject from this point of view. At the end of that article there is a brief discussion of what one might regard as a third classification, not so much of mathematics itself but of the content of a typical article in a mathematics journal. As well as theorems and proofs, such an article will contain definitions, examples, lemmas, formulas, conjectures, and so on. The point of that discussion will be to say what these words mean and why the different kinds of mathematical output are important.`,
       annotations: [
-        createAnnotation("intro-1", "insight", "Mathematics is better understood through exploration rather than definition—like trying to define 'music' versus experiencing it.", "Opening paragraph"),
-        createAnnotation("intro-2", "connection", "The book uses three classification approaches: subject matter, types of questions, and structure of mathematical articles—similar to how one might classify music by genre, mood, or musical form.", "Classification methods"),
+        createAnnotation("intro-1", "analogy", "Mathematics is like a vast library organized by subject (algebra, geometry) but also by the types of questions asked (existence, classification)."),
+        createAnnotation("intro-2", "visual", "Imagine three lenses to view math: subject matter (what), question types (how), and article structure (the building blocks)."),
       ],
     },
     {
@@ -53,19 +52,19 @@ However, a distinction like this is never simple. If you look at a typical resea
 
 As an example of visualizing an algebraic problem, consider how one might justify the rule that if a and b are positive integers then ab = ba. It is possible to approach the problem as a pure piece of algebra (perhaps proving it by induction), but the easiest way to convince yourself that it is true is to imagine a rectangular array that consists of a rows with b objects in each row. The total number of objects can be thought of as a lots of b, if you count it row by row, or as b lots of a, if you count it column by column. Therefore, ab = ba. Similar justifications can be given for other basic rules such as a(b + c) = ab + ac and a(bc) = (ab)c.`,
       annotations: [
-        createAnnotation("ag-1", "insight", "The algebra vs geometry distinction is about process, not just subject: algebra = symbolic manipulation, geometry = visualization. But they're deeply intertwined!", "Section 1.1"),
-        createAnnotation("ag-2", "question", "Why do you think ab = ba? Try drawing a 4×7 grid. Count by rows: 4 groups of 7. Count by columns: 7 groups of 4. Same total!", "Commutativity visualization"),
-        createAnnotation("ag-3", "note", "This visual proof of ab = ba is essentially Feynman's style—understanding through concrete imagery rather than abstract symbol manipulation.", "Feynman connection"),
+        createAnnotation("ag-1", "visual", "Think of algebra as working with recipes (symbolic rules) and geometry as working with blueprints (spatial relationships)."),
+        createAnnotation("ag-2", "analogy", "The commutativity proof (ab = ba) is like counting tiles on a floor—whether you count rows first or columns first, you get the same total."),
+        createAnnotation("ag-3", "deep-dive", "Leibniz's notation (dy/dx, ∫) won over Newton's because it visually suggests the right manipulations. Good notation is cognitive scaffolding."),
       ],
     },
     {
       id: "algebra-vs-geometry",
-      title: "Algebra vs Geometry: A Visual Proof",
+      title: "Visual Proof: Commutativity",
       type: "interactive",
       content: "Interactive visualization showing how algebraic identities have geometric interpretations",
       component: "CommutativePropertyDemo",
       annotations: [
-        createAnnotation("vis-1", "insight", "The interactive demo lets you experience ab = ba directly. This isn't just 'visual aid'—it's the actual mathematical insight!", "Interactive section"),
+        createAnnotation("vis-1", "visual", "The grid shows commutativity: a×b creates the same rectangle as b×a, just rotated. The area doesn't change when you rotate the rectangle."),
       ],
     },
     {
@@ -79,9 +78,8 @@ The original aim of calculus was to understand the behavior of functions (a func
 
 The central concept of analysis is the limit. The idea of a limit is subtle and took mathematicians a long time to get right. Intuitively, it is straightforward: it is what you approach as you get closer and closer to something without ever reaching it. For example, if you want to find the slope of a curve at a particular point, you look at the slopes of chords that get closer and closer to being the tangent at that point, and the limit of these slopes is the slope of the tangent.`,
       annotations: [
-        createAnnotation("analysis-1", "note", "Analysis = the mathematics of change and continuity. Born from calculus (Newton/Leibniz ~1660s-1700s), now fundamental to all science.", "Analysis definition"),
-        createAnnotation("analysis-2", "insight", "The concept of 'limit' is the backbone of analysis. It lets us talk about 'approaching' without ever 'arriving'—essential for dealing with infinity and continuity.", "Limits concept"),
-        createAnnotation("analysis-3", "connection", "Limits appear everywhere: derivatives (slopes), integrals (areas), series (sums), continuity. Master limits, master calculus.", "Limit applications"),
+        createAnnotation("analysis-1", "analogy", "A limit is like walking toward a wall—you get infinitely close but never quite touch it. Analysis formalizes this 'approaching' idea."),
+        createAnnotation("analysis-2", "visual", "Imagine zooming into a curve: as you zoom in, it looks more and more like a straight line. The slope of that 'limiting' line is the derivative."),
       ],
     },
     {
@@ -101,10 +99,8 @@ The central concept of analysis is the limit. The idea of a limit is subtle and 
 
 **Optimization**: What is the best possible outcome under constraints? This is the domain of calculus of variations, linear programming, and much of applied mathematics. Nature often solves optimization problems—light takes the fastest path, soap bubbles minimize surface area.`,
       annotations: [
-        createAnnotation("questions-1", "insight", "These five question types (Existence, Classification, Structure, Transformation, Optimization) appear across ALL branches of math. They're the DNA of mathematical thinking.", "Five question types"),
-        createAnnotation("questions-2", "question", "Think about your favorite mathematical object. Which type of question is most natural to ask about it? This reveals your mathematical 'personality'!", "Self-reflection"),
-        createAnnotation("questions-3", "connection", "Feynman was famous for asking 'What is the simplest example?'—this is the existence question in disguise. Start simple, then generalize.", "Feynman method"),
-        createAnnotation("questions-4", "insight", "Optimization appears everywhere because nature 'computes' it: light paths (Fermat), soap films (minimal surfaces), animal shapes (efficiency). Math mirrors reality.", "Optimization in nature"),
+        createAnnotation("questions-1", "analogy", "These five question types are like lenses: existence asks 'is it there?', classification asks 'what's the catalog?', structure asks 'how does it fit together?', transformation asks 'what happens when I change it?', and optimization asks 'what's the best way?'"),
+        createAnnotation("questions-2", "visual", "Nature is an optimizer: light takes the fastest path (Fermat's principle), bubbles minimize surface area, bees build honeycombs with optimal angles."),
       ],
     },
   ],
@@ -169,9 +165,8 @@ Viète (1540-1603) introduced letters for unknowns. Descartes (1596-1650) establ
 
 Each improvement in notation enabled new mathematical discoveries. When you can write ideas compactly, you can manipulate them more easily and see patterns that were previously invisible.`,
       annotations: [
-        createAnnotation("notation-1", "insight", "Leibniz's notation (dy/dx, ∫) beat Newton's (dots, boxes) because it suggests the right manipulations. Good notation is a cognitive tool!", "Notation history"),
-        createAnnotation("notation-2", "connection", "Programming languages are the modern equivalent—Python's readable syntax vs. Perl's cryptic symbols. Notation matters in code too!", "Modern parallel"),
-        createAnnotation("notation-3", "question", "Try describing the Pythagorean theorem without using a² + b² = c². Why is the formula so much clearer?", "Notation exercise"),
+        createAnnotation("notation-1", "analogy", "Notation is like compression: √2 is the compressed version of an entire sentence. The more compressed, the easier to manipulate."),
+        createAnnotation("notation-2", "visual", "The integral sign ∫ is literally an elongated 'S' for sum. Leibniz made calculus visual—the symbol itself tells you what operation you're doing."),
       ],
     },
     {
@@ -181,8 +176,8 @@ Each improvement in notation enabled new mathematical discoveries. When you can 
       content: "Interactive exploration of universal and existential quantifiers",
       component: "QuantifierDemo",
       annotations: [
-        createAnnotation("quant-1", "note", "∀ (for all) and ∃ (there exists) were introduced by Giuseppe Peano in 1897. They turned vague philosophical statements into precise mathematics.", "History"),
-        createAnnotation("quant-2", "warning", "Order matters! ∀x ∃y (y > x) is true (for every x there's a larger y), but ∃y ∀x (y > x) is false (no y is larger than all x).", "Order matters"),
+        createAnnotation("quant-1", "visual", "∀ (forall) and ∃ (exists) are like search operations: ∀ means 'check every element' while ∃ means 'find at least one match'."),
+        createAnnotation("quant-2", "warning", "Order matters! ∀x ∃y (y > x) is true (every number has a larger one), but ∃y ∀x (y > x) is false (no number exceeds all others)."),
       ],
     },
     {
@@ -204,9 +199,8 @@ Important: If A is false, "A implies B" is automatically true! This is called va
 
 **Equivalence (IFF, ⇔)**: "A if and only if B" means A and B are either both true or both false. This is shorthand for "A ⇒ B and B ⇒ A". Example: "x² = 4 ⇔ x = 2 or x = -2".`,
       annotations: [
-        createAnnotation("logic-1", "insight", "Vacuous truth (false implies anything) seems weird but is crucial. It lets us say 'All unicorns are pink' is true—there are no unicorns to contradict it!", "Vacuous truth"),
-        createAnnotation("logic-2", "note", "'If and only if' (iff) is mathematician-speak for 'exactly equivalent.' It means both directions work: A→B AND B→A.", "Iff explanation"),
-        createAnnotation("logic-3", "connection", "These connectives are like programming operators: &&, ||, !. Mathematical logic is the foundation of computer science.", "CS connection"),
+        createAnnotation("logic-1", "analogy", "Vacuous truth (false implies anything) is like having a broken promise: 'If I'm a billionaire, I'll buy you a yacht'—if I'm not a billionaire, the promise is technically kept regardless of whether you get a yacht."),
+        createAnnotation("logic-2", "visual", "Think of logical operators as gates: AND requires both inputs, OR needs at least one, NOT flips the input, and IMPLICATION is like a one-way street."),
       ],
     },
   ],
@@ -285,9 +279,9 @@ The complex number system, denoted ℂ, is the set of all numbers of the form a+
 
 One explanation for the utility of complex numbers is that they provide a concise way to talk about many aspects of geometry, via Argand diagrams. These represent complex numbers as points in the plane, the number a+bi corresponding to the point with coordinates (a, b).`,
       annotations: [
-        createAnnotation("numbers-1", "insight", "Each number system extends the previous one to solve problems the previous couldn't. ℕ→ℤ (subtraction), ℤ→ℚ (division), ℚ→ℝ (limits), ℝ→ℂ (roots of negatives).", "Number system extensions"),
-        createAnnotation("numbers-2", "note", "The notation ℕ, ℤ, ℚ, ℝ, ℂ is standard worldwide. The blackboard bold font (double-struck) indicates these are fundamental number systems.", "Notation note"),
-        createAnnotation("numbers-3", "connection", "Complex numbers might seem abstract, but they're essential for AC circuit analysis, quantum mechanics, and signal processing. 'Imaginary' is a misnomer—they're very real in applications!", "Applications"),
+        createAnnotation("numbers-1", "analogy", "Number systems are like expanding toolkits: ℕ gives you counting, ℤ adds debt/temperature, ℚ adds measurement, ℝ fills the gaps (like √2), and ℂ completes the picture (solving all polynomial equations)."),
+        createAnnotation("numbers-2", "visual", "Complex numbers live on a 2D plane: the real part is the x-coordinate, imaginary part is y. Multiplying by i rotates 90° counterclockwise."),
+        createAnnotation("numbers-3", "deep-dive", "The ancient Greeks discovered √2 is irrational—a crisis! It showed that not all lengths are rational, forcing mathematics beyond fractions."),
       ],
     },
     {
@@ -317,9 +311,8 @@ Functions are everywhere in mathematics. They model relationships between quanti
 
 More abstractly, functions capture the idea of transformation. Geometry studies transformations of space. Algebra studies transformations of algebraic structures. Analysis studies continuous transformations.`,
       annotations: [
-        createAnnotation("sets-1", "note", "A set is just a collection. The notation {x : P(x)} means 'all x such that property P holds.' This is called set-builder notation.", "Set definition"),
-        createAnnotation("functions-1", "insight", "Functions are the verbs of mathematics. Just as verbs describe actions, functions describe transformations, mappings, and relationships.", "Function insight"),
-        createAnnotation("functions-2", "connection", "In programming, functions map inputs to outputs. Mathematical functions are similar but more abstract—the 'computation' might not be algorithmic.", "CS parallel"),
+        createAnnotation("sets-1", "analogy", "A set is like a box with labeled items. {x : P(x)} is a recipe for building the box: include every x that satisfies property P."),
+        createAnnotation("functions-1", "visual", "A function is a mapping—like a vending machine: you input a selection (domain) and get a specific output (range). Each input maps to exactly one output."),
       ],
     },
     {
@@ -329,7 +322,7 @@ More abstractly, functions capture the idea of transformation. Geometry studies 
       content: "Interactive function visualizer",
       component: "FunctionVisualizer",
       annotations: [
-        createAnnotation("func-viz-1", "insight", "Graphs make functions concrete. The visual representation often reveals patterns invisible in the algebraic formula.", "Visualization"),
+        createAnnotation("func-viz-1", "visual", "A function's graph shows the entire mapping at once. The vertical line test checks if a graph represents a function (no x-value has two y-values)."),
       ],
     },
   ],
@@ -348,64 +341,11 @@ More abstractly, functions capture the idea of transformation. Geometry studies 
   ],
 }
 
-// III.1 The Axiom of Choice - Full Text (Sample Part III Concept)
-export const axiomOfChoiceFullText: FullTextChapter = {
-  id: "axiom-of-choice",
-  title: "The Axiom of Choice",
-  description: "One of the most controversial and powerful axioms in set theory.",
-  part: "part-03",
-  partTitle: "Mathematical Concepts",
-  order: 1,
-  content: [
-    {
-      id: "what-is-ac",
-      title: "What Is the Axiom of Choice?",
-      type: "text",
-      content: "Understanding this fundamental but controversial axiom.",
-      fullText: `The Axiom of Choice (AC) is one of the most discussed axioms in set theory. It was first formulated by Ernst Zermelo in 1904, and it states the following:
-
-Given any collection of nonempty sets, it is possible to choose one element from each set.
-
-At first glance, this seems obviously true. If you have a bunch of nonempty sets, surely you can pick one element from each? The subtlety arises when the collection is infinite. The axiom asserts that such a choice is possible even when there is no explicit rule for making the choice.
-
-**A Concrete Example**
-
-Imagine you have infinitely many pairs of socks. From each pair, you want to choose one sock. The Axiom of Choice says you can do this. But notice: unlike shoes, socks have no natural "left" or "right" distinction. Without AC, there's no guarantee you can make this infinite selection.
-
-**Controversy and Importance**
-
-AC is independent of the other axioms of set theory (Zermelo-Fraenkel set theory, or ZF). This means you can assume it's true or assume it's false, and either way, you get a consistent mathematical system.
-
-Many beautiful theorems require AC:
-- Every vector space has a basis
-- Every set can be well-ordered
-- The product of compact topological spaces is compact (Tychonoff's theorem)
-- The Hahn-Banach theorem in functional analysis
-
-However, AC also leads to some counterintuitive results:
-- The Banach-Tarski paradox: A solid ball can be decomposed into finitely many pieces and reassembled into two identical copies of the original ball
-- The existence of non-measurable sets
-- The well-ordering of the real numbers (no one has ever written one down explicitly)
-
-**The Status of AC Today**
-
-Most mathematicians accept AC as a working hypothesis. It's used freely in most areas of mathematics. However, when possible, mathematicians prefer to give constructive proofs that don't rely on AC. Some areas, like constructive mathematics and computer science, explicitly avoid AC.`,
-      annotations: [
-        createAnnotation("ac-1", "question", "The sock example is famous. But think: why can we choose from shoes without AC? Because 'left shoe' gives us a rule! AC is needed when no rule exists.", "Sock example"),
-        createAnnotation("ac-2", "warning", "Banach-Tarski sounds impossible—it is, in physical reality. But mathematically, the 'pieces' are so weird they can't exist physically. AC lets us conjure these weird sets.", "Banach-Tarski"),
-        createAnnotation("ac-3", "insight", "AC is like a magic wand: it guarantees existence without construction. Mathematicians debate whether such 'magic' should be allowed.", "Philosophy"),
-      ],
-    },
-  ],
-  exercises: [],
-}
-
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   whatIsMathematicsFullText,
   languageAndGrammarFullText,
   fundamentalDefinitionsFullText,
-  axiomOfChoiceFullText,
 ]
 
 // Helper to get full text chapter by ID

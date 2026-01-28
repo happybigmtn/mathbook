@@ -5,7 +5,6 @@ export { ManimVideoPlayer } from "./ManimVideoPlayer"
 export {
   FeynmanLayout,
   FullTextSection,
-  Paragraph,
   Highlight,
   Definition,
   TheoremBox,

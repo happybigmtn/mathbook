@@ -95,9 +95,8 @@ export interface Theorem {
 
 export interface Annotation {
   id: string
-  type: 'note' | 'question' | 'insight' | 'warning' | 'connection'
+  type: 'visual' | 'analogy' | 'note' | 'warning' | 'deep-dive'
   content: string
-  reference?: string
 }
 
 export interface FullTextSection {
