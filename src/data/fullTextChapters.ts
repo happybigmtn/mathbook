@@ -674,6 +674,210 @@ A fact that seems paradoxical to many non-mathematicians is that a number as nat
   ],
 }
 
+// II.4 Algorithms - Full Text
+export const algorithmsFullText: FullTextChapter = {
+  id: "algorithms",
+  title: "Algorithms",
+  description: "The history and importance of algorithms in mathematics.",
+  part: "part-02",
+  partTitle: "Origins of Modern Mathematics",
+  order: 4,
+  content: [
+    {
+      id: "what-is-algorithm",
+      title: "What Is an Algorithm?",
+      type: "text",
+      content: "The evolution of the concept of algorithm.",
+      fullText: `It is not easy to give a precise definition of the word "algorithm." One can provide approximate synonyms: "rule," "technique," "procedure," and "method." One can also give good examples, such as long multiplication, the method one learns in high school for multiplying two positive integers together.
+
+However, the concept has undergone a long evolution: it was not until the twentieth century that a satisfactory formal definition was achieved. In this article, we shall try to explain some of these developments.
+
+**From Abacists to Algorists**
+
+How you multiply two numbers together is strongly influenced by how you represent those numbers. Try multiplying the Roman numerals CXLVII and XXIX together without first converting them to 147 and 29. It is difficult and time-consuming, which explains why arithmetic in the Roman empire was extremely rudimentary.
+
+A numeration system can be additive, as it was for the Romans, or positional, like ours today. For a long time, many processes of calculation used abacuses—lines traced on sand onto which one placed stones (the Latin for small stone is calculus).
+
+In the twelfth century, when Arabic mathematical works were translated into Latin, the decimal positional system spread through Europe. This system was particularly suitable for calculation. The term "algoritmus" was introduced to refer to these new methods, and to distinguish them from traditional abacus methods.
+
+The word "algorithm" comes from a distortion of the name al-Khwārizmī, who wrote the oldest known work on algebra in the ninth century. His treatise gave rise to the word "algebra."
+
+**The Modern Definition**
+
+Gradually, the term came to mean any process of systematic calculation that could be carried out by precise rules. With computers, the important role of finiteness was fully understood: an algorithm must stop and provide a result after finite time.
+
+Thus we arrive at the naive definition: An algorithm is a set of finitely many rules for manipulating a finite amount of data to produce a result in a finite number of steps.
+
+Note the insistence on finiteness: finiteness in writing the algorithm and finiteness in its implementation.`,
+      annotations: [
+        createAnnotation("algo-1", "analogy", "An algorithm is like a recipe: finite ingredients (data), clear steps (rules), and a guaranteed result in finite time. Unlike a recipe, algorithms must work for all valid inputs, not just specific cases."),
+        createAnnotation("algo-2", "visual", "Roman numerals are like tally marks—they work for counting but explode in complexity for multiplication. The positional system (Arabic numerals) makes algorithms practical by encoding magnitude in position."),
+        createAnnotation("algo-3", "deep-dive", "The word 'calculus' comes from Latin 'calculus' meaning small stone—ancient mathematicians literally calculated by moving pebbles on counting boards."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// II.5 The Development of Rigor in Mathematical Analysis - Full Text
+export const rigorInAnalysisFullText: FullTextChapter = {
+  id: "rigor-in-analysis",
+  title: "The Development of Rigor in Mathematical Analysis",
+  description: "How calculus was put on firm foundations.",
+  part: "part-02",
+  partTitle: "Origins of Modern Mathematics",
+  order: 5,
+  content: [
+    {
+      id: "newton-leibniz",
+      title: "The Calculus Revolution",
+      type: "text",
+      content: "The invention of calculus and the problem of rigor.",
+      fullText: `In the late 17th century, Isaac Newton and Gottfried Wilhelm Leibniz independently invented calculus. Newton focused on motion and change, calling derivatives "fluxions." Leibniz focused on the algebra of infinitesimals, creating the notation (dy/dx, ∫) we still use today.
+
+Calculus was incredibly powerful but lacked rigor. Both used "infinitesimals"—quantities that were "infinitely small" but not quite zero. This led to criticism. Bishop Berkeley famously called infinitesimals "the ghosts of departed quantities."
+
+**The Path to Rigor**
+
+The solution came in the 19th century through the work of Cauchy, Weierstrass, and others. They replaced vague infinitesimals with the precise concept of limits.
+
+**Weierstrass and the ε-δ Definition**
+
+Karl Weierstrass (1815-1897) finally put calculus on completely rigorous foundations.
+
+**The ε-δ Definition of Limit**:
+
+lim(x→a) f(x) = L means:
+
+For every ε > 0, there exists a δ > 0 such that:
+if 0 < |x - a| < δ, then |f(x) - L| < ε
+
+This definition removes all ambiguity:
+- ε represents how close we want f(x) to be to L
+- δ represents how close x needs to be to a
+- The definition says we can always find such a δ for any ε
+
+**Impact**: This definition allows us to prove theorems about limits, continuity, derivatives, and integrals with complete rigor.`,
+      annotations: [
+        createAnnotation("calculus-1", "analogy", "Infinitesimals were like magic: 'they're zero, but they're not.' The ε-δ definition replaced magic with a precise game: 'Tell me how close (ε) you want the output, and I'll tell you how close (δ) the input needs to be.'"),
+        createAnnotation("calculus-2", "visual", "Think of ε as the 'error tolerance' and δ as the 'input precision.' The limit definition says: no matter how demanding your tolerance, there's always a precision that works."),
+        createAnnotation("calculus-3", "deep-dive", "Weierstrass's ε-δ definition was shocking in its time—no pictures, no intuition, just pure logical precision. It transformed analysis from an art to a rigorous science."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// II.6 The Development of the Idea of Proof - Full Text
+export const ideaOfProofFullText: FullTextChapter = {
+  id: "idea-of-proof",
+  title: "The Development of the Idea of Proof",
+  description: "How mathematical proof evolved from ancient Greece to modern times.",
+  part: "part-02",
+  partTitle: "Origins of Modern Mathematics",
+  order: 6,
+  content: [
+    {
+      id: "greek-revolution",
+      title: "The Greek Revolution",
+      type: "text",
+      content: "How the Greeks transformed mathematics through proof.",
+      fullText: `The Greeks transformed mathematics by making proof the central activity. Before them, mathematics was a collection of practical rules and techniques.
+
+**Thales of Miletus** (c. 624-546 BCE):
+- Often called the first mathematician
+- First to use deductive reasoning
+- Proved that a diameter bisects a circle
+
+**Pythagoras and his school** (c. 570-495 BCE):
+- Believed "all is number"
+- Discovered irrational numbers
+- Proved the Pythagorean theorem
+
+**Euclid's Elements** (c. 300 BCE):
+- Organized all known mathematics into a deductive system
+- Started from axioms and built up through logical deduction
+- Set the standard for mathematical proof for 2000 years
+
+The Greek approach: Start with self-evident truths (axioms) and deduce theorems through pure logic.
+
+**Types of Proof**
+
+Over the centuries, mathematicians developed various proof techniques:
+
+**Direct Proof**: Assume P is true, deduce Q through logical steps
+
+**Proof by Contradiction**: Assume the opposite of what you want to prove, show this leads to a contradiction. Classic example: Proving √2 is irrational
+
+**Proof by Induction**: Prove a base case, then show that if it holds for n, it holds for n+1. Used for statements about all natural numbers.
+
+**Proof by Contrapositive**: Prove "if P then Q" by proving "if not Q then not P"
+
+Each type has its strengths and is appropriate for different situations.`,
+      annotations: [
+        createAnnotation("proof-1", "analogy", "A mathematical proof is like a bridge: each step must bear the weight of the next. Skip a step, and the whole bridge collapses."),
+        createAnnotation("proof-2", "visual", "Proof by contradiction: assume the opposite and follow it until you hit a logical wall. The wall proves your original statement must be true."),
+        createAnnotation("proof-3", "deep-dive", "The Pythagoreans discovered √2 is irrational and reportedly drowned the discoverer to keep it secret. Proof by contradiction was born from this crisis."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// II.7 The Crisis in the Foundations of Mathematics - Full Text
+export const foundationsCrisisFullText: FullTextChapter = {
+  id: "foundations-crisis",
+  title: "The Crisis in the Foundations of Mathematics",
+  description: "Paradoxes, set theory, and the search for solid ground.",
+  part: "part-02",
+  partTitle: "Origins of Modern Mathematics",
+  order: 7,
+  content: [
+    {
+      id: "russells-paradox",
+      title: "Russell's Paradox",
+      type: "text",
+      content: "The paradox that threatened the foundations of mathematics.",
+      fullText: `In 1901, Bertrand Russell discovered a devastating paradox that threatened the foundations of mathematics.
+
+**The Paradox**: Consider the set R = {x : x ∉ x} (the set of all sets that don't contain themselves)
+
+**Question**: Does R contain itself?
+
+- If R ∈ R, then by definition R ∉ R
+- If R ∉ R, then by definition R ∈ R
+
+Either way, we get a contradiction!
+
+**Impact**: This showed that naive set theory was inconsistent. The foundation of mathematics was cracked.
+
+Russell wrote to Frege, who was just finishing his magnum opus on the foundations of arithmetic. Frege's response: "Your discovery of the contradiction caused me the greatest surprise and, I would almost say, consternation, since it has shaken the basis on which I intended to build my arithmetic."
+
+**Gödel's Incompleteness Theorems**
+
+In 1931, Kurt Gödel proved two theorems that shook the foundations of mathematics.
+
+**First Incompleteness Theorem**: In any consistent formal system F powerful enough to encode basic arithmetic, there exist statements that are true but unprovable in F.
+
+**Second Incompleteness Theorem**: Such a system F cannot prove its own consistency.
+
+**Interpretation**: No matter how comprehensive your axioms are, there will always be true statements you can't prove (unless your system is inconsistent, in which case you can prove everything, including contradictions).
+
+**Impact**: Hilbert's dream of a complete, consistent foundation for all mathematics was impossible.
+
+**Response**: Mathematicians mostly carry on as before. The unprovable statements are esoteric; they don't affect day-to-day mathematics.
+
+The crisis in foundations led to deeper understanding, even if it didn't provide the certainty mathematicians sought.`,
+      annotations: [
+        createAnnotation("crisis-1", "visual", "Russell's paradox is like the barber who shaves all who don't shave themselves. Does he shave himself? If yes, he shouldn't. If no, he should. Either way, contradiction."),
+        createAnnotation("crisis-2", "analogy", "Gödel's theorem is like a liar paradox: 'This statement is unprovable.' If provable, it's false. If unprovable, it's true—but you can't prove it."),
+        createAnnotation("crisis-3", "deep-dive", "Hilbert's program aimed to prove mathematics consistent and complete. Gödel showed this is impossible—the quest for absolute certainty in mathematics is doomed."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   whatIsMathematicsFullText,
@@ -682,6 +886,10 @@ export const fullTextChapters: FullTextChapter[] = [
   fromNumbersToNumberSystemsFullText,
   geometryOriginsFullText,
   abstractAlgebraDevelopmentFullText,
+  algorithmsFullText,
+  rigorInAnalysisFullText,
+  ideaOfProofFullText,
+  foundationsCrisisFullText,
   piFullText,
 ]
 
