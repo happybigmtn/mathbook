@@ -3103,6 +3103,208 @@ The FFT enables:
   exercises: [],
 }
 
+// III.58 Modular Arithmetic - Full Text
+export const modularArithmeticFullText: FullTextChapter = {
+  id: "modular-arithmetic",
+  title: "Modular Arithmetic",
+  description: "The mathematics of remainders and cyclic patterns.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 58,
+  content: [
+    {
+      id: "modular-intro",
+      title: "Working with Remainders",
+      type: "text",
+      content: "A powerful tool for solving number theory problems.",
+      fullText: `Modular arithmetic is the mathematics of remainders. It provides elegant solutions to questions that seem difficult when approached directly.
+
+**The Core Idea**
+
+Two numbers are **congruent modulo m** if they leave the same remainder when divided by m:
+
+a ≡ b (mod m) means m divides (a - b)
+
+**Example: Last Digit of Squares**
+
+Is there a square ending in 7? List squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100...
+
+Last digits: 1, 4, 9, 6, 5, 6, 9, 4, 1, 0... repeating cycle, never 7!
+
+**Why?** Write n = 10q + r where r ∈ {0,1,...,9}.
+
+Then n² = 100q² + 20qr + r² = 10(10q² + 2qr) + r²
+
+Only r² affects the last digit. Computing r² for r = 0 to 9:
+- 0²=0, 1²=1, 2²=4, 3²=9, 4²=16→6
+- 5²=25→5, 6²=36→6, 7²=49→9, 8²=64→4, 9²=81→1
+
+Possible last digits: 0, 1, 4, 5, 6, 9. No 7!
+
+**Divisibility Rules**
+
+10 ≡ 1 (mod 9), so 10^k ≡ 1 (mod 9) for all k.
+
+Therefore: N = a_d·10^d + ... + a_1·10 + a_0 ≡ a_d + ... + a_1 + a_0 (mod 9)
+
+**Divisibility by 9**: Sum the digits! If the sum is divisible by 9, so is N.
+
+Example: 438345 → 4+3+8+3+4+5 = 27, which is divisible by 9. So 438345 = 9 × 48705.
+
+**Fermat's Little Theorem**
+
+If p is prime and a ≢ 0 (mod p), then:
+
+a^(p-1) ≡ 1 (mod p)
+
+**Proof**: Consider a, 2a, 3a, ..., (p-1)a (mod p). These are all distinct and non-zero (by cancellation), so they must be a rearrangement of 1, 2, ..., p-1.
+
+Multiplying: a·2a·3a·...·(p-1)a ≡ 1·2·...·(p-1) (mod p)
+
+So a^(p-1)·(p-1)! ≡ (p-1)! (mod p)
+
+Cancel (p-1)! to get a^(p-1) ≡ 1 (mod p).
+
+**Euler's Theorem (Generalization)**
+
+If gcd(a,m) = 1, then:
+
+a^φ(m) ≡ 1 (mod m)
+
+where φ(m) = #{1 ≤ k ≤ m : gcd(k,m) = 1} is Euler's totient function.
+
+**Example**: φ(9) = 6 (numbers: 1,2,4,5,7,8), so 5^6 ≡ 1 (mod 9).
+
+Check: 5^6 = 15625 → 1+5+6+2+5 = 19 ≡ 1 (mod 9). ✓
+
+**When Can We Divide?**
+
+Unlike regular arithmetic, we can't always divide in modular arithmetic.
+
+If ac ≡ bc (mod m), we can conclude a ≡ b (mod m) **only if** gcd(c,m) = 1.
+
+Counterexample: 2·3 ≡ 4·3 (mod 6), but 2 ≢ 4 (mod 6).
+
+However, if p is prime and c ≢ 0 (mod p), then ac ≡ bc (mod p) implies a ≡ b (mod p).
+
+**Applications**
+
+- **Cryptography**: RSA encryption relies on modular exponentiation
+- **Check digits**: ISBNs, credit cards use modular checksums
+- **Computer science**: Hash functions, random number generators
+- **Calendar calculations**: Day of the week computations
+- **Music theory**: Intervals modulo 12 (chromatic scale)`,
+      annotations: [
+        createAnnotation("mod-1", "visual", "Modular arithmetic is like a clock. On a 12-hour clock, 15:00 is 3:00—15 ≡ 3 (mod 12). The numbers 'wrap around' after reaching the modulus."),
+        createAnnotation("mod-2", "analogy", "Think of modular arithmetic as 'cyclical thinking.' Instead of asking 'how big is the number?' ask 'where does it fall in the cycle?' Like knowing someone's birthday is Tuesday, not caring which Tuesday of which year."),
+        createAnnotation("mod-3", "deep-dive", "The RSA cryptosystem: pick primes p, q. Let n = pq and φ(n) = (p-1)(q-1). Choose e with gcd(e, φ(n)) = 1. Public key: (e, n). Encrypt: c ≡ m^e (mod n). Decrypt using private key d where ed ≡ 1 (mod φ(n)). Security relies on factoring n being hard!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.73 Quadratic Forms - Full Text
+export const quadraticFormsFullText: FullTextChapter = {
+  id: "quadratic-forms",
+  title: "Quadratic Forms",
+  description: "Homogeneous polynomials of degree 2 with rich connections to geometry and number theory.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 73,
+  content: [
+    {
+      id: "quadratic-intro",
+      title: "What Are Quadratic Forms?",
+      type: "text",
+      content: "The next step after linear functions.",
+      fullText: `A **quadratic form** is a homogeneous polynomial of degree 2:
+
+q(x₁, x₂, ..., xₙ) = ΣᵢⱩ aᵢⱩ xᵢ xⱩ
+
+Example: q(x,y,z) = x² - 3xy + 4z²
+
+**Connection to Inner Products**
+
+The square of Euclidean distance is a quadratic form:
+
+|x|² = x₁² + x₂² + ... + xₙ² = ⟨x, x⟩
+
+This comes from the inner product:
+⟨x, y⟩ = x₁y₁ + x₂y₂ + ... + xₙyₙ
+
+**Key Properties of Inner Products**:
+1. ⟨x, x⟩ ≥ 0 (positive definite), equality iff x = 0
+2. ⟨x, y+z⟩ = ⟨x, y⟩ + ⟨x, z⟩ (linear)
+3. ⟨λx, y⟩ = λ⟨x, y⟩ (homogeneous)
+4. ⟨x, y⟩ = ⟨y, x⟩ (symmetric)
+
+**Recovering the Bilinear Form**
+
+From q(x) = g(x,x), recover g via the **polarization identity**:
+
+g(x,y) = ½[q(x+y) - q(x) - q(y)]
+
+This works over any field (except characteristic 2, where ½ doesn't exist).
+
+**Diagonalization**
+
+By choosing the right basis, any quadratic form becomes:
+
+q(x) = x₁² + ... + xₛ² - xₛ₊₁² - ... - xₜ²
+
+The **signature** is (s, t-s, d-t) = (positive, negative, zero).
+
+**Minkowski Space (Special Relativity)**
+
+q(x,y,z,t) = x² + y² + z² - t²
+
+Signature: (3, 1, 0). This minus sign makes spacetime hyperbolic, not Euclidean!
+
+**Fermat's Two-Squares Theorem**
+
+An odd prime p can be written as p = a² + b² if and only if p ≡ 1 (mod 4).
+
+Examples:
+- 5 = 1² + 2² (5 ≡ 1 mod 4) ✓
+- 13 = 2² + 3² (13 ≡ 1 mod 4) ✓
+- 7 ≢ 1 mod 4, and indeed 7 ≠ a² + b² ✓
+
+**Lagrange's Four-Squares Theorem**
+
+Every positive integer n can be written as a sum of four squares:
+n = a² + b² + c² + d²
+
+Example: 7 = 2² + 1² + 1² + 1² = 4 + 1 + 1 + 1
+
+**Number of Representations**
+
+The number of ways to write n as a sum of four squares is:
+
+r₄(n) = 8 Σ d (sum over divisors d of n with 4 ∤ d)
+
+Example: Divisors of 5 are 1, 5. Neither is divisible by 4.
+r₄(5) = 8(1 + 5) = 48.
+
+Indeed, 5 = (±1)² + (±2)² + 0² + 0² has 48 representations (signs and orderings).
+
+**Why Quadratic Forms Matter**
+
+1. **Geometry**: Distances, angles, curvature
+2. **Number theory**: Sums of squares, class field theory
+3. **Physics**: Special relativity, mechanics
+4. **Optimization**: Definiteness conditions for extrema
+5. **Algebraic topology**: Intersection forms on 4-manifolds`,
+      annotations: [
+        createAnnotation("qf-1", "visual", "Diagonalizing a quadratic form is like finding the 'natural axes' of a shape. An ellipse becomes x²/a² + y²/b² = 1—aligned with major and minor axes. The signs tell you if it's an ellipse (++), hyperbola (+-), or degenerate."),
+        createAnnotation("qf-2", "analogy", "Quadratic forms are like lenses: they distort space in predictable ways. Positive definite forms (all + signs) act like magnifying glasses. Indefinite forms (mixed signs) act like funhouse mirrors—distorting different directions differently."),
+        createAnnotation("qf-3", "deep-dive", "The classification of quadratic forms over ℚ is a triumph of number theory. Hasse-Minkowski theorem: a form represents zero nontrivially over ℚ if and only if it does so over ℝ and all ℚₚ (p-adic numbers). This 'local-to-global' principle is profound!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   // Part I: Introduction
@@ -3151,6 +3353,8 @@ export const fullTextChapters: FullTextChapter[] = [
   axiomOfDeterminacyFullText,
   differentialFormsFullText,
   fastFourierTransformFullText,
+  modularArithmeticFullText,
+  quadraticFormsFullText,
 ]
 
 // Helper to get full text chapter by ID
