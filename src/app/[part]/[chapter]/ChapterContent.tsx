@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowLeft, ArrowRight, CheckCircle, Trophy, FileText, StickyNote, ChevronLeft } from "lucide-react"
 import { getChapterById, getChaptersByPart } from "@/data/chapters"
 import { getFullTextChapterById, hasFullText } from "@/data/fullTextChapters"
+import { getFeynmanChapterById, hasFeynman } from "@/data/feynmanChapters"
 
 import {
   CommutativePropertyDemo,
@@ -56,8 +57,10 @@ interface ChapterContentProps {
 export default function ChapterContent({ partId, chapterId }: ChapterContentProps) {
   const chapter = getChapterById(chapterId)
   const fullTextChapter = getFullTextChapterById(chapterId)
+  const feynmanChapter = getFeynmanChapterById(chapterId)
   
   const hasFullTextContent = hasFullText(chapterId)
+  const hasFeynmanContent = hasFeynman(chapterId)
   const [showFullText, setShowFullText] = useState(false)
   const { userState } = useProgress()
 
