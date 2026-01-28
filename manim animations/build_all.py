@@ -51,6 +51,101 @@ ANIMATIONS = [
         "file": "manifolds.py",
         "class": "ManifoldsScene",
     },
+    {
+        "name": "EulerIdentity",
+        "file": "euler_identity.py",
+        "class": "EulerIdentityScene",
+    },
+    {
+        "name": "FourierTransform",
+        "file": "fourier_transform.py",
+        "class": "FourierTransformScene",
+    },
+    {
+        "name": "EllipticCurves",
+        "file": "elliptic_curves.py",
+        "class": "EllipticCurvesScene",
+    },
+    {
+        "name": "TrigonometricFunctions",
+        "file": "trigonometric_functions.py",
+        "class": "TrigonometricFunctionsScene",
+    },
+    {
+        "name": "GoldenRatio",
+        "file": "golden_ratio.py",
+        "class": "GoldenRatioScene",
+    },
+    {
+        "name": "Fibonacci",
+        "file": "fibonacci.py",
+        "class": "FibonacciScene",
+    },
+    {
+        "name": "Infinity",
+        "file": "infinity.py",
+        "class": "InfinityScene",
+    },
+    {
+        "name": "EpsilonDelta",
+        "file": "epsilon_delta.py",
+        "class": "EpsilonDeltaScene",
+    },
+    {
+        "name": "ModularArithmetic",
+        "file": "modular_arithmetic.py",
+        "class": "ModularArithmeticScene",
+    },
+    {
+        "name": "ThreeGeometries",
+        "file": "three_geometries.py",
+        "class": "ThreeGeometriesScene",
+    },
+    {
+        "name": "CentralLimitTheorem",
+        "file": "central_limit_theorem.py",
+        "class": "CentralLimitTheoremScene",
+    },
+    {
+        "name": "NumberSystems",
+        "file": "number_systems.py",
+        "class": "NumberSystemsScene",
+    },
+    {
+        "name": "ProofTechniques",
+        "file": "proof_techniques.py",
+        "class": "ProofTechniquesScene",
+    },
+    {
+        "name": "ComplexNumbers",
+        "file": "complex_numbers.py",
+        "class": "ComplexNumbersScene",
+    },
+    {
+        "name": "Vectors",
+        "file": "vectors.py",
+        "class": "VectorsScene",
+    },
+    {
+        "name": "Derivatives",
+        "file": "derivatives.py",
+        "class": "DerivativesScene",
+    },
+    {
+        "name": "Matrices",
+        "file": "matrices.py",
+        "class": "MatricesScene",
+    },
+    {
+        "name": "Integration",
+        "file": "integration.py",
+        "class": "IntegrationScene",
+    },
+    {
+        "name": "TaylorSeries",
+        "file": "taylor_series.py",
+        "class": "TaylorSeriesScene",
+    },
 ]
 
 
