@@ -24,6 +24,8 @@ import {
   NumberSystemsVisualizer,
   GroupTheoryVisualizer,
   AlgorithmVisualizer,
+  ProofTechniquesVisualizer,
+  RussellsParadoxVisualizer,
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
@@ -48,6 +50,8 @@ const componentMap: Record<string, React.ComponentType> = {
   NumberSystemsVisualizer,
   GroupTheoryVisualizer,
   AlgorithmVisualizer,
+  ProofTechniquesVisualizer,
+  RussellsParadoxVisualizer,
 }
 
 interface ChapterContentProps {
