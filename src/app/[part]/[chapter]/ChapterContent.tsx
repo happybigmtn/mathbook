@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { ArrowLeft, ArrowRight, CheckCircle, Trophy, FileText, StickyNote, ChevronLeft } from "lucide-react"
+import { ArrowLeft, ArrowRight, CheckCircle, Trophy, FileText, StickyNote, ChevronLeft, Maximize2, Minimize2 } from "lucide-react"
 import { getChapterById, getChaptersByPart } from "@/data/chapters"
 import { getFullTextChapterById, hasFullText } from "@/data/fullTextChapters"
 import { InlineMath, BlockMath } from "react-katex"
@@ -130,6 +130,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
   
   const hasFullTextContent = hasFullText(chapterId)
   const [showFullText, setShowFullText] = useState(false)
+  const [useFullWidth, setUseFullWidth] = useState(false)
   const { userState } = useProgress()
 
   if (!chapter) {
@@ -300,7 +301,7 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
 
   return (
     <div className="min-h-screen py-8 md:py-12 px-4 sm:px-6 lg:px-8">
-      <div className={`mx-auto transition-all duration-300 ${showFullText && hasFullTextContent ? 'max-w-6xl' : 'max-w-3xl'}`}>
+      <div className={`mx-auto transition-all duration-300 ${useFullWidth ? 'max-w-6xl' : 'max-w-3xl'}`}>
         
         {/* Breadcrumb */}
         <motion.div

@@ -9,9 +9,67 @@ function createAnnotation(
   return { id, type, content }
 }
 
+// Mapping of book references to chapter IDs and parts
+const chapterMap: Record<string, { id: string; part: string }> = {
+  // Part I: Introduction
+  "I.1": { id: "what-is-mathematics-about", part: "part-01" },
+  "I.2": { id: "language-and-grammar", part: "part-01" },
+  "I.3": { id: "fundamental-definitions", part: "part-01" },
+  "I.4": { id: "general-goals", part: "part-01" },
+  
+  // Part II: Origins of Modern Mathematics
+  "II.1": { id: "from-numbers-to-number-systems", part: "part-02" },
+  "II.2": { id: "geometry-origins", part: "part-02" },
+  "II.3": { id: "abstract-algebra-development", part: "part-02" },
+  "II.4": { id: "algorithms", part: "part-02" },
+  "II.5": { id: "rigor-in-analysis", part: "part-02" },
+  "II.6": { id: "idea-of-proof", part: "part-02" },
+  "II.7": { id: "foundations-crisis", part: "part-02" },
+  
+  // Part III: Mathematical Concepts
+  "III.1": { id: "axiom-of-choice", part: "part-03" },
+  "III.37": { id: "bayesian-analysis", part: "part-03" },
+  "III.62": { id: "placeholder", part: "part-03" }, // Banach spaces - not yet created
+  "III.78": { id: "placeholder", part: "part-03" }, // Ricci flow - not yet created
+  
+  // Part IV: Branches of Mathematics
+  "IV.1": { id: "number-theory", part: "part-04" },
+  "IV.2": { id: "number-theory", part: "part-04" }, // Analytic number theory
+  "IV.4": { id: "algebra", part: "part-04" }, // Algebraic geometry
+  "IV.5": { id: "placeholder", part: "part-04" }, // Arithmetic geometry
+  "IV.12": { id: "analysis", part: "part-04" }, // Partial differential equations
+  "IV.13": { id: "placeholder", part: "part-04" }, // General relativity
+  "IV.14": { id: "placeholder", part: "part-04" }, // Dynamics
+  "IV.15": { id: "placeholder", part: "part-04" }, // Operator algebras
+  "IV.16": { id: "placeholder", part: "part-04" }, // Mirror symmetry
+  "IV.17": { id: "placeholder", part: "part-04" }, // Vertex operator algebras
+  "IV.22": { id: "placeholder", part: "part-04" }, // Set theory
+  "IV.23": { id: "placeholder", part: "part-04" }, // Model theory
+  "IV.24": { id: "placeholder", part: "part-04" }, // Brownian motion
+  "IV.25": { id: "placeholder", part: "part-04" }, // Probabilistic models
+  
+  // Part V: Theorems and Problems
+  "V.7": { id: "placeholder", part: "part-05" }, // Classification of finite simple groups
+  "V.10": { id: "placeholder", part: "part-05" }, // Fermat's Last Theorem
+  "V.15": { id: "placeholder", part: "part-05" }, // Gödel's incompleteness theorems
+  "V.18": { id: "placeholder", part: "part-05" }, // Continuum hypothesis
+  "V.21": { id: "placeholder", part: "part-05" }, // Insolubility of the quintic
+  
+  // Part VII: Applications
+  "VII.7": { id: "placeholder", part: "part-07" }, // Cryptography
+}
+
 // Helper function to convert book references to links
 function ref(chapter: string): string {
-  return `[${chapter}](#chapter-${chapter.toLowerCase().replace(/\./g, "-")})`
+  const mapped = chapterMap[chapter]
+  if (mapped) {
+    if (mapped.id === "placeholder") {
+      return `[${chapter}](/placeholder?ref=${encodeURIComponent(chapter)})`
+    }
+    return `[${chapter}](/${mapped.part}/${mapped.id})`
+  }
+  // Fallback to placeholder for unknown references
+  return `[${chapter}](/placeholder?ref=${encodeURIComponent(chapter)})`
 }
 
 // I.1 What Is Mathematics About? - Full Text (Verbatim from Princeton Companion to Mathematics)

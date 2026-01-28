@@ -31,7 +31,28 @@ ANIMATIONS = [
         "file": "prime_numbers.py",
         "class": "PrimeNumbersScene",
     },
+    {
+        "name": "AxiomOfChoice",
+        "file": "axiom_of_choice.py",
+        "class": "AxiomOfChoiceScene",
+    },
+    {
+        "name": "Compactness",
+        "file": "compactness.py",
+        "class": "CompactnessScene",
+    },
+    {
+        "name": "Groups",
+        "file": "groups.py",
+        "class": "GroupsScene",
+    },
+    {
+        "name": "Manifolds",
+        "file": "manifolds.py",
+        "class": "ManifoldsScene",
+    },
 ]
+
 
 def build_animation(animation):
     """Build a single Manim animation"""
@@ -62,6 +83,7 @@ def build_animation(animation):
         print(f"✗ {animation['name']} error: {e}")
         return False
 
+
 def main():
     """Build all animations"""
     output_dir = Path("public/animations")
@@ -79,6 +101,7 @@ def main():
     print(f"Built {success_count}/{len(ANIMATIONS)} animations")
 
     return 0 if success_count == len(ANIMATIONS) else 1
+
 
 if __name__ == "__main__":
     sys.exit(main())
