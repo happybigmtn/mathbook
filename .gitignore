@@ -39,3 +39,6 @@ __pycache__/
 # Temporary files
 *.log
 *.tmp
+
+# Local Netlify folder
+.netlify
