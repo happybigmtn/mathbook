@@ -91,3 +91,24 @@ src/data/
 - Users can read Feynman tab alone and understand the material deeply
 - Full Text tab preserves the authority and completeness of the original
 - Visualizations enhance but don't replace mathematical content
+
+## Deployment Strategy (Cost-Optimized)
+
+**To save Netlify/Vercel credits:**
+
+### Automatic Deployments:
+- **Pull Requests**: Only staging/preview deploys (free on Netlify)
+- **Push to master**: No longer triggers production deploys
+
+### Manual Production Deploys:
+When you need to deploy to production:
+1. Go to GitHub Actions → "Deploy to Netlify (Staging/Preview)"
+2. Click "Run workflow"
+3. Select "production" from the dropdown
+4. Click "Run workflow"
+
+### Why This Saves Money:
+- Preview deploys on PRs are typically free or low-cost
+- Production deploys only when explicitly needed
+- Prevents accidental production deploys on every commit
+- Allows testing on staging before production
