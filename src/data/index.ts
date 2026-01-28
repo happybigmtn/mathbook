@@ -4,11 +4,8 @@ export {
   getChaptersByPart, 
   getAllParts,
   allChapters,
-  part02Chapters,
-  additionalPart02Chapters,
-  part03Concepts,
-  morePart03Concepts,
-  part04Branches,
+  part02Complete,
+  part03Complete,
 } from "./chapters"
 export { concepts, getConceptById, getConceptsByCategory } from "./concepts"
 export { mathematicians, getMathematicianById } from "./mathematicians"

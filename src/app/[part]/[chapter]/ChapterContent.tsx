@@ -12,6 +12,7 @@ import {
   EulersFormulaDemo,
   PiVisualization,
   PythagoreanTheoremDemo,
+  EuclideanConstructions,
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
@@ -24,6 +25,7 @@ const componentMap: Record<string, React.ComponentType> = {
   EulersFormulaDemo,
   PiVisualization,
   PythagoreanTheoremDemo,
+  EuclideanConstructions,
 }
 
 interface ChapterContentProps {
