@@ -92,7 +92,7 @@ What we're doing here is capturing the idea of "instantaneous rate of change." T
 
 But there's a technical difficulty here. We're talking about what happens as two points get "arbitrarily close" together. What does that mean exactly? This is where the rigorous definition of a limit comes in.
 
-We say that a sequence of values approaches a limit $L$ if, no matter how small a tolerance $\varepsilon$ we choose, eventually all the values in the sequence are within $\varepsilon$ of $L$. This $\varepsilon$-definition of a limit, developed in the 19th century, finally put calculus on a solid logical foundation.
+We say that a sequence of values approaches a limit $L$ if, no matter how small a tolerance $\\varepsilon$ we choose, eventually all the values in the sequence are within $\\varepsilon$ of $L$. This $\\varepsilon$-definition of a limit, developed in the 19th century, finally put calculus on a solid logical foundation.
 
 Analysis studies these limiting processes systematically. It deals with questions like: When do limits exist? When can we interchange limiting operations? (For instance, can we take the limit of a sum by taking the sum of the limits?) These questions might seem technical, but they're essential for ensuring that the mathematical structures we build are sound.
 
