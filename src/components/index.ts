@@ -4,7 +4,6 @@ export { ProgressProvider, useProgress } from "./ProgressProvider"
 export { ManimVideoPlayer } from "./ManimVideoPlayer"
 export {
   FeynmanLayout,
-  FullTextSection,
   Highlight,
   Definition,
   TheoremBox,

@@ -121,17 +121,6 @@ What's remarkable is that these same types of questions appear across all branch
   ],
 }
 
-// Helper function to get Feynman chapter by ID
-export function getFeynmanChapterById(id: string): FeynmanChapter | undefined {
-  const chapters = [whatIsMathematicsFeynman]
-  return chapters.find((chapter) => chapter.id === id)
-}
-
-// Helper function to check if Feynman content exists
-export function hasFeynmanContent(id: string): boolean {
-  return getFeynmanChapterById(id) !== undefined
-}
-
 // I.2 The Language and Grammar of Mathematics - FEYNMAN LECTURES STYLE
 export const languageAndGrammarFeynman: FeynmanChapter = {
   id: "language-and-grammar",

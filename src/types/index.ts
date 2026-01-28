@@ -119,9 +119,10 @@ export interface FullTextChapter extends Chapter {
 export interface FeynmanSection {
   id: string
   title: string
-  type: 'text' | 'interactive' | 'animation'
+  type: 'text' | 'interactive' | 'animation' | 'manim'
   content: string
   component?: string
+  animation?: string
   data?: unknown
 }
 

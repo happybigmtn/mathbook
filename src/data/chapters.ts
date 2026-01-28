@@ -1078,6 +1078,13 @@ Groups capture the essence of symmetry. Understanding a group's structure tells 
         `,
       },
       {
+        id: "groups-visualization",
+        title: "Visualizing Groups",
+        type: "manim",
+        content: "Visual demonstration of group theory using symmetries of a triangle",
+        animation: "Groups",
+      },
+      {
         id: "group-theory-applications",
         title: "The Power of Group Theory",
         type: "text",
@@ -1450,6 +1457,13 @@ export const foundationsConcepts: Chapter[] = [
         type: "text",
         content: `The Axiom of Choice (AC) states: Given any collection of non-empty sets, it is possible to choose one element from each set. The controversy: AC allows us to prove the existence of objects we cannot explicitly construct.`,
       },
+      {
+        id: "ac-visualization",
+        title: "Visual Explanation",
+        type: "manim",
+        content: "Visual demonstration of choosing elements from finite and infinite collections",
+        animation: "AxiomOfChoice",
+      },
     ],
     exercises: [{ id: "ex-3-1", title: "Understanding AC", difficulty: "medium", type: "multiple-choice", question: "For which collections do we NOT need AC?", options: ["Finite collections", "Infinite collections", "Uncountable collections"], answer: "Finite collections", hint: "We can explicitly choose from finitely many sets.", explanation: "For finite collections, we can make choices explicitly without AC.", points: 10 }],
   },
@@ -1790,7 +1804,16 @@ export const numberTheoryConcepts: Chapter[] = [
     part: "part-03",
     partTitle: "Mathematical Concepts",
     order: 34,
-    content: [{ id: "pnt-content", title: "Density of Primes", type: "text", content: `The Prime Number Theorem says the probability that n is prime is about 1/ln(n). This was first proved by Hadamard and de la Vallée Poussin in 1896.` }],
+    content: [
+      { id: "pnt-content", title: "Density of Primes", type: "text", content: `The Prime Number Theorem says the probability that n is prime is about 1/ln(n). This was first proved by Hadamard and de la Vallée Poussin in 1896.` },
+      {
+        id: "primes-visualization",
+        title: "Prime Numbers Visualization",
+        type: "manim",
+        content: "Visual exploration of prime numbers, the Sieve of Eratosthenes, and Euclid's proof of infinitely many primes",
+        animation: "PrimeNumbers",
+      },
+    ],
     exercises: [{ id: "ex-pnt", title: "Prime Density", difficulty: "medium", type: "interactive", question: "Approximately how many primes are there less than 1,000,000?", answer: "72000", hint: "Use x/ln(x) with x = 1,000,000.", explanation: "π(10⁶) ≈ 10⁶/ln(10⁶) = 10⁶/(6×ln(10)) ≈ 72,382. Actual value is 78,498.", points: 15 }],
   },
   {
