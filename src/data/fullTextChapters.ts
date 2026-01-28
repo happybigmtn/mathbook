@@ -517,6 +517,106 @@ The parallel postulate, which had seemed like a defect in Euclid's system, turne
   ],
 }
 
+// II.3 The Development of Abstract Algebra - Full Text
+export const abstractAlgebraDevelopmentFullText: FullTextChapter = {
+  id: "abstract-algebra-development",
+  title: "The Development of Abstract Algebra",
+  description: "From solving equations to the abstract study of algebraic structures.",
+  part: "part-02",
+  partTitle: "Origins of Modern Mathematics",
+  order: 3,
+  content: [
+    {
+      id: "equations-to-structures",
+      title: "From Equations to Structures",
+      type: "text",
+      content: "How algebra evolved from solving specific problems to studying abstract patterns.",
+      fullText: `What is algebra? To the high school student encountering it for the first time, algebra is an unfamiliar abstract language of x's and y's, a's and b's, together with rules for manipulating them. These letters can be used to express straight lines as equations, solve simultaneous equations, and work with more complicated curves like quadratics, cubics, and quartics.
+
+Just when there already seem to be a lot of techniques involved, the ante is upped. More complicated curves enter the picture, but the same sort of notation and rules apply.
+
+Now suppose that same high school student goes on to university and attends an algebra course there. Essentially gone are the familiar x's, y's, a's, and b's; essentially gone are the nice graphs. The university course reflects some brave new world in which the algebra has somehow become "modern." This modern algebra involves abstract structures—groups, rings, fields, and other objects—each one defined in terms of a relatively small number of axioms.
+
+There is a lot of moving around between these objects, too, via maps like group homomorphisms and ring automorphisms. One objective of this new type of algebra is to understand the underlying structure of the objects and, in doing so, to build entire theories of groups or rings or fields.
+
+**The Power of Abstraction**
+
+These abstract theories may then be applied in diverse settings where the basic axioms are satisfied but where it may not be at all apparent that a group or a ring or a field may be lurking. This is one of modern algebra's great strengths: once we have proved a general fact about an algebraic structure, there is no need to prove that fact separately each time we come across an instance of that structure.
+
+This abstract approach allows us to recognize that contexts that may look quite different are in fact importantly similar.
+
+How is it that two endeavors—the high school analysis of polynomial equations and the modern algebra of the research mathematician—so seemingly different in their objectives, in their tools, and in their philosophical outlooks are both called "algebra"? Are they even related? In fact, they are, but the story of how they are is long and complicated.`,
+      annotations: [
+        createAnnotation("algebra-1", "analogy", "High school algebra is like learning to drive specific cars. Abstract algebra is like understanding how all engines work, so you can drive anything with wheels."),
+        createAnnotation("algebra-2", "visual", "A group is like a set of dance moves. You can combine moves (operation), there's a 'do nothing' move (identity), and every move can be undone (inverse). The specific dance doesn't matter—only the pattern of combinations."),
+        createAnnotation("algebra-3", "deep-dive", "The quadratic formula works because of the structure of polynomial rings. Galois proved you can't have a similar formula for degree 5+ because the symmetric group S₅ isn't solvable."),
+      ],
+    },
+    {
+      id: "groups-symmetry",
+      title: "Groups: The Algebra of Symmetry",
+      type: "text",
+      content: "How the study of symmetry led to group theory.",
+      fullText: `A group is a set G with a binary operation · satisfying four axioms:
+
+**1. Closure**: For all a, b ∈ G, we have a·b ∈ G
+
+**2. Associativity**: For all a, b, c ∈ G, we have (a·b)·c = a·(b·c)
+
+**3. Identity**: There exists an element e ∈ G such that e·a = a·e = a for all a ∈ G
+
+**4. Inverses**: For each a ∈ G, there exists a⁻¹ ∈ G such that a·a⁻¹ = e
+
+**Examples**:
+- (ℤ, +): Integers under addition
+- (ℚ*, ×): Non-zero rationals under multiplication
+- Symmetries of a triangle (6 elements)
+- Permutations of {1, 2, ..., n}
+
+Groups capture the essence of symmetry. Understanding a group's structure tells us about the symmetries of the object it describes.
+
+**The Power of Group Theory**
+
+Group theory has applications across mathematics and beyond:
+
+**Geometry**: Classifying symmetries of shapes and patterns
+
+**Number Theory**: Studying properties of integers and modular arithmetic
+
+**Physics**: Noether's theorem
+- Every symmetry corresponds to a conservation law
+- Translation symmetry → Conservation of momentum
+- Rotation symmetry → Conservation of angular momentum
+- Time symmetry → Conservation of energy
+
+**Chemistry**: Analyzing molecular symmetry and spectroscopy
+
+**Cryptography**: Building secure encryption systems
+
+The abstract approach reveals deep connections between seemingly unrelated fields.`,
+      annotations: [
+        createAnnotation("group-1", "visual", "The four group axioms are like the rules of a club: (1) if you combine two members you get a member, (2) grouping doesn't matter, (3) there's a 'do nothing' member, (4) every member can leave."),
+        createAnnotation("group-2", "analogy", "Symmetry operations on a snowflake form a group. Rotate 60°, flip, rotate back—these operations compose just like numbers add and multiply."),
+        createAnnotation("group-3", "deep-dive", "Noether's theorem: symmetry → conservation law. This is why physics works—rotate space and physics stays the same, so angular momentum is conserved."),
+      ],
+    },
+  ],
+  exercises: [
+    {
+      id: "ex-2-3-1",
+      title: "Group Axioms",
+      difficulty: "medium",
+      type: "multiple-choice",
+      question: "Which of the following is NOT a group axiom?",
+      options: ["Closure", "Commutativity", "Identity element", "Inverse elements"],
+      answer: "Commutativity",
+      hint: "Groups don't need to be commutative. Commutative groups are called 'abelian'.",
+      explanation: "Commutativity (a·b = b·a) is not required for a group. Groups that are commutative are called abelian groups, named after Niels Henrik Abel.",
+      points: 15,
+    },
+  ],
+}
+
 // III.51 Pi - Full Text
 export const piFullText: FullTextChapter = {
   id: "pi",
@@ -581,6 +681,7 @@ export const fullTextChapters: FullTextChapter[] = [
   fundamentalDefinitionsFullText,
   fromNumbersToNumberSystemsFullText,
   geometryOriginsFullText,
+  abstractAlgebraDevelopmentFullText,
   piFullText,
 ]
 
