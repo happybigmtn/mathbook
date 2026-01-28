@@ -419,6 +419,104 @@ The conclusion, then, is that lengths are not numbers: instead, they are some ot
   ],
 }
 
+// II.2 Geometry - Full Text
+export const geometryOriginsFullText: FullTextChapter = {
+  id: "geometry-origins",
+  title: "Geometry",
+  description: "From Egyptian surveying to Euclidean geometry and the discovery of non-Euclidean geometries.",
+  part: "part-02",
+  partTitle: "Origins of Modern Mathematics",
+  order: 2,
+  content: [
+    {
+      id: "greek-formulation",
+      title: "The Greek Formulation",
+      type: "text",
+      content: "How Euclid created the paradigm of logical deduction.",
+      fullText: `Geometry can be thought of as a set of useful facts about the world, or else as an organized body of knowledge. The origins of the subject are much disputed. It is clear that the civilizations of Egypt and Babylonia had at least some knowledge of geometry—otherwise, they could not have built their large cities, elaborate temples, and pyramids.
+
+But one glance at Euclid's famous Elements shows that a proper account of the history of geometry will have to be about something much more than the acquisition of geometrical facts. The Elements is a highly organized, deductive body of knowledge. It is divided into a number of distinct themes, but each theme has a complex theoretical structure.
+
+Whatever the origins of geometry might have been, by the time of Euclid it had become the paradigm of a logical subject, offering a kind of knowledge quite different from, and seemingly higher than, knowledge directly gleaned from ordinary experience.
+
+**The Elements**
+
+The Elements opens with four books on the study of plane figures: triangles, quadrilaterals, and circles. The famous theorem of Pythagoras is the forty-seventh proposition of the first book. Then come two books on the theory of ratio and proportion and the theory of similar figures (scale copies), treated with a high degree of sophistication.
+
+The next three books are about whole numbers, and are presumably a reworking of much older material that would now be classified as elementary number theory. Here, for example, one finds the famous result that there are infinitely many prime numbers.
+
+The next book, the tenth, is by far the longest, and deals with the seemingly specialist topic of lengths of the form √a ± √b. The final three books, where the curious lengths studied in Book X play a role, are about three-dimensional geometry. They end with the construction of the five regular solids and a proof that there are no more.
+
+**The Axiomatic Method**
+
+What makes the Elements so convincing is the nature of the arguments employed. With some exceptions, these arguments use the axiomatic method. That is to say, they start with some very simple axioms that are intended to be self-evidently true, and proceed by purely logical means to deduce theorems from them.
+
+For this approach to work, three features must be in place. The first is that circularity should be carefully avoided. That is, if you are trying to prove a statement P and you deduce it from an earlier statement, and deduce that from a yet earlier statement, and so on, then at no stage should you reach the statement P again.
+
+The second necessary feature is that the rules of inference should be clear and acceptable. Some geometrical statements seem so obvious that one can fail to notice that they need to be proved: ideally, one should use no properties of figures other than those that have been clearly stated in their definitions.
+
+The third feature is adequate definitions. Euclid offered definitions that were intended to capture our intuitive ideas about geometric objects.`,
+      annotations: [
+        createAnnotation("euclid-1", "visual", "Euclid's Elements is like a tower: each theorem rests on previous ones, all the way down to the axioms at the foundation. Remove any block and the structure above collapses."),
+        createAnnotation("euclid-2", "analogy", "The axiomatic method is like a recipe with guaranteed results: if you follow the steps (logical deductions) from the ingredients (axioms), you always get the same cake (theorem)."),
+        createAnnotation("euclid-3", "deep-dive", "The five regular solids (tetrahedron, cube, octahedron, dodecahedron, icosahedron) were so significant to Plato that he associated them with the classical elements: fire, earth, air, water, and the cosmos."),
+      ],
+    },
+    {
+      id: "parallel-postulate",
+      title: "The Parallel Postulate",
+      type: "text",
+      content: "The fifth postulate that sparked a revolution.",
+      fullText: `Among Euclid's axioms, one stood out as being considerably less self-evident than the others. This was the famous parallel postulate, which says that if a straight line falling on two straight lines makes the interior angles on the same side less than two right angles, then the two straight lines, if produced indefinitely, will meet on that side.
+
+This cumbersome formulation is equivalent to the statement that, given a line and a point not on that line, there is exactly one line through the point that never meets the given line. This alternative formulation is often called Playfair's axiom.
+
+For centuries, mathematicians tried to prove the parallel postulate from the other axioms. They believed it must be a consequence of the others, not an independent assumption. But all attempts failed.
+
+In the early nineteenth century, mathematicians discovered something remarkable: you could create consistent geometries where the parallel postulate is false. If you assume that through a given point there are infinitely many lines parallel to a given line, you get hyperbolic geometry. If you assume there are no parallel lines at all, you get elliptic geometry.
+
+**Non-Euclidean Geometry**
+
+The discovery of non-Euclidean geometry was shocking. For two thousand years, Euclidean geometry had been regarded as the true geometry of space. Now it turned out that other geometries were logically possible.
+
+Initially, non-Euclidean geometry was considered a curiosity. But then Einstein's general theory of relativity (1915) showed that physical space is not Euclidean. Mass and energy curve spacetime. The geometry of the universe is determined by the distribution of matter within it.
+
+The parallel postulate, which had seemed like a defect in Euclid's system, turned out to be the key insight that opened the door to understanding the geometry of the actual universe.`,
+      annotations: [
+        createAnnotation("parallel-1", "visual", "On a saddle (hyperbolic space), multiple lines through a point can be parallel to a given line. On a sphere (elliptic space), all great circles intersect—there are no parallels."),
+        createAnnotation("parallel-2", "analogy", "The parallel postulate is like asking 'what's north of the North Pole?' On a flat map, it's a nonsensical question. On a sphere, it reveals the curvature of the space."),
+        createAnnotation("parallel-3", "deep-dive", "Einstein showed that mass curves spacetime. Light bends around the sun not because of a force, but because it's following the straightest possible path (geodesic) in curved space."),
+      ],
+    },
+  ],
+  exercises: [
+    {
+      id: "ex-2-2-1",
+      title: "Triangle Sum",
+      difficulty: "easy",
+      type: "multiple-choice",
+      question: "In Euclidean geometry, what is the sum of angles in a triangle?",
+      options: ["180°", "Less than 180°", "More than 180°", "It depends"],
+      answer: "180°",
+      hint: "This is a fundamental theorem of Euclidean geometry.",
+      explanation: "In Euclidean geometry, the sum of interior angles in any triangle is exactly 180°. This is different in non-Euclidean geometries.",
+      points: 10,
+    },
+    {
+      id: "ex-2-2-2",
+      title: "Parallel Lines",
+      difficulty: "medium",
+      type: "multiple-choice",
+      question: "In hyperbolic geometry, how many lines through a point not on a given line are parallel to that line?",
+      options: ["Exactly one", "None", "Infinitely many", "It depends on the point"],
+      answer: "Infinitely many",
+      hint: "Hyperbolic geometry is characterized by having 'too many' parallel lines.",
+      explanation: "In hyperbolic geometry, given a line and a point not on it, there are infinitely many lines through the point that never intersect the given line.",
+      points: 15,
+    },
+  ],
+}
+
 // III.51 Pi - Full Text
 export const piFullText: FullTextChapter = {
   id: "pi",
@@ -482,6 +580,7 @@ export const fullTextChapters: FullTextChapter[] = [
   languageAndGrammarFullText,
   fundamentalDefinitionsFullText,
   fromNumbersToNumberSystemsFullText,
+  geometryOriginsFullText,
   piFullText,
 ]
 
