@@ -2541,6 +2541,296 @@ Russell's observations were doubted by mathematicians like Stokes and Airy becau
   exercises: [],
 }
 
+// III.8 Categories - Full Text
+export const categoriesFullText: FullTextChapter = {
+  id: "categories",
+  title: "Categories",
+  description: "The abstract study of mathematical structures and structure-preserving maps.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 8,
+  content: [
+    {
+      id: "what-are-categories",
+      title: "What Are Categories?",
+      type: "text",
+      content: "Abstracting the notion of structure-preserving maps.",
+      fullText: `When we study groups or vector spaces, we pay attention to structure-preserving maps: group homomorphisms and linear maps. Category theory abstracts this to understand general properties of such maps.
+
+**Definition**
+
+A **category** consists of:
+- **Objects**: A collection of mathematical structures
+- **Morphisms**: Maps between objects that preserve structure
+- **Composition**: Morphisms can be composed (when ranges/domains match)
+- **Identity**: Each object has an identity morphism
+
+Composition must be associative: h ∘ (g ∘ f) = (h ∘ g) ∘ f
+
+**Examples**
+
+1. **Set**: Objects are sets, morphisms are functions
+2. **Grp**: Objects are groups, morphisms are homomorphisms
+3. **Vect**: Objects are vector spaces, morphisms are linear maps
+4. **Top**: Objects are topological spaces, morphisms are continuous functions
+
+**Isomorphisms**
+
+Two objects A and B are **isomorphic** if there exist morphisms f: A → B and g: B → A such that g ∘ f = idₐ and f ∘ g = idᵦ.
+
+Isomorphic objects are "essentially the same" from the category's perspective.
+
+**Why Categories Matter**
+
+Categories allow us to:
+- Make general arguments applicable to all structures with certain features
+- Focus on relationships (morphisms) rather than internal structure
+- Find deep connections between seemingly different areas of mathematics
+
+**Functors**
+
+A **functor** is a map between categories that preserves structure:
+- Maps objects to objects
+- Maps morphisms to morphisms
+- Preserves composition and identities
+
+Functors are how we translate between different mathematical worlds.
+
+**The Power of Abstraction**
+
+Category theory reveals that many constructions across mathematics are instances of the same universal pattern. This "abstract nonsense" (as it's affectionately called) unifies diverse fields.`,
+      annotations: [
+        createAnnotation("cat-1", "visual", "A category is like a subway map: stations are objects, train routes are morphisms. You can travel from A to B to C, and the total journey is the composition. Some stations might look different but connect identically—they're isomorphic."),
+        createAnnotation("cat-2", "analogy", "Category theory is like learning grammar instead of vocabulary. Instead of memorizing words (specific structures), you learn the rules (morphisms and composition) that work across all languages."),
+        createAnnotation("cat-3", "deep-dive", "The Yoneda lemma says an object is completely determined by its relationships to other objects. This is profound: you don't need to look inside an object, just at how it maps to/from everything else!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.6 Calabi-Yau Manifolds - Full Text  
+export const calabiYauFullText: FullTextChapter = {
+  id: "calabi-yau",
+  title: "Calabi-Yau Manifolds",
+  description: "Special geometric spaces important in string theory.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 6,
+  content: [
+    {
+      id: "calabi-yau-intro",
+      title: "What Are Calabi-Yau Manifolds?",
+      type: "text",
+      content: "Complex manifolds with special geometric properties.",
+      fullText: `Calabi-Yau manifolds, named after Eugenio Calabi and Shing-Tung Yau, are complex manifolds with special geometric properties. They play a prominent role in string theory and mirror symmetry.
+
+**Definition**
+
+A Calabi-Yau manifold is a compact Kähler manifold with vanishing first Chern class (or equivalently, with a Ricci-flat metric).
+
+More intuitively: it's a complex manifold with a "complex orientation" and a metric that satisfies certain curvature conditions.
+
+**Key Properties**
+
+- **Complex dimension n**, so real dimension 2n
+- **Ricci-flat metric**: A special metric where Ricci curvature vanishes
+- **Holonomy group**: Reduced holonomy (SU(n) instead of SO(2n))
+- **Canonical bundle**: Trivial (has a nowhere-vanishing holomorphic n-form)
+
+**Why They Matter**
+
+**String Theory**: In string theory, extra dimensions must be compactified. Calabi-Yau manifolds are the preferred choice because they:
+- Preserve some supersymmetry
+- Give rise to realistic particle physics
+- The topology determines properties of the resulting 4D physics
+
+**Mirror Symmetry**: Pairs of Calabi-Yau manifolds can be "mirrors"—their complex and symplectic structures are exchanged. This has profound implications for both mathematics and physics.
+
+**Dimension 1**: The only 1-dimensional Calabi-Yau is the torus (elliptic curve).
+
+**Dimension 2**: K3 surfaces (4 real dimensions).
+
+**Dimension 3**: These are the ones most important for string theory. There are thousands of topologically distinct 3-dimensional Calabi-Yau manifolds.
+
+**Yau's Theorem**
+
+Shing-Tung Yau proved Calabi's conjecture: every Calabi-Yau manifold admits a unique Ricci-flat Kähler metric in each Kähler class. This existence theorem is fundamental.`,
+      annotations: [
+        createAnnotation("cy-1", "visual", "A Calabi-Yau manifold is like a perfectly balanced shape. The Ricci-flat condition means curvature is distributed so precisely that parallel-transported vectors return unchanged—no rotation, no distortion."),
+        createAnnotation("cy-2", "analogy", "String theory needs 10 dimensions, but we only see 4. The other 6 are 'rolled up' incredibly small—like a garden hose viewed from far away looks 1D but is actually 2D. Calabi-Yau manifolds are the preferred 'rolling' shapes."),
+        createAnnotation("cy-3", "deep-dive", "Mirror symmetry: two Calabi-Yau manifolds X and Y can be mirrors. Counting curves on X matches computing integrals on Y. This connected enumerative geometry to physics and led to major mathematical breakthroughs!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.28 Fuchsian Groups - Full Text
+export const fuchsianGroupsFullText: FullTextChapter = {
+  id: "fuchsian-groups",
+  title: "Fuchsian Groups",
+  description: "Discrete groups of hyperbolic isometries.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 28,
+  content: [
+    {
+      id: "fuchsian-def",
+      title: "What Are Fuchsian Groups?",
+      type: "text",
+      content: "Discrete groups acting on the hyperbolic plane.",
+      fullText: `Fuchsian groups are discrete subgroups of PSL(2,ℝ)—the group of orientation-preserving isometries of the hyperbolic plane. They generalize the modular group and play a fundamental role in hyperbolic geometry.
+
+**The Hyperbolic Plane**
+
+Model: Upper half-plane ℍ = {z ∈ ℂ : Im(z) > 0}
+
+Metric: ds² = (dx² + dy²)/y²
+
+Distance grows as you approach the real axis (the "boundary at infinity").
+
+**The Group PSL(2,ℝ)**
+
+Elements are Möbius transformations:
+
+f(z) = (az + b)/(cz + d)
+
+where a, b, c, d ∈ ℝ and ad - bc = 1.
+
+These preserve the hyperbolic metric and orientation.
+
+**Fuchsian Groups**
+
+A **Fuchsian group** is a discrete subgroup Γ ⊂ PSL(2,ℝ).
+
+**Key Properties**:
+
+1. **Properly discontinuous action**: For any compact K ⊂ ℍ, only finitely many group elements γ satisfy γ(K) ∩ K ≠ ∅
+
+2. **Fundamental domain**: A region D ⊂ ℍ such that the translates {γ(D)} cover ℍ with disjoint interiors
+
+3. **Quotient space**: ℍ/Γ is a Riemann surface (possibly with punctures)
+
+**Examples**
+
+**Modular Group**: Γ = PSL(2,ℤ)
+- Most important Fuchsian group
+- Acts on ℍ with fundamental domain a hyperbolic triangle
+- Quotient ℍ/Γ is the modular surface
+
+**Surface Groups**: If S is a compact surface of genus g ≥ 2, then π₁(S) is a Fuchsian group.
+
+**Applications**
+
+- **Riemann surfaces**: Uniformization theorem
+- **Automorphic forms**: Modular forms, Maass forms
+- **Number theory**: Arithmetic groups, quadratic forms
+- **Dynamical systems**: Geodesic flow on hyperbolic surfaces
+
+**Limit Set**
+
+The limit set Λ(Γ) ⊂ ℝ ∪ {∞} is where orbits accumulate:
+- For cofinite groups: Λ = ℝ ∪ {∞}
+- For others: Λ can be fractal (Cantor set)
+
+**Geometry of the Quotient**
+
+ℍ/Γ inherits a hyperbolic metric. Its geometry reveals properties of Γ:
+- Area = 2π(2g - 2 + n) for a genus g surface with n punctures
+- Closed geodesics correspond to conjugacy classes in Γ`,
+      annotations: [
+        createAnnotation("fuchs-1", "visual", "A Fuchsian group tiles the hyperbolic plane like a mosaic. Each tile is a fundamental domain, and the group action shuffles them. The modular group creates a pattern of hyperbolic triangles."),
+        createAnnotation("fuchs-2", "analogy", "PSL(2,ℝ) is like the 'rigid motions' of the hyperbolic plane—rotations, translations, reflections. A Fuchsian group picks out a discrete subset, like choosing only rotations by rational angles in Euclidean space."),
+        createAnnotation("fuchs-3", "deep-dive", "The uniformization theorem: every Riemann surface (except a few exceptions) is ℍ/Γ for some Fuchsian group Γ. This connects complex analysis, geometry, and group theory in a profound way!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.24 Expanders - Full Text
+export const expandersFullText: FullTextChapter = {
+  id: "expanders",
+  title: "Expanders",
+  description: "Sparse graphs with strong connectivity properties.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 24,
+  content: [
+    {
+      id: "expander-def",
+      title: "What Are Expanders?",
+      type: "text",
+      content: "Graphs that are sparse yet highly connected.",
+      fullText: `An expander graph is a sparse graph that has strong connectivity properties. Despite having relatively few edges, expanders ensure that every subset of vertices has many connections to the rest of the graph.
+
+**Definition**
+
+A d-regular graph G = (V, E) is a **(n, d, λ)-expander** if:
+- |V| = n vertices
+- Each vertex has degree d (constant, independent of n)
+- The second largest eigenvalue of the adjacency matrix is at most λ
+
+**Edge Expansion**
+
+For a subset S ⊂ V with |S| ≤ n/2, the edge boundary ∂S has size:
+
+|∂S| ≥ h|S|
+
+where h > 0 is the Cheeger constant (edge expansion).
+
+Intuitively: every subset has many edges leaving it.
+
+**Why This is Surprising**
+
+Complete graphs have great connectivity but O(n²) edges.
+
+Expanders achieve similar connectivity with only O(n) edges—a linear number instead of quadratic!
+
+**Constructions**
+
+**Probabilistic**: Random d-regular graphs are expanders with high probability.
+
+**Explicit**: Deterministic constructions using:
+- Cayley graphs of finite groups
+- Algebraic methods (Ramanujan graphs)
+- Zig-zag product
+
+**Ramanujan Graphs**
+
+Optimal expanders where λ ≤ 2√(d-1).
+
+Named after Ramanujan's conjecture (proved by Deligne), which is used in their construction.
+
+**Applications**
+
+- **Computer networks**: Robust, efficient communication
+- **Error-correcting codes**: LDPC codes
+- **Derandomization**: Reducing randomness in algorithms
+- **Cryptography**: Secure hash functions
+- **Pure mathematics**: Group theory, number theory
+
+**The Zig-Zag Product**
+
+A powerful operation combining two graphs to create a larger expander. This led to explicit constructions of arbitrarily large expanders with constant degree.
+
+**Spectral Gap**
+
+The difference d - λ between largest and second-largest eigenvalues controls expansion:
+- Larger gap → better expansion
+- Random walks mix faster
+- Better connectivity properties`,
+      annotations: [
+        createAnnotation("exp-1", "visual", "An expander is like a well-designed road network: even with few roads, you can get from any neighborhood to any other quickly. No area is isolated—there are always multiple escape routes."),
+        createAnnotation("exp-2", "analogy", "Imagine a party where everyone knows only 3 people, but rumors spread to everyone within minutes. That's an expander—locally sparse, globally connected."),
+        createAnnotation("exp-3", "deep-dive", "Ramanujan graphs are optimal expanders—their spectral gap is as large as possible. They're named after Ramanujan because their construction uses the Ramanujan conjecture (proved by Deligne), connecting graph theory to deep results in number theory!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   // Part I: Introduction
@@ -2582,6 +2872,10 @@ export const fullTextChapters: FullTextChapter[] = [
   hamiltoniansFullText,
   heatEquationFullText,
   wavesAndSolitonsFullText,
+  categoriesFullText,
+  calabiYauFullText,
+  fuchsianGroupsFullText,
+  expandersFullText,
 ]
 
 // Helper to get full text chapter by ID
