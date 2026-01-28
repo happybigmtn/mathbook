@@ -24,7 +24,7 @@ All notable changes to this project will be documented in this file.
 - Responsive design
 - Dark theme UI
 - Manim animation scripts
-- Deployment configuration for Vercel and Netlify
+- Deployment configuration for Netlify
 
 ### Features
 - 3Blue1Brown-style visualizations

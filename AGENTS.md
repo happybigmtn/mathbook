@@ -1,5 +1,7 @@
 # Agent Directions: PCM Interactive Book Development
 
+> **IMPORTANT: This project uses Netlify for deployment ONLY.** Do NOT deploy to Vercel or any other platform. All deployment configuration is set up for Netlify (see `netlify.toml`).
+
 ## Content Structure
 
 ### Two-Tab Layout

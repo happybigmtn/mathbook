@@ -61,7 +61,6 @@ A complete interactive mathematics book based on "The Princeton Companion to Mat
 - `eulers_formula.py` - Euler's formula animation
 
 ### Configuration Files
-- `vercel.json` - Vercel deployment config
 - `netlify.toml` - Netlify deployment config
 - `.gitignore` - Git ignore patterns
 
@@ -98,11 +97,6 @@ A complete interactive mathematics book based on "The Princeton Companion to Mat
 - Zustand for state management
 
 ## Deployment
-
-### Vercel
-1. Push to GitHub
-2. Import on Vercel
-3. Deploy automatically
 
 ### Netlify
 1. Push to GitHub

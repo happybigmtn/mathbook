@@ -9,10 +9,7 @@ This project has automated CI/CD pipelines configured via GitHub Actions. Every 
 ### 1. **deploy-netlify.yml** - Deploy to Netlify
 Automatically deploys to Netlify on every push to master.
 
-### 2. **deploy-vercel.yml** - Deploy to Vercel  
-Automatically deploys to Vercel on every push to master.
-
-### 3. **ci-cd.yml** - Full Pipeline
+### 2. **ci-cd.yml** - Full Pipeline
 Runs tests, builds, and deploys (template - configure deployment step).
 
 ## Quick Setup
@@ -45,37 +42,7 @@ Runs tests, builds, and deploys (template - configure deployment step).
 4. **Enable the workflow:**
    Uncomment the Netlify deployment step in `.github/workflows/ci-cd.yml`
 
-### Option 2: Vercel
 
-1. **Get Vercel credentials:**
-   ```bash
-   # Install Vercel CLI
-   npm i -g vercel
-   
-   # Login
-   vercel login
-   ```
-
-2. **Link your project:**
-   ```bash
-   vercel link
-   ```
-
-3. **Get your tokens:**
-   ```bash
-   # Get project ID and org ID
-   cat .vercel/project.json
-   
-   # Get token (create at https://vercel.com/account/tokens)
-   ```
-
-4. **Add GitHub Secrets:**
-   - `VERCEL_TOKEN`: Your Vercel personal access token
-   - `VERCEL_ORG_ID`: Your organization ID
-   - `VERCEL_PROJECT_ID`: Your project ID
-
-5. **Enable the workflow:**
-   Uncomment the Vercel deployment step in `.github/workflows/ci-cd.yml`
 
 ## Alternative: Native Git Integration
 
@@ -92,14 +59,7 @@ Instead of GitHub Actions, you can use Netlify's native Git integration:
 
 This is simpler and requires no configuration files!
 
-### Vercel Git Integration
-Similarly for Vercel:
 
-1. Go to [Vercel Dashboard](https://vercel.com/dashboard)
-2. Click "Add New Project"
-3. Import your GitHub repository
-4. Vercel will auto-detect Next.js settings
-5. Deploy!
 
 ## How It Works
 
@@ -183,7 +143,6 @@ on:
 
 ✅ GitHub Actions workflows created
 ✅ Netlify configuration present (netlify.toml)
-✅ Vercel configuration present (vercel.json)
 ✅ Build scripts configured
 
 **Next Step:** Add your deployment secrets to GitHub and enable your preferred workflow!

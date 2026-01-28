@@ -76,12 +76,6 @@ See [CICD_SETUP.md](./CICD_SETUP.md) for detailed configuration instructions.
 
 ### Manual Deployment
 
-#### Vercel
-
-1. Push your code to GitHub
-2. Import the repository on Vercel
-3. Deploy!
-
 #### Netlify
 
 1. Push your code to GitHub
