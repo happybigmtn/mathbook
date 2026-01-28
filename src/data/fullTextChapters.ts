@@ -419,12 +419,70 @@ The conclusion, then, is that lengths are not numbers: instead, they are some ot
   ],
 }
 
+// III.51 Pi - Full Text
+export const piFullText: FullTextChapter = {
+  id: "pi",
+  title: "π (Pi)",
+  description: "The ratio of a circle's circumference to its diameter.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 2,
+  content: [
+    {
+      id: "what-is-pi",
+      title: "What is π?",
+      type: "text",
+      content: "Understanding the most famous constant in mathematics.",
+      fullText: `The number π is arguably the most famous number in mathematics. It appears everywhere:
+
+- Geometry: Circumference of a circle = 2πr
+- Trigonometry: sin(π) = 0, cos(π) = -1
+- Analysis: The sum of 1/n² from n=1 to infinity equals π²/6 (the Basel problem)
+- Probability: The normal distribution involves √π
+
+π is irrational - it cannot be expressed as a fraction.
+π is transcendental - it is not the root of any polynomial with rational coefficients.
+
+**Computing π**
+
+Throughout history, mathematicians have competed to calculate π to more decimal places. Archimedes approximated π between 223/71 and 22/7 using polygons with 96 sides.
+
+Modern computers have calculated π to trillions of digits. Remarkably, there are formulas that let us compute specific digits of π in base 16 (hexadecimal) without computing all the preceding digits.
+
+**The Nature of π**
+
+A fact that seems paradoxical to many non-mathematicians is that a number as natural as π turns out to be irrational and transcendental. However, this is not surprising: the defining properties of π are simple, but they do not lead to solutions of polynomial equations.
+
+π is conjectured to be normal to base 10, meaning every sequence of digits occurs with the expected frequency. However, this has not been proved—it is not even known whether the decimal expansion of π contains all digits 0-9 infinitely often.`,
+      annotations: [
+        createAnnotation("pi-1", "visual", "π connects the linear world (diameter) with the curved world (circumference). No matter how big or small the circle, this ratio stays constant."),
+        createAnnotation("pi-2", "analogy", "Computing π to trillions of digits is like climbing Mount Everest—we do it because it's there, and to test our computational tools."),
+        createAnnotation("pi-3", "deep-dive", "The Bailey-Borwein-Plouffe formula (1995) allows computing the nth hexadecimal digit of π without calculating earlier digits. The trillionth hex digit is 8."),
+      ],
+    },
+  ],
+  exercises: [
+    {
+      id: "ex-pi-1",
+      title: "Circumference Calculation",
+      difficulty: "easy",
+      type: "interactive",
+      question: "If a circle has radius 5, what is its circumference? (Use π ≈ 3.14)",
+      answer: "31.4",
+      hint: "Circumference = 2πr",
+      explanation: "C = 2 × π × 5 = 10π ≈ 31.4",
+      points: 10,
+    },
+  ],
+}
+
 // Export all full text chapters
 export const fullTextChapters: FullTextChapter[] = [
   whatIsMathematicsFullText,
   languageAndGrammarFullText,
   fundamentalDefinitionsFullText,
   fromNumbersToNumberSystemsFullText,
+  piFullText,
 ]
 
 // Helper to get full text chapter by ID
