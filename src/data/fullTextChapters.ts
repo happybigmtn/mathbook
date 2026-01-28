@@ -34,6 +34,17 @@ The last section of Part I, entitled The General Goals of Mathematical Research,
       ],
     },
     {
+      id: "math-branches-visual",
+      title: "The Three Branches of Mathematics",
+      type: "interactive",
+      content: "Interactive visualization of the three main branches of mathematics and their interconnections",
+      component: "MathBranchesVisualizer",
+      annotations: [
+        createAnnotation("branches-1", "visual", "The triangle represents how Algebra, Geometry, and Analysis form the foundation of modern mathematics."),
+        createAnnotation("branches-2", "note", "Click on each branch to explore specific topics and see how they interconnect."),
+      ],
+    },
+    {
       id: "algebra-geometry-analysis",
       title: "Algebra, Geometry, and Analysis",
       type: "text",
@@ -166,7 +177,29 @@ Viète (1540-1603) introduced letters for unknowns. Descartes (1596-1650) establ
 Each improvement in notation enabled new mathematical discoveries. When you can write ideas compactly, you can manipulate them more easily and see patterns that were previously invisible.`,
       annotations: [
         createAnnotation("notation-1", "analogy", "Notation is like compression: √2 is the compressed version of an entire sentence. The more compressed, the easier to manipulate."),
-        createAnnotation("notation-2", "visual", "The integral sign ∫ is literally an elongated 'S' for sum. Leibniz made calculus visual—the symbol itself tells you what operation you're doing."),
+        createAnnotation("notation-2", "visual", "The integral sign ∫ is literally an elongated 'S' for sum. Leibniz made calculus visual—the symbol itself tells you what you're doing."),
+      ],
+    },
+    {
+      id: "notation-evolution",
+      title: "How Notation Evolved",
+      type: "interactive",
+      content: "Explore the evolution of mathematical notation from words to symbols",
+      component: "NotationEvolution",
+      annotations: [
+        createAnnotation("evo-1", "visual", "See how mathematical concepts evolved from verbose descriptions to compact symbols over centuries."),
+        createAnnotation("evo-2", "note", "Each notation improvement enabled new mathematical discoveries by making patterns more visible."),
+      ],
+    },
+    {
+      id: "quantifiers",
+      title: "Quantifiers: ∀ and ∃",
+      type: "interactive",
+      content: "Interactive exploration of universal and existential quantifiers",
+      component: "QuantifierDemo",
+      annotations: [
+        createAnnotation("quant-1", "visual", "∀ (forall) and ∃ (exists) are like search operations: ∀ means 'check every element' while ∃ means 'find at least one match'."),
+        createAnnotation("quant-2", "warning", "Order matters! ∀x ∃y (y > x) is true (every number has a larger one), but ∃y ∀x (y > x) is false (no number exceeds all others)."),
       ],
     },
     {
@@ -313,6 +346,17 @@ More abstractly, functions capture the idea of transformation. Geometry studies 
       annotations: [
         createAnnotation("sets-1", "analogy", "A set is like a box with labeled items. {x : P(x)} is a recipe for building the box: include every x that satisfies property P."),
         createAnnotation("functions-1", "visual", "A function is a mapping—like a vending machine: you input a selection (domain) and get a specific output (range). Each input maps to exactly one output."),
+      ],
+    },
+    {
+      id: "set-operations-viz",
+      title: "Visualizing Set Operations",
+      type: "interactive",
+      content: "Interactive visualizer for union, intersection, difference, and complement",
+      component: "SetOperationsVisualizer",
+      annotations: [
+        createAnnotation("set-op-1", "visual", "Set operations combine sets in different ways. The union (∪) gathers all elements from both sets, like combining two collections."),
+        createAnnotation("set-op-2", "visual", "The intersection (∩) finds common elements—only those in both sets. Think of it as the overlap between two circles."),
       ],
     },
     {
