@@ -3117,83 +3117,49 @@ export const modularArithmeticFullText: FullTextChapter = {
       title: "Working with Remainders",
       type: "text",
       content: "A powerful tool for solving number theory problems.",
-      fullText: `Modular arithmetic is the mathematics of remainders. It provides elegant solutions to questions that seem difficult when approached directly.
+      fullText: `Is there a square number whose decimal expansion ends ... 7? Is 438 345 divisible by 9? For which positive integers n is n² − 5 a power of two? Is n⁷ − 77 ever a Fibonacci number?
 
-**The Core Idea**
+These questions, and more, can be answered using modular arithmetic. Let us look at the first question. Listing the first few squares, 1, 4, 9, 16, ... , one does not find any whose final digit is 7. In fact, writing down just the final digits, one gets the sequence
 
-Two numbers are **congruent modulo m** if they leave the same remainder when divided by m:
+1, 4, 9, 6, 5, 6, 9, 4, 1, 0, 1, 4, 9, 6, 5, 6, ... ,
 
-a ≡ b (mod m) means m divides (a - b)
+which seems to repeat (and thus never contain the number 7).
 
-**Example: Last Digit of Squares**
+An explanation of this phenomenon is as follows. Let n be a number to be squared. We can always write n as a multiple of 10 plus a remainder; that is, n = 10q + r, where r ∈ {0, 1, ... , 9}. Now, if we square n we get
 
-Is there a square ending in 7? List squares: 1, 4, 9, 16, 25, 36, 49, 64, 81, 100...
+n² = (10q + r)² = 100q² + 20qr + r² = 10(10q² + 2qr) + r².
 
-Last digits: 1, 4, 9, 6, 5, 6, 9, 4, 1, 0... repeating cycle, never 7!
+The only part of this expression that affects the final digit is the r², which immediately explains why the sequence of last digits of squares repeats with period 10, and hence contains no 7s.
 
-**Why?** Write n = 10q + r where r ∈ {0,1,...,9}.
+Modular arithmetic is essentially just a notation for writing down arguments of this sort. If two numbers (like n and r) leave the same remainder on division by 10, then we say that they are congruent modulo 10 and write n ≡ r (mod 10). What we proved above is the statement that, if n ≡ r (mod 10), then n² ≡ r² (mod 10).
 
-Then n² = 100q² + 20qr + r² = 10(10q² + 2qr) + r²
+Everything we have just said applies equally well if we replace 10 by an arbitrary modulus m: if n and r leave the same remainder on division by m, then we say that n and r are congruent modulo m and we write n ≡ r (mod m). Equivalently, n and r are congruent modulo m if m divides n − r. (An integer a is said to divide another integer b if b is an integer multiple of a.) The above argument is just one instance of the following general fact, which is not hard to prove: if a ≡ a′ (mod m) and b ≡ b′ (mod m), then ab ≡ a′b′ (mod m) and a + b ≡ a′ + b′ (mod m).
 
-Only r² affects the last digit. Computing r² for r = 0 to 9:
-- 0²=0, 1²=1, 2²=4, 3²=9, 4²=16→6
-- 5²=25→5, 6²=36→6, 7²=49→9, 8²=64→4, 9²=81→1
+Now observe that 10 ≡ 1 (mod 9). It follows that 10 × 10 ≡ 1 × 1 ≡ 1 (mod 9), and in fact that 10^d ≡ 1 (mod 9) for any d ∈ ℕ. Suppose that we have a number N whose decimal expansion is a_d a_{d−1} · · · a₂ a₁ a₀. This means that
 
-Possible last digits: 0, 1, 4, 5, 6, 9. No 7!
+N = a_d 10^d + a_{d−1} 10^{d−1} + · · · + a₁ 10 + a₀.
 
-**Divisibility Rules**
+Applying the rules of modular arithmetic, we get
 
-10 ≡ 1 (mod 9), so 10^k ≡ 1 (mod 9) for all k.
+N ≡ a_d + a_{d−1} + · · · + a₁ + a₀ (mod 9).
 
-Therefore: N = a_d·10^d + ... + a_1·10 + a_0 ≡ a_d + ... + a_1 + a_0 (mod 9)
+This gives the well-known test for divisibility by 9: simply add up the digits of the number in base 10, and see if the result is divisible by 9. For the example N = 438 345 the sum of the digits is 27, which is divisible by 9. So N is a multiple of 9 (in fact N = 9 × 48 705).
 
-**Divisibility by 9**: Sum the digits! If the sum is divisible by 9, so is N.
+If m is a modulus and n is an integer, then there is precisely one value of r between 0 and m − 1 such that n ≡ r (mod m). This number r is often called the least residue or simply the residue of n to the modulus m.
 
-Example: 438345 → 4+3+8+3+4+5 = 27, which is divisible by 9. So 438345 = 9 × 48705.
+Now let us consider the third question posed at the beginning of this article, namely the matter of when n² − 5 is a power of two. When n = 3, 3² − 5 = 4 is a power of two, but a little experimentation does not reveal any further examples. What aspect of the problem changes as n becomes larger than 3? The key observation is that n² − 5 is now greater than 4, and so if it were a power of 2, then it would have to be divisible by 8. That would mean that n² ≡ 5 (mod 8), but this is never the case. Indeed, the residues of the first eight squares are 1, 4, 1, 0, 1, 4, 1, 0, and we know that the sequence will repeat with period 8 (actually, it repeats with period 4). Thus, it never contains a 5.
 
-**Fermat's Little Theorem**
+Modular arithmetic should be used with care. Although the rules for addition and subtraction are simple, division is somewhat more subtle. For example, if we are given that ac ≡ bc (mod m), it is not, in general, permissible to divide by c and conclude that a ≡ b (mod m): consider, for instance, the case a = 2, b = 4, c = 3, m = 6.
 
-If p is prime and a ≢ 0 (mod p), then:
+Let us examine what has just gone wrong. To say that ac ≡ bc (mod m) means that m divides ac − bc = (a−b) × c. But this clearly does not mean that m divides a − b, since m could divide c (or at least have a common factor with it). However, if m has no factor in common with c, then it must divide a − b, so in this case we do indeed have a ≡ b (mod m). In particular, for any prime number p we have the very useful cancelation law: if ac ≡ bc (mod p) and c ≢ 0 (mod p), then a ≡ b (mod p).
 
-a^(p-1) ≡ 1 (mod p)
+The examples so far may have suggested that the principal uses of modular arithmetic are to do with specific moduli such as 10 and 8. However, this is far from true, and the subject really comes into its own when one looks at more general m. For example, one of the basic results in number theory is Fermat's little theorem, which states that if p is a prime and a ≢ 0 (mod p), then a^{p−1} ≡ 1 (mod p). Let us quickly prove this. Consider the numbers a, 2a, 3a, ... , (p − 1)a (mod p). If ra ≡ sa (mod p), then from the cancelation law we can deduce that r ≡ s (mod p), from which it follows that a, 2a, ... , (p−1)a are all different modulo p. Furthermore, none of these numbers is 0 (mod p). We are thus forced to conclude that the numbers a, 2a, 3a, ... , (p−1)a (mod p) are simply a rearrangement of the numbers 1, 2, 3, ... , p − 1 (mod p). In particular, the products of the numbers in these two sets are the same, which implies that
 
-**Proof**: Consider a, 2a, 3a, ..., (p-1)a (mod p). These are all distinct and non-zero (by cancellation), so they must be a rearrangement of 1, 2, ..., p-1.
+a^{p−1}(p − 1)! ≡ (p − 1)! (mod p).
 
-Multiplying: a·2a·3a·...·(p-1)a ≡ 1·2·...·(p-1) (mod p)
+Since (p − 1)! is not a multiple of p, we can apply the cancelation law again and divide both sides by (p − 1)!. This implies the result.
 
-So a^(p-1)·(p-1)! ≡ (p-1)! (mod p)
-
-Cancel (p-1)! to get a^(p-1) ≡ 1 (mod p).
-
-**Euler's Theorem (Generalization)**
-
-If gcd(a,m) = 1, then:
-
-a^φ(m) ≡ 1 (mod m)
-
-where φ(m) = #{1 ≤ k ≤ m : gcd(k,m) = 1} is Euler's totient function.
-
-**Example**: φ(9) = 6 (numbers: 1,2,4,5,7,8), so 5^6 ≡ 1 (mod 9).
-
-Check: 5^6 = 15625 → 1+5+6+2+5 = 19 ≡ 1 (mod 9). ✓
-
-**When Can We Divide?**
-
-Unlike regular arithmetic, we can't always divide in modular arithmetic.
-
-If ac ≡ bc (mod m), we can conclude a ≡ b (mod m) **only if** gcd(c,m) = 1.
-
-Counterexample: 2·3 ≡ 4·3 (mod 6), but 2 ≢ 4 (mod 6).
-
-However, if p is prime and c ≢ 0 (mod p), then ac ≡ bc (mod p) implies a ≡ b (mod p).
-
-**Applications**
-
-- **Cryptography**: RSA encryption relies on modular exponentiation
-- **Check digits**: ISBNs, credit cards use modular checksums
-- **Computer science**: Hash functions, random number generators
-- **Calendar calculations**: Day of the week computations
-- **Music theory**: Intervals modulo 12 (chromatic scale)`,
+Euler's theorem is a generalization of Fermat's little theorem to composite moduli. It states that if m is a positive integer and a is another positive integer that is coprime to m (this means that a and m have no common factor), then a^{φ(m)} ≡ 1 (mod m). Here φ is Euler's totient function: φ(m) is the number of integers less than m that are coprime to m. For instance, if m = 9, then the integers less than m and coprime to m are 1, 2, 4, 5, 7, and 8, so φ(9) = 6 and we can deduce from Euler's theorem that 5⁶ ≡ 1 (mod 9). Let us check this directly: 5⁶ = 15 625, so the sum of its digits is 19, which is indeed congruent to 1 (mod 9).`,
       annotations: [
         createAnnotation("mod-1", "visual", "Modular arithmetic is like a clock. On a 12-hour clock, 15:00 is 3:00—15 ≡ 3 (mod 12). The numbers 'wrap around' after reaching the modulus."),
         createAnnotation("mod-2", "analogy", "Think of modular arithmetic as 'cyclical thinking.' Instead of asking 'how big is the number?' ask 'where does it fall in the cycle?' Like knowing someone's birthday is Tuesday, not caring which Tuesday of which year."),
