@@ -219,11 +219,11 @@ Mathematical research has many goals, but they can be broadly categorized:
 ]
 
 export function getChapterById(id: string): Chapter | undefined {
-  return chapters.find((c) => c.id === id)
+  return allChapters.find((c) => c.id === id)
 }
 
 export function getChaptersByPart(part: string): Chapter[] {
-  return chapters.filter((c) => c.part === part).sort((a, b) => a.order - b.order)
+  return allChapters.filter((c) => c.part === part).sort((a, b) => a.order - b.order)
 }
 
 export function getAllParts(): { id: string; title: string }[] {
@@ -241,7 +241,7 @@ export function getAllParts(): { id: string; title: string }[] {
 
 
 // Part II: Origins of Modern Mathematics
-export const part02Chapters = [
+export const part02Chapters: Chapter[] = [
   {
     id: "from-numbers-to-number-systems",
     title: "From Numbers to Number Systems",
@@ -317,7 +317,7 @@ But it was the Greeks who transformed geometry from a collection of rules into a
 ]
 
 // Part III: Mathematical Concepts (sample)
-export const part03Concepts = [
+export const part03Concepts: Chapter[] = [
   {
     id: "euler-identity",
     title: "Euler's Identity",
@@ -373,7 +373,7 @@ This identity emerges from Euler's formula: e^(iθ) = cos(θ) + i·sin(θ)
 // EulersFormulaDemo,
 
 // Additional Part II chapters
-export const additionalPart02Chapters = [
+export const additionalPart02Chapters: Chapter[] = [
   {
     id: "abstract-algebra-development",
     title: "The Development of Abstract Algebra",
@@ -479,17 +479,12 @@ This paradox showed that naive set theory was inconsistent. It led to:
   },
 ]
 
-// Combine all chapters
-export const allChapters = [
-  ...chapters,
-  ...part02Chapters,
-  ...additionalPart02Chapters,
-  ...part03Concepts,
-]
+// Combine all chapters (updated after all definitions)
+export const allChapters: Chapter[] = []
 
 
 // More Part III: Mathematical Concepts
-export const morePart03Concepts = [
+export const morePart03Concepts: Chapter[] = [
   {
     id: "pi",
     title: "π (Pi)",
@@ -641,7 +636,7 @@ Cantor's diagonal argument shows that the real numbers are "more infinite" than 
 ]
 
 // Part IV: Branches of Mathematics
-export const part04Branches = [
+export const part04Branches: Chapter[] = [
   {
     id: "number-theory",
     title: "Number Theory",
@@ -793,3 +788,13 @@ Topology has applications in data analysis, robotics, and theoretical physics.
     exercises: [],
   },
 ]
+
+// Populate allChapters with all chapter arrays
+allChapters.push(
+  ...chapters,
+  ...part02Chapters,
+  ...additionalPart02Chapters,
+  ...part03Concepts,
+  ...morePart03Concepts,
+  ...part04Branches,
+)

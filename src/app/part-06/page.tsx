@@ -43,7 +43,7 @@ export default function PartPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                 >
-                  <Link href="/part-06/${chapter.id}">
+                  <Link href={`/part-06/${chapter.id}`}>
                     <div className="concept-card group flex items-center justify-between">
                       <div className="flex items-center gap-4">
                         <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
