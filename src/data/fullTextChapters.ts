@@ -1172,6 +1172,131 @@ This decomposes f into a superposition of complex exponentials e^(2πixξ) at di
   exercises: [],
 }
 
+// III.41 Irrational and Transcendental Numbers - Full Text
+export const irrationalNumbersFullText: FullTextChapter = {
+  id: "irrational-numbers",
+  title: "Irrational and Transcendental Numbers",
+  description: "Numbers that cannot be expressed as fractions or roots of polynomials.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 41,
+  content: [
+    {
+      id: "irrational-def",
+      title: "Irrational Numbers",
+      type: "text",
+      content: "Numbers that cannot be written as fractions.",
+      fullText: `An irrational number is one that cannot be written as a/b with both a and b integers. Many naturally occurring numbers are irrational: √2, e, and π.
+
+**The Classic Proof: √2 is Irrational**
+
+This is one of the best-known arguments in mathematics:
+
+Suppose √2 = a/b where a and b have no common factor (the fraction is in lowest terms).
+
+Then: a² = 2b²
+
+This means a² is even, so a must be even. Write a = 2c.
+
+Then: 4c² = 2b², which simplifies to 2c² = b²
+
+This means b² is even, so b must be even.
+
+But if both a and b are even, they share a factor of 2, contradicting our assumption that the fraction was in lowest terms.
+
+Therefore, √2 cannot be rational.
+
+**Irrationality of e**
+
+The proof that e is irrational uses a different technique. If e = p/q, then:
+
+p(q-1)! = Σ(j=0 to ∞) q!/j!
+
+The left side and terms with j ≤ q are integers. But the remaining terms form a sum between 0 and 1, which cannot be an integer—a contradiction.
+
+**Transcendental Numbers**
+
+A transcendental number is one which is not algebraic—it is not the root of any polynomial equation with integer coefficients.
+
+- √2 is irrational but algebraic (root of x² - 2 = 0)
+- π and e are transcendental
+
+**Famous Open Problems**
+
+It is not known whether:
+- π + e is irrational
+- π × e is irrational
+- Euler's constant γ ≈ 0.577... is irrational
+
+These simple questions remain unsolved!`,
+      annotations: [
+        createAnnotation("irrational-1", "visual", "The proof that √2 is irrational is like a game: assume it's rational, and follow the logic until you hit a wall (the contradiction). The wall proves your assumption was wrong."),
+        createAnnotation("irrational-2", "analogy", "Rational numbers are like pixels on a screen—discrete and countable. Irrational numbers fill the gaps between pixels, creating a continuous line."),
+        createAnnotation("irrational-3", "deep-dive", "Cantor proved almost all real numbers are transcendental, yet proving any specific number is transcendental is hard. It's easier to show transcendental numbers exist than to identify them!"),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.48 Lie Theory - Full Text
+export const lieTheoryFullText: FullTextChapter = {
+  id: "lie-theory",
+  title: "Lie Theory",
+  description: "The study of continuous symmetry groups.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 48,
+  content: [
+    {
+      id: "lie-groups",
+      title: "Lie Groups",
+      type: "text",
+      content: "Groups with continuous parameters describing symmetries.",
+      fullText: `Lie groups are groups that describe continuous symmetries. They were introduced by Sophus Lie to create an analogue of Galois theory for differential equations.
+
+**Examples of Lie Groups**
+
+**SO(2)**: The group of rotations of the plane. Each rotation Rθ is parameterized by an angle θ. The group operation is addition of angles: Rθ Rφ = Rθ+φ.
+
+**SO(3)**: The group of rotations of 3D space. Each rotation can be specified by three parameters (e.g., roll, pitch, yaw used by pilots).
+
+**GLₙ(ℝ)**: The general linear group—all invertible linear transformations of ℝⁿ.
+
+**SLₙ(ℝ)**: The special linear group—transformations preserving volume and orientation (determinant = 1).
+
+**O(n)**: The orthogonal group—transformations preserving distance.
+
+**SO(n)**: The special orthogonal group—distance-preserving transformations that also preserve orientation.
+
+**E(n)**: The Euclidean group—rigid motions (rotations, reflections, translations).
+
+**Key Properties**
+
+Lie groups are both groups and smooth manifolds:
+- **Group structure**: Can compose elements, have inverses, identity element
+- **Smooth structure**: Can define smooth curves and derivatives
+
+**Lie Algebras**
+
+Every Lie group has an associated Lie algebra, which is the tangent space at the identity. The Lie algebra captures the "infinitesimal" structure of the group and is often easier to work with than the group itself.
+
+**Applications**
+
+- **Differential equations**: Symmetry methods for solving ODEs and PDEs
+- **Physics**: Gauge theories, particle physics (Standard Model)
+- **Geometry**: Study of symmetric spaces
+- **Robotics**: Describing rigid body motions`,
+      annotations: [
+        createAnnotation("lie-1", "visual", "SO(3) can be visualized as a solid ball of radius π: each point represents a rotation around an axis given by the point's direction, by an angle given by its distance from the origin."),
+        createAnnotation("lie-2", "analogy", "Lie groups are like smoothly varying symmetries. While finite groups have discrete symmetries (like rotations by 90°), Lie groups allow continuous variation (any angle)."),
+        createAnnotation("lie-3", "deep-dive", "The Standard Model of particle physics is a Lie group-based theory. The gauge groups SU(3) × SU(2) × U(1) describe the fundamental forces: strong, weak, and electromagnetic."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
 // III.51 Pi - Full Text
 export const piFullText: FullTextChapter = {
   id: "pi",
@@ -1458,6 +1583,8 @@ export const fullTextChapters: FullTextChapter[] = [
   braidGroupsFullText,
   compactnessFullText,
   fourierTransformFullText,
+  irrationalNumbersFullText,
+  lieTheoryFullText,
 ]
 
 // Helper to get full text chapter by ID
