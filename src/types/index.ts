@@ -92,3 +92,25 @@ export interface Theorem {
   applications: string[]
   history: string
 }
+
+export interface Annotation {
+  id: string
+  type: 'note' | 'question' | 'insight' | 'warning' | 'connection'
+  content: string
+  reference?: string
+}
+
+export interface FullTextSection {
+  id: string
+  title: string
+  type: 'text' | 'interactive' | 'animation' | 'exercise'
+  content: string
+  fullText?: string
+  annotations?: Annotation[]
+  component?: string
+  data?: unknown
+}
+
+export interface FullTextChapter extends Chapter {
+  content: FullTextSection[]
+}

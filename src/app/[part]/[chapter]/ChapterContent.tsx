@@ -2,8 +2,9 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle, Trophy } from "lucide-react"
+import { ArrowLeft, ArrowRight, BookOpen, CheckCircle, Trophy, FileText, StickyNote } from "lucide-react"
 import { getChapterById, getChaptersByPart } from "@/data/chapters"
+import { getFullTextChapterById, hasFullText } from "@/data/fullTextChapters"
 import {
   CommutativePropertyDemo,
   FunctionVisualizer,
@@ -16,6 +17,8 @@ import {
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
+import { FeynmanLayout, FullTextSection, Highlight, Definition, TheoremBox } from "@/components/FeynmanLayout"
+import { useState } from "react"
 
 const componentMap: Record<string, React.ComponentType> = {
   CommutativePropertyDemo,
@@ -35,6 +38,9 @@ interface ChapterContentProps {
 
 export default function ChapterContent({ partId, chapterId }: ChapterContentProps) {
   const chapter = getChapterById(chapterId)
+  const fullTextChapter = getFullTextChapterById(chapterId)
+  const hasFullTextContent = hasFullText(chapterId)
+  const [showFullText, setShowFullText] = useState(true)
   const { userState } = useProgress()
 
   if (!chapter) {
@@ -60,9 +66,120 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
   const totalExercises = chapter.exercises.length
   const progressPercentage = totalExercises > 0 ? (completedExercises / totalExercises) * 100 : 0
 
+  // Render full text content with annotations
+  const renderFullTextContent = () => {
+    if (!fullTextChapter) return null
+
+    return (
+      <div className="space-y-0">
+        {fullTextChapter.content.map((section, index) => (
+          <motion.div
+            key={section.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            {section.type === "text" && section.fullText ? (
+              <FullTextSection
+                title={section.title}
+                sectionNumber={index + 1}
+                annotations={section.annotations}
+                content={
+                  <div className="space-y-4">
+                    {section.fullText.split("\n\n").map((paragraph, pIndex) => {
+                      // Check for special formatting
+                      if (paragraph.startsWith("**") && paragraph.includes("**")) {
+                        // Definition or theorem
+                        if (paragraph.toLowerCase().includes("definition")) {
+                          const content = paragraph.replace(/\*\*/g, "")
+                          return (
+                            <Definition key={pIndex} term="">
+                              {content}
+                            </Definition>
+                          )
+                        }
+                      }
+                      
+                      // Regular paragraph with markdown-like formatting
+                      const formattedText = paragraph
+                        .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+                        .replace(/_(.*?)_/g, "<em>$1</em>")
+                      
+                      return (
+                        <p
+                          key={pIndex}
+                          className="mb-4 leading-relaxed text-foreground/90"
+                          dangerouslySetInnerHTML={{ __html: formattedText }}
+                        />
+                      )
+                    })}
+                  </div>
+                }
+              />
+            ) : section.type === "interactive" && section.component ? (
+              <section className="py-8 border-b border-border last:border-b-0">
+                <div className="mb-6">
+                  <span className="text-sm text-muted-foreground font-mono mb-2 block">
+                    Section {index + 1}
+                  </span>
+                  <h2 className="text-2xl font-bold">{section.title}</h2>
+                </div>
+                <FeynmanLayout annotations={section.annotations}>
+                  <div className="w-full">
+                    {(() => {
+                      const Component = componentMap[section.component]
+                      return Component ? <Component /> : null
+                    })()}
+                  </div>
+                </FeynmanLayout>
+              </section>
+            ) : null}
+          </motion.div>
+        ))}
+      </div>
+    )
+  }
+
+  // Render summary content (original format)
+  const renderSummaryContent = () => {
+    return (
+      <div className="space-y-8">
+        {chapter.content.map((section, index) => (
+          <motion.div
+            key={section.id}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: index * 0.1 }}
+          >
+            <h2 className="subsection-title">{section.title}</h2>
+
+            {section.type === "text" && (
+              <div className="prose prose-invert max-w-none">
+                {section.content.split("\n\n").map((paragraph, i) => (
+                  <p key={i} className="body-text mb-4 whitespace-pre-line">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            )}
+
+            {section.type === "interactive" && section.component && (
+              <div className="mt-4">
+                {(() => {
+                  const Component = componentMap[section.component]
+                  return Component ? <Component /> : null
+                })()}
+              </div>
+            )}
+          </motion.div>
+        ))}
+      </div>
+    )
+  }
+
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto">
+      <div className={`mx-auto transition-all duration-300 ${showFullText && hasFullTextContent ? 'max-w-7xl' : 'max-w-4xl'}`}>
         {/* Breadcrumb */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
@@ -115,40 +232,45 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
               </div>
             </div>
           )}
+
+          {/* View Toggle */}
+          {hasFullTextContent && (
+            <div className="mt-6 flex items-center gap-4">
+              <div className="flex items-center gap-2 bg-card rounded-lg p-1 border border-border">
+                <button
+                  onClick={() => setShowFullText(false)}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all ${
+                    !showFullText 
+                      ? 'bg-math-blue text-white shadow-md' 
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  <StickyNote className="w-4 h-4" />
+                  <span className="text-sm font-medium">Summary</span>
+                </button>
+                <button
+                  onClick={() => setShowFullText(true)}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all ${
+                    showFullText 
+                      ? 'bg-math-blue text-white shadow-md' 
+                      : 'text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  <FileText className="w-4 h-4" />
+                  <span className="text-sm font-medium">Full Text</span>
+                </button>
+              </div>
+              {showFullText && (
+                <span className="text-sm text-muted-foreground">
+                  Feynman-style annotations enabled
+                </span>
+              )}
+            </div>
+          )}
         </motion.div>
 
-        {/* Content sections */}
-        <div className="space-y-8">
-          {chapter.content.map((section, index) => (
-            <motion.div
-              key={section.id}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <h2 className="subsection-title">{section.title}</h2>
-
-              {section.type === "text" && (
-                <div className="prose prose-invert max-w-none">
-                  {section.content.split("\n\n").map((paragraph, i) => (
-                    <p key={i} className="body-text mb-4 whitespace-pre-line">
-                      {paragraph}
-                    </p>
-                  ))}
-                </div>
-              )}
-
-              {section.type === "interactive" && section.component && (
-                <div className="mt-4">
-                  {(() => {
-                    const Component = componentMap[section.component]
-                    return Component ? <Component /> : null
-                  })()}
-                </div>
-              )}
-            </motion.div>
-          ))}
-        </div>
+        {/* Content */}
+        {showFullText && hasFullTextContent ? renderFullTextContent() : renderSummaryContent()}
 
         {/* Exercises */}
         {chapter.exercises.length > 0 && (
