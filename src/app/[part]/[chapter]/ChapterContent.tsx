@@ -5,6 +5,8 @@ import Link from "next/link"
 import { ArrowLeft, ArrowRight, CheckCircle, Trophy, FileText, StickyNote, ChevronLeft } from "lucide-react"
 import { getChapterById, getChaptersByPart } from "@/data/chapters"
 import { getFullTextChapterById, hasFullText } from "@/data/fullTextChapters"
+import { InlineMath, BlockMath } from "react-katex"
+import "katex/dist/katex.min.css"
 
 import {
   CommutativePropertyDemo,
@@ -31,6 +33,69 @@ import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
 import { FeynmanLayout, FullTextSection } from "@/components/FeynmanLayout"
 import { useState } from "react"
+
+// Component to render text with KaTeX math support
+function MathContent({ content }: { content: string }) {
+  // Split content by math delimiters while preserving them
+  const parts: Array<{ type: 'text' | 'inline' | 'block'; content: string }> = []
+  let remaining = content
+  
+  while (remaining.length > 0) {
+    // Find block math first (priority over inline)
+    const blockMatch = remaining.match(/^(.*?)\$\$([\s\S]*?)\$\$/)
+    if (blockMatch) {
+      if (blockMatch[1]) {
+        parts.push({ type: 'text', content: blockMatch[1] })
+      }
+      parts.push({ type: 'block', content: blockMatch[2].trim() })
+      remaining = remaining.slice(blockMatch[0].length)
+      continue
+    }
+    
+    // Find inline math
+    const inlineMatch = remaining.match(/^(.*?)\$([^$\n]+?)\$/)
+    if (inlineMatch) {
+      if (inlineMatch[1]) {
+        parts.push({ type: 'text', content: inlineMatch[1] })
+      }
+      parts.push({ type: 'inline', content: inlineMatch[2] })
+      remaining = remaining.slice(inlineMatch[0].length)
+      continue
+    }
+    
+    // No more math found
+    if (remaining) {
+      parts.push({ type: 'text', content: remaining })
+    }
+    break
+  }
+  
+  return (
+    <>
+      {parts.map((part, index) => {
+        if (part.type === 'inline') {
+          return <InlineMath key={index} math={part.content} />
+        } else if (part.type === 'block') {
+          return <BlockMath key={index} math={part.content} />
+        } else {
+          // Process markdown-like formatting for text
+          const formattedText = part.content
+            .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+            .replace(/_(.*?)_/g, '<em>$1</em>')
+            // Convert markdown links to HTML links
+            .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" class="text-primary hover:underline">$1</a>')
+          
+          return (
+            <span
+              key={index}
+              dangerouslySetInnerHTML={{ __html: formattedText }}
+            />
+          )
+        }
+      })}
+    </>
+  )
+}
 
 const componentMap: Record<string, React.ComponentType> = {
   CommutativePropertyDemo,
@@ -127,17 +192,14 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                       )
                     }
                     
-                    // Regular paragraph with markdown-like formatting
-                    let formattedText = paragraph
-                      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-                      .replace(/_(.*?)_/g, "<em>$1</em>")
-                    
+                    // Regular paragraph with KaTeX math support
                     return (
                       <p
                         key={pIndex}
                         className="mb-6 leading-relaxed text-muted-foreground text-lg"
-                        dangerouslySetInnerHTML={{ __html: formattedText }}
-                      />
+                      >
+                        <MathContent content={paragraph} />
+                      </p>
                     )
                   })}
                 </div>
@@ -199,17 +261,14 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                         )
                       }
                       
-                      // Regular paragraph with markdown-like formatting
-                      let formattedText = paragraph
-                        .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
-                        .replace(/_(.*?)_/g, "<em>$1</em>")
-                      
+                      // Regular paragraph with KaTeX math support
                       return (
                         <p
                           key={pIndex}
                           className="mb-6 leading-relaxed text-muted-foreground text-lg"
-                          dangerouslySetInnerHTML={{ __html: formattedText }}
-                        />
+                        >
+                          <MathContent content={paragraph} />
+                        </p>
                       )
                     })}
                   </div>
