@@ -20,6 +20,7 @@ import {
   PrimeNumbersVisualizer,
   GeometryTypesVisualizer,
   LimitsAndContinuityVisualizer,
+  NumberSystemsVisualizer,
 } from "@/components/animations"
 import { ExerciseCard } from "@/components/exercises"
 import { useProgress } from "@/components/ProgressProvider"
@@ -41,6 +42,7 @@ const componentMap: Record<string, React.ComponentType> = {
   PrimeNumbersVisualizer,
   GeometryTypesVisualizer,
   LimitsAndContinuityVisualizer,
+  NumberSystemsVisualizer,
 }
 
 interface ChapterContentProps {

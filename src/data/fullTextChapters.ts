@@ -423,6 +423,17 @@ The fact that we still divide an hour into sixty minutes and a minute into sixty
       ],
     },
     {
+      id: "number-systems-expansion",
+      title: "How Number Systems Expanded",
+      type: "interactive",
+      content: "Visual exploration of how number systems evolved to solve increasingly complex equations",
+      component: "NumberSystemsVisualizer",
+      annotations: [
+        createAnnotation("num-sys-1", "visual", "Each expansion fills a gap: ℕ can't subtract, ℤ can't divide, ℚ can't take roots, ℝ can't handle negatives under roots, ℂ completes the picture."),
+        createAnnotation("num-sys-2", "note", "Notice the pattern: each new system keeps all the old numbers and adds new ones to solve previously impossible equations."),
+      ],
+    },
+    {
       id: "incommensurable",
       title: "Lengths Are Not Numbers",
       type: "text",
