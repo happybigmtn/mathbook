@@ -46,25 +46,29 @@ class ManifoldsScene(ThreeDScene):
         zoom_point = Dot(circle.point_at_angle(PI / 4), color=RED)
         self.play(Create(zoom_point))
 
-        # Zoom in effect using camera
-        self.play(self.camera.frame.animate.scale(0.3).move_to(zoom_point), run_time=2)
+        # Zoom in effect - scale up the circle and zoom_point
+        self.play(
+            circle.animate.scale(3).move_to(ORIGIN),
+            zoom_point.animate.scale(3),
+            run_time=2,
+        )
 
         # Show that locally it looks like a line
         local_line = Line(
-            circle.point_at_angle(PI / 4 - 0.2),
-            circle.point_at_angle(PI / 4 + 0.2),
+            zoom_point.get_center() + LEFT * 0.5,
+            zoom_point.get_center() + RIGHT * 0.5,
             color=YELLOW,
             stroke_width=8,
         )
         local_text = Text("Locally: looks like a line", font_size=16, color=YELLOW)
-        local_text.next_to(local_line, UP, buff=0.1)
+        local_text.next_to(local_line, UP, buff=0.5)
 
         self.play(Create(local_line), Write(local_text))
         self.wait(2)
 
         # Zoom back out
         self.play(
-            self.camera.frame.animate.scale(1 / 0.3).move_to(ORIGIN),
+            circle.animate.scale(1 / 3).move_to(ORIGIN),
             FadeOut(local_line),
             FadeOut(local_text),
             FadeOut(zoom_point),

@@ -110,7 +110,9 @@ class AxiomOfChoiceScene(Scene):
             elements = VGroup()
             for _ in range(4):
                 dot = Dot(radius=0.08, color=GRAY)
-                dot.move_to(box.get_center() + np.random.uniform(-0.3, 0.3, 2))
+                offset = np.random.uniform(-0.3, 0.3, 3)
+                offset[2] = 0  # Keep z-coordinate at 0
+                dot.move_to(box.get_center() + offset)
                 elements.add(dot)
 
             box_group = VGroup(box, label, elements)

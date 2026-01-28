@@ -65,20 +65,20 @@ class CompactnessScene(Scene):
         cover_intervals = VGroup()
         colors = [BLUE, PURPLE, PINK, ORANGE]
 
-        # First interval covers start
-        i1 = Interval(
-            number_line.n2p(-0.1), number_line.n2p(0.4), color=colors[0], stroke_width=4
+        # First interval covers start - use Line with extra thickness to represent interval
+        i1 = Line(
+            number_line.n2p(-0.1), number_line.n2p(0.4), color=colors[0], stroke_width=8
         )
         cover_intervals.add(i1)
 
         # Middle intervals
-        i2 = Interval(
-            number_line.n2p(0.3), number_line.n2p(0.7), color=colors[1], stroke_width=4
+        i2 = Line(
+            number_line.n2p(0.3), number_line.n2p(0.7), color=colors[1], stroke_width=8
         )
         cover_intervals.add(i2)
 
-        i3 = Interval(
-            number_line.n2p(0.6), number_line.n2p(1.1), color=colors[2], stroke_width=4
+        i3 = Line(
+            number_line.n2p(0.6), number_line.n2p(1.1), color=colors[2], stroke_width=8
         )
         cover_intervals.add(i3)
 
@@ -146,12 +146,11 @@ class CompactnessScene(Scene):
         # Show some intervals from the cover
         cover_intervals2 = VGroup()
         for n in range(-3, 4):
-            interval = Interval(
+            interval = Line(
                 real_line.n2p(n),
                 real_line.n2p(n + 2),
                 color=BLUE,
-                stroke_width=3,
-                fill_opacity=0.3,
+                stroke_width=6,
             )
             cover_intervals2.add(interval)
 

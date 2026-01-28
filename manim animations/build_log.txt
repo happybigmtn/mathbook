@@ -1,0 +1,327 @@
+Building Manim animations...
+Output directory: ../public/animations
+LaTeX PATH: /home/r/.local/tinytex/bin/x86_64-linux
+
+============================================================
+Rendering CommutativePropertyScene...
+============================================================
+✓ CommutativePropertyScene built successfully -> ../public/animations/CommutativeProperty.webm
+
+============================================================
+Rendering EulersFormulaScene...
+============================================================
+✓ EulersFormulaScene built successfully -> ../public/animations/EulersFormula.webm
+
+============================================================
+Rendering PythagoreanTheoremScene...
+============================================================
+✓ PythagoreanTheoremScene built successfully -> ../public/animations/PythagoreanTheorem.webm
+
+============================================================
+Rendering PrimeNumbersScene...
+============================================================
+✓ PrimeNumbersScene built successfully -> ../public/animations/PrimeNumbers.webm
+
+============================================================
+Rendering AxiomOfChoiceScene...
+============================================================
+✓ AxiomOfChoiceScene built successfully -> ../public/animations/AxiomOfChoice.webm
+
+============================================================
+Rendering CompactnessScene...
+============================================================
+✗ CompactnessScene failed:
+                                                                 │
+│ /home/r/coding/mathbook/pcm-interactive-book/manim                           │
+│ animations/compactness.py:149 in construct                                   │
+│                                                                              │
+│   146 │   │   # Show some intervals from the cover                           │
+│   147 │   │   cover_intervals2 = VGroup()                                    │
+│   148 │   │   for n in range(-3, 4):                                         │
+│ ❱ 149 │   │   │   interval = Interval(                                       │
+│   150 │   │   │   │   real_line.n2p(n),                                      │
+│   151 │   │   │   │   real_line.n2p(n + 2),                                  │
+│   152 │   │   │   │   color=BLUE,                                            │
+╰──────────────────────────────────────────────────────────────────────────────╯
+NameError: name 'Interval' is not defined
+
+
+============================================================
+Rendering GroupsScene...
+============================================================
+✓ GroupsScene built successfully -> ../public/animations/Groups.webm
+
+============================================================
+Rendering ManifoldsScene...
+============================================================
+✓ ManifoldsScene built successfully -> ../public/animations/Manifolds.webm
+
+============================================================
+Rendering EulerIdentityScene...
+============================================================
+✓ EulerIdentityScene built successfully -> ../public/animations/EulerIdentity.webm
+
+============================================================
+Rendering FourierTransformScene...
+============================================================
+✓ FourierTransformScene built successfully -> ../public/animations/FourierTransform.webm
+
+============================================================
+Rendering EllipticCurvesScene...
+============================================================
+✓ EllipticCurvesScene built successfully -> ../public/animations/EllipticCurves.webm
+
+============================================================
+Rendering TrigonometricFunctionsScene...
+============================================================
+✗ TrigonometricFunctionsScene timed out after 10 minutes
+
+============================================================
+Rendering GoldenRatioScene...
+============================================================
+✓ GoldenRatioScene built successfully -> ../public/animations/GoldenRatio.webm
+
+============================================================
+Rendering FibonacciScene...
+============================================================
+✓ FibonacciScene built successfully -> ../public/animations/Fibonacci.webm
+
+============================================================
+Rendering InfinityScene...
+============================================================
+✓ InfinityScene built successfully -> ../public/animations/Infinity.webm
+
+============================================================
+Rendering EpsilonDeltaScene...
+============================================================
+✓ EpsilonDeltaScene built successfully -> ../public/animations/EpsilonDelta.webm
+
+============================================================
+Rendering ModularArithmeticScene...
+============================================================
+✓ ModularArithmeticScene built successfully -> ../public/animations/ModularArithmetic.webm
+
+============================================================
+Rendering ThreeGeometriesScene...
+============================================================
+✓ ThreeGeometriesScene built successfully -> ../public/animations/ThreeGeometries.webm
+
+============================================================
+Rendering CentralLimitTheoremScene...
+============================================================
+✓ CentralLimitTheoremScene built successfully -> ../public/animations/CentralLimitTheorem.webm
+
+============================================================
+Rendering NumberSystemsScene...
+============================================================
+✗ NumberSystemsScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/8516fc8ae39c2ddb.log
+
+
+============================================================
+Rendering ProofTechniquesScene...
+============================================================
+✓ ProofTechniquesScene built successfully -> ../public/animations/ProofTechniques.webm
+
+============================================================
+Rendering ComplexNumbersScene...
+============================================================
+✗ ComplexNumbersScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/fb1f071c1e123a53.log
+
+
+============================================================
+Rendering VectorsScene...
+============================================================
+✓ VectorsScene built successfully -> ../public/animations/Vectors.webm
+
+============================================================
+Rendering DerivativesScene...
+============================================================
+✗ DerivativesScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/7acc3a972194fe31.log
+
+
+============================================================
+Rendering MatricesScene...
+============================================================
+✓ MatricesScene built successfully -> ../public/animations/Matrices.webm
+
+============================================================
+Rendering IntegrationScene...
+============================================================
+✓ IntegrationScene built successfully -> ../public/animations/Integration.webm
+
+============================================================
+Rendering TaylorSeriesScene...
+============================================================
+✗ TaylorSeriesScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/9fee016badefd057.log
+
+
+============================================================
+Rendering LogarithmsScene...
+============================================================
+✗ LogarithmsScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/9654352156b2e6d3.log
+
+
+============================================================
+Rendering ExponentialGrowthScene...
+============================================================
+✗ ExponentialGrowthScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/eae7e324d4e714ed.log
+
+
+============================================================
+Rendering ContinuityScene...
+============================================================
+✗ ContinuityScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/7c2c0cfa335e1e64.log
+
+
+============================================================
+Rendering LimitsScene...
+============================================================
+✗ LimitsScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/cb98292e0db825d0.log
+
+
+============================================================
+Rendering DifferentialEquationsScene...
+============================================================
+✓ DifferentialEquationsScene built successfully -> ../public/animations/DifferentialEquations.webm
+
+============================================================
+Rendering SetTheoryScene...
+============================================================
+✗ SetTheoryScene failed:
+home/r/.local/lib/python3.13/site-packages/manim/utils/tex_file_writing.py: │
+│ 212 in compile_tex                                                           │
+│                                                                              │
+│   209 │   │   if cp.returncode != 0:                                         │
+│   210 │   │   │   log_file = tex_file.with_suffix(".log")                    │
+│   211 │   │   │   print_all_tex_errors(log_file, tex_compiler, tex_file)     │
+│ ❱ 212 │   │   │   raise ValueError(                                          │
+│   213 │   │   │   │   f"{tex_compiler} error converting to"                  │
+│   214 │   │   │   │   f" {output_format[1:]}. See log output above or"       │
+│   215 │   │   │   │   f" the log file: {log_file}",                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+ValueError: latex error converting to dvi. See log output above or the log file:
+media/Tex/dec4ed1abba6b0d8.log
+
+
+============================================================
+BUILD SUMMARY
+============================================================
+Successful: 22/33
+Failed: 11/33
+
+Failed animations:
+  - CompactnessScene (compactness.py)
+  - TrigonometricFunctionsScene (trigonometric_functions.py)
+  - NumberSystemsScene (number_systems.py)
+  - ComplexNumbersScene (complex_numbers.py)
+  - DerivativesScene (derivatives.py)
+  - TaylorSeriesScene (taylor_series.py)
+  - LogarithmsScene (logarithms.py)
+  - ExponentialGrowthScene (exponential_growth.py)
+  - ContinuityScene (continuity.py)
+  - LimitsScene (limits.py)
+  - SetTheoryScene (set_theory.py)

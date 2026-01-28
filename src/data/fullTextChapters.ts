@@ -29,34 +29,34 @@ const chapterMap: Record<string, { id: string; part: string }> = {
   // Part III: Mathematical Concepts
   "III.1": { id: "axiom-of-choice", part: "part-03" },
   "III.37": { id: "bayesian-analysis", part: "part-03" },
-  "III.62": { id: "placeholder", part: "part-03" }, // Banach spaces - not yet created
-  "III.78": { id: "placeholder", part: "part-03" }, // Ricci flow - not yet created
+  "III.62": { id: "placeholder", part: "part-03" }, // Banach spaces
+  "III.78": { id: "placeholder", part: "part-03" }, // Ricci flow
   
   // Part IV: Branches of Mathematics
   "IV.1": { id: "number-theory", part: "part-04" },
-  "IV.2": { id: "number-theory", part: "part-04" }, // Analytic number theory
-  "IV.4": { id: "algebra", part: "part-04" }, // Algebraic geometry
-  "IV.5": { id: "placeholder", part: "part-04" }, // Arithmetic geometry
-  "IV.12": { id: "analysis", part: "part-04" }, // Partial differential equations
-  "IV.13": { id: "placeholder", part: "part-04" }, // General relativity
-  "IV.14": { id: "placeholder", part: "part-04" }, // Dynamics
-  "IV.15": { id: "placeholder", part: "part-04" }, // Operator algebras
-  "IV.16": { id: "placeholder", part: "part-04" }, // Mirror symmetry
-  "IV.17": { id: "placeholder", part: "part-04" }, // Vertex operator algebras
-  "IV.22": { id: "placeholder", part: "part-04" }, // Set theory
-  "IV.23": { id: "placeholder", part: "part-04" }, // Model theory
-  "IV.24": { id: "placeholder", part: "part-04" }, // Brownian motion
-  "IV.25": { id: "placeholder", part: "part-04" }, // Probabilistic models
+  "IV.2": { id: "number-theory", part: "part-04" },
+  "IV.4": { id: "algebra", part: "part-04" },
+  "IV.5": { id: "placeholder", part: "part-04" },
+  "IV.12": { id: "analysis", part: "part-04" },
+  "IV.13": { id: "placeholder", part: "part-04" },
+  "IV.14": { id: "placeholder", part: "part-04" },
+  "IV.15": { id: "placeholder", part: "part-04" },
+  "IV.16": { id: "placeholder", part: "part-04" },
+  "IV.17": { id: "placeholder", part: "part-04" },
+  "IV.22": { id: "placeholder", part: "part-04" },
+  "IV.23": { id: "placeholder", part: "part-04" },
+  "IV.24": { id: "placeholder", part: "part-04" },
+  "IV.25": { id: "placeholder", part: "part-04" },
   
   // Part V: Theorems and Problems
-  "V.7": { id: "placeholder", part: "part-05" }, // Classification of finite simple groups
-  "V.10": { id: "placeholder", part: "part-05" }, // Fermat's Last Theorem
-  "V.15": { id: "placeholder", part: "part-05" }, // Gödel's incompleteness theorems
-  "V.18": { id: "placeholder", part: "part-05" }, // Continuum hypothesis
-  "V.21": { id: "placeholder", part: "part-05" }, // Insolubility of the quintic
+  "V.7": { id: "placeholder", part: "part-05" },
+  "V.10": { id: "placeholder", part: "part-05" },
+  "V.15": { id: "placeholder", part: "part-05" },
+  "V.18": { id: "placeholder", part: "part-05" },
+  "V.21": { id: "placeholder", part: "part-05" },
   
   // Part VII: Applications
-  "VII.7": { id: "placeholder", part: "part-07" }, // Cryptography
+  "VII.7": { id: "placeholder", part: "part-07" },
 }
 
 // Helper function to convert book references to links
@@ -68,11 +68,10 @@ function ref(chapter: string): string {
     }
     return `[${chapter}](/${mapped.part}/${mapped.id})`
   }
-  // Fallback to placeholder for unknown references
   return `[${chapter}](/placeholder?ref=${encodeURIComponent(chapter)})`
 }
 
-// I.1 What Is Mathematics About? - Full Text (Verbatim from Princeton Companion to Mathematics)
+// I.1 What Is Mathematics About? - Full Text
 export const whatIsMathematicsFullText: FullTextChapter = {
   id: "what-is-mathematics-about",
   title: "What Is Mathematics About?",
@@ -126,136 +125,359 @@ Thus, while one can draw a useful distinction between algebra and geometry, one 
         createAnnotation("ag-2", "note", "Algebra and geometry are deeply interconnected. Many problems can be solved by translating between these two modes of thinking."),
       ],
     },
+  ],
+  exercises: [],
+}
+
+// I.2 The Language and Grammar of Mathematics - Full Text (VERBATIM)
+export const languageAndGrammarFullText: FullTextChapter = {
+  id: "language-and-grammar",
+  title: "The Language and Grammar of Mathematics",
+  description: "Understanding mathematical notation, symbols, and the logical structure of mathematical statements.",
+  part: "part-01",
+  partTitle: "Introduction",
+  order: 2,
+  content: [
     {
-      id: "algebra-vs-analysis",
-      title: "1.2 Algebra versus Analysis",
+      id: "four-basic-concepts",
+      title: "Four Basic Concepts",
       type: "text",
-      content: "The distinction between algebraic and analytical approaches.",
-      fullText: `The word "analysis," used to denote a branch of mathematics, is not one that features at high school level. However, the word "calculus" is much more familiar, and differentiation and integration are good examples of mathematics that would be classified as analysis rather than algebra or geometry. The reason for this is that they involve limiting processes. For example, the derivative of a function $f$ at a point $x$ is the limit of the gradients of a sequence of chords of the graph of $f$, and the area of a shape with a curved boundary is defined to be the limit of the areas of rectilinear regions that fill up more and more of the shape. (These concepts are discussed in much more detail in ${ref("I.3")} §5.)
+      content: "The fundamental concepts of mathematical language.",
+      fullText: `Another word that famously has three quite distinct meanings is "is." The three meanings are illustrated in the following three sentences.
+(1) 5 is the square root of 25.
+(2) 5 is less than 10.
+(3) 5 is a prime number.
+In the first of these sentences, "is" could be replaced by "equals": it says that two objects, 5 and the square root of 25, are in fact one and the same object, just as it does in the English sentence "London is the capital of the United Kingdom." In the second sentence, "is" plays a completely different role. The words "less than 10" form an adjectival phrase, specifying a property that numbers may or may not have, and "is" in this sentence is like "is" in the English sentence "Grass is green." As for the third sentence, the word "is" there means "is an example of," as it does in the English sentence "Mercury is a planet."
 
-Thus, as a first approximation, one might say that a branch of mathematics belongs to analysis if it involves limiting processes, whereas it belongs to algebra if you can get to the answer after just a finite sequence of steps. However, here again the first approximation is so crude as to be misleading, and for a similar reason: if one looks more closely one finds that it is not so much branches of mathematics that should be classified into analysis or algebra, but mathematical techniques.
+These differences are reflected in the fact that the sentences cease to resemble each other when they are written in a more symbolic way. An obvious way to write (1) is $5 = \\sqrt{25}$. As for (2), it would usually be written $5 < 10$, where the symbol "$<$" means "is less than." The third sentence would normally not be written symbolically because the concept of a prime number is not quite basic enough to have universally recognized symbols associated with it. However, it is sometimes useful to do so, and then one must invent a suitable symbol. One way to do it would be to adopt the convention that if $n$ is a positive integer, then $P(n)$ stands for the sentence "$n$ is prime." Another way, which does not hide the word "is," is to use the language of sets.
 
-Given that we cannot write out infinitely long proofs, how can we hope to prove anything about limiting processes? To answer this, let us look at the justification for the simple statement that the derivative of $x^3$ is $3x^2$. The usual reasoning is that the gradient of the chord of the line joining the two points $(x, x^3)$ and $((x + h), (x + h)^3)$ is
+**2.1 Sets**
 
-$$\\frac{(x + h)^3 - x^3}{x + h - x},$$
+Broadly speaking, a set is a collection of objects, and in mathematical discourse these objects are mathematical ones such as numbers, points in space, or even other sets. If we wish to rewrite sentence (3) symbolically, another way to do it is to define $P$ to be the collection, or set, of all prime numbers. Then we can rewrite it as "5 belongs to the set $P$." This notion of belonging to a set is sufficiently basic to deserve its own symbol, and the symbol used is "$\\in$." So a fully symbolic way of writing the sentence is $5 \\in P$.
 
-which works out as $3x^2 + 3xh + h^2$. As $h$ "tends to zero," this gradient "tends to $3x^2$," so we say that the gradient at $x$ is $3x^2$. But what if we wanted to be a bit more careful? For instance, if $x$ is very large, are we really justified in ignoring the term $3xh$?
+The members of a set are usually called its elements, and the symbol "$\\in$" is usually read "is an element of." So the "is" of sentence (3) is more like "$\\in$" than "$=$."
 
-To reassure ourselves on this point, we do a small calculation to show that, whatever $x$ is, the error $3xh + h^2$ can be made arbitrarily small, provided only that $h$ is sufficiently small. Here is one way of going about it. Suppose we fix a small positive number $\\varepsilon$, which represents the error we are prepared to tolerate. Then if $|h| \\leqslant \\varepsilon/6x$, we know that $|3xh|$ is at most $\\varepsilon/2$. If in addition we know that $|h| \\leqslant \\sqrt{\\varepsilon/2}$, then we also know that $h^2 \\leqslant \\varepsilon/2$. So, provided that $|h|$ is smaller than the minimum of the two numbers $\\varepsilon/6x$ and $\\sqrt{\\varepsilon/2}$, the difference between $3x^2 + 3xh + h^2$ and $3x^2$ will be at most $\\varepsilon$.
+Although one cannot directly substitute the phrase "is an element of" for "is," one can do so if one is prepared to modify the rest of the sentence a little.
 
-There are two features of the above argument that are typical of analysis. First, although the statement we wished to prove was about a limiting process, and was therefore "infinitary," the actual work that we needed to do to prove it was entirely finite. Second, the nature of that work was to find sufficient conditions for a certain fairly simple inequality (the inequality $|3xh + h^2| \\leqslant \\varepsilon$) to be true.
+There are three common ways to denote a specific set. One is to list its elements inside curly brackets: $\\{2, 3, 5, 7, 11, 13, 17, 19\\}$, for example, is the set whose elements are the eight numbers 2, 3, 5, 7, 11, 13, 17, and 19. The majority of sets considered by mathematicians are too large for this to be feasible—indeed, they are often infinite—so a second way to denote sets is to use dots to imply a list that is too long to write down: for example, the expressions $\\{1, 2, 3, \\ldots, 100\\}$ and $\\{2, 4, 6, 8, \\ldots\\}$ can be used to represent the set of all positive integers up to 100 and the set of all positive even numbers, respectively. A third way, and the way that is most important, is to define a set via a property: an example that shows how this is done is the expression $\\{x : x \\text{ is prime and } x < 20\\}$. To read an expression such as this, one first reads the opening curly bracket as "The set of." Next, one reads the symbol that occurs before the colon. The colon itself one reads as "such that." Finally, one reads what comes after the colon, which is the property that determines the elements of the set. In this instance, we end up saying, "The set of $x$ such that $x$ is prime and $x$ is less than 20," which is in fact equal to the set $\\{2, 3, 5, 7, 11, 13, 17, 19\\}$ considered earlier.
 
-Let us illustrate this second feature with another example: a proof that $x^4 - x^2 - 6x + 10$ is positive for every real number $x$. Here is an "analyst's argument." Note first that if $x \\leqslant -1$ then $x^4 \\geqslant x^2$ and $10 - 6x \\geqslant 0$, so the result is certainly true in this case. If $-1 \\leqslant x \\leqslant 1$, then $|x^4 - x^2 - 6x|$ cannot be greater than $x^4 + x^2 + 6|x|$, which is at most $8$, so $x^4 - x^2 - 6x \\geqslant -8$, which implies that $x^4 - x^2 - 6x + 10 \\geqslant 2$. If $1 \\leqslant x \\leqslant \\frac{3}{2}$, then $x^4 \\geqslant x^2$ and $6x \\leqslant 9$, so $x^4 - x^2 - 6x + 10 \\geqslant 1$. If $\\frac{3}{2} \\leqslant x \\leqslant 2$, then $x^2 \\geqslant \\frac{9}{4}$, so $x^4 - x^2 = x^2(x^2 - 1) \\geqslant \\frac{9}{4} \\cdot \\frac{5}{4} > 2$. Also, $6x \\leqslant 12$, so $10 - 6x \\geqslant -2$. Therefore, $x^4 - x^2 - 6x + 10 > 0$. Finally, if $x \\geqslant 2$, then $x^4 - x^2 = x^2(x^2 - 1) \\geqslant 3x^2 \\geqslant 6x$, from which it follows that $x^4 - x^2 - 6x + 10 \\geqslant 10$.
+Many sentences of mathematics can be rewritten in set-theoretic terms. For example, sentence (2) earlier could be written as $5 \\in \\{n : n < 10\\}$. Often there is no point in doing this (as here, where it is much easier to write $5 < 10$) but there are circumstances where it becomes extremely convenient. For example, one of the great advances in mathematics was the use of Cartesian coordinates to translate geometry into algebra and the way this was done was to define geometrical objects as sets of points, where points were themselves defined as pairs or triples of numbers. So, for example, the set $\\{(x, y) : x^2 + y^2 = 1\\}$ is (or represents) a circle of radius 1 with its center at the origin $(0, 0)$. That is because, by the Pythagorean theorem, the distance from $(0, 0)$ to $(x, y)$ is $\\sqrt{x^2 + y^2}$, so the sentence "$x^2 + y^2 = 1$" can be reexpressed geometrically as "the distance from $(0, 0)$ to $(x, y)$ is 1." If all we ever cared about was which points were in the circle, then we could make do with sentences such as "$x^2 + y^2 = 1$," but in geometry one often wants to consider the entire circle as a single object (rather than as a multiplicity of points, or as a property that points might have), and then set-theoretic language is indispensable.
 
-The above argument is somewhat long, but each step consists in proving a rather simple inequality—this is the sense in which the proof is typical of analysis. Here, for contrast, is an "algebraist's proof." One simply points out that $x^4 - x^2 - 6x + 10$ is equal to $(x^2 - 1)^2 + (x - 3)^2$, and is therefore always positive.
+A second circumstance where it is usually hard to do without sets is when one is defining new mathematical objects. Very often such an object is a set together with a mathematical structure imposed on it, which takes the form of certain relationships among the elements of the set. For examples of this use of set-theoretic language, see sections 1 and 2, on number systems and algebraic structures, respectively, in some fundamental mathematical definitions ${ref("I.3")}.
 
-This may make it seem as though, given the choice between analysis and algebra, one should go for algebra. After all, the algebraic proof was much shorter, and makes it obvious that the function is always positive. However, although there were several steps to the analyst's proof, they were all easy, and the brevity of the algebraic proof is misleading since no clue has been given about how the equivalent expression for $x^4 - x^2 - 6x + 10$ was found. And in fact, the general question of when a polynomial can be written as a sum of squares of other polynomials turns out to be an interesting and difficult one (particularly when the polynomials have more than one variable).
-
-There is also a third, hybrid approach to the problem, which is to use calculus to find the points where $x^4 - x^2 - 6x + 10$ is minimized. The idea would be to calculate the derivative $4x^3 - 2x - 6$ (an algebraic process, justified by an analytic argument), find its roots (algebra), and check that the values of $x^4 - x^2 - 6x + 10$ at the roots of the derivative are positive. However, though the method is a good one for many problems, in this case it is tricky because the cubic $4x^3 - 2x - 6$ does not have integer roots. But one could use an analytic argument to find small intervals inside which the minimum must occur, and that would then reduce the number of cases that had to be considered in the first, purely analytic, argument.
-
-As this example suggests, although analysis often involves limiting processes and algebra usually does not, a more significant distinction is that algebraists like to work with exact formulas and analysts use estimates. Or, to put it even more succinctly, algebraists like equalities and analysts like inequalities.`,
+Sets are also very useful if one is trying to do metamathematics, that is, to prove statements not about mathematical objects but about the process of mathematical reasoning itself. For this it helps a lot if one can devise a very simple language—with a small vocabulary and an uncomplicated grammar—into which it is in principle possible to translate all mathematical arguments. Sets allow one to reduce greatly the number of parts of speech that one needs, turning almost all of them into nouns. For example, with the help of the membership symbol "$\\in$" one can do without adjectives, as the translation of "5 is a prime number" (where "prime" functions as an adjective) into "$5 \\in P$" has already suggested.`,
       annotations: [
-        createAnnotation("analysis-1", "note", "The derivative of $x^3$ is $3x^2$—this example shows how analysis uses limiting processes while algebra uses finite steps."),
-        createAnnotation("analysis-2", "note", "Algebraists prefer equalities and exact formulas; analysts prefer inequalities and estimates."),
+        createAnnotation("sets-1", "note", "Set-builder notation $\\{x : P(x)\\}$ is powerful: it defines infinite sets by a property rather than listing elements."),
+        createAnnotation("belongs-1", "note", "The symbol $\\in$ means 'is an element of' - it's one of the most fundamental symbols in mathematics."),
       ],
     },
     {
-      id: "main-branches",
-      title: "2. The Main Branches of Mathematics",
+      id: "functions",
+      title: "2.2 Functions",
       type: "text",
-      content: "A survey of the major fields of mathematical study.",
-      fullText: `Now that we have discussed the differences between algebraic, geometrical, and analytical thinking, we are ready for a crude classification of the subject matter of mathematics. We face a potential confusion, because the words "algebra," "geometry," and "analysis" refer both to specific branches of mathematics and to ways of thinking that cut across many different branches. Thus, it makes sense to say (and it is true) that some branches of analysis are more algebraic (or geometrical) than others; similarly, there is no paradox in the fact that algebraic topology is almost entirely algebraic and geometrical in character, even though the objects it studies, topological spaces, are part of analysis. In this section, we shall think primarily in terms of subject matter, but it is important to keep in mind the distinctions of the previous section and be aware that they are in some ways more fundamental. Our descriptions will be very brief: further reading about the main branches of mathematics can be found in parts II and IV, and more specific points are discussed in parts III and V.
+      content: "The concept of mathematical functions.",
+      fullText: `Let us now switch attention from the word "is" to some other parts of the sentences (1)–(3), focusing first on the phrase "the square root of" in sentence (1). If we wish to think about this phrase grammatically, then we should analyze what sort of role it plays in a sentence, and the analysis is simple: in virtually any mathematical sentence where the phrase appears, it is followed by the name of a number. If the number is $n$, then this produces the slightly longer phrase, "the square root of $n$," which is a noun phrase that denotes a number and plays the same grammatical role as a number (at least when the number is used as a noun rather than as an adjective). For instance, replacing "5" by "the square root of 25" in the sentence "5 is less than 7" yields a new sentence, "The square root of 25 is less than 7," that is still grammatically correct (and true).
 
-**2.1 Algebra**
+One of the most basic activities of mathematics is to take a mathematical object and transform it into another one, sometimes of the same kind and sometimes not. "The square root of" transforms numbers into numbers, as do "four plus," "two times," "the cosine of," and "the logarithm of." A nonnumerical example is "the center of gravity of," which transforms geometrical shapes (provided they are not too exotic or complicated to have a center of gravity) into points—meaning that if $S$ stands for a shape, then "the center of gravity of $S$" stands for a point. A function is, roughly speaking, a mathematical transformation of this kind.
 
-The word "algebra," when it denotes a branch of mathematics, means something more specific than manipulation of symbols and a preference for equalities over inequalities. Algebraists are concerned with number systems, polynomials, and more abstract structures such as groups, fields, vector spaces, and rings (discussed in some detail in some fundamental mathematical definitions ${ref("I.3")}). Historically, the abstract structures emerged as generalizations from concrete instances. For instance, there are important analogies between the set of all integers and the set of all polynomials with rational (for example) coefficients, which are brought out by the fact that both sets are examples of algebraic structures known as Euclidean domains. If one has a good understanding of Euclidean domains, one can apply this understanding to integers and polynomials.
+It is not easy to make this definition more precise. To ask, "What is a function?" is to suggest that the answer should be a thing of some sort, but functions seem to be more like processes. Moreover, when they appear in mathematical sentences they do not behave like nouns. (They are more like prepositions, though with a definite difference that will be discussed in the next subsection.) One might therefore think it inappropriate to ask what kind of object "the square root of" is. Should one not simply be satisfied with the grammatical analysis already given?
 
-This highlights a contrast that appears in many branches of mathematics, namely the distinction between general, abstract statements and particular, concrete ones. One algebraist might be thinking about groups, say, in order to understand a particular rather complicated group of symmetries, while another might be interested in the general theory of groups on the grounds that they are a fundamental class of mathematical objects. The development of abstract algebra from its concrete beginnings is discussed in the origins of modern algebra ${ref("II.3")}.
+As it happens, no. Over and over again, throughout mathematics, it is useful to think of a mathematical phenomenon, which may be complex and very unthinglike, as a single object. We have already seen a simple example: a collection of infinitely many points in the plane or space is sometimes better thought of as a single geometrical shape. Why should one wish to do this for functions? Here are two reasons. First, it is convenient to be able to say something like, "The derivative of sin is cos," or to speak in general terms about some functions being differentiable and others not. More generally, functions can have properties, and in order to discuss those properties one needs to think of functions as things. Second, many algebraic structures are most naturally thought of as sets of functions. (See, for example, the discussion of groups and symmetry in ${ref("I.3")} §2.1. See also hilbert spaces ${ref("III.37")}, function spaces ${ref("III.29")}, and vector spaces ${ref("I.3")} §2.3.)
 
-A supreme example of a theorem of the first kind is the insolubility of the quintic ${ref("V.21")}—the result that there is no formula for the roots of a quintic polynomial in terms of its coefficients. One proves this theorem by analyzing symmetries associated with the roots of a polynomial, and understanding the group that these symmetries form. This concrete example of a group (or rather, class of groups, one for each polynomial) played a very important part in the development of the abstract theory of groups.
+If $f$ is a function, then the notation $f(x) = y$ means that $f$ turns the object $x$ into the object $y$. Once one starts to speak formally about functions, it becomes important to specify exactly which objects are to be subjected to the transformation in question, and what sort of objects they can be transformed into. One of the main reasons for this is that it makes it possible to discuss another notion that is central to mathematics, that of inverting a function. (See ${ref("I.4")} §1 for a discussion of why it is central.) Roughly speaking, the inverse of a function is another function that undoes it, and that it undoes; for example, the function that takes a number $n$ to $n - 4$ is the inverse of the function that takes $n$ to $n + 4$, since if you add four and then subtract four, or vice versa, you get the number you started with.
 
-As for the second kind of theorem, a good example is the classification of finite simple groups ${ref("V.7")}, which describes the basic building blocks out of which any finite group can be built.
+Here is a function $f$ that cannot be inverted. It takes each number and replaces it by the nearest multiple of 100, rounding up if the number ends in 50. Thus, $f(113) = 100$, $f(3879) = 3900$, and $f(1050) = 1100$. It is clear that there is no way of undoing this process with a function $g$. For example, in order to undo the effect of $f$ on the number 113 we would need $g(100)$ to equal 113. But the same argument applies to every number that is at least as big as 50 and smaller than 150, and $g(100)$ cannot be more than one number at once.
 
-Algebraic structures appear throughout mathematics, and there are many applications of algebra to other areas, such as number theory, geometry, and even mathematical physics.
+Now let us consider the function that doubles a number. Can this be inverted? Yes it can, one might say: just divide the number by two again. And much of the time this would be a perfectly sensible response, but not, for example, if it was clear from the context that the numbers being talked about were positive integers. Then one might be focusing on the difference between even and odd numbers, and this difference could be encapsulated by saying that odd numbers are precisely those numbers $n$ for which the equation $2x = n$ does not have a solution. (Notice that one can undo the doubling process by halving. The problem here is that the relationship is not symmetrical: there is no function that can be undone by doubling, since you could never get back to an odd number.)
 
-**2.2 Number Theory**
+To specify a function, therefore, one must be careful to specify two sets as well: the domain, which is the set of objects to be transformed, and the range, which is the set of objects they are allowed to be transformed into. A function $f$ from a set $A$ to a set $B$ is a rule that specifies, for each element $x$ of $A$, an element $y = f(x)$ of $B$. Not every element of the range needs to be used: consider once again the example of "two times" when the domain and range are both the set of all positive integers. The set $\\{f(x) : x \\in A\\}$ of values actually taken by $f$ is called the image of $f$. (Slightly confusingly, the word "image" is also used in a different sense, applied to the individual elements of $A$: if $x \\in A$, then its image is $f(x)$.)
 
-Number theory is largely concerned with properties of the set of positive integers, and as such has a considerable overlap with algebra. But a simple example that illustrates the difference between a typical question in algebra and a typical question in number theory is provided by the equation $13x - 7y = 1$. An algebraist would simply note that there is a one-parameter family of solutions: if $y = \\lambda$ then $x = (1 + 7\\lambda)/13$, so the general solution is $(x, y) = ((1 + 7\\lambda)/13, \\lambda)$. A number theorist would be interested in integer solutions, and would therefore work out for which integers $\\lambda$ the number $1 + 7\\lambda$ is a multiple of $13$. (The answer is that $1 + 7\\lambda$ is a multiple of $13$ if and only if $\\lambda$ has the form $13m + 11$ for some integer $m$.)
+The following symbolic notation is used. The expression $f: A \\rightarrow B$ means that $f$ is a function with domain $A$ and range $B$. If we then write $f(x) = y$, we know that $x$ must be an element of $A$ and $y$ must be an element of $B$. Another way of writing $f(x) = y$ that is sometimes more convenient is $f: x \\mapsto y$. (The bar on the arrow is to distinguish it from the arrow in $f: A \\rightarrow B$, which has a very different meaning.)
 
-However, this description does not do full justice to modern number theory, which has developed into a highly sophisticated subject. Most number theorists are not directly trying to solve equations in integers; instead they are trying to understand structures that were originally developed to study such equations but which then took on a life of their own and became objects of study in their own right. In some cases, this process has happened several times, so the phrase "number theory" gives a very misleading picture of what some number theorists do. Nevertheless, even the most abstract parts of the subject can have down-to-earth applications: a notable example is Andrew Wiles's famous proof of fermat's last theorem ${ref("V.10")}.
-
-Interestingly, in view of the discussion earlier, number theory has two fairly distinct subbranches, known as algebraic number theory ${ref("IV.1")} and analytic number theory ${ref("IV.2")}. As a rough rule of thumb, the study of equations in integers leads to algebraic number theory, while analytic number theory has its roots in the study of prime numbers, but the true picture is of course more complicated.
-
-**2.3 Geometry**
-
-A central object of study is the manifold, which is discussed in ${ref("I.3")} §6.9. Manifolds are higher-dimensional generalizations of shapes like the surface of a sphere: a small portion of a manifold looks flat, but the manifold as a whole may be curved in complicated ways. Most people who call themselves geometers are studying manifolds in one way or another. As with algebra, some will be interested in particular manifolds and others in the more general theory.
-
-Within the study of manifolds, one can attempt a further classification, according to when two manifolds are regarded as "genuinely distinct." A topologist regards two objects as the same if one can be continuously deformed, or "morphed," into the other; thus, for example, an apple and a pear would count as the same for a topologist. This means that relative distances are not important to topologists, since one can change them by suitable continuous stretches. A differential topologist asks for the deformations to be "smooth" (which means "sufficiently differentiable"). This results in a finer classification of manifolds and a different set of problems. At the other, more "geometrical," end of the spectrum are mathematicians who are much more interested in the precise nature of the distances between points on a manifold (a concept that would not make sense to a topologist) and in auxiliary structures that one can associate with a manifold. See riemannian metrics ${ref("I.3")} §6.10 and ricci flow ${ref("III.78")} for some indication of what the more geometrical side of geometry is like.
-
-**2.4 Algebraic Geometry**
-
-As its name suggests, algebraic geometry does not have an obvious place in the above classification, so it is easier to discuss it separately. Algebraic geometers also study manifolds, but with the important difference that their manifolds are defined using polynomials. (A simple example of this is the surface of a sphere, which can be defined as the set of all $(x, y, z)$ such that $x^2 + y^2 + z^2 = 1$.) This means that algebraic geometry is algebraic in the sense that it is "all about polynomials" but geometric in the sense that the set of solutions of a polynomial in several variables is a geometric object.
-
-An important part of algebraic geometry is the study of singularities. Often the set of solutions to a system of polynomial equations is similar to a manifold, but has a few exceptional, singular points. For example, the equation $x^2 = y^2 + z^2$ defines a (double) cone, which has its vertex at the origin $(0, 0, 0)$. If you look at a small enough neighborhood of a point $x$ on the cone, then, provided $x$ is not $(0, 0, 0)$, the neighborhood will resemble a flat plane. However, if $x$ is $(0, 0, 0)$, then no matter how small the neighborhood is, you will still see the vertex of the cone. Thus, $(0, 0, 0)$ is a singularity. (This means that the cone is not actually a manifold, but a "manifold with a singularity.")
-
-The interplay between algebra and geometry is part of what gives algebraic geometry its fascination. A further impetus to the subject comes from its connections to other branches of mathematics. There is a particularly close connection with number theory, explained in arithmetic geometry ${ref("IV.5")}. More surprisingly, there are important connections between algebraic geometry and mathematical physics. See mirror symmetry ${ref("IV.16")} for an account of some of these.
-
-**2.5 Analysis**
-
-Analysis comes in many different flavors. A major topic is the study of partial differential equations ${ref("IV.12")}. This began because partial differential equations were found to govern many physical processes, such as motion in a gravitational field, for example. But partial differential equations arise in purely mathematical contexts as well—particularly in geometry—so they give rise to a big branch of mathematics with many subbranches and links to many other areas.
-
-Like algebra, analysis has an abstract side as well. In particular, certain abstract structures, such as banach spaces ${ref("III.62")}, hilbert spaces ${ref("III.37")}, $C^*$-algebras ${ref("IV.15")} §3, and von neumann algebras ${ref("IV.15")} §2, are central objects of study. These four structures are all infinite-dimensional vector spaces ${ref("I.3")} §2.3, and the last two are "algebras," which means that one can multiply their elements together as well as adding them and multiplying them by scalars. Because these structures are infinite dimensional, studying them involves limiting arguments, which is why they belong to analysis. However, the extra algebraic structure of $C^*$-algebras and von Neumann algebras means that in those areas substantial use is made of algebraic tools as well. And as the word "space" suggests, geometry also has a very important role.
-
-dynamics ${ref("IV.14")} is another significant branch of analysis. It is concerned with what happens when you take a simple process and do it over and over again. For example, if you take a complex number $z_0$, then let $z_1 = z_0^2 + 2$, and then let $z_2 = z_1^2 + 2$, and so on, then what is the limiting behavior of the sequence $z_0, z_1, z_2, \\ldots$? Does it head off to infinity or stay in some bounded region? The answer turns out to depend in a complicated way on the original number $z_0$. Exactly how it depends on $z_0$ is a question in dynamics.
-
-Sometimes the process to be repeated is an "infinitesimal" one. For example, if you are told the positions, velocities, and masses of all the planets in the solar system at a particular moment (as well as the mass of the Sun), then there is a simple rule that tells you how the positions and velocities will be different an instant later. Later, the positions and velocities have changed, so the calculation changes; but the basic rule is the same, so one can regard the whole process as applying the same simple infinitesimal process infinitely many times. The correct way to formulate this is by means of partial differential equations and therefore much of dynamics is concerned with the long-term behavior of solutions to these.
-
-**2.6 Logic**
-
-The word "logic" is sometimes used as a shorthand for all branches of mathematics that are concerned with fundamental questions about mathematics itself, notably set theory ${ref("IV.22")}, category theory ${ref("III.8")}, model theory ${ref("IV.23")}, and logic in the narrower sense of "rules of deduction." Among the triumphs of set theory are gödel's incompleteness theorems ${ref("V.15")} and Paul Cohen's proof of the independence of the continuum hypothesis ${ref("V.18")}. Gödel's theorems in particular had a dramatic effect on philosophical perceptions of mathematics, though now that it is understood that not every mathematical statement has a proof or disproof most mathematicians carry on much as before, since most statements they encounter do tend to be decidable. However, set theorists are a different breed. Since Gödel and Cohen, many further statements have been shown to be undecidable, and many new axioms have been proposed that would make them decidable. Thus, decidability is now studied for mathematical rather than philosophical reasons.
-
-Category theory is another subject that began as a study of the processes of mathematics and then became a mathematical subject in its own right. It differs from set theory in that its focus is less on mathematical objects themselves than on what is done to those objects—in particular, the maps that transform one to another.
-
-A model for a collection of axioms is a mathematical structure for which those axioms, suitably interpreted, are true. For example, any concrete example of a group is a model for the axioms of group theory. Set theorists study models of set-theoretic axioms, and these are essential to the proofs of the famous theorems mentioned above, but the notion of a model is more widely applicable and has led to important discoveries in fields well outside set theory.
-
-**2.7 Combinatorics**
-
-There are various ways in which one can try to define combinatorics. None is satisfactory on its own, but together they give some idea of what the subject is like. A first definition is that combinatorics is about counting things. For example, how many ways are there of filling an $n \\times n$ square grid with $0$s and $1$s if you are allowed at most two $1$s in each row and at most two $1$s in each column? Because this problem asks us to count something, it is, in a rather simple sense, combinatorial.
-
-Combinatorics is sometimes called "discrete mathematics" because it is concerned with "discrete" structures as opposed to "continuous" ones. Roughly speaking, an object is discrete if it consists of points that are isolated from each other, and continuous if you can move from one point to another without making sudden jumps. (A good example of a discrete structure is the integer lattice $\\mathbb{Z}^2$, which is the grid consisting of all points in the plane with integer coordinates, and a good example of a continuous one is the surface of a sphere.) There is a close affinity between combinatorics and theoretical computer science (which deals with the quintessentially discrete structure of sequences of $0$s and $1$s), and combinatorics is sometimes contrasted with analysis, though in fact there are several connections between the two.
-
-A third view of combinatorics is that it is concerned with mathematical structures that have "few constraints." This idea helps to explain why number theory, despite the fact that it studies (among other things) the distinctly discrete set of all positive integers, is not considered a branch of combinatorics. In order to illustrate this last contrast, here are two somewhat similar problems, both about positive integers.
-
-(i) Is there a positive integer that can be written in a thousand different ways as a sum of two squares?
-
-(ii) Let $a_1, a_2, a_3, \\ldots$ be a sequence of positive integers, and suppose that each $a_n$ lies between $n^2$ and $(n+1)^2$. Will there always be a positive integer that can be written in a thousand different ways as a sum of two numbers from the sequence?
-
-The first question counts as number theory, since it concerns a very specific sequence—the sequence of squares—and one would expect to use properties of this special set of numbers in order to determine the answer, which turns out to be yes.¹
-
-The second question concerns a far less structured sequence. All we know about $a_n$ is its rough size—it is fairly close to $n^2$—but we know nothing about its more detailed properties, such as whether it is a prime, or a perfect cube, or a power of $2$, etc. For this reason, the second problem belongs to combinatorics. The answer is not known. If the answer turns out to be yes, then it will show that, in a sense, the number theory in the first problem was an illusion and that all that really mattered was the rough rate of growth of the sequence of squares.
-
-¹ Here is a quick hint at a proof. At the beginning of analytic number theory ${ref("IV.2")} you will find a condition that tells you precisely which numbers can be written as sums of two squares. From this criterion it follows that "most" numbers cannot. A careful count shows that if $N$ is a large integer, then there are many more expressions of the form $m^2 + n^2$ with both $m^2$ and $n^2$ less than $N$ than there are numbers less than $2N$ that can be written as a sum of two squares. Therefore there is a lot of duplication.
-
-**2.8 Theoretical Computer Science**
-
-This branch of mathematics is described at considerable length in part IV, so we shall be brief here. Broadly speaking, theoretical computer science is concerned with efficiency of computation, meaning the amounts of various resources, such as time and computer memory, needed to perform given computational tasks. There are mathematical models of computation that allow one to study questions about computational efficiency in great generality without having to worry about precise details of how algorithms are implemented. Thus, theoretical computer science is a genuine branch of pure mathematics: in theory, one could be an excellent theoretical computer scientist and be unable to program a computer. However, it has had many notable applications as well, especially to cryptography (see mathematics and cryptography ${ref("VII.7")} for more on this).
-
-**2.9 Probability**
-
-There are many phenomena, from biology and economics to computer science and physics, that are so complicated that instead of trying to understand them in complete detail one tries to make probabilistic statements instead. For example, if you wish to analyze how a disease is likely to spread, you cannot hope to take account of all the relevant information (such as who will come into contact with whom) but you can build a mathematical model and analyze it. Such models can have unexpectedly interesting behavior with direct practical relevance. For example, it may happen that there is a "critical probability" $p$ with the following property: if the probability of infection after contact of a certain kind is above $p$ then an epidemic may very well result, whereas if it is below $p$ then the disease will almost certainly die out. A dramatic difference in behavior like this is called a phase transition. (See probabilistic models of critical phenomena ${ref("IV.25")} for further discussion.)
-
-Setting up an appropriate mathematical model can be surprisingly difficult. For example, there are physical circumstances where particles travel in what appears to be a completely random manner. Can one make sense of the notion of a random continuous path? It turns out that one can—the result is the elegant theory of brownian motion ${ref("IV.24")}—but the proof that one can is highly sophisticated, roughly speaking because the set of all possible paths is so complex.
-
-**2.10 Mathematical Physics**
-
-The relationship between mathematics and physics has changed profoundly over the centuries. Up to the eighteenth century there was no sharp distinction drawn between mathematics and physics, and many famous mathematicians could also be regarded as physicists, at least some of the time. During the nineteenth century and the beginning of the twentieth century this situation gradually changed, until by the middle of the twentieth century the two disciplines were very separate. And then, toward the end of the twentieth century, mathematicians started to find that ideas that had been discovered by physicists had huge mathematical significance.
-
-There is still a big cultural difference between the two subjects: mathematicians are far more interested in finding rigorous proofs, whereas physicists, who use mathematics as a tool, are usually happy with a convincing argument for the truth of a mathematical statement, even if that argument is not actually a proof. The result is that physicists, operating under less stringent constraints, often discover fascinating mathematical phenomena long before mathematicians do.
-
-Finding rigorous proofs to back up these discoveries is often extremely hard: it is far more than a pedantic exercise in certifying the truth of statements that no physicist seriously doubted. Indeed, it often leads to further mathematical discoveries. The articles vertex operator algebras ${ref("IV.17")}, mirror symmetry ${ref("IV.16")}, general relativity and the einstein equations ${ref("IV.13")}, and operator algebras ${ref("IV.15")} describe some fascinating examples of how mathematics and physics have enriched each other.`,
+If we want to undo the effect of a function $f: A \\rightarrow B$, then we can, as long as we avoid the problem that occurred with the approximating function discussed earlier. That is, we can do it if $f(x)$ and $f(x')$ are different whenever $x$ and $x'$ are different elements of $A$. If this condition holds, then $f$ is called an injection. On the other hand, if we want to find a function $g$ that is undone by $f$, then we can do so as long as we avoid the problem of the integer-doubling function. That is, we can do it if every element $y$ of $B$ is equal to $f(x)$ for some element $x$ of $A$ (so that we have the option of setting $g(y) = x$). If this condition holds, then $f$ is called a surjection. If $f$ is both an injection and a surjection, then $f$ is called a bijection. Bijections are precisely the functions that have inverses.`,
       annotations: [
-        createAnnotation("branches-1", "note", "This section surveys the ten main branches of mathematics, from Algebra to Mathematical Physics."),
+        createAnnotation("functions-1", "note", "A function needs domain and range specified: $f: A \\rightarrow B$ means $f$ takes elements from $A$ and maps them to elements of $B$."),
+        createAnnotation("bijection-1", "note", "Bijections are functions that are both injective (one-to-one) and surjective (onto) - these are the functions that have inverses."),
       ],
+    },
+  ],
+  exercises: [],
+}
+
+// II.1 From Numbers to Number Systems
+export const fromNumbersToNumberSystemsFullText: FullTextChapter = {
+  id: "from-numbers-to-number-systems",
+  title: "From Numbers to Number Systems",
+  description: "The historical development of number systems from ancient civilizations to modern mathematics.",
+  part: "part-02",
+  partTitle: "The Origins of Modern Mathematics",
+  order: 1,
+  content: [
+    {
+      id: "numbers-introduction",
+      title: "Introduction",
+      type: "text",
+      content: "The development of numbers throughout history.",
+      fullText: `People have been writing numbers down for as long as they have been writing. In every civilization that has developed a way of recording information, we also find a way of recording numbers. Some scholars even argue that numbers came first.
+
+It is fairly clear that numbers first arose as adjectives: they specified how many or how much of something there was. Thus, it was possible to talk about three apricots, say, long before it was possible to talk about the number 3. But once the concept of "threeness" is on the table, so that the same adjective specifies three fish and three horses, and once a written symbol such as "3" is developed that can be used in all of those instances, the conditions exist for 3 itself to emerge as an independent entity. Once it does, we are doing mathematics.
+
+This process seems to have repeated itself many times when new kinds of numbers have been introduced: first a number is used, then it is represented symbolically, and finally it comes to be conceived as a thing in itself and as part of a system of similar entities.`,
+      annotations: [],
+    },
+    {
+      id: "need-for-number-systems",
+      title: "1 The Need for Number Systems",
+      type: "text",
+      content: "Numbers in early mathematics and their development.",
+      fullText: `The earliest mathematical documents we know about go back to the civilizations of the ancient Middle East, in Egypt and in Mesopotamia. In both cultures, a scribal class developed. Scribes were responsible for keeping records, which often required them to do arithmetic and solve simple mathematical problems. Most of the mathematical documents we have from those cultures seem to have been created for the use of young scribes learning their craft.
+
+Numbers were used both for counting and for measuring, so a need for fractional numbers must have come up fairly early. Fractions are complicated to write down, and computing with them can be difficult. Hence, the problem of "broken numbers" may well have been the first really challenging mathematical problem.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// II.2 Geometry
+export const geometryOriginsFullText: FullTextChapter = {
+  id: "geometry-origins",
+  title: "Geometry",
+  description: "The history and development of geometry from ancient Greece to modern times.",
+  part: "part-02",
+  partTitle: "The Origins of Modern Mathematics",
+  order: 2,
+  content: [
+    {
+      id: "geometry-introduction",
+      title: "1 Introduction",
+      type: "text",
+      content: "The evolution of geometric thought.",
+      fullText: `The modern view of geometry was inspired by the novel geometrical theories of Hilbert and Einstein in the early years of the twentieth century, which built in their turn on other radical reformulations of geometry in the nineteenth century. For thousands of years, the geometrical knowledge of the Greeks, as set out most notably in Euclid's Elements, was held up as a paradigm of perfect rigor, and indeed of human knowledge. The new theories amounted to the overthrow of an entire way of thinking.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// II.3 The Development of Abstract Algebra
+export const abstractAlgebraDevelopmentFullText: FullTextChapter = {
+  id: "abstract-algebra-development",
+  title: "The Development of Abstract Algebra",
+  description: "The evolution from classical algebra to modern abstract algebra.",
+  part: "part-02",
+  partTitle: "The Origins of Modern Mathematics",
+  order: 3,
+  content: [
+    {
+      id: "abstract-algebra-intro",
+      title: "Introduction",
+      type: "text",
+      content: "What is algebra and how did it develop?",
+      fullText: `What is algebra? To the high school student encountering it for the first time, algebra is an unfamiliar abstract language of x's and y's, a's and b's, together with rules for manipulating them. These letters, some of them variables and some constants, can be used for many purposes.
+
+The university course reflects some brave new world in which the algebra has somehow become "modern." This modern algebra involves abstract structures—groups, rings, fields, and other so-called objects—each one defined in terms of a relatively small number of axioms and built up of substructures like subgroups, ideals, and subfields.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// II.4 Algorithms
+export const algorithmsFullText: FullTextChapter = {
+  id: "algorithms",
+  title: "Algorithms",
+  description: "The history and concept of algorithms in mathematics.",
+  part: "part-02",
+  partTitle: "The Origins of Modern Mathematics",
+  order: 4,
+  content: [
+    {
+      id: "algorithms-intro",
+      title: "1 What Is an Algorithm?",
+      type: "text",
+      content: "Defining algorithms and their role in mathematics.",
+      fullText: `It is not easy to give a precise definition of the word "algorithm." One can provide approximate synonyms: some other words that (sometimes) mean roughly the same thing are "rule," "technique," "procedure," and "method." One can also give good examples, such as long multiplication, the method one learns in high school for multiplying two positive integers together.
+
+However, although informal explanations and well-chosen examples do give a good idea of what an algorithm is, the concept has undergone a long evolution: it was not until the twentieth century that a satisfactory formal definition was achieved.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// II.5 The Development of Rigor in Mathematical Analysis
+export const rigorInAnalysisFullText: FullTextChapter = {
+  id: "rigor-in-analysis",
+  title: "The Development of Rigor in Mathematical Analysis",
+  description: "The development of rigorous foundations in calculus and analysis.",
+  part: "part-02",
+  partTitle: "The Origins of Modern Mathematics",
+  order: 5,
+  content: [
+    {
+      id: "rigor-background",
+      title: "1 Background",
+      type: "text",
+      content: "The evolution of rigor in mathematical analysis.",
+      fullText: `This article is about how rigor came to be introduced into mathematical analysis. This is a complicated topic, since mathematical practice has changed considerably, especially in the period between the founding of the calculus (shortly before 1700) and the early twentieth century.
+
+The key common feature of this research was the use of infinities: in some sense, it involved devising methods for combining infinitely many infinitely small quantities to get a finite answer.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// II.6 The Development of the Idea of Proof
+export const ideaOfProofFullText: FullTextChapter = {
+  id: "idea-of-proof",
+  title: "The Development of the Idea of Proof",
+  description: "The evolution of mathematical proof from ancient times to modern formalism.",
+  part: "part-02",
+  partTitle: "The Origins of Modern Mathematics",
+  order: 6,
+  content: [
+    {
+      id: "proof-introduction",
+      title: "Introduction",
+      type: "text",
+      content: "The development of proof in mathematics.",
+      fullText: `In many respects the development of the idea of proof is coextensive with the development of mathematics as a whole. Looking back into the past, one might at first consider mathematics to be a body of scientific knowledge that deals with the properties of numbers, magnitudes, and figures, obtaining its justifications from proofs rather than, say, from experiments or inductive inferences.
+
+The early stages of this story raise additional questions, both historical and methodological. For instance, Thales of Miletus, the first mathematician known by name, is reported to have proved several geometric theorems.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// II.7 The Crisis in the Foundations of Mathematics
+export const foundationsCrisisFullText: FullTextChapter = {
+  id: "foundations-crisis",
+  title: "The Crisis in the Foundations of Mathematics",
+  description: "The foundational crisis in mathematics and the development of set theory, logic, and axiomatic systems.",
+  part: "part-02",
+  partTitle: "The Origins of Modern Mathematics",
+  order: 7,
+  content: [
+    {
+      id: "foundations-introduction",
+      title: "Introduction",
+      type: "text",
+      content: "The crisis in foundations and its resolution.",
+      fullText: `The foundational crisis in mathematics was a period of intense debate and development in the early twentieth century concerning the logical and philosophical foundations of mathematics. This crisis was precipitated by the discovery of paradoxes in set theory and the challenge of providing a rigorous foundation for mathematical reasoning.
+
+The crisis led to the development of several important schools of thought, including logicism, formalism, and intuitionism, each offering different approaches to resolving the foundational issues.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// III.1 The Axiom of Choice
+export const axiomOfChoiceFullText: FullTextChapter = {
+  id: "axiom-of-choice",
+  title: "The Axiom of Choice",
+  description: "The axiom of choice and its implications for mathematics.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 1,
+  content: [
+    {
+      id: "axiom-choice-content",
+      title: "The Axiom of Choice",
+      type: "text",
+      content: "Understanding the axiom of choice.",
+      fullText: `Consider the following problem: it is easy to find two irrational numbers $a$ and $b$ such that $a + b$ is rational, or such that $ab$ is rational (in both cases one could take $a = \\sqrt{2}$ and $b = -\\sqrt{2}$), but is it possible for $a^b$ to be rational? Here is an elegant proof that the answer is yes.
+
+Let $x = \\sqrt{2}^{\\sqrt{2}}$. If $x$ is rational then we have our example. But $x^{\\sqrt{2}} = \\sqrt{2}^2 = 2$ is rational, so if $x$ is irrational then again we have an example.
+
+Now this argument certainly establishes that it is possible for $a$ and $b$ to be irrational and for $a^b$ to be rational. However, the proof has a very interesting feature: it is nonconstructive, in the sense that it does not actually name two irrationals $a$ and $b$ that work. Instead, it tells us that either we can take $a = b = \\sqrt{2}$ or we can take $a = \\sqrt{2}$ and $b = \\sqrt{2}^{\\sqrt{2}}$.
+
+The axiom of choice is one of several rules that we use for building sets out of other sets. Roughly speaking, the axiom of choice says that we are allowed to make an arbitrary number of unspecified choices when we wish to form a set.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// III.37 Bayesian Analysis
+export const bayesianAnalysisFullText: FullTextChapter = {
+  id: "bayesian-analysis",
+  title: "Bayesian Analysis",
+  description: "Bayesian statistics and probabilistic reasoning.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 37,
+  content: [
+    {
+      id: "bayesian-content",
+      title: "Bayesian Analysis",
+      type: "text",
+      content: "Understanding Bayesian statistics.",
+      fullText: `Suppose you throw a pair of standard dice. The probability that the total is 10 is $\\frac{1}{12}$ because there are thirty-six ways the dice can come up, of which three (4 and 6, 5 and 5, and 6 and 4) give 10. If, however, you look at the first die and see that it came up as a 6, then the conditional probability that the total is 10, given this information, is $\\frac{1}{6}$ (since that is the probability that the other die comes up as a 4).
+
+In general, the probability of A given B is defined to be the probability of A and B divided by the probability of B. In symbols, one writes
+
+$$P[A|B] = \\frac{P[A \\wedge B]}{P[B]}$$
+
+From this it follows that $P[A \\wedge B] = P[A|B] P[B]$. Now $P[A \\wedge B]$ is the same as $P[B \\wedge A]$. Therefore,
+
+$$P[A|B] P[B] = P[B|A] P[A],$$
+
+since the left-hand side is $P[A \\wedge B]$ and the right-hand side is $P[B \\wedge A]$. Dividing through by $P[B]$ we obtain Bayes's theorem:
+
+$$P[A|B] = \\frac{P[B|A] P[A]}{P[B]},$$
+
+which expresses the conditional probability of A given B in terms of the conditional probability of B given A.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// IV.1 Algebraic Numbers
+export const algebraicNumbersFullText: FullTextChapter = {
+  id: "algebraic-numbers",
+  title: "Algebraic Numbers",
+  description: "The theory of algebraic numbers and their properties.",
+  part: "part-04",
+  partTitle: "Branches of Mathematics",
+  order: 1,
+  content: [
+    {
+      id: "algebraic-numbers-content",
+      title: "Algebraic Numbers",
+      type: "text",
+      content: "Introduction to algebraic number theory.",
+      fullText: `Algebraic number theory is the study of finite field extensions of the rational numbers. These fields, called algebraic number fields, arise naturally when one attempts to solve polynomial equations with rational coefficients.
+
+An algebraic number is a complex number that is a root of a polynomial equation with rational coefficients. The set of all algebraic numbers forms a field, which is an algebraic closure of the rational numbers.`,
+      annotations: [],
+    },
+  ],
+  exercises: [],
+}
+
+// IV.2 Analytic Number Theory
+export const analyticNumberTheoryFullText: FullTextChapter = {
+  id: "analytic-number-theory",
+  title: "Analytic Number Theory",
+  description: "Using analysis to study properties of integers and prime numbers.",
+  part: "part-04",
+  partTitle: "Branches of Mathematics",
+  order: 2,
+  content: [
+    {
+      id: "analytic-nt-content",
+      title: "Analytic Number Theory",
+      type: "text",
+      content: "Introduction to analytic methods in number theory.",
+      fullText: `Analytic number theory is the study of the properties of integers using methods from analysis. The prime number theorem, which describes the distribution of prime numbers, is one of the most famous results in this field.
+
+The Riemann zeta function plays a central role in analytic number theory. Its zeros are intimately connected with the distribution of prime numbers through the explicit formulas.`,
+      annotations: [],
     },
   ],
   exercises: [],
@@ -265,6 +487,20 @@ Finding rigorous proofs to back up these discoveries is often extremely hard: it
 export function getFullTextChapterById(id: string): FullTextChapter | undefined {
   const chapters = [
     whatIsMathematicsFullText,
+    languageAndGrammarFullText,
+    fundamentalDefinitionsFullText,
+    generalGoalsFullText,
+    fromNumbersToNumberSystemsFullText,
+    geometryOriginsFullText,
+    abstractAlgebraDevelopmentFullText,
+    algorithmsFullText,
+    rigorInAnalysisFullText,
+    ideaOfProofFullText,
+    foundationsCrisisFullText,
+    axiomOfChoiceFullText,
+    bayesianAnalysisFullText,
+    algebraicNumbersFullText,
+    analyticNumberTheoryFullText,
   ]
   return chapters.find((chapter) => chapter.id === id)
 }
@@ -272,9 +508,4 @@ export function getFullTextChapterById(id: string): FullTextChapter | undefined 
 // Helper function to check if full text exists for a chapter
 export function hasFullText(id: string): boolean {
   return getFullTextChapterById(id) !== undefined
-}
-
-// Export all full text chapters
-export const fullTextChapters = {
-  whatIsMathematicsFullText,
 }
