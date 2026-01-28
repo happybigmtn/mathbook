@@ -87,22 +87,19 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
                 content={
                   <div className="prose-content">
                     {section.fullText.split("\n\n").map((paragraph, pIndex) => {
-                      // Check for special formatting
-                      if (paragraph.startsWith("**") && paragraph.includes("**")) {
-                        // Definition or theorem
-                        if (paragraph.toLowerCase().includes("definition")) {
-                          const content = paragraph.replace(/\*\*/g, "")
-                          return (
-                            <div key={pIndex} className="my-6 p-4 bg-muted/50 border-l-2 border-primary rounded-r-sm">
-                              <p className="text-sm font-medium text-foreground/90 mb-1">Definition</p>
-                              <p className="text-muted-foreground">{content}</p>
-                            </div>
-                          )
-                        }
+                      // Check for headers/subsections (lines starting with **)
+                      if (paragraph.startsWith("**") && paragraph.endsWith("**") && !paragraph.slice(2, -2).includes("**")) {
+                        // This is a header like "**The Path to Rigor**"
+                        const headerText = paragraph.slice(2, -2)
+                        return (
+                          <h3 key={pIndex} className="text-xl font-semibold text-foreground/90 mt-8 mb-4">
+                            {headerText}
+                          </h3>
+                        )
                       }
                       
                       // Regular paragraph with markdown-like formatting
-                      const formattedText = paragraph
+                      let formattedText = paragraph
                         .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
                         .replace(/_(.*?)_/g, "<em>$1</em>")
                       

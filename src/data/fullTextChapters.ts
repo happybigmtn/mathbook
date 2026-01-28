@@ -866,6 +866,152 @@ A hotel with infinitely many rooms (ℵ₀) can accommodate infinitely many new 
   exercises: [],
 }
 
+// III.21 Elliptic Curves - Full Text
+export const ellipticCurvesFullText: FullTextChapter = {
+  id: "elliptic-curves",
+  title: "Elliptic Curves",
+  description: "Algebraic curves with deep connections to number theory.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 21,
+  content: [
+    {
+      id: "what-are-elliptic-curves",
+      title: "What Are Elliptic Curves?",
+      type: "text",
+      content: "Curves defined by cubic equations with remarkable properties.",
+      fullText: `An elliptic curve over a field K can be defined as an algebraic curve of genus 1 over K, endowed with a point defined over K. More concretely: an elliptic curve is a curve in the plane determined by an equation of the form:
+
+y² + a₁xy + a₃y = x³ + a₂x² + a₄x + a₆
+
+When the characteristic of K is not 2, we can transform this into the simpler form y² = f(x), for some cubic polynomial f.
+
+**Group Structure**
+
+The points of an elliptic curve E with coordinates in K naturally form an Abelian group, denoted E(K). This means:
+- You can "add" two points on the curve to get a third point
+- There's an identity element (the "point at infinity")
+- Every point has an inverse
+- The operation is associative
+
+Geometrically, to add two points P and Q: draw the line through them, find where it intersects the curve again, then reflect over the x-axis. That's P + Q.
+
+**Connection to Number Theory**
+
+Elliptic curves are central to modern number theory:
+
+**Fermat's Last Theorem**: Andrew Wiles proved Fermat's Last Theorem by studying Galois representations arising from elliptic curves. The proof showed that certain elliptic curves cannot exist, which implies Fermat's equation has no non-trivial solutions.
+
+**Mordell-Weil Theorem**: When K is a number field, E(K) is a finitely generated Abelian group. This means all rational points can be built from a finite set of "basis" points using the group law.
+
+**Birch and Swinnerton-Dyer Conjecture**: One of the Millennium Prize Problems. It conjecturally relates the rank of E(K) (how many independent basis points you need) to the behavior of the L-function associated to the curve.
+
+**Cryptography**: Elliptic curves are used in modern encryption (ECC) because the discrete logarithm problem is hard on elliptic curves, allowing secure communication with smaller key sizes than RSA.`,
+      annotations: [
+        createAnnotation("ec-1", "visual", "Adding points on an elliptic curve: draw a line through two points, it hits the curve at a third point. Reflect that point over the x-axis— that's the sum. This geometric operation satisfies all group axioms."),
+        createAnnotation("ec-2", "analogy", "Elliptic curves are like mathematical multi-tools. They encode information about number theory, geometry, and algebra simultaneously. Wiles used them to prove Fermat's Last Theorem by showing certain curves 'shouldn't exist.'"),
+        createAnnotation("ec-3", "deep-dive", "The modularity theorem (proved by Wiles) says every elliptic curve is 'modular'—connected to a special function called a modular form. This bridge between different areas of math is the key to FLT."),
+      ],
+    },
+  ],
+  exercises: [],
+}
+
+// III.22 Euclidean Algorithm and Continued Fractions - Full Text
+export const euclideanAlgorithmFullText: FullTextChapter = {
+  id: "euclidean-algorithm",
+  title: "The Euclidean Algorithm and Continued Fractions",
+  description: "The oldest nontrivial algorithm and its connection to best approximations.",
+  part: "part-03",
+  partTitle: "Mathematical Concepts",
+  order: 22,
+  content: [
+    {
+      id: "euclidean-algo",
+      title: "The Euclidean Algorithm",
+      type: "text",
+      content: "Finding greatest common divisors for over 2000 years.",
+      fullText: `The Euclidean algorithm, described in Euclid's Elements (Book VII, Propositions 1-2), finds the greatest common divisor (GCD) of two integers. It's likely the oldest nontrivial algorithm still in use today.
+
+**How It Works**
+
+Given two numbers m and n (assume m > n):
+1. Divide m by n to get quotient q₁ and remainder r₁ (where 0 ≤ r₁ < n)
+   m = q₁n + r₁
+2. Now divide n by r₁ to get q₂ and r₂
+   n = q₂r₁ + r₂
+3. Continue: divide each remainder by the next
+4. Stop when you get remainder 0
+5. The last non-zero remainder is the GCD
+
+**Example**: GCD(165, 70)
+- 165 = 2 × 70 + 25
+- 70 = 2 × 25 + 20
+- 25 = 1 × 20 + 5
+- 20 = 4 × 5 + 0
+
+The GCD is 5.
+
+**Why It Works**
+
+The key insight: gcd(m, n) = gcd(n, r) where r is the remainder when m is divided by n. This is because any common divisor of m and n must also divide r = m - qn.
+
+The algorithm also finds integers a and b such that:
+am + bn = gcd(m, n)
+
+For example: 5 = 3 × 165 - 7 × 70. This is called Bézout's identity.
+
+**Efficiency**
+
+The Euclidean algorithm is remarkably fast. The number of steps needed is at most 5 times the number of digits in the smaller number (Lamé's theorem, 1844). This makes it efficient even for very large numbers.
+
+**Continued Fractions**
+
+The quotients q₁, q₂, q₃, ... from the Euclidean algorithm generate the continued fraction expansion of m/n:
+
+m/n = q₁ + 1/(q₂ + 1/(q₃ + ...))
+
+For 165/70 = 2.357...:
+165/70 = 2 + 1/(2 + 1/(1 + 1/4))
+
+**Best Approximations**
+
+Truncating the continued fraction gives the best rational approximations to a number. For π = 3.14159...:
+- 3 (error: 0.14)
+- 3 + 1/7 = 22/7 (error: 0.00126) — familiar approximation
+- 3 + 1/(7 + 1/15) = 333/106 (error: 0.00008)
+- 3 + 1/(7 + 1/(15 + 1/1)) = 355/113 (error: 0.00000027)
+
+The approximation 355/113 is remarkably accurate because the next quotient (292) is unusually large.
+
+**Periodicity**
+
+Lagrange proved that the continued fraction of a quadratic surd (√n for non-square n) is always periodic. For example:
+√2 = [1; 2, 2, 2, 2, ...] = 1 + 1/(2 + 1/(2 + 1/(2 + ...)))
+
+The golden ratio φ = (1+√5)/2 has the "most irrational" continued fraction: [1; 1, 1, 1, ...], making it hardest to approximate by rationals.`,
+      annotations: [
+        createAnnotation("euclid-1", "visual", "The Euclidean algorithm repeatedly replaces the larger number with the remainder. Like a game of hot potato—the remainder gets smaller until it vanishes, and whoever held it last (the GCD) wins."),
+        createAnnotation("euclid-2", "analogy", "Continued fractions are like nested Russian dolls. Each quotient reveals a better approximation. The golden ratio has all 1s—it's the 'simplest' continued fraction but the hardest to approximate."),
+        createAnnotation("euclid-3", "deep-dive", "355/113 approximates π to 6 decimal places with only 3 digits in numerator and denominator. This accuracy comes from the next quotient being 292—skipping it causes minimal error."),
+      ],
+    },
+  ],
+  exercises: [
+    {
+      id: "ex-euclid-1",
+      title: "Euclidean Algorithm",
+      difficulty: "medium",
+      type: "interactive",
+      question: "What is the GCD of 48 and 18?",
+      answer: "6",
+      hint: "48 = 2 × 18 + 12, then continue...",
+      explanation: "48 = 2×18 + 12, 18 = 1×12 + 6, 12 = 2×6 + 0. The GCD is 6.",
+      points: 15,
+    },
+  ],
+}
+
 // III.51 Pi - Full Text
 export const piFullText: FullTextChapter = {
   id: "pi",
