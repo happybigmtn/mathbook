@@ -51,4 +51,3 @@ solution gives rise to the Cayley orthogonal transform        decade of his life
 ces, and group theory that he observed in the 1850 s           maticians: the publication of his Collected Mathemat-
 are indicative of his concern for the organization of         ical Papers in thirteen large volumes by Cambridge
 mathematics.                                                  University Press.
-

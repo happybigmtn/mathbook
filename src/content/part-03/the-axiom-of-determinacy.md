@@ -75,4 +75,3 @@ reals have surprisingly good properties, such as being                          
 Lebesgue measurable. Variants of the axiom of deter-                                                P[H3 ]
 minacy are closely connected with the theory of large               This would tell us the ratios between the various con-
 cardinals. For more details, see set theory [IV.22](/part-04/set-theory).                ditional probabilities P[C = n|H3 ] if we knew what the
-

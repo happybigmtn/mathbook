@@ -53,4 +53,3 @@ all previous approaches to the theory with one that           eral solutions of 
 (i) lay down an explicit theory of limits; (ii) formulate     of group theory; algebraic number theory; perturba-
 definitions carefully, and in general terms; (iii) define       tion theory in celestial mechanics; and an astounding
 the derivative of a function as the limiting value of the     paper of 1829 on quadratic forms, which could have
-

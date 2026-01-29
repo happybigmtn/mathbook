@@ -55,4 +55,3 @@ Laplace’s equation to what we now call Poisson’s equa-         he proved an 
 tion, which deals with the potential at points inside a        theorem for continuous functions—he was among the
 charged body or region of charge (1814); and also a            first to have a rigorous conception of a continuous
 divergence theorem (1826).                                     function—and in the course of doing so proved the
-

@@ -62,4 +62,3 @@ their system and adding to it a logic of relations, Rus-         axiomatization 
 sell decided in 1901 that their distinction of notions           studies, including gödel’s incompleteness theorems
 was not necessary: all notions lay in that logic. This           [V.15](/part-05/gdels-theorem) of 1931, which showed that logicism as Russell
 is the philosophical position that has become known              had conceived it could not be achieved.
-

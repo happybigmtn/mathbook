@@ -128,4 +128,3 @@ their roots). And we can do that by applying the same             algebraic; see
 technique again: for each d we list those polynomials of          rem [V.22](/part-05/liouvilles-theorem-and-roths-theorem) for an idea of how it can be done), but the
 degree at most d that we have not already listed, with            above notions make it utterly trivial that transcenden-
 coefficients that are at most d in modulus.                         tal numbers exist. Indeed, the set of all real numbers is
-

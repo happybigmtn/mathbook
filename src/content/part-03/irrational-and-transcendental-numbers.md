@@ -38,7 +38,7 @@ write a = 2 c; but then 4 c 2 = 2 b2 , which implies that                       
 2 c 2 = b2 , and hence b must be even too; this, how-
                                                                scendental,
                                                                             since it solves x 2 − 2 = 0, and neither is
-ever, is contrary to our assumption that a and b were                 \sqrt{7} + 17.
+ever, is contrary to our assumption that a and b were                 . qrt{7} + 17.
 coprime.
                                                                   Are there, in fact, any transcendental numbers? This
    There are several famous conjectures in mathematics
@@ -51,7 +51,7 @@ irrational, and neither is Euler’s constant:                                 
                                                                         κ=       10−n!
                  1         1
  γ = lim    1+     + ··· +   − log n ≈ 0.577215 . . . .                   n⩾ 1
-      n→\infty        2         n
+      n→. nfty        2         n
                                                                         = 0.1100010000000000000000010 . . .
 It is known that ζ(3) = 1 + 2−3 + 3−3 + · · · is irrational.
 Almost certainly, ζ(5), ζ(7), ζ(9), . . . are all irrational   is a well-known example. This is not algebraic, because
@@ -61,7 +61,7 @@ specific one is known to be.                                    tional approxima
                                                                indeed to κ, but its denominator is not particularly
    A classic proof is that of the irrationality of e. If
                                                                large.
-                             \infty
+                             . nfty
                               1                                  Liouville showed that if α is a root of a polynomial
                         e=
                              j=0
@@ -70,7 +70,7 @@ specific one is known to be.                                    tional approxima
                                                                                           
 were equal to p/q, then we would have                                              α − a  > C
                                                                                         q  qn
-                                   \infty
+                                   . nfty
                                     q!
                    p(q − 1)! =                .                for all integers a and q and for some constant C de-
                                          j!
@@ -85,4 +85,3 @@ are all integers. Therefore the quantity                       n here can actual
                                                                  A completely different approach to the existence of
 is also an integer. But it is not hard to show that this       transcendental numbers was discovered by cantor
 quantity lies strictly between 0 and 1, a contradiction.       [VI.54](/part-06/georg-cantor-18451918) thirty years later. He proved that the set of
-

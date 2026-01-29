@@ -56,5 +56,4 @@ ferential equations, and it was natural to phrase equa-       gers. In a manuscr
 tions in physics that way. However, in many cases it          Minkowski developed a general theory of quadratic
 was easier to solve problems if the equations were            forms [III.73](/part-03/quadratic-forms) that contains the solution to this problem
 written using integrals rather than derivatives. Between      as a special case. Two years later, Minkowski obtained
-1902 and 1912 Hilbert attacked a variety of problems          his Ph.D. in Königsberg, and in 1887 he received his
-
+1902 and 1912 Hilbert attacked a variety of problems          his Ph. D. in Königsberg, and in 1887 he received his

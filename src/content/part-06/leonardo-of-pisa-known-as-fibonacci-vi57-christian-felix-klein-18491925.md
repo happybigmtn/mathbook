@@ -57,4 +57,3 @@ archy of all geometries. He had recognized that each               merfeld, he d
 geometry could be characterized by a group of trans-               (1897–1910). He also worked on ideas involving the
 formations and classified accordingly (see some fun-                application of group theory to the theory of relativ-
 damental mathematical definitions [I.3 §6.1](/part-01/fundamental-definitions)). The                  ity, producing papers on the lorentz group [IV.13 §1](/part-04/general-relativity-and-the-einstein-equations)
-

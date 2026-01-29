@@ -53,10 +53,10 @@ and more explanation, see set theory [IV.22 §2](/part-04/set-theory).
 III.8 Categories
          Eugenia Cheng                                          (i) We can form a category by taking the natural num-
                                                                     bers as its objects, and letting the morphisms from
-When we study groups [I.3 §2.1](/part-01/fundamental-definitions) or vector spaces                    n to m be all the n \times m matrices with real entries.
+When we study groups [I.3 §2.1](/part-01/fundamental-definitions) or vector spaces                    n to m be all the n . imes m matrices with real entries.
 [I.3 §2.3](/part-01/fundamental-definitions), we pay particular attention to certain classes          Composition of morphisms is the usual matrix
 of maps between them: the important maps between                    multiplication. We would not normally think of
-groups are the group homomorphisms [I.3 §4.1](/part-01/fundamental-definitions), and                  an n \times m matrix as a map from the number n to
+groups are the group homomorphisms [I.3 §4.1](/part-01/fundamental-definitions), and                  an n . imes m matrix as a map from the number n to
 the important maps between vector spaces are the lin-               the number m, but the axioms for a category are
 ear maps [I.3 §4.2](/part-01/fundamental-definitions). What makes these maps important                nevertheless satisfied.
 is that they are the functions that “preserve structure”:      (ii) Any set can be turned into a category: the objects
@@ -70,4 +70,3 @@ more generally than just to these two examples, and                 lows: you ha
 one of the purposes of category theory is to understand             from that object to itself are the elements of the
 the general properties of such maps. For instance, if A,            group, with the group multiplication defining the
 B, and C are mathematical structures of some given                  composition of two morphisms.
-

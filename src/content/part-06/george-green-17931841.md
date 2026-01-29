@@ -61,4 +61,3 @@ Miller; Fellow of Caius College, Cambridge (1839–41)           Abel’s life w
                                                                he received recognition in his lifetime. His father—a
 Green, a self-taught mathematician, went to Cambridge          minister of the church in Norway, but also at one time
 University at the age of forty, having already produced        a government minister—over reached himself and when
-

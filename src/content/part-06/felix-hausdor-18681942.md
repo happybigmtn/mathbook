@@ -129,4 +129,3 @@ logical spaces [III.90](/part-03/topological-spaces). Less well-known (it remain
 unpublished until recently) was Hausdorff’s axiomati-          hausdorff/findbuch.asp.
 
 zation of probability theory, which was presented in                                                  Erhard Scholz
-

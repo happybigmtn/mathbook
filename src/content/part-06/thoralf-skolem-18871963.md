@@ -58,4 +58,3 @@ Deppert, W., K. Hübner, A. Oberschelp, and V. Weidemann,
 Hawkins, T. 2000. Emergence of the Theory of Lie Groups.     and that from inside the model.
  An Essay in the History of Mathematics 1869–1926. Berlin:      Several fundamental aspects of Skolem’s work are
  Springer.                                                   visible in these two results, the Löwenheim–Skolem
-

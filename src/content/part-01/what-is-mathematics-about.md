@@ -19,7 +19,7 @@ important concepts, theorems, and applications. Nev-
 ertheless, to make sense of all this information it is
                                                             which is a more direct study of the numbers them-
 useful to be able to classify it somehow.
-                                                            selves. So, for example, the question, “What is 3 \times 7?”
+                                                            selves. So, for example, the question, “What is 3 . imes 7?”
    The most obvious way of classifying mathematics is
                                                             will be thought of as belonging to arithmetic, while the
 by its subject matter, and that will be the approach of
@@ -124,7 +124,7 @@ To begin with, one thinks of the circle as the set of all      so crude as to be
 pairs of numbers (x, y) such that x 2 + y 2 ⩽ 1. The two       if one looks more closely one finds that it is not so much
 transformations, reflection in a line through the center        branches of mathematics that should be classified into
 of the circle and rotation through an angle θ, can both        analysis or algebra, but mathematical techniques.
-be represented by 2 \times 2 matrices, which are arrays of             Given that we cannot write out infinitely long proofs,
+be represented by 2 . imes 2 matrices, which are arrays of             Given that we cannot write out infinitely long proofs,
 numbers of the form ( ac d  b
                               ). There is a slightly compli-   how can we hope to prove anything about limiting pro-
 cated, but purely algebraic, rule for multiplying matri-       cesses? To answer this, let us look at the justification
@@ -133,25 +133,33 @@ $I$ . $1$ .
 
 What Is Mathematics About?
 
-for the simple statement that the derivative of $x^{3}$ is $3x^{2}$ . The usual reasoning is that the gradient of the chord of the line joining the two points (x , $x^{3}$ ) and ( $(x + h)$ , $(x + h)^{3})$ is
+for the simple statement that the derivative of $x^{3}$ is $3x^{2}$ . The usual reasoning is that the gradient of the chord of the line joining the two points (x , $x^{3}$ ) and ( $(x + h)$ , (x + h)3) is
 
-$(x + h)^{3} - x^{3}$
+(x + h)3 - x3
 
 ,
 
 $x + h - x$
 
-which works out as $3x^{2} + 3xh + h^{2}$ . As h “tends to zero,” this gradient “tends to $3x^{2}$ ,” so we say that the gradient at x is $3x^{2}$ . But what if we wanted to be a bit more careful? For instance, if x is very large, are we really justified in ignoring the term $3xh$ ? To reassure ourselves on this point, we do a small calculation to show that, whatever x is, the error $3xh + h^{2}$ can be made arbitrarily small, provided only that h is sufficiently small. Here is one way of going about it. Suppose we fix a small positive number  , which represents the error we are prepared to tolerate. Then if $|h| \le/6x$ , we know that $|3xh|$ is at most   $/2$ . If in addition we know that $|h| \le/2$ , then we also know that $h^{2} \le/2$ . So, provided that |h| is smaller than the minimum of the two numbers   $/6x$ and   $/2$ , the difference between $3x^{2} + 3xh + h^{2}$ and $3x^{2}$ will be at most  . There are two features of the above argument that are typical of analysis. First, although the statement we wished to prove was about a limiting process, and was therefore “infinitary,” the actual work that we needed to do to prove it was entirely finite. Second, the nature of that work was to find sufficient conditions for a certain fairly simple inequality (the inequality $|3xh + h^{2}| \le$ ) to be true. Let us illustrate this second feature with another example: a proof that $x^{4} - x^{2} - 6x + 10$ is positive for every real number x. Here is an “analyst’s argument.” Note first that if $x \le - 1$ then $x^{4} \ge x^{2}$ and $10 - 6x \ge 0$ , so the result is certainly true in this case. If $- 1 \le x \le 1$ , then $|x^{4} - x^{2} - 6x|$ cannot be greater than $x^{4} + x^{2} + 6|x|$ , which is at most $8$ , so $x^{4} - x^{2} - 6x \ge - 8$ , which implies that $x^{4} - x^{2} - 6x + 10 \ge 2$ . If $1 \le x \le \frac{3}{2}$ , then $x^{4} \ge x^{2}$ and $6x \le 9$ , so $x^{4} - x^{2} - 6x + 10 \ge 1$ . If $\frac{3}{2} \le x \le 2$ , then $x^{2} \ge \frac{9}{4}$ , so $x^{4} - x^{2} = x^{2}(x^{2} - 1) \ge954$ · $4 > 2$ . Also, $6x \le 12$ , so $10 - 6x \ge - 2$ . Therefore, $x^{4} - x^{2} - 6x + 10 > 0$ . Finally, if $x \ge 2$ , then $x^{4} - x^{2} = x^{2}(x^{2} - 1) \ge 3x^{2} \ge 6x$ , from which it follows that $x^{4} - x^{2} - 6x + 10 \ge 10$ . The above argument is somewhat long, but each step consists in proving a rather simple inequality--this is the sense in which the proof is typical of analysis. Here, for contrast, is an “algebraist’s proof.” One
+which works out as $3x^{2} + 3xh + h^{2}$ . As h “tends to zero,” this gradient “tends to $3x^{2}$ ,” so we say that the gradient at x is $3x^{2}$ . But what if we wanted to be a bit more careful? For instance, if x is very large, are we really justified in ignoring the term $3xh$ ? To reassure ourselves on this point, we do a small calculation to show that, whatever x is, the error $3xh + h^{2}$ can be made arbitrarily small, provided only that h is sufficiently small. Here is one way of going about it.
+Suppose we fix a small positive number  , which represents the error we are prepared to tolerate. Then if $|h| \le/6x$ , we know that $|3xh|$ is at most   $/2$ . If in addition we know that $|h| \le/2$ , then we also know that $h^{2} \le/2$ . So, provided that |h| is smaller than the minimum of the two numbers   $/6x$ and   $/2$ , the difference between $3x^{2} + 3xh + h^{2}$ and $3x^{2}$ will be at most  . There are two features of the above argument that are typical of analysis.
+First, although the statement we wished to prove was about a limiting process, and was therefore “infinitary,” the actual work that we needed to do to prove it was entirely finite. Second, the nature of that work was to find sufficient conditions for a certain fairly simple inequality (the inequality $|3xh + h^{2}| \le$ ) to be true. Let us illustrate this second feature with another example: a proof that $x^{4} - x^{2} - 6x + 10$ is positive for every real number x.
+Here is an “analyst’s argument.” Note first that if $x \le - 1$ then $x^{4} \ge x^{2}$ and $10 - 6x \ge 0$ , so the result is certainly true in this case. If $- 1 \le x \le 1$ , then $|x^{4} - x^{2} - 6x|$ cannot be greater than $x^{4} + x^{2} + 6|x|$ , which is at most $8$ , so $x^{4} - x^{2} - 6x \ge - 8$ , which implies that $x^{4} - x^{2} - 6x + 10 \ge 2$ . If $1 \le x \le \frac{3}{2}$ , then $x^{4} \ge x^{2}$ and $6x \le 9$ , so $x^{4} - x^{2} - 6x + 10 \ge 1$ . If $\frac{3}{2} \le x \le 2$ , then $x^{2} \ge \frac{9}{4}$ , so $x^{4} - x^{2} = x^{2}(x^{2} - 1) \ge954$ · $4 > 2$ .
+Also, $6x \le 12$ , so $10 - 6x \ge - 2$ . Therefore, $x^{4} - x^{2} - 6x + 10 > 0$ . Finally, if $x \ge 2$ , then $x^{4} - x^{2} = x^{2}(x^{2} - 1) \ge 3x^{2} \ge 6x$ , from which it follows that $x^{4} - x^{2} - 6x + 10 \ge 10$ . The above argument is somewhat long, but each step consists in proving a rather simple inequality--this is the sense in which the proof is typical of analysis. Here, for contrast, is an “algebraist’s proof.” One
 
 $3$
 
-simply points out that $x^{4} - x^{2} - 6x + 10$ is equal to $(x^{2} - 1)^{2} + (x - 3)^{2}$ , and is therefore always positive. This may make it seem as though, given the choice between analysis and algebra, one should go for algebra. After all, the algebraic proof was much shorter, and makes it obvious that the function is always positive. However, although there were several steps to the analyst’s proof, they were all easy, and the brevity of the algebraic proof is misleading since no clue has been given about how the equivalent expression for $x^{4} - x^{2} - 6x + 10$ was found. And in fact, the general question of when a polynomial can be written as a sum of squares of other polynomials turns out to be an interesting and difficult one (particularly when the polynomials have more than one variable). There is also a third, hybrid approach to the problem, which is to use calculus to find the points where $x^{4} - x^{2} - 6x + 10$ is minimized. The idea would be to calculate the derivative $4x^{3} - 2x - 6($ an algebraic process, justified by an analytic argument), find its roots (algebra), and check that the values of $x^{4} - x^{2} - 6x + 10$ at the roots of the derivative are positive. However, though the method is a good one for many problems, in this case it is tricky because the cubic $4x^{3} - 2x - 6$ does not have integer roots. But one could use an analytic argument to find small intervals inside which the minimum must occur, and that would then reduce the number of cases that had to be considered in the first, purely analytic, argument. As this example suggests, although analysis often involves limiting processes and algebra usually does not, a more significant distinction is that algebraists like to work with exact formulas and analysts use estimates. Or, to put it even more succinctly, algebraists like equalities and analysts like inequalities.
+simply points out that $x^{4} - x^{2} - 6x + 10$ is equal to (x2 - 1)2 + (x - 3)2 , and is therefore always positive. This may make it seem as though, given the choice between analysis and algebra, one should go for algebra. After all, the algebraic proof was much shorter, and makes it obvious that the function is always positive. However, although there were several steps to the analyst’s proof, they were all easy, and the brevity of the algebraic proof is misleading since no clue has been given about how the equivalent expression for $x^{4} - x^{2} - 6x + 10$ was found.
+And in fact, the general question of when a polynomial can be written as a sum of squares of other polynomials turns out to be an interesting and difficult one (particularly when the polynomials have more than one variable). There is also a third, hybrid approach to the problem, which is to use calculus to find the points where $x^{4} - x^{2} - 6x + 10$ is minimized.
+The idea would be to calculate the derivative $4x^{3} - 2x - 6($ an algebraic process, justified by an analytic argument), find its roots (algebra), and check that the values of $x^{4} - x^{2} - 6x + 10$ at the roots of the derivative are positive. However, though the method is a good one for many problems, in this case it is tricky because the cubic $4x^{3} - 2x - 6$ does not have integer roots.
+But one could use an analytic argument to find small intervals inside which the minimum must occur, and that would then reduce the number of cases that had to be considered in the first, purely analytic, argument. As this example suggests, although analysis often involves limiting processes and algebra usually does not, a more significant distinction is that algebraists like to work with exact formulas and analysts use estimates. Or, to put it even more succinctly, algebraists like equalities and analysts like inequalities.
 
 $2$
 
 The Main Branches of Mathematics
 
-Now that we have discussed the differences between algebraic, geometrical, and analytical thinking, we are ready for a crude classification of the subject matter of mathematics. We face a potential confusion, because the words “algebra,” “geometry,” and “analysis” refer both to specific branches of mathematics and to ways of thinking that cut across many different branches. Thus, it makes sense to say (and it is true) that some branches of analysis are more algebraic (or geometrical) than others; similarly, there is no paradox in the fact that algebraic topology is almost entirely algebraic and geometrical in character, even though the objects
+Now that we have discussed the differences between algebraic, geometrical, and analytical thinking, we are ready for a crude classification of the subject matter of mathematics. We face a potential confusion, because the words “algebra,” “geometry,” and “analysis” refer both to specific branches of mathematics and to ways of thinking that cut across many different branches. Thus, it makes sense to say (and it is true) that some branches of analysis are more algebraic (or geometrical) than others;
+similarly, there is no paradox in the fact that algebraic topology is almost entirely algebraic and geometrical in character, even though the objects
 
 4                                                                                                    I. Introduction
 
@@ -171,12 +179,12 @@ ematics, means something more specific than manipu-           illustrates the di
 lation of symbols and a preference for equalities over       algebra and a typical question in number theory is pro-
 inequalities. Algebraists are concerned with number          vided by the equation 13 x − 7 y = 1. An algebraist
 systems, polynomials, and more abstract structures           would simply note that there is a one-parameter fam-
-such as groups, fields, vector spaces, and rings (dis-        ily of solutions: if y = \lambda then x = (1 + 7λ)/13, so the
+such as groups, fields, vector spaces, and rings (dis-        ily of solutions: if y = . ambda then x = (1 + 7λ)/13, so the
 cussed in some detail in some fundamental math-              general solution is (x, y) = ((1 + 7λ)/13, λ). A num-
 ematical definitions [I.3](/part-01/fundamental-definitions)). Historically, the abstract       ber theorist would be interested in integer solutions,
-structures emerged as generalizations from concrete          and would therefore work out for which integers \lambda the
-instances. For instance, there are important analo-          number 1 + 7\lambda is a multiple of 13. (The answer is that
-gies between the set of all integers and the set of all      1 + 7\lambda is a multiple of 13 if and only if \lambda has the form
+structures emerged as generalizations from concrete          and would therefore work out for which integers . ambda the
+instances. For instance, there are important analo-          number 1 + 7. ambda is a multiple of 13. (The answer is that
+gies between the set of all integers and the set of all      1 + 7. ambda is a multiple of 13 if and only if . ambda has the form
 polynomials with rational (for example) coefficients,          13 m + 11 for some integer m.)
 which are brought out by the fact that both sets are            However, this description does not do full justice
 examples of algebraic structures known as Euclidean          to modern number theory, which has developed into
@@ -296,7 +304,7 @@ so the calculation changes; but the basic rule is the
 same, so one can regard the whole process as applying
                                                            ing things. For example, how many ways are there of
 the same simple infinitesimal process infinitely many
-                                                           filling an n \times n square grid with 0 s and 1 s if you are
+                                                           filling an n . imes n square grid with 0 s and 1 s if you are
 times. The correct way to formulate this is by means
                                                            allowed at most two 1 s in each row and at most two 1 s
 of partial differential equations and therefore much of
@@ -412,4 +420,3 @@ sions of the form m2 +n2 with both m2 and n2 less than N than there
 are numbers less than 2 N that can be written as a sum of two squares.
                                                                         to further mathematical discoveries. The articles ver-
 Therefore there is a lot of duplication.                                tex operator algebras [IV.17](/part-04/vertex-operator-algebras), mirror symmetry
-

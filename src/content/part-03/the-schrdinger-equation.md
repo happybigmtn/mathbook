@@ -15,7 +15,7 @@ indeed it was a stumbling block for many early workers       of interest. The no
 example: in the ring Z[ −3], which consists of all com-      porate irrationalities and complex numbers, the for-
                      √
 plex numbers a + b −3, where a and b are integers,           mer arising from problems in geometry and the lat-
-the number 4 may be factorized as 2 \times 2 and also as          ter needed in order to describe solutions to arbitrary
+the number 4 may be factorized as 2 . imes 2 and also as          ter needed in order to describe solutions to arbitrary
       √(1 + −3) × (1 − −3).                                         algebraic equations. In a similar way, algebraic geom-
                                                              etry, which was once understood as the study of alge-
                      3   Modules                             braic varieties, or solution sets of algebraic equations
@@ -70,7 +70,7 @@ tum mechanics, playing the same role as Hamilton’s             motion
 laws of motion (and the closely related Poisson equa-                    d
                                                                            A(q(t), p(t)) = {H, A}(q(t), p(t))      (3)
 tion) in nonrelativistic classical mechanics. (In relativis-            dt
-tic quantum mechanics, the equations of quantum field           for any classical observable A : Rn \times Rn → R, where
+tic quantum mechanics, the equations of quantum field           for any classical observable A : Rn . imes Rn → R, where
 theory take over the role of Heisenberg’s equation,                                         ∂H ∂A   ∂A ∂H
                                                                                 {H, A} =          −
 while Schrödinger’s equation does not have a natural                                        ∂p ∂q   ∂p ∂q
@@ -96,10 +96,10 @@ p(t) ∈ Rn for each time t. (Eventually we shall observe                       
 the familiar law p(t) = mv(t), where v(t) = q (t) is           Unlike a classical particle, a wave function ψ(t) does
 the velocity of the particle.) Thus, the state of this sys-    not necessarily have a specific position q(t). However,
 tem at any given time t is described by the element            it does have an average position q(t), defined as
-(q(t), p(t)) of the space Rn \times Rn , which is known as
+(q(t), p(t)) of the space Rn . imes Rn , which is known as
                                                                      q(t) = Qψ(t), ψ(t) =                   q|ψ(t, q)|2 dq.
 phase space. The energy of this state is described by                                                      Rn
-the hamiltonian function [III.35](/part-03/hamiltonians) H : Rn \times Rn → R              Here, we have written ψ(t, q) for the value of ψ(t) at
+the hamiltonian function [III.35](/part-03/hamiltonians) H : Rn . imes Rn → R              Here, we have written ψ(t, q) for the value of ψ(t) at
 on phase space, defined in this case by                         the point q, and Q is the position operator, defined
                               |p|2                             by (Qψ)(t, q) = qψ(t, q): that is, Q is the operator
                  H(q, p) =         + V (q).                    that multiplies pointwise by q. Similarly, while ψ does
@@ -183,13 +183,13 @@ real number E (known as the energy level or eigen-              potential functi
 value), then one has the time-independent Schrödinger           ity, and k ∈ Rn is a nonzero frequency vector, then,
 equation:                                                       setting the energy level as E = 2 |k|2 /2 m, the time-
                                                                 independent Schrödinger equation Hψ = Eψ admits
-               Hψ(t) = Eψ(t) for all times t              (7)   solutions ψ(q) that behave asymptotically (as |q| → \infty)
+               Hψ(t) = Eψ(t) for all times t              (7)   solutions ψ(q) that behave asymptotically (as |q| → . nfty)
 (compare this with (4)). More generally, the impor-             as
                                                                                                q       ei|k||q|
 tant subject of spectral theory provides many links                         ψ(q) ≈ eik·q + f      , k (n−1)/2
                                                                                               |q|     r
 between the time-dependent equation (5) and the time-
-independent equation (7).                                       for some canonical function f : S n−1 \times Rn → C, which is
+independent equation (7).                                       for some canonical function f : S n−1 . imes Rn → C, which is
                                                                 known as the scattering amplitude function. This scat-
    There are several strong analogies between the equa-
                                                                 tering amplitude depends (in a nonlinear fashion) on
@@ -205,4 +205,3 @@ classical solution t → (q(t), p(t)) to Hamilton’s equa-        tion of the 
                                                                 but can be decomposed as a superposition or linear combination of
 tion of motion, one can construct a corresponding               wave packets; such decompositions are a useful tool in analyzing
 family of approximate solutions ψ(t) to Schrödinger’s           general solutions of such equations.
-

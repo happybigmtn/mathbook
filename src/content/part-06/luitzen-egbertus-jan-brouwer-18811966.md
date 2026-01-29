@@ -54,4 +54,3 @@ philosophy of mathematics                                      Brouwer published
                                                                dan curve theorem, which remains one of the most ele-
 Brouwer entered the University of Amsterdam at the             gant proofs. The so-called new topology opened with
 age of sixteen, where his teacher was D. J. Korteweg.          Brouwer’s “invariance of dimension” theorem (1910).
-

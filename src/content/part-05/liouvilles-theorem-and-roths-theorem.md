@@ -40,14 +40,14 @@ smaller degree) with five distinct complex roots. Thus,
                                                              imated as closely as you like by rational numbers.
 as observed above, Gal(f ) can be regarded as a sub-                                                          √
                                                              For example, the decimal expansion of 2 begins
-group of S5 that permutes the five roots. By sketch-                                               \sqrt{1}.414213 . . . , which tells us that 2 is within 1/100 000
+group of S5 that permutes the five roots. By sketch-                                               . qrt{1}.414213 . . . , which tells us that 2 is within 1/100 000
 ing the graph of f (x) one can easily see that three of
                                                              of the rational number 141 421/100 000. More gener-
 its roots are real and that the other two, call them α1
                                                              ally, for any positive integer q we can let p be the largest
 and α2 , are complex conjugates of each other. Since                                     √
                                                              integer such that p/q < 2, and then p/q will be within
-the complex conjugation map z → \bar{z} always gives an                   \sqrt{1}/q of 2. In other words, if we want an approximation
+the complex conjugation map z → . ar{z} always gives an                   . qrt{1}/q of 2. In other words, if we want an approximation
 automorphism in Gal(f ), it follows that Gal(f ) is a            √
                                                              to 2 with accuracy 1/q, we can obtain it if we use a
 subgroup of S5 that contains a 2-cycle, namely (α1 α2 ).
@@ -68,4 +68,3 @@ identity subgroup and A5 itself).                            Thus, if we set γ 
   These ideas can be extended to produce polynomials         and |γ| ⩽ 1/N. If we now let q = s − r and p = n − m,
                                                                     √of any degree n ⩾ 5 that have Galois group Sn , and          then 2 = p/q + γ/q, so | 2 − p/q| ⩽ 1/q N. Since
 that are therefore not soluble by radicals. The reason       N ⩾ q, 1/q N ⩽ 1/q2 , so for at least some positive
-

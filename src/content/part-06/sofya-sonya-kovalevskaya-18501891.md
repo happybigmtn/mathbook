@@ -2,7 +2,7 @@
 
 784                                                                                                VI. Mathematicians
 
-ρ : G → GLn (C), where GLn (C) is the group of n \times n            on PDEs, which excited particular attention, contained
+ρ : G → GLn (C), where GLn (C) is the group of n . imes n            on PDEs, which excited particular attention, contained
 invertible matrices over C), the associated character χ         the result now known as the cauchy–kovalevskaya
 is the map G → C such that χ(g) = trace ρ(g) for                theorem [IV.12 §§2.2, 2.4], an important tool in estab-
 g ∈ G. Frobenius proved the orthogonality relations,            lishing the existence of analytic solutions of PDEs.
@@ -54,4 +54,3 @@ Kovalevskaya completed dissertations on partial dif-            afterward, she w
 ferential equations (PDEs), Abelian integrals, and Sat-         responding membership of the Russian Academy of
 urn’s rings, and in 1874 she became the first woman              Sciences, her subsequent election breaking the gender
 to receive a doctorate in mathematics. The dissertation         barrier once again.
-

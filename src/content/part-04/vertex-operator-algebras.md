@@ -14,21 +14,28 @@ $1$
 
 Introduction
 
-Algebra is the mathematics that places more emphasis on abstract structure than on intrinsic meaning. The conceptual simplifications that can result when context is stripped away from structure give algebra a special power and clarity compared with other areas: compare, for example, the difficulty of visualizing fourdimensional space with the triviality of manipulating quadruples $(x^{1}$ , $x^{2}$ , $x^{3}$ , $x^{4})$ of real numbers. However, this abstractness can also blind us. For instance, basic identities like $ab = ba$ and a (bc)  =  (ab) c that are obeyed by numbers can be modified in countless directions, and each modification defines a new algebraic structure, but it is hard to guess from a purely abstract perspective which of these modifications will give rise to a rich, accessible, and interesting theory. For guidance, algebra has traditionally turned to geometry. For example, over a century ago lie [VI.53](/part-06/sophus-lie-18421899) suggested that the identities $ab = - ba$ and a $(bc) =$ (ab) c  +  b (ac) were worth studying for geometrical reasons: the resulting structures are now called lie algebras [III.48](/part-03/lie-theory) . More recently, as we shall see, physics has joined geometry in this guiding role and has had spectacular success. The renowned physicist and mathematician Edward Witten believes that a major theme of twenty-firstcentury mathematics will be its reconciliation with the branch of physics known as quantum field theory. Conformal field theory (the quantum field theory that underlies string theory) is an especially symmetric and well-behaved class of quantum field theories. When this notion is translated into algebra, the result is a structure known as a vertex operator algebra (VOA). This
+Algebra is the mathematics that places more emphasis on abstract structure than on intrinsic meaning. The conceptual simplifications that can result when context is stripped away from structure give algebra a special power and clarity compared with other areas: compare, for example, the difficulty of visualizing fourdimensional space with the triviality of manipulating quadruples $(x^{1}$ , $x^{2}$ , $x^{3}$ , $x^{4})$ of real numbers. However, this abstractness can also blind us.
+For instance, basic identities like $ab = ba$ and a (bc)  =  (ab) c that are obeyed by numbers can be modified in countless directions, and each modification defines a new algebraic structure, but it is hard to guess from a purely abstract perspective which of these modifications will give rise to a rich, accessible, and interesting theory. For guidance, algebra has traditionally turned to geometry. For example, over a century ago lie [VI.53](/part-06/sophus-lie-18421899) suggested that the identities $ab = - ba$ and a $(bc) =$ (ab) c  +  b (ac) were worth studying for geometrical reasons:
+the resulting structures are now called lie algebras [III.48](/part-03/lie-theory) . More recently, as we shall see, physics has joined geometry in this guiding role and has had spectacular success. The renowned physicist and mathematician Edward Witten believes that a major theme of twenty-firstcentury mathematics will be its reconciliation with the branch of physics known as quantum field theory. Conformal field theory (the quantum field theory that underlies string theory) is an especially symmetric and well-behaved class of quantum field theories.
+When this notion is translated into algebra, the result is a structure known as a vertex operator algebra (VOA). This
 
 $539$
 
-article sketches where VOAs come from, what they are, and what they are good for. To aim to explain a VOA in a few pages is almost as absurd as to aim to explain quantum field theory in a few pages, but, undaunted, I shall try to do both. Obviously it will be necessary to gloss over many important technicalities and to commit major simplifications; without question this exposition will raise the ire of experts and the eyebrows of knowledgeable amateurs, but I hope that it will at least convey the essence of this important and beautiful area. Vertex operator algebras are the algebra of string theory: they should be thought of as the same sort of gift to the twenty-first century that Lie algebras were to the twentieth.
+article sketches where VOAs come from, what they are, and what they are good for. To aim to explain a VOA in a few pages is almost as absurd as to aim to explain quantum field theory in a few pages, but, undaunted, I shall try to do both. Obviously it will be necessary to gloss over many important technicalities and to commit major simplifications; without question this exposition will raise the ire of experts and the eyebrows of knowledgeable amateurs, but I hope that it will at least convey the essence of this important and beautiful area.
+Vertex operator algebras are the algebra of string theory: they should be thought of as the same sort of gift to the twenty-first century that Lie algebras were to the twentieth.
 
 $2$
 
 Where VOAs Come From
 
-The two most revolutionary developments in physics in the early twentieth century are usually held to be relativity and quantum mechanics. They are revolutionary not just because they have consequences that are extremely counter intuitive, but also because they provide very general frameworks that can potentially affect all physical theories: one can take a theory from classical physics, such as the theory of the harmonic oscillator or the theory of electrostatic force, for example, and one can try to make it “relativistic,” so that it becomes compatible with relativity, or to “quantize” it, so that it becomes compatible with quantum mechanics. Unfortunately, nobody knows how to make relativity fully compatible with quantum mechanics. To put this another way, the ultimate concern of relativity is gravitation, and a direct application to gravity of the usual quantizing techniques fails. This ought to mean that a fundamentally new physics arises at small distance scales that we are ignoring. Indeed, naive calculations suggest that the space-time “continuum” at distance scales of around $10 - 35 m$ should deteriorate into some sort of “quantum foam,” whatever that might mean. $(10 - 35 m$ is extremely small: for instance, the order of magnitude of the size of an atom is $10 - 10 m$ .) Perhaps the most popular and controversial approach to quantum gravity is string theory. The electron is a particle, i.e., in principle it can be localized to a point. In string theory, the fundamental object is a string, a finite curve of length approximately $10 - 35 m.$ In place of the dozens of kinds of fundamental particles in the generally accepted quantum field theory, there is only one string, whose precise physical properties (mass , charge, etc .) depend on its current “vibrational mode.”
+The two most revolutionary developments in physics in the early twentieth century are usually held to be relativity and quantum mechanics. They are revolutionary not just because they have consequences that are extremely counter intuitive, but also because they provide very general frameworks that can potentially affect all physical theories:
+one can take a theory from classical physics, such as the theory of the harmonic oscillator or the theory of electrostatic force, for example, and one can try to make it “relativistic,” so that it becomes compatible with relativity, or to “quantize” it, so that it becomes compatible with quantum mechanics. Unfortunately, nobody knows how to make relativity fully compatible with quantum mechanics. To put this another way, the ultimate concern of relativity is gravitation, and a direct application to gravity of the usual quantizing techniques fails.
+This ought to mean that a fundamentally new physics arises at small distance scales that we are ignoring. Indeed, naive calculations suggest that the space-time “continuum” at distance scales of around $10 - 35 m$ should deteriorate into some sort of “quantum foam,” whatever that might mean. $(10 - 35 m$ is extremely small: for instance, the order of magnitude of the size of an atom is $10 - 10 m$ .) Perhaps the most popular and controversial approach to quantum gravity is string theory. The electron is a particle, i.e., in principle it can be localized to a point.
+In string theory, the fundamental object is a string, a finite curve of length approximately $10 - 35 m.$ In place of the dozens of kinds of fundamental particles in the generally accepted quantum field theory, there is only one string, whose precise physical properties (mass , charge, etc .) depend on its current “vibrational mode.”
 
 540                                                                                     IV. Branches of Mathematics
 
-   As the string moves, it traces out a surface called        which we can think of as an \infty × \infty matrix Â that acts
+   As the string moves, it traces out a surface called        which we can think of as an . nfty × . nfty matrix Â that acts
 a worldsheet. For reasons that we will sketch below,          on the states by matrix multiplication. As in classi-
 much of string theory reduces to studying confor-             cal physics, one of the most important observables is
 mal field theory, which is the induced quantum theory          energy, which is given by the Hamiltonian operator Ĥ.
@@ -97,7 +104,11 @@ $IV$ . $17$ .
 
 Vertex Operator Algebras
 
-responsible for the relationship between string theory and CFT, as well as for the appearance of modular functions in string theory. The other is the Hamiltonian or Poisson bracket formalism, which is where algebra arises. Vertex operator algebras try to explain the “miracle” that these two formalisms cohere. The Lagrangian formalism can be expressed classically through Hamilton’s action principle. When there are no forces present, particles travel in straight lines, which are the curves of shortest length. Hamilton’s principle explains how this idea generalizes to arbitrary forces: instead of minimizing length, the particle minimizes a related quantity S called the action. The quantum version of Hamilton’s principle is due to Feynman. He expresses the probability of measuring the system in some final (eigen) state | out   , given that it was originally in some initial state | in   , using a “path integral” of e i S  /    over all possible histories that connect | in   and | out   . The details are not important for us (and in any case are mathematically dubious in general). The intuition behind the path integral formulation is that the particle simultaneously follows every one of those histories, and each of them contributes to the probability.   is called Planck’s constant ; in the “classical limit” as   $\to 0$ , the contribution from the path that satisfies Hamilton’s principle dominates everything else. The main use of Feynman’s path integral is in perturbation theory. Finding exact solutions in physics is typically impossible and rarely useful. In practice, it suffices to find the first few terms in some Taylor expansion of the solution. This so-called “perturbative” approach to quantum theories is particularly transparent in Feynman’s formalism, where each term of the expansion can be represented pictorially as a graph. See figure $1$ (a) for typical examples. The graphs contributing to the nth-order term in this Taylor expansion will involve n vertices. Feynman’s rules describe how to convert these graphs into integral expressions for computing the individual terms in the Taylor expansion. In this article we are interested in perturbative string theory. The string Feynman diagrams (see figure $1$ (b) for three equivalent ones) are surfaces called worldsheets; the need for quantum foam is avoided because these surfaces are much less singular than the particle graphs (which have singularities at each vertex), and this is also largely why the mathematics of strings is so nice. To cut a long story short, each term in the perturbative expression for probabilities in string theory can be calculated from a quantity called a “correlation function” in a CFT that lives on the corresponding
+responsible for the relationship between string theory and CFT, as well as for the appearance of modular functions in string theory. The other is the Hamiltonian or Poisson bracket formalism, which is where algebra arises. Vertex operator algebras try to explain the “miracle” that these two formalisms cohere. The Lagrangian formalism can be expressed classically through Hamilton’s action principle. When there are no forces present, particles travel in straight lines, which are the curves of shortest length. Hamilton’s principle explains how this idea generalizes to arbitrary forces:
+instead of minimizing length, the particle minimizes a related quantity S called the action. The quantum version of Hamilton’s principle is due to Feynman. He expresses the probability of measuring the system in some final (eigen) state | out   , given that it was originally in some initial state | in   , using a “path integral” of e i S  /    over all possible histories that connect | in   and | out   . The details are not important for us (and in any case are mathematically dubious in general).
+The intuition behind the path integral formulation is that the particle simultaneously follows every one of those histories, and each of them contributes to the probability.   is called Planck’s constant ; in the “classical limit” as   $\to 0$ , the contribution from the path that satisfies Hamilton’s principle dominates everything else. The main use of Feynman’s path integral is in perturbation theory. Finding exact solutions in physics is typically impossible and rarely useful. In practice, it suffices to find the first few terms in some Taylor expansion of the solution.
+This so-called “perturbative” approach to quantum theories is particularly transparent in Feynman’s formalism, where each term of the expansion can be represented pictorially as a graph. See figure $1$ (a) for typical examples. The graphs contributing to the nth-order term in this Taylor expansion will involve n vertices. Feynman’s rules describe how to convert these graphs into integral expressions for computing the individual terms in the Taylor expansion. In this article we are interested in perturbative string theory.
+The string Feynman diagrams (see figure $1$ (b) for three equivalent ones) are surfaces called worldsheets; the need for quantum foam is avoided because these surfaces are much less singular than the particle graphs (which have singularities at each vertex), and this is also largely why the mathematics of strings is so nice. To cut a long story short, each term in the perturbative expression for probabilities in string theory can be calculated from a quantity called a “correlation function” in a CFT that lives on the corresponding
 
 $541$
 
@@ -109,7 +120,8 @@ Figure $1$ Some Feynman diagrams of
 
 (a) particles and (b) strings.
 
-worldsheet. Feynman’s path integral here amounts to the integral of a quantity that CFT can compute, over some moduli space [IV.8](/part-04/moduli-spaces) of surfaces. The vertices in a Feynman diagram represent places where one particle absorbs or emits another. The corresponding rules of string theory tell us that we should dissect the worldsheet into “tubular Y-shapes,” or spheres with three legs, as in figure $2$ . Since these spheres with legs play the role of vertices in the Feynman diagram, the factor they contribute to the integrand of the path integral is called a vertex operator, and now it describes the absorption or emission of one string by another. A vertex operator algebra is the “algebra” of these vertex operators.
+worldsheet. Feynman’s path integral here amounts to the integral of a quantity that CFT can compute, over some moduli space [IV.8](/part-04/moduli-spaces) of surfaces. The vertices in a Feynman diagram represent places where one particle absorbs or emits another. The corresponding rules of string theory tell us that we should dissect the worldsheet into “tubular Y-shapes,” or spheres with three legs, as in figure $2$ .
+Since these spheres with legs play the role of vertices in the Feynman diagram, the factor they contribute to the integrand of the path integral is called a vertex operator, and now it describes the absorption or emission of one string by another. A vertex operator algebra is the “algebra” of these vertex operators.
 
 $2$ . $1$ . $3$
 
@@ -200,7 +212,8 @@ fields φ satisfy                                                           2.2 
                                                 ⎫
               [φ(x, t), φ(x , t)] = 0,          ⎪
                                                 ⎬                         A conformal field theory (CFT) is a quantum field theory
-                                                     (2)                with a two-dimensional space-time whose symmetries
+                               
+                      (2)                with a two-dimensional space-time whose symmetries
                      ∂
            φ(x, t),    φ(x , t) = iδ(x − x ).⎪ ⎭
                     ∂t                                                    include all conformal transformations. We shall explain
@@ -279,7 +292,7 @@ time t < 0 and the angle 0 ⩽ θ < 2π around the string.
                                                              space H carries inside it a true representation of the
 We can conformally map the cylinder to the punctured
                                                              Virasoro algebra Vir, which is useful as it means Vir
-disk in C by z = et−iθ , so t = −\infty corresponds to
+disk in C by z = et−iθ , so t = −. nfty corresponds to
                                                              can be used to organize H .
 z = 0. This allows us to say what we mean by conformal
                                                                 Any quantum field theory has what is called a state–
@@ -288,7 +301,7 @@ symmetries of the cylinder.
   The quantum fields φ(z) of CFT are the vertex oper-
                                                              its incoming state, which is the limit as the time t tends
 ators of string theory. As always, these quantum fields
-                                                             to −\infty of φ|0 (as always, |0 is the vacuum state in H
+                                                             to −. nfty of φ|0 (as always, |0 is the vacuum state in H
 φ are “operator-valued distributions” on space-time Σ,
                                                              and φ acts on states). CFT is unusual in that the state–
 acting on the space H of states. Now it is possible for
@@ -328,15 +341,22 @@ $IV$ . $17$ .
 
 Vertex Operator Algebras
 
-algebra in the conventional sense though, since, given vertex operators φ 1 (z) and φ 2 (z), we have not just a single product φ 1 (z) ∗ φ 2 (z) in V but infinitely many products φ 1 (z) ∗ h φ 2 (z)  =  O h (z), all belonging to V . The Hamiltonian plays a crucial role in any quantum field theory; here it turns out to be proportional to the mode $L^{0}$ discussed earlier. Being an observable, $L^{0}$ is diagonalizable on H , which means that any state v $\in$ H can be written as a sum h v h , where v h $\in$ H has energy h: that is, $L^{0}v^{h} = hv^{h}$ . There is a special class of CFT that is particularly well-behaved. Let \bar{V} denote the space of all anti-holomorphic fields in the CFT--it is the other chiral half. Recall that the full CFT consists of V and \bar{V} spliced together. We call the CFT rational if V ⊕ \bar{V} is so large that it has finite index, in an appropriate sense, in the full space of quantum fields in the CFT. The name “rational” arises because the central charge c and other parameters in a rational CFT have to be rational numbers. The mathematics of rational CFT is especially rich. Let us briefly look at one example. (We will use several words that will be unfamiliar to most readers, but at least it will give some idea of which areas are touched by CFT .) As with everything else, the quantum probabilities arising in CFT are found by first computing chiral quantities and splicing them together. These chiral quantities are called conformal or chiral blocks, and are found using simple Feynman-like rules applied to dissections like figure $2$ . In rational CFT we get a finite dimensional space F g, n of chiral blocks for any worldsheet Σ, i.e., for any choice of genus g and number n of punctures. These spaces carry projective representations of the mapping class group Γ g, n (defined to be the fundamental group $\pi^{1}$ of the moduli space M g, n). This Γ g, nrepresentation is the source, for instance, of Jones’s relation of the braid group [III.4](/part-03/braid-groups) (and hence knots [III.44](/part-03/knot-polynomials)) to subfactors, Borcherds’s explanation of “Monstrous Moonshine,” the Drinfel’d-Kohno monodromy theorem, and the modularity of affine Kac Moody characters. Some of this we will touch on in section $4$ . The most important example here is the torus, where the chiral blocks are modular functions, a class of functions of fundamental mathematical importance. A modular function is a meromorphic function (that is, a function that is holomorphic except at a few “poles” where it can tend to infinity) f (τ) that is defined on the upper half-plane $H =$ {τ $\inC|Imτ > 0$ and that is “symmetric” with respect to the group $SL^{2}(Z)$ of $2 \times 2545$
+algebra in the conventional sense though, since, given vertex operators φ 1 (z) and φ 2 (z), we have not just a single product φ 1 (z) ∗ φ 2 (z) in V but infinitely many products φ 1 (z) ∗ h φ 2 (z)  =  O h (z), all belonging to V . The Hamiltonian plays a crucial role in any quantum field theory; here it turns out to be proportional to the mode $L^{0}$ discussed earlier. Being an observable, $L^{0}$ is diagonalizable on H , which means that any state v $\in$ H can be written as a sum h v h , where v h $\in$ H has energy h: that is, $L^{0}v^{h} = hv^{h}$ .
+There is a special class of CFT that is particularly well-behaved. Let . ar{V} denote the space of all anti-holomorphic fields in the CFT--it is the other chiral half. Recall that the full CFT consists of V and . ar{V} spliced together. We call the CFT rational if V ⊕ . ar{V} is so large that it has finite index, in an appropriate sense, in the full space of quantum fields in the CFT. The name “rational” arises because the central charge c and other parameters in a rational CFT have to be rational numbers. The mathematics of rational CFT is especially rich. Let us briefly look at one example.
+(We will use several words that will be unfamiliar to most readers, but at least it will give some idea of which areas are touched by CFT .) As with everything else, the quantum probabilities arising in CFT are found by first computing chiral quantities and splicing them together. These chiral quantities are called conformal or chiral blocks, and are found using simple Feynman-like rules applied to dissections like figure $2$ . In rational CFT we get a finite dimensional space F g, n of chiral blocks for any worldsheet Σ, i.e., for any choice of genus g and number n of punctures.
+These spaces carry projective representations of the mapping class group Γ g, n (defined to be the fundamental group $\pi^{1}$ of the moduli space M g, n). This Γ g, nrepresentation is the source, for instance, of Jones’s relation of the braid group [III.4](/part-03/braid-groups) (and hence knots [III.44](/part-03/knot-polynomials)) to subfactors, Borcherds’s explanation of “Monstrous Moonshine,” the Drinfel’d-Kohno monodromy theorem, and the modularity of affine Kac Moody characters. Some of this we will touch on in section $4$ .
+The most important example here is the torus, where the chiral blocks are modular functions, a class of functions of fundamental mathematical importance. A modular function is a meromorphic function (that is, a function that is holomorphic except at a few “poles” where it can tend to infinity) f (τ) that is defined on the upper half-plane $H =$ {τ $\inC|Imτ > 0$ and that is “symmetric” with respect to the group $SL^{2}(Z)$ of $2 \times 2545$
 
-matrices with integer entries and determinant $1$ , in the b sense that for any such matrix (a c d ) the function f (τ) is closely related (though not necessarily exactly equal) to the function f ((a τ  +  b)  /  (c τ  +  d)). We shall discuss this further in section $3$ . $2$ . The appearance of modularity can be understood by recalling from section $2$ . $1$ . $2$ that Feynman’s path integral in string theory is an integral over moduli spaces. The moduli space $M^{1}$ , 0 for the torus can be written as the quotient of the half-plane H by the action of S$L^{2}$ (Z). Therefore, if one lifts the integrand of Feynman’s integral from $M^{1}$ , 0 to H , one obtains a function Z (τ) that is invariant under S$L^{2}$ (Z) and hence modular. This integrand Z (τ) is a quadratic combination of the chiral blocks for the torus. $3$ What VOAs Are It is possible to give a fully axiomatic definition of vertex operator algebras. However, when one first encounters this definition (and not just the first time either) it can seem very complicated and arbitrary, and one is given no feel for the importance of VOAs. Our treatment below will be much more informal: this will clarify their importance even if it hides much of their complexity. Thanks to the previous section, it is possible to give a quick justification for VOAs: if you concede that CFT (or equivalently, perturbative string theory) is important, and if you have seen how closely related CFT is to VOAs, then you must concede that VOAs are important. However, this is not the whole story, as we shall see.
+matrices with integer entries and determinant $1$ , in the b sense that for any such matrix (a c d ) the function f (τ) is closely related (though not necessarily exactly equal) to the function f ((a τ  +  b)  /  (c τ  +  d)). We shall discuss this further in section $3$ . $2$ . The appearance of modularity can be understood by recalling from section $2$ . $1$ . $2$ that Feynman’s path integral in string theory is an integral over moduli spaces. The moduli space $M^{1}$ , 0 for the torus can be written as the quotient of the half-plane H by the action of S$L^{2}$ (Z).
+Therefore, if one lifts the integrand of Feynman’s integral from $M^{1}$ , 0 to H , one obtains a function Z (τ) that is invariant under S$L^{2}$ (Z) and hence modular. This integrand Z (τ) is a quadratic combination of the chiral blocks for the torus. $3$ What VOAs Are It is possible to give a fully axiomatic definition of vertex operator algebras. However, when one first encounters this definition (and not just the first time either) it can seem very complicated and arbitrary, and one is given no feel for the importance of VOAs. Our treatment below will be much more informal:
+this will clarify their importance even if it hides much of their complexity. Thanks to the previous section, it is possible to give a quick justification for VOAs: if you concede that CFT (or equivalently, perturbative string theory) is important, and if you have seen how closely related CFT is to VOAs, then you must concede that VOAs are important. However, this is not the whole story, as we shall see.
 
 $3$ . $1$
 
 Their Definition
 
-Let us begin by defining them in terms of other concepts that must themselves be defined: a vertex operator algebra is an algebra of vertex operators, or in other words the chiral algebra V of a conformal field theory. The most important thing to understand in this definition is that a vertex operator is a quantum field, which, as we have seen, is an “operator-valued distribution of space-time.” So we can think of it informally as a matrix-valued function of space-time, where the matrix is \i\text{nf ty} \times \i\text{nf ty} and its entries can be generalized functions like the Dirac delta ( $1$ ). However, we shall give a much better description of these vertex operators shortly. By “space-time” we mean the unit disk in C punctured at $z = 0$ . Recall from section $2$ . $2$ that string-theoretically this set corresponds to a semi-infinite cylinder parametrized by the angle $- \pi < \theta \le \pi$ running around the string as well as the time $- \i\text{nf ty} < t < 0$
+Let us begin by defining them in terms of other concepts that must themselves be defined: a vertex operator algebra is an algebra of vertex operators, or in other words the chiral algebra V of a conformal field theory. The most important thing to understand in this definition is that a vertex operator is a quantum field, which, as we have seen, is an “operator-valued distribution of space-time.” So we can think of it informally as a matrix-valued function of space-time, where the matrix is $\infty \times \infty$ and its entries can be generalized functions like the Dirac delta ( $1$ ).
+However, we shall give a much better description of these vertex operators shortly. By “space-time” we mean the unit disk in C punctured at $z = 0$ . Recall from section $2$ . $2$ that string-theoretically this set corresponds to a semi-infinite cylinder parametrized by the angle $- \pi < \theta \le \pi$ running around the string as well as the time $- \infty < t < 0$
 
 546                                                                                          IV. Branches of Mathematics
 
@@ -347,27 +367,28 @@ phically on z. However, it is not obvious what “holo-               The most i
 morphic” means for distributions. We touched on this             uum |0. It corresponds to the identity vertex operator:
 question in section 2.2: now we shall look at it in more         Y (|0, z) = I. From the physical point of view, the ver-
 detail.                                                          tex operator Y (v, z) is the field that created the state
-  To do this, we need a more concrete description of             v at time t = −\infty, i.e., Y (v, 0)|0 exists and equals v.
-a vertex operator. The key idea is a very convenient             (Recall that in our model z = 0 corresponds to t = −\infty.)
+  To do this, we need a more concrete description of             v at time t = −. nfty, i.e., Y (v, 0)|0 exists and equals v.
+a vertex operator. The key idea is a very convenient             (Recall that in our model z = 0 corresponds to t = −. nfty.)
 algebraic interpretation of holomorphic distributions.           Among other things, this means that v−1 (|0) = v,
 Consider the sum                                                 so indeed the modes applied to |0 generate V , as is
-                            \infty                                   required in any quantum field theory.
+                            . nfty                                   required in any quantum field theory.
                     d(z) =      zn .                  (5)           The most important observable in the theory is the
-                               n=−\infty
+                               n=−. nfty
                                                                  Hamiltonian, or energy operator, which we denote by
 Multiply it by f (z) = 3 z−2 − 5 z 3 , say. This gives us
                                                                  L0 . It is diagonalizable (so V can be written as a sum
-                       \infty
-                                       \infty
+                       . nfty
+                                       . nfty
                                                                 of L0 -eigenspaces) and all of its eigenvalues must be
       f (z)d(z) = 3          zn−2 − 5         z n+3
-                      n=−\infty             n=−\infty                      integers. For example, the vacuum |0 has 0 energy:
-                       \infty              \infty
+                      n=−. nfty             n=−. nfty                      integers. For example, the vacuum |0 has 0 energy:
+                       . nfty              . nfty
                                                                 L0 |0 = 0. Since |0 should have the minimum energy,
-                                                                                                                \infty
+
+. nfty
                =3            zn − 5        n
                                              z = −2 d(z).         the L0 -decomposition of V is then V =            n=0 Vn ,
-                      n=−\infty            n=−\infty
+                      n=−. nfty            n=−. nfty
                                                                  where V0 = C|0. Each space Vn turns out to be
 A few more examples like this will convince you that
                                                                  finite dimensional, and we can think of L0 as defining
@@ -384,8 +405,8 @@ positive powers have a convergent sum only for |z| < 1,
 and the negative powers only for |z| > 1. The “func-
                                                                  resentation (4) of the Virasoro algebra Vir. (This is
 tion” d(z) is an example of a formal power series: any
-       \infty                                                        the algebraic expression for the requirement of con-
-series n=−\infty an z n , where the coefficients an can be
+       . nfty                                                        the algebraic expression for the requirement of con-
+series n=−. nfty an z n , where the coefficients an can be
                                                                  formal symmetry.) The conformal vector has energy 2:
 anything and we ignore all convergence issues.
                                                                  ω ∈ V2 .
@@ -401,28 +422,28 @@ mal power series clearly remains a formal power series.
                                                                  [Y (u, z), Y (v, w)] of two vertex operators should be a
 (By contrast, nonholomorphic series would involve the
                                                                  finite linear combination of the Dirac delta δ(z − w) =
-complex conjugate \bar{z}.)                                                \infty
-                                                                 z−1 n=−\infty (w/z)n and its derivatives (∂ k /∂w k )δ(z −
+complex conjugate . ar{z}.)                                                . nfty
+                                                                 z−1 n=−. nfty (w/z)n and its derivatives (∂ k /∂w k )δ(z −
    So that is what a vertex operator looks like: a for-
-                    \infty                                           w). Now, (z − w)k+1 (∂ k /∂w k )δ(z − w) = 0. To see
-mal power series n=−\infty an z n , where each coefficient
+                    . nfty                                           w). Now, (z − w)k+1 (∂ k /∂w k )δ(z − w) = 0. To see
+mal power series n=−. nfty an z n , where each coefficient
                                                                  this, look at the case k = 1:
 an is now an operator (endomorphism) on the space V
                                                                               ∂
 of states, which is an infinite-dimensional vector space.          (z − w)2       δ(z − w)
                                                                              ∂w
-Since the vertex operators are in one-to-one correspon-                    \infty
+Since the vertex operators are in one-to-one correspon-                    . nfty
                                                                           
 dence with the states (we called this the “state–field cor-            =       (nw n−1 z −n+1 − 2 nw n z−n + nw n+1 z−n−1 )
-respondence” above), we can label these vertex opera-                   n=−\infty
-                                                                         \infty
+respondence” above), we can label these vertex opera-                   n=−. nfty
+                                                                         . nfty
 tors with states: the standard convention is to denote
                                                                     =          ((n + 1) − 2 n + (n − 1))w n z −n = 0.
-the vertex operator corresponding to state v ∈ V by                     n=−\infty
-                               \infty
+the vertex operator corresponding to state v ∈ V by                     n=−. nfty
+                               . nfty
                                                                 The proof for general k is similar. Therefore, locality
                Y (v, z) =           vn z−n−1 .             (6)
-                             n=−\infty
+                             n=−. nfty
                                                                  can be recast in an equivalent form as follows: given
 The symbol “Y ” should remind you of the sphere with             any u, v ∈ V , there is a positive number N such that
 three legs, which as we know is the vertex of string                           (z − w)N [Y (u, z), Y (v, w)] = 0.       (7)
@@ -563,14 +584,14 @@ siderable success, especially in geometry, by studying          ant under the us
 
 IV.17.   Vertex Operator Algebras                                                                                  549
 
-meromorphic at the boundary points Q ∪ {i\infty}, which          abstracting out their important algebraic properties
+meromorphic at the boundary points Q ∪ {i. nfty}, which          abstracting out their important algebraic properties
 are called cusps; we did not mention this condition ear-    he defined a new structure called a vertex (opera-
 lier. The j-function generates these functions in the       tor) algebra. His axioms clarified their relationship
 sense that any such modular function f (τ) can be           with (generalizations of) Kac–Moody algebras, and by
 written as a rational function poly(j(τ))/ poly(j(τ)).      1992 he had proved the main Conway–Norton conjec-
 In other words, j(τ) is a uniformizing function that        ture (which corresponds to the case where g is arbi-
-identifies (H ∪ Q ∪ {i\infty})/SL2 (Z) with the Riemann           trary but h is the identity in the conjecture given
-sphere C ∪ \infty. We bracketed the constant term 744 in         earlier). Although his definition of VOAs required a
+identifies (H ∪ Q ∪ {i. nfty})/SL2 (Z) with the Riemann           trary but h is the identity in the conjecture given
+sphere C ∪ . nfty. We bracketed the constant term 744 in         earlier). Although his definition of VOAs required a
 (10) because although 744 was the traditional choice it     deep understanding of the physics of CFT, his elab-
 can be freely replaced with any other number, includ-       orate proof of this Moonshine conjecture is purely
 ing 0.                                                      algebraic.
@@ -586,7 +607,7 @@ ers fleshed out and expanded Mc Kay’s original obser-         c = 24, trivial 
 vation by making a number of conjectures, collectively      This is meant to be reminiscent of the leech lattice
 called Monstrous Moonshine. For instance, with every        [I.4 §4](/part-01/general-goals), which is known to be the unique twenty-four-
 pair (g, h) of commuting elements in the Monster (a         dimensional even self-dual lattice with no vectors of
-group of size about 8 \times 1053 ), we expect there to be                √
+group of size about 8 . imes 1053 ), we expect there to be                √
                                                             length 2. Indeed, the Leech lattice plays a crucial role
 associated a function j(g, h) (τ) that generates all mod-    in the construction of V % .
 ular functions for some discrete subgroup Γ(g, h) of            Most of the Moonshine conjectures are still open and
@@ -608,7 +629,7 @@ came from these “vertex operators,” V % was also acted        Sciences of th
 on in a natural way by the Monster group. Moreover,              . 1992. Monstrous Moonshine and monstrous Lie su-
 although V % is infinite dimensional, it comes packaged        per algebras. Inventiones Mathematicae 109:405–44.
 
-into finite-dimensional pieces V % = \infty
+into finite-dimensional pieces V % = . nfty
                                               %             Di Francesco, P., P. Mathieu, and D. Sénéchal. 1996. Confor-
                                        n=−1 Vn , and the
                                 %  n
@@ -624,4 +645,3 @@ that V % lies at the heart of the Monstrous Moonshine         Providence, RI: Am
 conjectures.                                                Lepowsky, J., and H. Li. 2004. Introduction to Vertex Oper-
    Borcherds was struck by the formal similarity be-          ator Algebras and their Representations. Boston, MA:
 tween V % and the chiral algebras of CFTs, and by             Birkhäuser.
-

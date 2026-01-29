@@ -57,4 +57,3 @@ Pythagorean theorem. Here are a few examples.
                                                                         (that is, the axioms of ZF or ZFC) hold. To explain what
   (i) Let X be n-dimensional space, that is, the set Rn                 this means, let us think first about groups. The axioms
       of all sequences (x1 , . . . , xn ) of n real numbers. It         of group theory mention certain operations (such as
-

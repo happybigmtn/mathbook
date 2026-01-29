@@ -87,7 +87,7 @@ integral equations that this example suggests. He was
 able to prove that, for equations of his type, the dimen-
                                                                tions on the hilbert space [III.37](/part-03/bayesian-analysis) of all functions u(y)
 sions of the kernel and of the cokernel are always finite
-                                                               such that |u(y)|2 dy < \infty. Such functions are called
+                                                               such that |u(y)|2 dy < . nfty. Such functions are called
 and equal.
                                                                square-integrable, and the collection of all of them is
    Fredholm’s work sparked the imagination of hilbert
@@ -124,13 +124,13 @@ tions u1 (y), u2 (y), . . . and real numbers λ1 , λ2 , . . .
                                                                is the multiplication operator by a real-valued function
 such that
                                                                m(y); this is the operator M defined by the formula
-              k(y, x)un (x) dx = \lambda n un (y).                    (Mu)(y) = m(y)u(y). (The finite-dimensional coun-
+              k(y, x)un (x) dx = . ambda n un (y).                    (Mu)(y) = m(y)u(y). (The finite-dimensional coun-
                                                                terpart to a multiplication operator is a diagonal matrix
 Thus un (y) is an eigenfunction for the integral opera-
                                                                K, which multiplies the jth component of the vector by
-tor, with eigenvalue \lambda n .
+tor, with eigenvalue . ambda n .
                                                                the matrix entry kjj .)
-   In most cases it is hard to calculate un and \lambda n
+   In most cases it is hard to calculate un and . ambda n
                                                                   Hilbert’s spectral theorem for symmetric integral
 explicitly, but calculation is possible when k(x, y) =
                                                                operators tells us that every such operator can be given
@@ -151,9 +151,9 @@ f (y) on [0, 1] can be expanded as the sum of a series
 Hilbert showed that, in general, there is an analogous
                                                                function u(y) to the function yu(y). This operator
 expansion
-                                                              has no eigenvectors [I.3 §4.3](/part-01/fundamental-definitions), since if \lambda is an eigen-
+                                                              has no eigenvectors [I.3 §4.3](/part-01/fundamental-definitions), since if . ambda is an eigen-
                   f (y) =      an un (y)
-                                                               value [I.3 §4.3](/part-01/fundamental-definitions), then we need yu(y) = \lambda u(y) for
+                                                               value [I.3 §4.3](/part-01/fundamental-definitions), then we need yu(y) = . ambda u(y) for
 in terms of the eigenfunctions for any symmetric inte-         every y, which implies that u(y) = 0 for every y not
 gral operator. In other words, the eigenfunctions form         equal to λ, and hence that |u(y)|2 dy = 0. However,
 a basis, just as in the finite-dimensional case. Hilbert’s      this example is not particularly worrying, since a mul-
@@ -170,7 +170,7 @@ suitable “change of basis,” they become multiplication        the rule is su
 operators.                                                    age” (1/n) j=1 Rj will indeed converge to the num-
    To make this statement precise, we need the notion         ber of pieces on the board divided by the number of
 of the spectrum [III.86](/part-03/the-spectrum) of an operator T . This is the set   squares, as expected.
-of complex numbers \lambda for which the operator T − \lambda I               The checkerboard example is elementary, since in
+of complex numbers . ambda for which the operator T − . ambda I               The checkerboard example is elementary, since in
 does not have a bounded inverse (here I is the iden-          fact the only “sufficiently complicated” rules in this
 tity operator on Hilbert space). In finite dimensions the      finite case are cyclic permutations of the squares of the
 spectrum is precisely the set of eigenvalues, but in infi-     board, and thus all the squares move past our obser-
@@ -216,7 +216,7 @@ succession of readings R1 , R2 , R3 , . . . like this:        of saying that the
                                                                                        1  j
                                                                                            n
 We might expect that over time, the average number                                 lim       U f
-                                                                                   n→\infty n
+                                                                                   n→. nfty n
 of positive readings Rj = 1 will converge to the num-                                    j=1
 
 ber of pieces on the board divided by the number of           exists and is equal to the constant function whose value
@@ -236,7 +236,7 @@ The key to the proof then becomes a statement about          cally do not commut
 complex numbers of absolute value 1: if z is such a          ators do not commute, then they will typically have no
 complex number, different from 1, then the expression         eigenvectors in common, and, as a result, simultaneous
        n
-(1/n) j=1 z j approaches zero as n → \infty. This in turn         measurements of two different observables will typi-
+(1/n) j=1 z j approaches zero as n → . nfty. This in turn         measurements of two different observables will typi-
 is easily proved using the formula for the sum of a geo-     cally not result in determinate values for both of them.
                n
 metric series, j=1 z j = z(1 − zn )/(1 − z). (More detail    A famous example is provided by the operators P and
@@ -369,7 +369,7 @@ into account.                                                     which we will 
 
 IV.15.   Operator Algebras                                                                                          515
 
-   The trace of an n \times n matrix is the sum of its diag-          It is easy to check that every von Neumann algebra
+   The trace of an n . imes n matrix is the sum of its diag-          It is easy to check that every von Neumann algebra
 onal entries. As with the determinant, the trace of a          M is equal to its own double commutant M (the com-
 matrix A is equal to the trace of BAB −1 for any invert-       mutant of the commutant of M). Von Neumann proved
 ible matrix B. In fact, the trace is related to the determi-   that if a self-adjoint algebra M of operators is closed
@@ -378,7 +378,7 @@ of the invariance properties of trace and determinant,         tant of the group
 it is enough to check this for diagonal matrices, where        and is therefore a von Neumann algebra.
 it is easy). In infinite dimensions the trace need not
 make sense since the sum of the diagonal entries of            2.1   Decomposing Representations
-an \infty × \infty matrix may not converge. (The trace of the            Let g → Ug be a unitary representation of a group G
+an . nfty × . nfty matrix may not converge. (The trace of the            Let g → Ug be a unitary representation of a group G
 identity operator is a case in point: the diagonal entries     on a Hilbert space H. If a closed subspace H0 of H
 are all 1, and if there are infinitely many of them, then       is mapped into itself by all the operators Ug , then it
 their sum is not well-defined.) One way to address this         is said to be an invariant subspace for the representa-
@@ -386,10 +386,10 @@ problem is to limit oneself to operators for which the         tion. If H0 is in
 sum is well-defined. An operator T is said to be of             H0 to itself, their restrictions to H0 constitute another
 trace class if, for every two sequences {uj } and {vj }        representation of G, called a subrepresentati on of the
 of pairwise orthogonal vectors of length 1, the sum            original.
-\infty
+. nfty
    j=1 T uj , vj  is absolutely convergent. A trace-class       A subspace H0 is invariant for a representation, and
 operator T has a well-defined and finite trace, namely           so determines a subrepresentati on, if and only if the
-           \infty
+           . nfty
 the sum j=1 T uj , uj  (which is independent of the          orthogonal projection operator P : H → H0 belongs
 choice of orthonormal basis {uj }).                            to the commutant of that representation. This points
    Integral operators such as those appearing in Fred-         to a close connection between subrepresentati ons and
@@ -448,10 +448,10 @@ dimensional or not) can be decomposed into isotypical            Murray and von 
 components, and this decomposition is unique.                  structures that can arise from factors are the following
    In finite dimensions, every isotypical representation        very simple ones:
 decomposes into a (finite) number of identical irre-
-                                                                     Type I,    {0, 1, 2, . . . , n} or {0, 1, 2, . . . , \infty};
+                                                                     Type I,    {0, 1, 2, . . . , n} or {0, 1, 2, . . . , . nfty};
 ducible subrepresentati ons (like the prime factors of
-a prime power). In infinite dimensions this is not so.                Type II, [0, 1] or [0, \infty];
-In effect, much of von Neumann algebra theory is                      Type III, {0, \infty}.
+a prime power). In infinite dimensions this is not so.                Type II, [0, 1] or [0, . nfty];
+In effect, much of von Neumann algebra theory is                      Type III, {0, . nfty}.
 concerned with analyzing the many possibilities that           The type of a factor is determined from the order
 arise.                                                         structure of its projections according to this table.
                                                                   In the case of factors of type II, the order structure
@@ -481,25 +481,33 @@ $IV$ . $15$ .
 
 Operator Algebras
 
-will have trivial center and will therefore be a factor. It can be shown that this factor is of type II. There is a simple explicit formula for the real-valued dimension of a subrepresentati on corresponding to an orthogonal projection P $\in$ M. Represent P by an infinite matrix relative to the basis {[g]} of H. Because P commutes with the representation, it is easy to see that the diagonal elements of P are all the same, equal to some real number between $0$ and $1$ . This real number is the dimension of the subrepresentati on corresponding to P . More recently, the Murray-von Neumann dimension theory has found unexpected applications in topology [I.3](/part-01/fundamental-definitions). Many important topological concepts, such as Betti numbers, are defined as the (integervalued) dimensions of certain vector spaces. Using von Neumann algebras, one can define real-valued counterparts of these quantities that have useful additional properties. In this way, one can use von Neumann algebra theory to obtain topological conclusions. The von Neumann algebras used here are typically obtained by the construction of the previous paragraph from the fundamental group [IV.6](/part-04/algebraic-topology) of some compact space.
+will have trivial center and will therefore be a factor. It can be shown that this factor is of type II. There is a simple explicit formula for the real-valued dimension of a subrepresentati on corresponding to an orthogonal projection P $\in$ M. Represent P by an infinite matrix relative to the basis {[g]} of H. Because P commutes with the representation, it is easy to see that the diagonal elements of P are all the same, equal to some real number between $0$ and $1$ . This real number is the dimension of the subrepresentati on corresponding to P .
+More recently, the Murray-von Neumann dimension theory has found unexpected applications in topology [I.3](/part-01/fundamental-definitions). Many important topological concepts, such as Betti numbers, are defined as the (integervalued) dimensions of certain vector spaces. Using von Neumann algebras, one can define real-valued counterparts of these quantities that have useful additional properties. In this way, one can use von Neumann algebra theory to obtain topological conclusions.
+The von Neumann algebras used here are typically obtained by the construction of the previous paragraph from the fundamental group [IV.6](/part-04/algebraic-topology) of some compact space.
 
 $2$ . $3$
 
 Modular Theory
 
-Type III factors remained rather mysterious for a long time; indeed, Murray and von Neumann were at first unable to determine whether any such factors existed. They eventually managed to do so, but the fundamental breakthrough in the area came well after their pioneering work, when it was realized that each von Neumann algebra has a special family of symmetries, its so-called modular automorphism group. To explain the origins of modular theory, let us consider once again the von Neumann algebra obtained from the regular representation of a group G. We defined the operators U g o$n^{2}$ (G) by multiplying on the left by elements of G; but we could equally well have considered a representation defined by multiplying on the right. This would have yielded a different von Neumann algebra. So long as we deal only with discrete groups G this difference is unimportant, because the map S : [g]   $\to$ [g − 1] is a unitary operator on H that interchanges the left and right regular representations. But for certain continuous groups the problem arises that the function f (g) may be square-integrable while f (g $- 1$ ) is not. In this situation there is no simple unitary isomorphism analogous to the one for discrete groups. To remedy this, one must introduce a correction factor called the modular function of G.
+Type III factors remained rather mysterious for a long time; indeed, Murray and von Neumann were at first unable to determine whether any such factors existed. They eventually managed to do so, but the fundamental breakthrough in the area came well after their pioneering work, when it was realized that each von Neumann algebra has a special family of symmetries, its so-called modular automorphism group. To explain the origins of modular theory, let us consider once again the von Neumann algebra obtained from the regular representation of a group G.
+We defined the operators U g o$n^{2}$ (G) by multiplying on the left by elements of G; but we could equally well have considered a representation defined by multiplying on the right. This would have yielded a different von Neumann algebra. So long as we deal only with discrete groups G this difference is unimportant, because the map S : [g]   $\to$ [g − 1] is a unitary operator on H that interchanges the left and right regular representations. But for certain continuous groups the problem arises that the function f (g) may be square-integrable while f (g $- 1$ ) is not.
+In this situation there is no simple unitary isomorphism analogous to the one for discrete groups. To remedy this, one must introduce a correction factor called the modular function of G.
 
 $517$
 
-The project of modular theory is to show that something analogous to the modular function can be constructed for any von Neumann algebra. This object then serves as an invariant for all factors of type III, whether or not they are explicitly derived from groups. Modular theory exploits a version of the GNS construction (section $1$ . $4$ ). Let M be a self-adjoint algebra of operators. A linear functional φ : M $\to$ C is called a state if it is positive in the sense that φ (T ∗ T) $\ge 0$ , for every T $\in$ M (this terminology is derived from the connection described earlier between Hilbert space theory and quantum mechanics). For the purposes of modular theory we restrict attention to faithful states, those for which φ(T ∗ $T) = 0$ implies $T = 0$ . If φ is a state, then the formula $T^{1}$ , $T^{2}= φ(T^{1}$ ∗ $T^{2})$ defines an inner product on the vector space M. Applying the GNS procedure, we obtain a Hilbert space H M . The first important fact about H M is that every operator T in M determines an operator on H M . Indeed, a vector $V \inH^{M}$ is a limit $V =$ lim $n \to \i\text{nf tyV}^{n}$ of elements in M, and we can apply an operator T $\in$ M to the vector
+The project of modular theory is to show that something analogous to the modular function can be constructed for any von Neumann algebra. This object then serves as an invariant for all factors of type III, whether or not they are explicitly derived from groups. Modular theory exploits a version of the GNS construction (section $1$ . $4$ ). Let M be a self-adjoint algebra of operators. A linear functional φ :
+M $\to$ C is called a state if it is positive in the sense that φ (T ∗ T) $\ge 0$ , for every T $\in$ M (this terminology is derived from the connection described earlier between Hilbert space theory and quantum mechanics). For the purposes of modular theory we restrict attention to faithful states, those for which φ(T ∗ $T) = 0$ implies $T = 0$ . If φ is a state, then the formula $T^{1}$ , $T^{2}= φ(T^{1}$ ∗ $T^{2})$ defines an inner product on the vector space M. Applying the GNS procedure, we obtain a Hilbert space H M .
+The first important fact about H M is that every operator T in M determines an operator on H M . Indeed, a vector $V \inH^{M}$ is a limit $V =$ lim $n \to \infty V^{n}$ of elements in M, and we can apply an operator T $\in$ M to the vector
 
 V using the formula
 
 T $V = lim$ T V n ,
 
-$n \to \i\text{nf ty}$
+$n \to \infty$
 
-where on the right-hand side we use multiplication in the algebra M. Because of this observation, we can think of M as an algebra of operators on H M , rather than as an algebra of operators on whatever Hilbert space we began with. Next, the adjoint operation equips the Hilbert space H M with a natural “antilinear” operator S : H M $\to$ H M by the formula ${}^{1} S(V) = V$ ∗ . Since $U^{g}$ ∗ $= U^{g} - {}^{1}$ for the regular representation, this is indeed analogous to the operator S we encountered in our discussion of continuous groups. The important theorem of Minoru Tomita and Masamichi Takesaki asserts that, as long as the original state φ satisfies a continuity condition, the complex powers U t  =  (S ∗ S) it have the property that $U^{t}MU - t = M,$ for all t. The transformations of M given by the formula T   $\to$ U t T U  -  t are called the modular automorphisms of M. Alain Connes proved that they depend only in a rather inessential way on the original faithful state φ. To be precise, changing φ changes the modular automorphisms only by inner automorphisms, that is, transformations of the form $T \to UTU - 1$ , where $U$ is a unitary $1$ . The interpretation of this formula on the completion H M of M is a delicate matter.
+where on the right-hand side we use multiplication in the algebra M. Because of this observation, we can think of M as an algebra of operators on H M , rather than as an algebra of operators on whatever Hilbert space we began with. Next, the adjoint operation equips the Hilbert space H M with a natural “antilinear” operator S : H M $\to$ H M by the formula ${}^{1} S(V) = V$ ∗ . Since $U^{g}$ ∗ $= U^{g} - {}^{1}$ for the regular representation, this is indeed analogous to the operator S we encountered in our discussion of continuous groups.
+The important theorem of Minoru Tomita and Masamichi Takesaki asserts that, as long as the original state φ satisfies a continuity condition, the complex powers U t  =  (S ∗ S) it have the property that $U^{t}MU - t = M,$ for all t. The transformations of M given by the formula T   $\to$ U t T U  -  t are called the modular automorphisms of M. Alain Connes proved that they depend only in a rather inessential way on the original faithful state φ.
+To be precise, changing φ changes the modular automorphisms only by inner automorphisms, that is, transformations of the form $T \to UTU - 1$ , where $U$ is a unitary $1$ . The interpretation of this formula on the completion H M of M is a delicate matter.
 
 518                                                                                     IV. Branches of Mathematics
 
@@ -527,7 +535,7 @@ Besides the range of the dimension function, which sep-       the greatest absol
 arates factors into types, the sole invariant is the mod-     the spectrum of T ) is less than or equal to its norm.
 ule. This is a flow on a certain space that is assembled          The remarkable spectral radius formula goes much
 from the modular automorphism group.                          further in the same direction. It asserts that r (T ) =
-   A lot of attention is currently being given to the long-   limn→\infty T n 1/n . If T is normal (T T ∗ = T ∗ T ), and in
+   A lot of attention is currently being given to the long-   limn→. nfty T n 1/n . If T is normal (T T ∗ = T ∗ T ), and in
 standing problem of distinguishing among the type II          particular if T is self-adjoint, then it may be shown that
 factors associated with the regular representations of        T n  = T n . As a result, the spectral radius of T is
 groups. Of special interest is the case of free groups        precisely equal to the norm of T . There is therefore a
@@ -564,7 +572,11 @@ to be generated by T . The C ∗ - algebra generated by T is commutative if and 
 
 $3$ . $1$
 
-If X is a compact [III.9](/part-03/compactness-and-compactication) topological space [III.90](/part-03/topological-spaces), then the collection C (X) of continuous functions f : X $\to$ C comes with natural algebraic operations (inherited from the usual ones on C) and a norm  $f = sup{|f(x)|}$ : $x \in$ X}. In fact, these operations make C (X) into a C ∗ - algebra . The multiplication in C (X) is commutative, because the multiplication of complex numbers is commutative. A basic result of Gelfand and Naimark asserts that every commutative C ∗ - algebra is isomorphic to some C (X). Given a commutative C ∗ - algebra A, one constructs X as the collection of all algebra homomorphisms ξ : A $\to$ C , and the Gelfand transform then associates with a $\in$ A the function ξ   $\to$ ξ (a) from X to C . The Gelfand-Naimark theorem is a foundational result of operator theory. For example, a modern proof of the spectral theorem might proceed as follows. Let T be a self-adjoint or normal operator on a Hilbert space H, and let A be the commutative C ∗ - algebra generated by T . By the Gelfand-Naimark theorem, A is isomorphic to C (X) for some space X, which may in fact be identified with the spectrum of T . If v is a unit vector in H, then the formula S   $\to$  Sv, v  defines a state φ on A. The GNS space associated with this state is a Hilbert space of functions on X, and elements of $A = C$ (X) act as multiplication operators. In particular, T acts as a multiplication operator. A small additional argument shows that T is unitarily equivalent to this multiplication operator, or at least to a direct sum of such operators (which is itself a multiplication operator on a larger space). Continuous functions can be composed: if $f$ and $g$ are continuous functions (with the range of g contained in the domain of f), then f ◦g is also a continuous function. Since the Gelfand-Naimark theorem tells us that any self-adjoint element of a C ∗ - algebra A sits inside an algebra isomorphic to the continuous functions on the spectrum of a, we conclude that if a $\in$ A is selfadjoint, and if f is a continuous function defined on the spectrum of a, then an operator f (a) exists in A. This functional calculus is a key technical tool in C ∗ - algebra theory. For example, suppose that u $\in$ A is unitary and u $- 1< 2$ . Then the spectrum of $u$ is a subset of the
+If X is a compact [III.9](/part-03/compactness-and-compactication) topological space [III.90](/part-03/topological-spaces), then the collection C (X) of continuous functions f : X $\to$ C comes with natural algebraic operations (inherited from the usual ones on C) and a norm  $f = sup{|f(x)|}$ : $x \in$ X}. In fact, these operations make C (X) into a C ∗ - algebra . The multiplication in C (X) is commutative, because the multiplication of complex numbers is commutative. A basic result of Gelfand and Naimark asserts that every commutative C ∗ - algebra is isomorphic to some C (X).
+Given a commutative C ∗ - algebra A, one constructs X as the collection of all algebra homomorphisms ξ : A $\to$ C , and the Gelfand transform then associates with a $\in$ A the function ξ   $\to$ ξ (a) from X to C . The Gelfand-Naimark theorem is a foundational result of operator theory. For example, a modern proof of the spectral theorem might proceed as follows. Let T be a self-adjoint or normal operator on a Hilbert space H, and let A be the commutative C ∗ - algebra generated by T .
+By the Gelfand-Naimark theorem, A is isomorphic to C (X) for some space X, which may in fact be identified with the spectrum of T . If v is a unit vector in H, then the formula S   $\to$  Sv, v  defines a state φ on A. The GNS space associated with this state is a Hilbert space of functions on X, and elements of $A = C$ (X) act as multiplication operators. In particular, T acts as a multiplication operator.
+A small additional argument shows that T is unitarily equivalent to this multiplication operator, or at least to a direct sum of such operators (which is itself a multiplication operator on a larger space). Continuous functions can be composed: if $f$ and $g$ are continuous functions (with the range of g contained in the domain of f), then f ◦g is also a continuous function.
+Since the Gelfand-Naimark theorem tells us that any self-adjoint element of a C ∗ - algebra A sits inside an algebra isomorphic to the continuous functions on the spectrum of a, we conclude that if a $\in$ A is selfadjoint, and if f is a continuous function defined on the spectrum of a, then an operator f (a) exists in A. This functional calculus is a key technical tool in C ∗ - algebra theory. For example, suppose that u $\in$ A is unitary and u $- 1< 2$ . Then the spectrum of $u$ is a subset of the
 
 $519$
 
@@ -681,7 +693,7 @@ this contains Fredholm’s original theorem as a special
 case.
                                                            are preserved by compact perturbation. For instance,
 4.2   The Toeplitz Index Theorem                           the essential spectrum of an operator T is the set of
-                                                           complex numbers \lambda for which T − \lambda I fails to be Fred-
+                                                           complex numbers . ambda for which T − . ambda I fails to be Fred-
 topology [I.3 §6.4](/part-01/fundamental-definitions) studies those properties of mathe-
                                                            holm (that is, invertible modulo compact operators).
 matical systems that remain the same when the sys-
@@ -724,20 +736,20 @@ In other words, as you go down each diagonal of
                                                            index −1 and S ∗ has index +1. Thus some new ingredi-
 the matrix, the entries remain constant. The sequence
                                                            ent, beyond the essential spectrum, is needed to clas-
-of coefficients {bn }\infty n=−\infty defines a function f (z) =
-\infty           −n on the unit circle in the complex plane,
+of coefficients {bn }. nfty n=−. nfty defines a function f (z) =
+. nfty           −n on the unit circle in the complex plane,
                                                            sify essentially normal operators. In fact, it follows eas-
-  n=−\infty bn z                                                ily from Atkinson’s theorem that if essentially normal
+  n=−. nfty bn z                                                ily from Atkinson’s theorem that if essentially normal
 called the symbol of the Toeplitz operator. It can be
                                                            operators T1 and T2 are to be essentially equivalent,
 shown that a Toeplitz operator whose symbol is a con-
                                                            then not only must they have the same essential spec-
 tinuous function which is never zero is Fredholm. What
-                                                           trum but also, for every \lambda not in the essential spectrum,
+                                                           trum but also, for every . ambda not in the essential spectrum,
 is its index?
-                                                           the Fredholm index of T1 −\lambda I must be equal to the Fred-
+                                                           the Fredholm index of T1 −. ambda I must be equal to the Fred-
    The answer is given by thinking about the symbol
-                                                           holm index of T2 − \lambda I. The converse of this statement
+                                                           holm index of T2 − . ambda I. The converse of this statement
 as a mapping from the unit circle to the nonzero com-
                                                            was proved by Larry Brown, Ron Douglas, and Peter
 plex numbers: in other words, as a closed path in the
@@ -805,4 +817,3 @@ with topology. In fact, some key advances in topol-           on the circle (con
 ogy have come from C ∗ -algebra theory in this way,           on H), then the commutator Df − f D is also a multipli-
 thereby allowing operator algebraists to repay some of        cation operator, this time by i df /dθ. It follows that
 the debt they owe to the topologists for K-theory. The        ordinary measurements of angular distance between
-

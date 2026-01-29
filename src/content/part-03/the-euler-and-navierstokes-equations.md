@@ -12,7 +12,8 @@ q
 
 $q2$
 
-This error estimate shows just how special the continued-fraction approximations are: if you pick a denominator q without thinking, and then select the numerator p that makes p  /  q closest to x, the only thing you can guarantee is that x lies between $(p - 1/2)/q$ and $(p + 1/2)/q$ . So the error could be as large as $1/(2q)$ , which is much bigger than $1/(q^{2})$ if $q$ is a large integer. Sometimes a continued-fraction approximation to x can have even smaller error than is guaranteed by ( $8$ ). For example, the approximation $\pi \approx 355/113$ that we get by truncating ( $7$ ) at the third level is exceptionally accurate, the reason being that the next partial quotient, $292$ , is rather large. So we are not changing the . fraction much by ignoring the tail $1/(292 + 1/(1 +$ . .)). In this sense, the most difficult number to approximate by fractions is the one with the smallest possible partial quotients, i.e., the one with all its partial quotients equal to $1$ . This number,
+This error estimate shows just how special the continued-fraction approximations are: if you pick a denominator q without thinking, and then select the numerator p that makes p  /  q closest to x, the only thing you can guarantee is that x lies between $(p - 1/2)/q$ and $(p + 1/2)/q$ . So the error could be as large as $1/(2q)$ , which is much bigger than $1/(q^{2})$ if $q$ is a large integer. Sometimes a continued-fraction approximation to x can have even smaller error than is guaranteed by ( $8$ ).
+For example, the approximation $\pi \approx 355/113$ that we get by truncating ( $7$ ) at the third level is exceptionally accurate, the reason being that the next partial quotient, $292$ , is rather large. So we are not changing the . fraction much by ignoring the tail $1/(292 + 1/(1 +$ . .)). In this sense, the most difficult number to approximate by fractions is the one with the smallest possible partial quotients, i.e., the one with all its partial quotients equal to $1$ . This number,
 
 $11 +$
 
@@ -26,7 +27,8 @@ can be easily calculated because the sequence of partial quotients is periodic: 
 
 $1= φ,φ - 1$
 
-which in turn implies that $φ^{2} - φ = 1$ . The roots of √ this quadratic equation are $(1 + 5)/2 = 1$ . $618$ . . . and √ $(1 - 5)/2 = - 0$ . $618$ . . . . Since the number we are trying to find is positive, it is the first of these roots: the so-called golden ratio. It is quite easy to show that, just as ( $9$ ) represents the positive solution of the equation $x^{2} - x - 1 = 0$ , any other periodic continued fraction represents a root of a quadratic equation. This fact seems to have been understood already in the sixteenth century. It is quite a lot trickier to prove the converse: that the continued fraction of any quadratic surd is periodic. This was
+which in turn implies that $φ^{2} - φ = 1$ . The roots of √ this quadratic equation are $(1 + 5)/2 = 1$ . $618$ . . . and √ $(1 - 5)/2 = - 0$ . $618$ . . . . Since the number we are trying to find is positive, it is the first of these roots: the so-called golden ratio. It is quite easy to show that, just as ( $9$ ) represents the positive solution of the equation $x^{2} - x - 1 = 0$ , any other periodic continued fraction represents a root of a quadratic equation. This fact seems to have been understood already in the sixteenth century. It is quite a lot trickier to prove the converse:
+that the continued fraction of any quadratic surd is periodic. This was
 
 $193$
 
@@ -89,7 +91,7 @@ for all (x, t); and the Navier–Stokes equation is                  Also, to av
       d
              ∂
     +    uj     ui (x, t)                                          u(x, t) for each fixed t, should tend to zero “fast
-  ∂t j=1    ∂xj                                                    enough” as |x| → \infty. We will not specify here exactly
+  ∂t j=1    ∂xj                                                    enough” as |x| → . nfty. We will not specify here exactly
                                                                    what is meant by “fast enough,” but we assume from
            d
                 ∂2              ∂p
@@ -128,7 +130,7 @@ entirely from pressure gradients (e.g., if the pressure                    ∂ �
 increases with height, then there is a net force pushing
                                                                    of all orders, and that these derivatives tend to zero
 the fluid down). The additional term
-                                                                   “fast enough” as |x| → \infty. We then ask whether the
+                                                                   “fast enough” as |x| → . nfty. We then ask whether the
                           d
                                ∂2                                  Navier–Stokes equations (2)–(4), or the Euler equations
                       ν            u
@@ -142,7 +144,7 @@ in (2) arises from frictional forces.
 experiments on real fluids under many and varied                                       ∂t         ∂x1                ∂xd
                                                                          α
 circumstances. Since fluids are important, so are the               and ∂x, t p(x, t) of all orders exist for all x ∈ Rd , t ∈
-Navier–Stokes equations.                                           [0, \infty) (and tend to zero “fast enough” as |x| → \infty). A
+Navier–Stokes equations.                                           [0, . nfty) (and tend to zero “fast enough” as |x| → . nfty). A
    The Euler equation is simply the limiting case ν =              pair u and p with these properties is called a “smooth”
 0 of Navier–Stokes. However, as we shall see, solu-                solution for the Euler or Navier–Stokes equations. No
 tions of the Euler equation behave very differently from            one knows whether such solutions exist (in the three-
@@ -155,7 +157,7 @@ u0 in (4), there exist smooth solutions u(x, t), p(x, t)        For the 3 D Navi
 to the Euler or Navier–Stokes equations, defined for x ∈      V. Sverak shows that if there is a breakdown, then the
 Rd and t ∈ [0, T ).                                          pressure p(x, t) is unbounded, both above and below.
   In two space dimensions (one speaks of “2 D Euler”             A promising idea, pioneered by J. Leray in the 1930 s,
-or “2 D Navier–Stokes”), we can take T = +\infty; in other         is to study “weak solutions” of the Navier–Stokes equa-
+or “2 D Navier–Stokes”), we can take T = +. nfty; in other         is to study “weak solutions” of the Navier–Stokes equa-
 words, there is no “breakdown” for 2 D Euler or 2 D            tions. The idea is as follows. At first glance, the Navier–
 Navier–Stokes. In three space dimensions, no one can         Stokes equations (2) and (3) make sense only when
 rule out the possibility that, for some finite T = T (u0 )    u(x, t), p(x, t) are sufficiently smooth: for example,
@@ -179,7 +181,7 @@ lead to breakdown are exceedingly rare. Solutions of
                                                                                    3                  3            
 3 D Euler behave very wildly, so that it is hard to                                            ∂θi               ∂θi
                                                                                −         ui       −       ui uj       dx dt
-decide whether a given numerical study indicates a             R3 ×(0,\infty)                      ∂t                ∂xj
+decide whether a given numerical study indicates a             R3 ×(0,. nfty)                      ∂t                ∂xj
                                                                                    i=1              i, j=1
 breakdown. Indeed, it is notoriously hard to perform a                                                                               
                                                                                           
@@ -188,18 +190,18 @@ breakdown. Indeed, it is notoriously hard to perform a                          
                                                                                                                          3
                                                                                                                            ∂θi
 reliable numerical simulation of the 3 D Euler equations.       =                    ν                 θi ui +                        p dx dt
-  It is useful to study how a Navier–Stokes or Euler               R3 ×(0,\infty)
+  It is useful to study how a Navier–Stokes or Euler               R3 ×(0,. nfty)
                                                                                          i, j=1
                                                                                                  ∂xj2                    i=1
                                                                                                                                ∂xi
 solution behaves if one assumes that there is a break-                                                                                   (2 )
 down. For instance, if there is a breakdown at time
                                                              and
-T < \infty for the 3 D Euler equation, then a theorem of                                            
+T < . nfty for the 3 D Euler equation, then a theorem of                                            
                                                                                                3                  
                                                                                                             ∂φ
 Beale, Kato, and Majda asserts that the “vorticity”                                                    ui             dx dt = 0.         (3 )
-                                                                               R3 ×(0,\infty)
+                                                                               R3 ×(0,. nfty)
                                                                                                  i=1
                                                                                                             ∂xi
  ω(x, t) = curl(u(x, t))
@@ -208,7 +210,7 @@ Beale, Kato, and Majda asserts that the “vorticity”                         
            =         −    ,    −    ,    −             (5)
                  ∂x3   ∂x2 ∂x1   ∂x3 ∂x2   ∂x1               and (3 ) are satisfied for arbitrary smooth functions
 grows so large as t → T that the integral                    θ1 (x, t), θ2 (x, t), θ3 (x, t), and φ(x, t) that vanish
-                  T                                        outside a compact subset of R3 × (0, \infty).
+                  T                                        outside a compact subset of R3 × (0, . nfty).
                       max |ω(x, t)| dt
                      0   x∈R3                                  We call θ1 , θ2 , θ3 , and φ test functions, and we
 diverges. This has been used to invalidate some plau-        say that u and p form a weak solution of 3 D Navier–
@@ -225,4 +227,3 @@ time t. A small pinwheel placed in the fluid in position
 x at time t with its axis of rotation oriented parallel
 to ω(x, t) would be turned by the fluid at an angular           We hope to use weak solutions, by carrying out the
 velocity |ω(x, t)|.                                          following plan.
-

@@ -58,4 +58,3 @@ series a large class of “curves,” including transcenden-      and inverse (i
 tal curves, which could now be given an “analytical”          to calculate the tangent to and curvature of any known
 representation to which the rules of algebra could be         curve, and perform integrations of many classes of
 applied. Termwise application of the relation (which          (what we now call) ordinary differential equations. Such
-

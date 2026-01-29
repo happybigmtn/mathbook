@@ -56,4 +56,3 @@ In 1906, he wrote the article on capillarity for the       of a complex variable
 authoritative Encyclopedia of the Mathematical Sciences    continuation of a Taylor series; and in his thesis of
 (edited by klein [VI.57] and others). In Göttingen,        1892 he investigated how the properties of the singu-
 Hilbert and Minkowski gave joint seminars in which         larities of a series could be deduced from those of its
-

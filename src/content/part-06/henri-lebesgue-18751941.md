@@ -61,4 +61,3 @@ method with paying off a debt:                                        leled, alt
   give them to the creditor in the order I find them until            and functional analysis (e.g., the Lp spaces of riesz
   I have reached the total sum. This is the Riemann inte-            [VI.74](/part-06/frigyes-frdric-riesz-18801956) (1909)). Generalizations to functions defined on
   gral. But I can proceed differently. After I have taken             n-dimensional space, proposed by Lebesgue himself
-

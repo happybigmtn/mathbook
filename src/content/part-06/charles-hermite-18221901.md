@@ -37,7 +37,7 @@ tion in Paris and initiated a correspondence with Jacobi
 on elliptic functions and number theory that launched               One of the dominant mathematicians of the second
 Hermite’s career.                                                   half of the nineteenth century, Kronecker is best known
    Hermite nonetheless struggled to find a position                  today for his constructivist views and his contributions
-commensurate with his abilities, and for almost a                   to number theory. After finishing his Ph.D. under the
+commensurate with his abilities, and for almost a                   to number theory. After finishing his Ph. D. under the
 decade survived on teaching assistant and examiner                  supervision of dirichlet [VI.36] in 1845, Kronecker
 jobs around Paris. Hermite’s work turned to number                  left Berlin and mathematics in order to manage a fam-
 theory, in particular the arithmetic of quadratic forms,            ily estate and to wind up his father-in-law’s banking
@@ -59,4 +59,3 @@ widespread international recognition.                               Kronecker. A
 ence in Paris in 1869, Hermite became an influential                 teaching activities as well as the frequency of his pub-
 mentor for a generation of mathematicians, his best-                lications. This last active period was cut short when he
 known protégés including J. Tannery, poincaré [VI.61](/part-06/jules-henri-poincar-18541912),              died, shortly after the death of his wife.
-

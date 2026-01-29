@@ -54,4 +54,3 @@ and the set of all real numbers? The continuum hypoth-               In any bran
 esis (or CH) is the assertion that this is indeed true.           slightest flavor of analysis, inequalities will be of
 The notions of countability and uncountability were               great importance: as well as analysis itself, this in-
 invented by cantor [VI.54](/part-06/georg-cantor-18451918), who was also the first to              cludes probability, and parts of combinatorics, number
-

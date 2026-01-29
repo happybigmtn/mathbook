@@ -52,7 +52,7 @@ shev and legendre polynomials [III.85](/part-03/special-functions), and show-   
                                                                                       p  p
 ing that both of them are natural concepts. The Cheby-
 shev polynomials are those polynomials in x that are        It can also be written using matrices and inner products
-also spherical harmonics of dimension 2: that is, that      as ω0 (v, v ) = v · Jv, where J is the 2 \times 2 matrix
+also spherical harmonics of dimension 2: that is, that      as ω0 (v, v ) = v · Jv, where J is the 2 . imes 2 matrix
 are equal on S 1 to homogeneous harmonic polynomials                                         
                                                                                          0  1
 in two variables. For instance, because x 2 + y 2 = 1 for                         J=            .
@@ -69,9 +69,9 @@ area measurements like this, as well as transforma-               dard form ω0 
 tions that preserve these measurements, but it applies            ables. (This is a special case of Darboux’s theorem.)
 to general spaces of dimension 2 n rather than just to             Thus (R2 n , ω0 ) is essentially the “only” linear symplec-
 the plane.                                                        tic geometry in 2 n dimensions. There are no symplectic
-   If we split R2 n up as Rn \times Rn , then we can write a vec-       forms in odd-dimensional spaces.
+   If we split R2 n up as Rn . imes Rn , then we can write a vec-       forms in odd-dimensional spaces.
 tor v in R2 n as v = (q, p), where q and p each belong to
-Rn . The standard symplectic form ω0 : R2 n \times R2 n → R               2    Symplectic Diffeomorphisms of (R2 n , ω0 )
+Rn . The standard symplectic form ω0 : R2 n . imes R2 n → R               2    Symplectic Diffeomorphisms of (R2 n , ω0 )
 is defined by the formula
                                                                   In Euclidean geometry, all rigid motions are automat-
                ω0 (v, v ) = p · q − q · p ,                       ically linear (or affine) transformations. However, in
@@ -83,13 +83,13 @@ matrices, we can write                                            geometry.
                                                                      Let U ⊂ R2 n be an open set. Recall that a map φ :
                    ω0 (v, v ) = v · Jv,                     (1)
                                                                   U → R2 n is called smooth if it has continuous partial
-where J is the 2 n \times 2 n matrix                                     derivatives of all orders. A diffeomorphism is a smooth
+where J is the 2 n . imes 2 n matrix                                     derivatives of all orders. A diffeomorphism is a smooth
                                
                           0   I                                   map with smooth inverse.
                     J=                                      (2)      A smooth nonlinear map φ : U → R2 n is said to
                           −I 0
                                                                   be symplectic if, for every x ∈ U, the Jacobian matrix
-and I is the n \times n identity matrix.
+and I is the n . imes n identity matrix.
                                                                   φ (x) of first derivatives of φ is a symplectic linear
    A linear map A : R2 n → R2 n that preserves the prod-
                                                                   transformation. Informally, a symplectic map is one
@@ -97,7 +97,7 @@ uct ω0 of any two vectors (that is, ω0 (Av, Av ) =
                                                                   that behaves like a symplectic linear transformation
 ω0 (v, v ) for all v, v ∈ R2 n ) is called a symplectic
                                                                   at infinitesimally small scales. Since symplectic linear
-linear transformation; equivalently, a 2 n \times 2 n matrix
+linear transformation; equivalently, a 2 n . imes 2 n matrix
                                                                   transformations have determinant 1, we can conclude
 A is symplectic if and only if AT JA = J, where AT
                                                                   using several-variable calculus that a symplectic map
@@ -254,4 +254,3 @@ vanishes, so ω is a closed form. Indeed, one can define          ume 60. New Yo
 a symplectic manifold more abstractly (without refer-         Mc Duff, D., and D. Salamon. 1998. Introduction to Symplec-
 ence to charts) as a smooth manifold equipped with a            tic Topology, 2 nd edn. Oxford Mathematical Monographs.
 closed, antisymmetric nondegenerate 2-form ω; a clas-           Oxford: Clarendon Press/Oxford University Press.
-

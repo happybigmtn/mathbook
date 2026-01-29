@@ -57,4 +57,3 @@ Algebra
                                                                  latter, he proved, among other results, Sylvester’s law
 As a Jew, Sylvester could neither take the degree he             of inertia: if Q(x1 , . . . , xn ) is a real quadratic form
 earned at St John’s College, Cambridge, in 1837 nor              [III.73](/part-03/quadratic-forms) of rank r , then there exists a (real) nonsingular
-

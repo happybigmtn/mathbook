@@ -15,7 +15,7 @@ indeed it was a stumbling block for many early workers       of interest. The no
 example: in the ring Z[ −3], which consists of all com-      porate irrationalities and complex numbers, the for-
                      √
 plex numbers a + b −3, where a and b are integers,           mer arising from problems in geometry and the lat-
-the number 4 may be factorized as 2 \times 2 and also as          ter needed in order to describe solutions to arbitrary
+the number 4 may be factorized as 2 . imes 2 and also as          ter needed in order to describe solutions to arbitrary
       √(1 + −3) × (1 − −3).                                         algebraic equations. In a similar way, algebraic geom-
                                                              etry, which was once understood as the study of alge-
                      3   Modules                             braic varieties, or solution sets of algebraic equations
@@ -62,4 +62,3 @@ is the polynomial x 2 + 1, then P v = α2 v + v.) Applying             Terence T
 general structural results about modules to this exam-
 ple, one obtains a proof of the jordan normal form           In mathematical physics, the Schrödinger equation
 theorem [III.43](/part-03/jordan-normal-form).                                            (and the closely related Heisenberg equation) are the
-

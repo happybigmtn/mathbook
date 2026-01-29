@@ -59,4 +59,3 @@ series were already known but had a low status. Fourier
 their coefficients and some conditions for their conver-
 gence but especially their represent ability, namely, how    Gauss’s prodigious mathematical abilities brought him
 a periodic series could represent a general function. For   to the attention of the duke of Brunswick when he was
-

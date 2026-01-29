@@ -51,4 +51,3 @@ in the particular case of Pappus’s problem in four lines,          of line seg
 the equation was quadratic, then for any fixed value of             therefore anachronistic.)
 y the x-coordinate was a root of a quadratic equation.               Descartes supposed (too optimistically) that his pro-
 Earlier in the book Descartes had shown how such a                 cedures could be extended to polynomial equations
-

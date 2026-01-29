@@ -17,8 +17,8 @@ to be shared by the third).                                   in transcendence t
    More precisely, one defines the radical of a positive       about modular forms [III.59](/part-03/modular-forms) that implies Fermat’s
 integer n to be the product of all primes that divide         last theorem.
 n, with each distinct prime included just once. For             The ABC conjecture is discussed further in compu-
-instance, 3960 = 23 \times 32 \times 5 \times 11, so its radical is          tational number theory [IV.3](/part-04/computational-number-theory).
-2 \times 3 \times 5 \times 11 = 330. Let us write rad(n) for the radical
+instance, 3960 = 23 . imes 32 . imes 5 . imes 11, so its radical is          tational number theory [IV.3](/part-04/computational-number-theory).
+2 . imes 3 . imes 5 . imes 11 = 330. Let us write rad(n) for the radical
 of n. The ABC conjecture asserts that for every posi-         V.2 The Atiyah–Singer Index
 tive real number  there is a constant K such that if            Theorem
 a, b, and c are coprime integers and a + b = c, then                Nigel Higson and John Roe
@@ -47,4 +47,3 @@ of consequences of a similar kind. For instance, we           dimensional set of
 could deduce that there are only finitely many solu-           theorem [I.3 §5.6](/part-01/fundamental-definitions) in complex analysis asserts that the
 tions of the equation 2 r + 3 s = x 2 , since the rad-          only bounded solutions of the second equation are the
 ical of 2 r 3 s x 2 is at most 6 x, which is considerably        constant functions.
-

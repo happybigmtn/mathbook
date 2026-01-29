@@ -124,4 +124,3 @@ behavior [IV.14 §1.5](/part-04/dynamics) in a dynamical system. Stabil-       P
 ity was also at the heart of his investigation into the    proponent of the view, known as conventionalism, that
 forms of rotating fluid masses (1885). This work, which     it is not an objective question which model of geometry
 contained the discovery of new, pear-shaped figures         best fits physical space but is rather a matter of which
-

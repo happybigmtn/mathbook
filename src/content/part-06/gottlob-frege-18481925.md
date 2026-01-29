@@ -62,7 +62,7 @@ VI.56.   Gottlob Frege                                                          
 outside the foundations of mathematics, especially in               ematicians of the time, including one of Frege’s
 the philosophy of language.                                         teachers, Alfred Clebsch, held the concept of func-
   Frege was trained at Jena and Göttingen, receiving                tion to be too vague to serve as a basic building
-a Ph.D. under Ernst Schering in 1873. His Ph.D. thesis              block.) A sharp distinction is enforced between
+a Ph. D. under Ernst Schering in 1873. His Ph. D. thesis              block.) A sharp distinction is enforced between
 addressed the spatial representation of imaginary ele-              functions and the things (called objects) that can
 ments in geometry, and his 1874 Habilitation essay at               be arguments of functions.
 Jena worked out some basic details of what we would            (vi) Quantifiers can be iterated, making possible the
@@ -114,4 +114,3 @@ ing first in Frege’s core logical writings (Begriffsschrift
       tinguished.                                              of concepts have shown that some natural consistent
  (v) “Function” is taken as an undefined primitive con-         weakenings of Frege’s system do support the derivation
       cept. (This was a contentious move. Some math-           of the mathematics Frege aimed to reconstruct.
-

@@ -121,4 +121,3 @@ the following instance of the skein relation:
 Substituting the polynomial 1 for the polynomials of                  an oriented link L, the Jones polynomial V (L) has just
 the two unknots, this shows that the HOMFLY polyno-                   one variable t (together with t −1 ). It is obtained from
 mial of the two-component unlink is z −1 (v −1 − v). A                P (L) by substituting v = t and z = t 1/2 − t −1/2 , where
-

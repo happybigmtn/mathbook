@@ -55,4 +55,3 @@ son. Even if we can now be certain that the theorem        what is so important 
 is true, we can still ask why it is true, and not every-   other polynomial—but that is a judgment with which
 body regards the answer “Because hundreds of thou-         no professional mathematician would concur. The fun-
 sands of cases were checked and they all turned out        damental theorem of algebra is one of the best pieces
-

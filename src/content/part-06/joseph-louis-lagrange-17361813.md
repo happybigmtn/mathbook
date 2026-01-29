@@ -68,4 +68,3 @@ tion known today as the Euler–Lagrange equation, the                  ers) als
 fundamental equation of the calculus of variations                    gram was further elaborated in two memoirs on the
 [III.94](/part-03/variational-methods). Suppose that we wish to find the function y =                motion of the Moon (1764, 1780), and later realized in
 y(x) that maximizes or minimizes a definite integral                   the Méchanique Analitique (1788). Here, the principle
-

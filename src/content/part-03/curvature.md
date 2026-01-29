@@ -68,7 +68,7 @@ has the property that x, T y = T ∗ x, y for every x
 and y in H. (It can be shown that there is exactly one                   Peter J. Cameron
 map with this property.) If H is finite dimensional, then
                                                                 Block designs were first used in the design of exper-
-T can be thought of as an n \times n matrix for some n, and
+T can be thought of as an n . imes n matrix for some n, and
                                                                 iments in statistics, as a method for coping with sys-
 T ∗ is then the complex conjugate of the transpose of T .
                                                                 tematic differences in the experimental material. Sup-
@@ -86,4 +86,3 @@ If you cut an orange in half, scoop out the inside, and         plots are on sev
 try to flatten one of the resulting hemispheres of peel,         plots on each farm. If we simply plant one variety on
 then you will tear it. If you try to flatten a horse’s saddle,   each farm, we lose information, because we cannot dis-
 or a soggy potato chip, then you will have the opposite         tinguish systematic differences between regions from
-

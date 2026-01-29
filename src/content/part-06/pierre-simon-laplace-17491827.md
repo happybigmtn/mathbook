@@ -56,7 +56,7 @@ clarified by cauchy [VI.29](/part-06/augustin-louis-cauchy-17891857) and Roché)
 series and proved that if a function f (x + h) has a          VI.23      Pierre-Simon Laplace
 power-series expansion in h, then this series can be          b. Beaumont-en-Auge, France, 1749; d. Paris, 1827
 written in the form                                           Celestial mechanics; probability; mathematical physics
-                      \infty
+                      . nfty
                                        hi
                             f (i) (x)      ,                  Laplace is known to later mathematicians for many
                       i=0
@@ -119,4 +119,3 @@ tion to the approach was its applicability to human           [VI.14](/part-06/i
 concerns. It was in the course of these papers, most          acceleration is self-correcting over time.
 notably “Mémoire sur les probabilités” (1780), that the         The expansion known by Laplace’s name in the
 word probability came to connote not merely the basic         theory of determinants first appears in the background
-

@@ -56,4 +56,3 @@ Geometry; complex function theory; popularization of mathematics
                                                                    Frege was a precursor of modern logic, in that many of
 Clifford went up to Trinity College Cambridge in 1863.              the hallmarks of contemporary logic appear first in his
 He graduated from there in 1867 as 2 nd Wrangler and                writing. His work has also been singularly influential
-

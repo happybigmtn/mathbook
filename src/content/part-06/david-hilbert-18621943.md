@@ -54,4 +54,3 @@ and he followed this pattern for the rest of his life.          possible to prod
 Hilbert’s career divides easily into six periods: (i) alge-     there must be such a basis. At first this result was
 bra and algebraic invariants (1885–93); (ii) algebraic          greeted with disbelief because he did not display a
 number theory (1893–98); (iii) geometry (1898–1902);            basis. Gordan said, “Das ist nicht Mathematik. Das ist
-

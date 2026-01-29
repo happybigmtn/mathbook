@@ -113,4 +113,3 @@ counterexamples. The Heine–Borel theorem asserts that              leave behin
 when X is a subset of a Euclidean space Rn , the above             one can often recover compactness by adding a few
 statements are all true when X is topologically closed             more points to the space: this process is known as com-
 and bounded, and all false otherwise.                              pactification. For instance, one can compactify the real
-

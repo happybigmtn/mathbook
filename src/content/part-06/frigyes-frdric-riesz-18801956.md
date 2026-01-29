@@ -2,7 +2,7 @@
 
 798                                                                                                      VI. Mathematicians
 
-bounded in various ways; in particular, H \infty consists         tennis (as opposed to lawn tennis); to praise people, he
+bounded in various ways; in particular, H . nfty consists         tennis (as opposed to lawn tennis); to praise people, he
 of bounded analytic functions. Hardy and Littlewood          frequently likened them to outstanding cricketers.
 deduced fundamental properties of H p from their max-          He had an exceptional gift for collaboration and
 imal theorem, which relates a function to its “radial        launching young mathematicians on their research
@@ -65,4 +65,3 @@ lectual games, like putting together cricket teams of        a finite interval I
 bores, bogus poets, Fellows of a Cambridge college, and      sented as a Stieltjes integral of F over I with respect to
 so on. He loved ball games, especially cricket, baseball,    a function of bounded variation. It was to be a fertile
 bowls (with the curved woods of his college), and real       source of applications and generalizations.
-

@@ -69,4 +69,3 @@ last theorem [V.10](/part-05/fermats-last-theorem), which Fermat only stated in 
 margins of one of his books: an + bn = c n has no non-       combinatorial coefficients that arise in probability. The
 trivial integer solutions for n > 2. The first proof of the   Traité is famous too for its explicit statement of the
 general case was given by Andrew Wiles in 1995.              principle of mathematical induction.
-

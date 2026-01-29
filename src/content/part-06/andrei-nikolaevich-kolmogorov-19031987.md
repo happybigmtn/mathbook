@@ -108,4 +108,3 @@ place with probability 1 (“almost surely,” or “a.s.”). Kol-     imal com
 mogorov generalized this result from coin tossing to            his lifelong interest in teaching, and in particular his
 repeated replication of any random experiment. One              involvement in special schools for particularly gifted
 needs the expected value (often called the mean) to             pupils.
-

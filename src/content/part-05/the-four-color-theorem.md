@@ -14,7 +14,7 @@ not be able to, as the following example shows. Let
                                                                      has a solution u such that u(x) is defined for every
 B be the set of all sequences (a1 , a2 , . . . ) such that
          2
-                                                                     real number x and tends to 0 as x tends to ±\infty. We can
+                                                                     real number x and tends to 0 as x tends to ±. nfty. We can
    n |an | ⩽ 1. This is our closed ball; it is the unit
                                                                      rewrite this equation as
 ball of the hilbert space [III.37](/part-03/bayesian-analysis) 2 . Given an infinite
@@ -29,7 +29,7 @@ continuous and that f (a) = 1 for every a. There-
 fore, if a is a fixed point, we must have a = 1, from                        u = L−1 (10 sin(u2 ) + 10 exp(−|x|)).
 which we can see that a1 = 0. From this it follows that              (It is possible to identify the operator L−1 explicitly.) If
 a2 = 0, and then that a3 = 0, and so on. In other words,             we now let X be the Banach space of continuous func-
-a = 0. But this contradicts the condition that a = 1.              tions defined on R that tend to 0 at ±\infty, with the uni-
+a = 0. But this contradicts the condition that a = 1.              tions defined on R that tend to 0 at ±. nfty, with the uni-
 Therefore, the map f has no fixed point.                              form norm, then it can be shown that the right-hand
    However, if we place extra conditions on a con-                   side of this last equation defines a continuous function
 tinuous map, then it is sometimes possible to prove                  from X to a compact convex subset of X. Therefore,
@@ -107,4 +107,3 @@ are red, yellow, green, blue, and brown, as we go clock-       above, there was 
 wise around v. As it stands, we cannot color v, but we         tions: a vertex v with one edge, two edges, three edges,
 could try to do so by adjusting the coloring of the rest       four edges, or five edges coming out of it. Nothing this
 of the graph. For instance, we could try recoloring the        simple works for the four-color problem, but Heesch’s
-

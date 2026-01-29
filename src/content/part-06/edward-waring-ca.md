@@ -56,4 +56,3 @@ provide a proof of the fundamental theorem of                Lucasian Professor 
 algebra [V.13](/part-05/the-fundamental-theorem-of-algebra).
    At the end of the 1740 s there was a crisis in New-        Waring, the leading British mathematician of the latter
 tonian science, with d’Alembert, Clairaut, and euler         half of the eighteenth century, wrote several advanced
-

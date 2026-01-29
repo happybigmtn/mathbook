@@ -14,7 +14,7 @@ sequence f1 , f2 , . . . , must be a solution to the equa-     b d : a, b ∈ Q}
 tion. Again, if we want to make sense of this, we              important to stress, may be negative) that is square-
 must know what it is for two functions to be close,            free. This last condition tells us that d has no nontriv-
 which means that the functions fn should belong to             ial square factors. It is there for convenience so that
-                                                                         \sqrt{a} normed space.                                                all the Q( d) will be distinct. (For example, Q( 12), if
+                                                                         . qrt{a} normed space.                                                all the Q( d) will be distinct. (For example, Q( 12), if
                                                                                                           √How can we show that these functions converge to a          we were to allow it, would equal Q( 3), since 12 =
                                                                  √
 limit f if we cannot already describe f ? The answer is        2 3.) Among the other important number fields are
@@ -67,4 +67,3 @@ crete. Take finitely many algebraic numbers α1 , . . . , αk     unique factori
 and consider the field K of all rational functions in           The numbers on both sides are integers in this field,
 the αi . (In other words, K consists of numbers like           and it is not possible to decompose any of them any
 α21 α3 /(α22 + 7).) Then it turns out that K is a num-         further.
-

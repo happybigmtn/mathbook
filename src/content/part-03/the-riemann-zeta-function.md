@@ -41,7 +41,7 @@ f will be analytic with respect to one coordinate system
                                                               the distribution of prime numbers. If s is a complex
 if and only if it is analytic with respect to all the other
                                                               number with real part greater than 1, then ζ(s) is
-coordinate systems defined at the point in question.                            \infty
+coordinate systems defined at the point in question.                            . nfty
                                                               defined to be n=1 n−s . The condition that Re(s) > 1
    This simple property—that if something holds in one
                                                               is needed to ensure that this series converges. How-
@@ -54,7 +54,7 @@ pose that we have two curves crossing on an (abstract)
 Riemann surface. If we transfer the two curves to plane
                                                               tion that is defined every where on the complex plane
 regions using different local coordinate systems at the
-                                                              (though it takes the value \infty at 1).
+                                                              (though it takes the value . nfty at 1).
 crossing point, and then measure the angle of intersec-
                                                                  A first clue to why this function is related to the
 tion in each case, we must get the same result (since
@@ -68,4 +68,3 @@ a well-defined concept.                                        Here, the product
 beyond analytic functions. Harmonic functions (solu-          p −s )−1 as 1+p −s +p −2 s +· · · , expanding out the prod-
 tions of laplace’s equation [I.3 §5.4](/part-01/fundamental-definitions)) are intimately        uct, and using the fundamental theorem of arith-
 connected to analytic functions, since the real part of an    metic [V.14](/part-05/the-fundamental-theorem-of-arithmetic). Deeper connections were discovered by
-

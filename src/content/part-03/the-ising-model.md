@@ -30,7 +30,7 @@ is transcendental if α ≠ 0, 1 is algebraic, and     if β is     tic models o
                                              √algebraic but not rational. In particular, 2 2 is tran-
 scendental. There is also the six-exponentials theorem,         III.43   Jordan Normal Form
 which states that if x1 , x2 are two linearly independent
-complex numbers, and if y1 , y2 , y3 are three linearly         Suppose that you are presented with an n \times n real or
+complex numbers, and if y1 , y2 , y3 are three linearly         Suppose that you are presented with an n . imes n real or
 independent complex numbers, then at least one of the           complex matrix [I.3 §4.2](/part-01/fundamental-definitions) A and would like to under-
 six numbers                                                     stand it. You might ask how it behaves as a linear map
                                                                 [I.3 §4.2](/part-01/fundamental-definitions) on Rn or Cn , or you might wish to know what
@@ -55,4 +55,3 @@ heated up, but it has since been used to model many             a linear map is 
 other phenomena.                                                basis. Of course, we may apply the same terminology
   The following is a special case of the model. Let Gn          to a matrix (since a matrix A determines a linear map
 be the set of all pairs of integers with absolute value         on Rn or Cn , by mapping x to Ax). So a matrix is also
-

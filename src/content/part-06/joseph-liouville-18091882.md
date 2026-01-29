@@ -50,8 +50,7 @@ work on spectral theory of a general class of differential
 operators.                                                       Further Reading
    In 1844 Liouville gave the first proof that there exist        Lützen, J. 1990. Joseph Liouville 1809–1882: Master of Pure
 transcendental numbers [III.41](/part-03/irrational-and-transcendental-numbers), of which a well-                  and Applied Mathematics. Studies in the History of Math-
-                     \infty
+                     . nfty
 known example is n=1 10−n! . In a similar vein, in the             ematics and Physical Sciences, volume 15. New York:
 1830 s he had already shown that there are elemen-                  Springer.
 tary functions such as et /t whose integrals are not                                                      Jesper Lützen
-

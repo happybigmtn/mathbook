@@ -14,7 +14,7 @@ constructed a function f in L1 [0, 2π ] whose Fourier          normal distribut
 series converges nowhere. Also, a theorem of Kolmo-            ilar result for random variables with any finite mean
 gorov, Seliverstov, and Plessner, which asserted that          and variance. Details may be found in probability
                    
-lim N→\infty (SN f (θ)/ log N) = 0 almost every where when            distributions [III.71 §5](/part-03/probability-distributions).
+lim N→. nfty (SN f (θ)/ log N) = 0 almost every where when            distributions [III.71 §5](/part-03/probability-distributions).
 f is in L2 [0, 2π ], withstood all attempts at improve-
 ment for over thirty years.                                    V.7 The Classification of
   It therefore came as a big surprise when Lennart Car-            Finite Simple Groups
@@ -60,4 +60,3 @@ V.6    The Central Limit Theorem                               tion was eventual
 The central limit theorem is a fundamental result in           published research articles and books written over a
 probability concerning sums of independent random              long period, the most intensive being 1955–80. It was a
 variables. Let X1 , X2 , . . . be independent and suppose      truly monumental feat of prolonged collaboration, and
-

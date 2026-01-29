@@ -134,20 +134,20 @@ we transform to so-called characteristic coordinates            the Kd V equatio
 ∂ 2 u/∂ξ∂η = 0, which clearly has the general solu-                                  ut + uux = 0.                    (2)
 tion u(ξ, η) = F (ξ) + G(η). Transforming back to
                                                                 The term uux can be rewritten as (∂/∂x)( 12 u2 ). Let us
-“laboratory coordinates” x, t, the general solution is                                  \infty
-                                                                consider the integral −\infty u(x, t) dx, which is a function
-u(x, t) = F (x − ct) + G(x + ct). If the initial shape                                                   \infty
-                                                                of t. The derivative of this function is −\infty ut dx, which
+“laboratory coordinates” x, t, the general solution is                                  . nfty
+                                                                consider the integral −. nfty u(x, t) dx, which is a function
+u(x, t) = F (x − ct) + G(x + ct). If the initial shape                                                   . nfty
+                                                                of t. The derivative of this function is −. nfty ut dx, which
 of the wave is u(x, 0) = u0 (x) and its initial velocity
                                                                 equation (2) tells us is equal to
-is ut (x, 0) = v(x, 0) = v0 (x), then an easy algebraic                                \infty
+is ut (x, 0) = v(x, 0) = v0 (x), then an easy algebraic                                . nfty
                                                                                            ∂
 computation gives the following very explicit formula:                             −           ( 12 u2 ) dx,
-                                                                                       −\infty ∂x
-  u(x, t) = 12 [u0 (x − ct) + u0 (x + ct)]                      which equals [− 12 u(x, t)2 ]\infty                    1        2
-                                                                                              −\infty . Therefore, if 2 u(x, t)
-                                           x+ct                                               \infty
-                                   1                            vanishes at infinity, then −\infty u(x, t) dx is a “constant
+                                                                                       −. nfty ∂x
+  u(x, t) = 12 [u0 (x − ct) + u0 (x + ct)]                      which equals [− 12 u(x, t)2 ]. nfty                    1        2
+                                                                                              −. nfty . Therefore, if 2 u(x, t)
+                                           x+ct                                               . nfty
+                                   1                            vanishes at infinity, then −. nfty u(x, t) dx is a “constant
                                    +        v0 (ξ) dξ,
                                    2 c x−ct                      of the motion.” We say that the inviscid Burgers equa-
 known as “d’Alembert’s solution” of the Cauchy prob-            tion is a conservation law. (The argument we have just
@@ -331,4 +331,3 @@ these phase shifts, the final result is what we might                 Lax, P. D.
                                                                        tion in Recent Mathematical Methods in Nonlinear Wave
   1. This is a complete swindle! Only knowledge of the form of the     Propagation. Lecture Notes in Mathematics, volume 1640,
 solutions allows us to make the clever choice of K.                    pp. 70–102. New York: Springer.
-

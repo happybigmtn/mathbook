@@ -4,37 +4,43 @@ III . $92$ .
 
 Trigonometric Functions
 
-we see that LF can be considered as a weighted average of holomorphic [I.3](/part-01/fundamental-definitions) (that is, complex differentiable) functions and this can be used to show that LF is holomorphic. The Laplace transform shares many of the properties of the Fourier transform and we can use these, as well as the extensive collection of results on holomorphic functions, whenever we manipulate Laplace transforms. Many of the deepest results in number theory, such as the prime number theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860), are most easily obtained by clever uses of the Laplace transform. The transforms we have discussed all belong to the same family, as is indicated by the fact that they all take convolution to multiplication. The general idea of a transform has been developed in several different directions, generally by concentrating on some aspects of the “classical transforms” and being prepared to lose others. One of the most important of these new transforms is the Gelfand transform, which gives a concrete representation of the abstract commutative Banach algebras. It is discussed in operator algebras [IV.15](/part-04/operator-algebras). Other integral transforms extend the integral definition of the Fourier transform by setting up a correspondence
+we see that LF can be considered as a weighted average of holomorphic [I.3](/part-01/fundamental-definitions) (that is, complex differentiable) functions and this can be used to show that LF is holomorphic. The Laplace transform shares many of the properties of the Fourier transform and we can use these, as well as the extensive collection of results on holomorphic functions, whenever we manipulate Laplace transforms.
+Many of the deepest results in number theory, such as the prime number theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860), are most easily obtained by clever uses of the Laplace transform. The transforms we have discussed all belong to the same family, as is indicated by the fact that they all take convolution to multiplication. The general idea of a transform has been developed in several different directions, generally by concentrating on some aspects of the “classical transforms” and being prepared to lose others.
+One of the most important of these new transforms is the Gelfand transform, which gives a concrete representation of the abstract commutative Banach algebras. It is discussed in operator algebras [IV.15](/part-04/operator-algebras). Other integral transforms extend the integral definition of the Fourier transform by setting up a correspondence
 
-\i\text{nf ty F}(s)K(\lambda - s)ds F(t) ← $\to- \i\text{nf ty}$
+$\infty F(s)K(\lambda - s)dsF(t)$ ← $\to- \infty$
 
 or, more generally,
 
-$\i\text{nf tyF}(t)$ ← $\to$
+$\infty F(t)$ ← $\to$
 
 F (s) κ (s , $\lambda$ ) ds.
 
-$- \i\text{nf ty}$
+$- \infty$
 
-Another interesting transform is the Radon or xray transform. We shall consider the three-dimensional case and talk very informally. Suppose we shine a beam of radiation through a body in direction u. Suppose also that f is a function defined on $R^{3}$ that represents how much radiation is absorbed by different parts of the body. What we can measure is the amount of radiation absorbed along any given straight line. We might present some of this information in the form of a two dimensional image, which could represent the amount absorbed by all lines in the direction u. In general, we can use f to define a new function
+Another interesting transform is the Radon or xray transform. We shall consider the three-dimensional case and talk very informally. Suppose we shine a beam of radiation through a body in direction u. Suppose also that f is a function defined on $R^{3}$ that represents how much radiation is absorbed by different parts of the body. What we can measure is the amount of radiation absorbed along any given straight line. We might present some of this information in the form of a two dimensional image, which could represent the amount absorbed by all lines in the direction u.
+In general, we can use f to define a new function
 
-$\i\text{nf ty}$
+$\infty$
 
 f (tu  +  v) dt,
 
 (Rf) (u , v)  = 
 
-$- \i\text{nf ty}$
+$- \infty$
 
 which tells us how much radiation is absorbed along the line in direction u that goes through a vector v perpendicular to u. The tomography problem deals with the recovery of f from Rf . Because the idea of a transform has been developed in so many different directions, any attempt to
 
 $307$
 
-give a general definition results in something too general to be useful. The most that we can say about the various transforms is that they present a more or less distant analogy to the classical Fourier transforms and that this analogy has been found useful by those who developed them. (See also the fourier transform [III.27](/part-03/the-fourier-transform) , spherical harmonics [III.87](/part-03/spherical-harmonics), representation theory [IV.9](/part-04/representation-theory), and wavelets and applications [VII.3](/part-07/wavelets-and-applications).) III . $92$ Trigonometric Functions Ben Green The basic trigonometric functions “sin” and “cos,” as well as the four related functions “tan,” “cot,” “sec,” and “cosec,” will probably be familiar to most readers in some form. One way to define the sine function sin : $R \to$ [− 1 , 1 ] is as follows. In almost all branches of mathematics one measures angles using radians, which are defined in terms of arclength: to say that the angle ∠ AOB in figure $1$ is $\theta$ radians is to say that the arc AB of the circle has length $\theta.$ This definition makes sense when $0 \le \theta < 2\pi$ . One then defines sin $\theta$ to be the length PB, where P is the foot of the perpendicular from B to OA. It is very important that this length be taken with the correct sign. If $0 < \theta < \pi$ then we take the positive sign, whereas if $\pi < \theta < 2\pi$ we take the negative sign. In other words, sin $\theta$ is the y-coordinate of the point B. The sine function is, at the moment, defined on the interval [0 , 2 π). To define it on all of R one simply insists that it be periodic with period $2\pi ($ that is, that it satisfies the relation sin $\theta =$ sin $(2\pin + \theta)$ for any integer n). There is one problem with our definition of sine. What do we mean by the length of the arc AB? The only really satisfactory way of understanding this is to use calculus. The equation of the unit circle is √ $y = 1 - x^{2}$ , at least if (x ,  y) lies in the upper-right quadrant. (Otherwise one must be careful about sign .) The formula for the arc-length of a curve $y = f$ (x) between $y = a$ and $y = b$ is b
+give a general definition results in something too general to be useful. The most that we can say about the various transforms is that they present a more or less distant analogy to the classical Fourier transforms and that this analogy has been found useful by those who developed them. (See also the fourier transform [III.27](/part-03/the-fourier-transform) , spherical harmonics [III.87](/part-03/spherical-harmonics), representation theory [IV.9](/part-04/representation-theory), and wavelets and applications [VII.3](/part-07/wavelets-and-applications).) III .
+$92$ Trigonometric Functions Ben Green The basic trigonometric functions “sin” and “cos,” as well as the four related functions “tan,” “cot,” “sec,” and “cosec,” will probably be familiar to most readers in some form. One way to define the sine function sin : $R \to$ [− 1 , 1 ] is as follows. In almost all branches of mathematics one measures angles using radians, which are defined in terms of arclength: to say that the angle ∠ AOB in figure $1$ is $\theta$ radians is to say that the arc AB of the circle has length $\theta.$ This definition makes sense when $0 \le \theta < 2\pi$ .
+One then defines sin $\theta$ to be the length PB, where P is the foot of the perpendicular from B to OA. It is very important that this length be taken with the correct sign. If $0 < \theta < \pi$ then we take the positive sign, whereas if $\pi < \theta < 2\pi$ we take the negative sign. In other words, sin $\theta$ is the y-coordinate of the point B. The sine function is, at the moment, defined on the interval [0 , 2 π).
+To define it on all of R one simply insists that it be periodic with period $2\pi ($ that is, that it satisfies the relation sin $\theta =$ sin $(2\pin + \theta)$ for any integer n). There is one problem with our definition of sine. What do we mean by the length of the arc AB? The only really satisfactory way of understanding this is to use calculus. The equation of the unit circle is √ $y = 1 - x^{2}$ , at least if (x ,  y) lies in the upper-right quadrant. (Otherwise one must be careful about sign .) The formula for the arc-length of a curve $y = f$ (x) between $y = a$ and $y = b$ is b
 
-1 + (dx/dy)2 dy.S = a
+1 + (dx/dy)2 dy. S = a
 
-(This may be thought of as a definition, though the motivation   for the definition comes #  from pictures .) For the circle, $1 + (dx/dy)^{2} = 11 - y^{2}$ . Since the arclength of the circle between the points P  =  (x , sin $\theta$ )
+(This may be thought of as a definition, though the motivation   for the definition comes #  from pictures .) For the circle, 1 + (dx/dy)2 = 11 - y2 . Since the arclength of the circle between the points P  =  (x , sin $\theta$ )
 
 308                                                                                                    III. Mathematical Concepts
 
@@ -102,4 +108,3 @@ sin term by term (naturally, this is an operation that                   here), 
 must be properly justified, but it can be).                               these formulas that make the trigonometric functions
   If one differentiates again, one gets the formula                       an indispensable tool in classical Euclidean geometry.
 (d2 /dz2 ) sin z = − sin z. In fact, it is possible to define             There are many further formulas in that setting. To
-

@@ -55,4 +55,3 @@ tion, which is quite different from the logical step-by-                 a proof
 step method found elsewhere. Again, book IX contains                    of that of the cylinder circumscribing it. Archimedes’
 propositions on odd and even numbers, which are often                   interest in establishing the volume or area of curved fig-
 seen as vestiges of Pythagorean mathematics, to be                      ures is also attested by his discovery of the area of the
-

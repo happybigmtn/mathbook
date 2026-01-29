@@ -37,7 +37,7 @@ tion in Paris and initiated a correspondence with Jacobi
 on elliptic functions and number theory that launched               One of the dominant mathematicians of the second
 Hermite’s career.                                                   half of the nineteenth century, Kronecker is best known
    Hermite nonetheless struggled to find a position                  today for his constructivist views and his contributions
-commensurate with his abilities, and for almost a                   to number theory. After finishing his Ph.D. under the
+commensurate with his abilities, and for almost a                   to number theory. After finishing his Ph. D. under the
 decade survived on teaching assistant and examiner                  supervision of dirichlet [VI.36] in 1845, Kronecker
 jobs around Paris. Hermite’s work turned to number                  left Berlin and mathematics in order to manage a fam-
 theory, in particular the arithmetic of quadratic forms,            ily estate and to wind up his father-in-law’s banking
@@ -175,4 +175,3 @@ algebraic functions (the theories of Abelian functions       that his mapping th
 and theta functions of several variables). Investigations    “would defy any attempt at proof, even with modern
 of the Riemann zeta function led not only to the dis-        methods,” and it is true that Riemann’s presentation is
 covery of new properties of classes of complex func-         more visionary than precise. But his vision described
-

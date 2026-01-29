@@ -55,4 +55,3 @@ then entered the Collège Louis-le-Grand in Paris, where             he submitte
 he stayed for six years. He had, and gave his teach-                in January 1831. It is this third submission (which was
 ers, a difficult time there, but excelled in mathematics,             read by the Academy referees, Poisson and Lacroix, and
 in which he read advanced work of lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813),                 rejected on 4 July 1831) that survives as the manuscript
-

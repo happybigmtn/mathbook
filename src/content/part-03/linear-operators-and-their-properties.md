@@ -28,17 +28,17 @@ A linear map [I.3 §4.2](/part-01/fundamental-definitions) between two vector sp
 the condition T (λ1 v1 + λ2 v2 ) = λ1 T v1 + λ2 T v2 . Two        nel is the fourier transform [III.27](/part-03/the-fourier-transform) F , which takes a
 phrases that are used almost interchangeably with “lin-           function in L2 (R) to another such function. It is defined
 ear map” are “linear transformation” and “linear opera-           by the formula
-                                                                                              \infty
+                                                                                              . nfty
 tor.” The former is often used when one wishes to draw
                                                                                (F f )(α) =        f (x)e−iαx dx.
-attention to the effect of a linear map on some other                                         −\infty
+attention to the effect of a linear map on some other                                         −. nfty
 object; for example, one might well choose to use the             The kernel in this case is the function K(α, x) = e−iαx .
 word “transformation” to describe geometrical opera-
                                                                      (iv) If f is a differentiable function defined on R, say,
 tions such as reflections or rotations. As for “operator,”
                                                                   and we write Df for its derivative, then we can think
 it tends to be the word of choice when the linear map is
-                                                                  of D as a linear map, since D(\lambda f + \mu g) = \lambda Df + \mu Dg.
+                                                                  of D as a linear map, since D(. ambda f + \mu g) = . ambda Df + \mu Dg.
 between infinite-dimensional spaces, especially when it
                                                                   In order to regard D as an operator, we need to require
 is just one of an ensemble of linear maps that form an
@@ -89,7 +89,7 @@ bra is particularly important when X is a hilbert space
                                                                ties of the matrix A. The transpose of A is the matrix
 ture, which is discussed in operator algebras [IV.15](/part-04/operator-algebras).
                                                                AT defined by (AT )ij = Aji , and the conjugate trans-
-                                                               pose is the matrix A∗ defined by (A∗ )ij = Aji . An n \times n
+                                                               pose is the matrix A∗ defined by (A∗ )ij = Aji . An n . imes n
              3 Properties of Operators
                                                                matrix A is unitary if AA∗ is the identity, orthogonal if
              Defined on a Hilbert Space
@@ -136,4 +136,3 @@ of examples of Hermitian maps is multipliers on the            subspace T X of X
 space L2 [0, 1], where the function one multiplies by is       left fixed by T (since T (T x) = T 2 x = T x). A projection
 bounded and real-valued. As we shall see in a moment,          is orthogonal if T x is always orthogonal to x −T x. This
 there is a sense in which these are the only examples.         tells us that T is a projection on to some subspace Y of
-

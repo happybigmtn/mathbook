@@ -54,4 +54,3 @@ founded Institute of Advanced Studies at Princeton                (and the key i
 (1933–51).                                                        metric) in 1918 for a generalization of riemannian
    Weyl made contributions to real and complex analy-             geometry [I.3 §6.10](/part-01/fundamental-definitions) and a geometrically unified field
 sis, geometry and topology, lie groups [III.48 §1](/part-03/lie-theory), num-          theory of gravity and ele ct ro magnetism.
-

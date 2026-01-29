@@ -77,7 +77,7 @@ for the roots of a general quintic polynomial.                  rational number.
                                                                                                                    √
    There was a good reason for this. There is no                morphisms of E. For example, when E = Q( 2), any
 such formula. Nor is there a formula for polyno-                automorphism φ satisfies
-mials of degree greater than 5. This fact was first                                 √\sqrt{2} = φ(2) = φ( 2 2) = φ( 2)φ( 2) = φ( 2)2 ,
+mials of degree greater than 5. This fact was first                                 √. qrt{2} = φ(2) = φ( 2 2) = φ( 2)φ( 2) = φ( 2)2 ,
 established in the early nineteenth century by abel                                √[VI.33](/part-06/niels-henrik-abel-18021829) (who died aged twenty-six), after which galois          and therefore φ( 2) = 2 or − 2. In the first case
                                                                           √[VI.41](/part-06/variste-galois-18111832) (who died aged twenty-one) built an entirely            φ(a + b 2) = a + b 2 for all a, b ∈ Q, while in
                                                                                           √new theory of equations that not only explained the             the second φ(a + b 2) = a − b 2. Both of these
@@ -103,7 +103,7 @@ division. For example, the rationals Q form a field, as          pletely determi
 closed under addition, subtraction, and multiplication,         possibilities for the automorphism φ. It turns out that
                                                         √
 and is also closed under division since 1/(a + b 2) =           each of these is indeed an automorphism, and therefore
-                      \sqrt{a}/(a2 − 2 b2 ) − b 2/(a2 − 2 b2 )). A polynomial f (x) of         Gal(x 3 − 2) is a group of order 6. In fact, this group
+                      . qrt{a}/(a2 − 2 b2 ) − b 2/(a2 − 2 b2 )). A polynomial f (x) of         Gal(x 3 − 2) is a group of order 6. In fact, this group
 degree n with rational coefficients has n complex roots           is isomorphic to the symmetric group [III.68](/part-03/permutation-groups) S3 , as
 by the fundamental theorem of algebra [V.13](/part-05/the-fundamental-theorem-of-algebra)—                   can be seen by considering each automorphism as a
 call them α1 , . . . , αn . The splitting field of f is defined   permutation of the three roots of f (x).
@@ -111,4 +111,3 @@ to be the smallest field containing Q and all the αi ,              Now that th
 and is written as Q(α1 , . . . , αn ). For example, the poly-   to state some of Galois’s fundamental results that lead
                                  √
 nomial x 2 − 2 has roots ± 2, so its splitting field is          to the insolubility of the quintic. Each subgroup H of
-

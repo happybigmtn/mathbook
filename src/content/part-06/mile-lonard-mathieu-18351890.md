@@ -27,7 +27,7 @@ Technische Hochschule in Brunswick, Germany (his and         led him to crystall
 gauss’s [VI.26](/part-06/carl-friedrich-gauss-17771855) home town), having spent the years           [III.67](/part-03/the-peano-axioms). In this work, as in his more advanced research,
 1858–62 at the Polytechnikum in Zürich (which later          sets, structures, and mappings form the essential build-
 became known as ETH). He obtained his mathematical           ing blocks, the very foundations of pure mathematics.
-education at Göttingen, being Gauss’s last Ph.D. stu-        In the light of (now superseded) conceptions of logic,
+education at Göttingen, being Gauss’s last Ph. D. stu-        In the light of (now superseded) conceptions of logic,
 dent and subsequently a pupil of dirichlet [VI.36]           this led Dedekind to the view that “arithmetic (algebra,
 and riemann [VI.49]. Dedekind was a retiring man             analysis) is only a part of logic.” From a modern view-
 with, as klein [VI.57] said, a “contemplative nature;”       point, his contributions show that set theory [IV.22](/part-04/set-theory)
@@ -59,4 +59,3 @@ ule (see [I.3 §2.2](/part-01/fundamental-definitions) and [III.81](/part-03/rin
 ticular context of the complex numbers. It was also
 in the context of algebra (Galois theory) and num-           Mathieu is known for the functions that take his name,
 ber theory that Dedekind started systematic work with        which he discovered while solving the two-dimensional
-

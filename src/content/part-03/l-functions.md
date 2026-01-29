@@ -40,7 +40,7 @@ III.47 L-Functions                                              that the associa
 Suppose we are given a sequence of numbers such as
                  √                                              expressed as an infinite product over primes ζ(s) =
 
-             π , 2, 6.023 \times 1023 , . . . .                                 −s −1
+             π , 2, 6.023 . imes 1023 , . . . .                                 −s −1
                                                                    p (1 − p ) . The product is usually referred to as
                                                                 an Euler product, and if a Dirichlet series is to deserve
 How can we package up this sequence into one object
@@ -75,4 +75,3 @@ an = 1 for all n, then the resulting function L(s) is           tion of the zeta
 the famous riemann zeta function [IV.2 §3](/part-04/number-theory) ζ(s) =               infinite sum 1 + x + x 2 + x 3 + · · · converges only when
 1−s + 2−s + 3−s + · · · , which converges when s > 1 and        |x| < 1 but, when rewritten as 1/(1 − x), has a natural
 was shown by Euler to satisfy the following identities,         interpretation for any complex number x other than 1.
-

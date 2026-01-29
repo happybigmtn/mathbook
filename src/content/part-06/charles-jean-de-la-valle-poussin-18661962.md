@@ -55,4 +55,3 @@ odic functions by trigonometric polynomials. His other      and Greifswald (1913
 significant results in this field include a lower bound       work in set theory and general topology, his magnum
 for the error in the best approximation of a contin-        opus being Grundzüge der Mengenlehre (“Basic fea-
 uous function by a polynomial (1910), and a conver-         tures of set theory”). It was published in 1914 and
-

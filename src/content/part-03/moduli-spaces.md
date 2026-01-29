@@ -12,7 +12,7 @@ desirable properties that F should have in order to give      For example, in se
 a useful theory. Nowadays, modular forms are required         two two-dimensional lattices [III.59](/part-03/modular-forms) as equivalent if
 to obey the additional properties that F is holomor-          one is a rotation and enlargement of the other. Equiv-
 phic [I.3 §5.6](/part-01/fundamental-definitions) and that F (x + iy) does not grow too         alence relations such as this one often lead to param-
-quickly as y goes to +\infty; these assumptions imply that         eter sets that themselves have an interesting geomet-
+quickly as y goes to +. nfty; these assumptions imply that         eter sets that themselves have an interesting geomet-
 the vector space of weight k modular forms is finite           rical structure. Such sets are called moduli spaces. For
 dimensional. The Eisenstein series above do have these        details, see [IV.8](/part-04/moduli-spaces) and also [V.23](/part-05/mostows-strong-rigidity-theorem).
 additional properties, and are the first basic examples
@@ -52,4 +52,3 @@ often regarded as equivalent if each can be continu-
 ously deformed into the other. Each equivalence class         It is often useful to approximate a function f by a
 is then fully described by the genus [III.33](/part-03/genus), or “number     polynomial P . For example, if you are designing a
 of holes,” in the surface.                                    pocket calculator and want it to calculate logarithms
-

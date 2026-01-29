@@ -8,7 +8,7 @@ IV.18 Enumerative and Algebraic                                porate infinitely
                                                                the sets in an infinite family.
          Doron Zeilberger
                                                                   To be precise, given an infinite sequence of sets
-                                                               {An }\inftyn=0 , where each set An consists of objects sat-
+                                                               {An }. nftyn=0 , where each set An consists of objects sat-
                     1   Introduction
                                                                isfying some combinatorial specifications that depend
 Enumeration, otherwise known as counting, is the old-          on the parameter n, answer the question: How many
@@ -75,13 +75,13 @@ IV.18.    Enumerative and Algebraic Combinatorics                               
   can be reached from every other by a path), then an             came along: computer science. Here one is interested in
   is n! times the coefficient of x n in the power-series            the computational complexity [IV.20](/part-04/computational-complexity) of algorithms:
   expansion of                                                    that is, in the number of steps it takes to execute them.
-                           \infty
+                           . nfty
                             2 k(k−1)/2
                     log                  xk .                                             2     Methods
                            k=0
                                  k!
 
-(viii) If An is the set of Latin squares of size n (n \times n         The following tools are indispensable to the enumera-
+(viii) If An is the set of Latin squares of size n (n . imes n         The following tools are indispensable to the enumera-
   matrices each of whose rows and columns is a per-               tive combinatorial i st.
   mutation of {1, . . . , n}), then not even a good approx-
   imation for an is known.                                        2.1   Decomposition
@@ -92,7 +92,7 @@ IV.18.    Enumerative and Algebraic Combinatorics                               
 Definition. An answer is a polynomial-time algorithm               equals the sum of their sizes.
 (in n) for computing an .
 
-   Wilf arrived at this definition after he refereed a                                 |A \times B| = |A| · |B|.
+   Wilf arrived at this definition after he refereed a                                 |A . imes B| = |A| · |B|.
 paper proposing a “formula” for the answer to ques-               In words: the size of the Cartesian product of two sets
 tion (viii), and realized that its “computational com-            (that is, the set of all pairs (a, b), where a ∈ A and
 plexity” exceeds that of the caveman’s formula of direct          b ∈ B) equals the product of their sizes.
@@ -134,7 +134,9 @@ $2$ . $3$
 
 Recursion
 
-Suppose that A n can be decomposed in such a way that it is a combination of fundamental operations applied to the sets $A^{n} - {}^{1}$ , $A^{n} - {}^{2}$ , . . . , $A^{0}$ . Then $a^{n}$ satisfies a recurrence relation of the form $a^{n} = P(a^{n} - {}^{1}$ , $a^{n} - {}^{2}$ , . . . , $a^{0})$ . For example, let A n be the set of example (iv). If a sequence in A n starts with $a_{1}$ , then the rest of the sequence must add up to $n - 1$ , and if it starts with $a2$ , then the rest must add up to $n - 2$ . Since when $n \ge 2$ exactly one of these possibilities occurs and both are possible, we can decompose $A^{n}$ into $1A^{n} - {}^{1}$ and $2A^{n} - {}^{2}$ , where $1A^{n} - {}^{1}$ is shorthand for the set of all sequences that begin with $a_{1}$ and continue with a sequence in $A^{n} - {}^{1}$ , and $2A^{n} - {}^{2}$ is defined similarly. Since the sizes of $1A^{n} - {}^{1}$ and $2A^{n} - {}^{2}$ are clearly $a^{n} - {}^{1}$ and $a^{n} - {}^{2}$ , it follows that $a^{n} = a^{n} - {}^{1} + a^{n} - {}^{2}$ , which yields answer (iii). If A n is the set of legal bracketings with n pairs (example (iii)), then a typical legal bracketing can be written recursively as [L 1]$L^{2}$ , where $L^{1}$ and $L^{2}$ are smaller (possibly empty) legal bracketings. For example, if the bracketing is [[] []] [[]] [[] [[]]] then $L^{1} =$ [] [] and $L^{2} =$ [[]] [[] [[]]]. If $L^{1}$ has $k$ pairs, then $L^{2}$ has $n - 1 - k$ pairs. It follows that $A^{n}$ can be " $n - {}^{1}$ identified with the union $k = {}^{0}A^{k} \times A^{n} - {}^{1} - k$ , and, taking
+Suppose that A n can be decomposed in such a way that it is a combination of fundamental operations applied to the sets $A^{n} - {}^{1}$ , $A^{n} - {}^{2}$ , . . . , $A^{0}$ . Then $a^{n}$ satisfies a recurrence relation of the form $a^{n} = P(a^{n} - {}^{1}$ , $a^{n} - {}^{2}$ , . . . , $a^{0})$ . For example, let A n be the set of example (iv). If a sequence in A n starts with $a_{1}$ , then the rest of the sequence must add up to $n - 1$ , and if it starts with $a2$ , then the rest must add up to $n - 2$ .
+Since when $n \ge 2$ exactly one of these possibilities occurs and both are possible, we can decompose $A^{n}$ into $1A^{n} - {}^{1}$ and $2A^{n} - {}^{2}$ , where $1A^{n} - {}^{1}$ is shorthand for the set of all sequences that begin with $a_{1}$ and continue with a sequence in $A^{n} - {}^{1}$ , and $2A^{n} - {}^{2}$ is defined similarly. Since the sizes of $1A^{n} - {}^{1}$ and $2A^{n} - {}^{2}$ are clearly $a^{n} - {}^{1}$ and $a^{n} - {}^{2}$ , it follows that $a^{n} = a^{n} - {}^{1} + a^{n} - {}^{2}$ , which yields answer (iii).
+If A n is the set of legal bracketings with n pairs (example (iii)), then a typical legal bracketing can be written recursively as [L 1]$L^{2}$ , where $L^{1}$ and $L^{2}$ are smaller (possibly empty) legal bracketings. For example, if the bracketing is [[] []] [[]] [[] [[]]] then $L^{1} =$ [] [] and $L^{2} =$ [[]] [[] [[]]]. If $L^{1}$ has $k$ pairs, then $L^{2}$ has $n - 1 - k$ pairs. It follows that $A^{n}$ can be " $n - {}^{1}$ identified with the union $k = {}^{0}A^{k} \times A^{n} - {}^{1} - k$ , and, taking
 
 $n - {}^{1}$
 
@@ -144,7 +146,8 @@ $2$ . $4$
 
 Generatingfunct ionology
 
-According to Wilf, who coined this neologism by making it the title of his classic book (a free download from his Web site, even though it is still in print !) : A generating function is a clothesline on which we hang up a sequence of numbers for display. The method of generating functions is one of the most useful tools of the trade of enumeration. The generating function of a sequence, sometimes called its ztransform, is a discrete analogue of the laplace transform [III.91](/part-03/transforms), and indeed goes back to laplace [VI.23](/part-06/pierre-simon-laplace-17491827) himself. If the sequence is (a n) $\i\text{nf ty}$ , then its generat$n = 0\i\text{nf ty}$
+According to Wilf, who coined this neologism by making it the title of his classic book (a free download from his Web site, even though it is still in print !) : A generating function is a clothesline on which we hang up a sequence of numbers for display. The method of generating functions is one of the most useful tools of the trade of enumeration. The generating function of a sequence, sometimes called its ztransform, is a discrete analogue of the laplace transform [III.91](/part-03/transforms), and indeed goes back to laplace [VI.23](/part-06/pierre-simon-laplace-17491827) himself.
+If the sequence is (a n) $\infty$ , then its generat$n = 0\infty$
 
 ing function f (x) is defined to be n $= {}^{0}$ a n x n . In other words, the terms of the sequence are regarded as the coefficients of a power series in x.
 
@@ -152,11 +155,13 @@ IV. Branches of Mathematics
 
 Generating functions are so useful because information about the sequence (a n) translates to information about f (x) that is often easier to process, and after some manipulations one often gets additional information about f (x) that can be translated back into information about the sequence. For example, if $a^{0} = a^{1} = 1$ and $a^{n} = a^{n} - {}^{1} + a^{n} - {}^{2}$ when $n \ge 2$ , then we can do the following manipulations on f (x) :
 
-\i\text{nf ty}\i\text{nf ty}$a$ nxn = a0 + a1 x +
+$\infty\infty$
+
+a $nx^{n} = a^{0} + a^{1}x +$
 
 a n x n
 
- f(x) =n = 0 n = 2\infty(an - {}1 + an - {}2)xn= {}1 + {}x +n = 2\infty\inftyan - {}1 xn +an - 2 xn= {}1 + {}x +n = 2 n = 2\infty\inftyan - {}1 xn - {}1 + x2 an - 2 xn - 2= 1 + x + xn = 2 n = 2= 1 + x + x(f(x) - 1) + x2 f(x)= 1 + (x + x2)f(x).
+ f(x) =n = 0 n = 2. nfty(an - {}1 + an - {}2)xn= {}1 + {}x +n = 2. nfty. nftyan - {}1 xn +an - 2 xn= {}1 + {}x +n = 2 n = 2. nfty. nftyan - {}1 xn - {}1 + x2 an - 2 xn - 2= 1 + x + xn = 2 n = 2= 1 + x + x(f(x) - 1) + x2 f(x)= 1 + (x + x2)f(x).
 
 It follows that
 
@@ -170,26 +175,27 @@ Weight Enumeration
 
 According to the modern approach, pioneered by Pólya, Tutte, and Schützenberger, generating functions are neither “generating,” nor are they functions. Rather, they are formal power series that are weight enumerators of combinatorial sets. (Usually , but not always, these sets are infinite: for a finite set the corresponding “power series” has only finitely many nonzero terms and is therefore a polynomial .)
 
-$\i\text{nf ty}$
+$\infty$
 
-A power series n $= {}^{0}$ a n x n is called formal when one sheds its analytical connotation as a Taylor series of a function, and thereby obviates the need to worry about convergence. For example, the sum n $= {}^{0}$ n! n! x n is perfectly legal as a formal power series even though it converges only when $x = 0$ . As for weight enumerators, consider the following situation. Suppose that we want to study the age distribution of a finite population. One way of doing this is to ask $121$ questions. For each $i$ between $0$ and $120$ , we ask those whose age is i to raise their hand. Then we count each of these age-groups one by one, compiling
+A power series n $= {}^{0}$ a n x n is called formal when one sheds its analytical connotation as a Taylor series of a function, and thereby obviates the need to worry about convergence. For example, the sum n $= {}^{0}$ n! n! x n is perfectly legal as a formal power series even though it converges only when $x = 0$ . As for weight enumerators, consider the following situation. Suppose that we want to study the age distribution of a finite population. One way of doing this is to ask $121$ questions. For each $i$ between $0$ and $120$ , we ask those whose age is i to raise their hand.
+Then we count each of these age-groups one by one, compiling
 
 IV.18.   Enumerative and Algebraic Combinatorics                                                                           553
 
-a table of ai (0 ⩽ i ⩽ 120), and finally computing the          attribute γ on A \times B by letting γ(a, b) equal α(a)+β(b),
+a table of ai (0 ⩽ i ⩽ 120), and finally computing the          attribute γ on A . imes B by letting γ(a, b) equal α(a)+β(b),
 generating function                                            then
                                                                                       
                                
                                120
-                                                                        |A \times B|x =          x γ(a, b)
+                                                                        |A . imes B|x =          x γ(a, b)
                      f (x) =         ai x i .
-                                                                                       (a, b)∈A \times B
+                                                                                       (a, b)∈A . imes B
                                i=0                                                        
 But if the size of the population is much less than 120, it                        =               x α(a)+β(b)
-                                                                                       (a, b)∈A \times B
+                                                                                       (a, b)∈A . imes B
 is much more efficient, because fewer questions would                                       
 be needed, to ask every person their age and then to                               =               x α(a) · x β(b)
-declare the weight of a person of age i to be x i . Then                               (a, b)∈A \times B
+declare the weight of a person of age i to be x i . Then                               (a, b)∈A . imes B
                                                                                         
 the generating function is the sum of these weights.                               =             x α(a) · x β(b)
 That is,                  
@@ -217,7 +223,7 @@ A with respect to α is defined by the formula                   where φ is the
 We shall also use the notation |A|x for f (x). Obviously,
                                                                                |A|x = 1 + x|A|x + x 2 |A|x ,
 this equals
-                        \infty
+                        . nfty
                                                               which, in this simple case, can be solved explicitly, to
                            an x n ,
                                                                yield, once again
@@ -239,7 +245,7 @@ For example,                                                   decomposes natura
                  |A ∪ B|x = |A|x + |B|x                                            L = {φ} ∪ ([L] × L),
 (if A ∩ B = ∅) and
                                                                where φ denotes the empty word and [L] × L denotes
-                 |A \times B|x = |A|x · |B|x .                      the set of all words of the form [L1 ]L2 with L1 and
+                 |A . imes B|x = |A|x · |B|x .                      the set of all words of the form [L1 ]L2 with L1 and
 Let us quickly see why the second of these is true. If         L2 in L. This leads to the nonlinear (in fact, quadratic)
 the members of A and B are endowed with numeri-                equation
 cal attributes α and β, respectively, and one defines an                              |L|x = 1 + x|L|2 x ,
@@ -308,9 +314,9 @@ ation paradigms for counting sequences. But since                      This recu
 “paradigm” is such a pretentious word, let us use the                  mutation n belongs either to a 1-cycle or to a 2-cycle.
 much humbler German word “ansatz,” which roughly                       The former case accounts for wn−1 of the involutions,
 means “form of solution.”                                              and the latter for (n−1)wn−2 of them. (There are n − 1
-   Let (an )\infty
+   Let (an ). nfty
             n=0 be a sequence, and let                                 ways of choosing the cycle-mate, i, say, of n, and delet-
-                                 \infty
+                                 . nfty
                                                                       ing the resulting cycle leaves an involution of the n − 2
                        f (x) =         an x n
                                  n=0
@@ -340,9 +346,16 @@ $w^{n} =$ / $2k k$ ! $2^{k}$
 
 k
 
-Nowadays such sums can be handled completely automatically, and if one inputs this sum to the Maple package EKHAD (downloadable from my Web site), one would get the recurrence $w^{n} = w^{n} - {}^{1} + (n - 1)w^{n} - {}^{2}$ as the output, together with a (completely rigorous !) proof. While the so-called Wilf-Zeilberger (WZ) method is able to handle many such problems, there are many other cases where one still needs a human proof. In either case such proofs involve (algebraic , and sometimes analytic) manipulations. The great combinatorial i st Adriano Garsia derogatorily calls such proofs “manipulatorics,” and real enumerators do not manipulate, or at least try to avoid it whenever possible. The preferred method of proof is by bijection [I.2](/part-01/language-and-grammar). Suppose one has to prove that $|A^{n}| = |B^{n}|$ for every n, where A n and B n are combinatorial families. The “ugly way” is to get, by some means or other, algebraic or analytic expressions for $a^{n} = |A^{n}|$ and $b^{n} = |B^{n}|$ . Then one manipulates a n , getting another expression a n , which in turn leads to yet another expression a n , and if one is patient enough, and clever enough, and in luck, or if the problem is not too deep, one eventually arrives at b n , and the result follows. On the other hand, the nice way of proving that $|A^{n}| = |B^{n}|$ is by constructing a ( preferably nice) bijection T n : A n $\to$ B n , which immediately implies, as a corollary, that $|A^{n}| = |B^{n}|$ . In addition to being more aesthetically pleasing, a bijective proof is also philosophically more satisfactory. In fact, the notion of (cardinal) number is a highly sophisticated derived notion based on the much more $555$ basic notion of being in bijection. Indeed, according to frege [VI.56](/part-06/gottlob-frege-18481925), the cardinal numbers are equivalence classes, where the equivalence relation [I.2](/part-01/language-and-grammar) is “is in bijective correspondence with.” Saharon Shelah said that people have been exchanging objects, in a one-to-one way, since long before they started to count. Also, a bijective proof explains why the two sets are equinumerous, as opposed to just certifying the formal correctness of this fact. For example, suppose that Noah had wanted to prove that there were as many male as female creatures in his Ark. One way of proving this would have been to count the males and count the females, and check that the two resulting numbers were indeed the same. But a much better, conceptual, proof would have been to note that there is an obvious one-to-one correspondence between the set M of males and the set F of females: the function w : M $\to$ F defined by w (x)  =  Wife Of (x) is a bijection, with inverse h : F $\to$ M defined by h (y)  =  Husband Of (y). A classic example of a bijective proof is Glaisher’s proof of euler’s [VI.19](/part-06/leonhard-euler-17071783) “odd equals distinct” partition theorem. A partition of an integer n is a way of writing it as a sum of positive integers, where order does not matter. For example, $6$ has eleven partitions: $6$ , $51$ , $42$ , $411$ , $33$ , $321$ , 3111 , $222$ , 2211 , 21111 , 111111 . (Here 3111 is shorthand for the sum $3 + 1 + 1 + 1$ , and so on. Since order does not matter, we count 3111 as the same partition of $6$ as 1311 , 1131 , and 1113 . It is convenient to write the partitions with their numbers in decreasing order, as we have done .) A partition is called odd if all its parts are odd, and it is called distinct if all its parts are distinct. Let Odd (n) and Dis (n) be the sets of odd and distinct partitions of n, respectively. For example, Odd $(6) ={51}$ , $33$ , 3111 , 111111 and Dis $(6) = {6}$ , $51$ , $42$ , $321$ . Euler proved that |$Odd$(n)| = |$Dis$(n)| for all n. His “manipulatorics” proof goes as follows. Let o (n) and d (n) be the number of odd and distinct partitions of n, respectively, and let us define the generating functions
+Nowadays such sums can be handled completely automatically, and if one inputs this sum to the Maple package EKHAD (downloadable from my Web site), one would get the recurrence $w^{n} = w^{n} - {}^{1} + (n - 1)w^{n} - {}^{2}$ as the output, together with a (completely rigorous !) proof. While the so-called Wilf-Zeilberger (WZ) method is able to handle many such problems, there are many other cases where one still needs a human proof. In either case such proofs involve (algebraic , and sometimes analytic) manipulations.
+The great combinatorial i st Adriano Garsia derogatorily calls such proofs “manipulatorics,” and real enumerators do not manipulate, or at least try to avoid it whenever possible. The preferred method of proof is by bijection [I.2](/part-01/language-and-grammar). Suppose one has to prove that $|A^{n}| = |B^{n}|$ for every n, where A n and B n are combinatorial families. The “ugly way” is to get, by some means or other, algebraic or analytic expressions for $a^{n} = |A^{n}|$ and $b^{n} = |B^{n}|$ .
+Then one manipulates a n , getting another expression a n , which in turn leads to yet another expression a n , and if one is patient enough, and clever enough, and in luck, or if the problem is not too deep, one eventually arrives at b n , and the result follows. On the other hand, the nice way of proving that $|A^{n}| = |B^{n}|$ is by constructing a ( preferably nice) bijection T n : A n $\to$ B n , which immediately implies, as a corollary, that $|A^{n}| = |B^{n}|$ . In addition to being more aesthetically pleasing, a bijective proof is also philosophically more satisfactory.
+In fact, the notion of (cardinal) number is a highly sophisticated derived notion based on the much more $555$ basic notion of being in bijection. Indeed, according to frege [VI.56](/part-06/gottlob-frege-18481925), the cardinal numbers are equivalence classes, where the equivalence relation [I.2](/part-01/language-and-grammar) is “is in bijective correspondence with.” Saharon Shelah said that people have been exchanging objects, in a one-to-one way, since long before they started to count.
+Also, a bijective proof explains why the two sets are equinumerous, as opposed to just certifying the formal correctness of this fact. For example, suppose that Noah had wanted to prove that there were as many male as female creatures in his Ark. One way of proving this would have been to count the males and count the females, and check that the two resulting numbers were indeed the same. But a much better, conceptual, proof would have been to note that there is an obvious one-to-one correspondence between the set M of males and the set F of females: the function w :
+M $\to$ F defined by w (x)  =  Wife Of (x) is a bijection, with inverse h : F $\to$ M defined by h (y)  =  Husband Of (y). A classic example of a bijective proof is Glaisher’s proof of euler’s [VI.19](/part-06/leonhard-euler-17071783) “odd equals distinct” partition theorem. A partition of an integer n is a way of writing it as a sum of positive integers, where order does not matter. For example, $6$ has eleven partitions: $6$ , $51$ , $42$ , $411$ , $33$ , $321$ , 3111 , $222$ , 2211 , 21111 , 111111 . (Here 3111 is shorthand for the sum $3 + 1 + 1 + 1$ , and so on.
+Since order does not matter, we count 3111 as the same partition of $6$ as 1311 , 1131 , and 1113 . It is convenient to write the partitions with their numbers in decreasing order, as we have done .) A partition is called odd if all its parts are odd, and it is called distinct if all its parts are distinct. Let Odd (n) and Dis (n) be the sets of odd and distinct partitions of n, respectively. For example, Odd $(6) ={51}$ , $33$ , 3111 , 111111 and Dis $(6) = {6}$ , $51$ , $42$ , $321$ . Euler proved that |$Odd$(n)| = |$Dis$(n)| for all n. His “manipulatorics” proof goes as follows.
+Let o (n) and d (n) be the number of odd and distinct partitions of n, respectively, and let us define the generating functions
 
-\i\text{nf ty}\i\text{nf ty}
+$\infty\infty$
 
 o (n) q n
 
@@ -356,7 +369,7 @@ $n = 0n = 0$
 
 With the help of the “multiplication principle” for weighted counting, Euler showed that
 
-\i\text{nf ty}\i\text{nf ty}1(1 + qi) .
+$\infty\infty 1(1 + q^{i})$ .
 
 $f(q) =g(q) =$
 
@@ -374,21 +387,24 @@ $i = 0i = 0$
 
 Using the algebraic identity 1 + y = (1 − y 2 )/(1 − y),           All we need to do is to take the combinatorics out of
 we have                                                            the closet, and make it explicit. The plus sign turns
-      \infty
-                       \infty
+      . nfty
+                       . nfty
                                                                   into (disjoint) union, the multiplication sign becomes
                           1 − q2 i
           (1 + qi ) =                                              Cartesian product, and induction turns into recursion.
       i=0               i=0
                               1 − qi
-                                   \infty                              But what about the combinatorial counterpart of the
+
+. nfty                              But what about the combinatorial counterpart of the
                                               2 i
                                    i=0 (1 − q )                    minus sign? In 1982, Garsia and Steven Milne filled this
-                   = \infty                 \infty
+                   = 
+. nfty                 
+. nfty
                           i=0 (1 − q )    i=0 (1 − q
                                     2 i               2 i+1 )
                                                                    gap by producing an ingenious “involution principle”
-                        \infty
+                        . nfty
                                  1                                that enables one to translate the implication
                    =                    .
                               1 − q2 i+1
@@ -407,7 +423,8 @@ in the completely elementary and much more rigorous                extramarital 
 (from the philosophical viewpoint) algebra of formal               within the village. There is a natural bijection from the
 power series. One still needs to worry about conver-               set of cheating men to the set of cheating women, called
 gence, so as to exclude, for example, an infinite product           m → Mistress Of (m), with its inverse w → Lover Of (w).
-     \infty
+
+. nfty
 like i=0 (1 + x), but the notion of convergence in the             It follows that there are as many faithful men as there
 ring of formal power series is much more user-friendly             are faithful women. But how do we match them up?
 than its analytical namesake.                                      (One might imagine, for example, that each faithful man
@@ -439,7 +456,15 @@ $IV$ . $18$ .
 
 Enumerative and Algebraic Combinatorics
 
-“involution-principle-free proof.” This is the case, for instance, with the celebrated Rogers-Ramanujan identity, which states that the number of partitions of an integer into parts that leave remainder $1$ or $4$ when divided by $5$ equals the number of partitions of that integer with the property that the difference between any two parts is at least $2$ . For example, if $n = 7$ the cardinalities of ${61}$ , 4111 , 1111111$and${7} , $61$ , $52$ are the same. Garsia and Milne invented their notorious principle in order to give a Rogers-Ramanujan bijection, thereby winning a 50 prize from George Andrews. However, finding a really nice bijective proof is still an open problem. A quintessential example of a bijective proof is Prüfer’s proof of cayley’s [VI.46](/part-06/arthur-cayley-18211895) celebrated result that there are n n $- 2$ labeled trees on n vertices (example (v) earlier) . Recall that a labeled tree is a labeled connected simple graph without cycles. Every tree has at least two vertices with only one neighbor (these are called leaves). A certain mapping called the Prüfer bijection associates with every labeled tree T a vector of integers ( a1$, . . . , a^{n}$ - 2), with $1 \le$ ai$\le n$ for each i. This vector is called its Prüfer code. Since there are n n $- 2$ such vectors, Cayley’s formula follows once we have defined the mapping f : Trees $\to$ Codes and proved that it is indeed a bijection. This really needs four steps: defining f , defining its alleged inverse map g, and proving that g ◦ $f$ and $f$ ◦ g are the identity maps on their respective domains. The mapping f is defined recursively as follows. If the tree has $2$ vertices, then its code is the empty sequence. Otherwise, let $a_{1}$ be the (sole) neighbor of the smallest leaf and let ($a_{2}$ , . . . , a n $- 2$ ) be the code of the smaller tree obtained by deleting that leaf. $5$ Exponential Generating Functions So far, when we have discussed generating functions, we have been talking about ordinary generating functions (or OGFs) . These are ideally suited for counting ordered structures like integer partitions, ordered trees, and words. But many combinatorial families are really sets, where the order is immaterial. For these the natural concept is that of an exponential generating function (or EGF). The EGF of a sequence { a (n) } $\i\text{nf tyn} = 0$ is defined to be $\i\text{nf ty}$ a (n) x n . n! $n = 0$ Labeled objects can be often viewed as sets of smaller irreducible objects. For example, a permutation is the $557$ disjoint union of cycles, a set partition is the disjoint union of nonempty sets, a (labeled) forest is the disjoint union of labeled trees, and so on. Suppose that we have two combinatorial families A and B, and suppose that there are a (n) labeled objects of size n in the A family, and b (n) in the B family. We can construct a new set of labeled objects $C = A \times B,$ where the labels are disjoint and distinct, and define the size of a pair to be the sum of the sizes of the components. We have n n $c(n) =$ a (k) b (n - k), k $k = 0$ since we must (i) decide the size of the first component, k (an integer between $0$ and n), which forces the size of the second component to be n - k, (ii) decide which of the n labels go to the first compon nent (k ways), and (iii) pick the objects for each component from the A and B families, respectively, using the available labels (a (k) b (n - k) ways). Multiplying both sides by x n / n ! and summing from $n = 0$ to $n = \i\text{nf ty}$ yields \i\text{nf ty}\i\text{nf ty}$n$ b(nk) n - k$c (n) a (k) xn = x k x (nk) ! n! k!$ n = 0 n = 0 k = 0\i\text{nf ty}\i\text{nf tyb}(nk) n - k a (k) x $k = x$ . (nk) ! k! $k = 0nk = 0$ Hence EGF (C) = EGF (A) EGF (B). Iterating, we get EGF ( A1$\times$ A2$\times$ · · · $\times$ Ak$) =$ EGF ( A1 ) · · · EGF ( A  k) . In particular, if all the A i are the same, we have that the EGF of ordered k-tuples, A k , equals [EGF (A)] k . But if “order does not matter,” then the EGF of k-sets of Aobjects is [EGF (A)] k / k ! , since there are exactly k! ways of arranging a k-set into an ordered array (since all labels are distinct, all these objects are different). Summing from $k = 0$ to $k = \i\text{nf ty}$ we get the “fundamental theorem of exponential generating functions.” If B is a labeled combinatorial family that can be viewed as sets of “connected components” that belong to a combinatorial family A, then EGF (B) $=$ exp [EGF (A)] . This useful theorem was part of the physics folklore for many years, and was also implicit in many older combinatorial proofs. However, it was explicated only
+“involution-principle-free proof.” This is the case, for instance, with the celebrated Rogers-Ramanujan identity, which states that the number of partitions of an integer into parts that leave remainder $1$ or $4$ when divided by $5$ equals the number of partitions of that integer with the property that the difference between any two parts is at least $2$ . For example, if $n = 7$ the cardinalities of 61 , 4111 , 1111111$and 7 ,$61 , $52$ are the same.
+Garsia and Milne invented their notorious principle in order to give a Rogers-Ramanujan bijection, thereby winning a 50 prize from George Andrews. However, finding a really nice bijective proof is still an open problem. A quintessential example of a bijective proof is Prüfer’s proof of cayley’s [VI.46](/part-06/arthur-cayley-18211895) celebrated result that there are n n $- 2$ labeled trees on n vertices (example (v) earlier) . Recall that a labeled tree is a labeled connected simple graph without cycles. Every tree has at least two vertices with only one neighbor (these are called leaves).
+A certain mapping called the Prüfer bijection associates with every labeled tree T a vector of integers ( a1$, . . . , a^{n}$ - 2), with $1 \le$ ai$\le n$ for each i. This vector is called its Prüfer code. Since there are n n $- 2$ such vectors, Cayley’s formula follows once we have defined the mapping f : Trees $\to$ Codes and proved that it is indeed a bijection. This really needs four steps: defining f , defining its alleged inverse map g, and proving that g ◦ $f$ and $f$ ◦ g are the identity maps on their respective domains. The mapping f is defined recursively as follows.
+If the tree has $2$ vertices, then its code is the empty sequence. Otherwise, let $a_{1}$ be the (sole) neighbor of the smallest leaf and let ($a_{2}$ , . . . , a n $- 2$ ) be the code of the smaller tree obtained by deleting that leaf. $5$ Exponential Generating Functions So far, when we have discussed generating functions, we have been talking about ordinary generating functions (or OGFs) . These are ideally suited for counting ordered structures like integer partitions, ordered trees, and words. But many combinatorial families are really sets, where the order is immaterial.
+For these the natural concept is that of an exponential generating function (or EGF). The EGF of a sequence { a (n) } $\infty n = 0$ is defined to be $\infty$ a (n) x n . n! $n = 0$ Labeled objects can be often viewed as sets of smaller irreducible objects. For example, a permutation is the $557$ disjoint union of cycles, a set partition is the disjoint union of nonempty sets, a (labeled) forest is the disjoint union of labeled trees, and so on.
+Suppose that we have two combinatorial families A and B, and suppose that there are a (n) labeled objects of size n in the A family, and b (n) in the B family. We can construct a new set of labeled objects $C = A \times B,$ where the labels are disjoint and distinct, and define the size of a pair to be the sum of the sizes of the components.
+We have n n $c(n) =$ a (k) b (n - k), k $k = 0$ since we must (i) decide the size of the first component, k (an integer between $0$ and n), which forces the size of the second component to be n - k, (ii) decide which of the n labels go to the first compon nent (k ways), and (iii) pick the objects for each component from the A and B families, respectively, using the available labels (a (k) b (n - k) ways). Multiplying both sides by x n / n ! and summing from $n = 0$ to $n = \infty$ yields $\infty\infty$ n $b(nk) n - k$ c (n) a (k) xn = x k x (nk) ! n! k!
+$n = 0n = 0k = 0\infty\infty b(nk) n - k$ a (k) x $k = x$ . (nk) ! k! $k = 0nk = 0$ Hence EGF (C) = EGF (A) EGF (B). Iterating, we get EGF ( A1$\times$ A2$\times$ · · · $\times$ Ak$) =$ EGF ( A1 ) · · · EGF ( A  k) . In particular, if all the A i are the same, we have that the EGF of ordered k-tuples, A k , equals [EGF (A)] k . But if “order does not matter,” then the EGF of k-sets of Aobjects is [EGF (A)] k / k ! , since there are exactly k! ways of arranging a k-set into an ordered array (since all labels are distinct, all these objects are different).
+Summing from $k = 0$ to $k = \infty$ we get the “fundamental theorem of exponential generating functions.” If B is a labeled combinatorial family that can be viewed as sets of “connected components” that belong to a combinatorial family A, then EGF (B) $=$ exp [EGF (A)] . This useful theorem was part of the physics folklore for many years, and was also implicit in many older combinatorial proofs. However, it was explicated only
 
 558                                                                                            IV. Branches of Mathematics
 
@@ -448,8 +473,8 @@ of Joyal’s theory of species, which grew to be a beau-            (a3 , . . . 
 tiful theory of enumeration in the hands of the école             the first entry arbitrarily, after which we have (n − 1)!
 Québecoise (the Labelle and Bergeron frères, Leroux,              choices for placing the remaining entries. The EGF for
 and others).                                                      cycles is therefore
-   Here are some venerable examples. Let us try to find                 \infty
-                                                                                           \infty
+   Here are some venerable examples. Let us try to find                 . nfty
+                                                                                           . nfty
                                                                                             
                                                                          (n − 1)!             1
 the EGF of set partitions. That is, let us try to figure out                          xn =             xn
@@ -457,7 +482,7 @@ the EGF of set partitions. That is, let us try to figure out                    
                                                                               n!            n=1
                                                                                                   n
 an expression for
-                        \infty
+                        . nfty
                                                                                         = − log(1 − x) = log(1 − x)−1 .
                           b(n)      n
                                    x ,
@@ -465,8 +490,8 @@ an expression for
                               n!                                  Using the fundamental theorem, we get that the EGF of
                                                                   permutations is
 where b(n) (so-called Bell numbers) denotes the num-
-                                                                                                             \infty
-                                                                                                                        \infty
+                                                                                                             . nfty
+                                                                                                                        . nfty
                                                                                                                          
 ber of set partitions of an n-element set.                                                                                 n!
                                                                    exp(log(1 − x)−1 ) = (1 − x)−1 =               xn =               xn,
@@ -493,7 +518,7 @@ Clearly, when n = 0 this cannot be done, so a(0) = 0.
 When n ⩾ 1 there is exactly one way of doing it, so the
                                                                   ing to weighted counting, and assign to each permu-
 EGF of the sequence a(n) is
-                            \infty
+                            . nfty
                                                                   tation the weight α#cycles . The fundamental theorem of
                               1 n
              A(x) = 0 +           x = ex − 1.                     exponential generating functions carries over word-for-
@@ -501,8 +526,8 @@ EGF of the sequence a(n) is
                                n!                                 word to weighted counting. The weighted EGF for cycles
 It follows immediately from the fundamental theorem               is α log(1−x)−1 , so the weighted EGF for permutations
 that                                                              is
-                 \infty
-                   b(n) n       x                                                                                 \infty
+                 . nfty
+                   b(n) n       x                                                                                 . nfty
                                                                                                                    
                           x = ee −1 ,            (1)
                                                                      exp(α · log(1 − x)−1 ) = (1 − x)−α =
@@ -572,14 +597,14 @@ down permutations. A permutation of a1 · · · an is                      mothe
 called up–down (or sometimes zigzag) if a1 < a2 >                       is not so easy. On the other hand, you cannot just count
 a3 < a4 > a5 < · · · . Let an be the number of up–down                  everybody, since then you would count each family sev-
 permutations. Then                                                      eral times. The problem is that “naive” counting of peo-
-                 \infty
+                 . nfty
                   a(n)                                                 ple (or objects) is giving a credit of 1 to each person,
                               x n = sec x + tan x.                      and this is inappropriate if we are trying to count fam-
                 n=0
                         n!
                                                                         ilies. If instead we were to ask each person “How big
 This is equivalent to saying that                                       is your family?” and add to our count the reciprocal
-                        \infty
+                        . nfty
                          a(n)                                          of that number, then the calculation would come out
             cos x ·                  x n = 1 + sin x.
                                 n!                                      just right, since a family of size k would get a credit
@@ -631,7 +656,10 @@ fix (g),
 
 $|G|^{g}\in^{G}$
 
-where fix (g) is the number of fixed points of g (when g is viewed as a permutation of A) . We have just proved what used to be called Burnside’s lemma, but it goes back to cauchy [VI.29](/part-06/augustin-louis-cauchy-17891857) and frobenius [VI.58](/part-06/ferdinand-georg-frobenius-18491917). It states that the total number of orbits equals the average number of fixed points of g, over all transformations g in G. If the group G is the full symmetric group of all the permutations of A, then the average number of fixed points equals $1$ (since in this trivial case there is only one orbit !) . Enter Pólya. The objects that he was interested in counting (e . g . , chemical isomers, or colorings of the faces of the cube) were all naturally functions from an underlying set to a set of colors (or atoms). Let us call the underlying set U and the set of colors C. A symmetry of U gives rise in a natural way to a transformation of the set of functions f : U $\to$ C. Given a function f one defines a new function gf by g (f) (u)  =  f (g (u)) . (If we think of f as a coloring, then gf is the new coloring that assigns to u the color that f assigned to g (u).) Now let us think about the number of fixed points of g in the set of C-colorings of U . Such a fixed point is a coloring f that equals gf : that is, f (u)  =  f (gu) for every u. But then $f(u) = f(gu) = f(g^{2}u) =$ · · · , which means that, given any cycle of g, f must assign the same color to all members of that cycle. It follows that the number of fixed colorings of g is c # cycles (g), where $c = |C|$ is the number of colors. Applying Burnside’s lemma, we may deduce that the number of different colorings of U (up to G-equivalence) is $1$   # cycles (g) c ,
+where fix (g) is the number of fixed points of g (when g is viewed as a permutation of A) . We have just proved what used to be called Burnside’s lemma, but it goes back to cauchy [VI.29](/part-06/augustin-louis-cauchy-17891857) and frobenius [VI.58](/part-06/ferdinand-georg-frobenius-18491917). It states that the total number of orbits equals the average number of fixed points of g, over all transformations g in G. If the group G is the full symmetric group of all the permutations of A, then the average number of fixed points equals $1$ (since in this trivial case there is only one orbit !) .
+ Enter Pólya. The objects that he was interested in counting (e . g . , chemical isomers, or colorings of the faces of the cube) were all naturally functions from an underlying set to a set of colors (or atoms). Let us call the underlying set U and the set of colors C. A symmetry of U gives rise in a natural way to a transformation of the set of functions f : U $\to$ C. Given a function f one defines a new function gf by g (f) (u)  =  f (g (u)) .
+(If we think of f as a coloring, then gf is the new coloring that assigns to u the color that f assigned to g (u).) Now let us think about the number of fixed points of g in the set of C-colorings of U . Such a fixed point is a coloring f that equals gf : that is, f (u)  =  f (gu) for every u. But then $f(u) = f(gu) = f(g^{2}u) =$ · · · , which means that, given any cycle of g, f must assign the same color to all members of that cycle. It follows that the number of fixed colorings of g is c # cycles (g), where $c = |C|$ is the number of colors.
+Applying Burnside’s lemma, we may deduce that the number of different colorings of U (up to G-equivalence) is $1$   # cycles (g) c ,
 
 $|G|^{g}\in^{G}$
 
@@ -639,13 +667,14 @@ since an equivalence class of colorings is simply an orbit of one of the colorin
 
 IV. Branches of Mathematics
 
-Here is a simple application. How many necklaces (without a clasp) are there that consist of p beads (where p is a prime) and that use a different colors? The underlying set is ${0}$ , . . . , $p - 1$ , and the symmetry group is Z p , the cyclic group of order p. As usual, regard the elements of the symmetry group as permutations of the set of beads. Since p is a prime, there are p $- 1$ elements of Z p with one cycle (of length p), and one element (the identity permutation) with p cycles (all of length $1$ ). It follows that the number of necklaces is
+Here is a simple application. How many necklaces (without a clasp) are there that consist of p beads (where p is a prime) and that use a different colors? The underlying set is 0 , . . . , $p - 1$ , and the symmetry group is Z p , the cyclic group of order p. As usual, regard the elements of the symmetry group as permutations of the set of beads. Since p is a prime, there are p $- 1$ elements of Z p with one cycle (of length p), and one element (the identity permutation) with p cycles (all of length $1$ ). It follows that the number of necklaces is
 
 $a^{p} - a1 ( (p - 1)$ · $a + 1$ · $a^{p}) = a +$ / p
 
 p
 
-In particular, since this number is necessarily an integer, we get as a bonus a combinatorial proof of fermat’s little theorem [III.58](/part-03/modular-arithmetic) : that a p  -  a is always a multiple of p. Perhaps one day there will be an equally nice combinatorial proof of Fermat’s last theorem. All one has to do is to prove that there is no bijection from the union of the set of straight necklaces of size n using x colors, and the set of such necklaces using y colors, to the set of necklaces using z colors (with n $> 2$ , of course). If one wants to keep track of how many beads there are of each color, one simply replaces straight counting by weighted counting, and c # cycles (g) is replaced by $(x^{1} +$ · · · $+ x^{c})α^{1}$ · $((x^{1})^{2} +$ · · · $+ (x^{c})^{2})α^{2}$ · · · (assuming that g has $α^{1} 1$ - cycles , $α^{2} 2$ - cycles , etc .). The resulting expression is the celebrated cycle-index polynomial.
+In particular, since this number is necessarily an integer, we get as a bonus a combinatorial proof of fermat’s little theorem [III.58](/part-03/modular-arithmetic) : that a p  -  a is always a multiple of p. Perhaps one day there will be an equally nice combinatorial proof of Fermat’s last theorem. All one has to do is to prove that there is no bijection from the union of the set of straight necklaces of size n using x colors, and the set of such necklaces using y colors, to the set of necklaces using z colors (with n $> 2$ , of course).
+If one wants to keep track of how many beads there are of each color, one simply replaces straight counting by weighted counting, and c # cycles (g) is replaced by $(x^{1} +$ · · · $+ x^{c})α^{1}$ · ((x1)2 + · · · + (xc)2)α2 · · · (assuming that g has $α^{1} 1$ - cycles , $α^{2} 2$ - cycles , etc .). The resulting expression is the celebrated cycle-index polynomial.
 
 $6$ . $1$
 
@@ -655,7 +684,7 @@ Möbius Inversion
 
 Another pillar of enumeration is the principle of inclusion-exclusion (nicknamed PIE). Suppose that there are n sins, $s^{1}$ , . . . , s n , that a person may succumb to, and suppose that for each set of sins S, A S is the set of people who have all the sins in S (and possibly others). Then the number of good people (without sins) is $( - 1)|S||A^{S}|$ . S For example, if the set A is the set of all permutations
 
-$\pi$ of ${1}$ , . . . , n} and the ith sin is having $\pi$ [i ] =  i, then $|A^{S}| = (n - |S|)$ ! , and we get that the number of derangements (permutations without fixed points) is n $n_{1}$ n $( - 1)k( - 1)^{k}$ , $(n - k)$ ! $= n!$ k! k $k = 0k = 0$
+$\pi$ of 1 , . . . , n} and the ith sin is having $\pi$ [i ] =  i, then $|A^{S}| = (n - |S|)$ ! , and we get that the number of derangements (permutations without fixed points) is n $n_{1}$ n ( - 1)k( - 1)k , $(n - k)$ ! $= n!$ k! k $k = 0k = 0$
 
 IV.18.   Enumerative and Algebraic Combinatorics                                                                         561
 
@@ -673,11 +702,11 @@ eral partially ordered sets (posets) where the poset hap-
 pens to be the Boolean lattice. This realization was pub-         1   2    3          1    2   4             1   3   4
                                                                                                                          .
 lished in a seminal paper by Rota (1964) and reprinted            4                   3                      2
-in his collected works. It is considered by many to be the   Let f\lambda be the number of standard Young tableaux of
+in his collected works. It is considered by many to be the   Let f. ambda be the number of standard Young tableaux of
 big bang that started modern algebraic combinatorics.        shape λ. For example, for n = 4: f4 = 1, f31 = 3, f22 =
 Möbius’s original inversion formula is recovered when        2, f211 = 3, and f1111 = 1. The sum of the squares of
 the partially ordered set is N and the partial order is      these numbers is 12 + 32 + 22 + 32 + 12 = 24 = 4!.
-divisibility.                                                  The number f\lambda is the dimension of the irreducible
+divisibility.                                                  The number f. ambda is the dimension of the irreducible
    A contemporary account of enumeration from the            representation parametrized by λ. It follows by a result
 “algebraic” point of view can be found in a marvelous        in representation theory [IV.9](/part-04/representation-theory) known as Frobenius
 two-volume set by Stanley (2000), which I strongly           reciprocity that the same is true for all n. In other
@@ -720,5 +749,4 @@ ple, the theory of algorithms—are Young tableaux. They
 were first used by Reverend Alfred Young to construct           Wahrscheinlichk eitstheorie und Verwandte Gebiete 2:340–
 explicit bases for the irreducible representations             68.
 [IV.9 §2](/part-04/representation-theory) of the symmetric group [III.68](/part-03/permutation-groups). For any par-      Stanley, R. P. 2000. Enumerative Combinatorics, volumes 1
-tition λ = λ1 · · · \lambda k of n, a Young tableau of shape \lambda is     and 2. Cambridge: Cambridge University Press.
-
+tition λ = λ1 · · · . ambda k of n, a Young tableau of shape . ambda is     and 2. Cambridge: Cambridge University Press.

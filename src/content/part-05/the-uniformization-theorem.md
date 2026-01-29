@@ -52,4 +52,3 @@ and it can be investigated accordingly.                     preserving way to th
 three-body problem (and the related n-body prob-            disk model. Thus, the hyperbolic metric on the disk
 lem), have spawned a wealth of research. As a result,       together with the biholomorphic map that is given
 the importance of the problem is as much in the             by the uniformization theorem can be used to define
-

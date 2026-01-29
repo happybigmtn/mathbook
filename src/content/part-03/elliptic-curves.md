@@ -2,7 +2,17 @@
 
 $190$
 
-distributions [III.18](/part-03/distributions) shows how to use duality to give rigorous definitions of function-like objects such as the Dirac delta function. The article on mirror symmetry [IV.16](/part-04/mirror-symmetry) discusses an astonishing (and still largely conjectural) duality between calabi-yau manifolds [III.6](/part-03/calabiyau-manifolds) and so-called “mirror manifolds.” Often the mirror manifold is much easier to understand than the original manifold, so this duality, like the Fourier transform, makes certain calculations possible that would otherwise be unthinkable. And the article on representation theory [IV.9](/part-04/representation-theory) discusses the “Langlands dual” of certain (non Abelian) groups: a proper understanding of this duality would solve many major open problems. III . $20$ Dynamical Systems and Chaos From a scientific point of view, a dynamical system is a physical system, such as a collection of planets or the water in a canal, that changes over time. Typically, the positions and velocities of the parts of such a system at a time t depend only on the positions and velocities of those parts just before that time, which means that the behavior of the system is governed by a system of partial differential equations [I.3](/part-01/fundamental-definitions). Often, a very simple collection of partial differential equations can lead to very complicated behavior of the physical system. From a mathematical point of view, a dynamical system is any mathematical object that evolves in time according to a precise rule that determines the behavior of the system at time t from its behavior just beforehand. Sometimes, as above, “just beforehand” refers to a time infinitesimally earlier, which is why calculus is involved. But there is also a vigorous theory of discrete dynamical systems, where the “time” t takes integer values, and the “time just before t” is t $- 1$ . If f is the function that tells us how the system at time t depends on the system at time t $- 1$ , then the system as a whole can be thought of as the process of iterating f : that is, applying f over and over again. As with continuous dynamical systems, a very simple function f can lead to very complicated behavior if you iterate it enough times. In particular, some of the most interesting dynamical systems, both discrete ones and continuous ones, exhibit an extreme sensitivity to initial conditions, which is known as chaos. This is true, for example, of the equations that govern weather. One cannot hope to specify exactly the wind speed at every point on the Earth’s surface (not to mention high above III. Mathematical Concepts it), which means that one has to make do with approximations. Because the relevant equations are chaotic, the resulting inaccuracies, which may be small to start with, rapidly propagate and overwhelm the system: you could start with a different, equally good approximation and find that after a fairly short time the system had evolved in a completely different way. This is why accurate forecasting is impossible more than a few days in advance. For more about dynamical systems and chaos, see dynamics [IV.14](/part-04/dynamics). III . $21$ Elliptic Curves Jordan S. Ellenberg An elliptic curve over a field K can be defined as an algebraic curve of genus $1$ over K, endowed with a point defined over K. If this definition is too abstract for your tastes, then an equivalent definition is the following: an elliptic curve is a curve in the plane determined by an equation of the form $y^{2} + a^{1}xy + a^{3}y = x^{3} + a^{2}x^{2} + a^{4}x + a^{6}$ . (1) When the characteristic of K is not $2$ , we can transform this equation into the simpler form y ${}^{2} =$ f (x), for some cubic polynomial f . In this sense, an elliptic curve is a rather concrete object. However, this definition has given rise to a subject of seemingly inexhaustible mathematical interest, which has provided a tremendous fund of ideas, examples, and problems in number theory and algebraic geometry. This is in part because there are many values of “X” for which it is the case that “the simplest interesting example of X is an elliptic curve.” For instance, the points of an elliptic curve E with coordinates in K naturally form an Abelian group, which we call E (K) . The connected projective varieties [III.95](/part-03/varieties) that admit a group law of this kind are called Abelian varieties; and elliptic curves are just the Abelian varieties that are one dimensional. The Mordell-Weil theorem tells us that, when K is a number field and A is an Abelian variety, A (K) is actually a finitely generated Abelian group, called a Mordell-Weil group; these Abelian groups are much studied but have retained much of their mystery (see rational points on curves and the mordell conjecture [V.29](/part-05/rational-points-on-curves-and-vi40-ernst-eduard-kummer-18101893)) . Even when A is an elliptic curve, in which case we would call it E instead, there is a great deal that we do not know, though the birch-swinnerton-dyer conjecture [V.4](/part-05/the-birchswinnerton-dyer-conjecture) offers a conjectural formula for the
+distributions [III.18](/part-03/distributions) shows how to use duality to give rigorous definitions of function-like objects such as the Dirac delta function. The article on mirror symmetry [IV.16](/part-04/mirror-symmetry) discusses an astonishing (and still largely conjectural) duality between calabi-yau manifolds [III.6](/part-03/calabiyau-manifolds) and so-called “mirror manifolds.” Often the mirror manifold is much easier to understand than the original manifold, so this duality, like the Fourier transform, makes certain calculations possible that would otherwise be unthinkable.
+And the article on representation theory [IV.9](/part-04/representation-theory) discusses the “Langlands dual” of certain (non Abelian) groups: a proper understanding of this duality would solve many major open problems. III . $20$ Dynamical Systems and Chaos From a scientific point of view, a dynamical system is a physical system, such as a collection of planets or the water in a canal, that changes over time.
+Typically, the positions and velocities of the parts of such a system at a time t depend only on the positions and velocities of those parts just before that time, which means that the behavior of the system is governed by a system of partial differential equations [I.3](/part-01/fundamental-definitions). Often, a very simple collection of partial differential equations can lead to very complicated behavior of the physical system.
+From a mathematical point of view, a dynamical system is any mathematical object that evolves in time according to a precise rule that determines the behavior of the system at time t from its behavior just beforehand. Sometimes, as above, “just beforehand” refers to a time infinitesimally earlier, which is why calculus is involved. But there is also a vigorous theory of discrete dynamical systems, where the “time” t takes integer values, and the “time just before t” is t $- 1$ .
+If f is the function that tells us how the system at time t depends on the system at time t $- 1$ , then the system as a whole can be thought of as the process of iterating f : that is, applying f over and over again. As with continuous dynamical systems, a very simple function f can lead to very complicated behavior if you iterate it enough times. In particular, some of the most interesting dynamical systems, both discrete ones and continuous ones, exhibit an extreme sensitivity to initial conditions, which is known as chaos. This is true, for example, of the equations that govern weather.
+One cannot hope to specify exactly the wind speed at every point on the Earth’s surface (not to mention high above III. Mathematical Concepts it), which means that one has to make do with approximations. Because the relevant equations are chaotic, the resulting inaccuracies, which may be small to start with, rapidly propagate and overwhelm the system: you could start with a different, equally good approximation and find that after a fairly short time the system had evolved in a completely different way. This is why accurate forecasting is impossible more than a few days in advance.
+For more about dynamical systems and chaos, see dynamics [IV.14](/part-04/dynamics). III . $21$ Elliptic Curves Jordan S. Ellenberg An elliptic curve over a field K can be defined as an algebraic curve of genus $1$ over K, endowed with a point defined over K. If this definition is too abstract for your tastes, then an equivalent definition is the following: an elliptic curve is a curve in the plane determined by an equation of the form $y^{2} + a^{1}xy + a^{3}y = x^{3} + a^{2}x^{2} + a^{4}x + a^{6}$ .
+(1) When the characteristic of K is not $2$ , we can transform this equation into the simpler form y ${}^{2} =$ f (x), for some cubic polynomial f . In this sense, an elliptic curve is a rather concrete object. However, this definition has given rise to a subject of seemingly inexhaustible mathematical interest, which has provided a tremendous fund of ideas, examples, and problems in number theory and algebraic geometry.
+This is in part because there are many values of “X” for which it is the case that “the simplest interesting example of X is an elliptic curve.” For instance, the points of an elliptic curve E with coordinates in K naturally form an Abelian group, which we call E (K) . The connected projective varieties [III.95](/part-03/varieties) that admit a group law of this kind are called Abelian varieties; and elliptic curves are just the Abelian varieties that are one dimensional.
+The Mordell-Weil theorem tells us that, when K is a number field and A is an Abelian variety, A (K) is actually a finitely generated Abelian group, called a Mordell-Weil group; these Abelian groups are much studied but have retained much of their mystery (see rational points on curves and the mordell conjecture [V.29](/part-05/rational-points-on-curves-and-vi40-ernst-eduard-kummer-18101893)) .
+Even when A is an elliptic curve, in which case we would call it E instead, there is a great deal that we do not know, though the birch-swinnerton-dyer conjecture [V.4](/part-05/the-birchswinnerton-dyer-conjecture) offers a conjectural formula for the
 
 III.22.   The Euclidean Algorithm and Continued Fractions                                                           191
 
@@ -12,16 +22,16 @@ geometry [IV.5](/part-04/arithmetic-geometry).                                  
    Since E(K) forms an Abelian group, given any prime         removed a few points, folded the points in half or into
 p one can look at the subgroup of elements P such             thirds, and then glued the folded-up points back in.
 that p P = 0. This subgroup is called E(K)[p]. In par-         You might find it reassuring to know that even pro-
-ticular, we can take the algebraic closure \bar{K} of K and        fessionals in the subject find this process rather diffi-
-look at E(\bar{K})[p]. It turns out that, when K is a num-         cult to visualize.) The curve M1,1 is a “simplest exam-
+ticular, we can take the algebraic closure . ar{K} of K and        fessionals in the subject find this process rather diffi-
+look at E(. ar{K})[p]. It turns out that, when K is a num-         cult to visualize.) The curve M1,1 is a “simplest exam-
 ber field [III.63](/part-03/number-fields) (or, for that matter, any field of char-     ple” in two ways: it is the simplest modular curve, and
 acteristic not equal to p), this group is isomorphic to       simultaneously the simplest moduli space of curves.
 (Z/p Z)2 , no matter what choice of E we started with.
 If the group is the same for all elliptic curves, why is it   III.22 The Euclidean Algorithm and
 interesting? Because it turns out that the galois group
                                                                      Continued Fractions
-[V.21](/part-05/the-insolubility-of-the-quintic) Gal(\bar{K}/K) permutes the set E(\bar{K})[p]. In fact, the
-action of Gal(\bar{K}/K) on the group (Z/p Z)2 gives rise to
+[V.21](/part-05/the-insolubility-of-the-quintic) Gal(. ar{K}/K) permutes the set E(. ar{K})[p]. In fact, the
+action of Gal(. ar{K}/K) on the group (Z/p Z)2 gives rise to
                                                                        Keith Ball
 a representation [III.77](/part-03/representations) of the Galois group. This is
                                                                           1   The Euclidean Algorithm
@@ -39,7 +49,7 @@ dence between Galois representations and automorphic
 forms, which are generalized versions of the classical
                                                               17 and 7 is 1, and sure enough we can express 1 as the
 analytic functions called modular forms [III.59](/part-03/modular-forms).
-                                                              combination 1 = 5 \times 17 − 12 \times 7.
+                                                              combination 1 = 5 . imes 17 − 12 . imes 7.
    In another direction, if E is an elliptic curve over
                                                                 The algorithm works as follows. Assume that m is
 C, then the set of points of E with complex coordin-
@@ -69,12 +79,12 @@ theory, a powerful branch of algebraic geometry with
 a reputation for extreme difficulty. (The Hodge conjec-
                                                               algorithm generates the sequence of divisions
 ture, a central question in the theory, is one of the Clay
-Institute’s million-dollar-prize problems.)                                      165 = 2 \times 70 + 25,                   (3)
-   Yet another point of view is presented by the mod-                             70 = 2 \times 25 + 20,                   (4)
+Institute’s million-dollar-prize problems.)                                      165 = 2 . imes 70 + 25,                   (3)
+   Yet another point of view is presented by the mod-                             70 = 2 . imes 25 + 20,                   (4)
 uli space [IV.8](/part-04/moduli-spaces) of elliptic curves, denoted M1,1 . This is
-                                                                                  25 = 1 \times 20 + 5,                    (5)
+                                                                                  25 = 1 . imes 20 + 5,                    (5)
 itself a curve, but not an elliptic one. (In fact, if I am
-completely honest, I should say that M1,1 is not quite a                          20 = 4 \times 5 + 0.                     (6)
+completely honest, I should say that M1,1 is not quite a                          20 = 4 . imes 5 + 0.                     (6)
 
 192                                                                                     III. Mathematical Concepts
 
@@ -94,17 +104,17 @@ integer coefficients. Since the previous line shows that      to recognize that 
 20 can be written as a combination of 70 and 25 we can      for all numbers (not only rational numbers), provided
 write 5 in terms of 70 and 25:                              that we allow the continued fraction to have infinitely
                                                             many levels. If we start with any positive number, we
-   5 = 25 − 20 = 25 − (70 − 2 \times 25) = 3 \times 25 − 70.
+   5 = 25 − 20 = 25 − (70 − 2 . imes 25) = 3 . imes 25 − 70.
                                                             can build its continued fraction in the same way as
 Continuing back up the algorithm we can express 25 in       for the ratio 2.35714 . . . . For example, if the number
 terms of 165 and 70 and conclude that                       is π = 3.14159265 . . . , we start by subtracting 3, then
-   5 = 3 × (165 − 2 \times 70) − 70 = 3 \times 165 − 7 \times 70.          take the reciprocal of what is left: 1/0.14159 . . . =
+   5 = 3 × (165 − 2 . imes 70) − 70 = 3 . imes 165 − 7 . imes 70.          take the reciprocal of what is left: 1/0.14159 . . . =
                                                             7.06251 . . . . So for π we get that the second quotient
   This shows that 5 is the highest common factor
                                                             is 7. Continuing the process we build the continued
 of 165 and 70 because any factor of 165 and 70 would
                                                             fraction
-automatically be a factor of 3 \times 165 − 7 \times 70: that is, a                                     1
+automatically be a factor of 3 . imes 165 − 7 . imes 70: that is, a                                     1
                                                                              π =3+                     .            (7)
 factor of 5. Along the way we have shown that the high-                              7+         1
                                                                                                   1
@@ -150,4 +160,3 @@ For example,                                                a number x we need t
                       =2+     1 .
                   70      2+   1                            inator. The continued-fraction approximations to x are
                                     1+ 4
-

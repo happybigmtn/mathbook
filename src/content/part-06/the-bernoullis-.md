@@ -81,7 +81,7 @@ pied by successive members of the family: first Jacob       between the theories
 finally Johann’s son, Johann II (1748–90). Through out       B0 , B1 , . . . of rational numbers that now bears his name,
 the eighteenth century Bernoullis were members of the      which can be defined as the coefficients of t k /k! in the
 Paris Academy of Sciences and individually they won        power-series expansion
-prestigious prizes on many occasions. The same was                                          \infty
+prestigious prizes on many occasions. The same was                                          . nfty
                                                                                  t                    tk
 true of the academies in Berlin, Saint Petersburg, and                                  =         Bk      .
 several others.                                                                et − 1       k=0
@@ -134,4 +134,3 @@ now named after him. However he is best remembered         oped a general theory
 for his Ars Conjectandi (1713), which was published        functions and new methods for the solution of dif-
 posthumously with a short foreword by his nephew,          ferential equations. He also extended the infinitesimal
 Nicolaus I. It contains an attempt to give a sound math-   calculus to handle exponential functions [III.25](/part-03/the-exponential-and-logarithmic-functions).
-

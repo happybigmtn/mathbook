@@ -58,4 +58,3 @@ other words, given intervals [a1 , b1 ], [a2 , b2 ], . . . , with   rational num
    One is tempted to answer “no, as the total length is             ones at that) such that the length of their union is not
 too small.” But this is just to restate the question. After         the sum of their lengths. So this form of “length” is not
 all, why should “total length less than 1” actually imply           really well-behaved for such sets.
-

@@ -55,4 +55,3 @@ Analysis; theory of attractions; geometry; number theory           was new; whil
                                                                    and 1830, he had been quickly eclipsed on methods of
 Legendre passed his career in Paris and seems to have              proof by the Disquisitiones Arithmeticae (1801) of the
 been largely of independent means. Somewhat younger                young Gauss.
-

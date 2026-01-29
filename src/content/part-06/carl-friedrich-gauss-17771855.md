@@ -87,7 +87,7 @@ rigorous proof of the law of quadratic reciprocity
 years. Later he extended the theorem to higher pow-         sic (Gaussian) curvature of a surface was put for-
 ers, introducing the Gaussian integers for the purpose      ward for the first time, thus reformulating differential
 in 1831 (Gaussian integers are numbers of the form          geometry.
-                                               \sqrt{m} + ni, where m and n are integers and i = −1). He             In statistics, he was one of the two or three discov-
+                                               . qrt{m} + ni, where m and n are integers and i = −1). He             In statistics, he was one of the two or three discov-
 did major work on differential equations, chiefly the         erers of the normal distribution [III.71 §5](/part-03/probability-distributions), and he
 hypergeometric equation, which is a second-order lin-       was an expert in error analysis, bringing the levels of
 ear differential equation depending on three param-          accuracy in astronomy to land surveying. In that con-
@@ -113,4 +113,3 @@ matical descriptions of a non-Euclidean space there-        much-quoted remark t
 fore rightly attaches to Bolyai and Lobachevskii (for       the sciences and arithmetic the queen of mathematics”
 further discussion of this, see geometry [II.2 §7](/part-02/geometry-origins)). In     (which he did say) and in the apocryphal remark that
 1827 Gauss wrote his Disquisitiones Generales Circa         “mathematics is the queen and the servant of science.”
-

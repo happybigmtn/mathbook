@@ -44,7 +44,7 @@ III.69      Phase Transitions                                    because π has 
                                                                  that when π appears unexpectedly in a calculation, one
 If you heat up a block of ice, then it turns into water.         is not unduly surprised. For example, the following is
 This very familiar phenomenon is actually rather mys-            a famous theorem of euler [VI.19](/part-06/leonhard-euler-17071783):
-terious, because it shows that the properties of the                  \infty
+terious, because it shows that the properties of the                  . nfty
                                                                           1     1 1   1   1          π2
 chemical H2 O do not depend continuously on temper-                        2
                                                                              =1+ + +    +    + ··· =    .
@@ -63,4 +63,3 @@ the study of these models belongs to the area known as           from fourier an
 statistical physics. For further discussion of such mod-         identity, which states the following. If f : R → C is a
 els, see probabilistic models of critical phenom-                periodic function with period 2π , and for every inte-
 ena [IV.25].                                                     ger n (positive or negative) we define its nth Fourier
-

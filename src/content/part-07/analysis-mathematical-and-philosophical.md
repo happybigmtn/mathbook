@@ -39,7 +39,7 @@ Philosophy, which once included almost every subject
                                                                cepts, statements whose denials would amount to con-
 in the university (every subject in which the highest
                                                                tradictions in terms. Philosophy of mathematics, today
-degree is Ph.D.), has thus been shrunk by success.
+degree is Ph. D.), has thus been shrunk by success.
                                                                a smallish specialty within philosophy of science, itself
 The greatest shrinkage occurred during the seven-
                                                                a smallish specialty within epistemology or the theory
@@ -384,10 +384,10 @@ taining the word or phrase mean. Such an explanation        infinitesimals df (x
 is what is meant by a contextual definition: a defini-        true form being (d/dx)f (x), indicating the application
 tion that does not provide an analysis of the word or       of an operation of differentiation d/dx applied to a
 phrase standing alone, but rather provides an analysis      function f (x).
-of contexts in which it appears.                               Similarly, such an expression as limx→0 1/x = \infty, or
+of contexts in which it appears.                               Similarly, such an expression as limx→0 1/x = . nfty, or
    Russell’s distinction between grammatical and logi-      “the limit of 1/x as x goes to zero is infinity,” was
 cal form, and his claim that the former may be system-      explained as a whole, without requiring any explana-
-atically misleading, was to prove immensely influen-         tion of “\infty” or “infinity” taken separately. The details,
+atically misleading, was to prove immensely influen-         tion of “. nfty” or “infinity” taken separately. The details,
 tial, even among nontechnically oriented philosophers,      which now appear in any freshman calculus textbook,
 such as the Oxford ordinary-language school, who saw        need not detain us. What is important historically is
 no need to use special symbols to represent logical         that the notion of contextual definition employed in
@@ -425,4 +425,3 @@ function f (x) = x 2 was computed as follows:               be reduced to logica
                     dx                                      did not admit such a reduction, from the assertions of
 Here dx is treated as nonzero at the next-to-last step,     Hegelian or absolute idealist metaphysicians on, as a
 and zero at the last step—the kind of procedure that        “pseudo-statement,” or mere nonsense.
-

@@ -73,4 +73,3 @@ that the ordinary three-dimensional space may also              In the 1830 s he
 be thought of as a four-dimensional space, because           geometry different in only one respect from Euclid-
 Steiner’s philosophy was directed against breaking           ean geometry. He called it imaginary geometry and it
 what he saw as a stranglehold of orthodox teaching.          is known today as non-Euclidean geometry. In the new
-

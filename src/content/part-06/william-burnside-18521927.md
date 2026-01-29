@@ -66,4 +66,3 @@ finite, he launched the huge area of research which for        the theory of ord
 much of the twentieth century was known as the Burn-          identified an important class of automorphic functions.
 side problem (see geometric and combinatorial                 Named Fuchsian functions, in honor of the mathemati-
 group theory [IV.10 §5.1](/part-04/geometric-and-combinatorial-group-theory)).                                   cian Lazarus Fuchs, they are defined on a disk and
-

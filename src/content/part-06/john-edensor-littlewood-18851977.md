@@ -113,4 +113,3 @@ every natural number is the sum of nine nonnegative           matician. During W
 integral cubes, nineteen fourth powers, and so on: for        and during World War II, with his collaborator Mary
 every natural number k there is a minimal integer g(k)        Cartwright, he worked on the van der Pol oscillator
 such that every natural number is the sum of g(k)             in order to help the development of radio. Cartwright
-

@@ -41,4 +41,3 @@ may be viewed in two ways. The first is as a list of the      axiom of choice, t
 “allowed operations” on sets. For example, there is an       axioms.”
 axiom that states that, given sets x and y, there exists       For a more detailed discussion of the ZF axioms see
 a “pair set,” whose members are precisely x and y.           set theory [IV.22 §3.1](/part-04/set-theory).
-

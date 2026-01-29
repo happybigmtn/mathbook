@@ -56,4 +56,3 @@ known in Mesopotamia long before Pythagoras’s time;
                                                                          frühen Pythagoreismus. Berlin: Akademie.
 the ancient sources attributing the result to him are
 late and not entirely reliable, and no actual proof of                                                       Serafina Cuomo
-

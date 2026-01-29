@@ -7,7 +7,7 @@ nections between very different domains we give only           ments in the post
 one as an example. Around 1931 Wiener discussed the           National Academy of Sciences in 1941 because of its
 following (Lebesgue) integral equation with the German        alleged bureaucracy and complacency, Wiener never-
 mathematical astrophysicist Eberhard Hopf:                    theless accepted, shortly before his death in 1964 while
-                        \infty                                     traveling, the National Medal of Science from President
+                        . nfty                                     traveling, the National Medal of Science from President
               f (t) =       W (t − τ)f (τ) dτ.
                         0                                     Johnson.
 The solution for unknown f (t), which was found with
@@ -56,4 +56,3 @@ refugees from Europe to settle in the United States,          orem not only prov
 while after World War II he cautioned against the repeti-     question on reciprocity but it also formed the central
 tion of mistakes such as the boycott of German science        result of class field theory. Both Artin’s result and his
 in the aftermath of World War I. Wiener warned against        tools, particularly his L-functions, proved important.
-

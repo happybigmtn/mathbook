@@ -17,8 +17,8 @@ to be shared by the third).                                   in transcendence t
    More precisely, one defines the radical of a positive       about modular forms [III.59](/part-03/modular-forms) that implies Fermat’s
 integer n to be the product of all primes that divide         last theorem.
 n, with each distinct prime included just once. For             The ABC conjecture is discussed further in compu-
-instance, 3960 = 23 \times 32 \times 5 \times 11, so its radical is          tational number theory [IV.3](/part-04/computational-number-theory).
-2 \times 3 \times 5 \times 11 = 330. Let us write rad(n) for the radical
+instance, 3960 = 23 . imes 32 . imes 5 . imes 11, so its radical is          tational number theory [IV.3](/part-04/computational-number-theory).
+2 . imes 3 . imes 5 . imes 11 = 330. Let us write rad(n) for the radical
 of n. The ABC conjecture asserts that for every posi-         V.2 The Atiyah–Singer Index
 tive real number  there is a constant K such that if            Theorem
 a, b, and c are coprime integers and a + b = c, then                Nigel Higson and John Roe
@@ -77,7 +77,7 @@ if needed) has a finite-dimensional solution space.
                                                                  agree to consider only solutions f of the equation or its
                                                                  adjoint that are square-integrable, which means that
           2   Topology of Elliptic Equations
-               and the Fredholm Index                                                   |f (x)|2 dx < \infty.
+               and the Fredholm Index                                                   |f (x)|2 dx < . nfty.
 Consider now the general first-order linear partial dif-          All these extra hypotheses are types of boundary con-
 ferential equation                                               ditions (the behaviors of the equation and its solutions
                    ∂f                ∂f                          at infinity are controlled), and collectively they imply
@@ -110,7 +110,7 @@ linearly independent solutions of the adjoint equation
 The reason for introducing the Fredholm index is
 that it is a topological invariant of elliptic equations.                  iξ1 a1 (x) + · · · + iξn an (x) + b(x)
 This means that continuous variations in the coeffi-               determine a map from the unit sphere in (x, ξ)-space
-cients of an elliptic equation leave the Fredholm index          to the set GLk (C) of invertible k \times k complex matrices.
+cients of an elliptic equation leave the Fredholm index          to the set GLk (C) of invertible k . imes k complex matrices.
 unchanged. (By contrast, the number of linearly inde-            Moreover, every such map comes from an elliptic equa-
 pendent solutions of an equation can vary as the coef-           tion (possibly of a more general type than we have dis-
 ficients of the equation vary.) The Fredholm index is             cussed up to now, but an equation to which the basic
@@ -179,4 +179,3 @@ equations on closed manifolds and it has roughly the        the Riemann–Roch t
 same form as the index theorem that we studied in           [III.6 §2](/part-03/calabiyau-manifolds) of any dimension.
 the previous section. One builds out of the symbol an          The Atiyah–Singer index theorem also has impor-
 invariant called the topological index, which generalizes   tant applications outside of complex geometry. The
-

@@ -11,9 +11,9 @@ found. But these weak solutions need not be smooth,            ous map p : E →
 and so the further question of their regularity and/or         of each point x (that is, the set of points in E that map
 possible singularities must then be addressed.                 to x) is an n-dimensional vector space. Moreover, for
    However, these are all highly technical mathemat-           every sufficiently small region U of X, the inverse image
-ical issues, far beyond the scope of this article. We          of U is homeomorphic to Rn \times U (this property is called
+ical issues, far beyond the scope of this article. We          of U is homeomorphic to Rn . imes U (this property is called
 end our discussion here, in the hope that our exces-           local triviality). The most obvious vector bundle of rank
-sive demands upon the reader’s attention have been             n over X is the space Rn \times X with the map p(v, x) = x;
+sive demands upon the reader’s attention have been             n over X is the space Rn . imes X with the map p(v, x) = x;
 minimized.                                                     this is called the trivial bundle. However, the interest-
                                                                ing bundles are the nontrivial ones, such as the tan-
 III.95    Varieties                                            gent bundle of the 2-sphere. One can learn a great deal
@@ -52,4 +52,3 @@ dle over X is, roughly speaking, a way of associating a        III.98   Wavelets
 vector space with each point x of X in such a way that
 these spaces “vary continuously” as you vary x. As an          If you wish to send a black and white picture from one
 example, consider a smooth surface X in R3 . Associated        computer to another, then an obvious way of doing it is
-

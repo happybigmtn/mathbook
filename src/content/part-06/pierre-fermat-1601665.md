@@ -58,4 +58,3 @@ link philosophy and mathematics. Yet the preoccupa-         La Géométrie), Fer
 tion with certainty remained. As his concept of con-        dling and solving indeterminate problems associated
 struction involved the use of curves, he had to consider    with constructions of loci: that is, of sets of points (usu-
 which curves could be understood by the human mind          ally curves) defined by some constraints. He identified
-

@@ -71,13 +71,13 @@ $u0u^{0}wdx = -$
 
 w dx.
 
-$I (1 + (u^{0}) ) (1 + (u^{0})^{2})^{1}/^{2}2 1/2$
+{}I (1 + (u0) ) (1 + (u0)2)1/22 1/2
 
 I
 
 This identity holds for all functions w with the properties specified above, and consequently
 
-$u0u0 = = 0(2)(1 + (u^{0})^{2})^{1}/^{2}(1 + (u^{0})^{2})^{3}/^{2}$
+u0 u0 = = 0(2)(1 + (u0)2)1/2(1 + (u0)2)3/2
 
 every where on the interval I.
 
@@ -87,7 +87,7 @@ $κ =$
 
 ,
 
-$(1 + (u)^{2})^{3}/^{2}$
+(1 + (u)2)3/2
 
 which turns out to be the curvature of the graph of u. The graph of the minimizer $u^{0}$ has zero curvature every where.
 
@@ -95,7 +95,10 @@ $2$ . $2$
 
 Generalization: The Euler-Lagrange Equations It turns out that the technique we used for the previous example is extremely powerful and can be vastly generalized. One useful extension is to replace the length functional ( $1$ ) by a more general functional of the form
 
-$F[u ] = L (u , u, x) dx, (3) I where$L = L (v , z, x) is a given function, sometimes called the Lagrangian. Then F [u] can be interpreted as the “energy” (or “ action ”) of a given function u defined on the interval I. Suppose next that a particular curve $u^{0}$ is a minimizer of F , subject to certain fixed boundary conditions. We want to extract information about the behavior of $u^{0}$ , and to do so we proceed as in our first example. We select a smooth function w as above, define $f(t) = F$ [u 0 + tw], observe that $f$ has a minimum at $t = 0$ , and consequently deduce that ( $df/dt ) (0) = 0$ . As in the previous calculation, we then explicitly compute this derivative: df $(0) =L^{v}w + L^{z}wdx =( - (L^{v}) + L^{z})wdx.$ dt I I Here, L v and L z stand for the partial derivatives ∂ L / ∂ v and ∂ L / ∂ z , evaluated at ($u^{0}$ , $u^{0}$ , x). This expression $311$ equals zero for all functions w satisfying the given conditions. Therefore, $- (L^{v}(u^{0}$ , $u^{0}$ , $x)) + L^{z}(u^{0}$ , $u^{0}$ , $x) = 0(4)$ every where on the interval I. This nonlinear ordinary differential equation for the function $u^{0}$ is called the Euler-Lagrange equation. The key point is that any minimizer of our functional F must be a solution of this differential equation, which often contains important geometrical or physical information. $1$ For example, take  L(v , $z,x) = 2mv^{2} - W(z)$ , which we interpret as the difference between the kinetic energy and the potential energy W of a particle of mass m moving along the real line. The Euler-Lagrange equation (4) is then $mu^{0} = - W (u^{0})$ , which is Newton’s second law of motion. The calculus of variations provides us with an elegant derivation of this fundamental law of physics. $2$ . $3$ Systems We can generalize further, by taking  F[u ] = 
+$F[u ] = L (u , u, x) dx, (3) I where$L = L (v , z, x) is a given function, sometimes called the Lagrangian. Then F [u] can be interpreted as the “energy” (or “ action ”) of a given function u defined on the interval I. Suppose next that a particular curve $u^{0}$ is a minimizer of F , subject to certain fixed boundary conditions. We want to extract information about the behavior of $u^{0}$ , and to do so we proceed as in our first example.
+We select a smooth function w as above, define $f(t) = F$ [u 0 + tw], observe that $f$ has a minimum at $t = 0$ , and consequently deduce that ( $df/dt ) (0) = 0$ . As in the previous calculation, we then explicitly compute this derivative: df $(0) =L^{v}w + L^{z}wdx =( - (L^{v}) + L^{z})wdx.$ dt I I Here, L v and L z stand for the partial derivatives ∂ L / ∂ v and ∂ L / ∂ z , evaluated at ($u^{0}$ , $u^{0}$ , x). This expression $311$ equals zero for all functions w satisfying the given conditions.
+Therefore, $- (L^{v}(u^{0}$ , $u^{0}$ , $x)) + L^{z}(u^{0}$ , $u^{0}$ , $x) = 0(4)$ every where on the interval I. This nonlinear ordinary differential equation for the function $u^{0}$ is called the Euler-Lagrange equation. The key point is that any minimizer of our functional F must be a solution of this differential equation, which often contains important geometrical or physical information. $1$ For example, take  L(v , $z,x) = 2mv^{2} - W(z)$ , which we interpret as the difference between the kinetic energy and the potential energy W of a particle of mass m moving along the real line.
+The Euler-Lagrange equation (4) is then $mu^{0} = - W (u^{0})$ , which is Newton’s second law of motion. The calculus of variations provides us with an elegant derivation of this fundamental law of physics. $2$ . $3$ Systems We can generalize further, by taking  F[u ] =
 
 L (u , u, x) dx,
 
@@ -103,15 +106,15 @@ L (u , u, x) dx,
 
 I
 
-where now we are taking vector-valued functions u that map the interval I into R m . If $u^{0}$ is a minimizer in some appropriate class of functions, then one can compute the Euler-Lagrange equation using ideas similar to those discussed above. We obtain the equations $- ((L^{v})^{k}(u^{0}$ , $u^{0}$ , $x)) + (L^{z})^{k}(u^{0}$ , $u^{0}$ , $x) = 0$ ,
+where now we are taking vector-valued functions u that map the interval I into R m . If $u^{0}$ is a minimizer in some appropriate class of functions, then one can compute the Euler-Lagrange equation using ideas similar to those discussed above. We obtain the equations - ((Lv)k(u0 , $u^{0}$ , x)) + (Lz)k(u0 , $u^{0}$ , $x) = 0$ ,
 
 (6)
 
-one for each k. Here L v k and L z k represent the partial derivatives of L with respect to the kth variables of $u$ and $u$, evaluated at ($u^{0}$ , $u^{0}$ , x). These equations form a system of coupled ordinary differential equations for the components of $u^{0} = (u\frac{1}{0}$ , . . . , $u^{m}0)$ . For a geometric example, put m g $ij(z)v^{i}v^{j})^{1}/^{2}$ , L (v , z, x)  =  (
+one for each k. Here L v k and L z k represent the partial derivatives of L with respect to the kth variables of $u$ and $u$, evaluated at ($u^{0}$ , $u^{0}$ , x). These equations form a system of coupled ordinary differential equations for the components of $u^{0} = (u\frac{1}{0}$ , . . . , $u^{m}0)$ . For a geometric example, put m g ij(z)vivj)1/2 , L (v , z, x)  =  (
 
 $i$ , $j = 1$
 
-so that F [u] is the length of the curve u in the riemannian metric [I.3](/part-01/fundamental-definitions) determined by the g $ij$ . When $u^{0}$ is a curve of constant unit speed, the Euler-Lagrange system of equations ( $6$ ) can be rewritten, after some work, to read m j $((u^{k})^{0}) +$ k $((u^{i})^{0}) (u^{0}) = 0(k = 1$ , . . . , m ) Γ ij $i$ , $j = 1$
+so that F [u] is the length of the curve u in the riemannian metric [I.3](/part-01/fundamental-definitions) determined by the g $ij$ . When $u^{0}$ is a curve of constant unit speed, the Euler-Lagrange system of equations ( $6$ ) can be rewritten, after some work, to read m j ((uk)0) + k ((ui)0) (u0) = 0(k = 1 , . . . , m ) Γ ij $i$ , $j = 1$
 
 k
 
@@ -141,7 +144,9 @@ $3$ . $1$
 
 A first example extends our earlier examination of shortest curves. For this problem we are given a region U in the plane, with boundary ∂U , and a real-valued function g defined on the boundary. We then look at a class of admissible real-valued functions u, defined on U , with the condition that u should equal g on the boundary. We can think of the graph of u as a two dimensional curved surface with a boundary equal to the graph of g. The area of this surface is
 
-(1 + |\nablau|2)1/2 dx.F[u ] = (7) U Let us assume that a particular function $u^{0}$ minimizes the area among all other surfaces with the given boundary. What can we deduce about the geometric behavior of this so-called minimal surface? Yet again we proceed by writing $f(t) = F$ [u 0 + tw], differentiating with respect to t, and so on. After some calculation we eventually discover that $\nablau^{0} = 0(8)$ div $(1 + |\nablau^{0}|^{2})^{1}/^{2}$ within the region U, where “div” denotes the divergence operator. This nonlinear PDE is the minimal surface equation. The left-hand side turns out to be a formula for (twice) the mean curvature of the graph of $u^{0}$ . Consequently, we have shown that a minimal surface has zero mean curvature every where. Minimal surfaces are sometimes regarded physically as the surfaces formed by soap films when they are stretched between a fixed wire frame that traces out the boundary specified by the function g. III. Mathematical Concepts $3$ . $2$ Generalization: The Euler-Lagrange Equations It is now straightforward, and sometimes very profitable, to replace the area functional ( $7$ ) by the general expression $F[u ] = L ($\nabla u , u, x) dx,
+(1 + |. ablau|2)1/2 dx. F[u ] = (7) U Let us assume that a particular function $u^{0}$ minimizes the area among all other surfaces with the given boundary. What can we deduce about the geometric behavior of this so-called minimal surface? Yet again we proceed by writing $f(t) = F$ [u 0 + tw], differentiating with respect to t, and so on. After some calculation we eventually discover that $\nablau^{0} = 0(8)$ div (1 + |. ablau0|2)1/2 within the region U, where “div” denotes the divergence operator. This nonlinear PDE is the minimal surface equation.
+The left-hand side turns out to be a formula for (twice) the mean curvature of the graph of $u^{0}$ . Consequently, we have shown that a minimal surface has zero mean curvature every where. Minimal surfaces are sometimes regarded physically as the surfaces formed by soap films when they are stretched between a fixed wire frame that traces out the boundary specified by the function g. III. Mathematical Concepts $3$ . $2$ Generalization:
+The Euler-Lagrange Equations It is now straightforward, and sometimes very profitable, to replace the area functional ( $7$ ) by the general expression $F[u ] = L ($. abla u , u, x) dx,
 
 (9)
 
@@ -151,4 +156,7 @@ in which we now take U to be a region in R n . Assuming that $u^{0}$ is a minimi
 
 (10)
 
-This is a nonlinear PDE that a minimizer must satisfy. A given PDE is called variational if it has this form. If, for example, we take  L(v , $z,x) = \frac{1}{2}|v|^{2} + G(z)$ , the corresponding Euler-Lagrange equation is the nonlinear Poisson equation $\Delta u = g(u)$ , n where $g = G$ and $\Delta u = k = 1ux^{k}x^{k}$ is the laplacian [I.3](/part-01/fundamental-definitions) of u. We have shown that this important PDE is variational. This is a valuable insight, since we can then find solutions by constructing minimizers (or other critical points) of the functional F [u] = $12{}^{U2}|\nablau| + G(u)dx.4$ Further Issues in the Calculus of Variations Our examples have shown pretty convincingly how useful our simple method, called computing the first variation, can be when applied to the right geometrical and physical problems. And indeed, variational principles and methods appear in several branches of both mathematics and physics. Many of the objects that mathematicians consider most important have an underlying variational principle of some kind. The list is impressive and, besides the examples we have discussed, includes Hamilton’s equations, the Yang Mills and Selberg-Witten equations, various nonlinear wave equations, Gibbs states in statistical physics, and dynamic programming equations from optimal control theory. Many issues remain. For example, if $f = f$ (t) has a local minimum at a point $t^{0}$ , then we know not only that ( $df/dt ) (t^{0}) = 0$ , but also that $(d^{2}f/dt^{2})(t^{0}) \ge 0$ . The attentive reader will correctly guess that a generalization of this observation, called computing the second variation, is important for the calculus of variations. It provides an insight into appropriate convexity conditions that are needed to ensure that critical
+This is a nonlinear PDE that a minimizer must satisfy. A given PDE is called variational if it has this form. If, for example, we take  L(v , $z,x) = \frac{1}{2}|v|^{2} + G(z)$ , the corresponding Euler-Lagrange equation is the nonlinear Poisson equation $\Delta u = g(u)$ , n where $g = G$ and $\Delta u = k = 1ux^{k}x^{k}$ is the laplacian [I.3](/part-01/fundamental-definitions) of u. We have shown that this important PDE is variational.
+This is a valuable insight, since we can then find solutions by constructing minimizers (or other critical points) of the functional F [u] = $12{}^{U2}|\nablau| + G(u)dx.4$ Further Issues in the Calculus of Variations Our examples have shown pretty convincingly how useful our simple method, called computing the first variation, can be when applied to the right geometrical and physical problems. And indeed, variational principles and methods appear in several branches of both mathematics and physics.
+Many of the objects that mathematicians consider most important have an underlying variational principle of some kind. The list is impressive and, besides the examples we have discussed, includes Hamilton’s equations, the Yang Mills and Selberg-Witten equations, various nonlinear wave equations, Gibbs states in statistical physics, and dynamic programming equations from optimal control theory. Many issues remain. For example, if $f = f$ (t) has a local minimum at a point $t^{0}$ , then we know not only that ( $df/dt ) (t^{0}) = 0$ , but also that $(d^{2}f/dt^{2})(t^{0}) \ge 0$ .
+The attentive reader will correctly guess that a generalization of this observation, called computing the second variation, is important for the calculus of variations. It provides an insight into appropriate convexity conditions that are needed to ensure that critical

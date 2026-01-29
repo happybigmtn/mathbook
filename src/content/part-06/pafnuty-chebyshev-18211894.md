@@ -58,4 +58,3 @@ parison of series for convergence; and the Weierstrass        Chebyshev also had
 of order 2.                                                 theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860). In probability he is remembered for
    Weierstrass was most proud of his work on Abelian        Chebyshev’s inequality, a result that is simple but has
 functions, and much of his fame in the nineteenth cen-      innumerable applications.
-

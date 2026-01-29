@@ -52,4 +52,3 @@ sions of these theorems would be a further remark-          because it is allowe
 able breakthrough. (Variants of the abc conjecture          of V .
 [V.1](/part-05/the-abc-conjecture) would imply effective versions of these results,          Consider, for example, how we might map the infinite
 but the ABC conjecture seems even further out of reach      cylinder {(x, y, z) : x2 +y 2 = 1} to the cone {(x, y, z) :
-

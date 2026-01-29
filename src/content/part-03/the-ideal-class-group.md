@@ -41,7 +41,7 @@ of axioms that greatly clarified the area: a homology         ization property. 
                                                                                            √
 theory is any association of groups with topological         numbers of the form a + b −5 with a and b integers,
                                                                                                              √
-spaces that satisfies these axioms, and the fundamen-         one can factorize 6 either as 2 \times 3 or as (1 + −5)(1 −
+spaces that satisfies these axioms, and the fundamen-         one can factorize 6 either as 2 . imes 3 or as (1 + −5)(1 −
                                                              √
 tal properties of homology theories follow from the            −5).
 axioms.                                                         The ideal class group is a way of measuring how badly
@@ -55,4 +55,3 @@ f (0) = f (1). The point where the path begins and ends      If there are nonpri
 is called the base point. If two loops have the same base    a natural equivalence relation [I.2 §2.3](/part-01/language-and-grammar) on them
 point, they are called homotopic if one can be continu-      in such a way that the equivalence classes, which are
 ously deformed to the other, with all the intermediate       called ideal classes, form a group [I.3 §2.1](/part-01/fundamental-definitions). This group
-

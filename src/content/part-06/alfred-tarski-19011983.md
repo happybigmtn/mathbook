@@ -18,7 +18,7 @@ rings called “Artinian rings” is named in his honor.               the same 
   In 1929 Artin married one of his students, Natalie               with banach [VI.84](/part-06/stefan-banach-18921945).
 Jasny. Natalie’s Jewish background and Artin’s per-                   Encouraged by his professors, he changed his origi-
 sonal sense of justice prompted them to leave Germany              nal surname, Teitelbaum, to Tarski just before receiv-
-in 1937. They emigrated to America, where Artin spent              ing his Ph.D. in 1924, because a Jewish name was a pro-
+in 1937. They emigrated to America, where Artin spent              ing his Ph. D. in 1924, because a Jewish name was a pro-
 a year at Notre Dame University before moving to a per-            fessional handicap. This accorded with Tarski’s strong
 manent position at Indiana University. Artin’s lectures            identification with Polish nationalism and his belief
 at Notre Dame led to his influential text Galois Theory             that assimilation was a rational solution to the Jewish
@@ -32,7 +32,7 @@ Chevalley. This work seemed to revitalize Artin’s math-            In the foll
 ematical research, and, after something of a hiatus in             mental conceptual developments in metamathematics
 his written work, he began to publish regularly again.             and the semantics of formalized languages. In con-
   In 1946, Artin moved to Princeton University. While              trast with hilbert [VI.63](/part-06/david-hilbert-18621943), who called for the execu-
-there, Artin oversaw eighteen of his thirty-one Ph.D.              tion of his met a mathematical consistency program by
+there, Artin oversaw eighteen of his thirty-one Ph. D.              tion of his met a mathematical consistency program by
 students, including John Tate and Serge Lang. He also              the most restricted means possible, Tarski was open
 returned to his work in the theory of braids [III.4](/part-03/braid-groups),              to the use of any mathematical methods, including
 a topic that relates questions in topology and group               all those of set theory. His main conceptual contribu-
@@ -51,7 +51,6 @@ b. Warsaw, 1901; d. Berkeley, California, 1983
                                                                    Semitism, notwithstanding his change of name. Made a
 Symbolic logic; metamathematics; set theory; semantics; model
 theory; algebras of logic; universal algebra; axiomatic geometry   Docent at the University of Warsaw as soon as he had
-                                                                   finished his Ph.D., his position was later raised to that
+                                                                   finished his Ph. D., his position was later raised to that
 Tarski matured during Poland’s renaissance in math-                of Adjunct Professor. Neither post paid a living wage,
 ematics and philosophy in the remarkable interwar                  and so, in order to make ends meet, Tarski also taught
-

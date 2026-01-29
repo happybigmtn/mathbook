@@ -57,4 +57,3 @@ algebraic and another that used classical methods in         that each pair is i
 differential geometry. Mostow’s original proof (which            It appears to be much harder to find m vertices that
 was only for Hn ) uses instead the theory of quasi-          are all joined than to check that a given m vertices are
 conformal mappings and some ideas from dynamics.             all joined. This suggests that problems in N P are in
-

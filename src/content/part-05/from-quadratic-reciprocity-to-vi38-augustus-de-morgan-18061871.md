@@ -58,4 +58,3 @@ predicted that light falling at a certain angle on a biax-      London Mathemati
 ial crystal would be refracted to form a hollow cone
 of emergent rays. This prediction was verified by his            De Morgan, a prolific author in many fields of math-
 friend and colleague Humphrey Lloyd.                            ematics and its history, made important and original
-

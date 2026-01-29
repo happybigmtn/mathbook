@@ -6,7 +6,8 @@ General Relativity and the Einstein Equations
 
 Further Reading
 
-Brezis, H., and F. Browder. 1998 . Partial differential equations in the $20th$ century. Advances in Mathematics $135$ : $76 - 144$ . Constantin, P. 2007 . On the Euler equations of incompressible fluids. Bulletin of the American Mathematical Society $44$ : $603 - 21$ . Evans, L. C. 1998 . Partial Differential Equations. Graduate Studies in Mathematics, volume $19$ . Providence, RI: American Mathematical Society. John, F. 1991 . Partial Differential Equations. New York: Springer. Klainerman, $S. 2000$ . PDE as a unified subject. In  *  GAFA $2000*$ , Visions in Mathematics--Towards 2000 ( special issue of Geometric and Functional Analysis), part $1$ , $pp.279 - 315$ . Wald, R. M. 1984 . General Relativity. Chicago, IL: Chicago University Press. IV . $13$ General Relativity and the
+Brezis, H., and F. Browder. 1998 . Partial differential equations in the $20th$ century. Advances in Mathematics $135$ : $76 - 144$ . Constantin, P. 2007 . On the Euler equations of incompressible fluids. Bulletin of the American Mathematical Society $44$ : $603 - 21$ . Evans, L. C. 1998 . Partial Differential Equations. Graduate Studies in Mathematics, volume $19$ . Providence, RI: American Mathematical Society. John, F. 1991 . Partial Differential Equations. New York: Springer. Klainerman, $S. 2000$ . PDE as a unified subject.
+In  *  GAFA $2000*$ , Visions in Mathematics--Towards 2000 ( special issue of Geometric and Functional Analysis), part $1$ , $pp.279 - 315$ . Wald, R. M. 1984 . General Relativity. Chicago, IL: Chicago University Press. IV . $13$ General Relativity and the
 
 Einstein Equations
 
@@ -40,7 +41,11 @@ An obvious contrast between the Einstein equations ( $1$ ) and the Poisson equat
 
 $483$
 
-or for worse, however, the structure necessary to formulate Poisson’s equation has been incorporated into our traditional mathematical notation and school education. As a result, $R^{3}$ , with its Cartesian coordinate system, and notions such as functions, partial derivatives, masses, forces, and so on, are familiar to people with a general mathematical background, while the conceptual structure of general relativity is much less so, both with respect to its basic physical notions and with respect to the mathematical objects that are needed to model them. However, once one comes to terms with these, the equations turn out to be more natural and, one might even dare say, simpler. Thus, the first task of this article is to explain in more detail the conceptual structure of general relativity. Our aim will be to make it clear what the equations ( $1$ ) actually denote, and, moreover, why they are in a certain sense the simplest equations one can write down, given the general framework of the theory. This in turn will require us to review special relativity and its implications for the structure of matter, which will bring us to the unified concept of stress-energy-momentum, described by a tensorial object T . Finally, we will join Einstein in his inspired leap to the notion of a general four-dimensional Lorentzian manifold (M , g) that represents our space-time continuum. We shall see that equation ( $1$ ) expresses a relationship between the tensor T and the geometry of g as expressed in its so-called curvature. There is more to truly understanding a theory than merely knowing how to write down its governing equations. General relativity is associated with some of the most spectacular predictions of twentieth-century physics: gravitational collapse, black holes, space-time singularities, the expansion of the universe. These phenomena (which were completely unknown in 1915 and thus played no role in the formulation of the equations ( $1$ )) revealed themselves only when the conceptual issues surrounding the problem of global dynamics of solutions were understood. This took a surprisingly long time, though the story is not as well-known as the heroic struggle to attain ( $1$ ). The article will conclude with a very brief glimpse into the fascinating dynamics of the Einstein equations.
+or for worse, however, the structure necessary to formulate Poisson’s equation has been incorporated into our traditional mathematical notation and school education. As a result, $R^{3}$ , with its Cartesian coordinate system, and notions such as functions, partial derivatives, masses, forces, and so on, are familiar to people with a general mathematical background, while the conceptual structure of general relativity is much less so, both with respect to its basic physical notions and with respect to the mathematical objects that are needed to model them.
+However, once one comes to terms with these, the equations turn out to be more natural and, one might even dare say, simpler. Thus, the first task of this article is to explain in more detail the conceptual structure of general relativity. Our aim will be to make it clear what the equations ( $1$ ) actually denote, and, moreover, why they are in a certain sense the simplest equations one can write down, given the general framework of the theory.
+This in turn will require us to review special relativity and its implications for the structure of matter, which will bring us to the unified concept of stress-energy-momentum, described by a tensorial object T . Finally, we will join Einstein in his inspired leap to the notion of a general four-dimensional Lorentzian manifold (M , g) that represents our space-time continuum. We shall see that equation ( $1$ ) expresses a relationship between the tensor T and the geometry of g as expressed in its so-called curvature.
+There is more to truly understanding a theory than merely knowing how to write down its governing equations. General relativity is associated with some of the most spectacular predictions of twentieth-century physics: gravitational collapse, black holes, space-time singularities, the expansion of the universe. These phenomena (which were completely unknown in 1915 and thus played no role in the formulation of the equations ( $1$ )) revealed themselves only when the conceptual issues surrounding the problem of global dynamics of solutions were understood.
+This took a surprisingly long time, though the story is not as well-known as the heroic struggle to attain ( $1$ ). The article will conclude with a very brief glimpse into the fascinating dynamics of the Einstein equations.
 
 $1$
 
@@ -94,7 +99,9 @@ $(4)c$ ∂ $tE - \nabla \times B = 0$ . ⎭
 
 $- 1 - 1c$ ∂ $tB + \nabla \times E = 0$ ,
 
-Indeed, the Lorentz transformations are precisely the transformations that keep the form of the above equations invariant if we also transform E and B appropriately. Their significance was emphasized by poincaré [VI.61](/part-06/jules-henri-poincar-18541912). However, it was Einstein’s profound insight to elevate this invariance to the status of fundamental physical principle, despite its in compatibility with what we now usually call Galilean relativity, which corresponds to taking $c \to \i\text{nf ty}$ in (3). A surprising consequence of Lorentz invariance is that the notion of simultaneity is not absolute but depends on the observer: given two distinct events that occur at (t , x, y, z) and (t , x , y , z), it is easy to find a Lorentz transformation such that the transformed events no longer have the same t-coordinate. It follows from a celebrated result in partial differential equations known as the strong Huygens principle, applied to ( $4$ ), that electromagnetic disturbances in vacuum propagate with speed c, which we thus identify as the speed of light. In view of Lorentz invariance, this statement is independent of the frame! A further postulate of the principle of relativity is that physical theories should not allow massive particles to move at speeds (as measured in any frame) greater than or equal to c.
+Indeed, the Lorentz transformations are precisely the transformations that keep the form of the above equations invariant if we also transform E and B appropriately. Their significance was emphasized by poincaré [VI.61](/part-06/jules-henri-poincar-18541912). However, it was Einstein’s profound insight to elevate this invariance to the status of fundamental physical principle, despite its in compatibility with what we now usually call Galilean relativity, which corresponds to taking $c \to \infty$ in (3).
+A surprising consequence of Lorentz invariance is that the notion of simultaneity is not absolute but depends on the observer: given two distinct events that occur at (t , x, y, z) and (t , x , y , z), it is easy to find a Lorentz transformation such that the transformed events no longer have the same t-coordinate. It follows from a celebrated result in partial differential equations known as the strong Huygens principle, applied to ( $4$ ), that electromagnetic disturbances in vacuum propagate with speed c, which we thus identify as the speed of light.
+In view of Lorentz invariance, this statement is independent of the frame! A further postulate of the principle of relativity is that physical theories should not allow massive particles to move at speeds (as measured in any frame) greater than or equal to c.
 
 $1$ . $2$
 
@@ -114,7 +121,10 @@ $(c - 1v^{0}$ , $v^{1}$ , $v^{2}$ , $v^{3})$ , $w = (c - 1w^{0}$ , $w^{1}$ , $w^
 
 (6)
 
-The Lorentz transformations constitute precisely the symmetry group of the geometry defined by ( $5$ ). Einstein’s principle of relativity could now be understood as the principle that the fundamental equations of physics must refer to space-time only through geometric quantities: that is, quantities that can be defined purely in terms of the metric. For example, from this point of view the reason that the notion of absolute simultaneity is not allowed is that it depends on a privileged hyperplane through any given point of $R^{3} + {}^{1}$ . But there are Lorentz transformations that preserve the metric and send this hyperplane to another one through the given point, so nothing in the metric can pick out one particular hyperplane. Note that if a physical theory makes use of geometric quantities only, then it is automatically invariant under Lorentz transformations: this observation renders many complicated calculations unnecessary. Let us explore this geometric point of view further. Note that nonzero vectors v are naturally classified by the inner product  · , ·  into three types, called timelike, null, and spacelike, according to whether  v, v  $<0$ ,  v, v  $= 0$ , or  v, v  $> 0$ , respectively. Idealized point particles traverse curves γ through space-time; these are called the world lines of the corresponding particles. The postulate (referred to earlier) that speed in any frame of reference is bounded by the speed of light c can now be formulated as the following statement: if γ is the world line of a particle, then the vector d γ  /  ds must be timelike. (Null lines correspond to light rays in the geometric optics limit of ( $4$ ).) This statement is independent of the parameter s of γ, but for world lines we shall always assume that $dt/ds > 0$ . To phrase this more geometrically, $dγ/ds$ , $(c - 1$ , $0$ , $0$ , $0)< 0$ , which we interpret as the statement that γ is future-directed.
+The Lorentz transformations constitute precisely the symmetry group of the geometry defined by ( $5$ ). Einstein’s principle of relativity could now be understood as the principle that the fundamental equations of physics must refer to space-time only through geometric quantities: that is, quantities that can be defined purely in terms of the metric. For example, from this point of view the reason that the notion of absolute simultaneity is not allowed is that it depends on a privileged hyperplane through any given point of $R^{3} + {}^{1}$ .
+But there are Lorentz transformations that preserve the metric and send this hyperplane to another one through the given point, so nothing in the metric can pick out one particular hyperplane. Note that if a physical theory makes use of geometric quantities only, then it is automatically invariant under Lorentz transformations: this observation renders many complicated calculations unnecessary. Let us explore this geometric point of view further.
+Note that nonzero vectors v are naturally classified by the inner product  · , ·  into three types, called timelike, null, and spacelike, according to whether  v, v  $<0$ ,  v, v  $= 0$ , or  v, v  $> 0$ , respectively. Idealized point particles traverse curves γ through space-time; these are called the world lines of the corresponding particles. The postulate (referred to earlier) that speed in any frame of reference is bounded by the speed of light c can now be formulated as the following statement: if γ is the world line of a particle, then the vector d γ  /  ds must be timelike.
+(Null lines correspond to light rays in the geometric optics limit of ( $4$ ).) This statement is independent of the parameter s of γ, but for world lines we shall always assume that $dt/ds > 0$ . To phrase this more geometrically, $dγ/ds$ , $(c - 1$ , $0$ , $0$ , $0)< 0$ , which we interpret as the statement that γ is future-directed.
 
 $IV$ . $13$ .
 
@@ -186,9 +196,10 @@ is the best-known expression of one aspect of this unification. This relation ar
 
 $485$
 
-to generalize Newton’s second law m (dv  /  dt)  =  f to a relation between $4$ - vectors in Minkowski space. General relativity has to be formulated in terms of fields rather than particles. As a first step toward understanding it, let us look at continuous media. Now, instead of particles we consider matter fields; the unification of dynamical concepts encompasses what is known as stress, and its complete expression is embodied by the so-called stress-energy-momentum tensor T . This tensor is fundamental to general relativity, so we have no choice but to familiarize ourselves with it. It will be the key to the form of the Einstein equations ( $1$ ) as well as to the object on their right-hand side. For each point $q \in R^{3} + {}^{1}$ , the stress-energy-momentum tensor field T gives us a map
+to generalize Newton’s second law m (dv  /  dt)  =  f to a relation between $4$ - vectors in Minkowski space. General relativity has to be formulated in terms of fields rather than particles. As a first step toward understanding it, let us look at continuous media. Now, instead of particles we consider matter fields; the unification of dynamical concepts encompasses what is known as stress, and its complete expression is embodied by the so-called stress-energy-momentum tensor T . This tensor is fundamental to general relativity, so we have no choice but to familiarize ourselves with it.
+It will be the key to the form of the Einstein equations ( $1$ ) as well as to the object on their right-hand side. For each point $q \in R^{3} + {}^{1}$ , the stress-energy-momentum tensor field T gives us a map
 
-$T$ : $(R^{4})^{q} \times (R^{4})^{q} \to R(9)$
+$T$ : (R4)q . imes (R4)q \to R(9)
 
 defined by the formula
 
@@ -206,7 +217,8 @@ $T^{00} = (ρ + p)u^{0}u^{0} - p,T^{0i} = (ρ + p)u^{i}u^{0}$ ,
 
 $Tij = (ρ + p)u^{i}u^{j} + pδij$ ,
 
-where u is the $4$ - velocity , a timelike vector normalized such that  u, u  $= - c^{2}$ , ρ is the mass-energy, p is the pressure, and where $δij = 1$ if $i = j,0$ if $i = j,$ and $i$ and j range over $1$ , $2$ , $3$ . Greek indices will range over $0$ , $1$ , $2$ , $3$ . We identify $T^{00}$ with energy, $T^{0i}$ with momentum, and T ij with stress. These notions are clearly framedependent. Finally, observe that T (u , u)  =  ρ$c^{2}$ . This is the field-theoretic version of the famous equation ( $8$ ). In general, T is derived from the totality of all the matter fields by constitutive functions that depend on the nature of the matter fields and their interactions. We need not worry here about such things. But, regard less of the nature of the matter fields involved, we always postulate that the following equations are satisfied:
+where u is the $4$ - velocity , a timelike vector normalized such that  u, u  $= - c^{2}$ , ρ is the mass-energy, p is the pressure, and where $δij = 1$ if $i = j,0$ if $i = j,$ and $i$ and j range over $1$ , $2$ , $3$ . Greek indices will range over $0$ , $1$ , $2$ , $3$ . We identify $T^{00}$ with energy, $T^{0i}$ with momentum, and T ij with stress. These notions are clearly framedependent. Finally, observe that T (u , u)  =  ρ$c^{2}$ . This is the field-theoretic version of the famous equation ( $8$ ).
+In general, T is derived from the totality of all the matter fields by constitutive functions that depend on the nature of the matter fields and their interactions. We need not worry here about such things. But, regard less of the nature of the matter fields involved, we always postulate that the following equations are satisfied:
 
 $3$
 
@@ -256,22 +268,22 @@ arrive at the so-called relativistic Euler equations.         absence of gravity
          3    From Special to General Relativity              in arbitrary coordinate systems. That is to say, let us
 With the elements of special relativity at hand, together     change from our Minkowski coordinates x 0 , x 1 , x 2 , x 3
 with their deep implications for the nature of energy,        to the most general coordinate system, which we shall
-momentum, and stress, we can now pass to the formu-           write as \bar{x} \bar{\mu} = \bar{x} \bar{\mu} (x 0 , x 1 , x 2 , x 3 ), where \bar{\mu} ranges over
+momentum, and stress, we can now pass to the formu-           write as . ar{x} . ar{\mu} = . ar{x} . ar{\mu} (x 0 , x 1 , x 2 , x 3 ), where . ar{\mu} ranges over
 lation of general relativity.                                 0, 1, 2, 3.
                                                                  Expressing scalar functions in arbitrary coordinates
 3.1     The Equivalence Principle                             poses no problem. But what about vector fields? If v
                                                               is a vector field expressed in Minkowski coordinates
 Einstein understood as early as 1907 that the most pro-       as (v 0 , v 1 , v 2 , v 3 ), how do we express v in our new
-found aspect of the gravitational force could not be          coordinates \bar{x} \bar{\mu} ?
+found aspect of the gravitational force could not be          coordinates . ar{x} . ar{\mu} ?
 described within the relativity principle as he had for-         One has to think a bit about what a vector field actu-
 mulated it in 1905. This aspect is what he called the         ally is. The correct point of view is to consider a vec-
 equivalence principle.                                        tor field v as a first-order differential operator defined
   The easiest setting in which to understand this prin-       (using Einstein’s summation convention) by v(f ) =
-ciple is that of the “test particle” with velocity v(t) in    v μ ∂\mu f . So we seek v \bar{\mu} such that v(f ) = v \bar{\mu} ∂\bar{\mu} f for all
+ciple is that of the “test particle” with velocity v(t) in    v μ ∂\mu f . So we seek v . ar{\mu} such that v(f ) = v . ar{\mu} ∂. ar{\mu} f for all
 a fixed gravitational field φ. In this case, we have that       functions f . The chain rule then gives us our answer:
 the classical gravitational force is given by f = −m∇φ,
-                                                                                        ∂ \bar{x} \bar{\mu} ν
-and we may rewrite Newton’s second law m(dv/dt) =                                      v \bar{\mu} =  v .                (14)
+                                                                                        ∂ . ar{x} . ar{\mu} ν
+and we may rewrite Newton’s second law m(dv/dt) =                                      v . ar{\mu} =  v .                (14)
                                                                                         ∂x ν
 f as
                                                                What about tensors, such as the stress–energy–mo-
@@ -281,23 +293,23 @@ f as
 
 IV.13.   General Relativity and the Einstein Equations                                                                  487
 
-T\bar{\mu}ν̄ such that                                                3.3   Lorentzian Geometry
-                                            \bar{\mu}   ν̄
-                   T (u, v) = T\bar{\mu}ν̄ u v ,               (15)
+T. ar{\mu}ν̄ such that                                                3.3   Lorentzian Geometry
+                                            . ar{\mu}   ν̄
+                   T (u, v) = T. ar{\mu}ν̄ u v ,               (15)
                                                                The profound insight of replacing the fixed Minkowski
-where the numbers u\bar{\mu} are the components of u with             η with a dynamic g brought Einstein to what we now
-respect to the coordinates \bar{x} \bar{\mu} as we have just calculated    call Lorentzian geometry. Lorentzian geometry gener-
+where the numbers u. ar{\mu} are the components of u with             η with a dynamic g brought Einstein to what we now
+respect to the coordinates . ar{x} . ar{\mu} as we have just calculated    call Lorentzian geometry. Lorentzian geometry gener-
 them above. (Note that these components depend on              alizes Minkowski geometry following the blueprint of
 the point q. This is why it is now essential to distinguish    riemann [VI.49]. That is, we replace the Minkowski
 R4 q from R4 .) Again, the chain rule gives us the answer:      metric η by a general map
-                                   ∂x ν ∂x \mu T\bar{\mu}ν̄ = Tμν                    .                                g : R4 q \times R4 q → R.
-                                   ∂ \bar{x} ν̄ ∂ \bar{x} \bar{\mu}
+                                   ∂x ν ∂x \mu T. ar{\mu}ν̄ = Tμν                    .                                g : R4 q . imes R4 q → R.
+                                   ∂ . ar{x} ν̄ ∂ . ar{x} . ar{\mu}
 Classically, we write                                          In other words, we replace η by a symmetric covariant
-            T = T\bar{\mu}ν̄ d\bar{x} \bar{\mu} d\bar{x} ν̄ = Tμν dx \mu dx ν .          2-tensor, which is expressed in arbitrary coordinates
+            T = T. ar{\mu}ν̄ d. ar{x} . ar{\mu} d. ar{x} ν̄ = Tμν dx \mu dx ν .          2-tensor, which is expressed in arbitrary coordinates
                                                                x \mu by
 One can interpret the above as a shorthand notation for
-(15), but it also tells us how to compute T\bar{\mu}ν̄ from Tμν                              gμν dx \mu dx ν .
-by formally applying the chain rule to d\bar{x} \bar{\mu}.                Moreover, we require that at each point q the bilin-
+(15), but it also tells us how to compute T. ar{\mu}ν̄ from Tμν                              gμν dx \mu dx ν .
+by formally applying the chain rule to d. ar{x} . ar{\mu}.                Moreover, we require that at each point q the bilin-
    There is another covariant symmetric 2-tensor be-           ear form g(· , ·) can be diagonalized to the Minkowski
 sides T that is relevant here. This is the Minkowski met-      form (6). Loosely speaking, a Lorentzian metric is one
 ric itself. Indeed, the classical form of the Minkowski        that “looks locally like the Minkowski metric,” just as
@@ -307,10 +319,10 @@ where the ημν for Minkowski coordinates x \mu are given             Just as w
 by η00 = −1, η0 i = 0, ηij = 1 if i = j, and ηij = 0 if         g permits us to classify nonzero vectors vq at a point q
 i = j. To avoid the cumbersome notation · , ·, let us       as timelike, null, or spacelike and to define proper times
 refer to the Minkowski metric as η. Following the above,       of world lines γ(s) = (x 0 (s), x 1 (s), x 2 (s), x 3 (s)) by
-we may express η in general coordinates \bar{x} \bar{\mu} by               the formula (7), but with γ̇, γ̇ replaced by gμν ẋ μ ẋ ν .
-                        η\bar{\mu}ν̄ d\bar{x} \bar{\mu} d\bar{x} ν̄ ,                  It is in this sense that we can speak of the geometry
+we may express η in general coordinates . ar{x} . ar{\mu} by               the formula (7), but with γ̇, γ̇ replaced by gμν ẋ μ ẋ ν .
+                        η. ar{\mu}ν̄ d. ar{x} . ar{\mu} d. ar{x} ν̄ ,                  It is in this sense that we can speak of the geometry
                                                                of g.
-where η\bar{\mu}ν̄ is computed by formal application of the
+where η. ar{\mu}ν̄ is computed by formal application of the
                                                                   In view of Minkowski’s formulation of the special rel-
 chain rule.
                                                                ativity principle as the statement that the equations
@@ -351,11 +363,9 @@ $\lambda$
 
 Γ μν
 
-Here, the numbers g μν are the components of the “inverse metric” of g: that is, they are the unique solu\mu tion to the equation  g\mu\nug\nu\lambda = δ\lambda , where, as usual, μ
+Here, the numbers g μν are the components of the “inverse metric” of g: that is, they are the unique solu\mu tion to the equation  g\mu. ug\nu. ambda = δ. ambda$, where, \text{as usual}, \mu$δ. ambda = 1$if$. ambda = \mu$and$0 otherwise. (It turns out that g $\mu\nu$ is very useful for the calculational gymnastics that are typical of tensor analysis when it exploits the Einstein summation convention .) One can then define a differential operator $\nabla$ \mu called a connection, which acts on vector fields by ν
 
-$δ\lambda = 1$ if $\lambda = \mu$ and $0$ otherwise. (It turns out that g μν is very useful for the calculational gymnastics that are typical of tensor analysis when it exploits the Einstein summation convention .) One can then define a differential operator $\nabla$ \mu called a connection, which acts on vector fields by ν
-
-$\nabla\mu v\nu =$ ∂ \mu v\nu + Γ\mu\lambda v\lambda(16)
+$\nabla\mu v\nu =$ ∂ \mu v\nu + Γ\mu. ambda v. ambda(16)
 
 and on covariant $2$ - tensors by
 
@@ -363,7 +373,7 @@ and on covariant $2$ - tensors by
 
 σ
 
-T σ\nu - Γ\lambda\nu\nabla\lambda T\mu\nu = ∂ \lambda T\mu\nu - Γ\lambda\mu T μσ .
+T σ\nu - Γ. ambda\nu. abla. ambda T\mu\nu = ∂ . ambda T\mu\nu - Γ. ambda\mu T μσ .
 
 (17)
 
@@ -371,7 +381,8 @@ The left-hand sides of ( $16$ ) and ( $17$ ) define tensors that can be expresse
 
 (18)
 
-where \nabla\mu = g\mu\nu\nabla\nu refers to the connection associated with g. If we consider a limit as the matter field becomes concentrated at a point, or rather as the stress-energymomentum tensor T μν is nonzero only on a world line, then this curve will be a geodesic of g: that is, a curve that locally maximizes the proper time defined by g. These are the analogues of straight timelike lines in Minkowski space. In this limit, the motion of the matter does not depend on the nature of the stressenergy-momentum tensor, but only on the geometry of the metric that defines geodesics. Thus, all objects fall in the same way. These considerations give a concrete realization to the equivalence principle in general relativity. Finally, it is important to remark that for a general metric g, the identity ( $18$ ) does not imply global conservation laws ( $11$ ) for “total energy” and “total momentum.” Such laws hold only if g has symmetries. The fact that the fundamental conservation laws survive in general only at the infinitesimal level is an important insight into the nature of these principles in physics.
+where . abla\mu = g\mu\nu. abla\nu refers to the connection associated with g. If we consider a limit as the matter field becomes concentrated at a point, or rather as the stress-energymomentum tensor T μν is nonzero only on a world line, then this curve will be a geodesic of g: that is, a curve that locally maximizes the proper time defined by g. These are the analogues of straight timelike lines in Minkowski space. In this limit, the motion of the matter does not depend on the nature of the stressenergy-momentum tensor, but only on the geometry of the metric that defines geodesics.
+Thus, all objects fall in the same way. These considerations give a concrete realization to the equivalence principle in general relativity. Finally, it is important to remark that for a general metric g, the identity ( $18$ ) does not imply global conservation laws ( $11$ ) for “total energy” and “total momentum.” Such laws hold only if g has symmetries. The fact that the fundamental conservation laws survive in general only at the infinitesimal level is an important insight into the nature of these principles in physics.
 
 IV. Branches of Mathematics
 
@@ -381,7 +392,7 @@ Curvature and the Einstein Equations
 
 It remains, then, to give a set of equations for the metric g that relate it to T . In anticipation of a Newtonian limit, we expect these equations to be second order, and we expect them to implement “general covariance” in the simplest way possible: they should refer to no other structure but g itself and T . Again, Riemannian geometry provides ready-made tensorial objects that are invariantly associated with g. One can define the Riemann curvature tensor
 
- R\mu\nu\lambdaρdx\mu$dx$\nudx\l\text{ambda dx}ρ
+ R\mu\nu. ambdaρdx\mu$dx$. udx. ambda dxρ
 
 with components given by
 
@@ -395,7 +406,7 @@ with components given by
 
 τ
 
- -  ∂ \lambdaΓ\nuρ+ Γ\nu\lambdaΓτρ - Γ\nuρR\mu\nu\lambdaρ = g\muσ (∂ $ρΓ\nu\lambdaΓτ\lambda$
+ -  ∂ . ambdaΓ\nuρ+ Γ\nu. ambdaΓτρ - Γ\nuρR\mu\nu. ambdaρ = g\muσ (∂ $ρΓ\nu\lambdaΓτ\lambda$
 
 ).
 
@@ -403,7 +414,8 @@ One can also define the Ricci curvature
 
 R μν dx \mu dx ν ,
 
-a covariant symmetric $2$ - tensor with components given by R\mu\nu = g\lambdaρR\mu\nu\lambdaρ , and the scalar curvature $R = g$ μν R μν . If g were the induced (Riemannian) metric on $a_{2}$ - surface in $R^{3}$ , then R would just be twice the Gauss curvature K. The above expressions should be thought of as complicated tensorial generalizations of Gauss curvature to several dimensions. The final piece of the puzzle for the formulation of the Einstein equations ( $1$ ) is provided by the following constraint that Einstein demanded: whatever the equation relating the metric and the stress-energy-momentum tensor of matter, ( $18$ ) (the infinitesimal conservation of stress - energy - momentum) should hold as a consequence. Now, it turns out that for any metric g, the so-called Bianchi identities imply that \nabla\mu(R\mu\nu - \frac{1}{2}g\mu\nu R) = 0 .
+a covariant symmetric $2$ - tensor with components given by R\mu\nu = g. ambdaρR\mu\nu. ambdaρ , and the scalar curvature $R = g$ μν R μν . If g were the induced (Riemannian) metric on $a_{2}$ - surface in $R^{3}$ , then R would just be twice the Gauss curvature K. The above expressions should be thought of as complicated tensorial generalizations of Gauss curvature to several dimensions. The final piece of the puzzle for the formulation of the Einstein equations ( $1$ ) is provided by the following constraint that Einstein demanded:
+whatever the equation relating the metric and the stress-energy-momentum tensor of matter, ( $18$ ) (the infinitesimal conservation of stress - energy - momentum) should hold as a consequence. Now, it turns out that for any metric g, the so-called Bianchi identities imply that . abla\mu(R\mu\nu - . rac{1}{2}g\mu\nu R) = 0 .
 
 (19)
 
@@ -413,7 +425,7 @@ $1$
 
 T μν and the tensor R μν $- {}^{2}$ g μν R. The form
 
- R\mu\nu - \frac{1}{2}g\mu\nu R = 8\pi Gc - 4 T\mu\nu(20)
+ R\mu\nu - . rac{1}{2}g\mu\nu R = 8\pi Gc - 4 T\mu\nu(20)
 
 is then uniquely determined by the requirement that it should give the correct Newtonian limit when one makes the identifications $g^{00}$ ∼ $1 + 2φ/c^{2}$ , g $ij$ ∼ $(1 - 2φ/c^{2})δ$ ij . $g^{0j}$ ∼ $0$ , The form (1) corresponds to the usual units $G = c = 1$ . Note that ( $1$ ), when written out explicitly, is nonlinear in the metric components g μν .
 
@@ -491,7 +503,15 @@ matter, not the norm of the gravitational force.            formulation of (1) b
 
 $490$
 
-interpretation of the theory immediately suggests the resolution to the dilemma: such solutions are to be considered “the same” because they are the same from the point of view of all geometric measurements. In modern language, a solution to the Einstein vacuum equations (say) is an equivalence class [I.2](/part-01/language-and-grammar) of space times (M , g), where two space-times are equivalent if there exists a diffeomorphism φ between them such that in any open set the metric has the same coordinate form when one identifies local coordinates by φ. It turns out that once these conceptual issues are overcome, the Einstein equations can be viewed as hyperbolic. The easiest way to do this is to impose a gauge: that is to say, a certain restriction on the coordinate system. Specifically, one requires the coordinate functions x α to satisfy the wave equation g x α $= 0$ , where the d’Alembertian operator is defined by the formula $1$ ∂ μ ( - gg μν ∂ ν). $g =$ √ $- g$ Such coordinates always exist locally and they are traditionally called harmonic coordinates, although the term wave coordinates would perhaps be more appropriate. The Einstein equation can then be written as a system g g μν = N μν ({ g αβ }$, {\partial γ g αβ })$, where N μν is a nonlinear expression that is quadratic in the ∂ γ g αβ . In view of the Lorentzian signature of the metric, the above system constitutes what is known as a second-order nonlinear (but quasilinear) hyperbolic system. At this point, it is instructive to make a comparison with the Maxwell equations. Suppose we are given an electric field E and a magnetic field B defined on Minkowski space. $A_{4}$ - potential is a vector field A suc$h^{3}$ that $E^{i} = -$ ∂ $iA^{0} - c - 1$ ∂ $tA^{i}$ , and $B^{i} = j$ , $k = {}^{1}$ ijk ∂ $jA^{k}$ . (Here ${}^{123} = 1$ , and ijk is totally antisymmetric, i.e., it transforms to its negative under permutation of any two indices .) If one wishes to view A as the fundamental physical object, then one notices that if A is replaced by the field Ã, defined by the formula Ã $= A + ( - c - 1$ ∂ $t\psi,$ ∂ ${}^{1}\psi,$ ∂ ${}^{2}\psi,$ ∂ ${}^{3}\psi)$ , where $\psi$ is an arbitrary function, then Ã is also $a 4$ - potential for E and B. One can expect a determined equation for A only if one imposes further conditions on it: that is, if one “fixes the gauge.” (The terminology “gauge” is originally due to weyl [VI.80](/part-06/hermann-weyl-18851955).) In the so-called Lorentz gauge $\nabla\mu A\mu = 0$ , IV. Branches of Mathematics the Maxwell equations can be written A $\mu = - c - 2$ ∂ ${}^{t2}A\mu +$ ∂ ${}^{i2}A\mu = 0$ , i from which the wave properties are completely manifest. The gauge-symmetric point of view lived on to later twentieth century glory: the Yang-Mills equations, which are a nonlinear generalization of the Maxwell equations with a similar gauge symmetry, are the central part of the so-called standard model for particle physics. The hyperbolicity property of the Einstein equations has two important repercussions. The first is that there should exist gravitational waves. This was noted by Einstein at least as early as 1918 , essentially as a result of a linearized version of the considerations in the above discussion. The second is that there is a well-posed initial value problem [IV.12](/part-04/analysis) for the Einstein equations ( $1$ ) with the domain-of-dependence property, when these are coupled with appropriate matter equations. In particular, this is true in the vacuum case ( $21$ ). The proper conceptual framework to formulate the latter problem took a long time to get right, and was only completely understood through work of Choquet-Bruhat and Geroch in the $1950s$ and $1960s$ , based on the fundamental concept of global hyperbolicity due to Leray. Well-posedness means that one could associate a unique solution (in the vacuum case, a Lorentzian $4$ - manifold (M , g) satisfying ( $21$ )) with a suitable notion of initial data. Of course, “initial data” does not mean “data at time t $= 0$ , ” since the concept of $t = 0$ is not geometric. Instead, the data take the form of some Riemannian $3$ - manifold (Σ , \bar{g}) with a symmetric covariant $2$ - tensor K. The triple (Σ , ḡ, K) has to satisfy the so-called Einstein constraint equations. But with this notion, the fundamental problem of general relativity, despite its revolutionary conceptual structure, is thoroughly classical: to determine the relation of the solution to initial data, that is to say, to determine the future from knowledge of the “present.” This is the problem of dynamics.
+interpretation of the theory immediately suggests the resolution to the dilemma: such solutions are to be considered “the same” because they are the same from the point of view of all geometric measurements. In modern language, a solution to the Einstein vacuum equations (say) is an equivalence class [I.2](/part-01/language-and-grammar) of space times (M , g), where two space-times are equivalent if there exists a diffeomorphism φ between them such that in any open set the metric has the same coordinate form when one identifies local coordinates by φ.
+It turns out that once these conceptual issues are overcome, the Einstein equations can be viewed as hyperbolic. The easiest way to do this is to impose a gauge: that is to say, a certain restriction on the coordinate system. Specifically, one requires the coordinate functions x α to satisfy the wave equation g x α $= 0$ , where the d’Alembertian operator is defined by the formula $1$ ∂ μ ( - gg μν ∂ ν). $g =$ √ $- g$ Such coordinates always exist locally and they are traditionally called harmonic coordinates, although the term wave coordinates would perhaps be more appropriate.
+The Einstein equation can then be written as a system g g μν = N μν ({ g αβ }$, {\partial γ g αβ })$, where N μν is a nonlinear expression that is quadratic in the ∂ γ g αβ . In view of the Lorentzian signature of the metric, the above system constitutes what is known as a second-order nonlinear (but quasilinear) hyperbolic system. At this point, it is instructive to make a comparison with the Maxwell equations. Suppose we are given an electric field E and a magnetic field B defined on Minkowski space.
+$A_{4}$ - potential is a vector field A suc$h^{3}$ that $E^{i} = -$ ∂ $iA^{0} - c - 1$ ∂ $tA^{i}$ , and $B^{i} = j$ , $k = {}^{1}$ ijk ∂ $jA^{k}$ . (Here ${}^{123} = 1$ , and ijk is totally antisymmetric, i.e., it transforms to its negative under permutation of any two indices .) If one wishes to view A as the fundamental physical object, then one notices that if A is replaced by the field Ã, defined by the formula Ã $= A + ( - c - 1$ ∂ $t\psi,$ ∂ ${}^{1}\psi,$ ∂ ${}^{2}\psi,$ ∂ ${}^{3}\psi)$ , where $\psi$ is an arbitrary function, then Ã is also $a 4$ - potential for E and B.
+One can expect a determined equation for A only if one imposes further conditions on it: that is, if one “fixes the gauge.” (The terminology “gauge” is originally due to weyl [VI.80](/part-06/hermann-weyl-18851955).) In the so-called Lorentz gauge $\nabla\mu A\mu = 0$ , IV. Branches of Mathematics the Maxwell equations can be written A $\mu = - c - 2$ ∂ ${}^{t2}A\mu +$ ∂ ${}^{i2}A\mu = 0$ , i from which the wave properties are completely manifest. The gauge-symmetric point of view lived on to later twentieth century glory:
+the Yang-Mills equations, which are a nonlinear generalization of the Maxwell equations with a similar gauge symmetry, are the central part of the so-called standard model for particle physics. The hyperbolicity property of the Einstein equations has two important repercussions. The first is that there should exist gravitational waves. This was noted by Einstein at least as early as 1918 , essentially as a result of a linearized version of the considerations in the above discussion.
+The second is that there is a well-posed initial value problem [IV.12](/part-04/analysis) for the Einstein equations ( $1$ ) with the domain-of-dependence property, when these are coupled with appropriate matter equations. In particular, this is true in the vacuum case ( $21$ ). The proper conceptual framework to formulate the latter problem took a long time to get right, and was only completely understood through work of Choquet-Bruhat and Geroch in the $1950s$ and $1960s$ , based on the fundamental concept of global hyperbolicity due to Leray.
+Well-posedness means that one could associate a unique solution (in the vacuum case, a Lorentzian $4$ - manifold (M , g) satisfying ( $21$ )) with a suitable notion of initial data. Of course, “initial data” does not mean “data at time t $= 0$ , ” since the concept of $t = 0$ is not geometric. Instead, the data take the form of some Riemannian $3$ - manifold (Σ , . ar{g}) with a symmetric covariant $2$ - tensor K. The triple (Σ , ḡ, K) has to satisfy the so-called Einstein constraint equations.
+But with this notion, the fundamental problem of general relativity, despite its revolutionary conceptual structure, is thoroughly classical: to determine the relation of the solution to initial data, that is to say, to determine the future from knowledge of the “present.” This is the problem of dynamics.
 
 $4$
 
@@ -620,6 +640,5 @@ contain naked singularities.
 not require that they arise from the collapse of regu-
 lar initial data. An example is the Schwarzschild metric       1. One can study “Newtonian cosmology” by modifying the foun-
                                                              dations of the Newtonian theory so as to describe the theory with a
-(22) for m < 0. This metric, however, does not admit a       nonmetric connection on, say, T3 \times R. But this step is of course inspired
+(22) for m < 0. This metric, however, does not admit a       nonmetric connection on, say, T3 . imes R. But this step is of course inspired
 complete asymptotically flat Cauchy hypersurface. This        by general relativity (see section 3.5).
-

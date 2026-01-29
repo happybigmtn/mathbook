@@ -59,4 +59,3 @@ difference equations                                               rewrote and e
                                                                   Investigation of the Laws of Thought (1854), in which
 Boole, who never attended secondary school, college, or           he introduced a new type of algebra, an algebra of
 university, was almost entirely self-taught. His father           logic, which evolved into what we now call Boolean
-

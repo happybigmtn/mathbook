@@ -21,7 +21,7 @@ Lebesgue, H. 1972–73. Œuvres Scientifiques en Cinq Vol-                      
   umes. Geneva: Université de Genève.
                                                                The generating function [IV.18 §§2.4, 3] of p(n),
                          Reinhard Siegmund-Schultze            that is,
-                                                                                        \infty
+                                                                                        . nfty
                                                                                         
                                                                             f (z) = 1 +   p(n)zn ,
 VI.73      Godfrey Harold Hardy                                                              n=1
@@ -56,6 +56,5 @@ and algebraic subjects for several decades.                    of errors: this g
 wood [VI.79](/part-06/john-edensor-littlewood-18851977), with whom he wrote almost one hun-                 Hardy’s name has been attached to several con-
 dred papers: this partnership is generally considered          cepts and results, including Hardy spaces, Hardy’s
 to have been the most fruitful in the history of math-         inequality, and the hardy–littlewood maximal the-
-ematics. They worked on convergence and summabil-              orem [IV.11 §3](/part-04/harmonic-analysis). For 0 < p ⩽ \infty the Hardy space H p
+ematics. They worked on convergence and summabil-              orem [IV.11 §3](/part-04/harmonic-analysis). For 0 < p ⩽ . nfty the Hardy space H p
 ity of series, inequalities, additive number theory            consists of functions analytic in the unit disk that are
-

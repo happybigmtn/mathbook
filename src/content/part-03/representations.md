@@ -43,7 +43,7 @@ nating group [III.68](/part-03/permutation-groups) A5 , which has sixty elements
 isomorphic to the group of rotational symmetries of             A good example of a surface is the surface of Earth.
 an icosahedron, and can therefore be thought of as           Extrinsically, this is a subset of a three-dimensional
 a group of transformations of R3 (or, equivalently, of       space R3 . But we can also view this surface two dimen-
-3 \times 3 matrices).                                             sionally by using an atlas: a collection of maps or charts
+3 . imes 3 matrices).                                             sionally by using an atlas: a collection of maps or charts
    A more fundamental reason for representations be-         that describe various regions of this surface by identi-
 ing useful is that every representation can be decom-        fying them with a subset of a two-dimensional plane.
 posed into building blocks known as irreducible repre-       As long as we have enough charts to cover the origi-
@@ -52,4 +52,3 @@ about G can be deduced from a few basic facts about          face. This way of t
 its irreducible representations.                             intrinsic, because there is more than one atlas that one
    These ideas can be generalized to infinite groups          could associate with this surface, and they may differ in
 as well, and are particularly important in the case of       various minor ways. For instance, in one atlas the city
-

@@ -53,7 +53,7 @@ many of the central ideas of optimization theory, such                         2
 as duality [III.19](/part-03/duality), the importance of convexity, and
 computational complexity [IV.20](/part-04/computational-complexity).                                   We now have three equations in five variables, so we
   The input data of a linear program (LP) consists of               can set any two of the variables x1 , . . . , x5 equal to 0,
-two vectors b ∈ Rm and c ∈ Rn , and an m \times n matrix                 and solve the equations for the other three variables
+two vectors b ∈ Rm and c ∈ Rn , and an m . imes n matrix                 and solve the equations for the other three variables
 A = (aij ). The problem is to find values for n non-                 (or solve a perturbation of them if they happen not
 negative decision variables, x1 , . . . , xn , to maximize the      to be independent). There are ten ways to choose two
 objective function c1 x1 + · · · + cn xn , subject to m con-        variables from five. Not all of the ten corresponding
@@ -125,4 +125,3 @@ x = (0, 1, 0, 3, 6), which is vertex B. Now we are ready        number of edges 
 for step 1 again, and so we write x2 , x4 , x5 , and c T x in   between any two vertices) is at most m − n. If this were
 terms of the variables that are now zero, namely x1 , x3 ,      true, it would suggest that some version of the sim-
 to give dictionary 2.                                           plex algorithm might run in a number of steps that
-

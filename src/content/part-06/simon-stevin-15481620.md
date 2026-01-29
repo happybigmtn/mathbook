@@ -54,4 +54,3 @@ rudimentary notation. It had long been the case that       as 7.0 3.1 4.2 8.3 6.
 rules for solving equations were presented through         demonstrated how decimal fractions could be used but
 particular examples that were understood to repre-         also advocated that a decimal system should be used
 sent a general class, but Viète took the step of replac-   for weights and measures and for coinage.
-

@@ -11,7 +11,7 @@ extension of the factorial function. The most persua-         where the product 
 sive reason is the fact that it arises so often in natural    tion is valid for Re(s) > 1. The extra factor Γ (s/2)π −s/2
 contexts, but it is also, in a certain sense, the smoothest   in (3) may be regarded as coming from the “prime at
 interpolation of the factorial function to all positive       infinity” (a term which may be rigorously defined).
-real values. In fact, if f : (0, \infty) → (0, \infty) is such that        Stirling’s formula is a very useful tool in dealing with
+real values. In fact, if f : (0, . nfty) → (0, . nfty) is such that        Stirling’s formula is a very useful tool in dealing with
 f (x + 1) = xf (x), f (1) = 1, and log f is convex, then      the gamma function: it provides a rather accurate esti-
 f = Γ.                                                        mate for Γ (z) in terms of simpler functions. A very
                                                               rough (but often useful) approximation for n! is (n/e)n ,
@@ -22,7 +22,7 @@ such as Γ (s)Γ (1 − s) = π / sin(π s). There is also the
 famous result Γ ( 2 ) = π , which is essentially equiva-
                                                               mate. Let δ > 0 and suppose that z is a complex num-
 lent to the fact that the area under the “normal distri-
-                           \sqrt{2}                         ber that has modulus at least 1 and argument between
+                           . qrt{2}                         ber that has modulus at least 1 and argument between
 bution curve” h(x) = (1/ 2π )e−x /2 is 1 (this can be
                                                               −π + δ and π − δ. (This second condition keeps z away
 seen by making the substitution x = u2 /2 in (1)). A
@@ -30,7 +30,7 @@ seen by making the substitution x = u2 /2 in (1)). A
 very important result concerning Γ is the Weierstrass
                                                               Stirling’s formula states that
 product expansion, which states that
-                           \infty
+                           . nfty
                                                                      log Γ (z) = (z − 12 ) log z − z + 12 log 2π + E,
                1                z −z/n
                    = zeγz     1+   e                          where the error E is at most C(δ)/|z|. Here, C(δ)
@@ -39,8 +39,8 @@ product expansion, which states that
                                                               stands for a certain positive real number that depends
 for all complex z, where γ is Euler’s constant:               on δ. (The smaller you make δ, the larger you have to
                          1         1                          make C(δ).) Using this, one may confirm that Γ decays
-          γ = lim   1+     + ··· +   − log n .                exponentially as Im z → \infty in any fixed vertical strip in
-              n→\infty        2         n
+          γ = lim   1+     + ··· +   − log n .                exponentially as Im z → . nfty in any fixed vertical strip in
+              n→. nfty        2         n
                                                               the complex plane. In fact, if α < σ < β, then
 This formula makes it clear that Γ never vanishes, and
 that it has simple poles at 0 and the negative integers.                  |Γ (σ + it)| ⩽ C(α, β)|t|β−1 e−π |t|/2
@@ -66,4 +66,3 @@ function [IV.2 §3](/part-04/number-theory), namely,                            
 where
                                                               The reason this can be useful is that one can some-
                 Ξ(s) = Γ (s/2)π −s/2 ζ(s).              (3)   times derive a succinct expression for f and analyze it
-

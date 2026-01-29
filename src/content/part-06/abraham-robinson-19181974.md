@@ -47,10 +47,9 @@ supersonic delta wings and reconstructing German V-              bra, differenti
 2 rockets to determine how they worked. After the                [VI.81](/part-06/thoralf-skolem-18871963) results dealing with nonstandard models of
 war, Robinson received his M.Sc. degree in mathematics           arithmetic. These provide models of ordinary peano
 from the Hebrew University, with minors in physics and           arithmetic [III.67](/part-03/the-peano-axioms), the usual arithmetic of the inte-
-philosophy. Several years later, he completed his Ph.D.          gers (0, 1, 2, 3, . . . ), but ones that include “nonstandard”
+philosophy. Several years later, he completed his Ph. D.          gers (0, 1, 2, 3, . . . ), but ones that include “nonstandard”
 in mathematics at Birkbeck College, London. His thesis,          elements, “numbers” that extend the scope of the stan-
 “On the metamathematics of algebra,” was published in            dard model to models that are larger but nevertheless
 1951.                                                            satisfy the axioms of the standard structure. A non-
   Meanwhile, Robinson had been teaching at the Royal             standard model of arithmetic may include, for example,
 College of Aeronautics since its founding in Cranfield in         infinite integers. As Haim Gaifman puts it succinctly, “A
-

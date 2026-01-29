@@ -59,4 +59,3 @@ celestial mechanics and lunar theory, two on the theory      destination, freedo
 of shipbuilding, three on optics, and one on ballistics.     permanent climate of controversy and the endless
    Our modern notion that functions [I.2 §2.2](/part-01/language-and-grammar) are a         metaphysical discussions among his Jansenist teach-
 fundamental object in mathematics is due to Euler.           ers, d’Alembert decided, after attaining his diploma
-

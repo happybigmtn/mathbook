@@ -58,4 +58,3 @@ dentlicher Professor (associate professor) at Berlin Uni-        the group, that
 versity. After less than two years, in 1875, he was called       equations connected with the group. Nowadays they
 to a full professorship at the Eidgenössische Technis-           are defined differently: for each complex linear repre-
 che Hochschule in Zürich, where he remained until                sentation ρ of the group G (that is, homomorphism
-

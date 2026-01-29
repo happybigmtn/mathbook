@@ -65,8 +65,7 @@ Stochastic processes; applications to electrical engineering and
 physiology; harmonic analysis; cybernetics                         stochastic processes [IV.24](/part-04/stochastic-processes)—and connected them
                                                                    to several of the newest physical, technological, and
 Wiener was just eighteen years old when, in 1913, he               biological problems. The types of problem he attacked
-was awarded a Ph.D. in logic while studying under                  included those of brownian motion [IV.24](/part-04/stochastic-processes), quantum
+was awarded a Ph. D. in logic while studying under                  included those of brownian motion [IV.24](/part-04/stochastic-processes), quantum
 Josiah Royce at Harvard University. Afterward, he stud-            mechanics, radio astronomy, anti-aircraft fire control,
 ied with, among others, russell [VI.71](/part-06/bertrand-arthur-william-russell-18721970) and hardy                  noise filtration in radar, the nervous system, and the
 [VI.73](/part-06/godfrey-harold-hardy-18771947) in Cambridge and hilbert [VI.63](/part-06/david-hilbert-18621943) in Göttingen.             theory of automata.
-

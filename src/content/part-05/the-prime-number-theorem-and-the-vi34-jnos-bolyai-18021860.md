@@ -65,4 +65,3 @@ assumption in the geometry of two and three dimen-                 an academic c
 sions, and gave formulas for the new trigonometry of               for academic positions. Jacobi studied classics under
 triangles. He showed that these formulas reduce to the             the famous philologist Boeckh and philosophy under
 familiar formulas of plane Euclidean geometry when                 Hegel. Owing to the mediocrity of the mathematics
-

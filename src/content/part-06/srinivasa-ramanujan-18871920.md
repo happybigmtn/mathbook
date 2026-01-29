@@ -15,24 +15,24 @@ of course, mathematics built on axiomatic foundations           formula for p(n)
 has become overwhelmingly successful).                          Ramanujan independently discovered the two identi-
    Skolem’s insistence on first-order theories, in which         ties that came to be known as the Rogers–Ramanujan
 variables may range only over elements, not subsets,            identities:
-was one that his contemporaries took time to accept.                  \infty                  2
+was one that his contemporaries took time to accept.                  . nfty                  2
                                                                                       qn
 But that viewpoint, and the great clarity that comes with         1+
                                                                       n=1
                                                                           (1 − q)(1 − q 2 ) · · · (1 − q n )
-it, is today the overwhelmingly dominant one. Skolem                                           \infty
+it, is today the overwhelmingly dominant one. Skolem                                           . nfty
                                                                                                               1
 insisted that the only possible logic to use in any inves-                                =                                  ,
 tigation of the foundations of mathematics was first-                                         n=0
                                                                                                    (1 − q 5 n+1 )(1 − q5 n+4 )
 
-order logic [IV.22 §3.2](/part-04/set-theory), and that second-order theo-                 \infty
+order logic [IV.22 §3.2](/part-04/set-theory), and that second-order theo-                 . nfty
                                                                                           2
                                                                                      qn +n
 ries were impermissible in the foundations, precisely            1+
                                                                           (1 − q)(1 − q 2 ) · · · (1 − q n )
 because second-order theories allowed the axioms to                   n=1
-                                                                                              \infty
+                                                                                              . nfty
 refer to sets, but the nature of sets was, in his view,                                                        1
                                                                                           =                                  .
 one of the topics to be elucidated. Skolem also felt                                         n=0
@@ -42,7 +42,7 @@ that, while one can talk of individual objects, talk of all     These have appli
 objects of a certain kind can be problematic if it is too       [III.48](/part-03/lie-theory) to statistical physics. The importance of these
 informal. Indeed, a generation earlier mathematicians           identities relates to the fact that the generating func-
 had encountered the paradoxes of naive set theory,              tion [IV.18 §§2.4, 3] for p(n) is
-where loose talk about all sets of certain kinds causes                                    \infty
+where loose talk about all sets of certain kinds causes                                    . nfty
                                                                                                  1
 real difficulties: for example, Russell’s paradox of the                                                .
 set of all sets that are not members of themselves (if it                                  n=0
@@ -62,7 +62,7 @@ Fenstadt, J. E., ed. 1970. Thoralf Skolem: Selected Works in    forms [III.59](/
   Logic. Oslo: Universitetsfor laget.                            in 1969 by Oliver Atkin.
                                                  Jeremy Gray      All Ramanujan’s studies involving p(n) concerned
                                                                 the modular form
-                                                                                     \infty
+                                                                                     . nfty
 VI.82      Srinivasa Ramanujan                                                       
                                                                       η(w) = q1/24         (1 − qn ),   where q = e2π iw .
 b. Erode, India, 1887; d. Madras (now Chennai), India, 1920
@@ -71,4 +71,3 @@ Partitions; modular forms; mock theta functions
                                                                 The relevance of this is that q1/24 /η(w) is the generat-
 Ramanujan, a self-taught Indian genius, made monu-              ing function for p(n). Of special interest to Ramanujan
 mental contributions to mathematics that set the stage          was the arithmetic function τ(n), defined by the 24 th
-

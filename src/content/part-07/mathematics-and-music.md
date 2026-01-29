@@ -120,7 +120,7 @@ Notes
 
 C D E F G A B
 
-$C_{9}1\,016\,910\,916$
+$C_{9}1,016,910,916$
 
 Intervals
 
@@ -128,25 +128,32 @@ Intervals
 
 (ratios)
 
-Figure $1$ Successive intervals in a major scale tuned in just intonation. reflect the ratios of the natural overtone series. 3 The Pythagorean major third, which has the relatively complex ratio of $(\frac{3}{2})^{4}/2^{2}$ , o$r^{81}{}^{64}$ , was replaced by the slightly smaller major third of just intonation, which has the much simpler ratio $5$ : $4$ . The difference between these two intervals is known as the syntonic comma, which corresponds to the ratio $81$ : $80$ , or $1$ . 0125 . Likewise, the Pythagorean minor third has ratio $32$ : $27$ , and so is slightly smaller than the minor third of just intonation, which has ratio $6$ : $5$ . The difference is again a syntonic comma. The Pythagorean major and minor sixths, the octave inversions of the thirds, also differ from their just counterparts by a syntonic comma. Suppose that you want to build a C-major scale in just intonation. You can do it as follows. Start with C and define each other note by the ratio of its frequency to that of C. The subdominant and dominant, that is, $F$ and  G, have ratios $4$ : $3$ and $3$ : $2$ , respectively. From these three notes one can build major triads in the ratios $4$ : $5$ : $6$ . So E, for instance, which belongs to the major triad that starts with C, has ratio $5$ : $4$ . Similarly, A has ratio $5$ : $3$ , since it is in $a$ ratio $5$ : $4$ with  F. With this kind of calculation, one ends up with the scale shown in figure $1$ , where the fractions now represent the frequency ratios between successive notes. The smaller whole tone ( $10$ : $9$ ) between notes D and E creates intonation problems for the supertonic triad, D-F-A. While the minor triads on E and A (the mediant and submediant) produce the proportion $10$ : $12$ : $15$ , the minor triad on D is out of tune. Its fifth, D-A, is a syntonic comma flat, as is its third, D-F, which is in fact a Pythagorean minor third. Tempering (increasing or decreasing) the size of intervals offered a practical solution to the problems inherent in just intonation by distributing the syntonic comma among the major thirds or the perfect fifths of the scale, thereby compromising the purity of one interval to preserve the purity of another. This prac$3$ . The partials of the overtone series are multiples of the frequency of the fundamental pitch, and the first six partials generate the intervals of the major triad. For instance, the first six partials of the overtone series of a fundamental pitch $C$ are $C(1$ : 1), $C(2$ : 1), $G(3$ : 1), $C(4$ : 1), $E (5$ : 1), $G (6$ : 1).
+Figure $1$ Successive intervals in a major scale tuned in just intonation. reflect the ratios of the natural overtone series. 3 The Pythagorean major third, which has the relatively complex ratio of (. rac{3}{2})4/22 , o$r^{81}{}^{64}$ , was replaced by the slightly smaller major third of just intonation, which has the much simpler ratio $5$ : $4$ . The difference between these two intervals is known as the syntonic comma, which corresponds to the ratio $81$ : $80$ , or $1$ . 0125 . Likewise, the Pythagorean minor third has ratio $32$ :
+$27$ , and so is slightly smaller than the minor third of just intonation, which has ratio $6$ : $5$ . The difference is again a syntonic comma. The Pythagorean major and minor sixths, the octave inversions of the thirds, also differ from their just counterparts by a syntonic comma. Suppose that you want to build a C-major scale in just intonation. You can do it as follows. Start with C and define each other note by the ratio of its frequency to that of C. The subdominant and dominant, that is, $F$ and  G, have ratios $4$ : $3$ and $3$ : $2$ , respectively.
+From these three notes one can build major triads in the ratios $4$ : $5$ : $6$ . So E, for instance, which belongs to the major triad that starts with C, has ratio $5$ : $4$ . Similarly, A has ratio $5$ : $3$ , since it is in $a$ ratio $5$ : $4$ with  F. With this kind of calculation, one ends up with the scale shown in figure $1$ , where the fractions now represent the frequency ratios between successive notes. The smaller whole tone ( $10$ : $9$ ) between notes D and E creates intonation problems for the supertonic triad, D-F-A.
+While the minor triads on E and A (the mediant and submediant) produce the proportion $10$ : $12$ : $15$ , the minor triad on D is out of tune. Its fifth, D-A, is a syntonic comma flat, as is its third, D-F, which is in fact a Pythagorean minor third. Tempering (increasing or decreasing) the size of intervals offered a practical solution to the problems inherent in just intonation by distributing the syntonic comma among the major thirds or the perfect fifths of the scale, thereby compromising the purity of one interval to preserve the purity of another. This prac$3$ .
+The partials of the overtone series are multiples of the frequency of the fundamental pitch, and the first six partials generate the intervals of the major triad. For instance, the first six partials of the overtone series of a fundamental pitch $C$ are $C(1$ : 1), $C(2$ : 1), $G(3$ : 1), $C(4$ : 1), $E (5$ : 1), $G (6$ : 1).
 
 $937$
 
-tice became known as meantone temperament. Various systems of meantone temperament were put forward in the sixteenth and seventeenth centuries for the tuning of keyboard instruments, the most common of which was quarter-comma meantone temperament. In this system the perfect fifth is lowered by a quarter of a syntonic comma so that the major thirds have the pure ratio $5$ : $4$ . A perpetual problem with meantone temperaments is that, while modulation to closely related keys sounds pleasing, modulation to more remote keys sounds out of tune. The system of equal temperament, in which the syntonic comma is distributed evenly among all twelve semitones of the octave, gradually became adopted because it removed the limitations on keys for modulation. The discrepancies between just and equaltempered intervals are small and easily accepted by most listeners. The ratio of an equal-tempered semi√
+tice became known as meantone temperament. Various systems of meantone temperament were put forward in the sixteenth and seventeenth centuries for the tuning of keyboard instruments, the most common of which was quarter-comma meantone temperament. In this system the perfect fifth is lowered by a quarter of a syntonic comma so that the major thirds have the pure ratio $5$ : $4$ . A perpetual problem with meantone temperaments is that, while modulation to closely related keys sounds pleasing, modulation to more remote keys sounds out of tune.
+The system of equal temperament, in which the syntonic comma is distributed evenly among all twelve semitones of the octave, gradually became adopted because it removed the limitations on keys for modulation. The discrepancies between just and equaltempered intervals are small and easily accepted by most listeners. The ratio of an equal-tempered semi√
 
 $12$
 
-tone is $2$ , or $1$ . 05946 . . . ; by comparison, a just semitone, with ratio $16$ : $15$ , is $1$ . 06666 . . . . The ratio of an \sqrt{1227}
+tone is $2$ , or $1$ . 05946 . . . ; by comparison, a just semitone, with ratio $16$ : $15$ , is $1$ . 06666 . . . . The ratio of an . qrt{1227}
 
 equal-tempered perfect fifth, seven semitones, is √
 
 $12$
 
-or $128$ , which is $1$ . 498307 . . . , whereas a just perfect fifth, with ratio $3$ : $2$ , is of course $1$ . $5$ . In equal temperament, one starts from a reference such as the note A, which is usually taken to have frequency $440 Hz.^{4}$ All √ other notes have frequencies of the form $440( 2)^{n}$ ,
+or $128$ , which is $1$ . 498307 . . . , whereas a just perfect fifth, with ratio $3$ : $2$ , is of course $1$ . $5$ . In equal temperament, one starts from a reference such as the note A, which is usually taken to have frequency $440 Hz.^{4}$ All √ other notes have frequencies of the form 440( 2)n ,
 
 $12$
 
-where n is the number of semitones between the note in question and the reference note A. In equal temperament, enharmonic notes such as $C*$ and $D +$ are acoustically identical--that is, they share the same frequency. Equal temperament was well-suited for the kind of music that was written from the eighteenth century onward, with its much greater range of modulations and chromatic harmonic vocabulary. The unit of the cent was defined by A. J. Ellis as the ratio between two pitches separated by one hundredth of an equal-tempered semitone, and became the most commonly used unit for measuring and comparing intervals. 5 The octave consists, therefore, of 1200 cents. If $a$ and $b$ are two frequencies, then the distance in cents between the corresponding pitches is given by the formula $n = 1200$ log ${}^{2}(a/b)$ . (As a check, notice that if $a = 2b$ then one does indeed get the answer $n = 1200$ .) $4$ . The frequency of a pitch is a measurement of the number of cycles per second (abbreviated as “ cps ”). More commonly, the number of cycles per second is identified in units called hertz (abbreviated as “ Hz ”), named after the physicist Heinrich Rudolf Hertz. $5$ . Ellis’s account of the cent appeared in his appendix to the eminent nineteenth-century physicist Hermann von Helmholtz’s On the Sensations of Tone (1870 ; English edn., 1875) .
+where n is the number of semitones between the note in question and the reference note A. In equal temperament, enharmonic notes such as $C*$ and $D +$ are acoustically identical--that is, they share the same frequency. Equal temperament was well-suited for the kind of music that was written from the eighteenth century onward, with its much greater range of modulations and chromatic harmonic vocabulary. The unit of the cent was defined by A. J.
+Ellis as the ratio between two pitches separated by one hundredth of an equal-tempered semitone, and became the most commonly used unit for measuring and comparing intervals. 5 The octave consists, therefore, of 1200 cents. If $a$ and $b$ are two frequencies, then the distance in cents between the corresponding pitches is given by the formula $n = 1200$ log ${}^{2}(a/b)$ . (As a check, notice that if $a = 2b$ then one does indeed get the answer $n = 1200$ .) $4$ . The frequency of a pitch is a measurement of the number of cycles per second (abbreviated as “ cps ”).
+More commonly, the number of cycles per second is identified in units called hertz (abbreviated as “ Hz ”), named after the physicist Heinrich Rudolf Hertz. $5$ . Ellis’s account of the cent appeared in his appendix to the eminent nineteenth-century physicist Hermann von Helmholtz’s On the Sensations of Tone (1870 ; English edn., 1875) .
 
 938                                                                                VII. The Influence of Mathematics
 
@@ -356,7 +363,7 @@ they were so attractive to composers like Schoenberg.           including Olivie
 In Schoenberg’s Suite, the eight row forms shown in             heinz Stockhausen. Compared with the serialization of
 figure 8 are in fact the only ones used in all five               pitch, however, serialization of these parameters does
 movements of the composition. This represents a high            not lend itself to such precise transformations, because
-degree of selectivity, since there are 48 (= 12 \times 4) avail-     it is less easy to organize them into discrete units than
+degree of selectivity, since there are 48 (= 12 . imes 4) avail-     it is less easy to organize them into discrete units than
 able row forms. However, this self-imposed restriction          it is the twelve notes of musical space.
 is not on its own enough to account for the interest               It is important to recognize that Schoenberg and
 or attraction of this music. An additional aspect of the        most composers whose music exhibits mathematical
@@ -383,7 +390,7 @@ of melodic manipulation seen in Bach’s works, which
 are found in a new guise in Schoenberg’s twelve-tone
 techniques, can also be found in contrapuntal works                         Figure 9 Circular model of the twelve notes (pitch classes).
 of composers before Bach, such as Palestrina. And
-some composers, including Bach, Mozart, Beethoven,                          the Klein group C2 \times C2 , by identifying transformations
+some composers, including Bach, Mozart, Beethoven,                          the Klein group C2 . imes C2 , by identifying transformations
 Debussy, Berg, and others, are said to have incorpo-                        that are equivalent up to rotation.
 rated numerological elements into their composition,                           Identifying musical notes with the elements of the
 such as symbolic numbers or proportions based on                            group Z12 of integers mod 12, and modeling various
@@ -473,4 +480,3 @@ of interval to mean any measurable distance, whether           concepts of order
 between pairs of pitches, durations, time points, or con-      concepts of pattern and transformation. Music was
 textually defined events in a musical work. He develops         once subsumed within mathematics, but it has now
 a model called the generalized interval system (GIS),          acquired its own identity as an art that has always
-

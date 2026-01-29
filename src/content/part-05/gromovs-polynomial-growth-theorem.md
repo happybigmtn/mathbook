@@ -55,7 +55,7 @@ would not be able to prove any formally unprovable               tion does indee
 statement). Fortunately, there is not enough space in            group, since nilpotent groups are “close to Abelian” and
 this article for more details!                                   a subgroup of finite index is “close to the whole group.”
                                                                  For example, a typical nilpotent group is the Heisen-
-The Goldbach Conjecture                                          berg group, which consists of all 3 \times 3 matrices with
+The Goldbach Conjecture                                          berg group, which consists of all 3 . imes 3 matrices with
    See problems and results in additive                          0 s below the diagonal, 1 s on the diagonal, and integers
        number theory [V.27](/part-05/problems-and-results-in-vi36-peter-gustav-lejeune-dirichlet-18051859)                                      above the diagonal. Given any two such matrices X and
                                                                  Y , the products XY and Y X differ only in the top right-
@@ -67,4 +67,3 @@ If G is a group and g1 , . . . , gk are generators of G (mean-      A fuller dis
 ing that every element of G can be expressed as a prod-          exact definition of “nilpotent,” can be found in geomet-
 uct of the gi and their inverses), then we can define             ric and combinatorial group theory [IV.10](/part-04/geometric-and-combinatorial-group-theory). Here
 a Cayley graph by taking the elements of G as vertices           we highlight the fact that it is a beautiful example of a
-

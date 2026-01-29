@@ -105,7 +105,7 @@ tional change is that we have written g(n) instead of         hard to show as a 
 f (n/N).                                                      for some constant C, a considerable improvement on
    The discrete Fourier transform can be thought of           CN 2 . If N is not a power of 2, then the above argu-
 as multiplying a column vector (corresponding to the          ment does not work, but there are modifications of
-function g) by an N \times N matrix (with entries N −1 ω−r n       the method that do, and that lead to similar efficiency
+function g) by an N . imes N matrix (with entries N −1 ω−r n       the method that do, and that lead to similar efficiency
 for each r and n). Therefore it can be calculated using       gains. (Indeed, this is true for the Fourier transform on
 about N 2 arithmetical operations. The fast Fourier           an arbitrary finite Abelian group.)
 transform arises from the observation that the sum in           Once we can calculate Fourier transforms efficiently,
@@ -122,4 +122,3 @@ rewritten as                                                  lution is the sequ
 g(0) + ω−2 r g(2) + ω−4 r g(4) + ω−6 r g(6)
                                                               This sequence is denoted by a ∗ b. One of the most
    + ω−r (g(1) + ω−2 r g(3) + ω−4 r g(5) + ω−6 r g(7)),          important properties of Fourier transforms is that they
-

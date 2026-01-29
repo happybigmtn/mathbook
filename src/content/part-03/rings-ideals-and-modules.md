@@ -45,11 +45,10 @@ and b are integers.                                          braic number theory
 commutative and has an identity element are dropped.         tions about polynomials. To get an idea of how this is
 This leads to a more complicated theory, but it does         done, consider the ring Z[X] of all polynomials with
 encompass important examples such as the set of all          integer coefficients, and the ideal that consists of all
-n \times n matrices (with elements in a given field, or even       multiples (by integer polynomials) of the polynomial
+n . imes n matrices (with elements in a given field, or even       multiples (by integer polynomials) of the polynomial
 just a ring).                                                X 2 + 1. In the quotient of Z[X] by this ideal, we regard
    As with other algebraic structures, there are several     two polynomials as the same if they differ by a multiple
 ways of forming new rings from old ones: for instance,       of X 2 + 1. In particular, X 2 is the same as −1. In other
 we can take subrings and direct products of two rings.       words, in this quotient ring we have a square root of
 Slightly less obviously, we can start with a ring R and      −1, and in fact the quotient ring is isomorphic to the
 form the ring of all polynomials with coefficients in R.       ring Z[i] that we met earlier.
-

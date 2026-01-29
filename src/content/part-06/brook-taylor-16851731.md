@@ -66,4 +66,3 @@ lor did not attend to questions of rigor—there is no            members of the
 consideration of convergence, of the remainder term,
 or of the validity of expressing a function by such a           The Bernoullis played a remarkable role in the develop-
 series—his derivation of the series was not out of line         ment of mathematics during the Enlightenment. Indeed
-

@@ -85,7 +85,7 @@ Bernoullis in 1955. The project continues.                       two integer squ
 number, F5 = 22 + 1, thus refuting fermat’s [VI.12](/part-06/pierre-fermat-1601665)           of the reciprocals of the square integers, or ζ(2). Euler
                                                      n
 conjecture that all integers of the form Fn = 22 + 1          showed that
-                                                                                    \infty
+                                                                                    . nfty
 were prime. He made extensive studies of the binary                                      1    π2
                                                                                             =    .
 quadratic forms x 2 +y 2 , x 2 +ny 2 , and mx 2 +ny 2 , and                         n=1
@@ -95,10 +95,11 @@ proved a form of the law of quadratic reciprocity             (For a sketch of a
   Euler was the first to use analytic methods in number        en the relationships between series and integrals. The
 theory. In the 1730 s he calculated to several decimal         existence of the Euler–Mascheroni constant followed
 places the so-called Euler–Mascheroni constant                from these researches. Using techniques he called
-                           n                               “interpolation of series,” he developed the gamma
+                           n             
+                  “interpolation of series,” he developed the gamma
                                 1
               γ = lim              − log n                    function [III.31](/part-03/the-gamma-function) and the beta function. He developed
-                   n→\infty
+                   n→. nfty
                            k=1
                                 k
                                                               the first extensive theory of continued fractions
@@ -106,7 +107,7 @@ and discovered many of its properties. Mascheroni             [III.22], and deri
 added to those properties in the 1790 s. Euler also dis-       calculation of logarithms [III.25 §4](/part-03/the-exponential-and-logarithmic-functions) and trigonomet-
 covered the sum–product formula for what we now call          ric tables, often to more than twenty decimal places.
 the Riemann zeta function,                                       He was the first to do calculus with complex num-
-                     \infty                                      bers and to investigate logarithms of negative and com-
+                     . nfty                                      bers and to investigate logarithms of negative and com-
                          1               1
             ζ(s) =          =                  ,              plex numbers. This research led to a long and bitter
                      n=1
@@ -127,4 +128,3 @@ equation.” The equation tells us that if J is defined by       path that trave
                              b
 the integral equation J = a f (x, y, y ) dx, then a func-     covered and gave a flawed proof that, for a polyhedron
 tion y(x) that maximizes or minimizes J will satisfy          “bounded by planes,” Euler’s words for what we now
-

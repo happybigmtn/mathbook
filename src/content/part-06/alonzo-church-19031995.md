@@ -40,7 +40,7 @@ ing the 1930 s: von neumann [VI.91](/part-06/john-von-neumann-19031957) arrived 
 beginning of the decade; gödel [VI.92](/part-06/kurt-gdel-19061978) visited in 1933             It can be seen as a natural outgrowth of the theory of
 and 1935 before moving there permanently in 1940;                  riemann surfaces [III.79](/part-03/riemann-surfaces) (or algebraic curves) and the
 and from September 1936 turing [VI.94](/part-06/alan-turing-19121954) spent two                   work of Lefschetz on the topology of algebraic vari-
-years there as a graduate student, completing his Ph.D.            eties [IV.4 §7](/part-04/algebra) (of higher dimension). It put algebraic
+years there as a graduate student, completing his Ph. D.            eties [IV.4 §7](/part-04/algebra) (of higher dimension). It put algebraic
 with Church.                                                       geometry on a modern analytic footing and prepared
    In 1936 Church made two profound contributions to               the ground for the spectacular breakthroughs of the
 the theory of logic. The first, which appeared in a paper           postwar period in the 1950 s and 1960 s. It also har-
@@ -54,4 +54,3 @@ lent to Turing’s definition of computable functions. At             can be tra
 the end of 1936, Turing, who had been working with                 riemann equations [I.3 §5.6](/part-01/fundamental-definitions) and the laplace opera-
 analogous ideas in an entirely different way, published             tor [I.3 §5.4](/part-01/fundamental-definitions). In higher dimensions this close link dis-
 his famous paper “On computable numbers,” which                    appears and a riemannian metric [I.3 §6.10](/part-01/fundamental-definitions) seems
-

@@ -34,7 +34,7 @@ one. This leads to the rule Fn = Fn−1 + Fn−2 . Start-                  becau
 ing with F0 = 0 and F1 = 1, we obtain the sequence                     Algebra included the first extensive discussion of com-
 0, 1, 1, 2, 3, 5, 8, 13, . . . of Fibonacci numbers. It can be         plex numbers and Bombelli formulated the four basic
                                                         √              operations of arithmetic for them.
-shown that limn→\infty Fn+1 /Fn = φ, where φ = (1+ 5)/2
+shown that limn→. nfty Fn+1 /Fn = φ, where φ = (1+ 5)/2
 is the golden ratio.
                                                                        VI.9      François Viète
                                                                        b. Fontenay-le-Comte, France, 1540; d. Paris, 1603
@@ -58,4 +58,3 @@ a greater readiness than most of his contemporaries                       The wo
 to contemplate the square roots of negative numbers.                   during the 1590 s, beginning with In Artem Analyticem
 He is remembered today for “Cardano’s rule” for solv-                  Isagoge (“Introduction to the analytic art”) in 1591.
 ing cubic equations of the form x 3 + cx = d, where                    In the Isagoge Viète began to combine classical Greek
-

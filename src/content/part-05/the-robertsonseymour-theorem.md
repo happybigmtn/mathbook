@@ -53,4 +53,3 @@ ing properties: they should be connected, which means          is enormous: it w
 that any two vertices in one of the subsets are joined         two papers. Interestingly, it turns out that the case of
 to each other by a path in that subset, and for any pair       graphs embeddable into a given surface plays a key
 of vertices in H that are linked by an edge in H the           role, as we now explain.
-

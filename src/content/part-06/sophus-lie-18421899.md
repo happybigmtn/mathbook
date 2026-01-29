@@ -64,4 +64,3 @@ theorem, which states that in addition the two regions      “Erlanger Programm
 of the plane, the inside and the outside, are homeo-        as properties invariant under a group action), Lie was
 morphic to the standard circle in the plane. Unlike the     with him. This work later created a deep rift between
 original theorem, this stronger form of the theorem         them. (Friendship turned into aloofness and hostility
-
