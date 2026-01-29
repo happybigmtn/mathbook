@@ -1,11 +1,9 @@
-import { allChapters } from "@/data/chapters"
 import ChapterContent from "./ChapterContent"
+import { getChapterContent } from "@/lib/content"
+import params from "./params.json"
 
-export function generateStaticParams() {
-  return allChapters.map((chapter) => ({
-    part: chapter.part,
-    chapter: chapter.id,
-  }))
+export async function generateStaticParams() {
+  return params
 }
 
 interface PageProps {
@@ -17,5 +15,6 @@ interface PageProps {
 
 export default async function ChapterPage({ params }: PageProps) {
   const { part, chapter } = await params
-  return <ChapterContent partId={part} chapterId={chapter} />
+  const fullText = await getChapterContent(part, chapter)
+  return <ChapterContent partId={part} chapterId={chapter} initialFullText={fullText} />
 }

@@ -124,43 +124,72 @@ const componentMap: Record<string, React.ComponentType> = {
 interface ChapterContentProps {
   partId: string
   chapterId: string
+  initialFullText?: string | null
 }
 
-export default function ChapterContent({ partId, chapterId }: ChapterContentProps) {
+export default function ChapterContent({ partId, chapterId, initialFullText }: ChapterContentProps) {
   const chapter = getChapterById(chapterId)
   const fullTextChapter = getFullTextChapterById(chapterId)
   
-  const hasFullTextContent = hasFullText(chapterId)
+  const hasFullTextContent = hasFullText(chapterId) || !!initialFullText
   const hasFeynman = hasFeynmanContent(chapterId)
   const [showFullText, setShowFullText] = useState(false)
   const [useFullWidth, setUseFullWidth] = useState(false)
   const { userState } = useProgress()
 
-  if (!chapter) {
-    return (
-      <div className="min-h-screen flex items-center justify-center px-4">
-        <div className="text-center">
-          <h1 className="text-2xl font-serif font-medium mb-4">Chapter not found</h1>
-          <Link href="/" className="btn-primary">
-            Go Home
-          </Link>
-        </div>
-      </div>
-    )
-  }
-
-  const partChapters = getChaptersByPart(partId)
-  const currentIndex = partChapters.findIndex((c) => c.id === chapterId)
-  const prevChapter = currentIndex > 0 ? partChapters[currentIndex - 1] : null
-  const nextChapter = currentIndex < partChapters.length - 1 ? partChapters[currentIndex + 1] : null
-
-  const chapterProgress = userState.progress[chapterId]
-  const completedExercises = chapterProgress?.exercisesCompleted.length || 0
-  const totalExercises = chapter.exercises.length
-  const progressPercentage = totalExercises > 0 ? (completedExercises / totalExercises) * 100 : 0
-
   // Render verbatim book text (Full Text tab) with annotations
   const renderFullTextContent = () => {
+    // If we have loaded content from file, use it
+    if (initialFullText) {
+      // Remove Title line if present (e.g. "# Title")
+      const content = initialFullText.replace(/^# .*?\n+/, "")
+      
+      return (
+        <div className="space-y-0">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+          >
+            <section className="py-8 border-b border-border/30 last:border-b-0">
+              <div className="prose-content">
+                {content.split("\n\n").map((paragraph, pIndex) => {
+                  if (!paragraph.trim()) return null
+                  
+                  // Headers
+                  if (paragraph.startsWith("#")) {
+                     const level = paragraph.match(/^#+/)?.[0].length || 0
+                     const text = paragraph.replace(/^#+\s*/, "")
+                     const Component = level === 2 ? 'h3' : level === 3 ? 'h4' : 'h2'
+                     // Simple mapping, or just use bold
+                     return (
+                        <h3 key={pIndex} className="text-xl font-semibold text-foreground/90 mt-8 mb-4">
+                          {text}
+                        </h3>
+                     )
+                  }
+
+                  return (
+                    <p
+                      key={pIndex}
+                      className="mb-6 leading-relaxed text-muted-foreground text-lg"
+                    >
+                      <MathContent content={paragraph} />
+                    </p>
+                  )
+                })}
+              </div>
+              {/* If we have annotations in the static data, show them? 
+                  They might not align with the new text, but better than nothing?
+                  Actually, existing annotations are linked to specific sections.
+                  Since we are replacing sections with one big blob, we might lose context.
+                  Let's skip annotations for now or append them at the end.
+              */}
+            </section>
+          </motion.div>
+        </div>
+      )
+    }
+
     if (!fullTextChapter) return (
       <div className="text-center py-12">
         <p className="text-muted-foreground">Full text content coming soon.</p>
@@ -257,6 +286,43 @@ export default function ChapterContent({ partId, chapterId }: ChapterContentProp
       </div>
     )
   }
+
+  if (!chapter) {
+    if (!initialFullText) {
+      return (
+        <div className="min-h-screen flex items-center justify-center px-4">
+          <div className="text-center">
+            <h1 className="text-2xl font-serif font-medium mb-4">Chapter not found</h1>
+            <Link href="/" className="btn-primary">
+              Go Home
+            </Link>
+          </div>
+        </div>
+      )
+    }
+
+    const titleMatch = initialFullText.match(/^#\\s*(.+)$/m)
+    const fallbackTitle = titleMatch ? titleMatch[1].trim() : chapterId.replace(/-/g, " ")
+
+    return (
+      <div className="min-h-screen bg-background">
+        <div className="max-w-3xl mx-auto px-6 py-12">
+          <h1 className="text-3xl font-serif font-semibold mb-6">{fallbackTitle}</h1>
+          <div className="prose-content">{renderFullTextContent()}</div>
+        </div>
+      </div>
+    )
+  }
+
+  const partChapters = getChaptersByPart(partId)
+  const currentIndex = partChapters.findIndex((c) => c.id === chapterId)
+  const prevChapter = currentIndex > 0 ? partChapters[currentIndex - 1] : null
+  const nextChapter = currentIndex < partChapters.length - 1 ? partChapters[currentIndex + 1] : null
+
+  const chapterProgress = userState.progress[chapterId]
+  const completedExercises = chapterProgress?.exercisesCompleted.length || 0
+  const totalExercises = chapter.exercises.length
+  const progressPercentage = totalExercises > 0 ? (completedExercises / totalExercises) * 100 : 0
 
   // Render Feynman content (written from scratch, NO annotations, with visualizations)
   const renderFeynmanContent = () => {
