@@ -51,11 +51,11 @@ reason is that Γ , as defined in (1), is the Mellin trans-
 form of the unarguably natural function f (x) = e−x .         Suppose that you have defined a combinatorial struc-
 The Mellin transform is a type of fourier transform           ture, and for each nonnegative integer n you wish to
 [III.27](/part-03/the-fourier-transform), but it is defined for functions on the group         understand how many examples of this structure there
-(R+ , ×) rather than (R, +) (which is the habitat of the      are of size n. If an denotes this number, then the
+(R+ , ×) rather than (R, +) (which is the habit at of the      are of size n. If an denotes this number, then the
 most familiar type of Fourier transform). For this rea-       object that you are trying to analyze is the sequence
 son, Γ is often seen in number theory, particularly ana-      a0 , a1 , a2 , a3 , . . . . If the structure is quite complicated,
 lytic number theory [IV.2](/part-04/number-theory), where multiplicative ly            then this may be a very hard problem, but one can
-defined functions are often studied by taking Fourier          sometimes make it easier by considering a different
+defined functions are often studied by taking Fourier          some times make it easier by considering a different
 transforms.                                                   object, the generating function of the sequence, which
   One appearance of Γ in a number-theoretical con-            contains the same information.
 text is in the functional equation for the riemann zeta         To define this function, one simply regards the se-

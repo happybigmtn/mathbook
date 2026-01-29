@@ -14,7 +14,7 @@ $6$
 Conclusion
 
 The point of this article is to show how mathematics enters and enriches statistics. To be sure, there are parts of statistics that are hard to mathematize: graphical displays of data are an example. Further, much of modern statistical practice is driven by the computer. There is no longer any need to restrict attention to tractable families of probability distributions. Complex and more realistic models can be used. This gives rise to the subject of statistical computing.
-Nonetheless, every once in a while someone has to think about what the computer should do and determine whether one innovative procedure works better than another. Then, mathematics holds its own. Indeed, mathematizing modern statistical practice is a challenging, rewarding enterprise, of which Stein’s estimator is a current
+Nonetheless, every once in a while some one has to think about what the computer should do and determine whether one innovative procedure works better than another. Then, mathematics holds its own. Indeed, mathematizing modern statistical practice is a challenging, rewarding enterprise, of which Stein’s estimator is a current
 
 $921$
 
@@ -32,8 +32,8 @@ $1$
 
 Introduction
 
-There are many ways in which mathematics has been applied in medicine: for example, the use of differential equations in ph arm ac ok in et i cs and models for epidemics in populations; and fourier analysis [III.27](/part-03/the-fourier-transform) of biological signals. Here we are concerned with medical statistics, by which we mean collecting data about individuals and using it to draw conclusions about the development and treatment of disease. This definition may appear to be rather restrictive, but it includes all of the following:
-randomized clinical trials of therapies, evaluating interventions such as screening programs, comparing health outcomes in different populations and institutions, describing and comparing the survival of groups of individuals, and modeling the way in which a disease develops, both naturally and when it is influenced by an intervention. In this article we are not concerned with epidemiology, the study of why diseases occur and how they spread, although most of the formal ideas described here can be applied to it.
+There are many ways in which mathematics has been applied in medicine: for example, the use of differential equations in pharmacokinetics and models for epidemics in populations; and fourier analysis [III.27](/part-03/the-fourier-transform) of biological signals. Here we are concerned with medical statistics, by which we mean collecting data about individuals and using it to draw conclusions about the development and treatment of disease. This definition may appear to be rather restrictive, but it includes all of the following:
+randomized clinical trials of therapies, evaluating interventions such as screening programs, comparing health out comes in different populations and institutions, describing and comparing the survival of groups of individuals, and modeling the way in which a disease develops, both naturally and when it is influenced by an intervention. In this article we are not concerned with epidemiology, the study of why diseases occur and how they spread, although most of the formal ideas described here can be applied to it.
 After a brief historical introduction, we shall summarize the varied approaches to probabilistic modeling in medical statistics. We shall then illustrate each one in turn using data about the survival of a sample of patients with lymphoma, showing how alternative “philosophical” perspectives lead directly to different methods of analysis. Through out, we shall give an indication of the mathematical background to what can appear to be a conceptually untidy subject.
 
 $2$
@@ -77,12 +77,12 @@ attempts to put statistical inference on a sound foun-
                                                                 of patents, or equivalently assessing the “null
 dational or axiomatic basis, but no consensus could be
                                                                 hypothesis” that it has no effect;
-reached. This has given rise to a widespread ecumeni-
+reached. This has given rise to a widespread ecu men i-
                                                               • making decisions, such as whether to provide a
 cal perspective which makes use of a mix of statisti-
                                                                 particular treatment in a health care system.
 cal “philosophies” which we shall illustrate below. The
-somewhat uncomfortable lack of an axiomatic basis
+some what uncomfortable lack of an axiomatic basis
                                                             A common aspect of these objectives is that any conclu-
 can make statistical work deeply unattractive to many
                                                             sion should be accompanied by some form of assess-
@@ -92,10 +92,10 @@ those engaged in the area.
                                                             and any estimate or prediction should have an asso-
                                                             ciated expression of uncertainty. It is this concern for
                       3   Models                            “second-order” properties that distinguishes a statis-
-In this context, by a model we mean a mathemati-            tical “inference” based on probability theory from a
+In this context, by a model we mean a mathemat i-            tical “inference” based on probability theory from a
 cal description of a probability distribution for one       purely algorithmic approach to producing conclusions
 or more currently uncertain quantities. Such a quan-        from data.
-tity might, for example, be the outcome of a patient
+tity might, for example, be the out come of a patient
 who is treated with a particular drug, or the future                     4 The Nonparametric or
 survival time of a patient with cancer. We can iden-                      “Model-Free” Approach
 tify four broad approaches to modeling—these brief
@@ -119,12 +119,12 @@ VII . $11$ .
 mass (greater than $10$ cm) was present. Such information has many uses. For example, we may wish to look at the general distribution of survival times, or assess which factors most influence survival, or provide a new patient with an estimate of their chance of surviving, say, five years. This is, of course, too small and limited a data set to draw firm conclusions, but it allows us to illustrate the different mathematical tools that can be used. We need to introduce a few technical terms.
 Patients who are still alive at the end of data collection, or have been lost to follow-up, are said to have their survival times “censored”: all we know is that they survived beyond the last time that any data was recorded about them. We also tend to call times of death “failure” times, since the forms of analysis do not just apply to death. (This term also reflects the close connection between this area and reliability theory .) The original approach to such survival data was “actuarial,” using the life-table techniques mentioned previously.
 Survival times are grouped into intervals such as years, and simple estimates are made of one’s chance of dying in an interval given that one was alive at the start of it. Historically, this probability was known as the “force of mortality,” but now it is usually called the hazard. A simple approach like this may be fine for describing large populations. It was not until Kaplan and Meier ( 1958 ) that this procedure was refined to take into account the exact rather than the grouped survival times:
-with over thirty thousand citations, their paper is one of the most referenced papers in all of science. Figure $1$ shows so-called Kaplan-Meier curves for the groups of patients with $(n = 31)$ and without $(n = 33)$ clinical symptoms at diagnosis. These curves represent estimates of the underlying survival function, whose value at a time t is thought of as the probability that a typical patient will survive until that time. The obvious way of producing such a curve is simply to let its value at time t be the proportion of the initial sample that is still alive.
+with over thirty thousand citations, their paper is one of the most referenced papers in all of science. Figure $1$ shows so-called Kaplan-Meier curves for the groups of patients with $(n = 31)$ and with out $(n = 33)$ clinical symptoms at diagnosis. These curves represent estimates of the underlying survival function, whose value at a time t is thought of as the probability that a typical patient will survive until that time. The obvious way of producing such a curve is simply to let its value at time t be the proportion of the initial sample that is still alive.
 However, this does not quite work, because of the censored patients. So instead, if a patient dies at time t, and if, just before time t, there are m patients still in the sample, then the value of the curve is multiplied by $(m - 1)/m$ ; and if a patient is censored then the value stays the same. (The tick marks on the curves show the censored survival times .) The set of patients alive just before time t is called the risk set and the hazard at t is estimated to be $1/$ m . (We are assuming that two people do not die
 
 9231 . $00$ . $8$
 
-Without symptoms
+With out symptoms
 
 Proportion surviving
 
@@ -136,7 +136,7 @@ $0$ . $40$ . 2012356704
 
 Years since diagnosis
 
-Figure $1$ Kaplan-Meier nonparametric survival curves for lymphoma patients with and without clinical symptoms at diagnosis. at the same time, but it is easy to drop that assumption and make appropriate adjustments .) Although we do not assume that the actual survival curve has any particular functional form, we do need to make the qualitative assumption that the censoring mechanism is independent of the survival time.
+Figure $1$ Kaplan-Meier nonparametric survival curves for lymphoma patients with and with out clinical symptoms at diagnosis. at the same time, but it is easy to drop that assumption and make appropriate adjustments .) Although we do not assume that the actual survival curve has any particular functional form, we do need to make the qualitative assumption that the censoring mechanism is independent of the survival time.
 (For example, it is important that those who are about to die are not for some reason preferentially removed from the study .) We also need to provide error bounds on the curves: these can be based on a variance formula developed by Major Greenwood in 1926 . (“ Major ” was his name rather than a title, one of the few characteristics he shared with Count Basie and Duke Ellington .) The “true underlying survival curve” is a theoretical construct, and not something that one can directly observe.
 One can think of it as the survival experience that would be observed in a vast population of patients, or equivalently the expected survival for a new individual drawn at random from that population. As well as estimating these curves for the two groups of patients, we may wish to test hypotheses about them. A typical one would be that the true underlying survival curves in the two groups are precisely the same.
 Traditionally such “null” hypotheses are denoted $H^{0}$ , and the traditional way to test them is to determine how unlikely it is that we would observe two Kaplan-Meier curves that are so far apart if $H^{0}$ were true. One can construct a summary measure, known as a test statistic, that is large if the observed curves are very different. For example, one possibility is to contrast the observed number of deaths in those with symptoms $(O = 20)$ with the number one would have expected if $H^{0}$ were true $(E = 11$ . 9).
@@ -151,7 +151,7 @@ $5$
 Full Parametric Models
 
 Clearly we do not actually believe that deaths can only occur at the previously observed survival times shown in the Kaplan-Meier curve, so it seems reasonable to investigate a fairly simple functional form for the true survival function. That is, we assume that the survival function belongs to some natural class of functions, each of which can be fully parametrized by a small number of parameters, collectively denoted by $\theta.$ It is $\theta$ that we are trying to discover (or rather estimate with a reasonable degree of confidence).
-If we can do so, then the model is fully specified and we can even extrapolate a certain amount beyond the observed data. We first relate the survival function and the hazard, and then illustrate how observed data can be used to estimate $\theta$ in a simple example. We assume that an unknown survival time has a probability density $p(t|\theta)$ ; without getting into technical details, this essentially corresponds to assuming that p (t $|\theta$ ) dt is the probability of dying in a small interval t to t  +  dt.
+If we can do so, then the model is fully specified and we can even extrapolate a certain amount beyond the observed data. We first relate the survival function and the hazard, and then illustrate how observed data can be used to estimate $\theta$ in a simple example. We assume that an unknown survival time has a probability density $p(t|\theta)$ ; with out getting into technical details, this essentially corresponds to assuming that p (t $|\theta$ ) dt is the probability of dying in a small interval t to t  +  dt.
 Then the survival function, given a particular value of $\theta,$ is the probability of surviving beyond t: we denote it by S (t $|\theta$ ). To calculate it, we integrate the probability density over all times greater than t. That is,
 
 $\infty$
@@ -194,7 +194,7 @@ Second, the recurring difficulty with likelihood theory remains that of “nuisa
 
 9251 . $00$ . $8$
 
-Without symptoms
+With out symptoms
 
 Proportion surviving
 
@@ -216,12 +216,12 @@ $6$
 
 A Semi-Parametric Approach
 
-Clinical trials in cancer therapy were a major motivating force in developing survival analysis--in particular, trials to assess the influence of a treatment on survival while taking account of other possible risk factors. In our simple lymphoma data set we have three risk factors, but in more realistic examples there will be many more. Fortunately, Cox ( 1972 ) showed that it was possible both to test hypotheses and to estimate the influence of possible risk factors, without having to go the whole way and specify the full survival function on the basis of possibly limited data.
+Clinical trials in cancer therapy were a major motivating force in developing survival analysis--in particular, trials to assess the influence of a treatment on survival while taking account of other possible risk factors. In our simple lymphoma data set we have three risk factors, but in more realistic examples there will be many more. Fortunately, Cox ( 1972 ) showed that it was possible both to test hypotheses and to estimate the influence of possible risk factors, with out having to go the whole way and specify the full survival function on the basis of possibly limited data.
 The Cox regression model is based on assuming a hazard function of the form $h(t|\theta) = h^{0}(t)e$ β·x . Here $h^{0}$ (t) is a baseline hazard function and β is typically a column vector of regression coefficients that measure the influence of a vector of risk factors x on the hazard. (The expression β · x denotes the scalar product of β and x .) The baseline hazard function corresponds to the hazard function of an individual whose risk factor vector is $x = 0$ , since then $e$ β·x $= 1$ . More generally, we see that an increase of one unit in a factor
 
 $926$
 
-x j will multiply the hazard by a factor e β j , for which reason this is known as the “proportional hazards” regression model. It is possible to specify a parametric form for $h^{0}$ (t), but remarkably it turns out to be possible to estimate the terms of β without specifying the form of the $h^{0}$ , if we are willing to consider the situation immediately before a particular failure time. Again we construct a risk set, and the chance of a particular patient failing, given the knowledge that someone in the risk set fails, provides a term in a likelihood.
+x j will multiply the hazard by a factor e β j , for which reason this is known as the “proportional hazards” regression model. It is possible to specify a parametric form for $h^{0}$ (t), but remarkably it turns out to be possible to estimate the terms of β with out specifying the form of the $h^{0}$ , if we are willing to consider the situation immediately before a particular failure time. Again we construct a risk set, and the chance of a particular patient failing, given the knowledge that some one in the risk set fails, provides a term in a likelihood.
 This is known as a “partial” likelihood since it ignores any possible information in the times between failures. When we fit this model to the lymphoma data we find that our estimate of β for the patients with symptoms is $1$ . $2$ : easier to interpret is its exponent $e^{1}$ . ${}^{2} = 3$ . $3$ , which is the proportional increase in hazard associated with presenting with symptoms. We can estimate error bounds of $1$ . $5 - 7$ .
 $3$ around this estimate, so we can be confident that the risk of a patient who presents with symptoms will die at any stage following diagnosis is substantially higher than that of a patient who does not present with symptoms, all other factors in the model being kept constant. A huge literature has arisen from this model, dealing with errors around estimates, different censoring patterns, tied failure times, estimating the baseline survival, and so on.
 Large-sample properties were rigorously established only after the method came into routine use, and have made extensive use of the theory of stochastic counting processes: see, for example, Andersen et al. ( 1992 ). These powerful mathematical tools have enabled the theory to be expanded to deal with the general analysis of sequences of events, while allowing for censoring and multiple risk factors that may depend on time.
@@ -264,7 +264,7 @@ $8$
 
 Discussion
 
-The preceding sections have given some idea of the tangled conceptual issues that underlie even routine medical statistical analysis. We need to distinguish a number of different roles for mathematics in medical statistics--the following are a few examples. Individual applications: here the use of mathematics is generally quite limited, since extensive use is made of software packages, which can fit a wide variety of models. In nonstandard problems, algebraic or numerical maximization of likelihoods may be necessary, or developing MCMC algorithms for numerical integration.
+The preceding sections have given some idea of the tangled conceptual issues that under lie even routine medical statistical analysis. We need to distinguish a number of different roles for mathematics in medical statistics--the following are a few examples. Individual applications: here the use of mathematics is generally quite limited, since extensive use is made of software packages, which can fit a wide variety of models. In nonstandard problems, algebraic or numerical maximization of likelihoods may be necessary, or developing MCMC algorithms for numerical integration.
 
 $927$
 

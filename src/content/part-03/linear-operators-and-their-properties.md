@@ -51,7 +51,7 @@ algebra. It is these maps that we shall discuss here.
 infinite sequences, then we can define a “shift” S from X
                                                                   is defined for every function in the space and not to
 to X, which takes the sequence (a1 , a2 , a3 , . . . ) to the
-                                                                  require D to be continuous: sometimes it is enough
+                                                                  require D to be continuous: some times it is enough
 sequence (0, a1 , a2 , a3 , . . . ). (In other words, it puts a
                                                                   if D is discontinuous but defined on a dense set of
 0 at the beginning and shifts the other values of the
@@ -97,7 +97,7 @@ ture, which is discussed in operator algebras [IV.15](/part-04/operator-algebras
 Unlike a general Banach space, a Hilbert space H has           and self-adjoint if A = AT (in which case we say that A is
 an inner product. It is therefore natural to ask that a        symmetric). The operator T has one of these four prop-
 continuous linear operator from H to H should relate           erties if and only if its matrix A has the corresponding
-to the inner product somehow. This basic idea leads to         property.
+to the inner product some how. This basic idea leads to         property.
 several different definitions, each of which picks out an
 important class of operators.                                  3.4   The Spectral Theorem
 
@@ -109,7 +109,7 @@ of an operator T is that it should preserve the inner          operator with thi
 product, in the sense that T x, T y should equal x, y      operators are important because of the famous spec-
 for any two vectors x and y. In particular, this implies       tral theorem. If T is a normal operator on a finite-
 that T x = x for every x, and therefore that T is          dimensional space H, then the spectral theorem asserts
-an isometry (that is, a map that preserves distances). If      that H has an orthonormal basis [III.37](/part-03/bayesian-analysis) of eigenvec-
+an isometry (that is, a map that preserves distances). If      that H has an orthonormal basis [III.37](/part-03/bayesian-analysis) of eigen vec-
 in addition, T is invertible, which it will be if its image    tors of T . In other words, there is a basis of H consisting
 is the whole of H, then T is a unitary map. The uni-           of orthogonal unit vectors, with the property that the
 tary maps form a group. If H is n dimensional, then            matrix of T with respect to this basis is diagonal. This

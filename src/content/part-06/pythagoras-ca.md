@@ -8,7 +8,7 @@ VI.1     Pythagoras                                                    the proof
 b. Samos, Ionia (now Samos, Greece)?, ca. 569 b.c.e.;                  solid reason to connect it to Pythagoras.
 d. Metapontum, Magna Graecia (now Metaponto, Italy)?, ca. 494 b.c.e.
                                                                           Similarly, the discovery of the incommensurabil-
-Incommensurabil i ty; theorem of Pythagoras
+Incommensurability; theorem of Pythagoras
                                                                        ity of the side and the diagonal of a square, often
                                                                        attributed to Pythagoreans, may have been made earlier
 One of the most elusive figures of antiquity, Pythago-
@@ -19,7 +19,7 @@ achievements: it has been claimed that he had a golden
                                                                           Pythagoras’s real contribution to mathematics lies
 thigh and that he issued a prescription against broad
                                                                        elsewhere. The Pythagoreans are credited by Aristo-
-beans. Few things about him can be taken as histori-
+beans. Few things about him can be taken as his tori-
                                                                        tle with the theory that “things themselves are num-
 cal facts, but we can be reasonably confident that he
                                                                        bers.” One interpretation is that they believed that
@@ -41,7 +41,7 @@ Plato, Aristotle, and later authors. From the third cen-               bodies th
 tury b.c.e. until well into late antiquity, a stream of texts          duced music, thanks to their mathematical, and there-
 was produced that purported to be by Pythagoras or                     fore orderly, arrangement. Understand the mathemat-
 his immediate successors. Indeed, historians talk of a                 ics, and you will grasp the structure of reality: this
-neo-Pythagorean philosophical movement, sometimes                      insight is perhaps Pythagoras’s true legacy.
+neo-Pythagorean philosophical movement, some times                      insight is perhaps Pythagoras’s true legacy.
 associated with neo-Platonism.
                                                                        Further Reading
    The name of Pythagoras and his school is most

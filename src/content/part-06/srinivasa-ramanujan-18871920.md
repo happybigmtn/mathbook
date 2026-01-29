@@ -23,7 +23,7 @@ But that viewpoint, and the great clarity that comes with         1+
 it, is today the overwhelmingly dominant one. Skolem                                           . nfty
                                                                                                               1
 insisted that the only possible logic to use in any inves-                                =                                  ,
-tigation of the foundations of mathematics was first-                                         n=0
+ti gation of the foundations of mathematics was first-                                         n=0
                                                                                                    (1 − q 5 n+1 )(1 − q5 n+4 )
 
 order logic [IV.22 §3.2](/part-04/set-theory), and that second-order theo-                 . nfty
@@ -40,7 +40,7 @@ one of the topics to be elucidated. Skolem also felt                            
 
 that, while one can talk of individual objects, talk of all     These have applications ranging from lie theory
 objects of a certain kind can be problematic if it is too       [III.48](/part-03/lie-theory) to statistical physics. The importance of these
-informal. Indeed, a generation earlier mathematicians           identities relates to the fact that the generating func-
+in formal. Indeed, a generation earlier mathematicians           identities relates to the fact that the generating func-
 had encountered the paradoxes of naive set theory,              tion [IV.18 §§2.4, 3] for p(n) is
 where loose talk about all sets of certain kinds causes                                    . nfty
                                                                                                  1

@@ -6,7 +6,7 @@
 we find a suitable way of regarding a and b as func-           and odd functions? A useful way to regard them is as
 tions on ZN , then the Fourier transform of a ∗ b is the      follows. We have a group of two transformations of the
 function r → â(r )b̂(r ). Therefore, to work out a∗b we     real line: one is the identity map ι : x → x and the
-can work out â and b̂, multiply them together for each       other is the reflection ρ : x → −x. Now any transfor-
+can work out â and b̂, multiply them together for each       other is the reflection ρ : x → −x. Now any trans for-
 r , and take the inverse Fourier transform of the result.     mation φ of the real line gives rise to a transforma-
 All stages of this calculation are quick, so calculating      tion of the functions defined on the real line: given a
 convolutions is quick.                                        function f , the transformed function is the function
@@ -23,7 +23,7 @@ two of the huge number of applications of the fast            a very simple prot
 Fourier transform. A more direct source of applications       Fourier transform. Very broadly speaking, a Fourier
 occurs in engineering, where one frequently wishes to         transform is a systematic way to decompose “generic”
 analyze a signal by looking at its Fourier transform. A       functions into a superposition of “symmetric” func-
-very surprising application is to quantum computa-            tions. These symmetric functions are usually quite
+very surprising application is to quantum com put a-            tions. These symmetric functions are usually quite
 tion [III.74](/part-03/quantum-computation): a famous result of Peter Shor is that one      explicitly defined: for instance, one of the most impor-
 can use a quantum computer to factorize large integers        tant examples is a decomposition into the trigono-
 very quickly; this algorithm depends in an essential way      metric functions [III.92](/part-03/trigonometric-functions) sin(nx) and cos(nx). They
@@ -94,7 +94,7 @@ This formula can be thought of as the limiting case n $\to\infty$ of the previou
 If f is smooth, then its Fourier coefficients decay to zero very quickly and it is easy to show that the Fourier $\infty$ series $n = - \infty f^{(}n)z^{n}$ converges. The issue becomes more subtle if f is not smooth (for instance, if it is merely continuous). Then one must be careful to specify the precise sense in which the series converges. In fact, a significant portion of harmonic analysis [IV.11](/part-04/harmonic-analysis) is devoted to questions of this kind, and to developing tools for answering them.
 The group of symmetries associated with this version of Fourier analysis is the circle group T . (Notice that we can think of the number e $i\theta$ both as a point in the circle and as a rotation through an angle of $\theta.$ Thus, the circle can be identified with its own group of rotational symmetries .) But there is a second group that is important here as well, namely the additive group Z of all integers.
 If we take two of our basic symmetric functions, z $m$ and $z$ n , and multiply them together, then we obtain the function z m + n , so the map n $\to$ z n is an isomorphism from Z to the set of all these functions under multiplication. The group Z is known as the Pontryagin dual of T . In the theory of partial differential equations and in related areas of harmonic analysis, the most important Fourier transform is defined on the Euclidean space R d . Among all functions f :
-R d $\to$ C , the ones considered to be “basic” are the plane waves $f(x) = cξe^{2}\pi$ ix·ξ , where ξ $\in$ R d is a vector (known as the frequency of the plane wave), x · ξ is the dot product between the position x and the frequency ξ, and c ξ is a complex number (whose magnitude is the amplitude of the plane wave). Notice that sets of the form $H\lambda =$ {x : x · $ξ = \lambda$ are (hyper) planes orthogonal to ξ, and on each such set the value of f (x) is constant. Moreover, the value taken by $f$ on $H\lambda$ is always equal to the value taken on $H\lambda + {}^{2}\pi$ .
+R d $\to$ C , the ones considered to be “basic” are the plane waves $f(x) = cξe^{2}\pi$ ix·ξ , where ξ $\in$ R d is a vector (known as the frequency of the plane wave), x · ξ is the dot product between the position x and the frequency ξ, and c ξ is a complex number (whose magnitude is the amplitude of the plane wave). Notice that sets of the form $H\lambda =$ {x : x · $ξ = \lambda$ are (hyper) planes orthogonal to ξ, and on each such set the value of f (x) is constant. More over, the value taken by $f$ on $H\lambda$ is always equal to the value taken on $H\lambda + {}^{2}\pi$ .
 This explains the name “plane waves.” It turns out that if a function f is sufficiently “nice” (e . g . , smooth and rapidly decreasing as x gets large), then it can be represented uniquely as the superposition of plane waves, where a “superposition” is now interpreted as an integral rather than a summation. More precisely, we have the formula$s^{1}$ f ${} ( ξ)e^{2}\pi$ ix·ξ $dξ,f(x) =$ R $d_{1}$ . In some texts, the Fourier transform is defined slightly differently, with factors such as $2\pi$ and $- 1$ being moved to other places.
 These notational differences have some minor benefits and drawbacks, but they are all equivalent to each other.
 
@@ -107,7 +107,7 @@ where                                                                    Fourier
 The function fˆ(ξ) is known as the Fourier transform                     effect on each plane wave. To be explicit about it,
 of f , and the second formula is known as the Fourier
                                                                                   Δf (x) = Δ              fˆ(ξ)e2π ix·ξ dξ
-inversion formula. These two formulas show how to                                                    Rd
+in version formula. These two formulas show how to                                                    Rd
 determine the Fourier-transformed function from the
                                                                                             =        fˆ(ξ)Δe2π ix·ξ dξ
 original function and vice versa. One can view the quan-                                        Rd
@@ -118,10 +118,10 @@ a component that oscillates at frequency ξ. As it turns                        
 out, there is no difficulty in justifying the convergence                  which gives us a formula for the Laplacian of a gen-
 of these integrals when f is sufficiently nice, though                     eral function. Here we have interchanged the Laplacian
 the issue again becomes more subtle for functions that                   Δ with an integral; this can be rigorously justified for
-are somewhat rough or slowly decaying. In this case,                     suitably nice f , but we omit the details.
+are some what rough or slowly decaying. In this case,                     suitably nice f , but we omit the details.
 the underlying group is the Euclidean group Rd (which                      This formula represents Δf as a superposition of
 can also be thought of as the group of d-dimensional                     plane waves. But any such representation is unique, and
-translations); note that both the position variable x and                the Fourier inversion formula tells us that
+translations); note that both the position variable x and                the Fourier in version formula tells us that
 the frequency variable ξ are contained in Rd , so Rd is                                  Δf (x) =               (ξ)e2π ix·ξ dξ.
                                                                                                                Δf
 also the Pontryagin dual group in this setting.2                                                          Rd
@@ -143,7 +143,7 @@ where we think of the vector x in coordinate form, x =                   nothing
 (x1 , . . . , xd ), and of f as a function f (x1 , . . . , xd ) of d     the multiplier −4π 2 |ξ|2 . The quantity −4π 2 |ξ|2 can be
 real variables. To avoid technicalities let us consider                  interpreted as the energy level associated4 with the fre-
 only those functions that are smooth enough for the                      quency ξ. In other words, the Laplacian can be viewed
-above formula to make sense without any difficulty.                        as a Fourier multiplier, meaning that to calculate the
+above formula to make sense with out any difficulty.                        as a Fourier multiplier, meaning that to calculate the
   In general, there is no obvious relationship between a                 Laplacian you take the Fourier transform, multiply by
 function f and its Laplacian Δf . But when f is a plane                  the multiplier, and then take the inverse Fourier trans-
 wave such as f (x) = e2π ix·ξ , there is a very simple                   form again. This viewpoint allows one to manipulate

@@ -9,7 +9,7 @@ holes in the science of today), could be reduced log-
 ically to statements about sense data, or at least to        Further Reading
 statements about everyday observable objects (such           I recommend Philosophical Analysis in the Twenti-
 as meter readings), failed. Hence the positivists were       eth Century (Princeton, NJ: Princeton University Press,
-forced to acknowledge that their program could not           2003) by Scott Soames for those wishing to read more
+forced to acknowledge that their program could not           2003) by Scott Soames for those wish ing to read more
 succeed, and (since they did not wish to dismiss large       about this subject. Each of the two volumes of this work
 parts of modern science as mere pseudo-statements)           contains substantial lists of primary and secondary
 that their standards of meaningfulness were too rigid.       sources at the end of each of its several parts.
@@ -19,10 +19,10 @@ of failure was a kind of success, because few if any
 philosophical schools before the positivists had even
                                                                           Catherine Nolan
 stated their aims with sufficient clarity to make it pos-
-sible to see that they were unachievable. The new log-            1    Introduction and Historical Overview
+sible to see that they were unachievable. The new log-            1    Introduction and Historical Over view
 ical resources provided by Frege and Russell had both
 tempted the positivists to conjecture more than they           Music is the pleasure the human mind experiences
-                                                               from counting without being aware that it is counting.
+                                                               from counting with out being aware that it is counting.
 could prove and made it clear to them that proof of
 their conjecture was impossible.                             This intriguing remark of leibniz [VI.15](/part-06/gottfried-wilhelm-leibniz-16461716), from a 1712
    With experience the scope and limits of the new           letter to fellow mathematician christian goldbach
@@ -32,8 +32,8 @@ student F. P. Ramsey as “a paradigm of philosophi-           other an art—th
 cal analysis,” which indeed it is. But it came to be         each other. Leibniz was perhaps thinking of the long-
 appreciated that the kind of application Russell made        standing historical and intellectual association of the
 to the issue of negative existentials, where a philo-        two disciplines that date back to the time of pythago-
-sophical problem was completely dissolved by philo-          ras [VI.1](/part-06/pythagoras-ca), when the subject of music was part of an
-sophical analysis, would seldom be possible. Analy-          elaborate classification scheme of knowledge in the
+so phical problem was completely dissolved by philo-          ras [VI.1](/part-06/pythagoras-ca), when the subject of music was part of an
+so phical analysis, would seldom be possible. Analy-          elaborate classification scheme of knowledge in the
 sis, in general, is only a preliminary, a process that       mathematical sciences. This scheme became known in
 makes it clearer what the real problems are, and not         the Middle Ages as the quadrivium, and consisted of
 a panacea, exposing all apparent problems as mere            the four disciplines of arithmetic, music (harmonics),
@@ -42,10 +42,10 @@ pseudo-problems.                                             geometry, and astro
 has been replaced by dedication: recognition of the lim-     or another they were all concerned with simple ratios.
 itations of Frege’s and Russell’s methods has led not        Music was merely the aural manifestation of a more uni-
 to the abandonment of the goal of clarity, which was         versal harmony, which was likewise expressed by rela-
-the underlying motive of the great pioneering figures,        tionships between numbers, geometrical magnitudes,
+the underlying motive of the great pioneering figures,        tion ships between numbers, geometrical magnitudes,
 but rather to firmer adherence to it. Today, when one         or the motions of celestial bodies. Harmonic conso-
 can read large tracts of philosophy in the analytic tradi-   nance of musical intervals resulted from simple ratios
-tion without encountering a single explicit analysis, let    of the first four natural numbers, 1:1 (the unison), 2:1
+tion with out encountering a single explicit analysis, let    of the first four natural numbers, 1:1 (the unison), 2:1
 alone one expressed in special logical symbolism, one        (the octave), 3:2 (the perfect fifth), and 4:3 (the perfect
 still finds almost every where a clarity of prose style that   fourth), and was demonstrated empirically by the ratios
 instantly distinguishes writing in this tradition from       of lengths of vibrating strings on the ancient instru-
@@ -55,16 +55,16 @@ in certain humanities departments in universities in           1. The monochord 
 the English-speaking world). This clarity—found, to be       not artistic, purposes. It consisted of a single string stretched between
                                                              two fixed bridges. A movable bridge between the fixed bridges was
 sure, already in the mathematician–philosopher Des-          used to adjust the length of the string as it was plucked to produce
-cartes, the first truly modern philosopher, but lost in       sound, thereby altering the pitch of the sound.
+cartes, the first truly modern philosopher, but lost in       sound, there by altering the pitch of the sound.
 
 936                                                                                     VII. The Influence of Mathematics
 
 Revolution of the seventeenth century, theories of tun-        ciation of mathematics and music from its concrete
-ing and temperament of musical intervals required              representation in sound itself, through its manifesta-
+ing and temperament of musical intervals required              representation in sound itself, through its manifest a-
 more advanced mathematical ideas as well, such as              tion in the working materials of composers, and finally
 logarithms and decimal expansions.                             to its explanatory power in abstract music theory.
    Musical composition has been inspired by mathe-
-matical techniques through out its history, although                         2    Tuning and Temperament
+mat ical techniques through out its history, although                         2    Tuning and Temperament
 mathematically inspired compositional techniques are
 associated mainly with music of the twentieth, and             The most obvious relationships between mathematics
 now twenty-first, centuries. A striking early example           and music appear in acoustics, the science of musi-
@@ -88,7 +88,7 @@ ing the number of arrangements of finite collections            supposed to equa
 of notes containing certain numbers of repetitions of          not work in Pythagorean tuning, since ( 32 )12 does not
 one or more notes. He illustrated some of his findings          equal 27 . Indeed, a succession of Pythagorean perfect
 with combinations of letters as well as musical nota-          fifths will never result in a whole number of octaves.
-tion, thereby showing that the music was incidental to         As it happens, twelve Pythagorean perfect fifths give
+tion, there by showing that the music was incidental to         As it happens, twelve Pythagorean perfect fifths give
 the problems, which were in essence purely combinato-          an interval slightly larger than seven octaves. The dif-
 rial. Such exercises, while seemingly of little practical or   ference is a small interval known as the Pythagorean
                                                                                                                3
@@ -104,7 +104,7 @@ music that is shared by many music theorists, and to a         plex ratios that 
 lesser degree by performing musicians and non special-          came to be replaced by the simple ratios of just into-
 ist music enthusiasts. The patterns of music, in partic-       nation, which are ratios of quite small whole numbers.
 ular pitch and rhythm, lend themselves well to mathe-          These ratios were considered “natural” because they
-matical description, and some of them are amenable to
+mat ical description, and some of them are amenable to
 algebraic reasoning. In particular, the system of twelve
 equal-tempered notes is naturally modeled using mod-             2. Organum is the earliest form of musical polyphony, and involved
 ular arithmetic [III.58](/part-03/modular-arithmetic), and this, together with com-         adding a voice (or voices) to an existing plainchant melody (cantus
@@ -128,15 +128,15 @@ Intervals
 
 (ratios)
 
-Figure $1$ Successive intervals in a major scale tuned in just intonation. reflect the ratios of the natural overtone series. 3 The Pythagorean major third, which has the relatively complex ratio of (. rac{3}{2})4/22 , o$r^{81}{}^{64}$ , was replaced by the slightly smaller major third of just intonation, which has the much simpler ratio $5$ : $4$ . The difference between these two intervals is known as the syntonic comma, which corresponds to the ratio $81$ : $80$ , or $1$ . 0125 . Likewise, the Pythagorean minor third has ratio $32$ :
+Figure $1$ Successive intervals in a major scale tuned in just intonation. reflect the ratios of the natural over tone series. 3 The Pythagorean major third, which has the relatively complex ratio of (. rac{3}{2})4/22 , o$r^{81}{}^{64}$ , was replaced by the slightly smaller major third of just intonation, which has the much simpler ratio $5$ : $4$ . The difference between these two intervals is known as the syntonic comma, which corresponds to the ratio $81$ : $80$ , or $1$ . 0125 . Likewise, the Pythagorean minor third has ratio $32$ :
 $27$ , and so is slightly smaller than the minor third of just intonation, which has ratio $6$ : $5$ . The difference is again a syntonic comma. The Pythagorean major and minor sixths, the octave inversions of the thirds, also differ from their just counterparts by a syntonic comma. Suppose that you want to build a C-major scale in just intonation. You can do it as follows. Start with C and define each other note by the ratio of its frequency to that of C. The subdominant and dominant, that is, $F$ and  G, have ratios $4$ : $3$ and $3$ : $2$ , respectively.
 From these three notes one can build major triads in the ratios $4$ : $5$ : $6$ . So E, for instance, which belongs to the major triad that starts with C, has ratio $5$ : $4$ . Similarly, A has ratio $5$ : $3$ , since it is in $a$ ratio $5$ : $4$ with  F. With this kind of calculation, one ends up with the scale shown in figure $1$ , where the fractions now represent the frequency ratios between successive notes. The smaller whole tone ( $10$ : $9$ ) between notes D and E creates intonation problems for the supertonic triad, D-F-A.
-While the minor triads on E and A (the mediant and submediant) produce the proportion $10$ : $12$ : $15$ , the minor triad on D is out of tune. Its fifth, D-A, is a syntonic comma flat, as is its third, D-F, which is in fact a Pythagorean minor third. Tempering (increasing or decreasing) the size of intervals offered a practical solution to the problems inherent in just intonation by distributing the syntonic comma among the major thirds or the perfect fifths of the scale, thereby compromising the purity of one interval to preserve the purity of another. This prac$3$ .
-The partials of the overtone series are multiples of the frequency of the fundamental pitch, and the first six partials generate the intervals of the major triad. For instance, the first six partials of the overtone series of a fundamental pitch $C$ are $C(1$ : 1), $C(2$ : 1), $G(3$ : 1), $C(4$ : 1), $E (5$ : 1), $G (6$ : 1).
+While the minor triads on E and A (the mediant and submediant) produce the proportion $10$ : $12$ : $15$ , the minor triad on D is out of tune. Its fifth, D-A, is a syntonic comma flat, as is its third, D-F, which is in fact a Pythagorean minor third. Tempering (increasing or decreasing) the size of intervals offered a practical solution to the problems inherent in just intonation by distributing the syntonic comma among the major thirds or the perfect fifths of the scale, there by compromising the purity of one interval to preserve the purity of another. This prac$3$ .
+The partials of the over tone series are multiples of the frequency of the fundamental pitch, and the first six partials generate the intervals of the major triad. For instance, the first six partials of the over tone series of a fundamental pitch $C$ are $C(1$ : 1), $C(2$ : 1), $G(3$ : 1), $C(4$ : 1), $E (5$ : 1), $G (6$ : 1).
 
 $937$
 
-tice became known as meantone temperament. Various systems of meantone temperament were put forward in the sixteenth and seventeenth centuries for the tuning of keyboard instruments, the most common of which was quarter-comma meantone temperament. In this system the perfect fifth is lowered by a quarter of a syntonic comma so that the major thirds have the pure ratio $5$ : $4$ . A perpetual problem with meantone temperaments is that, while modulation to closely related keys sounds pleasing, modulation to more remote keys sounds out of tune.
+tice became known as meant one temperament. Various systems of meant one temperament were put forward in the sixteenth and seventeenth centuries for the tuning of keyboard instruments, the most common of which was quarter-comma meant one temperament. In this system the perfect fifth is lowered by a quarter of a syntonic comma so that the major thirds have the pure ratio $5$ : $4$ . A perpetual problem with meant one temperaments is that, while modulation to closely related keys sounds pleasing, modulation to more remote keys sounds out of tune.
 The system of equal temperament, in which the syntonic comma is distributed evenly among all twelve semitones of the octave, gradually became adopted because it removed the limitations on keys for modulation. The discrepancies between just and equaltempered intervals are small and easily accepted by most listeners. The ratio of an equal-tempered semi√
 
 $12$
@@ -147,7 +147,7 @@ equal-tempered perfect fifth, seven semitones, is √
 
 $12$
 
-or $128$ , which is $1$ . 498307 . . . , whereas a just perfect fifth, with ratio $3$ : $2$ , is of course $1$ . $5$ . In equal temperament, one starts from a reference such as the note A, which is usually taken to have frequency $440 Hz.^{4}$ All √ other notes have frequencies of the form 440( 2)n ,
+or $128$ , which is $1$ . 498307 . . . , where as a just perfect fifth, with ratio $3$ : $2$ , is of course $1$ . $5$ . In equal temperament, one starts from a reference such as the note A, which is usually taken to have frequency $440 Hz.^{4}$ All √ other notes have frequencies of the form 440( 2)n ,
 
 $12$
 
@@ -179,7 +179,7 @@ the result of scientific discovery. Number and music           the twelve notes 
 have also been associated through invention and cre-          cession of perfect fifths. Any seven consecutive notes in
 ativity in music composition. Fundamental aspects of          this circle will be the notes of some major scale, which
 the temporal organization of music reflect simple pro-         makes it easy to understand some of the patterns of
-portional relationships. The basic durational values in       the key signatures. For instance, the C major scale con-
+portion al relationships. The basic durational values in       the key signatures. For instance, the C major scale con-
 Western music notation are the whole note ( ), half           sists of all the notes from F to B (clockwise). To change
 note ( ), quarter note ( ), eighth note ( ), etc. These are   from C major to G major, one shifts the sequence by
 related to each other by simple multiples or fractions—       one, losing the note F but gaining F* . Continuing in this
@@ -189,7 +189,7 @@ the same number of beats. Bars or measures are indi-          A major has three 
 cated by time signatures such as the simple meters 24 ,       ter clockwise from C, F major has one flat, B+ major has
 3       4
 4 , or 4 ( ), where beats (the     in these examples) are     two flats, E+ major has three flats, etc. From a mathe-
-typically subdivided into two, or the compound meters         matical point of view, we have transformed the chro-
+typically subdivided into two, or the compound meters         mat ical point of view, we have transformed the chro-
 6 9        12
 8 , 8 , or 8 , in which beats (the
                                       . in these examples)    matic scale, which we identify with the additive group
@@ -204,7 +204,7 @@ Well-Tempered Clavier : no. 9 in E major, whose sub-          notes of lower fre
 ject appears in diminution; and no. 2 in C minor, whose       to think of melodic lines as ascending or descend-
 subject appears in augmentation. (The last note of the        ing. Reflection in a horizontal axis interchanges up
 diminished or augmented subject may not be propor-            and down. The musical counterpart to this is known
-tionally related to the original in order to allow a good     as melodic inversion: one reverses the ascending or
+tion ally related to the original in order to allow a good     as melodic in version: one reverses the ascending or
 continuation for the music that follows.)                     descending direction of each interval, and the result
    Geometric relations have served as musical resources       is an inverted form of the melody. Figure 5 shows the
 of other kinds too. A well-known construct in music           subject of Fugue no. 23 in B major from the first volume
@@ -217,7 +217,7 @@ VII.13.   Mathematics and Music                                                 
                                   C                           in which the first half of the piece is played backwards
                         F                  G                  in the second half.
                                                                  We may regard the devices of melodic retrograde
-               B                                   D         and inversion as reflections in a two-dimensional musi-
+               B                                   D         and in version as reflections in a two-dimensional musi-
                                                               cal space. However, retrograde is much more esoteric,
                                                               owing to the greater constraints involved in the manip-
           E                                            A     ulation of musical time. Examples such as those by Bach
@@ -230,18 +230,18 @@ VII.13.   Mathematics and Music                                                 
                                 F /G                        the dominant, do not work well in reverse, so a com-
                     Figure 4 The circle of fifths.             poser attempting to write a cancrizans canon is forced
                                                               to avoid them. Similarly, many common melodic pat-
-                                                              terns do not sound good when reversed. These difficul-
+                                                              terns do not sound good when reversed. These diff i cul-
                                                     tr        ties account for the rarity of retrograde techniques in
                                                               tonal music (i.e., music based on major and minor keys).
                                                               With the abandonment of tonality in the early twenti-
                                                               eth century, the main constraints were removed, mak-
                                                               ing composition with retrograde easier. For instance,
-                                                              retrograde and inversion played an important role in
+                                                              retrograde and in version played an important role in
     Figure 5 J. S. Bach, Well-Tempered Clavier, Book 1,       serial music, as we shall see. However, composers of
-           Fugue no. 23, subject and inversion.               such music replaced the traditional constraints of tonal
+           Fugue no. 23, subject and in version.               such music replaced the traditional constraints of tonal
                                                               music with others, such as avoiding major or minor tri-
                                                               ads and bringing out other intervals deemed important
-the inversion can also be clearly heard in the sound of
+the in version can also be clearly heard in the sound of
                                                               for a particular piece.
 the music itself.
                                                                  The atonal revolution in the early twentieth cen-
@@ -255,7 +255,7 @@ high, and the horizontal dimension expresses chrono-
                                                               composition. Scales based on repeating interval pat-
 logical time from left to right. Another compositional        terns (measured in semitones), such as the whole-tone
 device, much rarer than the devices of rhythmic aug-          scale (2–2–2–2–2–2) or the octatonic scale (1–2–1–2–1–
-mentation and diminution or melodic inversion, is that        2–1–2), appealed to composers for the symmetric struc-
+mentation and diminution or melodic in version, is that        2–1–2), appealed to composers for the symmetric struc-
 of retrograde, where a melody is played backwards.            tures and novel harmonies they embodied. The octa-
 When the melody is played backwards and forwards              tonic scale, also known in jazz circles as the diminished
 simultaneously, the technique is known as a cancrizans        scale, had a particularly wide appeal among a variety
@@ -307,14 +307,14 @@ cle of fifths, one clockwise, the other counter clockwise.       tone music is a
 Each letter in the illustration represents a statement of      by some permutation of the twelve notes of the chro-
 the fugue subject beginning on that note, and each of          matic scale. (These notes can, however, be stated in
 the interlocked cycles of fifths arrives on E+ (six semi-       any octave.) Once the tone row has been chosen, it can
-tones from the starting point, A) at its midpoint, so that     be manipulated by means of four types of transfor-
-all twelve notes occur once in the first half of the pat-       mation: transposition, inversion, retrograde, and retro-
-tern and once again in the second half. The midpoint           grade inversion. Musical transposition corresponds to
+tones from the starting point, A) at its midpoint, so that     be manipulated by means of four types of trans for-
+all twelve notes occur once in the first half of the pat-       mation: transposition, in version, retrograde, and retro-
+tern and once again in the second half. The midpoint           grade in version. Musical transposition corresponds to
 of the pattern corresponds to the dramatic climax of           the mathematical operation of translation: the intervals
 the work, after which the pattern of interlocked cycles        between successive notes of a transposed row are the
 of fifths resumes with subject entries in inverted form         same as those between the corresponding notes of the
 until the conclusion of the work with the return of the        original row, so the entire row is shifted up or down.6
-subject starting on A.                                         Inversion corresponds to reflection, as we have already
+subject starting on A.                                         In version corresponds to reflection, as we have already
    Arnold Schoenberg’s twelve-tone method of compo-
 sition, which he revealed in the early 1920 s, is based           6. Describing transposition as translation does justice to the fact
 on permutations of all the twelve notes, rather than of        that a melody sounds “the same” when transposed, even though the
@@ -334,29 +334,29 @@ VII.13.   Mathematics and Music                                                 
 
                                  Figure 8 Row forms in Schoenberg’s Suite for Piano (1923).
 
-discussed: the intervals of the row are reflected about          technique is that the row itself, and the way its transfor-
-a “horizontal” axis. Retrograde corresponds to reflec-           mations unfold in the course of a work, are chosen care-
+discussed: the intervals of the row are reflected about          technique is that the row itself, and the way its trans for-
+a “horizontal” axis. Retrograde corresponds to reflec-           ma tions unfold in the course of a work, are chosen care-
 tion in time: the row is stated backwards. (However, if         fully to bring out certain relationships between notes.
 it is combined with a transposition, as it may be, then         For example, all the row forms used in the Suite begin
 it is better described as a glide reflection.) Retrograde        and end on the notes E and B+ , and these notes are
-inversion is a composition of two reflections, one ver-          frequently articulated in the work so that they take on
+in version is a composition of two reflections, one ver-          frequently articulated in the work so that they take on
 tical and one horizontal: it therefore corresponds to a         an anchoring function that fills the void created by the
 half turn.                                                      absence of a conventional tonal center. Similarly, the
    Figure 8 illustrates the serial transformations applied      notes in the third and fourth positions in each of the
 to a row created by Schoenberg for his Suite for Piano,         four row forms are always G and D+ , in either order,
 opus 25, published in 1923. The forms of the row are            and likewise these are articulated in various ways in
 labeled P (for prime—the original row and its transpo-          the movements of the Suite so that they can become
-sitions), R (for retrograde), I (for inversion), and RI (for    recognizable. The two pairs of notes just mentioned,
-retrograde inversion). The integers 4 and 10 in the row         E–B+ and G–D+ , are related to each other by sharing the
+sit i ons), R (for retrograde), I (for in version), and RI (for    recognizable. The two pairs of notes just mentioned,
+retrograde in version). The integers 4 and 10 in the row         E–B+ and G–D+ , are related to each other by sharing the
 labels on the left and right refer to the starting notes of     same interval, six semitones (half an octave, also known
 the P and I row forms by telling us how many semitones          as the tritone because it spans three whole tones). In
 away from C they are. Thus, 4 refers to E (4 semitones          the hands of a master composer, a twelve-tone row is
 above C) and 10 refers to B+ (10 semitones above C). The        not a random collection of notes, but a foundation for
 retrogrades of the P and I forms, R and RI, are labeled         an extended composition carefully constructed to pro-
 on the right-hand side of the figure. It is easy to see the      duce interesting structural effects that one can learn to
-inversion (reflection) of P4 in I4 about the first note E         recognize and appreciate.
+in version (reflection) of P4 in I4 about the first note E         recognize and appreciate.
 and the transposition of P4 by six semitones in P10, as            Permutations and serial transformations of other
-well as the inversion of P10 about the first note, B+ .          musical parameters besides pitch—such as rhythm,
+well as the in version of P10 about the first note, B+ .          musical parameters be sides pitch—such as rhythm,
    One may wonder what sort of insight we gain from             tempo, dynamics, and articulation—were explored by
 understanding these abstract relationships and why              a new generation of postwar European composers,
 they were so attractive to composers like Schoenberg.           including Olivier Messiaen, Pierre Boulez, and Karl-
@@ -372,12 +372,12 @@ or attraction of this music. An additional aspect of the        most composers w
 
 conceptions such as those we have seen had little if any                                                   C
 mathematical training.7 Nevertheless, the basic mathe-                                       B             0         C = D
-matical patterns and relations that we have discussed                                            11                 1
+mat ical patterns and relations that we have discussed                                            11                 1
 are so pervasive in so many aspects of so many differ-                         A = B                                           D
 ent kinds of music that the importance of mathematics                                   10                                  2
 in music is undeniable.
   We end this section with a few more examples. Pro-
-portional relations such as the simple ones between                               A 9                                           3 D = E
+portion al relations such as the simple ones between                               A 9                                           3 D = E
 note values reappear on a larger scale in relations
 between lengths of formal divisions in music of Mozart,
                                                                                          8                                  4 E
@@ -406,21 +406,21 @@ specifically group theory, to the theoretical study of                       fif
 music. He generalized Schoenberg’s twelve-tone system                       12 integers for the names of the notes). This mathemat-
 to any system where one has a finite set of basic musi-                      ical fact has many musical consequences. One of them
 cal elements (of which Schoenberg’s twelve-tone rows                        is that it is common to substitute fifths by semitones,
-were just one example), with relations and transfor-                        and vice versa, in chromatic harmony and in jazz.
-mations between them (see Babbitt 1960, 1992). There                           A branch of music theory known as atonal set theory
+were just one example), with relations and trans for-                        and vice versa, in chromatic harmony and in jazz.
+ma tions between them (see Babbitt 1960, 1992). There                           A branch of music theory known as atonal set theory
 are forty-eight ways of transforming a row, and Bab-                        attempts to give a very general understanding of pitch
 bitt noted that these transformations form a group,                         relations by looking at all the 212 = 4096 possible
 which is in fact the product of the dihedral group D12                      combinations of notes, and defining two such combi-
 with the cyclic group C2 of two elements. (The D12 in                       nations to be equivalent if one can be derived from the
 this product is the symmetry group of a dodecagon,                          other by two simple transformations, the idea being
 and the C2 allows the time reversal.) The four sets                         that equivalent combinations will have the same inter-
-of transformations—P, I, R, and RI (see the previous                        vals. The transformations in question are transposi-
-section)—define a homomorphism from this group to                            tion and inversion. A transposition up by n semitones
+of transformations—P, I, R, and RI (see the previous                        vals. The transformations in question are trans posi-
+section)—define a homomorphism from this group to                            tion and in version. A transposition up by n semitones
                                                                             (where we think of n as an integer mod 12) is denoted
-  7. Some composers, to be sure, have received extended mathemati-          Tn . The notation I is used for a reflection about the note
-cal training, which is reflected in their works. Iannis Xenakis, for exam-   C, so a general inversion takes the form Tn I for some n.
+  7. Some composers, to be sure, have received extended mathemat i-          Tn . The notation I is used for a reflection about the note
+cal training, which is reflected in their works. Iannis Xenakis, for exam-   C, so a general in version takes the form Tn I for some n.
 ple, was trained as an engineer, and had professional contact with
-the architect Le Corbusier. Xenakis found parallels between music           (Inversion in this context refers to reflection in musical
+the architect Le Corbusier. Xenakis found parallels between music           (In version in this context refers to reflection in musical
 and architecture through his study of Le Corbusier’s Modulor system         space, and should not be confused with chord inver-
 and its approach to form and proportion based on the human figure.
 Xenakis’s compositions are characterized by their massive, physical
@@ -429,23 +429,23 @@ sound and their complex algorithmic processes.                              exam
 
 VII.13.   Mathematics and Music                                                                                      943
 
-to each other by inversion since their successive inter-       which consists of a set of musical objects (e.g., pitches,
+to each other by in version since their successive inter-       which consists of a set of musical objects (e.g., pitches,
 vals are reflections of each other (four then three semi-       rhythmic durations, time spans, or time points), a
 tones in the major triad and three then four semitones         group (in the mathematical sense) of intervals (repre-
-in the minor triad, counting from the lowest note). Con-       senting the distance, span, or motion between a pair
+in the minor triad, counting from the lowest note). Con-       sent ing the distance, span, or motion between a pair
 sequently, all major and minor triads belong to the            of objects in the system), and a function that maps all
 same equivalence class. For example, the E-major triad         possible pairs of objects in the system into the group of
 {4, 8, 11} is related to the C-major triad {0, 4, 7} by the    intervals. He also uses graph theory [III.34] to model
-transposition T4 (because {4, 8, 11} ≡ {0+4, 4+4, 7+4},        musical processes, through his notion of a transfor-
+transposition T4 (because {4, 8, 11} ≡ {0+4, 4+4, 7+4},        musical processes, through his notion of a trans for-
 mod 12), and the G-minor triad {7, 10, 2} is related by        mation network. The vertices of such a network are
-inversion to the D-major triad {2, 6, 9} by T4 I (because      basic musical elements such as melodic lines or chordal
+in version to the D-major triad {2, 6, 9} by T4 I (because      basic musical elements such as melodic lines or chordal
 {7, 10, 2} ≡ {4 − 9, 4 − 6, 4 − 2}, mod 12). An equiva-        roots. These elements come with certain transforma-
 lence class, such as the class of major and minor triads,      tions, such as transposition (or shifting by a general-
 will normally consist of twenty-four sets. However, if it      ized interval) or the serial transformations from twelve-
 has internal symmetries, such as those of the dimin-           tone theory. Two vertices are joined by an edge if there
 ished seventh chord (with interval succession 3–3–3–3)         is an allowable transformation that takes one to the
 or the whole-tone and octatonic scales mentioned ear-          other. The emphasis thus shifts from the basic ele-
-lier, then the number of sets in the class will be smaller,    ments to the relations that connect them. Transfor-
+lier, then the number of sets in the class will be smaller,    ments to the relations that connect them. Trans for-
 though it will always be a factor of 24.                       mation networks offer a dynamic way of looking at
    Sets of notes in the same equivalence class share cer-      musical processes, giving visible form to abstract and
 tain sonic attributes because they share the same num-         often non chronological connections in the analysis of
@@ -463,11 +463,11 @@ utility. And in some contexts it does: with sets of notes      mality, Lewin con
 that do not possess extensive associations with tonal          itself, and how his mathematical tools can be applied
 music it is easier to recognize this form of equivalence       in different contexts. The result is that the reader
 than it is with major and minor triads. For example,           is rewarded with insights that would be impossible
-the three notes C, F, and B share the same intervals           without the mathematical rigor. Mathematicians, while
+the three notes C, F, and B share the same intervals           with out the mathematical rigor. Mathematicians, while
 (one semitone, one perfect fourth or fifth, and one tri-        likely to find the material relatively elementary, may
 tone) as the three notes F* , G, and C* , and this does        find their attention “captivated by the way in which the
-indeed give them a noticeable form of “sameness.” (The         author gives new and, sometimes, unexpected interpre-
-set {11, 0, 5} is inversionally related to {1, 6, 7} by T6 I   tations to classical mathematical ideas when applied to
+indeed give them a noticeable form of “sameness.” (The         author gives new and, some times, unexpected inter pre-
+set {11, 0, 5} is inversionally related to {1, 6, 7} by T6 I   tat i ons to classical mathematical ideas when applied to
 because {11, 0, 5} ≡ {6 − 7, 6 − 6, 6 − 1}, mod 12.)           musical contexts” (Vuza 1988, p. 285).
    There is other important work in music theory that
 has been inspired by group theory. The most influ-
@@ -478,5 +478,5 @@ a formal theory that connects mathematical reasoning           began underscores
 and musical intuition. Lewin generalizes the concept           in music. Both disciplines rely in a fundamental way on
 of interval to mean any measurable distance, whether           concepts of order and reason, as well as more dynamic
 between pairs of pitches, durations, time points, or con-      concepts of pattern and transformation. Music was
-textually defined events in a musical work. He develops         once subsumed within mathematics, but it has now
+text ua lly defined events in a musical work. He develops         once subsumed within mathematics, but it has now
 a model called the generalized interval system (GIS),          acquired its own identity as an art that has always

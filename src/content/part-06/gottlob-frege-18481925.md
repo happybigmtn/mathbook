@@ -14,7 +14,7 @@ sistent aggregates” as he called them. Others, like Zer-           results in 
 melo, began to axiomatize set theory in an effort to                projective and differential geometry. He was the first
 exclude the possibility of contradictions. The two most            English mathematician to appreciate the work of rie-
 powerful results of the twentieth century to comple-               mann [VI.49] on differential geometry, and published
-ment Cantor’s work are those of gödel [VI.92](/part-06/kurt-gdel-19061978) (who                 a translation of Riemann’s paper “On the hypothe-
+ment Cantor’s work are those of gödel [VI.92](/part-06/kurt-gdel-19061978) (who                 a translation of Riemann’s paper “On the hypo the-
 established the consistency of the continuum hypoth-               ses that lie at the foundations of geometry” in 1873.
 esis with zermelo–fraenkel set theory [IV.22 §3](/part-04/set-theory))                  He endorsed Riemann’s fundamental reformulation of
 and Paul Cohen (who determined the independence of                 geometry, and went even further in speculating that the
@@ -43,8 +43,8 @@ Dauben, J. W. 1990. Georg Cantor. His Mathematics and Phi-         study of it).
   a general set theory” (1883). In Landmark Writings in
   Western Mathematics 1640–1940, edited by I. Grattan-             Further Reading
   Guinness, pp. 600–12. London: Routledge.
-Tapp, C. 2005. Kardinalität und Kardinäle. Wissenschaft sh is-       Clifford, W. K. 1968. Mathematical Papers, edited by
-  torische Aufarbeitung der Korrespondenz zwischen Georg             R. Tucker. New York: Chelsea. (First published in 1882.)
+Tapp, C. 2005. Kardinalität und Kardinäle. Wissenschaftshis-       Clifford, W. K. 1968. Mathematical Papers, edited by
+  tor is che Aufarbeitung der Korrespondenz zwischen Georg             R. Tucker. New York: Chelsea. (First published in 1882.)
   Cantor und katholischen Theologen seiner Zeit. Stuttgart:
   Franz Steiner.                                                                                                 Jeremy Gray
                                         Joseph W. Dauben
@@ -59,7 +59,7 @@ He graduated from there in 1867 as 2 nd Wrangler and                writing. His
 
 VI.56.   Gottlob Frege                                                                                               781
 
-outside the foundations of mathematics, especially in               ematicians of the time, including one of Frege’s
+out side the foundations of mathematics, especially in               ematicians of the time, including one of Frege’s
 the philosophy of language.                                         teachers, Alfred Clebsch, held the concept of func-
   Frege was trained at Jena and Göttingen, receiving                tion to be too vague to serve as a basic building
 a Ph. D. under Ernst Schering in 1873. His Ph. D. thesis              block.) A sharp distinction is enforced between
@@ -76,7 +76,7 @@ was fundamentally different and less general because it         as the later Pri
 was grounded in spatial intuition. This is an especially       russell [VI.71](/part-06/bertrand-arthur-william-russell-18721970). It would be several decades before
 salient concern in some of his areas of early research,        logicians approached Frege’s standards for exactness
 such as Plücker’s line geometry and riemann’s [VI.49]          and clarity. The notation, however, seemed unwieldy
-complex analysis, where the role of visual represen-           to readers at the time (and since). Here, for example,
+complex analysis, where the role of visual re pre sen-           to readers at the time (and since). Here, for example,
 tation was a matter of some dispute. Frege sought to           is the statement “if not q, then every v is F ” (¬q =⇒
 resolve the dispute by deriving arithmetic and analy-          (∀v)F (v)) in Frege’s notation:
 sis rigorously from logical principles. His motivation
@@ -92,7 +92,7 @@ ing first in Frege’s core logical writings (Begriffsschrift
 (1879) and Grundgesetze der Arithmetik (volume 1,
                                                                conditional.)
 1893; volume 2, 1903)) are the following.
-                                                                  Frege also wrote an informal treatise, Grundlagen der
+                                                                  Frege also wrote an in formal treatise, Grundlagen der
   (i) Inferences are analyzed within a quantified logic         Arithmetik (1884), which has had a profound influence
       of propositions, which extends to relations as well      on English-language philosophy since its translation
       as to propositions of subject–predicate form. We         in 1950. Its account of number contains the first hint of
@@ -102,7 +102,7 @@ ing first in Frege’s core logical writings (Begriffsschrift
       Bs”) are interpreted as quantified conditionals           when formalized these lead to a contradiction, of a sim-
       (“For all x, if x is an A, then x is a B”), in the way   ilar type to Russell’s paradox (on the set of all sets that
       that is now so standard as to seem inescapable,          are not members of themselves). This problem escaped
-      presenting implicitly the point that the underly-        Frege’s notice until Russell alerted him to it in a let-
+      presenting implicitly the point that the under ly-        Frege’s notice until Russell alerted him to it in a let-
       ing logical form of a proposition may differ from         ter of 1903. Frege’s reaction (“arithmetic totters”) has
       its surface grammar.                                     been taken to be an over reaction to the failure of one
 (iii) The syntax of the language is explicitly displayed,      set of axioms among many possible ones. But in Frege’s

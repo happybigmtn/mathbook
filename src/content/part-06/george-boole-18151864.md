@@ -36,18 +36,18 @@ and on matrix algebras (1884), appeared there.                    the laws of hi
                                                                   below.
 Further Reading                                                      At one time Boole had hoped to become a clergy-
                                                                   man but family circumstances prevented this. His rev-
-Parshall, K. H. 1998. James Joseph Sylvester: Life and Work
+Par shall, K. H. 1998. James Joseph Sylvester: Life and Work
                                                                   erence for creation made him interested in the work-
   in Letters. Oxford: Clarendon.
                                                                   ings of the human mind, which he regarded as God’s
-      . 2006. James Joseph Sylvester: Jewish Mathemati-
+      . 2006. James Joseph Sylvester: Jewish Mathemat i-
   cian in a Victorian World. Baltimore, MD: Johns Hopkins         greatest accomplishment. He longed, as Aristotle and
   University Press.                                               leibniz [VI.15](/part-06/gottfried-wilhelm-leibniz-16461716) had before him, to explain how the
 Sylvester, J. J. 1904–12. The Collected Mathematical Papers       brain processes information and to express this infor-
   of James Joseph Sylvester, four volumes. Cambridge: Cam-        mation in mathematical form. In 1847 he published
   bridge University Press. (Reprint edition published in          a book entitled A Mathematical Analysis of Logic in
   1973. New York: Chelsea.)                                       which he took the first steps toward achieving his
-                                   Karen Hunger Parshall          goal, but the book did not have a wide circulation
+                                   Karen Hunger Par shall          goal, but the book did not have a wide circulation
                                                                   and so made very little impact on the mathematical
                                                                   world.
 VI.43       George Boole

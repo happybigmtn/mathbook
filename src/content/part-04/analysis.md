@@ -57,7 +57,7 @@ of f over the Euclidean balls about x tend to f (x)                      of obje
 as r → 0. This example demonstrates the impor-                           solutions of polynomial equations or topology studies
                                                                          manifolds, for example), or is it rather a collection of
                                                                          separate fields, such as general relativity, several com-
-  2. This version of the Hardy–Littlewood inequality looks somewhat      plex variables, or hydrodynamics, each one vast in its
+  2. This version of the Hardy–Littlewood inequality looks some what      plex variables, or hydrodynamics, each one vast in its
 different from the one mentioned briefly in the previous section, but
 one can deduce that inequality from this one by the real interpolation
                                                                          own right and centered on a particular, very difficult,
@@ -65,7 +65,7 @@ method discussed earlier.                                                equatio
 
 456                                                                                                 IV. Branches of Mathematics
 
-below that, even though there are fundamental difficul-                   view they are not important, since if u(t, x1 , x2 , x3 ) is
+below that, even though there are fundamental diff i cul-                   view they are not important, since if u(t, x1 , x2 , x3 ) is
 ties in formulating a general theory of PDEs, one can                   a solution of (3), for example, then v(t, x1 , x2 , x3 ) =
 nevertheless find a remarkable unity between various                     u(t, x1 /c, x2 /c, x3 /c) satisfies the same equation with
 branches of mathematics and physics that are centered                   c = 1. Thus, when one is studying the equations one
@@ -82,8 +82,8 @@ out many topics and relevant details; in particular, I                  ciently 
 have said very little about the fundamental issue of                    As we shall see later, one of the important develop-
 breakdown of solutions, and there is no discussion of                   ments in the theory of PDEs was the study of more
 the main open problems in PDEs. A longer and more                       refined notions of solutions, such as distributions
-detailed version of the article, which includes these                   [III.18](/part-03/distributions), which require only weak versions of differen-
-topics, can be found at                                                 tiability.
+detailed version of the article, which includes these                   [III.18](/part-03/distributions), which require only weak versions of differ en-
+topics, can be found at                                                 ti ability.
                                                                            Here are some further examples of important PDEs.
       http://press.princeton.edu/titles/8350.html                       The first is the schrödinger equation [III.83](/part-03/the-schrdinger-equation),
                                                                                               i∂t u + kΔu = 0,                      (4)
@@ -103,7 +103,7 @@ tial derivatives ∂/∂x1 , ∂/∂x2 , ∂/∂x3 . (We will use this          
                                                                                      −∂t2 u + c 2 Δu −        u = 0.          (5)
 shorthand through out the article.) Two other funda-                                                      
 mental examples (also described in [I.3 §5.4](/part-01/fundamental-definitions)) are the                  This is the relativistic counterpart to the Schrödinger
-heat equation and the wave equation:                                    equation: the parameter m has the physical interpre-
+heat equation and the wave equation:                                    equation: the parameter m has the physical inter pre-
                                                                         tation of mass and mc 2 has the physical interpreta-
                         −∂t u + kΔu = 0,                          (2)
                                                                         tion of rest energy (reflecting Einstein’s famous equa-
@@ -145,7 +145,7 @@ nonlinear:                                                         stant-coeffic
                     ∂1 u
   ∂1                                                               Laplacian Δ and the d’Alembertian , are formally
          (1 + |∂1 u|2 + |∂2 u|2 )1/2
-                                                                   similar in many respects. The Laplacian is fundamen-
+                                                                   similar in many respects. The Laplacian is fund a men-
                                     ∂2 u
                  + ∂2                                 = 0.   (7)   tally associated with the geometry of euclidean space
                         (1 + |∂1 u|2 + |∂y u|2 )1/2
@@ -238,7 +238,7 @@ relevant operator for (7) is given by the formula             often natural to r
                                                               condition n(x) · ∇x u(x) = u1 (x) on ∂D, where n(x) is
 where |∂u|2 = (∂1 u)2 +(∂2 u)2 . Operators such as these      the outward normal (of unit length) to D at x. Generally
 are clearly not linear. However, because they are ulti-       speaking, Dirichlet boundary conditions correspond to
-mately constructed from algebraic operations and par-         “absorbing” or “fixed” barriers in physics, whereas Neu-
+mately constructed from algebraic operations and par-         “absorbing” or “fixed” barriers in physics, where as Neu-
 tial derivatives, both of which are “local” operations,       mann boundary conditions correspond to “reflecting”
 we observe the important fact that P is at least still        or “free” barriers.
 a “local” operator. More precisely, if u1 and u2 are             Natural boundary conditions can also be imposed for
@@ -253,7 +253,7 @@ the set of all such points is a hyperplane in R1+3 : it is      of physical inte
 an example of an initial time surface.                          text in which they are derived. For example, in the case
                                                                 of a vibrating string, which is described by solutions of
 Example. The Cauchy problem (or initial value prob-             the one-dimensional wave equation ∂t2 u − ∂x2 u = 0 in
-lem, sometimes abbreviated to IVP) for the heat equa-           the domain (a, b) × R, the initial conditions u = u0 and
+lem, some times abbreviated to IVP) for the heat equa-           the domain (a, b) × R, the initial conditions u = u0 and
 tion (2) asks for a solution u : R+ × R3 → R on the             ∂t u = u1 at t = t0 amount to specifying the original
 spacetime domain R+ × R3 = {(t, x) : t > 0, x ∈ R3 },           position and velocity of the string. The boundary con-
 which equals a prescribed function u0 : R3 → R on the           dition u(a) = u(b) = 0 is what tells us that the two
@@ -261,7 +261,7 @@ initial time surface {0} × R3 = ∂(R+ × R3 ).                    ends of the 
                                                                    So far we have considered just scalar equations.
   In other words, the Cauchy problem asks for a suf-
                                                                 These are equations where there is only one unknown
-ficiently smooth function u, defined on the closure
+fic ient ly smooth function u, defined on the closure
                                                                 function u, which takes values either in the real num-
 of R+ × R3 and taking values in R, that satisfies the
                                                                 bers R or in the complex numbers C. However, many
@@ -313,7 +313,7 @@ boundary R × ∂D). On the other hand, when the phys-                          
                                                                                                       Δu1
 ical problem under consideration is the evolution of a                          2
                                                                                P [u] = P[P[u]] =            .
-wave outside a bounded obstacle (for example, an elec-                                                Δu2
+wave out side a bounded obstacle (for example, an elec-                                                Δu2
 tro magnetic wave), one considers instead the evolution          Thus P can be viewed as a square root of the two-
 in R × (R3 . D) with a boundary condition on D.                 dimensional Laplacian Δ. One can define a similar type
 
@@ -378,7 +378,7 @@ science. They provide the basic mathematical frame-
                                                                  ator. Important geometric problems can be reduced to
 work for some of the most important physical theo-
                                                                  finding solutions to specific PDEs, typically nonlinear.
-ries: elasticity, hydrodynamics, ele ct ro magnetism, gen-
+ries: elasticity, hydrodynamics, electromagnetism, gen-
                                                                  We have already seen one example: the Plateau prob-
 eral relativity, and nonrelativistic quantum mechanics,
                                                                  lem of finding surfaces of minimal total area that pass
@@ -390,7 +390,7 @@ nite number of unknowns, which lie beyond the scope
                                                                  faces, which takes a compact Riemannian surface S (a
 of PDEs. Yet, even in that case, the basic equations pre-
                                                                  two-dimensional surface with a riemannian metric
-serve the locality property of PDEs. Moreover, the start-
+serve the locality property of PDEs. More over, the start-
                                                                  [I.3 §6.10](/part-01/fundamental-definitions)) and, by solving the PDE
 ing point of a quantum field theory [IV.17 §2.1.4](/part-04/vertex-operator-algebras) is
 always a classical field theory, which is described by                                 ΔS u + e2 u = K                  (15)
@@ -400,12 +400,12 @@ IV.12.   Partial Differential Equations                                         
 (which is a nonlinear variant of the Laplace equation         model [VII.9 §2](/part-07/the-mathematics-of-money) in mathematical finance. A general dis-
 (1)), uniformizes the metric so that it is “equally curved”   cussion of SDEs can be found in stochastic processes
 at all points on the surface (or, more precisely, has         [IV.24 §6](/part-04/stochastic-processes).
-constant scalar curvature [III.78](/part-03/ricci-flow)) without changing             The plan for the rest of this article is as follows. In
-the conformal class of the metric (i.e., without distort-     section 2 I shall describe some of the basic notions
+constant scalar curvature [III.78](/part-03/ricci-flow)) with out changing             The plan for the rest of this article is as follows. In
+the conformal class of the metric (i.e., with out distort-     section 2 I shall describe some of the basic notions
 ing any of the angles subtended by curves on the sur-         and achievements of the general theory of PDEs. The
 face). This theorem is of fundamental importance to           main point I want to make here is that, in contrast
 the theory of such surfaces: in particular, it allows one     with ordinary differential equations, for which a gen-
-to give a topological classification of compact surfaces       eral theory is both possible and useful, partial differen-
+to give a topological classification of compact surfaces       eral theory is both possible and useful, partial differ en-
 in terms of a single number χ(S), which is called the         tial equations do not lend themselves to a useful gen-
 euler characteristic [I.4 §2.2](/part-01/general-goals) of the surface S. The         eral theoretical treatment because of some important
 three-dimensional analogue of the uniformization the-         obstructions that I shall try to describe. One is thus
@@ -421,7 +421,7 @@ of coordinates. The proof of the geometrization con-          mathematics. In se
 jecture is a decisive step toward the total classifica-        ing to identify some common features in the derivation
 tion of all three-dimensional compact manifolds, in           of the main equations that are dealt with in the subject.
 particular establishing the well-known poincaré con-          An additional source of unity for PDEs is the central
-jecture [IV.7 §2.4](/part-04/dierential-topology). To overcome the many technical           role played by the issues of regularity and breakdown
+jecture [IV.7 §2.4](/part-04/dierential-topology). To over come the many technical           role played by the issues of regularity and breakdown
 details in establishing this conjecture, one needs to         of solutions, which is discussed only briefly here. In the
 make a detailed qualitative analysis of the behavior          final section we shall discuss some of the main goals
 of solutions to the Ricci flow equation, a task which          that can be identified as driving the subject.
@@ -444,7 +444,7 @@ cannot possibly have complete information about the             For simplicity w
 state of the system at any given time. Instead, one           systems of PDEs. The simplest distinction, which we
 often makes certain randomness assumptions about              have already made, is between scalar equations, such
 various factors that influence it. This leads to the very      as (1)–(5), which consist of only one equation and one
-important class of equations called stochastic differen-       unknown, and systems of equations, such as (12) and
+important class of equations called stochastic differ en-       unknown, and systems of equations, such as (12) and
 tial equations (SDEs), where one or more components of        (13). Another simple but important concept is that of
 the equation involve a random variable [III.71 §4](/part-03/probability-distributions) of         the order of a PDE, which is defined to be the highest
 some sort. An example of this is in the black–scholes         derivative that appears in the equation; this concept is
@@ -472,7 +472,7 @@ a semilinear equation is one in which all the nonlinear                   It tur
 components of the equation have strictly lower order                      ber of dimensions can be reduced to systems of first-
 than the linear components. For instance, equation (15)                   order ODEs. As a simple illustration of this impor-
 is semilinear, because the nonlinear component eu is                      tant fact consider the following equation in two space
-of zero order, i.e., it contains no derivatives, whereas                  dimensions:
+of zero order, i.e., it contains no derivatives, where as                  dimensions:
 the linear component ΔS u is of second order. These
 equations are close enough to being linear that they can                  a1 (x 1 , x 2 )∂1 u(x 1 , x 2 )+a2 (x 1 , x 2 )∂2 u(x 1 , x 2 )
 often be effectively viewed as perturbations of a linear                                                                   = f (x 1 , x 2 ),   (17)
@@ -501,7 +501,7 @@ quasilinear form                                                          To sim
 for some explicit algebraic functions F11 , F12 , F22 of the                               d           d dx 1        dx 2
                                                                                               u = ∂1 u        + ∂2 u      ,
 lower-order derivatives of u. While quasilinear equa-                                     ds           ds ds          ds
-tions can still sometimes be analyzed by perturbative                     and equations (17) and (18) imply that this equals zero
+tions can still some times be analyzed by perturbative                     and equations (17) and (18) imply that this equals zero
 techniques, this is generally more difficult to accom-                      (by our assumption that f = 0). In other words, any
 plish than it is for an analogous semilinear equation.                    solution u = u(x 1 , x 2 ) of (17) with f = 0 is con-
 Finally, we have fully nonlinear equations, which exhibit                 stant along any parametrized curve of the form x(s) =
@@ -592,7 +592,7 @@ ment seems worryingly circular, since u itself appears                          
 in (22).                                                                        dt      ∂x i
   To see how this difficulty can be circumvented, con-             where i runs from 1 to d. The equations (25) are
 sider the IVP for (21): that is, look for solutions that         known as a Hamiltonian system of ODEs. The rela-
-satisfy u(0, x) = u0 (x). Consider an associated char-           tionship between this system and the corresponding
+satisfy u(0, x) = u0 (x). Consider an associated char-           tion ship between this system and the corresponding
 acteristic curve x(s) such that, initially, x(0) = x0 .          Hamilton–Jacobi equation is a little more involved than
 Then, since u is constant along the curve, we must have          in the cases discussed above. Briefly, we can construct
 u(s, x(s)) = u0 (x0 ). Hence, going back to (22), we infer       a solution u to (24) based only on the knowledge
@@ -609,7 +609,7 @@ ously differentiable solution can only be constructed                   tant the
 locally in time. Both Hamilton–Jacobi equations and                    rem, which asserts that if the function f is real ana-
 Hamiltonian systems play a fundamental role in clas-                   lytic, as is certainly the case for our function f (x, u) =
 sical mechanics as well as in the theory of the prop-                  u3 − u + 1 + sin x, then there will be some neighbor-
-agation of singularities in linear PDEs. The deep con-                 hood J of x0 where the Taylor series converges to a
+a gation of singularities in linear PDEs. The deep con-                 hood J of x0 where the Taylor series converges to a
 nection between Hamiltonian systems and first-order                     real-analytic solution u of the equation. It is then easy
 Hamilton–Jacobi equations played an important role                     to show that the solution thus obtained is the unique
 in the introduction of the Schrödinger equation into                   solution to (26) that satisfies the initial condition (27).
@@ -620,7 +620,7 @@ quantum mechanics.                                                     To summar
 Before we can continue with our general presentation                   a more general equation of the form
 of PDEs we need first to discuss, for the sake of com-
                                                                           a(x, u(x))∂x u = f (x, u(x)),      u(x0 ) = u0 .       (28)
-parison, the IVP for ODEs. Let us start with a first-order
+paris on, the IVP for ODEs. Let us start with a first-order
 ODE                                                                    Indeed, the recursive argument outlined above breaks
                                                                        down in the case of the scalar equation (x − x0 )∂x u =
                      ∂x u(x) = f (x, u(x))                      (26)
@@ -670,7 +670,7 @@ conditions u(x0 ) = u0 .                                                 that is
   The proof of the theorem is based on the Picard iter-                  cise, submanifolds). For a general equation of order k,
 ation method. The idea is to construct a sequence of                     that is, one that involves k derivatives, we need to spec-
 approximate solutions u(n) (x) that converge to the                      ify the values of u and of its first k − 1 derivatives in
-desired solution. Without loss of generality we can                      the direction normal to H . For example, in the case
+desired solution. With out loss of generality we can                      the direction normal to H . For example, in the case
 assume A to be the identity matrix.3 One starts by                       of the second-order wave equation (3) and the initial
 setting u(0) (x) = u0 and then defines, recursively,                      hyperplane t = 0 we need to specify initial data for u
                                                                          and ∂t u.
@@ -707,7 +707,7 @@ mathematical theory of ODEs as follows.
                                                                          be uniquely solved, which is the case provided that a
   Though it is impossible to develop a general theory                    certain matrix is invertible. This is the nondegeneracy
 that achieves both goals (in practice one is forced to                   condition referred to earlier.
-restrict oneself to special classes of equations moti-                      To illustrate the idea, let us look at first-order equa-
+restrict one self to special classes of equations moti-                      To illustrate the idea, let us look at first-order equa-
 vated by applications), the general local existence and                  tions in two space dimensions. In this case H is a curve
 uniqueness theorem mentioned above provides a pow-                       Γ , and since k − 1 = 0 we must specify the restriction
 erful unifying theme. It would be very helpful if a                      of u to Γ ⊂ R2 but we do not have to worry about any
@@ -806,7 +806,7 @@ nent form, ni = ∂i ψ/|∂ψ|. As initial conditions for                      
                                                                                  ∂t ψ = ±           (∂i ψ)2          .   (38)
 (32) we prescribe the values of u and its normal deriva-                                      i=1
 tive n[u](x) = n1 (x)∂1 u(x) + n2 (x)∂2 u(x) + · · · +
-                                                              The bi characteristic curves of the associated Hamiltoni-
+                                                              The bi characteristic curves of the associated Hamilton i-
 nd (x)∂d u(x) on H :
                                                               ans are called bi characteristic curves of the wave equa-
       u(x) = u0 (x),   n[u](x) = u1 (x),     x ∈ H.           tion. As particular solutions of (37) we find ψ+ (t, x) =
@@ -818,7 +818,7 @@ whose level surfaces ψ± = 0 correspond to forward and                  surface
 backward light cones with their vertex at p = (t0 , x0 ).              smooth (or real analytic) at every point of V other
 These represent, physically, the union of all light rays               than p.
 emanating from a point source at p. The light rays are                 Remarks. (i) The heuristic principle mentioned above
-given by the equation (t − t0 )ω = (x − x0 ), for ω ∈ R3               is invalid, in general, at large scales. Indeed, as we have
+given by the equation (t − t0 )ω = (x − x0 ), for ω ∈ R3               is in valid, in general, at large scales. Indeed, as we have
 with |ω| = 1, and are precisely the (t, x) components                  shown in the case of the Burgers equation, solutions
 of the bi characteristic curves of the Hamilton–Jacobi                  to nonlinear evolution equations can develop new sin-
 equations (38). More generally, the characteristics of                 gularities whatever the smoothness of the initial con-
@@ -833,7 +833,7 @@ Hamilton–Jacobi equations:                                             tion of
           −a00 (t, x)(∂t ψ)2 + aij (x)∂i ψ∂j ψ = 0
                                                                        merely has to be continuous, is automatically smooth
 or, equivalently,                                                      every where in the interior of D provided that f itself is
-                                                     1/2              smooth there. Moreover, the solution is real analytic if
+                                                     1/2              smooth there. More over, the solution is real analytic if
           ∂t ψ = ± (a00 )−1         aij (x)∂i ψ∂j ψ         .   (40)   f is real analytic.
                               i, j
                                                                        (iii) More precise versions of this principle, which plays
@@ -907,15 +907,15 @@ is misleading. A first limitation becomes immediately        timelike hypersurfa
 apparent when we consider the wave equation u = 0.         0. Let us explain the term “ill-posed” more precisely.
 A fundamental feature of this equation is finite speed of    Definition. A given problem for a PDE is said to be
 propagation, which means, roughly speaking, that if at      well-posed if both existence and uniqueness of solu-
-some time t a solution u is zero outside some bounded       tions can be established for arbitrary data that belongs
+some time t a solution u is zero out side some bounded       tions can be established for arbitrary data that belongs
 set, then the same must be true at all later times.         to a specified large space of functions, which includes
-However, analytic functions cannot have this property       the class of smooth functions.5 Moreover, the solutions
-unless they are identically zero (see some fundamen-        must depend continuously on the data. A problem that
+However, analytic functions cannot have this property       the class of smooth functions.5 More over, the solutions
+unless they are identically zero (see some fund a men-        must depend continuously on the data. A problem that
 tal mathematical definitions [I.3 §5.6](/part-01/fundamental-definitions)). Therefore,         is not well-posed is called ill-posed.
 it is impossible to discuss the wave equation properly
                                                               The continuous dependence on the data is very im-
 within the class of real-analytic solutions. A related
-                                                            portant. Indeed, the IVP would be of little use if very
+                                                            port ant. Indeed, the IVP would be of little use if very
 problem, first pointed out by hadamard [VI.65](/part-06/jacques-hadamard-18651963), con-
                                                             small changes in the initial conditions resulted in very
 cerns the impossibility of solving the Cauchy problem,
@@ -967,7 +967,7 @@ called boundary-value problems (BVPs). A typical exam-                     nonan
 ple is the Dirichlet boundary condition u|∂D = u0 for                         It is more difficult to give algebraic conditions for
 the Laplace equation Δu = 0 in a domain D ⊂ Rn .                           hyperbolicity. Roughly speaking, hyperbolic equations
 One can show that, if the domain D satisfies certain                        are at the opposite end of the spectrum from ellip-
-mild regularity assumptions and the boundary value                         tic equations: whereas elliptic equations have no char-
+mild regularity assumptions and the boundary value                         tic equations: where as elliptic equations have no char-
 u0 is continuous, then this problem admits a unique                        acteristic hypersurfaces, hyperbolic equations have as
 solution that depends continuously on u0 . We say that                     many as possible passing through any given point. One
 the Dirichlet problem for the Laplace equation is well-                    of the most useful classes of hyperbolic equations,
@@ -1004,7 +1004,7 @@ of initial conditions there is a unique solution. We can
                                                                            hyperbolic systems.
 
   6. Provided that the boundary condition under consideration is           Theorem (fundamental theorem for hyperbolic equa-
-well-posed. Moreover, this heuristic principle holds, in general, only     tions). The IVP (42) is locally well-posed for symmet-
+well-posed. More over, this heuristic principle holds, in general, only     tions). The IVP (42) is locally well-posed for symmet-
 for classical solutions of a nonlinear equation. There are in fact exam-
 ples of well-posed BVPs, for certain nonlinear elliptic systems, with no
                                                                            ric hyperbolic systems with sufficiently smooth A, F ,
@@ -1046,7 +1046,7 @@ A0 (t, x, u(n−1) )∂t u(n) +         Ai (t, x, u(n−1) )∂i u(n)           
 Notice that at each stage of the iteration we have to                     between the elliptic and hyperbolic ones. Large classes
 solve a linear equation. Linearization is an extremely                    of useful equations of these types are given by
 important tool in studying nonlinear PDEs. We can al-                                              ∂t u − Lu = f                        (44)
-most never understand their behavior without lineariz-                    and
+most never understand their behavior with out linear iz-                    and
 ing them around important special solutions. Thus,
                                                                                                   i∂t u + Lu = f ,                      (45)
 almost invariably, hard problems in nonlinear PDEs
@@ -1064,16 +1064,16 @@ was mentioned earlier in the case of the wave equa-                       entiat
 tion (3). Consider this simple case again. The IVP can                    (44) (or (45)) with initial condition (46) is well-posed, but
 be solved explicitly by the so-called Kirchhoff formula.                   not quite in the same sense as for hyperbolic equations.
 The formula allows us to conclude that if the initial                     For example, the heat equation −∂t u+Δu is well-posed
-data at t = 0 is zero outside a ball Ba (x0 ) of radius                   for positive t but ill-posed for negative t. The heat equa-
+data at t = 0 is zero out side a ball Ba (x0 ) of radius                   for positive t but ill-posed for negative t. The heat equa-
                                                                           tion may also not have unique solutions for the IVP
 a > 0 centered at x0 ∈ R3 , then at time t > 0 the
                                                                           unless we make assumptions about how fast the initial
-solution u is zero outside the ball Ba+ct (x0 ). In gen-
+solution u is zero out side the ball Ba+ct (x0 ). In gen-
                                                                           data is allowed to grow at infinity. One can also show
 eral, finite speed of propagation can best be formulated
 in terms of domains of dependence and influence of
                                                                             8. For gauge theories and Einstein equations the notion of hyper-
-                                                                          bolicity depends on the choice of gauge or coordinates. In the case
+                                                                          bol i city depends on the choice of gauge or coordinates. In the case
                                                                 1+d
   7. By “point” we mean that p is a spacetime point (t, x) ∈ R        .   of the Yang–Mills equations, for example, one obtains a well-defined
 Similarly, D is a set of spacetime points.                                system of nonlinear wave equations only in the Lorentz gauge.
@@ -1157,7 +1157,7 @@ Spectral Theory
 
 There is no way I can even begin to give an account of this theory, which is of fundamental importance not only to quantum mechanics and other physical theories, but also to geometry and analytic number theory [IV.2](/part-04/number-theory) .
 Just as a matrix A can often be analyzed through its eigenvalues and eigenvectors [I.3](/part-01/fundamental-definitions) by the tools of linear algebra, one can learn much about a linear differential operator P and its associated PDE by understanding that operator’s spectrum [III.86](/part-03/the-spectrum) and eigenfunctions with the help of tools from functional analysis [IV.15](/part-04/operator-algebras). A typical problem in spectral theory is the eigenvalue problem in R d : $- \Delta u(x) + V(x)u(x) = \lambda u(x)$ .
-A function u that is localized in space (for example, by being bounded in the $L^{2}$ (R d) - norm) and that satisfies this equation is mapped by the linear operator $- \Delta + V$ to the function $\lambda u:$ we say that u is an eigenfunction with eigenvalue $\lambda.$ Suppose that we have an eigenfunction u and let φ (t , x) = e - i $\lambda$ t u (x). It is easy to check that φ is a solution of the Schrödinger equation i∂ $tφ + \Deltaφ - Vφ = 0$ . (47) Moreover, it has a very special form. Such solutions are called bound states of the physical system described by (47).
+A function u that is localized in space (for example, by being bounded in the $L^{2}$ (R d) - norm) and that satisfies this equation is mapped by the linear operator $- \Delta + V$ to the function $\lambda u:$ we say that u is an eigenfunction with eigenvalue $\lambda.$ Suppose that we have an eigenfunction u and let φ (t , x) = e - i $\lambda$ t u (x). It is easy to check that φ is a solution of the Schrödinger equation i∂ $tφ + \Deltaφ - Vφ = 0$ . (47) More over, it has a very special form. Such solutions are called bound states of the physical system described by (47).
 The eigenvalues $\lambda,$ which form a discrete set, correspond to the quantum energy levels of the system. They are very sensitive to the choice of potential V . The inverse spectral problem is also important: can one determine the potential V from knowledge of the corresponding eigenvalues? The eigenvalue problem can be studied in considerable generality by replacing the operator $- \Delta + V$ with other elliptic operators.
 For instance, in geometry it is important to study the eigenvalue problem for the Laplace-Beltrami operator, which is the natural generalization of the Laplace operator from $R^{n}$ to general riemannian manifolds [I.3](/part-01/fundamental-definitions). When the manifold has some arithmetic structure (for instance, if it is the quotient of the upper half-plane by a discrete arithmetic group), this problem is of major importance in number theory, leading, for instance, to the theory of Hecke-Maas forms. A famous problem in differential geometry (“ can you hear the shape of
 
@@ -1176,7 +1176,7 @@ Conclusions
 
 In the analytic case, the CK theorem allows us to solve the IVP locally for very general classes of PDEs. We have a general theory of characteristic hypersurfaces of PDEs and a good general understanding of how they relate to propagation of singularities. We can also distinguish in considerable generality the fundamental classes of elliptic and hyperbolic equations and can define general parabolic and dispersive equations. The IVP for a large class of nonlinear hyperbolic systems can be solved locally in time, for sufficiently smooth initial conditions.
 Similar local-in-time results hold for general classes of nonlinear parabolic and dispersive equations. For linear equations a lot more can be done. We have satisfactory results concerning the regularity of solutions for elliptic and parabolic equations and a good understanding of the propagation of singularities for a large class of hyperbolic equations. Some aspects of spectral theory and scattering theory and problems of unique continuation can also be studied in considerable generality. The main defect of the general theory concerns the passage from local to global.
-Important global features of special equations are too subtle to fit into a general scheme. Rather, each important PDE requires special treatment. This is particularly true for nonlinear equations: the long-term behavior of solutions is very sensitive to the special features of the equation at hand. Moreover, general points of view may obscure, through unnecessary technical complications, the main properties of the important special cases. A useful general framework is one that provides a simple and elegant
+Important global features of special equations are too subtle to fit into a general scheme. Rather, each important PDE requires special treatment. This is particularly true for nonlinear equations: the long-term behavior of solutions is very sensitive to the special features of the equation at hand. More over, general points of view may obscure, through unnecessary technical complications, the main properties of the important special cases. A useful general framework is one that provides a simple and elegant
 
 IV.12.   Partial Differential Equations                                                                                                 473
 
@@ -1197,7 +1197,7 @@ hyperbolic equations.
 As one turns away from the general theory, one may                                  u(t, x) =          Ed (t, x − y)u0 (y) dy
 be inclined to accept the pragmatic point of view                                                 Rd
 
-described earlier, according to which PDEs is not a                     for a certain function Ed , which is called the fundamen-
+described earlier, according to which PDEs is not a                     for a certain function Ed , which is called the fund a men-
 real subject but is rather a collection of subjects such                tal solution of the heat operator −∂t + Δ. This func-
 as hydrodynamics, general relativity, several complex                   tion can be defined explicitly: when t ⩽ 0 it is 0,
 variables, elasticity, etc., each organized around a spe-               and when t > 0 it is given by the formula Ed (t, x) =
@@ -1303,9 +1303,9 @@ information about the domain of influence. Indeed, we
                                                                        kinetic energy.
 can see immediately from the formula that if u0 is zero
                                                                           The Bochner identity can be extended to more gen-
-outside the ball Ba = {|x − x0 | ⩽ a}, then u(t, x) is
+out side the ball Ba = {|x − x0 | ⩽ a}, then u(t, x) is
                                                                        eral Riemannian manifolds than Rd , although one then
-zero outside the ball Ba+|t| for any time t. This fact
+zero out side the ball Ba+|t| for any time t. This fact
                                                                        picks up some additional lower-order terms involving
 does not seem at all transparent in the Fourier-based
                                                                        the curvature of those manifolds. Such identities play
@@ -1315,7 +1315,7 @@ of solutions have different, even opposite, strengths
                                                                        manifolds.
 and weaknesses has important consequences for con-
                                                                           Energy-type identities and estimates also exist for
-structing approximate solutions, or parametrices, for
+struc ting approximate solutions, or parametrices, for
                                                                        parabolic, dispersive, and hyperbolic PDEs. For in-
 more complicated equations, such as linear equations
                                                                        stance, they play a fundamental role in demonstrat-
@@ -1354,12 +1354,12 @@ tions to the Laplace equation even in the absence of                methods, bas
 any explicit representation for them.                               already know, to try to show that the solutions to this
                                                                     linear problem behave as well as we have postulated—
 Theorem (maximum principle). Assume that u is a                     in fact, even better. One can characterize this powerful
-solution to the Laplace equation (1) on a bounded con-              method, which allows us to use linear theory without
+solution to the Laplace equation (1) on a bounded con-              method, which allows us to use linear theory with out
 nected domain D ∈ Rd with a smooth boundary ∂D.                     actually having to linearize the equation, as a concep-
 Assume also that u is continuous on the closure of D                tual linearization. It can also be regarded as a continu-
 and has continuous first and second partial derivatives              ity argument relative to some parameter, which might
 in the interior of D. Then u must achieve its maximum               be the natural time parameter of an evolution problem,
-and minimum values on the boundary. Moreover, if the                but it could also be an artificial parameter which we
+and minimum values on the boundary. More over, if the                but it could also be an artificial parameter which we
 maximum or minimum is also achieved at an interior                  have the freedom to introduce ourselves. This latter
 point of D, then u must be constant in D.                           situation is typical of applications to nonlinear elliptic
    The method is very robust and can easily be extended             equations. In the online version of this article we pro-
@@ -1409,7 +1409,7 @@ system is an increasing function of time.                           equation Δu
 476                                                                                                     IV. Branches of Mathematics
 
 the idea of trying to use this fact to solve the Dirichlet             nature of these singularities and to prove realistic par-
-problem: in order to find a solution u to the problem                   tial regularity results. For instance, it is sometimes pos-
+problem: in order to find a solution u to the problem                   tial regularity results. For instance, it is some times pos-
                     Δu = 0,      u|∂D = u0 ,                   (53)    sible to prove that the generalized solution is smooth
                                                                        every where apart from in a small “exceptional set.”
 one should find (by some means other than solving
@@ -1424,7 +1424,7 @@ function space, over which the minimization is taking
                                                                        ear equations have to be interpreted as distributions,
 place. The history of how this choice was made is a fas-
                                                                        which are examples of generalized solutions.
-cinating one. A natural choice is X = C 1 (. ar{D}), the space
+cin at ing one. A natural choice is X = C 1 (. ar{D}), the space
                                                                           The notion of generalized solutions has also proved
 of continuously differentiable functions on . ar{D}, where
                                                                        successful for nonlinear evolution problems, such as
@@ -1449,7 +1449,7 @@ does not have to achieve its minimum in either C 2 (. ar{D})
 or C 1 (. ar{D}). However, Riemann’s basic idea was revived,                                           (∂t u + u∂x u)φ = 0
                                                                                            R1+1
 and it eventually triumphed after a long and inspir-
-                                                                       for every smooth function φ that is zero outside a
+                                                                       for every smooth function φ that is zero out side a
 ing process that involved defining appropriate function
                                                                        bounded set, since one can make sense of the integral
 spaces, introducing the notion of generalized solutions,
@@ -1484,7 +1484,7 @@ problem (or one of the other problems to which the
                                                                           For more complicated nonlinear evolution equations,
 method can be applied). But this is where the second
                                                                        the question of what constitutes a good concept of
-step comes in: it is sometimes possible to show that the
+step comes in: it is some times possible to show that the
                                                                        a generalized solution, though fundamental, is far
 generalized solution must in fact be a classical solu-
                                                                        murkier. For higher-dimensional evolution equations
@@ -1499,7 +1499,7 @@ may turn out to have singularities and therefore not
 be regular. Then the challenge is to understand the
                                                                        technical inabilities, or unavoidable, in the sense that
                                                                        the concept itself is flawed. Leray was able to produce,
- 13. A notable example for applications in geometry is Hodge theory.   by a compactness method, a weak solution of the IVP
+ 13. A not able example for applications in geometry is Hodge theory.   by a compactness method, a weak solution of the IVP
 
 $IV$ . $12$ .
 
@@ -1564,7 +1564,7 @@ built out of Δ. The wave operator, as just discussed,                       we 
 is basic in a deeper way because of the association                         parameter family of functions φ(s) : R1+3 → R, defined
 between  = −∂t2 + Δ and the geometry of Minkowski                          for each s in some interval (−, ), such that φ(0) (x) =
 space R1+n . As for Laplace’s equation, one can view                        φ(x) for every x ∈ R3 and φ(s) (x) = φ(x) for
-solutions to Δφ = 0 as special time-independent solu-                       every (s, x) outside some bounded subset of R1+3 . This
+solutions to Δφ = 0 as special time-independent solu-                       every (s, x) out side some bounded subset of R1+3 . This
 tions to φ = 0. Appropriate invariant and local def-                       allows us to differentiate with respect to s.
 initions of square roots of Δ and , or  − k2 , corre-                        Given such a variation, we denote the derivative
 sponding to “spinorial representations” of the Lorentz                      dφ(s) /ds|s=0 by φ̇.
@@ -1614,7 +1614,7 @@ In view of the action principle and the arbitrariness of                     spo
 is indeed the Euler–Lagrange equation associated with
 the Lagrangian L[φ] = mμν ∂μ φ∂ν φ − V (φ).                                     Examples of such conservation laws are the famil-
    One can similarly show that the Maxwell equations                         iar laws of conservation of energy, conservation of
-of ele ct ro magnetism—along with their beautiful exten-                        momentum, and conservation of angular momentum,
+of electromagnetism—along with their beautiful exten-                        momentum, and conservation of angular momentum,
 sions to the Yang–Mills equations, wave maps, and                            all of which have important physical meaning. (The one-
 the Einstein equations of general relativity—are also                        parameter group of symmetries for energy, for exam-
 variational. That is, they too can be derived from a                         ple, is just translations in time.) In the case of equation
@@ -1623,7 +1623,7 @@ Lagrangian.                                                                  (56
 Remark. The variational principle asserts only that                                                       E(t) = E(0),                    (57)
 the acceptable solutions of a given system are sta-
                                                                              where the quantity E(t), which equals
-tionary: in general, we have no reason to expect that
+tion ary: in general, we have no reason to expect that
 the desired solutions minimize or maximize the action                                         1          1   
                                                                                                              3
                                                                                                       2
@@ -1738,10 +1738,10 @@ procedures.                                                  fluids. For example
                                                              speeds tend to infinity, the equations of elasticity turn
 4.3.1    Symmetry Reductions                                 into the familiar equations of a rigid body in classical
                                                              mechanics.
-Sometimes a PDE is very hard to solve but becomes
+Some times a PDE is very hard to solve but becomes
 much easier if one places additional symmetry con-
                                                              4.3.3    Phe no meno logical Assumptions
-straints on solutions. For example, if the PDE is rota-
+strain ts on solutions. For example, if the PDE is rota-
 tion invariant and we look just for rotation-invariant       Even after taking various limits and making symmetry
 solutions u(t, x), then we can regard these solutions        reductions, the equations may still remain intractable.
 as functions of t and r = |x|, effectively reducing the       However, in various applications it makes sense to
@@ -1782,7 +1782,7 @@ Regularity or Breakdown
 
 An additional source of unity for the subject of PDEs is the central role played by the problem of regularity or breakdown of solutions to the basic equations. It is intimately tied to the fundamental mathematical question of understanding what we actually mean by solutions and, from a physical point of view, to the issue of understanding the limits of validity of the corresponding physical theories.
 Thus, in the case of the Burgers equation, for example, the problem of singularities can be tackled by extending our concept of solutions to accommodate shock waves, which are solutions that are discontinuous across certain curves in the (t , x) - space . In this case one can define a function space of generalized solutions in which the IVP has unique, global solutions.
-Though the situation for more realistic physical systems is far less clear and far from being satisfactorily solved, the generally held opinion is that shockwave-type singularities can be accommodated without breaking the boundaries of the physical theory at hand. The situation for singularities in general relativity is radically different. The singularities one expects there are such that no continuation of solutions is possible without altering the physical theory itself. The prevailing opinion here is that only a gravitational quantum field theory could achieve this.
+Though the situation for more realistic physical systems is far less clear and far from being satisfactorily solved, the generally held opinion is that shockwave-type singularities can be accommodated with out breaking the boundaries of the physical theory at hand. The situation for singularities in general relativity is radically different. The singularities one expects there are such that no continuation of solutions is possible with out altering the physical theory itself. The prevailing opinion here is that only a gravitational quantum field theory could achieve this.
 
 $5$
 
@@ -1793,7 +1793,7 @@ As mentioned earlier, it is widely believed $21$ . One of the important achievem
 
 482                                                                                            IV. Branches of Mathematics
 
-that subcritical equations are regular and that supercrit-           scales and therefore not a reliable predictor of the gen-
+that subcritical equations are regular and that supercrit-           scales and therefore not a reliable predict or of the gen-
 ical equations are not. Indeed, many subcritical equa-               eral case. These and other similar situations lead to
 tions have been proved to be regular even though we                  important dilemmas: should we persist in studying the
 lack a general procedure for establishing regularity                 approximate equations even when, in many cases, we
@@ -1808,13 +1808,13 @@ stronger, local a priori bounds that cannot be derived               of validity
 from Noether’s principle? The discovery of such a                    fundamental goals in PDEs.
 bound would be a major event in both mathematics and
 physics.                                                             (iii) Devise and analyze the right equation for studying
-   Once we understand that the presence of singulari-                the specific geometric or physical problem at hand. This
+   Once we understand that the presence of singular i-                the specific geometric or physical problem at hand. This
 ties in our basic evolution equations is unavoidable, we             last goal is equally important even though it is neces-
 have to face the question of whether they can some-                  sarily vague. The enormously important role played by
 how be accommodated by a more general concept of                     PDEs in various branches of mathematics is more evi-
 what a solution is or whether their structure is such                dent than ever. One looks in awe at how equations such
 that the equation itself, indeed the physical theory                 as the Laplace, heat, wave, Dirac, Kd V, Maxwell, Yang–
-that it underlies, becomes meaning less. An acceptable                Mills, and Einstein equations, which were originally
+that it under lies, becomes meaning less. An acceptable                Mills, and Einstein equations, which were originally
 concept of a generalized solution should, of course,                 introduced in specific physical contexts, turned out
 preserve the deterministic nature of the equations: in               to have very deep applications to seemingly unrelated
 other words, it should be uniquely determined from its               problems in areas such as geometry, topology, alge-
@@ -1839,7 +1839,7 @@ tions leads to behavior that is incompatible with the                heat flow, 
 assumptions made in its derivation. Alternatively, a par-            the help of a Yang–Mills flow. In addition to the suc-
 ticular simplifying assumption, such as spherical sym-               cessful use of Ricci flow to settle the Poincaré conjec-
 metry in general relativity or zero vorticity for com-               ture in three dimensions, another remarkable recent
-pressible fluids, may turn out to be unstable at large                example of the usefulness of geometric flows is that
+press i ble fluids, may turn out to be unstable at large                example of the usefulness of geometric flows is that
                                                                      of the inverse mean flow, first introduced by Geroch, to
   22. What we call supercritical depends on the strongest a priori
                                                                      settle the so-called Riemannian version of the Penrose

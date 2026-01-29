@@ -15,13 +15,13 @@ $1$
 Introduction
 
 Algebra is the mathematics that places more emphasis on abstract structure than on intrinsic meaning. The conceptual simplifications that can result when context is stripped away from structure give algebra a special power and clarity compared with other areas: compare, for example, the difficulty of visualizing fourdimensional space with the triviality of manipulating quadruples $(x^{1}$ , $x^{2}$ , $x^{3}$ , $x^{4})$ of real numbers. However, this abstractness can also blind us.
-For instance, basic identities like $ab = ba$ and a (bc)  =  (ab) c that are obeyed by numbers can be modified in countless directions, and each modification defines a new algebraic structure, but it is hard to guess from a purely abstract perspective which of these modifications will give rise to a rich, accessible, and interesting theory. For guidance, algebra has traditionally turned to geometry. For example, over a century ago lie [VI.53](/part-06/sophus-lie-18421899) suggested that the identities $ab = - ba$ and a $(bc) =$ (ab) c  +  b (ac) were worth studying for geometrical reasons:
-the resulting structures are now called lie algebras [III.48](/part-03/lie-theory) . More recently, as we shall see, physics has joined geometry in this guiding role and has had spectacular success. The renowned physicist and mathematician Edward Witten believes that a major theme of twenty-firstcentury mathematics will be its reconciliation with the branch of physics known as quantum field theory. Conformal field theory (the quantum field theory that underlies string theory) is an especially symmetric and well-behaved class of quantum field theories.
+For instance, basic identities like $ab = ba$ and a (bc)  =  (ab) c that are obeyed by numbers can be modified in count less directions, and each modification defines a new algebraic structure, but it is hard to guess from a purely abstract perspective which of these modifications will give rise to a rich, accessible, and interesting theory. For guidance, algebra has traditionally turned to geometry. For example, over a century ago lie [VI.53](/part-06/sophus-lie-18421899) suggested that the identities $ab = - ba$ and a $(bc) =$ (ab) c  +  b (ac) were worth studying for geometrical reasons:
+the resulting structures are now called lie algebras [III.48](/part-03/lie-theory) . More recently, as we shall see, physics has joined geometry in this guiding role and has had spectacular success. The renowned physicist and mathematician Edward Witten believes that a major theme of twenty-firstcentury mathematics will be its reconciliation with the branch of physics known as quantum field theory. Conformal field theory (the quantum field theory that under lies string theory) is an especially symmetric and well-behaved class of quantum field theories.
 When this notion is translated into algebra, the result is a structure known as a vertex operator algebra (VOA). This
 
 $539$
 
-article sketches where VOAs come from, what they are, and what they are good for. To aim to explain a VOA in a few pages is almost as absurd as to aim to explain quantum field theory in a few pages, but, undaunted, I shall try to do both. Obviously it will be necessary to gloss over many important technicalities and to commit major simplifications; without question this exposition will raise the ire of experts and the eyebrows of knowledgeable amateurs, but I hope that it will at least convey the essence of this important and beautiful area.
+article sketches where VOAs come from, what they are, and what they are good for. To aim to explain a VOA in a few pages is almost as absurd as to aim to explain quantum field theory in a few pages, but, undaunted, I shall try to do both. Obviously it will be necessary to gloss over many important technicalities and to commit major simplifications; with out question this exposition will raise the ire of experts and the eyebrows of knowledgeable amateurs, but I hope that it will at least convey the essence of this important and beautiful area.
 Vertex operator algebras are the algebra of string theory: they should be thought of as the same sort of gift to the twenty-first century that Lie algebras were to the twentieth.
 
 $2$
@@ -50,7 +50,7 @@ cle on their algebraic impact; see mirror symmetry            basis [III.37](/pa
 [IV.16](/part-04/mirror-symmetry) for some geometrical implications.                    the experiment that is modeled by the observable Â,
                                                               the answer we obtain will be one of the eigenvalues
 2.1     Physics 101                                           of Â. However, this answer is usually not fully deter-
-A quick overview of physics will be useful for the            mined by the state v. Instead, it is given by a proba-
+A quick over view of physics will be useful for the            mined by the state v. Instead, it is given by a proba-
 discussion. Further details can be found in mirror            bility distribution: the probability of obtaining a par-
 symmetry [IV.16 §2](/part-04/mirror-symmetry).                                          ticular eigenvalue is proportional to the square of the
                                                               norm of the projection of v into the corresponding
@@ -89,7 +89,7 @@ tum theories, which are significantly different from
                                                               (the Hilbert space to which the states belong), forming
 classical theories: one can think of them as “applied
                                                               a representation of the Lie algebra. Both consequences
-linear algebra.” Whereas a classical state was given by a
+linear algebra.” Where as a classical state was given by a
                                                               are important to CFT.
 collection of a few numbers (two, in the case of the par-
 ticle above), a quantum state is an element of a hilbert
@@ -221,7 +221,7 @@ This is a mathematical way of expressing, in the context                  what t
 of quantum field theory, the cherished physical princi-                    is enough to know that a CFT is a particularly symmet-
 ple called locality:1 the only way we can directly affect                  rical kind of quantum field theory. A CFT lives on the
 something is by nudging it. In order to influence some-                    worldsheet Σ traced by a set of strings as they evolve,
-thing not touching us, we must propagate a disturbance                    sometimes colliding and separating, through time. In
+thing not touching us, we must propagate a disturbance                    some times colliding and separating, through time. In
 from us to it, such as a ripple in water. The main pur-                   this subsection we shall informally sketch their basic
 pose of both classical and quantum fields is that they                     theory; in section 3.1 we shall be more precise.
 provide a natural vehicle for realizing locality. Locality                   CFT, like any quantum field theory in two dimen-
@@ -231,7 +231,7 @@ of the central concepts of classical physics become less                  on the
 central, and are instead derived quantities. For exam-                    ties (charge, mass, etc.) of the corresponding state, but
 ple, the basic object of general relativity [IV.13](/part-04/general-relativity-and-the-einstein-equations) is                    they can move (at the speed of light) either clockwise
 a Lorentzian manifold, and familiar physical quantities                   or counter clockwise around the string. When they do
-such as mass and gravitational force are, from the point                  so, they just pass through each other without inter-
+such as mass and gravitational force are, from the point                  so, they just pass through each other with out inter-
 of view of this manifold, just names (that are not wholly                 acting. These two alternatives, clockwise and counter-
 precise) given to certain of its geometrical features.                    clockwise, yield the two chiral halves of CFT. To study a
    Particles are obviously essential to classical physics,                CFT, one first analyzes its chiral halves and then splices
@@ -247,7 +247,7 @@ functions [III.92](/part-03/trigonometric-functions). In fact, when viewed appro
 modes actually are Fourier coefficients of a certain                        there are far more conformal transformations in two
 kind. The commutators of these modes can be obtained                      dimensions than there are in higher dimensions. When
 from the commutators of the fields. Now, recall that                       n > 2 the only examples are the obvious ones: com-
-the vertex operators of string theory are related to the                  binations of translations, rotations, and enlargements.
+the vertex operators of string theory are related to the                  bi nations of translations, rotations, and enlargements.
                                                                           This means that thespace   of all local conformal trans-
                                                                           formations in Rn is n+2 2    dimensional. However, when
   1. More precisely, for quantum fields, locality takes the form that if
@@ -281,13 +281,13 @@ try of CFT turns out to be that these basis elements ln
 act naturally on all the quantities in the theory, as we
                                                              tive representation. Projective representations of sym-
 shall explain below.
-                                                             metries, such as (4), are common in quantum theories.
-  The basic example that underlies all the others is
+                                                             me tries, such as (4), are common in quantum theories.
+  The basic example that under lies all the others is
                                                              The fact that they are not true representations is not a
 when space-time Σ is a semi-infinite cylinder corre-
-                                                             problem, since one can turn them into true represen-
-sponding to an incoming string. It is parametrized by
-                                                             tations by extending the algebra. In our case, the state
+                                                             problem, since one can turn them into true re pre sen-
+sponding to an in coming string. It is parametrized by
+                                                             tat i ons by extending the algebra. In our case, the state
 time t < 0 and the angle 0 ⩽ θ < 2π around the string.
                                                              space H carries inside it a true representation of the
 We can conformally map the cylinder to the punctured
@@ -299,7 +299,7 @@ z = 0. This allows us to say what we mean by conformal
 symmetries of the cylinder.
                                                              field correspondence: with each field φ one associates
   The quantum fields φ(z) of CFT are the vertex oper-
-                                                             its incoming state, which is the limit as the time t tends
+                                                             its in coming state, which is the limit as the time t tends
 ators of string theory. As always, these quantum fields
                                                              to −. nfty of φ|0 (as always, |0 is the vacuum state in H
 φ are “operator-valued distributions” on space-time Σ,
@@ -315,7 +315,7 @@ which are linear maps from the state space H to itself,
 given by the formula
                                                              φ1 (z)φ2 (z) fails, since distributions, unlike true func-
                  φn =     φ(z)zn−1 dz,                       tions, cannot in general be multiplied. For example,
-                                                             the Dirac delta δ(x − a) cannot be squared without
+                                                             the Dirac delta δ(x − a) cannot be squared with out
 where the integral is around a small circle about the ori-   causing problems in (1). However, even if the prod-
 gin. Then you take these modes as the coefficients of          uct φ1 (z)φ2 (z) does not make sense, one can make
                         
@@ -348,7 +348,7 @@ These spaces carry projective representations of the mapping class group Γ g, n
 The most important example here is the torus, where the chiral blocks are modular functions, a class of functions of fundamental mathematical importance. A modular function is a meromorphic function (that is, a function that is holomorphic except at a few “poles” where it can tend to infinity) f (τ) that is defined on the upper half-plane $H =$ {τ $\inC|Imτ > 0$ and that is “symmetric” with respect to the group $SL^{2}(Z)$ of $2 \times 2545$
 
 matrices with integer entries and determinant $1$ , in the b sense that for any such matrix (a c d ) the function f (τ) is closely related (though not necessarily exactly equal) to the function f ((a τ  +  b)  /  (c τ  +  d)). We shall discuss this further in section $3$ . $2$ . The appearance of modularity can be understood by recalling from section $2$ . $1$ . $2$ that Feynman’s path integral in string theory is an integral over moduli spaces. The moduli space $M^{1}$ , 0 for the torus can be written as the quotient of the half-plane H by the action of S$L^{2}$ (Z).
-Therefore, if one lifts the integrand of Feynman’s integral from $M^{1}$ , 0 to H , one obtains a function Z (τ) that is invariant under S$L^{2}$ (Z) and hence modular. This integrand Z (τ) is a quadratic combination of the chiral blocks for the torus. $3$ What VOAs Are It is possible to give a fully axiomatic definition of vertex operator algebras. However, when one first encounters this definition (and not just the first time either) it can seem very complicated and arbitrary, and one is given no feel for the importance of VOAs. Our treatment below will be much more informal:
+Therefore, if one lifts the integrand of Feynman’s integral from $M^{1}$ , 0 to H , one obtains a function Z (τ) that is invariant under S$L^{2}$ (Z) and hence modular. This integrand Z (τ) is a quadratic combination of the chiral blocks for the torus. $3$ What VOAs Are It is possible to give a fully axiomatic definition of vertex operator algebras. However, when one first encounters this definition (and not just the first time either) it can seem very complicated and arbitrary, and one is given no feel for the importance of VOAs. Our treatment below will be much more in formal:
 this will clarify their importance even if it hides much of their complexity. Thanks to the previous section, it is possible to give a quick justification for VOAs: if you concede that CFT (or equivalently, perturbative string theory) is important, and if you have seen how closely related CFT is to VOAs, then you must concede that VOAs are important. However, this is not the whole story, as we shall see.
 
 $3$ . $1$
@@ -363,7 +363,7 @@ However, we shall give a much better description of these vertex operators short
 running along the axis: the map from this to the punc-           theory. These coefficients vn are the modes: as in any
 tured disk was (θ, t) → z = et−iθ . We want to restrict         quantum field theory, all observables and states in the
 our attention to quantum fields that depend holomor-              theory are built up from them.
-phically on z. However, it is not obvious what “holo-               The most important state in the theory is the vac-
+ph ically on z. However, it is not obvious what “holo-               The most important state in the theory is the vac-
 morphic” means for distributions. We touched on this             uum |0. It corresponds to the identity vertex operator:
 question in section 2.2: now we shall look at it in more         Y (|0, z) = I. From the physical point of view, the ver-
 detail.                                                          tex operator Y (v, z) is the field that created the state
@@ -460,7 +460,7 @@ power series are involved, there can be zero divisors.
 For example, it is easy to check that (z − 1) n∈Z z n =
                                                               u ∗n v = un (v)), which obey infinitely many identi-
 0. Locality in the form (7) is at the heart of VOAs;
-                                                              ties. Needless to say, it is not an easy definition, and
+                                                              ties. Need less to say, it is not an easy definition, and
 for instance, one can express it as a triply infinite
                                                               there are no easy examples.
 sequence of identities that the modes must obey, and
@@ -481,8 +481,8 @@ that if u has energy k and v has energy l, then un (v)
                                                               uct u ∗ v = u−1 (v): this means a linear map that
 has energy k + l − n − 1. The definition followed here is
                                                               obeys the product rule satisfied by derivatives, namely
-sometimes called a VOA of CFT-type, for obvious rea-          T (u ∗ v) = (T u) ∗ v + u ∗ (T v). The converse of this
-sons. Sometimes in the literature some of these con-          statement is true too: any such algebra is a VOA that
+some times called a VOA of CFT-type, for obvious rea-          T (u ∗ v) = (T u) ∗ v + u ∗ (T v). The converse of this
+sons. Some times in the literature some of these con-          statement is true too: any such algebra is a VOA that
 ditions are weakened or dropped. For example, much            obeys (7) with N = 0. In these simple examples, the role
 of the theory is independent of the existence of the          of the derivation T is to recover the z-dependence of
 conformal vector ω, although to us it will be cru-            the vertex operator.
@@ -494,19 +494,19 @@ in order to help explain the motivation for studying          to a commutative a
 them. We know they should be valuable to mathemat-               It is also easy to show that in any VOA (again the
 ics, simply because CFT is, and indeed this is the case,      existence of the conformal vector is not needed), the
 as we shall see in section 4. But from a purely math-         space V1 is a Lie algebra, with Lie bracket given by
-ematical point of view, they might appear somewhat            [uv] = u0 (v). This is important because each Vn will
+ematical point of view, they might appear some what            [uv] = u0 (v). This is important because each Vn will
 ad hoc, as though we had a list of mathematical ingre-        carry a representation of this Lie algebra, and V1 gener-
 dients and said to ourselves, “Let’s consider this, and       ates continuous symmetries of the VOA (at least when
 then have some of these, oh, and perhaps one of those         V1 = {0}). For a typical VOA V these Lie algebras
 too, but with the following extra assumption: . . . .” For-   are very familiar. For instance, for the VOAs associated
 tunately, there are more abstract formulations of VOAs        with rational CFT, they are reductive, which means that
 that make them appear much less arbitrary as mathe-           they are a direct sum of copies of the trivial Lie algebra
-matical structures. For example, Huang has shown that         C with simple Lie algebras.
+mat ical structures. For example, Huang has shown that         C with simple Lie algebras.
 they can be regarded as “two-dimensionalized” Lie alge-          The existence of the conformal vector becomes im-
-bras, in the following sense. If you want to keep track of    portant when one starts to consider the representation
+bras, in the following sense. If you want to keep track of    port ant when one starts to consider the representation
 the Lie brackets in an expression such as [a, [[b, c], d]]    theory of VOAs. A V -module is defined in a natural
 (which is important since the Lie bracket is not an asso-     way. We shall not give full details here, but, roughly
-ciative operation), you can do so with the help of a          speaking, it is a space on which V acts in such a
+cia tive operation), you can do so with the help of a          speaking, it is a space on which V acts in such a
 binary tree, and in fact it is easy to formulate Lie alge-    way that as much as possible of the VOA structure is
 bras in the language of such trees. If one then replaces      respected. For example, V will automatically be a mod-
 binary trees by diagrams made out of spheres with legs,       ule for itself, just as a group acts on itself in a sim-
@@ -543,9 +543,9 @@ plane H. They carry a representation of the modular
 group SL2 (Z):
                                                               are notoriously difficult to put on a rigorous mathe-
            aτ + b                   a b
-      χM            =            ρ           χN (τ), (9)        matical footing. But the successful applications suggest
+      χM            =            ρ           χN (τ), (9)        mat ical footing. But the successful applications suggest
            cτ + d      N∈Irr(V )
-                                     c d MN                     that these difficulties are a symptom of mathemati-
+                                     c d MN                     that these difficulties are a symptom of mathemat i-
 where Irr(V ) denotes the (finite) set of irreducible V -        cal profundity and subtlety rather than of irreparable
 modules, and ρ( ac db
                       ) is a matrix with complex entries,       mathematical incoherence. In this sense the situation is
@@ -562,8 +562,8 @@ so important.                                                   Zhu) reconstruct
            4 What Are VOAs Good For?
                                                                 whole subject more accessible to, and hence exploitable
 This section describes what are probably the two most           by, mathematicians. Quantum field theories are here to
-significant applications of VOAs. But let us begin              stay in mathematics, and thanks to VOAs mathemati-
-by listing (without any explanations) a few others.             cians are absorbing a large class of them completely
+significant applications of VOAs. But let us begin              stay in mathematics, and thanks to VOAs mathemat i-
+by listing (with out any explanations) a few others.             cians are absorbing a large class of them completely
 Inspired by the geometry of string theory, vertex oper-         and explicitly.
 ator (super)algebras have been assigned to manifolds,
 resulting in a powerful, though complicated, alge-
@@ -580,7 +580,7 @@ context.
                                                                 the generator of all modular functions for SL2 (Z).
 4.1   The Mathematical Formulation of CFT                       Recall that a modular function is a function f (τ) that
 Since the 1970 s quantum field theory has had con-                is meromorphic in the upper half-plane H and invari-
-siderable success, especially in geometry, by studying          ant under the usual action of SL2 (Z). It should also be
+sider able success, especially in geometry, by studying          ant under the usual action of SL2 (Z). It should also be
 
 IV.17.   Vertex Operator Algebras                                                                                  549
 
@@ -612,7 +612,7 @@ group of size about 8 . imes 1053 ), we expect there to be                √
 associated a function j(g, h) (τ) that generates all mod-    in the construction of V % .
 ular functions for some discrete subgroup Γ(g, h) of            Most of the Moonshine conjectures are still open and
 SL2 (Z). The j-function would be assigned in the case       this deep connection between modular functions and
-g = h = identity.                                           the Monster is still somewhat mysterious. At the time
+g = h = identity.                                           the Monster is still some what mysterious. At the time
    The first major step toward proving these Moonshine       of writing, however, VOAs still provide the only serious
 conjectures was made by Frenkel, Lepowsky, and Meur-
                                                             approach to the Moonshine conjectures.
@@ -626,7 +626,7 @@ ing direction since for both string theory and affine         Further Reading
 algebra representations modular functions arise nat-        Borcherds, R. E. 1986. Vertex algebras, Kac–Moody algebras,
 urally. Together with a rich algebraic structure that         and the Monster. Proceedings of the National Academy of
 came from these “vertex operators,” V % was also acted        Sciences of the USA 83:3068–71.
-on in a natural way by the Monster group. Moreover,              . 1992. Monstrous Moonshine and monstrous Lie su-
+on in a natural way by the Monster group. More over,              . 1992. Monstrous Moonshine and monstrous Lie su-
 although V % is infinite dimensional, it comes packaged        per algebras. Inventiones Mathematicae 109:405–44.
 
 into finite-dimensional pieces V % = . nfty

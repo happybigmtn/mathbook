@@ -3,8 +3,8 @@
 $142$
 
 in 1976 Kenneth Appel and Wolfgang Haken settled a famous old problem by proving the four-color theorem [V.12](/part-05/the-four-color-theorem) . Their proof involved the checking of a huge number of different map configurations, which they did with the help of a computer. Initially, this raised debates about the legitimacy of their proof but it quickly became accepted and there are now several proofs of this kind. Some mathematicians even believe that computer-assisted and, more importantly, computer-generated proofs are the future of the entire discipline.
-Under this (currently minority) view, our present views about what counts as an acceptable mathematical proof will soon become obsolete. A last point to stress is that many branches of mathematics now contain conjectures that seem to be both fundamentally important and out of reach for the foreseeable future. Mathematicians persuaded of the truth of such conjectures increasingly undertake the systematic study of their consequences, assuming that an acceptable proof will one day appear (or at least that the conjecture is true).
-Such conditional results are published in leading mathematical journals and doctoral degrees are routinely awarded for them. These trends all raise interesting questions about existing conceptions of legitimate mathematical proofs, the status of truth in mathematics, and the relationship between “pure” and “applied” fields. The formal notion of a proof as a string of symbols that obeys certain syntactical rules continues to provide an ideal model for the principles that underlie what most mathematicians see as the essence of their discipline.
+Under this (currently minority) view, our present views about what counts as an acceptable mathematical proof will soon become obsolete. A last point to stress is that many branches of mathematics now contain conjectures that seem to be both fundamentally important and out of reach for the foreseeable future. Mathematicians persuaded of the truth of such conjectures increasingly under take the systematic study of their consequences, assuming that an acceptable proof will one day appear (or at least that the conjecture is true).
+Such conditional results are published in leading mathematical journals and doctoral degrees are routinely awarded for them. These trends all raise interesting questions about existing conceptions of legitimate mathematical proofs, the status of truth in mathematics, and the relationship between “pure” and “applied” fields. The formal notion of a proof as a string of symbols that obeys certain syntactical rules continues to provide an ideal model for the principles that under lie what most mathematicians see as the essence of their discipline.
 It allows far-reaching mathematical analysis of the power of certain axiomatic systems, but at the same time it falls short of explaining the changing ways in which mathematicians decide what kinds of arguments they are willing to accept as legitimate in their actual professional practice. Acknowledgments. I thank José Ferreirós and Reviel Netz for useful comments on previous versions of this text.
 
 Further Reading
@@ -20,7 +20,7 @@ Mathematics
 José Ferreirós
 
 The foundational crisis is a celebrated affair among mathematicians and it has also reached a large nonmathematical audience. A well-trained mathematician is supposed to know something about the three viewpoints called “logicism,” “formalism,” and “intuitionism” (to be explained below), and about what gödel’s incompleteness results [V.15](/part-05/gdels-theorem) tell us about the status of mathematical knowledge.
-Professional mathematicians tend to be rather opinionated about such topics, either dismissing the foundational discussion as irrelevant--and thus siding with the winning party-- or defending, either as a matter of principle or as an intriguing option, some form of revisionist approach to mathematics. But the real outlines of the historical debate are not well-known and the subtler philosophical issues at stake are often ignored. Here we shall mainly discuss the former, in the hope that this will help bring the main conceptual issues into sharper focus.
+Professional mathematicians tend to be rather opinionated about such topics, either dismissing the foundational discussion as irrelevant--and thus siding with the winning party-- or defending, either as a matter of principle or as an intriguing option, some form of revisionist approach to mathematics. But the real out lines of the historical debate are not well-known and the subtler philosophical issues at stake are often ignored. Here we shall mainly discuss the former, in the hope that this will help bring the main conceptual issues into sharper focus.
 The foundational crisis is usually understood as a relatively localized event in the $1920s$ , a heated debate between the partisans of “classical” (meaning late-nineteenth century) mathematics, led by hilbert [VI.63](/part-06/david-hilbert-18621943), and their critics, led by brouwer [VI.75](/part-06/luitzen-egbertus-jan-brouwer-18811966), who advocated strong revision of the received doctrines.
 There is, however, a second, and in my opinion very important, sense in which the “crisis” was a long and global process, in distinguishable from the rise of modern mathematics and the philosophical and methodological issues it created. This is the standpoint from which the present account has been written. Within this longer process one can still pick out some noteworthy intervals. Around 1870 there were many discussions about the acceptability of non-Euclidean geometries, and also about the proper foundations of complex analysis and even the real numbers.
 Early in the twentieth century there were debates about set theory, about the concept of the continuum, and about the role of logic and the axiomatic method versus
@@ -32,7 +32,7 @@ sis in the proper sense, during which the main opin-                new and radi
 ions in these debates were developed and turned into                  The most characteristic traits of the modern ap-
 detailed mathematical research projects. And in the                 proach were:
 1930 s gödel [VI.92](/part-06/kurt-gdel-19061978) proved his incompleteness results,
-which could not be assimilated without some cherished                 (i) acceptance of the notion of an “arbitrary” function
+which could not be assimilated with out some cherished                 (i) acceptance of the notion of an “arbitrary” function
 beliefs being abandoned. Let us analyze some of these                     proposed by Dirichlet;
                                                                      (ii) a wholehearted acceptance of infinite sets and the
 events and issues in greater detail.
@@ -47,7 +47,7 @@ the key principles of mathematics are deducible from                An early and
 logical principles alone.                                           Dedekind’s approach (1871) to algebraic number
   Over time this thesis has become unclear, based as it             theory [IV.1](/part-04/number-theory)—his set-theoretic definition of number
 seems to be on a fuzzy and immature conception of the               fields [III.63](/part-03/number-fields) and ideals [III.81 §2](/part-03/rings-ideals-and-modules), and the methods
-scope of logical theory. But historically speaking logi-            by which he proved results such as the fundamen-
+scope of logical theory. But historically speaking logi-            by which he proved results such as the fund a men-
 cism was a neat intellectual reaction to the rise of mod-           tal theorem of unique decomposition. In a remark-
 ern mathematics, and particularly to the set-theoretic              able departure from the number-theoretic tradition,
 approach and methods. Since the majority opinion was                Dedekind studied the factorization properties of alge-
@@ -86,7 +86,7 @@ $144$
 
 because of their very explicit defense of the view that mathematical theories ought not to be based upon formulas and calculations--they should always be based on clearly formulated general concepts, with analytical expressions or calculating devices relegated to the further development of the theory. To explain the contrast, let us consider the particularly clear case of the opposition between the different approaches of Riemann and Weierstrass to function theory.
 Weierstrass explicitly represented analytic (or holomorphic [I.3](/part-01/fundamental-definitions) ) functions as collections $\infty$ of power series of the form {}n = {}0 an(z - a)n , which were connected with each other by analytic continuation [I.3](/part-01/fundamental-definitions) . Riemann chose a very different and more abstract approach, defining a function to be analytic if it satisfies the cauchy-riemann different i ability conditions [I.3](/part-01/fundamental-definitions).
-2 This neat conceptual definition appeared objectionable to Weierstrass, as the class of differentiable functions had never been carefully characterized (in terms of series representations, for example). Exercising his famous critical abilities, Weierstrass offered examples of continuous functions that were nowhere differentiable. It is worth mentioning that, in preferring infinite series as the key means for research in analysis and function theory, Weierstrass remained closer to the old eighteenth-century idea of a function as an analytical expression.
+2 This neat conceptual definition appeared objectionable to Weierstrass, as the class of differentiable functions had never been carefully characterized (in terms of series representations, for example). Exercising his famous critical abilities, Weierstrass offered examples of continuous functions that were no where differentiable. It is worth mentioning that, in preferring infinite series as the key means for research in analysis and function theory, Weierstrass remained closer to the old eighteenth-century idea of a function as an analytical expression.
 On the other hand, Riemann and Dedekind were always in favor of Dirichlet’s abstract idea of a function f as an “arbitrary” way of associating with each x some $y = f$ (x) . (Previously it had been required that y should be expressed in terms of x by means of an explicit formula .) In his letters, Weierstrass criticized this conception of Dirichlet’s as too general and vague to constitute the starting point for any interesting mathematical development.
 He seems to have missed the point that it was in fact just the right framework in which to define and analyze general concepts such as continuity [I.3](/part-01/fundamental-definitions) and integration [I.3](/part-01/fundamental-definitions). This framework came to be called the conceptual approach in nineteenth-century mathematics. Similar methodological debates emerged in other areas too. In a letter of 1870 , Kronecker went as far as saying that the Bolzano-Weierstrass theorem was $2$ .
 Riemann determined particular functions by a series of independent traits such as the associated riemann surface [III.79](/part-03/riemann-surfaces) and the behavior at singular points. These traits determined the function via a certain variational principle (the “Dirichlet principle ”), which was also criticized by Weierstrass, who gave a counterexample to it. Hilbert and Kneser would later reformulate and justify the principle. II. The Origins of Modern Mathematics an “obvious sophism,” promising that he would offer counterexamples.
@@ -117,7 +117,7 @@ ers, which will be discussed below. These were of two        of these paradoxes,
 kinds. On the one hand, there were arguments show-           human thought is completely rational. Even worse, in
 ing that assumptions that certain sets exist lead to         1901–2 Zermelo and Russell discovered a very elemen-
 contradictions. These were later called the set-theoretic    tary contradiction, now known as Russell’s paradox or
-paradoxes. On the other, there were arguments, later         sometimes as the Zermelo–Russell paradox, which will
+paradoxes. On the other, there were arguments, later         some times as the Zermelo–Russell paradox, which will
 known as the semantic paradoxes, which showed up             be discussed in a moment. The untenability of the
 difficulties with the notions of truth and definability.        previous understanding of set theory as logic became
 These paradoxes completely destroyed the attractive          clear, and there began a new period of instability. But
@@ -146,7 +146,7 @@ problems, and the axiom of choice [III.1](/part-03/axiom-of-choice) employed    
 by Hilbert’s young colleague Zermelo to show that R          by formulating a property that seems to be as basic
 (the continuum) can be well-ordered, are quintessential      and purely logical as possible. Let p(x) be the prop-
 examples of the traits (i)–(iv) that were listed above. It   erty x ∉ x (bearing in mind that negation and mem-
-is little wonder that less daring minds objected and         bership were assumed to be purely logical concepts).
+is little wonder that less daring minds objected and         ber ship were assumed to be purely logical concepts).
 revived Kronecker’s doubts, as can be seen in many           The comprehension principle yields the existence of
 publications of 1905–6. This brings us to the next stage     the set R = {x : x ∉ x}, but this leads quickly to a
 of the debate.                                               contradiction: if R ∈ R, then R ∉ R (by the definition
@@ -158,9 +158,9 @@ his older colleague frege [VI.56](/part-06/gottlob-frege-18481925)) was led to a
 logicism, and even wondered whether Kronecker might         the following: Dedekind defines the set N of natural
 have been right all along. Eventually he concluded that     numbers as the intersection of all sets that contain
 set theory had shown the need to refine logical theory.      1 and are closed under an injective function σ such
-It was also necessary to establish set theory axiomat-      that 1 ∉ σ (N). (The function σ is called the successor
+It was also necessary to establish set theory axiom at-      that 1 ∉ σ (N). (The function σ is called the success or
 ically, as a basic mathematical theory based on math-       function.) His idea was to characterize N as minimal,
-ematical (not logical) axioms, and Zermelo undertook        but in his procedure the set N is first introduced by
+ematical (not logical) axioms, and Zermelo under took        but in his procedure the set N is first introduced by
 this task.                                                  appeal to a totality of sets that should already include
    Hilbert famously advocated that to claim that a set of   N itself. This kind of procedure appeared unacceptable
 mathematical objects exists is tantamount to proving        to Poincaré (and also to Russell), especially when the
@@ -187,7 +187,7 @@ Russell, Richard, König, Grelling, etc. (Richard’s para-    digit of an . (Fo
 dox will be discussed below.) Much confusion emerged        unless the nth digit of an is 2, in which case let the
 from the abundance of different paradoxes, but one           nth digit of r be 4.) Then r cannot belong to the set
 thing is clear: they played an important role in promot-    of definable numbers. But in the course of this con-
-ing the development of modern logic and convincing          struction, the number r has just been defined in finitely
+ing the development of modern logic and convincing          struc tion, the number r has just been defined in finitely
 mathematicians of the need for strictly formal presen-      many words! Poincaré would ban impredicative defini-
 tation of their theories. Only when a theory has been       tions and would therefore prevent the introduction of
 stated within a precise formal language can one disre-      the number r , since it was defined with reference to the
@@ -207,7 +207,7 @@ matics. Informally, a definition is impredicative when       ambiguity as to wha
 
 II.7.   The Crisis in the Foundations of Mathematics                                                                        147
 
-must be predicative: one refers only to totalities that                 (that is, without ramification), which, as Chwistek, Ram-
+must be predicative: one refers only to totalities that                 (that is, with out ramification), which, as Chwistek, Ram-
 have already been established before the object one is                  sey, and others realized, suffices for a foundation in
 defining. Important authors such as Russell and weyl                     the style of Principia. Ramsey proposed arguments that
 [VI.80](/part-06/hermann-weyl-18851955) accepted this point of view and developed it.                   were aimed at eliminating worries about impredicativ-
@@ -216,11 +216,11 @@ tive definitions were often used unproblematical ly, not                  of Pri
 only in set theory (as in Dedekind’s definition of N, for                choice—as logical principles. But his arguments were
 example), but also in classical analysis. As a particular               inconclusive. Russell’s attempt to rescue logicism from
 example, he cited cauchy’s [VI.29](/part-06/augustin-louis-cauchy-17891857) proof of the fun-                    the paradoxes remained unconvincing, except to some
-damental theorem of algebra [V.13](/part-05/the-fundamental-theorem-of-algebra),4 but a sim-                         philosophers (especially members of the Vienna Circle).
+da mental theorem of algebra [V.13](/part-05/the-fundamental-theorem-of-algebra),4 but a sim-                         philosophers (especially members of the Vienna Circle).
 pler example of impredicative definition is the least                       Poincaré’s suggestions also became a key principle
 upper bound in real analysis. The real numbers are                      for the interesting foundational approach proposed by
 not introduced separately, by explicit predicative defi-                 Weyl in his book Das Kontinuum (1918). The main idea
-nitions of each one of them; rather, they are introduced                was to accept the theory of the natural numbers as they
+ni tions of each one of them; rather, they are introduced                was to accept the theory of the natural numbers as they
 as a completed whole, and the particular way in which                   were conventionally developed using classical logic,
 the least upper bound of an infinite bounded set of                      but to work predicatively from there on. Thus, unlike
 reals is singled out becomes impredicative. But Zermelo                 Brouwer, Weyl accepted the principle of the excluded
@@ -259,7 +259,7 @@ tential” as we have been saying. In order to show that the polynomial   sets a
 must have one root, Cauchy studied the absolute value of the polyno-    deeply ingrained in the minds of mathematicians and
 mial, which has a global minimum σ . This global minimum is impred-
 icatively defined. Cauchy assumed that it was positive, and from this
-                                                                        logicians (via the contradictory principle of comprehen-
+                                                                        logicians (via the contradictory principle of com pre hen-
 he derived a contradiction.                                             sion). The axiom of choice (AC) is the principle that,
 
 $148$
@@ -267,15 +267,15 @@ $148$
 given any infinite family of disjoint nonempty sets, there is a set, known as a choice set, that contains exactly one element from each set in the family. The problem with this, said the critics, is that it merely stipulates the existence of the choice set and does not give a defining property for it. Indeed, when it is possible to characterize the choice set explicitly, then the use of AC is avoidable! But in the case of Zermelo’s well-ordering theorem it is essential to employ AC.
 The required well-ordering of R “exists” in the ideal sense of Cantor, Dedekind, and Hilbert, but it seemed clear that it was completely out of reach from any constructivist perspective. Thus, the axiom of choice exacerbated obscurities in previous conceptions of set theory, forcing mathematicians to introduce much-needed clarifications. On the one hand, AC was nothing but an explicit statement of previous views about arbitrary subsets, and yet, on the other, it obviously clashed with strongly held views about the need to explicitly define infinite sets by properties.
 The stage was set for deep debate. The discussions about this particular topic contributed more than anything else to a clarification of the existential implications of modern mathematical methods. It is instructive to know that borel [VI.70](/part-06/emile-borel-18711956), Baire, and lebesgue [VI.72](/part-06/henri-lebesgue-18751941), who became critics, had all relied on AC in less obvious ways in order to prove theorems of analysis. Not by chance, the axiom was suggested to Zermelo by an analyst, Erhard Schmidt, who was a student of Hilbert.
-$5$ After the publication of Zermelo’s proof, an intense debate developed through out Europe. Zermelo was spurred on to work out the foundations of set theory in an attempt to show that his proof could be developed within an unexceptionable axiom system. The outcome was his famous axiom system [IV.22](/part-04/set-theory) , a masterpiece that emerged from careful analysis of set theory as it was historically given in the contributions of Cantor and Dedekind and in Zermelo’s own theorem.
+$5$ After the publication of Zermelo’s proof, an intense debate developed through out Europe. Zermelo was spurred on to work out the foundations of set theory in an attempt to show that his proof could be developed within an unexceptionable axiom system. The out come was his famous axiom system [IV.22](/part-04/set-theory) , a masterpiece that emerged from careful analysis of set theory as it was historically given in the contributions of Cantor and Dedekind and in Zermelo’s own theorem.
 With some additions due to Fraenkel and von neumann [VI.91](/part-06/john-von-neumann-19031957) (the axioms of replacement and regularity) and the major innovation proposed by Weyl and skolem [VI.81](/part-06/thoralf-skolem-18871963) (to formulate it within first-order logic [IV.23](/part-04/logic-and-model-theory), i.e., quantifying over individuals, the sets, but not over their properties), the axiom system became in the $1920s$ the one that we now know. $5$ . One may still gain much insight by reading the letters exchanged by the French analysts in 1905( see Moore 1982 ;
 Ewald 1996) and Zermelo’s clever arguments in his second 1908 proof of well-ordering (van Heijenoort 1967).
 
 II. The Origins of Modern Mathematics
 
 The ZFC system (this stands for “Zermelo-Fraenkel with choice ”) codifies the key traits of modern mathematical methodology, offering a satisfactory framework for the development of mathematical theories and the conduct of proofs. In particular, it includes strong existence principles, allows impredicative definitions and arbitrary functions, warrants purely existential proofs, and makes it possible to define the main mathematical structures. It thus exhibits all the tendencies (i) - (iv) mentioned in section $1$ .
-Zermelo’s own work was completely in line with Hilbert’s informal axiomatizations of about 1900 , and he did not forget to promise a proof of consistency. Axiomatic set theory, whether in the Zermelo-Fraenkel presentation or the von Neumann-Bernays-Gödel version, is the system that most mathematicians regard as the working foundation for their discipline. As of 1910 , the contrast between Russell’s type theory and Zermelo’s set theory was strong.
-The former system was developed within formal logic, and its point of departure (albeit later compromised for pragmatic reasons) was in line with predicativism; in order to derive mathematics, the system needed the existential assumptions of infinity and choice, but these were rhetorically treated as tentative hypotheses rather than outright axioms.
+Zermelo’s own work was completely in line with Hilbert’s in formal axiomatizations of about 1900 , and he did not forget to promise a proof of consistency. Axiomatic set theory, whether in the Zermelo-Fraenkel presentation or the von Neumann-Bernays-Gödel version, is the system that most mathematicians regard as the working foundation for their discipline. As of 1910 , the contrast between Russell’s type theory and Zermelo’s set theory was strong.
+The former system was developed within formal logic, and its point of departure (albeit later compromised for pragmatic reasons) was in line with predicativism; in order to derive mathematics, the system needed the existential assumptions of infinity and choice, but these were rhetorically treated as tentative hypotheses rather than out right axioms.
 The latter system was presented informally, adopted the impredicative standpoint wholeheartedly, and asserted as axioms strong existential assumptions that were sufficient to derive all of classical mathematics and Cantor’s theory of the higher infinite. In the $1920s$ the separation diminished greatly, especially with respect to the first two traits just indicated. Zermelo’s system was perfected and formulated within the language of modern formal logic. And the Russellians adopted simple type theory, thus accepting the impredicative and “existential” methodology of modern mathematics.
 This is often given the (potentially confusing) term “Platonism”: the objects that the theory refers to are treated as if they were independent of what the mathematician can actually and explicitly define. Meanwhile, back in the first decade of the twentieth century, a young mathematician in the Netherlands was beginning to find his way toward a philosophically colored version of constructivism. Brouwer presented his strikingly peculiar metaphysical and ethical views in 1905 , and started to elaborate a corresponding foundation for mathematics in his thesis of 1907 .
 His philosophy of “intuitionism” derived from the old metaphysical view that individual consciousness is the one and
@@ -285,11 +285,11 @@ II.7.   The Crisis in the Foundations of Mathematics                            
 only source of knowledge. This philosophy is perhaps         cessful compromise between predicativism and classi-
 of little interest in itself, so we shall concentrate here   cal mathematics.)
 on Brouwer’s constructivist ic principles. In the years         Brouwer, however, brought new and even more basic
-around 1910, Brouwer became a renowned mathemati-            questions to the fore. No one had questioned the tra-
-cian, with crucial contributions to topology such as his     ditional ways of reasoning about the natural numbers:
+around 1910, Brouwer became a renowned mathemat i-            questions to the fore. No one had questioned the tra-
+cian, with crucial contributions to topology such as his     dition al ways of reasoning about the natural numbers:
 fixed point theorem [V.11](/part-05/fixed-point-theorems). By the end of World War I,        classical logic, in particular the use of quantifiers and
 he started to publish detailed elaborations of his foun-     the principle of the excluded middle, had been used in
-dational ideas, helping to create the famous “crisis,” to    this context without hesitation. But Brouwer put for-
+dational ideas, helping to create the famous “crisis,” to    this context with out hesitation. But Brouwer put for-
 which we now turn. He was also successful in establish-      ward principled critiques of these assumptions and
 ing the customary (but misleading) distinction between       started developing an alternative theory of analysis
 formalism and intuitionism.                                  that was much more radical than Weyl’s. In doing so, he
@@ -310,7 +310,7 @@ lution.” Weyl’s paper was meant as a propaganda pam-         These contribut
 phlet to rouse the sleepers, and it certainly did. Hilbert   the “Second Act” of intuitionism. The “First Act” (from
 answered in the same year, accusing Brouwer and Weyl         1907) had been his emphasis on the intuitive founda-
 of attempting a “putsch” aimed at establishing “dic-         tions of mathematics. Already Klein and Poincaré had
-tatorship à la Kronecker” (see the relevant papers in        insisted that intuition has an inescapable role to play
+tat or ship à la Kronecker” (see the relevant papers in        insisted that intuition has an inescapable role to play
 Mancosu (1998) and van Heijenoort (1967)). The foun-         in mathematical knowledge: as important as logic is in
 dational debate shifted dramatically toward the battle       proofs and in the development of mathematical theory,
 between Hilbert’s attempts to justify “classical” math-      mathematics cannot be reduced to pure logic; theories
@@ -353,9 +353,9 @@ for explicit procedures for constructing each object that     later call “spre
 is assumed to exist, and explicit constructions behind        a set that has been defined by a characteristic prop-
 any mathematical statement. Similarly, we have men-           erty, but with the proviso that every element has been
 tioned before (section 2.1) Cauchy’s proof of the fun-        previously and independently defined by an explicit
-damental theorem of algebra, as well as many proofs in        construction. In particular, the definition of any given
+da mental theorem of algebra, as well as many proofs in        construction. In particular, the definition of any given
 real analysis that invoke the least upper bound. All of       species will be strictly predicative.
-these proofs are invalid for a constructivist, and sev-          The concept of a spread is particularly characteris-
+these proofs are in valid for a constructivist, and sev-          The concept of a spread is particularly characteris-
 eral mathematicians have tried to save the theorems           tic of intuitionism, and it forms the basis for Brouwer’s
 by finding constructivist proofs for them. For instance,       definition of the continuum. It is an attempt to avoid
 both Weyl and Kneser worked on constructivist proofs          idealization and do justice to the temporal nature
@@ -391,10 +391,10 @@ counterexample, there is no reason to believe PEM (with       choice sequences v
 this notion of truth). Thus, in order to establish the        of classical analysis: it has been said that intuitionist
 existence of a natural number with a certain prop-            mathematics is “mathematics in the making.” By con-
 erty, a proof by reductio ad absurdum is not enough.          trast, classical mathematics is marked by a kind of
-Existence must be shown by explicit determination or          timeless objectivity, since its objects are assumed to
+Existence must be shown by explicit determination or          time less objectivity, since its objects are assumed to
 construction if you want to persuade a constructivist.        be fully determined in themselves and independent of
    Notice also how this viewpoint implies that math-          the thinking processes of mathematicians.
-ematics is not timeless or ahistorical. It was only in          A spread has choice sequences as its elements—it is
+ematics is not time less or ahistorical. It was only in          A spread has choice sequences as its elements—it is
 1882 that Lindemann proved that π is a transcenden-           something like a law that regulates how the sequences
 
 II.7.   The Crisis in the Foundations of Mathematics                                                                                      151
@@ -411,7 +411,7 @@ numbers) with some previous Platonic existence, it was                    not wo
 more genuinely “continuous.” Interestingly, this view                     of truth are less transparent than those of illusion.” But
 is reminiscent of Aristotle, who, twenty-three centuries                  Weyl, although convinced that Brouwer had delineated
 earlier, had emphasized the priority of the continuum                     the domain of mathematical intuition in a completely
-and rejected the idea that an extended continuum can                      satisfactory way, remarked in 1925: “the mathemati-
+and rejected the idea that an extended continuum can                      satisfactory way, remarked in 1925: “the mathemat i-
 be made up of unextended points.                                          cian watches with pain the largest part of his tower-
    The next stage in Brouwer’s redevelopment of analy-                    ing theories dissolve into mist before his eyes.” Weyl
 sis was to analyze the idea of a function. Brouwer                        seems to have abandoned intuitionism shortly there-
@@ -455,8 +455,8 @@ axioms [III.67](/part-03/the-peano-axioms) of arithmetic are consistent relative
 formalized intuitionistic arithmetic. (That is, they were
                                                                           from the axioms. Once this had been shown combina-
 able to establish a correspondence between the sen-
-                                                                          torially or constructively (or, as Hilbert also said, fini-
-tences of both formal systems, such that a contradic-
+                                                                          tori ally or constructively (or, as Hilbert also said, fini-
+tences of both formal systems, such that a con tr adic-
                                                                           tarily), the argument can be regarded as a justification
 tion in classical arithmetic yields a contradiction in its
                                                                           of the axiom system—even if we read the axioms as
@@ -497,13 +497,13 @@ sistency proofs, the logical acceptability of the princi-      lish the consiste
 ples and modes of inference of modern mathematics.             sentence expressing the consistency of T . But this hope,
 Axiomatics, logic, and formalization made it possible          not warranted by the previous insights, turned out to
 to study mathematical theories from a purely mathe-            be wrong.8
-matical standpoint (hence the name metamathematics),              Also, a crucial presupposition of the program was
+mat ical standpoint (hence the name metamathematics),              Also, a crucial presupposition of the program was
 and Hilbert hoped to establish the consistency of the          that not only the logical calculus but also each of the
 theories by employing very weak means. In particular,          axiomatic systems would be complete. Roughly speak-
 Hilbert hoped to answer all of the criticisms of Weyl          ing, this means that they would be sufficiently power-
-and Brouwer, and thereby justify set theory, the clas-         ful to allow the derivation of all the relevant results.9
+and Brouwer, and there by justify set theory, the clas-         ful to allow the derivation of all the relevant results.9
 sical theory of real numbers, classical analysis, and of       This assumption turned out to be wrong for systems
-course classical logic with its PEM (the basis for indirect    that contain (primitive recursive) arithmetic, as Gödel
+course classical logic with its PEM (the basis for in direct    that contain (primitive recursive) arithmetic, as Gödel
 proofs by reductio ad absurdum).                               showed.
    The whole point of Hilbert’s approach was to make              It remains to say a bit more about what Hilbert meant
 mathematical theories fully precise, so that it would          by finitism (for details, see Tait 1981). This is one of
@@ -516,12 +516,12 @@ the completion of such a program.                              Poincaré and Bro
       numbers.                                                 something that is given “intuitively” in our immediate
  (ii) Finding axioms and inference rules for classical         experience: the signs and formulas.
       logic, which makes the passage from given propo-            In 1905, Poincaré had put forth the view that a for-
-      sitions to new propositions a purely syntactic,          mal consistency proof for arithmetic would be circu-
+      sit i ons to new propositions a purely syntactic,          mal consistency proof for arithmetic would be circu-
       formal procedure.                                        lar, as such a demonstration would have to proceed by
 (iii) Formalizing T by means of the formal logical cal-        induction on the length of formulas and proofs, and
       culus, so that propositions of T are just strings of     thus would rely on the same axiom of induction that it
       symbols, and proofs are sequences of such strings        was supposed to establish. Hilbert replied in the 1920 s
-      that obey the formal rules of inference.                 that the form of induction required at the metamath-
+      that obey the formal rules of inference.                 that the form of induction required at the met a math-
 (iv) A finitary study of the formalized proofs of T that        ematical level is much weaker than full arithmetical
       shows that it is impossible for a string of symbols      induction, and that this weak form is grounded on the
       that expresses a contradiction to be the last line
@@ -542,7 +542,7 @@ stronger ones. The metatheory of a formal system stud-                 cially in
 ies properties such as consistency, completeness, and                  gathered around him. Hilbert was typically modernist
 some others (“completeness” in the logical sense means                 in his views and attitudes; full of optimism and ratio-
 that all true or valid formulas that can be represented                nalism, he was ready to lead his university, his country,
-in the calculus are formally deducible in it). Proposi-                and the international community into a new world. He
+in the calculus are formally deducible in it). Pro posi-                and the international community into a new world. He
 tional logic was quickly proved to be consistent and                   was very much in favor of collaboration, and felt happy
 complete. First-order logic, also known as predicate                   to join Klein’s schemes for institutional development
 logic, was proved complete by Gödel in his dissertation                and power.
@@ -560,14 +560,14 @@ results (see section 4).                                               nents in 
    The name “formalism,” as a description of this pro-                 his project of finding a consistency proof. Brouwer
 gram, came from the fact that Hilbert’s method con-                    emphasized these concessions, accusing him of fail-
 sisted in formalizing each mathematical theory, and                    ing to recognize authorship, and demanded new con-
-formally studying its proof structure. However, this                   cessions.11 Hilbert must have felt insulted and per-
+formally studying its proof structure. However, this                   ces sions.11 Hilbert must have felt insulted and per-
 name is rather one-sided and even confusing, espe-                     haps even threatened by a man whom he regarded
 cially because it is usually contrasted with intuition-                as perhaps the greatest mathematician of the younger
 ism, a full-blown philosophy of mathematics. Like most                 generation.
 mathematicians, Hilbert never viewed mathematics as                       The last straw came with an episode in 1928. Brouwer
 a mere game played with formulas. Indeed, he often                     had since 1915 been a member of the editorial board
-emphasized the meaningfulness of (informal) mathe-                     of Mathematische Annalen, the most prestigious math-
-matical statements and the depth of conceptual con-                    ematics journal at the time, of which Hilbert had been
+emphasized the meaningfulness of (in formal) mathe-                     of Mathematische Annalen, the most prestigious math-
+mat ical statements and the depth of conceptual con-                    ematics journal at the time, of which Hilbert had been
 tent expressed in them.10                                              the main editor since 1902. Ill with “pernicious ane-
                                                                        mia,” and apparently thinking that he was close to the
 3.3     Personal Disputes
@@ -577,7 +577,7 @@ but also at a personal level. One should perhaps tell                  editorial
 this story as a tragedy, in which the personalities of                 board explaining his scheme, which he was already car-
 the main figures and the successive events made the                     rying out, Einstein replied saying that his proposal was
 final result quite inescapable.                                         unwise and that he wanted to have nothing to do with
-   Hilbert and Brouwer were very different personali-                   it. Other members, however, did not wish to upset the
+   Hilbert and Brouwer were very different personal i-                   it. Other members, however, did not wish to upset the
 ties, though they were both extremely willful and clever               old and admired Hilbert. Finally, a dubious procedure
 men. Brouwer’s worldview was idealistic and tended                     was adopted, where the whole board was dissolved and
 to solipsism. He had an artistic temperament and an                    created anew. Brouwer was greatly disturbed by this
@@ -628,7 +628,7 @@ strictly in the language of the system such that neither
 P nor ¬P is formally provable in the system.
                                                                          senate.”14
    This theorem already presented a deep problem for
-                                                                            However, this impression is somewhat superficial.
+                                                                            However, this impression is some what superficial.
 Hilbert’s endeavor, as it shows that formal proof cannot
                                                                          Proof theory has developed, leading to noteworthy
 even capture arithmetical truth. But there was more.
@@ -653,21 +653,21 @@ consistency of this same formal system. And this sen-
                                                                          arithmetic (see Feferman 1998). This raises questions
 tence turns out to be among those that are unprov-
                                                                          about the philosophical bases on which the admissibil-
-able.12 To express it con tr a positively, a finitary formal
+able.12 To express it contrapositively, a finitary formal
                                                                          ity of the relevant constructive theories can be founded.
 proof (codifiable in the system of formal arithmetic)
                                                                          But for these systems the question is far less simple
 of the impossibility of proving 1 = 0 could be trans-
                                                                          than it was for Hilbert’s finitary mathematics; it seems
 formed into a contradiction of the system! Thus, if
-the system is indeed consistent (as most mathemati-
+the system is indeed consistent (as most mathemat i-
 cians are convinced it is), then there is no such fini-                     13. The basic idea is to view the set-theoretic universe as a product
                                                                          of iterating the following operation: one starts with a basic domain
 tary proof.                                                              V0 (possibly finite or even equal to ∅) and forms all possible sets of
                                                                          elements in the domain; this gives a new domain V1 , and one iterates
                                                                          forming sets of V0 ∪ V1 , and so on (to infinity and beyond!). This pro-
   12. For further details, see, for example, Smullyan (2001), van Hei-   duces an open-ended set-theoretic universe, masterfully described by
-jenoort (1967), and good introductions to mathematical logic. Both       Zermelo (1930). On the iterative conception, see, for example, the last
+jen oort (1967), and good introductions to mathematical logic. Both       Zermelo (1930). On the iterative conception, see, for example, the last
 theorems were carefully proved in Hilbert and Bernays (1934/39). Bad     papers in Bernacerraf and Putnam (1983).
 expositions and faulty interpretations of Gödel’s results abound.          14. To use the words of Gian-Carlo Rota in an essay of 1973.
 
@@ -676,7 +676,7 @@ $II$ . $7$ .
 The Crisis in the Foundations of Mathematics fair to say that no general consensus has yet been reached. Whatever its roots and justification may be, mathematics is a human activity. This truism is clear from the subsequent development of our story. The mathematical community refused to abandon “classical” ideas and methods; the constructivist “revolution” was aborted. In spite of its failure, formalism established itself in practice as the avowed ideology of twentieth-century mathematicians.
 Some have remarked that formalism was less a real faith than a Sunday refuge for those who spent their weekdays working on mathematical objects as something very real. The Platonism of working days was only abandoned, as a bourbaki [VI.96](/part-06/nicolas-bourbaki-1935) member said, when a ready-made reply was needed to unwelcome philosophical questions concerning mathematical knowledge. One should note that formalism suited very well the needs of a self-conscious, autonomous community of research mathematicians.
 It granted them full freedom to choose their topics and to employ modern methods to explore them. However, to reflective mathematical minds it has long been clear that it is not the answer. Epistemological questions about mathematical knowledge have not been “eliminated from the world”; philosophers, historians, cognitive scientists, and others keep looking for more adequate ways of understanding its content and development.
-Needless to say, this does not threaten the autonomy of mathematical researchers--if autonomy is to be a concern, perhaps we should worry instead about the pressures exerted on us by the market and other powers. Both (semi -) constructivism and modern mathematics have continued to develop:
+Need less to say, this does not threaten the autonomy of mathematical researchers--if autonomy is to be a concern, perhaps we should worry instead about the pressures exerted on us by the market and other powers. Both (semi -) constructivism and modern mathematics have continued to develop:
 the contrast between them has simply been consolidated, though in a very unbalanced way, since some $99$ % of practicing mathematicians are “modern.” (But do statistics matter when it comes to the correct methods for mathematics ?) In 1905 , commenting on the French debate, hadamard [VI.65](/part-06/jacques-hadamard-18651963) wrote that “there are two conceptions of mathematics, two mentalities, in evidence.” It has now come to be recognized that there is value in both approaches: they complement each other and can coexist peacefully.
 In particular, interest in effective methods, algorithms, and computational mathematics has grown markedly in recent decades--and all of these are closer to the constructivist tradition. The foundational debate left a rich legacy of ideas and results, key insights and developments, including the formulation of axiomatic set theories and the rise
 
@@ -698,7 +698,7 @@ also in the basic ideas behind Hilbert’s program, and
                                                               Hilbert, D., and P. Bernays. 1934/39. Grundlagen der Math-
 of course in the problem of the relationship between
                                                                 ematik, 2 vols. Berlin: Springer.
-formal mathematics and its informal counterpart, a            Mancosu, P., ed. 1998. From Hilbert to Brouwer: The Debate
+formal mathematics and its in formal counterpart, a            Mancosu, P., ed. 1998. From Hilbert to Brouwer: The Debate
 problem that is brought into sharp focus by Gödel’s             on the Foundations of Mathematics in the 1920 s. Oxford:
 theorems.                                                       Oxford University Press.
                                                                     . 1999. Between Vienna and Berlin: the immediate

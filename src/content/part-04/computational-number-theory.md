@@ -28,7 +28,7 @@ bound on h−q ).
    L-functions arise in many areas of arithmetic geom-
                                                                   The reference list below includes several papers, sig-
 etry, and their coefficients typically describe the num-
-                                                               nificant for this article, whose content is not discussed
+                                                               nif i cant for this article, whose content is not discussed
 ber of points satisfying certain equations mod p. The
                                                                in any of the listed books.
 Langlands program seeks to understand these connec-
@@ -49,7 +49,7 @@ A(s) = n⩾1 an /ns that                                         Green, B., and 
                                                                  Press.
     given power of n, once n is sufficiently large,
                                                                Ingham, A. E. 1949. Review 10,595 c (MR0029411). Mathe-
-  • satisfy |bn | < κnθ for some constants θ < 12 and            matical Reviews. Providence, RI: American Mathematical
+  • satisfy |bn | < κnθ for some constants θ < 12 and            mat ical Reviews. Providence, RI: American Mathematical
     κ > 0.                                                       Society.
 Selberg conjectures that we should be able to give a           Iwaniec, H., and E. Kowalski. 2004. Analytic Number Theory.
 good definition to A(s) on the whole complex plane,               AMS Colloquium Publications, volume 53. Providence, RI:
@@ -123,7 +123,7 @@ arms was issued by Gauss as long ago as 1801:                   out the algorith
   are either restricted to very special cases or are so labo-
   rious and difficult that even for numbers that do not
                                                                 tal computation with small numbers, and for machine
-  exceed the limits of tables constructed by estimable          computation for somewhat larger numbers. But it
+  exceed the limits of tables constructed by estimable          computation for some what larger numbers. But it
   men, they try the patience of even the practiced cal-         scales poorly, in that if you double the number of digits
   culator. And these methods do not apply at all to             of n, then the time for the worst case is squared; it is
   larger numbers. . . . Further, the dignity of the science     therefore an “exponential-time” algorithm. One might
@@ -157,7 +157,7 @@ tells us that if n is prime and a is any integer, then a n ≡ a (mod n). If com
 That is, it is just a short additional calculation to get to our goal, yet the power $45$ is only half as big. How to continue is clear: we further reduce to the exponent $22$ , which is less than half of $45$ . If $2^{22}$ mod $91 = r^{2}$ , then $2^{45}$ ≡ 2(r2)2 (mod 91). And of course $2^{22}$ is the square of $2^{11}$ , and so on. It is not so hard to “automate” this procedure: the exponent sequence
 
 $1$ , $2$ , $5$ , $11$ , $22$ , $45$ , $91$ can be read directly from the binary (base $2$ ) representation of $91$ as 1011011 , since the above sequence in binary is $1$ , $10$ , $101$ , 1011 , 10110 , 101101 , 1011011 . These are the initial strings from the left of 1011011 . And it is plain that the transition from one term to the next is either the double or the double plus $1$ . This procedure scales nicely.
-When the number of digits of n is doubled, so is the sequence of exponents, and the time it takes to get from one exponent to the next, being a modular multiplication, is multiplied by $4$ . (As with naive multiplication, naive divide with-remainder also takes four times as long when the size of the problem is doubled .) Thus, the overall time is multiplied by $8$ , yielding a polynomial time method. We call this the “powermod” algorithm. So, let us try to illustrate Fermat’s little theorem, taking $a = 2$ and $n = 91$ .
+When the number of digits of n is doubled, so is the sequence of exponents, and the time it takes to get from one exponent to the next, being a modular multiplication, is multiplied by $4$ . (As with naive multiplication, naive divide with-remainder also takes four times as long when the size of the problem is doubled .) Thus, the over all time is multiplied by $8$ , yielding a polynomial time method. We call this the “powermod” algorithm. So, let us try to illustrate Fermat’s little theorem, taking $a = 2$ and $n = 91$ .
 Our sequence of powers is $2^{1}$ ≡ $2$ , $2^{2}$ ≡ $4$ , $2^{5}$ ≡ $32$ , $2^{11}$ ≡ $46$ , $2^{22}$ ≡ $23$ , $2^{45}$ ≡ $57$ , $2^{91}$ ≡ $37$ , where each congruence is modulo $91$ , and each term in the sequence is found by squaring the prior one mod $91$ or squaring and multiplying by $2$ mod $91$ . Wait a second: does Fermat’s little theorem not say that we are supposed to get $2$ for the final residue? Well, yes, but this is guaranteed only if n is prime. And as you have probably already noticed, $91$ is composite. In fact, the computation proves this.
 
 $IV$ . $3$ .
@@ -166,7 +166,7 @@ Computational Number Theory
 
 Quite remarkably, here is an example of a computation that proves that n is composite, yet it does not reveal any nontrivial factorization! You are invited to try out the powermod algorithm as above, but to change the base of the power from
 
-$2$ to $3$ . The answer you should come to is that $3^{91}$ ≡ $3$ (mod $91$ ) : that is, the congruence for Fermat’s little theorem holds. Since you already know that $91$ is composite, I am sure you would not jump to the false conclusion that it is prime! So, as it stands, Fermat’s little theorem can sometimes be used to recognize composites, but it cannot be used to recognize primes. There are two interesting further points to be made regarding Fermat’s little theorem.
+$2$ to $3$ . The answer you should come to is that $3^{91}$ ≡ $3$ (mod $91$ ) : that is, the congruence for Fermat’s little theorem holds. Since you already know that $91$ is composite, I am sure you would not jump to the false conclusion that it is prime! So, as it stands, Fermat’s little theorem can some times be used to recognize composites, but it cannot be used to recognize primes. There are two interesting further points to be made regarding Fermat’s little theorem.
 First, on the negative side, there are some composites, such as $n = 561$ , where the Fermat congruence holds for every integer a. These numbers n are called Carmichael numbers, and unfortunately (from the point of view of testing primality) there are infinitely many of them, a result due to Alford, Granville, and me. But, on the positive side, if one were to choose randomly among all pairs a, n for which a n ≡ a (mod n), with a $<n$ and $n$ bounded by a large number x, almost certainly (as x grows) you would choose a pair with n prime, a result of Erdős and myself.
 It is possible to combine Fermat’s little theorem with another elementary property of (odd) prime numbers. If n is an odd prime, there are exactly two solutions to the congruence $x^{2}$ ≡ 1 ( mod n  ), namely ± $1$ . Actually, some composites have this property as well, but composites divisible by two different odd primes do not. Now let us suppose that n is an odd number and that we wish to determine whether it is prime. Suppose that we pick some number $a$ with $1 \le a \le n - 1$ and discover that $a^{n} - {}^{1}$ ≡ 1 ( mod n  ).
 If we set $x = a(n - {}^{1})/ {}^{2}$ , then $x^{2} = a^{n} - {}^{1}$ ≡ 1 ( mod n  ); so, by the simple property of primes just mentioned, if n is prime, then x must be ± $1$ . Therefore, if we calculate a $(n - {}^{1})/ {}^{2}$ and discover that it is not congruent to ± $1$ (mod n), then n must be composite. Let us try this idea with $a = 2$ , $n = 561$ . We know already that $2^{560}$ ≡ 1 ($mod$561), so what is $2^{280}$ mod $561$ ? This too turns out to be $1$ , so we have not shown that $561$ is composite.
@@ -235,16 +235,16 @@ ever lie to you and tell you that a particular compos-                    (x + a
 ite number is prime, then this failure—if you were able        for each a = 1, 2, . . . , B, for a not-too-high bound B,
 to detect it—would be a disproof of one of the most            then n must be in a set that contains the primes and
 famous conjectures in mathematics. Perhaps this is not         certain composites that are easily recognized as com-
-too disastrous a failure!)                                     posites. (Not all composites are hard to recognize as
+too disastrous a failure!)                                     posit es. (Not all composites are hard to recognize as
    After Miller’s test in the 1970 s, the question con-         such, e.g., any number with a small prime factor is easy
 tinually challenging us was whether it is possible to          to recognize.) These ideas put together form the pri-
-test for primality in polynomial time without assuming         mality test of Agrawal et al. To give the argument in
+test for primality in polynomial time with out assuming         mality test of Agrawal et al. To give the argument in
 unproved hypotheses. Recently, Agrawal et al. (2004)           full detail one has to specify the auxiliary polynomial
 answered this question with a resounding yes. Their            f (x) that is used and what the bound B is, and one has
 idea begins with a combination of the binomial theo-           to prove rigorously that it is exactly the primes which
 rem and Fermat’s little theorem. Given an integer a,           pass the test.
 consider the polynomial (x + a)n and expand it in the             Agrawal et al. (2004) show that the auxiliary poly-
-usual way through the binomial theorem. Each interme-          nomial f (x) can be taken to be the beautifully sim-
+usual way through the binomial theorem. Each inter me-          nomial f (x) can be taken to be the beautifully sim-
 diate term between the leading x n and the trailing an         ple x r − 1, with an elementary upper bound for r of
 has the coefficient n!/(j!(n − j)!) for some j between           about (log n)5 . Doing this leads to a time bound of
 1 and n − 1. If n is prime, then this coefficient, which         about (log n)10.5 for the algorithm. Using a numeri-
@@ -265,13 +265,13 @@ $3$
 
 Factoring Composite Numbers
 
-Compared with what we know about testing primality, our ability to factor large numbers is still in the dark ages. In fact this imbalance between the two problems forms the bulwark for the security of electronic commerce on the Internet. (See mathematics and cryptography [VII.7](/part-07/mathematics-and-cryptography) for an account of why .) This is a very important application of mathematics, but also an odd one, and not something to brag about, since it depends on the inability of mathematicians to efficiently solve a basic problem! Nevertheless, we do have our tricks.
+Compared with what we know about testing primality, our ability to factor large numbers is still in the dark ages. In fact this imbalance between the two problems forms the bulwark for the security of electronic commerce on the Internet. (See mathematics and cryptography [VII.7](/part-07/mathematics-and-cryptography) for an account of why .) This is a very important application of mathematics, but also an odd one, and not something to brag about, since it depends on the in ability of mathematicians to efficiently solve a basic problem! Nevertheless, we do have our tricks.
 Part of the landscape is euclid’s algorithm [III.22] for computing the
 
 $353$
 
 greatest common divisor (GCD) of two numbers. One might naively think that, to find the GCD of two positive integers $m$ and $n$, one should find all of their divisors and pick the largest one common to the two. But Euclid’s algorithm is much more efficient: the number of arithmetic steps is bounded by the logarithm of the smaller number, so not only does it run in polynomial time, it is in fact quite speedy. So, if we can build up a special number m that may be likely to have a nontrivial factor in common with n, we can use Euclid’s algorithm to discover this factor.
-For example, Pollard and Strassen (independently) used this idea, together with fast subroutines for multiplication and polynomial evaluation, to enhance the trial division method discussed in the last section. Somewhat miraculously, one can take the integers up to $n^{1}/ {}^{2}$ , break them into $n^{1}/ {}^{4}$ subintervals of length $n^{1}/ {}^{4}$ , and for each subinterval calculate the GCD of n with the product of all the integers in the subinterval, spending only about $n^{1}/ {}^{4}$ elementary steps in total.
+For example, Pollard and Strassen (independently) used this idea, together with fast subroutines for multiplication and polynomial evaluation, to enhance the trial division method discussed in the last section. Some what miraculously, one can take the integers up to $n^{1}/ {}^{2}$ , break them into $n^{1}/ {}^{4}$ subintervals of length $n^{1}/ {}^{4}$ , and for each subinterval calculate the GCD of n with the product of all the integers in the subinterval, spending only about $n^{1}/ {}^{4}$ elementary steps in total.
 If n is composite, then at least one GCD will be larger than $1$ , and then a search over the first such subinterval will locate a nontrivial factor of n. To date, this algorithm is the fastest rigorous and deterministic method of factoring that we know. Most practical factoring algorithms are based on unproved but reasonable-seeming hypotheses about the natural numbers. Although we may not know how to prove rigorously that these methods will always produce a factorization, or do so quickly, in practice they do.
 This situation resembles the experimental sciences, where hypotheses are tested against experiments. Our experience with certain factoring algorithms is now so overwhelming that a scientist might claim that a physical law is involved. As mathematicians, we still search for proof, but fortunately the numbers we factor do not feel the need to wait for us. I often mention a contest problem from my high school years: factor 8051 . The trick is to notice that $8051 = 90^{2} - 7^{2} = (90 - 7)(90 + 7)$ , from which the factorization $83$ · $97$ can be read off.
 In fact every odd composite can be factored as the difference of two squares, an idea that goes back to fermat [VI.12](/part-06/pierre-fermat-1601665). Indeed, if n has the nontrivial factorization ab, then let $u = \frac{1}{2}(a + b)$ and $v = \frac{1}{2}(a - b)$ , so that $n = u^{2} - v^{2}$ , and $a = u + v,b = u - v.$ This method works very well if $n$ has a divisor very close to $n^{1}/ {}^{2}$ , as $n = 8051$ does, but in the worst case, the Fermat method is slower than trial division.
@@ -279,7 +279,7 @@ In fact every odd composite can be factored as the difference of two squares, an
 354                                                                                     IV. Branches of Mathematics
 
   My quadratic sieve method (which follows work of          in their prime factorizations only the first k primes.
-Kraitchik, Brillhart–Morrison, and Schroeppel) tries to     It is an easy theorem that some nonempty subset of
+Kraitchik, Brillhart–Morris on, and Schroeppel) tries to     It is an easy theorem that some nonempty subset of
 efficiently extend Fermat’s idea to all odd composites.       these numbers has product a square. The proof has
 For example, take n = 1649. We start just above n1/2        us associate with each of these numbers, which can be
                                                                                            a  a      a
@@ -329,7 +329,7 @@ split n via the GCD of u − v and n.                         a smaller bound fo
 small example with n = 1649. We used 32 and 200 to          method. But such very smooth values might be very
 form our square, but we ignored 115. If we had thought      rare. If we use a larger bound for the primes involved,
 about it, we might have noticed from the start that 32      then smooth values of f (j) may be more common,
-and 200 were more likely to be useful than 115. The         but we will need many of them. Somewhere between
+and 200 were more likely to be useful than 115. The         but we will need many of them. Some where between
 reason is that 32 and 200 are smooth numbers (mean-         smaller and larger is just right! In order to make the
 ing that they have only small prime factors), while 115     choice, it would help to know how frequently values of
 is not smooth, having the relatively large prime factor     an irreducible quadratic polynomial are smooth. Unfor-
@@ -340,7 +340,7 @@ $IV$ . $3$ .
 Computational Number Theory
 
 can still make a good choice by assuming that this frequency is about that for a random number of the same size, an assumption that is probably correct even if it is hard to prove. Finally, note that if the final GCD yields only a trivial factor with n, one can continue just a bit longer and find more linear dependencies, each with a fresh chance at splitting n. These thoughts lead us to a time bound of about exp log n log log n for the quadratic sieve to factor n.
-Instead of being exponential in the number of digits of n, as with trial division, this is exponential in about the square root of the number of digits of n. This is certainly a huge improvement, but it is still a far cry from polynomial time. Lenstra and I actually have a rigorous random factoring method with the same time complexity as that above for the quadratic sieve. (It is random in the sense that a coin is flipped at various junctures, and decisions on what to do next depend on the outcomes of these flips.
+Instead of being exponential in the number of digits of n, as with trial division, this is exponential in about the square root of the number of digits of n. This is certainly a huge improvement, but it is still a far cry from polynomial time. Lenstra and I actually have a rigorous random factoring method with the same time complexity as that above for the quadratic sieve. (It is random in the sense that a coin is flipped at various junctures, and decisions on what to do next depend on the out comes of these flips.
 Through this process, we expect to get a bona fide factorization within the advertised time bound .) However, the method is not so computer practical, and if you had to choose in practice between the two, then you should go with the nonrigorous quadratic sieve. A triumph for the quadratic sieve was the 1994 factorization of the $129$ - digit RSA cryptographic challenge first published in Martin Gardner’s column in Scientific American in 1977 .
 The number field sieve, which is another sieve-based factoring algorithm, was discovered in the late $1980s$ by Pollard for integers close to powers, and later developed by Buhler, Lenstra, and me for general integers. The method is similar in spirit to the quadratic sieve, but assembles its squares from the product of certain sets of algebraic integers. The number field sieve has a conjectured time complexity of the type exp  (  c  (  log n)1/3( log log n)2/3), for a value of c slightly below $2$ .
 For composite numbers beyond $100$ digits or so that have no small prime factor, it is the method of choice, with the current record being $200$ decimal digits. The sieve-based factorization methods share the property that if you use them, then all composite numbers of about the same size are equally hard to factor. For instance, factoring n will be about as difficult if n is a product of five primes each roughly near the fifth
@@ -361,7 +361,7 @@ Hasse, in a result later generalized by weil [VI.93](/part-06/andr-weil-19061998
 This gives us the curve with coefficients a, $b$ and $a$ point $P = (x^{1}$ , $y^{1})$ on the curve. One can then mimic the Pollard strategy, with a number k as before with many divisors, and with the point P playing the role of u. Let k P denote the k-fold sum of P added to itself using elliptic curve addition. If k P is the point at infinity on the curve considered mod p (which it will be if the number of points on the curve is a divisor of k), but not on the curve considered mod q, then this gives us a number m whose GCD with n is divisible by p and not by q. We will have factored n.
 To see where m comes from it is convenient to consider the curve projectively: we take solutions (x , y, z) of the congruence $y^{2}z$ ≡ $x^{3} +$ axz ${}^{2} + bz^{3} ($ mod p  ). The triple (cx , cy, cz) when c   $= 0$ is considered to be the same as (x , y, z) . The mysterious point at infinity is now demystified; it is just (0, 1, 0). And our point P is $(x^{1}$ , $y^{1}$ , 1) . (This is the mod p version of classical projective geometry [I.3](/part-01/fundamental-definitions) .) Say we work mod n and compute the point k P = (x k , y k , z k).
 Then the candidate for the number m is just z k . Indeed, if k P is the point at infinity mod p, then z k ≡ $0$ (mod p), and if it is not the point at infinity mod q, then z k ≡ $0$ (mod q). When Pollard’s $p - 1$ method fails, our only recourse is to raise k or give up. With the elliptic curve method, if things do not work for our randomly chosen curve, we can pick another. Corresponding to the hidden prime p in n, we are actually picking new elliptic curve groups mod p, and so gaining a fresh chance for the number of elements in the group to be smooth. The elliptic curve IV.
-Branches of Mathematics method has been quite successful in factoring numbers which have a prime factor up to about fifty decimal digits, and occasionally even somewhat larger primes have been discovered. We conjecture that the expected time for the elliptic curve method to find the least prime factor p of n is about exp $2$ log p log log p arithmetic operations mod n. What is holding us back from proving this conjecture is not lack of knowledge about elliptic curves, but rather lack of knowledge of the distribution of smooth numbers.
+Branches of Mathematics method has been quite successful in factoring numbers which have a prime factor up to about fifty decimal digits, and occasionally even some what larger primes have been discovered. We conjecture that the expected time for the elliptic curve method to find the least prime factor p of n is about exp $2$ log p log log p arithmetic operations mod n. What is holding us back from proving this conjecture is not lack of knowledge about elliptic curves, but rather lack of knowledge of the distribution of smooth numbers.
 For more on these and other factorization methods, the reader is referred to Crandall and Pomerance (2005). $4$ The Riemann Hypothesis and the Distribution of the Primes As a teenager looking at a modest table of primes, Gauss conjectured that their frequency decays logax rithmically and that $li(x) = {}^{2} (1/$ log  t)dt should be a good approximation for $\pi$ (x), the number of primes between $1$ and  x.
 Sixty years later, riemann [VI.49] showed how Gauss’s conjecture can be proved if one assumes that the Riemann zeta function ζ (s)  =  n n  -  s has no zeros in the complex half-plane where the real
 
@@ -373,19 +373,19 @@ Though hadamard [VI.65](/part-06/jacques-hadamard-18651963) and de la vallée po
 
 Computational Number Theory
 
-exactly, and, to the nearest integer, we have $li(10^{22})\approx201,467,286,691,248,261,497$ . As you can plainly see, Gauss’s guess is right on the money! The numerical computation of li (x) is simple via numerical methods for integration, and it is directly obtainable in various mathematics computing packages. However, the computation of $\pi(10^{22})$ (due to Gourdon) is far from trivial. It would be far too laborious to count these approximately $2 \times 10^{20}$ primes one by one, so how are they counted? In fact, we have various combinatorial tricks to count without listing everything.
- For example, one does not need to count one by one to see that there are exactly $2$ [10 22 / 6 ] + 1 integers in the interval from $1$ to $10^{22}$ that are relatively prime to $6$ . Rather, one thinks of these numbers grouped in blocks of six, with two in each block coprime to $6$ . (The “ $+ 1$ ” comes from the partial block at the end .) Building on early ideas of Meissel and Lehmer, Lagarias, Miller, and Odlyzko presented an elegant combinatorial method for computing $\pi(x)$ that takes about $x^{2}/ {}^{3}$ elementary steps.
-The method was refined by Deléglise and Rivat, and then Gourdon found a way to distribute the computation to many computers. From work of von Koch, and later Schoenfeld, we know that the Riemann hypothesis is equivalent to the assertion that √ $|\pi(x) - li(x)| < x$ log $x(1)$ for all $x \ge 3 ($ see Crandall and Pomerance 2005 , exercise $1$ . 37). Thus, the mammoth calculation of $\pi(10^{22})$ might be viewed as computational evidence for the Riemann hypothesis--in fact, if the count had turned out to violate ( $1$ ), we would have had a disproof.
-It may not be obvious what ( $1$ ) has to do with the location of the zeros of ζ (s). To understand the connection, let us first dismiss the so-called “trivial” zeros, which occur at each negative even integer. The nontrivial zeros ρ are known to be infinite in number, and, as men$1$ tioned above, are conjectured to satisfy $Reρ \le {}^{2}$ . There are certain symmetries among these zeros: indeed, if ρ is a zero, then so are ρ̄, $1 - ρ,$ and $1 -$ ρ̄. Therefore, the Riemann hypothesis is the assertion that every nontrivial zero has real part equal to $\frac{1}{2}$ .
-(The symmetry with ρ$and$1 - ρ, which follows from Riemann’s functional equation $ζ(1 - s) = 2(2\pi) - s$ cos $(\frac{1}{2}\pis)Γ($ s )ζ( s ), perhaps provides some heuristic support for the Riemann hypothesis .) $357$ The connection to prime numbers begins with the fundamental theorem of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic), which yields the identity $\infty\infty n - s = p - jsζ(s) =n = 1p$ prime $j = 0(1 - p - s) - 1$ , = p prime a product that converges when $Res > 1$ .
-Thus, taking the logarithmic derivative (that is, taking the logarithm of both sides and then differentiating), we have $\infty$ ζ (s) log p log p $= - = -$ . $p^{s} - 1$ p js ζ (s) p prime $p$ prime $j = 1$ That is, if we define Λ (n) to be log p if $n = p$ j for a prime p and an integer $j \ge 1$ , and $Λ(n) = 0$ if $n$ is not of this form, then we have the identity $\infty$ Λ (n) ζ (s) $= -$ .
+exactly, and, to the nearest integer, we have $li(10^{22})\approx201,467,286,691,248,261,497$ . As you can plainly see, Gauss’s guess is right on the money! The numerical computation of li (x) is simple via numerical methods for integration, and it is directly obtainable in various mathematics computing packages. However, the computation of $\pi(10^{22})$ (due to Gourdon) is far from trivial. It would be far too laborious to count these approximately $2 \times 10^{20}$ primes one by one, so how are they counted?
+In fact, we have various combinatorial tricks to count with out listing everything. For example, one does not need to count one by one to see that there are exactly $2$ [10 22 / 6 ] + 1 integers in the interval from $1$ to $10^{22}$ that are relatively prime to $6$ . Rather, one thinks of these numbers grouped in blocks of six, with two in each block coprime to $6$ .
+(The “ $+ 1$ ” comes from the partial block at the end .) Building on early ideas of Meissel and Lehmer, Lagarias, Miller, and Odlyzko presented an elegant combinatorial method for computing $\pi(x)$ that takes about $x^{2}/ {}^{3}$ elementary steps. The method was refined by Deléglise and Rivat, and then Gourdon found a way to distribute the computation to many computers. From work of von Koch, and later Schoenfeld, we know that the Riemann hypothesis is equivalent to the assertion that √ $|\pi(x) - li(x)| < x$ log $x(1)$ for all $x \ge 3 ($ see Crandall and Pomerance 2005 , exercise $1$ .
+37). Thus, the mammoth calculation of $\pi(10^{22})$ might be viewed as computational evidence for the Riemann hypothesis--in fact, if the count had turned out to violate ( $1$ ), we would have had a disproof. It may not be obvious what ( $1$ ) has to do with the location of the zeros of ζ (s). To understand the connection, let us first dismiss the so-called “trivial” zeros, which occur at each negative even integer. The nontrivial zeros ρ are known to be infinite in number, and, as men$1$ tioned above, are conjectured to satisfy $Reρ \le {}^{2}$ .
+There are certain symmetries among these zeros: indeed, if ρ is a zero, then so are ρ̄, $1 - ρ,$ and $1 -$ ρ̄. Therefore, the Riemann hypothesis is the assertion that every nontrivial zero has real part equal to $\frac{1}{2}$ . (The symmetry with ρ$and$1 - ρ, which follows from Riemann’s functional equation $ζ(1 - s) = 2(2\pi) - s$ cos $(\frac{1}{2}\pis)Γ($ s )ζ( s ), perhaps provides some heuristic support for the Riemann hypothesis .) $357$ The connection to prime numbers begins with the fundamental theorem of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic), which yields
+the identity $\infty\infty n - s = p - jsζ(s) =n = 1p$ prime $j = 0(1 - p - s) - 1$ , = p prime a product that converges when $Res > 1$ . Thus, taking the logarithmic derivative (that is, taking the logarithm of both sides and then differentiating), we have $\infty$ ζ (s) log p log p $= - = -$ . $p^{s} - 1$ p js ζ (s) p prime $p$ prime $j = 1$ That is, if we define Λ (n) to be log p if $n = p$ j for a prime p and an integer $j \ge 1$ , and $Λ(n) = 0$ if $n$ is not of this form, then we have the identity $\infty$ Λ (n) ζ (s) $= -$ .
 n s ζ (s) $n = 1$ Through various relatively routine calculations, one can then relate the function $\psi(x) =$ Λ (n) $n \le x$ to the residues at the poles of ζ / ζ , which correspond to the zeros (and single pole) of ζ. In fact, as Riemann showed, we have the following beautiful formula:
 x ρ - log $(2\pi) - \frac{1}{2}$ log $(1 - x - 2)\psi(x) = x -$ ρ ρ if x itself is not a prime or prime power, and where the sum over the nontrivial zeros ρ of ζ is to be understood in the symmetric sense where we sum over those ρ with $|Imρ| < T$ and let $T \to \infty.$ Through elementary manipulations, an understanding of the function $\psi$ (x) readily gives an equivalent understanding of $\pi$ (x), and it should be clear now that $\psi$ (x) is intimately connected to the nontrivial zeros ρ of ζ. The function $\psi$ (x) defined above has a simple interpretation.
 It is the logarithm of the least common multiple of the integers in the interval [1 , x]. As with ( $1$ ) we have an elementary translation of the Riemann hypothesis: it is equivalent to the assertion that √ $|\psi(x) - x| < x$ log ${}^{2}x$ for all $x \ge 3$ . This inequality involves only the elementary concepts of least common multiple, natural logarithm, absolute value, and square root, yet it is equivalent to the Riemann hypothesis. A number of nontrivial zeros ρ of ζ (s) have actually been calculated and it has been verified that they lie on
 
 358                                                                                     IV. Branches of Mathematics
 
-the line Re s = 12 . One might wonder how someone can         ondary term of order n log log n, and so for all suffi-
+the line Re s = 12 . One might wonder how some one can         ondary term of order n log log n, and so for all suffi-
 computationally verify that a complex number ρ has            ciently large n, we have pn > n log n. By using explicit
           1
 Re ρ = 2 . For example, suppose that we are carrying          zeta estimates, Rosser was able to put a numerical
@@ -397,9 +397,9 @@ of the calculation to be able to distinguish this num-        and Schoenfeld (19
 ber from 12 itself. Nevertheless, we do have a method         numerically explicit inequalities of this kind.
 for seeing if particular zeros ρ satisfy Re ρ = 12 . There       Let us imagine for a moment that the Riemann
 are two ideas involved, one of which comes from ele-          hypothesis had been proved. Mathematics is never
-mentary calculus. If we have a continuous real-valued         “used up,” as there is always that next problem around
+ment ary calculus. If we have a continuous real-valued         “used up,” as there is always that next problem around
 function f (x) defined on the real numbers, we can             the bend. Even if we know that all of zeta’s nontriv-
-sometimes use the intermediate value theorem to count         ial zeros lie on the line Im s = 12 , we can still ask how
+some times use the intermediate value theorem to count         ial zeros lie on the line Im s = 12 , we can still ask how
 zeros. For example, say f (1) > 0, f (1.7) < 0, f (2.3) >     they are distributed on this line. We have a fairly con-
 0. Then we know for sure that f has at least one zero         cise understanding of how many zeros there should
 between 1 and 1.7, and at least one zero between 1.7          be up to a given height T . In fact, as already found by
@@ -434,7 +434,7 @@ but certainly it would indicate a region where we should
 be checking the data more closely. So far, whenever
                                                               consecutive zeros, which on average are about 1.
 we have tried this approach, the counts have matched,
-though sometimes we have been forced to evaluate g(t)            Checking numerically, we see that some δn are large,
+though some times we have been forced to evaluate g(t)            Checking numerically, we see that some δn are large,
 at very closely spaced points.                                with others close to 0; it is just the average that is 1.
    The first few nontrivial zeros were computed by Rie-        Mathematics is well equipped to study random phe-
 mann himself. The famous cryptographer and early              nomena, and we have names for various probability
@@ -482,7 +482,7 @@ In fact, we will throw all of the powers together into one set. Following an ide
 360                                                                                      IV. Branches of Mathematics
 
 so we can take our random set R as modeling the sit-              The point is that events of the kind that we are con-
-uation for these powers, namely the union of all sets          sidering—that a given integer is a power—are not quite
+uation for these powers, namely the union of all sets          side ring—that a given integer is a power—are not quite
 Sn for n ⩾ 4. We ask how likely it is to have a + b = c        independent. For instance, if A and B are both uth pow-
 where a, b, and c all come from R.                             ers, then so is AB, and this idea is exploited in the
    The probability that a number m may be represented          infinite families just mentioned.
@@ -606,7 +606,7 @@ that divide n, denoting this as rad(n). So, for exam-
                                                                a = 72 · 412 · 3113 = 2 477 678 547 239
 ple, rad(10) = 10, rad(72) = 6, and rad(65 536) = 2.
 In particular, high powers have small radicals in com-         b = 1116 · 132 · 79 = 613 474 843 408 551 921 511
-parison to the number itself, and so do many other             c = 2 · 33 · 523 · 953 = 613 474 845 886 230 468 750
+paris on to the number itself, and so do many other             c = 2 · 33 · 523 · 953 = 613 474 845 886 230 468 750
 numbers. Basically, the ABC conjecture asserts that if
                                                                r = 2 · 3 · 5 · 7 · 11 · 13 · 41 · 79 · 311 · 953
 a + b = c, then the radical of abc cannot be too small.
@@ -633,7 +633,7 @@ for at most finitely many cases. But consider the polynomial identity
 
 (x + 1)5 = (x - 1)5 + 10(x2 + 1)2 - 8 (suggested to me by Granville). If we take x as a multiple of $10$ , the four terms involved in the identity are pairwise relatively prime except for the last two, which have a common factor of $2$ . Let $x = 11^{k} - 1$ , which is a multiple of $10$ . The largest of the four terms is $11^{5k}$ , and the radical of the product of the four terms is at most 110(11 k - 2) ( (11 k - 1)2 + 1) < 110 · $11^{3k}$ . The heuristics are saying that this cannot be, yet here it is right before our eyes!
 What is happening is that the polynomial identity is supplying an underlying structure. For the four-term abcd conjecture, Granville conjectures that for each $ε > 0$ , all counterexamples to (4) come from at most finitely many polynomial families. And the number of polynomial families grows to infinity as ε shrinks to $0$ . We have looked here at only a small portion of the field of Diophantine equations, and then we have looked mainly at the dynamic relationship between heuristics and computational searches for small solutions.
-For much more on the subject of computational Diophantine methods, see Smart ( 1998 ). Heuristic arguments often assume that the objects of study behave as if they were random, and we have visited several cases where it is useful to think this way. Other examples include the twin prime conjecture (there are infinitely many primes p such that $p + 2$ is prime), Goldbach’s conjecture (every even number larger than $2$ is the sum of two primes), and countless other conjectures in number theory. Often the computational evidence for the probabilistic view is striking,
+For much more on the subject of computational Diophantine methods, see Smart ( 1998 ). Heuristic arguments often assume that the objects of study behave as if they were random, and we have visited several cases where it is useful to think this way. Other examples include the twin prime conjecture (there are infinitely many primes p such that $p + 2$ is prime), Goldbach’s conjecture (every even number larger than $2$ is the sum of two primes), and count less other conjectures in number theory. Often the computational evidence for the probabilistic view is striking,
 
 IV. Branches of Mathematics
 

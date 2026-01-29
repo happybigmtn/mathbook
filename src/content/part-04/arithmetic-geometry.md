@@ -12,7 +12,7 @@ is well-known (with good computer implementations).              advanced subjec
 Thus we can decide if there is a solution with deg gj ⩽             The best introduction to the techniques of algebraic
 100. Of course it is possible that 100 was too small             geometry is Undergraduate Algebraic Geometry (Cam-
 a guess, and we may have to repeat the process with              bridge University Press, Cambridge, 1988), by M. Reid.
-larger and larger degree bounds. Will this ever end?             For those wishing for a general overview, An Invitation
+larger and larger degree bounds. Will this ever end?             For those wish ing for a general over view, An Invitation
 The answer is given by the following result, which was           to Algebraic Geometry (Springer, New York, 2000), by
 proved only recently.                                            K. E. Smith, L. Kahanpää, P. Kekäläinen, and W. Traves, is
                                                                  a good choice, while Algebraic Geometry (Springer, New
@@ -29,7 +29,7 @@ dn − d cannot be improved.
   As explained above, this provides a computational              Our goal is to sketch some of the essential ideas of
 method for deciding whether or not a system of polyno-           arithmetic geometry; we begin with a problem which,
 mial equations has a common solution. Unfortunately,             on the face of it, involves no geometry and only a bit of
-this is rather useless in practice as we end up with             arithmetic.
+this is rather use less in practice as we end up with             arithmetic.
 exceedingly large linear systems. We still do not have a
                                                                  Problem. Show that the equation
 computationally effective and foolproof method.
@@ -52,11 +52,11 @@ Further Reading                                                  such that a, b,
                                                                  equation (1) now becomes
 Most of the algebraic geometry literature is very tech-
                                                                                   a 2      b 2    c 2
-nical. A notable exception is Plane Algebraic Curves                                  +        =7     ,
+nical. A not able exception is Plane Algebraic Curves                                  +        =7     ,
                                                                                   n        n      n
 (Birkhäuser, Boston, MA, 1986), by E. Brieskorn and
                                                                  and multiplying through by n2 one has
-H. Knörrer, which starts with a long overview of alge-
+H. Knörrer, which starts with a long over view of alge-
 braic curves through arts and sciences since antiquity,                               a2 + b2 = 7 c 2 .                  (2)
 
 IV.5.   Arithmetic Geometry                                                                                                373
@@ -80,7 +80,7 @@ satisfied only if ā = . ar{b} = 0.                                          be 
    But saying that ā = . ar{b} = 0 is the same as saying that              reveals structure that is invisible if we consider each
 a and b are both multiples of 7. This being the case,                  problem on its own. The aggregate we make of all these
 a2 and b2 are both multiples of 49. It follows that their              Diophantine problems is called a scheme. We will return
-sum, 7 c 2 , is a multiple of 49 as well. Therefore, c 2 is             to schemes later, and will try, without giving precise
+sum, 7 c 2 , is a multiple of 49 as well. Therefore, c 2 is             to schemes later, and will try, with out giving precise
 a multiple of 7, and this implies that c itself is a mul-              definitions, to convey some sense of what is meant by
 tiple of 7. In particular, a, b, and c share a common                  this not very suggestive term.
 factor of 7. We have now arrived at the desired contra-                   A word of apology: I will give only the barest sketch
@@ -105,7 +105,7 @@ I do not know whether (4) has any solutions in nonzero                 ric ideas
 rational numbers or not; one can be sure, though, that                 glance, is particularly central.
 determining the answer would be a substantial piece
 of work, and it is quite possible that the most powerful
-                                                                                2   Geometry without Geometry
+                                                                                2   Geometry with out Geometry
 techniques available to us are insufficient to answer this
 simple question.                                                       Before we dive into the abstract theory of schemes, let
    More generally, one can take an arbitrary commuta-                  us splash around a little longer among the polynomial
@@ -170,7 +170,7 @@ solutions are there? The geometric argument above                          ition
 leads us to believe that there is at most one solution                     ideas about how to construct solutions to (5). On the
 to (6). Alternatively, we can use the following algebraic                  other hand, now that we have erected an algebraic jus-
 fact, which is analogous2 to the geometric fact (G).                       tification for our construction, we can kick away our
-                                                                           geometric intuition as needless scaffolding. It was a
+                                                                           geometric intuition as need less scaffolding. It was a
  (A) The equation (1 + m2 )x 2 − 2 m2 x + (m2 − 1) = 0                      geometric fact about lines and circles that suggested
      has either zero, one, or two solutions in x.                          to us that (6) should have only one solution other than
                                                                            x = 1. However, once one has had that thought, one can
@@ -182,9 +182,9 @@ as we will see in section 4 below.                                         geome
 
 IV.5.   Arithmetic Geometry                                                                                                        375
 
-  The fact that our argument can stand without any ref-        the equation over R. It is a distinction that makes a
+  The fact that our argument can stand with out any ref-        the equation over R. It is a distinction that makes a
 erence to geometry means that it can be applied in sit-        remarkable difference.
-uations that might not, at first glance, seem geometric.
+ua tions that might not, at first glance, seem geometric.
 For instance, suppose we wished to study solutions to                3    From Varieties to Rings to Schemes
 (5) over the finite field F7 . Now this solution set would
                                                                In this section, we will attempt to give a clearer answer
@@ -310,7 +310,7 @@ that G is a Calgebra homomorphism (that is, a homomorphism of rings that sends e
 $377$
 
 You would not be far off in thinking of the statement “there is an injective map from V to W ” as analogous to “quality A is stronger than quality B.” The move to transform geometry into algebra is not something one under takes out of sheer love of abstraction, or hatred of geometry. Instead, it is part of the universal mathematical instinct to unify seemingly disparate theories. I cannot put it any better than Dieudonné ( 1985 ) does in his History of Algebraic Geometry: . . .
-from [the 1882 memoirs of] Kronecker and Dedekind-Weber dates the awareness of the profound analogies between algebraic geometry and the theory of algebraic numbers, which originated at the same time. Moreover, this conception of algebraic geometry is the most simple and most clear for us, trained as we are in the wielding of “abstract” algebraic notions: rings, ideals, modules, etc. But it is precisely this “abstract” character that repulsed most contemporaries, disconcerted as they were by not being able to recover the corresponding geometric notions easily.
+from [the 1882 memoirs of] Kronecker and Dedekind-Weber dates the awareness of the profound analogies between algebraic geometry and the theory of algebraic numbers, which originated at the same time. More over, this conception of algebraic geometry is the most simple and most clear for us, trained as we are in the wielding of “abstract” algebraic notions: rings, ideals, modules, etc. But it is precisely this “abstract” character that repulsed most contemporaries, disconcerted as they were by not being able to recover the corresponding geometric notions easily.
 Thus the influence of the algebraic school remained very weak up until 1920 . . . . It certainly seems that Kronecker was the first to dream of one vast algebraico-geometric construction comprising these two theories at once; this dream has begun to be realized only recently, in our era, with the theory of schemes. Let us therefore move on to schemes.
 
 $3$ . $3$
@@ -348,11 +348,11 @@ we map it to the complex number f (p). This map is a          and solutions over
 homomorphism, called the evaluation homomorphism
 at p. Since points on X give us homomorphisms on            This behavior is what we have in mind when we say that
 Γ (X), a natural way to define the word “point” for the      the ring R “packages” information about Diophantine
-ring R = Γ (X), without using geometry, is to say that      equations over different rings.
+ring R = Γ (X), with out using geometry, is to say that      equations over different rings.
 a “point” is a homomorphism from R to C. It turns out          It turns out, just as one might hope, that every inter-
 that the kernel of such a homomorphism is a maximal         esting geometric property of varieties can be computed
 ideal, i.e., a proper ideal in R which is contained in no   by means of the coordinate ring, which means it can
-larger ideal except R itself. Moreover, every maximal       be defined not only for varieties but also for general
+larger ideal except R itself. More over, every maximal       be defined not only for varieties but also for general
 ideal of R arises from a point p of X. So a very concise    schemes. We have already seen, for instance, that a vari-
 way to describe the points of X might be to say that        ety X is irreducible if and only if Γ (X) is an integral
 they are the maximal ideals of R. A modern algebraic        domain. Thus, we say in general that a scheme Spec R
@@ -362,7 +362,7 @@ responding to the nonmaximal ideals are not points          integral domain). On
 in the usual sense of the term; for instance, the point     of a scheme, its dimension, whether it is smooth, and
 corresponding to the zero ideal (when it is prime) is       so forth. All these geometric properties turn out, like
 the “generic point,” which is in one sense every where       irreducibility, to have purely algebraic descriptions. In
-on X at once, and in another sense nowhere in par-          fact, to the arithmetic geometer’s way of thinking, all
+on X at once, and in another sense no where in par-          fact, to the arithmetic geometer’s way of thinking, all
 ticular at all. This description sounds rather woolly,      these are, at bottom, algebraic properties.
 but on the algebraic side the zero ideal is something
                                                             3.4   Example: Spec Z, the Number Line
@@ -464,9 +464,9 @@ exactly agree with those in the literature.
 The world is not lacking in expositions of the proof of
                                                                congruent to 1 (mod b).5
 fermat’s last theorem [V.10](/part-05/fermats-last-theorem) and I will not attempt
-to give another one here, although it is without ques-            On the other hand—if I may compress a 200-page
-tion the most notable contemporary achievement in              paper into a slogan—Wiles proved that, when A, B, C
-arithmetic geometry. (Here I am using the mathemati-           is a solution to (11), the reductions mod  of the ap
+to give another one here, although it is with out ques-            On the other hand—if I may compress a 200-page
+tion the most not able contemporary achievement in              paper into a slogan—Wiles proved that, when A, B, C
+arithmetic geometry. (Here I am using the mathemat i-           is a solution to (11), the reductions mod  of the ap
 cian’s sense of “contemporary,” which, as the old joke         necessarily behaved periodically, contradicting Mazur’s
 goes, means “theorems proved since I entered graduate          theorem when  > 3. The case  = 3 is an old theorem
 school.” The shorthand for “theorems proved before I           of euler [VI.19](/part-06/leonhard-euler-17071783). This completes the proof of Fermat’s
@@ -501,7 +501,7 @@ a quadratic nonresidue, zero, or a quadratic residue             5. The theorem 
                                                                and much more general way: he proves that certain modular curves
 in Fp . Since there are equally many quadratic residues        do not possess any rational points. This implies that a version of the
 and nonresidues in Fp , we might guess that those two          fact above is true, not only for XA, B , but for any equation of the form
-                                                               y 2 = f (x), where f is a cubic polynomial without repeated roots. We
+                                                               y 2 = f (x), where f is a cubic polynomial with out repeated roots. We
 cases arise equally often. If so, there would on average       will leave it to the other able treatments of Fermat to develop that
 be one choice of y for each of the p choices of x, which       point of view.
 
@@ -527,13 +527,13 @@ when the a p are positive, the terms in the product tend to be larger than $1$ .
 Nonetheless, the birch-swinnerton-dyer conjecture [V.4](/part-05/the-birchswinnerton-dyer-conjecture), which makes precise the heuristic prediction above, is widely believed, and supported by many partial results and numerical experiments. We do not have the space here to state the conjecture in full generality. However, the following conjecture would follow from Birch-Swinnerton-Dyer. $381$ Conjecture. The elliptic curve E has infinitely many points over Q if and only if  L(E , $1) = 0$ . Kolyvagin proved one direction of this conjecture in 1988 :
 that E has finitely many rational points if  L(E , $1) \neq 0$ . (To be precise, he proved a theorem that yields the assertion here once combined with the later theorems of Wiles and others .) It follows from a theorem of Gross and Zagier that E has infinitely many rational points if L (E , s) has a simple zero at s $= 1$ . That more or less sums up our present knowledge about the relationship between L-functions and rational points on elliptic curves.
 This lack of knowledge has not, however, prevented us from constructing a complex of ever more rarefied conjectures in the same vein, of which the Birch-Swinnerton-Dyer conjecture is only a tiny and relatively down-to-earth sliver. Before we leave the subject of counting points behind, we will pause and point out one more beautiful result: the theorem of andré weil [VI.93](/part-06/andr-weil-19061998) bounding the number of points on a curve over a finite field.
-(Because we have not introduced projective geometry, we will satisfy ourselves with a somewhat less beautiful formulation than the usual one .) Let F (x , y) be an irreducible polynomial in two variables, and let X be the scheme of solutions of F (x , y) $= 0$ . Then the complex points of X define a certain subset of $C^{2}$ , which we call an algebraic curve. Since X is obtained by imposing one polynomial condition on the points of $C^{2}$ , we expect that X has complex dimension $1$ , which is to say it has real dimension $2$ . Topologically speaking, X (C) is, therefore, a surface.
+(Because we have not introduced projective geometry, we will satisfy ourselves with a some what less beautiful formulation than the usual one .) Let F (x , y) be an irreducible polynomial in two variables, and let X be the scheme of solutions of F (x , y) $= 0$ . Then the complex points of X define a certain subset of $C^{2}$ , which we call an algebraic curve. Since X is obtained by imposing one polynomial condition on the points of $C^{2}$ , we expect that X has complex dimension $1$ , which is to say it has real dimension $2$ . Topologically speaking, X (C) is, therefore, a surface.
 It turns out that, for almost all choices of F , the surface X (C) will have the topology of a “g-holed doughnut” with d points removed, for some nonnegative integers $g$ and $d$. In this case we say that X is a curve of genus g. In section $2$ we saw that the behavior of schemes over finite fields seemed to “remember” facts arising from our geometric intuition over R and C : our example there was the fact that circles and lines intersect in at most two points. The theorem of Weil reveals a similar, though much deeper, phenomenon. Fact.
 Suppose the scheme X of solutions of F (x , y) is a curve of genus g. Then, for all but finitely many primes p, the number of points of X over F p is at most √$p + 1 + 2g p$ and at least $p + 1 - 2g p - d.$ Weil’s theorem illustrates the startlingly close bonds between geometry and arithmetic. The more complicated the topology of X (C), the further the number of
 
 $382$
 
-F ppoints can vary from the “expected” answer of p. What is more, it turns out that knowing the size of the set X (F q) for every finite field F q allows us to determine the genus of X. In other words, the finite sets of points X (F q) somehow “remember” the topology of the space of complex points X (C) ! In modern language, we say that there is a theory applying to general schemes, called étale cohomology, which mimics the theory of cohomology applying to the topology of varieties over C .
+F ppoints can vary from the “expected” answer of p. What is more, it turns out that knowing the size of the set X (F q) for every finite field F q allows us to determine the genus of X. In other words, the finite sets of points X (F q) some how “remember” the topology of the space of complex points X (C) ! In modern language, we say that there is a theory applying to general schemes, called étale cohomology, which mimics the theory of cohomology applying to the topology of varieties over C .
 Let us return for a moment to our favorite curve, by taking the polynomial  F(x , $y) = x^{2} + y^{2} - 1$ . In this case, it turns out that  X(C)$has$ g = 0$and$ d = 2 : our previous result that X (F p) contains either p $+ 1$ or $p - 1$ points therefore conforms exactly with the Weil bounds. We also remark that elliptic curves always have genus $1$ ; so the theorem of Hasse alluded to above is a special case of Weil’s theorem as well.
 Recall from section $2$ that the solutions to $x^{2} + {}^{2} = 1$ , over R , over Q , or over various finite fields, y could be parametrized by the variable m. It was this parametrization that enabled us to determine a simple formula for the size of X (F p) in this case. We remarked earlier that most schemes could not be so parametrized; now we can make that statement a bit more precise, at least for algebraic curves. Fact. If X is a genus - $0$ curve, then the points of X can be parametrized by a single variable.
 The converse of this fact is more or less true as well (though stating it properly requires us to say more than we can here about “singular curves ”). In other words, a thoroughly algebraic question--whether the solutions of a Diophantine equation can be parametrized--is hereby given a geometric answer.

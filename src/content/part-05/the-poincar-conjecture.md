@@ -42,7 +42,7 @@ $27$ Problems and Results in Additive Number Theory Is every even number greater
 These three problems belong to an area of mathematics known as additive number theory. In order to say in general terms what this area is, it is useful to make some simple definitions. Suppose that A is a set of positive integers. Then the sumset of A, denoted A + A, is the set of all x + y such that $x$ and  y(which are allowed to be equal) both belong to A. For example, if A is the set 1 , $5$ , $9$ , $10$ , $13$ , then $A + A$ is the set 2 , $6$ , $10$ , $11$ , $14$ , $15$ , $18$ , $19$ , $20$ , $22$ , $23$ , $26$ .
 Similarly, the difference set, denoted $A - A,$ is the set of all $x - y$ such that $x$ and $y$ both belong to A. In the above example, $A - A = { - 12}$ , $- 9$ , $- 8$ , $- 5$ , $- 4$ , $- 3$ , $- 1$ , $0$ , $1$ , $3$ , $4$ , $5$ , $8$ , $9$ , $12$ . Using this language, we can state two of our three problems very succinctly. Let P be the set of all odd primes and let C be the set of all cubes. Then Goldbach’s conjecture is the statement that P + P is the set 6 , $8$ , $10$ , $12$ , . . .
 }, and the special case of Waring’s problem asks whether every sufficiently large integer belongs to $C + C + C + C.$ The twin prime conjecture is slightly more complicated: it states not just that $2$ belongs to the set P - P but that it does so “infinitely many times.” (In a similar way, if A is the set in the previous paragraph, then $A - A$ contains the number $4$ three times .) These problems are notoriously difficult. However, remarkably, there are some closely related problems that look just as hard at first, but which have been solved.
-For instance, Vinogradov’s three-primes theorem is the statement that every sufficiently large odd integer is the sum of three odd primes. Without the “sufficiently large” this would answer the ternary Goldbach problem, which asks whether every odd number from $9$ onward is a sum of three odd primes. (How large is “sufficiently large”? Well, until recently you needed your number to have about 7000000 digits, but in 2002 this was reduced to under 1500 digits .) As for Waring’s
+For instance, Vinogradov’s three-primes theorem is the statement that every sufficiently large odd integer is the sum of three odd primes. With out the “sufficiently large” this would answer the ternary Goldbach problem, which asks whether every odd number from $9$ onward is a sum of three odd primes. (How large is “sufficiently large”? Well, until recently you needed your number to have about 7000000 digits, but in 2002 this was reduced to under 1500 digits .) As for Waring’s
 
 716                                                                                      V. Theorems and Problems
 
@@ -77,7 +77,7 @@ our task is impossible: if n is over three times larger      From our discussion
 than the largest known prime, as it may very well be,        know that this will be the sum of all integrals of the
                                                                     1
 then we cannot produce three primes that add up to           form 0 e(p1 x)e(p2 x)e(p3 x)e(−nx) dx. Now the first
-n without finding a new prime. Indeed, we could take          basic property of e(x) tells us that this last integral
+n with out finding a new prime. Indeed, we could take          basic property of e(x) tells us that this last integral
                                                                           1
                                      100
 n to be astronomically large, 1010 + 1, say, and then        is equal to 0 e((p1 + p2 + p3 − n)x) dx, and the sec-
@@ -118,7 +118,7 @@ Such expressions are useful because they can often be shown to be small. Suppose
 What we need to do is express the sum over P as a combination of sums over arithmetic progressions, and this is a very natural thing to do, since P consists of all those integers up to n that do not lie in certain arithmetic progressions (such as $14$ , $21$ , $28$ , $35$ , $42$ , . . .). So we can n begin by taking the sum t $= {}^{1}$ e (tx). From this we need to subtract the contribution from all even integers, which is $t \le n/ {}^{2}e(2tx)$ . We also need to subtract the contribution from multiples of $3$ , apart from $3$ itself. This contribution is ${}^{1} < t \le n/ {}^{3}e(3tx)$ .
 Now we find that we have subtracted the contribution from multiples of $6$ twice, so we correct for that by adding $t \le n/ {}^{6}e(6tx)$ . This process can be continued, and it leads to a way of decomposing the sum over primes into a combination of sums over geometric progressions. If x is not close to a rational with small denominator, then most of the common ratios are far from $1$ , so most of the sums over progressions are small. Unfortunately, there are too many of them for this simple argument to lead to a useful estimate.
 However, there is a more sophisticated argument with a similar flavor that does. What happens if x is close to a rational with small denominator? For example, what can we say about the sum $p \le ne(p/3)$ ? Here we use more direct methods: it is known that roughly half of all primes are $1$ (mod $3$ ) and half are 2($mod$3) (see [IV.2](/part-04/number-theory) ), which tells us that $717$ this sum is roughly $(|P|/2)( e(p/3) + e(2p/3))$ , where |P| denotes the size of the set P .
-For very similar reasons, in Waring’s problem one finds oneself wanting to know about exponential sums m such as G (x) = t $= {}^{0}$ e (t k x). Again, one can sometimes estimate these by reducing them to sums of geometric progressions. This is easiest to show in the case k $= 2$ . The idea is to look not at G (x) directly but at $|G(x)|^{2}$ , which a moment’s calculation shows is equal m m to $t = {}^{0u} = {}^{0}e((t^{2} - u^{2})x)$ . Now $t^{2} - u^{2} = (t + u)(t -$ u), so we can change variables, setting $v = t + u$ and $w$ = t - u.
+For very similar reasons, in Waring’s problem one finds one self wanting to know about exponential sums m such as G (x) = t $= {}^{0}$ e (t k x). Again, one can some times estimate these by reducing them to sums of geometric progressions. This is easiest to show in the case k $= 2$ . The idea is to look not at G (x) directly but at $|G(x)|^{2}$ , which a moment’s calculation shows is equal m m to $t = {}^{0u} = {}^{0}e((t^{2} - u^{2})x)$ . Now $t^{2} - u^{2} = (t + u)(t -$ u), so we can change variables, setting $v = t + u$ and $w$ = t - u.
 This gives us the sum (v , w) $\in$ V e (vwx), where V is the set of all (v , w) such that (v + w) $/2$ and $(v - w)/2 ($ which equal $t$ and  u, respectively) are both between $0$ and m. For each v the set of possible values of w is an arithmetic progression, so we have decomposed $|G(x)|^{2}$ into $a$ sum of sums of geometric progressions, one for each v. So far we have been looking at so-called direct problems in additive number theory. These are problems where one specifies a set and then tries to understand its sumset or difference set. We have only scratched the surface of the subject:
 other related results and techniques are discussed in [IV.2](/part-04/number-theory) (see in particular sections $7$ , $9$ , and 11). Direct problems have a long history, but in recent years another class of problems, called inverse problems, have become an important focus of research as well. These concern the following broad question: if you are given information about a sumset or a difference set, what can you deduce about the original set? We end by describing one of the highlights of this kind of additive number theory, called Freiman’s theorem.
 It is not hard to prove that if A is any set of integers of size n, then the size of $A + A$ must be between $2n - 1$ and $n(n + 1)/2$ . (The first happens if A is an arithmetic progression and the second happens if all the sums you can make are different .) What can we say about A if the size of A + A is at most $100n$ , or, more generally, is at most Cn for some constant C that remains fixed as n tends to infinity? Suppose that we can find an arithmetic progression P of size at most $50n$ such that A is a subset of P . Then A + A is a subset of P + P , which has size at most $100n - 1$ .
@@ -126,9 +126,9 @@ So if A is two percent of an arithmetic progression, then $A + A$ has size at mo
 
 718                                                                                        V. Theorems and Problems
 
-or 99 000 90. There are 100 . imes 100 = 10 000 of these. If       it his theorema aureum, or golden theorem), is consid-
+or 99 000 90. There are 100 . imes 100 = 10 000 of these. If       it his theorem a aureum, or golden theorem), is consid-
 we add two of them together, then we get a number like        ered a crown jewel of number theory, and with good
-138 00 162 or 141 00 068, which is made up of a num-          cause. Whereas its statement could be rediscovered
+138 00 162 or 141 00 068, which is made up of a num-          cause. Where as its statement could be rediscovered
 ber between 0 and 198, followed by two 0 s, followed           by a sufficiently ingenious student (indeed, it actu-
 by a second number between 0 and 198 (written with            ally has been rediscovered on a regular basis at the
 0 s in front if these are needed to make it up to three        Arnold Ross mathematics summer program for several
@@ -207,7 +207,7 @@ $a + bic + di = 1c + di^{4} a + bi^{4}$
 
 otherwise.
 
-One might expect to find an nth power reciprocity law that looks like this by working with the ring generated by a primitive nth root of $1$ . What complicates matters is that this ring does not enjoy the unique factorization property [IV . 1 § § 4 - 8 ] (whereas the usual integers and the Gaussian integers both do) . This was remedied only by kummer’s [VI.40] theory of ideals [III.81](/part-03/rings-ideals-and-modules) (short for “ideal numbers ”). An ideal is a set that has the typical properties of the set of all multiples of a given number, but it can be more general.
+One might expect to find an nth power reciprocity law that looks like this by working with the ring generated by a primitive nth root of $1$ . What complicates matters is that this ring does not enjoy the unique factorization property [IV . 1 § § 4 - 8 ] (where as the usual integers and the Gaussian integers both do) . This was remedied only by kummer’s [VI.40] theory of ideals [III.81](/part-03/rings-ideals-and-modules) (short for “ideal numbers ”). An ideal is a set that has the typical properties of the set of all multiples of a given number, but it can be more general.
 (Even if an ideal is the set of all multiples of some number, that number is not unique, since one can multiply it by a unit. For instance, both $2$ and $- 2$ generate the ideal of all even numbers .) Using Kummer’s theory, Kummer and Eisenstein managed to formulate broad generalizations of quadratic reciprocity for higher powers. hilbert [VI.63](/part-06/david-hilbert-18621943) then realized that these should fit together as part of some sort of maximally general reciprocity law.
 He also gave a candidate for this law, inspired by a reformulation of quadratic reciprocity itself in terms of the norm residue symbol. For a prime p, and any nonzero integers $m$ and $n$, the norm residue m, n symbol (p) equals $1$ if, for all sufficiently large k, the equations $mx^{2} + ny^{2}$ ≡ $z^{2} ($ mod $p^{k})$ have solutions where x, y, and z are not all divisible by p k ; otherwise the symbol equals $- 1$ . In other words, the symbol equals $1$ if the equation $mx^{2} + ny^{2} = z^{2}$ has $a$ solution in the p-adic numbers [III.51](/part-03/local-and-global-in-number-theory) .
 
@@ -226,11 +226,11 @@ prime p = . nfty. The latter requires some explanation: we
 write ( . nfty ) = 1 if and only if m and n are not both neg-
                                                                   This last example shows that the story of reci-
 ative, i.e., if the equation mx 2 +ny 2 = z2 has a solution
-                                                               procity laws is not yet complete. Any new instance of
+                                                               pro city laws is not yet complete. Any new instance of
 in the real numbers. This fits into a general pattern, that
                                                                explicit class field theory would reveal another reci-
 conditions quantified over “all prime numbers” must
-                                                               procity law that had previously been hidden from view.
+                                                               pro city law that had previously been hidden from view.
 also account for the so-called infinite prime.
                                                                Some exciting new conjectures in this direction have
    It should also be clarified that Hilbert’s product only
@@ -280,7 +280,7 @@ Kronecker–Weber theorem asserts that they are all con-         make is that st
 tained in fields generated by roots of 1. This explains         is more or less equivalent to studying rational solutions
 the role of the roots of 1 in the classical reciprocity        to the equation a3 + b 3 = 1: indeed, if we had integers
 laws. However, describing the Abelian extensions of an         x, y, and z such that x 3 + y 3 = z3 , then we could set
-arbitrary number field K is somewhat harder. They can           a = x/z and b = y/z and obtain rational numbers with
+arbitrary number field K is some what harder. They can           a = x/z and b = y/z and obtain rational numbers with
 at least be classified in terms of the structure of the         a3 + b3 = 1. Conversely, given rational numbers a and
 field K itself; this is what is commonly referred to as         b with a3 + b 3 = 1, we could multiply a and b by the
 class field theory.                                             lowest common multiple z of their denominators and
@@ -308,13 +308,13 @@ to have a genuinely interesting geometry. To be pre-
 cise, it can be regarded as a two-dimensional manifold             Figure 1 The group law for an elliptic curve.
 [I.3 §6.9](/part-01/fundamental-definitions) living in R4 . From a complex perspective it is
 a one-dimensional subset of C2 , but from either per-        operation on it as follows: given any two points P and
-spective it has a potentially interesting topology. For      Q on E, let L be the line through P and Q (where we
+spec tive it has a potentially interesting topology. For      Q on E, let L be the line through P and Q (where we
 instance, if we compactify [III.9](/part-03/compactness-and-compactication) the curve by consid-      define this to be the tangent to the curve at P if P = Q ).
 ering it as a subset not of C2 but of the complex pro-       In general, L intersects E in three points, of which P
 jective plane [I.3 §6.7](/part-01/fundamental-definitions), then we turn it into a compact     and Q are two; let R be the third. Finally, let R be
 surface. As such, it must have a genus [III.33](/part-03/genus), which,      the reflection of R in the x-axis (which also belongs
 roughly speaking, tells us how many holes it has.            to E because E has the form y 2 = f (x)). This con-
-   Surprisingly, it turns out that this geometrical def-     struction of R from P and Q , which is illustrated in
+   Surprisingly, it turns out that this geometrical def-     struc tion of R from P and Q , which is illustrated in
 inition of the genus of a curve is intimately related        figure 1, defines a binary operation on the points of
 to the algebraic question of how many rational points        E. Remarkably, this binary operation turns E into an
 the curve contains. Consider, for instance, the curve        Abelian group, at least when we also include a point
@@ -327,7 +327,7 @@ curve, we first rewrite it as (u + iv)(u − iv) = 1. This      x-axis we get P 
 shows that the function (u, v) → u+iv is a homeomor-           It is laborious, but basically straightforward, to come
 phism from the curve to the set C \ {0} of all nonzero       up with a formula for the “group law” of an elliptic
 complex numbers, which itself is homeomorphic to a           curve—that is, a formula for the coordinates of R in
-sphere with two points removed. The compact if ic at i on          terms of the coordinates of P and Q . Once one does so,
+sphere with two points removed. The compactification          terms of the coordinates of P and Q . Once one does so,
 adds in these points, giving us a surface of genus 0, so     it becomes clear that if P and Q have rational coordin-
 we say that the curve u2 + v 2 = 1 has genus 0. It turns     ates, then so does R. Thus, the set of all rational points
 out that a curve of genus 0 always has either no rational    on an elliptic curve E forms a subgroup. This simple

@@ -8,7 +8,7 @@ forms in n variables.                                      by poincaré [VI.61](
 close friend of Adolf Hurwitz and hilbert [VI.63](/part-06/david-hilbert-18621943). In      special theory of relativity was a consequence of the
 1894, after Hurwitz had moved to Zürich, Minkowski         invariance of the Maxwell equations under the group
 returned from Bonn to his alma mater, and soon             of Lorentz transformations (see general relativity
-became Hilbert’s successor after Hilbert left for Göt-     and the einstein equations [IV.13 §1](/part-04/general-relativity-and-the-einstein-equations)). He reinter-
+became Hilbert’s success or after Hilbert left for Göt-     and the einstein equations [IV.13 §1](/part-04/general-relativity-and-the-einstein-equations)). He re inter-
 tingen. In 1896, Minkowski moved on to Zurich to           preted Maxwell–Lorentz electrodynamics geometrically
 become Hurwitz’s colleague. In 1902, Hilbert nego-         in a mathematical formulation in which no formal dis-
 tiated for another chair of mathematics to be cre-         tinction between the space and time coordinates exists.

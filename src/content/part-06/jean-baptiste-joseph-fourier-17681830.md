@@ -6,15 +6,15 @@ VI.26.    Carl Friedrich Gauss                                                  
 Géométrie (1794), an account of euclidean geometry          Bessel function J0 (x), which was then little studied.
 [I.3 §6.2](/part-01/fundamental-definitions) that emulated the same kind of form and orga-       Fourier presented his findings to the scientific class
 nization and standards of proof of the Greek original.      of the Institut de France in 1807. lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813)
-He also handled aspects that had lain outside Euclid’s      did not like the series, while laplace [VI.23](/part-06/pierre-simon-laplace-17491827) was dis-
+He also handled aspects that had lain out side Euclid’s      did not like the series, while laplace [VI.23](/part-06/pierre-simon-laplace-17491827) was dis-
 concerns, such as alternatives to the parallel postulate,   appointed in the physical modeling. But Laplace also
 related numerical issues such as approximations to the      gave him a clue about solutions of the diffusion equa-
 value of π , and a lengthy summary of planar and spher-     tion for infinite bodies, which led Fourier to find, by
-ical trigonometry. He produced eleven further editions      1811, his integral solution (including inversion) for
+ical trigonometry. He produced eleven further editions      1811, his integral solution (including in version) for
 up to 1823 and there were further posthumous editions       them. His main publication was the book Théorie Ana-
-up until 1839 (which were followed by reprints). It was     lytique de la Chaleur (1822), which greatly influenced
+up until 1839 (which were followed by reprints). It was     ly tique de la Chaleur (1822), which greatly influenced
 a very influential book in mathematics education.            younger mathematicians: for example, the first sat-
-                                                            isfactory proof of the convergence of the series by
+                                                            is factory proof of the convergence of the series by
 Further Reading                                             dirichlet [VI.36] (1829) and their use in fluid dynam-
 de Beaumont, E. 1867. Eloge Historique de Adrien Marie      ics by C. L. M. H. Navier (1825). Less happy was his
   Legendre. Paris: Gauthier-Villars.                        relationship with poisson [VI.27](/part-06/simon-denis-poisson-17811840), who tried to rederive
@@ -50,7 +50,7 @@ study of the diffusion of heat in continuous and solid       Grattan-Guinness, I
 bodies; his “diffusion equation” for this purpose was          Cambridge, MA: MIT Press.
 not only novel in itself but also marked the first large-                                       Ivor Grattan-Guinness
 scale mathematization of physical phenomena that lay
-outside mechanics. To solve this differential equation       VI.26      Carl Friedrich Gauss
+out side mechanics. To solve this differential equation       VI.26      Carl Friedrich Gauss
 he proposed using infinite trigonometric series. These       b. Brunswick, Germany, 1777; d. Göttingen, Germany, 1855
                                                             Algebra; astronomy; complex function theory including elliptic
 series were already known but had a low status. Fourier

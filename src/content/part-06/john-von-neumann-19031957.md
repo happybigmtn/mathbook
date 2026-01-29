@@ -20,7 +20,7 @@ periods, and all sets of periods occur.                      b. Budapest, 1903; 
 ably compatible with the complex structure (the käh-         theory of games; computer engineering; computer science
 ler condition [III.88 §3](/part-03/symplectic-manifolds), always satisfied by algebraic
 varieties in projective space), this result can be refined.   Raised as a Hungarian Jew in the Austrian Empire,
-We get a decomposition of H r into subspaces H p, q           Neumann János Lajos’s political outlook was strongly
+We get a decomposition of H r into subspaces H p, q           Neumann János Lajos’s political out look was strongly
 with p + q = r , with the extreme cases p = r , q =          affected by the five-month reign of the communist Béla
 r corresponding to holomorphic or anti-holomorphic           Kun’s regime after World War I. It formed his liberal
 forms.                                                       and democratic political credo (although he did insist
@@ -52,7 +52,7 @@ singer index theorem [V.2](/part-05/the-atiyahsinger-index-theorem) for elliptic
 and nonlinear analogues of Hodge theory (the Yang–           omatic foundations of set theory, on measure theory
 Mills and the Seiberg–Witten equations), which have          [III.55](/part-03/measures), and on the mathematical foundations of quan-
 played such a key role in the Donaldson theory of            tum mechanics. He also wrote his first paper on game
-four-dimensional manifolds (see differential topol-          theory (“Zur Theorie der Gesellschaftssp iele,” pub-
+four-dimensional manifolds (see differential topol-          theory (“Zur The orie der Gesellschaftssp iele,” pub-
 ogy [IV.7 §2.5](/part-04/dierential-topology)). More recently, Witten and others have      lished in Mathematische Annalen in 1928), proving the
 
 $818$

@@ -9,7 +9,7 @@ Professor of Mathematics: University of Lille (1893–96),         work of frege
 École Normale, Paris (1896–1909); Chair of Theory of Functions
                                                                  (but advocated it only for arithmetic and some analy-
 (specially created for him), Sorbonne, Paris (1909–41);
-first director of the Institut Poincaré (1926)                    sis); Russell read him in detail after forming his own
+first direct or of the Institut Poincaré (1926)                    sis); Russell read him in detail after forming his own
                                                                  position, which continued to be influenced more by
 Borel’s thesis of 1894 started with problems from                Peano.
 within the classical theory of complex functions. With              Now the job was to expound logicism in Peanesque
@@ -33,7 +33,7 @@ developed into a major tool of analysis by lebesgue
 for the axiomatization of probability by kolmogorov
                                                                  which formed a hierarchy of individuals, sets of indi-
 [VI.88](/part-06/andrei-nikolaevich-kolmogorov-19031987).
-                                                                 viduals, sets of sets of individuals, and so on. A set or
+                                                                 vi duals, sets of sets of individuals, and so on. A set or
                                                                  individual could only be a member of a set immediately
 VI.71      Bertrand Arthur William Russell                       above it in the hierarchy; thus, a set could not belong
 b. Trelleck, Wales, 1872; d. Plas Penrhyn, Wales, 1970           to itself. Comparable restrictions were laid on relations
@@ -52,7 +52,7 @@ over the next few years he changed his philosophical             form of the axi
 stance, especially when he recognized the significance            plicative axiom,” that he had found in 1904, just before
 of cantor’s [VI.54](/part-06/georg-cantor-18451918) set theory from 1896 onward, and             Ernst Zermelo. It had a curious role within logicism,
 also discovered in 1900 a group of mathematicians                partly because its logicist status was suspect.
-around peano [VI.62](/part-06/giuseppe-peano-18581932) in Turin. Wishing to raise the level           While there was discussion of Principia Mathemat-
+around peano [VI.62](/part-06/giuseppe-peano-18581932) in Turin. Wish ing to raise the level           While there was discussion of Principia Mathemat-
 of axiomatization and rigor in mathematics, the fol-             ica, concerning both its logic and its logicism, it tended
 lowers of Peano formalized theories as much as possi-            to be too mathematical for the philosophers and too
 ble, including the “mathematical logic” of propositions          philosophical for the mathematicians. However, the

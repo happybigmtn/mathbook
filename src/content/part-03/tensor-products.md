@@ -16,7 +16,7 @@ and                                                          isomorphic to (U �
                                                              spaces, but the definition can easily be generalized to
 That is, it is linear in each variable separately.           any algebraic structure for which some notion of bilin-
    Many important maps, such as inner products               earity makes sense, such as a module [III.81 §3](/part-03/rings-ideals-and-modules) or a
-[III.37](/part-03/bayesian-analysis), are bilinear. The tensor product U ⊗ V of two      C ∗ -algebra [IV.15 §3](/part-04/operator-algebras). Sometimes the tensor product
+[III.37](/part-03/bayesian-analysis), are bilinear. The tensor product U ⊗ V of two      C ∗ -algebra [IV.15 §3](/part-04/operator-algebras). Some times the tensor product
 vector spaces U and V is a way of capturing the idea         of two structures is not what you would immediately
 of the “most general” bilinear map that we can define         expect. For instance, let Zn be the set of integers mod n,
 on U . imes V . To get an idea of what this might mean,           and consider both Zn and Q as modules over Z. Then

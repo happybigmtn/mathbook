@@ -5,7 +5,7 @@ $190$
 distributions [III.18](/part-03/distributions) shows how to use duality to give rigorous definitions of function-like objects such as the Dirac delta function. The article on mirror symmetry [IV.16](/part-04/mirror-symmetry) discusses an astonishing (and still largely conjectural) duality between calabi-yau manifolds [III.6](/part-03/calabiyau-manifolds) and so-called “mirror manifolds.” Often the mirror manifold is much easier to understand than the original manifold, so this duality, like the Fourier transform, makes certain calculations possible that would otherwise be unthinkable.
 And the article on representation theory [IV.9](/part-04/representation-theory) discusses the “Langlands dual” of certain (non Abelian) groups: a proper understanding of this duality would solve many major open problems. III . $20$ Dynamical Systems and Chaos From a scientific point of view, a dynamical system is a physical system, such as a collection of planets or the water in a canal, that changes over time.
 Typically, the positions and velocities of the parts of such a system at a time t depend only on the positions and velocities of those parts just before that time, which means that the behavior of the system is governed by a system of partial differential equations [I.3](/part-01/fundamental-definitions). Often, a very simple collection of partial differential equations can lead to very complicated behavior of the physical system.
-From a mathematical point of view, a dynamical system is any mathematical object that evolves in time according to a precise rule that determines the behavior of the system at time t from its behavior just beforehand. Sometimes, as above, “just beforehand” refers to a time infinitesimally earlier, which is why calculus is involved. But there is also a vigorous theory of discrete dynamical systems, where the “time” t takes integer values, and the “time just before t” is t $- 1$ .
+From a mathematical point of view, a dynamical system is any mathematical object that evolves in time according to a precise rule that determines the behavior of the system at time t from its behavior just beforehand. Some times, as above, “just beforehand” refers to a time infinitesimally earlier, which is why calculus is involved. But there is also a vigorous theory of discrete dynamical systems, where the “time” t takes integer values, and the “time just before t” is t $- 1$ .
 If f is the function that tells us how the system at time t depends on the system at time t $- 1$ , then the system as a whole can be thought of as the process of iterating f : that is, applying f over and over again. As with continuous dynamical systems, a very simple function f can lead to very complicated behavior if you iterate it enough times. In particular, some of the most interesting dynamical systems, both discrete ones and continuous ones, exhibit an extreme sensitivity to initial conditions, which is known as chaos. This is true, for example, of the equations that govern weather.
 One cannot hope to specify exactly the wind speed at every point on the Earth’s surface (not to mention high above III. Mathematical Concepts it), which means that one has to make do with approximations. Because the relevant equations are chaotic, the resulting inaccuracies, which may be small to start with, rapidly propagate and overwhelm the system: you could start with a different, equally good approximation and find that after a fairly short time the system had evolved in a completely different way. This is why accurate forecasting is impossible more than a few days in advance.
 For more about dynamical systems and chaos, see dynamics [IV.14](/part-04/dynamics). III . $21$ Elliptic Curves Jordan S. Ellenberg An elliptic curve over a field K can be defined as an algebraic curve of genus $1$ over K, endowed with a point defined over K. If this definition is too abstract for your tastes, then an equivalent definition is the following: an elliptic curve is a curve in the plane determined by an equation of the form $y^{2} + a^{1}xy + a^{3}y = x^{3} + a^{2}x^{2} + a^{4}x + a^{6}$ .
@@ -18,7 +18,7 @@ III.22.   The Euclidean Algorithm and Continued Fractions                       
 
 rank of the group E(K). For much more on the topic            curve at all—it is an object called, depending on whom
 of rational points on elliptic curves, see arithmetic         you ask, an orbifold [IV.4 §7](/part-04/algebra) or an algebraic stack—
-geometry [IV.5](/part-04/arithmetic-geometry).                                              you can think of it as a curve from which someone has
+geometry [IV.5](/part-04/arithmetic-geometry).                                              you can think of it as a curve from which some one has
    Since E(K) forms an Abelian group, given any prime         removed a few points, folded the points in half or into
 p one can look at the subgroup of elements P such             thirds, and then glued the folded-up points back in.
 that p P = 0. This subgroup is called E(K)[p]. In par-         You might find it reassuring to know that even pro-
@@ -70,7 +70,7 @@ rise in this way to a subset—indeed, a subgroup—of
                                                               Continue in this way, dividing r1 by r2 , r2 by r3 , and so
 the complex numbers; the elements of this subgroup
                                                               on. The remainders get smaller each time but cannot
-are called periods of the elliptic curve. This construc-
+are called periods of the elliptic curve. This con struc-
                                                               go below zero. So the process must stop at some point
 tion can be regarded as the very beginning of Hodge
                                                               with a remainder of 0: that is, with a division that comes
@@ -89,7 +89,7 @@ completely honest, I should say that M1,1 is not quite a                        
 192                                                                                     III. Mathematical Concepts
 
 The process guarantees that the last nonzero remain-           The continued fraction can be constructed directly
-der, 5 in this case, is the highest common factor of m      from the ratio 165/70 = 2.35714 . . . without refer-
+der, 5 in this case, is the highest common factor of m      from the ratio 165/70 = 2.35714 . . . with out refer-
 and n. On the one hand, the last line shows that 5 is a     ence to the integers 165 and 70. We start by subtract-
 factor of the previous remainder 20. Now the last-but-      ing from 2.35714 . . . the largest whole number we can:
 one line shows that 5 is also a factor of the remain-       namely 2. Now we take the reciprocal of what is left:

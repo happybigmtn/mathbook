@@ -2,7 +2,7 @@
 
 $216$
 
-of using that Hamiltonian to describe a physical system. For instance, in classical physics, the Hamiltonian is a function (q , p)   $\to$ H (q , p) of the positions q and momenta p of the system, which then evolve according to Hamilton’s equations: dq ∂H dp ∂H
+of using that Hamiltonian to describe a physical system. For instance, in classical physics, the Hamiltonian is a function (q , p)   $\to$ H (q , p) of the positions q and moment a p of the system, which then evolve according to Hamilton’s equations: dq ∂H dp ∂H
 
  = 
 

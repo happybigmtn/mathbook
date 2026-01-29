@@ -19,9 +19,9 @@ lemma). Thus weak convergence has some unusual fea-
                                                                the process? If you draw a point at the center of each
 tures not present in stronger notions of convergence,
                                                                of the eight faces of the octahedron, you will find that
-in that severe oscillations can sometimes “disappear”
+in that severe oscillations can some times “disappear”
                                                                these points are the eight vertices of a cube. We say that
-in the limit. One advantage of working with distribu-
+in the limit. One advantage of working with dis tr ibu-
                                                                the cube and the octahedron are dual to one another.
 tions instead of smoother functions is that one often
                                                                The same can be done for the other Platonic solids:
@@ -65,7 +65,7 @@ solution is in fact smooth.
 III.19     Duality                                             some plane through the origin. This is associated with
                                                                the great circle in which that plane intersects the unit
 Duality is an important general theme that has manifes-        sphere, once again with opposite points identified.
-tations in almost every area of mathematics. Over and             There is a natural association between lines and
+tat i ons in almost every area of mathematics. Over and             There is a natural association between lines and
 over again, it turns out that one can associate with a         points in the projective plane: each point P is associated
 given mathematical object a related, “dual” object that        with the line L that consists of all points orthogonal to
 helps one to understand the properties of the object           P, and each line L is associated with the single point P
@@ -90,12 +90,12 @@ theorem turns out to be the same as the original one).        a nonzero linear f
                                                               for every v ∈ V , and hence such that T ∗ w ∗ = 0, which
          3   Sets and Their Complements                       contradicts the injectivity of T ∗ . If V and W are finite
 Let X be a set. If A is any subset of X, then the com-        dimensional, then (T ∗ )∗ = T , so in this case we find
-plement of A, written Ac , is the set of all elements of X    that T is an injection if and only if T ∗ is a surjection,
+ple ment of A, written Ac , is the set of all elements of X    that T is an injection if and only if T ∗ is a surjection,
 that do not belong to A. The complement of the com-           and vice versa. Therefore, we can use duality to con-
-plement of A is clearly A, so there is a kind of dual-        vert an existence problem into a uniqueness problem.
+ple ment of A is clearly A, so there is a kind of dual-        vert an existence problem into a uniqueness problem.
 ity between sets and their complements. De Morgan’s           This conversion of one kind of problem into a different
 laws are the statements that (A ∩ B)c = Ac ∪ B c and          kind is another characteristic and very useful feature
-(A ∪ B)c = Ac ∩ B c : they tell us that complement at i on       of duality.
+(A ∪ B)c = Ac ∩ B c : they tell us that complementation       of duality.
 “turns intersections into unions,” and vice versa. Notice        If a vector space has additional structure, the defini-
 that if we apply the first law to Ac and B c , then we find     tion of the dual space may well change. For instance, if
 that (Ac ∩ B c )c = A ∪ B. Taking complements of both         X is a real banach space [III.62](/part-03/normed-spaces-and-banach-spaces), then X ∗ is defined
@@ -159,7 +159,7 @@ Homology and Cohomology
 
 Let $X$ be a compact n-dimensional manifold [I.3](/part-01/fundamental-definitions). If M and M are an i-dimensional submanifold and an (n - i) - dimensional submanifold of X, respectively, and if they are well-behaved and in sufficiently general position, then they will intersect in a finite set of points. If one assigns either $1$ or $- 1$ to each of these points in a natural way that takes account of how M and M intersect, then the sum of the numbers at the points is an invariant called the intersection number of M and M .
 This number turns out to depend only on the homology classes [IV.6](/part-04/algebraic-topology) of M and M . Thus, it defines a map from H i (X) $\times$ H $n - i$ (X) to Z , where we write H r (X) for the r th homology group of X. This map is a group homomorphism in each variable separately, and the resulting pairing leads to a notion of duality called Poincaré duality, and ultimately to the modern theory of cohomology, which is dual to homology. As with some of our other examples, many concepts associated with homology have dual concepts:
-for example, in homology one has a boundary map, whereas in cohomology there is a coboundary map (in the opposite direction). Another example is that a continuous map from X to Y gives rise to a homomorphism from the homology group H i (X) to the homology group H i (Y), and also to a homomorphism from the cohomology group H i (Y) to the cohomology group H i (X). $8$
+for example, in homology one has a boundary map, where as in cohomology there is a coboundary map (in the opposite direction). Another example is that a continuous map from X to Y gives rise to a homomorphism from the homology group H i (X) to the homology group H i (Y), and also to a homomorphism from the cohomology group H i (Y) to the cohomology group H i (X). $8$
 
 Further Examples Discussed in This Book
 

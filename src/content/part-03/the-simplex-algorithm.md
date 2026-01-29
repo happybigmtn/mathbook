@@ -18,7 +18,7 @@ couple this equation to other physical equations such
 as maxwell’s equations [IV.13 §1.1](/part-04/general-relativity-and-the-einstein-equations) of electromag-
 netism, or replace the domain Rn by another space                              Figure 1 Feasible region “P” of an LP.
 such as a torus, a discrete lattice, or a manifold. Alter-
-natively, one could place some impenetrable obstacles
+native ly, one could place some impenetrable obstacles
 in the domain (thus effectively removing those regions               serious real-life problems, n and m can be greater than
 of space from the domain). The study of all of these                100 000.
 variants leads to a vast and diverse field in both pure
@@ -57,7 +57,7 @@ two vectors b ∈ Rm and c ∈ Rn , and an m . imes n matrix                 and
 A = (aij ). The problem is to find values for n non-                 (or solve a perturbation of them if they happen not
 negative decision variables, x1 , . . . , xn , to maximize the      to be independent). There are ten ways to choose two
 objective function c1 x1 + · · · + cn xn , subject to m con-        variables from five. Not all of the ten corresponding
-straints, ai1 x1 + · · · + ain xn ⩽ bi , i = 1, . . . , m. In the   solutions satisfy x1 , x2 , x3 , x4 , x5 ⩾ 0, but five of them
+strain ts, ai1 x1 + · · · + ain xn ⩽ bi , i = 1, . . . , m. In the   solutions satisfy x1 , x2 , x3 , x4 , x5 ⩾ 0, but five of them
 diet problem, n = 77 and m = 9. In the following sim-               do. These are called basic feasible solutions (BFSs), and
 ple example (not a diet problem), n = 2 and m = 3. In               correspond to the vertices of P marked O, B, C, D, E.
 
@@ -97,7 +97,7 @@ Repeat from step 1.
                                                                 to 6 + 13 1 + 43 2 . The coefficient 13 is called a “shadow
   Since there are only finitely many BFSs (i.e., vertices        price,” because it is what we should be willing to pay
 of P), the algorithm must stop.                                 per unit increase in b1 .
-   Now that we have an overview, let us look at the
+   Now that we have an over view, let us look at the
 details. Suppose that at step 0 we pick the BFS of                       3   How the Algorithm Performs
 x = (x1 , x2 , x3 , x4 , x5 ) = (0, 0, 2, 4, 5), correspond-    In running the simplex algorithm the serious work
 ing to vertex O. At step 1 we wish to know whether              comes in computing the dictionaries. To find dictio-

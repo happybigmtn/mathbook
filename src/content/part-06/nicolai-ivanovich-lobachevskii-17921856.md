@@ -4,7 +4,7 @@ VI.31.   Nicolai Ivanovich Lobachevskii                                         
 
 launched the spectral theory of matrices had its author        Möbius is also remembered for the “Möbius band”
 recognized its significance!                                  (or möbius strip [IV.7 §2.3](/part-04/dierential-topology)), a one-sided or nonori-
-                                                             entable surface, but the first mathematician to describe
+                                                             en table surface, but the first mathematician to describe
 Further Reading                                              such a surface was his compatriot J. B. Listing, in July
                                                              1858 (published in 1861). Möbius discovered it only in
 Belhoste, B. 1991. Augustin-Louis Cauchy. A Biography. New   September 1858 (publishing it in 1865). He is also one
@@ -41,16 +41,16 @@ cept of cross-ratio can be introduced, and the duality
                                                              In 1805 the Gymnasium was made the kernel of the
 of points and lines in the plane can be handled alge-
                                                              new University of Kazan, and in 1807 Lobachevskii
-braically. He also introduced a Möbius net, which is
+bra ically. He also introduced a Möbius net, which is
                                                              began to study there. The university had just appointed
 the projective equivalent of squared paper in Cartesian
                                                              Martin Bartels as Professor of Mathematics, and Bar-
 geometry. His work is all the more remarkable because
                                                              tels not only trained Lobachevskii well, but protected
 Möbius knew very little of Poncelet’s radical reinven-
-                                                             him from trouble with the authorities when Lobachev-
+                                                             him from trouble with the authorities when Lo bac hev-
 tion of projective geometry only a few years before.
-                                                             skii was suspected of atheism. Eventually, Lobachev-
+                                                             skii was suspected of atheism. Eventually, Lo bac hev-
 In its turn his work was for a time overshadowed by
                                                              skii graduated not with the ordinary degree but with a
 Jakob Steiner’s synthetic treatment of projective geom-
@@ -58,12 +58,12 @@ Jakob Steiner’s synthetic treatment of projective geom-
 etry of 1832, and then Plücker’s two books on algebraic
                                                              mathematician began.
 curves in the 1830 s, but the simplicity and generality
-                                                                In 1826, after a reform of the university, Lobachev-
+                                                                In 1826, after a reform of the university, Lo bac hev-
 of Möbius’s methods were important in establishing           skii gave a public lecture: “On the principles of geom-
 projective geometry as a rigorous mainstream subject.        etry, with a rigorous demonstration of the theory of
   In the 1830 s Möbius developed a geometrical theory         parallels.” The manuscript of this talk is now lost, but
 of statics and the composition of forces, and it was in      it probably marked the start of Lobachevskii’s aware-
-this connection that he showed that whereas duality in       ness of a non-Euclidean geometry. Lobachevskii was
+this connection that he showed that where as duality in       ness of a non-Euclidean geometry. Lobachevskii was
 plane geometry necessarily gives rise to a conic, duality    soon elected Rector of the University of Kazan, a post
 in space need not. Möbius’s study of duality in space,       he occupied with distinction for thirty years, helping to
 which pairs points with planes, led him to consider the      protect the university from a cholera epidemic in 1830,

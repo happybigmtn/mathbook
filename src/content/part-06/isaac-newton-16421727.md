@@ -42,10 +42,10 @@ etry, since plane curves could be represented by alge-        metrical magnitude
 braic equations in two unknowns. Descartes had, how-          motion. For example, the motion of a point generates
 ever, imposed strict limitations on the class of curves       a line and the motion of a line generates a surface.
 allowed in La Géométrie: “geometrical” (i.e., algebraic)      These he called “fluents,” while the instantaneous rate
-curves were admitted but “mechanical” (i.e., transcen-        of flow he called the “fluxion.” Basing his intuitions on
+curves were admitted but “mechanical” (i.e., trans cen-        of flow he called the “fluxion.” Basing his intuitions on
 dental) ones were not. In common with many of his con-        kinematical models, he formulated a version of what is
 temporaries, Newton felt that such limitations ought to       known today as the fundamental theorem of cal-
-be overcome and that a “new analysis” capable of deal-        culus [I.3 §5.5](/part-01/fundamental-definitions). Namely, he proved that tangent and
+be over come and that a “new analysis” capable of deal-        culus [I.3 §5.5](/part-01/fundamental-definitions). Namely, he proved that tangent and
 ing with mechanical curves ought to be possible. He           area problems are inverses of each other. In modern
 found the answer in infinite series.                           terms, Newton was able to reduce quadrature prob-
    Newton had learned how to deal with infinite series         lems (i.e., calculating curvilinear areas) to the search for

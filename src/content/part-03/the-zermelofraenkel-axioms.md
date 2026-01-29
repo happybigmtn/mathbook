@@ -8,7 +8,7 @@ extremely inefficient. For instance, if the picture is a       theory, so the ZF
 square, the left half of which is entirely white and the     tion for mathematics as a whole. Of course, for this to
 right half of which is entirely black, then it is clearly    be the case it is vital that the operations allowed by the
 much better to send a set of instructions for recon-         ZF axioms do indeed allow one to perform all of the
-structing the picture than a list of every single pixel.     usual mathematical constructions. Some of the axioms
+struc ting the picture than a list of every single pixel.     usual mathematical constructions. Some of the axioms
 Further more, the precise details of the pixels usually do    are rather subtle as a result.
 not matter: if you want a patch of gray, then it is enough      The other way to view the ZF axioms is as giving us
 to put in black and white pixels in the right proportion     just what we need to “build up” the world of all sets,

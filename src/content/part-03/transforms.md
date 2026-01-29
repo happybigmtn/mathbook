@@ -4,17 +4,17 @@ III.91.   Transforms                                                            
 
 The Zariski topology. This is used in algebraic                       whose union is X), we may find a finite subcollection
 geometry [IV.4](/part-04/algebra). It is specified by giving its closed sets             {U1 , . . . , Uk } ⊆ C that still covers X. Specializing this
-(and hence, by complement at i on, its open sets)—these                  definition to R2 with the usual topology, it can indeed
+(and hence, by complementation, its open sets)—these                  definition to R2 with the usual topology, it can indeed
 are the zero loci of systems of polynomial equations.                 be proved that a set S ⊆ R2 is compact (in the subspace
 On C2 , for example, these closed sets are precisely the              topology) if and only if it is closed and bounded. See
-sets of the form                                                      compactness and compact if ic at i on [III.9](/part-03/compactness-and-compactication) for more
+sets of the form                                                      compactness and compactification [III.9](/part-03/compactness-and-compactication) for more
                                                                       information.
 {(z1 , z2 ) : f1 (z1 , z2 ) = f2 (z1 , z2 )
                                       = · · · = fk (z1 , z2 ) = 0},
                                                                       III.91 Transforms
 where f1 , . . . , fk are polynomials. To show that this
                                                                                 T. W. Körner
-defines a topology is somewhat nontrivial, the diffi-
+defines a topology is some what nontrivial, the diffi-
 culty being to show that an arbitrary intersection of                 If we have a finite sequence a0 , a1 , . . . , an of real num-
 closed sets is closed (which is equivalent to the asser-              bers (written briefly as a), then we can look at the
 tion that an arbitrary union of open sets is open). This              polynomial
@@ -36,7 +36,7 @@ Connectedness. The rough idea of connectedness is
 that a connected set is one that does not break up into                           ck = a0 bk + a1 bk−1 + · · · + ak b0 ,
 pieces in an obvious way. Most people would imagine                   where we interpret ai and bi as 0 if i > n. This sequence
 that they could discern, from a list of pictures of rea-              is called the convolution of the sequences a and b.
-sonably sensible subsets of R2 , which were connected                    To see the kind of use that one can make of this
+son ably sensible subsets of R2 , which were connected                    To see the kind of use that one can make of this
 and which were not. But can one give a precise math-                  observation, consider what happens when we throw
 ematical definition that applies to all sets, including                two dice, the first of which has probability au of show-
 potentially very wild ones, and says whether they are                 ing u and the second of which has probability bv of
@@ -46,7 +46,7 @@ which consists of all points with exactly one rational                bu to be t
                                                                                                        1
 coordinate, connected or not (with the subspace topol-                fair die (so they are equal to 6 if 1 ⩽ u ⩽ 6, and 0
 ogy)? It turns out that a definition can indeed be given,              otherwise), then
-and moreover that it applies not just to R2 but to gen-                             Pc (t) = Pa (t)Pb (t)
+and more over that it applies not just to R2 but to gen-                             Pc (t) = Pa (t)Pb (t)
 eral topological spaces. We say that a space X is con-
                                                                                            = ( 16 (t + t 2 + · · · + t 6 ))2 .
 nected if there is no decomposition X = U1 ∪ U2 of X
@@ -70,7 +70,7 @@ If a is the sequence $a^{0}$ , $a^{1}$ , . . . , we can define
 
 $\infty$
 
-an “infinite polynomial” (Ga) (t) to be r $= 0$ a r t r . For the moment, we shall proceed formally, without worrying in what sense the sum exists. Observe that, much as before, (Ga) (t) (Gb) (t)  =  (G (a ∗ b)) (t), where the infinite sequence $c = a$ ∗ b is given by $c^{k} = a^{0}b^{k} + a^{1}b^{k} - {}^{1} +$ · · · $+ a^{k}b^{0}$ . (Again , we call this the convolution of $a$ and $b$ .) There is a well-known problem in which we are asked how many ways there are of making change for r units of currency using notes of given denominations.
+an “infinite polynomial” (Ga) (t) to be r $= 0$ a r t r . For the moment, we shall proceed formally, with out worrying in what sense the sum exists. Observe that, much as before, (Ga) (t) (Gb) (t)  =  (G (a ∗ b)) (t), where the infinite sequence $c = a$ ∗ b is given by $c^{k} = a^{0}b^{k} + a^{1}b^{k} - {}^{1} +$ · · · $+ a^{k}b^{0}$ . (Again , we call this the convolution of $a$ and $b$ .) There is a well-known problem in which we are asked how many ways there are of making change for r units of currency using notes of given denominations.
 (For example, we can ask how many ways there are of making 43 out of 1 and 5 bills .) If we can make r units in a r ways using one set of denominations and b r ways using a completely different set, then it is not hard to see that, if we are allowed to use both sets of denominations, we can make up k units in c k ways, where c k is again the number defined earlier. Let us see how this applies in the simple case where a r is the number of ways of making up r dollars using 1 bills and b r is the number of ways of making up r dollars using 2 bills.
 We observe that $\infty 1$ r (Ga) (t) = $t =$ , - $1$ t $r = 0\infty 1$t2 r = (Gb) (t) = , - $t21r = 0$ and so, using partial fractions, (Gc) (t) = (G (a ∗ b)) (t) = (Ga) (t) (Gb) (t) $11 = =(1t)(1$ t2 ) $(1t)2(1 + t)111 + = + 2(1t)24(1 + t)4(1t)\infty\infty\infty 111r(r + 1)$ tr + $( - 1)r$ tr + = $t_{4}24r = 0r = 0r = 0\infty 2r + 3 + ( - 1)r$ t r . = $4r = 0$ III. Mathematical Concepts Thus we can make change for r dollars in $\frac{1}{2}(r + 1)$ ways when r is odd and $\frac{1}{2}(r + 2)$ ways when r is even.
 In this simple case it is easy to obtain the result directly but the method indicated works automatically in all cases. (The calculations can be made easier if we allow ourselves to work with complex roots .) We have produced a “generating function transform” or “G-transform,” which takes a sequence $a_{0}$ , $a_{1}$ , . . . $\infty$ r into a Taylor series $r = 0$ar$x$ . (These names are not standard: most mathematicians would simply talk about generating functions [IV . 18 § § 2 .
@@ -200,7 +200,7 @@ f ˆ (r) e ir $\theta$ .
 
 $f(\theta) =(1)r = - \infty$
 
-dirichlet [VI.36] proved that this formula holds in its natural interpretation for reasonably well-behaved functions, but the question of the appropriate interpretation and proof for wider classes of functions took much longer to settle (see carleson’s theorem [V.5](/part-05/carlesons-theorem)). Aspects of the question are still open today. It is worth noting that we can obtain qualitative information about a sequence from its Htransform and vice versa without explicit calculation.
+dirichlet [VI.36] proved that this formula holds in its natural interpretation for reasonably well-behaved functions, but the question of the appropriate interpretation and proof for wider classes of functions took much longer to settle (see carleson’s theorem [V.5](/part-05/carlesons-theorem)). Aspects of the question are still open today. It is worth noting that we can obtain qualitative information about a sequence from its Htransform and vice versa with out explicit calculation.
 For example, if a r r m $+ {}^{3}$ forms a bounded sequence, then the rules for term-by-term differentiation show that H a is continuously m times differentiable, and if f is m times continuously differentiable, then repeated integration by parts shows that the numbers r m f ˆ (r) form a bounded sequence. Suppose that f represents a signal fed into a “black box,” such as a telephone system, which gives rise to a resultant signal T f . Many important black boxes in physics and engineering have the “infinite linearity”
 
 $306$
@@ -236,9 +236,9 @@ $\infty 1$
 
 $F(t) =2\pi - \infty$
 
-which translates to the marvelous formula $(FFF)(t) = 2\piF( - t)$ . Like the Fourier sum formula, this Fourier inversion formula can be proved under a wide range of circumstances, though often at the price of reinterpreting the formula in novel ways. Beautiful though the Fourier inversion formula is, it should be noted that, both in practice and in theory, we often need only the observation that F $F = F$ G implies $F = G$. The uniqueness of the Fourier transform is often easier to prove and more convenient to use, and it holds over a wider range of conditions than the inversion formula.
+which translates to the marvelous formula $(FFF)(t) = 2\piF( - t)$ . Like the Fourier sum formula, this Fourier in version formula can be proved under a wide range of circumstances, though often at the price of reinterpreting the formula in novel ways. Beautiful though the Fourier in version formula is, it should be noted that, both in practice and in theory, we often need only the observation that F $F = F$ G implies $F = G$. The uniqueness of the Fourier transform is often easier to prove and more convenient to use, and it holds over a wider range of conditions than the in version formula.
 A similar observation holds for other transforms. When we talked about the Fourier sums associated with $2\pi$ - periodic functions, we said that f ˆ (r) measured the proportion of the signal f with frequency $2\pir$ . In the same way, $(FF)(\lambda)$ gives a measure of the proportion of F composed of frequencies close to $\lambda.$ There is a family of inequalities, known generically as Heisenberg uncertainty principles, which say, in effect, that if most of F F is concentrated in a narrow band, then the signal F must be very spread out.
-This fact places strong restrictions on our ability to manipulate signals and occupies a central place in quantum theory. At the beginning of this article we talked about transformations of sequences and saw that it was easier to handle one-sided sequences than two-sided sequences. In the same way, we can apply Fourier transforms to a wider range of functions F : R $\to$ C if we know that $F(t) = 0$ for $t < 0$ . More specifically, if F is such a onesided function, and if it does not grow too fast, then we can compute the Laplace transform
+This fact places strong restrictions on our ability to manipulate signals and occupies a central place in quantum theory. At the beginning of this article we talked about transformations of sequences and saw that it was easier to handle one-sided sequences than two-sided sequences. In the same way, we can apply Fourier transforms to a wider range of functions F : R $\to$ C if we know that $F(t) = 0$ for $t < 0$ . More specifically, if F is such a one sided function, and if it does not grow too fast, then we can compute the Laplace transform
 
 $\infty F(s)e - (x + iy)$ s $ds$
 

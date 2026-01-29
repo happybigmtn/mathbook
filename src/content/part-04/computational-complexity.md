@@ -7,7 +7,7 @@ Computational Complexity
 algorithms for producing them are not just interesting on their own, but also have important applications in other areas. For example, explicit constructions of error-correcting codes that are as good as random ones are of major interest in coding and information theory [VII.6](/part-07/reliable-transmission-of-information), and explicit constructions of certain Ramsey-type colorings may have applications in derandomization [IV . 20 § 7 . 1 . 1 ](/part-04/computational-complexity) (the process of converting randomized algorithms into deterministic ones).
 It turns out, however, that the problem of finding a good explicit construction is often very difficult. Even the simple proof of Erdős, described in section $3$ . $2$ , that there are red / blue colorings of graphs with $2^{k}/ {}^{2}$ ! vertices containing no monochromatic clique of size k leads to an open problem that seems very difficult. Can we construct, explicitly, such a graph with $n \ge (1 +)$ k vertices in time that is polynomial in n? Here we allow to be any constant, as long as it is positive. This problem is still wide open, despite considerable efforts from many mathematicians.
 The application of other advanced tools, such as algebraic and analytic techniques, spectral methods, and topological proofs, also tends to lead in many cases to nonconstructive proofs. The conversion of these to algorithmic arguments may well be one of the main future challenges of the area. Another interesting recent development is the increased appearance of computer-aided proofs in combinatorics, starting with the proof of the four-color theorem [V.12](/part-05/the-four-color-theorem).
-To incorporate such proofs into the area, without threatening its special beauty and appeal, is a further challenge. These challenges, the fundamental nature of the area, its tight connection to other disciplines, and its many fascinating open problems ensure that combinatorics will continue to play an essential role in the general development of mathematics and science in the future. Further Reading Alon, N., and J. H. Spencer. 2000 . The Probabilistic Method, $2nd$ edn. New York: John Wiley. Bollobás, B. 1978 . Extremal Graph Theory. New York: Academic Press. Graham, R. L., M.
+To incorporate such proofs into the area, with out threatening its special beauty and appeal, is a further challenge. These challenges, the fundamental nature of the area, its tight connection to other disciplines, and its many fascinating open problems ensure that combinatorics will continue to play an essential role in the general development of mathematics and science in the future. Further Reading Alon, N., and J. H. Spencer. 2000 . The Probabilistic Method, $2nd$ edn. New York: John Wiley. Bollobás, B. 1978 . Extremal Graph Theory. New York: Academic Press. Graham, R. L., M.
 Grötschel, and L. Lovász, eds. 1995 . Handbook of Combinatorics. Amsterdam: North-Holland. Graham, R. L., B. L. Rothschild, and J. H. Spencer. 1990 . Ramsey Theory, $2nd$ edn. New York: John Wiley. Janson, S., T. Łuczak, and A. Ruciński. 2000 . Random Graphs. New York: John Wiley. Jukna, S. 2001 . Extremal Combinatorics. New York: Springer. $575$ Matoušek, J. 2002 . Lectures on Discrete Geometry. New York: Springer. Nathanson, M. 1996 . Additive Number Theory: Inverse Theorems and the Geometry of Sumsets. New York: Springer. Pach, J., and P. Agarwal. 1995 . Combinatorial Geometry. New York:
 John Wiley. Tao, T., and V. H. Vu. 2006 . Additive Combinatorics. Cambridge: Cambridge University Press. $IV$ . $20$ Computational Complexity Oded Goldreich and Avi Wigderson $1$ Algorithms and Computation This article is concerned with what can be computed efficiently, and what cannot. We will introduce several important concepts and research areas, such as formal models of computation, measures of efficiency, the P versus N P question, NP-completeness, circuit complexity, proof complexity, randomized computation, pseudo randomness, probabilistic proof systems, cryptography, and more.
 Underlying them all are the related notions of algorithms and computation, and we begin by discussing these. $1$ . $1$ What Is an Algorithm? Suppose that you are presented with a large positive integer N and asked to determine whether it is prime. What should you do? One possibility would be to apply the method of trial division. That is, first see whether N is even, then whether it is a multiple of $3$ , then whether it is a multiple of $4$ , and so on through all the numbers √ up to N.
@@ -17,8 +17,8 @@ what is a procedure, and what counts as efficient? We shall look at these two qu
 $576$
 
 their factorizations) -- and correctness--that, for every N, it correctly tells you whether N is prime. There is also a third, more subtle, condition, which goes to the heart of what is meant by the word “algorithm.” It is that it should consist of simple steps. This is needed in order to rule out ridiculous “procedures” such as, “See whether N has any nontrivial factors; declare N to be prime if and only if it does not.” The problem with this is that we cannot see, just like that, whether N has nontrivial factors.
-By contrast, all that the method of trial division asks of us is that we should do basic arithmetic, such as increasing integers by $1$ , comparing them, and doing long division. Moreover, the procedures of basic arithmetic can be broken down into yet simpler steps: for instance, it is possible to do long division by a succession of elementary operations applied to single digits at a time. In order to understand this simplicity condition better, and to prepare ourselves for a formal definition of the notion of algorithms, let us look at long division in slightly more detail.
-Suppose that you have a piece of paper in front of you and you want to divide 5959578$by$857 . You will write the two numbers down, and then, as the calculation proceeds, you will write other numbers as well. For instance, you may wish to start by writing out all the multiples of $857$ up to $9 \times 857$ . At some point early on you will probably find yourself comparing $5999 = 7 \times 857$ with 5959 : this you do by scanning the numbers from left to right and comparing individual digits. In this case, a difference is first detected in the third digit.
+By contrast, all that the method of trial division asks of us is that we should do basic arithmetic, such as increasing integers by $1$ , comparing them, and doing long division. More over, the procedures of basic arithmetic can be broken down into yet simpler steps: for instance, it is possible to do long division by a succession of elementary operations applied to single digits at a time. In order to understand this simplicity condition better, and to prepare ourselves for a formal definition of the notion of algorithms, let us look at long division in slightly more detail.
+Suppose that you have a piece of paper in front of you and you want to divide 5959578$by$857 . You will write the two numbers down, and then, as the calculation proceeds, you will write other numbers as well. For instance, you may wish to start by writing out all the multiples of $857$ up to $9 \times 857$ . At some point early on you will probably find your self comparing $5999 = 7 \times 857$ with 5959 : this you do by scanning the numbers from left to right and comparing individual digits. In this case, a difference is first detected in the third digit.
 You then write 5142 ( which is $6 \times 857)$ underneath the 5959 , subtract (again by scanning numbers from left to right and performing single-digit operations), write down the difference $817$ , “bring down” the next digit, $5$ , of 5959578 , and repeat the process with the number 8175 . At each stage in this calculation you are modifying the piece of paper in front of you.
 As you do so you need to keep track of which stage of the procedure you are at (whether you are writing out the initial table of multiples of $857$ , or seeing which one is the largest that does not exceed another number, or subtracting one number from another, or bringing down a digit, etc .), and which symbols on the page you are currently dealing with. What is remarkable is that this information has a fixed size, in the sense that it does not increase as the size of the input (that is, the two numbers to be divided) increases.
 Therefore, the procedure can be regarded as making local changes to some “environment,” using repeated
@@ -29,19 +29,19 @@ applications of a fixed rule that does not depend on the input. (This rule will 
 Thus, these can be regarded as computational processes, of sorts. Some of these dynamical systems also demonstrate well the fact that simple, local rules can result in a very complex modification of the environment if they are iterated many times. (See dynamics [IV.14](/part-04/dynamics) for further discussion of this phenomenon .) Thoughts such as these lie behind the idea of a Turing machine, turing’s [VI.94](/part-06/alan-turing-19121954) famous formalization of the notion of an algorithm. It is interesting that he came up with his formalization before computers existed.
 Indeed, this abstraction and central features of it, most notably the existence of a “universal” machine, greatly influenced the actual construction of computers. It is very important to know that the idea of an algorithm can be formalized, so that one can talk precisely about whether there are algorithms that will perform particular tasks, how many steps they need for a given size of input, and so on.
 However, there are many ways of doing this, which all turn out to be equivalent, and for the purposes of understanding this article it is not necessary to go into the details of any particular method. (You can, if you like, think of an algorithm as any procedure that can be programmed on a real computer--slightly idealized so that it has unlimited storage space--and a step of an algorithm as any change of one of the bits of that computer from $a_{0}$ to $a_{1}$ or vice versa .) Nevertheless, just to show roughly how it is done, here is a brief description of the basic features of the Turing
-machine model. To begin with, one makes the observation that all computational problems can be encoded as operations on sequences of $0s$ and $1s$ . (This observation is not just theoretically useful but also very important for the actual building of computers .) For example, all numbers that occur in the course of a computation can be converted into their binary representations; one can also use $1$ to stand for “true” and $0$ to stand for “false” and thereby perform the basic logical operations; and
+machine model. To begin with, one makes the observation that all computational problems can be encoded as operations on sequences of $0s$ and $1s$ . (This observation is not just theoretically useful but also very important for the actual building of computers .) For example, all numbers that occur in the course of a computation can be converted into their binary representations; one can also use $1$ to stand for “true” and $0$ to stand for “false” and there by perform the basic logical operations; and
 
 IV.20.   Computational Complexity                                                                                     577
 
 so on. For this reason we can define a very simple “envi-      function f M is equal to f . A central early result (due to
-ronment” for a Turing machine: it is a “tape,” infinitely      Turing and independently to church [VI.89](/part-06/alonzo-church-19031995)) is that
+ron ment” for a Turing machine: it is a “tape,” infinitely      Turing and independently to church [VI.89](/part-06/alonzo-church-19031995)) is that
 long in both directions, that consists of a row of “cells,”   some natural functions are not computable. (For more
 each of which contains either a 0 or a 1. Before the          details, see the insolubility of the halting prob-
 computation starts, a certain prespecified portion of          lem [V.20](/part-05/the-insolubility-of-the-halting-problem).) However, complexity theory deals only with
 this tape is filled with the input, which is a sequence        computable functions, and studies which of these can
 of 0 s and 1 s. The algorithm is a little control mecha-        be computed efficiently.
 nism. At any one time, this mechanism can be in one              Using the notation we have just introduced, we can
-of a finite set of states, and it is located at one of the     formally describe various different kinds of computa-
+of a finite set of states, and it is located at one of the     formally describe various different kinds of com put a-
 cells of the tape. According to the state it is in and the    tional tasks, of which two major examples are search
 value, 0 or 1, that it sees at the cell it has reached, it    problems and decision problems. The aim of a search
 makes three decisions: whether to change the value in         problem is, informally speaking, to find a mathematical
@@ -58,7 +58,7 @@ number of steps taken by that Turing machine. Remark-         positive integers 
 ably, this very simple computational model is enough          x Ry if and only if N is a composite number and K is a
 to capture the full power of computation: in theory one       nontrivial factor of N. Informally, this search problem
 could build a Turing machine, out of clockwork, say,          would be, “Find a nontrivial factor of N.” If M is an algo-
-that would be able to do whatever a modern supercom-          rithm that computes a certain function f M : I → I, then
+that would be able to do whatever a modern super com-          rithm that computes a certain function f M : I → I, then
 puter can do. (However, it would take too long over each      we say that M solves the search problem R if f M (x) is
 step to be practical for anything but the very simplest       a valid solution of x for every problem instance x that
 of computations.)                                             has a solution. For example, it solves the search prob-
@@ -116,7 +116,7 @@ Much of this article will be concerned with a very general analysis of the power
 
 IV.20.   Computational Complexity                                                                                  579
 
-it involves a change of focus. Returning to our exam-        nate in polynomial time, whereas trial division for pri-
+it involves a change of focus. Returning to our exam-        nate in polynomial time, where as trial division for pri-
 ple of primality testing, it is not too hard to estimate     mality testing does not. Other familiar examples of
 how long various algorithms take, and indeed we had          tasks with efficient algorithms are putting a set of num-
 no trouble in seeing that trial division would take a very   bers in increasing order, computing the determinant
@@ -137,12 +137,12 @@ an algorithm M that solves the task such that TM ⩽ T         efficient algorit
 intrinsically hard, then all you have to do is devise an     of notation: if M is a Turing machine and x is an input,
 algorithm with low complexity that solves this task.         then M(x) is the output of x. (Earlier we wrote f M (x)
 But what if you want to show that this task is intrin-       for this function.) Since we are considering decision
-sically hard? Then you have to prove, for every possible     problems, M(x) will be 0 or 1.
+sical ly hard? Then you have to prove, for every possible     problems, M(x) will be 0 or 1.
 low-complexity algorithm M, that M does not solve this
 task. This is much harder: even after half a century of      Definition. A decision problem S ⊆ I is solvable in
 intensive work, the best results that are known are very     polynomial time if there is a Turing machine M, termi-
 weak. Notice a big difference between the two kinds of        nating in polynomial time, such that M(x) = 1 if and
-research: one can find algorithms without knowing how         only if x ∈ S.
+research: one can find algorithms with out knowing how         only if x ∈ S.
 the concept of “algorithm” is formalized, but to ana-
                                                                The class of decision problems that are solvable in
 lyze all algorithms with a certain property, it is essen-
@@ -159,7 +159,7 @@ rithms and computational tasks. But we have not yet          nomial time as the 
 addressed the question of when we should regard an           arbitrary, and theories could be developed with other
 algorithm as efficient, or a computational task as effi-         choices, but it has amply justified itself. The main rea-
 ciently solvable. We shall propose a definition of effi-        son for this is that the class of polynomials (or func-
-ciency that seems somewhat arbitrary and then explain        tions bounded above by a polynomial) is closed under
+ciency that seems some what arbitrary and then explain        tions bounded above by a polynomial) is closed under
 why it is in fact a surprisingly good one.                   various operations that arise naturally in computation.
    If M is an algorithm, then we regard it as effi-            In particular, the sum, product, or composition of two
 cient if and only if it terminates in polynomial time.       polynomials is again a polynomial. This allows us, for
@@ -168,17 +168,17 @@ that the worst-case complexity TM always satisfies the        operation when we 
 inequality TM (n) ⩽ cnk . In other words, the time taken     algorithms for primality testing. In fact, long division
 by the algorithm is bounded above by a polynomial            takes more than one step, but it is in P so the time it
 function of the length of the input string. It is not        takes does not affect whether an algorithm that uses it
-hard to convince yourself that the familiar methods          is itself in P. In general, if we use the basic program-
+hard to convince your self that the familiar methods          is itself in P. In general, if we use the basic program-
 for adding or multiplying two n-digit numbers termi-         ming technique of subroutines, and if our subroutines
 
 580                                                                                       IV. Branches of Mathematics
 
-are in P, then we will preserve the efficiency of the               This informal example illustrates an important fea-
+are in P, then we will preserve the efficiency of the               This in formal example illustrates an important fea-
 algorithm as a whole.                                          ture of many search problems: that once you find a
    Almost all computer programs that are used in prac-         solution, it is easy to recognize that it is a solution. The
 tice turn out to be efficient in this theoretical sense. Of      hard part is to find the solution in the first place. Or
 course, the converse is not true: an algorithm that runs       at least, so it seems. But actually proving that search
-in time n100 is completely useless despite the fact that       problems of this kind are hard is a famous unsolved
+in time n100 is completely use less despite the fact that       problems of this kind are hard is a famous unsolved
 n100 is a polynomial. However, this seems not to mat-          problem, the P versus N P question.
 ter. It is unusual to discover even an n10 -time algorithm        Another search problem with this quality, which is in
 for a natural problem, and on the rare occasions when          fact quite general and has a natural appeal to mathe-
@@ -221,7 +221,7 @@ search among many possibilities (all permutations of           takes as input a 
 those letters), perhaps building up fragments of words         outputs 1 if K is a nontrivial factor of N and 0 other-
 and hoping that inspiration will strike. Now consider          wise. If N is prime, then M(N, K) = 0 for every K, while
 the following question: can the letters of CHAIRMITTE          if N is composite there will always exist an integer K
-be rearranged to form the word “arithmetic”? It is very        such that M(N, K) = 1. Moreover, in this case the string
+be rearranged to form the word “arithmetic”? It is very        such that M(N, K) = 1. More over, in this case the string
 easy (if slightly boring) to check that the answer is yes.     that encodes K will be at most as long as the string
 
 IV.20.   Computational Complexity                                                                                                          581
@@ -264,8 +264,8 @@ whether it works. (This is more or less what we do with
                                                                         managed to prove it. So the big conjecture is that P does
 trial division.) Can this trivial algorithm be improved?
                                                                         not equal N P. That is, finding is harder than checking,
-Sometimes it can, even in very nonobvious cases. In
-                                                                        and efficient verification procedures do not necessar-
+Some times it can, even in very nonobvious cases. In
+                                                                        and efficient verification procedures do not ne ces sar-
 fact, recently it was proved that the problem of deter-
                                                                         ily lead to efficient algorithms for decision problems.
 mining whether a number N is composite belongs to P.
@@ -334,7 +334,7 @@ $583$
 
 this is that if membership of S cannot be decided in polynomial time, then neither can membership of T . In short, if S is hard, then T is hard. Now let us give a very important definition based on the notion of polynomial-time reducibility. Definition (NPcompleteness). A decision problem S is NP-complete if S is in N P and every decision problem in N P is polynomial-time reducible to S. That is, if S has a polynomial-time algorithm, then so do all other problems in N P. Thus, an NP-complete (decision) problem is in a certain sense “universal” among all problems in N P.
 At first this may seem a peculiar definition, because it is far from obvious that there are any NP-complete problems! However, in 1971 , it was proved that SAT is NP-complete, and since then thousands of problems have been proved to be NP-complete as well. (Hundreds of them are listed in Garey and Johnson ( 1979 ).) Other examples are $3SAT$ and $3$ - colorability . The significance of $3SAT$ is that it is one of the most basic of all NP-complete problems.
-(It is not too hard to show that, by contrast, $2SAT$ and $2$ - colorability have polynomial-time algorithms .) In order to prove that a decision problem S is NP-complete, one starts with a known NP-complete problem S and finds a polynomial-time reduction from S to S. It now follows that if S has a polynomial-time algorithm, then so does S and hence so do all other problems in N P. Sometimes these reductions are quite simple, like our reduction of $3$ - colorability to $3SAT$ . But sometimes they need a great deal of ingenuity. Here are two further NP-complete problems. Subset sum:
+(It is not too hard to show that, by contrast, $2SAT$ and $2$ - colorability have polynomial-time algorithms .) In order to prove that a decision problem S is NP-complete, one starts with a known NP-complete problem S and finds a polynomial-time reduction from S to S. It now follows that if S has a polynomial-time algorithm, then so does S and hence so do all other problems in N P. Some times these reductions are quite simple, like our reduction of $3$ - colorability to $3SAT$ . But some times they need a great deal of ingenuity. Here are two further NP-complete problems. Subset sum:
 given a sequence of integers $a^{1}$ , . . . , a n and another integer b, does there exist a set J such that
 
 $i\in^{J}a^{i} = b?$
@@ -346,14 +346,14 @@ $584$
 Factor in interval: given x, a, b, does x have a prime factor y such that $a \le y \le b?$ A polynomial-time algorithm for this can be combined with a simple binary search to find a prime factor if it exists. The reason this problem is unlikely to be NPcomplete is that it also belongs to co N P. (Roughly speaking, this is true because one can exhibit the prime factorization of x and demonstrate in polynomial time that it really is a prime factorization .) If it were NPcomplete, then it would follow that N P ⊂ co N P, and hence, by symmetry, that N $P = co$ N P.
 The second example is the following. Graph isomorphism: given two graphs G and H with n vertices, is there a function φ from the vertex set of G to the vertex set of H such that φ (x) φ (y) is an edge of H when, and only when, xy is an edge of G? Notice with these two examples how surprising it is that they can be reduced in polynomial time to problems such as $3SAT$ or $3$ - colorability . This is particularly true of the first, which has nothing to do with graphs or satisfiability of logical formulas. If P $\neq$ N P, then no NP-complete problem has a polynomial-time decision procedure.
 Consequently, the corresponding search problems cannot be solved in polynomial time. Thus, a proof that a problem is NP-complete is often taken as evidence that this problem is hard: if we could solve it, then we could also efficiently solve a multitude of other problems. But thousands of researchers (and tens of thousands of engineers) have, over several decades, tried and failed to find such procedures. NP-completeness has more positive aspects as well.
-Sometimes it is possible to prove a fact about all sets in N P by establishing it only for some NP-complete set (and noting that polynomial-time reductions preserve the claimed property). Famous examples include the existence of “zero-knowledge proofs,” established first for $3$ - coloring (see section $6$ . $3$ . 2), and the so-called PCP theorem, established first for $3SAT ($ see section $6$ . $3$ . 3). $5$ Lower Bounds As we mentioned earlier, it is very much harder to prove that certain problems cannot be solved efficiently than it is to find efficient algorithms (when they exist).
+Some times it is possible to prove a fact about all sets in N P by establishing it only for some NP-complete set (and noting that polynomial-time reductions preserve the claimed property). Famous examples include the existence of “zero-knowledge proofs,” established first for $3$ - coloring (see section $6$ . $3$ . 2), and the so-called PCP theorem, established first for $3SAT ($ see section $6$ . $3$ . 3). $5$ Lower Bounds As we mentioned earlier, it is very much harder to prove that certain problems cannot be solved efficiently than it is to find efficient algorithms (when they exist).
 In this section, we shall survey some of the basic methods that have been developed for finding lower bounds for the complexity of natural computational problems. That is,
 
 IV. Branches of Mathematics
 
-we shall discuss results that say that no algorithm can run in fewer than a given number of steps. In particular, we shall introduce the theories of circuit complexity and proof complexity. The first is defined with the long-term goal of proving that P $\neq$ N P, and the second is a program that is aimed at proving that N P $\neq$ co N P. Both of these theories use the notion of a directed acyclic graph, which models the flow of information in a computation or a proof, and the sequence of derivations of each new piece of information from previous ones.
-A directed graph is a graph for which each edge is given a direction. One can visualize it as a graph with arrows along the edges. A directed cycle is a sequence of vertices $v^{1}$ , . . . , v t such that for every i between $1$ and $t - 1$ there is an edge pointing from $v^{i}$ toward $v^{i} + {}^{1}$ and there is also an edge pointing from v t back to $v^{1}$ . If a directed graph G has no directed cycle, then it is called acyclic. We shall abbreviate the phrase “directed acyclic graph” by writing DAG.
-It is not hard to see that in every DAG there will be some vertices with no incoming edges and some with no outgoing edges. These are called inputs and outputs, respectively. If $u$ and $v$ are vertices of a DAG and there is an edge from u to v, then we say that u is a predecessor of v. The basic idea of the DAG model is that you place information at each input, and at each vertex v you have a very simple rule that derives some information at v from the information at all the predecessors of v.
+we shall discuss results that say that no algorithm can run in fewer than a given number of steps. In particular, we shall introduce the theories of circuit complexity and proof complexity. The first is defined with the long-term goal of proving that P $\neq$ N P, and the second is a program that is aimed at proving that N P $\neq$ co N P. Both of these theories use the notion of a directed a cyclic graph, which models the flow of information in a computation or a proof, and the sequence of derivations of each new piece of information from previous ones.
+A directed graph is a graph for which each edge is given a direction. One can visualize it as a graph with arrows along the edges. A directed cycle is a sequence of vertices $v^{1}$ , . . . , v t such that for every i between $1$ and $t - 1$ there is an edge pointing from $v^{i}$ toward $v^{i} + {}^{1}$ and there is also an edge pointing from v t back to $v^{1}$ . If a directed graph G has no directed cycle, then it is called a cyclic. We shall abbreviate the phrase “directed a cyclic graph” by writing DAG.
+It is not hard to see that in every DAG there will be some vertices with no in coming edges and some with no out going edges. These are called inputs and outputs, respectively. If $u$ and $v$ are vertices of a DAG and there is an edge from u to v, then we say that u is a predecessor of v. The basic idea of the DAG model is that you place information at each input, and at each vertex v you have a very simple rule that derives some information at v from the information at all the predecessors of v.
 Starting at the inputs, you gradually move through the graph, working out the information at a vertex once you have worked out the information for all its predecessors, until you have reached all the outputs.
 
 $5$ . $1$
@@ -375,7 +375,7 @@ y1 , . . . , ym , then f (x1 , . . . , xn ) = (y1 , . . . , ym ).   we have prov
    It is not hard to prove that any function from In to             large. If f is a problem in N P, then this proves that
 Im can be computed in this way. Thus, we say that AND,              P ≠ N P.
 OR, and NOT gates, or more briefly “∧”, “∨”, and “¬”,                   The circuit model of computation is finite rather than
-form a complete basis. Moreover, this is true even if we            infinite, which raises an issue called uniformity. When
+form a complete basis. More over, this is true even if we            infinite, which raises an issue called uniformity. When
 restrict attention to DAGs where every vertex has at                we build a family of circuits from a Turing machine,
 most two predecessors. In fact, we shall now assume                 the circuits are all in a certain sense “the same.” More
 that our DAGs have this property unless we say other-               precisely, there is an algorithm that can generate these
@@ -422,7 +422,7 @@ lowing fact: if there is a polynomial-time algorithm for            complexity c
 computing f , then the function S(f ) is bounded above              in fact all be the same, which would be very unexpected.
 by a polynomial. More generally, given any function                 In any case, it is hard to imagine that there might
 f : I → I, let fn stand for the restriction of f to In . If f       be a sequence of polynomial-sized circuits computing
-has Turing complexity T (as defined in section 2.1), then            an NP-complete problem without its being possible to
+has Turing complexity T (as defined in section 2.1), then            an NP-complete problem with out its being possible to
 S(fn ) is bounded above by a polynomial function of                 generate such a sequence by an efficient algorithm.
 
 586                                                                                      IV. Branches of Mathematics
@@ -447,7 +447,7 @@ combinatorial techniques.
                                                              time algorithm, which implies a linear upper bound for
 a natural computational model of “hardware complex-
                                                              S(ADD) as well. For multiplication, the standard school
-ity,” so their study is of independent interest. Moreover,
+ity,” so their study is of independent interest. More over,
                                                              algorithm runs in quadratic time: that is, the num-
 some of the techniques for analyzing Boolean func-
                                                              ber of steps is proportional to n2 . This can be greatly
@@ -489,7 +489,7 @@ is proved via a counting argument, which does not give       to be a set of vert
 us a way of actually exhibiting a hard function. That is,    an edge. Let us define CLIQUE(G) to be 1 if G contains
                                                                                       √
 we cannot prove such hardness for any explicit function      a clique of size at least n and 0 otherwise.
-f , where “explicit” means that we place some algorith-         Notice that if we add an edge to G, then either
+f , where “explicit” means that we place some alg or ith-         Notice that if we add an edge to G, then either
 mic restriction on f , such as belonging to N P or EXP.      CLIQUE(G) changes from 0 to 1 or it stays the same.
 In fact, the situation is even worse: no nontrivial lower    What it will not do is change from 1 to 0: adding an
 bound is known for any explicit function. For any func-      edge obviously cannot destroy a clique.
@@ -511,7 +511,7 @@ allowing only AND and OR gates, and disallowing NOT          cuit. If so, we wou
 gates. Notice that “∧” and “∨” are monotone opera-           However, the same method yields a super-polynomial
 tions, in the sense that changing an input bit from 0        lower bound for the size of monotone circuits that com-
 to 1 will not change the output of the gate from 1 to        pute the PERFECT MATCHING function, which is mono-
-0, whereas “¬” is certainly not monotone in this sense.      tone and is in P. Given a graph G, this function out-
+0, where as “¬” is certainly not monotone in this sense.      tone and is in P. Given a graph G, this function out-
 A circuit that uses just “∧” and “∨” is called a mono-       puts 1 if one can pair up the vertices in such a way
 tone circuit. It is not hard to show that every monotone     that every pair is connected by an edge and 0 other-
 function f : In → Im can be computed by a monotone           wise. Further more, exponential-size lower bounds are
@@ -551,7 +551,7 @@ The new gates are chosen to satisfy two key properties.         A very good feat
       circuit that approximates the original circuit for     sor at each gate of a circuit of depth d, and at each
       “most” choices of inputs.                              phase you evaluate all gates for which the inputs have
  (ii) On the other hand, every circuit (regard less of its    already been evaluated, then the number of phases you
-      size) containing only the approximating gates “ ̃  ∧”   need is d. Parallel time is another important computa-
+      size) containing only the approximating gates “ ̃  ∧”   need is d. Parallel time is another important com put a-
       and “ ̃∨” computes a function that can be shown to      tional resource. Here again our knowledge is scarce—
       be “far” from CLIQUE, in the sense that it disagrees   we do not know how to disprove the statement that
       with CLIQUE on many inputs.                            every explicit function can be computed by a circuit of
@@ -562,7 +562,7 @@ above theorem provides us with an explicit monotone          comes necessary to 
 588                                                                                       IV. Branches of Mathematics
 
 fan-in, meaning that the AND and OR gates are allowed        replace the arithmetic operations above. For example, if
-to have any number of incoming edges. (If we do not          x = (x1 , x2 ) is a Boolean string of length 2, then PAR(x)
+to have any number of in coming edges. (If we do not          x = (x1 , x2 ) is a Boolean string of length 2, then PAR(x)
 allow this, then each output bit can depend only on          is given by the formula (¬x1 ∧ x2 ) ∨ (x1 ∧ ¬x2 ).
 a constant number of input bits.) With this very strin-         Any formula can be represented by a circuit, but this
 gent restriction on circuit depth, it is possible to prove   circuit has the additional property that its underlying
@@ -643,7 +643,7 @@ On the other hand, it has also been shown that if there is a natural proof that 
 $589$
 
 complexity theorists, you believe that these problems do not have efficient algorithms, then you also believe that there is no natural proof that P $\neq$ N P. The connection between natural proofs that P $\neq$ N P and some notoriously hard problems is through the notion of pseudo randomness, which is discussed in section $7$ . $1$ . One interpretation of this result is that it shows that general circuit lower bounds are “independent” of a certain natural fragment of peano arithmetic [III.67](/part-03/the-peano-axioms).
-This gives a hint that the P versus N P question may be independent of all of Peano arithmetic, or even of the axioms of zfc [IV.22](/part-04/set-theory), although few believe the latter to be the case. $5$ . $2$ Arithmetic Circuits As mentioned earlier, directed acyclic graphs can be used in various different contexts. We shall now leave Boolean functions and operations and look instead at arithmetical operations and functions that take numerical values, by which we mean values in Q or R or indeed in any field [I.3](/part-01/fundamental-definitions).
+This gives a hint that the P versus N P question may be independent of all of Peano arithmetic, or even of the axioms of zfc [IV.22](/part-04/set-theory), although few believe the latter to be the case. $5$ . $2$ Arithmetic Circuits As mentioned earlier, directed a cyclic graphs can be used in various different contexts. We shall now leave Boolean functions and operations and look instead at arithmetical operations and functions that take numerical values, by which we mean values in Q or R or indeed in any field [I.3](/part-01/fundamental-definitions).
 If F is a field, then we can consider a DAG in which the inputs are now elements of F and the gates are the field operations “ + ” and “ $\times$ ” (including multiplication by fixed field elements such as $- 1)$ . Then, just as with Boolean circuits, once we know the inputs we can assign values to all vertices of the DAG: at each vertex one just applies the corresponding arithmetical operation to the values assigned to its predecessors, once these have been calculated. An arithmetic circuit computes a polynomial function p :
 F n $\to$ F m , and every homogeneous polynomial function is computed by some circuit. To allow the computation of inhomogeneous polynomials, we augment the model by allowing a special input vertex whose value is the constant “ $1$ ” of the field. Let us consider a couple of examples. The polynomial $x^{2} - y^{2}$ , which as written requires two multiplications and one addition, can be computed by the circuit (x + y) (x - y) which requires instead one multiplication and two additions.
 The polynomial x d , which is defined using $d - 1$ multiplications, may in fact be computed with only $2$ log d multiplications: first compute x, $x^{2}$ , $x^{4}$ , . . . (each term in the sequence squaring the previous one), and then multiply together the appropriate subset of these powers to get the exponent d. We denote by S F (p) the smallest possible size of a circuit that computes p. When we give no subscript, we shall assume that $F = Q$ , the field of rational numbers.
@@ -684,8 +684,8 @@ Computational Complexity
 Now let us focus on specific polynomials of central importance. The most natural and well-studied candidate for the last open problem is matrix multiplication [I.3](/part-01/fundamental-definitions) : given two $m \times m$ matrices A,  B, how many operations are needed to compute their product? The obvious algorithm, which follows from the definition of matrix product, requires about $m^{3}$ operations. Can this be beaten? It turns out that what really matters here is the number of multiplications.
 The first hint that one can improve on the obvious algorithm comes from the first nontrivial case (i . e . , m $= 2$ ). While the usual algorithm uses eight multiplications, one can in fact reorganize the calculation and get away with only seven. This leads to a recursive argument: given $a 2m \times 2m$ matrix, think of it as $a 2 \times 2$ matrix, each entry of which is itself an m $\times$ m matrix. It follows that doubling the size of the matrix increases the number of multiplications needed by a factor of at most $7$ .
 This argument leads to an algorithm with only $m$ log 2 7 multiplications (and roughly as many additions). These ideas have been developed and extended to yield the following strong, but not quite linear, upper bound, where we denote by $n = m^{2}$ the natural input size, and by MM the matrix multiplication function. Theorem. For every field F there is a constant c such that $S^{F}(MM) \le cn^{1}$ . 19 . So what is the complexity of MM (even if one counts only multiplication gates) ? Is it linear, or almost linear (something like n log n, say), or is S (MM) at least n α for some $α > 1$ ?
-This is a famous open problem. We next consider two polynomials in the $n = m^{2}$ variables representing an m $\times$ m matrix. We have already mentioned the determinant, but we shall also look at the permanent, which is defined by the determinant formula, except that now all the signs are positive. (In other words, one simply adds up m! products instead of adding some and subtracting others .) We shall denote these by DET and PER, respectively. While DET plays a major role in classical mathematics, PER is somewhat esoteric (though it appears in statistical mechanics and quantum mechanics).
-In the context of complexity theory both polynomials are of great importance, because they are representative of natural complexity classes. DET has relatively low complexity (and is related to the class of polynomials having polynomial-sized arithmetic formulas), while PER seems to have high complexity (indeed , it is complete for a complexity class of counting problems denoted #P, which extends N P). Thus, it is natural $591$ to conjecture that PER is not polynomial-time reducible to DET. One restricted type of reduction that makes sense in this algebraic context is called projection.
+This is a famous open problem. We next consider two polynomials in the $n = m^{2}$ variables representing an m $\times$ m matrix. We have already mentioned the determinant, but we shall also look at the permanent, which is defined by the determinant formula, except that now all the signs are positive. (In other words, one simply adds up m! products instead of adding some and subtracting others .) We shall denote these by DET and PER, respectively. While DET plays a major role in classical mathematics, PER is some what esoteric (though it appears in statistical mechanics and quantum mechanics).
+ In the context of complexity theory both polynomials are of great importance, because they are representative of natural complexity classes. DET has relatively low complexity (and is related to the class of polynomials having polynomial-sized arithmetic formulas), while PER seems to have high complexity (indeed , it is complete for a complexity class of counting problems denoted #P, which extends N P). Thus, it is natural $591$ to conjecture that PER is not polynomial-time reducible to DET. One restricted type of reduction that makes sense in this algebraic context is called projection.
 Suppose we wish to find an algorithm for computing the permanent of an m $\times$ m matrix A. One approach might be to construct an M $\times$ M matrix B such that each of its entries is either a (variable) entry of A or a fixed element of the field, and to do so in such a way that the determinant of B equals the permanent of A. Then, as long as M is not too much larger than m, we can use the efficient algorithm for DET to give us an efficient algorithm for PER. A projection of this kind is known to exist with M $= 3$ m , but this is nothing like good enough.
 Therefore we ask the following question. Open problem. Can the permanent of an m $\times$ m matrix be expressed as the determinant of an M $\times$ M matrix, with M bounded above by a polynomial in m? If so, then $P = N$ P: therefore, the answer is likely to be no. Conversely, if the answer could be shown to be no, then this would provide a significant step toward proving that P $\neq$ N P, though it would probably not imply it. $5$ . $3$
 
@@ -698,8 +698,8 @@ The theorem in question is the well-known pigeonhole principle, which states tha
 $592$
 
 [I.2](/part-01/language-and-grammar) f from a finite set $X$ to a smaller finite set Y . Let us reformulate this theorem and then discuss the complexity of proving it. First, we turn it into a sequence of finite statements. For each m $>$ n let PHP m n stand for the statement, “You cannot fit m pigeons into n holes if each pigeon needs a hole to itself.” A convenient way of formulating this mathematically is to use an m $\times$ n matrix of Boolean variables x ij .
-This can be used to describe a hypothetical mapping if we interpret $xij = 1$ to mean that the ith pigeon is placed in the jth hole. The pigeonhole principle states that either some pigeon is not mapped anywhere or two pigeons are mapped to the same hole. In terms of the matrix, this says that either there is some i such that $xij = 0$ for every j, or we can find $i \n\text{eq i}$ and $j$ such that xij = (xi)j = 1 .
-5 These conditions are easily expressible as a propositional formula in the variables x ij (that is, an expression built out of the x ij using “∧”, “∨”, and “ ¬ ”), and the pigeonhole principle is the statement that this formula is a tautology: that is, it is satisfied by every assignment of true or false values (or equivalently $1$ or 0) to the variables. How can we prove this tautology to someone who can read our proof and perform simple, efficient computations? Here are a few possibilities which differ from each other in a number of ways. • The standard proof uses symmetry and induction.
+This can be used to describe a hypothetical mapping if we interpret $xij = 1$ to mean that the ith pigeon is placed in the jth hole. The pigeonhole principle states that either some pigeon is not mapped any where or two pigeons are mapped to the same hole. In terms of the matrix, this says that either there is some i such that $xij = 0$ for every j, or we can find $i \n\text{eq i}$ and $j$ such that xij = (xi)j = 1 .
+5 These conditions are easily expressible as a propositional formula in the variables x ij (that is, an expression built out of the x ij using “∧”, “∨”, and “ ¬ ”), and the pigeonhole principle is the statement that this formula is a tautology: that is, it is satisfied by every assignment of true or false values (or equivalently $1$ or 0) to the variables. How can we prove this tautology to some one who can read our proof and perform simple, efficient computations? Here are a few possibilities which differ from each other in a number of ways. • The standard proof uses symmetry and induction.
 $m - 1$ It reduces PHP m n to PHP $n - {}^{1}$ by saying that once the first pigeon has been assigned a hole, the task that is left is to place the remaining $n - 1$ pigeons into $m - 1$ holes. Notice that these holes may not be the first $n - 1$ holes, so for such an argument to become a formal proof one must argue by symmetry. Our proof system must be strong enough to capture this symmetry (which amounts to a renaming of the variables), and it must also allow us to use induction.
 • At the other extreme, one can obtain a trivial proof, which requires only “mechanical reasoning,” by simply presenting an evaluation of the formula for every possible input. As there are mn variables, the proof length is $2$ mn , which is exponential in the size of the formula describing the assertion PHP m n . • A more sophisticated (“ mechanical ”) proof uses counting. Assume for a contradiction that there $5$ . Note that we have not ruled out the possibility that some pigeon is mapped to more than one hole--we could do so, but the principle remains valid even if we do not. IV.
 Branches of Mathematics exists an assignment of truth values to the variables that falsifies the formula. Since each pigeon is mapped to some hole, the assignment must have at least m $1s$ . But since each hole contains at most one pigeon, the assignment must contain at most $n 1s$ . Therefore, $m \le n,$ which contradicts the assumption that m $>$ n. For this proof to be admissible, our system has to allow inferences powerful enough to do counting of this kind. The lesson from the above example is that proofs and their length depend on the underlying proof system.
@@ -713,7 +713,7 @@ IV.20.   Computational Complexity                                               
 
    Notice that MTT runs in polynomial time in its input                 is the statement that follows from its predecessors by
 length. The point, of course, is that for typical interest-             means of the specified rule.
-ing formulas such as the pigeonhole principle, whose                       There is an equivalent and somewhat more conve-
+ing formulas such as the pigeonhole principle, whose                       There is an equivalent and some what more conve-
 size depends polynomially on the number of variables,                   nient view of (simple) proof systems, namely as (sim-
 the input length is extremely long, since the proof π                   ple) refutation systems. These encapsulate the idea of
 has length exponential in the length of the formula.                    a proof by contradiction. We assume the negation of
@@ -743,7 +743,7 @@ is polynomial if and only if N P = co N P.
 good sense to begin by considering simpler (and thus                    ing argument fails. The reason is that, while the number
                                                                                                      n
 weaker) proof systems before moving on to more and                      of functions on n bits is 22 , there are at most 2 n tau-
-more complex ones. Moreover, there are tautologies                      tologies of length n. Thus, in proof complexity, even
+more complex ones. More over, there are tautologies                      tologies of length n. Thus, in proof complexity, even
 and proof systems that naturally suggest themselves                     the existence of a hard tautology, let alone an explicit
 as good ones to study, systems in which certain basic                   one, would be of interest. As we shall see, however,
 forms of reasoning are allowed while others are not. In                 most known lower bounds (in restricted proof systems)
@@ -788,8 +788,8 @@ $5$ . $3$ . $2$
 
 Algebraic Proof Systems
 
-Just as a natural contradiction in the Boolean setting is an unsatisfiable collection of clauses, a natural contradiction in the algebraic setting is a system of polynomials without a common root. 10 How would you prove that the system {f ${}^{1} = xy + 1$ , $f^{2} = 2yz - 1$ , $f^{3} = xz + 1$ , $f^{4} = x + y + z - 1$ has no common root (over any field) ? A quick way is to observe that $zf^{1} - xf^{2} + yf^{3} - f^{4}$ ≡ $1$ . Clearly, a common root of the system would be a root of this linear combination, which is a contradiction because the constant $1$ function has no root.
-Can we always use such proofs? $9$ . These are algorithms that attempt to generate proofs for given tautologies. These tautologies may be boring mathematically but of great practical importance, such as the statement that a computer chip or communication protocol functions correctly. Interestingly, popular applications also include a variety of theorems that are mathematically interesting, such as results in basic number theory. $10$ . Moreover, polynomials can easily encode propositional formulas. First, one puts such a formula into conjunctive normal form, or CNF:
+Just as a natural contradiction in the Boolean setting is an unsatisfiable collection of clauses, a natural contradiction in the algebraic setting is a system of polynomials with out a common root. 10 How would you prove that the system {f ${}^{1} = xy + 1$ , $f^{2} = 2yz - 1$ , $f^{3} = xz + 1$ , $f^{4} = x + y + z - 1$ has no common root (over any field) ? A quick way is to observe that $zf^{1} - xf^{2} + yf^{3} - f^{4}$ ≡ $1$ . Clearly, a common root of the system would be a root of this linear combination, which is a contradiction because the constant $1$ function has no root.
+Can we always use such proofs? $9$ . These are algorithms that attempt to generate proofs for given tautologies. These tautologies may be boring mathematically but of great practical importance, such as the statement that a computer chip or communication protocol functions correctly. Interestingly, popular applications also include a variety of theorems that are mathematically interesting, such as results in basic number theory. $10$ . More over, polynomials can easily encode propositional formulas. First, one puts such a formula into conjunctive normal form, or CNF:
 that is, one expresses it as the conjunction of a collection of clauses. CNF formulas can easily be converted to a system of polynomials, one per clause, over any field. One often adds the polynomials (xi)2 - xi , which ensure Boolean values.
 
 IV. Branches of Mathematics
@@ -821,7 +821,7 @@ determined by the inputs and the rules governing the          it trivially conta
 computations. In this section we shall continue to focus      this class BPP to other complexity classes we have
 on polynomial-time computations, but now we shall             seen already. It is easy to see that BPP ⊆ EXP; if
 allow our computing devices to make probabilistic, or         the machine tosses m coins, we could enumerate all
-randomized, choices.                                          2 m possible outcomes of these coin tosses and take a
+randomized, choices.                                          2 m possible out comes of these coin tosses and take a
                                                               majority vote. The relation of BPP to N P is not known,
 6.1   Randomized Algorithms                                   but it is known that if P = N P then P = BPP as
 A famous example of such an algorithm is one that tests       well. Finally, nonuniformity can replace randomness:
@@ -895,10 +895,10 @@ efficient probabilistic algorithm that can produce such          esting extensio
 an approximate count if it is allowed to make free use         in situations where a tiny amount of error can be tol-
 of a subroutine that solves SAT instances. It turns out        erated. As we shall see, various types of probabilistic
 that analogous statements holds for all NP-complete            proof systems yield enormous advantages in computer
-problems.                                                      science. We shall exhibit three remarkable manifesta-
+problems.                                                      science. We shall exhibit three remarkable manifest a-
    For some problems, approximate counting can be              tions of this. The first shows that we can use it to prove
-done without the SAT subroutine. There are poly-               many more theorems, the second that we can do so
-nomial-time probabilistic algorithms for approximat-           without revealing anything in our proof, and the third
+done with out the SAT subroutine. There are poly-               many more theorems, the second that we can do so
+nomial-time probabilistic algorithms for approximat-           with out revealing anything in our proof, and the third
 ing the permanent of positive matrices, approximating          that alleged proofs can be written in such a way that
 the volume of polytopes, and more. These algorithms            verifiers need only look at a tiny handful of bits in order
 use a connection between approximate counting and              to decide whether they are correct.
@@ -925,11 +925,11 @@ for the counting version of any other problem in N P.          graphs (G, H), bu
                                                                ness and interaction, then there is a simple way for the
 As we saw earlier, proof systems are defined in terms           verifier to be convinced.12
 of their verification procedure. In section 5.3, we con-          Here is how it works. The verifier chooses at random
-sidered verification procedures that run in time that           one of the two graphs G and H, randomly permutes its
+side red verification procedures that run in time that           one of the two graphs G and H, randomly permutes its
 is polynomial in the combined length of the assertion          vertices, and sends it to the prover. The prover then
 and its alleged proof. Here (as in section 3.2), we restrict
 our attention to verification procedures that run in time
-                                                                 12. We note that allowing interaction without randomness does
+                                                                 12. We note that allowing interaction with out randomness does
 that is polynomial in the length of the assertion. Such        not yield any gain; that is, such interactive (but deterministic) proof
 proof systems are related to the class N P, since sets S       systems are exactly as powerful as NP.
 
@@ -937,7 +937,7 @@ $IV$ . $20$ .
 
 Computational Complexity
 
-sends back a message saying whether this permuted graph is G or H. If G and H are not isomorphic, then the permuted graph is isomorphic to exactly one of G and H, so the prover can determine which and thereby get the right answer. But if G and H are isomorphic, then the prover has no way of knowing which graph has been permuted, and therefore has $a_{50}$ % chance of getting the right answer. So now, to become convinced, the verifier repeats the procedure k times. If the graphs are not isomorphic, the prover will always get the right answer.
+sends back a message saying whether this permuted graph is G or H. If G and H are not isomorphic, then the permuted graph is isomorphic to exactly one of G and H, so the prover can determine which and there by get the right answer. But if G and H are isomorphic, then the prover has no way of knowing which graph has been permuted, and therefore has $a_{50}$ % chance of getting the right answer. So now, to become convinced, the verifier repeats the procedure k times. If the graphs are not isomorphic, the prover will always get the right answer.
 If they are isomorphic, then with probability $1 - 2 - k$ the prover will make at least one mistake. If k is large, this becomes a near-certainty, so if the prover never makes a mistake, then the verifier will be convinced that the graphs are not isomorphic. That was an example of an interactive proof system. Given a decision problem S, an interactive proof system for S is a protocol involving an interacting verifier and prover, with the property that if x $\in$ S then the verifier will eventually output $1$ , while if x ∉ S then there
 
 $1$
@@ -946,7 +946,7 @@ is a probability of at least $2$ that the verifier will output $0$ . As in the e
 
 $1$
 
-the protocol several times, thereby replacin$g^{2}$ by a probability very close to $1$ . Also as in the example, the verifier is allowed polynomial-time randomized computations and the prover has unlimited computational power. Finally, the number of rounds of the interaction must be at most polynomial in the size of the input x, so that the entire verification procedure is efficient. The class of decision problems for which an interactive proof system exists is denoted IP.
+the protocol several times, there by replacin$g^{2}$ by a probability very close to $1$ . Also as in the example, the verifier is allowed polynomial-time randomized computations and the prover has unlimited computational power. Finally, the number of rounds of the interaction must be at most polynomial in the size of the input x, so that the entire verification procedure is efficient. The class of decision problems for which an interactive proof system exists is denoted IP.
 One can view the protocol as an “interrogation” by a persistent student, who asks the teacher “tough” questions in order to be convinced of correctness. Interestingly, it turns out that asking “tough” questions is no better than asking random questions! That is, every set that has an interactive proof system also has one in which the verifier only asks random questions that are uniformly and independently distributed in some predetermined set.
 It turns out that for every decision problem S that belongs to N P there is an interactive proof system that can be used to demonstrate that x   $\in$ S. It works by demonstrating the nonexistence of an NP-proof that x is in S. The proof of this result, which tells us that co N P ⊂ IP, involves an arithmetization of Boolean formulas. Further more, a complete character ization of the power of interactive proofs is known.
 
@@ -959,7 +959,7 @@ $6$ . $3$ . $2$
 Zero-Knowledge Proof Systems
 
 A typical mathematical proof not only guarantees the truth of a statement, but also teaches you something about it. In this section we shall discuss a kind of proof that teaches you absolutely nothing, beyond the fact that the statement is true. Since this seems impossible, let us give an example. Suppose a prover wants to convince you that a certain map (in the geography sense) can be colored with three colors in such a way that no two adjacent regions have the same color.
-The most obvious approach is actually to show you a coloring, but this teaches you something--a particular coloring--which you would not otherwise be able to find easily, even knowing that it existed (since this search problem is NPcomplete) . Is there any way the prover can convince you without giving you this extra knowledge? Here is a way of doing it. Given any coloring of the map, with red, blue, and green, say, one can produce other colorings by permuting the colors: for instance, one might change all the red regions into blue and all the blue ones into red.
+The most obvious approach is actually to show you a coloring, but this teaches you something--a particular coloring--which you would not otherwise be able to find easily, even knowing that it existed (since this search problem is NPcomplete) . Is there any way the prover can convince you with out giving you this extra knowledge? Here is a way of doing it. Given any coloring of the map, with red, blue, and green, say, one can produce other colorings by permuting the colors: for instance, one might change all the red regions into blue and all the blue ones into red.
 Let the prover take six copies of the map and color them in six different ways, one for each permutation of the three colors. Now we have a sequence of rounds. In each round the prover randomly chooses one of the six colored maps, you randomly choose a pair of adjacent regions, and the prover allows you to check that they have different colors, but does not allow you to look at the rest of the map.
 If the graph cannot be properly colored with three colors and the prover tries to cheat, then after enough rounds (a polynomial number suffices) you will discover the deception by hitting upon two adjacent regions that have been given the same color (or perhaps one of them has not been colored at all) . However, at each stage, all you learn about the two regions you look at is that they have different colors--you have no idea what those colors are
 
@@ -976,13 +976,13 @@ that is hard to compute (such as how to factorize an         take will manifest 
 integer that happens to be encoded by the formula). In       may remind you of error-correcting codes [VII.6](/part-07/reliable-transmission-of-information).
 general, a zero-knowledge proof is an interactive proof      There is indeed an important analogy here, and cross-
 that does not help you (the verifier) to make any com-        fer til ization between the two areas has been very sig-
-putations that you were not able to make efficiently           nificant.) Such a robust proof system is called a PCP,
+putations that you were not able to make efficiently           nif i cant.) Such a robust proof system is called a PCP,
 already.                                                     which stands for “probabilistic ally checkable proof.”
    Which theorems have zero-knowledge proofs? Obvi-             Loosely speaking, a PCP system for a set S con-
 ously, if the verifier can determine the answer with no       sists of a probabilistic polynomial-time verifier who has
 help, then the theorem has a trivial zero-knowledge          access to individual bits in a string that represents the
 proof, in which the prover does nothing at all. Thus,        (alleged) proof. The verifier tosses coins and, depend-
-any set in BPP has a zero-knowledge proof. The               ing on the outcome, accesses only a constant number of
+any set in BPP has a zero-knowledge proof. The               ing on the out come, accesses only a constant number of
 zero-knowledge proof outlined for 3-colorability             the bits in the alleged proof. It should output 1 when-
 depended on non computational procedures, such as             ever x belongs to S (and an adequate proof is pro-
 the prover watching carefully to make sure that you          vided), while if x does not belong to S, then (no matter
@@ -998,7 +998,7 @@ N P. More generally, we have the following theorem.
                                                              length that is polynomial in the length of the input. In
 Theorem. If one-way functions exist (these are defined        fact, this PCP is itself an NP-proof.13
 in section 7), then every set in N P has a zero-knowl-         On top of its direct conceptual appeal, the PCP theo-
-edge proof system. Moreover, this proof system can be        rem (and its variants) has a major application to com-
+edge proof system. More over, this proof system can be        rem (and its variants) has a major application to com-
 efficiently derived from the standard N P proof.               plexity theory: it allows us to prove that several nat-
                                                              ural approximation problems are hard (assuming that
   This theorem has a dramatic effect on the design of
@@ -1021,7 +1021,7 @@ The catch is that the verifier may read only a very small,
 randomly selected, part of this proof.                         13. Here we take advantage of the fact that PCP systems are defined
                                                              to be error free when x ∈ S and the fact that the verifier in the PCP
   A good analogy is to imagine that you are refer-           theorem uses only a logarithmic number of coin tosses, so one can
-eeing a paper and trying to decide the correctness           efficiently check all possible outcomes.
+eeing a paper and trying to decide the correctness           efficiently check all possible out comes.
 
 $IV$ . $20$ .
 
@@ -1046,15 +1046,15 @@ p of coming up Heads, where $\frac{1}{3} < p < \frac{2}{3}$ , but you do not kno
 
 1 2
 
-each in the interval ( 3 , 3 ), and you are asked to generate an almost uniformly distributed binary value by tossing each of these coins exactly once. Here a good solution consists of tossing all coins and out putting the parity of the number of Heads. It can be shown that the outcome will be $1$ with a probability that is
+each in the interval ( 3 , 3 ), and you are asked to generate an almost uniformly distributed binary value by tossing each of these coins exactly once. Here a good solution consists of tossing all coins and out putting the parity of the number of Heads. It can be shown that the out come will be $1$ with a probability that is
 
 $1$
 
 exponentially (in n) close t$o^{2}$ .
 
-Finally, consider a situation in which the devil designs the coins in the latter example, but does so after seeing the outcome of previous coin tosses. That is, you are tossing n different coins, but the bias of the ith coin (i . e . , p i) may depend on the outcome of the pre$1$ vious $i - 1$ coin tosses (but still lies betwee$n^{3}$ and
+Finally, consider a situation in which the devil designs the coins in the latter example, but does so after seeing the out come of previous coin tosses. That is, you are tossing n different coins, but the bias of the ith coin (i . e . , p i) may depend on the out come of the pre$1$ vious $i - 1$ coin tosses (but still lies betwee$n^{3}$ and
 
-$2{}^{3}$ ). It can be shown that in this case you cannot do better than simply out putting the outcome of the first coin. However, if you are allowed to use just a few genuinely random bits, then you can do much better: given just O (log (n  /  )) perfectly random coin tosses, together with the n biased coin tosses, you can output a string of length proportional to n that is “ -close” to being uniformly distributed.
+$2{}^{3}$ ). It can be shown that in this case you cannot do better than simply out putting the out come of the first coin. However, if you are allowed to use just a few genuinely random bits, then you can do much better: given just O (log (n  /  )) perfectly random coin tosses, together with the n biased coin tosses, you can output a string of length proportional to n that is “ -close” to being uniformly distributed.
 
 $7$
 
@@ -1090,9 +1090,9 @@ cryptography.                                                              rando
 7.1   Pseudo randomness
                                                                               Replacing uniform distributions by pseudorandom
 What is randomness? When should we say that a mathe-                       distributions is beneficial provided we can generate
-matical or physical object behaves randomly? These are                     the latter using fewer resources. In this context, the
+mat ical or physical object behaves randomly? These are                     the latter using fewer resources. In this context, the
 fundamental questions that have been thought about                         resource we are trying hardest to save on is random-
-for centuries. When the objects are probability distribu-                  ness. Suppose we have an efficiently computable func-
+for centuries. When the objects are probability dis tr ibu-                  ness. Suppose we have an efficiently computable func-
 tions, on n-bit sequences, say, there is consensus about                   tion φ : Im → In and suppose that n > m. Then we
 one point at least: the uniform distribution (in which                     can define a probability distribution on n-bit strings
 each n-bit string appears with probability 2−n ) is “the                   by choosing a random m-bit string x and computing
@@ -1109,7 +1109,7 @@ the uniform distribution.                                                  that 
    Let us try to formalize this idea. Suppose we can ran-
 domly sample n-bit strings chosen according to a prob-                     7.1.1   Hardness versus Randomness
 ability distribution Pn , and suppose that we want to
-know whether Pn is in fact the uniform distribution.                       There is an obvious connection between pseudoran-
+know whether Pn is in fact the uniform distribution.                       There is an obvious connection between pseudo ran-
 One way to try to tell is to fix an efficiently computable                    dom generators and computational difficulty, since the
 function f : In → {0, 1} and consider two experiments:                     main property of a pseudorandom generator is that its
                                                                            output should be computationally hard to distinguish
@@ -1127,7 +1127,7 @@ random generators exist then they exist for any stretch               they provi
 measure that is a polynomial.15                                       a function f : In → {0, 1} that is computationally
    This theorem converts computational difficulty, or                   in distinguishable from a random function. Thus, with
 hardness, into pseudo randomness, and vice versa. Fur-                 just n bits of randomness, one has efficient access to
-thermore, its proof links computational in distinguish a-               2 n bits that appear random. (Note that it is inefficient
+thermore, its proof links computational indistinguisha-               2 n bits that appear random. (Note that it is inefficient
 bility to computational un predict ability, hinting that                to scan through all these bits—what we are given is
 the computational difficulty is linked to randomness,                   the ability to look at any one of them in polynomial
 or at least to the appearance of randomness.                          time.)
@@ -1138,25 +1138,25 @@ idea is this. Suppose you have a probabilistic algorithm              cryptograp
 that computes a function f and requires nc random
 bits (where n denotes the length of the input). Suppose               7.2   Cryptography
 that this algorithm outputs f (x) with probability at
-                                                                      Cryptography has existed for millennia, but whereas
+                                                                      Cryptography has existed for millennia, but where as
 least 23 . If you replace the random bits with nc pseudo-
                                                                       in the past it was focused on one basic problem—
 random bits, generated from a seed of size m, then the
                                                                       that of providing secret communications—the modern
 behavior of the algorithm will hardly be affected. There-
                                                                       computational theory of cryptography is interested in
-fore, if m is small, then you can do the same computa-
+fore, if m is small, then you can do the same com put a-
                                                                       all tasks that involve several agents who each wish to
 tion with only a small amount of randomness. If m is
                                                                       obtain some information while preserving the secrecy
 as small as O(log n), then it becomes feasible to check
-                                                                      of other information. An important priority besides pri-
+                                                                      of other information. An important priority be sides pri-
 through all possible seeds. For close to two thirds of
                                                                       vacy (that is, keeping secrets) is resilience: one would
 these, the algorithm outputs f (x). But this means we
                                                                       like guaranteed privacy even if one is not certain that
 can compute f (x) deterministical ly and efficiently by
-taking a majority vote!                                               the other participants are behaving honestly.
+taking a majority vote!                                               the other participants are be having honestly.
    Can this actually be done? Can we use hardness                        A good example to illustrate these difficulties is play-
 to achieve the ultimate derandomization result, that                  ing a game of poker over the telephone or e-mail. You
 BPP = P? The theory has developed to give essen-                      are encouraged to ponder seriously how this might
@@ -1172,11 +1172,11 @@ theorem.                                                              from this 
                                                                       there are two key assumptions underlying the new
 Theorem. If, for some constant  > 0, S(SAT) > 2n ,
                                                                       theory. First, it is assumed that all parties, including
-then BPP = P. Moreover, SAT can be replaced by any
+then BPP = P. More over, SAT can be replaced by any
                                                                       the malicious adversaries, are computationally limited.
 problem computable in 2 O(n) -time.
                                                                       Second, it is assumed that there are hard functions.
-7.1.2    Pseudorandom Functions                                       Sometimes these are one-way functions, and some-
+7.1.2    Pseudorandom Functions                                       Some times these are one-way functions, and some-
                                                                       times they are yet stronger functions called “trapdoor
 Pseudorandom generators allow you to generate long                    permutations,” which also exist if integer factorization
 pseudorandom sequences efficiently from short ran-                      is hard.
@@ -1188,22 +1188,22 @@ any c > 1.                                                            that every
 
 602                                                                                     IV. Branches of Mathematics
 
-This includes highly complex tasks such as playing           of bits, but they would like to ascertain this without
+This includes highly complex tasks such as playing           of bits, but they would like to as certain this with out
 poker over the phone, but also very basic ones such as       giving away any information about their own strings
 secure communication, digital signatures (a digital ana-     beyond what follows from the value of f . For example,
 logue of handwritten signatures), collective coin flip-       in the case of the millionaires’ problem, there are two
 ping, auctions, elections, and the famous millionaires’      parties, each with a string that encodes their wealth.
 problem: how can two people interact to determine            They would like a protocol that provides them with a
-who is richer, without either of them learning anything      single bit that tells them who is richer, but gives them
+who is richer, with out either of them learning anything      single bit that tells them who is richer, but gives them
 further about the other’s wealth?                            no information beyond this. The precise formulation
    Let us very briefly hint at connections between cryp-      of this condition is an extension of the formulation of
 tography and matters that we have already discussed.         zero-knowledge proofs (presented in section 6.3.2). As
 First of all, consider the very definition of the central     hinted at earlier in this section, assuming the existence
 notion of cryptography: that of a secret. If you have an     of trapdoor permutations, every such multiparty com-
-n-bit string, then when should we say that it is com-        putation can be performed without yielding anything
+n-bit string, then when should we say that it is com-        putation can be performed with out yielding anything
 pletely secret? A natural definition would be that it is      beyond the designated outputs.
 secret if nobody else has any information about it: that        Finally, we come to the issue of cheating. In the fore-
-is, from anybody else’s point of view it is equally likely   going discussion, we did not worry about malicious
+is, from any body else’s point of view it is equally likely   going discussion, we did not worry about malicious
 to be any of the 2 n -bit strings. However, in the new com-   behavior and focused on what participants may learn
 putational complexity theory, this is not the definition      from the transcript of their interaction. But how can a
 taken, since a pseudorandom n-bit string will, for all       player, Bob, say, be forced to act “as specified,” when
@@ -1211,13 +1211,13 @@ practical purposes, be just as secret.                       his actions may dep
    The difference between the two definitions of a secret      does not want to reveal? The answer is closely related to
 is huge. The point of cryptography is not just to have       zero-knowledge proofs. Essentially, each player whose
 secrets (that is easy, just select a string at random) but   turn it is to perform some computation is asked to
-actually to use them without giving away information.        prove to the others that he has acted as specified. This
+actually to use them with out giving away information.        prove to the others that he has acted as specified. This
 At first this seems impossible, since any nontrivial use      is a (mathematically boring) theorem and the standard
 of a secret n-bit string will cut down the set of pos-       proof is obvious (i.e., revealing all his secrets). But as we
 sible strings that it might be, and therefore give away      saw in our discussion of zero-knowledge proof systems
 genuine information. However, if the new probability         in section 6.3.2, if a proof exists, then a zero-knowl-
 distribution over the possible strings (after the infor-     edge proof can be efficiently derived from it. Thus, Bob
-mation has been given away) is pseudorandom, then            can convince the others of his proper behavior without
+mation has been given away) is pseudorandom, then            can convince the others of his proper behavior with out
 this information cannot feasibly be used, since no effi-       revealing anything about his secrets.
 cient algorithm can tell the difference between a string
 that gives rise to the information you have revealed and                   8   The Tip of an Iceberg
@@ -1245,7 +1245,7 @@ a useful and appealing theory of average-case complex-      [III.74](/part-03/qu
 ity (see Goldreich 1997): one demands that algorithms       mechanics to speed up computation (see Kitaev et al.
 succeed with high probability on every possible input       2002).
 distribution that can be efficiently sampled.
-   Another possible relaxation is settling for approxi-                    9   Concluding Remarks
+   Another possible relaxation is settling for approx i-                    9   Concluding Remarks
 mate answers. This can mean many things, and the best
                                                             We hope that this ultra-brief survey conveys the fasci-
 notion of approximation varies from context to context.
@@ -1305,7 +1305,7 @@ Attiya and Welch 1998). The communication complex-            case complexity. E
 ity of two-argument (and many-argument) functions is          Complexity, TR97-058.
 a measure of their “complexity” (see Kushilevitz and             . 1999. Modern Cryptography, Probabilistic Proofs and
 Nisan 1996), but in these studies communication pro-          Pseudo randomness. Algorithms and Combinatorics Se-
-portional to the length of the input is not ruled out         ries, volume 17. New York: Springer.
+portion al to the length of the input is not ruled out         ries, volume 17. New York: Springer.
 (but rather appears frequently). While being “informa-           . 2001. Foundation of Cryptography, volume 1: Basic
                                                               Tools. Cambridge: Cambridge University Press.
 tion theoretic” in nature, this model has many connec-
@@ -1313,6 +1313,6 @@ tion theoretic” in nature, this model has many connec-
 tions to complexity theory. Altogether different types
                                                               Applications. Cambridge: Cambridge University Press.
 of computational problems are investigated in the con-           . 2008. Computational Complexity: A Conceptual Per-
-text of computational learning theory (see Kearns and         spective. Cambridge: Cambridge University Press.
+text of computational learning theory (see Kearns and         spec tive. Cambridge: Cambridge University Press.
 Vazirani 1994) and of online algorithms (see Borodin        Hochbaum, D., ed. 1996. Approximation Algorithms for NP-
 and El-Yaniv 1998). Finally, quantum computation              Hard Problems. Boston, MA: PWS.

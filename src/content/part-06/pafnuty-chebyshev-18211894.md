@@ -5,7 +5,7 @@ VI.45.   Pafnuty Chebyshev                                                      
 analysis (until robinson [VI.95](/part-06/abraham-robinson-19181974) some hundred years         tury rested on it. His results in this field are, however,
 later). He also defined the real numbers based on the        less significant today. For us, his main legacy is his
 rationals (although Dedekind’s and cantor’s [VI.54](/part-06/georg-cantor-18451918)         unrelenting insistence on maintaining high standards
-approaches proved more accessible). He was thereby          of rigor and seeking the fundamental ideas underlying
+approaches proved more accessible). He was there by          of rigor and seeking the fundamental ideas underlying
 largely responsible for the “arithmetization of analy-      mathematical concepts and theories.
 sis” (a term coined by klein [VI.57]). Among his remark-
 able contributions to real analysis are his introduction    Further Reading
@@ -13,7 +13,7 @@ of uniform convergence (introduced independently by
                                                             Bottazzini, U. 1986. The Higher Calculus: A History of Real
 P. L. Seidel) and his example of an every where-contin-
                                                               and Complex Analysis from Euler to Weierstrass. New
-uous and nowhere-differentiable function (Cauchy and
+uous and no where-differentiable function (Cauchy and
                                                               York: Springer.
 his contemporaries believed that a continuous function
 was differentiable except possibly at isolated points).                                                       Israel Kleiner
@@ -37,7 +37,7 @@ grounded, and produced a counterexample, after which        range. This correspo
 his approach to complex analysis became dominant            of finding, from among the class of functions cho-
 until the early twentieth century. Klein commented on       sen to approximate a given function, the one with the
 Weierstrass’s general approach to mathematics: “[He]        smallest absolute error for all specified values of the
-is first of all a logician; he proceeds slowly, systemat-    argument. It was in this context, in particular consid-
+is first of all a logician; he proceeds slowly, system at-    argument. It was in this context, in particular consid-
 ically, step-by-step. When he works, he strives for the     ering the approximation of functions by polynomials,
 definitive form.”                                            that Chebyshev discovered the polynomials now named
    Weierstrass’s name is attached to various concepts       after him (see [III.85](/part-03/special-functions)). These polynomials were first
@@ -53,7 +53,7 @@ theorem, which says that in every neighborhood of an        x. Chebyshev polynom
 isolated essential singularity an analytic function takes   Un (cos θ) = sin((n + 1)θ)/ sin θ and the recurrence
 values arbitrarily close to any assigned complex num-       relation Un+1 (x) = 2 x Un (x)−Un−1 (x), where U0 (x) =
 ber; the Weierstrass M-test, which deals with the com-      1 and U1 (x) = 2 x.
-parison of series for convergence; and the Weierstrass        Chebyshev also had a significant impact on num-
+paris on of series for convergence; and the Weierstrass        Chebyshev also had a significant impact on num-
 ℘-function, an example of an elliptic function [V.31](/part-05/the-riemannroch-theorem)       ber theory, coming close to proving the prime number
 of order 2.                                                 theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860). In probability he is remembered for
    Weierstrass was most proud of his work on Abelian        Chebyshev’s inequality, a result that is simple but has

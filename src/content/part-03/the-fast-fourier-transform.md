@@ -10,7 +10,7 @@ is small. To get a good idea of exp(w) we should take
                                                                                         = log(exp(a + b))
 a large n and consider (1 + w/n)n . It is not hard to
 prove that this is indeed close to 1 + w, but here is an                                = a + b.
-informal argument instead. Suppose that you have a                 The result follows.
+in formal argument instead. Suppose that you have a                 The result follows.
 bank account that offers a tiny rate of interest over a                In general, the properties of log closely follow those
 year, say 0.5%. How much better would you do if you                of exp. However, there is one very important differ-
 could compound this interest monthly? The answer is                ence, which is a complication that arises when one
@@ -49,7 +49,7 @@ many ways. Here are three.                                         logarithm how
    The most important feature of the logarithmic func-             III.26   The Fast Fourier Transform
 tion is a functional equation that is the reverse of the
 functional equation for exp, namely log(st) = log(s) +             If f : R → R is a periodic function with period 1,
-log(t). That is, whereas exp turns addition into multi-            then one can obtain a great deal of useful information
+log(t). That is, where as exp turns addition into multi-            then one can obtain a great deal of useful information
 plication, log turns multiplication into addition. A more          about f by calculating its Fourier coefficients (see the
 formal way of putting this is that R forms a group under           fourier transform [III.27](/part-03/the-fourier-transform) for a discussion of why).
 addition, and R+ , the set of positive real numbers,               This is true for both theoretical and practical reasons,
@@ -71,7 +71,7 @@ formula                                                              g(0) + ω�
 If we do not have an explicit formula for the integral               g(1) + ω−2 r g(3) + ω−4 r g(5) + ω−6 r g(7)
 (as would be the case, for instance, if f were derived
                                                               are themselves values of discrete Fourier transforms.
-from some physical signal rather than a mathemati-
+from some physical signal rather than a mathemat i-
                                                               For instance, if we set h(n) = g(2 n) for 0 ⩽ n ⩽ 3,
 cal formula), then we will want to approximate this
                                                               and write ψ for ω2 = e2π i/4 , then the first expression
@@ -83,7 +83,7 @@ lating and r is not too big, then this should be a good         A similar remark
 approximation.                                                so if we can calculate the discrete Fourier transforms
    The sum above will be unchanged if we add a mul-           of the “even part” of g and the “odd part” of g, then it
 tiple of N to r , so we now care only about the values        will be very straightforward to obtain each value of the
-of f at points of the form n/N. Moreover, the period-         Fourier transform of g itself: it will be a linear combi-
+of f at points of the form n/N. More over, the period-         Fourier transform of g itself: it will be a linear combi-
 icity of f tells us that adding a multiple of N to n also     nation of values of the transforms of the two parts of
 makes no difference. So we can regard both n and r as          g. Thus, if N is even and we write F (N) for the number
 belonging to the group ZN of integers mod N (see mod-         of operations needed to calculate the discrete Fourier

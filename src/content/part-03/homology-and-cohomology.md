@@ -5,7 +5,7 @@ III.40.   The Ideal Class Group                                                 
 quantum mechanical system, and observable features           paths living in X and beginning and ending at the given
 of that system correspond to certain linear maps.            base point. For example, if X is the plane R2 , then any
   For this and other reasons, the study of linear oper-      two paths that begin and end at (0, 0) are homotopic,
-ators [III.50](/part-03/linear-operators-and-their-properties) on Hilbert spaces is a major branch of        whereas if X is the plane with the origin removed, then
+ators [III.50](/part-03/linear-operators-and-their-properties) on Hilbert spaces is a major branch of        where as if X is the plane with the origin removed, then
 mathematics: see operator algebras [IV.15](/part-04/operator-algebras).                  whether or not two paths (that begin and end at some
                                                              other point) are homotopic depends on whether or not
 III.38     Homology and Cohomology                           they go around the origin the same number of times.
@@ -41,7 +41,7 @@ of axioms that greatly clarified the area: a homology         ization property. 
                                                                                            √
 theory is any association of groups with topological         numbers of the form a + b −5 with a and b integers,
                                                                                                              √
-spaces that satisfies these axioms, and the fundamen-         one can factorize 6 either as 2 . imes 3 or as (1 + −5)(1 −
+spaces that satisfies these axioms, and the fund a men-         one can factorize 6 either as 2 . imes 3 or as (1 + −5)(1 −
                                                              √
 tal properties of homology theories follow from the            −5).
 axioms.                                                         The ideal class group is a way of measuring how badly

@@ -5,7 +5,7 @@
 of any degree (usually connected to Pappus’s problem        with sufficient clarity to be acceptable in geometry. His
 with more than four lines) and that therefore he had        answer was that all algebraic curves were acceptable (he
 shown how, in principle, all geometrical construction       called these “geometrical curves”) and all others were
-problems could be solved. For higher-order construc-        not (these he called “mechanical”). Few seventeenth-
+problems could be solved. For higher-order con struc-        not (these he called “mechanical”). Few seventeenth-
 tions he needed new algebraic techniques. The relevant      century mathematicians followed Descartes in this
 section in La Géométrie constituted the first general        strict demarcation of geometry. This is typical of the
 theory of polynomial equations and their roots. It con-     reception of Descartes’s La Géométrie: the philosophi-
@@ -42,13 +42,13 @@ difficulties that were felt at the time about using alge-     tle is known about
 bra in geometry. The transfer of algebraic operations       birth is uncertain—but by 1629 he had close contacts
 to geometry was indeed problematic because multipli-        with viète’s [VI.9](/part-06/franois-vite-15401603) scientific heirs in Bordeaux. His work
 cation in geometry was generally interpreted dimen-         displays a thorough knowledge of ancient as well as
-sionally: for example, a product of two lengths had to      contemporary mathematics and he exchanged prob-
+sion ally: for example, a product of two lengths had to      contemporary mathematics and he exchanged prob-
 represent an area, and a product of three a volume.         lems and mathematical information by correspondence
 But until then algebra had dealt mostly with numbers        with, among others, rené descartes [VI.11](/part-06/ren-descartes-15961650), Gilles Per-
 and had routinely used products of more than three          sonne de Roberval, Marin Mersenne, Bernard Frenicle,
 factors. Thus, a consistent and unrestricted geomet-        John Wallis, and Christiaan Huygens.
 rical interpretation of the operations of algebra was          A crucial early-modern topic was the use of algebra to
-needed. Descartes did indeed provide such a reinter-        solve geometric problems. Viète and other algebraists
+needed. Descartes did indeed provide such a re inter-        solve geometric problems. Viète and other algebraists
 pretation. He introduced a unit line segment in such        before him had used equations in a single unknown
 a way that multiplication no longer raised the dimen-       to rewrite and solve “determinate” problems (prob-
 sion and inhomogeneous terms could be allowed in            lems admitting a finite number of solutions). In his
@@ -56,5 +56,5 @@ equations.                                                  manuscript Ad Locos 
    By 1637 he had given up on his earlier attempts to       circulated in Paris in 1637 (the same year as Descartes’s
 link philosophy and mathematics. Yet the preoccupa-         La Géométrie), Fermat presented a general way of han-
 tion with certainty remained. As his concept of con-        dling and solving indeterminate problems associated
-struction involved the use of curves, he had to consider    with constructions of loci: that is, of sets of points (usu-
+struc tion involved the use of curves, he had to consider    with constructions of loci: that is, of sets of points (usu-
 which curves could be understood by the human mind          ally curves) defined by some constraints. He identified

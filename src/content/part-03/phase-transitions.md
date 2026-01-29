@@ -44,7 +44,7 @@ III.69      Phase Transitions                                    because π has 
                                                                  that when π appears unexpectedly in a calculation, one
 If you heat up a block of ice, then it turns into water.         is not unduly surprised. For example, the following is
 This very familiar phenomenon is actually rather mys-            a famous theorem of euler [VI.19](/part-06/leonhard-euler-17071783):
-terious, because it shows that the properties of the                  . nfty
+ter ious, because it shows that the properties of the                  . nfty
                                                                           1     1 1   1   1          π2
 chemical H2 O do not depend continuously on temper-                        2
                                                                              =1+ + +    +    + ··· =    .

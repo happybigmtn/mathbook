@@ -46,7 +46,7 @@ then provided by algebra.
         2   Polynomials and Their Geometry
                                                                        few have a feeling for 4-space, also called space-time,
 Polynomials are the expressions one can put together                   and 5-space is by and large inconceivable to almost
-from variables and numbers by addition and multipli-                   everyone. So what is the meaning of geometry in many
+from variables and numbers by addition and multipli-                   every one. So what is the meaning of geometry in many
 cation. The most familiar are one-variable polynomials                 variables?
 such as x 3 − x + 4, but we can use two or three vari-                    Algebra comes to our rescue here. While I have great
 ables to get, for instance, 2 x 5 − 3 xy 2 + y 3 (which has              difficulty visualizing what a four-dimensional sphere of
@@ -121,7 +121,7 @@ can also be used. What about the equation f (x, y) =         be parallel and the
 at real solutions, this is still just the hyperbola since    infinity” and the definition of projective planes and
 x 2 + y 2 + R 2 is always positive for x, y real. However,   projective spaces [III.72](/part-03/projective-space). (The introduction of projec-
 as with one-variable polynomials, one should look at all     tive spaces and the corresponding projective varieties
-complex roots to understand everything. Then we see          is a key step in algebraic geometry. It is somewhat tech-
+complex roots to understand everything. Then we see          is a key step in algebraic geometry. It is some what tech-
          √nical so we shall skip it here, but it is indispensable even
 that f ( −1 R, 0) = 0, but the complex point ( −1 R, 0)
 is not on the hyperbola x 2 − y 2 − R = 0. In general,       at the most basic level.)
@@ -149,7 +149,7 @@ f = c · (x + y)m (x − y)n for some m, n and c ≠ 0.
                                                               (ii) the fi vanish identically on an algebraic curve C,
 is answered by the fundamental theorem of algebraic
                                                                    and so there is a continuous family of solutions.
-geometry. It is sometimes called Hilbert’s theorem on
+geometry. It is some times called Hilbert’s theorem on
 the zeros, but its German name is used most of the             As an example, the second alternative happens for
 time. For simplicity, we state only the case of one          the system of equations xz − y 2 = y 3 − z2 = x 3 −
 equation.                                                    z = 0, which has (t, t 2 , t 3 ) as a solution for any t. This
@@ -170,12 +170,12 @@ and count the multiplicities easily. This is frequently
 of great help since the typical (or “generic”) cases are
 usually very hard to compute. To get around this prob-
                                                                        Figure 2 A smooth cubic: y 2 = x 3 − x.
-lem, we can sometimes find a special, degenerate case
+lem, we can some times find a special, degenerate case
 where we know that the answer will be the same, but
-the computations are much easier.                                Sometimes this is not exactly what one would naively
+the computations are much easier.                                Some times this is not exactly what one would naively
    There are two ways to think about multiplicity: one        expect. For instance, the curve in figure 2 has two con-
 algebraic and one geometric. The algebraic definition          nected components. The two parts are, however, not
-is computationally very efficient, but somewhat techni-         algebraic sets.
+is computationally very efficient, but some what techni-         algebraic sets.
 cal. The geometric interpretation is easier to explain, so       An explanation is provided by looking at the com-
 that is the one we shall give here, but it would be hard      plex solutions of this equation. We shall see later that
 to compute with in practice.                                  these form a connected set, namely a torus (with a miss-
@@ -189,7 +189,7 @@ has exactly m solutions near x = p for almost all small       (or if it is the p
 values of the i .                                            implication in one direction is easy to see: if f = gh,
   Intersection theory is the branch of algebraic geom-        then the zero set of f is the union of the zero set of g
 etry that deals with generalizations of Bézout’s the-         and of the zero set of h.
-orem. Above, we looked at intersections of hypersur-             For many questions, keeping track only of the zero
+orem. Above, we looked at intersections of hyper sur-             For many questions, keeping track only of the zero
 faces—that is, of zero sets of single polynomials—but         set is not enough. For instance, look at the polynomial
 we may wish to look at intersections of more general          f = x 2 (x − 1)(x − 2)3 . It has degree 6 and three roots
 algebraic sets. Also, even when the second alternative        at x = 0, 1, 2. These roots behave differently, however,
@@ -232,8 +232,8 @@ pointy).                                                         smoothness), th
    Algebraically, it is one half of the cone z 2 = x 2 + y 2 .   is the same as its algebraic dimension.
 This cone looks nice and smooth except at the ver-                  For complex varieties, the topological dimension is
 tex. There it is more complicated, but the above con-            twice the algebraic dimension. Thus, for an algebraic
-struction shows that it can be obtained from a plane             geometer, Cn has dimension n. In particular, for us
-by a reflection across a point. More generally, suppose           C is the “complex line,” whereas everybody else calls
+struc tion shows that it can be obtained from a plane             geometer, Cn has dimension n. In particular, for us
+by a reflection across a point. More generally, suppose           C is the “complex line,” where as everybody else calls
 we take the n-dimensional space Rn and finitely many              this the “complex plane.” Our “complex plane” is, of
 symmetries of it. If we glue together points that move           course, C2 .
 into each other, we again get an algebraic variety, most
@@ -247,7 +247,7 @@ these is called an orbifold. (When this is defined more
 precisely, we also keep track of which symmetries have
                                                                  oped and beautiful subject. We shall see later how one
 been used.) In practice, such varieties occur frequently;
-                                                                 can start to get an overview of all algebraic curves. Sur-
+                                                                 can start to get an over view of all algebraic curves. Sur-
 that is why they deserve a separate name.
                                                                  faces have been intensively studied for the last century,
    Finally, if we marry a scheme to an orbifold, the out-
@@ -274,11 +274,11 @@ shot. Using complex
 tion as z = −x 4 − y 4 , so the complex solutions of                All three curves pass through the origin, since their
 x 4 + y 4 + z 4 = 0 can be described by two indepen-             equation has no constant term. The equation of figure 2
 dent variables x, y and a dependent variable z. Thus,            has a linear term and the curve looks nice and smooth
-it is quite reasonable to say that S is two dimensional.         at the origin, whereas the equations of figure 3 contain
+it is quite reasonable to say that S is two dimensional.         at the origin, where as the equations of figure 3 contain
 
 368                                                                                              IV. Branches of Mathematics
 
-             (a)                    y                               notable exception of catastrophe theory). By contrast,
+             (a)                    y                               not able exception of catastrophe theory). By contrast,
                                                                     algebraic geometry provides very powerful tools for
                                                                     their investigation.
                                                                        Let us start with singularities of hypersurfaces, or
@@ -360,13 +360,13 @@ $E73522x^{1} + x^{2} + x^{3} +$ · · · $+ x^{n}$ .
 $E8$
 
 The names should bring to mind the classification of lie groups [III.48](/part-03/lie-theory). The connections are numerous but not easy to explain. When $n = 3$ , these are also called Du Val singularities or rational double points. Consider again the cone $z^{2} = x^{2} + y^{2}$ . Earlier, we described a two-to-one parametrization of it. Here is another, and for many purposes better, parametrization over the real numbers. In the (u , v, w) - space consider the smooth cylinder $u^{2} + v^{2} = 1$ . The map (u , $v,w)\to (uw$ ,  vw, w  )  maps the cylinder onto the cone (see figure $4$ ).
-The map is oneto-one away from the vertex, the preimage of which is the circle $u^{2} + v^{2} = 1$ in the $(w = 0)$ - plane . (Sharpeyed readers will have noticed that this map is not so nice if we use complex numbers. In general, we want par a me tr iz at i ons that work both for real and
+The map is oneto-one away from the vertex, the preimage of which is the circle $u^{2} + v^{2} = 1$ in the $(w = 0)$ - plane . (Sharpeyed readers will have noticed that this map is not so nice if we use complex numbers. In general, we want parametrizations that work both for real and
 
 $369$
 
 Figure $4$ A resolution of the cone.
 
-complex numbers, but that would be quite a bit more complicated to describe .) The advantage of the cylinder over the cone is that it does not have a singularity. Par a me tr iz at i ons of varieties in terms of smooth varieties are very useful, and there is a major result that tells us that they always exist, at least when the varieties are real or complex. (The corresponding result is still unknown for the finite geometries considered earlier .) Resolution of singularities (Hironaka). For any variety X there is another smooth variety Y and a polynomially defined surjective map $\pi$ :
+complex numbers, but that would be quite a bit more complicated to describe .) The advantage of the cylinder over the cone is that it does not have a singularity. Parametrizations of varieties in terms of smooth varieties are very useful, and there is a major result that tells us that they always exist, at least when the varieties are real or complex. (The corresponding result is still unknown for the finite geometries considered earlier .) Resolution of singularities (Hironaka). For any variety X there is another smooth variety Y and a polynomially defined surjective map $\pi$ :
 $Y \to X$ such that $\pi$ is invertible at all smooth points of X. (In the cone example above, one can take the whole cylinder, but the cylinder minus finitely many points in the collapsed circle would also work. In order to avoid such silly cases, we require $\pi$ to be surjective in a very strong sense: if a sequence of smooth points x i $\in$ X converges to a limit in X, then a subsequence of their preimages $\pi - 1(x^{i})$ converges to a limit in Y .)
 
 $10$
@@ -379,7 +379,7 @@ In order to get an idea of how the classification of algebraic varieties should 
 
 can move between hypersurfaces of the same dimen-             equation y 2 = f (x), where f has degree 3. What is the
 sion and degree by varying the coefficients of f continu-       genus?
-ously. Moreover, the entire set Vn, d is itself an algebraic     Consider the special case y 2 = x(x − 1)(x − 2).
+ously. More over, the entire set Vn, d is itself an algebraic     Consider the special case y 2 = x(x − 1)(x − 2).
 variety. Our aim is to develop a similar understanding        We try to understand the two-to-one projection to the
 for all varieties, which can be done in two steps.            (complex) x-axis, but it is better to do this when the
    The first step is to define some integers, naturally         x-axis has already had the point at infinity added, so
@@ -390,14 +390,14 @@ invariants. The simplest example is the dimension.            mann sphere, then 
    The second is to show that the set of all varieties        has two branches. (This means that y takes two differ-
 with the same discrete invariant is parametrized by           ent values for each x, the positive and negative square
 another algebraic variety, called the moduli space            roots of x(x − 1)(x − 2), but if one moves x about, one
-[IV.8](/part-04/moduli-spaces). Moreover, we would like the variety used for this     can let y vary in a continuous way.) The sphere minus
+[IV.8](/part-04/moduli-spaces). More over, we would like the variety used for this     can let y vary in a continuous way.) The sphere minus
 parametrization to be chosen as economically as pos-          two slits is topologically like a cylinder, hence the com-
 sible. We will look at this in more detail in the next        plex cubic is glued together from two cylinders. So we
 section.                                                      get the torus and the genus is 1.
    Let us see how it is accomplished for curves. Here           It turns out that a smooth plane curve of degree d
-there is only one more discrete invariant besides the         has genus 12 (d − 1)(d − 2), but I find this hard to see
+there is only one more discrete invariant be sides the         has genus 12 (d − 1)(d − 2), but I find this hard to see
 dimension, known as the genus of the curve. This              directly topologically.
-has many different definitions: one of the simplest is            It is a (probably hopeless) dream of algebraic geome-
+has many different definitions: one of the simplest is            It is a (probably hope less) dream of algebraic geome-
 through topology. Let E be a smooth curve and let us          ters to give a similarly simple description of the
 look at its complex points. Locally, this set looks like C,   discrete invariants for higher-dimensional varieties.
 so it is a topological surface. After patching up some        Unfortunately, the topological invariants of the com-
@@ -442,7 +442,7 @@ complicated representations.                                  have the second pa
 about genus 10, but no such explicit construction is          the number of different values above.)
 possible when the genus is large.                                The best way to think about it is to view this as an
                                                               action of the symmetric group S3 (the group of permu-
-                 11 Moduli Spaces                             tations of a three-element set) on the set C \ {0, 1}.
+                 11 Moduli Spaces                             tat i ons of a three-element set) on the set C \ {0, 1}.
                                                                  It is not at all obvious that we have run out of tricks,
 Let us go back to plane cubics, which we parametrized         but we have in fact reached the final result.
 by the vector space V2,3 of degree-3 polynomials in
@@ -464,13 +464,13 @@ x 3 + · · · . Second, we can make a substitution x =            The moduli or
 ux1 + v to get another elliptic curve with equation           smooth curves of genus g is denoted by Mg . These are
 y 2 = f (ux1 + v) = f1 (x1 ), where f1 is easy to write       among the most intensely studied orbifolds in algebraic
 down explicitly. One can see that these are the only          geometry, especially since the recent discovery of their
-coordinate changes that we can make without messing           fundamental position in string theory [IV.17 §2](/part-04/vertex-operator-algebras) and
+coordinate changes that we can make with out messing           fundamental position in string theory [IV.17 §2](/part-04/vertex-operator-algebras) and
 up the form y 2 = (cubic polynomial).                         mirror symmetry [IV.16](/part-04/mirror-symmetry).
    It is still not very clear what happens. To get a better
 answer, look at the three roots of f , so f (x) = (x −                   12     Effective Nullstellensatz
 r1 )(x −r2 )(x −r3 ). (Again, complex numbers inevitably
 appear.) If we make the substitution x → (r2 − r1 )x +       In order to show that there are still interesting ele-
-r1 , we get a new polynomial f1 (x), two of whose roots       mentary questions in algebraic geometry, let us try to
+r1 , we get a new polynomial f1 (x), two of whose roots       ment ary questions in algebraic geometry, let us try to
 are 0 and 1. Thus our elliptic curve is transformed into      decide when m given polynomials f1 , . . . , fm have no
 y 2 = x(x − 1)(x − λ). So instead of the four unknown         common complex zero. The classical answer is given
 coefficients of f , we are down to only one unknown, λ.         by the following result, which tells us that an obviously

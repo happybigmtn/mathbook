@@ -41,7 +41,7 @@ ples include the integers modulo n (for any positive         “R, but with two 
 integer n), the rationals (or indeed any other field), and    differ by an element of I.”
 the set Z[i] of all complex numbers a + bi such that a          Quotients of rings are extremely useful in alge-
 and b are integers.                                          braic number theory [IV.1](/part-04/number-theory) because they allow us to
-   Sometimes the assumptions that multiplication is          rephrase questions about algebraic numbers as ques-
+   Some times the assumptions that multiplication is          rephrase questions about algebraic numbers as ques-
 commutative and has an identity element are dropped.         tions about polynomials. To get an idea of how this is
 This leads to a more complicated theory, but it does         done, consider the ring Z[X] of all polynomials with
 encompass important examples such as the set of all          integer coefficients, and the ideal that consists of all

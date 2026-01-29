@@ -29,7 +29,7 @@ hermann weyl [VI.80](/part-06/hermann-weyl-18851955) described his teacher Hilbe
 style: “It is as if you were on a swift walk through a          22); and (vi) foundations (1918–30). Remarkably, there
 sunny open landscape; you look freely around, demar-            is very little overlap. When Hilbert finished a subject,
 cation lines and connecting roads are pointed out to            he was finished with it.
-you, before you must brace yourself to climb the hill;             Hilbert’s first breakthrough came in 1888 when he
+you, before you must brace your self to climb the hill;             Hilbert’s first breakthrough came in 1888 when he
 then the path goes straight up. . . .” Several themes           solved Gordan’s problem, named after Paul Gordan, in
 balance in Hilbert’s career as a mathematician. He              a single bold move. Given a polynomial equation with at
 wanted clarity, rigor, simplicity, and depth. Though he         least two variables, some things about the polynomial

@@ -5,7 +5,7 @@ $862$
 always unsatisfactory from the point of view of mathematical understanding. Similar miracles played a role in independent constructions by P. G. Lemarié (now Lemari éRieusset) and G. Battle of orthonormal wavelet bases that were piecewise polynomial. (They came to the same result from completely different points of departure--harmonic analysis for Lemarié and quantum field theory for Battle .) A few months later, S. Mallat, then a Ph. D. candidate in computer vision in the United States, learned about these wavelet bases.
 He was on vacation, chatting on the beach with a former classmate who was one of Meyer’s graduate students. After returning to his Ph. D. work, Mallat kept thinking about a possible connection with the reigning paradigm in computer vision. On learning that Meyer was coming to the United States in the fall of 1986 to give a named lecture series, he went to see him and explain his insight. In a few days of feverish enthusiasm, they hammered out multiresolution analysis, a different approach to Meyer’s construction inspired by the computer vision framework.
 In this new setting, all the miracles fell into place as inevitable consequences of simple, entirely natural construction rules, embodying the principle of successively finer approximations. Multiresolution analysis has remained the basic principle behind the construction of many wavelet bases and redundant families.
-None of the smooth wavelet bases constructed up to that point was supported inside an interval, so the algorithms to implement the transform (which were using the subband filtering framework without their creators knowing that it had been named and developed in electrical engineering) required, in principle, infinite filters that were impossible to implement. In practice, this meant that the infinite filters from the mathematical theory had to be truncated; it was not clear how to construct a multiresolution analysis that would lead to finite filters.
+None of the smooth wavelet bases constructed up to that point was supported inside an interval, so the algorithms to implement the transform (which were using the subband filtering framework with out their creators knowing that it had been named and developed in electrical engineering) required, in principle, infinite filters that were impossible to implement. In practice, this meant that the infinite filters from the mathematical theory had to be truncated; it was not clear how to construct a multiresolution analysis that would lead to finite filters.
 Truncation of the infinite filters seemed to me a blemish on the whole beautiful edifice, and I was unhappy with this state of affairs. I had learned about wavelets from Grossmann and about multiresolution analysis from explanations scribbled by Meyer on a napkin after dinner during a conference. In early 1987 I decided to insist on finite filters for the implementation. I wondered whether a whole multiresolution analysis (and its corresponding orthonormal basis of wavelets) could be reconstructed from appropriate but finite filters.
 I managed to carry out this program, and as a result found the first construction of an
 
@@ -127,8 +127,8 @@ $Hx = f$ , $Ax = y.$
 
 subject to
 
-Let us see in outline why this optimization problem has a solution (x , y), and why, if (x , y) is a solution, the vector x is a Wardrop equilibrium. The optimization problem has some aspects that are quite natural. An obvious constraint is that the flows along each route are nonnegative, which is why we insist that $x \ge 0$ . The constraints $Hx = f$ , $Ax = y$ just enforce the accounting rules we have seen earlier--the rules that allow the source-destination flows f and the link flows y to be calculated from the route flows x using the matrices H and A, respectively.
-We view the source-destination flows f as fixed, to be distributed over the various routes. Given a choice of f , our task is then to find the route flows x and consequently the link flows y. At a solution to the optimization problem y will be nonnegative, since x is. This much is fairly natural, but the function to be minimized looks somewhat strange. Its importance rests on the fact that the rate of change of the integral y j D j (u) du
+Let us see in out line why this optimization problem has a solution (x , y), and why, if (x , y) is a solution, the vector x is a Wardrop equilibrium. The optimization problem has some aspects that are quite natural. An obvious constraint is that the flows along each route are nonnegative, which is why we insist that $x \ge 0$ . The constraints $Hx = f$ , $Ax = y$ just enforce the accounting rules we have seen earlier--the rules that allow the source-destination flows f and the link flows y to be calculated from the route flows x using the matrices H and A, respectively.
+We view the source-destination flows f as fixed, to be distributed over the various routes. Given a choice of f , our task is then to find the route flows x and consequently the link flows y. At a solution to the optimization problem y will be nonnegative, since x is. This much is fairly natural, but the function to be minimized looks some what strange. Its importance rests on the fact that the rate of change of the integral y j D j (u) du
 
 $0$
 
@@ -177,8 +177,8 @@ $4$
 Braess’s Paradox
 
 Consider the network illustrated in figure $3$ (a). Cars travel from node S to node N, via either node W or node E. The total flow is $6$ , and the link delays D j (y) are given next to the links in the figure. One can imagine the figure illustrating rush hour as commuters travel from the center of a city in the south to their homes in the north. Commuters learn from experience what the delays are likely to be along the eastern and western routes. The distribution of traffic shown is the Wardrop equilibrium:
-there is no incentive for any drivers to change their routes, since the two possible routes incur the same delay, namely $(10 \times 3) + (3 + 50) = 83$ units of time. Now suppose that a new link is added, between nodes W and E, as shown in figure $3$ (b). Traffic is attracted onto the new link, since to begin with it offers a shorter journey time from the south to the north. Eventually, after everyone knows about the new link and traffic patterns have settled down, a new Wardrop equilibrium will be established, and this is shown in figure $3$ (b).
-In the new equilibrium there are three routes used, which each incur the same delay, namely $(10 \times 4) + (2 + 50) =(10 \times 4) + (2 + 10) + (10 \times 4) = 92$ . Thus in figure $3(b)$ each car incurs a delay of $92$ , while in figure $3$ (a) the delay of each car was only $83$ . Adding the new link has increased everyone’s delay! The explanation for this apparent paradox is as follows. At a Wardrop equilibrium each driver is using a route which, given the choices of others, gives the minimum delay over the routes available between that driver’s source and destination.
+there is no incentive for any drivers to change their routes, since the two possible routes incur the same delay, namely $(10 \times 3) + (3 + 50) = 83$ units of time. Now suppose that a new link is added, between nodes W and E, as shown in figure $3$ (b). Traffic is attracted onto the new link, since to begin with it offers a shorter journey time from the south to the north. Eventually, after every one knows about the new link and traffic patterns have settled down, a new Wardrop equilibrium will be established, and this is shown in figure $3$ (b).
+In the new equilibrium there are three routes used, which each incur the same delay, namely $(10 \times 4) + (2 + 50) =(10 \times 4) + (2 + 10) + (10 \times 4) = 92$ . Thus in figure $3(b)$ each car incurs a delay of $92$ , while in figure $3$ (a) the delay of each car was only $83$ . Adding the new link has increased every one’s delay! The explanation for this apparent paradox is as follows. At a Wardrop equilibrium each driver is using a route which, given the choices of others, gives the minimum delay over the routes available between that driver’s source and destination.
 But there is no intrinsic reason why this equilibrium should correspond to particularly low delays relative to what could be achieved
 
 VII . $4$ .
@@ -211,7 +211,7 @@ S
 
 S
 
-Figure $3$ Braess’s paradox. The addition of a link causes everyone’s journey time to lengthen. (After Braess ( 1968 ) and Cohen ( 1988 ).) Again define the function by another flow pattern. If all drivers could be encouraged to depart from their own self-interested choices, L (x , y; $\lambda,$ μ) it is quite possible that all might benefit. And in the
+Figure $3$ Braess’s paradox. The addition of a link causes every one’s journey time to lengthen. (After Braess ( 1968 ) and Cohen ( 1988 ).) Again define the function by another flow pattern. If all drivers could be encouraged to depart from their own self-interested choices, L (x , y; $\lambda,$ μ) it is quite possible that all might benefit. And in the
 
  = 
 
@@ -281,11 +281,11 @@ than minimizing their own delay.                                 In recent years
 their own delay, then the resulting equilibrium flows          tralized parallel algorithm that solves an optimization
 will minimize a certain objective function defined for         problem, just as the decentralized choices of drivers in
 the network. However, the objective function is cer-          a road network solve an optimization problem. We shall
-tainly not the total network delay, and thus there is         outline the argument, beginning with a more detailed
+tainly not the total network delay, and thus there is         out line the argument, beginning with a more detailed
 no guarantee that when capacity is added to a network         description of TCP.2
 the situation is improved. We have also seen that, with          Packets transferred by TCP across the Internet con-
 the imposition of appropriate tolls, it is possible for the   tain sequence numbers indicating their order, and they
-self-interested behavior of drivers to lead to an equilib-    should arrive at their destination in that order. When
+self-interested behavior of drivers to lead to an equ i lib-    should arrive at their destination in that order. When
 rium pattern of flow that minimizes total delay. A major       a packet is received at the destination, it is acknow-
 challenge for governments and transport planners is to        ledged: an acknowledgment is a short packet sent by
 understand how insights from these and more sophisti-         the destination back to the source. If a packet has been
@@ -305,7 +305,7 @@ of the data. The general approach is as follows (Jacob-       greater than or eq
 son 1988). When a link within the network becomes             acknowledgments to come in, which have the effect of
 overloaded, one or more packets are lost; loss of a           reducing the size of the sliding window and, as we shall
 packet is taken as an indication of congestion, the desti-    see, increasing cwnd as well. Thus, the size of the sliding
-nation informs the source, and the source slows down.         window continually changes, moving in the direction of
+nation in forms the source, and the source slows down.         window continually changes, moving in the direction of
 TCP then gradually increases its sending rate until it        a target size that is given by the congestion window.
 again receives an indication of congestion. This cycle           The congestion window itself is not a fixed number:
 of increase and decrease enables the source computers         rather, it is constantly being updated, and the precise

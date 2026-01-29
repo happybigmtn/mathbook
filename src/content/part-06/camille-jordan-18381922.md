@@ -22,7 +22,7 @@ groups [V.7](/part-05/the-classication-of-finite-simple-groups) (meaning that th
 of the known infinite families of simple groups) to be
                                                             than any formal knowledge and education that had
 found. It is now known that there are twenty-six such
-                                                            given him a position among the foremost of mathe-
+                                                            given him a position among the fore most of mathe-
 groups altogether, although it was almost a century
                                                             maticians. During a career spanning more than thirty
 after Mathieu before a sixth one was found.
@@ -33,7 +33,7 @@ VI.52      Camille Jordan
 b. Lyon, France, 1838; d. Milan, Italy, 1922
 Nominally an engineer until 1885; teacher of mathematics,
                                                                Lie graduated in general science from the university
-École Polytechnique and Collège de France (1873–1912)       in Oslo in 1865 but without showing any special apti-
+École Polytechnique and Collège de France (1873–1912)       in Oslo in 1865 but with out showing any special apti-
                                                             tude for mathematics. It was not until 1868, when he
 Jordan was the leading group theorist of his genera-        attended a lecture by the Danish geometer Hierony-
 tion. His immense Traité des Substitutions et des Équa-     mus Zeuthen on the work of Chasles, möbius [VI.30](/part-06/august-ferdinand-mbius-17901868),
@@ -51,16 +51,16 @@ equivalent normal form.                                     joined by Klein, he 
 cially for the theorem now known as the Jordan curve        through his theory of surfaces and Jordan through his
 theorem. This states that a simple closed curve in the      knowledge of group theory and the work of galois
 plane separates the plane into two disjoint regions, an     [VI.41](/part-06/variste-galois-18111832)—with the result that he (and Klein) began to
-inside and an outside, and it was given by him in his       recognize the value of group theory for the study of
+inside and an out side, and it was given by him in his       recognize the value of group theory for the study of
 influential Cours d’Analyse (1887). Although the theo-       geometry. Lie and Klein published three joint papers
 rem appears obvious, the proof, as Jordan recognized,       on geometrical topics, including one on the so-called
-is difficult and the one he gave was incorrect. (The          Lie line–sphere transformation (the contact transfor-
-proof is relatively easy for smooth curves; the difficul-     mation, which is a transformation that maps straight
-ties arise when dealing with nowhere-smooth curves,         lines into spheres and principal tangent curves into
+is difficult and the one he gave was in correct. (The          Lie line–sphere transformation (the contact trans for-
+proof is relatively easy for smooth curves; the diff i cul-     mation, which is a transformation that maps straight
+ties arise when dealing with no where-smooth curves,         lines into spheres and principal tangent curves into
 such as the Koch snowflake.) The first rigorous proof         curvature lines; and then the study of the geometrical
 was given by Oswald Veblen in 1905. There is a stronger     entities that are invariant under such transformations).
 form of the theorem, known as the Jordan–Schönflies             When Klein prepared what was to become his famous
 theorem, which states that in addition the two regions      “Erlanger Programm” (his character ization of geometry
-of the plane, the inside and the outside, are homeo-        as properties invariant under a group action), Lie was
+of the plane, the inside and the out side, are homeo-        as properties invariant under a group action), Lie was
 morphic to the standard circle in the plane. Unlike the     with him. This work later created a deep rift between
 original theorem, this stronger form of the theorem         them. (Friendship turned into aloofness and hostility

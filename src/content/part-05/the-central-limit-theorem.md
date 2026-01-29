@@ -2,7 +2,7 @@
 
 V.7.   The Classification of Finite Simple Groups                                                                       687
 
-for all θ outside a set of measure zero. When this holds,      that they are identically distributed. Suppose also that
+for all θ out side a set of measure zero. When this holds,      that they are identically distributed. Suppose also that
 one says that the Fourier series of f converges almost         they have mean 0 and variance 1. Then X1 + · · · + Xn
 every where. If Luzin’s conjecture were true, it would          has mean 0 and variance n. (The variance is n because
 validate Fourier’s vision from the early nineteenth            the Xi are independent.) Therefore, Yn = (X1 + · · · +
@@ -11,11 +11,11 @@ century.                                                       Xn )/ n has mean 
   For several decades it looked as though Luzin’s              theorem states that, regard less of the distribution of
 conjecture might well be false. kolmogorov [VI.88](/part-06/andrei-nikolaevich-kolmogorov-19031987)             the Xi , the random variable Yn converges to a standard
 constructed a function f in L1 [0, 2π ] whose Fourier          normal distribution. It is easy to deduce from this a sim-
-series converges nowhere. Also, a theorem of Kolmo-            ilar result for random variables with any finite mean
+series converges no where. Also, a theorem of Kolmo-            ilar result for random variables with any finite mean
 gorov, Seliverstov, and Plessner, which asserted that          and variance. Details may be found in probability
                    
 lim N→. nfty (SN f (θ)/ log N) = 0 almost every where when            distributions [III.71 §5](/part-03/probability-distributions).
-f is in L2 [0, 2π ], withstood all attempts at improve-
+f is in L2 [0, 2π ], with stood all attempts at improve-
 ment for over thirty years.                                    V.7 The Classification of
   It therefore came as a big surprise when Lennart Car-            Finite Simple Groups
 leson proved in 1966 that Luzin’s conjecture is true.                 Martin W. Liebeck

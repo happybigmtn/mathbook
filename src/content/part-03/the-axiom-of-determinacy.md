@@ -40,7 +40,7 @@ have seen, the game is certainly determined when S is                           
 the set of eventually periodic sequences, and indeed for            since the left-hand side is P[A ∧ B] and the right-hand
 just about any set S that one writes down it is easy to             side is P[B ∧ A]. Dividing through by P[B] we obtain
 see that the corresponding game is determined. Never-               Bayes’s theorem:
-theless, it turns out that there are games that are not
+the less, it turns out that there are games that are not
                                                                                                 P[B|A] P[A]
 determined. (It is an instructive exercise to see where                              P[A|B] =               ,
                                                                                                    P[B]
@@ -51,7 +51,7 @@ winning strategy, then A cannot force a win, so B must
 have a winning strategy,” breaks down.)
                                                                        A fundamental problem in statistics is to analyze ran-
   It is not too hard to construct nondetermined games,
-                                                                    dom data given by an unknown probability distribu-
+                                                                    dom data given by an unknown probability dis tr ibu-
 but the constructions use the axiom of choice [III.1](/part-03/axiom-of-choice):
                                                                     tion [III.71](/part-03/probability-distributions). Here, Bayes’s theorem can make a signif-
 roughly speaking, one can well-order all possible strate-
@@ -68,10 +68,10 @@ player.                                                             stand for th
    The axiom of determinacy states that all games are               let C be the number of coins. Then for each n between 1
 determined. It contradicts the axiom of choice, but it              and 10 it is not hard to calculate the conditional prob-
 is a rather interesting axiom when it is added to the               ability P[H3 |C = n], but we would like to know the
-zermelo–fraenkel axioms [III.99](/part-03/the-zermelofraenkel-axioms) without choice. It                 reverse, namely P[C = n|H3 ]. Bayes’s theorem tells us
+zermelo–fraenkel axioms [III.99](/part-03/the-zermelofraenkel-axioms) with out choice. It                 reverse, namely P[C = n|H3 ]. Bayes’s theorem tells us
 turns out, for example, to imply that many sets of                  that it is
 reals have surprisingly good properties, such as being                                             P[C = n]
                                                                                      P[H3 |C = n]           .
 Lebesgue measurable. Variants of the axiom of deter-                                                P[H3 ]
 minacy are closely connected with the theory of large               This would tell us the ratios between the various con-
-cardinals. For more details, see set theory [IV.22](/part-04/set-theory).                ditional probabilities P[C = n|H3 ] if we knew what the
+cardinals. For more details, see set theory [IV.22](/part-04/set-theory).                dition al probabilities P[C = n|H3 ] if we knew what the

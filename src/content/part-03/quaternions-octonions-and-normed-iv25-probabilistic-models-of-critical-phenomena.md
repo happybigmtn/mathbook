@@ -31,7 +31,7 @@ for his help with the simulations and to Gordon Slade for       ena. In each exa
 his remarks on the first version of this article.                tem change abruptly as a relevant parameter (fertility,
                                                                 degree of porosity, or temperature) is varied through
 Further Reading                                                 a critical value. For parameter values just below the
-                                                                critical value, the overall organization of the system is
+                                                                critical value, the over all organization of the system is
 Aldous, D. 1993. The continuum random tree. III. Annals of
   Probability 21:248–89.                                        quite different from how it is for values just above. The
 Bachelier, L. 1900. Théorie de la spéculation. Annales Scien-   sharpness of the transition is remarkable. How does it
@@ -74,7 +74,7 @@ Branching Processes
 
 Branching processes provide perhaps the simplest example of a phase transition. They occur naturally as a model of the random evolution of a population that changes in time as a result of births and deaths. The simplest branching process is defined as follows. Consider an organism that lives for a unit time and that reproduces immediately before death. The organism has two potential offspring, which we can regard as the “left” offspring and the “right” offspring.
 At the moment of reproduction, the organism has either no offspring, a left but no right offspring, a right but no left offspring, or both a left and a right offspring. Assume that each of the potential offspring has a probability p of being born and that these two births occur independently. Here, the number p, which lies between $0$ and $1$ , is a measure of the population’s fecundity. Suppose that we start with a single organism at time zero, and that each descendant of this organism reproduces independently in the above manner.
-A possible family tree is depicted in figure $1$ , showing all births that occurred. In this family tree, ten offspring were produced in all, but twelve potential offspring were not born, so the probability of this particular tree occurring is p10(1 - p)12 . If $p = 0$ , then no offspring are born, and the family tree always consists of the original organism only. If $p = 1$ , then all possible offspring are born, the family tree is the infinite binary tree, and the population always survives forever. For intermediate values of p, the population may or may not survive forever:
+A possible family tree is depicted in figure $1$ , showing all births that occurred. In this family tree, ten offspring were produced in all, but twelve potential offspring were not born, so the probability of this particular tree occurring is p10(1 - p)12 . If $p = 0$ , then no offspring are born, and the family tree always consists of the original organism only. If $p = 1$ , then all possible offspring are born, the family tree is the infinite binary tree, and the population always survives for ever. For intermediate values of p, the population may or may not survive for ever:
 let $\theta$ (p)
 
 IV. Branches of Mathematics
@@ -83,7 +83,7 @@ Figure $1 A$ possible family tree,
 
 with probability p10(1 - p)12 .
 
-denote the survival probability, that is, the probability that the branching process survives forever when the fecundity is set at p. How does $\theta$ (p) interpolate between the two extremes $\theta(0) = 0$ and $\theta(1) = 1$ ?
+denote the survival probability, that is, the probability that the branching process survives for ever when the fecundity is set at p. How does $\theta$ (p) interpolate between the two extremes $\theta(0) = 0$ and $\theta(1) = 1$ ?
 
 $2$ . $1$
 
@@ -102,8 +102,8 @@ $1$
 
 $p_{1}$
 
-The value $p = p^{c} = {}^{2}$ is $a$ critical value, at which the graph of $\theta$ (p) has a kink (see figure $2$ ). The interval p $<$ p c is referred to as subcritical, whereas p $>$ p c is supercritical. Rather than asking for the probability $\theta$ (p) that the initial organism has infinitely many descendants, one could ask for the probability P k (p) that the number of descendants is at least k. If there are at least $k + 1$ descendants, then there are certainly at least k, so P k (p) decreases as k increases. In the limit as k increases to infinity, P k (p) decreases to $\theta$ (p).
-In particular, when p $>$ p c , P k (p) approaches a positive limit as k approaches infinity, whereas P k (p) goes to zero when p $\le$ p c . When p is strictly less than p c , it can be
+The value $p = p^{c} = {}^{2}$ is $a$ critical value, at which the graph of $\theta$ (p) has a kink (see figure $2$ ). The interval p $<$ p c is referred to as subcritical, where as p $>$ p c is supercritical. Rather than asking for the probability $\theta$ (p) that the initial organism has infinitely many descendants, one could ask for the probability P k (p) that the number of descendants is at least k. If there are at least $k + 1$ descendants, then there are certainly at least k, so P k (p) decreases as k increases.
+In the limit as k increases to infinity, P k (p) decreases to $\theta$ (p). In particular, when p $>$ p c , P k (p) approaches a positive limit as k approaches infinity, where as P k (p) goes to zero when p $\le$ p c . When p is strictly less than p c , it can be
 
 $IV$ . $25$ .
 
@@ -179,7 +179,7 @@ many applications is the study of objects known as
 graphs [III.34]. These are used to model systems such
                                                               when p = 1. At a certain point between these extremes,
 as the Internet, the World Wide Web, and highway net-
-                                                              N undergoes a dramatic jump.
+                                                              N under goes a dramatic jump.
 works. Mathematically, a graph is a collection of ver-
                                                                 It is possible to guess where the jump might take
 tices (which might represent computers, Web pages, or
@@ -196,7 +196,7 @@ or bonds.
                                                               so the expected degree of any given vertex is p(n − 1).
                                                               When p is less than 1/(n − 1), each vertex has, on aver-
 3.1   The Basic Model of a Random Graph
-                                                              age, less than one neighbor, whereas when p exceeds
+                                                              age, less than one neighbor, where as when p exceeds
 A major subarea of graph theory, initiated by Erdős and      1/(n − 1), it has, again on average, more than one. This
 Rényi in 1960, concerns the properties that a graph typ-      suggests that pc = 1/(n−1) will be a critical value, with
 ically has when it has been generated randomly. A nat-        N being small when p is below pc , and large when p is
@@ -229,7 +229,7 @@ are said to be connected. A component, or connected           distribution of th
 cluster, in a graph is what you obtain if you take a vertex      There is a marked difference between the behavior of
 together with all the other vertices that are connected       the functions log n, n2/3 , and n, for large n. The small
 to it.                                                        clusters present for p < pc correspond to what is called
-   Any graph decomposes naturally into its connected          a subcritical phase, whereas in the so-called supercriti-
+   Any graph decomposes naturally into its connected          a subcritical phase, where as in the so-called supercriti-
 clusters. These will, in general, have different sizes (as     cal phase, where p > pc , there is a “giant cluster” whose
 measured by the number of vertices), and given a graph        size is of the same order of magnitude as the entire
 it is interesting to know the size of its largest cluster,    graph (see figure 4).
@@ -288,7 +288,7 @@ clusters have sizes (a) 17 and 11 and (b) 284 and 16. The   single connected clu
 hundreds of edges in the graphs are not clearly shown.      tices. For what values of the edge-probability p is this
                                                             likely? It is known that the property of being connected
 rapidly merge into a giant cluster whose size is pro-       has a sharp threshold, at pconn = (1/n) log n, in the
-portional to the size of the entire system. The coales-     following sense. If p = pconn (1 + ε) for some fixed
+portion al to the size of the entire system. The coales-     following sense. If p = pconn (1 + ε) for some fixed
                                                             negative ε, then the probability that the graph is con-
 cence is thorough, in the sense that in the supercritical
                                                             nected approaches 0 as n → . nfty. If on the other hand ε
@@ -315,7 +315,7 @@ isolated vertex (a vertex with no incident edge), and the       the medium on a 
 presence of a Hamiltonian cycle (a closed loop that vis-        cannot. Thus, when an infinite cluster exists, it is said
 its every vertex exactly once). Below the threshold, the        that “percolation occurs.”
 random graph almost certainly does not have the prop-             Percolation on the square lattice Z2 is depicted in
-erty, whereas above the threshold it almost certainly           figure 5. Percolation in a three-dimensional physical
+erty, where as above the threshold it almost certainly           figure 5. Percolation in a three-dimensional physical
 does. The transition occurs abruptly.                           medium is modeled using Z3 . It is instructive, and
                                                                 mathematically interesting, to think how the model’s
                      4   Percolation                            behavior might change as the dimension d is varied.
@@ -345,7 +345,7 @@ retained with probability p and deleted with probability        pc = 2 when d = 
 1 − p, with all choices independent. The retained edges           Using the fact that θ(p) is the probability that any
 are referred to as “occupied” and the deleted ones as           particular vertex lies in an infinite cluster, it can be
 “vacant.” The result is a random subgraph of Zd whose           shown that when θ(p) > 0 there must be an infinite
-edges are the occupied bonds. These model the pores             connected cluster somewhere in Zd , while when θ(p) =
+edges are the occupied bonds. These model the pores             connected cluster some where in Zd , while when θ(p) =
 actually present in a macroscopic chunk of the medium.          0 there will not be one. Thus, percolation occurs when
    For fluid to flow through the medium there must be a           p > pc but not when p < pc , and the system’s behavior
 set of pores connected together on a macroscopic scale.         changes abruptly at the critical value. A deeper argu-
@@ -578,7 +578,7 @@ $5$ . $2$
 
 The Phase Transition
 
-For the Ising model with external field h and temperature T , let us choose a configuration randomly with the probabilities defined above. The magnetization M (h , T) is defined to be the expected value of the spin σ x at a given vertex x. Because of the symmetry of the lattice Z d , this does not depend on the particular vertex chosen. Accordingly, if the magnetization M (h , T) is positive, then spins have an overall tendency to be aligned in the positive direction, and the system is magnetized. The symmetry between up and down implies that M (  -  h , T) $= -$ M (h , T) (i . e .
+For the Ising model with external field h and temperature T , let us choose a configuration randomly with the probabilities defined above. The magnetization M (h , T) is defined to be the expected value of the spin σ x at a given vertex x. Because of the symmetry of the lattice Z d , this does not depend on the particular vertex chosen. Accordingly, if the magnetization M (h , T) is positive, then spins have an over all tendency to be aligned in the positive direction, and the system is magnetized. The symmetry between up and down implies that M (  -  h , T) $= -$ M (h , T) (i . e .
 , reversing the external field reverses the magnetization) for all h and T . In particular, when $h = 0$ , the magnetization must be zero. On the other hand, if there is a nonzero external field h, then configurations with spins that are aligned with h are overwhelmingly more likely (because their energy is lower), and the magnetization satisfies \{ | |$< 0$ if$h < 0$, | \{ M(h , $T) = 0$ if $h = 0$ , ⎪ ⎪ ⎪ ⎩ $> 0$ if $h > 0$ . What happens if the external field is initially positive and then is reduced to zero?
 In particular, is the spontaneous magnetization, defined by M  +  (T)  =  lim M (h , T),
 
@@ -598,7 +598,7 @@ This is the case no matter how small the external field becomes, so $M + (0) = 1
 
                                                                                   χ(T ) ∼ C(T − Tc )−γ ,    as T → Tc+ .
                                                 h
-                                                                       Finally, δ describes the manner in which the magneti-
+                                                                       Finally, δ describes the manner in which the mag net i-
                                                                        zation goes to zero as the external field is reduced to
                                                                        zero at the critical temperature. That is,
 
@@ -706,7 +706,7 @@ Figure $1$ A soap film has minimum area.
 The two-dimensional form of the problem asks: what is the shortest curve that encloses a given area? The answer, as we might expect by analogy with the three dimensional case, is a circle. Thus, by minimizing the length of the curve we force it to have a great deal of symmetry: the curve should be equally curved every where along its length. In three or more dimensions, many different kinds of curvature [III.78](/part-03/ricci-flow) are used in different contexts. One, known as mean curvature, is the appropriate one for area-minimization problems.
 The sphere has the same mean curvature at every point, but then it is pretty clear from its symmetry that the sphere would have the same curvature at every point whatever measure of curvature we used. More illustrative examples are provided by the soap films (much more varied than simple bubbles) that are a popular feature of recreational mathematics lectures: figure $1$ shows such a soap film stretched across a wire frame. The film adopts the shape that minimizes its area, subject to the constraint that it is bounded by the wire frame.
 One can show that the minimal surface (the exact mathematical solution to the minimization problem) has constant mean curvature: its mean curvature is the same at every point. Isoperimetric principles turn up all over mathematics: in the study of partial differential equations, the calculus of variations, harmonic analysis, computational algorithms, probability theory, and almost every branch of geometry. The aim of the first part of this article is to describe a branch of mathematics, highdimensional geometry, whose starting point is the fundamental isoperimetric principle:
-that the sphere is the surface of least area that encloses a given volume. The most remarkable feature of high-dimensional geometry is its intimate connection to the theory of probability: geometric objects in high-dimensional space exhibit many of the characteristic properties of random distributions. The aim of the second part of this article is to outline the links between the geometry and probability.
+that the sphere is the surface of least area that encloses a given volume. The most remarkable feature of high-dimensional geometry is its intimate connection to the theory of probability: geometric objects in high-dimensional space exhibit many of the characteristic properties of random distributions. The aim of the second part of this article is to out line the links between the geometry and probability.
 
 IV.26.   High-Dimensional Geometry and Its Probabilistic Analogues                                                          671
 
@@ -740,7 +740,7 @@ is                                                                   to imagine
                     (x − u)2 + (y − v)2 .                             greater than 1, say 1 + ε. This is pictured in figure 3. The
 In n dimensions we define the distance between points                  enlarged ball has volume (1 + ε)n vn and so the volume
 (u1 , u2 , . . . , un ) and (x1 , x2 , . . . , xn ) to be             of the shell between the two spheres is ((1+ε)n −1)vn .
-                                                                     Since the shell has thickness ε, this volume is approxi-
+                                                                     Since the shell has thickness ε, this volume is approx i-
        (x1 − u1 )2 + (x2 − u2 )2 + · · · + (xn − un )2 .              mately the surface area multiplied by ε. So the surface
    Volume is defined in n-dimensional space roughly as                 area is approximately
 follows. We start by defining a cube in n dimensions.                                        (1 + ε)n − 1
@@ -758,7 +758,7 @@ In n-dimensional space the analogous cube consists of                 One can ch
 those points whose coordinates are all between 0 and 1.               the power (1 + ε)n or by observing that the expression
 We stipulate that the unit cube has volume 1. Now, if                 is the formula for a derivative.
 we double the size of a plane figure, its area increases                  So far we have discussed bodies in n-dimensional
-by a factor of 4. If we double a three-dimensional body,              space without being too precise about what kind of sets
+by a factor of 4. If we double a three-dimensional body,              space with out being too precise about what kind of sets
 its volume increases by a factor of 8. In n-dimensional               we are considering. Many of the statements in this arti-
 space, the volume scales as the nth power of size: so a               cle hold true for quite general sets. But a special role
 cube of side t has volume t n . To find the volume of a                is played in high-dimensional geometry by convex sets
@@ -778,7 +778,7 @@ $3$
 The Brunn-Minkowski Inequality
 
 The two-dimensional isoperimetric principle was essentially proved in 1841 by Steiner, although there was a technical gap in the argument which was filled later. The general (ndimensional) case was completed by the end of the nineteenth century. A couple of decades later a different approach to the principle, with far-reaching consequences, was found by hermann minkowski [VI.64](/part-06/hermann-minkowski-18641909) -- an approach which was inspired by an idea of Hermann Brunn. Minkowski considered the following way to add together two sets in n-dimensional space.
-If C and D are sets, then the sum C  +  D consists of all points which can be obtained by adding a point of C to a point of D. Figure $4$ shows an example in which C is an equilateral triangle and D is a square centered at the origin. We place a copy of the square at each point of the triangle (some of these are illustrated) and the set C  +  D consists of all points that are included in all these squares. The outline of C  +  D is shown dashed. The Brunn-Minkowski inequality relates the volume of the sum of two sets to the volumes of the sets themselves.
+If C and D are sets, then the sum C  +  D consists of all points which can be obtained by adding a point of C to a point of D. Figure $4$ shows an example in which C is an equilateral triangle and D is a square centered at the origin. We place a copy of the square at each point of the triangle (some of these are illustrated) and the set C  +  D consists of all points that are included in all these squares. The out line of C  +  D is shown dashed. The Brunn-Minkowski inequality relates the volume of the sum of two sets to the volumes of the sets themselves.
 It states that (as long as the two sets C and D are not empty) vol (C + D)1/n \ge vol (C)1/n + vol (D)1/n .
 
 (1)
@@ -791,8 +791,8 @@ Figure $4$ Adding two sets.
 
 and each of vol (C)1/n and vol (D)1/n is equal to $1$ : the inequality ( $1$ ) holds with equality. Similarly, whenever C and D are copies of one another, the Brunn-Minkowski inequality holds with equality. If we omitted the exponents $1/$ n , the statement would still be true; in the case of two cubes, it is certainly true that $2^{n} \ge 1 + 1$ . But the statement would be extremely weak: it would give us almost no useful information.
 The importance of the Brunn-Minkowski inequality stems from the fact that it is the most fundamental principle relating volume to the operation of addition, which is the operation that gives space its structure. At the start of this section it was explained that Minkowski’s formulation of Brunn’s idea provided a new approach to the isoperimetric principle. Let us see why. Let C be a compact set [III.9](/part-03/compactness-and-compactication) in R n whose volume is equal to that of the unit ball B.
-We want to show that the surface area of C is at least n vol (B) since this is the surface area of the ball. We consider what happens to C if we add a small ball to it. An example (a right-angled triangle) is shown in figure $5$ : the dashed curve outlines the enlarged set we obtain by adding to C a copy of the ball B scaled by a small factor ε. This looks rather like figure $3$ above but here we do not expand the original set, we add a ball. Just as before, the difference between C  +  εB and C is a shell around C of width ε, so we can express the surface area as a limit as ε approaches $0$ :
-vol $(C + εB) -$ vol  (  C  ). lim ε
+We want to show that the surface area of C is at least n vol (B) since this is the surface area of the ball. We consider what happens to C if we add a small ball to it. An example (a right-angled triangle) is shown in figure $5$ : the dashed curve out lines the enlarged set we obtain by adding to C a copy of the ball B scaled by a small factor ε. This looks rather like figure $3$ above but here we do not expand the original set, we add a ball.
+Just as before, the difference between C  +  εB and C is a shell around C of width ε, so we can express the surface area as a limit as ε approaches $0$ : vol $(C + εB) -$ vol  (  C  ). lim ε
 
 $ε \to 0$
 
@@ -920,7 +920,7 @@ $5$
 
 High-Dimensional Geometry
 
-It was mentioned at the end of section $3$ that convex sets have a special significance in Minkowski’s theory relating volume to the additive structure of space. They also occur naturally in a large number of applications: in linear programming and partial differential equations, for example. Although convexity is a fairly restrictive condition for a body to satisfy, it is not hard to convince oneself that convex sets exhibit considerable variety and that this variety seems to increase with the dimension. The simplest convex sets after the balls are cubes.
+It was mentioned at the end of section $3$ that convex sets have a special significance in Minkowski’s theory relating volume to the additive structure of space. They also occur naturally in a large number of applications: in linear programming and partial differential equations, for example. Although convexity is a fairly restrictive condition for a body to satisfy, it is not hard to convince one self that convex sets exhibit considerable variety and that this variety seems to increase with the dimension. The simplest convex sets after the balls are cubes.
 If the dimension is large, the surface of a cube looks very unlike the sphere. Let us consider, not a unit cube, but a cube of side $2$ whose center is the origin. The corners of the cube are points like (1, 1, . . ., 1) or (1, -1, -1, . . ., 1), whose coordinates are all equal to $1$ or $- 1$ , while the center of each face is a point like (1, 0, 0, . . ., 0) which has just one coordinate equal to √ $1$ or $- 1$ . The corners are at a distance $n$ from the center of the cube, while the centers of the faces are at distance $1$ from the origin.
 Thus, the largest sphere that can be fitted inside the cube has radius $1$ , while the √ smallest sphere that encloses the cube has radius n (this is illustrated in figure $8$ ). √ When the dimension n is large, this ratio of n is also large. As one might expect, this gap between the ball and the cube is able to accommodate a wide variety of different convex shapes. Nevertheless, the probabilistic view of high-dimensional geometry has led to an understanding that, for many purposes, this enormous variety is an illusion: that in certain well-defined senses, all convex bodies behave like balls.
 Probably the first discovery that pointed strongly in this direction was made by Dvoretzky in the late $1960s$ . Dvoretzky’s theorem says that every high-dimensional convex body has slices that are almost spherical. More precisely, if you specify a dimension (say ten) and a degree of accuracy, then for any sufficiently large dimension n, every n-dimensional convex body has a ten-dimensional slice that is in distinguishable from a ten-dimensional sphere, up to the specified accuracy.
@@ -972,7 +972,7 @@ surface was proved by the present author using an
 inequality from harmonic analysis discovered by Bras-
                                                             heads will occur on roughly half the tosses, and tails
 camp and Lieb; the fact that the simplex is the only con-
-                                                            on roughly half. Moreover, as the number of tosses
+                                                            on roughly half. More over, as the number of tosses
 vex set with maximal surface (in the sense described)
                                                             increases, you expect the proportion of heads to get
 was proved by Barthe.                                                              1                1
@@ -983,7 +983,7 @@ methods grew out of two branches of probability             equal probability, s
 theory. One is the study of sums of random points in        the average of these, namely 12 .
 normed spaces [III.62](/part-03/normed-spaces-and-banach-spaces) and how big they are, which             The crucial unspoken assumption that we make
 provides important geometrical information about the        about the tosses of the coin is that they are inde-
-spaces themselves. The other, the theory of Gaussian        pendent : that the outcomes of different tosses do
+spaces themselves. The other, the theory of Gaussian        pendent : that the out comes of different tosses do
 processes, depends upon a detailed understanding of         not influence one another. (Independence and other
 how to cover sets in high-dimensional space efficiently       basic probabilistic concepts are discussed in probabil-
 with small balls. This issue may sound abstruse but         ity distributions [III.71](/part-03/probability-distributions).) The coin-tossing principle,
@@ -1056,7 +1056,7 @@ Plane: $x + y = 0$
 
 Figure $11$ A random point of the cube.
 
-more than ε from the plane: the set shown shaded in figure $11$ . When we discussed the geometric deviation principle, we estimated the volume of the set of points which were more than ε away from a set C which occupied half the ball. The present situation is really the same, because each part of the shaded set consists of those points that are more than ε away from whichever half of the cube lies on the other side of the plane. Arguments akin to the central limit theorem show that if we cut the cube in half with a plane, then the set of points which lie more than a distance ε from one of
+more than ε from the plane: the set shown shaded in figure $11$ . When we discussed the geometric deviation principle, we estimated the volume of the set of points which were more than ε away from a set C which occupied half the ball. The present situation is really the same, because each part of the shaded set consists of those points that are more than ε away from which ever half of the cube lies on the other side of the plane. Arguments akin to the central limit theorem show that if we cut the cube in half with a plane, then the set of points which lie more than a distance ε from one of
 
 $2$
 
@@ -1067,7 +1067,7 @@ Towards the end of the $1980s$ Pisier found an elegant argument that showed that
 $IV$ . $26$ .
 
 High-Dimensional Geometry and Its Probabilistic Analogues The theory of large deviations in probability is now highly developed. In principle, more or less precise estimates are known for the probability that a sum of independent random variables deviates from its expectation by a given amount, in terms of the original distribution of the variables. In practice, the estimates involve quantities that may be difficult to compute, but there are sophisticated methods for doing this. The theory has numerous applications within probability and statistics, computer science, and statistical physics.
-One of the most subtle and powerful discoveries of this theory is Talagrand’s deviation inequality for product spaces, discovered in the mid $1990s$ . Talagrand himself has used this to solve several famous problems in combinatorial probability and to obtain striking estimates for certain mathematical models in particle physics. The full inequality of Talagrand is somewhat technical and is difficult to describe geometrically. However, the discovery had a precursor which fits perfectly into the geometric picture and which captures at least one of the most important ideas.
+One of the most subtle and powerful discoveries of this theory is Talagrand’s deviation inequality for product spaces, discovered in the mid $1990s$ . Talagrand himself has used this to solve several famous problems in combinatorial probability and to obtain striking estimates for certain mathematical models in particle physics. The full inequality of Talagrand is some what technical and is difficult to describe geometrically. However, the discovery had a precursor which fits perfectly into the geometric picture and which captures at least one of the most important ideas.
 2 We look again at random points in the cube but this time the random point is not chosen uniformly from within the cube. As before, we choose the coordinates $x^{1}$ , $x^{2}$ , . . . , x n of our random point independently of one another, but we do not insist that each coordinate is chosen uniformly from the range between $- 1$ and $1$ .
 For example, it might be that $x^{1}$ can take only the values $1$ , $0$ , or $- 1$ , each with probability $\frac{1}{3}$ , that $x^{2}$ can take only the values $1$ or $- 1$ each with probability $\frac{1}{2}$ , and perhaps that $x^{3}$ is chosen uniformly from the entire range between $- 1$ and $1$ . What matters is that the choice of each coordinate has no effect on the choice of any others. Any sequence of rules that dictates how we choose each coordinate determines a way of choosing a random point in the cube.
 This in turn gives us a way of measuring a kind of volume for subsets of the cube: the “volume” of a set A is the chance that our random point is selected from A. This way to measure volume might be very different from the usual one; among other things, an individual point might have nonzero volume. Now suppose that C is a convex subset of the cube
@@ -1085,7 +1085,7 @@ $2$
 C is less than $2e - ε / {}^{16}$ . This statement looks like the deviation estimate for the cube except that it refers only to convex sets C. But the crucial new information that makes the estimate and its later versions important is that we are allowed to choose our random point in so many different ways. This section has described deviation estimates in probability theory that have a geometric flavor. For the cube, we are able to show that if C is any set occupying half the cube, then almost the entire cube is close to C.
 It would be extremely useful to know the same thing for convex sets more general than the cube. There are some other highly symmetric sets for which we do know it, but the most general possible statement of this type seems to be beyond our current methods. One potential application, which comes from theoretical computer science, is to the analysis of random algorithms for volume calculation.
 The problem may sound specialized, but it arises in linear programming [III.84](/part-03/the-simplex-algorithm) (which alone is sufficient reason to justify the expenditure of enormous effort) and in the numerical estimation of integrals. In principle, one can calculate the volume of a set by laying over it a very fine grid, and counting how many grid points fall into the set. In practice, if the dimension is large, the number of grid points will be so astronomically huge that no computer has a chance of performing the count.
-The problem of calculating the volume of a set is essentially the same as the problem of choosing a point at random within the set, roughly as we saw in section $4$ . So the aim is to select a random point without identifying a huge number of possible points to select from. At present, the most effective way of generating a random point in a convex set is to carry out a random walk within the set.
+The problem of calculating the volume of a set is essentially the same as the problem of choosing a point at random within the set, roughly as we saw in section $4$ . So the aim is to select a random point with out identifying a huge number of possible points to select from. At present, the most effective way of generating a random point in a convex set is to carry out a random walk within the set.
 We perform a sequence of small steps whose directions are chosen randomly and then select the point that we have reached after a fairly large number of steps, in the hope that this point has roughly the correct chance of falling into each part of the set. For the method to be effective, it is essential that the random walk quickly visits points all over the set: that it does not get stuck for a long time in, say, half of the set. In order to guarantee this rapid mixing, as it is called, we need an isoperimetric principle or deviation principle.
 We need to know that each half of our set has a large boundary, so that there is a good chance that our random walk will cross the boundary quickly and land in the other half of our set.
 

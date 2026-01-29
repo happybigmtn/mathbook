@@ -19,7 +19,7 @@ tical problems than in worst-case examples. Typically,
                                                                 [I.3 §5.5](/part-01/fundamental-definitions) tells us that equation (1) does indeed have a
 only O(m) steps are needed to solve a problem with
                                                                 solution, namely
-m constraints. Moreover, Khachian (1979) proved (by                                                 x
+m constraints. More over, Khachian (1979) proved (by                                                 x
                                                                                              1
 analysis of the so-called ellipsoid algorithm) that linear                          F (x) =     dt.
                                                                                               t    1
@@ -39,7 +39,7 @@ running time is known.                                                          
                                                                                      =           dt +           du
 rior” methods for linear programming problems. These                                       1   t          1   u
 move through the interior of the polytope P, rather than                             = F (a) + F (b),
-among its vertices, and can sometimes solve large LPs
+among its vertices, and can some times solve large LPs
                                                                 and, using the formula for differentiating an inverse
 more quickly than the simplex algorithm. Modern com-
                                                                 function, we find that F −1 is the solution of the differ-

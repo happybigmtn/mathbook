@@ -44,13 +44,13 @@ Teacher of mathematics, Milan (1534–43); Professor of Medicine:
 Pavia (1543–60), Bologna (1562–70); imprisoned for heresy (1570–71)
                                                                        Viète obtained a bachelor’s degree in law in 1560 from
                                                                        the University of Poitiers, but left the profession from
-Cardano’s great treatise, the Ars Magna (1545), laid the               1564 to 1568 to oversee the education of Catherine
+Cardano’s great treatise, the Ars Magna (1545), laid the               1564 to 1568 to over see the education of Catherine
 foundations for European algebra and remained the                      de Parthenay, daughter of a local aristocratic family. His
 most comprehensive and systematic work on algebra                      earliest scientific writings were his lectures to Cather-
 for more than a century after it was published. It con-                ine. He spent the remainder of his life in high pub-
 tained many new ideas, including methods (not all Car-                 lic office, apart from a period between 1584 and 1589
 dano’s own) for solving cubic and quartic equations,                   when he was banished from the court in Paris for polit-
-all written without mathematical notation. Cardano’s                   ical and religious reasons. He died in Paris in 1603.
+all written with out mathematical notation. Cardano’s                   ical and religious reasons. He died in Paris in 1603.
 own great insight was to recognize the existence of                    Through out his life, it was only during the time he
 relations between the roots and the coefficients of an                   had free from official duties that he was able to devote
 equation; in this he was unprecedented. He also showed                 himself to mathematics.

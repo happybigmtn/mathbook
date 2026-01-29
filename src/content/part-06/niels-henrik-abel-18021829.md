@@ -7,7 +7,7 @@ the line there are two lines through the point that are        on the Applicatio
 asymptotic to the given line (one in each direction);          ories of Electricity and Magnetism (1828). In this work,
 these two lines separate the lines through the point           which Green opened by stressing the central role of the
 which meet the given line from those that do not. Loba-        “potential function” (a term that he himself coined), he
-chevskii called these the parallels to the given line          proved the three-dimensional version of the theorem
+che vskii called these the parallels to the given line          proved the three-dimensional version of the theorem
 through the given point. Starting from this definition,         now named after him, and introduced the concept that
 he gave formulas for the new trigonometry of triangles,        riemann [VI.49] later called Green’s function (1860).
 and showed that these formulas reduce to the famil-            The Essay became widely known only after its discovery
@@ -23,12 +23,12 @@ of space than Euclidean geometry.                              where U and V are
    He published these conclusions in lengthy papers in         whose derivatives are not infinite at any point of an
 Russian in the Journal of Kazan University, but they           arbitrary body, n is the surface normal of the body
 drew only a relentlessly hostile review from Ostro-            directed inward, and dσ is a surface element. The result
-gradskii, a much better known mathematician in Saint           today known as Green’s theorem, which is the planar
+grad ski i, a much better known mathematician in Saint           today known as Green’s theorem, which is the planar
 Petersburg. He published in French in a German jour-           version of the above, was first published by cauchy
-nal in 1837, in German in a booklet of 1840, and again         [VI.29](/part-06/augustin-louis-cauchy-17891857) in 1846, and it can be given (in modern nota-
+nal in 1837, in German in a book let of 1840, and again         [VI.29](/part-06/augustin-louis-cauchy-17891857) in 1846, and it can be given (in modern nota-
 in French in 1855, but to little avail. gauss [VI.26](/part-06/carl-friedrich-gauss-17771855)          tion) as follows. Let R be a closed plane region with
-appreciated the booklet of 1840 and in 1842 had Loba-          a piecewise-smooth boundary curve C with positive
-chevskii made a corresponding member of the Göttin-            orientation. Let P (x, y) and Q(x, y), having continu-
+appreciated the book let of 1840 and in 1842 had Loba-          a piecewise-smooth boundary curve C with positive
+che vskii made a corresponding member of the Göttin-            orientation. Let P (x, y) and Q(x, y), having continu-
 gen Academy of Sciences, but this was to be the only           ous partial derivatives, be defined on an open region
 acclaim Lobachevskii received in his lifetime.                 containing R. We then have
    Lobachevskii’s final years were marked by terrible                                                    ∂Q   ∂P
@@ -75,7 +75,7 @@ he also published a fuller, more detailed account, covering polynomials of any d
 $761$
 
 being that they are soluble by radicals. This represented an extensive generalization of the ideas described by gauss [VI.26](/part-06/carl-friedrich-gauss-17771855) in the seventh part of Disquisitiones Arithmeticae, where the special case of cyclotomic equations (which satisfy both of these conditions) is treated systematically. It was in honour of this work that, later, the adjective “Abelian” was applied to groups that are commutative.
-It is important to appreciate, however, that Abel reached his results in the theory of equations without any appeal to groups, which at that time were not yet known. He also made major contributions to the theory of convergence. Although there had been over a century of critical thinking devoted to foundations of the calculus, modern ideas of rigour were only just emerging in the writings of bolzano [VI.28](/part-06/bernard-bolzano-17811848), Cauchy, and others.
+It is important to appreciate, however, that Abel reached his results in the theory of equations with out any appeal to groups, which at that time were not yet known. He also made major contributions to the theory of convergence. Although there had been over a century of critical thinking devoted to foundations of the calculus, modern ideas of rigour were only just emerging in the writings of bolzano [VI.28](/part-06/bernard-bolzano-17811848), Cauchy, and others.
 Convergence had received some attention in Cauchy’s lectures of $1820 - 21$ , but series in general, and power series in particular, were still far from well understood. Among other contributions, Abel offered a proper proof of the binomial theorem for exponents other than positive integers, and the insight about the continuity of a function defined by a power series as its argument goes to the circle of convergence that is now known as Abel’s limit theorem. Perhaps his greatest discoveries, however, were in the area where analysis and algebraic geometry come together.
 To summarize his legacy in this area in just a few words: first, a new and productive approach to the theory of elliptic functions [V.31](/part-05/the-riemannroch-theorem); and, second, a vast generalization of elliptic functions to what are now called Abelian functions and Abelian integrals. In this area Abel competed for priority with jacobi [VI.35](/part-06/carl-gustav-jacob-jacobi-18041851). Most (though by no means all) of his work was written in two memoirs.
 One was published in two parts, “Recherches sur les fonctions elliptiques” and “Précis d’une théorie des fonctions elliptiques,” coming to well over two hundred pages in Crelle’s Journal in 1828$and$1829 . The other, entitled “Mémoire sur une propriété générale d’une classe très étendue de fonctions transcendantes,” was submitted to the Paris Academy of Sciences in October 1826 . There it lay on Cauchy’s desk, unread until after Abel’s death. It was published by the Paris Academy in 1841 . The manuscript itself, however, was stolen by G.

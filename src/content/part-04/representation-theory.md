@@ -8,7 +8,7 @@ compactifying moduli spaces is that we can then calculate integrals over the com
 Classically, one calculates many topological invariants by picking a geometric structure (such as a metric) on a space, calculating some quantity using this structure, and finally proving that the result of the calculation did not depend on the structure we chose. The new alternative is to look at all such geometric structures, and integrate some quantity over the space of all choices. The result, if we can show convergence, will manifestly not depend on any choices.
 String theory has given rise to many important applications of this idea, in particular by giving a rich structure to the collection of integrals obtained in this way. Donaldson and Seiberg-Witten theories use this philosophy to give topological invariants of four-manifolds. Gromov-Witten theory applies it to the topology of symplectic manifolds [III.88](/part-03/symplectic-manifolds), and to counting problems in algebraic geometry, such as, How many rational plane curves of degree $5$ pass through fourteen points in general position? (Answer : 87304 .) Modular forms.
 One of the most profound ideas in mathematics, the Langlands program, relates number theory to function theory (harmonic analysis) on very special moduli spaces, generalizing the moduli space of elliptic curves. These moduli spaces (Shimura varieties) are expressible as quotients of symmetric spaces (such as H) by arithmetic groups (such as PS$L^{2}$ (Z)) . modular forms [III.59](/part-03/modular-forms) and automorphic forms are special functions on these moduli spaces, described by their interaction with the large symmetry groups of the spaces.
-This is an extremely exciting and active area of mathematics, which counts among its recent triumphs the proof of fermat’s last theorem [V.10](/part-05/fermats-last-theorem) and the Shimura-Taniyama-Weil conjecture (Wiles , Taylor Wiles, Breuil - Conrad - Diamond - Taylor). Further Reading For historical accounts and bibliographies on moduli spaces, the following articles are highly recommended. A beautiful and accessible overview of moduli spaces, with an emphasis on the notion of deformations, is $419$ given by Mazur ( 2004 ).
+This is an extremely exciting and active area of mathematics, which counts among its recent triumphs the proof of fermat’s last theorem [V.10](/part-05/fermats-last-theorem) and the Shimura-Taniyama-Weil conjecture (Wiles , Taylor Wiles, Breuil - Conrad - Diamond - Taylor). Further Reading For historical accounts and bibliographies on moduli spaces, the following articles are highly recommended. A beautiful and accessible over view of moduli spaces, with an emphasis on the notion of deformations, is $419$ given by Mazur ( 2004 ).
 The articles by Hain ( 2000 ) and Looijenga ( 2000 ) give excellent introductions to the study of the moduli spaces of curves, perhaps the oldest and most important of all moduli problems. The article by Mumford and Suominen ( 1972 ) introduces the key ideas underlying the study of moduli spaces in algebraic geometry. Hain, R. 2000 . Moduli of Riemann surfaces, transcendental aspects. In School on Algebraic Geometry, Trieste, 1999 , $pp.293 - 353$ . ICTP Lecture Notes Series, no. $1$ . Trieste: The Abdus Salam International Centre for Theoretical Physics. Looijenga, E. 2000 .
 A minicourse on moduli of curves. In School on Algebraic Geometry, Trieste, 1999 , $pp.267 - 91$ . ICTP Lecture Notes Series, no. $1$ . Trieste: The Abdus Salam International Centre for Theoretical Physics. Mazur, B. 2004 . Perturbations, deformations and variations (and “ nearmisses ”) in geometry. Physics and number theory. Bulletin of the American Mathematical Society 41(3) : $307 - 36$ . Mumford, D., and K. Suominen. 1972 . Introduction to the theory of moduli. In Algebraic Geometry, Oslo, 1970 : Proceedings of the Fifth Nordic Summer School in Mathematics, edited by F.
 Oort, $pp. 171 - 222$ . Groningen: Wolters Noordhoff. $IV$ . $9$ Representation Theory Ian Grojnowski $1$ Introduction It is a fundamental theme in mathematics that many objects, both mathematical and physical, have symmetries. The goal of group [I.3](/part-01/fundamental-definitions) theory in general, and representation theory in particular, is to study these symmetries. The difference between representation theory and general group theory is that in representation theory one restricts one’s attention to symmetries of vector spaces [I.3](/part-01/fundamental-definitions).
@@ -21,7 +21,7 @@ The aim of representation theory is to understand how the internal structure of 
 $420$
 
 We begin our discussion by making more precise what we mean by “acts as a collection of symmetries.” The idea we are trying to capture is that if we are given a group G and an object X, then we can associate with each element g of G some symmetry of X, which we call φ (g) . For this to be sensible, we need the composition of symmetries to work properly: that is, φ (g) φ (h) (the result of applying φ (h) and then φ (g)) should be the same symmetry as φ (gh) . If X is a set, then a symmetry of X is a particular kind of permutation [III.68](/part-03/permutation-groups) of its elements.
-Let us denote by Aut (X) the group of all permutations of X. Then an action of G on X is defined to be a homomorphism from G to Aut (X). If we are given such a homomorphism, then we say that G acts on X. The image to have in mind is that G “does things” to X. This idea can often be expressed more conveniently and vividly by for getting about φ in the notation: thus, instead of writing φ (g) (x) for the effect on x of the symmetry associated with g, we simply think of g itself as a permutation and write gx. However, sometimes we do need to talk about φ as well:
+Let us denote by Aut (X) the group of all permutations of X. Then an action of G on X is defined to be a homomorphism from G to Aut (X). If we are given such a homomorphism, then we say that G acts on X. The image to have in mind is that G “does things” to X. This idea can often be expressed more conveniently and vividly by for getting about φ in the notation: thus, instead of writing φ (g) (x) for the effect on x of the symmetry associated with g, we simply think of g itself as a permutation and write gx. However, some times we do need to talk about φ as well:
 for instance, we might wish to compare two different actions of G on X. Here is an example. Take as our object X a square in the plane, centered at the origin, and let its vertices be A, B, C, and D (see figure $1$ ). A square has eight symmetries: four rotations by multiples of $90$ ◦ and four reflections. Let G be the group consisting of these eight symmetries; this group is often called $D^{8}$ , or the dihedral group of order $8$ . By definition, G acts on the square. But it also acts on the set of vertices of the square:
 for instance, the action of the reflection through the y-axis is to switch A with B and C with D. It might seem as though we have done very little here. After all, we defined G as a group of symmetries so it does not take much effort to associate a symmetry with each element of G. However, we did not define G as a group of permutations of the set {A, B, C, D}, so we have at least done something. To make this point clearer, let us look at some other sets on which G acts, which will include any set that we can build sufficiently naturally from the square.
 For instance, G acts not only on the set of vertices {A, B, C, D}, but on the set of edges {AB, BC, CD, DA} and on the set of cross-diagonals {AC, BD} as well. Notice in the latter case that some of the elements of G act in the same way: for example, a clockwise rotation through $90$ ◦ interchanges the two diagonals, as does a counter clockwise rotation through $90$ ◦ . If all the elements of G act differently, then the action is called faithful.
@@ -40,7 +40,7 @@ Figure $1$ A square and its diagonals.
 
 Notice that the operations on the square (“ reflect through the y-axis,” “rotate through $90$ ◦ ,” and so on) can be applied to the whole Cartesian plane $R^{2}$ . Therefore, $R^{2}$ is another (and much larger) set on which G acts. To call $R^{2}$ a set, though, is to forget the very interesting fact that the elements in $R^{2}$ can be added together and multiplied by real numbers: in other words, $R^{2}$ is a vector space. Further more, the action of G is well-behaved with respect to this extra structure.
 For instance, if g is one of our symmetries and $v^{1}$ and $v^{2}$ are two elements of $R^{2}$ , then g applied to the sum $v^{1} + v^{2}$ yields the sum $g(v^{1}) + g(v^{2})$ . Because of this, we say that G acts linearly on the vector space $R^{2}$ . When V is a vector space, we denote by GL (V) the set of invertible linear maps from V to V . If V is the vector space R n , this group is the familiar group GL n (R) of invertible n $\times$ n matrices with real entries; similarly, when $V = C$ n it is the group of invertible matrices with complex entries. Definition.
-A representation of a group G on a vector space V is a homomorphism from G to GL (V). In other words, a group action is a way of regarding a group as a collection of permutations, while a representation is the special case where these permutations are invertible linear maps. One sometimes sees representations referred to, for emphasis, as linear representations. In the representation of $D^{8}$ on $R^{2}$ that we described above, the homomorphism from G to G$L^{2}$ (R) took the symmetry “clockwise rotation through $90$ ◦ ” to
+A representation of a group G on a vector space V is a homomorphism from G to GL (V). In other words, a group action is a way of regarding a group as a collection of permutations, while a representation is the special case where these permutations are invertible linear maps. One some times sees representations referred to, for emphasis, as linear representations. In the representation of $D^{8}$ on $R^{2}$ that we described above, the homomorphism from G to G$L^{2}$ (R) took the symmetry “clockwise rotation through $90$ ◦ ” to
 
 $0 1{}^{0}$ ) and the symmetry “reflection through the matrix $( - 1$ the y-axis” to the matrix (-100 1).
 
@@ -51,7 +51,7 @@ IV.9.   Representation Theory                                                   
 by the multiplicative property of determinants. This           if you prefer them). There is an obvious action of G on
 makes det ρ a one-dimensional representation, since            the set of left cosets of H, which we denote by G/H: if
 each nonzero real number t can be thought of as the            g is an element of G, then it sends the coset g H to the
-element “multiply by t” of GL1 (R). If ρ is the represen-      coset (g g)H.
+element “multiply by t” of GL1 (R). If ρ is the re pre sen-      coset (g g)H.
 tation of D8 just discussed, then under det ρ we find              It turns out that every transitive action is of this form!
 that rotations act as the identity and reflections act as       Given a transitive action of G on a set X, choose some
 multiplication by −1.                                          x ∈ X and let Hx be the subgroup of G consisting of
@@ -116,9 +116,9 @@ $422$
 
 For example, any finite group of order n is a subgroup of the symmetric group [III.68](/part-03/permutation-groups) S n (this is “Cayley’s theorem,” which follows by considering the action of G on itself), so in order to list the conjugacy classes of subgroups of the symmetric group S n one must understand all finite groups of size less than n. 3 Or consider the cyclic group Z  /  n Z . The subgroups correspond to the divisors of n, a subtle property of n that makes the cyclic groups behave quite differently as n varies.
 If n is prime, then there are very few subgroups, while if n is a power of $2$ there are quite a few. So number theory is involved even if all we want to do is understand the subgroup structure of a group as simple as a cyclic group. With some relief we now turn our attention back to linear representations. We will see that, just as with actions on sets, one can decompose representations into “atomic” ones.
-But, by contrast with the case of sets, these atomic representations (called “irreducible” representations, or sometimes simply “ irreducibles ”) turn out to exhibit quite beautiful regularities. The nice properties of representation theory come largely from the following fact. While elements of the symmetric group S n can be multiplied together, elements of GL (V), being matrices, can be added as well as multiplied. (But beware: the sum of two elements of GL (V) is not necessarily an element of GL (V), because it may not be invertible.
+But, by contrast with the case of sets, these atomic representations (called “irreducible” representations, or some times simply “ irreducibles ”) turn out to exhibit quite beautiful regularities. The nice properties of representation theory come largely from the following fact. While elements of the symmetric group S n can be multiplied together, elements of GL (V), being matrices, can be added as well as multiplied. (But beware: the sum of two elements of GL (V) is not necessarily an element of GL (V), because it may not be invertible.
 It is, however, an element of the endomorphism algebra End (V). When $V = C$ n , End (V) is just the familiar algebra of all n $\times$ n matrices with complex entries, both invertible and not .) To see the difference it makes to be able to add, consider the cyclic group $G = Z/nZ$ . For each $ω\inC$ with ω n $= 1$ , we get a representation χ ω of G on C by associating the element $r \in Z/nZ$ with multiplication by ω r , which we think of as a linear map from the one dimensional space C to itself.
-This gives us n different one-dimensional representations, one for each nth root of unity, and it turns out that there are no others. Moreover, if ρ : G $\to$ GL (V) is any representation of Z  /  n Z , then we can write it as a direct sum of these representations by imitating the formula for finding the Fourier mode of a function. Using the representation ρ, we associate with each r in Z  /  n Z a linear map ρ (r). Now let us define a linear map p ω : V $\to$ V by the $3$ .
+This gives us n different one-dimensional representations, one for each nth root of unity, and it turns out that there are no others. More over, if ρ : G $\to$ GL (V) is any representation of Z  /  n Z , then we can write it as a direct sum of these representations by imitating the formula for finding the Fourier mode of a function. Using the representation ρ, we associate with each r in Z  /  n Z a linear map ρ (r). Now let us define a linear map p ω : V $\to$ V by the $3$ .
 the classification of finite simple groups [V.7](/part-05/the-classication-of-finite-simple-groups) does at least allow us to estimate the number γ n of subgroups of S n up to conju$22$
 
 gacy: it is a result of Pyber that 2(({}1/16) + {}o({}1))n \le γn \le 24(({}1/6) + {}o({}1)) n . Equality is expected for the lower bound.
@@ -144,7 +144,7 @@ V ω .
 
 We can write each subspace V ω as a sum of one dimensional spaces, which are copies of C , and the restriction of ρ to any one of these is just the simple representation χ ω defined earlier. Thus, ρ has been decomposed as a combination of very simple “atoms” χ ω . $4$ This ability to add matrices has a very useful consequence. Let a finite group G act on a complex vector space V . A subspace W of V is called G-invariant if $gW = W$ for every g $\in$ G.
 Let W be a G-invariant subspace, and let U be a complementary subspace (that is, one such that every element v of V can be written in exactly one way as $w + u$ with $w\inW$ and $u\inU)$ . Let φ be an arbitrary projection onto U . Then it is a simple exercise to show that the linear map $1/|G|^{g}\in^{G}gφ$ is also a projection onto a complementary subspace, but with the added advantage that it is G-invariant. This latter fact follows because applying an element g to the sum just rearranges its terms.
-The reason this is so useful is that it allows us to decompose an arbitrary representation into a direct sum of irreducible representations, which are representations without a G-invariant subspace. Indeed, if ρ is $4$ . To summarize the rest of this article: the similarity to the Fourier transform is not just analogy--decomposing a representation into its irreducible summands is a notion that includes both this example and the Fourier transform.
+The reason this is so useful is that it allows us to decompose an arbitrary representation into a direct sum of irreducible representations, which are representations with out a G-invariant subspace. Indeed, if ρ is $4$ . To summarize the rest of this article: the similarity to the Fourier transform is not just analogy--decomposing a representation into its irreducible summands is a notion that includes both this example and the Fourier transform.
 
 IV.9.   Representation Theory                                                                                        423
 
@@ -159,7 +159,7 @@ tions were the one-dimensional representations χω .            dimension of th
 ing blocks of arbitrary complex representations, just          the left regular representation of G. The fact that every
 as the basic building blocks for actions on sets are the       irreducible representation occurs in it so regularly
 transitive actions. It raises the question of what the irre-   makes it extremely useful. Notice that it is easier to
-ducible representations are, a question that has been          decompose representations on complex vector spaces
+duc i ble representations are, a question that has been          decompose representations on complex vector spaces
 answered for many important examples, but which is             than on real vector spaces, since every automorphism
 not yet solvable by any general procedure.                     of a complex vector space has an eigenvector. So it is
    To return to the difference between actions and rep-         simplest to begin by studying complex representations.
@@ -219,10 +219,10 @@ gacy classes of elements of G. This is a much gentler                   represen
 structure than the set of all conjugacy classes of sub-                 takes every element of D8 to the identity. The second is
 groups of G. For example, in the symmetric group Sn                     the two-dimensional representation we wrote down in
 two permutations belong to the same conjugacy class                     the first section, where each element of D8 acts on R2
-if and only if they have the same cycle type. Therefore,                in the obvious way. The determinant of this represen-
+if and only if they have the same cycle type. Therefore,                in the obvious way. The determinant of this re pre sen-
 in that group there is a bijection between conjugacy                    tation is a one-dimensional representation that is not
 classes and partitions of n.5                                           trivial: it sends the rotations to 1 and the reflections to
-   Further more, whereas it is completely unclear how to                 −1. So we have constructed three rows of the character
+   Further more, where as it is completely unclear how to                 −1. So we have constructed three rows of the character
 count subgroups, conjugacy classes are much easier to                   table above. There are five conjugacy classes in D8 (triv-
 handle. For instance, since they partition the group, we                ial, reflection through axis, reflection through diagonal,
                          
@@ -240,7 +240,7 @@ table of G. When G = Z/n Z, our description of the n                     where C
 irreducible representations above implies that all the                     We are now going to start pointing the way toward
 entries of this matrix are roots of unity. Here are the                 some more modern topics in representation theory. Of
 character tables for D8 (on the left), the group of sym-                necessity, we will use language from fairly advanced
-metries of the square, and, just for contrast, for the                  mathematics: the reader who is familiar with only some
+me tries of the square, and, just for contrast, for the                  mathematics: the reader who is familiar with only some
 group Z/3 Z (on the right):                                              of this language should consider browsing the remain-
  1      1      1       1      1                1     1      1           ing sections, since different discussions have different
  1      1      1      −1     −1                1     z      z2          prerequisites.
@@ -251,7 +251,7 @@ group Z/3 Z (on the right):                                              of this
 where z = exp(2π i/3).
                                                                         the linearized action on L2 (X). Recall that the irre-
   The obvious question—Where did the first table come
-                                                                        ducible G-sets are all of the form G/H, for H some sub-
+                                                                        duc i ble G-sets are all of the form G/H, for H some sub-
 from?—indicates the main problem with the theorem:
                                                                         group of G. As well as looking at L2 (G/H), we can con-
 though it tells us the shape of the character table, it
@@ -271,7 +271,7 @@ IV.9.   Representation Theory                                                   
 
    Other linearizations are also important. For example,                    The prototypical example is the space L2 (S 1 ) of
 if G acts continuously on a topological space X, we can                  square-integrable functions on the circle S 1 . We can
-consider how it acts on homology classes and hence                       think of the circle as the unit circle in C, and thereby
+consider how it acts on homology classes and hence                       think of the circle as the unit circle in C, and there by
 on the homology groups [IV.6 §4](/part-04/algebraic-topology) of X.6 The simplest                     identify it with the group of rotations of the circle
 case of this is the map z → . ar{z} of the circle S 1 . Since                 (since multiplication by eiθ rotates the circle by θ). This
 this map squares to the identity map, it gives us an                     action linearizes to an action on L2 (S 1 ): if f is a square-
@@ -331,7 +331,7 @@ G, and many problems of traditional interest can be
 related to the decomposition of these representations
                                                                          is the following. If G is a compact group that acts con-
 of G.
-                                                                         tinuously on a compact space X (in the sense that each
+                                                                         tinuous ly on a compact space X (in the sense that each
    In this section we will concentrate on the case where
                                                                          permutation φ(g) of X is continuous, and also that
 G is a compact lie group [III.48 §1](/part-03/lie-theory). We will see that in
@@ -366,11 +366,11 @@ for example, when a compact Lie group acts differentiably on a space X, then the
 
 IV. Branches of Mathematics
 
-coefficients. Their properties can then easily be deduced from general results in functional analysis and representation theory rather than from any calculation. Hypergeometric equations, Bessel equations, and many integrable systems arise in this way. There is more to say about the similarities between the representation theory of compact groups and that of finite groups. Given a compact group G and an irreducible representation ρ of G, we can again take its trace (since it is finite dimensional) and thereby define its character χ ρ . Just as before, χ ρ is constant on each conjugacy class.
+coefficients. Their properties can then easily be deduced from general results in functional analysis and representation theory rather than from any calculation. Hypergeometric equations, Bessel equations, and many integrable systems arise in this way. There is more to say about the similarities between the representation theory of compact groups and that of finite groups. Given a compact group G and an irreducible representation ρ of G, we can again take its trace (since it is finite dimensional) and there by define its character χ ρ . Just as before, χ ρ is constant on each conjugacy class.
 Finally, “the character table is square,” in the sense that the characters of the irreducible representations form an orthonormal basis of the Hilbert space of all square-integrable functions that are conjugation invariant in this sense. (Now , though, the “square matrix” is infinite .) When $G = S{}^{1}$ this is the Fourier theorem; when G is finite this is the theorem of section $2$ . $4$ Noncompact Groups, Groups in Characteristic p, and Lie Algebras The “character table is square” theorem focuses our attention on groups with nice conjugacy-class structure.
 What happens when we take such a group but relax the requirement that it be compact? A paradigmatic noncompact group is the real numbers R . Like $S^{1}$ , R acts on itself in an obvious way (the real number t is associated with the translation s   $\to$ s  +  t), so let us linearize that action in the usual way and look for a decomposition of $L^{2}$ (R) into Rinvariant subspaces. In this situation we have a continuous family of irreducible one-dimensional representations: for each real number $\lambda$ we can define the function $χ\lambda$ by $χ\lambda(x) =e^{2}\pii\lambda x$ .
 These functions are not square integrable, but despite this difficulty classical Fourier analysis tells us that we can write an $L^{2}$ - function in terms of them. However, since the Fourier modes now vary in a continuous family, we can no longer decompose a function as a sum: rather we must use an integral. First, we define the Fourier transform f ˆ of f by the formula f ˆ(. ambda) = f(x)e2. ii. ambda xdx. The desired decomposition of f is then  f(x) = fˆ(. ambda)e - 2. ii. ambda xd. ambda.
-This, the Fourier inversion formula, tells us that f is a weighted integral of the functions χ $\lambda$ . We can also think of it as something like a decomposition of $L^{2}$ (R) as a “direct integral” (rather than direct sum) of the one-dimensional subspaces generated by the functions χ $\lambda$ . However,
+This, the Fourier in version formula, tells us that f is a weighted integral of the functions χ $\lambda$ . We can also think of it as something like a decomposition of $L^{2}$ (R) as a “direct integral” (rather than direct sum) of the one-dimensional subspaces generated by the functions χ $\lambda$ . However,
 
 IV.9.   Representation Theory                                                                                         427
 
@@ -403,7 +403,7 @@ ential operator. This involves the small technicality that      s ∈ Z, we see 
 we should look at smooth functions, and we do not ask           understand these, let us distinguish carefully between
 for them to be defined at the origin. The appropriate            representations that are reducible and representations
 differential operator this time turns out to be the Euler        that are decomposable. The former are representations
-vector field x(∂/∂x) + y(∂/∂y). It is not hard to check          that have nontrivial G-invariant subspaces, whereas
+vector field x(∂/∂x) + y(∂/∂y). It is not hard to check          that have nontrivial G-invariant subspaces, where as
 that if f satisfies the condition f (tx, ty) = t s f (x, y)      the latter are representations where one can decom-
 for every x, y, and t > 0, then f is an eigenfunction           pose the space on which G acts into a direct sum of
 of this operator with eigenvalue s, and indeed all func-        G-invariant subspaces. Decomposable representations
@@ -415,7 +415,7 @@ even and odd functions in Ws , respectively.                    a natural probab
 compute the action of the lie algebra [III.48 §2](/part-03/lie-theory) sl2 .         representations that are not decomposable.
 For those readers unfamiliar with Lie algebras, we will            Indeed, if s is a nonnegative integer, then the sub-
 say only that the Lie algebra of a Lie group G keeps            spaces Ws+ and Ws− give us an example of this phe-
-track of the action of elements of G that are “infinites-        nomenon. They are indecomposable (in fact, this is true
+track of the action of elements of G that are “infinit es-        nomenon. They are indecomposable (in fact, this is true
 imally close to the identity,” and that in this case the        even when s is a negative integer not equal to −1) but
 Lie algebra sl2 can be identified with the space of 2 . imes 2        they contain an invariant subspace of dimension s + 1.
 matrices of trace 0, with ( ac −a
@@ -443,13 +443,13 @@ it turns out to be easier to study all representations                    and th
 and only later ask which ones occur inside L2 (X). For                    analysis to this setting.9
 SL2 (R), the representations we have just constructed                        Independently and slightly earlier, Brauer had inves-
 (which were subquotients of Ws± ) exhaust all the irre-                   tigated the representation theory of finite groups on
-ducible representations,7 and there is a Plancherel for-                  finite-dimensional vector spaces over fields of char-
+duc i ble representations,7 and there is a Plancherel for-                  finite-dimensional vector spaces over fields of char-
 mula for L2 (R2 ) that tells us which ones appear in                      acteristic p. Here, too, reducible representations need
 L2 (R2 ) and with what multiplicity:                                      not decompose as direct sums, though in this case the
                                 . nfty
                                                                           problem is not lack of compactness (obviously, since
                   L2 (R2 ) =         W−1+it eit dt.
-                                −. nfty                                        everything is finite) but an inability to average over the
+                                −. nfty                                        everything is finite) but an in ability to average over the
   To summarize: if G is not compact, then we can no                       group: we would like to divide by |G|, but often this
 longer take averages over G. This has various conse-                      is zero. A simple example that illustrates this is the
 quences:                                                                  action of Z/p Z on the space F2 p that takes x to the 2 . imes 2
@@ -465,7 +465,7 @@ Representations do not split up into a direct sum of
   irreducibles. Even when a representation admits a
                                                                              It is possible for there to be infinitely many indecom-
   finite composition series, as with the action of SL2 (R)
-                                                                          posable representations, which again may vary in fam-
+                                                                          pos able representations, which again may vary in fam-
   on Ws± , it need not split up into a direct sum. So
                                                                           ilies. However, as before, there are only finitely many
   to describe all representations we need to do more
@@ -474,7 +474,7 @@ Representations do not split up into a direct sum of
                                                                           a “character table is square” theorem in which the rows
   describe the glue that holds them together.
                                                                           of the square are parametrized by characters of irre-
-   So far, the theory of representations of a noncom-                     ducible representations. Brauer proved just such a the-
+   So far, the theory of representations of a noncom-                     duc i ble representations. Brauer proved just such a the-
 pact group G seems to have none of the pleasant fea-                      orem, pairing the characters with p-semisimple conju-
 tures of the compact case. But one thing does survive:                    gacy classes in G: that is, conjugacy classes of elements
 there is still an analogue of the theorem that the char-                  whose order is not divisible by p.
@@ -485,7 +485,7 @@ tion may be on an infinite-dimensional vector space, so                    able 
 that its trace cannot be defined so easily. In fact, char-                 dimensional it requires serious technical work to set it
 acters are not functions on G, but only distributions                     up. Objects in this category do not necessarily decom-
 [III.18](/part-03/distributions). The character of a representation determines                    pose as a direct sum of irreducibles (one says that the
-the semisimplificat i on of a representation ρ: that is, it                  category is not semisimple), and can occur in infinite
+the semisimplification of a representation ρ: that is, it                  category is not semisimple), and can occur in infinite
 tells us which irreducible representations are part of ρ,                 families, but irreducible objects pair off in some precise
 but not how they are glued together.8                                     way with certain “diagonalizable” conjugacy classes in
    These phenomena were discovered by Harish-Chan-                        the group—there is always some kind of analogue of
@@ -499,8 +499,8 @@ by “isomorphic.” Because many different topological vector spaces
 can have the same underlying sl2 -module, the correct notion is of
 infinitesimal equivalence. Pursuing this notion leads to the category of
 Harish-Chandra modules, a category with good finiteness properties.
-  8. It is a major theorem of Harish-Chandra that the distribution that     9. The problem of determining the irreducible unitary represen-
-defines a character is given by analytic functions on a dense subset of    tations for real reductive groups has still not been solved; the most
+  8. It is a major theorem of Harish-Chandra that the distribution that     9. The problem of determining the irreducible unitary re pre sen-
+defines a character is given by analytic functions on a dense subset of    tat i ons for real reductive groups has still not been solved; the most
 the semisimple elements of the group.                                     complete results are due to Vogan.
 
 IV.9.   Representation Theory                                                                                                   429
@@ -526,7 +526,7 @@ Our basic theorem (“the character table is square”) tells    tion field of a
 us to expect that the category of all irreducible rep-       son of section 4 is that we may hope for all of these
 resentations of G is interesting when the conjugacy-         many groups to have a good representation theory,
 class structure of G is in some way under control. We        but that to obtain it there will be serious “analytic” or
-will finish this essay by explaining a remarkable fam-        “arithmetic” difficulties to overcome, which will depend
+will finish this essay by explaining a remarkable fam-        “arithmetic” difficulties to over come, which will depend
 ily of examples of such groups—the rational points of        strongly on the properties of the field k.
 reductive algebraic groups—and their conjectured rep-           Lest the reader adopt too optimistic a viewpoint, we
 resentation theory, which is described by the Langlands      point out that not every affine algebraic group has a
@@ -547,7 +547,7 @@ coefficients are taken to have values in k. For exam-          sentation theory 
 ple, SLn (Fq ) is the set of n . imes n matrices with coeffi-       can hope for is a result that describes the entries of
 cients in the finite field Fq and determinant 1. This          the character table in terms of this horrible structure—
 group is finite, as is SOn (Fq ), while SLn (R) and SOn (R)   some kind of non-Abelian Fourier integral. For certain
-are Lie groups. Moreover, SOn (R) is compact, while          p-groups Kirillov found such a result in the 1960 s, as
+are Lie groups. More over, SOn (R) is compact, while          p-groups Kirillov found such a result in the 1960 s, as
 SLn (R) is not. So among affine algebraic groups over
 fields one already finds all three types of groups we             10. When we say that SLn (R) and SUn (R) are both “real forms” of
 have discussed: finite groups, compact Lie groups, and        SLn (C), what is meant more precisely is that in both cases the group
@@ -563,7 +563,7 @@ There is another involution on SLn (C) that is a sort        is simple.
 an example of the “orbit method,” but the general result                  for example, in GLn (k), semisimple classes are still
 is not yet known.                                                         determined by their characteristic polynomial, but the
    On the other hand, groups that are similar to con-                     fact that this polynomial has coefficients in k con-
-nected compact groups do have a nice conjugacy-class                      strains the possible conjugacy classes.
+nected compact groups do have a nice conjugacy-class                      str a ins the possible conjugacy classes.
 structure: in particular, finite simple groups do. An                        The point of describing the conjugacy-class structure
 algebraic group is called reductive if G(C) has a com-                    in such detail is to describe the representation theory
 pact real form. So, for instance, SLn is reductive by the                 in analogous terms. A crude feature of the conjugacy-
@@ -572,14 +572,14 @@ SOn are also reductive, but Vn is not.12                                  finite
    Let us examine the conjugacy classes in the group                      pendent of k—things like W , the lattice defining T ,
 SUn . Every matrix in SUn (R) can be diagonalized, and                    roots, and weights.
 two conjugate matrices have the same eigenvalues, up                        The “philosophy” suggested by the theorem that the
-to reordering. Conversely, any two matrices in SUn (R)                    character table is square suggests that the represen-
+to reordering. Conversely, any two matrices in SUn (R)                    character table is square suggests that the re pre sen-
 with the same eigenvalues are conjugate. Therefore, the                   tation theory should also admit such a decoupling: it
 conjugacy classes are parametrized by the quotient of                     should be built out of the representation theory of
 the subgroup of all diagonal matrices by the action of                    k∗ , which is the analogue of the circle, and out of
 Sn that permutes the entries.                                             the combinatorial structure of G(. ar{k}) (such as the finite
-   This example can be generalized. Any compact con-                      groups W ). Moreover, representations should have a
-nected group has a maximal torus T , that is, a maximal                   “Jordan decomposition”:14 the “unipotent” represen-
-subgroup isomorphic to a product of circles. (In the pre-                 tations should have some kind of combinatorial com-
+   This example can be generalized. Any compact con-                      groups W ). More over, representations should have a
+nected group has a maximal torus T , that is, a maximal                   “Jordan decomposition”:14 the “unipotent” re pre sen-
+subgroup isomorphic to a product of circles. (In the pre-                 tat i ons should have some kind of combinatorial com-
 vious example it was the subgroup of diagonal matri-                      plexity but little dependence on k, and compact groups
 ces.) Any two maximal tori are conjugate in G, and any                    should have no unipotent representations.
 conjugacy class in G intersects T in a unique W -orbit on                   The Langlands program provides a description along
@@ -599,7 +599,7 @@ unipotent when considered as an element of GLn (. ar{k}).
 zero.) Unipotent elements never intersect compact sub-                    If G(k) is a reductive group, we want to describe an
 groups. When G = GL n this is the usual Jordan decom-                     appropriate category of representations for G(k), or at
 position; conjugacy classes of unipotent elements are                     least the character table, which we may think of as a
-parametrized by partitions of n, which, as we men-                        “semisimplificat i on” of that category.
+parametrized by partitions of n, which, as we men-                        “semisimplification” of that category.
 tioned in section 2, are precisely the conjugacy classes                     Even when k is finite, it is too much to hope that con-
 of W = Sn . For general reductive groups, unipotent con-                  jugacy classes in G(k) parametrize irreducible repre-
 jugacy classes are again almost the same thing as con-                    sentations. But something not so far off is conjectured,

@@ -4,11 +4,11 @@ VIII.4.   Numeracy                                                              
 
 Observe that the majority of the voters prefer x to y,      are now beginning to grapple with such phenomena: as
 a majority prefer y to z, and a majority prefer z to        even the simple examples in this article have shown,
-x. Therefore, majority preference is not a transitive       one can apply mathematics to many areas outside its
+x. Therefore, majority preference is not a transitive       one can apply mathematics to many areas out side its
 relation [I.2 §2.3](/part-01/language-and-grammar). One consequence of this is that if     traditional domain, and doing so can be extremely
 voters are first asked to vote between two of x, y, and      illuminating.
 z and there is then a run-off between the winner of the
-first vote and whichever of x, y, and z is left, then the    VIII.4 Numeracy
+first vote and which ever of x, y, and z is left, then the    VIII.4 Numeracy
 remaining candidate will always win.                                 Eleanor Robson
    Probability is another branch of mathematics that
 plays a central role in modern society. In earlier soci-                       1   Introduction
@@ -22,7 +22,7 @@ ing zero at precisely the moment you expect to expire.      eracy is to literatu
 This will not be satisfactory if you live longer than you   sus expert, elite innovation. But while literacy is now a
 expect. The solution is to make a bet with a wealthy        wildly fashionable subject of academic study, the word
 corporation. You pay them your capital and in return        “numeracy” is not even recognized by my mass-market
-they pay you a certain sum every year until you die. If     word processor. Yet an array of interesting work has
+they pay you a certain sum every year until you die. If     word process or. Yet an array of interesting work has
 you die early then they have won their bet, and if you      been done on nonprofessional mathematical concepts,
 die late then they have lost. By taking a large number of   practices, and attitudes. They range from historical
 such bets and relying on results like the strong law        studies and ethnographies to cognitive analyses and
@@ -30,14 +30,14 @@ of large numbers [III.71 §4](/part-03/probability-distributions), the corporati
 almost certain of making a profit in the long run. In        periods and places as ancient Iraq, the pre-Columbian
 effect you have paid a certain amount to transfer the        Andes, and the European Middle Ages, as well as many
 risk (from the financial point of view) that you might       parts of the contemporary world. By surveying selected
-live a long time from yourself to the corporation.          studies on five broadly construed topics in numeracy
+live a long time from your self to the corporation.          studies on five broadly construed topics in numeracy
    One of the earliest ways for mathematicians to make      and artisanal mathematics, I hope to make the case in
 money was to become actuaries—that is, advisers on          this essay that numeracy is as valuable a topic of aca-
 the appropriate price for transfer of risk in the situa-    demic research as professional mathematics on the one
 tion described above. Nowadays, all sorts of risk (Will     hand and literacy on the other.
 next year’s coffee crop fail? Will the euro fall against        Mathematics has rarely been considered part of the
 the dollar?) are bought and sold and have to be priced.     sociology or anthropology of knowledge, as it has often
-A discussion of risk pricing in general can be found in     been assumed to stand outside culture. That is to say,
+A discussion of risk pricing in general can be found in     been assumed to stand out side culture. That is to say,
 the mathematics of money [VII.9](/part-07/the-mathematics-of-money).                           many people have held the view that one can only think
                                                             mathematics, not think about it. Further more, such
                                                             work as has been done on the place of mathematics
@@ -50,7 +50,7 @@ would eventually come to be explained mathematically        subject the literate
 as well. Later, such hopes came to seem unrealistic:        elite, while psychologists have generally focused on the
 it was understood that these areas contain “emergent        acquisition of numeracy, by adults and children.
 phenomena” that are not easily amenable to a reduc-            But, as we shall see, the way that societies and indi-
-tionist approach and are therefore genuinely harder         viduals regard mathematics is strongly contingent on
+tionist approach and are therefore genuinely harder         vi duals regard mathematics is strongly contingent on
 to describe mathematically than the phenomena stud-         many environmental factors. Educational, linguistic,
 ied in the “harder sciences.” However, mathematicians       visual, and intellectual cultures all shape mathematical
 
@@ -64,7 +64,7 @@ cal axis, for instance, which gives rise to arguably innate    ogy such as that 
 concepts of left and right, front and back. And we all         For instance, Nichomachus’s book The Theology of
 have fingers and opposable thumbs and the ability to            Arithmetic (written in the second century b.c.e. but
 subitize (that is, to recognize the size of a small set        now known only from later summaries) assigned eso-
-without counting its individual members). This, Reviel         teric meanings to the first ten integers, understand-
+with out counting its individual members). This, Reviel         teric meanings to the first ten integers, understand-
 Netz has argued, makes human beings uniquely good              ing those numbers to represent fundamental attributes
 at manipulating small groups of small objects, which           of the cosmos. But the social values of number words
 has given rise to sophisticated systems of accounting          are often much more prosaic than that. English, for
@@ -88,7 +88,7 @@ while the languages and writings of ancient Egypt and
                                                                mation about the sort of objects that are being grouped
 Mesopotamia are essentially nineteenth-century redis-
                                                                (sexually active adults, divine beings, musicians, musi-
-coveries, their cultural influence runs in deep undercur-
+coveries, their cultural influence runs in deep under cur-
                                                                cal notes, criminals, babies), about which society and
 rents through out Western thinking, having percolated
                                                                individuals tend to form value judgments.
@@ -101,7 +101,7 @@ very lack of contact with the premodern old world and          decimal, much lik
 thus their isolation from modernity. Virtually extin-          and is written with Arabic numerals. This has ensured
 guished by the European conquests of the sixteenth             its survival side by side with Spanish, but the fact that
 and seventeenth centuries, and yet structurally simi-          it is not particularly exotic relative to Western norms
-lar to many old-world societies, they give a useful sense      has caused it to be somewhat neglected academically.
+lar to many old-world societies, they give a useful sense      has caused it to be some what neglected academically.
 both of the constraints on numerate practice and think-        However, as Urton shows, there are two predominant
 ing and of their diversity. Finally, this article also draws   social aspects to Quechua numeration: family relations
 material from studies of the contemporary Americas,            on the one hand, and the idea of completeness or “rec-
@@ -123,11 +123,11 @@ VIII.4.   Numeracy                                                              
 
    • iskaypaq chaupin, “the middle of (sets of) twos,”        may do so; it is an unacceptably effeminate action for
      used of the third item in a group of five;                a man to carry out.
-   • iskay aysana, “double puller” (because the symbol          While restrictions on counting are not a notable fea-
+   • iskay aysana, “double puller” (because the symbol          While restrictions on counting are not a not able fea-
      3 looks like two handles);                               ture of contemporary English-speaking culture, taboos
    • uquti, “anus” (because the symbol 3 also looks like      on particular numbers are still common. Why is thir-
      a human bottom);                                         teen considered so unlucky, for instance, particularly
-   • uj yunta ch’ullayuq, “one pair, possessor of one         in North American hotels or on Fridays, while seven
+   • uj yunta ch’ullayuq, “one pair, possess or of one         in North American hotels or on Fridays, while seven
      standing alone” (2 + 1 = 3).                             is regarded as lucky? In ancient Babylonia (modern-
                                                               day southern Iraq) in the second and first millennia
   Family relations are most clearly visible in ordinal        b.c.e., seven was thought to be particularly uncanny
@@ -147,7 +147,7 @@ goes as follows:                                                The Babylonians�
    • ring finger, sullk’a riru, “younger finger”;
                                                               designed to be solved by trainee scribes. Further sexa-
    • little finger, sullk’aq sullk’an riru, “younger sibling
-                                                              gesimal coprimes—11, 13, 17, 19—also featured promi-
+                                                              ge simal coprimes—11, 13, 17, 19—also featured promi-
      of the younger finger.”
                                                               nently in ancient Babylonian mathematical problems
 Thus the thumb is considered both the oldest and              and riddles. More often than not, however, the parame-
@@ -168,7 +168,7 @@ As Urton explains:                                              3 mina 8 shekels
   force obtain ... regard less of whether the unit that com-     its cosmological demonization; the link is never made
   poses the “one” is indivisible (e.g., a single digit) or    explicitly in any surviving cuneiform sources. But just
   divisible (e.g., a hand with five digits).                   as Babylonian demons failed to adhere to the norms of
-                                                              human behavior, so certain integers did not conform
+                                                              human behavior, so certain integers did not con form
 And more generally, Urton shows that in Quechua, odd
                                                               to the numerical patterns of the sexagesimally regular
 numbers (ch’ulla) are incomplete while even numbers
@@ -176,23 +176,23 @@ numbers (ch’ulla) are incomplete while even numbers
 (ch’ullantin, “the part together with its pair”) represent
                                                               to explain that phenomenon in mathematical terms.
 the normal state of being.
-  But in Quechua society not everything is permissi-
+  But in Quechua society not everything is per miss i-
                                                                          3    Counting and Calculating
 bly countable, even when there is no obvious difficulty
 in doing so. For example, they inventorize their herds,       While anyone can have views on whether particular
 on whom they are often heavily economically depen-            numbers are lucky or unlucky, lonely or partnered, the
 dent, not by counting but by naming. It is thought that       ability to manipulate numbers arithmetically, and to
 counting individualizes the constituent members of the        take pleasure in doing so, is not universally shared.
-inseparable group, and thereby threatens its unity and        Both personal cognitive skills and social constraints are
+inseparable group, and there by threatens its unity and        Both personal cognitive skills and social constraints are
 fertility. If a herd must be counted then only a woman        at work here. Patricia Cline Cohen argues that there
 
 $986$
 
 were two key factors in the rapid rise in numerical competence in the early nineteenth-century United States. It was not that people suddenly became smarter. On the one hand, the decimalization of money in the late eighteenth century meant that at last accountants, shopkeepers, and business owners were working with a single number base.
 At the same time, a new educational movement forsook the rote learning of arithmetical rules, applied mechanically to particular situations, for inductive instruction that encouraged pupils to calculate with fingers and counters, and in their heads, before they progressed to pen and paper. In this way some basic structural impediments were removed, both to the learning of number relationships, and to their application in commercial life. Because modern decimal notation is a calculating system as well as a recording device, it is easily forgotten that other methods are just as effective.
-Indeed, for most communities, most of the time, numerals were simply a means to record the outcome of operations performed on the body or with other calculating tools. Finger counting and abacus use remained ubiquitous in the medieval Islamic world and Christian Europe long after knowledge of decimal numerals, together with al-khwārizmı̄’s [VI.5](/part-06/abu-jafar-muhammad-ibn-musa-al-khwarizm-vi55-william-kingdon-cliord-18451879) treatise on how to use them, and cheap paper on which to write them, began to spread outward from Baghdad in the ninth century c.e.
+Indeed, for most communities, most of the time, numerals were simply a means to record the out come of operations performed on the body or with other calculating tools. Finger counting and abacus use remained ubiquitous in the medieval Islamic world and Christian Europe long after knowledge of decimal numerals, together with al-khwārizmı̄’s [VI.5](/part-06/abu-jafar-muhammad-ibn-musa-al-khwarizm-vi55-william-kingdon-cliord-18451879) treatise on how to use them, and cheap paper on which to write them, began to spread outward from Baghdad in the ninth century c.e.
 Their retention was not a knee-jerk reaction in the face of an overwhelmingly superior technology; rather, it took into account such factors as portability, speed of use, and a long-established trust in and institutional sanction of the old methods. Indeed, it is difficult to over estimate just how old abacus calculation is. Reviel Netz identifies two evolutionary prerequisites for what he calls “counter culture,” by which he means the uniquely and ubiquitously human use of small objects to represent other objects that are being counted, in one-one or one-many relationships.
-One is physiological: one needs to be able to pick up and manipulate small objects such as pebbles or shells. All primates share this ability thanks to prehensile fingers and opposable thumbs. The other is cognitive: one must be able to subitize, or recognize the size of a small set of up to about seven objects, without counting them individually.
+One is physiological: one needs to be able to pick up and manipulate small objects such as pebbles or shells. All primates share this ability thanks to prehensile fingers and opposable thumbs. The other is cognitive: one must be able to subitize, or recognize the size of a small set of up to about seven objects, with out counting them individually.
 Stringed-bead abacuses exploit this most obviously, whether in the Russian-style tenbead variety, whose fifth and sixth beads are always a different color from the others, or in the Japanese version, whose strings contain just four unit-beads and one five-bead each.
 
 VIII. Final Perspectives
@@ -200,8 +200,8 @@ VIII. Final Perspectives
 But, as Netz so powerfully puts it, “The abacus is not an artefact: it is a state of mind.” All one needs is a flat surface and a pile of small objects to act as counters. This extreme ephemerality makes the use of abacuses almost impossible to detect in the archaeological record, except in the rare cases where abacus counters can be recognized as such. Denise Schmandt-Besserat has argued that a sophisticated accounting system was developed in the Neolithic Middle East from the ninth millennium b.c.e.
 She proposes that the tiny, unbaked pieces of clay, crudely shaped into various simple geometrical figures and found in preliterate archaeological contexts from eastern Turkey to Iran, are ancient accounting tokens. It is certainly true that the earliest written numerals in the area, from southern Iraq in the late fourth millennium b.c.e., are marks on clay tablets that look remarkably like stylized impressions of such objects, and are visually distinct from the signs for the objects that were being counted, which were scratched onto the clay rather than impressed.
 It is also true that these earliest written records are almost exclusively accounting records, drawn up by temple administrators in the management of assets such as land, labor, and agricultural products. And from the fifth millennium b.c.e. onward, those tiny clay tokens are found in archaeological contexts--sealed into jars, for instance, or wrapped in little clay bundles, or carefully piled in the corners of storerooms--that are entirely compatible with their use as abacus counters.
-But Schmandt Besserat’s claim for a universally standardized system across the Middle East from several millennia before then is not provable: there is no way of establishing that they were not sometimes gaming pieces, for instance, or sling shot, or any number of other possibilities, and certainly no way of determining what specific shapes signified and to whom. In fact, ad hoc means of counting and measuring are still everyday occurrences in all our lives, even among those with a high level of formal mathematics education.
-A team of anthropologists and psychologists, headed by Jean Lave, observed newcomers to a Californian Weight Watchers scheme in the $1980s$ as they adjusted to careful quantification of the food they were allowed to consume on the diet. One participant, who had taken a calculus course at college, was asked to modify a recipe calling for two-thirds of a cup of cottage cheese so that it contained three-quarters of that amount. Lave recalls: “He filled a measuring cup twothirds full of cottage cheese, dumped it out on a cutting board, patted it into a circle, marked a cross on it,
+But Schmandt Besserat’s claim for a universally standardized system across the Middle East from several millennia before then is not provable: there is no way of establishing that they were not some times gaming pieces, for instance, or sling shot, or any number of other possibilities, and certainly no way of determining what specific shapes signified and to whom. In fact, ad hoc means of counting and measuring are still everyday occurrences in all our lives, even among those with a high level of formal mathematics education.
+A team of anthropologists and psychologists, headed by Jean Lave, observed newcomers to a Californian Weight Watchers scheme in the $1980s$ as they adjusted to careful quantification of the food they were allowed to consume on the diet. One participant, who had taken a calculus course at college, was asked to modify a recipe calling for two-thirds of a cup of cottage cheese so that it contained three-quarters of that amount. Lave recalls: “He filled a measuring cup two thirds full of cottage cheese, dumped it out on a cutting board, patted it into a circle, marked a cross on it,
 
 VIII . $4$ .
 
@@ -221,11 +221,11 @@ In some cases, the activity of counting and measuring itself altered the way peo
 
 $987$
 
-de Statistique faced in obtaining accurate population data in post-revolutionary France. Without resorting to the old class categorizations of the ancien régime, it needed to acknowledge the huge diversity of occupations and social structures across the country. To do so it relied on local officials to return a mass of quantitative data that was simply not readily available--and so the prefectures commissioned qualitative descriptions of their regions instead. As Porter puts it, in 1800 “France was not yet capable of being reduced to statistics.” Cohen analyzes the U.S.
+de Statistique faced in obtaining accurate population data in post-revolutionary France. With out resorting to the old class categorizations of the ancien régime, it needed to acknowledge the huge diversity of occupations and social structures across the country. To do so it relied on local officials to return a mass of quantitative data that was simply not readily available--and so the prefectures commissioned qualitative descriptions of their regions instead. As Porter puts it, in 1800 “France was not yet capable of being reduced to statistics.” Cohen analyzes the U.S.
 Census of 1840 , which appeared to demonstrate a much higher rate of insanity among the black population in the abolitionist northern states than in the south. Pro-slavery factions took this as irrefutable evidence that slavery suited the black population much better than freedom did; abolitionists queried the trustworthiness of the census itself. Whether or not one chose to believe the data was more or less a matter of what one’s preexisting political convictions were.
 As Cohen shows, the source of the error lay in clumsily designed recording sheets, in which the “idiot white” and “idiot black” columns were easily confused, resulting in the misrecording of many elderly senile inhabitants of all-white households. In the $1840s$ , however, the public debate was not about methodology, but whether fraud had been committed: the numbers themselves could not lie.
-Two thousand years earlier, as Serafina Cuomo has shown, the Roman land surveyor Frontinus opined that the world was essentially unknowable without quantitative intervention, and that the trustworthiness of that measure was dependent on professional expertise: The basis of the art of measuring lies in the experience of the agent.
-It is in fact impossible to express the truth of the places or of the size without calculable lines, because the wavy and uneven edge of any piece of land is enclosed by a boundary which, because of the great quantity of unequal angles, can be contracted or expanded, even when their number [that is, the number of the angles] remains the same. Indeed pieces of land which are not finally demarcated have a fluctuating space and an uncertain determination of iugera.
+Two thousand years earlier, as Serafina Cuomo has shown, the Roman land survey or Frontinus opined that the world was essentially unknowable with out quantitative intervention, and that the trustworthiness of that measure was dependent on professional expertise: The basis of the art of measuring lies in the experience of the agent.
+It is in fact impossible to express the truth of the places or of the size with out calculable lines, because the wavy and uneven edge of any piece of land is enclosed by a boundary which, because of the great quantity of unequal angles, can be contracted or expanded, even when their number [that is, the number of the angles] remains the same. Indeed pieces of land which are not finally demarcated have a fluctuating space and an uncertain determination of iugera.
 The natural world is problematically irregular, Frontinus believed, and must be disciplined into quantified straight lines--and, ideally, marked out into grids of 2400 foot squares (iugera) -- in order to be brought under control. The Roman reshaping of the landscape through its quantification is still visible through out
 
 $988$
@@ -233,7 +233,7 @@ $988$
 Europe, the Middle East, and North Africa today, both on land and from the air. The Incas, by contrast, brought time, space, society, and the gods under control through radial lines in the landscape, tied to the ceremonial year. Before Spanish-led Christian ization in the sixteenth-century, the heart of the Inca cosmos was the sacred city of Cuzco in the Peruvian Andes. The Incas divided the world into unequal quarters or tawantinsuyu “the four parts together,” radiating out from the Temple of the Sun.
 Through each suyu ran nine to fourteen ceque paths through the mountains, forty-one in total, with an average of eight huaca shrines stationed on each. The local inhabitants performed a ritual at one of the $328$ huacas every day of the sacred year (composed of twelve months of $27\frac{1}{3}$ days). Thus the religious focus of the Inca state moved systematically around its territory, day by day and from community to community, binding every social group into the same calendar, cult, and cosmos. Numeracy, then, is a powerful institutional tool:
 measuring, quantifying, and classifying can transform an unknowable mass of individual people, places, or things into manageable categories of known entities; in turn, this institutionally imposed structure shapes the self-identities of those being managed. Institutional numeracy, while imposed from above, is always dependent to some degree on community-wide support and cooperation, if not necessarily for the objects of account then always for the counters.
-Attempts at censuses in the eighteenth century did not fail because people refused to be reduced to numbers in boxes, but because those charged with collecting the data had neither the infrastructural means to do so nor an intellectual outlook that valued quantification. Inca and Roman societies, by contrast, were able to produce whole classes of the professionally numerate who did.
+Attempts at censuses in the eighteenth century did not fail because people refused to be reduced to numbers in boxes, but because those charged with collecting the data had neither the infrastructural means to do so nor an intellectual out look that valued quantification. Inca and Roman societies, by contrast, were able to produce whole classes of the professionally numerate who did.
 
 $5$
 
@@ -246,7 +246,7 @@ VIII. Final Perspectives
 construct ideals of femininity and masculinity and with what they count as mathematical activity than with any intrinsically gendered properties of mathematics itself. For most of the second millennium b.c.e., Babylonian scribes understood professional numeracy to be a divine gift--not from the gods in general but from a handful of powerful goddesses. In the literary works that scribal students memorized as part of their professional training, creator gods bestowed land-measuring equipment and numeracy on those goddesses to enable them to manage household estates equitably.
 In a myth now known as Enki and the World Order the great god Enki announces: My illustrious sister, holy Nisaba, Is to receive the $1$ - rod measuring reed. The lapis lazuli rope is to hang from her arm. She is to proclaim all the great divine powers. She is to fix boundaries and mark borders. She is to be the scribe of the Land. The gods’ eating and drinking are to be in her hands. The scribes’ literary works also portrayed Nisaba as the patron of institutional numeracy in the real world: she in turn provided mensuration tools to scribes and kings to enable them to uphold justice in society.
  Another scholastic literary genre was the scribal dialogue, in which the protagonists argue over the ideals of scribal professionalism. In one such debate the young scribe Enki-manshum explicitly relates metrological competence to social justice: When I go to divide a plot, I can divide it; when I go to apportion a field, I can apportion the pieces, So that when wronged men have a quarrel I soothe their hearts and ... . Brother will be at peace with brother, their hearts ... . This was not merely a literary trope:
-law codes promulgated by real-life Babylonian kings often began with prologues claiming that they would uphold fairness in commercial measuring, weighing, and counting, and included provisions for punishing metrological fraud. Many hundreds of legal records survive, attesting to the settlement of land disputes through accurate professional measurement and calculation. In the nineteenth century b.c.e. city of Sippar, the judges who held court in the temple of Shamash, god of justice, employed female scribes and surveyors as well as male (often
+law codes promulgated by real-life Babylonian kings often began with prologues claiming that they would uphold fairness in commercial measuring, weighing, and counting, and included provisions for punishing metrological fraud. Many hundreds of legal records survive, at testing to the settlement of land disputes through accurate professional measurement and calculation. In the nineteenth century b.c.e. city of Sippar, the judges who held court in the temple of Shamash, god of justice, employed female scribes and surveyors as well as male (often
 
 VIII . $4$ .
 
@@ -261,7 +261,7 @@ women are more reluctant than men to trust strangers to handle money fairly and 
 $989$
 
 Every garment knitted to fit a particular body depends on the principle of ratio. Every pinafore pattern copied from a blackboard requires visual interpretation of scaling and the ability to draw a smooth curve. All the fine stitching that the early Inspectors were unable to tell from machine stitching depended on the ability to judge equal distances by eye and maintain them in a straight row.
-In other words, wherever girls and women weave, knit, or sew they are unwittingly engaging numerate aptitudes and skills, often highly creatively, just as Molière’s Monsieur Jourdain had been speaking prose all his life “without knowing anything about it.”
+In other words, wherever girls and women weave, knit, or sew they are unwittingly engaging numerate aptitudes and skills, often highly creatively, just as Molière’s Monsieur Jourdain had been speaking prose all his life “with out knowing anything about it.”
 
 $6$
 
@@ -270,7 +270,7 @@ Numeracy and Literacy,
 School and Supermarket
 
 Perhaps one reason that women’s work is not often thought to belong to the realm of professional numeracy is that numeracy is so often considered (when it is considered at all) as a subset of literacy. As Reviel Netz puts it, With Arabic numerals, numbers appear as secondary to writing, benefiting from tools that were largely invented to record verbal systems and not numerical symbols. In broad historical perspective, this is the exception and not the rule.
-The rule is that, across cultures, and especially in early cultures, the record and manipulation of visual symbols precede and predominate over the record and manipulation of verbal symbols. Netz is thinking here of counters and abacuses, but the Bolivian weavers remind us that numeracy does not have to entail symbolic manipulation at all. One may count threads, llamas, ideas, anything, and perform calculations without the intervention of external tools. The use of fingers and other body parts has cropped up repeatedly in the examples presented in this essay.
+The rule is that, across cultures, and especially in early cultures, the record and manipulation of visual symbols precede and predominate over the record and manipulation of verbal symbols. Netz is thinking here of counters and abacuses, but the Bolivian weavers remind us that numeracy does not have to entail symbolic manipulation at all. One may count threads, llamas, ideas, anything, and perform calculations with out the intervention of external tools. The use of fingers and other body parts has cropped up repeatedly in the examples presented in this essay.
 Much of the weavers’ mental work is so naturalized within the rhythms and movements of their bodies that they can no longer verbalize the mental or physical processes involved. (That is why Urton chose a young girl as his teacher, who was still learning the craft, rather than a fully competent adult woman .) Nonliterate numerate practices and ideas, especially in the developing world, are often labeled by academic observers as “ethno mathematics.” But this raises difficult questions about the appropriate use of the “ethno” prefix and about the border between numeracy and mathematics.
 How do we distinguish numeracy from mathematics, and where does ethno mathematics fit in?
 
@@ -280,13 +280,13 @@ When Ubiratan D’Ambrosio coined the term “ethno mathematics” in the mid $1
 This semantic shrinkage is doubly damaging, for it implies that “ethnic” cultures are not fully numerate, while rendering the mainstream of academic mathematics, both past and present, invisible to sociological, anthropological, or ethnographic research. Nor does it distinguish between the intellectual creativity that is mathematics and the routine application of numeracy. If “ethno mathematics” is an unhelpful term, there are useful alternatives.
 An influential Brazilian study of childhood numeracy, by Terezinha Nunes and colleagues, distinguishes formally learned “school mathematics” from “street mathematics” created informally by the same children. Jean Lave’s ethnography of adult numeracy in $1980s$ California likewise contrasts “school arithmetic” with “supermarket arithmetic.” The participants in her study often described themselves as arithmetically incompetent and “were unaware of the efficacy of their math practice in the supermarket, and some did not know, even that they used arithmetic practices there.” Yet often the
 supermarket setting required the solution of mathematical problems of much greater complexity than superficially similar scholastic “word problems”: The shopper was standing in front of a produce display. As she spoke she put apples, one at a time, into a bag. She put the bag in the cart as she finished talking: “There’s only about three or four [apples] at home, and I have four kids, so you figure at least two apiece in the next three days. These are the kinds of things I have to resupply. I only have a certain amount of storage space in the refrigerator, so I can’t load it up totally. . . .
-Now that I’m home in the summertime, this is a good snack food. And I like an apple sometimes at lunchtime when I come home.” While explicitly considering such variables as the number of apple-consumers in the household, their rate of consumption, fridge storage space, and perhaps implicitly the apples’ price and probably shelf life, the shopper selected nine apples to buy. She might
+Now that I’m home in the summertime, this is a good snack food. And I like an apple some times at lunchtime when I come home.” While explicitly considering such variables as the number of apple-consumers in the household, their rate of consumption, fridge storage space, and perhaps implicitly the apples’ price and probably shelf life, the shopper selected nine apples to buy. She might
 
 VIII. Final Perspectives
 
 also have compared the prices of different varieties of apple and  /  or considered whether loose or prepackaged apples were the better buy--all typical supermarket activities that Lave and her researchers observed and correlated with the same subjects’ performance in written tests of arithmetically similar skills. They found “not a single significant correlation between frequency of calculation in a supermarket, and scores on math test, multiple choice test or number facts. . . .
 Success and frequency of calculation in supermarket and simulation experiment bear no statistical relationship with schooling, years since schooling was completed, or age.” Rather depressingly for educators, perhaps, Lave’s work suggests that training in school mathematics has little or no impact on numerical competence in adult life.
-(Interestingly , this finding conflicts with Cohen’s historical argument discussed above, relating improvements in mathematics education to rising standards of numeracy in early nineteenth-century North America .) Rather, as she and Étienne Wenger argue, learning takes place most effectively when it is situated in the social and professional context to which it pertains, through interaction and collaboration with competent practitioners, rather than through abstract, de contextual iz ed classroom learning.
+(Interestingly , this finding conflicts with Cohen’s historical argument discussed above, relating improvements in mathematics education to rising standards of numeracy in early nineteenth-century North America .) Rather, as she and Étienne Wenger argue, learning takes place most effectively when it is situated in the social and professional context to which it pertains, through interaction and collaboration with competent practitioners, rather than through abstract, decontextualized classroom learning.
 Learners become part of a “community of practice” that inculcates not only the necessary technical skills but also the beliefs, standards, and behaviors of the group. Through gains in competence, confidence, and social acceptance, the learner moves from the periphery toward the center of the practice community, in due course becoming accepted as a fully fledged expert. It is perhaps in this light, then, that we should understand the process of becoming professionally numerate.
-But if situated learning is so effective, the development of supra-utilitarian educational mathematics in the societies of the ancient Middle East and Mediterranean is a major historical conundrum that has hitherto gone unrecognized. $7$ Conclusions This essay began by suggesting that “numeracy is to mathematics what literacy is to literature.” But the case studies presented here show that numeracy has a far greater cognitive reach than that. Through out time and across the world countless individuals and societies have managed perfectly well, and continue to thrive, without writing;
-none has yet been attested without counting, measuring, or pattern-making in some form
+But if situated learning is so effective, the development of supra-utilitarian educational mathematics in the societies of the ancient Middle East and Mediterranean is a major historical conundrum that has hitherto gone unrecognized. $7$ Conclusions This essay began by suggesting that “numeracy is to mathematics what literacy is to literature.” But the case studies presented here show that numeracy has a far greater cognitive reach than that. Through out time and across the world count less individuals and societies have managed perfectly well, and continue to thrive, with out writing;
+none has yet been attested with out counting, measuring, or pattern-making in some form

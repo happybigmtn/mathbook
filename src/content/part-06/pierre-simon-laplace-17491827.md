@@ -4,7 +4,7 @@
 
 of least action was replaced by a generalization of the       a function is its Taylor series. In Théorie des Fonc-
 Bernoullian principle of “virtual velocities,” which were     tions Analytiques (1797) he then showed (or, rather,
-expressed by variations. Using what are now known as          claimed to have shown), without making an appeal to
+expressed by variations. Using what are now known as          claimed to have shown), with out making an appeal to
 generalized coordinates, φi (that is, mutually indepen-       the differential calculus, that any function f (x +h) can
 dent coordinates in the configuration space of a dis-          be expanded in a power series, and suggested inter-
 crete system that characterize completely the position        preting the differential formalism as a formalism that
@@ -13,7 +13,7 @@ now named after him:                                          In other words, he
               d ∂T              ∂T    ∂U                      ratios of any order (that is, the ratios di y/dx i , where
                             −       +     = 0,                y = f (x)) as derivative functions supplying these coef-
               dt ∂ φ̇i          ∂φi   ∂φi
-                                                              ficients, whereas previously these had been thought of
+                                                              ficients, where as previously these had been thought of
 where T and U are the kinetic and potential energy of
                                                               as genuine ratios of differentials. He also proved that
 the system, respectively.
@@ -44,7 +44,7 @@ nique underlying Lagrange’s approach to the calculus.         ers) and which E
 In a memoir which appeared in the Proceedings of the          ing that any positive integer is the sum of (at most)
 Berlin Academy (1768) he used it to prove an important        four squares (1770), and the proof of Wilson’s theo-
 result connecting the calculus to the theory of algebraic     rem (first guessed by Wilson and published by waring
-equations, the so-called Lagrange inversion theorem,          [VI.21](/part-06/edward-waring-ca) without proof), asserting that if n is prime, then
+equations, the so-called Lagrange in version theorem,          [VI.21](/part-06/edward-waring-ca) with out proof), asserting that if n is prime, then
 which states that a function ψ(p) of a root p of an           (n − 1)! + 1 is divisible by n (1771).
 equation t − x + φ(x) = 0, where φ(x) is an arbitrary
 function of x, can be expanded in a series based on the       Further Reading
@@ -94,7 +94,7 @@ the method of solving difference, differential, and inte-       number of observ
 gral equations, later known as the Laplace transform,         problem of the probability that the mean value falls
 appeared in “Mémoire sur les suites” (1782 a), where           within certain limits. He proved a law of large numbers,
 Laplace introduced generating functions. Laplace con-         stating that if positive and negative errors in an indefi-
-sidered generating functions to be the approach of            nitely large number of observations are assumed to be
+side red generating functions to be the approach of            nitely large number of observations are assumed to be
 choice in solving problems that involved the develop-         equally possible, then their mean result converges to a
 ment of functions in series and evaluation of the sums.       limit in a precise way. From this analysis followed the
 Years later, in composing Théorie Analytique des Prob-        least-squares law of error. A priority dispute over the

@@ -14,7 +14,7 @@ sistent aggregates” as he called them. Others, like Zer-           results in 
 melo, began to axiomatize set theory in an effort to                projective and differential geometry. He was the first
 exclude the possibility of contradictions. The two most            English mathematician to appreciate the work of rie-
 powerful results of the twentieth century to comple-               mann [VI.49] on differential geometry, and published
-ment Cantor’s work are those of gödel [VI.92](/part-06/kurt-gdel-19061978) (who                 a translation of Riemann’s paper “On the hypothe-
+ment Cantor’s work are those of gödel [VI.92](/part-06/kurt-gdel-19061978) (who                 a translation of Riemann’s paper “On the hypo the-
 established the consistency of the continuum hypoth-               ses that lie at the foundations of geometry” in 1873.
 esis with zermelo–fraenkel set theory [IV.22 §3](/part-04/set-theory))                  He endorsed Riemann’s fundamental reformulation of
 and Paul Cohen (who determined the independence of                 geometry, and went even further in speculating that the
@@ -43,8 +43,8 @@ Dauben, J. W. 1990. Georg Cantor. His Mathematics and Phi-         study of it).
   a general set theory” (1883). In Landmark Writings in
   Western Mathematics 1640–1940, edited by I. Grattan-             Further Reading
   Guinness, pp. 600–12. London: Routledge.
-Tapp, C. 2005. Kardinalität und Kardinäle. Wissenschaft sh is-       Clifford, W. K. 1968. Mathematical Papers, edited by
-  torische Aufarbeitung der Korrespondenz zwischen Georg             R. Tucker. New York: Chelsea. (First published in 1882.)
+Tapp, C. 2005. Kardinalität und Kardinäle. Wissenschaftshis-       Clifford, W. K. 1968. Mathematical Papers, edited by
+  tor is che Aufarbeitung der Korrespondenz zwischen Georg             R. Tucker. New York: Chelsea. (First published in 1882.)
   Cantor und katholischen Theologen seiner Zeit. Stuttgart:
   Franz Steiner.                                                                                                 Jeremy Gray
                                         Joseph W. Dauben

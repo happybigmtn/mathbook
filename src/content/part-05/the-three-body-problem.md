@@ -48,7 +48,7 @@ can be built up from nearly embeddable graphs, for a
                                                                Here, i runs from 1 to 3; thus, there are nine equations,
 given surface) has a finite number of forbidden minors,
                                                                all derived from the simple laws above. For instance, the
-thereby proving the theorem.
+there by proving the theorem.
                                                                left-hand side of the first equation is the component of
                                                                the acceleration of P1 in the ith direction, and the right-
 V.33     The Three-Body Problem                                hand side is the component of the force acting on P1 in
@@ -76,7 +76,7 @@ functions), that tells us the subsequent positions and         which is a set of
 velocities of the bodies. However, the three-body prob-        tions. Since this set is easier to use, it is now generally
 lem is a complicated nonlinear problem and it can-             preferred to (1).
 not be solved in this way, even if we are prepared to             A standard way of decreasing the complexity of a
-enlarge our stock of “standard functions” somewhat.            system of differential equations is to find an algebraic
+enlarge our stock of “standard functions” some what.            system of differential equations is to find an algebraic
 newton [VI.14](/part-06/isaac-newton-16421727) himself speculated that an exact solu-          integral for it: that is, a quantity that will remain con-
 tion “exceeds, if I am not mistaken, the force of any          stant for any given solution and that can be expressed
 human mind,” while hilbert [VI.63](/part-06/david-hilbert-18621943), in his celebrated          as an integral that gives rise to an algebraic depend-
@@ -100,7 +100,7 @@ $727$
 
 also came closer and closer to colliding with the pairs, giving it larger and larger bursts of acceleration, and that as this happened the two pairs were forced out to infinity in finite time. As well as trying to solve the problem in general, one can look for interesting particular solutions. A central configuration is defined to be a solution in which the geometric configuration remains constant. The first examples were discovered by Euler in 1767 :
 they were solutions in which the bodies always lie on a straight line and revolve with uniform angular velocity in circles or ellipses about their common center of mass. In 1772 Lagrange discovered solutions in which the bodies are always at the vertices of an equilateral triangle that rotates uniformly about the center of mass. For almost all sets of initial conditions for these solutions, the size of the triangle changes as it rotates so that each body describes an ellipse.
-However, despite the discovery of the particular solutions and a century of unrelenting work on the problem, the mathematicians of the nineteenth century were unable to find a general solution. Indeed, the problem was considered so hard that in 1890 Poincaré was led to declare that he thought it impossible without the discovery of some significant new mathematics.
+However, despite the discovery of the particular solutions and a century of unrelenting work on the problem, the mathematicians of the nineteenth century were unable to find a general solution. Indeed, the problem was considered so hard that in 1890 Poincaré was led to declare that he thought it impossible with out the discovery of some significant new mathematics.
 But, contrary to Poincaré’s expectation, less than twenty years later a young Finnish mathematical astronomer, Karl Sundman, using only existing mathematical techniques, astonished the mathematical world by obtaining uniformly convergent infinite series that mathematically “solved” the problem. Sundman’s series, which are in powers of $t^{1}/ {}^{3}$ , are convergent for all real t, except for the negligible set of initial conditions for which the angular momentum is zero.
 To deal with binary collisions, Sundman used the technique of regularization, or analytically extending a solution beyond the collision, but he was unable to deal with triple collisions because in order for such a collision to occur the angular momentum must be zero. Although it was a remarkable mathematical achievement, Sundman’s solution leaves many questions unanswered. It provides no qualitative information about the behavior of the system and, worse, because the series converges so slowly it is of no practical use.
 To determine the motion of the bodies for any reasonable period of time would require the summation of something of the order of $10^{8000000}$ terms, $a$ calculation that is patently unrealistic. Thus, Sundman left plenty still to do, and work on the problem (and the related nbody problem) has continued up to the present day,

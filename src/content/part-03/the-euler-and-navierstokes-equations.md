@@ -4,7 +4,7 @@ III . $23$ .
 
 The Euler and Navier-Stokes Equations
 
-best approximations to x in the following sense: if p  /  q is one of these fractions, then it is impossible to find any fraction r  /  s that is closer than p  /  q to x and that has denominator s smaller than q. Moreover, if p  /  q is one of the approximations coming from the continued fraction for x, then the error x  -  p  /  q cannot be too large relative to the size of the denominator q; specifically, it is always true that $x - p \le 1$ .
+best approximations to x in the following sense: if p  /  q is one of these fractions, then it is impossible to find any fraction r  /  s that is closer than p  /  q to x and that has denominator s smaller than q. More over, if p  /  q is one of the approximations coming from the continued fraction for x, then the error x  -  p  /  q cannot be too large relative to the size of the denominator q; specifically, it is always true that $x - p \le 1$ .
 
 (8)
 
@@ -12,7 +12,7 @@ q
 
 $q2$
 
-This error estimate shows just how special the continued-fraction approximations are: if you pick a denominator q without thinking, and then select the numerator p that makes p  /  q closest to x, the only thing you can guarantee is that x lies between $(p - 1/2)/q$ and $(p + 1/2)/q$ . So the error could be as large as $1/(2q)$ , which is much bigger than $1/(q^{2})$ if $q$ is a large integer. Sometimes a continued-fraction approximation to x can have even smaller error than is guaranteed by ( $8$ ).
+This error estimate shows just how special the continued-fraction approximations are: if you pick a denominator q with out thinking, and then select the numerator p that makes p  /  q closest to x, the only thing you can guarantee is that x lies between $(p - 1/2)/q$ and $(p + 1/2)/q$ . So the error could be as large as $1/(2q)$ , which is much bigger than $1/(q^{2})$ if $q$ is a large integer. Some times a continued-fraction approximation to x can have even smaller error than is guaranteed by ( $8$ ).
 For example, the approximation $\pi \approx 355/113$ that we get by truncating ( $7$ ) at the third level is exceptionally accurate, the reason being that the next partial quotient, $292$ , is rather large. So we are not changing the . fraction much by ignoring the tail $1/(292 + 1/(1 +$ . .)). In this sense, the most difficult number to approximate by fractions is the one with the smallest possible partial quotients, i.e., the one with all its partial quotients equal to $1$ . This number,
 
 $11 +$
@@ -56,7 +56,7 @@ $(10)x^{2}1 - 23 - {}^{5} - x$ .
 
 ..
 
-valid for any value of x other than the odd multiples of $\pi/2$ , where the tangent function has a vertical asymptote. Whereas the infinite series of a function can be truncated to provide polynomial approximations to the function, truncation of the continued fraction provides approximations by rational functions: functions that are ratios of polynomials. For instance, if we truncate the fraction for the tangent after one level, then we get the approximation
+valid for any value of x other than the odd multiples of $\pi/2$ , where the tangent function has a vertical asymptote. Where as the infinite series of a function can be truncated to provide polynomial approximations to the function, truncation of the continued fraction provides approximations by rational functions: functions that are ratios of polynomials. For instance, if we truncate the fraction for the tangent after one level, then we get the approximation
 
 $3xx = tanx\approx$ / $1 - x^{2}/33 - x^{2}$
 
@@ -210,7 +210,7 @@ Beale, Kato, and Majda asserts that the “vorticity”                         
            =         −    ,    −    ,    −             (5)
                  ∂x3   ∂x2 ∂x1   ∂x3 ∂x2   ∂x1               and (3 ) are satisfied for arbitrary smooth functions
 grows so large as t → T that the integral                    θ1 (x, t), θ2 (x, t), θ3 (x, t), and φ(x, t) that vanish
-                  T                                        outside a compact subset of R3 × (0, . nfty).
+                  T                                        out side a compact subset of R3 × (0, . nfty).
                       max |ω(x, t)| dt
                      0   x∈R3                                  We call θ1 , θ2 , θ3 , and φ test functions, and we
 diverges. This has been used to invalidate some plau-        say that u and p form a weak solution of 3 D Navier–

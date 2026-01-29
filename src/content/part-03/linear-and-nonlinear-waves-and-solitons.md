@@ -82,7 +82,7 @@ first became acquainted with it:                              Airy, tried to und
   solitary elevation, a rounded, smooth and well-defined
                                                              1895, that Russell’s careful observations and experi-
   heap of water, which continued its course along the
-  channel apparently without change of form or diminu-       ments were at last seen to be in complete agreement
+  channel apparently with out change of form or diminu-       ments were at last seen to be in complete agreement
   tion of speed. I followed it on horseback, and over-       with mathematical theory. And it took another seventy
   took it still rolling on at a rate of some eight or nine   years before the full importance of the great wave of
   miles an hour, preserving its original figure some thirty   translation was recognized, after which it became an
@@ -190,7 +190,7 @@ frequency” ω in each of these elementary solutions.             amount u0 (x)
   The function ei(kx−ωt) represents a wave that trav-           initial profile where u0 is decreasing. Then the earlier,
 els at a speed of ω/k, which we have just shown to be           and higher, parts of the initial wave are translated at a
 equal to −k2 . Therefore, the different plane-wave com-          greater speed (since u0 (x) is larger), so that the nega-
-ponents of the solution travel at different speeds: the          tive slope of the wave becomes more negative. Indeed,
+pone nts of the solution travel at different speeds: the          tive slope of the wave becomes more negative. Indeed,
 
 III.49.   Linear and Nonlinear Waves and Solitons                                                                  237
 
@@ -212,7 +212,7 @@ file: once again, the phenomenon occurs for many other
 conservation laws.
                                                                  In their 1894 paper, Korteweg and de Vries intro-
 2.2   Split-Stepping                                          duced the Kd V equation and gave a convincing mathe-
-                                                              matical argument that this was the equation that gov-
+                                                              mat ical argument that this was the equation that gov-
 Now let us return to the Kd V equation itself, in the form     erned wave motion in a shallow canal. They also showed
 ut = −uux − uxxx . Why is it that this equation gives         by explicit computation that it admitted traveling-wave
 rise to the remarkable stability of the solutions that        solutions that had exactly the properties that had been
@@ -245,7 +245,7 @@ time TB , u remains bounded (since it is made out of hor-     was unlike anythin
 izontally translated parts of u0 ). It is not hard to prove   ics, and the search for an explanation of their remark-
 that the maximum slope (that is, the maximum value of         able behavior led to a series of discoveries that changed
 ux ) blows up like the function (TB − t)−1 , while at the     the course of applied mathematics for the next thirty
-same place uxxx blows up like the function (TB − t)−5 .       years. We shall now fill in some of the mathemati-
+same place uxxx blows up like the function (TB − t)−5 .       years. We shall now fill in some of the mathemat i-
 Thus, near the breaking time, and breaking point, the         cal details behind the above sketch, beginning with a
 uxxx term will dwarf the nonlinearity and will disperse       discussion of explicit solutions to the Kd V equation.
 the incipient shock. Thus, the stability is caused by a          It is straightforward to find the traveling-wave solu-
@@ -313,13 +313,13 @@ when t is large and positive, where φ = 3 log(3).
                                                                        each “solitary wave pulse” or soliton begins to move
    Note what this says. If we follow the evolution from                uniformly at a rate (relative to the background value
 −T to T (where T is large and positive), we first see the               of u from which the pulse rises) which is linearly pro-
-superposition of two 1-solitons: a larger and thinner                  portional to its amplitude. Thus, the solitons spread
+superposition of two 1-solitons: a larger and thinner                  portion al to its amplitude. Thus, the solitons spread
 one to the left of, and catching up with, a shorter, fatter,           apart. Because of the periodicity, two or more solitons
 and slower-moving one to the right. Around t = 0 they                  eventually overlap spatially and interact nonlinearly.
 merge into a single lump (with the shape 6 sech2 (x)),                 Shortly after the interaction they reappear virtually
                                                                        unaffected in size or shape. In other words, solitons
 and then they separate again, with their original shapes
-                                                                       “pass through” one another without losing their iden-
+                                                                       “pass through” one another with out losing their iden-
 restored—but now the taller and thinner one is to the                  tity. Here we have a nonlinear physical process in which
 right. It is almost as if they had passed right through                interacting localized pulses do not scatter irreversibly.
 each other. The only effect of their interaction is the                                             Zabusky and Kruskal (1965)
@@ -327,7 +327,7 @@ pair of phase shifts: the slower one is retarded slightly
 from where it would have been, and the faster one is
                                                                      Further Reading
 slightly ahead of where it would have been. Except for
-these phase shifts, the final result is what we might                 Lax, P. D. 1996. Outline of a Theory of the Kd V Equa-
+these phase shifts, the final result is what we might                 Lax, P. D. 1996. Out line of a Theory of the Kd V Equa-
                                                                        tion in Recent Mathematical Methods in Nonlinear Wave
   1. This is a complete swindle! Only knowledge of the form of the     Propagation. Lecture Notes in Mathematics, volume 1640,
 solutions allows us to make the clever choice of K.                    pp. 70–102. New York: Springer.

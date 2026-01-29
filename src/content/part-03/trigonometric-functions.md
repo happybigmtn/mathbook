@@ -35,7 +35,7 @@ $307$
 
 give a general definition results in something too general to be useful. The most that we can say about the various transforms is that they present a more or less distant analogy to the classical Fourier transforms and that this analogy has been found useful by those who developed them. (See also the fourier transform [III.27](/part-03/the-fourier-transform) , spherical harmonics [III.87](/part-03/spherical-harmonics), representation theory [IV.9](/part-04/representation-theory), and wavelets and applications [VII.3](/part-07/wavelets-and-applications).) III .
 $92$ Trigonometric Functions Ben Green The basic trigonometric functions “sin” and “cos,” as well as the four related functions “tan,” “cot,” “sec,” and “cosec,” will probably be familiar to most readers in some form. One way to define the sine function sin : $R \to$ [− 1 , 1 ] is as follows. In almost all branches of mathematics one measures angles using radians, which are defined in terms of arclength: to say that the angle ∠ AOB in figure $1$ is $\theta$ radians is to say that the arc AB of the circle has length $\theta.$ This definition makes sense when $0 \le \theta < 2\pi$ .
-One then defines sin $\theta$ to be the length PB, where P is the foot of the perpendicular from B to OA. It is very important that this length be taken with the correct sign. If $0 < \theta < \pi$ then we take the positive sign, whereas if $\pi < \theta < 2\pi$ we take the negative sign. In other words, sin $\theta$ is the y-coordinate of the point B. The sine function is, at the moment, defined on the interval [0 , 2 π).
+One then defines sin $\theta$ to be the length PB, where P is the foot of the perpendicular from B to OA. It is very important that this length be taken with the correct sign. If $0 < \theta < \pi$ then we take the positive sign, where as if $\pi < \theta < 2\pi$ we take the negative sign. In other words, sin $\theta$ is the y-coordinate of the point B. The sine function is, at the moment, defined on the interval [0 , 2 π).
 To define it on all of R one simply insists that it be periodic with period $2\pi ($ that is, that it satisfies the relation sin $\theta =$ sin $(2\pin + \theta)$ for any integer n). There is one problem with our definition of sine. What do we mean by the length of the arc AB? The only really satisfactory way of understanding this is to use calculus. The equation of the unit circle is √ $y = 1 - x^{2}$ , at least if (x ,  y) lies in the upper-right quadrant. (Otherwise one must be careful about sign .) The formula for the arc-length of a curve $y = f$ (x) between $y = a$ and $y = b$ is b
 
 1 + (dx/dy)2 dy. S = a
@@ -76,7 +76,7 @@ can be regarded as giving a precise, even if implicit,
                                                                          a0 + a1 cos x + b1 sin x + a2 cos 2 x + b2 sin 2 x + · · · .
 definition of sin θ for 0 ⩽ θ ⩽ π /2.
   As with many of the most natural concepts in mathe-                    Under favorable circumstances (if the function f is suf-
-matics, sin may be defined in a multitude of equivalent                   ficiently smooth, say) one can recover the coefficients
+matics, sin may be defined in a multitude of equivalent                   fic ient ly smooth, say) one can recover the coefficients
 ways. Another definition (whose equivalence to the first                   ai , bi by using orthogonality relations such as
 one is not obvious) is                                                    1    2π
 
@@ -98,7 +98,7 @@ function [I.3 §5.6](/part-01/fundamental-definitions) on C.                    
                                                                                         an =          f (x) cos nx dx.
 tive? The answer is the cosine function cos z, which may                                      π 0
 be defined in much the same way as sin: either geo-                       Such decompositions into trigonometric functions ulti-
-metric ally or using a power series. The power series                     mately underlie devices like compact disk players and
+metric ally or using a power series. The power series                     mately under lie devices like compact disk players and
 is                                                                       mobile phones.
                            z2   z4     z6                                   Let us conclude by remarking that there is a whole
             cos(z) = 1 −      +      −    + ··· ,         (3)

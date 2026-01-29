@@ -16,7 +16,7 @@ Riemann, G. F. B. 1990. Gesammelte Werke, Collected Works,   mann’s results on
                                                              modern algebraic geometry.
                                               Jeremy Gray       Intimately linked with Dedekind’s work in algebra
                                                              and number theory were his reflections on the foun-
-VI.50      Julius Wilhelm Richard Dedekind                   dations of the real number system. In 1858 (published
+VI.50      Julius Wilhelm Richard Dedekind                   da tions of the real number system. In 1858 (published
 b. Brunswick, Germany, 1831; d. Brunswick, Germany, 1916     1872) he formulated a definition of the real numbers
 Algebraic number theory; algebraic curves; set theory;       using what are now known as “Dedekind cuts” in the
 foundations of mathematics
@@ -32,7 +32,7 @@ dent and subsequently a pupil of dirichlet [VI.36]           this led Dedekind t
 and riemann [VI.49]. Dedekind was a retiring man             analysis) is only a part of logic.” From a modern view-
 with, as klein [VI.57] said, a “contemplative nature;”       point, his contributions show that set theory [IV.22](/part-04/set-theory)
 he remained a bachelor, living with his mother and           is a sufficient foundation for classical mathematics.
-sister. Nevertheless, he had an impact upon a select         Thus he contributed as much as anybody else to the
+sister. Nevertheless, he had an impact upon a select         Thus he contributed as much as any body else to the
 group of contemporaries (especially cantor [VI.54](/part-06/georg-cantor-18451918),          set-theoretic reformulation of modern mathematics.
 frobenius [VI.58](/part-06/ferdinand-georg-frobenius-18491917), and Heinrich Weber) through his
 rich correspondence.                                         Further Reading

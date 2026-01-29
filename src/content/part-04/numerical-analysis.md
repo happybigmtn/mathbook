@@ -5,7 +5,7 @@
 Karp, R. M., and V. Ramachandran. 1990. Parallel algorithms     really goes on is a far more interesting process of exe-
   for shared-memory machines. In Handbook of Theoret-           cution of algorithms. In most cases the job could not
   ical Computer Science, volume A, Algorithms and Com-          be done even in principle by formulas, for most mathe-
-  plexity, edited by J. van Leeuwen. Cambridge, MA: MIT         matical problems cannot be solved by a finite sequence
+  plexity, edited by J. van Leeuwen. Cambridge, MA: MIT         mat ical problems cannot be solved by a finite sequence
   Press/Elsevier.
                                                                 of elementary operations. What happens instead is
 Kearns, M. J., and U. V. Vazirani. 1994. An Introduction
@@ -19,7 +19,7 @@ Kushilevitz, E., and N. Nisan. 1996. Communication Com-         approximate solu
   plexity. Cambridge: Cambridge University Press.               pose we have one polynomial of degree 4,
 Ron, D. 2001. Property testing (a tutorial). In Handbook on
   Randomized Computing, volume II. Dordrecht: Kluwer.                    p(z) = c0 + c1 z + c2 z2 + c3 z 3 + c4 z 4 ,
-Shaltiel, R. 2002. Recent developments in explicit construc-
+Shaltiel, R. 2002. Recent developments in explicit con struc-
                                                                 and another of degree 5,
   tions of extractors. Bulletin of the European Association
   for Theoretical Computer Science 77:67–95.                        q(z) = d0 + d1 z + d2 z 2 + d3 z 3 + d4 z4 + d5 z 5 .
@@ -36,7 +36,7 @@ IV.21 Numerical Analysis                                        p and q are utte
            Lloyd N. Trefethen                                   differ at all. If a scientist or a mathematician wants to
                                                                 know the roots of one of these polynomials, he or she
       1   The Need for Numerical Computation                    will turn to a computer and get an answer to sixteen
-Everyone knows that when scientists and engineers               digits of precision in less than a millisecond. Did the
+Every one knows that when scientists and engineers               digits of precision in less than a millisecond. Did the
 need numerical answers to mathematical problems,                computer use an explicit formula? In the case of q,
 they turn to computers. Nevertheless, there is a wide-          the answer is certainly no, but what about p? Maybe,
 spread misconception about this process.                        maybe not. Most of the time, the user neither knows
@@ -54,13 +54,13 @@ ments. The day has long since passed when an advance
                                                                  (ii) Linear programming: minimize a linear function
 in the physical sciences could be achieved, or a signifi-
                                                                       of n variables subject to m linear constraints.
-cant engineering product developed, without numerical
+cant engineering product developed, with out numerical
                                                                 (iii) Traveling salesman problem: find the shortest tour
 mathematics.
                                                                       between n cities.
   Computers certainly play a part in this story, yet
 there is a mis understanding about what their role is.           And here are five that, like finding the roots of q, cannot
-Many people imagine that scientists and mathemati-              generally be solved in this manner.
+Many people imagine that scientists and mathemat i-              generally be solved in this manner.
 cians generate formulas, and then, by inserting num-
 bers into these formulas, computers grind out the nec-          (iv) Find an eigenvalue [I.3 §4.3](/part-01/fundamental-definitions) of an n . imes n matrix.
 essary results. The reality is nothing like this. What           (v) Minimize a function of several variables.
@@ -82,7 +82,7 @@ Problems (vi) and (vii) are usually rather easy, at least
 if the integral is in one dimension. Problems (i) and (iv)
                                                                  for some problems, generating a combined increase in
 are of almost exactly the same difficulty: easy when n
-                                                                 speed of almost in com pre he ns i ble scale.
+                                                                 speed of almost incomprehensible scale.
 is small, like 100, and often very hard when n is large,
                                                                     Half a century on, numerical analysis has grown in-
 like 1 000 000. In fact, in these matters philosophy is
@@ -131,13 +131,13 @@ Cooley and Tukey in 1965.                                         3   Machine Ar
 started to become less conspicuous in the activities             It is well-known that computers cannot represent real
 of research mathematicians. This was a consequence               or complex numbers exactly. A quotient like 1/7 eval-
 of the growth of mathematics generally and of great              uated on a computer, for example, will normally yield
-advances in fields in which, for technical reasons, math-         an inexact result. (It would be different if we designed
+advances in fields in which, for technical reasons, math-         an in exact result. (It would be different if we designed
 ematical rigor had to be the heart of the matter. For            machines to work in base 7!) Computers approximate
 example, many advances of the early twentieth cen-               real numbers by a system of floating-point arithmetic,
 tury sprang from mathematicians’ new ability to reason           in which each number is represented in a digital equiv-
 rigorously about infinity, a subject relatively far from          alent of scientific notation, so that the scale does not
 numerical calculation.                                           matter unless the number is so huge or tiny as to cause
-   A generation passed, and in the 1940 s the computer            overflow or underflow. Floating-point arithmetic was
+   A generation passed, and in the 1940 s the computer            over flow or under flow. Floating-point arithmetic was
 was invented. From this moment numerical mathemat-               invented by Konrad Zuse in Berlin in the 1930 s, and
 
 606                                                                                    IV. Branches of Mathematics
@@ -156,7 +156,7 @@ into 53 bits for a signed fraction in base 2 and 11 bits     widely regarded as 
 for a signed exponent. Since 2−53 ≈ 1.1 . imes 10−16 , IEEE       Numerical analysts themselves are partly to blame for
 numbers represent the numbers of the real line to a rel-     this perception. In the 1950 s and 1960 s, the founding
                                               10
-ative accuracy of about 16 digits. Since 2±2 ≈ 10±308 ,      fathers of the field discovered that inexact arithmetic
+ative accuracy of about 16 digits. Since 2±2 ≈ 10±308 ,      fathers of the field discovered that in exact arithmetic
 this system works for numbers up to about 10308 and          can be a source of danger, causing errors in results
 down to about 10−308 .                                       that “ought” to be right. The source of such prob-
    Computers do not merely represent numbers, of             lems is numerical instability: that is, the amplification
@@ -164,12 +164,12 @@ course; they perform operations on them such as              of rounding errors 
 addition, subtraction, multiplication, and division, and     scale by certain modes of computation. These men,
 more complicated results are obtained from sequences         including von neumann [VI.91](/part-06/john-von-neumann-19031957), Wilkinson, Forsythe,
 of these elementary operations. In floating-point arith-      and Henrici, took great pains to publicize the risks of
-metic, the computed result of each elementary opera-         careless reliance on machine arithmetic. These risks are
+metic, the computed result of each elementary opera-         care less reliance on machine arithmetic. These risks are
 tion is almost exactly correct in the following sense: if    very real, but the message was communicated all too
 “∗” is one of these four operations in its ideal form and    successfully, leading to the current widespread impres-
 “.* ” is the same operation as realized on the computer,     sion that the main business of numerical analysis is
 then for any floating-point numbers x and y, assuming         coping with rounding errors. In fact, the main busi-
-that there is no underflow or overflow,                        ness of numerical analysis is designing algorithms that
+that there is no under flow or over flow,                        ness of numerical analysis is designing algorithms that
                                                              converge quickly; rounding-error analysis, while often
                x.
                 * y = (x ∗ y)(1 + ε).
@@ -194,7 +194,7 @@ finer than this. Another comparison with physics con-         umn vectors of siz
 cerns the precision to which fundamental constants are       on computers around the world almost every time a
 known, such as (roughly) 4 digits for the gravitational      system of linear equations is solved. Even if n is as
 constant G, 7 digits for Planck’s constant h and the ele-    large as 1000, the time required is well under a sec-
-mentary charge e, and 12 digits for the ratio \mu e /\mu B of      ond on a typical 2008 desktop machine. The idea of
+ment ary charge e, and 12 digits for the ratio \mu e /\mu B of      ond on a typical 2008 desktop machine. The idea of
 
 IV.21.   Numerical Analysis                                                                                       607
 
@@ -204,21 +204,21 @@ include lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813), Gauss, and ja
 The modern way of describing such algorithms, how-           then L has the additional property |ij | ⩽ 1 for all i
 ever, was apparently introduced as late as the 1930 s.        and j.
 Suppose that, say, α times the first row of A is sub-            The discovery of pivoting came quickly, but its
-tracted from the second row. This operation can be           theoretical analysis has proved astonishingly hard. In
+tr acted from the second row. This operation can be           theoretical analysis has proved astonishingly hard. In
 interpreted as the multiplication of A on the left by the    practice, pivoting makes Gaussian elimination almost
 lower-triangular matrix M1 consisting of the identity        perfectly stable, and it is routinely done by almost all
 with the additional nonzero entry m21 = −α. Further          computer programs that need to solve linear systems
 analogous row operations correspond to further multi-        of equations. Yet it was realized in around 1960 by
 plications on the left by lower-triangular matrices Mj .     Wilkinson and others that for certain exceptional matri-
 If k steps convert A to an upper-triangular matrix U,        ces, Gaussian elimination is still unstable, even with
-then we have MA = U with M = Mk · · · M2 M1 , or, upon       pivoting. The lack of an explanation of this discrep-
+then we have MA = U with M = Mk · · · M2 M1 , or, upon       pivoting. The lack of an explanation of this disc rep-
 setting L = M −1 ,                                           ancy represents an embarrassing gap at the heart of
                         A = LU.                              numerical analysis. Experiments suggest that the frac-
 Here L is unit lower-triangular, that is, lower-triangular   tion of matrices (for example, among random matri-
 with all its diagonal entries equal to 1. Since U rep-       ces with independent normally distributed entries) for
 resents the target structure and L encodes the opera-        which Gaussian elimination amplifies rounding errors
 tions carried out to get there, we can say that Gaussian     by a factor greater than ρn1/2 is in a certain sense expo-
-elimination is a process of lower-triangular upper-          nentially small as a function of ρ as ρ → . nfty, where n is
+elimination is a process of lower-triangular upper-          nent i ally small as a function of ρ as ρ → . nfty, where n is
 triangularizati on.                                           the dimension, but a theorem to this effect has never
    Many other algorithms of numerical linear algebra         been proved.
 are also based on writing a matrix as a product of matri-       Meanwhile, beginning in the late 1950 s, the field of
@@ -262,7 +262,7 @@ and P is a permutation matrix, i.e., the identity matrix     via orthogonal oper
 as a by-product. The Householder method turns out to        have been so successful that the computation of matrix
 be more stable numerically, because orthogonal oper-        eigenvalues long ago became a “black box” operation
 ations preserve norms and thus do not amplify the           for virtually every scientist, with nobody but a few spe-
-rounding errors introduced at each step.                    cialists knowing the details of how it is done. A curi-
+rounding errors introduced at each step.                    cia lists knowing the details of how it is done. A curi-
    From the QR factorization sprang a rich collec-          ous related story is that EISPACK’s relative LINPACK for
 tion of linear algebra algorithms in the 1960 s. The         solving linear systems of equations took on an unex-
 QR factorization can be used by itself to solve least-      pected function: it became the original basis for the
@@ -346,7 +346,7 @@ to solve problems of a large enough scale for the meth-       polation points be
 ods to be competitive. They took off in the 1970 s with         quadrature method is also stable and rapidly conver-
 the work of Reid and Paige and especially van der Vorst       gent, and unlike Gauss quadrature can be executed in
 and Meijerink, who made famous the idea of precon-            O(n log n) operations by the fast Fourier transform.
-ditioning. In preconditioning a system Ax = b, one            The explanation of why clustered points are necessary
+dition ing. In preconditioning a system Ax = b, one            The explanation of why clustered points are necessary
 replaces it by a mathematically equivalent system such        for effective quadrature rules is related to the subject
 as                                                            of potential theory.
                        MAx = Mb                                  Around 1850 another problem of analysis began to
@@ -361,13 +361,13 @@ may solve it quickly.
                                                               multistep methods for the numerical solution of ODEs.
    Since the 1970 s, preconditioned matrix iterations
                                                               The idea here is that for an initial value problem u =
-have emerged as an indispensable tool of computa-
+have emerged as an indispensable tool of com put a-
                                                               f (t, u) with independent variable t > 0, we pick a small
 tional science. As one indication of their prominence we
                                                               time step Δt > 0 and consider a finite set of time values
 may note that in 2001, Thomson ISI announced that the
 most heavily cited article in all of mathematics in the                          tn = nΔt,      n ⩾ 0.
-1990 s was the 1989 paper by van der Vorst introducing         We then replace the ODE by an algebraic approxi-
+1990 s was the 1989 paper by van der Vorst introducing         We then replace the ODE by an algebraic approx i-
 Bi-CGStab, a generalization of conjugate gradients for        mation that enables us to calculate a succession of
 nonsymmetric matrices.                                        approximate values
    Finally, we must mention the biggest unsolved prob-
@@ -385,12 +385,12 @@ or, using the abbreviation f $n = f$ (t n , v n), $v^{n} + {}^{1} = v^{n} + \del
 $1v^{n} + {}^{1} = v^{n} + {}^{24}\Delta t(55f^{n} - 59f^{n} - {}^{1} + 37f^{n} - {}^{2} - 9f^{n} - {}^{3})$ . The term “fourth-order” reflects a new element in the numerical treatment of problems of analysis: the appearance of questions of convergence as $\Delta t \to 0$ . The formula above is of fourth order in the sense that it will normally converge at the rate O (( $\Delta$ t) 4 ).
 The orders employed in practice are most often in the range $3 - 6$ , enabling excellent accuracy for all kinds of computations, typically in the range of $3 - 10$ digits, and higherorder formulas are occasionally used when still more accuracy is needed. Most unfortunately, the habit in the numerical analysis literature is to speak not of the convergence of these magnificently efficient methods, but of their error, or more precisely their discretization or truncation error as distinct from rounding error. This ubiquitous language of error analysis is dismal in tone, but seems ineradicable.
 At the turn of the twentieth century, the second great class of ODE algorithms, known as Runge-Kutta or one-step methods, was developed by Runge, Heun, and Kutta. For example, here are the formulas of the famous fourth-order Runge-Kutta method, which advance a numerical solution (again scalar or system) from time step t n to t n $+ {}^{1}$ with the aid of four evaluations of the function f :
-$a = \delta\text{tf}(t^{n}$ , $v^{n})$ ,  b = . elta tf({}tn + 12. elta t, {}vn + 12 a) ,  c = . elta tf({}tn + 12. elta t, {}vn + 12 b) , $d = \delta\text{tf}(t^{n} + \Delta t,v^{n} + c)$ , $v^{n} + {}^{1} = v^{n} + \frac{1}{6}(a + 2b + 2c + d)$ . Runge-Kutta methods tend to be easier to implement but sometimes harder to analyze than multistep formulas. For example, for any s, it is a trivial matter to derive the coefficients of the s-step Adams-Bashforth formula, which has order of accuracy $p = s$.
+$a = \delta\text{tf}(t^{n}$ , $v^{n})$ ,  b = . elta tf({}tn + 12. elta t, {}vn + 12 a) ,  c = . elta tf({}tn + 12. elta t, {}vn + 12 b) , $d = \delta\text{tf}(t^{n} + \Delta t,v^{n} + c)$ , $v^{n} + {}^{1} = v^{n} + \frac{1}{6}(a + 2b + 2c + d)$ . Runge-Kutta methods tend to be easier to implement but some times harder to analyze than multistep formulas. For example, for any s, it is a trivial matter to derive the coefficients of the s-step Adams-Bashforth formula, which has order of accuracy $p = s$.
 For Runge Kutta methods, by contrast, there is no simple relation-
 
 IV. Branches of Mathematics
 
-ship between the number of “stages” (i . e . , function evaluations per step) and the attainable order of accuracy. The classical methods with $s = 1$ , $2$ , $3$ , $4$ were known to Kutta in 1901 and have order $p = s$, but it was not until 1963 that it was proved that $s = 6$ stages are required to achieve order $p = 5$ . The analysis of such problems involves beautiful mathematics from graph theory and other areas, and a key figure in this area since the $1960s$ has been John Butcher.
+ship between the number of “stages” (i . e . , function evaluations per step) and the attainable order of accuracy. The classical methods with $s = 1$ , $2$ , $3$ , $4$ were known to Kutta in 1901 and have order $p = s$, but it was not until 1963 that it was proved that $s = 6$ stages are required to achieve order $p = 5$ . The analysis of such problems involves beautiful mathematics from graph theory and other areas, and a key figure in this area since the $1960s$ has been John But cher.
 For orders $p = 6$ , $7$ , $8$ the minimal numbers of stages are $s = 7$ , $9$ , $11$ , while for $p > 8$ exact minima are not known. Fortunately, these higher orders are rarely needed for practical purposes. When computers began to be used to solve differential equations after World War II, a phenomenon of the greatest practical importance appeared: once again, numerical instability. As before, this phrase refers to the unbounded amplification of local errors by a computational process, but now the dominant local errors are usually those of discretization rather than rounding.
 Instability typically manifests itself as an oscillatory error in the computed solution that blows up exponentially as more numerical steps are taken. One mathematician concerned with this effect was Germund Dahlquist. Dahlquist saw that the phenomenon could be analyzed with great power and generality, and some people regard the appearance of his 1956 paper as one of the events marking the birth of modern numerical analysis. This landmark paper introduced what might be called the fundamental theorem of numerical analysis: consistency  +  stability  =  convergence.
 The theory is based on precise definitions of these three notions along the following lines. Consistency is the property that the discrete formula has locally positive order of accuracy and thus models the right ODE. Stability is the property that errors introduced at one time step cannot grow unboundedly at later times. Convergence is the property that as $\Delta t \to 0$ , in the absence of rounding errors, the numerical solution converges to the correct result.
@@ -425,7 +425,7 @@ vjn $+ 1 =$ vjn $+ 2\lambda(vj + 1) + 2\lambda^{2}(v^{j} + {}^{1} - v^{j} - {}^{
 
 where $\lambda = \Delta t/\Delta x$ , which can be generalized to nonlinear systems of hyperbolic conservation laws in one dimension. For u $t = u$ x , if $\lambda$ is held fixed at a value less than or equal to $1$ , the method will converge to the correct solution as $\Delta x,\Delta t \to 0($ ignoring rounding errors). If $\lambda$ is greater than $1$ , on the other hand, it will explode.
 Von Neumann and others realized that the presence or absence of such instabilities could be tested, at least for linear constant-coefficient problems, by discrete fourier analysis [III.27](/part-03/the-fourier-transform) in x: “von Neumann analysis.” Experience indicated that, as a practical matter, a method would succeed if it was not unstable. A theory soon appeared that gave rigor to this observation: the Lax equivalence theorem, published by Lax and Richtmyer in 1956 , the same year as Dahlquist’s paper.
-Many details were different--this theory was restricted to linear equations whereas Dahlquist’s theory for ODEs also applied to nonlinear ones--but broadly speaking the new result followed the same pattern of equating convergence to consistency plus stability. Mathematically, the key point was the uniform boundedness principle.
+Many details were different--this theory was restricted to linear equations where as Dahlquist’s theory for ODEs also applied to nonlinear ones--but broadly speaking the new result followed the same pattern of equating convergence to consistency plus stability. Mathematically, the key point was the uniform boundedness principle.
 
 $611$
 
@@ -445,13 +445,13 @@ $6$
 
 Numerical Optimization
 
-The third great branch of numerical analysis is optimization, that is, the minimization of functions of several variables and the closely related problem of solution of nonlinear systems of equations. The development of optimization has been somewhat independent of that of the rest of numerical analysis, carried forward in part by a community of scholars with close links to operations research and economics. Calculus students learn that a smooth function may achieve an extremum at a point of zero derivative, or at a boundary.
+The third great branch of numerical analysis is optimization, that is, the minimization of functions of several variables and the closely related problem of solution of nonlinear systems of equations. The development of optimization has been some what independent of that of the rest of numerical analysis, carried forward in part by a community of scholars with close links to operations research and economics. Calculus students learn that a smooth function may achieve an extremum at a point of zero derivative, or at a boundary.
 The same two possibilities characterize the two big strands of the field of optimization. At one end there are problems of finding interior zeros and minima of unconstrained nonlinear functions by methods related to multivariate calculus. At the other are problems of linear programming, where the function to be minimized is linear and therefore easy to understand, and all the challenge is in the boundary constraints. Unconstrained nonlinear optimization is an old subject. Newton introduced the idea of approximating functions by the first few terms of what we now call
 
 IV. Branches of Mathematics
 
-their Taylor series; indeed, Arnol’d has argued that Taylor series were Newton’s “main mathematical discovery.” To find a zero x ∗ of a function F of a real variable x, everyone knows the idea of Newton’s method: at the kth step, given an estimate x (k) $\approx$ x ∗ , use the derivative F (x (k)) to define a linear approximation from which to derive a better estimate $x(k + {}^{1})$ : $x(k + {}^{1}) = x(k) - F(x(k))/F (x(k))$ . Newton (1669) and Raphson (1690) applied this idea to polynomials, and Simpson ( 1740 ) generalized it to other functions F and to systems of two equations.
-In today’s language, for a system of n equations in n unknowns, we regard F as an n-vector whose derivative at a point x (k) $\in$ R n is the n $\times$ n Jacobian matrix with entries ∂F i
+their Taylor series; indeed, Arnol’d has argued that Taylor series were Newton’s “main mathematical discovery.” To find a zero x ∗ of a function F of a real variable x, every one knows the idea of Newton’s method: at the kth step, given an estimate x (k) $\approx$ x ∗ , use the derivative F (x (k)) to define a linear approximation from which to derive a better estimate $x(k + {}^{1})$ : $x(k + {}^{1}) = x(k) - F(x(k))/F (x(k))$ . Newton (1669) and Raphson (1690) applied this idea to polynomials, and Simpson ( 1740 ) generalized it to other functions F and to systems of two equations.
+In today’s language, for a system of n equations in n unknowns, we regard F as an n-vector whose derivative at a point x (k) $\in$ R n is the n $\times$ n Jacobi an matrix with entries ∂F i
 
 ( x(k)) , $1 \le i,j \le n.$
 
@@ -464,7 +464,7 @@ This matrix defines a linear approximation to F (x) that is accurate for x $\app
 (1)
 
 Students often think it might be a good idea to develop formulas to enhance the exponent in this estimate to $3$ or $4$ . However, this is an illusion. Taking two steps at a time of a quadratically convergent algorithm yields a quartically convergent one, so the difference in efficiency between quadratic and quartic is at best a constant factor. The same goes if the exponent $2$ , $3$ , or $4$ is replaced by any other number greater than $1$ .
-The true distinction is between all of these algorithms that converge superlinearly, of which Newton’s method is the prototype, and those that converge linearly or geometrically, where the exponent is just $1$ . From the point of view of multivariate calculus, it is a small step from solving a system of equations to minimizing a scalar function f of a variable x $\in$ R n : to find a (local) minimum, we seek a zero of the gradient g (x) $= \nablaf$ (x), an n-vector. The derivative of g is the Jacobian matrix known as the Hessian of f , with entries ∂ ${}^{2}f$ H ij (x (k))  =  (x (k)),
+The true distinction is between all of these algorithms that converge superlinearly, of which Newton’s method is the prototype, and those that converge linearly or geometrically, where the exponent is just $1$ . From the point of view of multivariate calculus, it is a small step from solving a system of equations to minimizing a scalar function f of a variable x $\in$ R n : to find a (local) minimum, we seek a zero of the gradient g (x) $= \nablaf$ (x), an n-vector. The derivative of g is the Jacobi an matrix known as the Hessian of f , with entries ∂ ${}^{2}f$ H ij (x (k))  =  (x (k)),
 
 $1 \le i,j \le n,$
 
@@ -475,7 +475,7 @@ IV.21.   Numerical Analysis                                                     
 and one may utilize it just as before in a Newton itera-    Rn to R. Even the problem of stating local optimality
 tion to find a zero of g(x), the new feature being that      conditions for solutions to such problems is nontrivial,
 a Hessian is always symmetric.                              a matter involving lagrange multipliers [III.64](/part-03/optimization-and-lagrange-multipliers) and
-   Though the Newton formulas for minimization and          a distinction between active and inactive constraints.
+   Though the Newton formulas for minimization and          a distinction between active and in active constraints.
 finding zeros were already established, the arrival of       This problem was solved by what are now known as
 computers created a new field of numerical optimiza-         the KKT conditions, introduced by Kuhn and Tucker in
 tion. One of the obstacles quickly encountered was          1951 and also twelve years earlier, it was subsequently
@@ -486,13 +486,13 @@ algorithmic technologies known as line searches and            The problem of co
 trust regions.                                              strand of numerical optimization, linear programming.
    For problems with more than a few variables, it also     This subject was born in the 1930 s and 1940 s with
 quickly became clear that the cost of evaluating Jaco-      Kantorovich in the Soviet Union and Dantzig in the
-bians or Hessians at every step could be exorbitant.        United States. As an outgrowth of his work for the
+bians or Hessians at every step could be exorbitant.        United States. As an out growth of his work for the
 Faster methods were needed that might make use of           U.S. Air Force in the war, Dantzig invented in 1947
-inexact Jacobians or Hessians and/or inexact solutions      the famous simplex algorithm [III.84](/part-03/the-simplex-algorithm) for solving lin-
+in exact Jacobians or Hessians and/or in exact solutions      the famous simplex algorithm [III.84](/part-03/the-simplex-algorithm) for solving lin-
 of the associated linear equations, while still achiev-     ear programs. A linear program is nothing more than
 ing superlinear convergence. An early breakthrough          a problem of minimizing a linear function of n vari-
 of this kind was the discovery of quasi-Newton meth-        ables subject to m linear equality and/or inequality
-ods in the 1960 s by Broyden, Davidon, Fletcher, and         constraints. How can this be a challenge? One answer is
+ods in the 1960 s by Broyden, David on, Fletcher, and         constraints. How can this be a challenge? One answer is
 Powell, in which partial information is used to gen-        that m and n may be large. Large-scale problems may
 erate steadily improving estimates of the true Jaco-        arise through discretization of continuous problems
 bian or Hessian or its matrix factors. An illustration      and also in their own right. A famous early example
@@ -504,7 +504,7 @@ namely Broyden, Fletcher, Goldfarb, and Shanno; their       for planning the eco
 discovery has been known ever since as the BFGS for-           The simplex algorithm made medium- and large-
 mula. In subsequent years, as the scale of tractable        scale linear programming problems tractable. Such a
 problems has increased exponentially, new ideas have        problem is defined by its objective function, the func-
-also become important, including automatic differen-         tion f (x) to be minimized, and its feasible region, the
+also become important, including automatic differ en-         tion f (x) to be minimized, and its feasible region, the
 tiation, a technology that enables derivatives of com-      set of vectors x ∈ Rn that satisfy all the constraints. For
 puted functions to be determined automatically: the         a linear program the feasible region is a polyhedron, a
 computer program itself is “differentiated,” so that as      closed domain bounded by hyperplanes, and the opti-
@@ -517,7 +517,7 @@ fully practical until the work of Bischof, Carle, and       tex to another until
 Griewank in the 1990 s.                                      the iterates lie on the boundary of the feasible region.
    Unconstrained optimization problems are relatively          In 1984, an upheaval occurred in this field, triggered
 easy, but they are not typical; the true depth of this      by Narendra Karmarkar at AT&T Bell Laboratories. Kar-
-field is revealed by the methods that have been devel-       markar showed that one could sometimes do much
+field is revealed by the methods that have been devel-       markar showed that one could some times do much
 oped for dealing with constraints. Suppose a function       better than the simplex algorithm by working in the
 f : Rn → R is to be minimized subject to certain equal-     interior of the feasible region instead. Once a connec-
 ity constraints cj (x) = 0 and inequality constraints       tion was shown between Karmarkar’s method and the
@@ -532,7 +532,7 @@ lems. The crucial idea of working in tandem with a pair      on a longer timesca
 of primal and dual problems led to today’s powerful          related developments in the computation of Fourier
 primal–dual methods, which can solve continuous opti-        transforms, optimization, and large-scale numerical
 mization problems with millions of variables and con-        linear algebra, and some of the new algorithms adapt
-straints. Starting with Karmarkar’s work, not only has       to the computer architecture as well as the mathemat-
+strain ts. Starting with Karmarkar’s work, not only has       to the computer architecture as well as the mathemat-
 the field of linear programming changed completely,           ical problem. In a world where several algorithms are
 but the linear and nonlinear sides of optimization are       known for solving every problem, we increasingly find
 seen today as closely related rather than essentially        that the most robust computer program will be one
@@ -546,7 +546,7 @@ the 1960 s, numerical analysts were often in the lead.        computations but o
 Now, two generations later, most of them are to be           exchange. I expect that most of the numerical computer
 found in mathematics departments. What happened? A           programs of 2050 will be 99% intelligent “wrapper” and
 part of the answer is that numerical analysts deal with      just 1% actual “algorithm,” if such a distinction makes
-continuous mathematical problems, whereas computer           sense. Hardly anyone will know how they work, but they
+continuous mathematical problems, where as computer           sense. Hardly anyone will know how they work, but they
 scientists prefer discrete ones, and it is remarkable how    will be extraordinarily powerful and reliable, and will
 wide a gap this can be.                                      often deliver results of guaranteed accuracy.
    Nevertheless, the computer science side of numerical         This story will have a mathematical corollary. One
@@ -569,9 +569,9 @@ process is carried out iteratively until a final answer is    The list in table 
 obtained that aims to be accurate to a tolerance spec-       most significant algorithmic (as opposed to theoret-
 ified in advance by the user. Most such computations          ical) developments in the history of numerical analy-
 come with no guarantee of accuracy, but an exciting          sis. In each case some of the key early figures are cited,
-ongoing development is the advance of more sophis-           more or less chronologically, and a key early date is
-ticated techniques of a posteriori error control that        given. Of course, any brief sketch of history like this
-sometimes do provide guarantees. When these are com-         must be an over simplification. Distressing omissions of
+on going development is the advance of more sophis-           more or less chronologically, and a key early date is
+ti cated techniques of a posteriori error control that        given. Of course, any brief sketch of history like this
+some times do provide guarantees. When these are com-         must be an over simplification. Distressing omissions of
 bined with techniques of interval arithmetic, there is       names occur through out the list, including many early
 even the prospect of accuracy guaranteed with respect        contributors in fields such as finite elements, precondi-
-to rounding as well as discretization error.                 tioning, and automatic differentiation, as well as more
+to rounding as well as discretization error.                 tion ing, and automatic differentiation, as well as more

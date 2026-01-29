@@ -32,7 +32,7 @@ a2 = 0, and then that a3 = 0, and so on. In other words,             we now let 
 a = 0. But this contradicts the condition that a = 1.              tions defined on R that tend to 0 at ±. nfty, with the uni-
 Therefore, the map f has no fixed point.                              form norm, then it can be shown that the right-hand
    However, if we place extra conditions on a con-                   side of this last equation defines a continuous function
-tinuous map, then it is sometimes possible to prove                  from X to a compact convex subset of X. Therefore,
+tinuous map, then it is some times possible to prove                  from X to a compact convex subset of X. Therefore,
 fixed point theorems, and some of these theorems                      by the Schauder fixed point theorem, this highly non-
 have important applications, notably to establishing                 linear equation has a solution with the given bound-
 the existence of solutions to differential equations.                 ary conditions, a result that is hard to prove in any
@@ -49,12 +49,12 @@ and so on. Denoting these by x0 , x1 , x2 , . . . , one can          a common bo
 prove quite easily that d(xn , xm ) tends to 0 as m and              example in figure 1 shows that four distinct colors are
 n both tend to infinity, and the completeness property                necessary since the regions A, B, C, and D are all adja-
 then guarantees that the sequence (xn ) has a limit. It              cent to each other. This result was conjectured by Fran-
-is not hard to prove that this limit is a fixed point of f .          cis Guthrie in 1852. An incorrect proof was given by
+is not hard to prove that this limit is a fixed point of f .          cis Guthrie in 1852. An in correct proof was given by
    A more sophisticated example is the Schauder fixed                 Kempe in 1879, and for eleven years the problem was
 point theorem, which states that if X is a Banach space,             believed to have been solved, until Heawood pointed
 K is a compact [III.9](/part-03/compactness-and-compactication) convex subset of X, and f is a                out the error in 1890. However, Heawood showed that
-continuous function from K to K, then f has a fixed                   Kempe’s basic idea, which we shall outline below, could
-point. Roughly speaking, to prove this one approxi-                  at least be used to give a correct proof that five colors
+continuous function from K to K, then f has a fixed                   Kempe’s basic idea, which we shall out line below, could
+point. Roughly speaking, to prove this one approx i-                  at least be used to give a correct proof that five colors
 mates K by larger and larger finite-dimensional sets                  were always sufficient. After that, the problem became
 Kn and approximates f by continuous maps fn that                     a famous example of a question that remained stub-
 take Kn to Kn . Brouwer’s fixed point theorem gives a                 bornly open despite being very easy to understand.
@@ -65,13 +65,13 @@ a fixed point of f .                                                  usually fo
 
 V.12.   The Four-Color Theorem                                                                                       697
 
-                               Fh cab df eghc a bd Figure 1 A map with eight regions.
+                               FHCABDFEGHCABDFigure 1 A map with eight regions.
 
                                                                           E                                 G
 any map we assign a graph [III.34]: the vertices of the              Figure 2 The graph of the map from figure 1.
 graph correspond to the regions of the map, and we
 declare two vertices to be adjacent if the correspond-
-ing regions share a piece of their boundary. The graph         red vertex green, thereby freeing up red to be used for
+ing regions share a piece of their boundary. The graph         red vertex green, there by freeing up red to be used for
 for the map in figure 1 is shown in figure 2. It is easy         v. Of course, if we did that we might have to recolor
 to see that the graph of any map in the plane can be           further vertices, but we could try to find a recoloring
 drawn in such a way that no two edges cross each               as follows: first change the color of the red neighbor of
@@ -83,7 +83,7 @@ oring is proper. After this reformulation, the four-color      might end up reco
 theorem states that every planar graph G has a proper          which case we would not after all be free to use red for
 coloring with at most four colors.                             v. This will happen if and only if there is a chain of ver-
    Here, briefly, is the proof of the five-color theorem         tices from the red neighbor of v to the green neighbor
-due to Kempe and Heawood. It is a proof by contradic-          that alternates red and green. However, if this circum-
+due to Kempe and Heawood. It is a proof by con tr adic-          that alternates red and green. However, if this circum-
 tion, so we start by assuming that the result is false. If     stance arises, we can try to recolor the yellow neighbor
 that is the case, then there must be a graph G of min-         of v blue in a similar way. Once again, the only thing
 imal size that has no proper coloring with five colors.         that can stop us is an alternating chain of yellow and

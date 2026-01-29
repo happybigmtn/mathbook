@@ -47,14 +47,14 @@ Hardy did much to remedy this situation, not only              the circle of int
 through his research, but also by publishing A Course of         Another Hardy–Ramanujan result concerns the num-
 Pure Mathematics in 1908. This book, which he wrote            ber ω(n) of distinct prime divisors of a “typical” num-
 as “a missionary talking to cannibals,” had a tremen-          ber n. They proved that a “typical” number n has about
-dous influence on several generations of mathemati-             log log n distinct prime factors in a certain precise
+dous influence on several generations of mathemat i-             log log n distinct prime factors in a certain precise
 cians in the United Kingdom. Unfortunately, Hardy’s            sense. In 1940 Erdős and Kac sharpened and extended
 love of pure mathematics, and analysis in particular,          this result by showing that additive number-theoretic
-somewhat stifled the growth of applied mathematics              functions like ω(n) obey the gaussian law [III.71 §5](/part-03/probability-distributions)
+some what stifled the growth of applied mathematics              functions like ω(n) obey the gaussian law [III.71 §5](/part-03/probability-distributions)
 and algebraic subjects for several decades.                    of errors: this gave birth to the important field of
    In 1911 he began a long collaboration with little-          probabilistic number theory.
 wood [VI.79](/part-06/john-edensor-littlewood-18851977), with whom he wrote almost one hun-                 Hardy’s name has been attached to several con-
 dred papers: this partnership is generally considered          cepts and results, including Hardy spaces, Hardy’s
 to have been the most fruitful in the history of math-         inequality, and the hardy–littlewood maximal the-
-ematics. They worked on convergence and summabil-              orem [IV.11 §3](/part-04/harmonic-analysis). For 0 < p ⩽ . nfty the Hardy space H p
+ematics. They worked on convergence and summa bil-              orem [IV.11 §3](/part-04/harmonic-analysis). For 0 < p ⩽ . nfty the Hardy space H p
 ity of series, inequalities, additive number theory            consists of functions analytic in the unit disk that are

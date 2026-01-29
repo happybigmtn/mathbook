@@ -5,7 +5,7 @@ VII . $8$ .
 Mathematics and Economic Reasoning
 
 participant gets to know the primes that were used to produce the modulus. To decipher a message enciphered under this modulus the two participants have to collaborate--neither can achieve this on their own (Cocks 1997). A third and more amusing example is a protocol that allows Alice and Bob to replicate tossing a coin, but to do it over the telephone. Obviously, it would not be satisfactory for Alice to toss the coin and for Bob to make the call “heads” or “tails”--for how does Bob know that Alice is telling the truth about how the coin actually fell?
-This problem turns out to have a simple solution. Alice and Bob choose large random sequences. Alice then appends either $a 1$ or $a 0$ to her sequence and Bob does the same for his. Alice’s extra bit represents the outcome of the coin toss, and Bob’s represents his guess. Next, they send one-way hashes of their sequences (with the extra bits appended).
+This problem turns out to have a simple solution. Alice and Bob choose large random sequences. Alice then appends either $a 1$ or $a 0$ to her sequence and Bob does the same for his. Alice’s extra bit represents the out come of the coin toss, and Bob’s represents his guess. Next, they send one-way hashes of their sequences (with the extra bits appended).
 At this point, because of the nature of one-way hashes, neither has any idea what the other’s sequence is, so, for example, if Alice reveals her hashed sequence first, Bob cannot use this information to increase his chance of guessing correctly. Alice and Bob then exchange the unhashed sequences to see whether Bob’s guess was correct. If either does not trust the other, they can hash the other’s sequence to check that it really does give the right answer. Since it is hard to find a different sequence that gives the right answer, they can each be confident that the other has not cheated.
 More complicated protocols of this type have been designed--it is even possible to play poker remotely in this way.
 
@@ -29,7 +29,7 @@ $1$ . $1$
 
 Becky’s World
 
-Becky, who is ten years old, lives with her parents and an older brother Sam in a suburban town in America’s Midwest. Becky’s father works in a law firm specializing in small business enterprises. Depending on the firm’s profits, his annual income varies somewhat, but it is rarely below 145000 . Becky’s parents met in college. For a few years her mother worked in publishing, but when Sam was born she decided to concentrate on raising a family. Now that both Becky and Sam attend school, she does voluntary work in local education. The family live in a two-story house.
+Becky, who is ten years old, lives with her parents and an older brother Sam in a suburban town in America’s Midwest. Becky’s father works in a law firm specializing in small business enterprises. Depending on the firm’s profits, his annual income varies some what, but it is rarely below 145000 . Becky’s parents met in college. For a few years her mother worked in publishing, but when Sam was born she decided to concentrate on raising a family. Now that both Becky and Sam attend school, she does voluntary work in local education. The family live in a two-story house.
 It has four bedrooms, two bathrooms upstairs and a toilet downstairs, a large drawing-cum-dining room, a modern kitchen, and a family room in the basement. There is a small plot of land in the rear, which the family use for leisure activities. Although they have a partial mortgage on their property, Becky’s parents own stocks and bonds and have a savings account in the local branch of a national bank. Becky’s father and his firm jointly contribute to his retirement pension. He also makes monthly payments into a scheme with the bank that will cover college education for Becky and Sam.
 The family’s assets and their lives are insured. Becky’s parents often remark that, federal taxes being high, they have to be careful with
 
@@ -43,7 +43,7 @@ Desta’s World
 
 Desta, who is about ten years old, lives with her parents and five siblings in a village in subtropical, southwest Ethiopia. The family live in a two-room, grass-roofed mud hut. Desta’s father grows maize and tef on half a hectare of land that the government has awarded him. Desta’s older brother helps him to farm the land and care for the household’s livestock: a cow, a goat, and a few chickens. The small quantity of tef produced is sold so as to raise cash income, but the maize is largely consumed by the household as a staple.
 Desta’s mother works a small plot next to their cottage, growing cabbage, onions, and enset (a year-round root crop that also serves as a staple). In order to supplement household income, she brews a local drink made from maize. As she is also responsible for cooking, cleaning, and minding the infants, her work day usually lasts fourteen hours. Despite the long hours, it would not be possible for her to complete the tasks on her own.
-(As the ingredients are all raw, cooking alone takes five hours or more .) So Desta and her older sister help their mother with household chores and mind their younger siblings. Although a younger brother attends the local school, neither Desta nor her older sister has ever been enrolled there. Her parents can neither read nor write, but they are numerate. Desta’s home has no electricity or running water. Around where they live, sources of water, land for grazing cattle, and the woodlands are communal property. They are shared by people in Desta’s village;
+(As the ingredients are all raw, cooking alone takes five hours or more .) So Desta and her older sister help their mother with household chores and mind their younger siblings. Although a younger brother at tends the local school, neither Desta nor her older sister has ever been enrolled there. Her parents can neither read nor write, but they are numerate. Desta’s home has no electricity or running water. Around where they live, sources of water, land for grazing cattle, and the woodlands are communal property. They are shared by people in Desta’s village;
 but the villagers do not allow outsiders to make use of them. Each day Desta’s mother and the girls fetch water, collect fuelwood, and pick berries and herbs from the local commons. Desta’s mother frequently observes that the time and effort needed to collect their daily needs has increased over the years. There is no financial institution nearby to offer either credit or insurance. As funerals are expensive occasions, Desta’s father long ago joined a community insurance scheme (iddir) to which he contributes monthly.
 When Desta’s father purchased the cow they now own, he used the entire cash he had accumulated
 
@@ -51,7 +51,7 @@ VII. The Influence of Mathematics
 
 and stored at home, but had to supplement that with funds borrowed from kinfolk, with a promise to repay the debt when he had the ability to do so. In turn, when they are in need, his kinfolk come to him for a loan, which he supplies if he is able to. Desta’s father says that such patterns of reciprocity he and those close to him practice are part of their culture, reflecting their norms of social conduct. He also says that his sons are his main assets, as they are the ones who will look after him and Desta’s mother in their old age.
 Economic statisticians estimate that, adjusting for differences in the cost of living between Ethiopia and the United States, Desta’s family income is about 5000 per year, of which 1000 is attributable to the products they draw from the local commons. However, as rainfall varies from year to year, Desta’s family income fluctuates widely. In bad years, the grain they store at home gets depleted well before the next harvest. Food is then so scarce that they all grow weaker, the younger children especially so. It is only after harvest that they regain their weight and strength.
-Periodic hunger and illnesses have meant that Desta and her siblings are somewhat stunted. Over the years Desta’s parents have lost two children in their infancy, stricken by malaria in one case and diarrhea in the other. There have also been several miscarriages. Desta knows that she will be married (in all likelihood to a farmer, like her father) when she reaches eighteen and will then live on her husband’s land in a neighboring village. She expects her life to be similar to that of her mother.
+Periodic hunger and illnesses have meant that Desta and her siblings are some what stunted. Over the years Desta’s parents have lost two children in their in fancy, stricken by malaria in one case and diarrhea in the other. There have also been several miscarriages. Desta knows that she will be married (in all likelihood to a farmer, like her father) when she reaches eighteen and will then live on her husband’s land in a neighboring village. She expects her life to be similar to that of her mother.
 
 $2$
 
@@ -73,7 +73,7 @@ In studying history we could, should we feel bold, take the long view--from abou
 
 $897$
 
-Becky’s world either did not reach or did not take hold in Desta’s part of the world. (Diamond ( 1997 ) is an enquiry into this set of questions .) If we wanted a sharper account, we could study, say, the past six hundred years and ask how it is that, instead of the several regions in Eurasia that were economically promising in about 1400 c.e., it was the unlikely northern Europe that made it and helped to create Becky’s world, even while bypassing Desta’s. (Landes ( 1998 ) is an inquiry into that question.
+Becky’s world either did not reach or did not take hold in Desta’s part of the world. (Diamond ( 1997 ) is an enquiry into this set of questions .) If we wanted a sharper account, we could study, say, the past six hundred years and ask how it is that, instead of the several regions in Eurasia that were economically promising in about 1400 c.e., it was the unlikely northern Europe that made it and helped to create Becky’s world, even while by passing Desta’s. (Landes ( 1998 ) is an inquiry into that question.
 Fogel ( 2004 ) explores the pathways by which Europe during the past three hundred years has escaped permanent hunger .) As modern economics is largely concerned with the first two sets of enquiries, this article focuses on them. However, the methods that today’s economic historians deploy to answer their questions are not dissimilar to the ones I describe below to study contemporary lives. The methods involve studying individual and collective choices in terms of maximization exercises. The predictions of the theories are then tested by studying data relating to actual behavior.
 Even the ethical foundations of national economic policies involve maximization exercises: the maximization of social well-being subject to constraints. (The treatise that codified this approach to economic reasoning was Samuelson ( 1947 ).)
 
@@ -91,7 +91,7 @@ Qualitatively, nothing much is lost in my assuming optimizing households here.
 stituents: health, relationships, place in society, and       (e.g., food eaten or clothing worn) and Yi (j) < 0 if j
 satisfaction at work are but four. Economists and psy-        is supplied by i (e.g., labor). Now consider the vector
 chologists have identified ways to represent well-being        Yi = (Yi (1), . . . , Yi (M)). It denotes the quantities of all
-as a numerical measure. To say that someone’s well-           the goods and services consumed or supplied by i. Yi is
+as a numerical measure. To say that some one’s well-           the goods and services consumed or supplied by i. Yi is
 being is greater in situation Y than in situation Z is to     a point in RM —the Euclidean space of M dimensions.
 say that her well-being measure is numerically higher         We now let Ui (Yi ) denote i’s well-being. Let us assume
 in Y than in Z. A family’s well-being is an aggregate         that supplying goods and services decreases i’s well-
@@ -103,7 +103,7 @@ is to determine, from among those allocations of goods           The next step i
 and services that are feasible, the ones that are best        that applies to an entire household. The individual
 for their households. However, both pairs of parents          well-beings of the members of the household can
 care not only about today, but also about the future.         be collected together so that they themselves form
-Moreover, the future is uncertain. So when the parents        an N-dimensional vector, (U1 (Y1 ), . . . , UN (YN )). The
+More over, the future is uncertain. So when the parents        an N-dimensional vector, (U1 (Y1 ), . . . , UN (YN )). The
 think about which goods and services their households         household’s well-being is dependent in some way on
 should consume, they are concerned not just with the          this vector. That is, we say that the well-being of the
 goods and services themselves, but also with when they        household is W (U1 (Y1 ), . . . , UN (YN )), for some func-
@@ -122,7 +122,7 @@ which Becky’s and Desta’s parents allocate goods and          the whole worl
 services across time and contingencies. But here we           belongs to a certain set J, which we regard as the set
 shall keep the exposition simple and consider a model         of all potentially feasible values of Y . Within J we iden-
 that is static and deterministic. That is, we shall pretend   tify a smaller set, F , of “actually feasible” values of Y .
-that the people live in a timeless world, and that they       This is the set of values of Y from which the household
+that the people live in a time less world, and that they       This is the set of values of Y from which the household
 are completely certain about all the information they         could in principle choose. It is smaller than J because of
 need in order to make their decisions.                        constraints that the household faces, such as the max-
    Suppose that a certain household has N members,            imum amount of income it can earn. F is the house-
@@ -150,7 +150,7 @@ those conditions are both necessary and sufficient. The           Then equal sha
 lagrange multipliers [III.64](/part-03/optimization-and-lagrange-multipliers) associated with F can             have sufficient energy for any work, so it is better to
 be interpreted as notional prices: they reflect the worth        share the food unequally. On the other hand, if the
 to the household of slightly relaxing the constraints.          household is able to obtain more than 6000 kcal, it can
-   Let us conduct an exercise to test the power of the          share the food equally without jeopardizing its future.
+   Let us conduct an exercise to test the power of the          share the food equally with out jeopardizing its future.
 modern economist’s way of studying choice. First, let              There are empirical correlates of this finding. When
 us assume that W is a symmetric and concave function            food is very scarce, the younger and weaker members
 of the individual well-beings Ui (as would be the case          of Desta’s household are given less to eat than the
@@ -163,12 +163,12 @@ Let us suppose in addition that the household members
 are identical: that is, let us set all the functions Ui to be                  4   Social Equilibrium
 equal to a single function, U , say. Assume also that U is      Household transactions in Becky’s world are carried out
 a strictly concave function of the Yi , which means that        mostly in markets. The terms of trade are the quoted
-the rate of increase of well-being declines as consump-         market prices. In developing a mathematical construc-
-tion increases. Finally, assume that the feasible set F is      tion of social outcomes, I continue to imagine, for sim-
+the rate of increase of well-being declines as consump-         market prices. In developing a mathematical con struc-
+tion increases. Finally, assume that the feasible set F is      tion of social out comes, I continue to imagine, for sim-
 nonempty, convex, and symmetric. (Symmetry means                plicity, a static, deterministic world. Let P (⩾ 0) be the
 that if some Y is feasible, and the vector Z is the same        vector of market prices and let M (⩾ 0) be the vector
 as Y except that the consumptions of a pair of indi-            of a household’s endowments of goods and services.
-viduals in the household have been exchanged, then              (That is, for each commodity j, P (j) is the price of j
+vi duals in the household have been exchanged, then              (That is, for each commodity j, P (j) is the price of j
 Z is also feasible.) From these assumptions it can be           and M(j) is the amount of j that the household already
 shown that members of the household would be treated            has.) Recalling our convention that goods consumed
 equally: that is, W is maximized when they all receive          are of positive sign and goods supplied are of nega-
@@ -177,7 +177,7 @@ the same bundle of goods and services.                          tive sign, defin
    At low levels of consumption, however, the hypoth-           total amount of commodity j that is consumed by the
 esis that the function U is concave is unreasonable.            household.) Then P · X is the total price of goods con-
 To see why, we should note that, typically, 60–75%              sumed by the household, minus the total price of goods
-of the daily energy intake of someone in nutritional            supplied, and P·M is the total value of its endowments.
+of the daily energy intake of some one in nutritional            supplied, and P·M is the total value of its endowments.
 balance goes toward maintenance, while the remaining            The feasible set F is the set of household choices Y that
 25–40% is expended in discretionary activities (work            satisfy the “budget” constraint P · (X − M) ⩽ 0.
 and leisure). The 60–75% is rather like a fixed cost:               The income that Becky’s household earns from the
@@ -187,10 +187,10 @@ to uncover the implications of such fixed costs is to            bank deposits, 
 continue to suppose that F is convex (which is the              in turn depend on the size and distribution of house-
 case, for example, if there is a fixed quantity of food          hold endowments of goods and services and on house-
 for allocation among members of the household), but             hold needs and preferences. They depend too on the
-that U is a strictly convex function at low intakes of          ability and willingness of institutions, such as private
+that U is a strictly convex function at low in takes of          ability and willingness of institutions, such as private
 food and a strictly concave function there after. It is          firms and the government, to make use of the rights
 not hard to show that a poor household in such a                they in turn have been awarded. These functional rela-
-world will maximize its well-being by allocating food           tionships explain why Becky’s father’s skills as a lawyer
+world will maximize its well-being by allocating food           tion ships explain why Becky’s father’s skills as a lawyer
 
 900                                                                               VII. The Influence of Mathematics
 
@@ -202,13 +202,13 @@ to prove valuable in the United States that encouraged      results in feedback.
 Becky’s father to be a lawyer.                              back is in large part transmitted in prices. In nonmar-
    Although Desta’s household does operate in mar-          ket economies the feedback is transmitted through the
 kets (when her father sells tef or her mother sells the     terms in which households are able to negotiate with
-liquor she has brewed), it under takes many transac-         one another.
+liquor she has brewed), it under takes many trans ac-         one another.
 tions directly with nature; in the local commons and           Let us try to model this situation mathematically.
 in farming, and in nonmarket relationships with oth-        We start by imagining an economy of H households.
 ers in the village. Therefore the F that Desta’s house-     For ease of exposition, I shall suppose that a house-
 hold faces is not defined simply by a linear budget          hold’s well-being can be expressed directly in terms of
 inequality, as in the idealized model we have con-          its aggregate consumption of goods and services, dis-
-structed to display Becky’s world, but also reflects the     regarding how this consumption is distributed among
+struc ted to display Becky’s world, but also reflects the     regarding how this consumption is distributed among
 constraints that nature imposes, such as soil produc-
                                                             the individual members. Let Xh denote the consump-
 tivity and rainfall, the assets it has access to, and the
@@ -234,7 +234,7 @@ from the reduced harvest from their field.
    Desta’s household assets include the family home,
                                                             consumption vector except h’s, by X−h . Formally, Fh
 livestock, agricultural implements, and their half hect-
-                                                            is a function (sometimes called a “correspondence”)
+                                                            is a function (some times called a “correspondence”)
 are of land. The skills Desta’s family members have
                                                             that takes objects of the form X−h to subsets of Jh .
 accumulated in farming, managing livestock, and col-
@@ -247,7 +247,7 @@ from their parents and grandparents, just as Desta and        Meanwhile, all oth
 her siblings have learned them from their parents and       lar calculations. How can we unravel the feedbacks?
 grandparents. Desta’s family can also be said to own a      One way would be to ask people to disclose their
 portion of the local commons: in effect, her household       beliefs about the feedbacks. Fortunately, economists
-shares its ownership with others in the village. Difficul-    avoid that route. So as to anchor their investigation,
+shares its ownership with others in the village. Diff i cul-    avoid that route. So as to anchor their investigation,
 ties in reaching and enforcing agreement with neigh-        economists study equilibrium beliefs; that is, beliefs
 bors over the use of the local commons are less severe      that are self-confirming. The idea is to identify states
 than they are in the case of global commons, such as        of affairs where the choices people make on the basis
@@ -264,7 +264,7 @@ made over the use of local commons are being kept.          choices of Xh in its
 
 VII.8.   Mathematics and Economic Reasoning                                                                         901
 
-   This raises an obvious question: does a social equilib-    is reasonable to limit such a study by considering
+   This raises an obvious question: does a social equ i lib-    is reasonable to limit such a study by considering
 rium exist? Classic papers by Nash in 1950 and Debreu         only those learning processes that converge to a social
 in 1952 showed that, under a fairly general set of con-       equilibrium in stationary environments. Initial beliefs
 ditions, it always does. Here is a set of conditions that     would then dictate which equilibrium is reached in
@@ -298,29 +298,29 @@ Arrow and Debreu in 1954. Debreu (1959) is the defini-         equal G. An examp
 tive treatise on market equilibria. In that book, Debreu      coverage is the Earth’s atmosphere: the whole world
 followed the leads of Erik Lindahl and Kenneth J. Arrow,      benefits from it jointly.
 by distinguishing goods and services not only in terms           If the supply of public goods is left to private indi-
-of their physical characteristics, but also in terms of       viduals, then problems arise. For example, even though
-the date and contingency in which they appear. Later          everyone in a city would benefit from a cleaner, health-
+of their physical characteristics, but also in terms of       vi duals, then problems arise. For example, even though
+the date and contingency in which they appear. Later          every one in a city would benefit from a cleaner, health-
 in this article we shall expand the commodity space in        ier environment, individuals have a strong incentive
 that way to study savings and insurance decisions in          to free-ride on others when it comes to paying for
 both Becky’s and Desta’s worlds.                              that cleaner environment. Samuelson showed in 1954
    One cannot automatically assume that a social equi-        that such a situation resembles the prisoner’s dilemma:
-librium is just or collectively good. Moreover, except        each party has a strategy that is best for him/her,
+lib rium is just or collectively good. More over, except        each party has a strategy that is best for him/her,
 for the most artificial examples, social equilibrium is        regard less of what strategies the other parties choose,
 not unique—which means that a study of equilibria             even though there is another set of strategies, one per
 per se leaves open the question of which social equi-         party, that is better for everybody. Under such circum-
-librium we should expect to observe. In order to probe        stances, one usually needs public measures, such as
+lib rium we should expect to observe. In order to probe        st ances, one usually needs public measures, such as
 that question, economists study disequilibrium behav-         taxes and subsidies, in order for it to be in the interest
 ior and analyze the stability properties of the result-       of private individuals to act in a way that implements
-ing dynamic processes. The basic idea is to hypoth-           the collectively preferred outcomes. In other words, the
+ing dynamic processes. The basic idea is to hypoth-           the collectively preferred out comes. In other words, the
 esize about the way people form beliefs about the             dilemma can be expected to be resolved effectively not
 way the world works, track the consequences of those          by markets but by politics. It is widely accepted in polit-
 patterns of learning, and check them against data. It         ical theory that government should be charged with
 
 $902$
 
-imposing taxes, subsidies, and transfers, and should be engaged in supplying public goods. The government is also the natural agency to supply infrastructure, such as roads, ports, and electrical cables, requiring as they do investments that are huge in comparison with individual incomes. We shall now extend our earlier model to include public goods and infrastructure, so that we can study the government’s economic task. Let us assume that social well-being is a numerical aggregate of household well-beings. Thus, if V is social well-being, we write it as V ($W^{1}$ , . . . , W H).
+imposing taxes, subsidies, and transfers, and should be engaged in supplying public goods. The government is also the natural agency to supply infrastructure, such as roads, ports, and electrical cables, requiring as they do investments that are huge in comparison with individual in comes. We shall now extend our earlier model to include public goods and infrastructure, so that we can study the government’s economic task. Let us assume that social well-being is a numerical aggregate of household well-beings. Thus, if V is social well-being, we write it as V ($W^{1}$ , . . . , W H).
 It is natural to postulate that V increases as any W h increases. (One example of such a function V is the one prescribed by utilitarian philosophy, namely, $W^{1} +$ · · · $+ W^{H}$ .) The government chooses what quantities to supply of the various public goods and infrastructure commodities. These numbers can be modeled by two vectors, which we will call G and I, respectively. The government also chooses to impose on each household h certain transfers T h of goods and services (for example, providing health care and charging income tax). Let us write T for the sequence ($T^{1}$ , . . .
-, T H). Whether or not a particular choice of vectors G and I is actually feasible for the government will depend on T , so we define K T to be the set of feasible pairs of vectors (G , I), given the choice of T . Because we have introduced a new set of goods, we shall have to modify the household well-being functions by enlarging their domains. The obvious notation to express this extra dependence is to write W h (X h , G, I, T h) for the well-being of household h. Moreover, h’s feasible set F h now also depends on G, I, and T h ;
+, T H). Whether or not a particular choice of vectors G and I is actually feasible for the government will depend on T , so we define K T to be the set of feasible pairs of vectors (G , I), given the choice of T . Because we have introduced a new set of goods, we shall have to modify the household well-being functions by enlarging their domains. The obvious notation to express this extra dependence is to write W h (X h , G, I, T h) for the well-being of household h. More over, h’s feasible set F h now also depends on G, I, and T h ;
 so we write the set of feasible household choices as F h (G , I, T h , X  -  h). To try to determine the optimum public policy, imagine a two-stage game. The government has the first move, choosing T and then G and I from K T . Households go second, reacting to decisions made by the government. Imagine that a social equilibrium ∗ X ∗  =  ($X^{1}$ ∗ , . . . , X H ) is reached and that the equilibrium is unique. (We assume that if there are multiple equilibria, the government can select among them by resorting to public signals .) Clearly, this equilibrium X ∗ is a function of G, I, and T .
 An intelligent and benevolent government will anticipate it and choose T , G, and I from K T in such a way as to maximize the resulting ∗ social well-being V (W ($X^{1}$ ∗), . . . , W (X H )). The public policy problem we have just designed, involving as it does a double optimization, is technically very difficult. It transpires, for example, that even
 
@@ -333,16 +333,16 @@ $6$
 
 Matters of Trust: Laws and Norms
 
-The previous examples demonstrate that a fundamental problem facing people who would like to transact with one another concerns trust. For example, the extent to which parties trust one another shapes the sets F h and K T . If the parties do not trust one another, what could have been mutually beneficial transactions will not take place. But what grounds does a person have for trusting someone to do what he promises to do under the terms of an agreement? Such grounds can exist if promises can be made credible.
-Societies every where have constructed mechanisms to create credibility of this kind, but in different ways. What the mechanisms have in common, however, is that individuals who fail to comply with agreements without a good reason are punished. How does that common feature work? In Becky’s world the rules governing transactions are embodied in the law. The markets Becky’s family enters are supported by an elaborate legal structure (a public good) . Becky’s father’s firm, for example, is a legal entity;
-as are the financial institutions he deals with in order to accumulate his retirement pension, to save for Becky’s and Sam’s education, and so on. Even when someone in the family goes to the grocery store, the purchases (paid for with cash or by card) involve the law, which provides protection for both parties (the grocer, in case the cash is counterfeit or the card is void; the purchaser, in case the product turns out on inspection to be substandard) . The law is enforced by the coercive power of the state.
+The previous examples demonstrate that a fundamental problem facing people who would like to transact with one another concerns trust. For example, the extent to which parties trust one another shapes the sets F h and K T . If the parties do not trust one another, what could have been mutually beneficial transactions will not take place. But what grounds does a person have for trusting some one to do what he promises to do under the terms of an agreement? Such grounds can exist if promises can be made credible.
+Societies every where have constructed mechanisms to create credibility of this kind, but in different ways. What the mechanisms have in common, however, is that individuals who fail to comply with agreements with out a good reason are punished. How does that common feature work? In Becky’s world the rules governing transactions are embodied in the law. The markets Becky’s family enters are supported by an elaborate legal structure (a public good) . Becky’s father’s firm, for example, is a legal entity;
+as are the financial institutions he deals with in order to accumulate his retirement pension, to save for Becky’s and Sam’s education, and so on. Even when some one in the family goes to the grocery store, the purchases (paid for with cash or by card) involve the law, which provides protection for both parties (the grocer, in case the cash is counterfeit or the card is void; the purchaser, in case the product turns out on inspection to be substandard) . The law is enforced by the coercive power of the state.
 Transactions involve legal contracts backed by an external enforcer, namely, the state. It is because Becky’s family and the grocery store’s owner are confident that the government has the ability and willingness to enforce contracts (i . e . , to
 
 VII.8.   Mathematics and Economic Reasoning                                                                         903
 
 continue to supply the public good in question) that          threat by members of a community that stiff sanc-
 they are willing to make transactions.                        tions will be imposed on anyone who breaks an agree-
-   What is the basis of that confidence? After all, the        ment can deter everyone from breaking it. The problem
+   What is the basis of that confidence? After all, the        ment can deter every one from breaking it. The problem
 contemporary world has shown that there are states            is then to make the threat credible. In Desta’s world
 and there are states. Why should Becky’s family trust         credibility is achieved by recourse to social norms of
 the government to carry out its tasks in an honest man-       behavior.
@@ -351,7 +351,7 @@ country worries about its reputation: a free and inquis-      by members of a co
 itive press in a democracy helps to sober the govern-         “strategy” in economic parlance) reads like, “I will do
 ment into believing that incompetence or malfeasance          X if you do Y,” “I will do P if Q happens,” and so forth.
 would mean an end to its rule come the next election.         For a rule of behavior to be a social norm, it must be in
-Notice how the argument involves a system of inter-           the interest of everyone to act in accordance with the
+Notice how the argument involves a system of inter-           the interest of every one to act in accordance with the
 locking beliefs about the abilities and intentions of oth-    rule if all others act in accordance with it. Social norms
 ers. The millions of households in Becky’s country trust      are equilibrium rules of behavior. We will now see how
 their government (more or less!) to enforce contracts,        social norms work and how transactions based on them
@@ -360,7 +360,7 @@ not to enforce contracts efficiently would mean being           will study insur
 thrown out of office. In their turn, each party to a con-
 tract trusts the other to refrain from reneging (again,                            7   Insurance
 more or less!), because each knows that the other knows
-                                                              To insure oneself against a risk is to act in ways
+                                                              To insure one self against a risk is to act in ways
 that the government can be trusted to enforce con-
                                                               to reduce that risk. (Formally, a random variable
 tracts. And so on. Trust is maintained by the threat
@@ -382,11 +382,11 @@ agreements, we turn to the place of social norms in           that it contains H
 people’s lives.                                               h’s food consumption is Xh (represented by a single
   Although the law of contracts exists also in Desta’s        real number), let us say that its well-being is W (Xh ).
 country, her family cannot depend on it because the           We shall assume that W (Xh ) > 0 (that is, more food
-nearest courts are far from their village. Moreover,          leads to greater well-being) and that W (Xh ) < 0 (the
+nearest courts are far from their village. More over,          leads to greater well-being) and that W (Xh ) < 0 (the
 there are no lawyers in sight. As transport is enor-          more food you already have, the less you benefit from
-mously costly, economic life is shaped outside a for-         yet more). We shall confirm below that the second prop-
+mously costly, economic life is shaped out side a for-         yet more). We shall confirm below that the second prop-
 mal legal system. In short, crucial public goods and          erty of W , its strict concavity, implies, and is implied
-infrastructure are either unavailable, or, at best, in        by, risk aversion; but the basic reason is simple: if W is
+infrastructure are either unavailable, or, at best, in        by, risk a version; but the basic reason is simple: if W is
 short supply. But even though there is no external            strictly concave, then you gain less when you are lucky
 enforcer, Desta’s parents do make transactions with           than you lose when you are unlucky.
 others. Credit (not dissimilar to insurance in her village)      For simplicity, let us suppose that the production of
@@ -420,7 +420,7 @@ let us write X̃h = μ + ε̃h , where ε̃h is a random vari-        the import
 able with mean zero, variance σ 2 , and finite support.          at each time period. We shall now show that, provided
 Suppose for simplicity that the random variables ε̃h            δ is sufficiently small (i.e., provided that households
 are identical (i.e., they do not depend on h). Let the          care enough about their future well-being), there is a
-correlation coefficient of any two of these distribu-             social equilibrium in which households abide by the
+correlation coefficient of any two of these dis tr ibu-             social equilibrium in which households abide by the
 tions be ρ. It turns out that, as long as ρ < 1, house-         agreement to share their aggregate output equally.
 holds can reduce their risks by agreeing to share their            Let Ỹh (t) be the uncertain amount of food avail-
 outputs. Suppose that households are able to observe            able to household h at time t. If all households are
@@ -433,7 +433,7 @@ uncertain food consumption becomes the average of               well-being of ho
 X̃1 , . . . , X̃H , which is an improvement on self-sufficiency
                                                                  0 E(W (Ỹh (t)))/(1 + δ) . (To calculate this we took,
 because E(W ( X̃h /H)) > E(W (X̃h )). The problem is            for each t ⩾ 0, the expected well-being of h at time
-that, without an enforcement mechanism, the agree-              t and divided it by (1 + δ)t . Then we added these
+that, with out an enforcement mechanism, the agree-              t and divided it by (1 + δ)t . Then we added these
 ment to share will not stick, because once each house-          numbers up.)
 hold knows how much food every household has pro-                  Now consider the following simple strategy that h
 duced, all but the unluckiest households will wish to           might adopt: it begins by participating in the insur-
@@ -459,7 +459,7 @@ VII . $8$ .
 Mathematics and Economic Reasoning
 
 reasoning would be applicable to all other households, we should conclude that, for small enough values of δ, grim is an equilibrium strategy in the repeated game. But if all households play grim, then no household will ever defect. Grim can therefore function as a social norm for sustaining cooperation. Let us see how the argument works. The basic idea is simple. As all other households are assumed to be playing grim, household h would enjoy a one-period gain by defecting if its own output exceeded the average output of all households.
-But if h defects in any period, all other households will defect in all following periods (they are assumed to be playing grim, remember). Therefore, h’s own best option in all following periods will be to defect also, which means that subsequent to a single deviation by h, the outcome can be predicted to be pure self-sufficiency. So, set against a one-period gain that household h would enjoy if its output exceeded the average output of all households is the loss it would suffer from the following date because of the breakdown of cooperation.
+But if h defects in any period, all other households will defect in all following periods (they are assumed to be playing grim, remember). Therefore, h’s own best option in all following periods will be to defect also, which means that subsequent to a single deviation by h, the out come can be predicted to be pure self-sufficiency. So, set against a one-period gain that household h would enjoy if its output exceeded the average output of all households is the loss it would suffer from the following date because of the breakdown of cooperation.
 That loss exceeds the one-period gain if δ is small enough. So, if δ is sufficiently small, household h will not defect, but will adopt grim; implying that grim is an equilibrium strategy and equal sharing among households in every period is a social equilibrium. To formalize the above argument, we consider the situation in which h’s incentive to defect is greatest. Let A and B be the minimum and maximum possible outputs of any household.
 Then the maximum gain that household h could possibly enjoy from defecting at $t = 0$ arises if h happens to produce B and all other households happen to produce A. Since the average output in this eventuality is $(B + (H - 1)A)/H$ , the one-period gain that household h would enjoy from defecting is
 
@@ -486,14 +486,14 @@ $3B + (H - 1)AW(B) - Wδ < L$ / (1)
 H
 
 But if h does not find it in its interest to defect when the one-period gain from defection is the largest possible, it will certainly not want to defect in any other situation. We conclude that if inequality ( $1$ ) holds, then grim is an equilibrium strategy and equal sharing among households in every period is a resulting social equilibrium. Notice that, as we said, this will happen if δ is sufficiently small. We usually reserve the term “society” to denote a collective that has managed to find a mutually beneficial equilibrium.
-Notice, however, that another social equilibrium of the repeated game is each household for itself. If everyone believed that all others would break the agreement from the start, then everyone would break the agreement from the start. Noncooperation would involve each household selecting the strategy: renege on the agreement. Failure to cooperate could be due simply to a collection of unfortunate, selfconfirming beliefs, and nothing else. It is also easy to show that noncooperation is the only social equilibrium of the repeated game if
+Notice, however, that another social equilibrium of the repeated game is each household for itself. If every one believed that all others would break the agreement from the start, then every one would break the agreement from the start. Noncooperation would involve each household selecting the strategy: renege on the agreement. Failure to cooperate could be due simply to a collection of unfortunate, selfconfirming beliefs, and nothing else. It is also easy to show that noncooperation is the only social equilibrium of the repeated game if
 
 $3B + (H - 1)AW(B) - Wδ > L$ / (2)
 
 H
 
 We now have in hand a tool for understanding how a community can slide from cooperative to noncooperative behavior. For example, political instability (in the extreme, civil war) can mean that households are increasingly concerned that they will be forced to disperse from their village. This translates into an increase in δ. Similarly, if households fear that their government is now bent on destroying communal institutions in order to strengthen its own authority, δ will increase. But from ( $1$ ) and ( $2$ ) we know that if δ increases sufficiently, then cooperation ceases.
-The model therefore offers an explanation for why, in recent decades, cooperation at the local level has declined in the unsettled regions of sub-Saharan Africa. Social norms work only when people have reasons to value the future benefits of cooperation. In the above analysis, we allowed for the possibility that, in each period, household risks were positively correlated. Moreover, the number of households in any village is typically not large. These are two reasons why Desta’s household is unable to attain anything like full insurance against the risk they face.
+The model therefore offers an explanation for why, in recent decades, cooperation at the local level has declined in the unsettled regions of sub-Saharan Africa. Social norms work only when people have reasons to value the future benefits of cooperation. In the above analysis, we allowed for the possibility that, in each period, household risks were positively correlated. More over, the number of households in any village is typically not large. These are two reasons why Desta’s household is unable to attain anything like full insurance against the risk they face.
 Becky’s parents, in contrast, have access to an elaborate set of insurance markets that pool the risks of hundreds of thousands
 
 906                                                                               VII. The Influence of Mathematics
@@ -521,7 +521,7 @@ they adopt additional risk-reducing strategies, such as      mous. Becky frequen
 diversifying their crops. Desta’s parents plant maize,       in the department stores of her town’s shopping mall,
 tef, and enset (an inferior crop), with the hope that even   nor do they know Becky. When Becky’s parents borrow
 if maize were to fail one year, enset would not let them     from their bank, the funds made available to them come
-down. That the local resource base in Desta’s village        from unknown depositors. Literally millions of transac-
+down. That the local resource base in Desta’s village        from unknown depositors. Literally millions of trans ac-
 is communally owned probably also has something to           tions occur each day between people who have never
 do with a mutual desire to pool risks. Woodlands are         met and will never meet in the future. The problem
 spatially nonhomogeneous ecosystems. In one year one         of creating trust is solved in Becky’s world by build-
@@ -530,7 +530,7 @@ group does. If the woodland were divided into private        value of money is m
 parcels, each household would face a greater risk than       an incentive to maintain it because, as we saw earlier, it
 it would under communal ownership. The reduction in          wishes not to destroy its reputation and be thrown out
 individual household risks owing to communal own-            of office.
-ership may be small, but as average incomes are very            In the absence of infrastructure, markets are unable
+ership may be small, but as average in comes are very            In the absence of infrastructure, markets are unable
 low, household benefits from communal ownership are           to penetrate Desta’s village. Becky’s suburban town, by
 large. (For a fuller account of the management of local      contrast, is embedded in a gigantic world economy.
 commons in poor countries, see Dasgupta (1993).)             Becky’s father is able to specialize as a lawyer only
@@ -540,11 +540,11 @@ commons in poor countries, see Dasgupta (1993).)             Becky’s father is
               and the Division of Labor
                                                              tion enables people to produce more in total than they
 Payments in Becky’s world are made in money, ex-             would be able to if they were each required to diversify
-pressed in U.S. dollars. Money would not be required         their activities. Adam Smith famously remarked that
-in a world where everyone was known to be utterly            the division of labor is limited by the size of the mar-
+press ed in U.S. dollars. Money would not be required         their activities. Adam Smith famously remarked that
+in a world where every one was known to be utterly            the division of labor is limited by the size of the mar-
 trustworthy, people did not incur computational costs,       ket. Earlier we noted that Desta’s household does not
-and transactions were costless: simple IOUs, stipulat-       specialize, but produces pretty much all of its daily
-ing repayment in terms of specific good and services,         requirements from a raw state. Moreover, the many
+and transactions were cost less: simple IOUs, stipulat-       specialize, but produces pretty much all of its daily
+ing repayment in terms of specific good and services,         requirements from a raw state. More over, the many
 would suffice in that world. However, we do not live           transactions it enters into with others, being supported
 in that world. A debt in Becky’s world involves a con-       by social norms, are of necessity personalized, thus
 tract specifying that the borrower is to receive a certain   limited. There is a world of a difference between laws
@@ -572,7 +572,7 @@ mortgage on their house because at the time of pur-          have inherited from
 chase they did not have sufficient funds to finance it.         the household allocates its consumption across contin-
 The resulting debt decreased their future consumption,       gencies by maximizing its expected well-being. The cor-
 but it enabled them to buy the house at the time they        responding quantity for allocating consumption across
-did and thereby raise current consumption. Becky’s           time is              . nfty
+did and there by raise current consumption. Becky’s           time is              . nfty
 parents also pay into a pension fund, which transfers                                    W (X(t))e−δt dt,                       (4)
                                                                                      0
 present consumption to their retired future. Borrowing
@@ -620,8 +620,8 @@ which they consume their wealth (namely, X(t)), sub-                      to tra
 ject to the condition (3), together with the conditions                   have no access to capital markets from which they can
 that K(t) and X(t) should not be negative.4 This is a                     earn a positive return. Admittedly, they invest in their
 problem in the calculus of variations [III.94](/part-03/variational-methods). But                       land (clearing weeds, leaving portions fallow, and so
-it is of a somewhat unusual form, in that the horizon                     forth), but that is to prevent the productivity of the land
-is infinite and there is no boundary condition at infin-                    from declining. Moreover, the only way they are able
+it is of a some what unusual form, in that the horizon                     forth), but that is to prevent the productivity of the land
+is infinite and there is no boundary condition at infin-                    from declining. More over, the only way they are able
 ity. The reason for the latter is that Becky’s parents                    to draw on the maize crop following each harvest is to
 would ideally like to determine the level of assets that                  store it. Let us see how Desta’s household would ideally
 the dynasty ought to aim at in the long run; they do                      wish to consume that harvest over the annual cycle.
@@ -662,7 +662,7 @@ every thirty-five years—roughly, every generation. The                        
    4. This problem originated in a classic paper by Ramsey (1928).        Her male siblings, however, offer a higher return to
 Ramsey insisted that δ = 0 and devised an ingenious argument to
 show that an optimum function X(t) exists despite the fact that the       their parents, because the custom (itself a social equi-
-integral in (4) does not converge. For simplicity, I am assuming δ > 0.   librium!) is for girls to leave home on marriage and
+integral in (4) does not converge. For simplicity, I am assuming δ > 0.   lib rium!) is for girls to leave home on marriage and
 As W (X) is bounded above and r > 0 (meaning that it is feasible for
 X(t) to grow indefinitely), we should expect (4) to converge if X(t) is
                                                                           for boys to inherit the family property and offer secu-
@@ -688,4 +688,4 @@ Further Reading
 
 Dasgupta, P. 1993 . An Inquiry into Well-Being and Destitution. Oxford: Clarendon Press. . 2004 . World poverty: causes and pathways. In Annual World Bank Conference on Development Economics 2003 : Accelerating Development, edited by F. Bourguignon and B. Pleskovic, $pp. 159 - 96$ . New York: World Bank and Oxford University Press. Debreu, G. 1959 . Theory of Value. New York: John Wiley. Diamond, J. 1997 . Guns, Germs and Steel: A Short History of Everybody for the Last $13$ , $000$ Years. London: Chatto & Windus. Durlauf, S. N., and H. Peyton Young, eds. 2001 . Social Dynamics. Cambridge, MA:
  MIT Press. Evans, G., and S. Honkapohja. 2001 . Learning and Expectations in Macroeconomics. Princeton, NJ: Princeton University Press. Fogel, R. W. 2004 . The Escape from Hunger and Premature Death, $1700 - 2100$ : Europe, America, and the Third World. Cambridge: Cambridge University Press. Fudenberg, D., and E. Maskin. 1986 . The folk theorem in repeated games with discounting or with incomplete information. Econometrica 54(3) : $533 - 54$ . Landes, D. 1998 . The Wealth and Poverty of Nations. New York: W. W. Norton. Ramsey, F. P. 1928 . A mathematical theory of saving.
-Economic Journal $38$ : $543 - 49$ . Samuelson, P. A. 1947 . Foundations of Economic Analysis. Cambridge, MA: Harvard University Press. . 1958 . An exact consumption loan model with or without the social contrivance of money. Journal of Political Economy $66$ : $1002 - 11$ .
+Economic Journal $38$ : $543 - 49$ . Samuelson, P. A. 1947 . Foundations of Economic Analysis. Cambridge, MA: Harvard University Press. . 1958 . An exact consumption loan model with or with out the social contrivance of money. Journal of Political Economy $66$ : $1002 - 11$ .

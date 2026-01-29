@@ -5,7 +5,7 @@
 (S, S). If P judges that S does not halt when presented        solution, see geometric and combinatorial group
 with itself as input, we then cause Q to halt. But if P        theory [IV.10](/part-04/geometric-and-combinatorial-group-theory).
 judges that S does halt when presented with itself as             Finally, what about Hilbert’s tenth problem? This has
-input, then we artificially send Q into an endless loop,        become another famous and very hard theorem, due to
+input, then we artificially send Q into an end less loop,        become another famous and very hard theorem, due to
 so that it does not halt. (If S is not a valid program in L,   Yuri Matiyasevitch in 1970, who built on work of Mar-
 then let us say that Q halts—it does not really matter         tin Davis, Hilary Putnam, and Julia Robinson. Matiya-
 though.) To summarize, if S halts for input S, then Q          sevitch managed to produce a system of ten equations,
@@ -27,7 +27,7 @@ at more specific and more natural classes of state-             puters of the fu
 ments, such as that a given Diophantine equation has           although we now know that we cannot systematically
 a solution.                                                    solve all problems in mathematics, the effect on most
    Remarkably, however, specific questions of this kind         mathematics is very slight: one should be aware that
-can often be shown to be equivalent to the general ques-       certain kinds of problems are sometimes equivalent to
+can often be shown to be equivalent to the general ques-       certain kinds of problems are some times equivalent to
 tion, by a technique known as encoding. For example,           the halting problem, and that is it. Still others point
 there is no algorithm that will take as its input a set        out that it is often easy to devise an algorithm to solve
 of polygonal tiles (suitably represented) and tell you         a problem but much harder to make it efficient. This
@@ -72,7 +72,7 @@ nomial. Such a formula is called a radical expression for       polynomial f . A
 the roots.                                                      φ : E → E that preserves addition and multiplication—
    The next step, naturally enough, was the quintic (i.e.,      in other words, φ(a + b) = φ(a) + φ(b) and φ(ab) =
 polynomial of degree 5). However, several hundred               φ(a)φ(b) for all a, b ∈ E. Such a function necessarily
-years passed without anyone finding a radical formula            also preserves subtraction and division, and fixes every
+years passed with out anyone finding a radical formula            also preserves subtraction and division, and fixes every
 for the roots of a general quintic polynomial.                  rational number. Denote by Aut(E) the set of all auto-
                                                                                                                    √
    There was a good reason for this. There is no                morphisms of E. For example, when E = Q( 2), any

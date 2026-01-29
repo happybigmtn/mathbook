@@ -15,17 +15,17 @@ b. Louvain, Belgium, 1866; d. Brussels, 1962                ear programming [III
 Analytic number theory; analysis                            (1908) was fundamental for sampling theory; and his
                                                             character ization of new classes of quasi-analytic func-
 De la Vallée Poussin graduated in engineering (1890)        tions by the rate of decrease of their Fourier coefficients
-and mathematics (1891) from the Université Catholique       (1915) was a notable development.
+and mathematics (1891) from the Université Catholique       (1915) was a not able development.
 de Louvain, where he went on to teach mathematical             De la Vallée Poussin’s other achievements include
 analysis from 1891 until 1951. His lectures formed          determining a uniqueness condition for multipoint
 the basis for his renowned Cours d’Analyse Infinitési-       boundary-value problems (1929), which was a sig-
-male, which ran to many editions from 1903 to 1959.         nificant result for the study of nonoscillatory solu-
+male, which ran to many editions from 1903 to 1959.         nif i cant result for the study of nonoscillatory solu-
 A member of the most famous academies in Europe             tions of linear differential equations; and solving var-
 and the United States, with honorary doctorates from        ious problems of the conformal representation of
 Paris, Strasbourg, Toronto, and Oslo, he was the first       multiply connected regions (1930–31). In potential
 president (1920) of the International Union of Mathe-       theory he extended the concept of capacity to arbi-
 maticians (now the International Mathematical Union).       trary bounded sets, proved his extraction theorem for
-He was made a baron in 1930.                                bounded sequences of set functions, and, by introduc-
+He was made a baron in 1930.                                bounded sequences of set functions, and, by intro duc-
   De la Vallée Poussin’s main achievement was his           ing measure theory into poincaré’s [VI.61](/part-06/jules-henri-poincar-18541912) “méthode
 proof in 1896 of the prime number theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860)            de balayage” (“sweeping-out method”) for the dirich-
 (an asymptotic estimate for the distribution of prime       let problem [IV.12 §1](/part-04/analysis), he paved the way for modern
@@ -59,7 +59,7 @@ uous function by a polynomial (1910), and a conver-         tures of set theory�
 VI.68.   Felix Hausdorff                                                                                             793
 
 had second and third editions in 1927 and 1935.             a lecture course of 1923 and which preceded kol-
-The second edition was so heavily revised in content,       mogorov’s [VI.88](/part-06/andrei-nikolaevich-kolmogorov-19031987) work in this area by about a decade.
+The second edition was so heavily revised in content,       mogo rov’s [VI.88](/part-06/andrei-nikolaevich-kolmogorov-19031987) work in this area by about a decade.
 however, that it should really be considered a new          He also made important contributions to analysis and
 book.                                                       algebra. In algebra, he contributed to lie theory [III.48](/part-03/lie-theory)
   In his early work, Hausdorff concentrated on applied       (via what is now called the Baker–Campbell–Hausdorff

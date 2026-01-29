@@ -18,7 +18,7 @@ fold [I.3 §6.9](/part-01/fundamental-definitions). Such a manifold is orientabl
 can choose coordinate systems at each point in such            (A good example to think about is a path on a sphere
 a way that any two systems x = (x 1 , . . . , x m ) and        that goes from the North Pole to the equator, then a
 y = (y 1 , . . . , y m ) that are defined on overlapping sets   quarter of the way around the equator, then back to
-give rise to a positive Jacobian: det(∂y i /∂x j ) > 0. The    the North Pole again. When the journey is completed,
+give rise to a positive Jacobi an: det(∂y i /∂x j ) > 0. The    the North Pole again. When the journey is completed,
 notion of a Calabi–Yau manifold is the natural com-            the “constant” vector that began by pointing south will
 plex analogue of this. Now the manifold is complex,            have been rotated by 90◦ .) With each loop we asso-
 and for each local coordinate system z = (z1 , . . . , zn )    ciate a matrix operator called the holonomy matrix,
@@ -40,7 +40,7 @@ and Kähler geometry are in order. A complex manifold           Real manifolds t
 is a structure that looks locally like Cn , in the sense       structure. For example, the fact that we can multiply
                                                                                                             √
 that one can find complex coordinates z = (z1 , . . . , zn )    complex coordinate directions by i =           −1 implies
-near every point. Moreover, where two coordinate sys-          that there must be an operator on the real tangent
+near every point. More over, where two coordinate sys-          that there must be an operator on the real tangent
 tems z and z̃ overlap, the coordinates z̃ a are holomor-       space that squares to −1. This operator has eigenvalues
 phic when they are regarded as functions of the z b .          ±i, which can be thought of as “holomorphic” and
 Thus, the notion of a holomorphic function on a com-           “anti-holomorphic” directions. The Hermitian property
@@ -94,7 +94,7 @@ manifold is uniquely determined by its Kähler structure    makes good sense, is
 and its complex orientation.                               the Ricci tensor of space-time should vanish. Thus, a
    Yau’s theorem establishes that the space of metrics     two-dimensional condition leads to a space-time equa-
 with holonomy group SU(n) on a manifold with com-          tion, which turns out to be exactly Einstein’s equation
-plex orientation is in correspondence with the space       without matter. We add to this condition the “phe-
+plex orientation is in correspondence with the space       with out matter. We add to this condition the “phe-
 of inequivalent Kähler structures. The latter space        nomenological” criterion that the theory be endowed
 can easily be probed with the techniques of algebraic      with “supersymmetry,” which requires the space-time
 geometry.                                                  manifold M to be complex. The two conditions together
@@ -102,7 +102,7 @@ geometry.                                                  manifold M to be comp
        5   Calabi–Yau Manifolds in Physics                 group SU(n): that is, a Calabi–Yau manifold. By Yau’s
                                                            theorem, the choices of such M can easily be described
 Einstein’s theory of gravity, general relativity, con-     by algebraic geometric methods.
-structs equations that the metric of a Riemannian             We remark that there is a kind of distillation of string
+struc ts equations that the metric of a Riemannian             We remark that there is a kind of distillation of string
 space-time manifold must obey (see general rela-           theory called “topological strings,” which can be given
 tivity and the einstein equations [IV.13](/part-04/general-relativity-and-the-einstein-equations)). The            a rigorous mathematical framework. Calabi–Yau mani-
 equations involve three symmetric tensors: the metric,     folds are both symplectic and complex, and this leads

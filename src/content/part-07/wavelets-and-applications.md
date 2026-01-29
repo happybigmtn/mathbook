@@ -5,9 +5,9 @@
 article has not had the space to cover: immunology,
 radiology, developmental biology, and the design of             VII.3 Wavelets and Applications
 medical devices and synthetic biomaterials, to name                     Ingrid Daubechies
-just a few of the most obvious omissions. Neverthe-
+just a few of the most obvious omissions. Never the-
 less, this collection of examples and introductory dis-                            1     Introduction
-cussions allows us to draw a few conclusions about
+cus sions allows us to draw a few conclusions about
                                                                 One of the best ways to understand a function is to
 mathematical biology. The range of biological problems
                                                                 expand it in terms of a well-chosen set of “basic” func-
@@ -15,7 +15,7 @@ needing explanation by mathematics is enormous and
                                                                 tions, of which trigonometric functions [III.92](/part-03/trigonometric-functions) are
 techniques from many different branches of mathe-
                                                                 perhaps the best-known example. Wavelets are fami-
-matics are important. It is not so easy in mathemati-
+matics are important. It is not so easy in mathemat i-
                                                                 lies of functions that are very good building blocks for
 cal biology to extract simple, clear mathematical ques-
                                                                 a number of purposes. They emerged in the 1980 s from
@@ -27,7 +27,7 @@ cult to decide what should be counted as the system
                                                                 since found applications in a wide range of fields.
 and what as the parts. Finally, biology is a source of
                                                                 The following example, concerning image compression,
-new, interesting, and difficult questions for mathemati-
+new, interesting, and difficult questions for mathemat i-
                                                                 illustrates several important properties of wavelets.
 cians, whose participation in the biological revolution
 is necessary for a full understanding of the biology                         2   Compressing an Image
@@ -45,7 +45,7 @@ Fall, C., E. Marland, J. Wagner, and J. Tyson. 2002. Compu-     if the basic fun
   tational Cell Biology. New York: Springer.
                                                                 well be that one can change all these small coefficients
 Fitch, W. M., R. M. Bush, C. A. Bender, and N. J. Cox. 1997.
-                                                                to zero without changing the original function in a way
+                                                                to zero with out changing the original function in a way
   Long term trends in the evolution of H(3) HA1 human
                                                                 that is visually detectable.
   influenza type A. Proceedings of the National Academy of
@@ -69,7 +69,7 @@ Schlick, T. 2002. Molecular Modeling and Simulation. New
                                                                 duced. In figure 2, two squares of 36 . imes 36 pixels are high-
   York: Springer.
 Semple, C., and M. Steel. 2003. Phylogenetics. Oxford: Ox-
-                                                                lighted, in different areas of the image. As is clear from
+                                                                light ed, in different areas of the image. As is clear from
   ford University Press.                                        its blowup, square A has fewer distinctive characteris-
 Waterman, M. S. 1995. Introduction to Computational Biol-       tics than square B (a blowup of which is shown in fig-
   ogy: Maps, Sequences, and Genomes. London: Chapman            ure 1), and should therefore be describable with fewer
@@ -127,7 +127,7 @@ is very easy to implement automatically, and leads to
                                                             tion of making the whole decomposition procedure as
 a description using many fewer bits for images such
                                                             efficient as possible.
-as the one shown, it is still somewhat wasteful. For
+as the one shown, it is still some what wasteful. For
                                                                A complete decomposition of a 256 . imes 256 square,
 instance, if the average gray level of the original image
                                                             from “top” (largest square) to “bottom” (the three types
@@ -171,7 +171,7 @@ the left half and the right half, obtaining the difference   pixels in total, th
 diagonally: the average over the bottom-left and top-       square of 2 . imes 2 pixels. For each 2 . imes 2 square, the aver-
 right squares is 144, the average over the other two is     age of the four gray values can be computed (this is
 176, and the difference between these two is −32.            the gray value of the superpixel), as well as the three
-   From these four numbers one can reconstruct the          types of differences indicated above. Moreover, these
+   From these four numbers one can reconstruct the          types of differences indicated above. More over, these
 four original averages. For example, the average for        computations are all very simple.
 
 VII.3.   Wavelets and Applications                                                                                    851
@@ -181,7 +181,7 @@ for each of the 2 . imes 2 squares and organize their aver-          • additio
 ages, the gray values of the 2 J−1 . imes 2 J−1 superpixels,             scales j, with j ranging from 0 (the coarsest level)
 into a new square. This square can be divided, in turn,           to J − 1 (the first superpixel level).
 into 2 J−2 . imes 2 J−2 “super-superpixels,” each of which is
-a small square of 2 . imes 2 superpixels (and thus stands          Moreover, within each scale j the detail layer consists
+a small square of 2 . imes 2 superpixels (and thus stands          More over, within each scale j the detail layer consists
 for 4 . imes 4 “standard” pixels), and so on. At the very end,     of many pieces, each of which has a definite localiza-
 after J levels of “zooming out,” there is only one super J -   tion (indicating to which of the superj -pixels it per-
 pixel remaining; its gray value is the average over the       tains), and all the pieces have “size” 2 j . (That is, the
@@ -192,7 +192,7 @@ cedure would have computed first, at much greater              becomes coarser.
 computational expense.
    Carrying out the procedure from the pixel level up,               3   Wavelet Transforms of Functions
 none of the individual averaging or differencing compu-
-tations involves more than two numbers; the total num-        In the image-compression example we needed to look
+tat i ons involves more than two numbers; the total num-        In the image-compression example we needed to look
 ber of these elementary computations, for the whole           at three types of differences at each level (horizontal,
 transform, is only 8(22 J −1)/3. For the 256 . imes 256 square        vertical, and diagonal) because the example was a two-
 discussed before, J = 8, so the total is 174 752, which       dimensional image. For a one-dimensional signal, one
@@ -230,7 +230,7 @@ position. The data that are retained consist of               exactly opposite v
 
      (a)                             (b)                            layer of detail consists of a sum of simple “difference
              f (x)                                                  contributions” that all have width proportional to the
-                                                       P3 f (x)     scale. Moreover, this decomposition is realized by using
+                                                       P3 f (x)     scale. More over, this decomposition is realized by using
                                                                     translates and dilates of the single function H(x), often
                                                                     called the Haar wavelet, after Alfred Haar, who first
  0                               0
@@ -239,7 +239,7 @@ position. The data that are retained consist of               exactly opposite v
               2                                  2                  not in a wavelet context). The functions H(2 j x − k)
                                                                     constitute an orthogonal set of functions, meaning
                                                                     that the inner product H(2 j x − k)H(2 j x − k ) dx is
-Figure 6 Graphs of (a) the function f and (b) its approxi-          zero except when j = j and k = k ; if we define
+Figure 6 Graphs of (a) the function f and (b) its approx i-          zero except when j = j and k = k ; if we define
 mation P3 (f ), which is constant on every interval between         Hj, k (x) = 2 j/2 H(2 j x − k), then we also have that
 l/8 and (l + 1)/8, with l = 0, 1, . . . , 7, and exactly equal to     [Hj, k (x)]2 dx = 1. A consequence of this is that the
 the average of f on each of these intervals.
@@ -269,12 +269,12 @@ Uj (x) = −1 for x between 2−(j+1) and 2 . imes 2−(j+1) ,
         ⎪
         ⎩0  for all other x.
                                                                     tions at almost every scale “to get it right” in the end.
-  Moreover, the “difference functions” Uj at the dif-                Unless the original happens to be made up of large
+  More over, the “difference functions” Uj at the dif-                Unless the original happens to be made up of large
 ferent levels are all scaled copies of a single function            areas where it is roughly constant, many small-scale
 H, which takes the value 1 between 0 and 12 and −1                  Haar wavelets will be required even in stretches where
           1
 between 2 and 1; indeed, Uj (x) = H(2 j x). It follows               the function just has a consistent, sustained slope,
-that each difference Pj+1 (f )(x) − Pj (f )(x) is a linear           without “genuine” fine features.
+that each difference Pj+1 (f )(x) − Pj (f )(x) is a linear           with out “genuine” fine features.
 combination of the functions H(2 j x − k), with k rang-                 The right framework to discuss these questions
 ing from 0 to 2 j − 1; adding many such differences, for              is that of approximation schemes. An approximation
 successive j, shows that PJ (f )(x)−P0 (f )(x) is a linear          scheme can be defined by providing a family of “build-
@@ -316,7 +316,7 @@ most L − 1 and N ⩾ N0 , then AN p = p.                                   to 
    In the Haar case, applied to functions f that differ                   the difference Pj+1 (f )(x)−Pj (f )(x) would be so small
 from zero only between 0 and 1, the building blocks                      as not to matter, even for modest values of j, wherever
 consist of the function φ that takes the value 1 on [0, 1]               the function f was reasonably smooth; for these val-
-and 0 outside, together with the families {Hj, k ; k =                    ues of j, the difference would be important only near
+and 0 out side, together with the families {Hj, k ; k =                    ues of j, the difference would be important only near
                                                                          points where the function was not as smooth, and so
 0, . . . , 2 j − 1} for j = 0, 1, 2, . . . . We saw above that
                                                                          only in those places would a contribution be needed
@@ -351,7 +351,7 @@ that the difference between the two schemes can also                      the sa
 be seen from the maximal degree d of polynomials they                    scale j, and the same differencing operator to quantify
 “reproduce” perfectly: clearly both schemes can repro-                   the difference between levels j + 1 and j, regard less of
 duce constants (d = 0); the piecewise-linear scheme can                  the value of j. There is no absolutely compelling reason
-also reproduce linear functions (d = 1), whereas the                     to use the same averaging and differencing operator
+also reproduce linear functions (d = 1), where as the                     to use the same averaging and differencing operator
 Haar scheme cannot.                                                      for the transition between any two successive levels,
 
 $854$
@@ -361,12 +361,12 @@ As we have already mentioned, the projections P j for the wavelet $\psi$ will co
 
 $\psi$ j, k are orthogonal, then $\psi$ j , k (x) P j (f) (x) dx  =  $0$ whenever $j > j.$ The $\psi$ j, k can thus be associated with an approximation scheme of order L only if $\psi$ j, k $(x)p(x)dx = 0$ for sufficiently large j and for all polynomials p of degree less than L. By scaling and translating, this reduces to the requirement $x^{l}\psi(x)dx = 0$ for $l = 0$ , $1$ , . . . , $L - 1$ . When this requirement is met, $\psi$ is said to have L vanishing moments.
 Figure $8$ shows the graphs of some choices for $\psi$ that give rise to orthonormal wavelet bases and that are used in various circumstances. For the wavelets of the type $\psi$ [2 n] , and thus in particular for $\psi$ [4 ] , $\psi$ [6 ] , and $\psi$ [12 ] in figure $8$ , an algorithm similar to that for the Haar wavelet can be used to carry out the decomposition, except that instead of combining two numbers from P j $+ {}^{1}$ , k to obtain an average or a difference coefficient at level j, these wavelet decompositions require weighted combinations of four, six, or twelve finer-level
-numbers, respectively. (More generally, $2n$ finer-level numbers are used for $\psi$ [2 n ] .) Because the Meyer and Battle-Lemarié wavelets $\psi$ [M] and $\psi$ [BL] are not concentrated on a finite interval, different algorithms are used for wavelet expansions with respect to these wavelets. There are many useful orthonormal wavelet bases besides the examples given above. Which one to choose depends on the application one has in mind.
+numbers, respectively. (More generally, $2n$ finer-level numbers are used for $\psi$ [2 n ] .) Because the Meyer and Battle-Lemarié wavelets $\psi$ [M] and $\psi$ [BL] are not concentrated on a finite interval, different algorithms are used for wavelet expansions with respect to these wavelets. There are many useful orthonormal wavelet bases be sides the examples given above. Which one to choose depends on the application one has in mind.
 For instance, if the function classes of interest in the application have smooth pieces, with abrupt transitions or spikes, then it is advantageous to pick a smooth $\psi,$ corresponding to a high-order approximation scheme. This allows one to describe the smooth pieces efficiently with coarse-scale basis functions, and to leave the fine-scale wavelets to deal with the spikes and
 
 VII. The Influence of Mathematics
 
-$\psi$ [12 ]H = . si$[2 ]110404\psi$ [4 ]. si$[M ]1100 - 444\psi$ [6 ]1. si [BL] $100 - 444$ Figure $8$ Six different choices of $\psi$ for which the $\psi$ j, k $(x) =2^{j}/ {}^{2}\psi(2^{j}x - k)$ , $j,k \in Z$ , constitute an orthonormal basis for $L^{2}$ (R). The Haar wavelet can be viewed as the first example of $a$ family $\psi$ [2 n ] , of which the wavelets for $n = 2$ , $3$ , and $6$ are also plotted here. Each $\psi$ [2 n ] has n vanishing moments and is supported on (i . e . , is equal to zero outside) an interval of width $2n - 1$ .
+$\psi$ [12 ]H = . si$[2 ]110404\psi$ [4 ]. si$[M ]1100 - 444\psi$ [6 ]1. si [BL] $100 - 444$ Figure $8$ Six different choices of $\psi$ for which the $\psi$ j, k $(x) =2^{j}/ {}^{2}\psi(2^{j}x - k)$ , $j,k \in Z$ , constitute an orthonormal basis for $L^{2}$ (R). The Haar wavelet can be viewed as the first example of $a$ family $\psi$ [2 n ] , of which the wavelets for $n = 2$ , $3$ , and $6$ are also plotted here. Each $\psi$ [2 n ] has n vanishing moments and is supported on (i . e . , is equal to zero out side) an interval of width $2n - 1$ .
 The remaining two wavelets are not supported on an interval; however, the Fourier transform of the Meyer wavelet $\psi$ [M] is supported on [− 8 π / 3 , − 2 π / 3 ]$∪ [2 π / 3 , 8 π / 3 ]$ ; all moments of $\psi$ [M ] vanish. The Battle-Lemarié wavelet $\psi$ [BL] is twice differentiable, is piecewise polynomial of degree $3$ , and has exponential decay; it has four vanishing moments. abrupt transitions. In that case, why not always use a wavelet basis with a very high approximation order? The reason is that most applications require numerical computation of wavelet transforms;
 the higher the order of the approximation scheme, the more spread out the wavelet, and the more terms have to be used in each generalized average  /  difference , which slows down numerical computation. In addition, the wider the wavelet, and hence the wider all the finer-scale wavelets derived from it, the more often a discontinuity or sharp transition will overlap with these wavelets. This tends to spread out the influence of such transitions over more fine-scale wavelet coefficients.
 Therefore, one must find a good balance between the approximation order and the width of the wavelet, and the best balance varies from problem to problem. There are also wavelet bases in which the restriction of orthonormality is relaxed. In this case one typically uses two different “dual” wavelets $\psi$ and $\psĩ,$ such that
@@ -379,7 +379,7 @@ Wavelets and Applications
 
 is then governed by the number of vanishing moments of $\psĩ.$ Such wavelet bases are called biorthogonal. They have the advantage that the basic wavelets $\psi$ and $\psĩ$ can both be symmetric and concentrated on an interval, which is impossible for orthonormal wavelet bases other than the Haar wavelets. The symmetry condition is important for image decomposition, where preference is usually given to two dimensional wavelet bases derived from one-dimensional bases with a symmetric function $\psi,$ a derivation to which we return below.
 When an image is compressed by deleting or rounding off wavelet coefficients, the difference between the original image I and its compressed version I comp is a combination, with small coefficients, of these two-dimensional wavelets. It has been observed that the human visual system is more tolerant of such small deviations if they are symmetric; the use of symmetric wavelets thus allows for slightly larger errors, which translates to higher compression rates, before the deviations cross the threshold of perception or acceptability.
-Another way of generalizing the notion of wavelet bases is to allow more than one starting wavelet. Such systems, known as multiwavelets, can be useful even in one dimension. When wavelet bases are considered for functions defined on the interval [a , b] rather than the whole of R , the constructions are typically adapted, giving bases of interval wavelets in which specially crafted wavelets are used near the edges of the interval. It is sometimes useful to choose less regular ways of subdividing intervals than the systematic halving considered above:
+Another way of generalizing the notion of wavelet bases is to allow more than one starting wavelet. Such systems, known as multiwavelets, can be useful even in one dimension. When wavelet bases are considered for functions defined on the interval [a , b] rather than the whole of R , the constructions are typically adapted, giving bases of interval wavelets in which specially crafted wavelets are used near the edges of the interval. It is some times useful to choose less regular ways of subdividing intervals than the systematic halving considered above:
 in this case, the constructions can be adapted to give irregularly spaced wavelet bases. When the goal of a decomposition is compression of the information, as in the image example at the start, it is best to use a decomposition that is itself as efficient as possible. For other applications, such as pattern recognition, it is often better to use redundant families of wavelets, i.e., collections of wavelets that contain “too many” wavelets, in the sense that all functions in $L^{2}$ (R) could still be represented even if one dropped some of the wavelets from the collection.
 Continuous wavelet families and wavelet frames are the two main kinds of collections used for such redundant wavelet representations.
 
@@ -393,7 +393,7 @@ $855$
 
 at very fine scales. Returning to the one-dimensional case, the same is true for a function that is reasonably smooth at most but not all points, like the function illustrated in figure $6$ (a). If we zoom in on such a function near a point $x^{0}$ where it is smooth, then it will look almost linear, so we will be able to represent that part of the function efficiently if our wavelets are good at representing linear functions. This is where wavelet bases other than Haar show their power:
 the wavelets $\psi$ [4 ] , $\psi$ [6 ] , $\psi$ [12 ] , $\psi$ [M ] , and $\psi$ [BL] depicted in figure $8$ all define approximation schemes of order $2$ or higher, so that $x\psi$ j, k  (  x )$dx = 0$ for all j, k. This is also seen in the numerical implementation schemes: the corresponding generalized differencing that computes the wavelet coefficients of f gives a zero result not only when the graph is flat, but also when it is a straight but sloped line, which is not true for the simple differencing used for the Haar basis.
-As a result, the number of coefficients needed for the wavelet expansion of smooth functions f to reach a preassigned accuracy is much smaller when one uses more sophisticated wavelets than the Haar wavelets. For a function f that is twice differentiable except at a finite number of discontinuities, and with a basic wavelet that has, say, three vanishing moments, typically only very few wavelets at fine scales will be needed to write a very-high-precision approximation to f . Moreover, those will be needed only near the discontinuity points.
+As a result, the number of coefficients needed for the wavelet expansion of smooth functions f to reach a preassigned accuracy is much smaller when one uses more sophisticated wavelets than the Haar wavelets. For a function f that is twice differentiable except at a finite number of discontinuities, and with a basic wavelet that has, say, three vanishing moments, typically only very few wavelets at fine scales will be needed to write a very-high-precision approximation to f . More over, those will be needed only near the discontinuity points.
 This feature is characteristic for all wavelet expansions, whether they are with respect to an orthonormal basis, a basis that is nonorthogonal, or even a redundant family. Figure $9$ illustrates this for one type of redundant expansion, which uses the so-called Mexican hat wavelets, which are given by √$2\psi(x) = (2 2/ 3)\pi - 1/4(1 - 4x^{2})e - 2x$ ; this wavelet gets its name from the shape of its graph, which looks like the cross section of a Mexican hat (see the figure). The smoother a function f is (i . e .
 , the more times it is differentiable), the faster its wavelet coefficients will decay as j increases, provided the wavelet $\psi$ has sufficiently many vanishing moments. The converse statement is also true: one can read off how smooth the function is at $x^{0}$ from how the wavelet coefficients w j, k (f) decay, as j increases. Here one restricts attention to the “relevant” pairs (j , k). In other words, one considers only the pairs where $\psi$ j, k is localized near $x^{0}$ . (In more precise terms, this converse statement can be
 
@@ -444,7 +444,7 @@ of ψ.)                                                           standard funct
 many other useful properties of functions, both global           tions that are smooth in many places but have pos-
 and local. Because of this, wavelets are good bases not          sible discontinuities in isolated points, and argued
 just for L2 -spaces or the Lipschitz spaces, but also            that they can be approximated well by linear com-
-for many other function spaces, such as, for instance,           binations of a fairly small number of wavelets. Such
+for many other function spaces, such as, for instance,           bi nations of a fairly small number of wavelets. Such
 the Lp -spaces with 1 < p < . nfty, the sobolev spaces                functions are special cases of elements of particular
 [III.29 §2.4](/part-03/function-spaces), and a wide range of Besov spaces. The             Besov spaces, and their good approximation proper-
 versatility of wavelets is partly due to their connec-           ties by sparse wavelet expansions can be viewed as
@@ -452,7 +452,7 @@ tion with powerful techniques developed in harmonic              a consequence o
 analysis through out the twentieth century.                       spaces by nonlinear approximation schemes using
    We have already seen in some detail that wavelet              wavelets.1
 bases are associated with approximation schemes of
-different orders. So far we have considered approxi-
+different orders. So far we have considered approx i-
 mation schemes in which the AN f are always linear                 1. More types of wavelet families, as well as many generalizations,
 combinations of the same N building blocks, regard-              can be found on the Internet at www.wavelet.org.
 
@@ -475,7 +475,7 @@ combination: it combines two one-dimensional Haar
 decompositions. We saw earlier that a 2 . imes 2 superpixel
                                                              wavelets. The fact that so much of this is gray indicates
 could be decomposed as follows. First, think of it as
-                                                             that a lot of this information can be discarded without
+                                                             that a lot of this information can be discarded with out
 arranged in two rows of two numbers, representing the
                                                              affecting the image quality.
 gray levels of the corresponding pixels. Next, for each
@@ -495,7 +495,7 @@ The first is the average gray level for the superpixel,
 which is needed as the input for the next round of the
                                                              gives a much better approximation in smoothly vary-
 decomposition at the next scale up. The other three
-                                                             ing parts of the image than the Haar basis. Moreover,
+                                                             ing parts of the image than the Haar basis. More over,
 correspond to the three types of “differences” already
                                                              the reconstruction obtained from the Haar expansion
 encountered earlier. If we start with a rectangular image
@@ -556,7 +556,7 @@ Readers who are content to stay at the lofty mathematical level are of course we
 
 $7$
 
-Brief Overview of Several Influences
+Brief Over view of Several Influences
 
 on the Development of Wavelets
 
@@ -568,7 +568,7 @@ Consider, for example, a periodic function with period $1$ that has just one dis
 
 If the question is understood in the obvious way, then the answer is no: a discontinuity causes the Fourier coefficients to decay slowly, however smooth the rest of the function is. Indeed, the best possible decay is of the form |fˆn| \le C [1 + | n | ] - 1 . If there were no discontinuity, the decay would be at least as good as $C^{k}$ [1 + | n | ] - k when f is k-times differentiable. However, there is a more subtle connection between local smoothness and Fourier coefficients.
 Let f be a periodic function, and let us write its nth Fourier coefficient f ˆ n as a n e $i\theta$ n , where a n is the absolute value of f ˆ $n$ and $ei\theta$ n is its phase. When examining the decay of the Fourier coefficients, we look just at a n and forget all about the phases, which means that we cannot detect any phenomenon unless it is unaffected by arbitrary changes to the phases. If f has a discontinuity, then we can clearly move it about by changing the phases.
-It turns out that these phases play an important role in determining not just where the singularities are, but even their severity: if the singularity at $x^{0}$ is not just a discontinuity but a divergence of the type |f(x)| ∼ $|x - x^{0}| - β$ , then one can change the value of β just by changing the phases and without altering the absolute values $|a^{n}|$ . Thus, changing phases in Fourier series is a dangerous thing to do: it can greatly change the properties of the function in question.
+It turns out that these phases play an important role in determining not just where the singularities are, but even their severity: if the singularity at $x^{0}$ is not just a discontinuity but a divergence of the type |f(x)| ∼ $|x - x^{0}| - β$ , then one can change the value of β just by changing the phases and with out altering the absolute values $|a^{n}|$ . Thus, changing phases in Fourier series is a dangerous thing to do: it can greatly change the properties of the function in question.
 Littlewood and Paley showed that some changes of the phases of Fourier coefficients are more innocuous. In particular, if you choose a phase change for the first Fourier coefficient, another one for both the next two coefficients, another for the next four, another for the next eight, and so on, so that the phase changes are constant on “blocks” of Fourier coefficients that keep doubling in length, then local smoothness (or absence of smoothness) properties of f are preserved.
 Similar statements hold for the Fourier transform of functions on R (as opposed to Fourier series of periodic functions). This was the first result of a whole branch of harmonic analysis in which scaling was exploited systematically to deal with detailed local analysis, and in which very powerful theorems were proved that, with hindsight, seem ready-made to establish a host of powerful properties for wavelet decompositions.
 The simplest way to see the connection between Littlewood-Paley theory and wavelet decompositions is to consider the Shannon wavelet $\psi$ [Sh] , which is defined by $\psî$ [Sh] ( $ξ) =1$ when $\pi \le |ξ| < 2\pi$ , and $\psî$ [Sh] ( $ξ) = 0$ otherwise. Here, $\psî$ [Sh] denotes the Fourier transform of the [Sh] wavelet $\psi$ [Sh] . The corresponding functions $\psi$ j, k $(x) =j/2$
@@ -600,7 +600,7 @@ $\infty$
 [Sh]
 
 products $( - \infty f(x)\psi$ j, k  (  x )dx)k\in Z tells us how f ˆ (ξ) restricts to the set $2^{j} - {}^{1} \le \pi - 1|ξ| < 2^{j}$ . In other words, it gives us the jth Littlewood-Paley block of f . Scaling also plays an important role in computer vision, where one of the basic ways to “understand” an image (going back to at least the early $1970s$ ) is to blur it more and more, erasing more detail each time, so as to obtain approximations that are graded in “coarseness” (see figure $12$ ).
-Details at different scales can then be found by considering the differences between successive coarsenings. The relationship with wavelet transforms is obvious! An important class of signals of interest to electrical engineers is that of bandlimited signals, which are functions f , usually of one variable only, for which the Fourier transform f ˆ vanishes outside some interval. In other words, the frequencies that make up f come from some “limited band.” If the interval is [− Ω , .
+Details at different scales can then be found by considering the differences between successive coarsenings. The relationship with wavelet transforms is obvious! An important class of signals of interest to electrical engineers is that of bandlimited signals, which are functions f , usually of one variable only, for which the Fourier transform f ˆ vanishes out side some interval. In other words, the frequencies that make up f come from some “limited band.” If the interval is [− Ω , .
 mega], then $f$ is said to have bandlimit $\Omega.$ Such functions are completely characterized by their values, often called samples, at integer multiples of $\pi/\Omega$ . Most manipulations on the signal f are carried out not directly but by operations on this sequence of samples. For instance, we VII. The Influence of Mathematics might want to restrict f to its “lower-frequency half.” To do this, we would define a function g by the condition that g ̂ ( $ξ) = f$ (ξ) if $|ξ| \le \Omega/2$ and is $0$ otherwise.
 Equivalently, we could say that g ̂ (ξ) = f ˆ (ξ) L ̂ (ξ), where L ̂ ( $ξ) = 1$ if $|ξ| \le \Omega/2$ and $0$ otherwise. The next step is to let $L^{n}$ be $L(n\pi/\Omega)$ , and we find that  g(k\pi/. mega) ={}n\in ZLnf((k - n)\pi/. mega). To put this more neatly, if we write $a^{n}$ and b̃ n for $f(n\pi/\Omega)$ and $g(n\pi/\Omega)$ , respectively, then b̃ $k = n\inZL^{n}ak - n$ . On the other hand, g clearly has bandlimit $\Omega/2$ , so to characterize g it suffices to know only the sequence of samples at integer multiples of $2\pi/\Omega$ .
 In other words, we just need to know the numbers $b^{k} =$ b̃ 2 k . The transition from f to g is therefore given by $b^{k} = n\inZL^{n}a^{2k} - n$ . In the appropriate electrical engineering vocabulary, we have gone from a critically sampled sequence for f (i . e . , its sampling rate corresponded exactly to its bandlimit) to a critically sampled sequence for g by filtering (multiplying f ˆ by some function, or convolving the sequence (f(n\pi/.
@@ -612,7 +612,7 @@ Their name dates back to the $1950s$ , when they were used in quantum optics: th
 VII.3.   Wavelets and Applications                                                                                      861
 
 to be of interest in a much wider range of settings in
-quantum physics, and the name stuck, even outside                                                w(t)
+quantum physics, and the name stuck, even out side                                                w(t)
 the original setting of optics. In many applications it
 helps not to use the whole family of coherent states                                     0                  t
 but only those coherent states that correspond to a cer-
@@ -625,7 +625,7 @@ transformations.
    Despite the fact that wavelets synthesized ideas from
 all these fields, their discovery originated in another
 area altogether. In the late 1970 s, the geophysicist                                         0                  t
-J. Morlet was working for an oil company. Dissatis-
+J. Morlet was working for an oil company. Dis sat is-
 fied with the existing techniques for extracting spe-
 cial types of signals from seismograms, he came up
 with an ad hoc transform that combined translations
@@ -651,15 +651,15 @@ of multiplying them by increasingly oscillating trigono-       the scaling techn
 metric functions. Because of this, they always had the         monic analysts had long been familiar. At the time, no
 same shape, and Morlet called them “wavelets of con-           wavelet bases were known in which the initial func-
 stant shape” (see figure 13) in order to distinguish them       tion ψ combined the properties of smoothness and
-from the wavelets of X (or Y, or Z, etc.).                     good decay. Indeed, there seemed to be a sublimi-
+from the wavelets of X (or Y, or Z, etc.).                     good decay. Indeed, there seemed to be a sub lim i-
    Morlet taught himself to work with this new trans-          nal expectation in papers on wavelet expansions that
 form and found it numerically useful, but had difficulty         no such orthonormal wavelet bases could exist. Meyer
-explaining his intuition to others because he had no           set out to prove this, and to everyone’s surprise and
+explaining his intuition to others because he had no           set out to prove this, and to every one’s surprise and
 underlying theory. A former classmate pointed him in           delight he failed in the best possible way—by find-
 the direction of A. Grossmann, a theoretical physicist,        ing a counterexample, the first smooth wavelet basis!
 who made the connection with coherent states and,              Except that it later turned out not to have been the very
 together with Morlet and other collaborators, started to       first: a few years before, a different harmonic analyst,
 develop a theory for the transform in the early 1980 s.         O. Stromberg, had constructed a different example, but
-Outside the field of geophysics it was no longer neces-         this had not attracted attention at the time.
+Out side the field of geophysics it was no longer neces-         this had not attracted attention at the time.
 sary to use the phrase “of constant shape,” so this was           Meyer’s proof was ingenious, and worked because
 quickly dropped, which annoyed geophysicists when,             of some seemingly miraculous cancellations, which is

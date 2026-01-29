@@ -3,7 +3,7 @@
 728                                                                                    V. Theorems and Problems
 
 with exciting results continuing to appear. One recent      mathematical advances it has generated as in the prob-
-example is a convergent power-series solution for the       lem itself. A notable example of this is the develop-
+example is a convergent power-series solution for the       lem itself. A not able example of this is the develop-
 general n-body problem, which was discovered by Don         ment of KAM theory, which provides methods for inte-
 Wang in 1991.                                               grating perturbed Hamiltonian systems and obtaining
    Since the three-body problem itself proved so in-        results that are valid for infinite periods of time. This
@@ -34,7 +34,7 @@ theory.                                                     ensure that a little
    Apart from its intrinsic appeal as a problem that        desired direction at y. Loosely speaking, these spaces
 is simple to state, the three-body problem has a fur-       “look the same from every point.”
 ther attribute that has contributed to its attraction for      It can be shown that an open subset of C that is not
-potential solvers: its intimate link with the fundamen-     the whole of C cannot be bi holomorphically equivalent
+potential solvers: its intimate link with the fund a men-     the whole of C cannot be bi holomorphically equivalent
 tal question of the stability of the solar system. That     to the sphere or to C. Therefore, by the uniformization
 is the question of whether the planetary system will        theorem, a simply connected open subset of C that is
 always keep the same form as it has now, or whether,        not the whole of C must be bi holomorphically equiva-

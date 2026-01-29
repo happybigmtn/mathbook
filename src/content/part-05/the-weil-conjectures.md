@@ -9,7 +9,7 @@ least a quotient [I.3 §3.3](/part-01/fundamental-definitions) of a simply conne
 face, namely its universal cover [III.93](/part-03/universal-covers). For example,      We begin with a brief historical summary of develop-
 a torus is a quotient of the complex plane (in many        ments prior to weil [VI.93](/part-06/andr-weil-19061998) and follow this with a more
 possible ways that are topologically but not biholomor-    precise description of the statement of his conjectures.
-phically equivalent). Thus, the uniformization theorem     Finally, we sketch the ideas behind their proof.
+ph ically equivalent). Thus, the uniformization theorem     Finally, we sketch the ideas behind their proof.
 tells us that a general Riemann surface is a quotient
 of the sphere, the Euclidean plane, or the hyperbolic                  1   An Auspicious Prologue
 plane. For a more detailed discussion of what such a
@@ -27,7 +27,7 @@ Waring’s Problem                                                              
 V.35 The Weil Conjectures
                                                            ues as well, and therefore had at his disposal the con-
         Brian Osserman
-                                                           siderable resources of complex analysis. In particular,
+                                                           sider able resources of complex analysis. In particular,
                                                            although the above sum for ζ(s) converges only for
 The Weil conjectures constitute one of the central
                                                            complex numbers s that have real part Re(s) strictly
@@ -38,7 +38,7 @@ landmarks of twentieth-century algebraic geometry
 but they were the driving force behind a striking num-
                                                            entire complex plane, except at the point s = 1, at which
 ber of fundamental advances in the field. The conjec-
-                                                           it tends to infinity. He showed, moreover, that ζ(s)
+                                                           it tends to infinity. He showed, more over, that ζ(s)
 tures treat a very elementary problem: how to count the
                                                            satisfies a certain functional equation relating ζ(s) to
 number of solutions to systems of polynomial equa-         ζ(1 − s), which introduced an important kind of sym-
@@ -48,8 +48,8 @@ field of rational numbers, the problem is far more          riemann hypothesis [
 tractable over finite fields, and local–global prin-         analyzed “trivial zeros” on the negative real axis, every
 ciples [III.51](/part-03/local-and-global-in-number-theory) such as the birch–swinnerton-dyer          zero of ζ(s) occurs on the line Re(s) = 12 . Riemann’s
 conjecture [V.4](/part-05/the-birchswinnerton-dyer-conjecture) establish strong, albeit subtle, rela-    motivation for studying ζ(s) was to analyze the dis-
-tionships between the two cases.                           tribution of prime numbers, but it fell to later authors
-  Moreover, there are some basic questions that have       (hadamard [VI.65](/part-06/jacques-hadamard-18651963), de la vallée poussin [VI.67](/part-06/charles-jean-de-la-valle-poussin-18661962), and
+tion ships between the two cases.                           tribution of prime numbers, but it fell to later authors
+  More over, there are some basic questions that have       (hadamard [VI.65](/part-06/jacques-hadamard-18651963), de la vallée poussin [VI.67](/part-06/charles-jean-de-la-valle-poussin-18661962), and
 nonobvious connections to the Weil conjectures. The        Van Koch) to bring this vision to fruition. They used
 most famous of these is the Ramanujan conjecture,          the zeta function to prove the prime number theorem
 which concerns the coefficients of Δ(q), one of the most     [I.4 §3](/part-01/general-goals), which determined the asymptotic distribution
@@ -85,7 +85,7 @@ ward to establish the existence of a functional equation      “plane” F 2 de
 for Dedekind zeta functions: this was an open problem         F is also a finite field, then C(F ) is obviously also finite.
 until 1917, when it was settled by Hecke, who showed          The finite fields F containing Fq turn out to be the fields
 at the same time that Dedekind zeta functions could be        Fqm for m ⩾ 1. For each m ⩾ 1 let us define Nm (C) to
-extended to the complex plane, thereby ensuring that          be the number of points belonging to the curve C(Fqm ).
+extended to the complex plane, there by ensuring that          be the number of points belonging to the curve C(Fqm ).
 the Riemann hypothesis makes sense for them as well.          The sequence N1 (C), N2 (C), N3 (C), . . . is what we shall
    With such ideas in the air, it was not long before         try to understand.
 geometry entered the picture. artin [VI.86](/part-06/emil-artin-18981962) first intro-          Given our plane curve C, we can define the ring
@@ -115,7 +115,7 @@ counting points on the given curve. In a 1931 paper
 F. K. Schmidt generalized Artin’s work, and exploited
                                                               the zeta function for curves, bearing out Artin’s obser-
 this geometry to prove a strong form of the functional
-                                                              vations in the cases he was able to compute. The nicest
+                                                              vat i ons in the cases he was able to compute. The nicest
 equation for such zeta functions. And then, in 1933,
                                                               form of Schmidt’s theorem applies to curves that sat-
 Hasse proved the Riemann hypothesis in the special
@@ -146,9 +146,9 @@ $(2)(1 - t)(1 - qt)$
 
 where P (t) is a polynomial of degree $2g$ with integer coefficients. Further more, he proved a functional equation in terms of the substitution $t \to 1/qt$ . If we set $t = q$  -  s , this gives a functional equation for the substitution $s \to 1 - s,$ as in Riemann’s original work. The Riemann hypothesis for C is then the statement that the roots of $Z^{C}(q - s)$ all have $Re(s) = \frac{1}{2}$ , or, equivalently, that the roots of  P(t) all have norm equal to $q - 1/2$ .
 It is an elementary observation that this is equivalent to the assertion that $|N^{m}(C) - q^{m} + 1| \le 2g q^{m}$ , for all $m \ge 1$ . The next step in exploiting the geometric nature of zeta functions of curves is the observation that if F is a finite field containing F q m , then the points with coordinates in F q m are the fixed points of a function called the Frobenius map, which is the map Φ q m that sends m m a point (x , y) $\inF^{2}$ to the point (x q , y q).
-It is a simple extension of fermat’s little theorem [III.58](/part-03/modular-arithmetic) that m if t $\in$ F q m , then t $q = t$. Moreover, the converse holds: m if F is a field containing F q m , and t $\in$ F satisfies t $q = t$, then t $\in$ F q m . This follows because in any field, and in m particular in F , the polynomial t q  -  t can have at most m q roots, which must then be precisely the elements of F q m . It immediately follows that a point (x , y) $\inF^{2}$ is a fixed point of Φ q m if and only if (x , y) $\inF^{2}$ q m .
-Moreover, m m m it is elementary that (s  +  t) $q = s$ q  +  t q , if s, t are in any field containing F q n . Because the coefficients of f (x , y) are in F q m , it follows that if f (x , y) $= 0$ , then m m m f (Φ q m (x , y))  =  f (x q , y q)  =  (f (x , y)) q $= 0$ , so we see that Φ q m gives a map from C to itself. Thus, one might hope to study C (F q m) by analyzing more generally what one can say about the fixed points of maps from C to itself.
-Hasse successfully applied this point of view to prove the Riemann hypothesis in the case g $= 1$ , which is to say the case of elliptic curves. Moreover, we will see that this perspective is woven through out the fabric of the rest of our story, not only inspiring Weil to make his conjectures, but also suggesting the techniques that ultimately led to their proof.
+It is a simple extension of fermat’s little theorem [III.58](/part-03/modular-arithmetic) that m if t $\in$ F q m , then t $q = t$. More over, the converse holds: m if F is a field containing F q m , and t $\in$ F satisfies t $q = t$, then t $\in$ F q m . This follows because in any field, and in m particular in F , the polynomial t q  -  t can have at most m q roots, which must then be precisely the elements of F q m . It immediately follows that a point (x , y) $\inF^{2}$ is a fixed point of Φ q m if and only if (x , y) $\inF^{2}$ q m .
+More over, m m m it is elementary that (s  +  t) $q = s$ q  +  t q , if s, t are in any field containing F q n . Because the coefficients of f (x , y) are in F q m , it follows that if f (x , y) $= 0$ , then m m m f (Φ q m (x , y))  =  f (x q , y q)  =  (f (x , y)) q $= 0$ , so we see that Φ q m gives a map from C to itself. Thus, one might hope to study C (F q m) by analyzing more generally what one can say about the fixed points of maps from C to itself.
+Hasse successfully applied this point of view to prove the Riemann hypothesis in the case g $= 1$ , which is to say the case of elliptic curves. More over, we will see that this perspective is woven through out the fabric of the rest of our story, not only inspiring Weil to make his conjectures, but also suggesting the techniques that ultimately led to their proof.
 
 7313
 
@@ -199,13 +199,13 @@ ing to the action of Frobenius on the ith cohomology
                                                              jan conjecture. In the end, he was able to conclude
 group, and we would also have deg Pi (t) given by the
                                                              the hard Lefschetz theorem from his work, but the
-ith Betti number of V . Moreover, the functional equa-
+ith Betti number of V . More over, the functional equa-
                                                              rest of the standard conjectures remain unsolved to
 tion would follow from a concept known as poincaré
                                                              this day.
 duality [III.19 §7](/part-03/duality).
    It was not long before it became clear that such coho-    Acknowledgments. I would like to thank Kiran Kedlaya,
-mological arguments might become more than just              Nicholas Katz, and Jean-Pierre Serre for their helpful corre-
+mol og ical arguments might become more than just              Nicholas Katz, and Jean-Pierre Serre for their helpful corre-
                                                              spondence.
 motivation: there could be a cohomology theory for
 algebraic varieties over finite fields that would mimic
@@ -213,7 +213,7 @@ algebraic varieties over finite fields that would mimic
 the properties of the classical topological theory and
 would allow one to prove the Weil conjectures. Such a        Dieudonné, J. 1975. The Weil conjectures. Mathematical
 cohomology theory is now known as a Weil cohomology.           Intelligencer 10:7–21.
-Serre was the first to seriously attempt to develop such      Katz, N. 1976. An overview of Deligne’s proof of the Rie-
+Serre was the first to seriously attempt to develop such      Katz, N. 1976. An over view of Deligne’s proof of the Rie-
                                                                mann hypothesis for varieties over finite fields. In Math-
 a theory, but he had only limited success. In 1960,
                                                                ematical Developments Arising from Hilbert Problems,

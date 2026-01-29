@@ -26,17 +26,17 @@ If we want a rigorous mathematical theory of Brownian motion, then a very
 $648$
 
 important property it should satisfy is that all the sample paths are continuous: that is, for fixed ω the point B t (ω) depends continuously on t. Physical observations, as well as the contributions of Einstein and Bachelier described above, suggested a few other properties that Brownian motion should satisfy. It then became a substantial mathematical problem to prove that there existed a stochastic process with those properties.
-Wiener was the first person to establish this, which he did in 1923 , and for this reason the mathematical concept of Brownian motion is sometimes called the Wiener process. The most famous names of probability theory in the twentieth century, including kolmogorov [VI.88](/part-06/andrei-nikolaevich-kolmogorov-19031987), Lévy, Itô, and Doob, all made important contributions to the study of Brownian motion.
-Detailed properties of the sample paths have received particular attention, ever since the physicist Jean Perrin observed that these functions are nowhere differentiable (despite Wiener’s later result that they were continuous). The nondifferentiab ility of Brownian trajectories led Itô to introduce a differential calculus for functions of Brownian motion and more general stochastic processes. This Itô stochastic calculus, which will be briefly presented in section $4$ , has found many applications in many different areas of modern probability theory.
+Wiener was the first person to establish this, which he did in 1923 , and for this reason the mathematical concept of Brownian motion is some times called the Wiener process. The most famous names of probability theory in the twentieth century, including kolmogorov [VI.88](/part-06/andrei-nikolaevich-kolmogorov-19031987), Lévy, Itô, and Doob, all made important contributions to the study of Brownian motion.
+Detailed properties of the sample paths have received particular attention, ever since the physicist Jean Perrin observed that these functions are no where differentiable (despite Wiener’s later result that they were continuous). The nondifferentiab ility of Brownian trajectories led Itô to introduce a differential calculus for functions of Brownian motion and more general stochastic processes. This Itô stochastic calculus, which will be briefly presented in section $4$ , has found many applications in many different areas of modern probability theory.
 
 $2$
 
 Coin Tossing and Random Walks
 
 One of the easiest ways to understand Brownian motion is via another important concept of probability: that of random walks. Suppose you were to play a game where you repeatedly tossed a coin, winning € $1$ if it came up heads, and losing € $1$ if it came up tails. One could then define a sequence of random variables $S^{0}$ , $S^{1}$ , $S^{2}$ , . . . , where $S^{n}$ represented your total gain (which could well be negative) after n tosses of the coin. Two simple properties of this sequence are that $S^{0}$ must be $0$ and that $S^{n}$ and $S^{n} - {}^{1}$ always differ by $1$ .
-One can see this in figure $1$ , which plots a graph of the sequence in the case where the coin tosses are HTTTHTHHHTHHTH .... A third property becomes clear if one defines another sequence of random variables ε 1 , ε 2 , . . . , representing the outcome of each toss of the coin. These are independent, and each ε n takes the value $1$ with probability
+One can see this in figure $1$ , which plots a graph of the sequence in the case where the coin tosses are HTTTHTHHHTHHTH .... A third property becomes clear if one defines another sequence of random variables ε 1 , ε 2 , . . . , representing the out come of each toss of the coin. These are independent, and each ε n takes the value $1$ with probability
 
-$112$ and $- 1$ with probability $2$ . Moreover, for each n we can write $S^{n} = ε^{1} +$ · · · $+ ε^{n}$ . The distribution of sums of this kind depends in a very simple way on the wellknown binomial distribution [III.71](/part-03/probability-distributions). (To be pre-
+$112$ and $- 1$ with probability $2$ . More over, for each n we can write $S^{n} = ε^{1} +$ · · · $+ ε^{n}$ . The distribution of sums of this kind depends in a very simple way on the wellknown binomial distribution [III.71](/part-03/probability-distributions). (To be pre-
 
 IV. Branches of Mathematics
 
@@ -80,9 +80,9 @@ process, except that “time” is now represented by a pos-
 itive integer. (One says that it is a discrete-time process.)
                                                                       If we want to approximate a Brownian motion that
 Now let us try to do justice to the idea that Brownian
-                                                                   goes on forever rather than stopping at 1, all we have
+                                                                   goes on for ever rather than stopping at 1, all we have
 motion is something like a random walk with infinitely
-                                                                   to do is let the rescaled random walk go on forever,
+                                                                   to do is let the rescaled random walk go on for ever,
 many infinitesimally small steps. (We are now looking
                                                                    rather than stopping after n steps.
 at one-dimensional Brownian motion, rather than the
@@ -99,7 +99,7 @@ will be Gaussian, and the results from the last section                the under
 suggest that this is exactly what we should expect if                • The sample paths are continuous.
 they are appropriately scaled limits of the distributions            • Given any s < t the distribution of Bt − Bs is
 of the Sn . To be precise, suppose we have a graph like                Gaussian with mean 0 and variance t − s.
-that of figure 1 but with some large number of steps n.               • Moreover, Bt − Bs is independent of the process
+that of figure 1 but with some large number of steps n.               • More over, Bt − Bs is independent of the process
 Then the x-axis will go from 1 to n and the standard                   up to time s. (This implies the Markov property
 deviation of the height of the end of the graph will be                mentioned in section 1.)
 . qrt{n}. Therefore, if we shrink the graph horizontally by
@@ -265,8 +265,8 @@ IV.24.   Stochastic Processes                                                   
                                                              ance of Brownian motion, this point will be evenly dis-
                                                              tributed around the boundary of this ball. If we reach
 areas of mathematics as well as in physics. For instance,    the boundary at a point y, then the average value of
-the electrical potential of a conductor in equilibrium       g when the path leaves U (conditioning on this extra
-is a harmonic function outside the conductor. And if         information) is h(y), by definition. Therefore, h(x) is
+the electrical potential of a conduct or in equilibrium       g when the path leaves U (conditioning on this extra
+is a harmonic function out side the conduct or. And if         information) is h(y), by definition. Therefore, h(x) is
 the temperature of the boundary of a body is kept            indeed the average value of h on the boundary of the
 fixed (that is, although different parts of the bound-         ball of radius r .
 ary may have different temperatures, these tempera-              Convincing though this argument might seem, there
@@ -307,7 +307,7 @@ is very close to the boundary, then a Brownian motion        is harmonic.
 
 Let f be a function on Rd (which we shall assume to          Let us now concentrate on the case d = 2. As usual, we
 be continuous and bounded). If we think of f as a tem-       identify R2 with the complex plane C. Let f = f1 + if2
-perature distribution at time 0, then the heat equa-         be a holomorphic function [I.3 §5.6](/part-01/fundamental-definitions) defined on C.
+per at ure distribution at time 0, then the heat equa-         be a holomorphic function [I.3 §5.6](/part-01/fundamental-definitions) defined on C.
 tion [III.36](/part-03/the-heat-equation) models what happens to the temperature         Then the real part f1 and the imaginary part f2 of f
 at subsequent times. To find a solution to this equation      are both harmonic functions, so that f1 (Bt ) and f2 (Bt )
 with initial value f means to find a continuous function      are martingales. More precisely, Itô’s formula tells us
@@ -339,14 +339,14 @@ easy to derive since one can write down an explicit for-
 mula for the expectation of f (Bt ) in terms of the Gauss-          6   Stochastic Differential Equations
 ian density function. Given this formula, all we have
                                                              Imagine a Brownian particle in some water. If the tem-
-to do is differentiate it and check that the equation is      perature of the water rises, then we expect there to be
+to do is differentiate it and check that the equation is      per at ure of the water rises, then we expect there to be
 satisfied. However, the connection between Brownian           more collisions with faster-moving molecules; this can
 motion and the heat equation is much deeper, and in          be modeled easily by increasing the diffusion constant.
 many other cases there is a probabilistic representa-        But what if the temperature in the water varied from
 tion for a solution but no explicit formula. To take one     place to place? Then the particle would be more agi-
 example, suppose that we want to solve the heat equa-        tated in some parts of the water than in others. And
 tion in an open set U with Dirichlet boundary condi-         if the water was moving, with different parts moving
-tions. This means that we specify an initial value f (x)     at different speeds, then one would need to superim-
+tions. This means that we specify an initial value f (x)     at different speeds, then one would need to super im-
 for the temperature of each point x ∈ U and stipu-           pose on the Brownian motion a “drift” term, to take into
 late that the temperature at the boundary is kept at         account that on average we would expect the particle
 0. In other words, we want to find a function u(t, x)         to move with the surrounding water.
@@ -384,7 +384,7 @@ In this model, the price of a share solves a stochastic differential equation of
 The solution of a d-dimensional stochastic equation (which when $d = 3$ could model the water example mentioned at the beginning of this section) is once again a strong Markov process, known as a diffusion process. Much of what was said earlier about the relationship between Brownian motion and partial differential equations can be generalized to diffusion processes as well. Roughly speaking, with each diffusion process one can associate a differential operator L, and this operator plays the role that the Laplacian plays for Brownian motion.
 6557 Random Trees Brownian motion and more general diffusion processes appear as limits of many discrete models in probability theory, combinatorics, and statistical physics. The most striking recent example of this is given by the so-called stochastic Loewner evolution (commonly abbreviated to SLE) processes, which are discussed in [IV.25 §5]). These are expected to describe the asymptotic behavior of a large number of two-dimensional models, and their definition involves both linear Brownian motion and the Loewner equation from complex analysis.
 Rather than trying to give a general presentation of the relationship between Brownian motion and discrete models, in this final section we shall discuss a surprising application of Brownian motion to random trees, which can be used to describe the genealogy of a population. The basic discrete model is the following. We start with a single “ancestor,” which we label ∅. Then we place a probability distribution \mu on the nonnegative integers, and use this to determine the number of children the ancestor has.
-Then each child is assumed to have children, the numbers of children being independent and also determined by the probability distribution μ. And so on. The case that we shall be interested in is the so-called critical case, where the expected number of children is exactly $1$ (and the variance is finite). We can represent the outcome of this process as a labeled tree, called the genealogical tree, in a natural way. To draw the tree one simply joins each member of the population to its children. As for the labels, the children of the original ancestor are labeled $1$ , $2$ , . . .
+Then each child is assumed to have children, the numbers of children being independent and also determined by the probability distribution μ. And so on. The case that we shall be interested in is the so-called critical case, where the expected number of children is exactly $1$ (and the variance is finite). We can represent the out come of this process as a labeled tree, called the genealogical tree, in a natural way. To draw the tree one simply joins each member of the population to its children. As for the labels, the children of the original ancestor are labeled $1$ , $2$ , . . .
 , left to right, the children of $1$ are labeled (1, 1) , (1, 2), . . . , the children of $2$ are labeled (2, 1) , (2, 2) , . . . , and so on. (For instance, the children of (3, 4, 2) , if it is ever born, are labeled (3, 4, 2, 1) , (3, 4, 2, 2), . . . .) See the left-hand side of figure $6$ for a simple example of a tree. It is known that in this critical case the population will eventually die out with probability $1$ . (To avoid the certainty of this fate, the average number of children must be more than $1$ .
 A particular case of this process is discussed in [IV.25 §2] .) The genealogical tree, which we shall denote by $\theta,$ is a random variable. It is called the Galton-Watson tree with offspring distribution μ. A convenient way to represent this tree is via its so-called contour function, which is illustrated on the right-hand side of figure $6$ . Informally, we imagine the motion of a particle that starts from the root and explores the tree from the left to the
 
@@ -421,7 +421,7 @@ looking at the tree of all his or her descendants, and             graph, and th
 on the other hand looking at the tree of a random                  x = x1 and x = x2 , where x1 is the point where it
 ancestor, alive one thousand years ago, of an individ-             last crosses the x-axis before x = 1 and x2 is the point
 ual who is alive today. In the latter case the tree is             where it first crosses the x-axis after x = 1. The corre-
-guaranteed to continue for many generations without                sponding portion of the Brownian motion will start and
+guaranteed to continue for many generations with out                sponding portion of the Brownian motion will start and
 dying out.                                                         end at zero and not cross zero in between. We then need
    Suppose we condition on the event that the tree θ (or           to rescale it so that x goes from 0 to 1 instead of from
 rather the population it represents) survives for n gen-           x1 to x2 , and we also need to rescale the height appro-
@@ -429,7 +429,7 @@ rather the population it represents) survives for n gen-           x1 to x2 , an
 erations. We may now ask all sorts of questions about              priately, by dividing by 1/ x2 − x1 . Also, if the path
 this genealogical tree. How many individuals are there             is every where negative between x1 and x2 , we simply
 in a given generation of the tree? If we pick two indi-            turn it upside down to make it positive.
-viduals in the same generation, how far do we typically               Aldous’s theorem states that the limiting distribu-
+vi duals in the same generation, how far do we typically               Aldous’s theorem states that the limiting dis tr ibu-
                                                                                                         n
 have to go back in the tree to reach a common ances-               tion of the contour function C θ (rescaled in time by
                                                                                                                          √

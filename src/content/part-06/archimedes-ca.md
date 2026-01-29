@@ -11,14 +11,14 @@ Nothing is known about Euclid’s life. In fact, his major                lines,
 work, the Elements, is now seen as a rather loose                          As well as works on astronomy, optics, and music,
 collection, with no strong authorial voice and no clear                 the Data, which is about solving geometrical prob-
 way of determining what, if any, Euclid’s original contri-              lems on the basis of some elements that are already
-butions were. Born in the cultural climate of Ptolemaic                 given, is also attributed to Euclid. His fame is, however,
+but i ons were. Born in the cultural climate of Ptolemaic                 given, is also attributed to Euclid. His fame is, however,
 Alexandria, the text probably aimed at systematizing                    inextricably linked to the Elements. The very absence
 the current knowledge in some mathematical areas.                       of a strong authorial voice has perhaps facilitated
    The Elements covers plane geometry (including the                    other mathematicians’ interaction with the text, which
 squaring of any rectilinear figure, the bisection of an                  has been appropriated, added to, interfered with, and
 arc, the inscription and circumscription of polygons                    commented upon since antiquity. This very plasticity
 in circles, the finding of a mean proportional), solid                   helped to make it possibly the most popular mathe-
-geometry (e.g., the ratio of spheres to one another, the                matical book of all time. (For more about its impact on
+geometry (e.g., the ratio of spheres to one another, the                mat ical book of all time. (For more about its impact on
 five regular solids), and arithmetic, from relatively sim-               the early development of mathematics, see geometry
 ple (the properties of odd and even numbers, prime                      [II.2](/part-02/geometry-origins), the development of abstract algebra [II.3](/part-02/abstract-algebra-development),
 number theory) to more complex (commensurable and                       and the development of the idea of proof [II.6](/part-02/idea-of-proof).)

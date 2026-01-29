@@ -4,7 +4,7 @@ VIII . $5$ .
 
 Mathematics: An Experimental Science
 
-or other. In this light a better formulation might be that “numeracy is to mathematics what language is to literature.” Indeed babies, toddlers, and young children learn many essential mathematical skills through engagement with their immediate environment well before formal school learning begins. Just as some children grow into more articulate adults than others, with or without highly developed skills in reading and writing, so they may become more or less numerate in their everyday practices, independently of their competence in school mathematics.
+or other. In this light a better formulation might be that “numeracy is to mathematics what language is to literature.” Indeed babies, toddlers, and young children learn many essential mathematical skills through engagement with their immediate environment well before formal school learning begins. Just as some children grow into more articulate adults than others, with or with out highly developed skills in reading and writing, so they may become more or less numerate in their everyday practices, independently of their competence in school mathematics.
 There are many deep and important questions about the relationships between numeracy and mathematics, language and literacy that have hardly yet been formulated, let alone explored: this is perhaps one of the most open fields of enquiry in academia today. This essay has only scratched the surface of a fascinating and complex subject that has paradoxically been over looked because of its very ubiquity and centrality to human existence.
 In the next few decades, a wide range of interdisciplina ry approaches will almost certainly yield important and surprising discoveries about numeracy that today we can only guess at.
 
@@ -44,7 +44,7 @@ those areas of mathematics. It should not be inferred        2.2   Neil Sloane�
 that experimental methods are not used in other areas;
 only that I don’t know those applications well enough        Aside from a CAS, another indispensable tool for
 to write about them.                                         experimentally inclined mathematicians, particularly
-   In one short article we cannot even begin to do jus-      for combinatorial is ts, is Neil Sloane’s “On-Line Ency-
+   In one short article we cannot even begin to do jus-      for combinatorialists, is Neil Sloane’s “On-Line Ency-
 tice to the richly varied, broad, and deep achievements      clopedia of Integer Sequences,” which is on the Web at
 of experimental mathematics. For further reading, see        www.research.att.com/ ̃njas. At present, this contains
 the journal Experimental Mathematics and the books           nearly 100 000 integer sequences and has full search
@@ -57,7 +57,7 @@ have been chosen subject to fairly severe restrictions:      of sets of size n w
                                                              wish to know how many prime divisors n has (which is
   (i) the use of computer exploration was vital to the       the same as counting the set of these prime divisors).
       success of the project; and                            Suppose further that you’ve found the answer for n =
- (ii) the outcome of the effort was the discovery of a        1, 2, 3, . . . , 10, say, but you haven’t been able to find any
+ (ii) the out come of the effort was the discovery of a        1, 2, 3, . . . , 10, say, but you haven’t been able to find any
       new theorem in pure mathematics.                       simple formula for the general answer.
                                                                 Here’s a concrete example. Suppose you’re working
 I must apologize for including several examples from
@@ -95,7 +95,7 @@ two polynomials in n, like $(3n^{2} + 1)/(n^{3} + 4)$ . A hypergeometric sequenc
 
 $4^{n}n!47$
 
-all of which are easily seen to be hypergeometric. If you input the first several members of the unknown sequence, Rate will look for a hypergeometric sequence that takes those values. It will also look for a hyper-hypergeometric sequence (i . e . , one in which the ratio of consecutive terms is hypergeometric), and a hyper-hyper-hypergeometric sequence, etc. For example, the line Rate [1 , 1 / 4 , 1 / 4 , 9 / 16 , 9 / 4 , 225 / 16 ] elicits the (somewhat inscrutable) output ${4^{1} - {}^{i0}( - 1 + i0)}$ ! 2.
+all of which are easily seen to be hypergeometric. If you input the first several members of the unknown sequence, Rate will look for a hypergeometric sequence that takes those values. It will also look for a hyper-hypergeometric sequence (i . e . , one in which the ratio of consecutive terms is hypergeometric), and a hyper-hyper-hypergeometric sequence, etc. For example, the line Rate [1 , 1 / 4 , 1 / 4 , 9 / 16 , 9 / 4 , 225 / 16 ] elicits the (some what inscrutable) output ${4^{1} - {}^{i0}( - 1 + i0)}$ ! 2.
 Here $i0$ is the running index of Rate, so we would normally write that answer as, say, $(n - 1)$ ! ${}^{2}(n = 1$ , $2$ , $3$ , $4$ , $5$ , 6), $4^{n} - {}^{1}$ which fits the input sequence perfectly. Rate is a part of the Superseeker front end to the Integer Sequences database, discussed in section $2$ . $2$ above. $2$ . $4$ Identification of Numbers Suppose that, in the course of your work, you encountered a number, let’s call it β, which, as nearly as you could calculate it, was $1$ . 218041583332573 .
 It might be that β is related to other famous mathematical con√ stants, like $\pi$ , e, $2$ , and so forth, or it might not. But you’d like to know. The general problem that is posed here is the following. We are given k numbers, α 1 , . . . , α k (the basis), and a target number α. We want to find integers m, $m^{1}$ , . . . , m k such that the linear combination $mα + m^{1}α^{1} + m^{2}α^{2} +$ · · · $+ m^{k}α^{k}(1)$ is an extremely close numerical approximation to $0$ .
 If we had a computer program that could find such integers, how would we use it to identify the mystery constant $β = 1$ . 218041583332573 ? We would take the α i to be a list of the logarithms of various well-known $993$ universal constants and prime numbers, and we would take α = log β. For example, we might use {log $\pi$ , $1$ , log $2$ , log 3(2) as our basis. If we then find integers m, $m^{1}$ , . . .
@@ -118,8 +118,8 @@ $3$ Thinking Rationally The following problem appeared in the September / Octobe
 Thus $b(5) = 2$ and the two relevant partitions are $5 = 4 + 1$ and $5 = 2 + 2 + 1$ . Then it is easy to see that b (n) satisfies the recurrences $b(2n + 1) = b(n)$ and $b(2n + 2) = b(n) + b(n + 1)$ , for $n = 0$ , $1$ , $2$ . . . , with $b(0) = 1$ . It is now easy to calculate particular values of b (n). This can be done directly from the recurrence, which is quite fast for computational purposes. Alternatively, it can be shown quite easily that our sequence { b (n) } $\infty 0$ has the generating function $\infty\infty$ j j b (n) x n = $(1 + x^{2} + x^{2}$ · ${}^{2})$ . $n = 0j = 0$ VIII.
 Final Perspectives (Generating functions are discussed in algebraic and enumerative combinatorics [IV . 18 § § 2 . 4 , 3 ] , or see Wilf ( 1994 ).) This helps us to avoid much programming when working with the sequence, because we can use the built-in series-expansion instructions in Mathematica or Maple to show us a large number of terms in this series quite rapidly. Returning to the original question from Quantum, it is a simple matter to compute $b(90316) = 843$ from the recurrence. But let’s try to learn more about the sequence { b (n) } in general.
 To do that we open up our telescope, and calculate the first ninety-five members of the sequence, i.e., { b (n) } ${}^{94}{}^{0}$ , which are shown in table $1$ . The question is now, as it always is in the mathematics laboratory, what patterns do you see in these numbers? Just as an example, one might notice that when n is $1$ less than a power of $2$ , it seems that $b(n) = 1$ .
-The reader who is fond of such puzzles is invited to cease reading here for the moment (without peeking at the next paragraph), and look at table $1$ to spend some time finding whatever interesting patterns seem to be there. Computations up to $n = 94$ aren’t as helpful for a quest like this as computations up to $n = 1000$ or so might be, so the reader is also invited to compute a much longer table of values of b (n), using the above recurrence formulas, and to study it carefully for fruitful patterns. OK, did you notice that if n $= 2$ a then b (n) appears to be a $+ 1$ ? How about this one:
- in the block of values of $n$ between $2^{a}$ and $2^{a} + {}^{1} - 1$ , inclusive, the largest value of b (n) that seems to occur is the Fibonacci number F a $+ {}^{2}$ . There are many intriguing things going on in this sequence, but the one that was of crucial importance in understanding it was the observation that consecutive values of b (n) seem always to be relatively prime.
+The reader who is fond of such puzzles is invited to cease reading here for the moment (with out peeking at the next paragraph), and look at table $1$ to spend some time finding whatever interesting patterns seem to be there. Computations up to $n = 94$ aren’t as helpful for a quest like this as computations up to $n = 1000$ or so might be, so the reader is also invited to compute a much longer table of values of b (n), using the above recurrence formulas, and to study it carefully for fruitful patterns. OK, did you notice that if n $= 2$ a then b (n) appears to be a $+ 1$ ?
+How about this one: in the block of values of $n$ between $2^{a}$ and $2^{a} + {}^{1} - 1$ , inclusive, the largest value of b (n) that seems to occur is the Fibonacci number F a $+ {}^{2}$ . There are many intriguing things going on in this sequence, but the one that was of crucial importance in understanding it was the observation that consecutive values of b (n) seem always to be relatively prime.
 1 It was totally unexpected to find a property of the values of this sequence that involved the multiplicative structure of the positive integers, rather than their additive structure, which would have been quite natural. This is because the theory of partitions of integers belongs to the additive theory of numbers, and multiplicative properties of partitions are rare and always cherished. Once this relative primality is noticed, the proof is easy. If m is the smallest n for which b (n), b (n $+ 1$ ) fail to be relatively prime, then suppose $p > 1$ divides both of them.
 If $m = 2k + 1$ is odd, then the recurrence $1$ . Two positive integers are relatively prime if they have no common factor.
 
@@ -148,7 +148,7 @@ VIII.5.   Mathematics: An Experimental Science                                  
           17   10   13    3    14    11      19     8   21     13    18     5    17     12   19     7   16     9    11
 
 implies that p divides b(k) and b(k + 1), contradict-               answer to a problem that interests you, it is good prac-
-ing the minimality, whereas if m = 2 k is even, the                  tice to ask your CAS to factor it for you. Sometimes the
+ing the minimality, where as if m = 2 k is even, the                  tice to ask your CAS to factor it for you. Some times the
 recurrence again gives that result, finishing the proof.             results will surprise you. This is one such story.
   Why was it so interesting that consecutive values                    The theory of Young tableaux forms an important
 appeared to be relatively prime? Well, at once that                 part of modern combinatorics. To create a Young
@@ -238,8 +238,8 @@ Here is a case study in which, as it happens, not only was Sloane’s database u
 
 $1$ , $3$ , $25$ , $543$ , 29281
 
-Upon looking up this sequence in Sloane’s database, Weisstein found, interestingly, that this sequence is identical, as far as it goes, with sequence $A003024$ in the database. The latter sequence counts vertex-labeled acyclic directed graphs (“ digraphs ”) of n vertices, and so Weisstein’s conjecture was born: [T] he number of vertex-labeled acyclic digraphs of n vertices is equal to the number of $n \times n 0 - 1$ matrices whose eigenvalues are all real and positive. This conjecture was proved in Mc Kay et al. ( 2003 ).
-En route to the proof of the result, the following somewhat surprising fact was shown. Theorem $1$ . If $a 0 - 1$ matrix $A$ has only real positive eigenvalues, then those eigenvalues are all equal to $1$ . To prove this, let ${\lambda}$ i } n $i = {}^{1}$ be the eigenvalues of A.
+Upon looking up this sequence in Sloane’s database, Weisstein found, interestingly, that this sequence is identical, as far as it goes, with sequence $A003024$ in the database. The latter sequence counts vertex-labeled a cyclic directed graphs (“ digraphs ”) of n vertices, and so Weisstein’s conjecture was born: [T] he number of vertex-labeled a cyclic digraphs of n vertices is equal to the number of $n \times n 0 - 1$ matrices whose eigenvalues are all real and positive. This conjecture was proved in Mc Kay et al. ( 2003 ).
+En route to the proof of the result, the following some what surprising fact was shown. Theorem $1$ . If $a 0 - 1$ matrix $A$ has only real positive eigenvalues, then those eigenvalues are all equal to $1$ . To prove this, let ${\lambda}$ i } n $i = {}^{1}$ be the eigenvalues of A.
 
 Then
 
@@ -251,7 +251,7 @@ in which the third line uses the arithmetic-geometric mean inequality, and the l
 
 $997$
 
-geometric means of the eigenvalues are equal, the eigenvalues are all equal, and in fact all $\lambda^{i}(A) = 1$ . The proof of the conjecture itself works by finding an explicit bijection between the two sets that are being counted. Indeed, let A be an $n \times n$ matrix of $0s$ and $1s$ with positive eigenvalues only. Then those eigenvalues are all $1s$ , so the diagonal of A is all $1s$ , whence the matrix $A - I$ also has solely $0s$ and $1s$ as its entries. Regard $A - I$ as the vertex adjacency matrix of a digraph G. Then (it turns out that) G is acyclic.
+geometric means of the eigenvalues are equal, the eigenvalues are all equal, and in fact all $\lambda^{i}(A) = 1$ . The proof of the conjecture itself works by finding an explicit bijection between the two sets that are being counted. Indeed, let A be an $n \times n$ matrix of $0s$ and $1s$ with positive eigenvalues only. Then those eigenvalues are all $1s$ , so the diagonal of A is all $1s$ , whence the matrix $A - I$ also has solely $0s$ and $1s$ as its entries. Regard $A - I$ as the vertex adjacency matrix of a digraph G. Then (it turns out that) G is a cyclic.
 Conversely, if G is such a digraph, let B be its vertex adjacency matrix. By renumbering the vertices of G, if necessary, B can be brought to triangular form with zero diagonal. Then $A = I + B$ is $a0 - 1$ matrix with positive real eigenvalues only. But then the same must have been true for the matrix I  +  B before simultaneously renumbering its rows and columns. For more details and more corollaries, see Mc Kay et al. ( 2003 ). Moral: see if you can find your sequence in the online encyclopedia!
 
 $6$
@@ -332,7 +332,7 @@ means that
       ⩽ i ⩽ j − 1 and 1 ⩽ 
 for0                    j⩽  n − 1. We can regard these    minimal space and time. For example, we might com-
     n                      n
-as 2 equations in the 2 above-diagonal entries of            pute the trillionth digit of π , without ever having to
+as 2 equations in the 2 above-diagonal entries of            pute the trillionth digit of π , with out ever having to
 En (μ) and we can ask our CAS to find those entries, for      deal with any of the earlier ones, in a time that is faster
 some small values of n. Here is E4 (μ):                      than what we might attain if we had to calculate all of
      ⎛                                             ⎞         the first trillion digits. For example, Bailey et al. found
@@ -379,7 +379,7 @@ VIII.5.   Mathematics: An Experimental Science                                  
                                              Figure 3 The upper triangular matrix E5 (μ).
 
   In our discussion here we will limit ourselves to de-                  a computer can never investigate infinitely many cases,
-scribing how we might have found the specific expan-                      no matter how fast it is. But computers are useful
+scr ib ing how we might have found the specific expan-                      no matter how fast it is. But computers are useful
 sion (9) once we had decided that an interesting expan-                  for proving theorems despite that handicap. We have
 sion of the form                                                         seen several examples of how a mathematician can act
                             . nfty
@@ -403,7 +403,7 @@ want to find a nontrivial integer linear combination of                   mathem
                          1                                               far-reaching role for computers. Perhaps one day we
           αk =                   (k = 1, . . . , 7)
                 i=0 (8 i + k)16 i                                          will be able to input some hypotheses and a desired
-that sums to 0. As in equation (3), we now compute the                   conclusion, press the “Enter” key, and get a printout
+that sums to 0. As in equation (3), we now compute the                   conclusion, press the “Enter” key, and get a print out
 seven numbers αj and we look for a relation                              of a proof. There are a few fields of mathematics in
                                                                          which we can do such things, notably in the proofs of
     mπ + m1 α1 + m2 α2 + · · · + m7 α7 = 0                               identities (Petkovšek et al. 1996; Greene and Wilf 2007),
@@ -415,7 +415,7 @@ package. The output vector,
       (m, m1 , m2 , . . . , m7 ) = (1, −4, 0, 0, 2, 1, 1, 0),
                                                                          Andrews, G. E. 1998. Pfaff’s method. I. The Mills–Robbins–
 yields the identity (9). You should do this calculation                    Rumsey determinant. Discrete Mathematics 193:43–60.
-for yourself, then prove that the apparent identity is in                Bailey, D. H., and S. Plouffe. 1997. Recognizing numeri-
+for your self, then prove that the apparent identity is in                Bailey, D. H., and S. Plouffe. 1997. Recognizing numeri-
 fact true, and, finally, look for something similar that                    cal constants. In Proceedings of the Organic Mathematics
 uses powers of 64 instead of 16. Good luck!                                Workshop, 12–14 December 1995, Simon Fraser Univer-
                                                                            sity. Conference Proceedings of the Canadian Mathemat-

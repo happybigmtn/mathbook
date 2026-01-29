@@ -6,7 +6,7 @@ that any one-to-one area-preserving transformation of         (with O. D. Kellog
 an annulus that moves the boundary circles in oppo-           (1922) provided a stimulus for the later work of Leray
 site directions must have at least two fixed points, and       and Schauder.
 its importance lies in the fact that its proof implies          Birkhoff had a lifelong interest in the arts and was
-the existence of periodic orbits in the restricted three-     fascinated by the problem of analyzing the fundamen-
+the existence of periodic orbits in the restricted three-     fascinated by the problem of analyzing the fund a men-
 body problem.) He introduced several new concepts             tals of musical and artistic form. In later life he lectured
 into dynamical theory, including “recurrent motion”           extensively on the application of mathematics to aes-
 (1912) and “metric transitivity” (1928), and promoted         thetics, and his book Aesthetic Measure (1933) enjoyed
@@ -70,10 +70,10 @@ absolutely convergent series                                  this “circle met
                               1     1     1                   the work of Hardy and ramanujan [VI.82](/part-06/srinivasa-ramanujan-18871920) on the par-
        ζ(s) = ζ(σ + it) =        + s + s + ··· ,
                               1 s   2     3                    tition function, but the technical difficulties that Hardy
-and in the whole complex plane by analytic continua-          and Littlewood had to overcome were much greater
+and in the whole complex plane by analytic continua-          and Littlewood had to over come were much greater
 tion. In fact, the second problem suggested to him by         than in that earlier work. This method enabled them to
 his supervisor was the Riemann hypothesis that the            show, for example, that every sufficiently large number
-zeros of ζ(s) in the “critical strip” 0 < σ < 1 are on        is the sum of nineteen fourth powers. (In 1986, Balasub-
+zeros of ζ(s) in the “critical strip” 0 < σ < 1 are on        is the sum of nineteen fourth powers. (In 1986, Bala sub-
 the “critical line” σ = 12 . If true, this famous conjec-     ramanian, Dress, and Deshouillers proved that g(4) is
 ture would imply deep results about the distribution of       indeed 19.) More importantly, they gave an asymptotic
 primes. Most of Littlewood’s work on the zeta function        estimate for the number of representations of n as a

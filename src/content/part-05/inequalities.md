@@ -74,7 +74,7 @@ which can be interpreted as saying that if X is a random variable [III.71](/part
 
 V. Theorems and Problems
 
-v, v  ${}^{1}/ {}^{2}$ . If $x$ and $y$ are any two vectors in V with $x = y = {}^{1}$ , then ${}^{0} \le$  x  -  y  ${}^{2} =$  x $- y, x - y = x$, x   +   y, y  $- 2x$ , y  $= 2 - 2x$ , y . It follows that x, y  $\le 1 =$  x   y . Moreover, equality holds only if $x = y$. We can obtain a general pair of vectors by multiplying x by $\lambda$ and y by μ, for some nonnegative real numbers $\lambda$ and μ.
+v, v  ${}^{1}/ {}^{2}$ . If $x$ and $y$ are any two vectors in V with $x = y = {}^{1}$ , then ${}^{0} \le$  x  -  y  ${}^{2} =$  x $- y, x - y = x$, x   +   y, y  $- 2x$ , y  $= 2 - 2x$ , y . It follows that x, y  $\le 1 =$  x   y . More over, equality holds only if $x = y$. We can obtain a general pair of vectors by multiplying x by $\lambda$ and y by μ, for some nonnegative real numbers $\lambda$ and μ.
 Then both sides of the inequality scale up by a factor of $\lambda\mu,$ so we can conclude that the inequality  x, y  $\le$  x   y  holds in general, with equality if and only if $x$ and $y$ are proportional. Particular inner-product spaces lead to special cases of this inequality, which are themselves often referred to as the Cauchy-Schwarz inequality. For instance, if we take the space R n with the inner product  a, $b = ni = {}^{1}a^{i}b^{i}$ , then we obtain the inequality n n n
 
 $1/21/2a2ibi2$

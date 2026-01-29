@@ -16,9 +16,9 @@ integrable over some specified interval) and their dual         first program fo
 spaces Lq , where 1/p + 1/q = 1; and he worked on                 The basis of his mathematics was the ur-intuition
 applying his and Fischer’s theorem to the self-dual            of mathematics: the continuum and the natural num-
 space, now known as hilbert space [III.37](/part-03/bayesian-analysis), that is            bers are simultaneously created from intuition. Mathe-
-given by p = 2. Later he laid some of the foundations          matical objects (including proofs) are mental creations.
+given by p = 2. Later he laid some of the foundations          mat ical objects (including proofs) are mental creations.
 of complete spaces (later known as banach spaces               After sketching the development of the basic parts of
-[III.62](/part-03/normed-spaces-and-banach-spaces)), and applied functional analysis to ergodic          mathematics, Brouwer went on to criticize contempo-
+[III.62](/part-03/normed-spaces-and-banach-spaces)), and applied functional analysis to ergodic          mathematics, Brouwer went on to criticize con tempo-
 theory. He summed up much of his work in these                 rary mathematics for transcending the bounds of the
 areas in the book Leçons d’Analyse Fonctionnelle (1952),       human mind. In particular, he criticized cantor [VI.54](/part-06/georg-cantor-18451918)
 written with his student B. Szökefnalvy-Nagy.                  for introducing sets beyond human recognition, and
@@ -35,7 +35,7 @@ functions to potential theory.                                 Brouwer worked in
 theory, especially types of ordering, continuity, and          of Cantor–Schoenflies) was in need of a sound basis.
 generalized Heine–Borel covering theorems. He also             In his paper “Zur Analysis Situs” (1910), he spelled
 reformulated the lebesgue integral [III.55](/part-03/measures) in a con-          out a number of notions and examples (curves, inde-
-structive manner, using step functions and sets of mea-        com pos able continua, three domains with one common
+struc tive manner, using step functions and sets of mea-        com pos able continua, three domains with one common
 sure zero as primitive notions, and avoiding measure           boundary). This was the beginning of his revision of
 theory [III.55](/part-03/measures) as much as possible.                           set-theoretic topology. At the same time he started two
                                                                lines of research: one on homeomorphisms from sur-

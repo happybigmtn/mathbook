@@ -4,7 +4,7 @@ VI.85.    Norbert Wiener                                                        
 
 the banach–tarski paradox [V.3](/part-05/the-banachtarski-paradox) show how wide his                  After doing work on ballistics for the military during
 influence has been. Banach also introduced the notions              World War II, he was appointed instructor of mathemat-
-of dual space [III.19](/part-03/duality), dual operator, and the general             ics at the fledgling Massachusetts Institute of Technol-
+of dual space [III.19](/part-03/duality), dual operator, and the general             ics at the fledgling Massachusetts Institute of Tech nol-
 concepts of weak and weak-star convergence, and he                 ogy in Cambridge, MA, where he remained for the rest
 used all of these notions in linear operator equations.            of his career.
   In 1936, Banach delivered a one-hour plenary address                Wiener was in many respects a nonconformist, cer-
@@ -13,14 +13,14 @@ Oslo, where he described the work of the whole Lwów                ly, cultural
 school. In 1937 Norbert Wiener tried to lure him to                precocious child and his home education by his father
 the United States. In 1939 he was elected president                (a noted linguist and Harvard professor), along with his
 of the Polish Mathematical Society and was awarded                 Jewish background in a society still stricken by anti-
-a Grand Prize of the Polish Academy of Knowledge.                  Semitism, made his nonconformism almost inevitable.
+a Grand Prize of the Polish Academy of Knowledge.                  Semi tism, made his nonconformism almost inevitable.
 Banach spent the war years in Lwów. During the years               Garrett Birkhoff, the son of george birkhoff [VI.78](/part-06/george-birkho-18841944),
 1940–41 and 1944–45 he was the Dean of the Faculty                 said the following in 1977:
 of Science at the renamed Iwan Franko State University.
-In the period 1941–44 Lwów was occupied by the Ger-                  Wiener was notable as one of the few Americans of
+In the period 1941–44 Lwów was occupied by the Ger-                  Wiener was not able as one of the few Americans of
 man army. During this period Banach was saved from                   his time who was outstanding in both pure mathe-
 almost certain death by the action of Rudolf Weigel,                 matics and its applications. How much of this can be
-a “Schindleresque” factory owner and inventor of the                 attributed to his varied and cosmopolitan early back-
+a “Schindleresque” factory owner and invent or of the                 attributed to his varied and cosmopolitan early back-
                                                                      ground, and how much to his continuing contacts with
 typhus vaccine, who gave him employment at his Bac-
                                                                      non-mathematicians ... it is hard to say.
@@ -56,7 +56,7 @@ Kaluza, R. 1996. The Life of Stefan Banach. Basel: Birk-
   häuser.                                                          cal mechanics and electrical engineering) and tack-
                                                                    ling them with new, and rigorously sharpened, mathe-
                                              Lech Maligranda
-                                                                   matical tools. Rather the opposite: Wiener used some
+                                                                   mat ical tools. Rather the opposite: Wiener used some
                                                                    of the newest, and much debated, results of pure
 VI.85       Norbert Wiener                                         mathematics—such as the lebesgue integral [III.55](/part-03/measures),
 b. Columbia, Missouri, 1894; d. Stockholm, 1964

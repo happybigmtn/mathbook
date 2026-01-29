@@ -26,7 +26,7 @@ VIII.3 The Ubiquity of Mathematics
                                                                  matically. However, if one accepts that physics gov-
 We live surrounded by mathematics: when we open a                erns the universe and that mathematics is the language
 door or use a nutcracker, we exploit archimedes’ [VI.3](/part-06/archimedes-ca)          of physics, then it is not surprising that these appli-
-law of the lever; when a bus goes around the corner,             cations exist. Therefore, this article will focus on the
+law of the lever; when a bus goes around the corner,             ca tions exist. Therefore, this article will focus on the
 we experience at first hand newton’s [VI.14](/part-06/isaac-newton-16421727) law that a           appearance of mathematics in other areas, and in par-
 body continues to travel in uniform motion in a straight         ticular geography, design, biology, communication, and
 line unless acted on by an external force; when we use a         sociology.
@@ -67,7 +67,7 @@ ticular place the year began when the Sun was (approx-           Now another pro
 imately) over the opposite side of the world. It follows      possible to draw a map of even half the world with-
 that at any given time at most a small fraction of the        out distortions. This is not a topological problem, but
 world was celebrating the very beginning of the year          a geometrical one, in the sense that we are interested
-2000. Therefore, at least somewhere had to go first,           in finer properties of Earth’s surface—shape, angle,
+2000. Therefore, at least some where had to go first,           in finer properties of Earth’s surface—shape, angle,
 which means that parts of the world just to the east          area, and so on—than those that are preserved by con-
 of it had missed their chance and had to wait almost          tinuity. Because the sphere has positive curvature
 24 hours. Thus, again we see that there has to be a           [III.78](/part-03/ricci-flow), no part of it can be mapped to the plane in a
@@ -129,13 +129,13 @@ VIII . $3$ .
 
 The Ubiquity of Mathematics
 
-Have you ever wondered why coins are the shapes they are? Most of them are circular, but the British fifty pence piece, for example, is a slightly curved polygon with seven sides. A moment’s thought makes it clear that for any odd number $n \ge 3$ you can have a Reuleaux polygon with n sides, and the fifty pence piece is indeed a Reuleaux heptagon. This is convenient for slot machines: it means that you can have a slot into which the coin only just fits, however you push it in. What about the best shape for a conveyor belt?
+Have you ever wondered why coins are the shapes they are? Most of them are circular, but the British fifty pence piece, for example, is a slightly curved polygon with seven sides. A moment’s thought makes it clear that for any odd number $n \ge 3$ you can have a Reuleaux polygon with n sides, and the fifty pence piece is indeed a Reuleaux heptagon. This is convenient for slot machines: it means that you can have a slot into which the coin only just fits, however you push it in. What about the best shape for a convey or belt?
 If we construct it in the obvious manner, then one of its two sides will be exposed and the other not. Eventually, the exposed side will wear out, but the other side will be in pristine condition, since it will not have been used at all. However, as any mathematician will tell you, not all surfaces have two sides. The most famous example of a one-sided surface is the möbius strip [IV.7](/part-04/dierential-topology), which is obtained from a flat strip of paper by twisting one end through $180$ degrees and joining it to the other end.
-If you have a long enough conveyor belt for it to be practical to give it a twist somewhere, then you can wear out both sides equally (this makes sense locally even if globally the belt now has just one side), thereby doubling the use you get out of the belt. (You might think it simpler just to turn the belt over after a while, but the Möbius-strip design has been taken seriously enough to be patented, and similar designs have been used as typewriter ribbons and in tape recorders .) $3$ Scaling and Chirality Why are Arctic mammals large? Is it just a fluke that they have evolved that way?
+If you have a long enough convey or belt for it to be practical to give it a twist some where, then you can wear out both sides equally (this makes sense locally even if globally the belt now has just one side), there by doubling the use you get out of the belt. (You might think it simpler just to turn the belt over after a while, but the Möbius-strip design has been taken seriously enough to be patented, and similar designs have been used as typewriter ribbons and in tape recorders .) $3$ Scaling and Chirality Why are Arctic mammals large? Is it just a fluke that they have evolved that way?
 This does not sound like a mathematical question, but some simple mathematics can easily convince us that it is not a fluke at all. Since the Arctic is cold and animals need heat, animals that are better at preserving heat are more likely to thrive. The rate at which an object loses heat is proportional to its surface area, but the rate at which it generates heat is proportional to its volume. So if you double the size of an animal in every direction, then the rate at which heat is generated goes up by a factor of eight, while the rate at which it is lost goes up by a factor of only four.
 That is, larger animals find it easier to preserve heat. But why, in that case, are Arctic animals not much bigger still? This can be explained by a similar scaling argument. If you scale an animal up by a factor of t, then its volume, and hence its weight (animals , being made predominantly of water, tend to have roughly the same density), will multiply by $t^{3}$ . The animal has to $979$ support this weight with its bones. The amount of force you need to snap a bone is roughly proportional to the area of a cross-section of that bone, and areas go up by a factor of $t^{2}$ .
 So if t is too large, the animal will not be able to support its own weight. It does have the option of increasing the relative thickness of its bones, but if t is very large then its legs will be too thick for this to be a practical solution. A similar sort of scaling argument explains why, if you drop a mouse down $a_{1000}$ foot mine shaft, then, to quote Haldane, “on arriving at the bottom, [it] gets a slight shock and walks away.” In this case, air resistance is roughly proportional to surface area, while the gravitational pull is proportional to mass, and therefore to volume.
-It follows that, the smaller you are, the smaller your terminal velocity, and the less you are bothered by a fall. A simple fact with many scientific ramifications is that two shapes can be reflections of each other without being rotations or translations. For example, if you see a hand without seeing the body to which it is attached, then you can tell whether it is a right hand or a left hand. (If you can shake it naturally with your right hand, then it is a right hand .) This phenomenon is known as chirality:
+It follows that, the smaller you are, the smaller your terminal velocity, and the less you are bothered by a fall. A simple fact with many scientific ramifications is that two shapes can be reflections of each other with out being rotations or translations. For example, if you see a hand with out seeing the body to which it is attached, then you can tell whether it is a right hand or a left hand. (If you can shake it naturally with your right hand, then it is a right hand .) This phenomenon is known as chirality:
 a shape is chiral if it cannot be obtained from its mirror image by rotation or translation. The notion of chirality appears in many parts of science. For example, many elementary particles have a fundamental property known as “spin,” which means that they often have right-handed versions and lefthanded versions. In pharmacology, it is now understood that many molecules are chiral, and that the two different versions can have radically different properties. An example that had tragic consequences is the drug thalidomide:
 one form of it is effective against morning sickness while the other causes birth defects. Unfortunately, in the late $1950s$ several thousand pregnant women were given $a 50$ : $50$ mixture of the two forms. Less harmful examples of the importance of chirality abound. For instance, there are many chemicals that smell or taste different when you look at their reflected versions. (This may seem paradoxical, but the explanation is simple:
 the sensors in our noses and mouths also contain molecules with chirality .) So far we have been considering rigid motions, but some shapes are chiral in the stronger sense that not even a continuous motion in space is enough to turn them into their mirror images. Two interesting examples are the trefoil knot [III.44](/part-03/knot-polynomials), which comes in a “right-handed” and a “left-handed” version (the proof
@@ -149,7 +149,7 @@ is that when you do the twist, you do it either accord-        Tuning systems ar
 ing to the “corkscrew rule”—that is, twisting it as if you   mathematics and music [VII.13 §2](/part-07/mathematics-and-music).
 were pushing a corkscrew into the cork—or the oppo-
 site way. If you try to visualize it, you may be able                            5   Information
-to convince yourself that the direction of twist is not
+to convince your self that the direction of twist is not
 altered by continuous deformations, and also that the        Few things illustrate better how the abstract mathemat-
 mirror image of a Möbius strip that obeys the corkscrew      ical theory of one generation can become the common
 rule is a Möbius strip that does not obey the corkscrew      sense of the next than the following two closely related
@@ -163,7 +163,7 @@ hammering a set of iron bars in a particularly pleasing      able transmission o
 way, was led to discover the laws of harmony. In mod-        that the rate at which information can be transferred
 ern terms, these laws say that two sounds go together        by signals depends on the range of frequencies avail-
 particularly well (at least in the European tradition) if    able. For example, it is the change from signaling elec-
-their frequencies are in the ratio r to s for some pair      trically along copper wires (with a narrow range of fre-
+their frequencies are in the ratio r to s for some pair      tr ically along copper wires (with a narrow range of fre-
 of small integers r and s: the smaller the better. As a      quencies) to signaling by light (with a very wide range)
 result, people have tried to devise musical scales that      that has allowed the massive data transfers required
 have as many of these pleasing intervals as possible.        by the Internet. The sound waves we hear belong to a
@@ -203,14 +203,14 @@ sequence is (0, 0, 1, 1, 0, 0, 1).                              ferent set of fi
    If you think of these sequences as vectors in the            of capillaries.
 vector space F72 (that is, the seven-dimensional space             Under certain circumstances, it is not enough just to
 where the scalars belong to the field of integers mod 2),        transmit information: it must also be protected. If we
-then you will readily convince yourself that these three        send our credit card number over the Internet, we want
+then you will readily convince your self that these three        send our credit card number over the Internet, we want
 properties of a sequence are independent linear con-            to do so in such a way that it would be very hard for an
 ditions, so the set of sequences in question is a four-         eavesdropper to find that number. A mathematical way
 dimensional subspace of F72 . Therefore, there are six-         of doing this is described in cryptography [VII.7 §5](/part-07/mathematics-and-cryptography).
 teen such sequences. A member of the audience is                   Here is a slightly different but closely related prob-
 asked to take one of them and change it in one place.           lem. Suppose that Albert has a secret that he would
 The magician can at once identify which digit has been          like to share with Bertha (and only Bertha) in a conver-
-changed. Let us see how this works if we change the             sation that everyone can hear. What is he to do? A first
+changed. Let us see how this works if we change the             sation that every one can hear. What is he to do? A first
 third digit of the sequence above, so we now have the           step is to think of any piece of information that they
 sequence (y1 , . . . , y7 ) = (0, 0, 0, 1, 0, 0, 1).            can share secretly—it turns out to be a short step from
    The first step is to note that y1 + y3 + y5 + y7 and          this to sharing a particular piece of information. The
@@ -244,7 +244,7 @@ to describe our bodies completely. This would explain           u, a, and b and 
 what experimental evidence also corroborates: that the          eavesdroppers will effectively know nothing about the
 DNA carries a set of general instructions, but the fine          pair (M, N).)
 detail of our anatomy, such as our fingerprints and the             Why do we believe that it is “hard” to calculate uab
-precise arrangements of our capillaries, is partly a mat-       from ua and ub ? What if tomorrow somebody dis-
+precise arrangements of our capillaries, is partly a mat-       from ua and ub ? What if tomorrow some body dis-
 ter of chance. So, for example, if it were possible to          covers a simple trick for doing it? Surprisingly, even
 
 982                                                                                         VIII. Final Perspectives
@@ -274,8 +274,8 @@ a street may well be to reduce the values of all the
 houses. However, if you convert just one front garden,
                                                              mathematics of traffic in networks [VII.4 §4](/part-07/the-mathematics-of-trac-in-networks)).)
 then it will increase the convenience for that household
-without making too much of a difference to the look              Not all applications of mathematical thought to
-of the street, so the value of that house will increase      social problems have such satisfactory outcomes. Sup-
+with out making too much of a difference to the look              Not all applications of mathematical thought to
+of the street, so the value of that house will increase      social problems have such satisfactory out comes. Sup-
 and the values of all the other houses will decrease         pose that there is to be an election (or, more gener-
 slightly. Thus, for each individual house owner there is     ally, that society has to make a choice between vari-
 a financial incentive to convert the front garden, even       ous possibilities) with n candidates and m voters. Let

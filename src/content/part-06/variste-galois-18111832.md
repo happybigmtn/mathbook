@@ -7,11 +7,11 @@ VI.40       Ernst Eduard Kummer                                     texts of the
 b. Sorau (now Zary, Poland), 1810; d. Berlin, 1893                  tion for the École Polytechnique prematurely in June
 Gymnasium teacher, Liegnitz (now Legnica, Poland) 1832–42;          1828, but failed. In July 1829, after his father’s sui-
 Professor of Mathematics: Breslau (now Wroclaw, Poland) 1842–55,
-Berlin 1855–82                                                      cide, Galois was again rejected by the École Polytech-
+Berlin 1855–82                                                      cide, Galois was again rejected by the École Poly tech-
                                                                     nique. He entered the École Préparatoire (later known as
 Kummer’s early research was in function theory, in                  the École Normale Supérieure) in October 1829 but was
 which he made an important contribution to the theory               expelled in December 1830 for unacceptable behaviour
-of the (generalized) hypergeometric series (a power                 arising from political disagreements with the authori-
+of the (generalized) hypergeometric series (a power                 arising from political disagreements with the author i-
 series in which the ratios of successive coefficients                 ties. Arrested on Bastille Day (14 July) 1831, he spent
 are rational functions). Surpassing earlier work of                 the next eight months in prison for flouting authority
 gauss [VI.26](/part-06/carl-friedrich-gauss-17771855), Kummer not only provided a systematic                again. He emerged at the end of April 1832 but some-
@@ -25,7 +25,7 @@ connection between the hypergeometric functions and                 dies so youn
 newer functions in analysis, such as the elliptic func-             to work with, however rich his story, and most of his
 tions [V.31](/part-05/the-riemannroch-theorem).                                                       biographers have allowed romantic invention to colour
    After moving to Breslau, Kummer started doing re-                their accounts of his life.
-search in number theory, the field in which he achieved                 There are four main papers in Galois’s mathemati-
+search in number theory, the field in which he achieved                 There are four main papers in Galois’s mathemat i-
 his greatest success: the creation of the theory of “ideal          cal works (and a number of smaller and less important
 prime factors” (1845–47). Although Kummer’s theory is               items). The first to be published was “Sur la théorie des
 often described as an early contribution to the theory              nombres,” which appeared in April 1830 and contains
@@ -42,7 +42,7 @@ exponents) less than 100.                                           known as the
 algebraic geometry. Continuing the work of hamilton                 par radicaux.” Galois submitted work on the theory of
 [VI.37](/part-06/william-rowan-hamilton-18051865) and jacobi [VI.35](/part-06/carl-gustav-jacob-jacobi-18041851) on ray systems and geomet-               equations to the Paris Academy on 25 May and 1 June
 ric optics, he was led to the discovery of the quartic              1829, but this is now lost and it seems quite possi-
-surface with sixteen nodal points, which is now named               ble that Galois withdrew it on the advice of Cauchy (to
+surface with sixteen nodal points, which is now named               ble that Galois with drew it on the advice of Cauchy (to
 after him.                                                          whom it had been given to referee) in January 1830.
                                                                     In February 1830 he resubmitted his work in compe-
 VI.41       Évariste Galois                                         tition for the Grand Prix de Mathématiques, but his

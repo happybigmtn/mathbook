@@ -26,9 +26,9 @@ have just seen, long multiplication takes polynomial        and much larger than
 time, and comparing the answer with x is even eas-          cal large integer is unlikely to be a square). But can we
 ier. The complexity class N P consists of those compu-      make comparisons of size in a precise way?
 tational tasks for which a correct answer can be ver-          An obvious method of attack is to build on our intu-
-ified in polynomial time, even if it cannot necessar-        ition about finite sets. If A and B are finite sets, there
+ified in polynomial time, even if it cannot ne ces sar-        ition about finite sets. If A and B are finite sets, there
 ily be found in polynomial time. Remarkably, although       are two ways we might go about comparing their sizes.
-this is a fundamental distinction, nobody knows how         One is to count their elements: we obtain two nonnega-
+this is a fundamental distinction, nobody knows how         One is to count their elements: we obtain two nonneg a-
 to prove that P = N P: this problem is widely consid-      tive integers m and n and just look at whether m < n,
 ered to be the most important in theoretical computer       m = n, or m > n. But there is another important
 science.                                                    method, which does not require us to know the sizes of

@@ -15,12 +15,12 @@ general science: that is, of an art of inventing and of         linear perspecti
 judging all sciences by means of sufficient data and a
 suitable universal language or writing. Yet, his “char-         VI.17      Christian Goldbach
 acteristica universalis” and the ensuing logical calculi        b. Königsberg (now Kaliningrad, Russia), 1690; d. Moscow, 1764
-remained fragmentary projects. His “calculus ratiocina-         Professor of Mathematics, Imperial Academy of Sciences,
+remained fragmentary projects. His “calculus ratio cin a-         Professor of Mathematics, Imperial Academy of Sciences,
                                                                 Saint Petersburg (1725–28); tutor to Tsarevitch Peter II, Moscow
 tor” was meant to be a formalized deduction of truth.           (1728–30); corresponding secretary and administrator,
 Given that Leibniz was interested in formalizing calcu-         Imperial Academy of Sciences, Saint Petersburg (1732–42);
                                                                 Ministry of Foreign Affairs (1742–64)
-lations, it is not surprising that he also constructed the
+la tions, it is not surprising that he also constructed the
 first four-function calculating machine. In constructing
                                                                 Goldbach is remembered today for the conjecture that
 this machine he invented a new technical device, which
@@ -37,7 +37,7 @@ Further Reading
 Leibniz, G. W. 1990–. Sämtliche Schriften und Briefe, Reihe 7   with the weaker conjecture that every odd number is
   Mathematische Schriften, four volumes (so far). Berlin:       either prime or the sum of three primes, was first pub-
   Akademie.
-                                                                lished by waring [VI.21](/part-06/edward-waring-ca) in 1770 but without attribu-
+                                                                lished by waring [VI.21](/part-06/edward-waring-ca) in 1770 but with out attribu-
                                       Eberhard Knobloch         tion. Both conjectures remain unsolved. However, Vino-
                                                                 gradov proved that every sufficiently large odd number
 VI.16      Brook Taylor                                         is the sum of three primes: see problems and results
@@ -54,7 +54,7 @@ appreciate its significance and applicability. The theo-         (1654–1705)  
 rem, which states that any function that satisfies cer-
 tain conditions can be expressed as (what is now known                         Nicolaus I Nicolaus II   Daniel     Johann II
 as) a Taylor series, was published in Taylor’s Metho-                         (1687–1759) (1695–1726) (1700–1782) (1710–1790)
-dus Incrementorum Directa et Inversa (1715). In the
+dus Incrementorum Direct a et In versa (1715). In the
 Methodus Taylor gave the series as                                                                           Johann III    Jacob II
                                                                                                              (1744–1807) (1759–1789)
                   f (x)     f (x) 2 f (x) 3

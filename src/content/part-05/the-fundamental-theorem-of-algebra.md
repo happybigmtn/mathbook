@@ -3,12 +3,12 @@
 698                                                                                    V. Theorems and Problems
 
 idea was that it might be possible to solve the problem    to be OK” as a satisfactory explanation. As a result, if
-by using a more complicated list of configurations.         someone were to discover a shorter and more acces-
+by using a more complicated list of configurations.         some one were to discover a shorter and more acces-
    Such a list was found by Kenneth Appel and Wolf-        sible proof it would be regarded by many as a break-
 gang Haken in 1976. However, this is by no means the       through comparable to the solution of the problem by
 whole story, because the list of configurations that they   Appel and Haken. An unfortunate side effect of this is
 found was not just “more complicated” but so much          that mathematics departments around the world still
-more complicated that it broke new ground: it was the      receive many incorrect attempted proofs, several of
+more complicated that it broke new ground: it was the      receive many in correct attempted proofs, several of
 first time that a major theorem had been proved with a      which repeat the mistake of Kempe.
 proof that was too long to be humanly checkable. The         Like many good problems, the four-color problem
 reason for this was partly that their list C contained     provoked the development of many important new
@@ -46,7 +46,7 @@ question whether the compilers used were correct and       V.13     The Fundamen
 whether the hardware was stable, but the proof has                  Algebra
 been checked on different platforms, using different
 programming languages and operating systems, so this       The complex numbers [I.3 §1.5](/part-01/fundamental-definitions) can be thought of as
-proof is much less likely to be incorrect than a typical   what you obtain from the real numbers [I.3 §1.4](/part-01/fundamental-definitions) when
+proof is much less likely to be in correct than a typical   what you obtain from the real numbers [I.3 §1.4](/part-01/fundamental-definitions) when
 human-checked proof of even moderate length.               you introduce a new number, denoted i, and stipulate
    The result is that very few mathematicians are now      that it is a solution of the equation x 2 = −1, or equiv-
 worried about whether the proof is correct. However,       alently a root of the polynomial x 2 + 1. At first, this
@@ -54,4 +54,4 @@ there are many who object to it for a different rea-        may seem an artifici
 son. Even if we can now be certain that the theorem        what is so important about x 2 + 1 as opposed to any
 is true, we can still ask why it is true, and not every-   other polynomial—but that is a judgment with which
 body regards the answer “Because hundreds of thou-         no professional mathematician would concur. The fun-
-sands of cases were checked and they all turned out        damental theorem of algebra is one of the best pieces
+sands of cases were checked and they all turned out        da mental theorem of algebra is one of the best pieces

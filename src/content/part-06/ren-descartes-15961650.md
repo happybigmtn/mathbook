@@ -8,7 +8,7 @@ Algebra; geometry; analytic geometry; foundations of mathematics
 
 In 1637 Descartes published La Géométrie as an “essay”
 appended to his philosophical treatise Discours de la
-Méthode. It remained his only mathematical publica-
+Méthode. It remained his only mathematical public a-
 tion. No single early modern text shaped the devel-
 opment of mathematics between 1650 and 1700 as
 strongly as La Géométrie. It was the founding text of
@@ -17,7 +17,7 @@ of algebra and geometry that made possible the devel-
 opment of the integral and differential calculus about
 fifty years later.
    Descartes was educated at the Jesuit College at La
-Flèche. He spent his life mostly outside France, travel-                               René Descartes
+Flèche. He spent his life mostly out side France, travel-                               René Descartes
 ing through Europe in his early twenties and living in
 the Netherlands from 1628 until 1649; he then left for
 Sweden, invited by Queen Christina to her court. From              root could be constructed (using ruler and compass).

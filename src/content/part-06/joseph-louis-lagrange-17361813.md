@@ -2,9 +2,9 @@
 
 VI.22.    Joseph Louis Lagrange                                                                                             751
 
-but somewhat impenetrable analytical texts. His first                  of the form
+but some what impenetrable analytical texts. His first                  of the form
                                                                                            b
-work, Miscellanea Analytica (1762), is devoted to the                                          f (x, y, y ) dx,
+work, Miscellanea Analytic a (1762), is devoted to the                                          f (x, y, y ) dx,
 theory of numbers and algebraic equations and con-                                         a
 
 tains many results which he revised and expanded in                   where y = dy/dx. The equation states a necessary
@@ -17,7 +17,7 @@ fourth powers, and so on, with a fixed number of sum-                  style. Th
 mands depending on the exponent), which was solved                    malisms with which to express and solve the key
 by hilbert [VI.63](/part-06/david-hilbert-18621943) in the affirmative in 1909 and which                 problems of mathematical analysis.
 gave rise to important work by hardy [VI.73](/part-06/godfrey-harold-hardy-18771947) and lit-                    Lagrange publicly presented his δ-formalism in a
-tlewood [VI.79](/part-06/john-edensor-littlewood-18851977) in the 1920 s. The Meditationes also                   memoir published in the second volume (1760–61) of
+tle wood [VI.79](/part-06/john-edensor-littlewood-18851977) in the 1920 s. The Meditationes also                   memoir published in the second volume (1760–61) of
 contained the first publication of Goldbach’s conjec-                  Miscellanea Taurinensia, a review he had helped to
 ture (that every even integer greater than 2 can be writ-             found. He coupled this memoir with another in which
 ten as the sum of two primes) and of Wilson’s theorem                 he used the same formalism to formulate a generalized
@@ -28,7 +28,7 @@ by p), which was subsequently proved by lagrange                      duced by M
 cussed in problems and results in additive number                     the distances from their centers.
 theory [V.27](/part-05/problems-and-results-in-vi36-peter-gustav-lejeune-dirichlet-18051859).                                                           Meanwhile, in the first volume of Miscellanea Tauri-
                                                                       nensia (1759), Lagrange had published a memoir pre-
-                                                                      senting a new approach to the problem of the vibrating
+                                                                      sent ing a new approach to the problem of the vibrating
 VI.22       Joseph Louis Lagrange
                                                                       string, where the string is first represented as a dis-
 b. Turin, Italy, 1736; d. Paris, 1813
@@ -39,10 +39,10 @@ Number theory; algebra; analysis; classical and celestial mechanics
 In 1766 Lagrange left his native Turin, where he had
                                                                       tions,” both “continuous” and “discontinuous,” as solu-
 been a founding member of what would later become
-                                                                      tions of this problem, whereas d’alembert [VI.20](/part-06/jean-le-rond-dalembert-17171783) had
+                                                                      tions of this problem, where as d’alembert [VI.20](/part-06/jean-le-rond-dalembert-17171783) had
 the Turin Academy of Sciences, to become the math-
                                                                       maintained that only “continuous functions” (that is,
-ematics director at the Berlin Academy of Sciences. In
+ematics direct or at the Berlin Academy of Sciences. In
                                                                       curves expressed by a single equation) could count as
 1787 he moved to Paris to take up a position as a pen-
                                                                       solutions.

@@ -16,7 +16,7 @@ and                                                          isomorphic to (U �
                                                              spaces, but the definition can easily be generalized to
 That is, it is linear in each variable separately.           any algebraic structure for which some notion of bilin-
    Many important maps, such as inner products               earity makes sense, such as a module [III.81 §3](/part-03/rings-ideals-and-modules) or a
-[III.37](/part-03/bayesian-analysis), are bilinear. The tensor product U ⊗ V of two      C ∗ -algebra [IV.15 §3](/part-04/operator-algebras). Sometimes the tensor product
+[III.37](/part-03/bayesian-analysis), are bilinear. The tensor product U ⊗ V of two      C ∗ -algebra [IV.15 §3](/part-04/operator-algebras). Some times the tensor product
 vector spaces U and V is a way of capturing the idea         of two structures is not what you would immediately
 of the “most general” bilinear map that we can define         expect. For instance, let Zn be the set of integers mod n,
 on U . imes V . To get an idea of what this might mean,           and consider both Zn and Q as modules over Z. Then
@@ -67,7 +67,7 @@ the definition of the tensor product ensure that we can       x on the real line
 
 $302$
 
-How might we generalize this notion, replacing R by an arbitrary set X? Our existing definition makes sense only if we can decide when two points x, x $\in$ X are close. For a general set, which might not be nicely embedded in Euclidean space, this is impossible without the addition of further structure. (When such structure is added one has the notion of a metric space [III.56](/part-03/metric-spaces) : metric spaces are less general than topological spaces .) If the notion of closeness is unavailable, how should one define continuity? The answer may be found in the notion of an open set.
+How might we generalize this notion, replacing R by an arbitrary set X? Our existing definition makes sense only if we can decide when two points x, x $\in$ X are close. For a general set, which might not be nicely embedded in Euclidean space, this is impossible with out the addition of further structure. (When such structure is added one has the notion of a metric space [III.56](/part-03/metric-spaces) : metric spaces are less general than topological spaces .) If the notion of closeness is unavailable, how should one define continuity? The answer may be found in the notion of an open set.
 A set U ⊂ R is said to be open if for any point x in U there is an interval (a , b) that contains x (that is, a $<$ x $<$ b) and is contained in U. It is an amusing exercise to check that if f : R $\to$ R is continuous, and if U is open, then f $- 1$ (U) is open. Conversely, if f $- 1$ (U) is open for every open set U, then f is continuous. Thus, at least for functions from R to R , one may characterize continuity purely in terms of open sets. The notion of closeness is used only when it comes to defining what an open set is. We now turn to the formal definition.
 A topological space is a set X together with a collection U of subsets of X (called the “open sets ”) satisfying the following axioms.
 

@@ -5,10 +5,10 @@ II.3.   The Development of Abstract Algebra                                     
 likewise something we can vary. A property such as
 Poincaré invoked, which was truly beyond our control,           II.3 The Development of
 was not physical but geometric.                                      Abstract Algebra
-                                                                      Karen Hunger Parshall
+                                                                      Karen Hunger Par shall
                  10    Looking Ahead
 In the end, the question was resolved, but not in                                  1   Introduction
-its own terms. Two developments moved mathemati-
+its own terms. Two developments moved mathemat i-
                                                                 What is algebra? To the high school student encoun-
 cians beyond the simple dichotomy posed by Poincaré.
                                                                 tering it for the first time, algebra is an unfamiliar
@@ -23,10 +23,10 @@ and opened the way to axiomatic studies of many
 kinds. Hilbert’s work captured very well the idea that
                                                                 express straight lines as equations of the form y =
 if mathematics is sound, it is sound because of the
-                                                                ax + b, which can be graphed and thereby visualized in
-nature of its reasoning, and led to profound investi-
+                                                                ax + b, which can be graphed and there by visualized in
+nature of its reasoning, and led to profound invest i-
                                                                 the Cartesian plane. Further more, by manipulating and
-gations in mathematical logic. And in 1915 Einstein
+ga tions in mathematical logic. And in 1915 Einstein
                                                                 interpreting these equations, it is possible to determine
 proposed his general theory of relativity, which is in
                                                                 such things as what a given line’s root is (if it has one)—
@@ -36,13 +36,13 @@ in mathematics was restored; our sense of geometry
                                                                 is—that is, how steep or flat it appears in the plane
 was much enlarged, and our insights into the rela-
                                                                 relative to the axis system. There are also techniques
-tionships between geometry and space became consid-
+tion ships between geometry and space became consid-
                                                                 for solving simultaneous equations, or equivalently for
 erably more sophisticated. Einstein made full use of
                                                                 determining when and where two lines intersect (or
 contemporary ideas about geometry, and his achieve-
                                                                 demonstrating that they are parallel).
-ment would have been unthinkable without Riemann’s
+ment would have been unthinkable with out Riemann’s
                                                                    Just when there already seem to be a lot of tech-
 work. He described gravity as a kind of curvature in the
                                                                 niques and abstract manipulations involved in deal-
@@ -61,7 +61,7 @@ Further Reading
                                                                 curve? Given two curves, where do they intersect?
 Bonola, R. 1955. History of Non-Euclidean Geometry, trans-         Suppose now that the same high school student, hav-
   lated by H. S. Carslaw and with a preface by F. Enriques.     ing mastered this sort of algebra, goes on to university
-  New York: Dover.                                              and attends an algebra course there. Essentially gone
+  New York: Dover.                                              and at tends an algebra course there. Essentially gone
 Euclid. 1956. The Thirteen Books of Euclid’s Elements, 2 nd
                                                                 are the by now familiar x’s, y’s, a’s, and b’s; essen-
   edn. New York: Dover.
@@ -86,8 +86,8 @@ Poincaré, H. 1891. Les géométries non-Euclidiennes. Revue
 $96$
 
 build entire theories of groups or rings or fields. These abstract theories may then be applied in diverse settings where the basic axioms are satisfied but where it may not be at all apparent a priori that a group or a ring or a field may be lurking. This, in fact, is one of modern algebra’s great strengths: once we have proved a general fact about an algebraic structure, there is no need to prove that fact separately each time we come across an instance of that structure.
-This abstract approach allows us to recognize that contexts that may look quite different are in fact importantly similar. How is it that two endeavors--the high school analysis of polynomial equations and the modern algebra of the research mathematician--so seemingly different in their objectives, in their tools, and in their philosophical outlooks are both called “algebra”? Are they even related? In fact, they are, but the story of how they are is long and complicated. $2$ Algebra before There Was Algebra:
-From Old Babylon to the Hellenistic Era Solutions of what would today be recognized as firstand second-degree polynomial equations may be found in Old Babylonian cuneiform texts that date to the second millennium b.c.e. However, these problems were neither written in a notation that would be recognizable to our modern-day high school student nor solved using the kinds of general techniques so characteristic of the high school algebra classroom. Rather, particular problems were posed, and particular solutions obtained, from a series of recipe-like steps.
+This abstract approach allows us to recognize that contexts that may look quite different are in fact importantly similar. How is it that two endeavors--the high school analysis of polynomial equations and the modern algebra of the research mathematician--so seemingly different in their objectives, in their tools, and in their philosophical out looks are both called “algebra”? Are they even related? In fact, they are, but the story of how they are is long and complicated. $2$ Algebra before There Was Algebra:
+From Old Babylon to the Hellenistic Era Solutions of what would today be recognized as first and second-degree polynomial equations may be found in Old Babylonian cuneiform texts that date to the second millennium b.c.e. However, these problems were neither written in a notation that would be recognizable to our modern-day high school student nor solved using the kinds of general techniques so characteristic of the high school algebra classroom. Rather, particular problems were posed, and particular solutions obtained, from a series of recipe-like steps.
 No general theoretical justification was given, and the problems were largely cast geometrically, in terms of measurable line segments and surfaces of particular areas. Consider, for example, this problem, translated and transcribed from a clay tablet held in the British Museum (catalogued as $BM 13901$ , problem 1) that dates from between 1800$and$1600 b.c.e.: The surface of my confrontation I have accumulated:
 
 $45$ is it. $1$ , the projection, you posit. The moiety of $1$ you break, $30$ and $30$ you make hold. $15$ to $45$ you append: by $1$ , $1$ is equalside. $30$ which you have made hold in the inside you tear out: $30$ the confrontation. This may be translated into modern notation as the
@@ -117,9 +117,9 @@ II.3.   The Development of Abstract Algebra                                     
    A                   C                   B         D       ematician of great importance to the present story,
                                                              Diophantus of Alexandria (who was active in the mid-
                                                              dle of the third century c.e.). Like Archimedes, he posed
-                                                     M       particular problems, but he solved them in an algorith-
+                                                     M       particular problems, but he solved them in an alg or ith-
    K                  L                  H                   mic style much more reminiscent of the Old Babylo-
-                                                             nian texts than of Archimedes’ geometrical construc-
+                                                             nian texts than of Archimedes’ geometrical con struc-
                                                              tions, and as a result he was able to begin to exceed the
                                                              bounds of geometry.
                                                                 In his text Arithmetica, Diophantus put forward gen-
@@ -135,11 +135,11 @@ with anything but positive real quantities, since the        abbreviations that 
 sides of a geometrical figure could only be measured in       positive and negative powers of the unknown as well
 those terms. Negative quantities did not and could not       as with the unknown to the zeroth power. Thus, what-
 enter into Euclid’s fundamentally geometrical mathe-         ever his mathematics was, it was not the “geometrical
-matical world. Nevertheless, in the historical literature,   algebra” of Euclid and Archimedes.
+mat ical world. Nevertheless, in the historical literature,   algebra” of Euclid and Archimedes.
 Euclid’s Book II has often been described as dealing            Consider, for example, this problem from Book II
 with “geometrical algebra,” and, because of our easy         of the Arithmetica: “To find three numbers such that
 translation of the book’s propositions into the lan-         the square of any one of them minus the next fol-
-guage of algebra, it has been argued, albeit ahistori-       lowing gives a square.” In terms of modern notation,
+guage of algebra, it has been argued, albeit a his tori-       lowing gives a square.” In terms of modern notation,
 cally, that Euclid had algebra but simply presented it       he began by restricting his attention to solutions of
 geometrically.                                               the form (x + 1, 2 x + 1, 4 x + 1). It is easy to see that
    Although Euclid’s geometrical standard of rigor came      (x+1)2 −(2 x+1) = x 2 and (2 x+1)2 −(4 x+1) = 4 x 2 , so
@@ -157,7 +157,7 @@ particular problems geometrically. As long as geom-          try to find all pos
 etry defined the standard of rigor, not only negative            Diophantus, who lived more than four centuries after
 numbers but also what we would recognize as poly-            Archimedes’ death, was doing neither geometry nor
 nomial equations of degree higher than three effec-           algebra in our modern sense, yet the kinds of problems
-tively fell outside the sphere of possible mathemati-        and the sorts of solutions he obtained for them were
+tively fell out side the sphere of possible mathemat i-        and the sorts of solutions he obtained for them were
 cal discussion. (As in the example from Euclid above,        very different from those found in the works of either
 quadratic polynomials result from the geometrical pro-       Euclid or Archimedes. The extent to which Diophantus
 cess of completing the square; cubics could conceiv-         created a wholly new approach, rather than drawing on
@@ -188,7 +188,7 @@ a key step that would ultimately suggest a move away from the geometrical soluti
 Following al-Khwārizmı̄, Khayyam provided geometrical justifications, yet his work, even more than that of his predecessor, may be seen as closer to a general problem-solving technique for specific cases of equations, that is, closer to the notion of algebra. The Persian mathematician al-Karajı̄ (who flourished in the early eleventh century) also knew well and appreciated the geometrical tradition stemming from Euclid’s Elements.
 However, like Abū-Kāmil, he was aware of the Diophantine tradition too, and synthesized in more general terms some of the procedures Diophantus had laid out in the context of specific examples in the Arithmetica. Although Diophantus’s ideas and style were known to these and other medieval Islamic mathematicians, they would remain unknown in the Latin West until their rediscovery and translation in the sixteenth century.
 Equally unknown in the Latin West were the accomplishments of Indian mathematicians, who had succeeded in solving some quadratic equations algorithmically by the beginning of the eighth century and who, like Bragmagupta four hundred years later, had techniques for finding integer solutions to particular examples of what are today called Pell’s equations, namely, equations of the form $ax^{2} + b = y^{2}$ , where $a$ and $b$ are integers and a is not a square. $4$ Algebra before There Was Algebra:
-The Latin West Concurrent with the rise of Islam in the East, the Latin West underwent a gradual cultural and political stabilization in the centuries following the fall of the Roman Empire. By the thirteenth century, this relative stability had resulted in the firm entrenchment of the Catholic Church as well as the establishment both of universities and of an active economy. Moreover, the Islamic conquest of most of the Iberian peninsula in the eighth century and the subsequent establishment there of an Islamic court, library, and
+The Latin West Concurrent with the rise of Islam in the East, the Latin West under went a gradual cultural and political stabilization in the centuries following the fall of the Roman Empire. By the thirteenth century, this relative stability had resulted in the firm entrenchment of the Catholic Church as well as the establishment both of universities and of an active economy. More over, the Islamic conquest of most of the Iberian peninsula in the eighth century and the subsequent establishment there of an Islamic court, library, and
 
 II.3.   The Development of Abstract Algebra                                                                          99
 
@@ -199,7 +199,7 @@ found its position on the Iberian peninsula increas-         lem: could algorith
 ingly compromised in the twelfth and thirteenth cen-         various cases of the cubic? And, if so, could these be
 turies, this Islamic learning, as well as some of the        justified geometrically with proofs similar in spirit to
 ancient Greek scholarship that the medieval Islamic          those found in the texts of al-Khwārizmı̄ and Fibonacci?
-scholars had preserved in Latin translation, began to           Among several sixteenth-century Italian mathemati-
+scholars had preserved in Latin translation, began to           Among several sixteenth-century Italian mathemat i-
 filter into medieval Europe. In particular, fibonacci          cians who eventually managed to answer the first ques-
 [VI.6](/part-06/leonardo-of-pisa-known-as-fibonacci-vi57-christian-felix-klein-18491925), son of an influential administrator within the        tion in the affirmative was cardano [VI.7](/part-06/girolamo-cardano-15011576). In his Ars
 Pisan city state, encountered al-Khwārizmı̄’s text and      Magna, or The Great Art, of 1545, he presented algo-
@@ -218,7 +218,7 @@ into the Latin West.                                         barely setting out.
    Fibonacci’s presentation, especially of the practi-       geometrical shell in which it had been encased.
 cal aspects of al-Khwārizmı̄’s text, soon became well-
 known in Europe. So-called abacus schools (named                              5   Algebra Is Born
-after Fibonacci’s text and not after the Chinese calculat-
+after Fibonacci’s text and not after the Chinese calcul at-
 ing instrument) sprang up all over the Italian peninsula,    This process was accelerated by the rediscovery and
 particularly in the fourteenth and fifteenth centuries,       translation into Latin of Diophantus’s Arithmetica in
 for the training of accountants and bookkeepers in an        the 1560 s, with its abbreviated presentational style
@@ -248,13 +248,13 @@ $100$
 etc.; and “compared magnitudes”--that is, coefficients (B length) of dimension one, (B plane) of dimension two, (B solid) of dimension three, etc. In the light of his law of homogeneity, then, Viète could legitimately perform the operation (A cube)  +  (B plane) (A side) (or x ${}^{3} +$ bx in our notation), since the dimension of (A cube) is three, as is that of the product of the two-dimensional coefficient (B plane) and the one-dimensional variable (A side), but he could not legally add the three dimensional variable (A cube) to the two-dimensional product of the one-dimensional
 coefficient (B length) and the one-dimensional variable (A side) (or , again, x ${}^{3} +$ bx in our notation). Be this as it may, his “analytic art” still allowed him to add, subtract, multiply, and divide letters as opposed to specific numbers, and those letters, as long as they satisfied the law of homogeneity, could be raised to the second, third, fourth, or, indeed, any power. He had a rudimentary algebra, although he failed to apply it to curves.
 The first mathematicians to do that were fermat [VI.12](/part-06/pierre-fermat-1601665) and descartes [VI.11](/part-06/ren-descartes-15961650) in their independent development of the analytic geometry so familiar to the high school algebra student of today. Fermat, and others like Thomas Harriot ( $ca$ . $1560 - 1621)$ in England, were influenced in their approaches by Viète, while Descartes not only introduced our present-day notational convention of representing variables by x’$s$ and $y$’s and constants by a’s, b’s, and c’s but also began the arithmetization of algebra.
-He introduced a unit that allowed him to interpret all geometrical magnitudes as line segments, whether they were x’s, $x^{2}$ ’s, $x^{3}$ ’s, $x^{4}$ ’s, or any higher power of x, thereby removing concerns about homogeneity. Fermat’s main work in this direction was $a_{1636}$ manuscript written in Latin, entitled “Introduction to plane and solid loci” and circulated among the early seventeenth-century mathematical cognoscenti; Descartes’s was La Géométrie, written in French as one of three appendices to his philosophical tract, Discours de la Méthode, published in 1637 .
-Both were regarded as establishing the identification of geometrical curves with equations in two unknowns, or in other words as establishing analytic geometry and thereby introducing algebraic techniques into the solution of what had previously been considered geometrical problems. In Fermat’s case, the curves were lines or conic sections--quadratic expressions in $x$ and $y$; Descartes did this too, but he also considered equations more generally, tackling questions about the roots of polynomial equations that were connected with transforming and reducing the polynomials.
+He introduced a unit that allowed him to interpret all geometrical magnitudes as line segments, whether they were x’s, $x^{2}$ ’s, $x^{3}$ ’s, $x^{4}$ ’s, or any higher power of x, there by removing concerns about homogeneity. Fermat’s main work in this direction was $a_{1636}$ manuscript written in Latin, entitled “Introduction to plane and solid loci” and circulated among the early seventeenth-century mathematical cognoscenti; Descartes’s was La Géométrie, written in French as one of three appendices to his philosophical tract, Discours de la Méthode, published in 1637 .
+Both were regarded as establishing the identification of geometrical curves with equations in two unknowns, or in other words as establishing analytic geometry and there by introducing algebraic techniques into the solution of what had previously been considered geometrical problems. In Fermat’s case, the curves were lines or conic sections--quadratic expressions in $x$ and $y$; Descartes did this too, but he also considered equations more generally, tackling questions about the roots of polynomial equations that were connected with transforming and reducing the polynomials.
 
 II. The Origins of Modern Mathematics
 
 In particular, although he gave no proof or even general statement of it, Descartes had a rudimentary version of what we would now call the fundamental theorem of algebra [V.13](/part-05/the-fundamental-theorem-of-algebra), the result that a polynomial equation $x^{n} + a^{n} - {}^{1}x^{n} - {}^{1} +$ · · · $+ a^{1}x + a^{0}$ of degree n has precisely n roots over the field C of complex numbers. For example, while he held that a given polynomial of degree n could be decomposed into n linear factors, he also recognized that the cubic $x^{3} - 6x^{2} + 13x - 10 = 0$ has three roots:
-the real root $2$ and two complex roots. In his further exploration of these issues, moreover, he developed algebraic techniques, involving suitable transformations, for analyzing polynomial equations of the fifth and sixth degrees. Liberated from homogeneity concerns, Descartes was thus able to use his algebraic techniques freely to explore territory where the geometrically bound Cardano had clearly been reluctant to venture.
+the real root $2$ and two complex roots. In his further exploration of these issues, more over, he developed algebraic techniques, involving suitable transformations, for analyzing polynomial equations of the fifth and sixth degrees. Liberated from homogeneity concerns, Descartes was thus able to use his algebraic techniques freely to explore territory where the geometrically bound Cardano had clearly been reluctant to venture.
 newton [VI.14](/part-06/isaac-newton-16421727) took the liberation of algebra from geometrical concerns a step further in his Arithmetica Universalis (or Universal Arithmetic) of 1707 , arguing for the complete arithmetization of algebra, that is, for modeling algebra and algebraic operations on the real numbers and the usual operations of arithmetic. Descartes’s La Géométrie highlighted at least two problems for further algebraic exploration: the fundamental theorem of algebra and the solution of polynomial equations of degree greater than four.
 Although eighteenth-century mathematicians like d’alembert [VI.20](/part-06/jean-le-rond-dalembert-17171783) and euler [VI.19](/part-06/leonhard-euler-17071783) attempted proofs of the fundamental theorem of algebra, the first person to prove it rigorously was gauss [VI.26](/part-06/carl-friedrich-gauss-17771855), who gave four distinct proofs over the course of his career.
 His first, an algebraic geometrical proof, appeared in his doctoral dissertation of 1799 , while a second, fundamentally different proof was published in 1816 , which in modern terminology essentially involved constructing the polynomial’s splitting field. While the fundamental theorem of algebra established how many roots a given polynomial equation has, it did not provide insight into exactly what those roots were or how precisely to find them.
@@ -290,7 +290,7 @@ substitutions to obtain a solution to the general prob-       polynomial equatio
 lem of solvability of polynomial equations by radicals.       ining it from the abstract perspective of groups and
 Although his approach borrowed from earlier ideas,            their internal structure.
 it was in one important respect fundamentally new.              Galois’s ideas, although sketched in the early 1830 s,
-Whereas prior efforts had aimed at deriving an explicit        did not begin to enter into the broader mathemati-
+Where as prior efforts had aimed at deriving an explicit        did not begin to enter into the broader mathemat i-
 algorithm for calculating the roots of a polynomial of a      cal consciousness until their publication in 1846 in
 given degree, Galois formulated a theoretical process         liouville’s [VI.39](/part-06/joseph-liouville-18091882) Journal des Mathématiques Pures et
 based on constructs more general than but derived             Appliquées, and they were not fully appreciated until
@@ -308,14 +308,14 @@ field. It could, however, be reducible over some larger        group theory, ste
 field. Consider, for example, the polynomial x 2 + 1 as        equations by radicals, had intertwined with three oth-
 a polynomial over R, the field of real numbers. While          ers: the abstract notion of a group defined in terms
 we know from high school algebra that this polyno-            of a group multiplication table, which was formulated
-mial does not factor into a product of two real, linear       by cayley [VI.46](/part-06/arthur-cayley-18211895), the structural work of mathemati-
+mial does not factor into a product of two real, linear       by cayley [VI.46](/part-06/arthur-cayley-18211895), the structural work of mathemat i-
 factors (that is, there are no real numbers r1 and r2         cians like Ludwig Sylow (1832–1918) and Otto Hölder
 such that x 2 + 1 = (x − r1 )(x − r2 )), it does factor       (1859–1937), and the geometrical work of lie [VI.53](/part-06/sophus-lie-18421899)
 over C, the field of complex numbers, and, specifically,        and klein [VI.57]. By 1893, when Heinrich Weber (1842–
                    . qrt{x} 2 + 1 = (x + −1)(x − −1). Thus, if we take all              1914) codified much of this earlier work by giving the
                               √
 numbers of the form a + b −1, where a and b belong            first actual abstract definitions of the notions both of
-to R, then we enlarge R to a new field C in which the          group and field, thereby recasting them in a form much
+to R, then we enlarge R to a new field C in which the          group and field, there by recasting them in a form much
 polynomial x 2 + 1 is reducible. If F is a field and x is an   more familiar to the modern mathematician, groups
 element of F that does not have an nth root in F, then by     and fields had been shown to be of central impor-
 a similar process we can adjoin an element y to F and         tance in a wide variety of areas, both mathematical and
@@ -333,7 +333,7 @@ new, enlarged field via an analysis of the (finite) group       systems of linea
 of substitutions (automorphisms of K) that leave invari-      ables. Although his work remained unknown at the
 ant all rational relations of the n roots of f (x) = 0. The   time, Leibniz considered three linear equations in three
 group-theoretic aspects of Galois’s analysis were par-        unknowns and determined their simultaneous solvabil-
-ticularly potent; he introduced the notions, although         ity based on the value of a particular expression in
+ticular ly potent; he introduced the notions, although         ity based on the value of a particular expression in
 not the modern terminology, of a normal subgroup of a         the coefficients of the system. This expression, equiva-
 group, a factor group, and a solvable group. Galois thus      lent to what Cauchy would later call the determinant
 
@@ -420,14 +420,14 @@ and algebraic analysis of new types of number systems       analyze still other 
 that extended the integers in much the same way that        Eisenstein, dirichlet [VI.36], Hermite, kummer [VI.40],
 Galois had extended fields. This flexibility to create and    and kronecker [VI.48](/part-06/leopold-kronecker-18231891), among others, pushed these
 analyze new number systems was to become one of the         ideas forward in this Gaussian spirit, it was dedekind
-hallmarks of modern algebra as it would develop into        [VI.50](/part-06/julius-wilhelm-richard-dedekind-18311916) in his tenth supplement to Dirichlet’s Vorlesun-
+hallmarks of modern algebra as it would develop into        [VI.50](/part-06/julius-wilhelm-richard-dedekind-18311916) in his tenth supplement to Dirichlet’s Vor le sun-
 the twentieth century.                                      gen über Zahlentheorie (Lectures on Number Theory)
-   One of the first to venture down this path was Euler.     of 1871 who fundamentally re conceptual iz ed the prob-
+   One of the first to venture down this path was Euler.     of 1871 who fundamentally reconceptualized the prob-
 In the proof of Fermat’s last theorem for the n = 3         lem by treating it not number theoretically but rather
 case that he gave in his Elements of Algebra of 1770,       set theoretically and axiomatically. Dedekind intro-
 Euler introduced the system of numbers of the form          duced, for example, the general notions—if not what
       . qrt{a} + b −3, where a and b are integers. He then blithely      would become the precise axiomatic definitions—of
-proceeded to factorize them into primes, without fur-       fields, rings, ideals [III.81 §2](/part-03/rings-ideals-and-modules), and modules [III.81 §3](/part-03/rings-ideals-and-modules)
+proceeded to factorize them into primes, with out fur-       fields, rings, ideals [III.81 §2](/part-03/rings-ideals-and-modules), and modules [III.81 §3](/part-03/rings-ideals-and-modules)
 ther justification, just as he would have factorized         and analyzed his number-theoretic setting in terms of
 ordinary integers. By the 1820 s and 1830 s, Gauss had        these new, abstract constructs. His strategy was, from
 launched a more systematic study of numbers that are        a philosophical point of view, not unlike that of Galois:
@@ -438,11 +438,11 @@ showed that, like the integers, the Gaussian integers are   at a “higher” le
 closed under addition, subtraction, and multiplication;     noether [VI.76](/part-06/emmy-noether-18821935) and her students, among them Bartel
 he defined the notions of unit, prime, and norm in order     van der Waerden (1903–96), would develop Dedekind’s
 to prove an analogue of the fundamental theorem             ideas further to help create the structural approach to
-of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic) for them. He thereby demon-            algebra so characteristic of the twentieth century.
+of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic) for them. He there by demon-            algebra so characteristic of the twentieth century.
 strated that there were whole new algebraic worlds to          Parallel to this nineteenth-century, number-theoretic
 create and explore. (See algebraic numbers [IV.1](/part-04/number-theory) for       evolution of the notion of “number” on the continent of
 more on these topics.)                                      Europe, a very different set of developments was taking
-   Whereas Euler had been motivated in his work by          place, initially in the British Isles. From the late eigh-
+   Where as Euler had been motivated in his work by          place, initially in the British Isles. From the late eigh-
 Fermat’s last theorem, Gauss was trying to generalize       teenth century, British mathematicians had debated
 the law of quadratic reciprocity [V.28](/part-05/from-quadratic-reciprocity-to-vi38-augustus-de-morgan-18061871) to a law of         not only the nature of number—questions such as,
 
@@ -466,7 +466,7 @@ this also provided a way of representing numbers in
 the complex plane, and so he naturally asked whether         By 1900, many new algebraic structures had been iden-
 he could construct algebraic, ordered triples so as to       tified and their properties explored. Structures that
 represent points in 3-space. After a decade of con-          were first isolated in one context were then found to
-templating this question off and on, Hamilton finally          appear, sometimes unexpectedly, in others: thus, these
+templating this question off and on, Hamilton finally          appear, some times unexpectedly, in others: thus, these
 answered it not for triples but for quadruples, the so-      new structures were mathematically more general than
 called quaternions [III.76](/part-03/quaternions-octonions-and-normed-iv25-probabilistic-models-of-critical-phenomena), “numbers” of the form           the problems that had led to their discovery. In the
 (a, b, c, d) = a+bi+cj+dk, where a, b, c, and d are real     opening decades of the twentieth century, algebraists
@@ -476,7 +476,7 @@ dimensional case, addition is defined component-wise,         such as groups, fi
 but multiplication, while definable in such a way that        at a more abstract level. For example, what are all of
 every nonzero element has a multiplicative inverse, is       the finite simple groups? Can they be classified? (See
 not commutative. Thus, this new number system did            the classification of finite simple groups [V.7](/part-05/the-classication-of-finite-simple-groups).)
-not obey all of the “usual” laws of arithmetic.              Moreover, inspired by the set-theoretic and axiomatic
+not obey all of the “usual” laws of arithmetic.              More over, inspired by the set-theoretic and axiomatic
    Although some of Hamilton’s British contemporaries        work of cantor [VI.54](/part-06/georg-cantor-18451918), Hilbert, and others, they came
 questioned the extent to which mathematicians were           to appreciate the common standard of analysis and
 free to create such new mathematical worlds, others,         comparison that axiomatization could provide. Coming
@@ -497,5 +497,5 @@ that distinguishes their behavior fundamentally from         characterize algebr
 that of the integers. As it flourished in the hands of
 mathematicians like Benjamin Peirce (1809–80), frobe-        Further Reading
 nius [VI.58](/part-06/ferdinand-georg-frobenius-18491917), Georg Scheffers (1866–1945), Theodor            Bashmakova, I., and G. Smirnova. 2000. The Beginnings and
-Molien (1861–1941), cartan [VI.69](/part-06/lie-joseph-cartan-18691951), and Joseph H. M.           Evolution of Algebra, translated by A. Shenitzer. Washing-
+Molien (1861–1941), cartan [VI.69](/part-06/lie-joseph-cartan-18691951), and Joseph H. M.           Evolution of Algebra, translated by A. Shenitzer. Wa shing-
 Wedderburn (1882–1948), among others, this line of             ton, DC: The Mathematical Association of America.

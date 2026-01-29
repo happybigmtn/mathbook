@@ -8,7 +8,7 @@ b. Richmond, England, 1821; d. Cambridge, England, 1895       now referred to as
 Algebra; geometry; mathematical astronomy                     forms. He discovered Cayley’s formula for the general
                                                               form of covariants of binary forms and Cayley’s law for
 At the beginning of his career in the 1840 s, Cayley           counting them. In the Sixth Memoir (1859), he demon-
-laid down subjects that informed much of his later            strated that euclidean geometry [I.3 §6.2](/part-01/fundamental-definitions) was part
+laid down subjects that in formed much of his later            strated that euclidean geometry [I.3 §6.2](/part-01/fundamental-definitions) was part
 research. The novelties of his very first undergradu-          of projective geometry [I.3 §6.7](/part-01/fundamental-definitions) rather than the con-
 ate paper, “On a theorem in the geometry of position”         verse. The idea of a projective metric (Cayley’s abso-
 (1841), are the now-standard notation for determi-            lute) was seen by klein [VI.57] in the 1870 s as the
@@ -21,10 +21,10 @@ mapping x → q −1 xq, a result that led him to the             tic planetary 
 Cayley–Klein parameters. He outlined the nonassocia-          an assiduous attention to detail. His work on the lunar
 tive system of the octaves (cayley numbers [III.76](/part-03/quaternions-octonions-and-normed-iv25-probabilistic-models-of-critical-phenomena)),         theory was noteworthy, and in one long calculation he
 the intersection of curves (the Cayley–Bacharach the-         helped to settle an Anglo-French controversy by veri-
-orem), and a dual curve called the Cayleyan. In major         fying the correct value for the secular acceleration of
+orem), and a dual curve called the Cayley an. In major         fying the correct value for the secular acceleration of
 papers, he described a theory of multilinear determi-         the Moon, which had been established by John Couch
 nants and elliptic functions [V.31](/part-05/the-riemannroch-theorem) as doubly infi-            Adams in 1853.
-nite products. In concert with George Salmon he investi-        Cayley returned to the academic world in 1863 as
+nite products. In concert with George Salmon he invest i-        Cayley returned to the academic world in 1863 as
 gated the famous twenty-seven lines that lie in a cubic       the founding Sadleirian Professor of Pure Mathemat-
 surface. The most important studies among his juve-           ics at Cambridge. In 1868 Paul Gordan startled invari-
 nilia, though, were his first steps in invariant theory        ant theorists by proving that invariants and covariants
@@ -41,7 +41,7 @@ saw that not only were matrices useful as a notational        gramming, and grou
 device, but they also constituted a study in their own        ley’s theorem). In graph theory, the number of dis-
 right. Not generally an excitable person, at the point        tinct labeled trees with n nodes being nn−2 is known
 of discovery he declared the Cayley–Hamilton theorem          as Cayley’s graph theorem. He brought his theoret-
-as “very remarkable” and generations of mathemati-            ical knowledge of graphical trees to bear on the prob-
+as “very remarkable” and generations of mathemat i-            ical knowledge of graphical trees to bear on the prob-
 cians have shared his delight. Matrix algebra was used        lem of counting isomers in organic chemistry, thus
 in his solution of the Cayley–Hermite problem, which          prompting questions about the actual existence of cer-
 required a description of those linear transformations        tain chemical compounds that have since been dis-

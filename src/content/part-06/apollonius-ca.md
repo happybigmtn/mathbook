@@ -24,24 +24,24 @@ theorems.” These are propositions that set the limits          to the West, as
 of possibility of a construction, or the limits of valid-      arithmetical calculation. Although the text was clearly
 ity of some property of a geometrical configuration,            based on Indian writings, in Europe the techniques
 given a certain number of known positions or known             became particularly associated with al-Khwārizmı̄’s
-objects at the outset. Indeed, several of the proposi-         name in the form of algorism (from which the modern
+objects at the outset. Indeed, several of the pro posi-         name in the form of algorism (from which the modern
 tions in the Conics are about loci, i.e., geometrical con-     term “algorithm” is derived).
 figurations consisting of all the points sharing a certain         Al-Khwārizmı̄’s al-Kitāb al-mukhtas.ar fı̄ h
                                                                                                                . isāb al-jabr
-family of properties. Apollonius criticizes euclid [VI.2](/part-06/euclid-ca)      wa’l-muqābala (“The compendious book on calcula-
+family of properties. Apollonius criticizes euclid [VI.2](/part-06/euclid-ca)      wa’l-muqābala (“The compendious book on calcul a-
 for not having provided an exhaustive solution to the          tion by completion and balancing”) became the starting
-construction of the three-line and four-line locus (con-       point for the subject of algebra for Islamic mathemati-
+construction of the three-line and four-line locus (con-       point for the subject of algebra for Islamic mathemat i-
 figurations of three or four lines, arranged so that they       cians. A work of elementary practical mathematics, it
 have specific properties).                                      is written in three parts: one was devoted to solving
    In terms of demonstrative methods, Apollonius is            equations, one to practical mensuration (areas and vol-
 in the axiomatic-deductive mold: general enunciations,         umes), and one to problems that arose mainly from
 lettered diagrams, each step justified by appeal to             the complicated Islamic laws of inheritance (involving
 undemonstrated premises or previous proofs. Instead            arithmetic and simple linear equations). No algebraic
-of indirect methods, we find a real mastery of the intri-       symbolism is employed: everything, including numer-
+of in direct methods, we find a real mastery of the intri-       symbolism is employed: everything, including numer-
 cacies (and power) of proportion theory. At the same           als, is expressed in words. The text opens with a brief
 time, his propositions easily lend themselves to the           discussion of the place-value system and then deals
 consideration of different subcases: when, for instance,        with equations of the first and second degrees. Remark-
-a certain line falls inside, outside, or on the vertex of a    ably, al-Khwārizmı̄ did not regard these equations just
+a certain line falls inside, out side, or on the vertex of a    ably, al-Khwārizmı̄ did not regard these equations just
 conical surface. Apollonius, in other words, combines a        as a means for solving problems, as his predecessors
 systematic approach with an almost playful fascination         had done, but studied them in their own right, classi-
 with exploring the possibilities of mathematical objects       fying them into six separate types. In modern notation

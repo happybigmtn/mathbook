@@ -8,7 +8,7 @@ P be the point (−1, 2) (which lies on the curve since       proved it.)
 law, then you obtain the point (−5 248 681/4 020 025,       equation x 3 + y 3 = z 3 so that we were looking at a
 16 718 705 378/8 060 150 125). In general, the number       curve rather than a surface. But we obviously cannot
 of digits needed to express the point n P grows expo-        always do that. For instance, if we apply the same pro-
-nentially with n.                                           cedure to the equation x 5 + y 5 + z5 = w 5 , then we
+nent i ally with n.                                           cedure to the equation x 5 + y 5 + z5 = w 5 , then we
    In the early twentieth century, poincaré [VI.61](/part-06/jules-henri-poincar-18541912) con-    obtain the two-dimensional surface t 5 + u5 + v 5 = 1.
 jectured that the subgroup of rational points on an         Our knowledge about rational points on varieties (that
 elliptic curve was finitely generated. This conjecture       is, sets defined by polynomial equations) of dimension
@@ -30,7 +30,7 @@ coprime. However, it is one thing to make a very gen-       Virtually all import
 eral conjecture and quite another to prove it, and for      with a notion of equivalence. For instance, we regard
 a long time the consensus was that the Mordell con-         two groups [I.3 §2.1](/part-01/fundamental-definitions) as equivalent if they are isomor-
 jecture, like many other conjectures in number theory,      phic [I.3 §4.1](/part-01/fundamental-definitions), and we regard two topological spaces
-was way beyond what anybody could prove. It therefore       [III.90](/part-03/topological-spaces) as equivalent if there is a continuous map from
+was way beyond what any body could prove. It therefore       [III.90](/part-03/topological-spaces) as equivalent if there is a continuous map from
 came as a big surprise when Gerd Faltings proved the        one to the other with a continuous inverse (in which
 conjecture in 1983.                                         case we say that they are homeomorphic). In general, a
    As a result of Faltings’s proof, our knowledge about     notion of equivalence is useful if properties that we are
@@ -39,9 +39,9 @@ theorem has subsequently been given a variety of dif-       by an equivalent one
 ferent proofs, some of them simpler than that of Falt-      erated Abelian group and H is isomorphic to G, then H
 ings. However, remarkable as these proofs are, they         is a finitely generated Abelian group.
 do have some limitations. One is that they are inef-           A useful notion of equivalence for algebraic vari-
-fective. That is, even though Faltings’s theorem tells      eties [IV.4 §7](/part-04/algebra) is that of birational equivalence. Roughly
+fec tive. That is, even though Faltings’s theorem tells      eties [IV.4 §7](/part-04/algebra) is that of birational equivalence. Roughly
 us that certain curves have finitely many rational           speaking, two varieties V and W are said to be bira-
-points, no known proof gives any bound on the sizes         tionally equivalent if there is a rational map from V to
+points, no known proof gives any bound on the sizes         tion ally equivalent if there is a rational map from V to
 of the numerators and denominators of the coordin-          W with a rational inverse. If V and W are presented as
 ates of those points, so we do not have any way of          solution sets of equations in some coordinate system,
 knowing whether we have found all of them. This             then these rational maps are just rational functions in

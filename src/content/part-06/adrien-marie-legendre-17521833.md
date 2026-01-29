@@ -5,15 +5,15 @@
 of the Jupiter–Saturn memoir in an analysis of the                 than lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813) (who was resident there from
 eccentricities and inclinations of orbits, “Recherches             1787) and laplace [VI.23](/part-06/pierre-simon-laplace-17491827), he did not quite match their
 sur le calcul intégral et sur le système du monde”                 reputation, though the range of his mathematical inter-
-(1776). Except for that, Laplace’s mathematical original-          ests was comparably wide. His professional appoint-
-ity is less notable in his analysis of planetary motion            ments were modest; however, in 1799 he took over
+(1776). Except for that, Laplace’s mathematical original-          ests was comparably wide. His professional ap point-
+ity is less not able in his analysis of planetary motion            ments were modest; however, in 1799 he took over
 than in his development of the theory of probability.              from Laplace as a graduation examiner at the École
 More in evidence in his astronomical work is his moti-             Polytechnique and remained there until his retirement
-vational drive and his power and virtuosity in calcu-              in 1816. Additionally, in 1813 he succeeded Lagrange
+vation al drive and his power and virtuosity in calcu-              in 1816. Additionally, in 1813 he succeeded Lagrange
 lation, which may indeed have been more important                  at the Bureau des Longitudes.
 through out his long career. Laplace was masterful in                  Legendre’s early research concerned the shape of
 finding rapidly convergent series, in obtaining mathe-              Earth and its external attraction to a point. Solutions of
-matical expressions incorporating terms to represent               the differential equations involved led him to examine
+mat ical expressions incorporating terms to represent               the differential equations involved led him to examine
 a multitude of physical phenomena, in justifying the               properties of the functions that are named after him;
 neglect of inconvenient quantities in order to reach               he was in rivalry with Laplace, after whom the func-
 solutions, and in giving the widest possible generality            tions were named during the nineteenth century. His
@@ -54,4 +54,4 @@ b. Paris, 1752; d. Paris, 1833
 Analysis; theory of attractions; geometry; number theory           was new; while expanded editions appeared in 1808
                                                                    and 1830, he had been quickly eclipsed on methods of
 Legendre passed his career in Paris and seems to have              proof by the Disquisitiones Arithmeticae (1801) of the
-been largely of independent means. Somewhat younger                young Gauss.
+been largely of independent means. Some what younger                young Gauss.

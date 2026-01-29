@@ -14,11 +14,11 @@ Baker, A. 1971. Imaginary quadratic fields with class num-        bers by 35, we
   ber 2. Annals of Mathematics (2) 94:139–52.                    to the original equation.
 Brauer, R. 1950. On the Zeta-function of algebraic number           As this simple example shows, it is often useful to
   fields. I. American Journal of Mathematics 69:243–50.           decompose positive integers multiplicative ly into com-
-Brauer, R. 1950. On the Zeta-function of algebraic number        ponents that cannot be broken down any further. These
+Brauer, R. 1950. On the Zeta-function of algebraic number        pone nts that cannot be broken down any further. These
   fields. II. American Journal of Mathematics 72:739–46.
                                                                  components are called prime numbers, and the fun-
 Goldfeld, D. 1985. Gauss’s class number problem for imagi-
-                                                                 damental theorem of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic) states that
+                                                                 da mental theorem of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic) states that
   nary quadratic fields. Bulletin of the American Mathemat-
   ical Society 13:23–37.
                                                                  every positive integer can be written as a product of
@@ -26,7 +26,7 @@ Granville, A., and G. Martin. 2006. Prime number races.          primes in exact
   American Mathematical Monthly 113:1–33.                        correspondence between positive integers and finite
 Gross, B., and D. Zagier. 1986. Heegner points and deriva-       products of primes. In many situations we know what
   tives of L-series. Inventiones Mathematicae 84:225–320.        we need to know about a positive integer once we have
-Heegner, K. 1952. Diophantische Analysis und Modulfunk-          decomposed it into its prime factors and understood
+Heegner, K. 1952. Diophantische Analysis und Mod ulf unk-          decomposed it into its prime factors and understood
   tionen. Mathematische Zeitschrift 56:227–53.                   those, just as we can understand a lot about molecules
 Hua, L.-K. 1942. On the least solution of Pell’s equation.
                                                                  by studying the atoms of which they are composed. For
@@ -41,13 +41,13 @@ Siegel, C. L. 1935. Über die Classenzahl quadratischer           no integer sol
 Stark, H. 1967. A complete determination of the complex          number of times in this product.)
   quadratic fields of class-number one. Michigan Mathe-
                                                                     Once one begins the process of determining which
-  matical Journal 14:1–27.
+  mat ical Journal 14:1–27.
                                                                  integers are primes and which are not, it is soon appar-
                                                                  ent that there are many primes. However, as one goes
 IV.2 Analytic Number Theory                                      further and further, the primes seem to consist of a
                                                                  smaller and smaller proportion of the positive integers.
         Andrew Granville
-                                                                 They also seem to come in a somewhat irregular pat-
+                                                                 They also seem to come in a some what irregular pat-
                     1   Introduction                             tern, which raises the question of whether there is any
                                                                  formula that describes all of them. Failing that, can one
 What is number theory? One might have thought that it            perhaps describe a large class of them? We can also ask
@@ -70,7 +70,7 @@ IV.2.   Analytic Number Theory                                                  
 in algebraic number theory (which is the main topic                  Many people dislike this proof, since it does not actu-
 of algebraic numbers [IV.1](/part-04/number-theory)) one typically considers              ally exhibit infinitely many primes: it merely shows that
 questions with answers that are given by exact formu-             there cannot be finitely many. It is more or less possi-
-las, whereas in analytic number theory, the topic of              ble to correct this deficiency by defining the sequence
+las, where as in analytic number theory, the topic of              ble to correct this deficiency by defining the sequence
 this article, one looks for good approximations. For the          x1 = 2, x2 = 3, and xk+1 = x1 x2 · · · xk + 1 for each
 sort of quantity that one estimates in analytic num-              k ⩾ 2. Then each xk must contain at least one prime
 ber theory, one does not expect an exact formula to               factor, qk say, and these prime factors must be distinct,
@@ -119,12 +119,12 @@ the symbol what terms the sum, or product, is to be
                                                                  The last equality holds because each sum in the second-
 taken over. For example, m⩾2 will be a sum over all
                                                                   last line is the sum of a geometric progression. Euler
-integers m that are greater than or equal to 2, whereas
+integers m that are greater than or equal to 2, where as
 
                                                                  then noted that if we take s = 1, the right-hand side
    p prime will be a product over all primes p.
                                                                   equals some rational number (since each pj > 1)
-        2   Bounds for the Number of Primes                       whereas the left-hand side equals . nfty. This is a contra-
+        2   Bounds for the Number of Primes                       where as the left-hand side equals . nfty. This is a contra-
                                                                   diction, so there cannot be finitely many primes. (To see
 Ancient Greek mathematicians knew that there were                 why the left-hand side is infinite when s = 1, note that
                                                                              n+1
@@ -136,7 +136,7 @@ finitely many primes, say k of them, which we will                 which tends t
 denote by p1 , p2 , . . . , pk . What are the prime factors of       During the proof above, we gave a formula for n−s
 p1 p2 · · · pk + 1? Since this number is greater than 1 it        under the false assumption that there are only finitely
 must have at least one prime factor, and this must be             many primes. To correct it, all we have to do is rewrite
-pj for some j (since all primes are contained among               it in the obvious way without that assumption:
+pj for some j (since all primes are contained among               it in the obvious way with out that assumption:
 p1 , p2 , . . . , pk ). But then pj divides both p1 p2 · · · pk                                  
                                                                                            1                1 −1
 and p1 p2 · · · pk +1, and hence their difference, 1, which                                    =         1 −       .     (1)
@@ -188,7 +188,7 @@ So how numerous are the primes? One way to get an            the number of prime
 idea is to determine the behavior of the sum analo-          is very small, this error term of 2 k is far larger than the
 gous to (3) for other sequences of integers. For instance,   quantity we are trying to estimate, and the approxima-
           2
-   n⩾1 1/n converges, so the primes are, in this sense,      tion is useless. It is quite good if k is less than a small
+   n⩾1 1/n converges, so the primes are, in this sense,      tion is use less. It is quite good if k is less than a small
 more numerous than the squares. This argument works          constant times log x, but, as we have seen, this is far
 if we replace the power 2 by any s > 1, since then, as       less than the number of primes we expect up to y if
                                                                   √
@@ -219,10 +219,10 @@ ber 3 itself. Then one removes all multiples of 5 apart      proportion of all t
 IV.2.   Analytic Number Theory                                                                                             335
 
    Even though the error term in the inclusion–exclu-                    Table 1 Primes up to various x, and
-sion principle is too large for us to use that method to                 the overcount in Gauss’s prediction.
+sion principle is too large for us to use that method to                 the over count in Gauss’s prediction.
                          √
 estimate (4) when y = x, we can still hope that (4) is
-                                                                                                            Overcount:
+                                                                                                            Over count:
 a good approximation for the number of primes up to                                                        x
                                                                                                               dt
 x: perhaps a different argument would give us a much            x          π (x) = #{primes ⩽ x}                    − π (x)
@@ -293,7 +293,7 @@ up to various powers of 10 together with the differ-          ple, with probabil
 ence between these numbers and what Gauss’s formula          infinitely many even numbers. However, it is possible
 gives. The differences are far smaller than the num-          to formulate a general principle that takes account of
 bers themselves, so his prediction is amazingly accu-        such examples.
-rate. It does seem always to be an overcount, but since         Here is an example of a use of the Gauss–Cramér
+rate. It does seem always to be an over count, but since         Here is an example of a use of the Gauss–Cramér
 the width of the last column is about half that of the       model. With the help of the central limit theorem
 
 336                                                                                     IV. Branches of Mathematics
@@ -400,7 +400,7 @@ every where about 1.                                            we go up the lin
 know that Cauchy’s residue theorem allows one to eval-         lowest height (that is, with |Im(s)| smallest), it can be
 uate the integral in (6) in terms of the “residues” of         shown to hold for at least 40% of all zeros, and it fits
 the integrand (ζ (s)/ζ(s))(x s /s), that is, the poles of      nicely with many different heuristic assertions about
-this function. Moreover, for any function f that is ana-       the distribution of primes and other sequences. Yet, for
+this function. More over, for any function f that is ana-       the distribution of primes and other sequences. Yet, for
 lytic except perhaps at finitely many points, the poles         all that, it remains an unproved hypothesis, perhaps the
 of f (s)/f (s) are the zeros and poles of f . Each pole of     most famous and tantalizing in all of mathematics.
 f (s)/f (s) has order 1, and the residue is simply the            How did Riemann think of his “hypothesis”? Rie-
@@ -454,15 +454,15 @@ zeros of ζ(s) with Re(s) > 1. Then, with the help of           understand, nor 
 
 $338$
 
-is perhaps easier. Another version, which I prefer, is that, for every $N \ge 100$ , √ | log (lcm [1 , 2 , . . . , N ]) - N| \le  N($log$ N)2 . To focus on the overcount in Gauss’s guesstimate for the number of primes up to x, we use the following approximation, which can be deduced from ( $7$ ) if, and only if, the Riemann hypothesis is true: x ${}^{2} (1/$ log $t)dt -$ #{primes $\le$ x} √ $x/$ log $x$ sin (γ log x) $\approx1 + 2$ .
-(10) γ all real numbers $γ > 01$ such that $2 + iγ$ is a zero of ζ (s) The right-hand side here is the overcount in Gauss’s prediction for the number of primes up to x, divided √ by something that grows like x. When we looked at the table of primes it seemed that this quantity should be roughly constant. However, that is not quite true as we see upon examining the right-hand side. The first term on the right-hand side, the “ $1$ , ” corresponds to the contribution of the squares of the primes in ( $7$ ). The subsequent terms correspond to the terms involving the zeros of ζ (s) in ( $7$ );
-these terms have denominator γ so the most significant terms in this sum are those with the smallest values of γ. Moreover, each of these terms is a sine wave, which oscillates, half the time positive and half the time negative. Having the “log x” in there means that these oscillations happen slowly (which is why we hardly notice them in the table above), but they do happen, and indeed the quantity in ( $10$ ) does eventually get negative.
+is perhaps easier. Another version, which I prefer, is that, for every $N \ge 100$ , √ | log (lcm [1 , 2 , . . . , N ]) - N| \le  N($log$ N)2 . To focus on the over count in Gauss’s guesstimate for the number of primes up to x, we use the following approximation, which can be deduced from ( $7$ ) if, and only if, the Riemann hypothesis is true: x ${}^{2} (1/$ log $t)dt -$ #{primes $\le$ x} √ $x/$ log $x$ sin (γ log x) $\approx1 + 2$ .
+(10) γ all real numbers $γ > 01$ such that $2 + iγ$ is a zero of ζ (s) The right-hand side here is the over count in Gauss’s prediction for the number of primes up to x, divided √ by something that grows like x. When we looked at the table of primes it seemed that this quantity should be roughly constant. However, that is not quite true as we see upon examining the right-hand side. The first term on the right-hand side, the “ $1$ , ” corresponds to the contribution of the squares of the primes in ( $7$ ). The subsequent terms correspond to the terms involving the zeros of ζ (s) in ( $7$ );
+these terms have denominator γ so the most significant terms in this sum are those with the smallest values of γ. More over, each of these terms is a sine wave, which oscillates, half the time positive and half the time negative. Having the “log x” in there means that these oscillations happen slowly (which is why we hardly notice them in the table above), but they do happen, and indeed the quantity in ( $10$ ) does eventually get negative.
 No one has yet determined a value of x for which this is negative (that is, a x value of x for which there are more than ${}^{2} (1/$ log  t)dt primes up to x), though our best guess is that the first time this happens is for $x \approx 1$ . $398 \times 10^{316}$ . How does one arrive at such a guess given that the table of primes extends only up to $10^{22}$ ? One begins by using the first thousand terms of the right-hand side of ( $10$ ) to approximate the left-hand side;
 wherever it looks as though it could be negative, one approximates with more terms, maybe a million, until one becomes pretty certain that the value is indeed negative. It is not uncommon to try to understand a given function better by representing it as a sum of sines and cosines like this; indeed this is how one studies the harmonics in music, and ( $10$ ) becomes quite compelling from this perspective. Some experts suggest that ( $10$ ) IV. Branches of Mathematics tells us that “the primes have music in them” and thus makes the Riemann hypothesis believable, even desirable.
 To prove unconditionally that x dt #{primes $\le$ x} ∼ , log $t_{2}$ the so-called prime number theorem, we can take the same approach as above but, since we are not asking for such a strong approximation to the number of primes up to x, we need to show only that the zeros near to the line Re (s) $= 1$ do not contribute much to the formula ( $7$ ). By the end of the nineteenth century this task had been reduced to showing that there are no zeros actually on the line Re (s) $= 1$ :
-this was eventually established by de la vallée poussin [VI.67](/part-06/charles-jean-de-la-valle-poussin-18661962) and hadamard [VI.65](/part-06/jacques-hadamard-18651963) in 1896 . Subsequent research has provided wider and wider subregions of the critical strip without zeros of ζ (s) (and thus improved approximations to the number of primes up to x), without coming anywhere near to proving the Riemann hypothesis. This remains as an outstanding open problem of mathematics.
+this was eventually established by de la vallée poussin [VI.67](/part-06/charles-jean-de-la-valle-poussin-18661962) and hadamard [VI.65](/part-06/jacques-hadamard-18651963) in 1896 . Subsequent research has provided wider and wider subregions of the critical strip with out zeros of ζ (s) (and thus improved approximations to the number of primes up to x), with out coming any where near to proving the Riemann hypothesis. This remains as an outstanding open problem of mathematics.
 A simple question like “How many primes are there up to x?” deserves a simple answer, one that uses elementary methods rather than all of these methods of complex analysis, which seem far from the question at hand. However, ( $7$ ) tells us that the prime number theorem is true if and only if there are no zeros of ζ (s) on the line Re (s) $= 1$ , and so one might argue that it is inevitable that complex analysis must be involved in such a proof. In 1949 Selberg and Erdős surprised the mathematical world by giving an elementary proof of the prime number theorem.
-Here, the word “elementary” does not mean “easy” but merely that the proof does not use advanced tools such as complex analysis-- in fact, their argument is a complicated one. Of course their proof must somehow show that there is no zero on the line Re (s) $= 1$ , and indeed their combinatorics cunningly masks a subtle complex analysis proof beneath the surface (read Ingham’s discussion ( 1949 ) for a careful examination of the argument).
+Here, the word “elementary” does not mean “easy” but merely that the proof does not use advanced tools such as complex analysis-- in fact, their argument is a complicated one. Of course their proof must some how show that there is no zero on the line Re (s) $= 1$ , and indeed their combinatorics cunningly masks a subtle complex analysis proof beneath the surface (read Ingham’s discussion ( 1949 ) for a careful examination of the argument).
 
 $4$
 
@@ -543,7 +543,7 @@ is also a character. This too is an important example
 that helps us, in a slightly less direct way, to recognize
                                                                analogous to the main properties of ζ(s). In particular,
 squares mod q.
-                                                               it is here that the multiplica ti vi ty of χ is all-important,
+                                                               it is here that the multiplicativity of χ is all-important,
    These characters are all real-valued, which is the
                                                                since it gives us a formula similar to (1):
 exception rather than the rule. Here is an example
@@ -573,8 +573,8 @@ the estimate we were hoping for (formula (11)), pro-
 vided that x is a little bigger than q2 .                            a xβ                        1
                                                                 x−        = (x − x β ) + x β 1 −       ∼ x(1 − β) log x.
    In what range can we prove (11) unconditionally—                  q β                         β
-that is, without the help of the generalized Riemann           This is a smaller main term than before, but it is not
-hypothesis? Although we can more or less translate the         too hard to show that it is bigger than the contribu-
+that is, with out the help of the generalized Riemann           This is a smaller main term than before, but it is not
+hypothesis? Although we can more or less translate the         too hard to show that it is bigger than the con tr ibu-
 proof of the prime number theorem over into this new           tions of all of the other zeros combined, because the
 setting, we find that it gives (11) only when x is very         Deuring–Heilbronn phenomenon implies that the Siegel
 large. In fact, x has to be bigger than an exponential         zero repels those zeros, forcing them to be far to the
@@ -592,7 +592,7 @@ ber theorem. By the way, even though this bound “x is a        formula states 
 little larger than q2 ” is far out of reach of current meth-   where h−q is the class number of the field Q( −q). A
 ods, it still does not seem to be the best answer; calcu-      class number is always a positive integer, so this result
                                                                                                     ·         √
-lations reveal that (11) seems to hold when x is just          immediately implies that L(1, ( q )) ⩾ π / q. Another
+la tions reveal that (11) seems to hold when x is just          immediately implies that L(1, ( q )) ⩾ π / q. Another
 a little bigger than q. So even the Riemann hypothesis         consequence is that h−q is small if and only if L(1, ( q· ))
 and its generalizations are not powerful enough to tell        is small. The reason this gives us information about
 us the precise behavior of the distribution of primes.         Siegel zeros is that one can show that the derivative
@@ -676,7 +676,7 @@ $342$
 It therefore came as a surprise when Maier showed, in 1984 , that, for any fixed $A > 0$ , the estimate (14) fails for infinitely many integers x, with y  =  (log x) A . His ingenious proof rests on showing that the small primes do not always have as many multiples in an interval as one might expect. Let $p^{1} = 2 < p^{2} = 3 <$ · · · be the sequence of primes. We are now interested in the size of the gaps $p^{n} + {}^{1} - p^{n}$ between consecutive primes.
 Since there are about x  /  log x primes up to x, the average difference is log x and we might ask how often the difference between consecutive primes is about average, whether the differences can get really small, and whether the differences can get really large. The Gauss Cramér model suggests that the proportion of n for which the gap between consecutive primes is more than $\lambda$ times the average, that is $p^{n} + {}^{1} - p^{n} > \lambda$ log $p^{n}$ , is approximately $e - \lambda$ ;
 and, similarly, the proportion of intervals [x , x + . ambda log x] containing exactly k primes is approximately $e - \lambda\lambda^{k}/k$ ! , a suggestion which, as we shall see, is supported by other considerations. By looking at the tail of this distribution, Cramér conjectured that lim sup $n \to \infty(p^{n} + {}^{1} - p^{n})/($ log pn)2 = 1 , and the evidence we have seems to support this (see table $2$ ). The Gauss-Cramér model does have a big drawback: it does not “know any arithmetic.” In particular, as we noted earlier, it does not predict divisibility by small primes.
-One manifestation of this failing is that it predicts that there should be just about as many gaps of length $1$ between primes as there are of length $2$ . However, there is only one gap of length $1$ , since if two primes differ by $1$ , then one of them must be even, whereas there are many examples of pairs of primes differing by $2$ , and there are believed to be infinitely many. For the model to make correct conjectures about prime pairs, we must consider divisibility by small primes in the formulation of the model, which makes it rather more complicated.
+One manifestation of this failing is that it predicts that there should be just about as many gaps of length $1$ between primes as there are of length $2$ . However, there is only one gap of length $1$ , since if two primes differ by $1$ , then one of them must be even, where as there are many examples of pairs of primes differing by $2$ , and there are believed to be infinitely many. For the model to make correct conjectures about prime pairs, we must consider divisibility by small primes in the formulation of the model, which makes it rather more complicated.
 Since there are these glaring errors in the simpler model, Cramér’s conjecture for the largest gaps between consecutive primes must be treated with a degree of suspicion. And in fact, if one corrects the model to account for divisibility by small primes, one is led to conjecture that lim sup $n \to \infty(p^{n} + {}^{1} - p^{n})/($ log pn)2 is greater than $\frac{9}{8}$ . Finding large gaps between primes is equivalent to finding long sequences of composite numbers. How about trying to do this explicitly?
 For example, we know that $n! + j$ is composite for $2 \le j \le n,$ as it is divisible by j. Therefore we have a gap of length at least n between consecutive primes, the first of which is
 
@@ -690,9 +690,9 @@ p n
 
 log $2pn113140$ . 62641327340 . 657631397720 . 67153702611120 . 681220107331480 . 7026208313232100 . 7395250560820874560 . 795326149417105996520 . 7975195813341924237660 . 81782182094054365439060 . 8311169318231874637111320 . 9206
 
-the largest prime less than or equal to $n! + 1$ . However, this observation is not especially helpful, since the average gap between primes around n! is log (n !), which is approximately equal to n log n, whereas we are looking for gaps that are larger than the average. However, it is possible to generalize this argument and show that there are indeed long sequences of consecutive integers, each with a small prime factor. In the $1930s$ , Erdős reformulated the question as follows.
+the largest prime less than or equal to $n! + 1$ . However, this observation is not especially helpful, since the average gap between primes around n! is log (n !), which is approximately equal to n log n, where as we are looking for gaps that are larger than the average. However, it is possible to generalize this argument and show that there are indeed long sequences of consecutive integers, each with a small prime factor. In the $1930s$ , Erdős reformulated the question as follows.
 Fix a positive integer z, and for each prime p $\le$ z choose an integer a p in such a way that, for as large an integer y as possible, every positive integer n $\le$ y satisfies at least one of the congruences n ≡ a p (mod p). Now let X be the product of all the primes up to z (which means, by the prime number theorem, that log X is about z), and let x be the integer between X and $2X$ such that x ≡  -  a p (mod p) for every p $\le$ z.
-(This integer exists, by the Chinese remainder theorem .) If m is an integer between $x + 1$ and $x + y,$ then $m - x$ is a positive integer less than y, so m  -  x ≡ a p (mod p) for some prime p $\le$ z. Since x ≡  -  a p (mod p), it follows that m is divisible by p. Thus, all the integers from $x + 1$ to x  +  y are composite. Using this basic idea, it can be shown that there are infinitely many primes p n for which p n $+ {}^{1} -$ p n is about (log p n) (log log p n), which is significantly larger than the average but nowhere close to Cramér’s conjecture.
+(This integer exists, by the Chinese remainder theorem .) If m is an integer between $x + 1$ and $x + y,$ then $m - x$ is a positive integer less than y, so m  -  x ≡ a p (mod p) for some prime p $\le$ z. Since x ≡  -  a p (mod p), it follows that m is divisible by p. Thus, all the integers from $x + 1$ to x  +  y are composite. Using this basic idea, it can be shown that there are infinitely many primes p n for which p n $+ {}^{1} -$ p n is about (log p n) (log log p n), which is significantly larger than the average but no where close to Cramér’s conjecture.
 
 $6$
 
@@ -707,7 +707,7 @@ $IV$ . $2$ .
 Analytic Number Theory
 
 like to show that there are infinitely many pairs of consecutive primes whose difference is much smaller than the average: that is, lim inf $n \to \infty(p^{n} + {}^{1} - p^{n})/($ log $p^{n}) =0$ . Of course, it is believed that there are infinitely many pairs of primes that differ by $2$ , but this question seems intractable for now. Until recently researchers had very little success with the question of small gaps; the best result before 2000 was that there are infinitely many gaps of size less than one-quarter of the average.
-However, a recent method of Goldston, Pintz, and Yıldırım, which counts primes in short intervals with simple weighting functions, proves that lim inf $n \to \infty(p^{n} + {}^{1} - p^{n})/($ log $p^{n}) = 0$ , and even that there are infinitely many pairs of consecutive primes with difference no larger than about log p n . Their proof, rather surprisingly, rests on estimates for primes in arithmetic progressions; in par√ ticular, that ( $11$ ) holds for almost all q up to x (as discussed earlier). Moreover, they obtain a conditional result of the following kind:
+However, a recent method of Goldston, Pintz, and Yıldırım, which counts primes in short intervals with simple weighting functions, proves that lim inf $n \to \infty(p^{n} + {}^{1} - p^{n})/($ log $p^{n}) = 0$ , and even that there are infinitely many pairs of consecutive primes with difference no larger than about log p n . Their proof, rather surprisingly, rests on estimates for primes in arithmetic progressions; in par√ ticular, that ( $11$ ) holds for almost all q up to x (as discussed earlier). More over, they obtain a conditional result of the following kind:
 if in fact ( $11$ ) holds for √ almost all q up to a little larger than x, then it follows that there exists an integer B such that $p^{n} + {}^{1} - p^{n} \le B$ for infinitely many primes p n .
 
 $7$
@@ -722,7 +722,7 @@ In fact, goldbach [VI.17](/part-06/christian-goldbach-16901764) never asked this
 $343$
 
 written as the sum of three primes (and thus every sufficiently large even integer can be written as the sum of four primes). We actually believe that every odd integer greater than $5$ is the sum of three primes but the known proofs only work once the numbers involved are large enough. In this case we can be explicit about “sufficiently large”--at the moment the proof needs them to be at least $e^{5700}$ , but it is rumored that this may soon be substantially reduced, perhaps even to $7$ . To guess at the precise number of prime pairs $q, q + 2$ with $q \le x$ we proceed as follows.
-If we do not consider divisibility by the small primes, then the Gauss-Cramér model suggests that a random integer up to x is prime with probability roughly $1/$ log  x, so we might expect $x/($ log x)2 prime pairs $q, q + 2$ up to x. However, we do have to account for the small primes, as the $q, q + 1$ example shows, so let us consider $2$ - divisibility . The proportion of random pairs of integers that are both odd is $\frac{1}{4}$ , whereas the proportion
+If we do not consider divisibility by the small primes, then the Gauss-Cramér model suggests that a random integer up to x is prime with probability roughly $1/$ log  x, so we might expect $x/($ log x)2 prime pairs $q, q + 2$ up to x. However, we do have to account for the small primes, as the $q, q + 1$ example shows, so let us consider $2$ - divisibility . The proportion of random pairs of integers that are both odd is $\frac{1}{4}$ , where as the proportion
 
 $1$
 
@@ -732,7 +732,7 @@ $11({}^{2})/({}^{4}) = 2$ . Similarly, the proportion of random pairs of integer
 
 $2$
 
-any given odd prime p  )  is ({}3)2 ( and (1 - 1/p)2 , respectively), whereas the proportion of random q such that $q$ and $q + 2$ are both not divisible by 3( or by prime p  )  is
+any given odd prime p  )  is ({}3)2 ( and (1 - 1/p)2 , respectively), where as the proportion of random q such that $q$ and $q + 2$ are both not divisible by 3( or by prime p  )  is
 
 $1{}^{3} ($ and $(1 - 2/p)$ , respectively). Adjusting our formula for each prime p we end up with the prediction #{q $\le x$ : $q$ and $q + 2$ both prime}
 
@@ -836,7 +836,7 @@ become less accurate as the power gets closer t$o^{2}$ .) In the $1920s$ Brun sh
 
 $345$
 
-n $\in$ S is divisible by exactly r prime factors of m, then we have counted $1 + r \times ( - 1)$ for the contribution of n so far, which is less than or equal to $0$ , and less than $0$ for $r \ge 2$ ; whereas we wanted to count $0$ when $r \ge 2$ (since n is not coprime to m). Thus we obtain a number that is less than the quantity we seek. To compensate for that, we add back in the number of integers in S divisible by pq for each pair of primes p $<$ q   which divide m.
+n $\in$ S is divisible by exactly r prime factors of m, then we have counted $1 + r \times ( - 1)$ for the contribution of n so far, which is less than or equal to $0$ , and less than $0$ for $r \ge 2$ ; where as we wanted to count $0$ when $r \ge 2$ (since n is not coprime to m). Thus we obtain a number that is less than the quantity we seek. To compensate for that, we add back in the number of integers in S divisible by pq for each pair of primes p $<$ q   which divide m.
 We have now counted $1 + r \times ( - 1) + r2 \times 1$ for the contribution of n, which is greater than or equal to $0$ , and greater than $0$ for $r \ge 3$ . Similarly, we subtract the number of integers divisible by pqr , etc. For each $n \in S$ we end up counting (1 - 1)r for n, where r is the number of distinct prime factors of (m , n). Expanding this sum with the binomial theorem we may reexpress this identity as follows. Let $χ^{m}(n) = 1$ if (n , $m) = 1$ and $0$ otherwise. Then
 
 $χ^{m}(n) =$
@@ -880,7 +880,7 @@ primes p for which p + 2 has at most two prime fac-
                                                             back to hardy [VI.73](/part-06/godfrey-harold-hardy-18771947) and littlewood [VI.79](/part-06/john-edensor-littlewood-18851977). This
 tors, and that Goldston, Pintz, and Yıldırım were able to
                                                             method uses the fact that, for any integer n,
-establish that there are sometimes short gaps between                                     ⎧
+establish that there are some times short gaps between                                     ⎧
                                                                           1               ⎨1 if n = 0,
 primes. These methods are also an essential ingredient                        2 iπ nt
                                                                             e        dt =
@@ -975,7 +975,7 @@ both prime
 
 m - 1 e - 2 i. ijn/m P(j/m)2 = j = 0
 
-provided m $>$ n. A similar analysis can be used here but working mod m sometimes has advantages, as it allows us to use properties of the multiplicative group mod m. Sums like P (j  /  m) in the paragraph above or more k simple sums like $n \le Ne^{2i}\pi^{n} / m$ are called exponential sums. They play a central role in many of the calculations one does in analytic number theory. There are several techniques for investigating them. (1) It is easy to calculate the sum $n \le Ne^{2i}\pi^{n}/ m$ , since it is a geometric progression.
+provided m $>$ n. A similar analysis can be used here but working mod m some times has advantages, as it allows us to use properties of the multiplicative group mod m. Sums like P (j  /  m) in the paragraph above or more k simple sums like $n \le Ne^{2i}\pi^{n} / m$ are called exponential sums. They play a central role in many of the calculations one does in analytic number theory. There are several techniques for investigating them. (1) It is easy to calculate the sum $n \le Ne^{2i}\pi^{n}/ m$ , since it is a geometric progression.
 With higher-degree polynomials one can often reduce to this case; for example, by writing $n^{1} - n^{2} = h$ we hav$e^{2}e2i\pin /m2n \le N22e2i\pi(n^{1} - n^{2})/m = n^{1}$ , n ${}^{2} \le N2e2i\pih /me4i\pihn^{2}/m$ ,
 
  = 
@@ -989,7 +989,7 @@ Deligne showed that it has absolute value less than or equal to $kp(k - {}^{1})/
 
 $347$
 
-tries in the complex plane; typically the value of the function at s is related to the value of the function at (α s  +  β)  /  (γ s  +  δ), for some integers α, β, γ, δ satisfying $αδ - βγ = 1$ . Sometimes an exponential sum can be related to the value of a modular function, and subsequently to the value of that modular function at another point, using the symmetry of the function.
+tries in the complex plane; typically the value of the function at s is related to the value of the function at (α s  +  β)  /  (γ s  +  δ), for some integers α, β, γ, δ satisfying $αδ - βγ = 1$ . Some times an exponential sum can be related to the value of a modular function, and subsequently to the value of that modular function at another point, using the symmetry of the function.
 
 $12$
 

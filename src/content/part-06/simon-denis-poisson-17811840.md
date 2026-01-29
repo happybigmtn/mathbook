@@ -11,7 +11,7 @@ Dunnington, G. W. 2003. Gauss: Titan of Science, new edition
                                                                attempt to prove that the planetary system was sta-
                                                                ble; in later work he examined this (first-order) prob-
 VI.27      Siméon-Denis Poisson
-                                                               lem specifically, as well as other aspects of perturba-
+                                                               lem specifically, as well as other aspects of perturb a-
 b. Pithiviers, France, 1781; d. Paris, 1840
 Analysis; mechanics; mathematical physics; probability         tion theory. He also analyzed rotating bodies by using
                                                                moving frames of reference (1839), in an analysis that
@@ -25,14 +25,14 @@ governing Council of the Université.                           the mid 1810 s, 
    Poisson’s research output was dominated by his              in rivalry with Cauchy.
 adherence to the traditions established by lagrange               Poisson was one of the few contemporaries to take
 [VI.22](/part-06/joseph-louis-lagrange-17361813) and laplace [VI.23](/part-06/pierre-simon-laplace-17491827). Like Lagrange he pre-             up Laplace’s work in probability theory and mathe-
-ferred to algebraize theories, and to rely if possible         matical statistics. He studied various probability dis-
+ferred to algebraize theories, and to rely if possible         mat ical statistics. He studied various probability dis-
 upon power series and variational methods. From the            tributions [III.71](/part-03/probability-distributions): not only the one named after him
 mid 1810 s he challenged the new theories of fourier            (1837, rather in passing) but also the so-called Cauchy
 [VI.25](/part-06/jean-baptiste-joseph-fourier-17681830) (especially the solving of differential equations       (1824) and Rayleigh (1830) distributions. He also exam-
 by trigonometric series and the Fourier integral) and          ined proofs of the central limit theorem [III.71 §5](/part-03/probability-distributions),
 of cauchy [VI.29](/part-06/augustin-louis-cauchy-17891857) (the new approach to real-variable           and formulated the law of large numbers [III.71 §4](/part-03/probability-distributions)
 analysis using limits, and his innovation of complex-          (his term). One of his main applications was to the old
-variable analysis). His overall achievements were much         problem of determining the probability that a triad of
+variable analysis). His over all achievements were much         problem of determining the probability that a triad of
 less significant than theirs: the main novelties were           judges would come to the correct decision in court
 the “Poisson integral,” which embedded Fourier series          cases (1837).
 within a power series; and a summation formula. He

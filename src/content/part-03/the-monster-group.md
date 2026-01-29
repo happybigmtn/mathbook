@@ -31,7 +31,7 @@ briefly explain one of the links.                              sporadic groups, 
 curves [III.21](/part-03/elliptic-curves): the quotient of the complex numbers             As well as having a starring role in the classification
 by a lattice is an elliptic curve, and every elliptic curve   theorem, the Monster group has remarkable and deep
 arises in this way. Hence to study elliptic curves, or fam-   connections with other areas of mathematics. Most
-ilies of elliptic curves, one can instead study families      notably, the smallest dimension of a faithful represen-
+ilies of elliptic curves, one can instead study families      notably, the smallest dimension of a faithful re pre sen-
 of lattices. One way of studying an object is by study-       tation [IV.9](/part-04/representation-theory) of the Monster group is 196 883, while
 ing the functions on that object, and a modular form          the coefficient of e2π iz in the important and famous
 is precisely that: a function on the collection of all lat-   “elliptic modular function” (see algebraic numbers

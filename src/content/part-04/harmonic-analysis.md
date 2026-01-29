@@ -59,11 +59,11 @@ Or instead of assuming that f is square integrable one can quantify this by intr
 
 which assign a nonnegative number (or +. nfty) to any             referred to as an operator. (In some contexts it is also
 given function and which provide some quantitative           called a transform [III.91](/part-03/transforms).) Operators may seem like
-measure of one characteristic of that function. Besides      fairly complicated mathematical objects—their inputs
+measure of one characteristic of that function. Be sides      fairly complicated mathematical objects—their inputs
 being of importance in pure harmonic analysis, quanti-       and outputs are functions, which in turn have inputs
 tative estimates involving these norms are also useful       and outputs that are usually numbers—but they are in
 in applied mathematics, for instance in performing an        fact a very natural concept since there are many sit-
-error analysis of some numerical algorithm.                  uations where one wants to transform functions. For
+error analysis of some numerical algorithm.                  ua tions where one wants to transform functions. For
    Functions tend to have infinitely many degrees of          example, differentiation can be thought of as an oper-
 freedom, and it is thus unsurprising that the number         ator, which takes a function f to its derivative df /dx.
 of norms one can place on a function is infinite as well:     This operator has a well-known (partial) inverse, inte-
@@ -108,17 +108,17 @@ ate” norms can be generalized tremendously and leads         as an operator ap
 to very powerful and convenient methods known as             are also very useful in analytic and combinatorial num-
 interpolation, which is another basic tool in this area.     ber theory, when one is faced with understanding the
    The study of a single function and all its norms          oscillation present in various expressions such as expo-
-eventually gets somewhat tiresome, though. Nearly all        nential sums. Harmonic analysis has also been applied
+eventually gets some what tiresome, though. Nearly all        nential sums. Harmonic analysis has also been applied
 fields of mathematics become a lot more interesting           to analyze operators that arise in geometric measure
 when one considers not just objects, but also maps           theory, probability theory, ergodic theory, numerical
 between objects. In our case, the objects in question        analysis, and differential geometry.
-are functions, and, as was mentioned in the introduc-          A primary concern of harmonic analysis is to obtain
+are functions, and, as was mentioned in the intro duc-          A primary concern of harmonic analysis is to obtain
 tion, a map that takes functions to functions is usually     both qualitative and quantitative information about
 
 IV.11.     Harmonic Analysis                                                                                        451
 
 the effects of these operators on generic functions.           basic theory of summation of Fourier series, which his-
-A typical example of a quantitative estimate is the           torically was one of the main motivations for studying
+A typical example of a quantitative estimate is the           tori cally was one of the main motivations for studying
 inequality                                                    harmonic analysis.
                   f ∗ gL. nfty ⩽ f L2 gL2 ,                     In this section, we shall consider functions f that are
                                                               periodic with period 2π : that is, functions such that
@@ -132,13 +132,13 @@ the cauchy–schwarz inequality [V.19](/part-05/inequalities). As a conse-      
 quence, one can draw the qualitative conclusion that          called a trigonometric polynomial. The word “polyno-
 the convolution of two functions in L2 is always con-         mial” is used here because any such function can be
 tinuous. Let us briefly sketch the argument, since it is       expressed as a polynomial in sin(x) and cos(x), or
-an instructive one.                                           alternatively, and somewhat more conveniently, as a
+an instructive one.                                           alternatively, and some what more conveniently, as a
    A fundamental fact about functions in L2 is that any       polynomial in eix and e−ix . That is, it can be written
 such function f can be approximated arbitrarily well              N
                                                               as n=−N cn einx for some N and some choice of coef-
 (in the L2 -norm) by a function f ̃ that is continuous and     ficients (cn : −N ⩽ n ⩽ N). If we know that f can
 compactly supported. (The second condition means that         be expressed in this form, then we can work out the
-f ̃ takes the value zero every where outside some inter-        coefficient cn quite easily: it is given by the formula
+f ̃ takes the value zero every where out side some inter-        coefficient cn quite easily: it is given by the formula
 val [−M, M].) Given any two functions f and g in L2 , let                              2π
                                                                                    1
 f ̃ and g̃ be approximations of this kind. It is an exercise                 cn =          f (x)e−inx dx.
@@ -149,7 +149,7 @@ it follows easily from the inequality above that f ̃ ∗ g̃ is
                                                               can say something similar about a much wider class of
 close to f ∗ g in the L. nfty -norm, since
                                                               functions—if, that is, we now allow infinite linear com-
-         f ∗ g − f ̃ ∗ g̃ = f ∗ (g − g̃) + (f − f ̃) ∗ g̃.      binations. Suppose that f is a periodic function that is
+         f ∗ g − f ̃ ∗ g̃ = f ∗ (g − g̃) + (f − f ̃) ∗ g̃.      bi nations. Suppose that f is a periodic function that is
                                                               also continuous (or, more generally, that f is absolutely
 Therefore, f ∗ g can be approximated arbitrarily well
                                                               integrable, meaning that the integral of |f (x)| between
@@ -171,7 +171,7 @@ tifies a “simple” class of functions for which one can
 easily prove the result one wants. Next, one proves that
                                                                                           . nfty
                                                                                           
-every function in a much wider class can be approxi-
+every function in a much wider class can be approx i-
                                                                               f (x) =          fˆ(n)einx ,
 mated in a suitable sense by simple functions. Finally,                                 n=−. nfty
 one uses this information to deduce that the result           expressing f as a sort of “infinite trigonometric poly-
@@ -204,7 +204,7 @@ $F^{N} =$
 
 N
 
-It is not hard to show that if S N f converges to f , then so does F N f . However, by averaging the S N f we allow cancellations to take place that sometimes make it possible for F N f to converge to f even when S N f does not. Indeed, here is a sketch of a proof that F N f converges to f whenever f is continuous and periodic--which, as we have seen, is far from true of S N f . In its basic structure, the argument is similar to the one we used when showing that the convolution of two functions in $L^{2}$ is continuous.
+It is not hard to show that if S N f converges to f , then so does F N f . However, by averaging the S N f we allow cancellations to take place that some times make it possible for F N f to converge to f even when S N f does not. Indeed, here is a sketch of a proof that F N f converges to f whenever f is continuous and periodic--which, as we have seen, is far from true of S N f . In its basic structure, the argument is similar to the one we used when showing that the convolution of two functions in $L^{2}$ is continuous.
 Note first that the result is easy to prove when f is a trigonometric polynomial, since then S N $f = f$ for every N from some point onward. Now the Weierstrass approximation theorem says that every continuous periodic function f can be uniformly approximated by trigonometric polynomials: that is, for every $ε > 0$ there is a trigonometric polynomial such that  f  -  g  $L\infty \le ε.$ We know that F N g is close to g for large N (since g is a trigonometric polynomial), and would like to deduce the same for f .
 
 IV. Branches of Mathematics
@@ -282,7 +282,7 @@ f (x) e  -  inx
 $2\pi - \pi\pi$
 
 will be very small since $- \pie -$ inx $= 0$ and the comparatively slow variation in f (x) is not enough to stop the cancellation occurring. This assertion can easily be proved rigorously by repeated integration by parts. Generalizations of this phenomenon include the so-called principle of stationary phase, which among other things allows one to obtain precise control on the Airy function Ai (x) discussed earlier. It also yields the Heisenberg uncertainty principle, which relates the decay and smoothness of a function to the decay and smoothness of its Fourier transform.
-A somewhat different manifestation of oscillation lies in the principle that if one has a sequence of functions that oscillate in different ways, then their sum should be significantly smaller than the bound that follows from the triangle inequality. Again, this is the result of cancellation that is simply not noticed by the triangle inequality. For instance, the Plancherel theorem in Fourier analysis implies, among other things, N that a trigonometric polynomial n $= -$ N c n e inx has an $L^{2}$ - norm of
+A some what different manifestation of oscillation lies in the principle that if one has a sequence of functions that oscillate in different ways, then their sum should be significantly smaller than the bound that follows from the triangle inequality. Again, this is the result of cancellation that is simply not noticed by the triangle inequality. For instance, the Plancherel theorem in Fourier analysis implies, among other things, N that a trigonometric polynomial n $= -$ N c n e inx has an $L^{2}$ - norm of
 
 $2 1/2{}^{2}\pi$
 

@@ -17,7 +17,7 @@ Banach spaces is therefore a mixture of linear algebra
                                                                 defined in terms of the intrinsic geometry of a surface,
 and analysis. However, one can arrive at more sophis-
                                                                 where distance is measured in terms of paths that lie
-ticated mixtures of algebra and analysis if one looks at
+ti cated mixtures of algebra and analysis if one looks at
                                                                 inside the surface.
 Banach spaces that have more algebraic structure. In
                                                                    There are various ways of making the above notion
@@ -25,7 +25,7 @@ particular, while one can add two elements of a Banach
                                                                 of curvature precise, and also quantitative, so that with
 space together, one cannot in general multiply them.
                                                                 each point of a surface one can associate a number that
-However, sometimes one can: a vector space with a mul-
+However, some times one can: a vector space with a mul-
                                                                 tells you “how curved” it is at that point. In order to
 tiplicative structure is called an algebra, and if the vec-
                                                                 do this, the surface must have a riemannian metric

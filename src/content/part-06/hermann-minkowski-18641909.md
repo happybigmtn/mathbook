@@ -23,7 +23,7 @@ satisfy the equation for a line; a circle. . . ; and so on.   increasingly focus
 All of Euclid’s axioms are true statements about these        atize mathematics and prove it free of contradictions
 “lines” and “points,” that is, they are true statements       using proof-theoretic, combinatorial methods. gödel
 about these sets of real numbers. Euclidean geometry          [VI.92](/part-06/kurt-gdel-19061978) proved his incompleteness theorems in 1930
-is thereby reduced to a fraction of all the true state-       and thereby showed that Hilbert’s program, at least as
+is there by reduced to a fraction of all the true state-       and there by showed that Hilbert’s program, at least as
 ments about real numbers, and we conclude that if real-       initially conceived, could never be successful. Hilbert
 number arithmetic is consistent then Euclid’s geometry        was wrong here, but even if wrong, his dream of plac-
 is consistent. Next Hilbert constructs models of var-         ing mathematics on a formal foundation stimulated

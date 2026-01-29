@@ -46,7 +46,7 @@ interconnected. Consider for instance the equations           at infinitely many
                                                               Fredholm’s equation is analogous to a matrix equation
                    2 x + 3 y − 5 z = a,
                                                               of the type u − Ku = f rather than Ku = f . The altered
-                      x − 2 y + z = b,                         form of the left-hand side has no effect on the overall
+                      x − 2 y + z = b,                         form of the left-hand side has no effect on the over all
                     3 x + y − 4 z = c.                          behavior of the matrix equation, but it does consider-
                                                               ably alter the behavior of the integral equation. As we
 Notice that the left-hand side of the third equation is
@@ -125,7 +125,7 @@ tions u1 (y), u2 (y), . . . and real numbers λ1 , λ2 , . . .
 such that
                                                                m(y); this is the operator M defined by the formula
               k(y, x)un (x) dx = . ambda n un (y).                    (Mu)(y) = m(y)u(y). (The finite-dimensional coun-
-                                                               terpart to a multiplication operator is a diagonal matrix
+                                                               ter part to a multiplication operator is a diagonal matrix
 Thus un (y) is an eigenfunction for the integral opera-
                                                                K, which multiplies the jth component of the vector by
 tor, with eigenvalue . ambda n .
@@ -139,7 +139,7 @@ explicitly, but calculation is possible when k(x, y) =
 of integration is [0, 1] and the period of φ is 1, then
                                                                “basis” of L2 [0, 1], namely a basis of eigenfunctions,
 the eigenfunctions are cos(2 kπ y), k = 0, 1, 2, . . . , and
-                                                               it will have an infinite diagonal matrix. Moreover, the
+                                                               it will have an infinite diagonal matrix. More over, the
 sin(2 kπ y), k = 1, 2, . . . . In this case, the theory of
                                                                basis vectors can be chosen to be orthogonal to each
 fourier series [III.27](/part-03/the-fourier-transform) tells us that a general function
@@ -162,7 +162,7 @@ integral operators.                                            analogue of the o
 
 512                                                                                      IV. Branches of Mathematics
 
-It turns out that if we enlarge our concept of “diagonal”     as its own successor, then the readout will be either
+It turns out that if we enlarge our concept of “diagonal”     as its own success or, then the read out will be either
 to include multiplication operators, then all self-adjoint    00000 · · · or 111111 · · · , depending on whether or not
 operators are “diagonalizable,” in the sense that, after a    we chose a square with a piece on it to begin with. But if
 suitable “change of basis,” they become multiplication        the rule is sufficiently complicated, then the “time aver-
@@ -174,13 +174,13 @@ of complex numbers . ambda for which the operator T − . ambda I               
 does not have a bounded inverse (here I is the iden-          fact the only “sufficiently complicated” rules in this
 tity operator on Hilbert space). In finite dimensions the      finite case are cyclic permutations of the squares of the
 spectrum is precisely the set of eigenvalues, but in infi-     board, and thus all the squares move past our obser-
-nite dimensions this is not always so. Indeed, whereas        vation post in succession. However, there are related
+nite dimensions this is not always so. Indeed, where as        vation post in succession. However, there are related
 every symmetric matrix has at least one eigenvalue, a         examples where one observes only a small fraction of
 self-adjoint operator, as we have just seen, need not.        the data. For instance, replace the set of squares on a
 As a result of this, the spectral theorem for bounded         checkerboard with the set of points on a circle, and in
 self-adjoint operators is phrased not in terms of eigen-      place of the checkers, imagine that a subset S of a cir-
 values but in terms of the spectrum. One way of for-          cle is marked as occupied. Let the rearrangement rule
-mulating it is to state that any self-adjoint operator        be the rotation of points on the circle through some
+mul at ing it is to state that any self-adjoint operator        be the rotation of points on the circle through some
 T is unitarily equivalent to a multiplication operator        irrational number of degrees. Stationed at a point x of
 (Mu)(y) = m(y)u(y), where the closure of the range            the circle, we record whether x belongs to S, the first
 of the function m(y) is the spectrum of T . Just as in the    rotated copy of S, the second rotated copy of S, and
@@ -197,17 +197,17 @@ matrix with the eigenvalues along the diagonal.               averages should ag
                                                                  Von Neumann brought operator theory to bear on
 A beautiful application of the spectral theorem was
                                                               this question in the following way. Let H be the Hilbert
-found by von neumann [VI.91](/part-06/john-von-neumann-19031957). Imagine a checker-
+found by von neumann [VI.91](/part-06/john-von-neumann-19031957). Imagine a check er-
                                                               space of functions on the squares of the checkerboard,
 board on which are distributed a certain number of
                                                               or the Hilbert space of square-integrable functions on
 checkers. Imagine that for each square there is des-
                                                               the circle. The rearrangement rule gives rise to a unitary
-ignated a “successor” square (in such a way that no
+ignated a “success or” square (in such a way that no
                                                               operator U on H by means of the formula
-two squares have the same successor), and that every
+two squares have the same success or), and that every
 minute the checkers are rearranged by moving each one                         (Uf )(y) = f (φ−1 (y)),
-to its successor square. Now focus attention on a single      where φ is the function describing the rearrangement.
+to its success or square. Now focus attention on a single      where φ is the function describing the rearrangement.
 square and each minute record with a 1 or 0 whether           Von Neumann’s ergodic theorem asserts that if no non-
 or not there is a piece on the square. This produces a        constant function in H is fixed by U (this is one way
 succession of readings R1 , R2 , R3 , . . . like this:        of saying that the rearrangement rule is “sufficiently
@@ -227,7 +227,7 @@ most extreme case, if the rule designates each square         the point x is occ
 IV.15.   Operator Algebras                                                                                            513
 
    Von Neumann’s theorem can be deduced from a spec-         ment of an observable quantity will produce a deter-
-tral theorem for unitary operators that is analogous to      minate outcome if and only if the state of the system
+tral theorem for unitary operators that is analogous to      minate out come if and only if the state of the system
 the spectral theorem for self-adjoint operators. Every       is an eigenvector for the operator associated with that
 unitary operator can be reduced to a multiplication          quantity.
 operator, not by real-valued functions but by functions         A distinctive feature of quantum theory is that the
@@ -281,7 +281,7 @@ of that quantity (hence the origin of the term “spec-
 trum”). States and observables are related as follows:                         E=−         + x2,
                                                                                    2 m dx 2    2
 when a system is in the state described by a unit vector
-                                                             where k is a constant which determines the overall
+                                                             where k is a constant which determines the over all
 u ∈ H, the expected value of the observable quantity
                                                              strength of the force. The spectrum of this operator
 corresponding to a given self-adjoint operator Q is the
@@ -295,7 +295,7 @@ The relation between states and observables reflects          assume only a disc
 the paradoxical behavior of quantum mechanics: it is         characteristic and fundamental feature of quantum
 possible, and in fact typical, for a system to exist in      theory.
 a “superposed” state, under which repeated identical           Another important example is the operator of total
-experiments produce distinct outcomes. A measure-            energy for the hydrogen atom. Like the operator above,
+experiments produce distinct out comes. A measure-            energy for the hydrogen atom. Like the operator above,
 
 514                                                                                           IV. Branches of Mathematics
 
@@ -313,7 +313,7 @@ final states of the atom, and therefore it is propor-              for any scala
 tional to a number of the form 1/n2 − 1/m2 . When                 having this positivity property is said to be positive
 light from hydrogen is passed through a prism or                  definite. Conversely, from a positive-definite function
 diffraction grating, bright lines are indeed observed at           one can build a unitary representation. This GNS con-
-wavelengths corresponding to these possible energies.             struction (in honor of Israel Gelfand, Mark Naimark,
+wavelengths corresponding to these possible energies.             struc tion (in honor of Israel Gelfand, Mark Naimark,
 Spectral observations of this sort provide experimental           and Irving Segal) begins by considering the group ele-
 confirmation for quantum mechanical predictions.                   ments themselves as basis vectors in an abstract vector
    So far we have discussed states of a quantum sys-              space. We can attempt to define an inner product on
@@ -360,7 +360,7 @@ The time-evolution operators Ut of quantum mechanics              in particular 
 satisfy the law Us Ut = Us+t . More generally, we define           view of the complicated definition of the determinant
 a unitary representation of a group [I.3 §2.1](/part-01/fundamental-definitions) G to be a          even for finite matrices, it is perhaps not surprising that
 family of unitary operators Ug , one for each g ∈ G, sat-         the infinite-dimensional situation presented extraordi-
-isfying the law Ug1 g2 = Ug1 Ug2 for all g1 , g2 ∈ G. Origi-      nary challenges. Very soon, much simpler alternative
+i sfy ing the law Ug1 g2 = Ug1 Ug2 for all g1 , g2 ∈ G. Origi-      nary challenges. Very soon, much simpler alternative
 nally introduced by frobenius [VI.58](/part-06/ferdinand-georg-frobenius-18491917) as a tool for the           approaches were found that avoided determinants alto-
 study of finite groups, representation theory [IV.9](/part-04/representation-theory)               gether. But it is interesting to note that the determinant,
 has become indispensable in mathematics and physics               or to be more exact the related notion of the trace, has
@@ -382,7 +382,7 @@ an . nfty × . nfty matrix may not converge. (The trace of the            Let g 
 identity operator is a case in point: the diagonal entries     on a Hilbert space H. If a closed subspace H0 of H
 are all 1, and if there are infinitely many of them, then       is mapped into itself by all the operators Ug , then it
 their sum is not well-defined.) One way to address this         is said to be an invariant subspace for the representa-
-problem is to limit oneself to operators for which the         tion. If H0 is invariant, then since the operators Ug map
+problem is to limit one self to operators for which the         tion. If H0 is invariant, then since the operators Ug map
 sum is well-defined. An operator T is said to be of             H0 to itself, their restrictions to H0 constitute another
 trace class if, for every two sequences {uj } and {vj }        representation of G, called a subrepresentati on of the
 of pairwise orthogonal vectors of length 1, the sum            original.
@@ -403,11 +403,11 @@ the “continuous matrix” k.                                     ial invariant
             2 Von Neumann Algebras                             two subrepresentati ons: those associated with H0 and
                                                                those associated with its orthogonal complement H0⊥ .
 The commutant of a set S of bounded linear operators           Unless both the representations H0 and H0⊥ are irre-
-on a Hilbert space H is the collection S of all operators      ducible, we will be able to divide one or both of them
+on a Hilbert space H is the collection S of all operators      duc i ble, we will be able to divide one or both of them
 on H that commute with every operator in the set S. The        into still smaller pieces by repeating the process that
 commutant of any set is an algebra of operators on H.          was just carried out for H. If the initial Hilbert space
 That is, if T1 and T2 are in the commutant, then so are        H is finite dimensional, then continuing in this way we
-T1 T2 and any linear combination a1 T1 + a2 T2 .               will eventually decompose it into irreducible subrepre-
+T1 T2 and any linear combination a1 T1 + a2 T2 .               will eventually decompose it into irreducible sub re pre-
   As mentioned in the previous section, a unitary rep-         sentations. In the language of matrices, we will obtain
 resentation of a group G on a Hilbert space H is a col-        a basis for H with respect to which all the operators in
 lection of unitary operators Ug , labeled by elements of       the group are simultaneously block diagonal, in such a
@@ -425,31 +425,31 @@ T v, for every vector v ∈ H, then T ∈ M.                       into which a 
 516                                                                                         IV. Branches of Mathematics
 
 But in infinite dimensions the decomposition process            related to the existence of factors that are not of type I.
-faces a number of difficulties, the most surprising of           Von Neumann, together with Francis Murray, investi-
+faces a number of difficulties, the most surprising of           Von Neumann, together with Francis Murray, invest i-
 which is that there may be two decompositions of               gated this possibility in a series of papers that mark
 the same representation into entirely different sets of         the foundation of operator algebra theory. They intro-
 irreducible subrepresentati ons.                                duced an order structure on the collection of subrep-
-   In the face of this, a different form of decomposi-          resentations of a given isotypical representation or, to
+   In the face of this, a different form of de com posi-          resentations of a given isotypical representation or, to
 tion suggests itself, which is roughly analogous to the        put it in terms of the commutant, on the collection of
 factorization of an integer into prime powers instead          projections in a given factor. If H0 and H1 are subrep-
 of individual primes. Let us refer to the prime powers         resentations of the isotypical representation H, then
-into which an integer is decomposed as its components.         we write H0 ( H1 if H0 is isomorphic to a subrepre-
+into which an integer is decomposed as its components.         we write H0 ( H1 if H0 is isomorphic to a sub re pre-
 They have two characteristic properties: no two com-           sentation of H1 . Murray and von Neumann proved that
-ponents share a common factor, and any two (proper)            this is a total ordering: either H0 ( H1 ; or H1 ( H0 ;
+pone nts share a common factor, and any two (proper)            this is a total ordering: either H0 ( H1 ; or H1 ( H0 ;
 factors of the same component do share a common                or both, in which case H0 and H1 are isomorphic. For
 factor. Similarly, one can decompose a unitary repre-          example, in a finite-dimensional type I situation, where
 sentation into isotypical components, which have analo-        H is a multiple of n copies of a single irreducible repre-
 gous properties: no two distinct isotypical components         sentation, each subrepresentati on is the sum of m ⩽ n
 share a common (meaning isomorphic) subrepresen-               copies of the irreducible representation, and the order
 tation, and any two subrepresentati ons of the same             structure of the (isomorphism classes of) subrepresen-
-isotypical component have themselves a common sub-             tations is the same as the order structure of the integers
+isotypical component have themselves a common sub-             tat i ons is the same as the order structure of the integers
 subrepresentati on. Any unitary representation (finite           {0, 1, . . . , n}.
 dimensional or not) can be decomposed into isotypical            Murray and von Neumann showed that the only order
 components, and this decomposition is unique.                  structures that can arise from factors are the following
    In finite dimensions, every isotypical representation        very simple ones:
 decomposes into a (finite) number of identical irre-
                                                                      Type I,    {0, 1, 2, . . . , n} or {0, 1, 2, . . . , . nfty};
-ducible subrepresentati ons (like the prime factors of
+duc i ble subrepresentati ons (like the prime factors of
 a prime power). In infinite dimensions this is not so.                Type II, [0, 1] or [0, . nfty];
 In effect, much of von Neumann algebra theory is                      Type III, {0, . nfty}.
 concerned with analyzing the many possibilities that           The type of a factor is determined from the order
@@ -460,10 +460,10 @@ arise.                                                         structure of its 
 The commutant of an isotypical unitary representation          Any subrepresentati on of an isotypical representation
 is called a factor. Concretely, a factor is a von Neu-         of type II can be divided into yet smaller subrepresenta-
 mann algebra M whose center, the set of all operators in       tions: we shall never reach an irreducible “atom.” Nev-
-M that commute with every member of M, consists of             ertheless, subrepresentati ons can still be compared in
+M that commute with every member of M, consists of             er the less, subrepresentati ons can still be compared in
 nothing more than scalar multiples of the identity oper-       size by means of the “real-valued dimension” provided
 ator. This is because projections in the center of M cor-      by Murray and von Neumann’s theorem.
-respond to projections onto combinations of isotypical            A notable example of a factor of type II may be
+respond to projections onto combinations of isotypical            A not able example of a factor of type II may be
 subrepresentati ons. Every von Neumann algebra can be           obtained as follows. Let G be a group and let H = 2 (G)
 uniquely decomposed into factors.                              be a Hilbert space having basis vectors [g] correspond-
    A factor is said to be of type I if it arises as the com-   ing to the elements g ∈ G. Then there is a natural rep-
@@ -528,10 +528,10 @@ different type III factors.                                                    S
 2.4    Classification                                          converges in B(H), and its limit S satisfies
                                                                               S(I − T ) = (I − T )S = I.
 A crowning achievement of von Neumann algebra
-theory is the classification of factors that are approxi-      It follows that I − T is invertible in B(H) (an algebraic
+theory is the classification of factors that are approx i-      It follows that I − T is invertible in B(H) (an algebraic
 mately finite dimensional. These are the factors that are      conclusion). One can easily deduce from this that the
 in a certain sense limits of finite-dimensional algebras.      spectral radius r (T ) of any operator T (defined to be
-Besides the range of the dimension function, which sep-       the greatest absolute value of any complex number in
+Be sides the range of the dimension function, which sep-       the greatest absolute value of any complex number in
 arates factors into types, the sole invariant is the mod-     the spectrum of T ) is less than or equal to its norm.
 ule. This is a flow on a certain space that is assembled          The remarkable spectral radius formula goes much
 from the modular automorphism group.                          further in the same direction. It asserts that r (T ) =
@@ -648,10 +648,10 @@ G the structure of a topological space.                      coordinate of the v
 3.2.4   The Irrational Rotation Algebra                      integer difference
 
 The algebra C ∗ (Z) is generated by a single unitary ele-           index(T ) = dim(ker(T )) − dim(coker(T )).
-ment U (corresponding to 1 ∈ Z). Moreover, it is the
+ment U (corresponding to 1 ∈ Z). More over, it is the
                                                              For example, every invertible operator is a Fredholm
 universal example of such a C ∗ -algebra, which is to say
-                                                             operator of index 0, whereas the unilateral shift is a
+                                                             operator of index 0, where as the unilateral shift is a
 that given any C ∗ -algebra A and unitary u ∈ A, there is
                                                              Fredholm operator of index −1.
 one and only one homomorphism C ∗ (Z) → A sending
@@ -667,7 +667,7 @@ relation                                                                        
 where α is irrational, we obtain a noncommutative C ∗ -      Although the coefficients of these equations are very
 algebra called the irrational rotation algebra Aα . The      close, the dimensions of their kernels are quite differ-
 irrational rotation algebras have been studied inten-        ent: the left-hand system has only the zero solution,
-sively from a number of points of view. Using K-theory       whereas the right-hand system has the nontrivial solu-
+sively from a number of points of view. Using K-theory       where as the right-hand system has the nontrivial solu-
 (see below) it has been shown that Aα1 is isomorphic to      tions (t, −2 t). Thus the dimension of the kernel is an
 Aα2 if and only if α1 ± α2 is an integer.                    unstable invariant of the system of equations. A sim-
    It can be shown that the irrational rotation algebra      ilar remark applies to the dimension of the cokernel.
@@ -685,7 +685,7 @@ close to a Fredholm operator is itself a Fredholm oper-    operators that arise 
 ator with the same index, and that if T is a Fredholm
 operator and K is a compact operator, then T + K is        4.3   Essentially Normal Operators
 a Fredholm operator with the same index as T . Notice
-                                                           Atkinson’s theorem suggests that compact perturba-
+                                                           Atkinson’s theorem suggests that compact perturb a-
 that, since integral operators are compact operators,
                                                            tions of an operator are in some sense “small.” This
 this contains Fredholm’s original theorem as a special
@@ -696,7 +696,7 @@ case.
                                                            complex numbers . ambda for which T − . ambda I fails to be Fred-
 topology [I.3 §6.4](/part-01/fundamental-definitions) studies those properties of mathe-
                                                            holm (that is, invertible modulo compact operators).
-matical systems that remain the same when the sys-
+mat ical systems that remain the same when the sys-
                                                            Two operators T1 and T2 are essentially equivalent if
 tem is (continuously) perturbed. Atkinson’s theorem
                                                            there is a unitary operator U such that UT1 U ∗ and T2
@@ -733,7 +733,7 @@ A Toeplitz operator has a matrix with the special form
                         .     .     .
                                                            and S ∗ cannot be essentially equivalent, because S has
 In other words, as you go down each diagonal of
-                                                           index −1 and S ∗ has index +1. Thus some new ingredi-
+                                                           index −1 and S ∗ has index +1. Thus some new ing red i-
 the matrix, the entries remain constant. The sequence
                                                            ent, beyond the essential spectrum, is needed to clas-
 of coefficients {bn }. nfty n=−. nfty defines a function f (z) =
@@ -753,7 +753,7 @@ is its index?
 as a mapping from the unit circle to the nonzero com-
                                                            was proved by Larry Brown, Ron Douglas, and Peter
 plex numbers: in other words, as a closed path in the
-                                                           Fillmore in the 1970 s, using entirely novel techniques
+                                                           Fill more in the 1970 s, using entirely novel techniques
 nonzero complex plane. The fundamental topological
                                                            that led to a new era of interaction between C ∗ -algebra
 invariant of such a path is its winding number: the
@@ -762,7 +762,7 @@ number of times it “goes around” the origin in the
 counter clockwise direction. It can be proved that the
                                                            4.4 K-Theory
 index of a Toeplitz operator with nonzero symbol f
-is minus the winding number of f . For example, if f       A remarkable feature of the Brown–Douglas–Fillmore
+is minus the winding number of f . For example, if f       A remarkable feature of the Brown–Douglas–Fill more
 is the function f (z) = z (with winding number +1),        work was the appearance within it of tools from
 
 522                                                                                       IV. Branches of Mathematics
@@ -773,7 +773,7 @@ the study of (suitable) topological spaces and the study      K-theory of group 
 of commutative C ∗ -algebras are one and the same; all        familiar in algebraic topology. Most of the progress on
 the techniques of topology can be transferred, via the        the conjecture to date is the result of work of Gen-
 Gelfand–Naimark isomorphism, to commutative C ∗ -             nadi Kasparov, who dramatically broadened the origi-
-algebras. Having made this observation, it is natural         nal discoveries of Brown, Douglas, and Fillmore to cover
+algebras. Having made this observation, it is natural         nal discoveries of Brown, Douglas, and Fill more to cover
 to ask which of these techniques can be extended fur-         not just single essentially normal operators but also
 ther, to provide information about all C ∗ -algebras,         noncommuting systems of operators, that is, C ∗ -alge-
 commutative or not. The first and best example is              bras. Kasparov’s work is now a central component of
@@ -815,5 +815,5 @@ noncommutative C ∗ -algebras, particularly group C ∗ -        of the algebra
 algebras, has turned out to have important connections        Hilbert space H = L2 (S 1 ). Notice that if f is a function
 with topology. In fact, some key advances in topol-           on the circle (considered as a multiplication operator
 ogy have come from C ∗ -algebra theory in this way,           on H), then the commutator Df − f D is also a multipli-
-thereby allowing operator algebraists to repay some of        cation operator, this time by i df /dθ. It follows that
+there by allowing operator algebraists to repay some of        cation operator, this time by i df /dθ. It follows that
 the debt they owe to the topologists for K-theory. The        ordinary measurements of angular distance between

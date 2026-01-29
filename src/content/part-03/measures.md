@@ -22,11 +22,11 @@ mum weight in a matroid in which each element has a                 is, let us r
 nonnegative weight.                                                 val [0, 1] ∩ Q. If our intervals have lengths 14 , 18 , 16  1
                                                                                                                                   ,...,
                                                                                                                              1
-   Somewhat more surprisingly, matroids are the only                for example, so that the total length is only 2 , then cer-
+   Some what more surprisingly, matroids are the only                for example, so that the total length is only 2 , then cer-
 structures for which the greedy algorithm works. More               tainly the left-to-right intervals will cover only the inter-
 precisely, suppose that I is a family of subsets of a set           val [0, 12 ] ∩ Q, but it is possible for the original intervals
 E with the property that if A ∈ I and B ⊆ A, then B ∈ I.            to cover all of [0, 1]∩Q, since we can just enumerate the
-Now let w be any weight function and suppose that                   rationals as q1 , q2 , . . . (see countable and uncount-
+Now let w be any weight function and suppose that                   rationals as q1 , q2 , . . . (see countable and un count-
 the problem is to select a member B of I which has                  able sets [III.11](/part-03/countable-and-uncountable-sets)), and then put an interval of length 14
                                                                                                      1
 maximum weight, where the weight of a set is just the               around q1 , one of length 8 around q2 , and so on.
@@ -39,7 +39,7 @@ sen is a member of I. It turns out that the following                  Why is th
 is true: the greedy algorithm works on I for all weight             to define “length” for general sets of reals (for simplic-
 functions w if and only if I is the collection of indepen-          ity, we will concentrate on [0, 1], just to avoid some
 dent sets of a matroid. Thus, matroids form a “natural              technicalities about “infinite length”). What should the
-home” for many optimization problems. Moreover, the                 “length” of a set be? For intervals the answer is clear,
+home” for many optimization problems. More over, the                 “length” of a set be? For intervals the answer is clear,
 concept is genuinely useful, since many of the matroids             and it is also clear for finite unions of intervals. But
 that arise in such problems are not derived from either             what about sets like { 12 , 13 , 14 , . . . }, or Q itself?
 vector spaces or graphs.                                               A natural first attempt would be to use finite unions

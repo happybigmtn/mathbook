@@ -23,14 +23,14 @@ It might seem that the AMS has left a place for “honor” in its third goal, b
 “Judged by all practical standards, the value of my mathematical life is nil.” But it is fair to assume that, when they are addressing one another rather than government committees, most pure mathematicians (including those who represented the AMS in 1991 ) would choose a quite different list of “most important long-term goals.” In this they have long been able to count on the protection of philosophy. It has been a commonplace since Plato to grant mathematics intrinsic value on metaphysical grounds.
 2 The topos of mathematics as a source of certain knowledge was already well established by the second century, when Ptolemy wrote Only mathematics, if one attacks it critically, provides for those who practice it sure and unswerving knowledge, since the demonstration comes about $1$ . From “Pilot assessment of the mathematical sciences (prepared for the House Committee on Science, Space, and Technology), ” Notices of the American Mathematical Society 39(1992) : $101 - 10$ . $2$ . The present essay is mainly concerned with metaphysical certainty.
 Descartes wrote in Principles of Philosophy (chapter CCVI) of “certainty ... founded on the metaphysical ground that, as God is supremely good and the source of all truth, the faculty of distinguishing truth from error which he gave us, cannot be fallacious so long as we use it aright, and distinctly perceive anything by it,” and cites “the demonstrations of mathematics” as his first example.
-Plato (in Republic, VII, $522 - 31$ ) saw mathematics rather as a source of “knowledge of that which exists forever.” Certainty and its cognates are some, but only some, of the apparent blessings of mathematics that so impressed certain philosophers as to “infect” the whole of their work, as Ian Hacking ( 2000 ) argues.
+Plato (in Republic, VII, $522 - 31$ ) saw mathematics rather as a source of “knowledge of that which exists for ever.” Certainty and its cognates are some, but only some, of the apparent blessings of mathematics that so impressed certain philosophers as to “infect” the whole of their work, as Ian Hacking ( 2000 ) argues.
 
 VIII . $2$ .
 
 “Why Mathematics?” You Might Ask
 
-through inc on tr over ti ble means, by arithmetic and geometry. $3$ the crisis in the foundations of mathematics [II.7](/part-02/foundations-crisis) of the early twentieth century, which culminated in gödel’s incompleteness theorems [V.15](/part-05/gdels-theorem), was largely motivated by a desire to make mathematical certainty safe from dependence on human frailty. As russell [VI.71](/part-06/bertrand-arthur-william-russell-18721970) wrote in Reflections on my Eightieth Birthday: I wanted certainty in the kind of way in which people want religious faith.
-I thought that certainty is more likely to be found in mathematics than elsewhere. . . . Mathematics is, I believe, the chief source of the belief in eternal and exact truth. Quoted in Hersh (1997) Russell’s hope to ground certainty in logic is largely a thing of the past--as Marvin Minsky wrote in another context, “without an intimate connection between our knowledge and our intentions, logic leads to madness, not intelligence” (Minsky 1985/1986)4 --but his words continue to echo.
+through incontrovertible means, by arithmetic and geometry. $3$ the crisis in the foundations of mathematics [II.7](/part-02/foundations-crisis) of the early twentieth century, which culminated in gödel’s incompleteness theorems [V.15](/part-05/gdels-theorem), was largely motivated by a desire to make mathematical certainty safe from dependence on human frailty. As russell [VI.71](/part-06/bertrand-arthur-william-russell-18721970) wrote in Reflections on my Eightieth Birthday: I wanted certainty in the kind of way in which people want religious faith.
+I thought that certainty is more likely to be found in mathematics than elsewhere. . . . Mathematics is, I believe, the chief source of the belief in eternal and exact truth. Quoted in Hersh (1997) Russell’s hope to ground certainty in logic is largely a thing of the past--as Marvin Minsky wrote in another context, “with out an intimate connection between our knowledge and our intentions, logic leads to madness, not intelligence” (Minsky 1985/1986)4 --but his words continue to echo.
 After Jean-Pierre Serre was named first recipient of the Abel Prize, he was quoted in Libération (May $23$ , 2003 ) to the effect that mathematics is the only producer of “totally reliable and verifiable” truths. And Landon T. Clay III, announcing the creation of the 7000000 Millennium Prize Fund, linked his decision to devote much of his personal fortune to the support of pure mathematics to “the decline in religious certitude ...
 the pursuit of proof continues to be a strong motivating force in human actions.” $5$ The mind saves its honor, as Jacobi would have it, but only through indenture to a higher power. I would like to express my opinion that the bargain implicit in comments like those just quoted, placing pure mathematicians on the front lines in defense of metaphysical certainty or some other normative concern of philosophers, is an unnecessary burden that fails to do justice to what is uniquely valuable about mathematics.
 It also fails to protect pure mathematics from the real existential dangers it faces, of which budget cuts are only the $3$ . See Lloyd (2002), in which is cited Ptolemy’s Syntaxis,  I, chapter $1$ , $16$ . $17 - 21$ . $4$ . Compare René Thom’s comment in connection with his criticism of attempts to reduce mathematics to set theory: “In attempting to attach meaning to all the phrases constructed in ordinary languages, according to Boolean rules, the logician proceeds to a phantasmic, delirious reconstruction of the universe” (reprinted in Tymoczko 1998). $5$ .
@@ -70,7 +70,7 @@ science sounds like this:                                                   huma
                                                                           statements about formal systems in mathematics and
                                                                           particle physics (and nonlinear differential equations),
   As far as mathematics is concerned, relativism of this                  respectively, and as such have no bearing on meta-
-kind has more to do with English-language postmod-                        physics.12 The arguments are often eloquent but alto-
+kind has more to do with English-language post mod-                        physics.12 The arguments are often eloquent but alto-
 ernism than with the French original. One might have                      gether beside the point, and of little comfort to seekers
 thought that mathematical progress from axioms to                         of certainty like Russell. Metaphysical certainty, what-
 theorems and from lesser to greater abstraction or gen-                   ever it may be, cannot be any less binding than a math-
@@ -85,7 +85,7 @@ were metaphysical skeptics in other regards, they had                     verifi
 no quarrel with mathematics’ metaphysical preten-
 sions per se; but they did question their relevance to
                                                                              10. “Why don’t you ask a physicist or a mathematician about dif-
-the human sciences. For Derrida, thinking of leibniz                      ficulty?” was Derrida’s response to a 1998 New York Times question
+the human sciences. For Derrida, thinking of leibniz                      ficul ty?” was Derrida’s response to a 1998 New York Times question
 [VI.15](/part-06/gottfried-wilhelm-leibniz-16461716) in particular, “[mathematics] was always the                      about deconstruction: see Jacques Derrida, Abstruse Theorist, dies at
                                                                           74, New York Times, October 10, 2004. Appeals to the presumed value
 exemplary model of scientificity” (in Of Grammatology,                     of even the most abstruse mathematics, in order to legitimate obscu-
@@ -131,7 +131,7 @@ What these developments have in common is a rejec-
 tion of reductionism and related top-down “master
                                                                       or correspond to an ideal; they are deemed correct
 narratives,” not because they are wrong but because                   because they are accepted.
-they are irrelevant and useless. It would be going too                         David Bloor, in Wittgenstein: A Social Theory of
+they are irrelevant and use less. It would be going too                         David Bloor, in Wittgenstein: A Social Theory of
 far to describe this kind of science as a new Kuhnian                                  Knowledge (Macmillan, London, 1983)
 paradigm (the notion is, in any case, widely criticized
                                                                        The Sociology of Scientific Knowledge (SSK) move-
@@ -148,7 +148,7 @@ ple, Jürgen Jost has written a book entitled Postmodern
 Analysis and some specialists now claim to be working
                                                                     low rules emphasizes social factors, and SSK is enthu-
 in “postmodern algebra”—but I do not see any genuine
-                                                                    siastically Wittgenstein i an. Of course, Wittgenstein’s
+                                                                    siastically Wittgensteinian. Of course, Wittgenstein’s
 signs of this sensibility. Indeed, I am not even sure that
                                                                     work is notoriously unsystematic and lends itself to
 it makes sense to draw the line between modern and
@@ -163,7 +163,7 @@ wir werden wissen”) is not a prime example of high
                                                                     ceived “something more” specifically in mathematics
 modernism, then what is? On the other hand, the aban-
                                                                     (“the hardness of the logical must”), to which our
-donment of all forms of foundationalism in an anthol-
+don ment of all forms of foundationalism in an anthol-
                                                                     language and philosophy are not able to do justice.16
 ogy of Tymoczko (1998) is a rejection of “master nar-                  Can sociology succeed where philosophy has failed?
 ratives” within philosophy of mathematics, and indeed               Bloor’s militant “naturalist” response to the question of
@@ -196,7 +196,7 @@ inspired by Gödel’s theorems.                                       graph 437
 9702003 ). The classic declaration of the latter kind is due to Bruno Latour and Stephen Woolgar: [W] e do not regard prior cognition ... as a necessary prerequisite for understanding scientists’ work. This is similar to an anthropologist’s refusal to bow before the knowledge of a primitive sorcerer. There are, as far as we know, no a priori reasons for supposing that scientists’ practice is more rational than that of outsiders.
 Latour and Woolgar, Laboratory Life, $pp.29 - 30$ (Princeton University Press, Princeton, NJ, 1986 ) But one can also imagine sociologists paying serious attention to mathematicians’ accounts of their experience, addressing in the process the question that Weil did not.
 For example, Bettina Heintz, in fieldwork at the Max-Planck-Institut in Bonn, which was billed as the first study of mathematics from the perspective of constructivist sociology of science, worries about “going native” and “over identifying with the dominant culture.” But her subject is the eminently sociological one of determining how mathematicians reach consensus, and her methodology, far from treating practicing mathematicians as “primitive sorcerers,” records their epistemic perspectives sympathetically and at length.
-One has the impression that, in spite of the limitations of her methodology, Heintz is more interested in accounting for “real mathematics,” to which we shall return below, whereas Bloor and Rosental are preoccupied with marshaling evidence to counter the metaphysical preoccupations of philosophers. Under siege from Gödel’s theorem, Popper’s attack on verificationism, Kuhn’s theory of scientific revolutions, Lakatos’s dialectical approach to the contents of knowledge in Proofs and Refutations, as well as Wittgenstein, certainty in Russell’s sense has largely been scrapped.
+One has the impression that, in spite of the limitations of her methodology, Heintz is more interested in accounting for “real mathematics,” to which we shall return below, where as Bloor and Rosental are preoccupied with marshaling evidence to counter the metaphysical preoccupations of philosophers. Under siege from Gödel’s theorem, Popper’s attack on verificationism, Kuhn’s theory of scientific revolutions, Lakatos’s dialectical approach to the contents of knowledge in Proofs and Refutations, as well as Wittgenstein, certainty in Russell’s sense has largely been scrapped.
 17 As for the social, philosophical, and spiritual needs that the notion of metaphysical certainty was designed to address, they remain. Thus, on the one hand, those with tendencies that I have $17$ . Lakatos’s posthumous “A renaissance of empiricism in the recent philosophy of mathematics,” presents a long series of quotations by mathematicians and a few philosophers, including Russell in 1924 , acknowledging that mathematics is uncertain, after all. Naturally, most of those cited refer directly or indirectly to Gödel’s theorem. The article was reprinted in Tymoczko ( 1998 ).
 “Only dogma or theory has made people say that mathematics as a whole has a peculiar certainty,” writes Hacking ( 2000 ). Certainty persists, however, in the titles of philosophy books, e.g., Marcus Giaquinto’s optimistic The Search for Certainty: A Philosophical Account of Foundations of Mathematics (Oxford University Press, Oxford, 2004 ).
 
@@ -217,15 +217,15 @@ ity of the mathematical community, in terms very sim-                     partia
 ilar to those that Heintz’s informants expressed spon-                    still often write as though mathematicians were creat-
 taneously (see the third and subsequent paragraphs at                     ing Truth or Knowledge,22 almost as a favor to philos-
 www.claymath.org/millennium/rules_etc). The case is                       ophy or sociology, to show how such a feat is possible.
-exceptional, however; “certifying knowledge,” in Rosen-                   Or just to show that it is possible.23 We mathemati-
+exceptional, however; “certifying knowledge,” in Rosen-                   Or just to show that it is possible.23 We mathemat i-
 tal’s sense, is as such relatively unimportant to mathe-                  cians, on the other hand, are quite convinced that
 maticians, and Perelman’s close readers would prob-                       we are creating mathematics, and it is the “why” of
-ably describe what they are doing as attempting to                        that activity, without the ennobling assimilation to the
+ably describe what they are doing as attempting to                        that activity, with out the ennobling assimilation to the
 understand his proof rather than “certifying” it as                       generic objects of interest to epistemology, that, as Weil
 knowledge (for the sake of the community, or a gen-                       understood, required no explanation in Helsinki.
-erous benefactor, or philosophers or sociologists).20                        “Whoever under takes to set himself up as a judge
+erous benefactor, or philosophers or sociologists).20                        “Who ever under takes to set himself up as a judge
                                                                           in the field of Truth and Knowledge is shipwrecked by
-                4    Truth and Knowledge                                  the laughter of the gods,” wrote Einstein. Mathemati-
+                4    Truth and Knowledge                                  the laughter of the gods,” wrote Einstein. Mathemat i-
                                                                           cians tend to respond with dismay rather than laugh-
 “By far the larger part of activity in what goes by
                                                                           ter, and then only to blunders so egregious as to be
@@ -239,12 +239,12 @@ the 1880–1930 period, yielding too often a distorted
                                                                           obligation to propose a speculative alternative, experi-
 picture of that time,” announced David Corfield, pre-
                                                                           ence suggests that the practice of mathematics renders
-senting his efforts to develop a “philosophy of real
+sent ing his efforts to develop a “philosophy of real
                                                                           one unfit to do so. This, more than the fear of ridicule,
 mathematics.” 21 Corfield contrasted the traditional
                                                                           is the main reason I would not venture my own spec-
 apriorist’s concerns, “How should we talk about math-
-                                                                          ulative philosophy of mathematics. If it is hard “for
+                                                                          ula tive philosophy of mathematics. If it is hard “for
 ematical truth? Do mathematical terms or statements
                                                                           those who are used to thought processes stemming
 refer? If so, what are the referents and how do we
@@ -258,8 +258,8 @@ the “maverick tradition” in philosophy of mathemat-
 ics: “How does mathematical knowledge grow? What
                                                                           the gap between mathematicians and metaphysicians is
 is mathematical progress? What makes some mathe-
-                                                                          probably hopeless. There are superficial parallels, to be
-matical ideas (or theories) better than others? What is
+                                                                          probably hope less. There are superficial parallels, to be
+mat ical ideas (or theories) better than others? What is
                                                                           sure: a metaphysical abstraction such as “essence,” like
 mathematical explanation?” (quoted by Corfield 2003).
                                                                           a mathematical abstraction such as “set,” designates
@@ -282,15 +282,15 @@ that “the most striking single feature of [twentieth century philosophy   ble.
 of mathematics] is that it is very largely banal” (Hacking 2002). For     no trouble citing each others’ works.
 Hacking’s philosophy of mathematics, see his What Mathematics Has            24. As Serre put it in his comments to Libération, “Si vous ne voulez
 Done.                                                                     pas que les choses soient parfaites, ne faites pas de maths.” Heintz’s
-  “Real mathematics,” for Corfield, who is remarkably well-informed        book is an inquiry into the roots of this apparent universal tendency to
+  “Real mathematics,” for Corfield, who is remarkably well-in formed        book is an inquiry into the roots of this apparent universal tendency to
 about trends in the most diverse branches of mathematics, is “real” in    consensus, and finds it in the institution of the proof; Rosental treats a
 the same way as “real ale.” I readily agree that skepticism toward this   (highly unusual) case in which universal consensus apparently failed.
 sort of realism is self-defeating.                                        The Einstein quotation is in Kline (1980).
 
 $972$
 
-of specialized texts in which the term plays a central role. I would like to argue that the nothing designated by “set” is somehow different, and more fruitful, than the nothing designated by “essence.” But the means at my disposal for making such an argument take the form of mathematical reasoning, which leads me, at best, to a vicious circle. 25 More bluntly, and for reasons akin to those Serre invoked in his Libération interview, I cannot be satisfied with an answer that is less certain than the sort of answer mathematics provides;
-for a mathematician, a pragmatist answer to Weil’s question is an admission of defeat. And yet I am aware that (metaphysically certain) grounds for distinguishing mathematical certainty from pragmatic certainty are lacking! Another, possibly more profound, reason to steer clear of speculation is that, whereas philosophy presents itself as a dialogue extending over millennia, so that to understand each new contribution one would ideally be familiar with all previous contributions, mathematics is in principle supposed to be derivable by pure reason from a small number of axioms.
+of specialized texts in which the term plays a central role. I would like to argue that the nothing designated by “set” is some how different, and more fruitful, than the nothing designated by “essence.” But the means at my disposal for making such an argument take the form of mathematical reasoning, which leads me, at best, to a vicious circle. 25 More bluntly, and for reasons akin to those Serre invoked in his Libération interview, I cannot be satisfied with an answer that is less certain than the sort of answer mathematics provides;
+for a mathematician, a pragmatist answer to Weil’s question is an admission of defeat. And yet I am aware that (metaphysically certain) grounds for distinguishing mathematical certainty from pragmatic certainty are lacking! Another, possibly more profound, reason to steer clear of speculation is that, where as philosophy presents itself as a dialogue extending over millennia, so that to understand each new contribution one would ideally be familiar with all previous contributions, mathematics is in principle supposed to be derivable by pure reason from a small number of axioms.
 A philosophical proposition, in other words, remains attached to its origins and context; a mathematical proposition floats free. This principle, an important constituent of the aura of metaphysical certainty surrounding mathematics, does not in fact bear much resemblance to mathematics as it is actually practiced--“one of humankind’s longest conversations,” as Barry Mazur puts it.
 I am nonetheless painfully aware that my personal “conversation” with the philosophical tradition is thoroughly unreliable, and my choice of footnotes is primarily the fruit of a random walk (or random surf, or remix) among scraps of the literature I have happened to encounter. If I am nevertheless writing about philosophy, it is in large part because of a question that was put to me in 1995 , during a presentation of Wiles’s proof of fermat’s last theorem [V.10](/part-05/fermats-last-theorem) to an audience of scientists.
 An October 1993 article in Scientific American entitled “The death of proof” had called Wiles’s proof a “splendid anachronism,” citing Laszlo Babai and his collaborators, among others, in support of the thesis that, in the future, deductive proof in mathematics will be largely supplanted by computer-assisted proofs and probabilistic arguments. That same month $25$ . “Truth is always the possibility of its proper destruction,” according to the (nonpostmodern) French philosopher, Alain Badiou, taking Gödel’s theorem as an example (www . egs .
@@ -307,12 +307,12 @@ In the pop posthumanist scenarios promoted by Hans Moravec, Ray Kurzweil, and th
 VIII.2.   “Why Mathematics?” You Might Ask                                                                                                    973
 
 of humankind’s longest conversations,” deserve to be                     merely “establishing the truth or correctness of propo-
-appreciated on their own terms. Note that nothing is                     sitions” (p. 56). However, although he devotes a chap-
-more “emergent” than a conversation. But that would                      ter to the “extremely complex subject” of “mathemati-
+appreciated on their own terms. Note that nothing is                     sit i ons” (p. 56). However, although he devotes a chap-
+more “emergent” than a conversation. But that would                      ter to the “extremely complex subject” of “mathemat i-
 be unfaithful to the spirit of Mazur’s book, one of                      cal conceptualizati on,” he does not dwell on concepts
-whose strengths is its refusal to conform to a linear                    (or “Ideas”) as such; and neither will I. It is almost
+whose strengths is its refusal to con form to a linear                    (or “Ideas”) as such; and neither will I. It is almost
 narrative. In any case, on its own the argument does                     impossible to talk in general terms about mathematical
-not seem to be sufficient: a similar argument could be                     concepts without getting caught up in the debate over
+not seem to be sufficient: a similar argument could be                     concepts with out getting caught up in the debate over
 made in favor of religious faith.                                        their reality (and provoking the laughter of the philoso-
                                                                          phers). Those who write about mathematics (mathe-
                 5    “Ideas, Even Dreams”                                maticians included: see Hersh (1997)) have an irritating
@@ -323,14 +323,14 @@ one can best account for the value of pure mathemat-                     argued 
 ics by attending to what mathematicians write and say.                   ematical statements; maybe this is what Weil meant
 A handful of commonplace words appear consistently,                      by his claim, quoted by Bourguignon (2001), that most
 invested with unexpected power, when mathematicians                      mathematicians “spend a good portion of their profes-
-attempt to account, formally as well as informally, for                  sional time behaving as if they were [Platonists].” 28 In
+attempt to account, formally as well as informally, for                  sional time be having as if they were [Platonists].” 28 In
 their value judgments, and these collectively constitute                 practice I would guess that most mathematicians are
 an answer to the question Weil left hanging.                             pragmatists, in the spirit of the remarks of Dieudonné
   weyl [VI.80](/part-06/hermann-weyl-18851955) wrote a book with the provocative title                   quoted above.
 The Idea of a Riemann Surface27 and referred in his                         On the other hand, there is no doubt whatsoever
 preface to Plato. The word “concept” that was central in                 that the “ideas” that matter to mathematicians are real.
 my reply to the audience is closer to this use of the term               A mathematician, according to a joke attributed to
-“Idea” as used by any number of philosophers, includ-                    Weil,29 can be defined as someone who has had two
+“Idea” as used by any number of philosophers, includ-                    Weil,29 can be defined as some one who has had two
 ing most of those mentioned in this essay. A square, or                  ideas (mathematical, of course). But then, Weil wor-
 a riemannian manifold [I.3 §6.10](/part-01/fundamental-definitions), would be a con-                       ried, so-and-so would be a mathematician. In a cele-
 cept or “Idea” in this sense, and this is how the word                   brated account by poincaré [VI.61](/part-06/jules-henri-poincar-18541912) of the role of the
@@ -344,7 +344,7 @@ the “Idea” of the square. For a mathematician, drawing                   “
 the diagonals and moving the triangles are the ideas.                    they are real” (Hacking 1983). By the same token, if you
   That a contrast can be drawn, as I did in 1995,                        can steal ideas, then they are real. Every mathematician
 between “illuminating concepts” and “confirming the-                      knows that ideas can be and often are stolen. Polemics
-orems” is something of a truism among mathemati-                         then ensue, considerably juicier than the epistemic
+orems” is something of a truism among mathemat i-                         then ensue, considerably juicier than the epistemic
 cians and even some philosophers. Even by 1950 Pop-                      controversy studied by Rosental.
 per had argued that “a calculator ... will not distinguish                    Nothing in the life of mathematics has more of the
 ingenious proofs and interesting theorems from dull                      attributes of materiality than (lowercase) ideas. They
@@ -362,9 +362,9 @@ concepts, techniques, and interpretations”; they are not                   28.
 974                                                                                                              VIII. Final Perspectives
 
 (Singer30 ), they can be “passed from hand to hand”                          In each case intuition belongs to the private sphere,
-(Corfield 2003), they sometimes “originate in the real                     and is relegated to the “context of discovery,” as
+(Corfield 2003), they some times “originate in the real                     and is relegated to the “context of discovery,” as
 world” (Atiyah in the preface to Arnold et al. (2000)) or                 opposed to the “context of justification” deemed wor-
-are promoted from the status of calculations by becom-                    thy of philosophy’s full attention. When mathemati-
+are promoted from the status of calculations by becom-                    thy of philosophy’s full attention. When mathemat i-
 ing “an integral part of the theory” (Godement 2001). At                  cians refer to “intuition” in the sense I have in mind, it
 some point they come into being: it is generally under-                   is crucially public.32 As in the quotation from Mac Pher-
 stood, for example, that “new ideas” will be needed                       son a few paragraphs back, it can be transmitted from
@@ -377,8 +377,8 @@ ideas—there were three, which Serre enumerated—but                        de
 whether all three were original to the author. Ideas are                  akin to intuition:
 public: necessarily so, in order to be stolen, or to be pre-
                                                                             The essential thing was that Serre each time strongly
-sentable as Serre did in his lecture. Poincaré’s idea was                   sensed the rich meaning behind a statement that, on
-a sentence (“the transformations of which I had made                        the page, would doubtless have left me neither hot nor
+sent able as Serre did in his lecture. Poincaré’s idea was                   sensed the rich meaning behind a statement that, on
+a sentence (“the transformations of which I had made                        the page, would doubt less have left me neither hot nor
 use to define Fuchsian functions were identical to those                     cold—and that he could “transmit” this perception of a
 of non-Euclidean geometry”); the slave’s idea in Meno                       rich, tangible, and mysterious substance—this percep-
 was a line in the sand.                                                     tion that is at the same time the desire to understand
@@ -399,7 +399,7 @@ losophy but use them to completely different ends.
                                                                           strategies to chip away at the difficulty (Mazur 2003).
 Philosophers tend to follow Kant in attributing intu-
                                                                           This much is certain: this inner experience of imagi-
-itions—the ones that without concepts are blind—to
+itions—the ones that with out concepts are blind—to
                                                                           nation, or of understanding, is what drives people to
 transcendental subjects or their more down-to-earth
                                                                           become mathematicians, and it is why Weil could count
@@ -407,7 +407,7 @@ offspring. Intuition in this sense is a poor substitute                    on hi
 for certainty, as even the mavericks recognize. “Intu-                    of her informants’ attempts to describe this inner expe-
 ition ... is frequently a prelude to mathematical know-                     rience: “[In mathematics] you have concrete objects
 ledge,” wrote Kitcher. “By itself it does not warrant                     before you and you interact with them, talk with them.
-belief.” Poincaré called intuition “the tool of invention,”               And sometimes they answer you.” She even talks about
+belief.” Poincaré called intuition “the tool of invention,”               And some times they answer you.” She even talks about
 a “je ne sais quoi” that holds a proof together, but he                   the “idea” that helps put the pieces together. “And sud-
 contrasted it with logic, “the tool of demonstration,”                    denly you see the picture,” she was told. Yet all this
 which “alone can provide certainty.” Saunders Mac Lane                    raw ethnographic data is presented in a chapter whose
@@ -423,7 +423,7 @@ to extra ter res trial) mathematics.31                                          
 in his contribution to the discussion of the Jaffe–Quinn article cited
 in note 15, Bulletin of the American Mathematical Society 30 (1994):        32. This is also true of the normative program of intuitionism asso-
 178–207; Ruelle’s quote is from an article entitled “Conversations on     ciated with brouwer [VI.75](/part-06/luitzen-egbertus-jan-brouwer-18811966), but that is definitely not what I have in
-mathematics with a visitor from outer space” from Arnold et al. (2000).   mind.
+mathematics with a visit or from outer space” from Arnold et al. (2000).   mind.
 
 VIII.2.   “Why Mathematics?” You Might Ask                                                                                   975
 
@@ -486,7 +486,7 @@ have made serious attempts to make sense of “struc-
                                                               for philosophers, not for mathematicians. I’m willing to
 ture” in mathematics. I have read a number of philo-
                                                               apply the “principle of charity” to philosophers if they
-sophical attempts to account for mathematical aesthet-
+so phical attempts to account for mathematical aes thet-
                                                               will do the same for me. Corfield wrote (p. 39):
 ics, though none has left much of an impression. The
 practically universal use of dynamical or spatiotempo-

@@ -1,6 +1,6 @@
-# Compactness and Compact if ic at i on
+# Compactness and Compactification
 
-III.9.   Compactness and Compact if ic at i on                                                                           167
+III.9.   Compactness and Compactification                                                                           167
 
 it is one of the basic theorems of algebraic topology        morphism as the basic one from which everything else
 that a continuous map between two topological spaces         is built up, instead of the relation of set membership
@@ -18,9 +18,9 @@ G gives us, for every point x in X, a morphism in Y from
 F x to Gx. There is also a commuting condition that is
                                                              III.9 Compactness and
 analogous to the fact that, in the case of homotopy, a
-                                                                   Compact if ic at i on
+                                                                   Compactification
 path in X must have its image under F continuously
-transformed to its image under G without passing over               Terence Tao
+transformed to its image under G with out passing over               Terence Tao
 any “holes” in the space Y . This avoidance of holes is
                                                              In mathematics, it is well-known that the behavior of
 expressed in the category case by the commutativity of
@@ -44,7 +44,7 @@ we attempt to construct a natural transformation in          All sequences have 
 this case, we find that the naturality condition fails.         x3 , · · · ∈ X is a sequence of points in X, then there
 In the presence of natural transformations, categories         must exist a subsequence xn1 , xn2 , xn3 , . . . that is
 actually form a 2-category, which is a two-dimensional         constant. In other words, xn1 = xn2 = · · · = c for
-generalization of a category, with objects, morphisms,         some c ∈ X. (This fact is sometimes known as the
+generalization of a category, with objects, morphisms,         some c ∈ X. (This fact is some times known as the
 and morphisms between morphisms. These last are                infinite pigeonhole principle.)
 thought of as two-dimensional morphisms; more gen-
 erally an n-category has morphisms for each dimension           The first statement—that all functions on a finite set
@@ -67,7 +67,7 @@ objects exhibit properties similar to those of finite                  The above
 sets (in particular, they enjoy local-to-global principles),       other. For instance, if you know that all sequences
 even though as sets they are infinite. In the categories            in X contain convergent subsequences, then you can
 of topological spaces and metric spaces, these “almost-            quickly deduce that all continuous functions have a
-finite” objects are known as compact spaces. (Other cat-            maximum. This is done by first constructing a maximiz-
+finite” objects are known as compact spaces. (Other cat-            maximum. This is done by first constructing a maxim iz-
 egories have “almost-finite” objects as well. For exam-             ing sequence—a sequence of points xn in X such that
 ple, in the category of groups there is a notion of a              f (xn ) approaches the maximal value of f (or, more pre-
 pro-finite group; for linear operators [III.50](/part-03/linear-operators-and-their-properties) between             cisely, its supremum)—and then investigating a conver-

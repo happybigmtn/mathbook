@@ -3,7 +3,7 @@
 928                                                                                VII. The Influence of Mathematics
 
 Cox, D. R. 1972. Theory and general principle in statistics.   Ethics in the style of euclid’s [VI.2](/part-06/euclid-ca) Elements, a world-
-  Journal of the Royal Statistical Society A 144:289–97.       historic peak of the influence of mathematics on phi-
+  Journal of the Royal Statistical Society A 144:289–97.       his to ric peak of the influence of mathematics on phi-
      . 1981. Regression models and life-tables (with dis-      losophy. The empiricists, who included that acute critic
   cussion). Journal of the Royal Statistical Society B 34:     of the calculus, Berkeley, recognized that in physics
   187–220.
@@ -53,7 +53,7 @@ ence, differed over issues of scientific method. Philos-         sible?” as th
 ophy had always been understood to differ from, for             thetic a priori knowledge possible?” Kant’s proposed
 instance, theology, by restricting itself to the methods       solution was based on the insight that our knowledge
 of reasoned argument and the evidence of experience,           must be shaped as much by the nature of ourselves,
-without appeal to authority, tradition, revelation, or         the knowers, as by that of what is known. Kant con-
+with out appeal to authority, tradition, revelation, or         the knowers, as by that of what is known. Kant con-
 faith. But philosophers of the era of the scientific revo-      cluded that space, the subject matter of geometry, and
 lution disagreed about the comparative importance of           time, according to him the ultimate subject matter of
 reason and experience.                                         arithmetic, were not features of things as they are in
@@ -77,9 +77,9 @@ System building continued for another generation,          within a generation, 
 down to Hegel. But eventually, and inevitably, his         lines of descent.
 system collapsed under its own weight, and in the            The two lines of development or traditions are oddly
 ensuing reaction philosophers went off in all direc-        named, with a stylistic label, “analytic,” for one, and
-tions. Outside academia, striking figures sporadically      a geographical label, “Continental,” for the other. This
+tions. Out side academia, striking figures sporadically      a geographical label, “Continental,” for the other. This
 appeared on the borders of philosophy and literature,      odd labeling reflects the historical fact that the prin-
-notably Nietzsche. Meanwhile, academic philosophy,         cipal representatives of the analytic style in Continen-
+notably Nietzsche. Meanwhile, academic philosophy,         cipal representatives of the analytic style in Contin en-
 rather like Victorian architecture, experienced a num-     tal Europe (Ludwig Wittgenstein, Rudolf Carnap, and
 ber of revivals, of which the Kantian was the most         others) were forced to go into exile in the English-
 prominent. But even as neo-Kantianism prevailed in         speaking world in the 1930 s, as a result of the process
@@ -140,7 +140,7 @@ tentialism; but it is also true that the direct influence                 2    M
 of mathematical ways of thinking on many individu-                           and Frege’s New Logic
 als and groups within the analytic tradition has been
 negligible. Thus, just as there are distinguishable Ger-    Let us turn, then, to consider the state of mathemat-
-man and French subtraditions within the Continen-           ical analysis in the days of Frege and Russell, begin-
+man and French subtraditions within the Contin en-           ical analysis in the days of Frege and Russell, begin-
 tal tradition, so within the analytic tradition one may     ning our account with a quick look back at the situation
 distinguish a more technically oriented subtradition,       ca. 1800. As rich as its results were, and as powerful
 including Frege (who was himself a professor of math-       its applications, mathematics at the beginning of the
@@ -148,9 +148,9 @@ ematics), Russell (who as an undergraduate had con-         nineteenth century w
 centrated on mathematics before turning to philoso-         tures: the natural, rational, real, and complex num-
 phy), and the logical positivists (who had mostly been      ber systems; and the Euclidean and projective spaces
 trained as theoretical physicists), from a nontechnical     of dimensions one, two, and three. All that changed
-or antitechnical subtradition, including Moore, Wittgen-    quickly when the work of Gauss, hamilton [VI.37](/part-06/william-rowan-hamilton-18051865), and
+or antitechnical subtradition, including Moore, Witt gen-    quickly when the work of Gauss, hamilton [VI.37](/part-06/william-rowan-hamilton-18051865), and
 stein, the so-called ordinary-language school of mid-       others introduced the first non-Euclidean spaces and
-century Oxford, and others. (Wittgenstein even went so      first noncommutative algebras, after which a prolifer-
+century Oxford, and others. (Wittgenstein even went so      first noncommutative algebras, after which a pro li fer-
 far as to claim that mathematicians always make bad         ation of new mathematical structures rapidly ensued.
 philosophers, a sweeping judgment condemning many           This generalizing tendency went hand in hand with a
 right back to Thales and pythagoras [VI.1](/part-06/pythagoras-ca), though          rigorizing tendency, since the proliferation of novelties
@@ -159,20 +159,20 @@ been very much more communication and influence              more strictly than 
 back and forth between the two subtraditions within         ideal of rigor, according to which all new results in
 each tradition than between the two traditions.             mathematics are to be logically deduced from previous
    Even among the more technical analytic philosophers      results, and ultimately from a list of explicit axioms.
-the influence of mathematics after the period of the         For without rigor, intuitions derived from familiarity
+the influence of mathematics after the period of the         For with out rigor, intuitions derived from familiarity
 founders has been occasional and sporadic, and has          with more traditional structures might easily be uncon-
 come mostly from areas such as mathematical logic,          sciously transferred to new situations where they are
 computability theory, probability and statistics, game      no longer appropriate.
 theory, and mathematical economics (as in the work             Generalization and rigorization went hand in hand
 of the philosopher–economist Amartya Sen), which are        not only in geometry and algebra, but also in mathe-
-rather far from the core of pure mathematics as math-       matical analysis. Generalization in mathematical analy-
+rather far from the core of pure mathematics as math-       mat ical analysis. Generalization in mathematical analy-
 ematicians see it. Thus it is hard to imagine the solu-     sis took place in two directions. The eighteenth-century
 tion to any of the Millennium Prize Problems (except        notion of “function” had been that of an operation
 perhaps the P vs NP problem, the one question com-          applying to one or more real numbers as inputs or
 ing from theoretical computer science rather than core      “arguments” and yielding a real number as output
 mathematics) having measurable impact even among            or “value,” according to a certain formula, such as
 the most susceptible analytic philosophers. In contrast     f (x) = sin x + cos x or f (x, y) = x 2 + y 2 . On the one
-to this limited direct influence, the indirect influence of   hand, nineteenth-century mathematicians generalized
+to this limited direct influence, the in direct influence of   hand, nineteenth-century mathematicians generalized
 mathematics, resulting from its effect on the thought        by dropping the requirement of an explicit formula. On
 of the early figures Frege and Russell, has been over-       the other hand, Cauchy, Riemann, and others extended
 
@@ -189,10 +189,10 @@ for the functions to which the result was supposed            of this general in
 to apply, since special properties such as definability        the specialized application he made of it to the phi-
 by a formula (or continuity or different i ability) were         losophy of mathematics, that Frege became the grand-
 no longer being built into the highly general notion          father of analytic philosophy. And the novelty in Frege’s
-of function itself; moreover, the relevant properties         logic was directly inspired by novel developments in
+of function itself; more over, the relevant properties         logic was directly inspired by novel developments in
 themselves had to be clearly defined (leading to the           mathematical analysis, as he himself emphasized.
 so-called weierstrass [VI.44](/part-06/karl-weierstrass-18151897) epsilon–delta definitions           In an article entitled “Function and concept,” Frege
-of such concepts as “continuity” and “different i ab il-          describes the broadening of the notion of function as
+of such concepts as “continuity” and “differentiabil-          describes the broadening of the notion of function as
 ity” in freshman calculus), since, as poincaré [VI.61](/part-06/jules-henri-poincar-18541912)        follows (in the translation by Peter Geach and Max
 remarked, until one has rigor in one’s definitions one         Black):
 cannot have rigor in one’s theorems. Second, the prop-
@@ -202,9 +202,9 @@ apply had also to be clarified and stated explicitly as
                                                                 guish two directions in which this has happened. In the
 axioms, with the properties of complex numbers being            first place, the field of mathematical operations that
 derived by logical definition and deduction from prop-           serve for constructing functions has been extended.
-erties of real numbers (by Hamilton), which themselves          Besides addition, multiplication, exponentiation, and
+erties of real numbers (by Hamilton), which themselves          Be sides addition, multiplication, exponentiation, and
 in turn were derived from properties of rational num-           their converses, the various means of transition to the
-bers (by dedekind [VI.50](/part-06/julius-wilhelm-richard-dedekind-18311916) and cantor [VI.54](/part-06/georg-cantor-18451918)), which            limit have been introduced—to be sure, without peo-
+bers (by dedekind [VI.50](/part-06/julius-wilhelm-richard-dedekind-18311916) and cantor [VI.54](/part-06/georg-cantor-18451918)), which            limit have been introduced—to be sure, with out peo-
                                                                 ple’s being always clearly aware that they were thus
 themselves in turn were derived from properties of the
                                                                 adopting something essentially new. People have even
@@ -234,11 +234,11 @@ correct, in that each step forward in the two millen-         in this area in a 
 nia after Aristotle had been followed by a step back.)        liant one when considered as the work of a single indi-
 It was Frege’s new logic, detached from its original role     vidual in the course of a career devoted to many other
 as part of a special project in foundations of arithmetic     projects. For Aristotle created from nothing the science
-and applied to quite diverse subject matters, that was        of logic, whose aim is to distinguish valid from invalid
+and applied to quite diverse subject matters, that was        of logic, whose aim is to distinguish valid from in valid
 
 932                                                                                VII. The Influence of Mathematics
 
-inferences of conclusions from premises. Here an infer-          By contrast, if you open any present-day introduc-
+inferences of conclusions from premises. Here an infer-          By contrast, if you open any present-day intro duc-
 ence is valid if its form alone, regard less of the material    tory logic text, you will find instructions on how to
 truth or falsehood of premises and conclusions, guar-          represent symbolically the forms of arguments involv-
 antees that if the premises are true, then the conclu-         ing relations. The example just given would appear
@@ -272,7 +272,7 @@ exemplifies the validity of the inference from “All A’s
                                                                since Socrates was not immortal but died of drinking
 are B’s” and “All B’s are C’s” to “All A’s are C’s,” tradi-
                                                                hemlock. Frege is able to handle relations because he
-tionally called the “syllogism in Barbara,” for reasons
+tion ally called the “syllogism in Barbara,” for reasons
                                                                follows the mathematical analysts who allowed func-
 that need not concern us here. Aristotle’s logic was in
                                                                tions of two or more arguments. Thus the two-argument
@@ -282,7 +282,7 @@ ical debate (“dialectic”) and in part by the practice of
                                                                Plato, in that order, produces Truth, since Socrates
 deduction in mathematical theorem-proving (“demon-
                                                                taught Plato, while applied to Plato and Socrates, in that
-stration”), and he offers in his Posterior Analytics an
+st ration”), and he offers in his Posterior Analytics an
                                                                order, produces Falsehood, since Plato did not teach
 account of a deductive science that is presumed to be
                                                                Socrates. Aristotle’s simple “All A’s are B’s” becomes,
@@ -312,17 +312,17 @@ in terms of Female (respectively, Male) and Parent. For      that in some sense 
 Frege, Mother is analyzed as follows:                        to whom or which the property of nonexistence may
       Mother(x) ↔ Female(x) & ∃y Parent(x, y).               be ascribed. Russell cites Alexius Meinong (a student
                                                              of Husserl’s teacher Franz Brentano) as a philosopher
-A mother is a female who is someone’s parent, and
+A mother is a female who is some one’s parent, and
                                                              committed to such a view. For Meinong had a theory
 analogously for a father. Frege was even able to ana-
-                                                             of “objects beyond being and nonbeing,” exemplified
+                                                             of “objects beyond being and non being,” exemplified
 lyze the concept Ancestor in terms of the concept Par-
                                                              by The Golden Mountain and The Round Square. But
 ent, though this analysis is beyond the scope of the
                                                              as Scott Soames reveals, in his Philosophical Analysis in
 present sketch. Later philosophical analysis would have
                                                              the Twentieth Century, volume I: The Dawn of Analy-
-been unthinkable without Frege’s broadening of logi-
+been unthinkable with out Frege’s broadening of logi-
                                                              sis, Russell himself had briefly held a similar view in
 cal analysis beyond Aristotle’s, and Frege rightly saw
                                                              the first days of his and Moore’s joint rebellion against
@@ -346,15 +346,15 @@ ment, his theory of descriptions, and a more general         ∃x(Golden(x) & Mo
 method, that of contextual definition, which his suc-                 & ∼∃y(Golden(y) & Mountain(y) & y ≠ x)).
 cessors took up and applied to many other problem
 areas. Indeed, it was not merely Russell’s successors        (Here “∼” represents “it is not the case that.”) This is
-who applied these ideas to areas outside philosophy of       logically equivalent to saying there is something such
+who applied these ideas to areas out side philosophy of       logically equivalent to saying there is something such
 mathematics, since Russell himself did so in his first        that a thing is both golden and a mountain if and only
 publications on the subject. Thus it is not apparent         if it is identical with that thing:
 from Russell’s still widely read “On denoting,” pub-              ∃x∀y(Golden(y) & Mountain(y) ↔ y = x).
 lished in 1905 and even today a key item on the syllabus
 of students of analytic philosophy, that the theory of       To say that the Golden Mountain does not exist is
 descriptions originated in the course of studies in foun-    simply to deny this:
-dations and philosophy of mathematics. Rather, this is           ∼∃x∀y(Golden(y) & Mountain(y) ↔ y = x).
-a fact mentioned in Russell’s au to biographical writings
+da tions and philosophy of mathematics. Rather, this is           ∼∃x∀y(Golden(y) & Mountain(y) ↔ y = x).
+a fact mentioned in Russell’s autobiographical writings
 and known to historians of twentieth-century philoso-        To say that the king of France is bald is, similarly, to
 phy. The degree to which the method of contextual def-       say that there is something such that a thing is king of
 inition, which the theory of descriptions exemplifies,        France if and only if it is identical with that thing, and
@@ -364,12 +364,12 @@ such specialists.
    A principal puzzle Russell addresses in “On denot-          This is not the place to go into the subtleties of Rus-
 ing” is that of so-called negative existentials, such as     sell’s theory, whose main point should be clear from
 “The king of France does not exist.” In superficial gram-     these few examples: when the logical form is properly
-matical form this statement resembles “The queen of          analyzed, using the new logic, the phrase “the Golden
+mat ical form this statement resembles “The queen of          analyzed, using the new logic, the phrase “the Golden
 England does not agree,” and to that extent it appears       Mountain” or “the present king of France” disappears.
 to involve picking out an object (in this case, a person),   With it vanishes any appearance that we must acknow-
 and then attributing a property to him (or her, as the       ledge such an “object” as the Golden Mountain or king
 case may be). Thus it seems that in order to say that        of France even in order to deny that any such object
-someone or something does not exist, one must assume         exists. The examples illustrate in miniature two lessons:
+some one or something does not exist, one must assume         exists. The examples illustrate in miniature two lessons:
 
 934                                                                            VII. The Influence of Mathematics
 
@@ -386,28 +386,28 @@ tion that does not provide an analysis of the word or       of an operation of d
 phrase standing alone, but rather provides an analysis      function f (x).
 of contexts in which it appears.                               Similarly, such an expression as limx→0 1/x = . nfty, or
    Russell’s distinction between grammatical and logi-      “the limit of 1/x as x goes to zero is infinity,” was
-cal form, and his claim that the former may be system-      explained as a whole, without requiring any explana-
-atically misleading, was to prove immensely influen-         tion of “. nfty” or “infinity” taken separately. The details,
+cal form, and his claim that the former may be system-      explained as a whole, with out requiring any explana-
+at ically misleading, was to prove immensely influen-         tion of “. nfty” or “infinity” taken separately. The details,
 tial, even among nontechnically oriented philosophers,      which now appear in any freshman calculus textbook,
 such as the Oxford ordinary-language school, who saw        need not detain us. What is important historically is
 no need to use special symbols to represent logical         that the notion of contextual definition employed in
 forms, and objected to details of Russell’s specific         Russell’s theory of descriptions was an idea that would
 application of the distinction in his theory of descrip-    have been familiar to him as a student of mathematics.
-tions. But Russell’s notion of contextual definition is      To acknowledge this is, needless to say, not to deny
+tions. But Russell’s notion of contextual definition is      To acknowledge this is, need less to say, not to deny
 one implicit already in the practice of Weierstrass and     that there is a certain genius involved in extracting
-other leaders of the nineteenth-century rigorization of     such an idea from its original context of mathemati-
+other leaders of the nineteenth-century rigorization of     such an idea from its original context of mathemat i-
 analysis, and familiar to Russell from his undergradu-      cal analysis and employing it to resolve philosophical
 ate mathematical studies, so that even the antitechnical    puzzles. To acknowledge the germs of Russell’s ideas
 ordinary-language school of philosophical analysts are      in ideas of Weierstrass is merely to indicate more pre-
 being influenced at one remove (and, so to speak, in         cisely what kind of genius Russell, like Frege before
 spite of themselves) by mathematical analysis.              him, was bringing to bear on philosophical issues: a
-   Contextual definition was the tool the rigorizers used    kind of philosophical genius informed by knowledge of
+   Contextual definition was the tool the rigorizers used    kind of philosophical genius in formed by knowledge of
 to dispel the mysteries surrounding the notions of          mathematics.
 infinitesimals and infinities in the calculus. The fol-
 lowers of Leibniz had, for instance, written df (x)/dx                  4 Philosophical Analysis
-for the derivative of a function f (x), wherein dx was                   and Analytic Philosophy
+for the derivative of a function f (x), where in dx was                   and Analytic Philosophy
 supposed to represent an “infinitesimal” change in the       Anyone who acquires a new tool is in some danger of
-argument, and df (x) a corresponding “infinitesimal”         behaving like the proverbial man with a hammer to
+argument, and df (x) a corresponding “infinitesimal”         be having like the proverbial man with a hammer to
 change f (x + dx) − f (x) in the value when the argu-       whom everything seems to be a nail. There is no deny-
 ment changes from x to x + dx. (Leibniz claimed that        ing that some of the first people to apply the new meth-
 this was all just a figure of speech, but his followers      ods of Frege and Russell were over enthusiastic about

@@ -11,7 +11,7 @@ notably the problem of the deceleration and deflec-           Moon, or some vort
 tion of a disk entering a fluid, which was linked to the      produced a long study on celestial mechanics and plan-
 Cartesian explanation of refraction of light. He made        etary perturbations that has only recently been redis-
 a close reading of newton’s [VI.14](/part-06/isaac-newton-16421727) Principia, his com-      covered and published (see d’Alembert 2002). By 1749
-mentary on passages of the first book showing his clear       an improved mathematical analysis of the problem
+ment ary on passages of the first book showing his clear       an improved mathematical analysis of the problem
 preference for analytical methods over the synthetic         had shown that Newton’s theory was correct. The rest
 geometry of Newton.                                          of d’Alembert’s extensive work on celestial mechanics
    D’Alembert’s Traité de Dynamique (1743) made him          was published in his Recherches sur la Précession des
@@ -22,7 +22,7 @@ motions (i.e., the addition of the effects of two forces or      In 1747 d’Ale
 powers), and equilibrium—while at the same time try-         problem of vibrating strings, Recherches sur la Courbe
 ing to avoid metaphysical arguments. Most notably he         que Forme une Corde Tendue Mise en Vibration (1749).
 proposed an important general principle, known today         This paper contained a solution of the wave equation
-as “d’Alembert’s principle,” to simplify the investiga-      [I.3 §5.4](/part-01/fundamental-definitions). This was the first solution of a partial differen-
+as “d’Alembert’s principle,” to simplify the investiga-      [I.3 §5.4](/part-01/fundamental-definitions). This was the first solution of a partial differ en-
 tion of constrained systems, such as the compound            tial equation—partial differential equations were a new
 pendulum, vibrating rods, strings, rotating bodies, and      tool that he had already used in his 1747 Réflexions sur
 even fluids, which he considered to be aggregates of          la Cause Générale des Vents. It led to a lengthy debate
@@ -33,7 +33,7 @@ roughly speaking by introducing a fictitious force, the       function.
 acceleration. This allowed techniques from statics to be     and his efforts to find rigorous foundations for the sci-
 brought to bear on problems in dynamics.                     ences led him into the field of philosophy, where his
    His other books and memoirs were developments,            main contributions concerned the classification of var-
-some very innovative, in fluid theory, partial differen-       ious sciences. He also worked on the study of cogni-
+some very innovative, in fluid theory, partial differ en-       ious sciences. He also worked on the study of cogni-
 tial equations, celestial mechanics, algebra, and inte-      tion following the lines proposed by descartes [VI.11](/part-06/ren-descartes-15961650),
 gral calculus. He devoted much thought to the use and        Locke, and Condillac.
 status of imaginary numbers.
@@ -41,7 +41,7 @@ status of imaginary numbers.
    In his Réflexions sur la Cause Générale des Vents
 (1747) and his Recherches sur le Calcul Intégral (1748)      D’Alembert, J. le R. 2002. Premiers Textes de Mécanique
 he observed that numbers of the form a + bi (where             Céleste, edited by M. Chapront. Paris: CNRS.
-    √                                                        Hankins, T. 1970. Jean d’Alembert, Science and the Enlight-
+    √                                                        Hankins, T. 1970. Jean d’Alembert, Science and the En light-
 i = −1) retain the same form when subjected to the
                                                                enment. Oxford: Oxford University Press.
 usual operations (addition, subtraction, multiplication,

@@ -5,7 +5,7 @@ VI.13.   Blaise Pascal                                                          
 the points of such loci by two coordinates linked by an         In 1654 Fermat exchanged letters with pascal [VI.13](/part-06/blaise-pascal-16231662)
 equation (although he chose a different way of taking         on the idea of a “fair game” and on the redistribution of
 coordinates from the usual modern x and y coordin-           the stakes if a game is interrupted before its end. These
-ates). Moreover, Fermat gave the standard forms of the       letters introduced important concepts in probability,
+ates). More over, Fermat gave the standard forms of the       letters introduced important concepts in probability,
 corresponding equation when the locus to be found            including expected value and conditional probability.
 was a line, a parabola, an ellipse, etc.
    Fermat also used algebraic analysis to solve prob-        Further Reading
@@ -17,7 +17,7 @@ centers of gravity. His method relies on the principle         Paris: Belin.
 that a certain algebraic expression takes on the same        Goldstein, C. 1995. Un Théorème de Fermat et Ses Lecteurs.
 values twice near the extremum. Although the proce-            Saint-Denis: Presses Universitaires de Vincennes.
 dure is purely algebraic, his successors tended to inter-    Mahoney, M. 1994. The Mathematical Career of Pierre de
-pret it from a differential perspective, thereby making         Fermat (1601–1665), second revised edn. Princeton, NJ:
+pret it from a differential perspective, there by making         Fermat (1601–1665), second revised edn. Princeton, NJ:
 his work an apparent precursor of the calculus. Fermat         Princeton University Press.
 applied the method to a variety of problems, includ-                                                Catherine Goldstein
 ing (within the framework of a controversy with Des-
@@ -43,7 +43,7 @@ metrical questions such as quadrature.                                          
 numbers. On the one hand, he was happy to apply his                                     1 3 3 1
 algebraic approach to Diophantine analysis in order                                    1 4 6 4 1
 to obtain solutions for cases previously thought to be                                · · · · · ·
-insoluble, or to derive new solutions from ones already      a triangular array in which each number is the sum of
+in soluble, or to derive new solutions from ones already      a triangular array in which each number is the sum of
 known. On the other hand, he advocated a theoretical         the two immediately above it, provides a geometrical
                                                                                                                   
 study of the integers, for which the currently available     arrangement of the binomial coefficients n     k , with k

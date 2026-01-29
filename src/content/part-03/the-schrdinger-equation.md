@@ -6,7 +6,7 @@ III.83. The Schrödinger Equation                                               
 torize them, and we can try to do the same in rings          III.82 Schemes
 as well. However, it turns out that, while it is usually              Jordan S. Ellenberg
 possible to factorize an element of a ring into “irre-
-ducible” ones that cannot be factorized further (like        One frequently finds in the history of mathematics
+duc i ble” ones that cannot be factorized further (like        One frequently finds in the history of mathematics
 the primes in Z), in many cases the factorization is not     that a definition thought to be completely general
 unique. At first, this might be rather unexpected, and        was in fact too restrictive to treat certain problems
 indeed it was a stumbling block for many early workers       of interest. The notion of “number,” for instance, has
@@ -44,7 +44,7 @@ a basis of a module to be a linearly independent set of
 elements that spans the module. However, many use-
                                                              much recent progress in number theory would have
 ful facts about bases in vector spaces do not hold for
-                                                             been impossible without the geometric insight supplied
+                                                             been impossible with out the geometric insight supplied
 modules. For instance, in Z, which we may consider as        by the theory of schemes.
 a module over itself, the set {2, 3} spans the module           Even schemes are not enough to handle all the
 but does not contain a basis, and similarly the set {2} is   problems of current interest, and still more general
@@ -76,7 +76,7 @@ theory take over the role of Heisenberg’s equation,                           
 while Schrödinger’s equation does not have a natural                                        ∂p ∂q   ∂p ∂q
 direct analogue.) In pure mathematics, the Schrödinger         is the Poisson bracket of H and A. Setting A = H, we
 equation, together with its variants, is one of the basic      have in particular the conservation-of-energy law:
-equations studied in the field of partial differen-
+equations studied in the field of partial differ en-
                                                                                      H(q(t), p(t)) = E                            (4)
 tial equations [IV.12](/part-04/analysis), and has applications to geom-
 etry, to spectral and scattering theory, and to integrable     for all t ∈ R and some quantity E independent of t.
@@ -172,7 +172,7 @@ tion of motion (3) is the Heisenberg equation
 
               d             i                                   then the Schrödinger equation often has nearly peri-
                 A(t) =      [H(t), A(t)]         (6)
-             dt                                                odic solutions, whereas if the classical equations have
+             dt                                                odic solutions, where as if the classical equations have
 for any observable A, where [A, B] = AB − BA is the             very chaotic solutions, then the Schrödinger equation
 commutator or Lie bracket of A and B. (The quantity             typically does as well (this phenomenon is known as
 (i/)[A, B] is occasionally referred to as the quantum          quantum chaos or quantum ergodicity).
@@ -200,7 +200,7 @@ mechanics. For instance, from (6) one has the equations
     q(t) =   p(t),              p(t) = −∇q V (q)(t),    and localized in momentum near p(t), and is thus localized near
  dt          m                   dt                             (q(t), p(t)) in phase space. Such a localized function, exhibiting such
                                                                 “particle-like” behavior as having a reasonably well-defined position
-which should be compared with (2). Also, given any              and velocity, is sometimes known as a “wave packet.” A typical solu-
+which should be compared with (2). Also, given any              and velocity, is some times known as a “wave packet.” A typical solu-
 classical solution t → (q(t), p(t)) to Hamilton’s equa-        tion of the Schrödinger equation does not behave like a wave packet,
                                                                 but can be decomposed as a superposition or linear combination of
 tion of motion, one can construct a corresponding               wave packets; such decompositions are a useful tool in analyzing

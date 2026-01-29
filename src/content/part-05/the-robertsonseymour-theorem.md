@@ -7,7 +7,7 @@ etry such as schemes [IV.5 §3](/part-04/arithmetic-geometry) and “sheaves.”
 bruch’s generalization, like the classical result about        a minor if and only if it contains a cycle.
 curves, expresses an analytically defined quantity in              For an example of how minors can arise naturally,
 terms of purely topological invariants: it is this fea-        note that if a graph is planar (meaning that it can be
-ture of both results that underlies their importance.          drawn in the plane in such a way that edges do not
+ture of both results that under lies their importance.          drawn in the plane in such a way that edges do not
 Another generalization of which the same can be said           cross), then so is any minor of it. This is expressed by
 is the famous atiyah–singer index theorem [V.2](/part-05/the-atiyahsinger-index-theorem),               saying that the class of planar graphs is minor closed.
 which has itself been generalized several times.               Now, there is a theorem of Kuratowski that tells us
@@ -23,9 +23,9 @@ each edge links a pair of vertices. Graphs can be used to      planar graphs is 
 represent many different networks in an abstract way.              Kuratowski’s theorem tells us which graphs can be
 For example, the vertices might represent cities, and the      embedded into the plane. What happens for other sur-
 edges might represent highways linking the cities; sim-        faces? For example, it is easy to see that for any d the set
-ilarly, we could use a graph to represent which islands        of graphs that can be drawn on a d-holed torus is minor
+ilarly, we could use a graph to represent which is lands        of graphs that can be drawn on a d-holed torus is minor
 of an archipelago are linked by bridges, or to repre-          closed, but is there a finite set of forbidden minors in
-sent the wires of a telephone network. Among graphs            this case? To put it another way, is the set of obstruc-
+sent the wires of a telephone network. Among graphs            this case? To put it another way, is the set of obs truc-
 there are certain families of “nice” graphs. One such          tions to being embeddable into the d-holed torus only
 family is the family of cycles: a k-cycle is a set of k ver-   finite?
 tices arranged around a circle with each point joined             A special case of the Robertson–Seymour theorem

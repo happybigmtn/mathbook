@@ -38,7 +38,7 @@ Real and complex analysis; mechanics; number theory;          tions, including t
 equations and algebra                                         various kinds.
                                                                  Cauchy’s main single achievement in applied mathe-
 Trained as a roads and bridges engineer at the École          matics lies in linear elasticity theory, where in the 1820 s
-Polytechnique (hereafter, “EP”) and the École des Ponts       he used stress–strain models to analyze the behav-
+Polytechnique (here after, “EP”) and the École des Ponts       he used stress–strain models to analyze the behav-
 et Chaussées (1805–10), Cauchy passed his career as an        ior of various kinds of surfaces and solids; later he
 academic at the EP and the Paris Faculté des Sciences of      adapted it to study aspects of (aetherian) optics. In
 the Université de France until 1830, when he left France      the 1810 s he studied deep-body fluid dynamics, where
@@ -50,6 +50,6 @@ mathematics, the best known are in mathematical anal-            Cauchy’s othe
 ysis. In the foundations of real variables, he replaced       ics (derived from the EP teaching); singular and gen-
 all previous approaches to the theory with one that           eral solutions of differential equations; the theory of
 (in more developed forms) has now become standard:            equations, especially methods that helped in the rise
-(i) lay down an explicit theory of limits; (ii) formulate     of group theory; algebraic number theory; perturba-
+(i) lay down an explicit theory of limits; (ii) formulate     of group theory; algebraic number theory; perturb a-
 definitions carefully, and in general terms; (iii) define       tion theory in celestial mechanics; and an astounding
 the derivative of a function as the limiting value of the     paper of 1829 on quadratic forms, which could have

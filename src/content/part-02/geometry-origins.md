@@ -12,19 +12,19 @@ $1$
 
 Introduction
 
-The modern view of geometry was inspired by the novel geometrical theories of hilbert [VI.63](/part-06/david-hilbert-18621943) and Einstein in the early years of the twentieth century, which built in their turn on other radical reformulations of geometry in the nineteenth century. For thousands of years, the geometrical knowledge of the Greeks, as set out most notably in euclid’s [VI.2](/part-06/euclid-ca) Elements, was held up as a paradigm of perfect rigor, and indeed of human knowledge. The new theories amounted to the overthrow of an entire way of thinking.
+The modern view of geometry was inspired by the novel geometrical theories of hilbert [VI.63](/part-06/david-hilbert-18621943) and Einstein in the early years of the twentieth century, which built in their turn on other radical reformulations of geometry in the nineteenth century. For thousands of years, the geometrical knowledge of the Greeks, as set out most notably in euclid’s [VI.2](/part-06/euclid-ca) Elements, was held up as a paradigm of perfect rigor, and indeed of human knowledge. The new theories amounted to the over throw of an entire way of thinking.
 This essay will pursue the history of geometry, starting from the time of Euclid, continuing with the advent of non-Euclidean geometry, and ending with the work of riemann [VI.49] , klein [VI.57] , and poincaré [VI.61](/part-06/jules-henri-poincar-18541912). Along the way, we shall examine how and why the notions of geometry changed so remarkably. Modern geometry itself will be discussed in later parts of this book.
 
 $2$
 
 Naive Geometry
 
-Geometry generally, and Euclidean geometry in particular, is informally and rightly taken to be the mathematical description of what you see all around you: a space of three dimensions (left - right , up-down, forwards - backwards) that seems to extend indefinitely far. Objects in it have positions, they sometimes move around and occupy other positions, and all of these positions can be specified by measuring lengths along straight lines: this object is twenty meters from that one, it is two meters tall, and so on.
+Geometry generally, and Euclidean geometry in particular, is informally and rightly taken to be the mathematical description of what you see all around you: a space of three dimensions (left - right , up-down, forwards - backwards) that seems to extend indefinitely far. Objects in it have positions, they some times move around and occupy other positions, and all of these positions can be specified by measuring lengths along straight lines: this object is twenty meters from that one, it is two meters tall, and so on.
 We can also measure angles, and there is a subtle relationship between angles and lengths. Indeed, there is another aspect to geometry, which we do not see but which we reason about. Geometry is a mathematical subject that is full of theorems--the isosceles triangle theorem, the Pythagorean theorem, and so on--which collectively summarize what we can say about lengths, angles, shapes, and positions. What distinguishes this aspect
 
 $83$
 
-of geometry from most other kinds of science is its highly deductive nature. It really seems that by taking the simplest of concepts and thinking hard about them one can build up an impressive, deductive body of knowledge about space without having to gather experimental evidence. But can we? Is it really as simple as that? Can we have genuine knowledge of space without ever leaving our armchairs? It turns out that we cannot: there are other geometries, also based on the concepts of length and angle, that have every claim to be useful, but that disagree with Euclidean geometry.
+of geometry from most other kinds of science is its highly deductive nature. It really seems that by taking the simplest of concepts and thinking hard about them one can build up an impressive, deductive body of knowledge about space with out having to gather experimental evidence. But can we? Is it really as simple as that? Can we have genuine knowledge of space with out ever leaving our armchairs? It turns out that we cannot: there are other geometries, also based on the concepts of length and angle, that have every claim to be useful, but that disagree with Euclidean geometry.
 This is an astonishing discovery of the early nineteenth century, but, before it could be made, a naive understanding of fundamental concepts, such as straightness, length, and angle, had to be replaced by more precise definitions--a process that took many hundreds of years. Once this had been done, first one and then infinitely many new geometries were discovered.
 
 $3$
@@ -49,13 +49,13 @@ of physical space than Euclidean geometry.                    notice that they n
 of plane figures: triangles, quadrilaterals, and circles.      been clearly stated in their definitions, but this is a diffi-
 The famous theorem of Pythagoras is the forty-seventh         cult requirement to meet. Euclid’s success here was still
 proposition of the first book. Then come two books on          impressive, but mixed. On the one hand, the Elements
-the theory of ratio and proportion and the theory of          is a remarkable work, far outstripping any contempo-
+the theory of ratio and proportion and the theory of          is a remarkable work, far outstripping any con tempo-
 similar figures (scale copies), treated with a high degree     rary account of any of the topics it covers, and capable
 of sophistication. The next three books are about whole       of speaking down the millennia. On the other, it has
 numbers, and are presumably a reworking of much               little gaps that from time to time later commentators
 older material that would now be classified as elemen-         would fill. For example, it is neither explicitly assumed
 tary number theory. Here, for example, one finds the           nor proved in the Elements that two circles will meet
-famous result that there are infinitely many prime num-        if their centers lie outside each other and the sum of
+famous result that there are infinitely many prime num-        if their centers lie out side each other and the sum of
 bers. The next book, the tenth, is by far the longest,        their radii is greater than the distance between their
 and deals with
               the√seemingly specialist topic of lengths      centers. However, Euclid is surprisingly clear that there
@@ -109,7 +109,7 @@ it is unique.                                                  well that if the 
 well aware that the parallel postulate was awkward. It         the distance between them is a constant. But until the
 asserts a property of straight lines that seems to have        parallel postulate is proved, nothing prevents one say-
 made Greek mathematicians and philosophers uncom-              ing that the lines m and n diverge. Proclus’s proof does
-fortable, and this may be why its appearance in the Ele-       not therefore work unless one can show that lines that
+for table, and this may be why its appearance in the Ele-       not therefore work unless one can show that lines that
 ments is delayed until proposition 29 of Book I. The           do not meet also do not diverge.
 commentator Proclus (fifth century c.e.), in his exten-            Proclus’s attempt was not the only one, but it is typi-
 sive discussion of Book I of the Elements, observed that       cal of such arguments, which all have a standard form.
@@ -138,7 +138,7 @@ painful this compromise was. What, the experts asked,          the whole careful
 was to be done?                                                collapses into a pile of facts.
    One Greek discussion must suffice here. In Proclus’s             This deductive character of the Elements is clearly
 view, if the truth of the parallel postulate was not obvi-     something that Euclid regarded as important, but one
-ous, and yet geometry was bare without it, then the only       can also ask what he thought geometry was about. Was
+ous, and yet geometry was bare with out it, then the only       can also ask what he thought geometry was about. Was
 possibility was that it was true because it was a theo-        it meant, for example, as a mathematical description
 rem. And so he gave it a proof. He argued as follows. Let      of space? No surviving text tells us what he thought
 
@@ -150,7 +150,7 @@ $4$
 
 Arab and Islamic Commentators
 
-What we think of today as Greek geometry was the work of a handful of mathematicians, mostly concentrated in a period of less than two centuries. They were eventually succeeded by a somewhat larger number of Arabic and Islamic writers, spread out over a much greater area and a longer time. These writers tend to be remembered as commentators on Greek mathematics and science, and for transmitting them to later Western authors, but they should also be remembered as creative, innovative mathematicians and scientists in their own right.
+What we think of today as Greek geometry was the work of a handful of mathematicians, mostly concentrated in a period of less than two centuries. They were eventually succeeded by a some what larger number of Arabic and Islamic writers, spread out over a much greater area and a longer time. These writers tend to be remembered as commentators on Greek mathematics and science, and for transmitting them to later Western authors, but they should also be remembered as creative, innovative mathematicians and scientists in their own right.
 A number of them took up the study of Euclid’s Elements, and with it the problem of the parallel postulate. They too took the view that it was not a proper postulate, but one that could be proved as a theorem using the core alone. Among the first to attempt a proof was Thābit ibn Qurra. He was a pagan from near Aleppo who lived and worked in Baghdad, where he died in $901$ . Here there is room to describe only his first approach.
 He argued that if two lines $m$ and $n$ are crossed by a third, k, and if they approach each other on one side of the line k, then they diverge indefinitely on the other side of k. He deduced that two lines that make equal alternate angles with a transversal (the marked angles in figure $1$ ) cannot approach each other on one side of a transversal: the symmetry of the situation would imply that they approached on the other side as well, but he had shown that they would have to diverge on the other side.
 From this he deduced the Euclidean theory of parallels, but his argument was also flawed, since he had not considered the possibility that two lines could diverge in both directions. The distinguished Islamic mathematician and scientist ibn al-Haytham was born in Basra in $965$ and died in Egypt in 1041 . He took a quadrilateral with two equal sides perpendicular to the base and dropped a perpendicular from one side to the other.
@@ -206,10 +206,10 @@ precisely one equilateral triangle with that given angle      the new geometry m
 at each vertex. This would lead to what philosophers          space. Gauss replied positively. He accepted the results,
 called an “absolute” measure of length (one could take,       and he claimed that he could do all of elementary
 for instance, the length of the side of an equilateral tri-   geometry once a value for the constant was given. One
-angle with angles equal to 30◦ ), which leibniz’s [VI.15](/part-06/gottfried-wilhelm-leibniz-16461716)     could argue, somewhat ungenerously, that Schweikart
+angle with angles equal to 30◦ ), which leibniz’s [VI.15](/part-06/gottfried-wilhelm-leibniz-16461716)     could argue, some what ungenerously, that Schweikart
 follower Wolff had said was impossible. And indeed it          had done little more than read Lambert’s posthumous
 is counter intuitive: lengths are generally defined in rel-     book—although the theorem about isosceles triangles
-ative terms, as, for instance, a certain proportion of the    is new. However, what is notable is the attitude of
+ative terms, as, for instance, a certain proportion of the    is new. However, what is not able is the attitude of
 length of a meter rod in Paris, or of the circumference       mind: the idea that this new geometry might be true,
 of Earth, or of something similar. But such arguments,        and not just a mathematical curiosity. Euclid’s Elements
 said Lambert, “were drawn from love and hate, with            shackled him no more.
@@ -229,7 +229,7 @@ it appeared in the Elements. However, it was one thing        is no material in 
 to seek to replace books of a heavily intuitive kind, but     to reconstruct what Gauss knew or that supports the
 quite another to deliver the requisite degree of rigor.       claim that Gauss discovered non-Euclidean geometry.
 Legendre, as he came to realize, ultimately failed in his        Rather, the picture would seem to be that Gauss came
-attempt. Specifically, like everyone before him, he was        to realize during the 1810 s that all previous attempts
+attempt. Specifically, like every one before him, he was        to realize during the 1810 s that all previous attempts
 unable to give an adequate defense of the parallel pos-       to derive the parallel postulate from the core of Euclid-
 tulate. Legendre’s Éléments de Géométrie ran to numer-        ean geometry had failed and that all future attempts
 ous editions, and from time to time a different attempt        would probably fail as well. He became more and more
@@ -240,7 +240,7 @@ be extremely persuasive.                                      status of arithmet
 took it for granted that the parallel postulate had to        ence. The simplest accurate statement of Gauss’s posi-
 be true. But by around 1800 this attitude was no longer       tion through the 1820 s is that he did not doubt that
 universally held. Not everybody thought that the postu-       space might be described by a non-Euclidean geometry,
-late must, somehow, be defended, and some were pre-           and of course there was only one possibility: that of
+late must, some how, be defended, and some were pre-           and of course there was only one possibility: that of
 pared to contemplate with equanimity the idea that it         case L described above. It was an empirical matter, but
 might be false. No clearer illustration of this shift can     one that could not be resolved by land-based measure-
 be found than a brief note sent to gauss [VI.26](/part-06/carl-friedrich-gauss-17771855) by           ments because any departure from Euclidean geometry
@@ -274,7 +274,7 @@ the formulas of a geometry satisfying case L apply.
 validity of two-dimensional Euclidean geometry be-
 cause it is a simplification of three-dimensional Euclid-
 ean geometry. Before a two-dimensional geometry sat-           are n and n . Notice that lines on the diagram appear
-isfying the hypotheses of case L can be accepted, it is        curved. This is because, in order to represent them on
+i sfy ing the hypotheses of case L can be accepted, it is        curved. This is because, in order to represent them on
 necessary to show that there is a plausible three-dimen-       a flat, Euclidean page, it is necessary to distort them,
 sional geometry analogous to case L. Such a geometry           unless the geometry is itself Euclidean, in which case
 has to be described in detail and shown to be as plau-         one can put n and n together and make a single line
@@ -284,8 +284,8 @@ Gauss simply never did.                                           Given this new
             7   Bolyai and Lobachevskii                        The left and right parallels to m through P make equal
                                                                angles with the perpendicular, called the angle of par-
 The fame for discovering non-Euclidean geometry goes
-                                                               allelism. If the angle is a right angle, then the geometry
-to two men, bolyai [VI.34] in Hungary and lobachev-
+                                                               all el ism. If the angle is a right angle, then the geometry
+to two men, bolyai [VI.34] in Hungary and lo bac hev-
                                                                is Euclidean. However, if it is less than a right angle,
 skii [VI.31](/part-06/nicolai-ivanovich-lobachevskii-17921856) in Russia, who independently gave very sim-
                                                                then the possibility arises of a new geometry. It turns
@@ -323,7 +323,7 @@ P
 Figure $6 A$ curve perpendicular to
 
 a family of Euclidean lines through a point. point (figure $5$ ). If, again in Euclidean geometry, one takes the family of all lines through a common point Q and chooses another point P, then there will be a curve through P that is perpendicular to all the lines: the circle with center Q that passes through P (figure $6$ ) . The curve defined by Bolyai and Lobachevskii has some of the properties of both these Euclidean constructions: it is perpendicular to all the parallels, but it is curved and not straight. Bolyai called such a curve an L-curve.
-Lobachevskii more helpfully called it a horocycle, and the name has stuck. Their complicated arguments took both men into three-dimensional geometry. Here Lobachevskii’s arguments were somewhat clearer than Bolyai’s, and both men notably surpassed Gauss. If the figure defining a horocycle is rotated about one of the parallel lines, the lines become a family of parallel lines in three dimensions and the horocycle sweeps out a bowl-shaped surface, called the Fsurface by Bolyai and the horosphere by Lobachevskii. Both men now showed that something remarkable happens.
+Lobachevskii more helpfully called it a horocycle, and the name has stuck. Their complicated arguments took both men into three-dimensional geometry. Here Lobachevskii’s arguments were some what clearer than Bolyai’s, and both men notably surpassed Gauss. If the figure defining a horocycle is rotated about one of the parallel lines, the lines become a family of parallel lines in three dimensions and the horocycle sweeps out a bowl-shaped surface, called the Fsurface by Bolyai and the horosphere by Lobachevskii. Both men now showed that something remarkable happens.
 Planes through the horosphere cut it either in circles or in horocycles, and if a triangle
 
 II. The Origins of Modern Mathematics
@@ -338,12 +338,12 @@ is it Euclidean geometry or is it the new geometry for some value of the paramet
 II.2.   Geometry                                                                                                    91
 
 experimentally? Bolyai left matters there, but Loba-          as it stood, inadequate, but their work was not crit-
-chevskii explicitly showed that measurements of stellar       icized on that account. It was dismissed with scorn,
+che vskii explicitly showed that measurements of stellar       icized on that account. It was dismissed with scorn,
 parallax might resolve the question. Here he was unsuc-       as if it were self-evident that it was wrong: so wrong
 cessful: such experiments are notoriously delicate.           that it would be a waste of time finding the error it
-  By and large, the reaction to Bolyai and Lobachev-          surely contained, so wrong that the right response was
+  By and large, the reaction to Bolyai and Lo bac hev-          surely contained, so wrong that the right response was
 skii’s ideas during their lifetimes was one of neglect        to heap ridicule upon its authors or simply to dismiss
-and hostility, and they died unaware of the success           them without comment. This is a measure of the hold
+and hostility, and they died unaware of the success           them with out comment. This is a measure of the hold
 their discoveries would ultimately have. Bolyai and his       that Euclidean geometry still had on the minds of most
 father sent their work to Gauss, who replied in 1832          people at the time. Even Copernicanism, for example,
 that he could not praise the work “for to do so would be      and the discoveries of Galileo drew a better reception
@@ -370,7 +370,7 @@ hyperbolic trigonometry (although no detailed account
                                                               in a university. As was the custom, he offered three
 of this survives from his hand). But the three-dimen-
                                                               titles and Gauss, who was his examiner, chose the one
-sional theory was known first to Bolyai and Lobachev-
+sional theory was known first to Bolyai and Lo bac hev-
                                                               Riemann least expected: “On the hypotheses that lie at
 skii, and may well not have been known to Gauss until
                                                               the foundation of geometry.” The paper, which was to
@@ -382,13 +382,13 @@ tial publication of 1829 was savaged in the press by
                                                                  Riemann proposed that geometry was the study of
 Ostrogradskii, a much more established figure who
                                                               what he called manifolds [I.3 §§6.9, 6.10]. These were
-was, moreover, in St Petersburg, whereas Lobachevskii
+was, more over, in St Petersburg, where as Lobachevskii
                                                               “spaces” of points, together with a notion of distance
 was in provincial Kazan. His account in Journal für die       that looked like Euclidean distance on small scales but
 reine und angewandte Mathematik (otherwise known              which could be quite different at larger scales. This kind
 as Crelle’s Journal) suffered grievously from referring        of geometry could be done in a variety of ways, he sug-
 to results proved only in the Russian papers from             gested, by means of the calculus. It could be carried
-which it had been adapted. His booklet of 1840 drew           out for manifolds of any dimension, and in fact Rie-
+which it had been adapted. His book let of 1840 drew           out for manifolds of any dimension, and in fact Rie-
 only one review, of more than usual stupidity. He did,        mann was even prepared to contemplate manifolds for
 however, send it to Gauss, who found it excellent and         which the dimension was infinite.
 had Lobachevskii elected to the Göttingen Academy of             A vital aspect of Riemann’s geometry, in which he
@@ -411,7 +411,7 @@ ferent places—so Riemann’s definition led to infinitely       of the disk, a
 many genuinely distinct geometries in each dimension.       axioms for non-Euclidean geometry; therefore, those
 Further more, these geometries were best defined with-        axioms would not lead to a contradiction.
 out reference to a Euclidean space that contained them,        Some years earlier, Minding, in Germany, had found a
-so the hegemony of Euclidean geometry was broken            surface, sometimes called the pseudosphere, that had
+so the hegemony of Euclidean geometry was broken            surface, some times called the pseudosphere, that had
 once and for all.                                           constant negative curvature. It was obtained by rotat-
   As the word “hypotheses” in the title of his thesis       ing a curve called the tractrix about its axis. This sur-
 suggests, Riemann was not at all interested in the sorts    face has the shape of a bugle, so it seemed rather less
@@ -453,14 +453,14 @@ plane. He found that the answer was yes if and only if      ate metrical concept
 
 II.2.   Geometry                                                                                                   93
 
-series of three papers, in 1871, 1872, and 1873, showed      geometry there now stood an equally valid mathemati-
+series of three papers, in 1871, 1872, and 1873, showed      geometry there now stood an equally valid mathemat i-
 that all the known geometries could be regarded as           cal system called non-Euclidean geometry. As for which
 subgeometries of projective geometry. His idea was to        one of these was true of space, it seemed so clear that
 recast geometry as the study of a group acting on a          Euclidean geometry was the sensible choice that there
 space. Properties of figures (subsets of the space) that      appears to have been little or no discussion. Lipschitz
 remain invariant under the action of the group are the       showed that it was possible to do all of mechanics in
 geometric properties. So, for example, in a projective       the new setting, and there the matter rested, a hypo-
-space of some dimension, the appropriate group for           thetical case of some charm but no more. Helmholtz,
+space of some dimension, the appropriate group for           thet ical case of some charm but no more. Helmholtz,
 projective geometry is the group of all transformations      the leading physicist of his day, became interested—he
 that map lines to lines, and the subgroup that maps the      had known Riemann personally—and gave an account
 interior of a given conic to itself may be regarded as the   of what space would have to be if it was learned about
@@ -469,14 +469,14 @@ see the box on p. 94. (For a fuller discussion of Klein’s    was deeply flawed
 approach to geometry, see [I.3 §6](/part-01/fundamental-definitions).)                         Euclidean geometry, but when Beltrami pointed this out
    In the 1870 s Klein’s message was spread by the first       to him he reworked it (in 1870). The reworked version
 and third of these papers, which were published in           also suffered from mathematical deficiencies, which
-the recently founded journal Mathematische Annalen.          were pointed out somewhat later by lie [VI.53](/part-06/sophus-lie-18421899), but he
+the recently founded journal Mathematische Annalen.          were pointed out some what later by lie [VI.53](/part-06/sophus-lie-18421899), but he
 As Klein’s prestige grew, matters changed, and by the        had more immediate trouble from philosophers.
 1890 s, when he had the second of the papers repub-              Their question was, “What sort of knowledge is this
 lished and translated into several languages, it was this,   theory of non-Euclidean geometry?” Kantian philoso-
 the Erlanger Programm, that became well-known. It is         phy was coming back into fashion, and in Kant’s view
 named after the university where Klein became a pro-         knowledge of space was a fundamental pure a priori
 fessor, at the remarkably young age of twenty-three,         intuition, rather than a matter to be determined by
-but it was not his inaugural address. (That was about        experiment: without this intuition it would be impos-
+but it was not his inaugural address. (That was about        experiment: with out this intuition it would be impos-
 mathematics education.) For many years it was a singu-       sible to have any knowledge of space at all. Faced with
 larly obscure publication, and it is unlikely that it had    a rival theory, non-Euclidean geometry, neo-Kantian
 the effect on mathematics that some historians have           philosophers had a problem. They could agree that the
@@ -524,12 +524,12 @@ A D C B
 
 This quantity is called the cross-ratio of the four points A, B, C, D, and is written CR (A , B, C, D). In 1871 , Klein described non-Euclidean geometry as the geometry of points inside a fixed conic, K, where the transformations allowed are the projec D R Q P A K Figure $7$ Three points, P, Q, and R, on a non-Euclidean straight line in Klein’s projective model of non-Euclidean geometry. model.
 He then used his new disk model to connect complex function theory, the theory of linear differential equations, riemann surface [III.79](/part-03/riemann-surfaces) theory, and non-Euclidean geometry to produce a rich new body of ideas. Then, in 1891 , he pointed out that the disk model permitted one to show that any contradiction in non-Euclidean geometry would yield a contradiction in Euclidean geometry as well, and vice versa. Therefore, Euclidean geometry was consistent if and only if non-Euclidean geometry was consistent.
-A curious consequence of this was that if anybody had managed to derive the parallel postulate from the core of Euclidean geometry, then they would have inadvertently proved that Euclidean geometry was inconsistent! One obvious way to try to decide which geometry described the actual universe was to appeal to physics. But Poincaré was not convinced by this. He argued in another paper ( 1902 ) that experience was open to many
+A curious consequence of this was that if any body had managed to derive the parallel postulate from the core of Euclidean geometry, then they would have inadvertently proved that Euclidean geometry was inconsistent! One obvious way to try to decide which geometry described the actual universe was to appeal to physics. But Poincaré was not convinced by this. He argued in another paper ( 1902 ) that experience was open to many
 
 II. The Origins of Modern Mathematics
 
-tive transformations that map K to itself and its interior to its interior (see figure $7$ ) . To define the distance between two points P and Q inside K, Klein noted that if the line PQ is extended to meet K at A and D, then the cross-ratio CR (A , P, D, Q) does not change if one applies a projective transformation: that is, it is a projective invariant. Moreover, if R is a third point on the line PQ and the points lie in the order P, Q , R, then CR (A , P, D, Q) CR (A , Q , D, R)  =  CR (A , P, D, R).
+tive transformations that map K to itself and its interior to its interior (see figure $7$ ) . To define the distance between two points P and Q inside K, Klein noted that if the line PQ is extended to meet K at A and D, then the cross-ratio CR (A , P, D, Q) does not change if one applies a projective transformation: that is, it is a projective invariant. More over, if R is a third point on the line PQ and the points lie in the order P, Q , R, then CR (A , P, D, Q) CR (A , Q , D, R)  =  CR (A , P, D, R).
 Accordingly, he defined the distance between P and Q as d (PQ) $= - \frac{1}{2}$ log CR (A , P, D, Q) (the factor of $- \frac{1}{2}$ is introduced to facilitate the later introduction of trigonometry). With this definition, distance is additive along a line: d (PQ)  +  d (QR) $=$ d (PR). interpretations and there was no logical way of deciding what belonged to mathematics and what to physics. Imagine, for example, an elaborate set of measurements of angle sums of figures, perhaps on an astronomical scale. Something would have to be taken to be straight, perhaps the paths of rays of light.
-Suppose, finally, that the conclusion is that the angle sum of a triangle is indeed less than two right angles by an amount proportional to the area of the triangle. Poincaré said that there were two possible conclusions: light rays are straight and the geometry of space is non-Euclidean; or light rays are somehow curved, and space is Euclidean. Moreover, he continued, there was no logical way to choose between these possibilities. All one could do was to make a convention and abide by it, and the sensible convention was to choose the simpler geometry: Euclidean geometry.
+Suppose, finally, that the conclusion is that the angle sum of a triangle is indeed less than two right angles by an amount proportional to the area of the triangle. Poincaré said that there were two possible conclusions: light rays are straight and the geometry of space is non-Euclidean; or light rays are some how curved, and space is Euclidean. More over, he continued, there was no logical way to choose between these possibilities. All one could do was to make a convention and abide by it, and the sensible convention was to choose the simpler geometry: Euclidean geometry.
 This philosophical position was to have a long life in the twentieth century under the name of conventionalism, but it was far from accepted in Poincaré’s lifetime. A prominent critic of conventionalism was the Italian Federigo Enriques, who, like Poincaré, was both a powerful mathematician and a writer of popular essays on issues in science and philosophy. He argued that one could decide whether a property was geometrical or physical by seeing whether we had any control over it. We cannot vary the law of gravity, but we can change the force of gravity at a point by moving matter around.
 Poincaré had compared his disk model to a metal disk that was hot in the center and got cooler as one moved outwards. He had shown that a simple law of cooling produced figures identical to those of non-Euclidean geometry. Enriques replied that heat was

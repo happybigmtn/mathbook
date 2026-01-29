@@ -89,5 +89,5 @@ This means a set of vectors e i with the following three properties:
 
 •  $e^{i}$ , $e^{j} = 0$ whenever $i = j;$ and
 
-• every vector v in the space can be expressed as a convergent sum of the form i $\lambda$ i e i . The trigonometric functions do not quite form an orthonormal basis of $L^{2}$ [0 , 2 π ] but suitable multiples of them do. There are many contexts besides Fourier analysis where one can obtain useful information about a vector by decomposing it in terms of a given orthonormal basis, and many general facts that can be deduced from the existence of such bases. Hilbert spaces (with complex scalars) are also central to quantum mechanics.
+• every vector v in the space can be expressed as a convergent sum of the form i $\lambda$ i e i . The trigonometric functions do not quite form an orthonormal basis of $L^{2}$ [0 , 2 π ] but suitable multiples of them do. There are many contexts be sides Fourier analysis where one can obtain useful information about a vector by decomposing it in terms of a given orthonormal basis, and many general facts that can be deduced from the existence of such bases. Hilbert spaces (with complex scalars) are also central to quantum mechanics.
 The vectors of a Hilbert space can be used to represent possible states of a

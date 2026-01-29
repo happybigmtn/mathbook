@@ -6,7 +6,7 @@ III.83. The Schrödinger Equation                                               
 torize them, and we can try to do the same in rings          III.82 Schemes
 as well. However, it turns out that, while it is usually              Jordan S. Ellenberg
 possible to factorize an element of a ring into “irre-
-ducible” ones that cannot be factorized further (like        One frequently finds in the history of mathematics
+duc i ble” ones that cannot be factorized further (like        One frequently finds in the history of mathematics
 the primes in Z), in many cases the factorization is not     that a definition thought to be completely general
 unique. At first, this might be rather unexpected, and        was in fact too restrictive to treat certain problems
 indeed it was a stumbling block for many early workers       of interest. The notion of “number,” for instance, has
@@ -44,7 +44,7 @@ a basis of a module to be a linearly independent set of
 elements that spans the module. However, many use-
                                                              much recent progress in number theory would have
 ful facts about bases in vector spaces do not hold for
-                                                             been impossible without the geometric insight supplied
+                                                             been impossible with out the geometric insight supplied
 modules. For instance, in Z, which we may consider as        by the theory of schemes.
 a module over itself, the set {2, 3} spans the module           Even schemes are not enough to handle all the
 but does not contain a basis, and similarly the set {2} is   problems of current interest, and still more general

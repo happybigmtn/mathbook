@@ -6,15 +6,15 @@
 umes: Mathematics and Mechanics, Probability and                   rally regarded as computable is computable by a tur-
 Statistics, and Information Theory and Algorithms.                 ing machines [IV.20 §1.1](/part-04/computational-complexity). Church’s thesis is therefore
   He was widely honored, both within the Soviet Union              often known as the Church–Turing thesis.
-and outside. He was married, with no children.                        The second of Church’s contributions is what is
+and out side. He was married, with no children.                        The second of Church’s contributions is what is
                                                                    now known as Church’s theorem. In a short paper
 Further Reading                                                    published in the first issue of The Journal of Sym-
 Kendall, D. G. 1990. Obituary, Andrei Nikolaevich Kolmog-          bolic Logic, Church showed that it is impossible to
   orov (1903–1987). Bulletin of the London Mathematical            decide algorithmically whether statements in arith-
   Society 22(1):31–100.                                            metic are true or false. It follows that a general solu-
 Shiryayev, A. N., ed. 2006. Selected Works of A. N. Kol-           tion to the Entscheidungspr oblem (decision problem)
-  mogorov. New York: Springer.                                     does not exist; equivalently, first-order logic is unde-
-Shiryayev, A. N., and others. 2000. Kolmogorov in Perspec-         cidable (see the insolubility of the halting prob-
+  mogo rov. New York: Springer.                                     does not exist; equivalently, first-order logic is unde-
+Shiryayev, A. N., and others. 2000. Kolmogorov in Per spec-         cid able (see the insolubility of the halting prob-
   tive. History of Mathematics, volume 20. London: London
                                                                    lem [V.20](/part-05/the-insolubility-of-the-halting-problem)). This result is also known as the Church–
   Mathematical Society.
@@ -37,7 +37,7 @@ and Professor of Mathematics until he retired (again)              Lowndean Prof
 in 1990.                                                           archaic title) from 1936 until 1970.
    Princeton became an important center for logic dur-                Hodge’s work straddles the area between algebraic
 ing the 1930 s: von neumann [VI.91](/part-06/john-von-neumann-19031957) arrived at the                  geometry, differential geometry, and complex analysis.
-beginning of the decade; gödel [VI.92](/part-06/kurt-gdel-19061978) visited in 1933             It can be seen as a natural outgrowth of the theory of
+beginning of the decade; gödel [VI.92](/part-06/kurt-gdel-19061978) visited in 1933             It can be seen as a natural out growth of the theory of
 and 1935 before moving there permanently in 1940;                  riemann surfaces [III.79](/part-03/riemann-surfaces) (or algebraic curves) and the
 and from September 1936 turing [VI.94](/part-06/alan-turing-19121954) spent two                   work of Lefschetz on the topology of algebraic vari-
 years there as a graduate student, completing his Ph. D.            eties [IV.4 §7](/part-04/algebra) (of higher dimension). It put algebraic

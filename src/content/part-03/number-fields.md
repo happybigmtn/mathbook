@@ -4,7 +4,7 @@
 
 solves them. However, there are many techniques for            ber field (the one thing that is not completely obvious
 proving that solutions exist, and they usually involve         is that it has finite degree over Q), which we denote
-limiting arguments. For example, sometimes one can             by Q(α1 , . . . , αk ). Conversely, every number field is of
+limiting arguments. For example, some times one can             by Q(α1 , . . . , αk ). Conversely, every number field is of
 generate a sequence of functions f1 , f2 , . . . and show      this form.
 that these functions “converge” to some “limiting func-           The simplest number fields are perhaps the quad-
                                                                                                                  √
@@ -38,7 +38,7 @@ completeness property can be thought of as ruling out
                                                                if we allow coefficients in the field Q(ζn ).
 pathological examples.
                                                                   Before one can start thinking about whether such fac-
-   The theory of Banach spaces is sometimes known
+   The theory of Banach spaces is some times known
                                                                torizations are useful, it is necessary to understand the
 as linear analysis, since by mixing vector spaces and
                                                                notion of an integer in a number field K. A number
@@ -61,7 +61,7 @@ A number field K is a “finite-degree field extension” of          and it for
 Q, the field of rational numbers. This means that K is             Unfortunately, factorizations such as (1) are not as
 a field [I.3 §2.2](/part-01/fundamental-definitions) that is finite dimensional when one           helpful as they seem at first sight: OK turns out not
 regards it as a vector space [I.3 §2.3](/part-01/fundamental-definitions) over Q. The fol-       to be OK, at least if one expects familiar properties
-lowing alternative description is somewhat more con-           of the ring Z to carry over unchanged. In particular,
+lowing alternative description is some what more con-           of the ring Z to carry over unchanged. In particular,
 crete. Take finitely many algebraic numbers α1 , . . . , αk     unique factorization into primes fails to hold: for exam-
                                                                                   √(that is, roots of polynomials with integer coefficients)        ple, 2 · 3 = (1 + −5)(1 − −5) in the field Q( −5).
 and consider the field K of all rational functions in           The numbers on both sides are integers in this field,

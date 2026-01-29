@@ -11,12 +11,12 @@ D by the formula
  d(p , $q) =$ max |f(p) - f(q)| :  Df $- f$ D  $\le 1$ . Connes argues that operator $|D| - 1$ plays the role of the “unit of arc-length ds” in this and many other, more complicated situations. 2 Another feature of the examples Connes considers, also of central importance in noncommutative geometry, is the fact that the operator $|D| - k$ is a traceclass operator (see section $1$ . $5$ ) when k is large enough. In the case of the circle, k needs to be bigger than $1$ . Computations with traces connect noncommutative geometry to cohomology theory [IV.6](/part-04/algebraic-topology).
 We now have two kinds of “noncommutative algebraic topology,” namely K-theory and a new variant of homology called cyclic cohomology; the connection between the two is provided by a very general index theorem. There are several procedures that produce noncommutative C ∗ - algebras (to which Connes’s methods can be applied) from classical geometric data. The irrational rotation algebras A $\theta$ are examples;
 the classical picture to which they apply is the quotient space [I.3](/part-01/fundamental-definitions) of the circle by the group of rotations through multiples of $\theta.$ Classical methods of geometry and topology are unable to handle this quotient space, but the noncommutative approach via A $\theta$ is much more successful. An exciting but speculative possibility is that the basic laws of physics should be addressed from the perspective of noncommutative geometry.
-The transition to noncommutative C ∗ - algebras can be viewed as analogous to the transition from classical to quantum mechanics. However, Connes has argued that noncommutative C ∗ - algebras play a role in describing the physical world even before the transition is made to quantum physics. Further Reading Connes, A. 1995 . Noncommutative Geometry. Boston, MA: Academic Press. Davidson, K. 1996 . C ∗ - Algebras by Example. Providence, RI: American Mathematical Society. Fillmore, P. 1996 . A User’s Guide to Operator Algebras. Canadian Mathematical Society Series of Monographs and Advanced Texts.
- New York: John Wiley. Halmos, P. R. 1963 . What does the spectral theorem say? American Mathematical Monthly $70$ : $241 - 47$ . $2$ . The operator D is not quite invertible since it vanishes on constant functions. A small modification must therefore be made before considering inverse operators. The operator |D| is by definition the positive square root of $D^{2}$ . $523IV$ . $16$ Mirror Symmetry Eric Zaslow $1$ What Is Mirror Symmetry? Mirror symmetry is a phenomenon found in theoretical physics that has had profound mathematical applications.
-It burst onto the mathematical scene after Candelas, de la Ossa, Green, and Parkes exploited the physical phenomenon to make precise predictions about certain sequences of numbers describing geometric spaces. The sequence predicted by those authors began 2875 , 609250 , 317206375 , . . . , and was far beyond the scope of calculation at the time. The phenomenon of mirror symmetry is that some physical theories have equivalent, “mirror” theories that lead to the same predictions.
+The transition to noncommutative C ∗ - algebras can be viewed as analogous to the transition from classical to quantum mechanics. However, Connes has argued that noncommutative C ∗ - algebras play a role in describing the physical world even before the transition is made to quantum physics. Further Reading Connes, A. 1995 . Noncommutative Geometry. Boston, MA: Academic Press. Davidson, K. 1996 . C ∗ - Algebras by Example. Providence, RI: American Mathematical Society. Fill more, P. 1996 . A User’s Guide to Operator Algebras.
+Canadian Mathematical Society Series of Monographs and Advanced Texts. New York: John Wiley. Halmos, P. R. 1963 . What does the spectral theorem say? American Mathematical Monthly $70$ : $241 - 47$ . $2$ . The operator D is not quite invertible since it vanishes on constant functions. A small modification must therefore be made before considering inverse operators. The operator |D| is by definition the positive square root of $D^{2}$ . $523IV$ . $16$ Mirror Symmetry Eric Zaslow $1$ What Is Mirror Symmetry?
+Mirror symmetry is a phenomenon found in theoretical physics that has had profound mathematical applications. It burst onto the mathematical scene after Can del as, de la Ossa, Green, and Parkes exploited the physical phenomenon to make precise predictions about certain sequences of numbers describing geometric spaces. The sequence predicted by those authors began 2875 , 609250 , 317206375 , . . . , and was far beyond the scope of calculation at the time. The phenomenon of mirror symmetry is that some physical theories have equivalent, “mirror” theories that lead to the same predictions.
 If some prediction requires a hard calculation but is easy to perform in the mirror theory, then you can get the answer for free! These physical theories do not have to be realistic models of physics. For instance, beginning students of physics often study point particles on frictionless planes. Although they are unrealistic, such toy models can bring the physical concepts into focus and their analysis can give rise to very interesting mathematics. $1$ .
 $1$ Exploiting Equivalences Children at school in the $1950s$ used log tables to exploit the equivalence of multiplication of positive numbers with addition of real numbers. Given the problem of multiplying two large numbers $a$ and $b$, they would use a table to look up the logarithms log (a) and log (b) (to a certain number of significant figures) , then add them by hand. They would then use the same table to find which number had a logarithm equal to log (a) + log (b) . The answer is ab.
-College students sometimes exploit the equivalence defined by fourier transforms [III.27](/part-03/the-fourier-transform) to solve differential equations. Basically, the Fourier transform is a rule that maps one function f (x) to a new function f ˆ (p). What is nice is that the transform of the derivative f (x) relates in a very simple way to f ˆ (p) : √ it is ip f ˆ (p), where i is the imaginary number $- 1$ .
+College students some times exploit the equivalence defined by fourier transforms [III.27](/part-03/the-fourier-transform) to solve differential equations. Basically, the Fourier transform is a rule that maps one function f (x) to a new function f ˆ (p). What is nice is that the transform of the derivative f (x) relates in a very simple way to f ˆ (p) : √ it is ip f ˆ (p), where i is the imaginary number $- 1$ .
 If you want to solve a differential equation such as f (x) $+ 2f$ (x) = h (x), where h (x) is a given function and you are trying to find f , you can map the equation to its Fourier transform equation $ip$ f ${}^{(}p) + 2f^{(}p) =$ h ̂ (p) . This is much easier: it is an algebraic equation
 
 524                                                                                                         IV. Branches of Mathematics
@@ -40,7 +40,7 @@ separate Companion to Physics would be needed—but                        fact 
 we hope to give enough of the flavor of the subject to                    order, and not that it is actually minimized. Solutions of
 help the reader with the later sections. (A reader famil-                saddle-point type are allowed.) The answer turns out to
 iar with physical theories may wish to skip the next                     be precisely those paths that satisfy mẍ + ∇V (x) = 0.2
-section and refer back as needed.)                                          For example, consider the simple harmonic oscilla-
+section and refer back as needed.)                                          For example, consider the simple harmonic oscil la-
                                                                          tor in two dimensions. We can model x as a com-
                   2   Theories of Physics                                plex number and set V (x) = k|x|2 . The action is then
                                                                            1       2       2                                   iθ
@@ -159,7 +159,7 @@ quantum-mechanical particles cn . Thus, the function φ                   tern o
                                                
 has the Fourier expansion φ(θ, t) = n cn (t) exp(inθ).                   accuracy. However, we cannot say what will happen to
    The simplest action for a scalar field φ that allows                   a single, given electron—all we can do is assign prob-
-wave-like solutions of the equations of motion serves                    abilities to the outcomes of various measurements.
+wave-like solutions of the equations of motion serves                    abilities to the out comes of various measurements.
 as a natural analogue of equation (2):                                   These probabilities are encoded in the so-called “wave
                            1                                             function” Ψ of the particle.
                S=            [(φ̇)2 − (φ )2 ] dθ dt,           (3)
@@ -167,7 +167,7 @@ as a natural analogue of equation (2):                                   These p
 where φ = ∂φ/∂θ. When we plug the Fourier expan-                         2.2.1   Hamiltonian Formulation
 sion into the action and perform the θ integration, we
 get                                                                      In the operator formulation of quantum mechanics, the
-                                                                        positions and momenta of classical mechanics (and any
+                                                                        positions and moment a of classical mechanics (and any
                  S=          [|ċn |2 − n2 |cn |2 ] dt.        (4)
                          n
                                                                          quantity formed from them) are converted into opera-
@@ -292,7 +292,7 @@ $2$ . $2$ . $5$
 
 Quantum Field Theory
 
-The generalization to field theories follows our earlier pattern. We think of quantum field theories, then, as being like quantum mechanics with infinite numbers of particles. In fact, the quantum field theories in which the fields Φ and their derivatives do not have more than quadratic terms in the action are easily understood in this way--we had a preview of this in equation ( $4$ ). The Fourier components correspond to particles indexed by their momenta. Each one looks like a simple harmonic oscillator at some frequency, which will depend on the Fourier coefficient.
+The generalization to field theories follows our earlier pattern. We think of quantum field theories, then, as being like quantum mechanics with infinite numbers of particles. In fact, the quantum field theories in which the fields Φ and their derivatives do not have more than quadratic terms in the action are easily understood in this way--we had a preview of this in equation ( $4$ ). The Fourier components correspond to particles indexed by their moment a. Each one looks like a simple harmonic oscillator at some frequency, which will depend on the Fourier coefficient.
 The quantum Hilbert space is then a (tensor) product of lots of different “occupation number Hilbert spaces,” one for each Fourier component of each field. Since the occupation number basis is also an energy eigenbasis, these states have a simple time evolution under the Hamiltonian H. That is, if $H = E$ on some state Ψ (t $= 0$ ), then that state evolves like $Ψ(t) =$ exp (i Et  /  ) Ψ(0). However, if the action includes terms that are cubic or higher, then things get interesting: particles can decay!
 This can be seen, for example, from the scalar field of equation ( $3$ ) if we include a term φ 3 in the action, and therefore also the Hamiltonian. If we write this using Fourier components, we get terms involving three oscil† † lators, such as $a^{3}a^{4}a^{7}$ . To see this, recall that after we quantize the real field φ, the Fourier components $7$ . Consider exp $( - \frac{1}{2}x^{2} + Jx ) dx =$ exp ( - . rac{1}{2}(x + J)2) exp $(\frac{1}{2}J^{2})dx$ √
 
@@ -307,7 +307,7 @@ IV. Branches of Mathematics
 c n act as harmonic oscillators, and we have written a n for the associated creation and annihilation operators. Since the Hamiltonian governs time evolution according to equation ( $5$ ), this means that over time one particle (the $7$ mode) can decay into two others (the $3$ and the $4$ ) . Such decay processes occur in real life, and it is a great triumph of quantum field theory that it can predict such events with astounding accuracy.
 In fact, because the space of paths of fields is infinite dimensional, the path integral in quantum field theory is not usually defined in a mathematically rigorous way. However, the perturbation series for producing predictions can be defined just as for quantum mechanics, and this is how physicists make their predictions in practice. This perturbation series is organized in terms of Feynman diagrams (which are discussed in vertex operator algebras [IV.17](/part-04/vertex-operator-algebras)) . These diagrams, and the rules for computing them, completely solve the perturbation problem.
 As in the example of quantum mechanics, different integrands of the path integral correspond to different predictions. If Φ is some function of the fields of some quantum field theory, we write  Φ  for the path integral with Φ as an integrand (as we did for  x k   in the previous section). We call such a term a “correlation function.” If Φ  =  φ ${}^{1} ( x^{1})$ · · · φ n (x n), the answer will depend on the action of the theory, the fields φ i , and the space-time points x i .
-One might wonder if a symmetry of a classical theory always remains a symmetry of the same theory after quantization. The answer is sometimes no. Such a case is known as an “anomaly.” Roughly speaking, this is because the measure of integration of the path integral is not preserved under the symmetry, but this is a somewhat heuristic explanation because the path integral has no rigorous definition in general.
+One might wonder if a symmetry of a classical theory always remains a symmetry of the same theory after quantization. The answer is some times no. Such a case is known as an “anomaly.” Roughly speaking, this is because the measure of integration of the path integral is not preserved under the symmetry, but this is a some what heuristic explanation because the path integral has no rigorous definition in general.
 Returning to our cubic example, if the interaction term $φ^{3}$ has $a$ coefficient $\lambda,$ so that it is $\lambdaφ^{3}$ , then we organize the perturbation series as a power series in $\lambda.$ In terms of paths, probabilities of decay processes can be evaluated by considering paths that split into two-- like the letter Y--with each leg carrying the label of the appropriate particle.
 
 $2$ . $2$ . $6$
@@ -332,7 +332,7 @@ effect, we get an auxiliary theory: a field theory of         of numbers.
 coordinates on the two-dimensional surface! In string         Each theory is typically described through some
 theory, even this two-dimensional field theory must          mathematical model, so an equivalence implies a host
 be considered as a quantum field theory. The fields           of mathematical identities between quantities con-
-of the two-dimensional theory are maps from the sur-        structed from corresponding models.
+of the two-dimensional theory are maps from the sur-        struc ted from corresponding models.
 face to actual space-time. However, from the point of         The particular case of mirror symmetry refers to an
 view of the worldsheet, the worldsheet itself is a two-     equivalence of quantum field theories on a two-dimen-
 dimensional space-time and the maps are fields on this       sional surface. The most typical example of mirror sym-
@@ -358,7 +358,7 @@ of fields. Each path is weighted by exp(i S/), where S is    (this is the Wick 
 the action of the path and  is Planck’s constant. Let us   Euclidean action i SE . One then tries to evaluate the path
 denote the correlation function of some integrand Φ in      integral in this framework, hoping that the answer will
 theory A as ΦA . Recall that Φ can depend on various      be holomorphic [I.3 §5.6](/part-01/fundamental-definitions). If it is, then one can use
-fields φi and points of space-time xi , and the correla-     analytic continuation to work out the answer for ordi-
+fields φi and points of space-time xi , and the corre la-     analytic continuation to work out the answer for ordi-
 tion function will depend on all these and the action of    nary time. The advantage is that the Euclidean expo-
 theory A.                                                   nential weighting becomes exp(−SE /), so the minima
    Equivalence, then, is a map from all possible fields      of SE receive the greatest weighting and the integral
@@ -382,7 +382,7 @@ $2S^{E} =|\nablaφ|$ .
 
 The energy of a map has a conformal symmetry, meaning that it is independent of local scale transformations on the Riemann surface, that is, transformations that can be locally approximated by a combination of rotations and dilations. Invariance under rescaling by a positive number $\lambda$ can easily be seen: each of the two derivatives in $|\nablaφ|^{2}$ decreases by a factor of $\lambda,$ while the area element increases by $\lambda^{2}$ . Rotational invariance is clear from the form of $|\nablaφ|^{2}$ .
 The combination of the two, along with the fact that this argument did not depend on the derivatives of the scaling parameter $\lambda,$ leads to the statement of local scale invariance. The conformal symmetry of the action is an example of a classical symmetry of the action that is not necessarily maintained in the quantum theory. However, the quantum theory has no anomaly--meaning that the symmetry is preserved--if M is chosen to be a complex, calabi-yau manifold [III.6](/part-03/calabiyau-manifolds). The Calabi-Yau condition can be thought of as a complex notion of orientation.
-Recall that for an oriented manifold one can continuously choose, on each patch, a basis for the tangent space such that, when we move from patch to patch, the determinant of the changeof-basis matrix is equal to one. The same is true on a Calabi-Yau manifold, but now we consider complex bases for the complex tangent spaces. When the target manifold is a Calabi-Yau manifold, the instantons are complex analytic maps from the two dimensional surface. Instantons are not “close” to the constant paths; their effects are therefore not accessible by perturbative methods such as Feynman diagrams.
+Recall that for an oriented manifold one can continuously choose, on each patch, a basis for the tangent space such that, when we move from patch to patch, the determinant of the change of-basis matrix is equal to one. The same is true on a Calabi-Yau manifold, but now we consider complex bases for the complex tangent spaces. When the target manifold is a Calabi-Yau manifold, the instantons are complex analytic maps from the two dimensional surface. Instantons are not “close” to the constant paths; their effects are therefore not accessible by perturbative methods such as Feynman diagrams.
 They are therefore “nonperturbative” phenomena. An example from quantum mechanics would be a particle in a double-well potential such as (x2 - 1)2 . The zero-energy minima are the two constant (stationary) paths at x  =  ± $1$ . An instanton path could go from $x = - 1$ to $x = + 1$ , or vice versa. Such trajectories occur and are known as “quantum tunneling.” Lesson. Inaccessible by perturbation theory, instantonic effects are notoriously challenging to calculate.
 
 $3$ . $1$
@@ -410,7 +410,7 @@ $4$ . $1$ . $1$
 
 Complex Geometry
 
-To get a feel for the geometric aspect captured by topological twisting, recall that we can construct the circle $S^{1}$ from the real line R by identifying the points $\theta$ and $\theta + 2\pi$ , and therefore also $\theta + 2\pin,$ where $n$ is any integer. What we have done is identified points related by a lattice of integer translations. We could choose the lattice to consist of multiples of some other real number r , but since any two such lattices differ only by an overall scaling of R , we would effectively get the same space.
+To get a feel for the geometric aspect captured by topological twisting, recall that we can construct the circle $S^{1}$ from the real line R by identifying the points $\theta$ and $\theta + 2\pi$ , and therefore also $\theta + 2\pin,$ where $n$ is any integer. What we have done is identified points related by a lattice of integer translations. We could choose the lattice to consist of multiples of some other real number r , but since any two such lattices differ only by an over all scaling of R , we would effectively get the same space.
 In the complex plane C , we can do the same thing with a two-dimensional lattice of translations generated by two complex numbers $\lambda^{1}$ and $\lambda^{2}$ , as long as the quotient $\lambda^{2}/\lambda^{1}$ is not real. This space is called a torus and has the same topology as any two-dimensional surface with one hole. It has more structure, however, because it can be covered by regions described by a complex coordinate--with different regions related by complex analytic maps.
 The pairs $(\lambda^{1}$ , $\lambda^{2})$ and $(\lambda^{1}$ , $\lambda^{2} + \lambda^{1})$ generate the same lattice of translations, as do the pairs $(\lambda^{1}$ , $\lambda^{2})$ and $(\lambda^{2}$ , $- \lambda^{1})$ . In fact, lattices related by
 
@@ -430,7 +430,7 @@ from z to z + λ2 . Then λ1 and λ2 are both the result of        which means t
 the line integral of the complex differential dz over the        v satisfying δu = δv = 0, so long as the difference
 loop. In fact, the loop did not even need to be straight        u − v can be written as δw for some w. Then H(δ) is
 to lead to this conclusion. The values of such integrals        just the space of all such vectors, up to identifications.
-over subspaces without boundaries (the loops, here) are            The topological twisting of physical theories is sim-
+over subspaces with out boundaries (the loops, here) are            The topological twisting of physical theories is sim-
 more generally called periods.                                  ilar. The operator δ is a physical operator acting on a
   Although any two tori are topologically equivalent,           Hilbert space of states. The presence of super symme-
 one can show that there is no complex analytic map              try in our theories ensures that δ exists and squares to
@@ -485,7 +485,7 @@ H = (m R)2 + ẋ ${}^{2} +$
 n
 
 Comparing this with the harmonic oscillator Hamiltonian of section $2$ . $1$ . $3$ , we can see that each degree of freedom c n (t) plays the role of a (complex) quantum mechanical particle in a simple harmonic oscillator potential. There is an occupation-mode basis for describing the quantum mechanics of each mode. 9 The full Hilbert space of the quantum theory is the (tensor) product of each of these, plus parts involving the √ † $9$ . Each $a^{n} =$ [Re (c ̇ n) − in Re (c n) ]/ 2 n$is$ a raising operator, and similarly for the imaginary parts of the c n . IV.
-Branches of Mathematics constant mode and winding number, which we now discuss. (Remember , each degree of freedom of the classical theory becomes a particle in the quantum field theory .) The constant mode x has energy ẋ 2 , and therefore has no associated potential (it can be anywhere on the circle) . This mode represents a free quantum-mechanical particle on the circle. Recall that the momentum of the x particle is represented by the operator - i (d / dx). This operator has eigenfunctions e ipx .
+Branches of Mathematics constant mode and winding number, which we now discuss. (Remember , each degree of freedom of the classical theory becomes a particle in the quantum field theory .) The constant mode x has energy ẋ 2 , and therefore has no associated potential (it can be any where on the circle) . This mode represents a free quantum-mechanical particle on the circle. Recall that the momentum of the x particle is represented by the operator - i (d / dx). This operator has eigenfunctions e ipx .
 The requirement that these eigenfunctions are invariant under the translation $x \to x + 2\piR$ means that the eigenvalues of momentum are “quantized,” and have the form $p = n/R$ . In contrast to momentum, the integer winding number (m) is really a classical label for the possible maps from a circle to a circle. Although integral, it is clearly on a different footing from the integer n of momentum. Still, it is also an important label on the Hilbert space. For each m, we have a space of m-winding configurations which gets quantized to become the mth sector of the Hilbert space.
 Roughly, this sector H m comprises the functions of all the degrees of freedom of all the m-winding maps. We can consider the winding number as an operator by simply declaring that the states with winding number m have eigenvalue m R. Ignoring the oscillator modes for the moment, the state of momentum n / R with winding m has energy (n/R)2 + (m R)2 . In particular, the energy is unchanged if we make the simultaneous switches (m , n) ↔ (n , m) and R ↔ $1/$ R .
 Since the oscillator modes a n have energies that are independent of R, and since the modes are noninteracting particles, this symmetry can be extended to a full equivalence of the theories with $1$ targets (SR)1 and $S^{1}/ R$ , with momentum in one theory corresponding to winding number in the other. In this example, the target space $S^{1}$ is neither complex nor symplectic. As a result, we cannot construct the topological A- and B-models.
@@ -584,9 +584,9 @@ for Σ, then the complex coordinates for the surfaces M                   Mirror
 can be written as complex analytic functions of Σ.                       field theories, and not every such field theory has the
    The difference between the A-model and the B-model                     geometric content of a target space as in the sigma
 comes from the fact that the topological model is con-                   model. The structure involved in mirror symmetry—or
-structed from an operator δ, which was guaranteed to                     at least its topological version—begins with a quantum
+struc ted from an operator δ, which was guaranteed to                     at least its topological version—begins with a quantum
 exist by the presence of supersymmetry in our theo-                      theory with a supersymmetry algebra that allows for
-ries. For the different models, the relevant supersym-                    the passage to a topological theory. That is, there is
+ries. For the different models, the relevant super sym-                    the passage to a topological theory. That is, there is
 metry operators δA and δB are simply different. As we                     a Hilbert space of states, a Hamiltonian operator, and
 saw above, the maps relevant to the A-model are the                      a particular algebra of symmetries, i.e., operators that
 instantons, or complex analytic maps from Σ to M.                        commute with the Hamiltonian. There are no dictates
@@ -605,7 +605,7 @@ what we have argued, the partition function must take                    When sp
 the general form                                                         S 1 as its spatial dimension, there is a fascinating con-
                (M)
                          
-              ZA (ρ) =      nk exp(−Sk (ρ)).                             struction in quantum field theory known as an orbifold
+              ZA (ρ) =      nk exp(−Sk (ρ)).                             struc tion in quantum field theory known as an orbifold
                                 k                                        theory. This is defined as follows. Suppose there is a
 The coefficients nk are called Gromov–Witten invari-                       finite group G of symmetries (such as a reflection sym-
 ants.11                                                                  metry). That is, each group element acts as an opera-
@@ -652,7 +652,7 @@ and right ends are related by the group, and therefore                          
                                                                                               5
 get identified. These additional configurations are thus                where ω = e2π i/5 and i=1 ni is a multiple of 5. This
 part of the orbifold theory. One constructs a sector Hg               space and its orbifold are actually the mirror pair about
-of the Hilbert space by taking all such states Ψg that                which Candelas et al. made their famous predictions.
+of the Hilbert space by taking all such states Ψg that                which Can del as et al. made their famous predictions.
 also obey the invariance condition hΨg = Ψg for all
 group elements h.                                                                 8    Boundaries and Categories
    Orbifolds may be geometric, as they are in the case
@@ -680,7 +680,7 @@ ric. Orbifold theories with symmetries can often them-                like a res
 selves be orbifolded in such a way as to recover the orig-            space. For the B-model the boundaries must lie on a
 inal theory. In fact, the theory and its orbifold are also            complex space. Locally, a complex space looks like Cn
 often mirror pairs! Greene and Plesser used such a con-               and a complex subspace is described by complex ana-
-struction to create the first examples of mirror pairs.                lytic equations in the coordinates. A boundary condi-
+struc tion to create the first examples of mirror pairs.                lytic equations in the coordinates. A boundary condi-
 Further more, they used ways of ascribing geometric                    tion that preserves supersymmetry and allows a chosen
 interpretations to some non geometrically constructed                  topological twisting is called a brane. (The terminol-
                                                                       ogy mimics the word “membrane,” but applies to any
@@ -708,8 +708,8 @@ maps [I.3 §4.2](/part-01/fundamental-definitions), or (v) chain maps. The morph
 between objects should be thought of as some kind                           Kontsevich’s conjecture asserts that these two cat-
 of relational data. Morphisms themselves interact with                   egories of branes are equivalent. That statement is
 one another, as they can be composed when the end                        natural from the physics point of view, but by iden-
-object of one morphism is the start object of another.                   tifying the precise categories that correspond to the
-The composition is associative, so whether you com-                      physical picture, this conjecture is a major contribu-
+object of one morphism is the start object of another.                   tify ing the precise categories that correspond to the
+The composition is associative, so whether you com-                      physical picture, this conjecture is a major con tr ibu-
 pute abc as (ab)c or a(bc) does not matter. A use-                       tion to the translation of mirror symmetry from physics
 ful image is a directed graph, which is a category with                  into rigorous mathematics. The equivalence of cate-
 vertices as objects and paths between two vertices as                    gories means that not only is there a corresponding
@@ -729,7 +729,7 @@ is guaranteed by topological invariance.14                               that th
 comes the following statement: two manifolds M and                       lines on the plane. These will correspond to closed cir-
 W are mirror pairs if the brane category of the A-                       cles on the torus as long as they have rational slope:
 twisting of M is equivalent to the brane category of                     m = d/r , with d and r relatively prime integers. They
-the B-twisting of W (and vice versa). The mathemati-                     are Lagrangian branes of the A-model boundary theory.
+the B-twisting of W (and vice versa). The mathemat i-                     are Lagrangian branes of the A-model boundary theory.
 cal translation of this statement is called the homologi-                The minimal-energy open strings connecting one line of
 cal mirror symmetry conjecture, due to Kontsevich. On                    slope m = d/r to another of slope m = d /r are those
 the A-model side, the brane category is the so-called                    that have zero length. They are therefore the points of
@@ -763,7 +763,7 @@ However, the underlying meaning behind the construction is unclear. As for a geo
 
 complex subspace. Then the choice of point P on M              in that other theory may then be performed by exploit-
 is parametrized by M itself. By mirror symmetry, there         ing mirror symmetry. Tracing through chains of equiv-
-should be a corresponding Lagrangian brane T on the            alences in such a manner, many different phenomena
+should be a corresponding Lagrangian brane T on the            a len ces in such a manner, many different phenomena
 mirror manifold W . Further more, the choices of T must         in string theory can ultimately be calculated via mirror
 equal the choices of P, i.e., the manifold M. Therefore,       symmetry.
 if we can find the brane T on W , we can parametrize the          In principle, one should be able to calculate all non-
@@ -796,14 +796,14 @@ metry is unparalleled in its power. When combined with         correspondence be
 other physical equivalences, its power is multiplied. For      dimensional surfaces and Lie groups. From a surface
 example, there are certain equivalences in physics that        Σ and a gauge group G, one constructs the space MH
 relate one type of string theory to another.                   of solutions to Hitchin’s equations. Central to that pro-
-   Without going into the details of string theory, we         gram are complex analytic objects on MH that behave
+   With out going into the details of string theory, we         gram are complex analytic objects on MH that behave
 can get a flavor of its complexity by returning to mir-         nicely under the action of an algebra of operations.
 ror symmetry. Recall that the B-model was able to com-         The Langlands correspondence relates two sets of such
 pute the difficult instantons on the A-model, yielding           objects: one easy to calculate and the other more dif-
 a great simplification of the two-dimensional quan-             ficult. In fact MH is itself a family of tori, and the
 tum field theory on the worldsheet. But this whole              easy objects correspond to points. Mirror symmetry
 quantum field theory was just an auxiliary tool for             states that the points should turn into the tori under
-computing some Feynman diagram for the perturba-               T-duality, so the hard objects should correspond to
+computing some Feynman diagram for the perturb a-               T-duality, so the hard objects should correspond to
 tion theory of the full string theory! Unfortunately, a        the tori themselves! It is an appealing proposition, and
 satisfactory description of the full string theory path        making it precise mathematics will be difficult—but the
 integral is, at the time of writing, way out of reach.         gauntlet has been thrown down.

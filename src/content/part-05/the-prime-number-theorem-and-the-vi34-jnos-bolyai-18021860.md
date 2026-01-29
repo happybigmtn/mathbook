@@ -37,7 +37,7 @@ matics at home, using the first six books of euclid’s                  János 
 1818 and 1823 János studied at the Royal Engineer-                 it is unclear that anyone but Gauss ever read it, but
 ing Academy in Vienna, and then served as an engi-                 specific comments about it that Gauss left behind led
 neer in the Austrian Army for ten years, before retir-             mathematicians back to it, and it was translated into
-ing on a pension as a semi-invalid. Probably inspired              French by Hoüel in 1867 and into English in 1896
+ing on a pension as a semi-in valid. Probably inspired              French by Hoüel in 1867 and into English in 1896
 by his father’s attempts to prove the parallel pos-                (reprinted in 1912 and 2004).
 tulate, a key assumption in Euclidean geometry, but
 very much against the advice of his father, János also             Further Reading

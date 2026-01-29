@@ -7,7 +7,7 @@ approximately twenty-five years) can be viewed as a lab-
                                                                  Cramer, G., ed. 1967. Jacobi Bernoulli, Basileensis, Opera,
 oratory of mathematical invention and debate. The pri-             two volumes. Brussels: Editions Culture et Civilization.
 ority dispute that ensued when newton [VI.14](/part-06/isaac-newton-16421727) accused              (Originally published in Geneva in 1744.)
-Leibniz of having stolen the calculus from him also                   . 1968. Opera Omnia Johannis Bernoulli, four vol-
+Leibniz of having stolen the calculus from him also                   . 1968. Opera Omnia Johann is Bernoulli, four vol-
 involved Johann, who fought on Leibniz’s side. With                umes. Hildesheim: Georg Olms. (Originally published in
 each camp defying the other with difficult problems,                 Lausanne and Geneva in 1742.)
 Johann had the opportunity to create, with his son Nico-         Spiess, O., ed. 1955–. The Collected Scientific Papers of the
@@ -16,7 +16,7 @@ laus II, the theory of orthogonal trajectories of fami-
                                                                    Basel: Birkhäuser.
 lies of curves. Johann was also a towering figure in the
 origins of analytical mechanics and in mathematical                                                              Jeanne Peiffer
-physics, where, among other things, he made notable
+physics, where, among other things, he made not able
 contributions to the study of central forces, to naviga-         VI.19       Leonhard Euler
 tional theories, and to the question of the principles of        b. Basel, Switzerland, 1707; d. Saint Petersburg, Russia, 1783
 statics.                                                         Analysis; series; rational mechanics; number theory;
@@ -122,8 +122,8 @@ the modern calculus curriculum. He was also the first          that this last fo
 person to take a systematic approach to the solution          identity.
 of differential equations and to problems of the cal-             He is regarded as a pioneer in topology and graph
 culus of variations [III.94](/part-03/variational-methods). He discovered a differ-          theory for his necessary condition for a graph to have
-ential equation sometimes called the “Euler necessary         an Euler path, the so-called Königsburg bridge prob-
-condition” and sometimes called the “Euler–Lagrange           lem. This is to determine whether or not a graph has a
+ential equation some times called the “Euler necessary         an Euler path, the so-called Königsburg bridge prob-
+condition” and some times called the “Euler–Lagrange           lem. This is to determine whether or not a graph has a
 equation.” The equation tells us that if J is defined by       path that traverses every edge exactly once. He also dis-
                              b
 the integral equation J = a f (x, y, y ) dx, then a func-     covered and gave a flawed proof that, for a polyhedron

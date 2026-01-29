@@ -5,7 +5,7 @@ III.74.   Quantum Computation                                                   
 the complete list. For example, every positive integer         can get away with not understanding quantum mechan-
 can be written as x12 + 2 x22 + 4 x32 + 13 x42 .                  ics at all. (Similarly, and for similar reasons, one could
    Quadratic forms in three variables are more difficult         in principle do significant work in theoretical com-
-to treat. gauss [VI.26](/part-06/carl-friedrich-gauss-17771855) proved that n = x12 + x22 + x32        puter science without having the slightest idea what a
+to treat. gauss [VI.26](/part-06/carl-friedrich-gauss-17771855) proved that n = x12 + x22 + x32        puter science with out having the slightest idea what a
 if and only if n does not have the form 4 t (8 k + 7) for        transistor is or how it works.)
 integers t and k. It is still not known exactly which inte-       To understand quantum computation it is helpful to
 gers can be written as x12 + x22 + 10 x32 (this is known as     look at two other models of computation. The notion of
@@ -51,7 +51,7 @@ not. But according to quantum mechanics, it can exist             The next model
 in a sort of indeterminate state that is a linear com-         putation. This is just like classical computation except
 bination of several states, in some of which it might          that at each stage we are allowed to toss a (possibly
 have the property in question and in others not. The           biased) coin and let the simple operation we perform
-coefficients in this linear combination are called prob-         depend on the outcome of the toss. For instance, we
+coefficients in this linear combination are called prob-         depend on the out come of the toss. For instance, we
 ability amplitudes: the modulus squared of the coeffi-           might again choose three numbers i, j, and k, but this
 cient associated with a state tells you the probability                                                       2
                                                                time proceed as follows: with probability 3 we perform
@@ -61,13 +61,13 @@ measurement.                                                   1
   Exactly what happens when you take a measurement             randomness into algorithms can be extremely helpful.
 is puzzling, and the subject of much debate among              (Equally remarkably, there are strong theoretical rea-
 physicists and philosophers. Fortunately, however, one         sons for believing that all algorithms that use random-
-can understand quantum computation without solving             ness can in fact be “derandomized.” See [IV.20 §7.1](/part-04/computational-complexity) for
+can understand quantum computation with out solving             ness can in fact be “derandomized.” See [IV.20 §7.1](/part-04/computational-complexity) for
 the measurement problem, as it is called: indeed, one          details.)
 
 $270$
 
 Suppose that we allow our randomized probabilistic computation to run for k steps and that we do not examine the result. How should we model the current state of the computer? We could use exactly the same definition as in the classical case--a state is an n-bit string--and simply say that the computation is in a state that we cannot know until we do a measurement. But the state of the computer is not a complete mystery: for each n-bit string σ there will be some probability p σ that the state is σ .
-In other words, it is better to think of the state of the computer as a probability distribution [III.71](/part-03/probability-distributions) on Q n . This probability distribution will depend on the initial string, and therefore it can in principle give us useful information about that string. Here is how to use a randomized computation to solve a decision problem. Let us write P (σ) for the probability that a certain bit (without loss of generality the first) is $1$ at the end of the computation, when the initial string is σ .
+In other words, it is better to think of the state of the computer as a probability distribution [III.71](/part-03/probability-distributions) on Q n . This probability distribution will depend on the initial string, and therefore it can in principle give us useful information about that string. Here is how to use a randomized computation to solve a decision problem. Let us write P (σ) for the probability that a certain bit (with out loss of generality the first) is $1$ at the end of the computation, when the initial string is σ .
 Suppose we can arrange for P (σ) to be at least a for all strings σ for which the answer is yes, and at most some smaller number b for all strings σ for which the answer is no. Let c be the average of $a$ and $b$. Now run the computation m times for some large m. With very high probability, if the answer is yes then when we have finished the first bit will have been $1$ more than cm times, and if the answer is no then it will have been $1$ fewer than cm times. So we can solve the decision problem, not with certainty, but at least with a negligibly small chance of error.
 The “state space” of a probabilistic computer consists of all possible probability distributions on Q n , or equivalently all possible functions $p$ : $Q^{n} \to$ [0 , 1 ] such that $σ\inQnpσ = 1$ . The state space of a quantum computer also consists of functions defined on Q n , but there are two differences. First, they can take complex as well as real values. Second, if $\lambda$ : Q n $\to$ C is a state, then the requirement on the size of $\lambda$ is that $σ\inQn|\lambda|^{2} = 1$ .
 In other words, $\lambda$ is $a$ unit vector in the hilbert space [III.37](/part-03/bayesian-analysis) 2 (Q n , C) rather than a nonnegative unit vector in the banach space [III.62](/part-03/normed-spaces-and-banach-spaces) 1 (Q n , R). The scalars $\lambda$ σ are the probability amplitudes mentioned earlier. We shall explain what this means later. Among the possible states of a quantum computer are the “basis states,” which are the functions that take the value $1$ at one string and $0$ every where else.
@@ -76,7 +76,7 @@ If, for instance, we look at three bits, at i, j, and k, then there are eight po
 Suppose that $n = 5$ , and that  i, j,$and$ k$are$1 , $2$ , and $4$ . One possible operation on these three bits would send |000   to √$(|000 + i|111)/ 2$ and |111$to$(i|000+ |111)/ 2 , leaving all other three-bit sequences as they are. If our initial basis state is |01000   , then the first, second, and fourth bits are in the state |000   , so the resulting state at the end of the operation would be √ $(|01000 + i|11110)/ 2$ .
 Now that we have explained what a basic operation does to a basis state, we have in fact explained what it does in general, since the basis states form a basis of the state space. In other words, if you start with a linear combination (or superposition) of basis states, you apply the operation described above to each basis state and take the corresponding linear combination of the results. Thus, an elementary operation of quantum computation consists in acting on the state space by means of a very special sort of unitary map.
 If the operation is on k bits (where k is typically very small indeed), then the matrix of this map will be a diagonal sum of $2n - k$ copies of the $2^{k} \times 2^{k}$ unitary matrix used to manipulate those k bits (if the basis elements are appropriately ordered). A quantum computation is a sequence of these elementary operations. Measuring the result of a quantum computation is more mysterious. The basic idea is simple: we do a certain number of elementary operations and then look at one of the bits of the resulting state.
-But what does this mean, when the state is not a basis state but rather a superposition of such states? The answer is that when we “measure” the r th bit of the output, we are doing a probabilistic process that is somewhat different from the measurement of a probabilistic computation: if the output state is $σ\inQn\lambdaσ|σ$  , then the probability that
+But what does this mean, when the state is not a basis state but rather a superposition of such states? The answer is that when we “measure” the r th bit of the output, we are doing a probabilistic process that is some what different from the measurement of a probabilistic computation: if the output state is $σ\inQn\lambdaσ|σ$  , then the probability that
 
 III.74.   Quantum Computation                                                                                                  271
 
@@ -98,15 +98,15 @@ ing our knowledge about what is in the computer. By                       calcul
 contrast, the state of a quantum computer really is a                     lel” (it might be better to say “in superposition”) in
 unit vector in a 2 n -dimensional Hilbert space. So in a                   a way that is ideally suited to a quantum computer.
 certain sense a huge amount of computation can go                         A super-fast Fourier transform can then be used to
-on in parallel: this is what gives quantum computation                    solve (by classical methods) some famous computa-
+on in parallel: this is what gives quantum computation                    solve (by classical methods) some famous com put a-
 its power. Although we cannot know much about the                         tional problems, such as the discrete logarithm prob-
 computation, since a single measurement causes it to                      lem and the factorization of large integers. The latter
 “collapse,” we can hope to organize it so that different                   can then be used to break a public-key cryptosystem,
-parts of it “interfere” with each other. This “interfer-                  the encryption method that lies at the heart of modern
+parts of it “interfere” with each other. This “inter fer-                  the encryption method that lies at the heart of modern
 ence” is related to the second main difference, which is                   computer security. (See mathematics and cryptog-
 the fact that we deal with probability amplitudes rather                  raphy [VII.7 §5](/part-07/mathematics-and-cryptography) and computational number theory
 than probabilities. Roughly speaking, a quantum com-                      [IV.3 §3](/part-04/computational-number-theory) for further discussion of these problems.)
-putation can “split up” and “reassemble itself,” whereas                     Can a machine be built that would actually be able
+putation can “split up” and “reassemble itself,” where as                     Can a machine be built that would actually be able
 once a probabilistic computation splits up it stays split                 to do this? There are formidable problems to over-
 up. Crucial to the reassembly process in a quantum                        come, arising from a phenomenon in quantum mechan-
 computation is cancelation of probability amplitudes:                     ics known as “decoherence,” which makes it very hard
@@ -125,7 +125,7 @@ much bigger than it is for a classical computation (it is                 that q
 the reassembly process means that we can potentially                      would be good to have a better understanding of why.
 afford to visit remote parts of the state space, where all                 (It is known that quantum computers are better for
 coefficients might be of very similar (and small) mag-                      some other uses, such as communication complex-
-nitudes, and come back again to a state where a useful                    ity [IV.20 §5.1.4](/part-04/computational-complexity).) Is there a much simpler task that
+ni tudes, and come back again to a state where a useful                    ity [IV.20 §5.1.4](/part-04/computational-complexity).) Is there a much simpler task that
                                                                           is easy for quantum computers and difficult for clas-
   1. It is also possible to simulate a quantum computation classically,   sical computers, at least if some well-known plausible
 but it would take an absurdly long time to do so: quantum computers

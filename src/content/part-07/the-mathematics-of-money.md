@@ -26,13 +26,13 @@ ment bond would offer a much smaller rate of growth,             Statistical arb
 but an extremely low probability of losing money. In              matics to predict price movements in the stock mar-
 fact, the probability of loss is so small in the latter case      ket, or indeed in any other market. Statistical arbi-
 that these instruments are generally regarded as being            trageurs laugh at the concept of market efficiency,
-riskless.                                                         and their objective is to exploit the inefficiencies in
+risk less.                                                         and their objective is to exploit the inefficiencies in
    No arbitrage, the second fundamental principle, sim-           the market to make money.
-ply says that it is impossible to make money without
-taking risk. It is sometimes called the “no free lunch”           Of these four areas, it is derivatives pricing that has
+ply says that it is impossible to make money with out
+taking risk. It is some times called the “no free lunch”           Of these four areas, it is derivatives pricing that has
 principle. In this context, “making money” is defined            seen the greatest growth in recent years, and which
 to mean making more money than could be obtained                has seen the most powerful application of advanced
-by investing in a riskless government bond. A simple            mathematics.
+by investing in a risk less government bond. A simple            mathematics.
 application of the principle of no arbitrage is that if one
 changes dollars into yen and then the yen into euros                           2   Derivatives Pricing
 and then the euros back into dollars, then, apart from
@@ -97,7 +97,7 @@ ian motion Wt with a drift. This is a natural assumption     to . nfty, Φ(x) te
 to make, because changes in prices behave multiplica-        to 0. If we let t tend to T , we find that d1 and d2 tend
 tively rather than additively. (For example, we measure      to . nfty if ST > K (in which case log(ST /K) > 0) and to −. nfty
 inflation in terms of percentage increases.) They also        if ST < K. It follows that the price C(S, t) converges to
-assumed the existence of a riskless bond, Bt , grow-         max(ST − K, 0), which is the value of a call option at
+assumed the existence of a risk less bond, Bt , grow-         max(ST − K, 0), which is the value of a call option at
 ing at a constant rate. To put these assumptions more        expiry, just as one would expect. We illustrate this in
 formally:                                                    figure 1.
                log S = log S0 + \mu t + σ Wt ,            (2)      There are a number of interesting aspects to this
@@ -105,16 +105,16 @@ formally:                                                    figure 1.
                  Bt = B 0 e .                          (3)
                                                              and most important result is that the price is unique.
 Notice that the expectation of log S is log S0 + \mu t, so it   Using just the hypothesis that it is impossible to make a
-changes at a rate μ, which is called the drift. The term     riskless profit, along with some natural and innocuous
+changes at a rate μ, which is called the drift. The term     risk less profit, along with some natural and innocuous
 σ is known as the volatility. The higher the volatility,     assumptions, we discover that there is only one possi-
 the greater the influence of the Brownian motion Wt ,         ble price for the option. This is a very strong conclu-
 and the more unpredictable the movements of S. (An           sion. It is not just the case that the option is a bad deal
 investor will want a large \mu and a small σ ; however,        if traded at a different price: if a call option is bought
 market efficiency ensures that such shares are rather          for less or sold for more than the Black–Scholes price,
-rare.) Under additional assumptions such as that there       then a riskless profit can be made.
+rare.) Under additional assumptions such as that there       then a risk less profit can be made.
 are no transaction costs, that trading in a share does          A second fact, which may seem rather paradoxical, is
-not affect its price, and that it is possible to trade con-   that μ, the drift, does not appear anywhere in the Black–
-tinuously, Black and Scholes showed that if there is no      Scholes formula. This means that the expected behav-
+not affect its price, and that it is possible to trade con-   that μ, the drift, does not appear any where in the Black–
+tinuous ly, Black and Scholes showed that if there is no      Scholes formula. This means that the expected behav-
 dynamic arbitrage, then at time t, the price of a call       ior of the share’s future mean price does not affect the
 
 $912$
@@ -130,10 +130,10 @@ price of the call option; our beliefs about the probability that the option will
 This part of the proof did not rely on the derivative being a call option: there is in fact a large class of derivatives whose prices satisfy the BS equation, differing only in boundary conditions. If one changes variables, setting $τ = T - t$ and $X =$ log  S, then the BS equation becomes the heat equation [I.3](/part-01/fundamental-definitions) with an extra first-order term which can easily be removed. This means that the value of an option behaves in a similar way to time-reversed heat:
 it diffuses and spreads out the farther back one gets from the option’s expiry and the more uncertainty there is about the value of the share at time T . $2$ . $2$ Replication The fundamental idea underlying the Black-Scholes proof and much of modern derivatives pricing is dynamic replication. Suppose we have a derivative Y that pays an amount that depends on the value of the share at some set of times $t^{1} < t^{2} <$ · · · $< t^{n}$ , and suppose that the payout occurs at a certain time T $\ge$ t n . This can be expressed in terms of a payoff function, f ($t^{1}$ , . . . , t n).
 The value of Y will vary with the share price. If, in addition, we hold just the right number of the shares themselves, then a portfolio consisting of Y and the shares will be instantaneously immune to changes in the share price, i.e., its value will have zero rate of change with respect to the share price. As the value of Y will vary with time and share price, we will need to continuously buy and sell shares to maintain this neutrality to share-price movements. If we have sold a call option, then it turns out that we will have to buy when the share price goes up and sell when it goes down;
-so these transactions will cost us a certain amount of money. Black and Scholes’s proof showed that this sum of money was always the same and that it could be computed. The sum of money is such that by investing it in shares and riskless bonds, one can end up with a portfolio precisely equal in value to the payoff of Y no matter what the share price did in between. VII. The Influence of Mathematics Thus if one could sell Y for more than this sum of money, one would simply carry out the trading strategy from their proof and always end up ahead.
+so these transactions will cost us a certain amount of money. Black and Scholes’s proof showed that this sum of money was always the same and that it could be computed. The sum of money is such that by investing it in shares and risk less bonds, one can end up with a portfolio precisely equal in value to the payoff of Y no matter what the share price did in between. VII. The Influence of Mathematics Thus if one could sell Y for more than this sum of money, one would simply carry out the trading strategy from their proof and always end up ahead.
 Similarly, if one can buy Y for less, one does the negative of the strategy and always ends up ahead. Both of these are outlawed by the principle of no arbitrage, and a unique price is guaranteed. The property that the payoff of any derivative can be replicated is called market completeness. $2$ . $3$ Risk-Neutral Pricing A curious aspect of the Black-Scholes result, mentioned above, is that the price of a derivative does not depend upon the drift of the share price. This leads to an alternative approach to derivatives pricing theory called risk-neutral pricing.
 An arbitrage can be thought of as the ultimate unfair game: the player can only make money. By contrast, a martingale [IV.24](/part-04/stochastic-processes) encapsulates the notion of a fair game: it is a random process whose expected future value is always equal to its current value. Clearly, an arbitrage portfolio can never be a martingale. So if we can arrange for everything to be a martingale, there can be no arbitrages, and the price of derivatives must be free of arbitrage.
-Unfortunately, this cannot be done because the price of the riskless bond grows at a constant rate, and is therefore certainly not a martingale. However, we can carry out the idea for discounted prices: that is, for prices of assets when they are divided by the price of the riskless bond. In the real world, we do not expect discounted prices to be martingales. After all, why buy shares if their mean return is no better than that of a bond that carries no risk? Nevertheless, there is an ingenious way of introducing martingales into the analysis:
+Unfortunately, this cannot be done because the price of the risk less bond grows at a constant rate, and is therefore certainly not a martingale. However, we can carry out the idea for discounted prices: that is, for prices of assets when they are divided by the price of the risk less bond. In the real world, we do not expect discounted prices to be martingales. After all, why buy shares if their mean return is no better than that of a bond that carries no risk? Nevertheless, there is an ingenious way of introducing martingales into the analysis:
 by changing the probability measure [III.71](/part-03/probability-distributions) that one uses. If you look back at the definition of arbitrage, you will see that it depends only on which events have zero probability and which have nonzero probability. Thus, it uses the probability measure in a rather incomplete way. In particular, if we use a different probability measure for which the sets of measure zero are the same, then the set of arbitrage portfolios will not change. Two measures with the same sets of measure zero are said to be equivalent.
 A theorem of Girsanov says that if you change the drift of a Brownian motion, then the measure that you derive from it will be equivalent to the measure you had before. This means that we can change the term μ. A good value to choose turns out to be $\mu = r - \frac{1}{2}σ^{2}$ .
 
@@ -183,7 +183,7 @@ $2$ . $6$
 
 Vanilla versus Exotics
 
-Generally, a simple option to buy or sell an asset is known as a vanilla option, whereas a more complicated derivative is known as an exotic option. An essential difference between the pricing of the two is that one can hedge an exotic option not just with the underlying share, but also by trading appropriately in the vanilla
+Generally, a simple option to buy or sell an asset is known as a vanilla option, where as a more complicated derivative is known as an exotic option. An essential difference between the pricing of the two is that one can hedge an exotic option not just with the underlying share, but also by trading appropriately in the vanilla
 
 VII. The Influence of Mathematics
 
@@ -200,14 +200,14 @@ $3$ . $1$
 
 Introduction
 
-Once we have accepted that it is impossible to make money in finance without taking risk, it becomes important to be able to measure and quantify risks. We wish to measure accurately how much risk we are taking and decide whether we are comfortable with that level of
+Once we have accepted that it is impossible to make money in finance with out taking risk, it becomes important to be able to measure and quantify risks. We wish to measure accurately how much risk we are taking and decide whether we are comfortable with that level of
 
 VII.9.    The Mathematics of Money                                                                                915
 
 risk. For a given level of risk, we want to maximize our     assume that the set of changes tomorrow will be identi-
 expected return. When considering a new transaction,         cal to one of the sets of changes we have recorded. If we
 we will want to examine how it affects our risk lev-          assign equal probability to each of those changes, then
-els and returns. Certain transactions may even reduce        we get an approximation to the profit and loss distribu-
+els and returns. Certain transactions may even reduce        we get an approximation to the profit and loss dis tr ibu-
 our risk while increasing our returns if they cancel out     tion, from which we can read off the desired percentile.
 other risk. (A risk that can be canceled out by other        Note that as we are using a day’s change for all assets
 risks that have a tendency to move in the opposite           simultaneously, we automatically get an approximation
@@ -232,7 +232,7 @@ lose with a given probability over a specified period of
 time. For instance, one might consider the losses at a
                                                              assume that markets are efficient, then there is no point
 1% level over ten days, or at a 5% level over one day.
-                                                             in trying to pick shares that we believe to be underval-
+                                                             in trying to pick shares that we believe to be under val-
 This value is called Value-at-Risk or VAR.
                                                              ued as we have assumed that they do not exist. A corol-
    To compute VAR one has to build up a probabilistic

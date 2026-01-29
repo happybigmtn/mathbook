@@ -3,12 +3,12 @@
 VII.7.   Mathematics and Cryptography                                                                              887
 
    Over the years, coding theory has amassed a wide          and algorithmic developments to meet this need. It has
-variety of results. Some of these give better construc-      also provided entirely new possibilities, such as “digital
+variety of results. Some of these give better con struc-      also provided entirely new possibilities, such as “digital
 tions of codes with faster algorithms. Others provide        signatures” (which will be discussed later).
 theoretical upper limits on how well codes can per-             One of the oldest and most basic methods of cryptog-
 form. The theory uses an enormous variety of math-           raphy is simple substitution. Suppose that a message to
 ematical tools, many of them more advanced than the          be enciphered consists of a piece of English text. Before
-ones described in this article. Most notable among them      it is sent, the sender and recipient agree on a permu-
+ones described in this article. Most not able among them      it is sent, the sender and recipient agree on a permu-
 are algebraic geometry and graph theory, which are           tation of the twenty-six letters of the alphabet, which
 used to construct very good codes, and the theory of         they keep private. An enciphered message might then
 orthogonal polynomials, which is used to prove limits        look something like
@@ -19,10 +19,10 @@ covered in Pless and Huffman (1998).                          For very short mes
                                                              secure—it is just possible to work out the meaning
 Further Reading                                              of the above example by matching letter patterns to
 Hamming, R. W. 1950. Error detecting and error correcting    those commonly seen in English, but it is quite chal-
-  codes. Bell System Technical Journal 29:147–60.            lenging! However, for longer messages, simply count-
+  codes. Bell System Technical Journal 29:147–60.            leng ing! However, for longer messages, simply count-
 Forney Jr., G. D. 1966. Concatenated Codes. Cambridge, MA:   ing the frequencies of each letter and comparing those
   MIT Press.                                                 counts with the frequencies of letters in natural lan-
-Peterson, W. W. 1960. Encoding and error-correction pro-     guage will almost always reveal the hidden permutation
+Peters on, W. W. 1960. Encoding and error-correction pro-     guage will almost always reveal the hidden permutation
   cedures for Bose–Chaudhuri codes. IEEE Transactions on     sufficiently to allow the meaning to be easily recovered.
   Information Theory 6:459–70.
                                                                 A major leap forward in cryptography came with the
@@ -121,7 +121,7 @@ and reduced modulo x 4 + 1. Finally, the key for the            limited the use 
 round, which is derived linearly from the encryption            that could afford the physical security and separate
 key, is added modulo 2 to the 128 bits.                         communication channels necessary for distributing
   It can be seen that all of these steps are reversible,        keys reliably.
-which makes decipherment straightforward. It is likely             The following remarkable, counter intuitive proposi-
+which makes decipherment straightforward. It is likely             The following remarkable, counter intuitive pro posi-
 that AES will take over from DES as the most widely             tion forms the basis of public-key cryptography: it is
 used block cipher.                                              possible for two entities to communicate information
                                                                 in such a way that they start with no secret shared
@@ -134,7 +134,7 @@ on the computational difficulty of recovering some
 secret that protects the enciphered data. There is one
                                                                    It is easy to see how useful such a capability could
 classic encryption method that does not rely on this
-                                                                be. Consider, for example, someone making a pur-
+                                                                be. Consider, for example, some one making a pur-
 property. This is the “one-time key.” Imagine that the
                                                                 chase over the Internet. Having identified a product one
 message to be enciphered is encoded as a sequence
@@ -183,7 +183,7 @@ two communicators also agree on a secret key in the             reveals to no on
 form required by the chosen encryption method. This             x that he wishes to send, computes H(x), and returns
 key needs to be kept secure and never revealed to any           the result of his computation to Alice. Because Alice
 adversary. The communicators encipher and decipher              has the inverse key z, she can reverse the function H
-messages using the algorithm and secret key.                    and thereby recover x.
+messages using the algorithm and secret key.                    and there by recover x.
   This presents a major problem: how can the commu-                Now suppose that an adversary manages to read all
 nicators securely share the secret key? It would be inse-       the communications between Alice and Bob. Then the
 cure to exchange this over the same system that they
@@ -196,7 +196,7 @@ adversary will know the function H and the value H(x).        be shown to be equ
 However, Alice has not communicated the inverse key           The value of d is Alice’s private key (or “inverse key” in
 z, so the adversary is faced with the computationally         the terminology above): it is the secret that can undo
 intractable problem of inverting H. Therefore, Bob has        the encryption function H.
-successfully transmitted the secret x to Alice without          This is because H(x)d mod N can be shown to equal
+successfully transmitted the secret x to Alice with out          This is because H(x)d mod N can be shown to equal
 the adversary being able to work out what it is. (For         x. Indeed, the significance of the number (P −1)(Q−1)
 a more precise idea of what computational intractabil-        is that it equals φ(N), the number of integers less
 ity is and a further discussion of one-way functions,         than N and coprime to N. euler’s theorem [III.58](/part-03/modular-arithmetic)
@@ -284,7 +284,7 @@ g ab mod P be determined from this? One method is             discrete logarithm
 to solve what is called the discrete logarithm problem.       words, given G, g, and ag it should be a hard problem
 This is the problem of calculating a if you know P , g,       to determine a.
 and g a mod P . For large P this appears to be a com-           One type of group that has aroused interest for cryp-
-putationally intractable problem. It is not known for         tographic purposes is the additive group generated by
+putationally intractable problem. It is not known for         to graphic purposes is the additive group generated by
 certain whether there is a faster way for the adver-          points on an elliptic curve [III.21](/part-03/elliptic-curves). An elliptic curve
 sary to calculate g ab mod P than computing discrete          has an equation of the form
 logarithms—this is called the Diffie–Hellman problem—                              y 2 = x 3 + ax + b.
@@ -309,7 +309,7 @@ example, one can choose a number Q randomly and
                                                               in three places precisely. Define A + B to be the mirror
 use randomized primality tests to see whether Q and
                                                               image of C in the x-axis (see figure 3).
-2 Q + 1 are prime. Assuming that, as everyone believes,
+2 Q + 1 are prime. Assuming that, as every one believes,
                                                                  It is obvious that A + B = B + A from this definition.
 such pairs occur with the “expected” frequency, the
                                                               What is rather more surprising is that the associative
@@ -370,7 +370,7 @@ Cryptography remains an active and fascinating area
                                                              tocols, especially those likely to become international
 for research—there are undoubtedly more results and
                                                              standards. When public-key methods are to be used
-ideas to be discovered. For a good overview of current
+ideas to be discovered. For a good over view of current
                                                              in practical communication the sequence of bits to be
 activity one should look at recent proceedings of the
                                                              transmitted needs to be clearly defined, so that both
@@ -384,7 +384,7 @@ on cryptography by Menezes, van Oorschott, and Van-
                                                              decreasing order of significance? The rules or proto-
 stone (1996) is a good way to get up to speed on present
                                                              cols are often enshrined in public standards, and it is
-theory. In this final section I outline just a few of the
+theory. In this final section I out line just a few of the
                                                              important that they do not introduce any weakness into
 directions in which the subject is moving.
                                                              the system.
@@ -399,7 +399,7 @@ Franklin 2001). These are maps w from pairs of points        are set to publicly
 on the curve to either the finite field over which the         that is natural to want to do, if, as is often the case,
 curve is defined or an extension field.                        a large public-key modulus is being used to transmit a
    A pairing w is bilinear, in the sense that w(A+B, C) =    much shorter communication key. As a result of Cop-
-w(A, C)w(B, C) and w(A, B + C) = w(A, B)w(A, C),             persmith’s discovery such fields are nowadays usually
+w(A, C)w(B, C) and w(A, B + C) = w(A, B)w(A, C),             per smith’s discovery such fields are nowadays usually
 where addition is the group operation defined on points       padded out before they are encrypted, with bits that
 of the curve and multiplication takes place in the field.     vary unpredictably.
    One way that such a map can be used is to create an

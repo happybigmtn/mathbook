@@ -79,7 +79,7 @@ example, only finite sexagesimal expressions were em-            of the lengths 
 ployed, so the scribes were not able to write down an           words, it must be possible to choose a unit length so
 exact value for the reciprocal of 7 because there is no         that each of our segments consists of a whole number
 finite sexagesimal expression for 17 . In practice, this         multiple of the unit. The two segments, then, could be
-meant that to divide by 7 required finding an approxi-           “measured together,” i.e., would be “commensurable.”
+meant that to divide by 7 required finding an approx i-           “measured together,” i.e., would be “commensurable.”
 mate answer. The Egyptian “parts” system, on the other             Now here’s the catch: the Greeks could prove that this
 hand, can represent any positive rational number, but           was not always the case. Their standard example had to
 doing so may require a sequence of denominators that            do with the side and the diagonal of a square. We do not
@@ -117,7 +117,7 @@ way, using clear initial assumptions and careful state-         ilar arguments c
 ments. This, perhaps, is what led them to be very               example, they knew that the side of a square of area 1
 careful about numbers and their relations to other              and a square of area 10 are incommensurable.
 magnitudes.                                                        The conclusion, then, is that lengths are not numbers:
-  Sometime before the fourth century b.c.e., the Greeks         instead, they are some other kind of magnitude. But
+  Some time before the fourth century b.c.e., the Greeks         instead, they are some other kind of magnitude. But
 made the fundamental discovery of “incommensurable              now we are faced with a proliferation of magnitudes:
 magnitudes.” That is, they discovered that it is not            numbers, lengths, areas, angles, volumes, etc. Each of
 always possible to express two given lengths as (inte-          these must be taken as a different kind of quantity, not
@@ -130,7 +130,7 @@ From Numbers to Number Systems
 This is a problem for geometry, particularly if we want to measure things. The Greeks solved this problem by relying heavily on the notion of a ratio. Two quantities of the same type have a ratio, and this ratio was allowed to be equal to the ratio of two quantities of another type: equality of two ratios was defined using Eudoxus’s theory of proportion, the latter being one of the most important and deep ideas of Greek geometry.
 So, for example, rather than talking about a number called $\pi$ , which to them would not be a number at all, they would say that “the ratio of the circle to the square on its radius is the same as the ratio of the circumference to the diameter.” Notice that one of the two ratios is between two areas, the other between two lengths. The number $\pi$ itself had no name in Greek mathematics, but the Greeks did compare it with ratios between numbers:
 archimedes [VI.3](/part-06/archimedes-ca) showed that it was just a little bit less than the ratio of $22$ to $7$ and just a little bit more than the ratio of $223$ to $71$ . Doing things this way seems ungainly to us, but it worked very well. Further more, it is philosophically satisfying to conceive of a great variety of magnitudes organized into various kinds (segments , angles, surfaces, etc .) . Magnitudes of the same kind can be related to one another by ratios, and ratios can be compared with each other because they are relations perceived by our minds.
-In fact, the word for ratio, both in Greek and in Latin, is the same as the word for “reason” or “explanation” (logos in Greek, ratio in Latin). From the beginning, “irrational” (alogos in Greek) could mean both “without a ratio” and “unreasonable.” Inevitably, this austere theoretical system was somewhat disconnected from the everyday needs of people who needed to measure things such as lengths and angles. Astronomers kept right on using sexagesimal approximations, as did mapmakers and other scientists. There was some “leakage” of course:
+In fact, the word for ratio, both in Greek and in Latin, is the same as the word for “reason” or “explanation” (logos in Greek, ratio in Latin). From the beginning, “irrational” (alogos in Greek) could mean both “with out a ratio” and “unreasonable.” Inevitably, this austere theoretical system was some what disconnected from the everyday needs of people who needed to measure things such as lengths and angles. Astronomers kept right on using sexagesimal approximations, as did mapmakers and other scientists. There was some “leakage” of course:
 in the first century c.e., Heron of Alexandria wrote a book that reads like an attempt to apply the theoreticians’ discoveries to practical measurement. It is to him, for
 
 $22$
@@ -139,13 +139,13 @@ example, that we owe the recommendation to us$e^{7}$ as an approximation for $\p
 
 $79$
 
-compartmentaliz at i on between different kinds of quantities was slowly demolished; second, in order to do this the notion of number had to be generalized over and over again.
+compartmentalization between different kinds of quantities was slowly demolished; second, in order to do this the notion of number had to be generalized over and over again.
 
 $3$
 
 Decimal Place Value
 
-Our system for representing whole numbers goes back, ultimately, to the mathematicians of the Indian subcontinent. Sometime before (probably well before) the fifth century c.e., they created nine symbols to designate the numbers from one to nine and used the position of these symbols to indicate their actual value. So $a_{3}$ in the units position meant three, and $a_{3}$ in the tens position meant three tens, i.e., thirty. This, of course, is what we still do; the symbols themselves have changed, but not the principle.
+Our system for representing whole numbers goes back, ultimately, to the mathematicians of the Indian subcontinent. Some time before (probably well before) the fifth century c.e., they created nine symbols to designate the numbers from one to nine and used the position of these symbols to indicate their actual value. So $a_{3}$ in the units position meant three, and $a_{3}$ in the tens position meant three tens, i.e., thirty. This, of course, is what we still do; the symbols themselves have changed, but not the principle.
 At about the same time, a place marker was developed to indicate an unoccupied space; this eventually evolved into our zero. Indian astronomy made extensive use of sines, which are almost never whole numbers. To represent these, a Babylonian-style sexagesimal system was used, with each “sexagesimal unit” being represented using the decimal system. So “thirty-three and a quarter” might be represented as 3315 , i.e., $33$ units and $15$ “minutes” (sixtieths). Decimal place-value numeration was passed on from India to the Islamic world fairly early. In the ninth century c.e.
 in Baghdad, the recently established capital of the caliphate, one finds al-khwārizmı̄ [VI.5](/part-06/abu-jafar-muhammad-ibn-musa-al-khwarizm-vi55-william-kingdon-cliord-18451879) writing a treatise on numeration in the Indian style, “using nine symbols.” Several centuries later, al-Khwārizmı̄’s treatise was translated into Latin. It was so popular and influential in late-medieval Europe that decimal numeration was often referred to as “algorism.” It is worth noting that in al-Khwārizmı̄’s writing zero still had a special status: it was a place holder, not a number.
 But once we have a symbol, and we start doing arithmetic using these symbols, the distinction quickly disappears. We have to know how to add and multiply numbers by zero in order to multiply multidigit numbers. In this way, “nothing” slowly became a number.
@@ -159,8 +159,8 @@ As Greek culture was displaced by other influences, the practical tradition beca
 80                                                                            II. The Origins of Modern Mathematics
 
 gave us the word “algebra.” The book is actually a com-       maticians independently. The most influential of these
-pendium of many different kinds of practical or semi-          was stevin [VI.10](/part-06/simon-stevin-15481620), a Flemish mathematician and engi-
-practical mathematics problems. Al-Khwārizmı̄ opens          neer who popularized the system in a booklet called
+pen dium of many different kinds of practical or semi-          was stevin [VI.10](/part-06/simon-stevin-15481620), a Flemish mathematician and engi-
+practical mathematics problems. Al-Khwārizmı̄ opens          neer who popularized the system in a book let called
 the book with a declaration that tells us at once that we     De Thiende (“The tenth”), which was first published in
 are no longer in the Greek mathematical world: “When          1585. By extending place value to tenths, hundredths,
 I considered what people generally want in calculating,       and so on, Stevin created the system we still use today.
@@ -205,13 +205,13 @@ Algebra, for example, one sees both theorems in the           into one expansive
 Greek style and the desire for numerical solutions. In        imal expansions. He was aware that these numbers
 his discussion of cubic equations Khayyam manages to          could be represented as lengths along a line. This
 find solutions by means of geometric constructions but         amounted to a fairly clear notion of what we now call
-laments his inability to find numerical values.                the positive real numbers.
+laments his in ability to find numerical values.                the positive real numbers.
    Slowly, however, the realm of “number” began to              Stevin’s proposal was made immensely more influ-
                                                √
 grow. The Greeks might have insisted that 10 was not          ential by the invention of logarithms. Like the sine and
 a number, but rather a name for a line segment, the           the cosine, these were practical computational tools. In
 side of a square whose area is 10, or a name for a ratio.     order to be used, they needed to be tabulated, and the
-Among the medieval mathematicians, both in Islam and          tables were given in decimal form. Very soon, everyone
+Among the medieval mathematicians, both in Islam and          tables were given in decimal form. Very soon, every one
             √
 in Europe, 10 started to behave more and more like a          was using decimal representation.
 number, entering into operations and even appearing             It was only much later that it came to be understood
@@ -231,7 +231,7 @@ Even as Stevin was writing, the next steps were being
 taken: under the pressure of the theory of equations,
                                                             known as the fundamental theorem of algebra
 negative numbers and complex numbers began to be
-                                                            [V.13](/part-05/the-fundamental-theorem-of-algebra); it was finally proved to everyone’s satisfaction
+                                                            [V.13](/part-05/the-fundamental-theorem-of-algebra); it was finally proved to every one’s satisfaction
 useful. Stevin himself was already aware of negative
                                                             by gauss [VI.26](/part-06/carl-friedrich-gauss-17771855). Thus, the theory of equations did not
 numbers, though he was clearly not quite comfortable
@@ -248,7 +248,7 @@ ian mathematicians of the sixteenth century led to a        classifying numbers 
 method for solving cubic equations. As a crucial step,      itarianism had its impact, but it could not quite erase
 this method involved extracting a square root. The          the fact that whole numbers are nicer than decimals,
 problem was that the number whose root was needed           and that fractions are generally easier to grasp than
-sometimes came out negative.                                irrational numbers.
+some times came out negative.                                irrational numbers.
    Up until then, it had always turned out that when an        In the nineteenth century, all sorts of new ideas cre-
 algebraic problem led to the extraction of the square       ated the need for a more careful look at this classifi-
 root of a negative number, the problem simply had no        cation. In number theory, Gauss and kummer [VI.40]
@@ -271,7 +271,7 @@ equations can have three sorts of roots: true (mean-        were not roots of an
 ing positive), false (negative), and imaginary. It is not   existence of transcendental numbers was not known at
 completely clear that they understood that these imag-      the time; liouville [VI.39](/part-06/joseph-liouville-18091882) proved that such numbers
 inary roots would be what we now call complex num-          exist in 1844. Within a few decades, it was proved that
-bers; Descartes, at least, sometimes seems to be saying     both e and π were transcendental, and later in the cen-
+bers; Descartes, at least, some times seems to be saying     both e and π were transcendental, and later in the cen-
 that an equation of degree n must have n roots, and         tury cantor [VI.54](/part-06/georg-cantor-18451918) showed that in fact the vast major-
 that the ones that are neither “true” nor “false” must      ity of real numbers were transcendental. Cantor’s dis-
 simply be imagined.                                         covery highlighted, for the first time, that the system

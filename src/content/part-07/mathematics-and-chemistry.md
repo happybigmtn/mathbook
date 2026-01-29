@@ -10,20 +10,20 @@ VII.1 Mathematics and Chemistry                              being unknown, phil
                                                              truer method of philosophy.
                    1   Introduction
                                                            The nature of such forces came to be understood only
-Since archimedes [VI.3](/part-06/archimedes-ca), and his experimental investi-     two hundred years later, and indeed the electron, the
+Since archimedes [VI.3](/part-06/archimedes-ca), and his experimental invest i-     two hundred years later, and indeed the electron, the
 gation (described by Vitruvius) of the proportions of      particle responsible for chemical bonding, was not dis-
 gold and silver in an alloy, the solution of chemical      covered until 1897. This is why the main flow of ideas
-problems has employed mathematics. Carl Schorlem-          has been from mathematical theory to applications in
+problems has employed mathematics. Carl Sch or lem-          has been from mathematical theory to applications in
 mer studied the paraffinic series of hydrocarbons (then      chemistry.
 important because of the discovery of oil in Pennsylva-       Some of the fundamental equations of chemistry,
 nia) and showed how their properties changed with the      though based on experiment rather than strict mathe-
-addition of successive carbon atoms. His close friend      matical reasoning, convey a wealth of information with
+addition of successive carbon atoms. His close friend      mat ical reasoning, convey a wealth of information with
 in Manchester, Friedrich Engels, was inspired by this to   great simplicity and elegance (Thomas 2003). For exam-
 introduce the transformation of “quantity into quality”    ple, consider Boltzmann’s fundamental equation of sta-
-into his philosophical outlook, which then became a        tistical thermodynamics, which links entropy, S, to Ω,
+into his philosophical out look, which then became a        tistical thermodynamics, which links entropy, S, to Ω,
 mantra of dialectical materialism. From a similar chem-    the number of possible ways of arranging the particles:
 ical observation, cayley [VI.46](/part-06/arthur-cayley-18211895) in 1857 developed         S = k log Ω, where k is known as the Boltzmann con-
-“rooted trees” and the mathematics of the enumera-         stant. There is also the expression derived by Balmer
+“rooted trees” and the mathematics of the enum era-         stant. There is also the expression derived by Balmer
 tion of branched molecules, the first articulation of       for the wavelength, λ, of spectral lines from hydrogen
 graph theory [III.34]. Later, George Pólya developed       in the visible portion of the spectrum:
 his fundamental enumeration theorem, facilitating fur-                        1    1     1
@@ -50,7 +50,7 @@ propositions:                                              vertices, faces, and 
 828                                                                              VII. The Influence of Mathematics
 
 solve differential equations numerically, they can often     However, such analysis was for a long time held back by
-provide exact algebraic expressions, sometimes even         the time required for the calculation of fourier trans-
+provide exact algebraic expressions, some times even         the time required for the calculation of fourier trans-
 ones that are too elaborate to write out. Computing has     forms [III.27](/part-03/the-fourier-transform). This difficulty is now a thing of the past,
 required the development of algorithms in the fields of      owing to the discovery of the fast fourier trans-
 structure, process, modeling, and search. Mathematics       form [III.26](/part-03/the-fast-fourier-transform) by Cooley and Tukey in 1965—a univer-
@@ -61,17 +61,17 @@ has led to fundamental advances, some of them bearing       and 3 D spatial stru
 on chemistry.                                               analogous problems in N dimensions. Some of this
    In general, mathematical approaches to chemical          work has found application in the description of quasi-
 problems can be divided into discrete and continuous        crystals, which are arrangements of atoms that, like
-treatments, reflecting on the one hand the fundamen-         crystals, exhibit a high degree of organization, but
+treatments, reflecting on the one hand the fund a men-         crystals, exhibit a high degree of organization, but
 tal discrete atomic nature of matter and on the other       which lack the periodic behavior of crystals. (That is,
 the continuous statistical behavior of large numbers of     they do not have translational symmetry.) The most
-atoms. For example, enumerating molecules is a dis-         notable example is the following, which uses six-dimen-
+atoms. For example, enumerating molecules is a dis-         not able example is the following, which uses six-dimen-
 crete problem, while a problem involving global mea-        sional geometry. Take a regular cubic lattice L in six
 sures such as temperature and other thermodynamic           dimensions and let V be a 3 D subspace of R6 that con-
 parameters will be continuous. These treatments have        tains no point of L apart from the origin. Now project on
 required different branches of mathematics, with inte-       to V all points from L that are closer to V than a certain
 gers more important for discrete problems and real          distance d. The result is a 3 D structure of points that
 numbers more important for continuous ones.                 exhibits a great deal of local regularity but not global
-   We shall now outline some chemical problems to           regularity. This structure gives a very good model for
+   We shall now out line some chemical problems to           regularity. This structure gives a very good model for
 which, in our view, mathematics has made the most           quasicrystals.
 significant contributions.                                      Until recently, crystals in three dimensions had al-
                                                             ways been thought of as periodic, and therefore capable
@@ -87,7 +87,7 @@ tended to form), and were developed in the nineteenth       tures from the twinn
 century in the absence of definite information about         “normal” crystals. This discovery, of a quasicrystal line
 the atomic structure of matter. The 230 space groups,       alloy phase “with long-range orientational order and no
 which codify different ways of arranging objects peri-       translational symmetry,” has brought about an ideolog-
-odically in three-dimensional (3 D) space, were found        ical shift in crystallography.
+od ically in three-dimensional (3 D) space, were found        ical shift in crystallography.
 independently by Fedorov, Schoenflies, and Barlow be-           The earlier concept of a “quasilattice” appeared to be
 tween 1885 and 1891. They result from the systematic        one possible mathematical formalism for the descrip-
 combination of a certain collection of fourteen lattices,   tion of quasicrystals. Quasilattices have two incom-
@@ -146,7 +146,7 @@ of the Delaunay triangulation is that it is a triangulation   tronic density, wh
 of the sites with the additional property that, for each      therefore greatly speeds up calculations.
 triangle, the circumcircle of that triangle contains no          The partial differential equations of quantum me-
 other sites.) These dissections give a well-defined way        chanics, physics, fields, surfaces, potentials, and waves
-of representing many N-dimensional chemical struc-            can sometimes be solved analytically, but even if they
+of representing many N-dimensional chemical struc-            can some times be solved analytically, but even if they
 tures as arrangements of polytopes. Crystals, which           cannot, they are now almost always soluble by numer-
 have periodic boundaries, are easier to deal with than        ical methods. All this relies on the corresponding pure
 extended structures that terminate in a boundary. The         mathematics. (For a discussion of how to solve par-
@@ -166,7 +166,7 @@ For very simple systems, calculations performed on            have variable amou
 mechanical calculators agreed with the experimental           mers, where the position of a functional group in a
 results of spectroscopy. In the 1950 s, electronic com-        chain is different (figure 2(a)). In stereoisomers the
 puters became available for general scientific use, and        bond structure is the same, but the geometrical posi-
-the new field of computational chemistry developed,            tioning of atoms and functional groups in space dif-
+the new field of computational chemistry developed,            tion ing of atoms and functional groups in space dif-
 the aim of which was to obtain quantitative infor-            fers (figure 2(b)). This class includes optical isomers,
 mation on atomic positions, bond lengths, electronic          where different isomers are mirror images of each other
 configurations of atoms, etc., by means of numerical           (figure 2(c)). While structural isomers have different
@@ -176,7 +176,7 @@ representing electronic orbitals, obtaining approximate       isomers such as ca
 
 VII.1.      Mathematics and Chemistry                                                                                              831
 
-(a)               CH3                                           CH3          thesized artificially. Among them are cubane, C8 H8 ,
+(a)               CH3                                           CH3          the sized artificially. Among them are cubane, C8 H8 ,
                              CH2                      CH2                    which contains eight carbon atoms arranged at the
 H3 C               CH                     H3 C                      CH
                                                                              corners of a cube, each linked to a single hydrogen
@@ -187,7 +187,7 @@ H3 C               CH                     H3 C                      CH
 (b)     H                          H      H                       Cl
                                                                              composed of five interlocked rings. Catenanes (from
               C             C                    C          C                Latin catena, chain) are molecules containing two or
-       Cl                          Cl     Cl                      H          more interlocked rings that are inseparable without
+       Cl                          Cl     Cl                      H          more interlocked rings that are inseparable with out
                                                                              breaking a covalent bond. Rotaxanes (from Latin rota,
                         H                             H
 (c)                                                                          wheel, and axis, axle) are dumbbell shaped, having a
@@ -208,8 +208,8 @@ the edges representing chemical bonds. To enumer-                            Mon
 ate stereoisomers, one counts the symmetries of this                         experimentally verified with fluorescence microscopy.
 graph, but first one must consider symmetries of the                             DNA, the central substance of life, has a complex
 molecule (Cotton 1990) in order to decide which sym-                         and fascinating topology, which is closely related to its
-metries of the graph correspond to spatial transfor-                         biological function. The major geometric descriptions
-mations that make chemical sense. Cayley addressed                           of supercoiled DNA (that is, DNA wrapped around a
+me tries of the graph correspond to spatial trans for-                         biological function. The major geometric descriptions
+ma tions that make chemical sense. Cayley addressed                           of supercoiled DNA (that is, DNA wrapped around a
 the problem of enumerating structural isomers, that                          series of proteins) involve the concepts of linking, twist-
 is, combinatorially possible branched molecules. To                          ing, and writhing numbers that come from knot theory.
 do this, one must count how many different molec-                             DNA knots, which are created spontaneously within
@@ -217,8 +217,8 @@ ular graphs there are with a given set of elements,                          cel
 where two graphs are regarded as the same if they are                        and may decrease the stability of the DNA. “Resolvase
 isomorphic. The enumeration of isomorphism types                             enzymes” detect and remove these knots, but the mech-
 uses group theory to count the intrinsic graph symme-                        anism of this process is not understood. However,
-tries. After Pólya published his remarkable enumera-                         using topological concepts of knots and tangles, one
-tion theorem [IV.18 §6](/part-04/enumerative-and-algebraic-combinatorics) in 1937, his work using gen-                         can gain insight into the reaction site and thereby
+tries. After Pólya published his remarkable enum era-                         using topological concepts of knots and tangles, one
+tion theorem [IV.18 §6](/part-04/enumerative-and-algebraic-combinatorics) in 1937, his work using gen-                         can gain insight into the reaction site and there by
 erating functions [IV.18 §§2.4, 3] and permutation                           try to infer the mechanism. (See also mathematical
 groups [III.68](/part-03/permutation-groups) became central to the enumeration of                         biology [VII.2 §5](/part-07/mathematical-biology).)
 isomers in organic chemistry. The theorem solves the
@@ -239,7 +239,7 @@ Figure $3$ The structure of the fullerene $C^{60}$ . $C^{28}$ , $C^{32}$ , $C^{3
 From euler’s [VI.19](/part-06/leonhard-euler-17071783) topological relationship $n(6 - n)f^{n} = 12$ , where $f^{n}$ is the number of n-hedral faces and the summation is over all faces of the polyhedron, we conclude first that $f^{5} = 12$ , since n is found to take only the values $5$ or $6$ , and second that $f^{6}$ can take any value greater than $1$ . In 1994 , Terrones and Mackay predicted the existence of ordered structures of a new kind, derived from graphite and related to fullerenes, with topologies of triply periodic minimal surfaces [III.94](/part-03/variational-methods).
 These new structures, which are of great practical interest, are produced by introducing eight-membered rings of carbon atoms into a sheet of six-membered rings. This gives rise to saddle-shaped surfaces of negative gaussian curvature [III.78](/part-03/ricci-flow), unlike the fullerenes, which have positive curvature. Thus, to model them mathematically one must consider embeddings of non Euclidean $2D$ spaces into $R^{3}$ . This has contributed to a renewed interest in certain aspects of non-Euclidean geometry. $2$ .
 $5$ Spectroscopy Spectroscopy is the study of the interaction of electromagnetic radiation (light , radio waves, X-rays, etc .) VII. The Influence of Mathematics with matter. The central portion of the electromagnetic spectrum--spanning the infrared, visible, and ultraviolet wavelengths and the radio frequency region--is of particular interest to chemistry. A molecule, which consists of electrically charged nuclei and electrons, may interact with the oscillating electric and magnetic fields of light and absorb enough energy to be promoted from one discrete vibrational energy level to another.
-Such a transition is registered in the infrared spectrum of the molecule. The Raman spectrum monitors inelastic scattering of light by molecules (that is, when some of the light is scattered at a different frequency from the frequency of the incoming photons). Visible and ultraviolet light can redistribute the electrons in the molecule: this is electronic spectroscopy. Group theory is essential in the interpretation of the spectra of chemical compounds (Cotton 1990 ; Hollas 2003 ).
+Such a transition is registered in the infrared spectrum of the molecule. The Raman spectrum monitors in elastic scattering of light by molecules (that is, when some of the light is scattered at a different frequency from the frequency of the in coming photons). Visible and ultraviolet light can redistribute the electrons in the molecule: this is electronic spectroscopy. Group theory is essential in the interpretation of the spectra of chemical compounds (Cotton 1990 ; Hollas 2003 ).
 For any given molecule, the symmetry operations that can be applied to it form a group [I.3](/part-01/fundamental-definitions), and can be represented by matrices. This allows one to identify “spectroscopical ly active” events in a molecule. For example, just three bands are observed in the infrared spectrum and eight bands in the Raman spectrum of dodecahedrane. This is a consequence of the icosahedral symmetry of the molecule and is what one expects from group-theoretic considerations. Also, there are no coincidences between the infrared- and Raman-active modes.
 Similarly, group theory correctly predicts that, because of the high symmetry of a $C^{60}$ molecule, it has only four lines in its infrared spectrum and ten in its Raman spectrum, even though it has $174$ vibrational modes.
 
@@ -300,7 +300,7 @@ applications in cosmology as “branes.”                         For example, 
   In 1866 weierstrass [VI.44](/part-06/karl-weierstrass-18151897) discovered a method of           known as the D surface (for “diamond”).
 complex analysis suitable for general investigation of            The application of minimal surfaces to the physical
 minimal surfaces. Consider a transformation of a min-          world has so far been descriptive, rather than quan-
-imal surface into the complex plane by combination of          titative. Although explicit analytical equations for the
+imal surface into the complex plane by combination of          tit ative. Although explicit analytical equations for the
 two simple maps. The first is the Gauss map ν, under            parameters of some TPMSs have recently been derived,
 which the image of a point P of the surface is the point       problems such as stability and mechanical strength are
 P of the intersection of the surface normal vector at P        unresolved. While describing structure using the con-
@@ -337,7 +337,7 @@ new types being added to the list every year. Zeolites     in technology, design
 find many important applications in science and tech-       logistics, financial planning, travel scheduling, and the
 nology, in areas as diverse as catalysis, chemical sepa-   design of microprocessor circuitry. In chemistry and
 ration, water softening, agriculture, refrigeration, and   biology, global optimization arises in connection with
-optoelectronics. Unfortunately, the problem of enu-        the structure of clusters of atoms, protein conforma-
+optoelectronics. Unfortunately, the problem of enu-        the structure of clusters of atoms, protein con form a-
 meration is fraught with difficulties, and since the num-    tion, and molecular docking (the fitting and binding
 ber of 4-connected 3 D networks is infinite and there        of small molecules at the active sites of biomacro-
 is no systematic procedure for their derivation, the       molecules such as enzymes and DNA). The quantity to
@@ -351,7 +351,7 @@ recent advances in combinatorial tiling theory, devel-     ber of which tend to 
 oped by the first generation of pure mathematicians         size of the problem. Conventional minimization tech-
 familiar with computing. The tiling approach identified     niques are time-consuming and have a tendency to find
 over nine hundred networks with one, two, and three        a nearby hole and stay there: that is, they converge
-kinds of inequivalent vertices, which we call uninodal,    to whichever local minimum they first encounter. The
+kinds of inequivalent vertices, which we call uninodal,    to which ever local minimum they first encounter. The
 binodal, and trinodal.                                     genetic algorithm (GA), an approach inspired by Dar-
   However, only a fraction of the mathematically gen-      win’s theory of evolution, was introduced in the 1960 s.
 erated networks are chemically feasible (many would        This algorithm starts with a set of solutions (repre-
@@ -386,7 +386,7 @@ objective function. SA involves the choice of “annealing
 schedule,” initial temperature, the number of iterations
 at each temperature, and the temperature decrease at
 each step as cooling proceeds.
-   Taboo (or tabu) search is a general-purpose stochas-
+   Taboo (or tabu) search is a general-purpose stoc has-
 tic global-optimization method originally proposed by
 Glover in 1989. It is used for very large combina-
 torial optimization tasks and has been extended to
@@ -425,7 +425,7 @@ Proteins are linear sequences of amino acids, which are
                                                              ment of atoms in which every pair of atoms has an
 molecules that contain both the amide (–NH2 ) and car-
                                                              associated potential energy, given by the classical Lenn-
-boxylic (–COOH) functional groups. Understanding the
+box ylic (–COOH) functional groups. Understanding the
                                                              ard-Jones potential-energy function. The Lennard-Jones
 means by which a protein adopts its 3 D structure is
                                                              cluster problem is to determine the atomic cluster con-
@@ -450,7 +450,7 @@ can be modeled mathematically using the principles of        optimization method
 
 $836$
 
-systematic survey by Northby in 1987 , which yielded most of the lowest Lennard-Jones potential values in the range $13 \le n \le 147$ , was a significant landmark, and these results have since been improved by about $10$ % . The results for $n = 148$ , $149$ , $150$ , $192$ , $200$ , $201$ , $300$ , and $309$ have now been reported using stochastic global-optimization algorithms.
+systematic survey by North by in 1987 , which yielded most of the lowest Lennard-Jones potential values in the range $13 \le n \le 147$ , was a significant landmark, and these results have since been improved by about $10$ % . The results for $n = 148$ , $149$ , $150$ , $192$ , $200$ , $201$ , $300$ , and $309$ have now been reported using stochastic global-optimization algorithms.
 
 $2$ . $11$
 

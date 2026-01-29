@@ -186,7 +186,7 @@ the complication behind our notation.
 ing dirt under the carpet. While the simpler notation          of the intermediate value theorem (or another result of
 conceals many of the specific details of the problem,           a similar nature), which states that if f is a continuous
 it also reveals very clearly what would otherwise be           real-valued function and f (a) and f (b) lie on either
-obscured: that we have a linear map from R2 to R2 and          side of 0, then somewhere between a and b there must
+obscured: that we have a linear map from R2 to R2 and          side of 0, then some where between a and b there must
 we want to know which vectors x, if any, map to the            be a c such that f (c) = 0. This result can be applied
 vector b. When faced with a particular set of simul-           to the function f (x) = x 2 − 2, since f (1) = −1 and
 taneous equations, this reformulation does not make            f (2) = 2. Therefore, there is some x between 1 and 2
@@ -244,9 +244,9 @@ I. Introduction
 
 equation $x^{2} + 3 = 0$ has no solution if x is required to be real, but in the complex numbers it has the two √ solutions $x =$ ±$i_{3}$ . The equation $x^{2} + y^{2} = 11$ has infinitely many solutions if we are looking for $x$ and $y$ in the real numbers, but none if they have to be integers. This last example is a typical Diophantine equation, the name given to an equation if one is looking for integer solutions.
 The most famous Diophantine equation is the Fermat equation x n  +  y $n = z$ n , which is now known, thanks to Andrew Wiles, to have no positive integer solutions if n is greater than $2$ . (See fermat’s last theorem [V.10](/part-05/fermats-last-theorem). By contrast, the equation $x^{2} + y^{2} = z^{2}$ has infinitely many solutions .  )  A great deal of modern algebraic number theory [IV.1](/part-04/number-theory) is concerned with Diophantine equations, either directly or indirectly.
-As with equations in the real and complex numbers, it is often fruitful to study the structure of sets of solutions to Diophantine equations: this investigation belongs to the area known as arithmetic geometry [IV.5](/part-04/arithmetic-geometry). A notable feature of Diophantine equations is that they tend to be extremely difficult. It is therefore natural to wonder whether there could be a systematic approach to them. This question was the tenth in a famous list of problems asked by hilbert [VI.63](/part-06/david-hilbert-18621943) in 1900 .
+As with equations in the real and complex numbers, it is often fruitful to study the structure of sets of solutions to Diophantine equations: this investigation belongs to the area known as arithmetic geometry [IV.5](/part-04/arithmetic-geometry). A not able feature of Diophantine equations is that they tend to be extremely difficult. It is therefore natural to wonder whether there could be a systematic approach to them. This question was the tenth in a famous list of problems asked by hilbert [VI.63](/part-06/david-hilbert-18621943) in 1900 .
 It was not until 1970 that Yuri Matiyasevitch, building on work by Martin Davis, Julia Robinson, and Hilary Putnam, proved that the answer was no. (This is discussed further in the insolubility of the halting problem [V.20](/part-05/the-insolubility-of-the-halting-problem).) An important step in the solution was taken in 1936 , by church [VI.89](/part-06/alonzo-church-19031995) and turing [VI.94](/part-06/alan-turing-19121954) .
-This was to make precise the notion of a “systematic approach,” by formalizing (in two different ways) the notion of an algorithm (see algorithms [II.4](/part-02/algorithms) and computational complexity [IV.20](/part-04/computational-complexity)) . It was not easy to do this in the pre-computer age, but now we can restate the solution of Hilbert’s tenth problem as follows: there is no computer program that can take as its input any Diophantine equation, and without fail print “YES” if it has a solution and “NO” otherwise. What does this tell us about Diophantine equations?
+This was to make precise the notion of a “systematic approach,” by formalizing (in two different ways) the notion of an algorithm (see algorithms [II.4](/part-02/algorithms) and computational complexity [IV.20](/part-04/computational-complexity)) . It was not easy to do this in the pre-computer age, but now we can restate the solution of Hilbert’s tenth problem as follows: there is no computer program that can take as its input any Diophantine equation, and with out fail print “YES” if it has a solution and “NO” otherwise. What does this tell us about Diophantine equations?
 We can no longer dream of a final theory that will encompass them all, so instead we are forced to restrict our attention to individual equations or special classes of equations, continually developing different methods for solving them. This would make them uninteresting after the first few, were it not for the fact that specific Diophantine equations have remarkable links with very general questions in other parts of mathematics. For
 
 I.4.   The General Goals of Mathematical Research                                                                     51
@@ -275,7 +275,7 @@ been solved.
                                                               once again toward establishing whether or not solu-
 So far, we have looked at equations where the unknown         tions exist, and if so what properties they have. As with
 is either a number or a point in n-dimensional space          polynomial equations, this can depend on what you
-(that is, a sequence of n numbers). In order to generate      count as an allowable solution. Sometimes we are in the
+(that is, a sequence of n numbers). In order to generate      count as an allowable solution. Some times we are in the
 these equations, we took various combinations of the          position we were in with the equation x 2 = 2: it is not
 basic arithmetical operations and applied them to our         too hard to prove that solutions exist and all that is left
 unknowns.                                                     to do is name them. A simple example is the equation
@@ -294,7 +294,7 @@ which has the general solution x(t) = A sin kt +              mal distribution [
 B cos kt; the second is the heat equation, which was          tribution is of fundamental importance in probability,
 discussed in some fundamental mathematical def-               so the function is given a name, Φ.
 initions [I.3 §5.4](/part-01/fundamental-definitions).                                             In most situations, there is no hope of writing down
-  For many reasons, differential equations represent a         a formula for a solution, even if one allows oneself to
+  For many reasons, differential equations represent a         a formula for a solution, even if one allows one self to
 jump in sophistication. One is that the unknowns are          integrate “known” functions. A famous example is the
 functions, which are much more complicated objects            so-called three-body problem [V.33](/part-05/the-three-body-problem): given three bod-
 than numbers or n-dimensional points. (For example,           ies moving in space and attracted to each other by grav-
@@ -302,7 +302,7 @@ the first equation above asks what function x of t has         itational forces,
 the property that if you differentiate it twice then you       Newton’s laws, one can write down some differential
 get −k2 times the original function.) A second is that        equations that describe this situation. newton [VI.14](/part-06/isaac-newton-16421727)
 the basic operations one performs on functions include        solved the corresponding equations for two bodies,
-differentiation and integration, which are considerably        and thereby explained why planets move in elliptical
+differentiation and integration, which are considerably        and there by explained why planets move in elliptical
 less “basic” than addition and multiplication. A third is     orbits around the Sun, but for three or more bodies
 that differential equations that can be solved in “closed      they proved very hard indeed to solve. It is now known
 form,” that is, by means of a formula for the unknown         that there was a good reason for this: the equations
@@ -310,7 +310,7 @@ function f , are the exception rather than the rule, even     can lead to chaoti
 when the equations are natural and important.                 more about chaos.) However, this opens up a new and
   Consider again the first equation above. Suppose             very interesting avenue of research into questions of
 that, given a function f , we write φ(f ) for the function    chaos and stability.
-(d2 f /dt 2 ) + k2 f . Then φ is a linear map, in the sense      Sometimes there are ways of proving that solutions
+(d2 f /dt 2 ) + k2 f . Then φ is a linear map, in the sense      Some times there are ways of proving that solutions
 that φ(f + g) = φ(f ) + φ(g) and φ(af ) = aφ(f ) for          exist even if they cannot be easily specified. Then
 
 52                                                                                                                I. Introduction
@@ -323,7 +323,7 @@ tend to decay over time, or blow up, or remain roughly
                                                                       There are two situations that typically lead to inter-
 the same. These more qualitative questions concern
 what is known as asymptotic behavior, and there are                   esting classification theorems. The boundary between
-techniques for answering some of them even when a                     them is somewhat blurred, but the distinction is clear
+techniques for answering some of them even when a                     them is some what blurred, but the distinction is clear
 solution is not given by a tidy formula.                              enough to be worth making, so we shall discuss them
    As with Diophantine equations, there are some spe-                 separately in this subsection and the next.
 cial and important classes of partial differential equa-                  As an example of the first kind of situation, let us
@@ -336,14 +336,14 @@ a more important role. See linear and nonlinear                       are congru
 waves and solitons [III.49](/part-03/linear-and-nonlinear-waves-and-solitons).                                          the same number of edges coming out of it. More gener-
                                                                       ally, a higher-dimensional polytope is regular if it is as
                        2   Classifying                                symmetrical as possible, though the precise definition
-                                                                      of this is somewhat complicated. (Here, in three dimen-
+                                                                      of this is some what complicated. (Here, in three dimen-
 If one is trying to understand a new mathematical struc-
                                                                       sions, is a definition that turns out to be equivalent to
 ture, such as a group [I.3 §2.1](/part-01/fundamental-definitions) or a manifold [I.3 §6.9](/part-01/fundamental-definitions),
                                                                       the one just given but easier to generalize. A flag is a
 one of the first tasks is to come up with a good supply
                                                                       triple (v, e, f ) where v is a vertex of the polyhedron, e
-of examples. Sometimes examples are very easy to find,
+of examples. Some times examples are very easy to find,
                                                                       is an edge containing v, and f is a face containing e. A
 in which case there may be a bewildering array of them
                                                                       polyhedron is regular if for any two flags (v, e, f ) and
@@ -366,9 +366,9 @@ of proving results about that structure: instead of de-               that the o
 ducing a result from the axioms that the structure is                 three, four, or five triangles, three squares, or three
 required to satisfy, we can simply check that it holds                pentagons. These give the tetrahedron, the octahe-
 for every example on the list, confident in the know-                  dron, the icosahedron, the cube, and the dodecahedron,
-ledge that we have thereby proved it in general. This                 respectively.
+ledge that we have there by proved it in general. This                 respectively.
 is not always easier than the more abstract, axiomatic                   Some of the polygons and polyhedra just defined
-approach, but it certainly is sometimes. Indeed, there                have natural higher-dimensional analogues. For exam-
+approach, but it certainly is some times. Indeed, there                have natural higher-dimensional analogues. For exam-
 are several results proved using classifications that                  ple, if you take n + 1 points in Rn all at the same dis-
 nobody knows how to prove in any other way. More gen-                 tance from one another, then they form the vertices
 erally, the more examples you know of a mathematical                  of a regular simplex, which is an equilateral triangle
@@ -403,9 +403,9 @@ obtained by Schäfli in the mid nineteenth century; the                 is much 
 first proof that there are no others was given by Donald                  Why should nonequivalence be harder to prove than
 Coxeter in 1969.                                                      equivalence? The answer is that in order to show that
    We therefore know that the regular polytopes in di-                two objects are equivalent, all one has to do is find a sin-
-mensions three and higher fall into three families—the                gle transformation that demonstrates this equivalence.
+men sions three and higher fall into three families—the                gle transformation that demonstrates this equivalence.
 n-dimensional versions of the tetrahedron, the cube,                  However, to show that two objects are not equivalent,
-and the octahedron—together with five “exceptional”                    one must somehow consider all possible transforma-
+and the octahedron—together with five “exceptional”                    one must some how consider all possible transforma-
 examples—the dodecahedron, the icosahedron, and the                   tions and show that not one of them works. How can
 three four-dimensional polytopes just described. This                 one rule out the existence of some wildly complicated
 situation is typical of many classification theorems. The              continuous deformation that is impossible to visualize
@@ -418,8 +418,8 @@ different classification results are often closely related,             Given an
 and this can be a sign of deep connections between                    face that is built out of triangles and is topologically
 areas that do not at first appear to be connected at all.              the same. Here is a famous theorem of euler [VI.19](/part-06/leonhard-euler-17071783).
 
-  Sometimes, instead of trying to classify all mathe-                 Let P be a polyhedron that is topologically the same as
-matical structures of a given kind, one identifies a cer-              a sphere, and suppose that it has V vertices, E edges,
+  Some times, instead of trying to classify all mathe-                 Let P be a polyhedron that is topologically the same as
+mat ical structures of a given kind, one identifies a cer-              a sphere, and suppose that it has V vertices, E edges,
 tain class of “basic” structures out of which all the                 and F faces. Then V − E + F = 2.
 others can be built in a simple way. A good analogy                   For example, if P is an icosahedron, then it has twelve
 for this is the set of primes, out of which all other                 vertices, thirty edges, and twenty faces, and 12−30+20
@@ -431,15 +431,15 @@ twentieth-century mathematics, is discussed in part V.                is just as
 
 54                                                                                                     I. Introduction
 
-we do this, and the theorem is still valid. A network of      for every object X. However, sometimes it is so hard to
+we do this, and the theorem is still valid. A network of      for every object X. However, some times it is so hard to
 triangles drawn on a sphere is called a triangulation of      prove that objects are not equivalent that invariants can
 the sphere.                                                   be considered useful and interesting even when they
    Euler’s theorem tells us that V − E + F = 2 regard less     work only part of the time.
-of what triangulation of the sphere we take. Moreover,           There are two main properties that one looks for in
+of what triangulation of the sphere we take. More over,           There are two main properties that one looks for in
 the formula is still valid if the surface we triangulate      an invariant φ, and they tend to pull in opposite direc-
 is not a sphere but another shape that is topologically       tions. One is that it should be as fine as possible: that
 equivalent to the sphere, since triangulations can be         is, as often as possible φ(X) and φ(Y ) are different if
-continuously deformed without V , E, or F changing.           X and Y are not equivalent. The other is that as often as
+continuously deformed with out V , E, or F changing.           X and Y are not equivalent. The other is that as often as
    More generally, one can triangulate any surface, and       possible one should actually be able to establish when
 evaluate V − E + F . The result is called the Euler charac-   φ(X) is different from φ(Y ). There is not much use in
 teristic of that surface. For this definition to make sense,
@@ -462,7 +462,7 @@ other words, fact (i) above has the following interesting
                                                               pact orientable surfaces completely. To be precise, k is
 consequence.
                                                               the Euler characteristic of a compact orientable surface
- (ii) If two surfaces are continuous deformations of each     if and only if it is of the form 2 − 2 g for some nonnega-
+ (ii) If two surfaces are continuous deformations of each     if and only if it is of the form 2 − 2 g for some nonneg a-
       other, then they have the same Euler characteristic.    tive integer g (so the possible Euler characteristics are
                                                               2, 0, −2, −4, . . . ), and two compact orientable surfaces
 This gives us a potential method for showing that sur-        with the same Euler characteristic are equivalent. Thus,
@@ -481,7 +481,7 @@ the set of all objects of the kind one is studying, with
 the property that if X and Y are equivalent objects,                             3   Generalizing
 then φ(X) = φ(Y ). To show that X is not equivalent
 to Y , it is enough to find an invariant φ for which           When an important mathematical definition is formu-
-φ(X) and φ(Y ) are different. Sometimes the values φ           lated, or theorem proved, that is rarely the end of the
+φ(X) and φ(Y ) are different. Some times the values φ           lated, or theorem proved, that is rarely the end of the
 takes are numbers (as with the Euler characteristic), but     story. However clear a piece of mathematics may seem,
 often they will be more complicated objects such as           it is nearly always possible to understand it better, and
 polynomials or groups.                                        one of the most common ways of doing so is to present
@@ -517,7 +517,7 @@ do that is better than this?
    The answer turns out to be that we should weaken
                                                                     a statement about cubes, and we prove not just that
 our hypotheses. The problem we wish to solve is of
-                                                                    but much more besides. There is no clear distinction
+                                                                    but much more be sides. There is no clear distinction
 the following general kind. We are given a sequence
                                                                     between weakening hypotheses and strengthening con-
 a1 , a2 , a3 , . . . of positive integers and we are told that it
@@ -541,14 +541,14 @@ sequences. And indeed this turns out to be the case.                a remainder 
    There are a thousand cubes less than or equal to                 congruent to 1 mod p.
 1 000 000 000. We shall now see that this property alone               There are several proofs of this result, one of which
 is sufficient to guarantee that there is a number that                is a good illustration of a certain kind of generalization.
-can be written as the sum of four cubes in ten different             Here is the argument in outline. The first step is to show
+can be written as the sum of four cubes in ten different             Here is the argument in out line. The first step is to show
 ways. That is, if a1 , a2 , a3 , . . . is any sequence of pos-      that the numbers 1, 2, . . . , p − 1 form a group [I.3 §2.1](/part-01/fundamental-definitions)
 itive integers, and if none of the first thousand terms              under multiplication mod p. (This means multiplica-
 exceeds 1 000 000 000, then some number can be writ-                tion followed by taking the remainder on division by p.
 ten as the sum of four terms of the sequence in ten                 For example, if p = 7 then the “product” of 3 and 6 is 4,
 different ways.                                                      since 4 is the remainder when you divide 18 by 7.) The
    To prove this, all we have to do is notice that the num-         next step is to note that if 1 ⩽ a ⩽ p−1 then the powers
-ber of different ways of choosing four distinct terms                of a (mod p) form a subgroup of this group. Moreover,
+ber of different ways of choosing four distinct terms                of a (mod p) form a subgroup of this group. More over,
 from the sequence a1 , a2 , . . . , a1000 is 1000 . imes 999 . imes 998 . imes the size of the subgroup is the smallest positive inte-
 997/24, which is greater than 40 . imes 1 000 000 000. The               ger m such that am is congruent to 1 mod p. One then
 sum of any four terms of the sequence cannot exceed                 applies Lagrange’s theorem, which states that the size
@@ -572,11 +572,11 @@ Identifying Characteristic Properties
 
 There is a marked contrast between the way one defines √$2$ and the way one defines $- 1$ , or i as it is usually written. In the former case one begins, if one is being careful, by proving that there is exactly one positive real √ number that squares to $2$ . Then $2$ is defined to be this number. This style of definition is impossible for i since there is no real number that squares to $- 1$ . So instead one asks the following question: if there were a number that squared to $- 1$ , what could one say about it?
 Such a number would not be a real number, but that does not rule out the possibility of extending the real number system to a larger system that contains a square root of $- 1$ . At first it may seem as though we know precisely one thing about  i: that $i^{2} = - 1$ . But if we assume in addition that i obeys the normal rules of arithmetic, then we can do more interesting calculations, such as (i + 1)2 = i2 + 2 i + 1 = - 1 + 2 i + 1 = 2 i , √ which implies that $(i + 1)/ 2$ is $a$ square root of i.
-From these two simple assumptions--that $i^{2} = - 1$ and that i obeys the usual rules of arithmetic--we can develop the entire theory of complex numbers [I.3](/part-01/fundamental-definitions) without ever having to worry about what i actually is. And in fact, once you stop to think about it, I. Introduction √ the existence of $2$ , though reassuring, is not in practice anything like as important as its defining properties, which are very similar to those of i: it squares to $2$ and obeys the usual rules of arithmetic. Many important mathematical generalizations work in a similar way.
+From these two simple assumptions--that $i^{2} = - 1$ and that i obeys the usual rules of arithmetic--we can develop the entire theory of complex numbers [I.3](/part-01/fundamental-definitions) with out ever having to worry about what i actually is. And in fact, once you stop to think about it, I. Introduction √ the existence of $2$ , though reassuring, is not in practice anything like as important as its defining properties, which are very similar to those of i: it squares to $2$ and obeys the usual rules of arithmetic. Many important mathematical generalizations work in a similar way.
 Another example is the definition of x a when $x$ and $a$ are real numbers with x positive. It is difficult to make sense of this expression in a direct way unless a is a positive integer, and yet mathematicians are completely comfortable with it, whatever the value of a. How can this be? The answer is that what really matters about x a is not its numerical value but its characteristic properties when one thinks of it as a function of a. The most important of these is the property that x a + $b = x$ a x b .
 Together with a couple of other simple properties, this completely determines the function x a . More importantly, it is these characteristic properties that one uses when reasoning about x a . This example is discussed in more detail in the exponential and logarithmic functions [III.25](/part-03/the-exponential-and-logarithmic-functions). There is an interesting relationship between abstraction and classification.
-The word “abstract” is often used to refer to a part of mathematics where it is more common to use characteristic properties of an object than it is to argue directly from a definition of √ the object itself (though , as the example of $2$ shows, this distinction can be somewhat hazy). The ultimate in abstraction is to explore the consequences of a system of axioms, such as those for a group or a vector space. However, sometimes, in order to reason about such algebraic structures, it is very helpful to classify them, and the result of classification is to make them more concrete again.
-For instance, every finite dimensional real vector space V is isomorphic to R n for some nonnegative integer n, and it is sometimes helpful to think of V as the concrete object R n , rather than as an algebraic structure that satisfies certain axioms. Thus, in a certain sense, classification is the opposite of abstraction. $3$ . $4$
+The word “abstract” is often used to refer to a part of mathematics where it is more common to use characteristic properties of an object than it is to argue directly from a definition of √ the object itself (though , as the example of $2$ shows, this distinction can be some what hazy). The ultimate in abstraction is to explore the consequences of a system of axioms, such as those for a group or a vector space. However, some times, in order to reason about such algebraic structures, it is very helpful to classify them, and the result of classification is to make them more concrete again.
+For instance, every finite dimensional real vector space V is isomorphic to R n for some nonnegative integer n, and it is some times helpful to think of V as the concrete object R n , rather than as an algebraic structure that satisfies certain axioms. Thus, in a certain sense, classification is the opposite of abstraction. $3$ . $4$
 
 Generalization after Reformulation
 
@@ -624,7 +624,7 @@ a shape X such that if you expand X by a factor of r ,          algebras, and th
 then the expanded shape can be expressed as a union             tive” geometry is used. For more details, see operator
 of two disjoint copies of X. Two copies of X ought to           algebras [IV.15 §5](/part-04/operator-algebras).
 have twice the “volume” of X itself, so the dimension              This process of reformulating and then generalizing
-d of X ought to satisfy the equation r d = 2. By our            underlies many of the most important advances in
+d of X ought to satisfy the equation r d = 2. By our            under lies many of the most important advances in
 choice of r , this tells us that the dimension of X is 1.4.     mathematics. Let us briefly look at a third example. the
 For more details, see dimension [III.17](/part-03/dimension).                       fundamental theorem of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic) is, as its
    Another concept that seems at first to make no sense          name suggests, one of the foundation stones of number
@@ -648,7 +648,7 @@ different prime factorizations in this ring.
 the concept of “number” to include ideal numbers                          Figure 1 The densest possible
                                                                           packing of circles in the plane.
 [III.81 §2](/part-03/rings-ideals-and-modules) that allow one to prove a version of the fun-
-damental theorem of arithmetic in rings such as the
+da mental theorem of arithmetic in rings such as the
 one just defined. First, we must reformulate: we asso-        the triple (x, y, z) as an object in its own right, rather
 ciate with each number γ the set of all its multiples        than as a collection of three numbers. Further more,
 δγ, where δ belongs to the ring. This set, which is          this object has a natural interpretation: it represents
@@ -663,7 +663,7 @@ set of ideals as generalizing the set of elements of the     ting to a higher-di
 original ring (once we have reformulated each element        to many links between algebra and geometry, allowing
 γ as the principal ideal (γ)). It turns out that there are   techniques from one area to be used to great effect in
 natural notions of addition and multiplication that can      the other.
-be applied to ideals. Moreover, it makes sense to define
+be applied to ideals. More over, it makes sense to define
 an ideal I to be “prime” if the only way of writing I as
                                                                            4   Discovering Patterns
 a product JK is if one of J and K is a “unit.” In this
@@ -679,11 +679,11 @@ equations becomes much more complicated when one             a famous open probl
 looks not just at single equations in one variable,          ture. Several mathematicians wrongly claimed to have
 but at systems of equations in several variables. Sim-       solved it, but in 1998 a long and complicated solution,
 ilarly, we have seen that partial differential equa-         obtained with the help of a computer, was announced
-tions [I.3 §5.4](/part-01/fundamental-definitions), which can be thought of as differen-        by Thomas Hales, and although his solution has proved
+tions [I.3 §5.4](/part-01/fundamental-definitions), which can be thought of as differ en-        by Thomas Hales, and although his solution has proved
 tial equations involving several variables, are typically    very hard to check, the consensus is that it is probably
-much more difficult to analyze than ordinary differen-          correct.
+much more difficult to analyze than ordinary differ en-          correct.
 tial equations, that is, differential equations in just one      Questions about packing of spheres can be asked in
-variable. These are two notable examples of a process        any number of dimensions, but they become harder
+variable. These are two not able examples of a process        any number of dimensions, but they become harder
 that has generated many of the most important prob-          and harder as the dimension increases. Indeed, it is
 lems and results in mathematics, particularly over the       likely that the best density for a ninety-seven-dimen-
 last century or so: the process of generalization from       sional packing, say, will never be known. Experience
@@ -693,11 +693,11 @@ variables, x, y, and z. It is often useful to think of       such as one sees in
 
 $I$ . $4$ .
 
-The General Goals of Mathematical Research method for finding it would be a “brute-force search” of some kind. However, to search for the best possible complicated structure is not feasible: even if one could somehow reduce the search to finitely many possibilities, there would be far more of them than one could feasibly check. When a problem looks too difficult to solve, one should not give up completely. A much more productive reaction is to formulate related but more approachable questions.
-In this case, instead of trying to discover the very best packing, one can simply see how dense a packing one can find. Here is a sketch of an argument that gives a goodish packing in n dimensions, when n is large. One begins by taking a maximal packing: that is, one simply picks sphere after sphere until it is no longer possible to pick another one without it overlapping one of the spheres already chosen. Now let x be any point in R n .
+The General Goals of Mathematical Research method for finding it would be a “brute-force search” of some kind. However, to search for the best possible complicated structure is not feasible: even if one could some how reduce the search to finitely many possibilities, there would be far more of them than one could feasibly check. When a problem looks too difficult to solve, one should not give up completely. A much more productive reaction is to formulate related but more approachable questions.
+In this case, instead of trying to discover the very best packing, one can simply see how dense a packing one can find. Here is a sketch of an argument that gives a goodish packing in n dimensions, when n is large. One begins by taking a maximal packing: that is, one simply picks sphere after sphere until it is no longer possible to pick another one with out it overlapping one of the spheres already chosen. Now let x be any point in R n .
 Then there must be a sphere in our collection such that the distance between x and its center is less than $2$ , since otherwise we could take a unit sphere about x and it would not overlap any of the other spheres. Therefore, if we take all the spheres in the collection and expand them by a factor of $2$ , then we cover all of R n . Since expanding an n-dimensional sphere by a factor of $2$ increases its (ndimensional) volume by a factor of $2$ n , the proportion of R n covered by the unexpanded spheres must be at least $2 - n$ .
 Notice that in the above argument we learned nothing at all about the nature of the arrangements of spheres with density $2 -$ n . All we did was take a maximal packing, and that can be done in a very haphazard way. This is in marked contrast with the approach that worked in two dimensions, where we defined a specific pattern of circles. This contrast pervades all of mathematics.
-For some problems, the best approach is to build a highly structured pattern that has the properties you need, while for others--usually problems for which there is no hope of obtaining an exact answer--it is better to look for less specific arrangements. “Highly structured” in this context often means “possessing a high degree of symmetry.” The triangular lattice is a rather simple pattern, but some highly structured patterns are much more complicated, and much more of a surprise when they are discovered. A notable example occurs in packing problems.
+For some problems, the best approach is to build a highly structured pattern that has the properties you need, while for others--usually problems for which there is no hope of obtaining an exact answer--it is better to look for less specific arrangements. “Highly structured” in this context often means “possessing a high degree of symmetry.” The triangular lattice is a rather simple pattern, but some highly structured patterns are much more complicated, and much more of a surprise when they are discovered. A not able example occurs in packing problems.
 By and large, the higher the dimension you are working in, the more difficult it is to find good patterns, but an exception to this general rule occurs at twenty-four dimensions. Here, there is a remarkable
 
 $59$
@@ -728,7 +728,7 @@ I. Introduction
 It is not obvious how seriously we should take this observation, and when it was first made by John Mc Kay opinions differed about it. Some believed that it was probably just a coincidence, since the two areas seemed to be so different and unconnected. Others took the attitude that the function j (z) and the Monster group are so important in their respective areas, and the number 196883 so large, that the surprising numerical fact was probably pointing to a deep connection that had not yet been uncovered. It turned out that the second view was correct.
 After studying the coefficients in the series for j (z), Mc Kay and John Thompson were led to a conjecture that related them all (and not just 196884) to the Monster group. This conjecture was extended by John Conway and Simon Norton, who formulated the “Monstrous Moonshine” conjecture, which was eventually proved by Richard Borcherds in 1992 .
 (The word “moonshine” reflects the initial disbelief that there would be a serious relationship between the Monster group and the jfunction .) In order to prove the conjecture, Borcherds introduced a new algebraic structure, which he called a vertex algebra [IV.17](/part-04/vertex-operator-algebras) . And to analyze vertex algebras, he used results from string theory [IV.17](/part-04/vertex-operator-algebras). In other words, he explained the connection between two very different-looking areas of pure mathematics with the help of concepts from theoretical physics.
-This example demonstrates in an extreme way another general principle of mathematical research: if you can obtain the same series of numbers (or the same structure of a more general kind) from two different mathematical sources, then those sources are probably not as different as they seem. Moreover, if you can find one deep connection, you will probably be led to others. There are many other examples where two completely different calculations give the same answer, and many of them remain unexplained.
+This example demonstrates in an extreme way another general principle of mathematical research: if you can obtain the same series of numbers (or the same structure of a more general kind) from two different mathematical sources, then those sources are probably not as different as they seem. More over, if you can find one deep connection, you will probably be led to others. There are many other examples where two completely different calculations give the same answer, and many of them remain unexplained.
 This phenomenon results in some of the most difficult and fascinating unsolved problems in mathematics. (See the introduction to mirror symmetry [IV.16](/part-04/mirror-symmetry) for another example .) Interestingly, the j-function leads to a second famous mathematical “coincidence.” There may not seem to be √ anything special about the number $e\pi^{163}$ , but here is the beginning of its decimal expansion: √
 
 $e\pi 163 = 262,537,412,640,768,743$ . 99999999999925 . . . ,
@@ -741,7 +741,7 @@ Once we have determined where $v$ and $v$ go, there is no further choice we can 
 At the end of the process, we understand more about those symmetries than merely how many there are. Indeed, it is possible to go further and show that the group of rotations of the icosahedron is $A^{5}$ , the alternating group [III.68](/part-03/permutation-groups) on five elements. $6$ . $1$ Exact Counting Here is a more sophisticated counting problem. A one dimensional random walk of n steps is a sequence of integers $a^{0}$ , $a^{1}$ , $a^{2}$ , . . . , a n , such that for each i the difference $a^{i} - a^{i} - {}^{1}$ is either $1$ or $- 1$ .
 For example, $0$ , $1$ , $2$ , $1$ , $2$ , $1$ , $0$ , $- 1$ is $a$ seven-step random walk. The number of n-step random walks that start at $0$ is clearly $2$ n , since there are two choices for each step (either you add $1$ or you subtract 1). Now let us try a slightly harder problem. How many walks of length $2n$ are there that start and end at $0$ ?
 (We look at walks of length $2n$ since a walk that starts $61$ and ends in the same place must have an even number of steps .) In order to think about this problem, it helps to use the letters R and L (for “right” and “ left ”) to denote adding $1$ and subtracting $1$ , respectively. This gives us an alternative notation for random walks that start at $0$ : for example, the walk $0$ , $1$ , $2$ , $1$ , $2$ , $1$ , $0$ , $- 1$ would be rewritten as RRLRLLL. Now a walk will end at $0$ if and only if the number of Rs is equal to the number of Ls.
-Moreover, if we are told the set of steps where an R occurs, then we know the entire walk. So what we are counting is the number of ways of choosing n of the $2n$ steps as the steps where an R will occur. And this is well-known to be $(2n)$ ! $/(n$ ! )2 . Now let us look at a related quantity that is considerably less easy to determine: the number W (n) of walks of length $2n$ that start and end at $0$ and are never negative. Here, in the notation introduced for the previous problem, is a list of all such walks of length $6$ : RRRLLL, RRLRLL, RRLLRL, RLRRLL, and RLRLRL.
+More over, if we are told the set of steps where an R occurs, then we know the entire walk. So what we are counting is the number of ways of choosing n of the $2n$ steps as the steps where an R will occur. And this is well-known to be $(2n)$ ! $/(n$ ! )2 . Now let us look at a related quantity that is considerably less easy to determine: the number W (n) of walks of length $2n$ that start and end at $0$ and are never negative. Here, in the notation introduced for the previous problem, is a list of all such walks of length $6$ : RRRLLL, RRLRLL, RRLLRL, RLRRLL, and RLRLRL.
 Now three of these five walks do not just start and end at $0$ but visit it in the middle: RRLLRL visits it after four steps, RLRRLL after two, and RLRLRL after two and four. Suppose we have a walk of length $2n$ that is never negative and visits $0$ for the first time after $2k$ steps. Then the remainder of the walk is a walk of length $2(n - k)$ that starts and ends at $0$ and is never negative. There are W (n - k) of these. As for the first $2k$ steps of such a walk, they must begin with R and end with L, and in between must never visit $0$ .
 This means that between the initial R and the final L they give a walk of length $2(k - 1)$ that starts and ends at $1$ and is never less than $1$ . The number of such walks is clearly the same as W (k $- 1$ ). Therefore, since the first visit to $0$ must take place after $2k$ steps for some k between $1$ and n, W satisfies the following slightly complicated recurrence relation: $W(n) = W(0)W(n - 1) +$ · · · $+ W(n - 1)W(0)$ . Here, $W(0)$ is taken to be equal to $1$ . This allows us to calculate the first few values of W . We have $W(1) = W(0)W(0) = 1$ , which is easier to see directly:
 the only possibility is RL. Then $W(2) = W(1)W(0) + W(0)W(1) = 2$ , and $W(3)$ , which counts the number of such walks of length $6$ , equals $W(0)W(2) + W(1)W(1) + W(2)W(0) = 5$ , confirming our earlier calculation. Of course, it would not be a good idea to use the recurrence relation directly if one wished to work out W (n) for large values of n such as $10^{10}$ . However,
@@ -749,7 +749,7 @@ the only possibility is RL. Then $W(2) = W(1)W(0) + W(0)W(1) = 2$ , and $W(3)$ ,
 $62$
 
 the recurrence is of a sufficiently nice form that it is amenable to treatment by generating functions [IV . 18 § § 2 . 4 , 3 ] , as is explained in enumerative and algebraic combinatorics [IV.18](/part-04/enumerative-and-algebraic-combinatorics). (To see the connection with that discussion, replace the letters R and L by the square brackets [and], respectively. A legal bracketing then corresponds to a walk that is never negative .) The argument above gives an efficient way of calculating W (n) exactly. There are many other exact counting arguments in mathematics.
-Here is a small further sample of quantities that mathematicians know how to count exactly without resorting to “brute force.” (See the introduction to [IV.18](/part-04/enumerative-and-algebraic-combinatorics) for a discussion of when one regards a counting problem as solved .) (i) The number r (n) of regions that a plane is cut into by n lines if no two of the lines are parallel and no three concurrent. The first four values of  r(n)$are$2 , $4$ , $7$ , and $11$ . It is not hard to prove that $r(n) = r(n - 1) + n,$ which leads to the formula $r(n) = \frac{1}{2}(n^{2} + n + 2)$ .
+Here is a small further sample of quantities that mathematicians know how to count exactly with out resorting to “brute force.” (See the introduction to [IV.18](/part-04/enumerative-and-algebraic-combinatorics) for a discussion of when one regards a counting problem as solved .) (i) The number r (n) of regions that a plane is cut into by n lines if no two of the lines are parallel and no three concurrent. The first four values of  r(n)$are$2 , $4$ , $7$ , and $11$ . It is not hard to prove that $r(n) = r(n - 1) + n,$ which leads to the formula $r(n) = \frac{1}{2}(n^{2} + n + 2)$ .
 This statement, and its proof, can be generalized to higher dimensions. (ii) The number s (n) of ways of writing n as a sum of four squares. Here we allow zero and negative numbers and we count different orderings as different (so , for example, $1^{2} + 3^{2} + 4^{2} + 2^{2}$ , $3^{2} + 4^{2} + 1^{2} + 2^{2}$ , 12 + ( - 3)2 +42 + 22 , and $0^{2} + 1^{2} + 2^{2} + 5^{2}$ are considered to be four different ways of writing $30$ as a sum of four squares). It can be shown that s (n) is equal to $8$ times the sum of all the divisors of n that are not multiples of $4$ .
 For example, the divisors of $12$ are $1$ , $2$ , $3$ , $4$ , $6$ , and $12$ , of which $1$ , $2$ , $3$ , and $6$ are not multiples of $4$ . Therefore $s(12) = 8(1 + 2 + 3 + 6) = 96$ . The different ways are $1^{2} + 1^{2} + 1^{2} + 3^{2}$ , $0 + 2^{2} + 2^{2} + 2^{2}$ , and the other expressions that can be obtained from these ones by reordering and replacing positive integers by negative ones.
 (iii) The number of lines in space that meet a given four lines $L^{1}$ , $L^{2}$ , $L^{3}$ , and $L^{4}$ when those four are in “general position.” (This means that they do not have special properties such as two of them being parallel or intersecting each other .) It turns out that for any three such lines, there is a subset of $R^{3}$ known as a quadric surface that contains them, and this quadric surface is unique. Let us take the surface for $L^{1}$ , $L^{2}$ , and $L^{3}$ and call it S. The surface S has some interesting properties that allow us to solve the problem.
@@ -794,7 +794,7 @@ So far, our discussion of estimates and approximations has been confined to prob
 an upper bound for S(n), but one would expect a typ-          the presence of various constraints. These are called
 ical self-avoiding walk to take many twists and turns         extremal problems. As with counting questions, there
 and end up traveling much less far than n away from           are some extremal problems for which one can realis-
-its starting point. However, there is no known upper          tically hope to work out the answer exactly, and many
+its starting point. However, there is no known upper          ti cally hope to work out the answer exactly, and many
 bound for S(n) that is substantially better than n.           more for which, even though an exact answer is out
    In the other direction, one would expect the end-          of the question, one can still aim to find interesting
 to-end distance of a typical self-avoiding walk to be         estimates. Here are some examples of both kinds.
@@ -811,7 +811,7 @@ that it is greater.
 will be discussed further in section 8.
                                                               in the other. Therefore, one way of satisfying the con-
    (ii) Let n be a large randomly chosen positive integer
-                                                              straints of the problem is to choose all the sets of some
+                                                              strain ts of the problem is to choose all the sets of some
 and let ω(n) be the number of distinct prime factors of
                                                               particular size k. Now the number of subsets of       X of
 n. On average, how large will ω(n) be? As it stands, this                                                           n
@@ -850,8 +850,8 @@ Then Erdős and Kac went even further and gave a pre-
 cise estimate for the probability that ω(n) differs from
                              
 log log n by more than c log log n, proving the sur-             (ii) Suppose that the two ends of a heavy chain are
-prising fact that the distribution of ω is approximately      attached to two hooks on the ceiling and that the chain
-gaussian [III.71 §5](/part-03/probability-distributions).                                         is not supported anywhere else. What shape will the
+pr ising fact that the distribution of ω is approximately      attached to two hooks on the ceiling and that the chain
+gaussian [III.71 §5](/part-03/probability-distributions).                                         is not supported any where else. What shape will the
    To put these results in perspective, let us think about    hanging chain take?
 the range of possible values of ω(n). At one extreme,            At first, this question does not look like a maximiza-
 n might be a prime itself, in which case it obviously         tion or minimization problem, but it can be quickly
@@ -903,7 +903,7 @@ minimized or maximized. If a minimum or maximum              puter to perform a 
 exists (which is by no means automatic when one is           so in as short a time as possible. Here is an elementary-
 working with an infinite-dimensional set, so this can         sounding example: how many steps are needed to
 be an interesting and important question), the object        multiply two n-digit numbers together?
-that achieves it satisfies a system of partial differen-         Even if one is not too precise about what is meant
+that achieves it satisfies a system of partial differ en-         Even if one is not too precise about what is meant
 tial equations [I.3 §5.4](/part-01/fundamental-definitions) known as the Euler–Lagrange        by a “step,” one can see that the traditional method,
 equations. For more about this style of minimization         long multiplication, takes at least n2 steps since, dur-
 or maximization, see variational methods [III.94](/part-03/variational-methods)            ing the course of the calculation, each digit of the
@@ -931,7 +931,7 @@ one needs to do $n^{3}$ individual multiplications of the numbers in the matrice
 that is, use the same idea to speed up the calculation of the seven $n/2 \times n/2$ matrix products, and so on. Strassen’s algorithm reduces the number of numerical multiplications from about $n^{3}$ to about $n$ log 2 7 . Since log ${}^{2}7$ is less than $2$ . $81$ , this is a significant improvement, but only when n is large. His basic divide-andconquer strategy has been developed further, and the current record is better than $n^{2}$ . 4 . In the other direction, the situation is less satisfactory:
 nobody has found a proof that one needs to use significantly more than $n^{2}$ multiplications. For more problems of a similar kind, see computational complexity [IV.20](/part-04/computational-complexity) and the mathematics of algorithm design [VII.5](/part-07/the-mathematics-of-algorithm-design). (v) Some minimization and maximization problems are of a more subtle kind. For example, suppose that one is trying to understand the nature of the differences between successive primes.
 The smallest such difference is 1 ( the difference between $2$ and 3), and it is not hard to prove that there is no largest difference (given any integer n greater than $1$ , none of the numbers between $n! + 2$ and $n! + n$ is a prime). Therefore, there do not seem to be interesting maximization or minimization problems concerning these differences. However, one can in fact formulate some fascinating problems if one first normalizes in an appropriate way.
-As was mentioned earlier in this section, the prime number theorem states that the density of primes near n is about $1/$ log  n, so an average gap between two primes near n will be about log n. If $p$ and $q$ are successive primes, we can therefore define a “normalized gap” to be (q  -  p)  /  log p. The average value of this normalized gap will be $1$ , but is it sometimes much smaller and sometimes much bigger? It was shown by Westzynthius in 1931 that even normalized gaps can be arbitrarily large, and it was widely believed that they could also be arbitrarily close to zero.
+As was mentioned earlier in this section, the prime number theorem states that the density of primes near n is about $1/$ log  n, so an average gap between two primes near n will be about log n. If $p$ and $q$ are successive primes, we can therefore define a “normalized gap” to be (q  -  p)  /  log p. The average value of this normalized gap will be $1$ , but is it some times much smaller and some times much bigger? It was shown by Westzynthius in 1931 that even normalized gaps can be arbitrarily large, and it was widely believed that they could also be arbitrarily close to zero.
 (The famous twin prime conjecture--that there are infinitely many primes p for which $p + 2$ is also
 
 I. Introduction
@@ -953,8 +953,8 @@ is to notice that p(1) is negative (in fact, it equals −3)         ment of a g
 and that p(x) is large when x is large (because then the           there is some power of x that equals the identity. The
 x 4 term is far bigger than anything else), and then to            smallest such power is called the order of x. For exam-
 use the intermediate value theorem, the result that any            ple, in the multiplicative group of nonzero integers
-continuous function that is negative somewhere and                 mod 7, the identity is 1, and the order of the element
-positive somewhere else must be zero somewhere in                  4 is 3, because 41 = 4, 42 = 16 ≡ 2 and 43 = 64 ≡ 1
+continuous function that is negative some where and                 mod 7, the identity is 1, and the order of the element
+positive some where else must be zero some where in                  4 is 3, because 41 = 4, 42 = 16 ≡ 2 and 43 = 64 ≡ 1
 between.                                                           mod 7. As for 3, its first six powers are 3, 2, 6, 4, 5,
    Notice that, with the second approach, there was still          1, so it has order 6. Now some groups have the very
 some computation to do—finding a value of x for which               special property that there is some integer n such that
@@ -962,7 +962,7 @@ p(x) is negative—but that it was much easier than the              x n equals 
 computation in the first approach—finding a value of                 order of every x is a factor of n. What can we say about
 x for which p(x) is zero. In the second approach, we               such groups?
 established that p had the rather general property of                 Let us look first at the case where all elements have
-being negative somewhere, and used the intermediate                order 2. Writing e for the identity element, we are
+being negative some where, and used the intermediate                order 2. Writing e for the identity element, we are
 value theorem to finish off the argument.                            assuming that a2 = e for every element a. If we mul-
    There are many situations like this through out math-            tiply both sides of this equation by the inverse a−1 ,
 ematics, and as they arise certain general properties              then we deduce that a = a−1 . The opposite implication
@@ -975,7 +975,7 @@ phic [I.3 §5.6](/part-01/fundamental-definitions), then as a consequence of the
 properties you know a lot more about the objects in                their inverses we can deduce from this that ab = ba.
 question.                                                          That is, G is automatically Abelian.
    Once properties have established themselves as im-                 Already we have shown that one general property,
-portant, they give rise to a large class of mathemati-             that every element of G squares to the identity, implies
+port ant, they give rise to a large class of mathemat i-             that every element of G squares to the identity, implies
 cal questions of the following form: given a mathemat-             another, that G is Abelian. Now let us add the condi-
 ical structure and a selection of interesting properties           tion that G is finitely generated, and let x1 , x2 , . . . , xk
 that it might have, which combinations of these prop-              be a minimal set of generators. That is, suppose that
@@ -1024,7 +1024,7 @@ finite.                                                      is why they have so
                                                             large numbers of papers with theorems that are proved
                                                             only under the assumption of some version of the Rie-
         8   Working with Arguments That
-                                                            mann hypothesis. Therefore, anybody who proves the
+                                                            mann hypothesis. Therefore, any body who proves the
              Are Not Fully Rigorous
                                                             Riemann hypothesis will change the status of all these
 A mathematical statement is considered to be estab-         theorems from conditional to fully proved.
@@ -1070,7 +1070,7 @@ maticians are convinced that P does not equal NP. (See       much easier to solv
 computational complexity [IV.20](/part-04/computational-complexity) for much more on            forms [III.27](/part-03/the-fourier-transform) of the functions in question, so there are
 this topic.)                                                 calculations arising in string theory that look impos-
    Some areas of research depend on several conjec-          sible until one transforms them into equivalent calcu-
-tures rather than just one. It is as though researchers      lations in the dual, or “mirror,” situation. There is at
+tures rather than just one. It is as though researchers      la tions in the dual, or “mirror,” situation. There is at
 in such areas have discovered a beautiful mathematical       present no rigorous justification for the transforma-
 landscape and are impatient to map it out despite the        tion, but this process has led to complicated formulas
 fact that there is a great deal that they do not under-      that nobody could possibly have guessed, and some of
@@ -1083,7 +1083,7 @@ does it have consequences that are already known to          8.2   Numerical Evi
 be true? Are there special cases that one can prove? If
 it were true, would it help one solve other problems?        The goldbach conjecture [V.27](/part-05/problems-and-results-in-vi36-peter-gustav-lejeune-dirichlet-18051859) states that every
 Is it supported by numerical evidence? Does it make          even number greater than or equal to 4 is the sum of
-a bold, precise statement that would probably be easy        two primes. It seems to be well beyond what anybody
+a bold, precise statement that would probably be easy        two primes. It seems to be well beyond what any body
 to refute if it were false? It requires great insight and    could hope to prove with today’s mathematical machin-
 hard work to produce a conjecture that passes all these      ery, even if one is prepared to accept statements such
 tests, but if one succeeds, one has not just an isolated     as the Riemann hypothesis. And yet it is regarded as
@@ -1100,7 +1100,7 @@ area.                                                        be prime.
 algebraic number theory [IV.1](/part-04/number-theory). In particular, the           for some value of n that is not too large one might be
 Langlands program is a collection of conjectures, due        unlucky, and it might just happen that n − a was com-
 to Robert Langlands, that relate number theory to            posite whenever a was prime. This is where numerical
-representation theory (it is discussed in represen-          evidence comes in. It has now been checked that every
+representation theory (it is discussed in re pre sen-          evidence comes in. It has now been checked that every
 tation theory [IV.9 §6](/part-04/representation-theory)). Between them, these con-           even number up to 1014 can be written as a sum of
 jectures generalize, unify, and explain large numbers        two primes, and once n is greater than this, it becomes
 of other conjectures and results. For example, the           extremely unlikely that it could “just happen,” by a
@@ -1112,14 +1112,14 @@ $70$
 
 more precise the idea that the primes appear to be randomly distributed, one can formulate a stronger version of Goldbach’s conjecture that says not only that every even number can be written as a sum or two primes, but also roughly how many ways there are of doing this. For instance, if $a$ and $n$  -  a are both prime, then neither is a multiple of $3$ (unless one of them is equal to $3$ itself).
 If n is a multiple of $3$ , then this merely says that a is not a multiple of $3$ , but if n is of the form $3m + 1$ then $a$ cannot be of the form $3k + 1$ either (or n  -  a would be a multiple of $3$ ). So, in a certain sense, it is twice as easy for n to be a sum of two primes if it is a multiple of $3$ . Taking this kind of information into account, one can estimate in how many ways it “ought” to be possible to write n as a sum of two primes. It turns out that, for every even n, there should be many such representations.
-Moreover, one’s predictions of how many are closely matched by the numerical evidence: that is, they are true for values of n that are small enough to be checked on a computer. This makes the numerical evidence much more convincing, since it is evidence not just for Goldbach’s conjecture itself, but also for the more general principles that led us to believe it. This illustrates a general phenomenon: the more precise the predictions that follow from a conjecture, the more impressive it is when they are confirmed by later numerical evidence.
+More over, one’s predictions of how many are closely matched by the numerical evidence: that is, they are true for values of n that are small enough to be checked on a computer. This makes the numerical evidence much more convincing, since it is evidence not just for Goldbach’s conjecture itself, but also for the more general principles that led us to believe it. This illustrates a general phenomenon: the more precise the predictions that follow from a conjecture, the more impressive it is when they are confirmed by later numerical evidence.
 Of course, this is true not just of mathematics but of science more generally.
 
 $8$ . $3$
 
 “Illegal” Calculations
 
-In section $6$ . $3$ it was stated that “almost nothing is known” about the average end-to-end distance of an nstep self-avoiding walk. That is a statement with which theoretical physicists would strongly disagree. Instead, they would tell you that the end-to-end distance of a typical n-step self-avoiding walk is somewhere in the region of $n^{3}/ {}^{4}$ . This apparent disagreement is explained by the fact that, although almost nothing has been rigorously proved, physicists have a collection of nonrigorous methods that, if used carefully, seem to give correct results.
+In section $6$ . $3$ it was stated that “almost nothing is known” about the average end-to-end distance of an nstep self-avoiding walk. That is a statement with which theoretical physicists would strongly disagree. Instead, they would tell you that the end-to-end distance of a typical n-step self-avoiding walk is some where in the region of $n^{3}/ {}^{4}$ . This apparent disagreement is explained by the fact that, although almost nothing has been rigorously proved, physicists have a collection of nonrigorous methods that, if used carefully, seem to give correct results.
 With their methods, they have in some areas managed to establish statements that go well beyond what mathematicians can prove. Such results are fascinating to mathematicians, partly because if one regards the results of physicists as mathematical conjectures then many of them are excellent conjectures, by the standards explained earlier: they are deep, completely unguessable in advance, widely believed to
 
 I. Introduction
@@ -1147,41 +1147,41 @@ continue to do so.                                            more useful if the
                                                               rithmic argument is worth looking for even if an indi-
 There is no doubt that the equation x 5 − x − 13 = 0 has      rect one is already established, and for similar reasons:
 a solution. After all, if we set f (x) = x 5 − x − 13, then   the effort to find an explicit argument very often leads
-f (1) = −13 and f (2) = 17, so somewhere between 1            to new mathematical insights. (Less obviously, as we
-and 2 there will be an x for which f (x) = 0.                 shall soon see, finding indirect arguments can also lead
+f (1) = −13 and f (2) = 17, so some where between 1            to new mathematical insights. (Less obviously, as we
+and 2 there will be an x for which f (x) = 0.                 shall soon see, finding in direct arguments can also lead
    That is an example of a pure existence argument—in         to new insights.)
 other words, an argument that establishes that some-             One of the most famous examples of a pure exis-
 thing exists (in this case, a solution to a certain equa-     tence argument concerns transcendental numbers
-tion), without telling us how to find it. If the equa-         [III.41](/part-03/irrational-and-transcendental-numbers), which are real numbers that are not roots of
+tion), with out telling us how to find it. If the equa-         [III.41](/part-03/irrational-and-transcendental-numbers), which are real numbers that are not roots of
 tion had been x 2 − x − 13 = 0, then we could have            any polynomial with integer coefficients. The first per-
 used an argument of a very different sort: the for-            son to prove that such numbers existed was liouville
 mula for quadratic equations tells us that there are pre-     [VI.39](/part-06/joseph-liouville-18091882), in 1844. He proved that a certain condition was
-cisely two solutions, and it even tells us what they are      sufficient to guarantee that a number was transcen-
+cisely two solutions, and it even tells us what they are      sufficient to guarantee that a number was trans cen-
                √(they are (1 + 53)/2 and (1 − 53)/2). However, there          dental and demonstrated that it is easy to construct
 is no similar formula for quintic equations. (See the         numbers satisfying his condition (see liouville’s the-
 insolubility of the quintic [V.21](/part-05/the-insolubility-of-the-quintic).)                          orem and roth’s theorem [V.22](/part-05/liouvilles-theorem-and-roths-theorem)). After that, vari-
    These two arguments illustrate a fundamental di-           ous important numbers such as e and π were proved
 chotomy in mathematics. If you are proving that a             to be transcendental, but these proofs were difficult.
-mathematical object exists, then sometimes you can            Even now there are many numbers that are almost cer-
+mathematical object exists, then some times you can            Even now there are many numbers that are almost cer-
 do so explicitly, by actually describing that object, and     tainly transcendental but which have not been proved
-sometimes you can do so only indirectly, by showing           to be transcendental. (See irrational and transcen-
+some times you can do so only indirectly, by showing           to be transcendental. (See irrational and trans cen-
 that its nonexistence would lead to a contradiction.          dental numbers [III.41](/part-03/irrational-and-transcendental-numbers) for more information about
    There is also a spectrum of possibilities in between.      this.)
 As it was presented, the argument above showed mere-             All the proofs mentioned above were direct and
 ly that the equation x 5 − x − 13 = 0 has a solution          explicit. Then in 1873 cantor [VI.54](/part-06/georg-cantor-18451918) provided a com-
 between 1 and 2, but it also suggests a method for cal-       pletely different proof of the existence of transcenden-
-culating that solution to any desired accuracy. If, for       tal numbers, using his theory of countability [III.11](/part-03/countable-and-uncountable-sets).
+cu lat ing that solution to any desired accuracy. If, for       tal numbers, using his theory of countability [III.11](/part-03/countable-and-uncountable-sets).
 example, you want to know it to two decimal places,           He proved that the algebraic numbers were countable
 then run through the numbers 1, 1.01, 1.02, . . . , 1.99, 2   and the real numbers uncountable. Since countable
 evaluating f at each one. You will find that f (1.71)          sets are far smaller than uncountable sets, this showed
-is approximately −0.0889 and that f (1.72) is approx-         that almost every real number (though not necessar-
+is approximately −0.0889 and that f (1.72) is approx-         that almost every real number (though not ne ces sar-
 imately 0.3337, so there must be a solution between           ily almost every real number you will actually meet)
 the two (which the calculations suggest will be closer        is transcendental.
 to 1.71 than to 1.72). And in fact there are much better         In this instance, each of the two arguments tells
-ways, such as newton’s method [II.4 §2.3](/part-02/algorithms), of approxi-        us something that the other does not. Cantor’s proof
+ways, such as newton’s method [II.4 §2.3](/part-02/algorithms), of approx i-        us something that the other does not. Cantor’s proof
 mating solutions. For many purposes, a pretty formula         shows that there are transcendental numbers, but it
 for a solution is less important than a method of cal-        does not provide us with a single example. (Strictly
-culating or approximating it. (See numerical analysis         speaking, this is not true: one could specify a way of
+cu lat ing or approximating it. (See numerical analysis         speaking, this is not true: one could specify a way of
 
 72                                                                                                         I. Introduction
 
@@ -1189,17 +1189,17 @@ listing the algebraic numbers and then apply Cantor’s          of belonging to
 famous diagonal argument to that particular list. How-         ing the proportion of points that fall in the circle and
 ever, the resulting number would be virtually devoid of        multiplying it by 4.
 meaning.) Liouville’s proof is much better in that way,           This approach works quite easily for very low dimen-
-as it gives us a method of constructing several transcen-      sions but as soon as n is at all large it runs into a severe
+as it gives us a method of constructing several trans cen-      sions but as soon as n is at all large it runs into a severe
 dental numbers with fairly straightforward definitions.         difficulty. Suppose for example that we were to try to
 However, if one knew only the explicit arguments such          use the same method for estimating the volume of an
-as Liouville’s and the proofs that e and π are transcen-       n-dimensional sphere. We would enclose that sphere
+as Liouville’s and the proofs that e and π are trans cen-       n-dimensional sphere. We would enclose that sphere
 dental, then one might have the impression that tran-          in an n-dimensional cube, choose points at random
 scendental numbers are numbers of a very special kind.         in the cube, and see how often they belonged to the
 The insight that is completely missing from these argu-        sphere as well. However, the ratio of the volume of an
 ments, but present in Cantor’s proof, is that a typical        n-dimensional sphere to that of an n-dimensional cube
 real number is transcendental.                                 that contains it is exponentially small, which means
   For much of the twentieth century, highly abstract           that the number of points you have to pick before
-and indirect proofs were fashionable, but in more              even one of them lands in the sphere is exponen-
+and in direct proofs were fashionable, but in more              even one of them lands in the sphere is exponen-
 recent years, especially with the advent of the com-           tially large. Therefore, the method becomes hopelessly
 puter, attitudes have changed. (Of course, this is a very      impractical.
 general statement about the entire mathematical com-             All is not lost, though, because there is a trick for
@@ -1207,9 +1207,9 @@ munity rather than about any single mathematician.)            getting around th
 Nowadays, more attention is often paid to the question         of convex bodies, K0 , K1 , . . . , Km , each contained in the
 of whether a proof is explicit, and, if so, whether it leads   next, starting with the convex body whose volume you
 to an efficient algorithm.                                       want to know, and ending with the cube, in such a way
-  Needless to say, algorithms are interesting in them-         that the volume of Ki is always at least half that of Ki+1 .
+  Need less to say, algorithms are interesting in them-         that the volume of Ki is always at least half that of Ki+1 .
 selves, and not just for the light they shed on mathe-         Then for each i you estimate the ratio of the volumes of
-matical proofs. Let us conclude this section with a brief      Ki−1 and Ki . The product of all these ratios will be the
+mat ical proofs. Let us conclude this section with a brief      Ki−1 and Ki . The product of all these ratios will be the
 description of a particularly interesting algorithm that       ratio of the volume of K0 to that of Km . Since you know
 has been developed by several authors over the last            the volume of Km , this tells you the volume of K0 .
 few years. It gives a way of computing the volume of              How do you estimate the ratio of the volumes of Ki−1
@@ -1224,7 +1224,7 @@ as can the notions of area and volume.                         all you need to d
 body K is specified for us in the following sense: we           general convex body it is not easy at all.
 have a computer program that runs quickly and tells us,          There is a wonderfully clever idea that gets around
 for each point (x1 , . . . , xn ), whether or not that point   this problem. It is to design carefully a random walk
-belongs to K. How can we estimate the volume of K?             that starts somewhere inside the convex body and at
+belongs to K. How can we estimate the volume of K?             that starts some where inside the convex body and at
 One of the most powerful methods for problems like             each step moves to another point, chosen at random
 this is statistical: you choose points at random and see       from just a few possibilities. The more random steps
 whether they belong to K, basing your estimate of the          of this kind that are taken, the less can be said about
@@ -1238,16 +1238,16 @@ of the area π of the circle to the area 4 of the square)       analogues [IV.26
 $I$ . $4$ .
 
 The General Goals of Mathematical Research For further discussion of algorithms and their mathematical importance, see algorithms [II.4](/part-02/algorithms) , computational number theory [IV.3](/part-04/computational-number-theory), computational complexity [IV.20](/part-04/computational-complexity), and the mathematics of algorithm design [VII.5](/part-07/the-mathematics-of-algorithm-design). $10$ What Do You Find in a Mathematical Paper? Mathematical papers have a very distinctive style, one that became established early in the twentieth century.
-This final section is a description of what mathematicians actually produce when they write. A typical paper is usually a mixture of formal and informal writing. Ideally (but by no means always), the author writes a readable introduction that tells the reader what to expect from the rest of the paper. And if the paper is divided into sections, as most papers are unless they are quite short, then it is also very helpful to the reader if each section can begin with an informal outline of the arguments to follow.
-But the main substance of the paper has to be more formal and detailed, so that readers who are prepared to make a sufficient effort can convince themselves that it is correct. The object of a typical paper is to establish mathematical statements. Sometimes this is an end in itself: for example, the justification for the paper may be that it proves a conjecture that has been open for twenty years. Sometimes the mathematical statements are established in the service of a wider aim, such as helping to explain a mathematical phenomenon that is poorly understood.
+This final section is a description of what mathematicians actually produce when they write. A typical paper is usually a mixture of formal and in formal writing. Ideally (but by no means always), the author writes a readable introduction that tells the reader what to expect from the rest of the paper. And if the paper is divided into sections, as most papers are unless they are quite short, then it is also very helpful to the reader if each section can begin with an in formal out line of the arguments to follow.
+But the main substance of the paper has to be more formal and detailed, so that readers who are prepared to make a sufficient effort can convince themselves that it is correct. The object of a typical paper is to establish mathematical statements. Some times this is an end in itself: for example, the justification for the paper may be that it proves a conjecture that has been open for twenty years. Some times the mathematical statements are established in the service of a wider aim, such as helping to explain a mathematical phenomenon that is poorly understood.
 But either way, mathematical statements are the main currency of mathematics. The most important of these statements are usually called theorems, but one also finds statements called propositions, lemmas, and corollaries. One cannot always draw sharp distinctions between these kinds of statements, but in broad terms this is what the different words mean. A theorem is a statement that you regard as intrinsically interesting, a statement that you might think of isolating from the paper and telling other mathematicians about in a seminar, for instance.
 The statements that are the main goals of a paper are usually called theorems. A proposition is a bit like a theorem, but it tends to be slightly “boring.” It may seem odd to want to prove boring results, but they can be important and useful. What makes them boring is that they do not surprise us in any way. They are statements that we need, that we expect to be true, and that we do not have much difficulty proving.
 
 $73$
 
-Here is a quick example of a statement that one might choose to call a proposition. The associative law for a binary operation [I.2](/part-01/language-and-grammar) “∗” states that x ∗ ( y ∗ z) = (x ∗ y) ∗ z . One often describes this law informally by saying that “brackets do not matter.” However, while it shows that we can write x ∗ y ∗ z without fear of ambiguity, it does not show quite so obviously that we can write a ∗ b ∗ c ∗ d ∗ e, for example.
-How do we know that, just because the positions of brackets do not matter when you have three objects, they do not matter when you have more than three? Many mathematics students go happily through university without noticing that this is a problem. It just seems obvious that the associative law shows that brackets do not matter. And they are basically right: although it is not completely obvious, it is certainly not a surprise and turns out to be easy to prove. Since we often need this simple result and could hardly call it a theorem, we might call it a proposition instead.
-To get a feel for how to prove it, you might wish to show that the associative law implies that (a ∗ ((b ∗ c) ∗ d)) ∗ $e = a$ ∗ (b ∗ ((c ∗ d) ∗ e)). Then you can try to generalize what it is you are doing. Often, if you are trying to prove a theorem, the proof becomes long and complicated, in which case if you want anybody to read it you need to make the structure of the argument as clear as possible. One of the best ways of doing this is to identify subgoals, which take the form of statements intermediate between your initial assumptions and the conclusion you wish to draw from them.
+Here is a quick example of a statement that one might choose to call a proposition. The associative law for a binary operation [I.2](/part-01/language-and-grammar) “∗” states that x ∗ ( y ∗ z) = (x ∗ y) ∗ z . One often describes this law informally by saying that “brackets do not matter.” However, while it shows that we can write x ∗ y ∗ z with out fear of ambiguity, it does not show quite so obviously that we can write a ∗ b ∗ c ∗ d ∗ e, for example.
+How do we know that, just because the positions of brackets do not matter when you have three objects, they do not matter when you have more than three? Many mathematics students go happily through university with out noticing that this is a problem. It just seems obvious that the associative law shows that brackets do not matter. And they are basically right: although it is not completely obvious, it is certainly not a surprise and turns out to be easy to prove. Since we often need this simple result and could hardly call it a theorem, we might call it a proposition instead.
+To get a feel for how to prove it, you might wish to show that the associative law implies that (a ∗ ((b ∗ c) ∗ d)) ∗ $e = a$ ∗ (b ∗ ((c ∗ d) ∗ e)). Then you can try to generalize what it is you are doing. Often, if you are trying to prove a theorem, the proof becomes long and complicated, in which case if you want any body to read it you need to make the structure of the argument as clear as possible. One of the best ways of doing this is to identify subgoals, which take the form of statements intermediate between your initial assumptions and the conclusion you wish to draw from them.
 These statements are usually called lemmas. Suppose, for example, that you are trying to give a very √ detailed presentation of the standard proof that $2$ is irrational. One of the facts you will need is that every fraction p / q is equal to a fraction r / s with $r$ and $s$ not both even, and this fact requires a proof. For the sake of clarity, you might well decide to isolate this proof from the main proof and call the fact a lemma. Then you have split your task into two separate tasks: proving the lemma, and proving the main theorem using the lemma.
 One can draw a parallel with computer programming: if you are writing a complicated program, it is good practice to divide your main task into subtasks and write separate mini-programs for them, which you can then treat as “black boxes,” to be called upon by other parts of the program whenever they are useful. Some lemmas are difficult to prove and are useful in many different contexts, so the most important lemmas can be more important than the least important
 
@@ -1258,7 +1258,7 @@ be called a lemma if the main reason for proving it is       papers is definitio
 in order to use it as a stepping stone toward the proofs     particular part III. Some definitions are given simply
 of other results.                                            because they enable one to speak more concisely. For
    A corollary of a mathematical statement is another        example, if I am proving a result about triangles and
-statement that follows easily from it. Sometimes the         I keep needing to consider the distances between the
+statement that follows easily from it. Some times the         I keep needing to consider the distances between the
 main theorem of a paper is followed by several corollar-     vertices and the opposite sides, then it is a nuisance to
 ies, which advertise the strength of the theorem. Some-      have to say “the distances from A, B, and C to the lines
 times the main theorem itself is labeled a corollary,        BC, AC, and AB, respectively,” so instead I will probably
@@ -1313,7 +1313,7 @@ impossible to read. And yet, the fact that arguments         write proofs, but i
 can in principle be formalized provides a very valuable      looking for, then these proofs will be fairly straight for-
 underpinning for the edifice of mathematics, because          ward. And yes, there will be problems they can solve
 it gives a way of resolving disputes. If a mathematician     with the help of the new definition, but, like the min-
-produces an argument that is strangely unconvincing,         imization problem above, these will not be central to
+produces an argument that is strangely unconvincing,         im ization problem above, these will not be central to
 then the best way to see whether it is correct is to ask     the theory. Rather, they will demonstrate the power
 him or her to explain it more formally and in greater        of the definition. For other mathematicians, the main
 detail. This will usually either expose a mistake or make    purpose of definitions is to prove theorems, but even
@@ -1323,14 +1323,14 @@ $I$ . $4$ .
 
 The General Goals of Mathematical Research to time find that a good definition can have a major effect on their problem-solving prowess. This brings us to mathematical problems. The main aim of an article in mathematics is usually to prove theorems, but one of the reasons for reading an article is to advance one’s own research. It is therefore very welcome if a theorem is proved by a technique that can be used in other contexts. It is also very welcome if an article contains some good unsolved problems.
 By way of illustration, let us look at a problem that most mathematicians would not take all that seriously, and try to see what it lacks. A number is called palindromic if its representation in base $10$ is a palindrome: some simple examples are $22$ , $131$ , and 548845 . Of these, $131$ is interesting because it is also a prime. Let us try to find some more prime palindromic numbers. Single-digit primes are of course palindromic, and two-digit palindromic numbers are multiples of $11$ , so only $11$ itself is also a prime. So let us move quickly on to three-digit numbers.
-Here there turn out to be several examples: $101$ , $131$ , $151$ , $181$ , $191$ , $313$ , $353$ , $373$ , $383$ , $727$ , $757$ , $787$ , $797$ , $919$ , and $929$ . It is not hard to show that every palindromic number with an even number of digits is a multiple of $11$ , but the palindromic primes do not stop at $929$ -- for example, 10301 is the next smallest. And now anybody with a modicum of mathematical curiosity will ask the question: are there infinitely many palindromic primes? This, it turns out, is an unsolved problem.
+Here there turn out to be several examples: $101$ , $131$ , $151$ , $181$ , $191$ , $313$ , $353$ , $373$ , $383$ , $727$ , $757$ , $787$ , $797$ , $919$ , and $929$ . It is not hard to show that every palindromic number with an even number of digits is a multiple of $11$ , but the palindromic primes do not stop at $929$ -- for example, 10301 is the next smallest. And now any body with a modicum of mathematical curiosity will ask the question: are there infinitely many palindromic primes? This, it turns out, is an unsolved problem.
 It is believed (on the combined grounds that the primes should be sufficiently random and that palindromic numbers with an odd number of digits do not seem to have any particular reason to be factorizable) that there are, but nobody knows how to prove it. This problem has the great virtue of being easy to understand, which makes it appealing in the way that fermat’s last theorem [V.10](/part-05/fermats-last-theorem) and goldbach’s conjecture [V.27](/part-05/problems-and-results-in-vi36-peter-gustav-lejeune-dirichlet-18051859) are appealing.
 And yet, it is not a central problem in the way that those two are: most mathematicians would put it into a mental box marked “recreational” and forget about it. What is the reason for this dismissive attitude? Are the primes not central objects of study in mathematics? Well, yes they are, but palindromic numbers are not. And the main reason they are not is that the definition of “palindromic” is extremely unnatural. If you know that a number is palindromic, what you know is less a feature of the number itself and more a feature of the particular way that, for accidental historical reasons,
 
 $75$
 
 we choose to represent it. In particular, the property depends on our choice of the number $10$ as our base. For example, if we write $131$ in base $3$ , then it becomes 11212 , which is no longer the same when written backwards. By contrast, a prime number is prime however you write it. Though persuasive, this is not quite a complete explanation, since there could conceivably be interesting properties that involved the number $10$ , or at least some artificial choice of number, in an essential way.
-For example, the problem of whether there are infinitely many primes of the form $2^{n} - 1$ is considered interesting, despite the use of the particular number $2$ . However, the choice of $2$ can be justified here: $a^{n} - 1$ has a factor $a - 1$ , so for any larger integer the answer would be no. Moreover, numbers of the form $2^{n} - 1$ have special properties that make them more likely to be prime.
+For example, the problem of whether there are infinitely many primes of the form $2^{n} - 1$ is considered interesting, despite the use of the particular number $2$ . However, the choice of $2$ can be justified here: $a^{n} - 1$ has a factor $a - 1$ , so for any larger integer the answer would be no. More over, numbers of the form $2^{n} - 1$ have special properties that make them more likely to be prime.
 (See computational number theory [IV.3](/part-04/computational-number-theory) for an explanation of this point .) But even if we replace $10$ by the “more natural” number $2$ and look at numbers that are palindromic when written in binary, we still do not obtain a property that would be considered a serious topic for research. Suppose that, given an integer n, we define r (n) to be the reverse of n--that is, the number obtained if you write n in binary and then reverse its digits. Then a palindromic number, in the binary sense, is a number n such that $n = r$ (n).
 But the function r (n) is very strange and “unmathematical.” For instance, the reverses of the numbers from $1$ to $20$ are $1$ , $1$ , $3$ , $1$ , $5$ , $3$ , $7$ , $1$ , $9$ , $5$ , $13$ , $3$ , $11$ , $7$ , $15$ , $1$ , $17$ , $9$ , $25$ , and $5$ , which gives us a sequence with no obvious pattern. Indeed, when one calculates this sequence, one realizes that it is even more artificial than it at first seemed. One might imagine that the reverse of the reverse of a number is the number itself, but that is not so.
 If you take the number $10$ , for example, it is 1010 in binary, so its reverse is 0101 , which is the number $5$ . But this we would normally write as $101$ , so the reverse of $5$ is not $10$ but $5$ . But we cannot solve this problem by deciding to write $5$ as 0101 , since then we would have the problem that $5$ was no longer palindromic, when it clearly ought to be. Does this mean that nobody would be interested in a proof that there were infinitely many palindromic primes? Not at all.
@@ -1344,4 +1344,4 @@ are there infinitely many primes of the form $m^{2} + 1$ for some positive integ
 I. Introduction
 
 but once you know how to prove it, you will have no √ difficulty in proving that $3$ is irrational as well, and in fact the proof can be generalized to a much wider class of numbers (see algebraic numbers [IV.1](/part-04/number-theory)). It is quite common for a good problem to look uninteresting until you start to think about it. Then you realize that it has been asked for a reason: it might be the “first difficult case” of a more general problem, or it might be just one well-chosen example of a cluster of problems, all of which appear to run up against the same difficulty.
-Sometimes a problem is just a question, but frequently the person who asks a mathematical question has a good idea of what the answer is. A conjecture is a mathematical statement that the author firmly believes but cannot prove. As with problems, some conjectures are better than others: as we have already discussed in section $8$ . $1$ , the very best conjectures can have a major effect on the direction of mathematical research.
+Some times a problem is just a question, but frequently the person who asks a mathematical question has a good idea of what the answer is. A conjecture is a mathematical statement that the author firmly believes but cannot prove. As with problems, some conjectures are better than others: as we have already discussed in section $8$ . $1$ , the very best conjectures can have a major effect on the direction of mathematical research.

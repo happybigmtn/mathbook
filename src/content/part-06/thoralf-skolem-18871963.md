@@ -29,13 +29,13 @@ ular the intriguing interplay between representations        of Norway.
 of the special linear group and permutation groups              In 1915 Skolem extended a result obtained by the
 [III.68](/part-03/permutation-groups). A second step in his gauge theory of the elec-     Polish mathematician Leopold Löwenheim. His conclu-
 tro magnetic field was published separately, which gave        sion (published in 1920 and known as the Löwenheim–
-rise to a modified gauge theory of ele ct ro magnetism.          Skolem theorem) says that if a mathematical theory
+rise to a modified gauge theory of electromagnetism.          Skolem theorem) says that if a mathematical theory
 This was endorsed by leading theoretical physicists,         defined using only the first-order predicate calculus has
 including Pauli, Schrödinger, and Fock. It served as a       a model [IV.23 §1](/part-04/logic-and-model-theory), then it has a countable model. Here
 starting point for the next generation of physicists who     a model is a set of mathematical objects that obeys the
 developed gauge field theories in the 1950 s and 1960 s.        axioms of the theory. Now, the real numbers are defin-
    Weyl’s research in mathematics and physics was            able in such a theory (for example, zermelo–fraenkel
-shaped by his philosophical outlook and he included          set theory [IV.22 §3](/part-04/set-theory), or any other axioms for set
+shaped by his philosophical out look and he included          set theory [IV.22 §3](/part-04/set-theory), or any other axioms for set
 his philosophical reflections on scientific activity in        theory). From this we obtain the so-called Skolem para-
 many of his publications. Most influential was his con-       dox, that the real numbers can be defined in a theory
 tribution to a philosophical handbook, Philosophy of         with a countable model, even though it had been known
@@ -44,7 +44,7 @@ in German in 1927 and translated into English in 1949.       are uncountable. Ho
 It became a classic in the philosophy of science.               The answer is that one has to be very careful about
                                                              what we mean by “countable.” In this strange count-
 Further Reading                                              able model of set theory, we can see that the reals are
-                                                             countable, but to the model the reals may be uncount-
+                                                             countable, but to the model the reals may be un count-
 Chandrasekharan, K., ed. 1986. Hermann Weyl: 1885–1985.      able. In other words, the actual enumeration of the reals
  Centenary Lectures delivered by C. N. Yang, R. Penrose,     that we can see (i.e., the actual bijection between the
  and A. Borel at the Eidgenössische Technische Hochschule
@@ -54,7 +54,7 @@ Chandrasekharan, K., ed. 1986. Hermann Weyl: 1885–1985.      able. In other wo
 Deppert, W., K. Hübner, A. Oberschelp, and V. Weidemann,
                                                              some functions. Skolem’s paradox highlights the dif-
  eds. 1988. Exact Sciences and Their Philosophical Founda-
- tions. Frankfurt: Peter Lang.                               ference between the viewpoint from outside the model
+ tions. Frankfurt: Peter Lang.                               ference between the viewpoint from out side the model
 Hawkins, T. 2000. Emergence of the Theory of Lie Groups.     and that from inside the model.
  An Essay in the History of Mathematics 1869–1926. Berlin:      Several fundamental aspects of Skolem’s work are
  Springer.                                                   visible in these two results, the Löwenheim–Skolem

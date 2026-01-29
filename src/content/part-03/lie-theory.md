@@ -17,12 +17,12 @@ Dirichlet series L(s) to have a natural extension beyond
                                                                problem, even partial results about the locations of
 the region where the series converges. The existence
                                                                the zeros of the Riemann zeta function have deep
-of a meromorphic continuation is somehow a rigorous
+of a meromorphic continuation is some how a rigorous
                                                                consequences in the theory of a distribution of prime
 way of asserting the existence of subtle symmetries in
                                                                numbers.
 the series.
-                                                                  However, over the last hundred years mathemati-
+                                                                  However, over the last hundred years mathemat i-
   While on the subject of meromorphic continuation,
                                                                cians have realized a second use for them: if X is a
 we should briefly mention the riemann hypothesis
@@ -96,7 +96,7 @@ III.48.   Lie Theory                                                            
 
 and also in very pure topics such as geometry or differ-       Lie group SO(3) could be used to describe the current
 ential equations. Lie groups, and the closely related Lie     orientation of the aircraft with respect to a fixed coor-
-algebras discussed below, also frequently arise in many       dinate system, whereas an element of the Lie algebra
+algebras discussed below, also frequently arise in many       dinate system, where as an element of the Lie algebra
 types of algebra, particularly in the algebraic structures    so(3) could be used to describe the current rate of roll,
 that appear in quantum mechanics and other related            pitch, and yaw that the pilot is applying to the aircraft
 branches of physics.                                          to smoothly change its orientation.)
@@ -153,10 +153,10 @@ all n . imes n complex matrices. One can view the Lie alge-
                                                                      [[X, Y ], Z] + [[Y , Z], X] + [[Z, X], Y ] = 0.
 bra as describing all possible instantaneous directions
 and speeds within the group G, and a more precise def-        One can in fact use such identities to define Lie algebras
-inition is the collection of all derivatives R0 of smooth     in a completely abstract fashion, without any reference
+inition is the collection of all derivatives R0 of smooth     in a completely abstract fashion, with out any reference
 curves  → R in G that pass through the identity ele-       to matrices or Lie groups, in much the same way that
 ment R0 . This definition can also be extended to more         other algebraic objects such as groups, rings, and fields
-abstract Lie groups without much difficulty. (To return         can be defined using a handful of algebraic identities as
+abstract Lie groups with out much difficulty. (To return         can be defined using a handful of algebraic identities as
 to the example of the airplane pilot, an element of the       axioms, but we shall not focus on the abstract approach
 
 $232$
@@ -188,10 +188,10 @@ $1$
 
 exp  (  X  )  exp $(Y) =$ exp $(X + Y + {}^{2}$ [X , Y ] + · · ·), $1$ . Indeed, Lie groups and Lie algebras are an excellent tool for describing the algebraic aspects of ordinary and partial differential equations; the evolution of such equations through time can be modeled using a Lie group, and the differential operators used to describe an equation can be modeled on the associated Lie algebra. However, we will not discuss this important connection between Lie theory and differential equations here. III.
 Mathematical Concepts where the missing terms consist of a moderately complicated infinite series involving the Lie bracket. The exponential map that connects Lie algebras and Lie groups is closely related to the Lie bracket, and because of this it is possible to study and classify Lie groups by first studying and classifying Lie algebras with their Lie bracket operation. $3$ Classification It is always of interest when a mathematical structure can be classified, but especially so if the structure is important and the classification is not straightforward.
-By these criteria, the results that have been obtained concerning the classification of Lie algebras are undeniably interesting, and they are regarded as one of the great mathematical achievements from around the turn of the twentieth century. It turns out to be easier to classify complex Lie algebras: that is, Lie algebras such as sl n (C) that have the structure of a complex vector space. Each real Lie algebra embeds in a complex Lie algebra of twice the (real) dimension, known as the complex if ic at i on of the original algebra.
-However, a complex Lie algebra may arise as the complex if ic at i on of several different real Lie algebras (known as real forms of the complex Lie algebra). In classifying Lie groups and Lie algebras, the first step is to restrict attention to simple Lie groups and Lie algebras; these are analogous to prime numbers in the sense that they cannot be “factored” into smaller components. For instance, the Euclidean group E (n) contains the translation group R n as a connected normal subgroup. If we factor out this group, then we obtain the orthogonal group O (n), so E (n) is not simple.
+By these criteria, the results that have been obtained concerning the classification of Lie algebras are undeniably interesting, and they are regarded as one of the great mathematical achievements from around the turn of the twentieth century. It turns out to be easier to classify complex Lie algebras: that is, Lie algebras such as sl n (C) that have the structure of a complex vector space. Each real Lie algebra embeds in a complex Lie algebra of twice the (real) dimension, known as the complexification of the original algebra.
+However, a complex Lie algebra may arise as the complexification of several different real Lie algebras (known as real forms of the complex Lie algebra). In classifying Lie groups and Lie algebras, the first step is to restrict attention to simple Lie groups and Lie algebras; these are analogous to prime numbers in the sense that they cannot be “factored” into smaller components. For instance, the Euclidean group E (n) contains the translation group R n as a connected normal subgroup. If we factor out this group, then we obtain the orthogonal group O (n), so E (n) is not simple.
 More formally, a Lie group is simple if it contains no proper connected normal subgroups, and a Lie algebra is simple if it contains no proper ideals [III.81](/part-03/rings-ideals-and-modules). In this sense, the Lie group SL n (C) and its Lie algebra sl n (C) are simple for every n. Finite-dimensional, complex, simple Lie algebras were classified by Wilhelm Killing and Élie cartan [VI.69](/part-06/lie-joseph-cartan-18691951) in $1888 - 94$ .
-This classification is often placed in the context of socalled semisimple Lie algebras, which can be factored in a unique way (up to rearrangement) as a direct sum of simple Lie algebras, just as a natural number can be factored uniquely as a product of prime numbers. Further more, a theorem of Levi shows that a general finite dimensional Lie algebra g can be expressed as a combination (or , more precisely, a “semidirect product ”) of a
+This classification is often placed in the context of so called semisimple Lie algebras, which can be factored in a unique way (up to rearrangement) as a direct sum of simple Lie algebras, just as a natural number can be factored uniquely as a product of prime numbers. Further more, a theorem of Levi shows that a general finite dimensional Lie algebra g can be expressed as a combination (or , more precisely, a “semidirect product ”) of a
 
 III.48.   Lie Theory                                                                                               233
 
@@ -220,7 +220,7 @@ so their Lie bracket [X, Y ] = XY − Y X is 0. In other          In general, a 
 words, if X and Y belong to h, then [X, Y ] = 0. A Lie       be completely described by its root vectors α and cor-
 algebra in which [X, Y ] = 0 for any two elements X and      responding root spaces gα . The rank of g equals the
 Y is called Abelian.                                         dimension of the Cartan subalgebra h, and also equals
-   Each simple Lie algebra g has a similar decomposi-        the dimension of the vector space spanned by the root
+   Each simple Lie algebra g has a similar de com posi-        the dimension of the vector space spanned by the root
 tion where the subspace h is a maximal Abelian subal-        vectors. For example, sln+1 has rank n, and its root vec-
 gebra called a Cartan subalgebra. (For Lie algebras that     tors are the vectors ei − ej , as we have just seen. Sets
 are not simple, the definition of Cartan subalgebras          of root vectors are far from arbitrary: they must obey
@@ -242,8 +242,8 @@ column. If X ∈ h (that is, if X is a diagonal matrix of      some very simple 
 trace zero) and Y ∈ gij , then it is not hard to check       which are shown in figure 1.
 that [X, Y ] also lies in gij . In fact,                        The nodes of the diagram correspond to so-called
                                                              simple roots. Every root is a linear combination of sim-
-                  [X, Y ] = (Xii − Xjj )Y .                  ple roots with coefficients that are either all nonnega-
+                  [X, Y ] = (Xii − Xjj )Y .                  ple roots with coefficients that are either all nonneg a-
 If we identify the diagonal matrix X with the vector         tive or all nonpositive. The nature of the bond (or lack
-whose n coordinates appear down its diagonal, and            thereof) between two nodes determines the inner prod-
+whose n coordinates appear down its diagonal, and            there of) between two nodes determines the inner prod-
 if we write ei for the vector that is 1 in the ith posi-     uct of the corresponding simple roots. If there is no
 tion and 0 elsewhere, then Xii − Xjj can be rewritten        bond, then the inner product is 0; if there is a single

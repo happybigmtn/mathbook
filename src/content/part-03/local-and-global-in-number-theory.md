@@ -42,7 +42,7 @@ $2$
 
 and is equal to $- {}^{3}$ .
 
-It is easy to keep going. To handle general functions locally at a, we may sometimes need to use fractional powers of (x  -  a), but it does not get much worse than that. Such expansions are a very powerful tool in the theory of functions. One of the motivations for the discovery of the p-adic numbers was to find a similarly powerful tool for the study of numbers.
+It is easy to keep going. To handle general functions locally at a, we may some times need to use fractional powers of (x  -  a), but it does not get much worse than that. Such expansions are a very powerful tool in the theory of functions. One of the motivations for the discovery of the p-adic numbers was to find a similarly powerful tool for the study of numbers.
 
 $2$
 
@@ -181,4 +181,4 @@ theorists.
 answer some questions in number theory by answer-           Ullrich, P. 1995. On the origins of p-adic analysis. Proceed-
 ing them “locally.” Here is a (not very important, but        ings of the 2 nd Gauss Symposium. Conference A: Mathe-
 fairly easy to follow) example. Suppose x is a rational       matics and Theoretical Physics, Munich, 1993, pp. 459–73.
-number that is a square of some other rational number         Symposia Gaussiana. Berlin: Walter de Gruyter.
+number that is a square of some other rational number         Symposia Gaussian a. Berlin: Walter de Gruyter.

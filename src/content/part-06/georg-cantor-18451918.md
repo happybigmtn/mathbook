@@ -8,7 +8,7 @@ case, although this would be nearer to the truth.”)             b. Saint Peter
    Lie returned (after his first trip abroad) to Oslo            Set theory; transfinite numbers; the continuum hypothesis
 and, in 1872, a chair of mathematics at the univer-
 sity was created especially for him. During the early           Although born in Russia, Cantor was raised and edu-
-1870 s Lie worked on turning his line–sphere transfor-           cated in Prussia and spent his entire career as pro-
+1870 s Lie worked on turning his line–sphere trans for-           cated in Prussia and spent his entire career as pro-
 mation into a general theory of contact transforma-             fessor of mathematics at the University of Halle. He
 tions. From 1873 he worked on a systematic study of             studied at the Universities of Berlin and Göttingen with
 continuous transformation groups (today known as lie            kronecker [VI.48](/part-06/leopold-kronecker-18231891), kummer [VI.40], and weierstrass
@@ -20,15 +20,15 @@ there was no scientific milieu, and he felt very isolated.       number theory o
 In 1884 Klein and his friend Adolf Mayer in Leipzig             had been pioneered by lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813), gauss [VI.26](/part-06/carl-friedrich-gauss-17771855),
 tried to help him by sending their student Friedrich            and legendre [VI.24](/part-06/adrien-marie-legendre-17521833). The following year he accepted
 Engel to study with him and to help him with the for-           a position in the mathematics department at the Uni-
-mulation and writing of his new ideas. The work that            versity of Halle, where he spent the rest of his aca-
+mulation and writing of his new ideas. The work that            ver sity of Halle, where he spent the rest of his aca-
 Engel and Lie started together resulted in three vol-           demic career. There, his Habilitationssc hrift was again
-umes, Theorie der Transformations gruppen (1888–93).             devoted to number theory, and dealt with transforma-
+umes, The orie der Transformations gruppen (1888–93).             devoted to number theory, and dealt with transforma-
 In 1886 Lie accepted the professorship in Leipzig (in           tions of ternary quadratic forms.
 succession to Klein, who had moved to Göttingen). In               It was at Halle that Cantor’s colleague, Eduard Heine,
 Leipzig he became a leading mathematician and a cen-            was working on difficult problems involving trigono-
-tral figure in the European community of mathemati-              metric series, and he interested Cantor in the problem
+tral figure in the European community of mathemat i-              metric series, and he interested Cantor in the problem
 cians. Promising new students from both France and              of determining the conditions under which a trigono-
-the United States were sent to study with him. Besides          metric series of the form
+the United States were sent to study with him. Be sides          metric series of the form
 teaching he continued his research on transformation                                       . nfty
                                                                                            
 groups and differential equations, and he solved the                     f (x) = 12 a0 +         (an sin nx + bn cos nx)
@@ -65,7 +65,7 @@ Georg Cantor
 Point sets of the first species were sets P for which, given its sequence of derived sets (the derived set P of a set P is the set of all the limit points of P), there was some finite n such that the nth derived set P n of P was finite, and thus the (n $+ 1$ ) st derived set was empty, i.e., $P^{n} + {}^{1} =$ ∅. It was Cantor’s subsequent study of infinite linear point sets that would eventually lead to his creation of transfinite set theory in the $1880s$ .
 (For more details about this, see set theory [IV.22](/part-04/set-theory).) Before he did so, Cantor first began to explore the implications of his work on trigonometric series and the structure of the real numbers in several papers, one of which was to revolutionize mathematics in a fundamental way. The first of these papers was published in 1874 , and bore the innocuous title “Über eine Eigenschaft des Inbegriffes aller reellen algebraischen Zahlen” (“ On a property of the collection of all real algebraic numbers ”) .
 In this paper, Cantor proved that the set of all algebraic real numbers was countably infinite [III.11](/part-03/countable-and-uncountable-sets). What was revolutionary about the paper, however, was that he also proved that the set of all real numbers was not countable, and must be of a higher order of infinity than the countably infinite set of natural numbers. He returned to this result in 1891 with a new approach, the groundbreaking method of diagonalization, to prove in a very direct way that the set of real numbers is uncountably infinite.
-Cantor’s second important paper of the decade appeared in 1878 , “Ein Beitrag zur Mannigfaltigkei tslehre” (“ A contribution to the theory of aggregates ”), in which he proved (with a partly faulty argument) the invariance of dimension, a theorem first correctly proved by brouwer [VI.75](/part-06/luitzen-egbertus-jan-brouwer-18811966) in 1911 . Between 1879$and$1884 Cantor published six papers designed to outline the basic elements of his new thinking about sets.
+Cantor’s second important paper of the decade appeared in 1878 , “Ein Beitrag zur Mannigfaltigkei tslehre” (“ A contribution to the theory of aggregates ”), in which he proved (with a partly faulty argument) the invariance of dimension, a theorem first correctly proved by brouwer [VI.75](/part-06/luitzen-egbertus-jan-brouwer-18811966) in 1911 . Between 1879$and$1884 Cantor published six papers designed to out line the basic elements of his new thinking about sets.
 He first considered what happened if a set were not of the first species by introducing symbols for the infinite indices needed to identify such sets. For example, a set P was said to be of the second species if there was no finite n such that the nth derived set P n of P was finite. He then considered the case in which the intersection of all the derived sets of P (namely P , P , . . . , P n , . . .) was again an infinite set, which he designated P $\infty$ .
 This set, since it was infinite, had a derived set as well, $P\infty + 1$ , and this led in fact to an entire sequence of derived sets of the second species: $P\infty$ , $P\infty + 1$ , . . . , $P\infty + n$ , . . . , $P^{2}\infty$ , . . . . In his first papers on infinite linear sets, these indices for derived sets remained “infinitary symbols”: that is, devices for distinguishing between different sets. But
 

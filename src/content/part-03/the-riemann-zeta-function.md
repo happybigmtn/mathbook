@@ -11,7 +11,7 @@ this way we see that C (less its vertices) is a Riemann          Perhaps the mos
 surface. The problem with the vertices can be solved by       mann surfaces is the uniformization theorem [V.34](/part-05/the-uniformization-theorem).
 technical means, and this method can then be general-         Roughly speaking, this says that every Riemann surface
 ized to show that any polyhedron (even one with holes,        is obtained from either Euclidean, spherical, or hyper-
-such as a “square” torus) is a Riemann surface. These         bolic geometry (see some fundamental mathemati-
+such as a “square” torus) is a Riemann surface. These         bolic geometry (see some fundamental mathemat i-
 are known as compact surfaces. It is a deep but fascinat-     cal definitions [I.3 §§6.2, 6.5, 6.6]) by taking a poly-
 ing classical result that each such surface corresponds       gon in that geometry and gluing its sides together, in
 bijectively to an irreducible polynomial P (z, w) in two      the same way that one obtains a torus by gluing oppo-
@@ -19,7 +19,7 @@ complex variables. To give an idea of how the corre-          site sides of a re
 spondence works, let us consider an equation such as          groups [III.28](/part-03/fuchsian-groups).) Remarkably, only very few Riemann
 w 3 + wz + z2 = 0. For each z this can be solved to give      surfaces come from the Euclidean or spherical geome-
 three values of w, say w1 , w2 , and w3 ; as we allow z       tries; essentially, every Riemann surface can be con-
-to vary in C, the values wj vary, and as they do so they      structed in this way from (and only from) the hyper-
+to vary in C, the values wj vary, and as they do so they      struc ted in this way from (and only from) the hyper-
 create a Riemann surface W , which can be shown to            bolic plane. This means that virtually every region in
 be connected. This surface can be thought of as lying         the complex plane comes equipped with a natural and
 “above” C, and for all but a finite set of z in C there are    intrinsic geometry whose character is hyperbolic and
@@ -55,7 +55,7 @@ Riemann surface. If we transfer the two curves to plane
                                                               tion that is defined every where on the complex plane
 regions using different local coordinate systems at the
                                                               (though it takes the value . nfty at 1).
-crossing point, and then measure the angle of intersec-
+crossing point, and then measure the angle of inter sec-
                                                                  A first clue to why this function is related to the
 tion in each case, we must get the same result (since
                                                               distribution of primes is Euler’s product formula:

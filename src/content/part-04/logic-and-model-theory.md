@@ -12,20 +12,20 @@ Mathematical logic is the study of formal languages            general, if φ is
 that are used to describe mathematical structures and          using logical connectives (and parentheses), then we
 what these can tell us about the structures themselves.        call φ a Boolean combination of φ1 , . . . , φn . Another
 We can learn a lot about a formal language by inves-           important way to modify a formula is quantification:
-tigating which of its sentences are true for the struc-        if φ(x) is a formula involving a free variable x, then
+tig at ing which of its sentences are true for the struc-        if φ(x) is a formula involving a free variable x, then
 ture it describes, and we can learn a lot about the            ∀xφ(x) and ∃xφ(x) are both formulas.
 structure by investigating the subsets of it that can be          The formulas just discussed are “purely logical,”
 defined using the language. In this article, we shall see       which makes them not very useful for describing inter-
 several examples of languages and the structures that          esting mathematical structures. Suppose, for example,
 they are used to describe. We shall also see instances         that we wanted to study real solutions to algebraic
 of the remarkable phenomenon that theorems in logic            and exponential equations over the field [I.3 §2.2](/part-01/fundamental-definitions) of
-can sometimes be used to prove “purely mathemati-              real numbers. We can think of this as studying the
+can some times be used to prove “purely mathemat i-              real numbers. We can think of this as studying the
 cal” results that seem to have nothing to do with logic.       “mathematical structure”
 This introductory section briefly introduces some of                           Rexp = (R, +, ·, exp, <, 0, 1),
 the basic ideas that will be needed to understand the          where the right-hand side is a septuple that consists of
 later sections.                                                the set R of real numbers, the binary operations of addi-
    All the formal languages that we consider will be ex-       tion and multiplication, the exponential function
-tensions of a basic logical language that we shall denote      [III.25](/part-03/the-exponential-and-logarithmic-functions), the “less than” relation, and the real numbers 0
+ten sions of a basic logical language that we shall denote      [III.25](/part-03/the-exponential-and-logarithmic-functions), the “less than” relation, and the real numbers 0
 by L0 . The statements, or formulas, of this language          and 1.
 are made up of the following components: variables,               The various components of this structure are of
 which are denoted by letters of the alphabet such as           course related to each other in many ways, but we can-
@@ -57,7 +57,7 @@ and z that occur in the first formula are all bound vari-
                                                                exp(x = y) + z.
 ables, which means that they are all attached to quan-
                                                                  Here are three more Lexp -formulas:
-tifiers, whereas in the second formula, only the vari-
+tifiers, where as in the second formula, only the vari-
 able x is bound, while the variables y and z are free.          (ii) ∀x (x > 0 → ∃y exp(y) = x);
 This means that the first formula expresses a statement         (iii) ∃x x 2 = −1;
 about some mathematical structure, while the second            (iv) ∃y y 2 = x.
@@ -107,7 +107,7 @@ the nonobviousness of this fact, the reader is encour-           structure was a
 aged to try to work out why it is true before reading            the language Lexp that we discussed earlier. (Another
 on.)                                                             model for the same two formulas would be one in which
    The trick is to use a well-known theorem due to               we replaced the exponential function by the function
-lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813), which asserts that every nonnega-              2 x and interpreted “exp” as referring to that function
+lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813), which asserts that every nonneg a-              2 x and interpreted “exp” as referring to that function
 tive integer is a sum of four squares. It follows that the       instead.)
 statement x ⩾ 0 can be defined by the formula                        The justification for the word “theory” is clearer in
                                                                  another example, the language of groups [I.3 §2.1](/part-01/fundamental-definitions),
@@ -145,7 +145,7 @@ $638$
 
 look at $a$ sequence $\psi^{1}$ , . . . , $\psi^{m}$ and decide whether it really is a proof of φ from T . It is not too surprising that if φ can be proved from T , then φ is true in all models of T . Much more remarkable is that the converse is also true: if φ cannot be proved from T , then there must be a model of T in which φ is false. This tells us that two very different notions--the finitistic, syntactic notion of “proof” and the semantic notion of “logical consequence,” which concerns truth in models--always agree. This result is known as Gödel’s completeness theorem.
 Here is its formal statement. Theorem. Let T be an L-theory and let φ be an L-sentence. Then $T 2φ$ if and only if $T *φ.$ Suppose that T is a simple theory like T grp , where there is an algorithm to decide whether a sentence is in T . (In the case of T grp this algorithm is particularly simple, but some theories might have infinitely many sentences .) We could write a computer program which, given a formula φ as its input, would systematically generate all possible proofs σ from T and check to see whether σ was a proof of φ.
-If such a program finds a proof of φ, then it halts and tells us that $T_{2}$ φ. We say that {φ : $T_{2}$ φ} is recursively enumerable. However, one might hope for more. If $T_{2}$ φ, our program above will go on searching forever, so it will never tell us that there is no proof of φ. We say that an L-theory T is decidable if there is a computer program which, when given an L-sentence φ as input, will always halt and tell us, one way or another, whether $T_{2}$ φ.
+If such a program finds a proof of φ, then it halts and tells us that $T_{2}$ φ. We say that {φ : $T_{2}$ φ} is recursively enumerable. However, one might hope for more. If $T_{2}$ φ, our program above will go on searching for ever, so it will never tell us that there is no proof of φ. We say that an L-theory T is decidable if there is a computer program which, when given an L-sentence φ as input, will always halt and tell us, one way or another, whether $T_{2}$ φ.
 Such a program would have to be cleverer than the one that just checks all possible proofs σ , and unfortunately such a program does not have to exist: as gödel [VI.92](/part-06/kurt-gdel-19061978) proved in his famous incompleteness theorem [V.15](/part-05/gdels-theorem), many important theories are undecidable. Here is a first version of his theorem, concerning the theory of the natural numbers (or theory of N for short), which means the set of all sentences in the language L rng that are true of the structure (N$, + , ·,$0 , 1) . Theorem. The theory of the natural numbers is undecidable.
 At first, this might seem rather strange: after all, if T is the theory of N , then T contains all true sentences about N . So a sentence φ is provable from T if and only if it has a one-line proof (the line being φ itself). However, this does not make φ decidable, because the theory T is very complicated and there is no algorithm for deciding whether φ belongs to T .
 
@@ -177,7 +177,7 @@ there is a sentence that asserts
                                                                       The reason this is true is that if T is not satisfiable
                      “PA is consistent”
                                                                     then it is inconsistent (as we have just seen), which
-that is unprovable from PA. The somewhat artificial                  means that a contradiction can be proved from T . Since
+that is unprovable from PA. The some what artificial                  means that a contradiction can be proved from T . Since
 and met a mathematical nature of these sentences might                this proof, like all proofs, must be finite, it involves
 lead one to hope that all “mathematically interesting”              only finitely many sentences from T . Therefore, T has
 sentences about N are settled by PA. However, more                  a finite subset that implies a contradiction, which con-
@@ -226,7 +226,7 @@ contradiction from T . Since our proof system is sound,             then we can 
 640                                                                                        IV. Branches of Mathematics
 
 c as a sufficiently large real number—large enough to              Hilbert’s Nullstellensatz itself is the same statement
-satisfy all the statements of the form c > 1 + 1 + · · · + 1   but without the extra information about the degrees of
+satisfy all the statements of the form c > 1 + 1 + · · · + 1   but with out the extra information about the degrees of
 that belong to Δ. Since we can model every finite subset        the polynomials gi .
 Δ of T , the compactness theorem tells us that we can            To see how the proposition is proved, we will restrict
 model T itself. If M 2 T , then the element named by c         our attention to the case n = d = 2. This is just for
@@ -242,7 +242,7 @@ rigorous development of calculus with infinitesimals.           there are no pol
 language of rings. Let T be the set of L-sentences that        algebraically closed fields with the formulas φ1 , φ2 , . . .
 are true in every finite field. We call T the theory of finite    and the assertion that the polynomials F1 , . . . , Fm have
 fields. Recall that a field is said to have characteristic p     no common zero. If there is no positive integer l sat-
-if p is the smallest positive integer (which has to be         isfying the conclusion of the proposition, then every
+if p is the smallest positive integer (which has to be         i sfy ing the conclusion of the proposition, then every
 prime) such that 1 + 1 + · · · + 1 = 0 in the field, where      finite subset of T is satisfiable. Hence, by the compact-
 the number of 1 s in the sum is p. If there is no such p,       ness theorem, T is satisfiable. If K 2 T , then F1 , . . . , Fm
 then the field is said to have characteristic zero. Thus,       are polynomials over an algebraically closed field with
@@ -259,15 +259,15 @@ it, we look at the theory T that consists of T together        discovered—see 
 with the statements 1 + 1 = 0, 1 + 1 + 1 = 0, and so on.
                                                                details.
 Any finite set of statements in T will be true of a finite
-field of sufficiently large characteristic, and thus satisfi-
+field of sufficiently large characteristic, and thus sat isf i-
                                                                                4    The Complex Field
 able. By the compactness theorem T is satisfiable, but
 a model of T clearly has to have characteristic zero.          A surprising counterpoint to Gödel’s incompleteness
-   The compactness theorem can sometimes be used to            theorem is a result of tarski [VI.87](/part-06/alfred-tarski-19011983), which states that
+   The compactness theorem can some times be used to            theorem is a result of tarski [VI.87](/part-06/alfred-tarski-19011983), which states that
 show the existence of interesting algebraic bounds. The        the theories of the fields of real and complex numbers
 next result allows us to deduce from hilbert’s null-           are decidable. The key to these results is a method
 stellensatz [V.17](/part-05/hilberts-nullstellensatz) a stronger “quantitative version.” It       known as quantifier elimination. If we have a formula
-is our first example of a statement that does not appear        without quantifiers that concerns the natural numbers,
+is our first example of a statement that does not appear        with out quantifiers that concerns the natural numbers,
 to be logical in nature but which can be proved using          then it is easy to decide whether it is true or false. The
 logic. Recall that a field is algebraically closed if every     negative solution to Hilbert’s tenth problem shows that
 polynomial with coefficients in the field has a root in the       as soon as we start adding existential quantifiers (as we
@@ -278,7 +278,7 @@ Proposition. For any three positive integers n, m, d
                                                                it will be very useful if we can find an equivalent for-
 there is a positive integer l such that if K is an alge-
                                                                mula that does not have quantifiers. And in some set-
-braically closed field and f1 , . . . , fm are polynomials
+bra ically closed field and f1 , . . . , fm are polynomials
                                                                tings, this turns out to be possible. For example, let
 in n variables with coefficients in K, degree at most
                                                                φ(a, b, c) be the formula
@@ -298,7 +298,7 @@ As for the complex numbers, it is easy to see that C 2
 φ(a, b, c) if and only if
                                                                     characteristic p.
                    a = 0 ∨ b = 0 ∨ c = 0.                            To see why this is true, let K and F be two alge-
-In either case, φ is equivalent to a formula with no                braically closed fields of characteristic p, and suppose
+In either case, φ is equivalent to a formula with no                bra ically closed fields of characteristic p, and suppose
 quantifiers.                                                         that K 2 φ (or in other words that φ is true of K).
   For a second example, let φ(a, b, c, d) be the formula            Let k be the field Q if the characteristic is zero and
                                                                     the field with p elements otherwise. Tarski’s theorem
@@ -314,7 +314,7 @@ the existence of an inverse can be expressed by the                             
 quantifier-free formula ad − bc = 0.
                                                                     Since K 2 φ and φ and ψ are equivalent in all alge-
    Tarski proved that we can always eliminate quanti-
-                                                                    braically closed fields of characteristic p, it follows that
+                                                                    bra ically closed fields of characteristic p, it follows that
 fiers in algebraically closed fields.
                                                                     F 2 φ as well.
 Theorem. For any Lrng -formula φ there is a quantifier-
@@ -360,7 +360,7 @@ number of other consequences of Tarski’s theorem.                   a proof of
 fields combined with the sentences 1 = 0, 1 + 1 = 0,            p-element field. (It can be shown that any field F is con-
 1+1+1 = 0, and so on. Since proofs are finite sequences          tained in an algebraically closed field. Roughly speak-
 of formulas, there must be some m such that the proof            ing, the algebraic closure of F is the smallest alge-
-used only the first m of these sentences (not necessar-           braically closed field that contains F .) Suppose, then,
+used only the first m of these sentences (not ne ces sar-           bra ically closed field that contains F .) Suppose, then,
                                                                                           alg
 ily all of them). If p is some prime bigger than m, then         that some φd fails for Fp . Then there must be an injec-
                                                                                                  alg      alg
@@ -517,7 +517,7 @@ Logic and Model Theory
 Tarski asked if the theory of R exp is decidable. This question remains open, but the answer is known to follow from the following conjecture of Schanuel in transcendental number theory. Conjecture. Suppose that $\lambda^{1}$ , . . . , $\lambda^{n}$ are complex numbers that are linearly independent over Q . Then the field $Q(\lambda^{1}$ , . . . , $\lambda^{n}$ , $e\lambda^{1}$ , . . . , $e\lambda^{n})$ has transcendence degree at least n. Macintyre and Wilkie have shown that if Schanuel’s conjecture is true, then the theory of R exp is decidable.
 $6$ The Random Graph Model-theoretic methods give interesting information about random graphs [III.34] . Suppose we construct a graph as follows. The vertex set is the set N of all natural numbers N . To decide whether we will have an edge between $x$ and  y(with x = y )  we flip a coin, putting an edge there if and only if we get heads. Although these constructions are random, we will show below that, with probability $1$ , any two such graphs are isomorphic. The proof depends on the following extension property.
 Let A and B be disjoint finite subsets of N , and suppose that they have sizes $n$ and $m$, respectively. We would like to find a vertex x $\in$ N that is joined to every element of A and to no element of B. Now for any particular x, the probability that it does not have the desired property is $p = 1 - 2 - (n + m)$ . Therefore, if we look at N different vertices, the probability that none of them has the desired property is p N . Since this converges to zero with N, the probability that at least one $x \in N$ has the property is $1$ .
-Moreover, since there are only countably many disjoint pairs (A , B) of finite sets, with probability $1$ it is the case that for every such pair (A , B) one can find a vertex x that is joined to every vertex in A and to no vertex in B. We can formalize this observation in a model-theoretic way. Let L $g = L$ (∼), where “∼” is a binary relation symbol (which we read as “is joined to ”). We let T be the L gtheory : (i) ∀x∀y x ∼ y $\to$ y ∼ x; (ii) ∀x ¬ (x ∼ x); (iii) Φ n, m for $n,m \ge 0$ . Here Φ n, m is the sentence ∀$x^{1}$ · · · ∀x n ∀$y^{1}$ · · · ∀y m
+More over, since there are only countably many disjoint pairs (A , B) of finite sets, with probability $1$ it is the case that for every such pair (A , B) one can find a vertex x that is joined to every vertex in A and to no vertex in B. We can formalize this observation in a model-theoretic way. Let L $g = L$ (∼), where “∼” is a binary relation symbol (which we read as “is joined to ”). We let T be the L gtheory : (i) ∀x∀y x ∼ y $\to$ y ∼ x; (ii) ∀x ¬ (x ∼ x); (iii) Φ n, m for $n,m \ge 0$ . Here Φ n, m is the sentence ∀$x^{1}$ · · · ∀x n ∀$y^{1}$ · · · ∀y m
 
 $n 1111$
 
@@ -537,7 +537,7 @@ The first two sentences tell us that the relation “∼” defines a graph, and
 If $G^{1}$ and $G^{2}$ are any two countable models of T , then $G^{1}$ is isomorphic to $G^{2}$ . Recall that an isomorphism between $G^{1}$ and $G^{2}$ means a bijection f from the vertex set of $G^{1}$ to the vertex set of $G^{2}$ such that x is joined to y in $G^{1}$ if and only if f (x) is joined to f (y) in $G^{2}$ . The proof, which we shall now sketch, is a “back-and-forth” argument that gradually builds up an isomorphism between $G^{1}$ and $G^{2}$ . First, let $a^{0}$ , $a^{1}$ , . . . be an enumeration of the vertices of $G^{1}$ and let $b^{0}$ , $b^{1}$ , . . .
 be an enumeration of the vertices of $G^{2}$ . Let us set $f(a^{0})$ to be $b^{0}$ . Next, we choose an image for $a^{1}$ : if $a^{1}$ is joined to $a^{0}$ then we need to find some vertex that is joined to $b^{0}$ and if $a^{1}$ is not joined to $a^{0}$ then we need to find a vertex that is not joined to $b^{0}$ . Either way, we can do it because G is a model of T , so it satisfies the extension property.
 (The particular cases we use here are $Φ^{1}$ , 0 and $Φ^{0}$ , 1 .) It is tempting to continue finding images for $a^{2}$ , $a^{3}$ , and so on, in each case using the extension property to make sure that the images are joined to each other if and only if the original vertices are. The trouble with this is that we may not end up with a bijection, since for any particular b j there is no guarantee that we will ever choose it as the image of some a j .
-However, we can remedy this by alternately choosing an image for the first a i that does not yet have an image, and a preimage for the first b j that does not yet have a preimage. In this way we build the desired isomorphism. It was not essential to use model theory to prove the above result. However, it has the following very nice model-theoretic consequence. Corollary. For any L gsentence φ either φ is true in every model of T or ¬φ is true in every model of T . Moreover, there is an algorithm that will tell us which of φ or ¬φ is true in every model of T .
+However, we can remedy this by alternately choosing an image for the first a i that does not yet have an image, and a preimage for the first b j that does not yet have a preimage. In this way we build the desired isomorphism. It was not essential to use model theory to prove the above result. However, it has the following very nice model-theoretic consequence. Corollary. For any L gsentence φ either φ is true in every model of T or ¬φ is true in every model of T . More over, there is an algorithm that will tell us which of φ or ¬φ is true in every model of T .
 To prove this, one first applies a slight strengthening of the compactness theorem, which allows one to
 
 646                                                                                       IV. Branches of Mathematics
@@ -568,14 +568,14 @@ a random graph on N vertices satisfies φ.                         In addition t
    An easy variant of the argument for infinite graphs          ability in particular structures, a major goal in model
 shows that for each extension axiom Φn, m , the proba-          theory is proving structure theorems for wide classes
 bility p N (Φn, m ) tends to 1. Therefore, for any fixed M,       of mathematical structures. A key feature is the devel-
-if N is sufficiently large, then with very high probability      opment by Shelah of notions of dependence generaliz-
+if N is sufficiently large, then with very high probability      opment by Shelah of notions of dependence general iz-
 a random graph on N vertices satisfies all the axioms           ing linear dependence in vector spaces and algebraic
 Φn, m with n, m ⩽ M.                                            dependence in fields. Led by Hrushovski and Zilber,
    This observation allows us to use the theory T to get       model theorists have studied the geometry of depend-
 a good understanding of the asymptotic properties of           ence and found that frequently it can be used to detect
 random graphs. The following result is called a zero–          hidden algebraic structure.
 one law.                                                         In recent years, abstract model theory has found in-
-                                                               teresting applications in classical mathematics. Hrush-
+                                                               te resting applications in classical mathematics. Hrush-
 Theorem. Given any Lg -sentence φ, the probability
                                                                ovski used these ideas to give a model-theoretic proof
 p N (φ) either tends to 0 or tends to 1 as N → . nfty. More-

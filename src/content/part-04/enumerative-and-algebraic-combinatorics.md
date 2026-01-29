@@ -3,14 +3,14 @@
 550                                                                                        IV. Branches of Mathematics
 
                                                                mathematics. A genuine mathematical fact has to incor-
-IV.18 Enumerative and Algebraic                                porate infinitely many facts, and the generic enumera-
+IV.18 Enumerative and Algebraic                                porate infinitely many facts, and the generic enum era-
       Combinatorics                                            tion problem is to enumerate not just one set but all
                                                                the sets in an infinite family.
          Doron Zeilberger
                                                                   To be precise, given an infinite sequence of sets
                                                                {An }. nftyn=0 , where each set An consists of objects sat-
                     1   Introduction
-                                                               isfying some combinatorial specifications that depend
+                                                               i sfy ing some combinatorial specifications that depend
 Enumeration, otherwise known as counting, is the old-          on the parameter n, answer the question: How many
 est mathematical subject, while algebraic combinator-          elements does An have?
 ics is one of the youngest. Some cynics claim that alge-          In a moment we shall look at some examples. But
@@ -24,12 +24,12 @@ the first half of the twentieth century, starting with          enumeration ques
 Hilbert’s “theological” proof of the fundamental the-             In the list below, when we are given a set An (which
 orem of invariants, in which he showed by abstract             will change from example to example), we shall write an
 means that certain invariants existed, but not how to          instead of |An |. That is, an will stand for the number
-find them. The latter trend is dominating contempo-             of elements of An .
+find them. The latter trend is dominating con tempo-             of elements of An .
 rary mathematics, thanks to the omnipresence of The
 Mighty Computer.                                               (i) I Ching. If An is the set of all subsets of {1, . . . , n},
    The abstraction trend consists of the categorization,          then an = 2 n .
 conceptualizati on, structuralizati on, and fancification         (ii) Rabbi Levi Ben Gerson. If An is the set of permu-
-(in short, “bourbakization” [VI.96](/part-06/nicolas-bourbaki-1935)) of mathematics.              tations [III.68](/part-03/permutation-groups) on {1, . . . , n}, then an = n!.
+(in short, “bourbakization” [VI.96](/part-06/nicolas-bourbaki-1935)) of mathematics.              tat i ons [III.68](/part-03/permutation-groups) on {1, . . . , n}, then an = n!.
 Enumeration did not escape this trend, and in the hands        (iii) Catalan. If An is the set of legal bracketings with n
 of such giants as Gian-Carlo Rota and Richard Stanley             opening brackets and n closing brackets, then an =
 in America and Marco Schützenberger and Dominique                 (2 n)!/(n + 1)!n!. (A legal bracketing is a sequence of
@@ -65,7 +65,7 @@ IV.18.    Enumerative and Algebraic Combinatorics                               
 
 (v) cayley [VI.46](/part-06/arthur-cayley-18211895). If An is the set of labeled trees on            Traditionally, the main customers of enumeration
   n vertices, then an = nn−2 . (A tree is a connected             were probability and statistics. In fact, discrete prob-
-  graph [III.34] without cycles, and it is labeled if the         ability is almost synonymous with enumerative com-
+  graph [III.34] with out cycles, and it is labeled if the         ability is almost synonymous with enumerative com-
   vertices have distinct names.)                                  binatorics, since the probability of an event E occur-
 (vi) If An is the set of labeled simple graphs with n             ring is the ratio of the number of successful cases
   vertices, then an = 2 n(n−1)/2 . (A graph is simple if it        divided by the total number. Also, statistical physics is,
@@ -81,8 +81,8 @@ IV.18.    Enumerative and Algebraic Combinatorics                               
                            k=0
                                  k!
 
-(viii) If An is the set of Latin squares of size n (n . imes n         The following tools are indispensable to the enumera-
-  matrices each of whose rows and columns is a per-               tive combinatorial i st.
+(viii) If An is the set of Latin squares of size n (n . imes n         The following tools are indispensable to the enum era-
+  matrices each of whose rows and columns is a per-               tive combinatorialist.
   mutation of {1, . . . , n}), then not even a good approx-
   imation for an is known.                                        2.1   Decomposition
 
@@ -146,7 +146,7 @@ $2$ . $4$
 
 Generatingfunct ionology
 
-According to Wilf, who coined this neologism by making it the title of his classic book (a free download from his Web site, even though it is still in print !) : A generating function is a clothesline on which we hang up a sequence of numbers for display. The method of generating functions is one of the most useful tools of the trade of enumeration. The generating function of a sequence, sometimes called its ztransform, is a discrete analogue of the laplace transform [III.91](/part-03/transforms), and indeed goes back to laplace [VI.23](/part-06/pierre-simon-laplace-17491827) himself.
+According to Wilf, who coined this neologism by making it the title of his classic book (a free download from his Web site, even though it is still in print !) : A generating function is a clothesline on which we hang up a sequence of numbers for display. The method of generating functions is one of the most useful tools of the trade of enumeration. The generating function of a sequence, some times called its ztransform, is a discrete analogue of the laplace transform [III.91](/part-03/transforms), and indeed goes back to laplace [VI.23](/part-06/pierre-simon-laplace-17491827) himself.
 If the sequence is (a n) $\infty$ , then its generat$n = 0\infty$
 
 ing function f (x) is defined to be n $= {}^{0}$ a n x n . In other words, the terms of the sequence are regarded as the coefficients of a power series in x.
@@ -177,7 +177,7 @@ According to the modern approach, pioneered by Pólya, Tutte, and Schützenberge
 
 $\infty$
 
-A power series n $= {}^{0}$ a n x n is called formal when one sheds its analytical connotation as a Taylor series of a function, and thereby obviates the need to worry about convergence. For example, the sum n $= {}^{0}$ n! n! x n is perfectly legal as a formal power series even though it converges only when $x = 0$ . As for weight enumerators, consider the following situation. Suppose that we want to study the age distribution of a finite population. One way of doing this is to ask $121$ questions. For each $i$ between $0$ and $120$ , we ask those whose age is i to raise their hand.
+A power series n $= {}^{0}$ a n x n is called formal when one sheds its analytical connotation as a Taylor series of a function, and there by obviates the need to worry about convergence. For example, the sum n $= {}^{0}$ n! n! x n is perfectly legal as a formal power series even though it converges only when $x = 0$ . As for weight enumerators, consider the following situation. Suppose that we want to study the age distribution of a finite population. One way of doing this is to ask $121$ questions. For each $i$ between $0$ and $120$ , we ask those whose age is i to raise their hand.
 Then we count each of these age-groups one by one, compiling
 
 IV.18.   Enumerative and Algebraic Combinatorics                                                                           553
@@ -288,7 +288,7 @@ extracting the coefficients of the generating function
                                                                             where the coefficients ci (n) are polynomial in n,
 from the equation it satisfies, now called the Lagrange
                                                                             then it is said to be P-recursive. (For example, an =
-inversion formula. Using it one can easily show that the
+in version formula. Using it one can easily show that the
                                                                             n! is P-recursive since we have the recurrence an =
 number of complete k-ary trees with (k−1)m+1 leaves
                                                                             nan−1 .) If this is the case, then f (x) is D-finite,
@@ -346,8 +346,8 @@ $w^{n} =$ / $2k k$ ! $2^{k}$
 
 k
 
-Nowadays such sums can be handled completely automatically, and if one inputs this sum to the Maple package EKHAD (downloadable from my Web site), one would get the recurrence $w^{n} = w^{n} - {}^{1} + (n - 1)w^{n} - {}^{2}$ as the output, together with a (completely rigorous !) proof. While the so-called Wilf-Zeilberger (WZ) method is able to handle many such problems, there are many other cases where one still needs a human proof. In either case such proofs involve (algebraic , and sometimes analytic) manipulations.
-The great combinatorial i st Adriano Garsia derogatorily calls such proofs “manipulatorics,” and real enumerators do not manipulate, or at least try to avoid it whenever possible. The preferred method of proof is by bijection [I.2](/part-01/language-and-grammar). Suppose one has to prove that $|A^{n}| = |B^{n}|$ for every n, where A n and B n are combinatorial families. The “ugly way” is to get, by some means or other, algebraic or analytic expressions for $a^{n} = |A^{n}|$ and $b^{n} = |B^{n}|$ .
+Nowadays such sums can be handled completely automatically, and if one inputs this sum to the Maple package EKHAD (downloadable from my Web site), one would get the recurrence $w^{n} = w^{n} - {}^{1} + (n - 1)w^{n} - {}^{2}$ as the output, together with a (completely rigorous !) proof. While the so-called Wilf-Zeilberger (WZ) method is able to handle many such problems, there are many other cases where one still needs a human proof. In either case such proofs involve (algebraic , and some times analytic) manipulations.
+The great combinatorialist Adriano Garsia derogatorily calls such proofs “manipulatorics,” and real enumerators do not manipulate, or at least try to avoid it whenever possible. The preferred method of proof is by bijection [I.2](/part-01/language-and-grammar). Suppose one has to prove that $|A^{n}| = |B^{n}|$ for every n, where A n and B n are combinatorial families. The “ugly way” is to get, by some means or other, algebraic or analytic expressions for $a^{n} = |A^{n}|$ and $b^{n} = |B^{n}|$ .
 Then one manipulates a n , getting another expression a n , which in turn leads to yet another expression a n , and if one is patient enough, and clever enough, and in luck, or if the problem is not too deep, one eventually arrives at b n , and the result follows. On the other hand, the nice way of proving that $|A^{n}| = |B^{n}|$ is by constructing a ( preferably nice) bijection T n : A n $\to$ B n , which immediately implies, as a corollary, that $|A^{n}| = |B^{n}|$ . In addition to being more aesthetically pleasing, a bijective proof is also philosophically more satisfactory.
 In fact, the notion of (cardinal) number is a highly sophisticated derived notion based on the much more $555$ basic notion of being in bijection. Indeed, according to frege [VI.56](/part-06/gottlob-frege-18481925), the cardinal numbers are equivalence classes, where the equivalence relation [I.2](/part-01/language-and-grammar) is “is in bijective correspondence with.” Saharon Shelah said that people have been exchanging objects, in a one-to-one way, since long before they started to count.
 Also, a bijective proof explains why the two sets are equinumerous, as opposed to just certifying the formal correctness of this fact. For example, suppose that Noah had wanted to prove that there were as many male as female creatures in his Ark. One way of proving this would have been to count the males and count the females, and check that the two resulting numbers were indeed the same. But a much better, conceptual, proof would have been to note that there is an obvious one-to-one correspondence between the set M of males and the set F of females: the function w :
@@ -422,7 +422,7 @@ no analysis need be involved: everything makes sense               Husband Of (w
 in the completely elementary and much more rigorous                extramarital affairs, but only one per person, and all
 (from the philosophical viewpoint) algebra of formal               within the village. There is a natural bijection from the
 power series. One still needs to worry about conver-               set of cheating men to the set of cheating women, called
-gence, so as to exclude, for example, an infinite product           m → Mistress Of (m), with its inverse w → Lover Of (w).
+gence, so as to exclude, for example, an infinite product           m → Mi stress Of (m), with its inverse w → Lover Of (w).
 
 . nfty
 like i=0 (1 + x), but the notion of convergence in the             It follows that there are as many faithful men as there
@@ -439,7 +439,7 @@ Given a distinct partition, write each of its parts as             pub with my l
 3 + 3 + 3 + 3.) The output is obviously a partition of the         agrees. If she is not he keeps asking the wife of the lover
 same integer n, but now into odd parts. For example,               of the woman who has just rejected his proposal. Since
 the partition (10, 5, 4) is transformed to the new par-            the village is finite, he will eventually get to a faithful
-tition (5, 5, 5, 1, 1, 1, 1). To define the inverse transfor-       woman.
+tition (5, 5, 5, 1, 1, 1, 1). To define the inverse trans for-       woman.
 mation, take an odd part a and count how many times                   The reaction of the combinatorial enumeration com-
 it shows up. If it shows up m times, then write m in               munity to the involution principle was mixed. On the
 binary notation, m = 2 s1 + · · · + 2 sk , and replace the m         one hand it had the universal appeal of a general prin-
@@ -457,7 +457,7 @@ $IV$ . $18$ .
 Enumerative and Algebraic Combinatorics
 
 “involution-principle-free proof.” This is the case, for instance, with the celebrated Rogers-Ramanujan identity, which states that the number of partitions of an integer into parts that leave remainder $1$ or $4$ when divided by $5$ equals the number of partitions of that integer with the property that the difference between any two parts is at least $2$ . For example, if $n = 7$ the cardinalities of 61 , 4111 , 1111111$and 7 ,$61 , $52$ are the same.
-Garsia and Milne invented their notorious principle in order to give a Rogers-Ramanujan bijection, thereby winning a 50 prize from George Andrews. However, finding a really nice bijective proof is still an open problem. A quintessential example of a bijective proof is Prüfer’s proof of cayley’s [VI.46](/part-06/arthur-cayley-18211895) celebrated result that there are n n $- 2$ labeled trees on n vertices (example (v) earlier) . Recall that a labeled tree is a labeled connected simple graph without cycles. Every tree has at least two vertices with only one neighbor (these are called leaves).
+Garsia and Milne invented their notorious principle in order to give a Rogers-Ramanujan bijection, there by winning a 50 prize from George Andrews. However, finding a really nice bijective proof is still an open problem. A quintessential example of a bijective proof is Prüfer’s proof of cayley’s [VI.46](/part-06/arthur-cayley-18211895) celebrated result that there are n n $- 2$ labeled trees on n vertices (example (v) earlier) . Recall that a labeled tree is a labeled connected simple graph with out cycles. Every tree has at least two vertices with only one neighbor (these are called leaves).
 A certain mapping called the Prüfer bijection associates with every labeled tree T a vector of integers ( a1$, . . . , a^{n}$ - 2), with $1 \le$ ai$\le n$ for each i. This vector is called its Prüfer code. Since there are n n $- 2$ such vectors, Cayley’s formula follows once we have defined the mapping f : Trees $\to$ Codes and proved that it is indeed a bijection. This really needs four steps: defining f , defining its alleged inverse map g, and proving that g ◦ $f$ and $f$ ◦ g are the identity maps on their respective domains. The mapping f is defined recursively as follows.
 If the tree has $2$ vertices, then its code is the empty sequence. Otherwise, let $a_{1}$ be the (sole) neighbor of the smallest leaf and let ($a_{2}$ , . . . , a n $- 2$ ) be the code of the smaller tree obtained by deleting that leaf. $5$ Exponential Generating Functions So far, when we have discussed generating functions, we have been talking about ordinary generating functions (or OGFs) . These are ideally suited for counting ordered structures like integer partitions, ordered trees, and words. But many combinatorial families are really sets, where the order is immaterial.
 For these the natural concept is that of an exponential generating function (or EGF). The EGF of a sequence { a (n) } $\infty n = 0$ is defined to be $\infty$ a (n) x n . n! $n = 0$ Labeled objects can be often viewed as sets of smaller irreducible objects. For example, a permutation is the $557$ disjoint union of cycles, a set partition is the disjoint union of nonempty sets, a (labeled) forest is the disjoint union of labeled trees, and so on.
@@ -594,7 +594,7 @@ all pairs is 1, which explains the right-hand side.                     families
    Yet another application of this method is a proof                    One way would be to define some “canonical head” of
 of André’s generating function for the number of up–                    each family, say “mother,” and count the number of
 down permutations. A permutation of a1 · · · an is                      mothers. But some daughters look like mothers, so this
-called up–down (or sometimes zigzag) if a1 < a2 >                       is not so easy. On the other hand, you cannot just count
+called up–down (or some times zigzag) if a1 < a2 >                       is not so easy. On the other hand, you cannot just count
 a3 < a4 > a5 < · · · . Let an be the number of up–down                  everybody, since then you would count each family sev-
 permutations. Then                                                      eral times. The problem is that “naive” counting of peo-
                  . nfty
@@ -624,7 +624,7 @@ the number of labeled (simple) graphs on n vertices                     of membe
 (example (vi)) is trivially 2 n(n−1)/2 , but how many un-
                                                                                      Fix(a) = {g ∈ G | g(a) = a}.
 labeled graphs are there on n vertices? This is much
-harder, and in general there are no “nice” answers, but                 (This is sometimes known as the stabilizer of a.) To
+harder, and in general there are no “nice” answers, but                 (This is some times known as the stabilizer of a.) To
 the best known way is via a powerful technique initi-                   each element b = ga in the orbit of a, we can asso-
 ated by Pólya, which was largely anticipated by Red-                    ciate the left coset g Fix(a) of Fix(a). This association
 field. Pólya enumeration lends itself very efficiently to                  turns out to be a well-defined one-to-one correspon-
@@ -667,7 +667,7 @@ since an equivalence class of colorings is simply an orbit of one of the colorin
 
 IV. Branches of Mathematics
 
-Here is a simple application. How many necklaces (without a clasp) are there that consist of p beads (where p is a prime) and that use a different colors? The underlying set is 0 , . . . , $p - 1$ , and the symmetry group is Z p , the cyclic group of order p. As usual, regard the elements of the symmetry group as permutations of the set of beads. Since p is a prime, there are p $- 1$ elements of Z p with one cycle (of length p), and one element (the identity permutation) with p cycles (all of length $1$ ). It follows that the number of necklaces is
+Here is a simple application. How many necklaces (with out a clasp) are there that consist of p beads (where p is a prime) and that use a different colors? The underlying set is 0 , . . . , $p - 1$ , and the symmetry group is Z p , the cyclic group of order p. As usual, regard the elements of the symmetry group as permutations of the set of beads. Since p is a prime, there are p $- 1$ elements of Z p with one cycle (of length p), and one element (the identity permutation) with p cycles (all of length $1$ ). It follows that the number of necklaces is
 
 $a^{p} - a1 ( (p - 1)$ · $a + 1$ · $a^{p}) = a +$ / p
 
@@ -680,23 +680,23 @@ $6$ . $1$
 
 The Principle of Inclusion-Exclusion and
 
-Möbius Inversion
+Möbius In version
 
-Another pillar of enumeration is the principle of inclusion-exclusion (nicknamed PIE). Suppose that there are n sins, $s^{1}$ , . . . , s n , that a person may succumb to, and suppose that for each set of sins S, A S is the set of people who have all the sins in S (and possibly others). Then the number of good people (without sins) is $( - 1)|S||A^{S}|$ . S For example, if the set A is the set of all permutations
+Another pillar of enumeration is the principle of inclusion-exclusion (nicknamed PIE). Suppose that there are n sins, $s^{1}$ , . . . , s n , that a person may succumb to, and suppose that for each set of sins S, A S is the set of people who have all the sins in S (and possibly others). Then the number of good people (with out sins) is $( - 1)|S||A^{S}|$ . S For example, if the set A is the set of all permutations
 
-$\pi$ of 1 , . . . , n} and the ith sin is having $\pi$ [i ] =  i, then $|A^{S}| = (n - |S|)$ ! , and we get that the number of derangements (permutations without fixed points) is n $n_{1}$ n ( - 1)k( - 1)k , $(n - k)$ ! $= n!$ k! k $k = 0k = 0$
+$\pi$ of 1 , . . . , n} and the ith sin is having $\pi$ [i ] =  i, then $|A^{S}| = (n - |S|)$ ! , and we get that the number of derangements (permutations with out fixed points) is n $n_{1}$ n ( - 1)k( - 1)k , $(n - k)$ ! $= n!$ k! k $k = 0k = 0$
 
 IV.18.   Enumerative and Algebraic Combinatorics                                                                         561
 
 which yields the answer : “closest integer to n!/e.” This    an array of k left-justified rows with λ1 entries in the
-is sometimes called the “umbrella problem”: if on a          first row, λ2 entries in the second row, and so on, such
+is some times called the “umbrella problem”: if on a          first row, λ2 entries in the second row, and so on, such
 rainy day n absent-minded people go to a party and           that every row and every column is increasing, and the
 leave an umbrella by the door, and if on their depar-        set of entries is {1, 2, . . . , n}. For example, there are two
 ture they each take a random umbrella, then the prob-        standard Young tableaux whose shape is 22,
 ability that nobody ends up with the right umbrella is                          1    2          1   3
 about 1/e.                                                                                               ,
                                                                                 3    4          2   4
-   The PIE is a special case of Möbius inversion on gen-
+   The PIE is a special case of Möbius in version on gen-
                                                              and three of shape 31,
 eral partially ordered sets (posets) where the poset hap-
 pens to be the Boolean lattice. This realization was pub-         1   2    3          1    2   4             1   3   4
@@ -704,7 +704,7 @@ pens to be the Boolean lattice. This realization was pub-         1   2    3    
 lished in a seminal paper by Rota (1964) and reprinted            4                   3                      2
 in his collected works. It is considered by many to be the   Let f. ambda be the number of standard Young tableaux of
 big bang that started modern algebraic combinatorics.        shape λ. For example, for n = 4: f4 = 1, f31 = 3, f22 =
-Möbius’s original inversion formula is recovered when        2, f211 = 3, and f1111 = 1. The sum of the squares of
+Möbius’s original in version formula is recovered when        2, f211 = 3, and f1111 = 1. The sum of the squares of
 the partially ordered set is N and the partial order is      these numbers is 12 + 32 + 22 + 32 + 12 = 24 = 4!.
 divisibility.                                                  The number f. ambda is the dimension of the irreducible
    A contemporary account of enumeration from the            representation parametrized by λ. It follows by a result
@@ -720,8 +720,8 @@ classical enumeration. The other route, “concretization      beautiful propert
 of the abstract,” is almost every where dense in math-        and Craige Schensted and later extended by Donald
 ematics, and cannot be described in a few pages. Let         Knuth, and is now known as the Robinson–Schensted–
 me quote from the preface of the excellent New Per-          Knuth correspondence. It inputs a permutation π =
-spectives in Algebraic Combinatorics by Billera et al.       π1 π2 · · · πn , and outputs a pair of Young tableaux of
-(1999).                                                      the same shape, thereby proving the identity.
+spec tiv es in Algebraic Combinatorics by Billera et al.       π1 π2 · · · πn , and outputs a pair of Young tableaux of
+(1999).                                                      the same shape, there by proving the identity.
                                                                Algebraic combinatorics is currently a very active
   Algebraic combinatorics involves the use of techniques     field, and as mathematics is becoming more and more
   from algebra, topology, and geometry in the solution       concrete, constructive, and algorithmic, there are going
@@ -730,7 +730,7 @@ spectives in Algebraic Combinatorics by Billera et al.       π1 π2 · · · π
   rial methods to attack problems in these areas. Prob-
                                                              in all areas of mathematics (and science!) and this
   lems amenable to the methods of algebraic combina-
-  torics arise in these or other areas of mathematics or     will guarantee that algebraic combinatorial is ts will stay
+  torics arise in these or other areas of mathematics or     will guarantee that algebraic combinatorialists will stay
   from diverse parts of applied mathematics. Because of      very busy for a long time to come.
   this interplay with many fields of mathematics, alge-
   braic combinatorics is an area in which a wide variety     Further Reading

@@ -36,7 +36,7 @@ analysis, or the new algebra”), which he offered with the
                                                            VI.10      Simon Stevin
 famous and ambitious hope of leaving no mathematical
                                                            b. Bruges, Belgium, 1548; d. The Hague, the Netherlands, 1620
-problem unsolved (nullum problema non solvere). For        Mathematics and science tutor to Maurice of Nassau,
+problem unsolved (nullum problem a non solvere). For        Mathematics and science tutor to Maurice of Nassau,
 most of the seventeenth century, algebra continued to      Prince of Orange
 be known as the “analytic art,” or simply “analysis.”
    Recognizing that not all equations could be solved      The Flemish mathematician and engineer Simon Stevin

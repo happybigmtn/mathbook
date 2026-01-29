@@ -36,12 +36,12 @@ dimensions greater than 4 are told in Lectures on          spaces such as the mo
 the h-Cobordism Theorem (Princeton University Press,       (which we discuss below) play a central role in a vari-
 Princeton, NJ, 1965), by J. Milnor, and Foundational       ety of areas that have no immediate link to the geom-
 Essays on Topological Manifolds, Smoothings and Tri-       etry being classified, in particular in algebraic num-
-                                                           ber theory [IV.1](/part-04/number-theory) and algebraic topology. Moreover,
+                                                           ber theory [IV.1](/part-04/number-theory) and algebraic topology. More over,
 angulations (Princeton University Press, Princeton, NJ,
                                                            the study of moduli spaces has benefited tremendously
 1977), by R. Kirby and L. Siebenman.
                                                            in recent years from interactions with physics (in par-
-                                                           ticular with string theory [IV.17 §2](/part-04/vertex-operator-algebras)). These interac-
+                                                           ticular with string theory [IV.17 §2](/part-04/vertex-operator-algebras)). These inter ac-
 IV.8 Moduli Spaces                                         tions have led to a variety of new questions and new
        David D. Ben-Zvi                                    techniques.
 
@@ -69,11 +69,11 @@ calculate for each line and that will help us tell different      The key featur
 lines apart. All we have to do is take standard Cartesian     moduli space of lines in the plane, is that it captures
 coordinates x, y on the plane and measure the angle           the ways in which lines can modulate, or vary continu-
 θ(L) between the line L and the x-axis, taken in coun-        ously in families. But when do families of lines arise?
-ter clockwise fashion. We find that the possible values         A good example is provided by the following construc-
+ter clockwise fashion. We find that the possible values         A good example is provided by the following con struc-
 of θ are those for which 0 ⩽ θ < π , and that for every       tion. Whenever we have a continuous curve C ⊂ R2 \ 0
 such θ there is exactly one line L that makes an angle        in the plane, we can assign to each point c in C the line
 of θ with the x-axis. So as a set, we have a complete         L(c) that passes through 0 and c. This gives us a family
-solution to our classification problem: the set of lines       of lines parametrized by C. Moreover, the function that
+solution to our classification problem: the set of lines       of lines parametrized by C. More over, the function that
 L, known as the real projective line RP1 , is in one-to-one   takes c to L(c) is a continuous function from C to RP1 ,
 correspondence with the half-open interval [0, π ).           so the parametrization is a continuous one.
                                                                  Suppose, for example, that C is a copy of R realized as
@@ -112,8 +112,8 @@ speaking, you obtain a circle.
                                                               metric structures on the space RP1 , and not just its
    A more natural way of achieving the same end is sug-       topological structure. For example, we have the notion
 gested by the following geometric construction of RP1 .       of a differentiable family of lines in the plane, which
-Consider the unit circle S 1 ⊂ R2 . To each point s ∈ S 1 ,   is a family of lines for which the angles vary differen-
-there is an obvious way of assigning a line L(s): take        tiably. (The same ideas apply if we replace “differen-
+Consider the unit circle S 1 ⊂ R2 . To each point s ∈ S 1 ,   is a family of lines for which the angles vary differ en-
+there is an obvious way of assigning a line L(s): take        tiably. (The same ideas apply if we replace “differ en-
 the line that passes through s and the origin. Thus, we       tiable” by “measurable,” “C . nfty ,” “real analytic,” etc.) To
 have a family of lines parametrized by S 1 , that is, a map   parametrize such a family appropriately, we would like
 (or function) s → L(s) that takes points in S 1 to lines     RP1 to be a differentiable manifold [I.3 §6.9](/part-01/fundamental-definitions), so that
@@ -178,7 +178,7 @@ X . imes R2 . We may now visualize the line L(x) as living in     from S 1 to it
 the copy of R2 that lies over x. This gives us a contin-     then work out L(c), which belongs to RP1 , and finally
 uously varying collection of lines L(x) parametrized         use the parametrization of RP1 to associate with L(c) a
 by x ∈ X, otherwise known as a line bundle over X.           point in S 1 again. The degree of the resulting compos-
-Moreover, this line bundle is embedded in the “trivial”      ite map will be twice the number of times that γ, and
+More over, this line bundle is embedded in the “trivial”      ite map will be twice the number of times that γ, and
 vector bundle [IV.6 §5](/part-04/algebraic-topology) X . imes R2 , which is the constant       hence C, winds around 0, so half this number is defined
 assignment that takes each x to the plane R2 . In the        to be the winding number of γ.
 case when X is RP1 itself, we have a “tautological” line        More generally, given a family of lines in R2 parame-
@@ -236,7 +236,7 @@ $IV$ . $8$ .
 
 Moduli Spaces
 
-as a group, these are achieved by translations .) Thus, if someone hands us another genus - $1$ surface E , there may be no way to identify E with E , or there may be infinitely many ways: we can always compose a given isomorphism between them with a self-symmetry of E. As we will discuss later, automorphisms haunt almost every moduli problem, and are crucial when we consider the behavior of families. It is usually convenient to “rigidify” the situation somewhat, so that the possible isomorphisms between different objects are less “floppy” and more uniquely determined.
+as a group, these are achieved by translations .) Thus, if some one hands us another genus - $1$ surface E , there may be no way to identify E with E , or there may be infinitely many ways: we can always compose a given isomorphism between them with a self-symmetry of E. As we will discuss later, automorphisms haunt almost every moduli problem, and are crucial when we consider the behavior of families. It is usually convenient to “rigidify” the situation some what, so that the possible isomorphisms between different objects are less “floppy” and more uniquely determined.
 In the case of elliptic curves, distinguishing the point e achieves this by reducing the symmetry of E. Once we do that, there is usually at most one way to identify two elliptic curves (one way, that is, that takes origin to origin). We see that Riemann surfaces of genus $1$ (with the choice of a marked point) can be described by concrete “linear algebra data”: a lattice L ⊂ C , or rather the equivalence class consisting of all nonzero scalar multiples $\lambda L$ of L. This is the ideal setting to study a classification, or moduli, problem.
 The next step is to find an explicit parametrization of the collection of all lattices, up to multiplication, and to decide in what sense we have obtained a geometric solution to the classification problem. In order to parametrize the collection of lattices, we follow a procedure used for all moduli problems: first parametrize lattices together with the choice of some additional structure, and then see what happens when we forget this choice. For every lattice L we choose a basis $ω^{1}$ , $ω^{2} \in L:$ that is, we represent L as the set of all integer combinations $aω^{1} + bω^{2}$ .
 We do this in an oriented fashion: we require that the fundamental parallelogram spanned by $ω^{1}$ and $ω^{2}$ is positively oriented. (That is, the numbers $0$ , $ω^{1}$ , $ω^{1} + ω^{2}$ , and $ω^{2}$ list the vertices of the parallelogram in a counter clockwise order.
@@ -304,8 +304,8 @@ for continuous or algebraic families).
                                                             for the classification of elliptic curves when we choose
    As a reality check, note that a (continuous, analytic,   in addition a marking (that is, an oriented basis of the
 or other) family of Riemann surfaces parametrized by        associated lattice L = π1 (E)). What can we say about
-a single point s = S is indeed just a single Riemann        elliptic curves themselves, without the choice of mark-
-surface Xs . Just as in this simple case we wish to con-    ing? We somehow need to “forget” the marking, by
+a single point s = S is indeed just a single Riemann        elliptic curves themselves, with out the choice of mark-
+surface Xs . Just as in this simple case we wish to con-    ing? We some how need to “forget” the marking, by
 sider Riemann surfaces only up to equivalence, so there     regarding two points of H as equivalent if they corre-
 is a notion of equivalence or isomorphism of two ana-       spond to two different markings of the same elliptic
 lytic families {Xs } and {Xs } parametrized by the same     curve.
@@ -405,7 +405,7 @@ the complications caused by automorphisms. A variant             tures). Two of 
 of this construction applies to complex-analytic fami-           there is a complex-analytic isomorphism between them
 lies with S 1 replaced by C× . This is a very general phe-       that takes punctures to punctures and preserves labels.
 nomenon in moduli problems: whenever objects have                Since there are Riemann surfaces with automorphisms,
-nontrivial automorphisms, we can imitate the construc-           we do not expect Mg to be able to classify all families
+nontrivial automorphisms, we can imitate the con struc-           we do not expect Mg to be able to classify all families
 tion above to get nontrivial families over an interesting        of Riemann surfaces: that is, we will expect examples
 parameter set, all of whose members are the same. As             similar to the twisted square-lattice construction dis-
 a result, they cannot be classified by a map to the set           cussed earlier. However, if we consider Riemann sur-
@@ -414,7 +414,7 @@ of all isomorphism classes.                                      faces with enou
 is to resign ourselves to having coarse moduli spaces,           way to choose such markings is to consider Mg, n with
 which have the right points and right geometry but do            n large enough (for fixed g). Another approach will be
 not quite classify arbitrary families. Another approach          to mark generators of the fundamental group, leading
-is the one that leads to T1,1 : we can fix markings of            to the Teichmüller spaces Tg and Tg, n . We now outline
+is the one that leads to T1,1 : we can fix markings of            to the Teichmüller spaces Tg and Tg, n . We now out line
 one kind or another, which “kill” all automorphisms.             this process.
 In other words, we choose enough extra structure on                 To construct the space Mg , we return to the uni-
 our objects so that there do not remain any (nontriv-            form ization theorem. Any compact surface X of genus
@@ -437,7 +437,7 @@ is the identity. A subgroup Γ ⊂ PSL2 (R) that acts on H in                  T
 such a way that the quotient H/Γ is a Riemann surface                       Similarly, a complex manifold M provides a machine
 (technically, the action should have no fixed points and                     that assigns to any other complex manifold S the set of
 should be properly discontinuous) is known as a fuch-                       complex-analytic maps from S to M. A curious discov-
-sian group [III.28](/part-03/fuchsian-groups). Thus, the analogue of the represen-                    ery of category theory (the Yoneda lemma) is that for
+sian group [III.28](/part-03/fuchsian-groups). Thus, the analogue of the re pre sen-                    ery of category theory (the Yoneda lemma) is that for
 tation of elliptic curves by lattices L ≃ Z ⊕ Z in the plane                very general reasons (having nothing to do with geom-
 is the representation of higher-genus Riemann surfaces                      etry), these machines (or functors) uniquely determine
 as H/Γ , where Γ is a Fuchsian group.                                       M as a space, or a complex manifold.
@@ -491,7 +491,7 @@ between these points, the set of surfaces spanning
                                                                             müller space as the subset of the representation vari-
 these paths, and so on. To put it differently, we can
                                                                             ety that consists of Fuchsian representations of Γg into
-                                                                            PSL2 (R). Luckily this subset is open in the represen-
+                                                                            PSL2 (R). Luckily this subset is open in the re pre sen-
   1. Note that while the fundamental group of X depends on the
 choice of a basepoint, π1 (X, x) and π1 (X, y) may be identified by          tation variety, which gives a nice realization of Tg as
 choosing a path from x to y, and the different choices are related by        a topological space—in fact, Tg is homeomorphic to
@@ -514,19 +514,19 @@ class group MCGg or Teichmüller modular group, on            that the fundament
 Tg , which generalizes the modular group PSL2 (Z) that       longer Abelian, and in particular it is no longer equal to
 acts on H = T1,1 . (The mapping class group is defined        the first homology group H1 (X, Z). A related problem is
 as the group of all self-diffeomorphisms of a genus-g         that X is no longer a group. A beautiful solution to this
-surface—remember that all such surfaces are topolog-         problem is given by the construction of the Jacobian
+surface—remember that all such surfaces are topolog-         problem is given by the construction of the Jacobi an
 ically the same—modulo those diffeomorphisms that             Jac(X), which shares with elliptic curves the properties
 act trivially on the fundamental group.) As in the case of   of being a torus (homeomorphic to (S 1 )2 g ), an Abelian
 elliptic curves, Riemann surfaces with automorphisms         group, and a complex (in fact complex-algebraic) man-
-correspond to points in Tg fixed by some subgroup of          ifold. (The Jacobian of an elliptic curve is the elliptic
-MCGg , and give rise to singular points in the quotient      curve itself.) The Jacobian captures the “Abelian” or
+correspond to points in Tg fixed by some subgroup of          ifold. (The Jacobi an of an elliptic curve is the elliptic
+MCGg , and give rise to singular points in the quotient      curve itself.) The Jacobi an captures the “Abelian” or
 Mg = Tg / MCGg .                                             “linear” aspects of the geometry of X. There is a mod-
    Representation varieties, or moduli spaces of repre-      uli space Ag for such complex-algebraic tori (known as
 sentations, are an important and concrete class of mod-      Abelian varieties), which does share all of the nice prop-
 uli spaces that arise through out geometry, topology,         erties and linear algebraic description of the moduli of
 and number theory. Given any (discrete) group Γ , we         elliptic curves M1,1 = A1 . The good news—the Torelli
 ask (for example) for a space that parametrizes homo-        theorem—is that by assigning to each Riemann surface
-morphisms of Γ into the group of n . imes n matrices. The         X its Jacobian we embed Mg as a closed, complex-
+morphisms of Γ into the group of n . imes n matrices. The         X its Jacobi an we embed Mg as a closed, complex-
 notion of equivalence is given by conjugation by GLn ,       analytic subset of Ag . The interesting news—the Schot-
 and that of families by continuous (or analytic, or alge-    tky problem—is that the image is quite complicated
 braic, etc.) families of matrices. This problem is inter-    to characterize intrinsically. In fact, solutions to this

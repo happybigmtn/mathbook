@@ -16,9 +16,9 @@ what mathematics is by describing many of its most
                                                             ics that results when you substitute letters for num-
 important concepts, theorems, and applications. Nev-
                                                             bers. Algebra will often be contrasted with arithmetic,
-ertheless, to make sense of all this information it is
+er the less, to make sense of all this information it is
                                                             which is a more direct study of the numbers them-
-useful to be able to classify it somehow.
+useful to be able to classify it some how.
                                                             selves. So, for example, the question, “What is 3 . imes 7?”
    The most obvious way of classifying mathematics is
                                                             will be thought of as belonging to arithmetic, while the
@@ -31,8 +31,8 @@ entitled some fundamental mathematical defini-
 tions [I.3](/part-01/fundamental-definitions). However, it is not the only way, and not
                                                             advanced mathematics for the simple reason that it is
 even obviously the best way. Another approach is to
-                                                            very rare for numbers to appear without letters to keep
-try to classify the kinds of questions that mathemati-
+                                                            very rare for numbers to appear with out letters to keep
+try to classify the kinds of questions that mathemat i-
                                                             them company.
 cians like to think about. This gives a usefully different
                                                                There is, however, a different contrast, between alge-
@@ -49,7 +49,7 @@ The last section of part I, entitled the general goals
 of mathematical research [I.4](/part-01/general-goals), looks at the subject
                                                             the objects of geometry, and the processes that they
 from this point of view. At the end of that article there
-                                                            undergo, have a much more visual character than the
+                                                            under go, have a much more visual character than the
 is a brief discussion of what one might regard as a third
                                                             equations of algebra.
 classification, not so much of mathematics itself but of
@@ -63,7 +63,7 @@ contain definitions, examples, lemmas, formulas, con-
 jectures, and so on. The point of that discussion will
                                                             if you “do the same to both sides.” These parts would
 be to say what these words mean and why the different
-                                                            typically be thought of as algebraic, whereas other parts
+                                                            typically be thought of as algebraic, where as other parts
 kinds of mathematical output are important.
                                                             are concerned with concepts that can be visualized, and
                                                             these are typically thought of as geometrical.
@@ -71,7 +71,7 @@ kinds of mathematical output are important.
                                                                However, a distinction like this is never simple. If
 Although any classification of the subject matter of         you look at a typical research paper in geometry, will
 mathematics must immediately be hedged around with          it be full of pictures? Almost certainly not. In fact, the
-qualifications, there is a crude division that undoubt-      methods used to solve geometrical problems very often
+qualifications, there is a crude division that un doubt-      methods used to solve geometrical problems very often
 edly works well as a first approximation, namely the         involve a great deal of symbolic manipulation, although
 
 2                                                                                                        I. Introduction
@@ -83,10 +83,10 @@ bolic manipulation? Not at all: very often one solves an       tion T , then the
 algebraic problem by finding a way to visualize it.             tion that results when you first do T and then R. There-
    As an example of visualizing an algebraic problem,          fore, one can solve the problem above by writing down
 consider how one might justify the rule that if a and          the matrices that correspond to the transformations,
-b are positive integers then ab = ba. It is possible to        multiplying them together, and seeing what transfor-
+b are positive integers then ab = ba. It is possible to        multiplying them together, and seeing what trans for-
 approach the problem as a pure piece of algebra (per-          mation corresponds to the product. In this way, the
 haps proving it by induction), but the easiest way to          geometrical problem has been converted into algebra
-convince yourself that it is true is to imagine a rectangu-    and solved algebraically.
+convince your self that it is true is to imagine a rectangu-    and solved algebraically.
 lar array that consists of a rows with b objects in each          Thus, while one can draw a useful distinction be-
 row. The total number of objects can be thought of as          tween algebra and geometry, one should not imagine
 a lots of b, if you count it row by row, or as b lots of a,    that the boundary between the two is sharply defined.
@@ -115,9 +115,9 @@ you will see is a circle being rotated clockwise through       gradients of a se
 up, by rotating about L once again, the total effect will       to be the limit of the areas of rectilinear regions that
 have been a clockwise rotation through 40◦ .                   fill up more and more of the shape. (These concepts
    Mathematicians vary widely in their ability and will-       are discussed in much more detail in [I.3 §5](/part-01/fundamental-definitions).)
-ingness to follow an argument like that one. If you               Thus, as a first approximation, one might say that a
+in gness to follow an argument like that one. If you               Thus, as a first approximation, one might say that a
 cannot quite visualize it well enough to see that it is        branch of mathematics belongs to analysis if it involves
-definitely correct, then you may prefer an algebraic            limiting processes, whereas it belongs to algebra if you
+definitely correct, then you may prefer an algebraic            limiting processes, where as it belongs to algebra if you
 approach, using the theory of linear algebra and matri-        can get to the answer after just a finite sequence of
 ces (which will be discussed in more detail in [I.3 §3.2](/part-01/fundamental-definitions)).    steps. However, here again the first approximation is
 To begin with, one thinks of the circle as the set of all      so crude as to be misleading, and for a similar reason:
@@ -145,7 +145,7 @@ which works out as $3x^{2} + 3xh + h^{2}$ . As h “tends to zero,” this gradi
 Suppose we fix a small positive number  , which represents the error we are prepared to tolerate. Then if $|h| \le/6x$ , we know that $|3xh|$ is at most   $/2$ . If in addition we know that $|h| \le/2$ , then we also know that $h^{2} \le/2$ . So, provided that |h| is smaller than the minimum of the two numbers   $/6x$ and   $/2$ , the difference between $3x^{2} + 3xh + h^{2}$ and $3x^{2}$ will be at most  . There are two features of the above argument that are typical of analysis.
 First, although the statement we wished to prove was about a limiting process, and was therefore “infinitary,” the actual work that we needed to do to prove it was entirely finite. Second, the nature of that work was to find sufficient conditions for a certain fairly simple inequality (the inequality $|3xh + h^{2}| \le$ ) to be true. Let us illustrate this second feature with another example: a proof that $x^{4} - x^{2} - 6x + 10$ is positive for every real number x.
 Here is an “analyst’s argument.” Note first that if $x \le - 1$ then $x^{4} \ge x^{2}$ and $10 - 6x \ge 0$ , so the result is certainly true in this case. If $- 1 \le x \le 1$ , then $|x^{4} - x^{2} - 6x|$ cannot be greater than $x^{4} + x^{2} + 6|x|$ , which is at most $8$ , so $x^{4} - x^{2} - 6x \ge - 8$ , which implies that $x^{4} - x^{2} - 6x + 10 \ge 2$ . If $1 \le x \le \frac{3}{2}$ , then $x^{4} \ge x^{2}$ and $6x \le 9$ , so $x^{4} - x^{2} - 6x + 10 \ge 1$ . If $\frac{3}{2} \le x \le 2$ , then $x^{2} \ge \frac{9}{4}$ , so $x^{4} - x^{2} = x^{2}(x^{2} - 1) \ge954$ · $4 > 2$ .
-Also, $6x \le 12$ , so $10 - 6x \ge - 2$ . Therefore, $x^{4} - x^{2} - 6x + 10 > 0$ . Finally, if $x \ge 2$ , then $x^{4} - x^{2} = x^{2}(x^{2} - 1) \ge 3x^{2} \ge 6x$ , from which it follows that $x^{4} - x^{2} - 6x + 10 \ge 10$ . The above argument is somewhat long, but each step consists in proving a rather simple inequality--this is the sense in which the proof is typical of analysis. Here, for contrast, is an “algebraist’s proof.” One
+Also, $6x \le 12$ , so $10 - 6x \ge - 2$ . Therefore, $x^{4} - x^{2} - 6x + 10 > 0$ . Finally, if $x \ge 2$ , then $x^{4} - x^{2} = x^{2}(x^{2} - 1) \ge 3x^{2} \ge 6x$ , from which it follows that $x^{4} - x^{2} - 6x + 10 \ge 10$ . The above argument is some what long, but each step consists in proving a rather simple inequality--this is the sense in which the proof is typical of analysis. Here, for contrast, is an “algebraist’s proof.” One
 
 $3$
 
@@ -207,7 +207,7 @@ complicated group of symmetries, while another might
 be interested in the general theory of groups on the
                                                              most abstract parts of the subject can have down-to-
 grounds that they are a fundamental class of math-
-                                                             earth applications: a notable example is Andrew Wiles’s
+                                                             earth applications: a not able example is Andrew Wiles’s
 ematical objects. The development of abstract alge-
                                                              famous proof of fermat’s last theorem [V.10](/part-05/fermats-last-theorem).
 bra from its concrete beginnings is discussed in the
@@ -257,7 +257,7 @@ This results in a finer classification of manifolds and a       [IV.12](/part-04
 different set of problems. At the other, more “geomet-         tions were found to govern many physical processes,
 rical,” end of the spectrum are mathematicians who are        such as motion in a gravitational field, for example.
 much more interested in the precise nature of the dis-        But partial differential equations arise in purely mathe-
-tances between points on a manifold (a concept that           matical contexts as well—particularly in geometry—so
+tances between points on a manifold (a concept that           mat ical contexts as well—particularly in geometry—so
 would not make sense to a topologist) and in auxiliary        they give rise to a big branch of mathematics with many
 structures that one can associate with a manifold. See        subbranches and links to many other areas.
 riemannian metrics [I.3 §6.10](/part-01/fundamental-definitions) and ricci flow [III.78](/part-03/ricci-flow)            Like algebra, analysis has an abstract side as well. In
@@ -289,8 +289,8 @@ ter how small the neighborhood is, you will still see the     how it depends on 
 
 6                                                                                                      I. Introduction
 
-  Sometimes the process to be repeated is an “infinites-    applicable and has led to important discoveries in fields
-imal” one. For example, if you are told the positions,     well outside set theory.
+  Some times the process to be repeated is an “infinit es-    applicable and has led to important discoveries in fields
+imal” one. For example, if you are told the positions,     well out side set theory.
 velocities, and masses of all the planets in the solar
 system at a particular moment (as well as the mass of      2.7   Combinatorics
 the Sun), then there is a simple rule that tells you how
@@ -312,12 +312,12 @@ of partial differential equations and therefore much of
 dynamics is concerned with the long-term behavior of
                                                            something, it is, in a rather simple sense, combinatorial.
 solutions to these.
-                                                              Combinatorics is sometimes called “discrete math-
+                                                              Combinatorics is some times called “discrete math-
 2.6   Logic                                                ematics” because it is concerned with “discrete” struc-
                                                            tures as opposed to “continuous” ones. Roughly speak-
-The word “logic” is sometimes used as a shorthand          ing, an object is discrete if it consists of points that
+The word “logic” is some times used as a shorthand          ing, an object is discrete if it consists of points that
 for all branches of mathematics that are concerned         are isolated from each other, and continuous if you
-with fundamental questions about mathematics itself,       can move from one point to another without making
+with fundamental questions about mathematics itself,       can move from one point to another with out making
 notably set theory [IV.22](/part-04/set-theory), category theory [III.8](/part-03/categories),       sudden jumps. (A good example of a discrete struc-
 model theory [IV.23](/part-04/logic-and-model-theory), and logic in the narrower sense      ture is the integer lattice Z2 , which is the grid con-
 of “rules of deduction.” Among the triumphs of set         sisting of all points in the plane with integer coordin-
@@ -346,7 +346,7 @@ them decidable. Thus, decidability is now studied for
 mathematical rather than philosophical reasons.
                                                               In order to illustrate this last contrast, here are
    Category theory is another subject that began as
-                                                           two somewhat similar problems, both about positive
+                                                           two some what similar problems, both about positive
 a study of the processes of mathematics and then
                                                            integers.
 became a mathematical subject in its own right. It dif-
@@ -369,7 +369,7 @@ answer, which turns out to be yes.1                                     relevanc
    The second question concerns a far less structured                   “critical probability” p with the following property: if
 sequence. All we know about an is its rough size—it is                  the probability of infection after contact of a certain
 fairly close to n2 —but we know nothing about its more                  kind is above p then an epidemic may very well result,
-detailed properties, such as whether it is a prime, or a                whereas if it is below p then the disease will almost
+detailed properties, such as whether it is a prime, or a                where as if it is below p then the disease will almost
 perfect cube, or a power of 2, etc. For this reason, the                certainly die out. A dramatic difference in behavior
 second problem belongs to combinatorics. The answer                     like this is called a phase transition. (See probabilis-
 is not known. If the answer turns out to be yes, then                   tic models of critical phenomena [IV.25] for further
@@ -388,12 +388,12 @@ of various resources, such as time and computer mem-
 ory, needed to perform given computational tasks.                       2.10   Mathematical Physics
 There are mathematical models of computation that
 allow one to study questions about computational effi-                    The relationship between mathematics and physics has
-ciency in great generality without having to worry about                changed profoundly over the centuries. Up to the eigh-
+ciency in great generality with out having to worry about                changed profoundly over the centuries. Up to the eigh-
 precise details of how algorithms are implemented.                      teenth century there was no sharp distinction drawn
 Thus, theoretical computer science is a genuine branch                  between mathematics and physics, and many famous
 of pure mathematics: in theory, one could be an excel-                  mathematicians could also be regarded as physicists,
 lent theoretical computer scientist and be unable to                    at least some of the time. During the nineteenth cen-
-program a computer. However, it has had many notable                    tury and the beginning of the twentieth century this
+program a computer. However, it has had many not able                    tury and the beginning of the twentieth century this
 applications as well, especially to cryptography (see                   situation gradually changed, until by the middle of the
 mathematics and cryptography [VII.7](/part-07/mathematics-and-cryptography) for more on                        twentieth century the two disciplines were very sepa-
 this).                                                                  rate. And then, toward the end of the twentieth cen-
@@ -404,7 +404,7 @@ There are many phenomena, from biology and eco-
                                                                            There is still a big cultural difference between the
 nomics to computer science and physics, that are so
 complicated that instead of trying to understand them                   two subjects: mathematicians are far more interested
-in complete detail one tries to make probabilistic state-               in finding rigorous proofs, whereas physicists, who use
+in complete detail one tries to make probabilistic state-               in finding rigorous proofs, where as physicists, who use
 ments instead. For example, if you wish to analyze how                  mathematics as a tool, are usually happy with a con-
 a disease is likely to spread, you cannot hope to take                  vincing argument for the truth of a mathematical state-
 account of all the relevant information (such as who will               ment, even if that argument is not actually a proof. The

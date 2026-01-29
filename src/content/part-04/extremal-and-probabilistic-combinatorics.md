@@ -16,13 +16,13 @@ Examples
 
 It is hard to give a rigorous definition of combinatorics. Instead, let us start with a few examples to illustrate what the area is about. (i) In the course of an examination of friendship between children some fifty years ago, the Hungarian sociologist Sandor Szalai observed that among any group of about twenty children he checked he could always find four children any two of whom were friends, or else four children no two of whom were friends.
 Despite the temptation to try to draw sociological conclusions, Szalai realized that this might well be a mathematical phenomenon rather than a sociological one. Indeed, a brief discussion with the mathematicians Erdős, Turán, and Sós convinced him this was the case. If X is any set of size $18$ or more, and R is some symmetric relation [I.2](/part-01/language-and-grammar) on X, then there is always a subset S of X of size $4$ with the following property: either x Ry for any two distinct elements x, y of S, or x Ry for no two distinct elements x, y of S.
-In this case, X is a set of children and R is the relation “is friends with.” This mathematical fact is a special case of Ramsey’s theorem, which was proved by the economist and mathematician Frank Plumpton Ramsey in 1930 . Ramsey’s theorem led to the development of Ramsey theory, a branch of extremal combinatorics, which will be discussed in the next section. (ii) In 1916 , Schur was studying fermat’s last theorem [V.10](/part-05/fermats-last-theorem). It is sometimes possible to prove that a Diophantine equation has no solutions by showing that it has no solutions mod p for some prime p.
+In this case, X is a set of children and R is the relation “is friends with.” This mathematical fact is a special case of Ramsey’s theorem, which was proved by the economist and mathematician Frank Plumpton Ramsey in 1930 . Ramsey’s theorem led to the development of Ramsey theory, a branch of extremal combinatorics, which will be discussed in the next section. (ii) In 1916 , Schur was studying fermat’s last theorem [V.10](/part-05/fermats-last-theorem). It is some times possible to prove that a Diophantine equation has no solutions by showing that it has no solutions mod p for some prime p.
 However, Schur proved that for every integer k and every sufficiently large prime p, there are three integers a, b, and c, none of them congruent to $0$ mod p, such that a k + b k is congruent to c k . Although this is a result in number theory, it has a relatively simple and purely combinatorial proof, which is another example of the many applications of Ramsey theory. (iii) When studying the number of real zeros of random polynomials, littlewood [VI.79](/part-06/john-edensor-littlewood-18851977) and Offord investigated in 1943 the following problem. Let $z^{1}$ , $z^{2}$ , . . .
 , z n be n not-necessarily-distinct complex numbers, IV. Branches of Mathematics each of modulus at least $1$ . One can form $2^{n}$ sums by taking some subset of these numbers and adding them together (with the convention that if one takes the empty set, then the sum is $0$ ). Littlewood and Offord wanted to know how many of these sums there could conceivably be such that the difference between any two of them had modulus less than $1$ . When $n = 2$ the answer is easily seen to be at most $2$ . There are four sums: $0$ , $z^{1}$ , $z^{2}$ , and $z^{1} + z^{2}$ .
 You cannot choose both of the first two or both of the last two or you will have a difference of $z^{1}$ , which has modulus at least $1$ . Kleitman Katona proved that in general the and n . Notice that a simple construction maximum is $n/ {}^{2}$ ! proves that this maximum can be achieved. Indeed, let $z^{1} = z^{2} =$ · · · $= z^{n}$ and choose all sums of precisely n such sums and they $n/2$ ! of them. There are $n/ {}^{2}$ ! are all equal.
 The proof that one cannot do better than this uses tools from another area of extremal combinatorics, where the basic objects studied are systems of finite sets. (iv) Consider a school in which there are m teachers $T^{1}$ , $T^{2}$ , . . . , T $m$ and $n$ classes $C^{1}$ , $C^{2}$ , . . . , C n . The teacher T i has to teach the class C j for a specified number p ij of lessons. What is the minimum possible number of periods in a complete timetable?
 Let d i denote the total number of lessons the teacher T i has to teach, and let c j denote the total number of lessons the class C j has to be taught. Clearly, the number of periods required for a complete schedule is at least as big as any d $i$ or $c$ j , and thus at least as big as the maximum of all these numbers, which we denote by d. It turns out that this obvious lower bound of d is also an upper bound: it is always possible to fit all the lessons that need to be taught into d periods. This is a consequence of König’s theorem, which is a basic result in graph theory.
-Suppose now that the situation is not so simple: for every teacher T i and every class C j there is some specified set of d periods in which the teaching has to take place. Can we always find a feasible timetable with these more complicated constraints? Recent breakthroughs from a subject known as list coloring of graphs imply that it is always possible. (v) Given a map with several countries represented, how many colors do you need if you want to color the countries without giving any two adjacent countries the same color?
+Suppose now that the situation is not so simple: for every teacher T i and every class C j there is some specified set of d periods in which the teaching has to take place. Can we always find a feasible timetable with these more complicated constraints? Recent breakthroughs from a subject known as list coloring of graphs imply that it is always possible. (v) Given a map with several countries represented, how many colors do you need if you want to color the countries with out giving any two adjacent countries the same color?
 Here we assume that each country forms a connected region in the plane. Of course, at least four colors may be necessary: think of Belgium, France, Germany, and Luxembourg, out of which any two have a common border. The four-color theorem
 
 IV.19.   Extremal and Probabilistic Combinatorics                                                                563
@@ -33,7 +33,7 @@ this problem led to numerous interesting questions and
 results about graph coloring.                                1.2   Topics
   (vi) Let S be an arbitrary subset of the two-dimen-
 sional lattice Z2 . For any two finite subsets A, B ⊂ Z       The examples described above illustrate some of the
-we can think of the Cartesian product A . imes B as a sort        main themes of combinatorics. The subject, sometimes
+we can think of the Cartesian product A . imes B as a sort        main themes of combinatorics. The subject, some times
 of “combinatorial rectangle.” This set has size |A| |B|      also called discrete mathematics, is a branch of math-
 (where |X| denotes the size of a set X), and we can          ematics that focuses on the study of discrete objects
 define an obvious notion of the density d S (A, B) of S in     (as opposed to continuous ones) and their proper-
@@ -182,12 +182,12 @@ Extremal and Probabilistic Combinatorics
 so $χ(K^{n}) = n.$ If $G$ is a cycle $C^{2n} + {}^{1}$ on $2n + 1$ vertices, then easy parity arguments show that at least three colors are needed, and three colors are enough: color the vertices along the cycle alternately by colors $1$ and $2$ , and then color the last vertex by color $3$ . Thus, $χ(C^{2n} + {}^{1}) = 3$ . It is not hard to prove that G is $2$ - colorable if and only if it does not contain a cycle of odd length. Graphs that are $2$ - colorable are usually called bipartite, since they split into two parts, with all the edges going from one part to the other.
 The easy character ization ends here, and no simple criterion equivalent to k-colorability is available for k $\ge 3$ . This is related to the fact that for each fixed $k \ge 3$ the computational problem of deciding whether a given graph is k-colorable is NP-hard, a notion discussed in computational complexity [IV.20](/part-04/computational-complexity) . Coloring is one of the most fundamental notions of graph theory, as a huge array of problems in this field and in related areas like computer science and operations research can be formulated in terms of graph coloring.
 Finding an optimal coloring of a graph is known to be a very hard task, both theoretically and practically. There are two simple yet fundamental lower bounds on the chromatic number. First, as every color class in a proper coloring of a graph G forms an independent set, it cannot be bigger than the independence number of G, which is denoted by α (G). Therefore, at least $|V(G)|/α($ G ) colors are necessary. Secondly, if G contains a clique of size k, then k colors are needed to color that clique alone, and thus χ (G) $\ge$ k.
-This implies that χ (G) $\ge$ ω (G), where ω (G) is the clique number of G. What about upper bounds on the chromatic number? One of the simplest approaches to coloring a graph is to do it greedily: put the vertices in some order and color them one by one, assigning to each one the smallest positive integer that has not already been assigned to one of its neighbors. While the greedy algorithm can sometimes be very inefficient (for example, it can color bipartite graphs in an unbounded number of colors, even though two colors are sufficient), it often works quite well.
+This implies that χ (G) $\ge$ ω (G), where ω (G) is the clique number of G. What about upper bounds on the chromatic number? One of the simplest approaches to coloring a graph is to do it greedily: put the vertices in some order and color them one by one, assigning to each one the smallest positive integer that has not already been assigned to one of its neighbors. While the greedy algorithm can some times be very inefficient (for example, it can color bipartite graphs in an unbounded number of colors, even though two colors are sufficient), it often works quite well.
 Observe that when applying the greedy algorithm, a color given to a vertex v is at most one more than the number of the neighbors of v preceding it in the chosen order, and is thus at most d (v) $+ 1$ , where d (v) is the degree of v in G. It follows that if $\Delta$ (G) is the maximum degree of G, then the greedy algorithm uses at most $\Delta(G) + 1$ colors. Therefore $χ(G) \le \Delta(G) + 1$ . This bound is tight for complete graphs and odd cycles, $565$ and, as shown by Brooks in 1941 , those are the only cases:
 if G is a graph of maximum degree $\Delta,$ then $χ(G) \le \Delta$ unless $G$ contains a clique $K\Delta + 1$ , or $\Delta = 2$ and G contains an odd cycle. It is also possible to color the edges of a graph, rather than the vertices. In this case a proper coloring is defined to be one where no two edges that meet at a vertex are given the same color. The chromatic index of G, denoted by χ (G), is the minimum k for which G admits a proper edge-coloring with k colors. For example, if G is the complete graph $K^{2n}$ , then $χ (G) = 2n - 1$ .
 This turns out to be equivalent to the fact that it is possible to organize a round-robin tournament with $2n$ teams and fit it into $2n - 1$ rounds: just ask the manager of a soccer league. It is also not hard to show that $χ (K^{2n} - {}^{1}) = 2n - 1$ . Since in any proper edge-coloring of G all edges of G that are incident to a vertex v get distinct colors, the chromatic index is obviously at least as big as the maximum degree.
 Equality holds for bipartite graphs, as proved by König in 1931 , which implies the existence of a complete timetable using d periods in the problem of teachers and classes discussed in the introduction. Remarkably, this trivial lower bound of χ (G) $\ge \Delta$ (G) is very close to the true behavior of χ (G). A fundamental theorem of Vizing from 1964 states that χ (G) is always equal either to the maximum degree $\Delta$ (G) or to $\Delta(G) + 1$ . Thus, the chromatic index of G is much easier to approximate than its chromatic number. $2$ . $1$ .
-$2$ Excluded Subgraphs If a graph G has n vertices and contains no triangle (that is, three vertices all joined to each other) then how many edges can it contain? If n is even, then you can split the vertex set into two equal parts A and B of size n $/2$ and join every vertex in A to every vertex in B. The resulting graph G contains no triangles and has $n^{2}/4$ edges. Moreover, adding another edge will automatically create a triangle (in fact, several triangles). But is this the densest possible triangle-free graph? A hundred years ago the answer was shown to be yes by Mantel.
+$2$ Excluded Subgraphs If a graph G has n vertices and contains no triangle (that is, three vertices all joined to each other) then how many edges can it contain? If n is even, then you can split the vertex set into two equal parts A and B of size n $/2$ and join every vertex in A to every vertex in B. The resulting graph G contains no triangles and has $n^{2}/4$ edges. More over, adding another edge will automatically create a triangle (in fact, several triangles). But is this the densest possible triangle-free graph? A hundred years ago the answer was shown to be yes by Mantel.
 (A similar theorem holds when n is odd, but now $A$ and $B$ must have nearly equal sizes $(n + 1)/2$ and $(n - 1)/2$ .) Let us look at a more general problem, where the role of the triangle is played by an arbitrary graph. More precisely, let H be any graph, with m vertices, say, and when n $\ge$ m let us define ex (n , H) to be the maximum possible number of edges in a graph with n vertices
 
 566                                                                                       IV. Branches of Mathematics
@@ -210,7 +210,7 @@ G provides us with a proper (r − 1)-coloring of any sub-      y for which xy i
 graph of G.) So a promising approach is to look for a         have a perfect matching it must have an even number
 graph G with n vertices, chromatic number r − 1, and          of vertices.
 as many edges as possible. This is easy to find. Our con-         One of the best-known theorems in graph theory is
-straint is that the vertices can be partitioned into r − 1    Hall’s theorem, which provides a necessary and suffi-
+str a int is that the vertices can be partitioned into r − 1    Hall’s theorem, which provides a necessary and suffi-
 independent sets. Once we have done that, we may as           cient condition for the existence of a perfect matching
 well include all edges between those sets. The result is      in a bipartite graph. What kind of condition can this be?
 a complete (r − 1)-partite graph. A routine calculation       It is very easy to write down a trivial necessary condi-
@@ -228,7 +228,7 @@ as big as (1 − 1/(r − 1)) n  2 .                              obvious necess
 exact solution, in 1941, for the most important case,         perfect matching. More generally, if A is smaller than B,
 when H is the complete graph Kr on r vertices. He             then the same condition guarantees that one can find
 proved that ex(n, Kr ) is not just at least tr −1 (n), but    a matching that includes every vertex in A (but leaves
-is actually equal to tr −1 (n). Moreover, the only Kr -free   some vertices in B unmatched).
+is actually equal to tr −1 (n). More over, the only Kr -free   some vertices in B unmatched).
 graph with n vertices and ex(n, Kr ) edges is the Turán          There is a useful reformulation of Hall’s theorem
 graph Tr −1 (n). Turán’s paper is generally considered        in terms of set systems. Let S1 , S2 , . . . , Sn be a collec-
 the starting point of extremal graph theory.                  tion of sets, and suppose that we would like to find a
@@ -294,7 +294,7 @@ and Szekeres, is of a geometric nature. They showed               group of this 
 that for every n ⩾ 3 there exists a positive integer N            H = {x k : x ∈ Z∗ p }. It is not hard to show that the index
 such that, given any configuration of N points in the              r of H is the highest common factor of k and p − 1, and
 plane in general position (i.e., no three of them are on a        in particular is at most k. The partition of Z∗   p into the
-line), there are n that form a convex n-gon. (It is instruc-      cosets of H can be thought of as an r -coloring of Z∗     p . By
+line), there are n that form a convex n-gon. (It is in struc-      cosets of H can be thought of as an r -coloring of Z∗     p . By
 tive to prove that if n = 4 then N can be taken to be 5.)         Schur’s theorem there exist x, y, z ∈ {1, . . . , p − 1} that
 There are several proofs of this theorem, some using              all have the same color—that is, they all belong to the
 the general Ramsey theorem. It is conjectured that the            same coset of H. In other words, there exists a residue
@@ -312,7 +312,7 @@ decreasing) subsequence of length n+1.                            Grötschel, an
                                                                   2.3   Extremal Theory of Set Systems
 well-known problem of Ulam, asking for the typical
 length of a longest increasing subsequence of a ran-              Graphs are one of the fundamental structures stud-
-dom sequence of length n. A detailed description of               ied by combinatorial is ts, but there are others too. An
+dom sequence of length n. A detailed description of               ied by combinatorialists, but there are others too. An
 the distribution of this length has recently been given           important branch of the subject is the study of set sys-
 by Baik, Deift, and Johansson.                                    tems. Most often, these are simply collections of sub-
    In 1927 van der Waerden proved what became known               sets of some n-element set. For example, the collection
@@ -364,7 +364,7 @@ find
 sets in the system intersect. Since a set and its comple-        Number theory is one of the oldest branches of math-
 ment cannot both belong to an intersecting family of             ematics. At its core are problems about integers, but
 subsets of {1, 2, . . . , n}, we see immediately that such a     a sophisticated array of techniques has been devel-
-family can have size at most 2 n−1 . Moreover, this bound         oped to deal with those problems, and these techniques
+family can have size at most 2 n−1 . More over, this bound         oped to deal with those problems, and these techniques
 is achieved by, for example, the collection of all sets          have often themselves been the basis for further study
 that contain the element 1. But what happens if we fix            (see, for example, algebraic numbers [IV.1](/part-04/number-theory), analytic
 a k and assume in addition that all our sets have size k?        number theory [IV.2](/part-04/number-theory), and arithmetic geometry
@@ -376,7 +376,7 @@ is n−1
 Katona. Suppose you arrange the elements randomly                flavor, while others are classical problems in number
 around a circle. Then there are n ways of choosing k             theory where the existence of a combinatorial solution
 elements that are consecutive in this arrangement, and           has been quite surprising. We describe below a few
-it is quite easy to convince yourself that at most k of          examples. Many more can be found in chapter 20 of
+it is quite easy to convince your self that at most k of          examples. Many more can be found in chapter 20 of
 these can intersect (if n ⩾ 2 k). So out of these n sets of       Graham, Grötschel, and Lovász (1995), in Nathanson
 size k, only k of them can belong to any given intersect-        (1996), and in Tao and Vu (2006).
 ing family. Now it is also easy to show that every set has          A simple but important notion in the area is that of a
@@ -433,7 +433,7 @@ n contains a k-term arithmetic progression. (Setting        pairs of edges that 
 rem from this.) After several partial results, this con-    necting the numbers of vertices, edges, and regions in
 jecture was proved by Szemerédi in 1975. His deep           any drawing of a planar graph.) To bound the number of
 proof is combinatorial, and applies techniques from         incidences between a set of points P and a set of lines L
-Ramsey theory and extremal graph theory. Fursten-           in the plane, one considers the graph whose vertices are
+Ramsey theory and extremal graph theory. Furs ten-           in the plane, one considers the graph whose vertices are
 berg gave another proof in 1977, based on techniques        the points P , and whose edges are all segments between
 of ergodic theory [V.9](/part-05/ergodic-theorems). In 2000 Gowers gave a new          consecutive points along a line in L. The desired bound
 proof, combining combinatorial arguments with tools         is obtained by observing that the number of crossings
@@ -495,7 +495,7 @@ theory that has numerous applications in various areas,      Grötschel, and Lov
 including combinatorial number theory, computational            Spectral techniques, that is, an analysis of eigen-
 complexity, and, mainly, extremal graph theory. The          vectors and eigenvalues [I.3 §4.3](/part-01/fundamental-definitions), have been used
 precise statement of the lemma, which can be found,          extensively in graph theory. The link comes through
-for example, in Bollobás (1978), is somewhat technical.      the notion of an adjacency matrix of a graph G. This
+for example, in Bollobás (1978), is some what technical.      the notion of an adjacency matrix of a graph G. This
 The rough statement is that the vertex set of any large      is defined to be the matrix A with entries au, v for
 graph can be partitioned into a constant number of           each pair of (not-necessarily-distinct) vertices u and
 pieces of nearly equal size, so that the bipartite graphs    v, where au, v = 1 if u and v are joined by an edge,
@@ -521,7 +521,7 @@ number of edges inside any set of k of the vertices is      Alon and Spencer (20
 roughly the same (provided k is not too small) as one          The applications of probabilistic techniques in dis-
 would expect with a random graph. It follows easily that    crete mathematics were initiated by Paul Erdős, who
 any set of vertices that is not too big has many neigh-     contributed to the development of the method more
-bors among the vertices outside that set. Graphs with       than anyone else. One can classify them into three
+bors among the vertices out side that set. Graphs with       than anyone else. One can classify them into three
 the latter property are called expanders [III.24](/part-03/expanders) and       groups.
 have numerous applications in theoretical computer             The first deals with the study of certain classes of ran-
 science. Constructing such graphs explicitly is not an      dom combinatorial objects, like random graphs or ran-
@@ -650,7 +650,7 @@ then there is a nonzero probability that for every choice
 of k teams, there is another team that beats them all.
                                                                 (and therefore have chromatic number 2), so it follows
 In particular, it is possible for this to happen. If n is
-                                                                that ch(G) can be much bigger than χ(G). Somewhat
+                                                                that ch(G) can be much bigger than χ(G). Some what
 larger than about k2 2 k log 2, then the above inequality
                                                                 surprisingly, the proof of this result is probabilistic.
 holds.
@@ -659,7 +659,7 @@ holds.
                                                                 graph that arises in Ramsey theory. Its vertices are
 ful in supplying lower bounds for Ramsey numbers.
                                                                 all the points in the plane, with two vertices joined
-Besides the bound for R(k, k) mentioned above, there is
+Be sides the bound for R(k, k) mentioned above, there is
                                                                 by an edge if and only if the distance between them
 a subtle probabilistic proof, due to Kim, that R(3, k) ⩾
                                                                 is 1. The choice number of this graph is infinite, by the

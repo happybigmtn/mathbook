@@ -30,7 +30,7 @@ isometry group of the universal cover and K is the (nec-       Princeton, NJ: Pr
 essarily compact) set of isometries that fix a specified       Thurston, W. P. 1997. Three-Dimensional Geometry and
 point. Mostow’s theorem says the same here as it said          Topology, edited by S. Levy, volume 1. Princeton Math-
 for Hn /Γ : given such a manifold, there is only one way       ematical Series, number 35. Princeton, NJ: Princeton Uni-
-                                                               versity Press.
+                                                               ver sity Press.
 to realize it as Γ \G/K. Or, equivalently, any homeomor-
 phism between two such manifolds is always homo-
 topic to an isometry unless the relevant locally sym-        V.24     The P versus N P Problem
@@ -47,7 +47,7 @@ ric spaces could admit only a discrete set of locally        a correct answer ca
 symmetric metrics. Mostow has said explicitly that he        nomial in the length of the input. An example of the
 was motivated by the desire to find a more geometric          former is multiplying two n-digit integers (which, even
 understanding of this fact.                                  if you use long multiplication, takes roughly n2 arith-
-   Another point worth making is that Mostow’s proof         metical operations). An example of the latter is search-
+   Another point worth making is that Mostow’s proof         met ical operations). An example of the latter is search-
 is at least as surprising as his theorem. At the time,       ing in a graph [III.34] with n vertices for a set of m
 the study of locally symmetric spaces, or equivalently       vertices, any two of which are joined by an edge: if you
 of semisimple Lie groups and their lattices, was domi-       are presentedwith

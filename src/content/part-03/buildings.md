@@ -18,8 +18,8 @@ $i + 1i + 1i + 2i + 2$
 
 Figure $4$ The generator σ i .
 
-permutations [III.68](/part-03/permutation-groups) of { $1$ , . . . , n}. Indeed, any braid determines a permutation by the rule i   $\to$ right-hand label of ith string. Ignoring everything except the behavior at the ends gives a surjective homomorphism B n $\to$ S n , which maps σ i to the transposition (i , i $+ 1$ ). This is not an isomorphism, however, as B n is infinite. In fact, σ i has infinite order, whereas the transposition (i , $i + 1)$ squares to the identity.
-In his celebrated 1925 paper “Theorie der Zöpfe,” artin [VI.86](/part-06/emil-artin-18981962) showed that multiplication in B n is completely described by the relations σ i σ j  =  σ j σ i $(|i - j| \ge 2)$ , $σ^{i}σ^{i} + {}^{1}σ^{i} = σ^{i} + {}^{1}σ^{i}σ^{i} + {}^{1}$ . These relations have subsequently acquired importance in statistical physics, where they are known as the Yang-Baxter equations.
+permutations [III.68](/part-03/permutation-groups) of { $1$ , . . . , n}. Indeed, any braid determines a permutation by the rule i   $\to$ right-hand label of ith string. Ignoring everything except the behavior at the ends gives a surjective homomorphism B n $\to$ S n , which maps σ i to the transposition (i , i $+ 1$ ). This is not an isomorphism, however, as B n is infinite. In fact, σ i has infinite order, where as the transposition (i , $i + 1)$ squares to the identity.
+In his celebrated 1925 paper “The orie der Zöpfe,” artin [VI.86](/part-06/emil-artin-18981962) showed that multiplication in B n is completely described by the relations σ i σ j  =  σ j σ i $(|i - j| \ge 2)$ , $σ^{i}σ^{i} + {}^{1}σ^{i} = σ^{i} + {}^{1}σ^{i}σ^{i} + {}^{1}$ . These relations have subsequently acquired importance in statistical physics, where they are known as the Yang-Baxter equations.
 In groups defined by generators and relations it is usually difficult (there being no method that works uniformly in all cases) to decide whether an arbitrary word in the generators represents the identity element (see geometric and combinatorial group theory [IV.10](/part-04/geometric-and-combinatorial-group-theory)). For B n , Artin solved this problem geometrically, by “combing the braid.” An alternative algebraic method, due to Garside ( 1967 ), also decides when two elements in B n are conjugate.
 In relation to the decidability of such questions, and in many other respects, braid groups display close affinities with linear groups: that is, groups in which all elements behave as if they were invertible N $\times$ N matrices. Although such similarities suggested that it should be possible to prove that braid groups genuinely are linear, the problem of doing so remained unsolved for many years, until in 2001 a proof was eventually found by Bigelow and independently by Krammer.
 
@@ -55,7 +55,7 @@ logues for the groups of types E6 , E7 , E8 , F4 , and G2 . For   and, just as A
 this reason, Jacques Tits looked for a geometric theory           ments are related to the regular and semiregular poly-
 that would embrace all families, and ended up creating            hedra in n dimensions, where n is the subscript in the
 the theory of buildings.                                          Lie notation given earlier.
-   The full abstract definition of a building is somewhat             Buildings have the following two noteworthy fea-
+   The full abstract definition of a building is some what             Buildings have the following two noteworthy fea-
 complicated, so instead we shall try to give some idea of         tures. First, any two chambers lie in a common apart-
 the concept by looking at the building associated with            ment: this is not obvious in the example above but it can
 the groups GLn (K) and SLn (K), which are of type An−1 .          be proved using linear algebra. Second, in any building
@@ -67,7 +67,7 @@ edges; however, it is then possible for triples of ver-           were originall
 tices to form two-dimensional faces, and for sets of k               The theory of spherical buildings does not just give
 vertices to form (k − 1)-dimensional “simplexes.” (The            a pleasing geometric basis for the groups of Lie type: it
 geometrical meaning of the word “simplex” is a con-               can also be used to construct the ones of types E6 , E7 ,
-vex hull of a finite set of points in general position: for        E8 , and F4 , for an arbitrary field K, without the need for
+vex hull of a finite set of points in general position: for        E8 , and F4 , for an arbitrary field K, with out the need for
 instance, a three-dimensional simplex is a tetrahedron.)          sophisticated machinery such as Lie algebras. Once the
 All faces of simplexes must also be included, so for              building has been constructed (and a construction can
 example three vertices cannot form a two-dimensional              be given in a surprisingly simple manner), a theorem of
@@ -84,5 +84,5 @@ sion have n − 1 vertices: a 1-space inside a 2-space              affine, but 
 inside a 3-space, and so on. These simplexes are called           yields the spherical building as a structure “at infin-
 chambers.                                                         ity.” Going beyond affine buildings, there are hyperbolic
    There are many subspaces, so a building is a huge              buildings, whose apartments are tilings of hyperbolic
-object. However, buildings have important subgeome-               space; they arise naturally in the study of hyperbolic
+object. However, buildings have important sub ge ome-               space; they arise naturally in the study of hyperbolic
 tries called apartments, which in the An−1 case are               Kac–Moody groups.

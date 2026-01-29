@@ -39,13 +39,13 @@ Shortly before graduating in 1827, he was appointed             cially in the fi
 Professor of Astronomy and Royal Astronomer of Ire-             differential geometry of curves and surfaces. Much of
 land, a post which he held for the remainder of his life.       this research is to be found in his two books Lectures on
    His first paper, “Theory of systems of rays: part first”       Quaternions (1853) and Elements of Quaternions (1866,
-(1828), was written while he was still an undergrad-            published posthumously).
+(1828), was written while he was still an under grad-            published posthumously).
 uate. In it he developed new methods for the study
 of foci and caustics produced by the reflection of               Further Reading
 light from curved surfaces. Hamilton developed his
                                                                 Hankins, T. L. 1980. Sir William Rowan Hamilton. Baltimore,
 approach to optics over the following five years, pub-            MD: Johns Hopkins University Press.
-lishing three substantial supplements to his original
+li shing three substantial supplements to his original
                                                                                                               David Wilkins
 paper. He showed that the properties of an optical sys-
 tem are completely determined by a certain “character-

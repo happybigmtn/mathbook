@@ -67,7 +67,7 @@ mial. The Legendre polynomials are those polynomials        ω0 (v, v ) for ever
    Symplectic geometry studies two-dimensional signed             these three properties can be converted into the stan-
 area measurements like this, as well as transforma-               dard form ω0 after an invertible linear change of vari-
 tions that preserve these measurements, but it applies            ables. (This is a special case of Darboux’s theorem.)
-to general spaces of dimension 2 n rather than just to             Thus (R2 n , ω0 ) is essentially the “only” linear symplec-
+to general spaces of dimension 2 n rather than just to             Thus (R2 n , ω0 ) is essentially the “only” linear sym plec-
 the plane.                                                        tic geometry in 2 n dimensions. There are no symplectic
    If we split R2 n up as Rn . imes Rn , then we can write a vec-       forms in odd-dimensional spaces.
 tor v in R2 n as v = (q, p), where q and p each belong to
@@ -75,7 +75,7 @@ Rn . The standard symplectic form ω0 : R2 n . imes R2 n → R               2  
 is defined by the formula
                                                                   In Euclidean geometry, all rigid motions are automat-
                ω0 (v, v ) = p · q − q · p ,                       ically linear (or affine) transformations. However, in
-where “·” denotes the usual inner product in Rn . Geo-            symplectic geometry there are many more symplec-
+where “·” denotes the usual inner product in Rn . Geo-            symplectic geometry there are many more sym plec-
 metric ally, ω0 (v, v ) can be interpreted as the sum of           tic maps than just the symplectic linear transforma-
 the signed areas of the parallelograms spanned by the             tions. These nonlinear symplectic maps in (R2 n , ω0 )
 projections of v and v to the qi pi -planes. In terms of          are one of the principal objects of study in symplectic
@@ -88,7 +88,7 @@ where J is the 2 n . imes 2 n matrix                                     derivat
                           0   I                                   map with smooth inverse.
                     J=                                      (2)      A smooth nonlinear map φ : U → R2 n is said to
                           −I 0
-                                                                  be symplectic if, for every x ∈ U, the Jacobian matrix
+                                                                  be symplectic if, for every x ∈ U, the Jacobi an matrix
 and I is the n . imes n identity matrix.
                                                                   φ (x) of first derivatives of φ is a symplectic linear
    A linear map A : R2 n → R2 n that preserves the prod-
@@ -223,7 +223,7 @@ manifold. An example of a compact symplectic man-             holomorphic in eac
 ifold is the torus T2 n , which is obtained as the quo-        fold we can multiply tangent vectors by i. This gives us
 tient of R2 n by the action of Z2 n . In other words, two       at each point p ∈ M a linear map Jp such that Jp2 v = −v
 points x, y ∈ R2 n are equivalent if x − y has inte-           for all tangent vectors v at p. A Kähler manifold is
-ger coordinates. Other important examples of symplec-         a complex manifold M with a symplectic structure ω
+ger coordinates. Other important examples of sym plec-         a complex manifold M with a symplectic structure ω
 tic manifolds include riemann surfaces [III.79](/part-03/riemann-surfaces), com-         (which computes signed areas of infinitesimal parallel-
 plex projective space [III.72](/part-03/projective-space), and cotangent bundles         ograms) and a Riemannian metric g (which computes
 [IV.6 §5](/part-04/algebraic-topology). However, it is a wide open problem to deter-       an inner product gp (v, v ) of any two tangent vectors
@@ -242,8 +242,8 @@ based at a point p ∈ M. The axes of such a parallelo-         not Kähler can 
 gram are two infinitesimal vectors (or more precisely          by a symplectic action of a group that looks like Z4 but
 tangent vectors) v and v . There is a unique way to do        with a group operation that differs from the usual one.
 this so that all the coordinate charts for M are sym-         The change in the group structure manifests itself as
-plectic diffeomorphisms. In the language of differen-          a topological property (an odd first Betti number) that
-tial forms [III.16](/part-03/dierential-forms-and-integration), the map p → ωp is an antisym-           prevents the quotient being Kähler.
+plectic diffeomorphisms. In the language of differ en-          a topological property (an odd first Betti number) that
+tial forms [III.16](/part-03/dierential-forms-and-integration), the map p → ωp is an anti sym-           prevents the quotient being Kähler.
 metric nondegenerate 2-form, which can then be used
 to compute the “area” S ω of non infinitesimal two-             Further Reading
 dimensional surfaces S in M. One can show that for
@@ -251,6 +251,6 @@ dimensional surfaces S in M. One can show that for
 any sufficiently small closed surface S, the integral S ω
                                                                 chanics, 2 nd edn. Graduate Texts in Mathematics, vol-
 vanishes, so ω is a closed form. Indeed, one can define          ume 60. New York: Springer.
-a symplectic manifold more abstractly (without refer-         Mc Duff, D., and D. Salamon. 1998. Introduction to Symplec-
+a symplectic manifold more abstractly (with out refer-         Mc Duff, D., and D. Salamon. 1998. Introduction to Sym plec-
 ence to charts) as a smooth manifold equipped with a            tic Topology, 2 nd edn. Oxford Mathematical Monographs.
 closed, antisymmetric nondegenerate 2-form ω; a clas-           Oxford: Clarendon Press/Oxford University Press.

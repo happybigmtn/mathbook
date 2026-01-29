@@ -2,7 +2,7 @@
 
 $16$
 
-the first way. Sometimes, actual elimination is not possible, but one feels it could be done in principle. For instance, the sentence “For every real number x, x is either positive, negative, or zero” is a bit like putting together infinitely many sentences such as “t is either positive, negative, or zero,” one for each real number t, none of which involves a variable.
+the first way. Some times, actual elimination is not possible, but one feels it could be done in principle. For instance, the sentence “For every real number x, x is either positive, negative, or zero” is a bit like putting together infinitely many sentences such as “t is either positive, negative, or zero,” one for each real number t, none of which involves a variable.
 
 $4$
 
@@ -10,7 +10,7 @@ Levels of Formality
 
 It is a surprising fact that a small number of set-theoretic concepts and logical terms can be used to provide a precise language that is versatile enough to express all the statements of ordinary mathematics. There are some technicalities to sort out, but even these can often be avoided if one allows not just sets but also numbers as basic objects. However, if you look at a wellwritten mathematics paper, then much of it will be written not in symbolic language peppered with symbols such as ∀ and ∃, but in what appears to be ordinary English.
 (Some papers are written in other languages, particularly French, but English has established itself as the international language of mathematics .) How can mathematicians be confident that this ordinary English does not lead to confusion, ambiguity, and even incorrectness? The answer is that the language typically used is a careful compromise between fully colloquial English, which would indeed run the risk of being unacceptably imprecise, and fully formal symbolism, which would be a nightmare to read.
-The ideal is to write in as friendly and approachable a way as possible, while making sure that the reader (who , one assumes, has plenty of experience and training in how to read mathematics) can see easily how what one writes could be made more formal if it became important to do so. And sometimes it does become important: when an argument is difficult to grasp it may be that the only way to convince oneself that it is correct is to rewrite it more formally. Consider, for example, the following reformulation of the principle of mathematical induction, which underlies many proofs:
+The ideal is to write in as friendly and approachable a way as possible, while making sure that the reader (who , one assumes, has plenty of experience and training in how to read mathematics) can see easily how what one writes could be made more formal if it became important to do so. And some times it does become important: when an argument is difficult to grasp it may be that the only way to convince one self that it is correct is to rewrite it more formally. Consider, for example, the following reformulation of the principle of mathematical induction, which under lies many proofs:
 ( $15$ ) Every nonempty set of positive integers has a least element. If we wish to translate this into a more formal language we need to strip it of words and phrases such as “nonempty” and “has.” But this is easily done. To say that a set A of positive integers is nonempty is simply
 
 I. Introduction
@@ -69,7 +69,7 @@ springboard into abstract algebra. The rest of this sec-   from all other number
 tion gives a brief description of the five main number      this is that it allows us to think about negative numbers:
 systems.                                                   if n is a positive integer, then the defining property of
                                                            −n is that when you add it to n you get zero.
-1.1    The Natural Numbers                                    Somebody with little mathematical experience may
+1.1    The Natural Numbers                                    Some body with little mathematical experience may
                                                            unthinkingly assume that numbers are for counting
 The natural numbers, otherwise known as the positive       and find negative numbers objectionable because the
 integers, are the numbers familiar even to young chil-     answer to a question beginning “How many” is never
@@ -77,7 +77,7 @@ dren: 1, 2, 3, 4, and so on. It is the natural numbers     negative. However, si
 that we use for the very basic mathematical purpose        for numbers, and there are many situations that are
 of counting. The set of all natural numbers is usually     naturally modeled by a number system that includes
 denoted N. (Some mathematicians prefer to include 0        both positive and negative numbers. For example, neg-
-as a natural number as well: for instance, this is the     ative numbers are sometimes used for the amount of
+as a natural number as well: for instance, this is the     ative numbers are some times used for the amount of
 usual convention in logic and set theory. Both conven-     money in a bank account, for temperature (in degrees
 tions are to be found in this book, but it should always   Celsius or Fahrenheit), and for altitude compared with
 be clear which one is being used.)                         sea level.
@@ -87,12 +87,12 @@ following basic picture of the natural numbers, one that   meaning “numbers”
 we tend to take for granted.                               is always possible: that is, if m and n are integers, then
                                                            so is m − n.
   (i) Given any natural number n there is another, n+1,
-      that comes next—known as the successor of n.         1.3   The Rational Numbers
+      that comes next—known as the success or of n.         1.3   The Rational Numbers
  (ii) A list that starts with 1 and follows each number    So far we have considered only whole numbers. If we
-      by its successor will include every natural number   form all possible fractions as well, then we obtain the
+      by its success or will include every natural number   form all possible fractions as well, then we obtain the
       exactly once and nothing else.                       rational numbers. The set of all rational numbers is
                                                            denoted Q (for “quotients”).
-This picture is encapsulated by the peano axioms             One of the main uses of numbers besides counting is
+This picture is encapsulated by the peano axioms             One of the main uses of numbers be sides counting is
 [III.67](/part-03/the-peano-axioms).                                                  measurement, and most quantities that we measure are
   Given two natural numbers m and n one can add            ones that can vary continuously, such as length, weight,
 them together or multiply them, obtaining in each case     temperature, and velocity. For these, whole numbers
@@ -147,7 +147,7 @@ want to solve polynomial equations, take logarithms             replaced by −1
 [III.25 §4](/part-03/the-exponential-and-logarithmic-functions), do trigonometry, or work with the gauss-                   (a + bi) + (c + di) = (a + c) + (b + d)i
 ian distribution [III.71 §5](/part-03/probability-distributions), to give just four exam-
                                                                 and
-ples from an almost endless list, then irrational num-
+ples from an almost end less list, then irrational num-
 bers will appear every where we look. They are not used                (a + bi)(c + di) = ac + bci + adi + bdi 2
 directly for the purposes of measurement, but they are                                 = (ac − bd) + (bc + ad)i.
 needed if we want to reason theoretically about the
@@ -175,7 +175,7 @@ Some Fundamental Mathematical Definitions $a = r$ cos $\theta$ and $b = r$ sin $
 Finally, you rotate this new point counter clockwise about the origin through an angle of $\theta.$ In other words, the effect on the complex plane of multiplication by a  +  bi is to dilate it by r and then rotate it by $\theta.$ In particular, if $a^{2} + b^{2} = 1$ , then multiplying by
 
 $a + bi$ corresponds to rotating by $\theta.$ For this reason, polar coordinates are at least as good as Cartesian coordinates for representing complex numbers: an alternative way to write a  +  bi is r e $i\theta$ , which tells us that the number has distance r from the origin and is positioned at an angle $\theta$ around from the positive part of the real axis (in a counter clockwise direction). If $z = rei\theta$ with $r > 0$ , then r is called the modulus of z, denoted by |z| , and $\theta$ is the argument of z.
-(  Since adding $2\pi$ to $\theta$ does not change $ei\theta$ , it is usually understood that $0 \le \theta < 2\pi$ , or sometimes that
+(  Since adding $2\pi$ to $\theta$ does not change $ei\theta$ , it is usually understood that $0 \le \theta < 2\pi$ , or some times that
 
 $- \pi \le \theta < \pi$ .) One final useful definition: if $z = x + iy$ is a complex number, then its complex conjugate, written . ar{z}, is the number x  -  yi. It is easy to check that z. ar{z} $= x^{2} + y^{2} = |z|^{2}$ .
 
@@ -209,10 +209,10 @@ What makes these and other sets of symmetries into groups is that any two symmet
 Notice that the order in which we perform the symmetries matters: if we had started with the reflection ACB and then done the reflection BAC, then we would have obtained the rotation BCA. (If you try to see this by drawing a picture, it is important to think of A, B, and C as labels that stay where they are rather than moving with the triangle--they mark positions that the vertices can occupy .) We can think of symmetries as “objects” in their own right, and of composition as an algebraic operation, a bit like addition or multiplication for numbers.
 The operation has the following useful properties: it is associative, the trivial symmetry is an identity element, and every symmetry has an inverse [I.2](/part-01/language-and-grammar) . (For example, the inverse of a reflection is itself, since doing the same reflection twice leaves the triangle where it started .) More generally, any set with a binary operation that has these properties is called a group.
 It is not part of the definition of a group that the binary operation should be commutative, since, as we have just seen, if one is composing two symmetries then it often makes a difference which one goes first. However, if it is commutative then the group is called Abelian, after the Norwegian mathematician niels henrik abel [VI.33](/part-06/niels-henrik-abel-18021829). The number systems Z , Q , R , and C all form Abelian groups with the operation of addition, or under addition, as one usually says.
-If you remove zero from Q , R , and C , then they form Abelian groups under multiplication, but Z does not because of a lack of inverses: the reciprocal of an integer is not usually an integer. Further examples of groups will be given later in this section. $2$ . $2$ Fields Although several number systems form groups, to regard them merely as groups is to ignore a great deal of their algebraic structure. In particular, whereas a group has just one binary operation, the standard I.
+If you remove zero from Q , R , and C , then they form Abelian groups under multiplication, but Z does not because of a lack of inverses: the reciprocal of an integer is not usually an integer. Further examples of groups will be given later in this section. $2$ . $2$ Fields Although several number systems form groups, to regard them merely as groups is to ignore a great deal of their algebraic structure. In particular, where as a group has just one binary operation, the standard I.
 Introduction number systems have two, namely addition and multiplication (from which further ones, such as subtraction and division, can be derived). The formal definition of a field is quite long: it is a set with two binary operations and there are several axioms that these operations must satisfy. Fortunately, there is an easy way to remember these axioms. You just write down all the basic properties you can think of that are satisfied by addition and multiplication in the number systems Q , R , and C . These properties are as follows.
 Both addition and multiplication are commutative and associative, and both have identity elements (0 for addition and $1$ for multiplication). Every element x has an additive inverse $- x$ and a multiplicative inverse $1/x($ except that $0$ does not have a multiplicative inverse). It is the existence of these inverses that allows us to define subtraction and division: $x - y$ means $x + ( - y)$ and $x/y$ means x · $(1/y)$ . That covers all the properties that addition and multiplication satisfy individually.
-However, a very general rule when defining mathematical structures is that if a definition splits into parts, then the definition as a whole will not be interesting unless those parts interact. Here our two parts are addition and multiplication, and the properties mentioned so far do not relate them in any way. But one final property, known as the distributive law, does this, and thereby gives fields their special character. This is the rule that tells us how to multiply out brackets: $x(y + z) = xy + xz$ for any three numbers x, y, and z.
+However, a very general rule when defining mathematical structures is that if a definition splits into parts, then the definition as a whole will not be interesting unless those parts interact. Here our two parts are addition and multiplication, and the properties mentioned so far do not relate them in any way. But one final property, known as the distributive law, does this, and there by gives fields their special character. This is the rule that tells us how to multiply out brackets: $x(y + z) = xy + xz$ for any three numbers x, y, and z.
 Having listed these properties, one may then view the whole situation abstractly by regarding the properties as axioms and saying that a field is any set with two binary operations that satisfy all those axioms. However, when one works in a field, one usually thinks of the axioms not as a list of statements but rather as a general license to do all the algebraic manipulations that one can do when talking about rational, real, and complex numbers.
 Clearly, the more axioms one has, the harder it is to find a mathematical structure that satisfies them, and it is indeed the case that fields are harder to come by than groups. For this reason, the best way to understand fields is probably to concentrate on examples. In addition to Q , R , and C , one other field stands out as fundamental, namely F p , which is the set of integers modulo a prime p, with addition and multiplication also defined modulo p (see modular arithmetic [III.58](/part-03/modular-arithmetic)) .
 
@@ -284,12 +284,12 @@ I. Introduction
 The most obvious n-dimensional vector space is the space of all sequences ($x^{1}$ , . . . , x n) of n real numbers. To add this to a sequence ($y^{1}$ , . . . , y n) one simply forms the sequence $(x^{1} + y^{1}$ , . . . , $x^{n} + y^{n})$ and to multiply it by a scalar c one forms the sequence (c$x^{1}$ , . . . , cx n). This vector space is denoted R n . Thus, the plane with its usual coordinate system is $R^{2}$ and three-dimensional space is $R^{3}$ . It is not in fact necessary for the number of vectors in a basis to be finite.
 A vector space that does not have a finite basis is called infinite dimensional. This is not an exotic property: many of the most important vector spaces, particularly spaces where the “vectors” are functions, are infinite dimensional. There is one final remark to make about scalars. They were defined earlier as real numbers that one uses to make linear combinations of vectors. But it turns out that the calculations one does with scalars, in particular solving simultaneous equations, can all be done in a more general context.
 What matters is that they should belong to a field, so Q , R , and C can all be used as systems of scalars, as indeed can more general fields. If the scalars for a vector space V come from a field F , then one says that V is a vector space over F . This generalization is important and useful: see, for example, algebraic numbers [IV.1](/part-04/number-theory). $2$ . $4$ Rings Another algebraic structure that is very important is a ring.
-Rings are not quite as central to mathematics as groups, fields, or vector spaces, so a proper discussion of them will be deferred to rings, ideals, and modules [III.81](/part-03/rings-ideals-and-modules). However, roughly speaking, a ring is an algebraic structure that has most, but not necessarily all, of the properties of a field. In particular, the requirements of the multiplicative operation are less strict. The most important relaxation is that nonzero elements of a ring are not required to have multiplicative inverses; but sometimes multiplication is not even required to be commutative.
-If it is, then the ring itself is said to be commutative--a typical example of a commutative ring is the set Z of all integers. Another is the set of all polynomials with coefficients in some field F . $3$
+Rings are not quite as central to mathematics as groups, fields, or vector spaces, so a proper discussion of them will be deferred to rings, ideals, and modules [III.81](/part-03/rings-ideals-and-modules). However, roughly speaking, a ring is an algebraic structure that has most, but not necessarily all, of the properties of a field. In particular, the requirements of the multiplicative operation are less strict. The most important relaxation is that nonzero elements of a ring are not required to have multiplicative inverses;
+but some times multiplication is not even required to be commutative. If it is, then the ring itself is said to be commutative--a typical example of a commutative ring is the set Z of all integers. Another is the set of all polynomials with coefficients in some field F . $3$
 
 Creating New Structures Out of Old Ones
 
-An important first step in understanding the definition of some mathematical structure is to have a supply of examples. Without examples, a definition is dry and
+An important first step in understanding the definition of some mathematical structure is to have a supply of examples. With out examples, a definition is dry and
 
 I.3.   Some Fundamental Mathematical Definitions                                                                       23
 
@@ -302,7 +302,7 @@ ment about structures of a given type and want to know        be? Surely, one mi
 whether it is true, then it is very helpful if you can test   more interesting when most of it is taken away. But a
 it in a wide range of particular cases. If it passes all      moment’s further thought shows that it certainly can:
 the tests, then you have some evidence in favor of the        for example, the set of all prime numbers contains fas-
-statement. If you are lucky, you may even be able to see      cinating mysteries of a kind that one does not expect
+statement. If you are lucky, you may even be able to see      cin at ing mysteries of a kind that one does not expect
 why it is true; alternatively, you may find that the state-    to encounter in the set of all positive integers. As for
 ment is true for each example you try, but always for         fields, the fundamental theorem of algebra [V.13](/part-05/the-fundamental-theorem-of-algebra)
 reasons that depend on particular features of the exam-       tells us that every polynomial equation has a solution
@@ -481,14 +481,14 @@ $26$
 In general, it is essential to check that if you put equivalent objects in then you get equivalent objects out. For example, when defining addition and multiplication for the field  Q[x ]$/(x^{3} - x - 1)$ , one must check that if $P$ and $P$ differ by a multiple of $x^{3} - x - 1$ , and $Q$ and $Q$ also differ by a multiple of $x^{3} - x - 1$ , then so do P + Q and P + Q , and so do P Q and P Q . This is an easy exercise. An important example of a quotient construction is that of a quotient group.
 If G is a group and H is a subgroup of G, then it is natural to try to do what we did for polynomials and define $g^{1}$ and $g^{2}$ to be equivalent if $g^{1} - 1g^{2} ($ the obvious notion of the “difference” between $g^{1}$ and $g^{2}$ ) belongs to H. The equivalence class of an element g is easily seen to be the set of all elements gh such that h $\in$ H, which is usually written g H. (It is called a left coset of H .) There is a natural candidate for a binary operation ∗ on the set of all left cosets:
 $g^{1}H$ ∗ $g^{2}H = g^{1}g^{2}H.$ In other words, given two left cosets, pick elements $g^{1}$ and $g^{2}$ from each, form the product $g^{1}g^{2}$ , and take the left coset $g^{1}g^{2}$ H. Once again, it is important to check that if you pick different elements from the original cosets, then you will still get the coset $g^{1}g^{2}$ H. It turns out that this is not always the case: one needs the additional assumption that H is a normal subgroup, which means that if h is any element of H, then ghg $- 1$ is an element of H for every element g of G.
-Elements of the form ghg $- 1$ are called conjugates of  h; thus, a normal subgroup is a subgroup that is “closed under conjugation.” If H is a normal subgroup, then the set of left cosets forms a group under the binary operation just defined. This group is written G / H and is called the quotient of G by H. One can regard G as a product of H and G / H (though it may be a somewhat complicated product), so if you understand both H and G / H , then for many purposes you understand G.
+Elements of the form ghg $- 1$ are called conjugates of  h; thus, a normal subgroup is a subgroup that is “closed under conjugation.” If H is a normal subgroup, then the set of left cosets forms a group under the binary operation just defined. This group is written G / H and is called the quotient of G by H. One can regard G as a product of H and G / H (though it may be a some what complicated product), so if you understand both H and G / H , then for many purposes you understand G.
 Therefore, groups G that do not have normal subgroups (other than G itself and the subgroup that consists of just the identity element) have a special role, a bit like the role of prime numbers in number theory. They are called simple groups. (See the classification of finite simple groups [V.7](/part-05/the-classication-of-finite-simple-groups).) Why is the word “quotient” used? Well, a quotient is normally what you get when you divide one number by another, so to understand the analogy let us think about dividing $21$ by $3$ .
 We can think of this as dividing up twenty-one objects into sets of three objects each and asking how many sets we get. This can be I. Introduction described in terms of equivalence as follows. Let us call two objects equivalent if they belong to the same one of the seven sets. Then there can be at most seven inequivalent objects. So when we regard equivalent objects as the same, we “divide out by the equivalence,” obtaining a “quotient set” that has seven elements. A rather different use of quotients leads to an elegant definition of the mathematical shape known as a torus:
 that is, the shape of the surface of a doughnut (of the kind that has a hole). We start with the plane, $R^{2}$ , and define two points (x , y) and (x , y) to be equivalent if x - $x$ and $y$ - y are both integers. Suppose that we regard any two equivalent points as the same and that we start at a point (x , y) and move right until we reach the point (x $+ 1$ , y). This point is “the same” as (x , y), since the difference is ( $1$ , $0$ ). Therefore, it is as though the entire plane has been wrapped around a vertical cylinder of circumference $1$ and we have gone around this cylinder once.
 If we now apply the same argument to the y-coordinate, noting that (x , y) is always “the same” point as (x , y $+ 1$ ), then we find that this cylinder is itself “folded around” so that if you go “upwards” by a distance of $1$ then you get back to where you started. But that is what a torus is: a cylinder that is folded back into itself. (This is not the only way of defining a torus, however. For example, it can be defined as the product of two circles .) Many other important objects in modern geometry are defined using quotients.
 It often happens that the object one starts with is extremely big, but that at the same time the equivalence relation is very generous, in the sense that it is easy for one object to be equivalent to another. In that case the number of “genuinely distinct” objects can be quite small. This is a rather loose way of talking, since it is not really the number of distinct objects that is interesting so much as the complexity of the set of these objects.
 It might be better to say that one often starts with a hopelessly large and complicated structure but “divides out most of the mess” and ends up with a quotient object that has a structure that is simple enough to be manageable while still conveying important information. Good examples of this are the fundamental group [IV.6](/part-04/algebraic-topology) and the homology and cohomology groups [IV.6](/part-04/algebraic-topology) of a topological space; an even better example is the notion of a moduli space [IV.8](/part-04/moduli-spaces) .
-Many people find the idea of a quotient somewhat difficult to grasp, but it is of major importance through out mathematics, which is why it has been discussed at some length here.
+Many people find the idea of a quotient some what difficult to grasp, but it is of major importance through out mathematics, which is why it has been discussed at some length here.
 
 I.3.   Some Fundamental Mathematical Definitions                                                                                27
 
@@ -499,7 +499,7 @@ One rule with almost no exceptions is that mathemat-
 ical structures are not studied in isolation: as well as
                                                             not hold: it is perfectly possible for f (a)f (b) to equal
 the structures themselves one looks at certain functions
-                                                            f (c) without ab equaling c, and indeed that happens
+                                                            f (c) with out ab equaling c, and indeed that happens
 defined on those structures. In this section we shall see
                                                             in the example just given.
 which functions are worth considering, and why. (For a
@@ -535,7 +535,7 @@ write using the standard notation for addition and mul-     objects that have th
 tiplication, then a function f : X → Y will be interest-    might consist of certain complex numbers, another of
 ing only if f (a) + f (b) = f (c) whenever a + b = c        integers modulo a prime p, and a third of rotations of
 and f (a)f (b) = f (c) whenever ab = c. For vector          a geometrical figure, and they could all turn out to be
-spaces, the functions of interest are ones that preserve    isomorphic. The idea that two mathematical construc-
+spaces, the functions of interest are ones that preserve    isomorphic. The idea that two mathematical con struc-
 linear combinations: if V and W are vector spaces, then     tions can have very different constituent parts and yet
 f (av + bw) should always equal af (v) + bf (w).            in a deeper sense be “the same” is one of the most
    A function that preserves structure is called a ho-      important in mathematics.
@@ -543,7 +543,7 @@ f (av + bw) should always equal af (v) + bf (w).            in a deeper sense be
 momorphism, though homomorphisms of particular
                                                             isomorphism from X to itself. Since it is hardly sur-
 mathematical structures often have their own names:
-                                                            prising that X is isomorphic to itself, one might ask
+                                                            pr ising that X is isomorphic to itself, one might ask
 for example, a homomorphism of vector spaces is
                                                             what the point is of automorphisms. The answer is that
 called a linear map.
@@ -598,8 +598,8 @@ of 2 is positive and which negative. These two automor-      nate system, three 
 phisms form a group, which is isomorphic to the group        not too far from Earth’s surface then one might wish
 consisting of the elements ±1 under multiplication, or       to use its latitude, its longitude, and its height above
 the group of integers modulo 2, or the group of sym-         sea level, for instance. Can a linear map from V to W
-metries of an isosceles triangle that is not equilateral,    similarly be specified by just a few numbers?
-or. . . . The list is endless.                                  The answer is that it can, at least if V and W are finite
+me tries of an isosceles triangle that is not equilateral,    similarly be specified by just a few numbers?
+or. . . . The list is end less.                                  The answer is that it can, at least if V and W are finite
    The automorphism groups associated with certain           dimensional. Suppose that V has a basis v1 , . . . , vn , that
 field extensions are called Galois groups, and are a vital    W has a basis w1 , . . . , wm , and that f : V → W is the lin-
 component of the proof of the insolubility of the            ear map we would like to specify. Since every vector in
@@ -672,7 +672,7 @@ gf (v) = v for every vector v in V . These we can think        help to clarify t
 of as “symmetries” of the vector space V , and as such         analogy between the role of the two-variable function
 they form a group under composition. If V is n dimen-          u(x, y) and the role of a matrix aij (which can itself
 sional and the scalars come from the field F, then this         be thought of as a function of the two integer vari-
-group is called GLn (F). The letters “G” and “L” stand for     ables i and j). Functions like u are sometimes called
+group is called GLn (F). The letters “G” and “L” stand for     ables i and j). Functions like u are some times called
 “general” and “linear”; some of the most important and         kernels (which should not be confused with kernels of
 
 $30$
@@ -703,7 +703,7 @@ $5$
 
 Basic Concepts of Mathematical Analysis
 
-Mathematics took a huge leap forward in sophistication with the invention of calculus, and the notion that one can specify a mathematical object indirectly by means of better and better approximations. These ideas form the basis of a broad area of mathematics known as analysis, and the purpose of this section is to help the reader who is unfamiliar with them. However, it will not be possible to do full justice to the subject, and what is written here will be hard to understand without at least some prior knowledge of calculus.
+Mathematics took a huge leap forward in sophistication with the invention of calculus, and the notion that one can specify a mathematical object indirectly by means of better and better approximations. These ideas form the basis of a broad area of mathematics known as analysis, and the purpose of this section is to help the reader who is unfamiliar with them. However, it will not be possible to do full justice to the subject, and what is written here will be hard to understand with out at least some prior knowledge of calculus.
 
 $5$ . $1$
 
@@ -732,7 +732,7 @@ be an exactly correct answer, but if there are enough
 points, spaced reasonably evenly, and if the curve does
 not wiggle too much, then our procedure will give us a                   It remains to capture the idea of “as close as you like.”
 good notion of the “approximate length” of the curve.                    What this means is that the above sentence is true for
-Moreover, it gives us a way to define what we mean by                     any δ you might wish to specify. In symbols:
+More over, it gives us a way to define what we mean by                     any δ you might wish to specify. In symbols:
 the “exact length”: suppose that, as we take more and
                                                                                ∀δ > 0 ∃N       ∀n ⩾ N     an is δ-close to l.
 more points, we find that the approximate lengths, in
@@ -761,11 +761,11 @@ each one is closer than the one before. Nevertheless, it                 have a 
 is true that eventually the sequence gets as close as you                second case it is less obvious how to define distance—
 like to 0 and remains at least that close.                               there are many natural ways to do it.) A further example
   This last phrase serves as a definition of the mathe-                   comes in the theory of fractals (see dynamics [IV.14](/part-04/dynamics)):
-matical notion of a limit : the limit of the sequence of                 the very complicated shapes that appear there are best
+mat ical notion of a limit : the limit of the sequence of                 the very complicated shapes that appear there are best
 numbers a1 , a2 , a3 , . . . is l if eventually the sequence             defined as limits of simpler ones.
 gets as close as you like to l and remains that close.                     Two other ways of saying “the limit of the sequence
 However, in order to meet the standards of precision                     a1 , a2 , . . . is l” are “an converges to l” and “an tends
-demanded by mathematics, we need to know how to                          to l.” One sometimes says that this happens as n tends
+demanded by mathematics, we need to know how to                          to l.” One some times says that this happens as n tends
 
 $32$
 
@@ -777,7 +777,7 @@ Continuity
 
 Suppose you want to know the approximate value of
 
-$\pi^{2}$ . Perhaps the easiest thing to do is to press $a \pi$ button on a calculator, which displays $3$ . 1415927 , and then an $x^{2}$ button, after which it displays $9$ . 8696044 . Of course, one knows that the calculator has not actually squared $\pi$ : instead it has squared the number $3$ . 1415927 . (If it is a good one, then it may have secretly used a few more digits of $\pi$ without displaying them, but not infinitely many .) Why does it not matter that the calculator has squared the wrong number?
+$\pi^{2}$ . Perhaps the easiest thing to do is to press $a \pi$ button on a calculator, which displays $3$ . 1415927 , and then an $x^{2}$ button, after which it displays $9$ . 8696044 . Of course, one knows that the calculator has not actually squared $\pi$ : instead it has squared the number $3$ . 1415927 . (If it is a good one, then it may have secretly used a few more digits of $\pi$ with out displaying them, but not infinitely many .) Why does it not matter that the calculator has squared the wrong number?
 A first answer is that it was only an approximate value of $\pi^{2}$ that was required. But that is not quite a complete explanation: how do we know that if x is a good approximation to $\pi$ then $x^{2}$ is $a$ good approximation to $\pi^{2}$ ? Here is how one might show this. If x is a good approximation to $\pi$ , then we can write $x = \pi + δ$ for some very small number δ (which could be negative). Then $x^{2} = \pi^{2} + 2δ\pi + δ^{2}$ . Since δ is small, so is $2δ\pi + δ^{2}$ , so $x^{2}$ is indeed a good approximation to $\pi^{2}$ .
 What makes the above reasoning work is that the function that takes a number x to its square is continuous. Roughly speaking, this means that if two numbers are close, then so are their squares. To be more precise about this, let us return to the calculation of $\pi^{2}$ , and imagine that we wish to work it out to a much greater accuracy--so that the first hundred digits after the decimal point are correct, for example.
 A calculator will not be much help, but what we might do is find a list of the digits of $\pi$ (on the Internet you can find sites that tell you at least the first fifty million), use this to define a new x that is a much better approximation to $\pi$ , and then calculate the new $x^{2}$ by getting a computer to do the necessary long multiplication. How close to $\pi$ do we need x to be for $x^{2}$ to be within $10 - 100$ of $\pi^{2}$ ? To answer this, we can use our earlier argument. Let $x = \pi + δ$ again.
@@ -796,7 +796,7 @@ I.3.   Some Fundamental Mathematical Definitions                                
 an → x, we also have f (an ) → f (x). That is, continu-       therefore be regarded as functions defined on a vec-
 ous functions are functions that preserve the structure       tor space of dimension greater than 1. As soon as we
 provided by convergent sequences and their limits.            look at them this way, we can ask ourselves whether, in
-                                                              a small neighborhood of a point, they can be approxi-
+                                                              a small neighborhood of a point, they can be approx i-
 5.3    Differentiation                                         mated by linear maps. It is very useful if they can: a gen-
                                                               eral function can behave in very complicated ways, but
 The derivative of a function f at a value a is usually pre-
@@ -854,7 +854,7 @@ is small compared with h. That is, (h)/h → 0 as h →                      �
 0. (This is a slightly more general notion of limit than                  ⎝ ⎠ ⎝                     ⎠⎝ ⎠
                                                                             r        a31 a32 a33         l
 the one discussed in section 5.1. It means that you can
-make (h)/h as small as you like if you make h small          The matrix entries aij express individual dependen-
+make (h)/h as small as you like if you make h small          The matrix entries aij express individual depend en-
 enough.)                                                      cies. For example, if x and z are held fixed, then we are
    The reason these ideas can be generalized is that the      setting h = l = 0, from which it follows that the rate
 notion of a linear map is much more general than sim-         of change of u as just y varies is given by the entry
@@ -872,11 +872,11 @@ that                                                             The left-hand s
                                                               the spatial coordinates x, y, and z are kept fixed and
 for some vector (h) that is small relative to h. Alter-
                                                               t varies. In other words, it tells us how fast the point
-natively, we can write
+native ly, we can write
                                                               (x, y, z) is heating up or cooling down at time t. What
             u(x + h) = u(x) + T (h) + (h),                   would we expect this to depend on? Well, heat takes
 a formula that is closely analogous to our earlier for-       time to travel through a medium, so although the tem-
-mula g(x + h) = g(x) + mh + (h). This tells us that          perature at some distant point (x , y , z ) will even-
+mula g(x + h) = g(x) + mh + (h). This tells us that          per at ure at some distant point (x , y , z ) will even-
 if we add a small vector h to x, then u(x) will change        tually affect the temperature at (x, y, z), the way the
 by roughly T (h).                                             temperature is changing right now (that is, at time t)
    More generally, let u be a function from Rn to Rm .        will be affected only by the temperatures of points very
@@ -918,7 +918,7 @@ physical medium changes with time:                            for some small h. 
                 =κ      +      +      .                       but this one is more convenient here.) The derivatives
              ∂t    ∂x 2   ∂y 2   ∂z 2
 Here, T (x, y, z, t) is a function that specifies the tem-     f (x) and f (x − h) can themselves be approximated
-perature at the point (x, y, z) at time t.                    by (f (x+h)−f (x))/h and (f (x)−f (x−h))/h, respec-
+per at ure at the point (x, y, z) at time t.                    by (f (x+h)−f (x))/h and (f (x)−f (x−h))/h, respec-
                                                               tively, and if we substitute these approximations into
   It is one thing to read an equation like this and under-
                                                               the earlier expression, then we obtain
@@ -946,8 +946,8 @@ that the second derivative of a linear function f is zero.    from A. This shoul
    Just as, when defining the first derivative, we have         on it. What will govern this force? Well, suppose for a
 to divide the difference f (x + h) − f (x) by h so that        moment that the portion of string containing x were
 it is not automatically tiny, so with the second deriva-      absolutely straight. Then the pull of the string on the
-tive it is appropriate to divide by h2 . (This is appropri-   left of x would exactly cancel out the pull on the right
-ate, since, whereas the first derivative concerns linear       and the net force would be zero. So, once again, what
+tive it is appropriate to divide by h2 . (This is ap propri-   left of x would exactly cancel out the pull on the right
+ate, since, where as the first derivative concerns linear       and the net force would be zero. So, once again, what
 approximations, the second derivative concerns quad-          matters is how the height at x compares with the aver-
 ratic ones: the best quadratic approximation for a func-      age height on either side: if the string lies above the
 tion f near a value x is f (x + h) ≈ f (x) + hf (x) +         tangent line at x, then there will be an upwards force,
@@ -976,7 +976,7 @@ equation, Δf = 0. Intuitively speaking, this says of a
                                                               One can be more concise still and write this equation
 function f that its value at a point (x, y, z) is always
                                                               as 2 h = 0, where 2 h is shorthand for
-equal to the average value at the immediately surround-
+equal to the average value at the immediately sur round-
 ing points. If f is a function of just one variable x,                                  1 ∂2 h
                                                                                     Δh −        .
 this says that the second derivative of f is zero, which                               v 2 ∂t 2
@@ -1004,7 +1004,7 @@ the beginning of each of the sixty seconds that it is trav-   you do?
 eling. Next, for each of those seconds, do a simple cal-         Riemann’s approach would be this. First, you enclose
 culation to see how far the car would have gone during        the rock in a cuboid. For each point (x, y, z) in this
 that second if the speed had remained exactly as it was       cuboid there is then an associated density d(x, y, z)
-at the beginning of the second. Finally, add up all these     (which will be zero if (x, y, z) lies outside the rock or
+at the beginning of the second. Finally, add up all these     (which will be zero if (x, y, z) lies out side the rock or
 distances. Since one second is a short time, the speed        inside a hole). Second, you divide the cuboid into a large
 will not change very much during any one second, so           number of smaller cuboids. Third, in each of the small
 this procedure gives quite an accurate answer. More-          cuboids you look for the point of lowest density (if any
@@ -1105,9 +1105,9 @@ tions that take complex numbers to complex numbers.           when f is holomorp
 Functions of this kind are called holomorphic.                isfies the Laplace equation (which was discussed in
    At first, there seems to be nothing special about such      section 5.4). A similar argument shows that v does
 functions, since the definition of a derivative in this        as well.
-context is no different from the definition for functions          These facts begin to suggest that complex differen-
-of a real variable: if f is a function then the derivative    tiability is a much stronger condition than real differen-
-f (z) at a complex number z is defined to be the limit         tiability and that we should expect holomorphic func-
+context is no different from the definition for functions          These facts begin to suggest that complex differ en-
+of a real variable: if f is a function then the derivative    ti ability is a much stronger condition than real differ en-
+f (z) at a complex number z is defined to be the limit         ti ability and that we should expect holomorphic func-
 as h tends to zero of (f (z + h) − f (z))/h. However, if      tions to have interesting properties. For the remainder
 we look at this definition in a slightly different way (one     of this subsection, let us look at a few of the remarkable
 that we saw in section 5.3), we find that it is not alto-      properties that they do indeed have.
@@ -1229,7 +1229,7 @@ $6$ . $3$
 
 Affine Geometry
 
-There are many linear maps besides rotations and reflections. What happens if we enlarge our group from SO (n) or O (n) to include as many of them as possible? For a transformation to be part of a group it must be invertible and not all linear maps are, so the natural group to look at is the group GL n (R) of all invertible linear transformations of R n , a group that we first met in section $4$ . $2$ .
+There are many linear maps be sides rotations and reflections. What happens if we enlarge our group from SO (n) or O (n) to include as many of them as possible? For a transformation to be part of a group it must be invertible and not all linear maps are, so the natural group to look at is the group GL n (R) of all invertible linear transformations of R n , a group that we first met in section $4$ . $2$ .
 These maps all leave the origin fixed, but if we want we can incorporate translations and consider a larger group that consists of all transformations of the form x   $\to$ T x $+$ b, where b is a fixed vector and T is an invertible linear map. The resulting geometry is called affine geometry.
 
 $40$
@@ -1242,7 +1242,7 @@ $6$ . $4$
 Topology
 
 The idea that the geometry associated with a group of transformations “studies the concepts that are preserved by all the transformations” can be made more precise using the notion of equivalence relations [I.2](/part-01/language-and-grammar). Indeed, let $G$ be a group of transformations of R n . We might think of an n-dimensional “shape” as being a subset S of R n , but if we are doing G-geometry, then we do not want to distinguish between a set S and any other set we can obtain from it using a transformation in G. So in that case we say that the two shapes are equivalent.
-For example, two shapes are equivalent in Euclidean geometry if and only if they are congruent in the usual sense, whereas in two-dimensional affine geometry all parallelograms are equivalent, as are all ellipses. One can think of the basic objects of G-geometry as equivalence classes of shapes rather than the shapes themselves. Topology can be thought of as the geometry that arises when we use a particularly generous notion of equivalence, saying that two shapes are equivalent, or homeomorphic, to use the technical term, if each can be “continuously deformed” into the other.
+For example, two shapes are equivalent in Euclidean geometry if and only if they are congruent in the usual sense, where as in two-dimensional affine geometry all parallelograms are equivalent, as are all ellipses. One can think of the basic objects of G-geometry as equivalence classes of shapes rather than the shapes themselves. Topology can be thought of as the geometry that arises when we use a particularly generous notion of equivalence, saying that two shapes are equivalent, or homeomorphic, to use the technical term, if each can be “continuously deformed” into the other.
 For example, a sphere and a cube are equivalent in this sense, as figure $1$ illustrates. Because there are very many continuous deformations, it is quite hard to prove that two shapes are not equivalent in this sense. For example, it may seem obvious that a sphere (this means the surface of a ball rather than the solid ball) cannot be continuously deformed into a torus (the shape of the surface of a doughnut of the kind that has a hole in it) , since they are fundamentally different shapes--one has a “hole” and the other does not.
 However, it is not easy to turn this intuition into a rigorous argument. For more on this kind of problem, see invariants [I.4](/part-01/general-goals), algebraic topology [IV.6](/part-04/algebraic-topology), and differential topology [IV.7](/part-04/dierential-topology).
 
@@ -1344,9 +1344,9 @@ ioned subject, and it is no longer taught in schools, but
 it still has an important role to play in modern mathe-
                                                                  have already met. Since PSL3 (R) is bigger than PSL2 (R),
 matics. We shall concentrate here on the real projective
-                                                                 the projective plane comes with a richer set of transfor-
+                                                                 the projective plane comes with a richer set of trans for-
 plane, but projective geometry is possible in any num-
-                                                                 mations than the hyperbolic plane, which is why fewer
+                                                                 ma tions than the hyperbolic plane, which is why fewer
 ber of dimensions and with scalars in any field. This
                                                                  geometrical properties are preserved. (For example, we
 makes it particularly useful to algebraic geometers.
@@ -1355,8 +1355,8 @@ makes it particularly useful to algebraic geometers.
                                                                  distance, but there is no obvious notion of projective
 The first is that the set of points is the ordinary plane,
                                                                  distance.)
-together with a “line at infinity.” The group of transfor-
-mations consists of functions known as projections. To
+together with a “line at infinity.” The group of trans for-
+ma tions consists of functions known as projections. To
                                                                  6.8    Lorentz Geometry
 understand what a projection is, imagine two planes P
 and P in space, and a point x that is not in either of           This is a geometry used in the theory of special rel-
@@ -1406,15 +1406,15 @@ $6$ . $9$
 
 Manifolds and Differential Geometry
 
-To somebody who has not been taught otherwise, it is natural to think that Earth is flat, or rather that it consists of a flat surface on top of which there are buildings, mountains, and so on. However, we now know that it is in fact more like a sphere, appearing to be flat only because it is so large. There are various kinds of evidence for this. One is that if you stand on a cliff by the sea then you can see a definite horizon, not too far away, over which ships disappear. This would be hard to explain if Earth were genuinely flat.
+To some body who has not been taught otherwise, it is natural to think that Earth is flat, or rather that it consists of a flat surface on top of which there are buildings, mountains, and so on. However, we now know that it is in fact more like a sphere, appearing to be flat only because it is so large. There are various kinds of evidence for this. One is that if you stand on a cliff by the sea then you can see a definite horizon, not too far away, over which ships disappear. This would be hard to explain if Earth were genuinely flat.
 Another is that if you travel far enough in what feels like a straight line then you eventually get back to where you started. A third is that if you travel along a triangular route and the triangle is a large one, then you will be able to detect that its three angles add up to more than $180$ ◦ . It is also very natural to believe that the geometry that best models that of the universe is three-dimensional Euclidean geometry, or what one might think of as “normal” geometry.
 However, this could be just as much of a mistake as believing that two-dimensional Euclidean geometry is the best model for Earth’s surface. Indeed, one can immediately improve on it by considering Lorentzian geometry as a model of spacetime, but even if there were no theory of special relativity, our astronomical observations would give us no particular reason to suppose that Euclidean geometry was the best model for the universe. Why should we be so sure that we would not obtain a better model by taking the three-dimensional surface of a very large fourdimensional ball?
-This might feel like “normal” space in just the way that the surface of Earth feels like a “normal” plane unless you travel large distances. Perhaps if you traveled far enough in a rocket without changing your course then you would end up where you started. It is easy to describe “normal” space mathematically: one just associates with each point in space a triple of coordinates (x , y, z) in the usual way. How might we describe a huge “spherical” space? It is slightly harder, but not much:
+This might feel like “normal” space in just the way that the surface of Earth feels like a “normal” plane unless you travel large distances. Perhaps if you traveled far enough in a rocket with out changing your course then you would end up where you started. It is easy to describe “normal” space mathematically: one just associates with each point in space a triple of coordinates (x , y, z) in the usual way. How might we describe a huge “spherical” space? It is slightly harder, but not much:
 one can give each point four coordinates (x , y, z, w) but add the condition that these must satisfy the equation $x^{2} + y^{2} + z^{2} + w^{2} = R^{2}$ for some fixed R that we think of as the “radius” of the universe. This describes the three-dimensional surface of a four-dimensional ball of radius R in just the same
 
 I. Introduction
 
-way that the equation $x^{2} + y^{2} + z^{2} = R^{2}$ describes the two-dimensional surface of a three-dimensional ball of radius R. A possible objection to this approach is that it seems to rely on the rather implausible idea that the universe lives in some larger unobserved four-dimensional space. However, this objection can be answered. The object we have just defined, the $3$ - sphere $S^{3}$ , can also be described in what is known as an intrinsic way: that is, without reference to some surrounding space.
+way that the equation $x^{2} + y^{2} + z^{2} = R^{2}$ describes the two-dimensional surface of a three-dimensional ball of radius R. A possible objection to this approach is that it seems to rely on the rather implausible idea that the universe lives in some larger unobserved four-dimensional space. However, this objection can be answered. The object we have just defined, the $3$ - sphere $S^{3}$ , can also be described in what is known as an intrinsic way: that is, with out reference to some surrounding space.
 The easiest way to see this is to discuss the $2$ - sphere first, in order to draw an analogy. Let us therefore imagine a planet covered with calm water. If you drop a large rock into the water at the North Pole, a wave will propagate out in a circle of everincreasing radius. (At any one moment, it will be a circle of constant latitude .) In due course, however, this circle will reach the equator, after which it will start to shrink, until eventually the whole wave reaches the South Pole at once, in a sudden burst of energy.
 Now imagine setting off a three-dimensional wave in space--it could, for example, be a light wave caused by the switching on of a bright light. The front of this wave would now be not a circle but an everexpanding spherical surface. It is logically possible that this surface could expand until it became very large and then contract again, not by shrinking back to where it started, but by turning itself inside out, so to speak, and shrinking to another point on the opposite side of the universe.
 (Notice that in the two-dimensional example, what you want to call the inside of the circle changes when the circle passes the equator .) With a bit of effort, one can visualize this possibility, and there is no need to appeal to the existence of a fourth dimension in order to do so. More to the point, this account can be turned into a mathematically coherent and genuinely three-dimensional description of the $3$ - sphere . A different and more general approach is to use what is called an atlas.
@@ -1447,7 +1447,7 @@ dimensional balls. There is a correspondence between         ifold can be though
 points toward the edge of one of these balls and points      rise to an object that is “locally like Euclidean space of
 toward the edge of the other, and this can be used to        d dimensions.”
 describe the geometry: as you travel toward the edge            An extremely important feature of manifolds is that
-of one ball you find yourself in the overlapping region,      calculus is possible for functions defined on them.
+of one ball you find your self in the overlapping region,      calculus is possible for functions defined on them.
 so you are also in the other ball. As you go further, you    Roughly speaking, if M is a manifold and f is a function
 are off the map as far as the first ball is concerned, but     from M to R, then to see whether f is differentiable at a
 the second ball has by that stage taken over.                point x in M you first find a chart that contains x (or a
@@ -1463,9 +1463,9 @@ close to planar, they are all 2-manifolds, though when       if the function tha
 the dimension is two the word surface is more usual.         the overlapping parts (known as a transition function)
 (However, it is important to remember that a “surface”       is itself differentiable. Manifolds with this property are
 need not be the surface of anything.) Similarly, the         called differentiable manifolds: manifolds for which the
-3-sphere is a 3-manifold.                                    transition functions are continuous but not necessar-
+3-sphere is a 3-manifold.                                    transition functions are continuous but not ne ces sar-
    The formal definition of a manifold uses the idea          ily differentiable are called topological manifolds. The
-of atlases: indeed, one says that the atlas is a mani-       availability of calculus makes the theory of differen-
+of atlases: indeed, one says that the atlas is a mani-       availability of calculus makes the theory of differ en-
 fold. This is a typical mathematician’s use of the word      tiable manifolds very different from that of topological
 “is,” and it should not be confused with the normal          manifolds.
 use. In practice, it is unusual to think of a manifold          The above ideas generalize easily from real-valued
@@ -1489,7 +1489,7 @@ If the manifold is presented to us as a hypersurface in some bigger space, then 
 I. Introduction
 
 provided we have a way of defining distances between points that are very close together, in which case we can find a single chart that contains them both. The second problem, which is much more serious, is that for any one manifold there are many ways of choosing the charts, so this idea does not lead to a single notion of distance for the manifold. Worse still, even if one fixes one set of charts, these charts will overlap, and it may not be possible to make the notions of distance compatible where the overlap occurs. The third problem is related to the second.
-The surface of a sphere is curved, whereas the charts of any atlas (in either the everyday or the mathematical sense) are flat. Therefore, the distances in the charts cannot correspond exactly to the lengths of shortest paths in the sphere itself. The single most important moral to draw from the above problems is that if we wish to define a notion of distance for a given manifold, we have a great deal of choice about how to do so. Very roughly, a Riemannian metric is a way of making such a choice.
+The surface of a sphere is curved, where as the charts of any atlas (in either the everyday or the mathematical sense) are flat. Therefore, the distances in the charts cannot correspond exactly to the lengths of shortest paths in the sphere itself. The single most important moral to draw from the above problems is that if we wish to define a notion of distance for a given manifold, we have a great deal of choice about how to do so. Very roughly, a Riemannian metric is a way of making such a choice.
 A little less roughly, a metric means a sensible notion of distance (the precise definition can be found in [III.56](/part-03/metric-spaces)) . A Riemannian metric is a way of determining infinitesimal distances. These infinitesimal distances can be used to calculate lengths of paths, and then the distance between two points can be defined as the length of the shortest path between them. To see how this is done, let us first think about lengths of paths in the ordinary Euclidean plane.
 Suppose that (x , y) belongs to a path and (x  +  δx, y  +  δ y) is another point on the path, very close to (x , y). Then the distance between the two points is $δx^{2} + δy^{2}$ . To calculate the length of a sufficiently smooth path, one can choose a large number of points along the path, each one very close to the next, and add up their distances. This gives a good approximation, and one can make it better and better by taking more and more points. In practice, it is easier to work out the length using calculus.
-A path itself can be thought of as a moving point (x (t), y (t)) that starts when t $= 0$ and ends when $t = 1$ . If δt is very small, then $x(t + δt)$ is approximately x (t)  +  x (t) δ $t$ and $y(t + δ t)$ is approximately y (t)  +  y (t) δ t . Therefore, the distance between and (x (t  +  δ t), y (t + δ t)) is approxi(x (t), y (t)) mately δt x (t)2 + y (t)2 , by the Pythagorean theorem. Therefore, letting δt go to zero and integrating all the infinitesimal distances along the path, we obtain the formula1 x (t)2 + y (t)2 dt0
+A path itself can be thought of as a moving point (x (t), y (t)) that starts when t $= 0$ and ends when $t = 1$ . If δt is very small, then $x(t + δt)$ is approximately x (t)  +  x (t) δ $t$ and $y(t + δ t)$ is approximately y (t)  +  y (t) δ t . Therefore, the distance between and (x (t  +  δ t), y (t + δ t)) is approx i(x (t), y (t)) mately δt x (t)2 + y (t)2 , by the Pythagorean theorem. Therefore, letting δt go to zero and integrating all the infinitesimal distances along the path, we obtain the formula1 x (t)2 + y (t)2 dt0

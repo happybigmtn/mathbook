@@ -25,7 +25,7 @@ VIII.7.   A Chronology of Mathematical Events                                   
 ca. 1270 Yang Hui’s A Detailed Analysis of the              1631 Harriot’s Artis Analyticae Praxis (theory of
   Mathematical Methods in the Nine Chapters (includes         equations).
   diagram similar to “Pascal’s triangle,” which Hui         1632 Galileo’s Dialogue Concerning the Two Chief
-  ascribes to Jia Xian in the eleventh century).              World Systems (comparison of Ptolemaic and
+  a scribes to Jia Xian in the eleventh century).              World Systems (comparison of Ptolemaic and
 1303 Zhu Shijie’s Siyuan Yujian (“Precious Mirror of the      Copernican theories).
   Four Elements”; elimination methods for solving           1637 Descartes’s La Géométrie (geometry via algebraic
   simultaneous equations in as many as four unknowns).        means).
@@ -85,7 +85,7 @@ ca. 1621 Oughtred invents rectilinear slide rule.           1735 Euler solves th
 1624 Briggs’s Arithmetica Logarithmica (first printed           n=1 (1/n ) = π /6.
   book of logarithmic tables in base 10).                   1736 Euler solves the Königsberg bridge problem.
 
-10121737 Euler’s “Variae observationes circa series infinitis” (Euler product). 1738 Daniel Bernoulli’s Hydrodynamica (relates fluid flow to pressure). 1742 Goldbach’s conjecture (contained in a letter to Euler) . Maclaurin’s Treatise of Fluxions (defense of Newton against attacks of Berkeley). 1743 D’Alembert’s Traité de Dynamique (d ’ Alembert ’ s principle). 1744 Euler’s Methodus Inveniendi Lineas Curvas (calculus of variations). 1747 Euler states law of quadratic reciprocity. D’Alembert derives one-dimensional wave equation as the law governing the motion of a vibrating string.
+10121737 Euler’s “Variae observationes circa series infinit is” (Euler product). 1738 Daniel Bernoulli’s Hydrodynamica (relates fluid flow to pressure). 1742 Goldbach’s conjecture (contained in a letter to Euler) . Maclaurin’s Treatise of Fluxions (defense of Newton against attacks of Berkeley). 1743 D’Alembert’s Traité de Dynamique (d ’ Alembert ’ s principle). 1744 Euler’s Methodus Inveniendi Lineas Curvas (calculus of variations). 1747 Euler states law of quadratic reciprocity. D’Alembert derives one-dimensional wave equation as the law governing the motion of a vibrating string.
 1748 Euler’s Introductio in Analysin Infinitorum (introduction of function concept, the formula $ei\theta =$ cos $\theta + i$ sin $\theta,$ and much much more). $1750 - 52$ Euler’s formula for polyhedra. 1757 Euler’s “Principes généraux du mouvement des fluides” (Euler equations, start of modern hydrodynamics). 1763 Bayes’s An Essay towards Solving a Problem in the Doctrine of Chances (Bayes ’ s theorem). 1771 Lagrange’s “Réflections sur la résolution algébrique des équations” (codifies work on theory of equations, foreshadowing group theory).
 1788 Lagrange’s Méchanique Analitique (Lagrangian approach to mechanics). 1795 Monge’s Application de l’Analyse à la Géométrie (differential geometry) and Géométrie Descriptive (significant for creation of projective geometry). 1796 Gauss constructs regular $17$ - gon . 1797 Lagrange’s Théorie des Fonctions Analytiques (major study of functions as power series). 1798 Legendre’s Théorie des Nombres (first book dedicated to number theory). 1799 Gauss proves the fundamental theorem of algebra.
 $1799 - 1825$ Laplace’s Traité de la Mécanique Céleste (authoritative statement on celestial and planetary mechanics). 1801 Gauss’s Disquisitiones Arithmeticae (modular arithmetic, first complete proof of law of quadratic reciprocity, many other major results and concepts in number theory). 1805 Legendre’s method of least squares. 1809 Gauss on celestial motion. 1812 Laplace’s Théorie Analytique des Probabilités (introduction of many new concepts in probability, including probability generating functions and the central limit theorem).
@@ -93,9 +93,9 @@ $1799 - 1825$ Laplace’s Traité de la Mécanique Céleste (authoritative state
 VIII. Final Perspectives
 
 1814 Servois coins terms “commutative” and “distributive.” 1815 Cauchy on permutations. 1817 Bolzano’s early version of the intermediate value theorem. 1821 Cauchy’s Cours d’Analyse (major contribution to rigorization of analysis). 1822 Fourier’s Théorie Analytique de la Chaleur (first appearance in print of Fourier series) . Poncelet’s Traité des Propriétés Projective des Figures (rediscovery of projective geometry). 1823 Navier formulates equations now known as the Navier-Stokes equations. Cauchy’s Résumé des Leçons sur le Calcul Infinitésimal. 1825 Cauchy’s integral theorem.
-1826 Journal für die reine und angewandte Mathematik (otherwise known as Crelle’s Journal; first major mathematics journal that continues to be important today, published in Germany). Abel proves the insolubility of the quintic by radicals. 1827 Ampère’s law for electrodynamics. Gauss’s Disquisitiones Generales Circa Superficies Curva (Gaussian curvature, theorema egregium). Ohm’s law for electricity. 1828 Green’s theorem. 1829 Dirichlet on convergence of Fourier series. Sturm’s theorem. Lobachevskii’s non-Euclidean geometry.
+1826 Journal für die reine und angewandte Mathematik (otherwise known as Crelle’s Journal; first major mathematics journal that continues to be important today, published in Germany). Abel proves the insolubility of the quintic by radicals. 1827 Ampère’s law for electrodynamics. Gauss’s Disquisitiones Generales Circa Superficies Curva (Gaussian curvature, theorem a egregium). Ohm’s law for electricity. 1828 Green’s theorem. 1829 Dirichlet on convergence of Fourier series. Sturm’s theorem. Lobachevskii’s non-Euclidean geometry.
 Jacobi’s Fundamenta Nova Theoriae Functionum Ellipticarum (key work on elliptic functions). $1830 - 32$ Galois’s systematic treatment of solubility of polynomial equations by radicals and inception of group theory. 1832 Bolyai’s non-Euclidean geometry. 1836 Journal de Mathématiques Pures et Appliquées (also known as Liouville’s Journal; major mathematics journal which continues to be important today, published in France). $1836 - 37$ Sturm and Liouville create Sturm-Liouville theory. 1837 Dirichlet’s theorem on infinitely many primes in arithmetic progressions.
-Poisson’s Recherches sur la Probabilité des Jugements (Poisson distribution; the phrase “law of large numbers” coined). 1841 Jacobian determinants. 1843 Hamilton discovers quaternions. 1844 Grassmann’s A us dehn ung sl eh re (multilinear algebra). Cayley’s earliest work on invariants. 1846 Chebyshev proves a version of the weak law of large numbers. 1851 Riemann’s Grundlagen für eine Theorie der Funktionen einer veränderlichen complexen Grösse (Cauchy - Riemann equations, Riemann surface).
+Poisson’s Recherches sur la Probabilité des Jugements (Poisson distribution; the phrase “law of large numbers” coined). 1841 Jacobi an determinants. 1843 Hamilton discovers quaternions. 1844 Grassmann’s Ausdehnungslehre (multilinear algebra). Cayley’s earliest work on invariants. 1846 Chebyshev proves a version of the weak law of large numbers. 1851 Riemann’s Grundlagen für eine The orie der Funktionen einer veränderlichen complexen Grösse (Cauchy - Riemann equations, Riemann surface).
 
 VIII . $7$ .
 
@@ -109,7 +109,7 @@ A Chronology of Mathematical Events
 10131896 Frobenius founds representation theory. Hadamard and de la Vallée-Poussin prove the prime number theorem. Hilbert’s Zahlbericht (major work that shaped modern algebraic number theory). 1897 First International Congress of Mathematicians, Zurich. Hensel introduces p-adic numbers. 1899 Hilbert’s Grundlagen der Geometrie (rigorous modern axiomatization of Euclidean geometry). 1900 Hilbert’s twenty-three problems posed at the Second International Congress of Mathematicians in Paris.
 1901 Ricci and Levi-Cività’s Méthodes du Calcul Différentiel Absolut et leurs Applications (tensor calculus). 1902 Lebesgue’s Intégrale, Longeure, Aire (Lebesgue integration). 1903 Russell’s paradox. 1904 Zermelo’s axiom of choice. 1905 Einstein’s special theory of relativity published. $1910 - 13$ Whitehead and Russell’s Principia Mathematica (foundations for mathematics avoiding set-theoretic paradoxes). 1914 Hausdorff’s Grundzüge der Mengenlehre (topological spaces). 1915 Einstein submits paper giving definitive version of the general theory of relativity. 1916 The Bieberbach conjecture.
 $1917 - 18$ Fatou and Julia sets (iteration of rational functions). 1920 Takagi existence theorem (major founding result in Abelian class field theory). 1921 Noether’s “Idealtheorie in Ringbereichen” (major step in the development of the abstract theory of rings). 1923 Wiener provides mathematical theory of Brownian motion. 1924 Courant and Hilbert’s Methoden der mathematischen Physik (important summary of methods then known in mathematical physics). 1925 Fisher’s Statistical Methods for Research Workers (foundational work of modern statistics) .
-Heisenberg’s matrix mechanics (first formulation of quantum mechanics) . Weyl’s character formula (foundational result in representation theory of compact Lie groups). 1926 Schrödinger’s wave mechanics (second formulation of quantum mechanics). 1927 Peter and Weyl’s “Die Vollständigkeit der primitiven Darstellungen einer geschlossenen ko nt inu i er li chen Gruppe” (birth of modern harmonic analysis). Artin’s generalized reciprocity law.
+Heisenberg’s matrix mechanics (first formulation of quantum mechanics) . Weyl’s character formula (foundational result in representation theory of compact Lie groups). 1926 Schrödinger’s wave mechanics (second formulation of quantum mechanics). 1927 Peter and Weyl’s “Die Vollständigkeit der primitiven Darstellungen einer geschlossenen kontinuierlichen Gruppe” (birth of modern harmonic analysis). Artin’s generalized reciprocity law.
 
 10141930 Ramsey’s “On a problem of formal logic” (Ramsey ’ s theorem) . Van der Waerden’s Moderne Algebra (revolutionized modern algebra, promoted approaches of Artin and Noether). 1931 Gödel’s incompleteness theorems. 1932 Banach’s Théorie des Opérations Linéaires (first monograph on functional analysis). 1933 Kolmogorov’s axioms for probability. 1935 Birth of Bourbaki. 1937 Turing’s paper “On computable numbers” (theory of Turing machines). 1938 Gödel proves that the continuum hypothesis and the axiom of choice are consistent with the Zermelo-Fraenkel axioms.
 1939 First volume of Bourbaki’s Éléments de Mathématique. 1943 Colossus (first programmable electronic computer). 1944 Von Neumann and Morgenstern’s Theory of Games and Economic Behavior (foundation of game theory). 1945 Eilenberg and Mac Lane define the notion of a category. Eilenberg and Steenrod introduce axiomatic approach to homology theories. 1947 Dantzig discovers the simplex algorithm. 1948 Shannon’s “A mathematical theory of communication” (foundation of information theory). 1949 The Weil conjectures. Erdős and Selberg give elementary proofs of the prime number theorem.
@@ -118,7 +118,7 @@ Heisenberg’s matrix mechanics (first formulation of quantum mechanics) . Weyl�
 VIII. Final Perspectives
 
 1964 Hironaka’s theorem on resolution of singularities. 1965 Publication of Birch-Swinnerton-Dyer conjecture. Carleson’s theorem proved. 1966 Robinson’s Non-Standard Analysis. $1966 - 67$ Langlands introduces conjectures that give rise to the Langlands program (profoundly reshaped much of algebraic number theory and representation theory). 1967 Analytical solution of the Kd V equation by Gardner, Greene, Kruskal, and Miura.
-1970 Matiyasevich, building on work of Davis, Putnam, and Robinson, proves that there is no algorithm to solve Diophantine equations, thereby solving Hilbert’s tenth problem. $1971 - 72$ Notion of NP-completeness developed by Cook, Karp, and Levin. 1974 Deligne completes proof of the Weil conjectures. 1976 The four-color theorem proved by Appel and Haken using a computer program. 1978 RSA algorithm for public-key cryptography. Brooks and Matelski produce the first picture of a Mandelbrot set.
+1970 Matiyasevich, building on work of Davis, Putnam, and Robinson, proves that there is no algorithm to solve Diophantine equations, there by solving Hilbert’s tenth problem. $1971 - 72$ Notion of NP-completeness developed by Cook, Karp, and Levin. 1974 Deligne completes proof of the Weil conjectures. 1976 The four-color theorem proved by Appel and Haken using a computer program. 1978 RSA algorithm for public-key cryptography. Brooks and Matelski produce the first picture of a Mandelbrot set.
 1981 Announcement of classification theorem for finite simple groups (as of 2008 , definitive version not yet fully available in print but theorem widely accepted). 1982 Hamilton introduces Ricci flow. Thurston’s geometrization conjecture. 1983 Faltings proves the Mordell conjecture. 1984 De Branges proves the Bieberbach conjecture. 1985 Masser and Oesterlé formulate the ABC conjecture. 1989 Anosov and Bolibruch answer the Riemann-Hilbert problem in the negative. 1994 Shor’s quantum algorithm for factorization of integers. Fermat’s last theorem proved in papers by Wiles and Taylor  /  Wiles .
 2003 Perelman uses Ricci flow to solve the Poincaré conjecture and Thurston’s geometrization conjecture.
 
@@ -225,7 +225,7 @@ axiomatic approach: to mathematics,
 axioms, 20, 56, 284, 700
                                        biological fluid dynamics, 843             Brouwer’s fixed point theorem,
                                        biorthogonal wavelet bases, 855             693–96, 800, 901
-Babbage, Charles, 111                  bipartite graphs, see graphs, bipartite   Brown–Douglas–Fillmore theorem,
+Babbage, Charles, 111                  bipartite graphs, see graphs, bipartite   Brown–Douglas–Fill more theorem,
 Babylonian mathematics, 96             birational equivalence, 722                 521
 Bach, J. S., 938–40                    Birch–Swinnerton-Dyer conjecture,         Brownian excursion, 656–57
 Baire category theorem, 633               229, 381, 685–86                       Brownian motion, 218, 647–56,
@@ -365,7 +365,7 @@ $569 - 70207$ , $295 - 96$ , $308$ , $339$ , $426$ , $428$ ; combinatorics, $6 -
 
 $563 - 72$ ; probabilistic, $572 - 74$ in phylogenetics, $846$ . communication channel, $879$ See also Dirichlet characters communication complexity, $589$ Chebotaryov density theorem, $783$ commutant of a set of operators, $515$ Chebyshev, Pafnuty, $771$ commutative diagrams, $166$ , $274$ Chebyshev polynomials, $293$ , $297$ , commutative law, $13$ , $82$ , $105$ , $179$ ,
 
-771278 , $284$ , $301$ , $323$ , $519$ , $770$ chemical informatics, $836$ commutator, $231$ , $287$ , $444$ , $526$ , $542$ chemical topology, $830 - 31$ compact if ic at i on, $168 - 69$ , $267$ , $721$ ; Chern classes, $394$ one-point, $169$ ; Stone-Čech, $169$ Chevalley, Claude, $813$ , $824$ compactness, $167 - 69$ , $303$ , $398$ , Chevalley groups, $688639 - 40$ , $645$
+771278 , $284$ , $301$ , $323$ , $519$ , $770$ chemical informatics, $836$ commutator, $231$ , $287$ , $444$ , $526$ , $542$ chemical topology, $830 - 31$ compactification, $168 - 69$ , $267$ , $721$ ; Chern classes, $394$ one-point, $169$ ; Stone-Čech, $169$ Chevalley, Claude, $813$ , $824$ compactness, $167 - 69$ , $303$ , $398$ , Chevalley groups, $688639 - 40$ , $645$
 
 chiral algebra, $544$
 
@@ -631,7 +631,7 @@ fields, 18, 20–21, 23–25, 27–28,             511, 686–87                
   extensions of, 21, 28, 102, 254           204–8, 214, 236, 239, 274, 306,           81, 100, 147, 224, 275, 294,
 fields (in physics), 525–26, 542–43          450, 453–54, 457, 473–74, 523–24,         326, 386, 640, 695, 698–99
 figure eight knot, 225–26                    859; discrete, 203, 590, 611;           fundamental theorem of arithmetic,
-filtering, 860                               inversion formula for, 206, 306,          57, 104, 191, 221, 283, 332–33,
+filtering, 860                               in version formula for, 206, 306,          57, 104, 191, 221, 283, 332–33,
 finite simple groups, 26, 59, 261,           426; non-Abelian, 274, 424–25,            336, 699–700
   439, 687–89; search for, 783, 785         429–30. See also fast Fourier           fundamental theorem of calculus, 37,
 finitely generated groups, 67,               transform, the                            175, 177, 179, 290, 651, 742, 758
@@ -789,7 +789,7 @@ Hermitian structure, 163                homotopy groups, 221, 309, 385–87;    
 Heron of Alexandria, 79, 110              of spheres, 389–92, 395                   of a Toeplitz operator, 521
 Hessian matrix, 462, 612–13             Hopf algebra, 273–74                     Indian mathematics, 79, 98, 192,
 heuristic evidence, 361–62              Hopf link, 225–26                           320, 736
-Higher Arithmetic, The (Davenport),     Hopf map, 389, 392                       indirect proofs of existence, 71, 117,
+Higher Arithmetic, The (Davenport),     Hopf map, 389, 392                       in direct proofs of existence, 71, 117,
   315                                   horocycle, 90                               143–44, 149
 highest common factor, 107, 191–92      household maximization problem,          induction: principle of, 16, 152, 258,
 Higman, Graham, 437–39                    897–99                                    592, 638, 701, 741, 787, 998
@@ -836,7 +836,7 @@ interior methods for linear                                                     
   programming, 614                        Jacobi, Carl Gustav Jacob,                814–16
 intermediate value theorem,                 727, 762–63, 766                      Kontsevich, Maxim, 69, 536–37
   49, 67, 124, 384, 693                   Jacobi identity, 231, 541               Korteweg, Diederik, 235, 237, 799
-International Congress of                 Jacobian, 418                           Kovalevskaya, Sofya (Sonya), 125,
+International Congress of                 Jacobi an, 418                           Kovalevskaya, Sofya (Sonya), 125,
   Mathematicians, 110, 145, 619,          James–Stein estimator, see                784–85
   783, 789, 811, 950, 961, 966              estimators, statistical               Kronecker, Leopold, 143–44, 146,
 Internet, 862–63, 868–70, 890             Jensen, Ronald, 624                       315, 327–28, 330–31, 773–74
@@ -853,7 +853,7 @@ invariants, 53–54, 103, 221, 225, 370,    Journal für die reine und angewandt
   383–87, 395, 404, 407, 410–12,            Mathematik, see Crelle’s Journal      Lagrange, Joseph Louis, 101, 122,
   442, 695, 788, 800; cardinal, 627;      J-stability, 506                          136, 193, 268, 554, 570, 636,
   discrete, 370–71, 411–12; Gromov–       Julia, Gaston, 110, 498                   727, 751–52
-  Witten, 419, 533–34, 537; of elliptic   Julia sets, 244, 500–506, 508           Lagrange inversion theorem,
+  Witten, 419, 533–34, 537; of elliptic   Julia sets, 244, 500–506, 508           Lagrange in version theorem,
   equations, 682; Seiberg–Witten,         just intonation, 936–37                   554, 752
   404, 407, 419; theory of, 103, 144,                                             Lagrange multipliers, 256–57,
   550, 773, 789, 800                      K-theory, 227, 394–95, 521–22, 683        865–67, 870, 899
@@ -947,7 +947,7 @@ matrices, 28–30, 33, 49, 174, 223,         997–98                           
  423, 607; self-adjoint, 240; similar,   minimal surface equation, 312, 457      Mordell–Weil theorem, 190
  174; skew-Hermitian, 231;               minimal surfaces, 312, 534, 670,        Mordell’s theorem, 685, 820
  stochastic, 694; symmetric, 240,          832–33                                Morlet, J., 861
- 511; symplectic, 298; transpose of,     minimum connector problem, 245          morphisms, 165–67, 536
+ 511; symplectic, 298; transpose of,     minimum connect or problem, 245          morphisms, 165–67, 536
  240; unipotent, 430; unitary, 240,      minimum spanning tree problem           Mostow, George, 713
  271, 277, 511; upper-triangular,          (MSTP), 872–75                        Mostow’s rigidity theorem, 712–13
  607                                     Minkowski, Hermann, 330, 484, 487,      multiplication, 275–78, 284, 306–7,
@@ -960,11 +960,11 @@ maximal torus, 430                       mirror symmetry, 69, 164, 190,         
 maximum principle for the Laplace          523–24, 529–32, 534, 537–38           multiplicative sequence, 228
  equation, 475                           Möbius, August Ferdinand, 759           multiplicity of a solution, 366
 maximum-likelihood estimate, 924         Möbius function, 345                    multiplier of a fixed point, 499
-Maxwell’s equations, 479, 484, 490,      Möbius inversion, 561                   multistep methods for numerical
+Maxwell’s equations, 479, 484, 490,      Möbius in version, 561                   multistep methods for numerical
  525                                     Möbius strip, 384, 392–93, 399–400,      solution of ODEs, 609
 Mc Kay, John, 60                            759, 950, 979–80                      Music for Strings, Percussion, and
 mean of a random variable, 265–66        Möbius transformations, 208–9,           Celesta of Bartók, 940
-meantone temperament, 937                  415–16                                Musical Offering, The (Bach), 939–40
+meant one temperament, 937                  415–16                                Musical Offering, The (Bach), 939–40
 measurable cardinals, see cardinals,     model spaces for geometric
  measurable                                structures, 402                       naive set theory, see set theory, naive
 measurable sets, 128, 158, 247,          model theory, 6, 645, 814, 822          nanoporous architectures, 834
@@ -977,7 +977,7 @@ measures, 246–47, 628, 815;              Moderne Algebra (van der Waerden),   
 Méchanique Analitique (Lagrange),          532, 543                                complexity, 589
  751                                     modular arithmetic, 249–50              natural transformations, 167
 Mellin transform, 214                    modular automorphism group, 517         Navier–Stokes equations, 193–96,
-melodic retrograde and inversion,        modular elliptic curve, 692               477
+melodic retrograde and in version,        modular elliptic curve, 692               477
  938–40                                  modular forms, 251–52, 268, 419,        n-body problem, 493, 726–28, 764
 memorylessness, 265                        692, 724, 807–8                       N C, see complexity classes
 meromorphic continuation, 228–29         modular functions, 347, 545, 549        n-category, 167
@@ -1526,9 +1526,9 @@ stock market crashes, $913$
 
 Stokes’s theorem, $179 - 80$
 
-Stone-Čech compact if ic at i on, see
+Stone-Čech compactification, see
 
-compact if ic at i on, Stone-Čech
+compactification, Stone-Čech
 
 stopping time, $653$
 
@@ -1558,8 +1558,8 @@ subset sum problem, 583                 Taylor, Brook, 119, 745, 946            
 subspace topology, 302                  Taylor, Richard, 229, 252, 692–93        trace, 515
 substructures, 23                       Taylor series, 38, 119, 122, 124, 200,   trace-class operators, see operators,
 successive approximation, 31              205, 282, 304, 541, 745                   trace-class
-successor function, 111, 146, 258       T-duality, 532–33, 537–38                Traité de Dynamique (d’Alembert),
-successor ordinal, 618                  Teichmüller spaces, 413–14, 416–18          750
+success or function, 111, 146, 258       T-duality, 532–33, 537–38                Traité de Dynamique (d’Alembert),
+success or ordinal, 618                  Teichmüller spaces, 413–14, 416–18          750
 Suite for Piano (Schoenberg), 941       Tennenbaum, Stanley, 627, 632            transcendence of e, see e,
 Sullivan, Dennis, 394, 510              tensor categories, 275                      transcendence of
 Summa (Luca Pacioli), 99                tensor products, 272, 274–75, 301        transcendental numbers, 71–72, 81,
@@ -1568,7 +1568,7 @@ super-attracting fixed point, 499          Goldbach’s conjecture, ternary     
 supercompact cardinals, see             tessellation, 42, 208                       778–79
   cardinals, supercompact               test functions, 185–86, 195              transition functions, 45, 282–83,
 superposition: in quantum               Thales of Miletus, 130                      300, 396–98
-  mechanics, 269–72;                    theorema aureum, 718                     transition matrices, 198
+  mechanics, 269–72;                    theorem a aureum, 718                     transition matrices, 198
   principle of, 457–58                  theorems, 73, 117, 130, 700              transitive actions, 421
 supremum norm, see L. nfty -norm             theoretical computer science,            transitive closure, 624
 surfaces, 45, 53–54                       7, 575–604                             transitive relations, 12

@@ -9,8 +9,8 @@ realized the ultimate goal of Leibniz to have a theory of infinitesimals which w
 Further Reading
 
 Bottazzini, U. 1990 . Geometrical rigour and “modern analysis”: an introduction to Cauchy’s Cours d’Analyse. In Cauchy ( 1821 ). Bologna: Editrice CLUB. Cauchy, A.-L. 1821 . Cours d’Analyse de l’École Royale Polytechnique: Première Partie--Analyse Algébrique. Paris: L’Imprimerie Royale. (Reprinted , 1990 , by Editrice CLUB, Bologna .) Epple, M. 2003 . The end of the science of quantity: foundations of analysis, $1860 - 1910$ . In A History of Analysis, edited by  H. N. Jahnke, $pp. 291 - 323$ . Providence, RI: American Mathematical Society. Fraser, C. 1987 .
-Joseph Louis Lagrange’s algebraic vision of the calculus. Historia Mathematica $14$ : $38 - 53$ . Jahnke, H. N., ed. 2003 . A History of Analysis. Providence, RI: American Mathematical Society  /  London Mathematical Society. Riemann, G. F. B. 1854 . Ueber die Darstellbarkeit einer Function durch eine trigonomet ri sc he Reihe. Königlichen Gesellschaft der Wissenschaften $zu$ Göttingen $13$ : $87 - 131$ . Republished in Riemann’s collected works ( 1990 ) : Gesammelte Mathematische Werke und Wissenschaftlic he Nachlass und Nachträge, edited by R. Narasimhan, $3rd$ edn., $pp. 259 - 97$ . Berlin:
-Springer. Weierstrass, K. 1988 . Einleitung in die Theorie der Analytischen Functionen: Vorlesung Berlin 1878 , edited by P. Ullrich. Braunschweig: Vieweg  /  DMV . II . $6$ The Development of the
+Joseph Louis Lagrange’s algebraic vision of the calculus. Historia Mathematica $14$ : $38 - 53$ . Jahnke, H. N., ed. 2003 . A History of Analysis. Providence, RI: American Mathematical Society  /  London Mathematical Society. Riemann, G. F. B. 1854 . Ueber die Darstellbarkeit einer Function durch eine trigonometrische Reihe. Königlichen Gesellschaft der Wissenschaften $zu$ Göttingen $13$ : $87 - 131$ . Republished in Riemann’s collected works ( 1990 ) : Gesammelte Mathematische Werke und Wissenschaftlic he Nachlass und Nachträge, edited by R. Narasimhan, $3rd$ edn., $pp. 259 - 97$ . Berlin:
+Springer. Weierstrass, K. 1988 . Einleitung in die The orie der Analytischen Functionen: Vorlesung Berlin 1878 , edited by P. Ullrich. Braunschweig: Vieweg  /  DMV . II . $6$ The Development of the
 
 Idea of Proof
 
@@ -20,20 +20,20 @@ $1$ Introduction and
 
 Preliminary Considerations
 
-In many respects the development of the idea of proof is coextensive with the development of mathematics as a whole. Looking back into the past, one might at first consider mathematics to be a body of scientific knowledge that deals with the properties of numbers, magnitudes, and figures, obtaining its justifications from proofs rather than, say, from experiments or inductive inferences. Such a character ization, however, is not without problems. For one thing, it immediately leaves out important chapters in the history
+In many respects the development of the idea of proof is coextensive with the development of mathematics as a whole. Looking back into the past, one might at first consider mathematics to be a body of scientific knowledge that deals with the properties of numbers, magnitudes, and figures, obtaining its justifications from proofs rather than, say, from experiments or inductive inferences. Such a character ization, however, is not with out problems. For one thing, it immediately leaves out important chapters in the history
 
 $129$
 
 of civilization that are more naturally associated with mathematics than with any other intellectual activity. For example, the Mesopotamian and Egyptian cultures developed elaborate bodies of knowledge that would most naturally be described as belonging to arithmetic or geometry, even though nothing is found in them that comes close to the idea of proof as it was later practiced in mathematics at large. To the extent that any justification is given, say, in the thousands of mathematical procedures found on clay tablets written in cuneiform script, it is inductive or based on experience.
-The tablets repetitively show--without additional explanation or attempts at general justifications--a given procedure to be followed whenever one is pursuing a certain type of result. Later on, in the context of Chinese, Japanese, Mayan, or Hindu cultures, one again finds important developments in fields naturally associated with mathematics.
+The tablets repetitively show--with out additional explanation or attempts at general justifications--a given procedure to be followed whenever one is pursuing a certain type of result. Later on, in the context of Chinese, Japanese, Mayan, or Hindu cultures, one again finds important developments in fields naturally associated with mathematics.
 The extent to which these cultures pursued the idea of mathematical proof--a question that is debated among historians to this day-- was undoubtedly not as great as it was in Greek tradition, and it certainly did not take the specific forms we typically associate with the latter. Should one nevertheless say that these are instances of mathematical knowledge, even though they are not justified on the basis of some kind of general, deductive proof? If so, then we cannot characterize mathematics as a body of knowledge that is backed up by proofs, as suggested above.
-However, this litmus test certainly provides a useful criterion--one that we do not want to give up too easily--for distinguishing mathematics from other intellectual endeavors. Without totally ignoring these important questions, the present account focuses on a story that started, at some point in the past, usually taken to be before or around the fifth century b.c.e.
+However, this litmus test certainly provides a useful criterion--one that we do not want to give up too easily--for distinguishing mathematics from other intellectual endeavors. With out totally ignoring these important questions, the present account focuses on a story that started, at some point in the past, usually taken to be before or around the fifth century b.c.e.
 in Greece, with the realization that there was a distinctive body of claims, mainly associated with numbers and with diagrams, whose truth could be and needed to be vindicated in a very special way--namely, by means of a general, deductive argument, or “proof.” Exactly when and how this story began is unclear. Equally unclear are the direct historical sources of such a unique idea.
 Since the emphasis on the use of logic and reason in constructing an argument was well-entrenched in other spheres of public life in ancient Greece--such as politics, rhetoric, and law--much earlier than the fifth century b.c.e., it is possible that it is in those domains that the origins of mathematical proof are to be found.
 
 130                                                                          II. The Origins of Modern Mathematics
 
-   The early stages of this story raise additional ques-       This article outlines the evolution of the idea of
+   The early stages of this story raise additional ques-       This article out lines the evolution of the idea of
 tions, both historical and methodological. For instance,    deductive proof as initially shaped in the framework
 Thales of Miletus, the first mathematician known by          of Euclidean-style mathematics and as subsequently
 name (though he was also a philosopher and scientist),      practiced in the mainstream mathematical culture of
@@ -76,7 +76,7 @@ of compilation, codification, and canonization, such as      how the principle o
 one can find in any other evolving field of learning at       and developed, became accepted as a legitimate infer-
 any point in time. Instead, the assertions it contained     ence rule of universal validity, and was finally codified
 were of two different kinds, and the distinction was         as one of the basic axioms of arithmetic in the late nine-
-vitally important. On the one hand there were basic         teenth century. Moreover, the evolution of the notion
+vitally important. On the one hand there were basic         teenth century. More over, the evolution of the notion
 assumptions, or axioms, and on the other there were         of proof involves many other dimensions that will not
 theorems, which were typically more elaborate state-        be treated here, such as the development of the inter-
 ments, together with accounts of how they followed          nal organization of mathematics into subdisciplines,
@@ -99,7 +99,7 @@ thetic geometry and arithmetic, but also for how it                Figure 1 Prop
 regards the role of a mathematical proof and the form
 that such a proof takes. All proofs appearing in the Ele-
 ments have six parts and are accompanied by a dia-                                                      A
-gram. I illustrate this with the example of proposi-
+gram. I illustrate this with the example of pro posi-
 tion I.37. Euclid’s text is quoted here in the classical                                            B                 C
                                                                                                             G
 translation of Sir Thomas Heath, and the meaning of
@@ -133,10 +133,10 @@ Kataskeue (construction). Let AD be produced in both           portion, and ther
                                                                last be to all those before it.
 Apodeixis (proof). Then each of the figures EBCA,
   DBCF is a parallelogram; and they are equal, for they
-                                                               This cumbersome formulation may prove incompre-
+                                                               This cumbersome formulation may prove in com pre-
   are on the same base BC and in the same parallels
                                                              hensible on first reading. In more modern terms, an
-  BC, EF. Moreover the triangle ABC is half of the par-
+  BC, EF. More over the triangle ABC is half of the par-
                                                              equivalent to this theorem would state that, given a
   allelogram EBCA, for the diameter AB bisects it; and
                                                              geometric progression a1 , a2 , . . . , an+1 , we have
@@ -169,7 +169,7 @@ follows:                                                         O              
    This proposition and its proof provide good exam-
 ples of the capabilities, as well as the limitations, of             Figure 3 Proposition XII.2 of Euclid’s Elements.
 ancient Greek practices of notation, and especially of
-how they managed without a truly symbolic language.          ple states that, given two unequal magnitudes of the
+how they managed with out a truly symbolic language.          ple states that, given two unequal magnitudes of the
 In particular, they demonstrate that proofs were never       same kind, A, B (be they two lengths, two areas, or two
 conceived by the Greeks, even ideally, as purely logical     volumes), with A greater than B, and if we subtract from
 constructs, but rather as specific kinds of arguments         A a magnitude which is greater than A/2, and from
@@ -180,7 +180,7 @@ referred to by the general character and formulation         magnitude that is s
 of the proposition.                                          ciple to prove, for instance, that the ratio of the areas
    Together with the centrality of diagrams, the six-        of two circles equals the ratio of the squares of their
 part structure is also typical of most of Greek math-        diameters (XII.2). The method used, later known as the
-ematics. The constructions and diagrams that typi-           exhaustion method, was based on a double contradic-
+ematics. The constructions and diagrams that typi-           exhaustion method, was based on a double con tr adic-
 cally appeared in Greek mathematical proofs were not         tion that became standard for many centuries to come.
 of an arbitrary kind, but what we identify today as          This double contradiction is illustrated in figure 3, the
 straightedge-and-compass constructions. The reason-          accompanying diagram to the proposition.
@@ -267,11 +267,11 @@ however, that the problems refer to specific numeri-          tion. The primacy 
 cal quantities associated with the magnitudes involved,      was already accepted in geometry and arithmetic, thus
 and these measured magnitudes refer to the accompa-          also became associated with the algebraic methods
 nying diagrams as well. In this way, al-Khwārizmı̄ inter-   that eventually turned into the main topic of inter-
-estingly departs from the Euclidean style of proof. Still,   est in Renaissance mathematics. Cardano’s 1545 Ars
+est ing ly departs from the Euclidean style of proof. Still,   est in Renaissance mathematics. Cardano’s 1545 Ars
 
 134                                                                             II. The Origins of Modern Mathematics
 
-Magna, the foremost example of this new trend, pre-             C
+Magna, the fore most example of this new trend, pre-             C
 sented a complete treatment of the equations of third
 and fourth degree. Although the algebraic line of rea-
 soning that he adopted and developed became increas-                       E
@@ -303,16 +303,16 @@ lowing on from their Islamic predecessors, now gained          progression, name
 additional impetus and were gradually incorporated—
 starting with the work of fermat [VI.12](/part-06/pierre-fermat-1601665) and des-               (an+1 − a1 ) : (a1 + a2 + · · · + an ) = (a2 − a1 ) : a1 .
 cartes [VI.11](/part-06/ren-descartes-15961650)—into the arsenal of tools available for         But at this point his proof takes an interesting turn.
-proving geometric results. Underlying these various            He introduces the somewhat obscure concept of “ade-
+proving geometric results. Underlying these various            He introduces the some what obscure concept of “ade-
 trends were different conceptions and practices of              quare,” which he found in the works of Diophantus,
 mathematical proof, which are briefly described and             and which allows a kind of “approximate equality.”
 illustrated now.                                               Specifically, this idea allows him to bypass the cumber-
    Examples of how the classical Greek conception of           some procedure of double contradiction typically used
 geometric proof was essentially followed but at the            in Greek geometry as an implicit passage to the infi-
 same time fruitfully modified and expanded are found            nite. A figure bounded by GE, by the horizontal asymp-
-in the work of Fermat, as can be seen in his calcula-          tote, and by the hyperbola will equal the infinite sum
+in the work of Fermat, as can be seen in his calcul a-          tote, and by the hyperbola will equal the infinite sum
 tion of the area enclosed by a generalized hyperbola           of rectangles obtained when the rectangle EH “will van-
-(in modern notation (y/a)m = (x/b)n (m, n ≠ 1)) and            ish and will be reduced to nothing.” Further, proposi-
+(in modern notation (y/a)m = (x/b)n (m, n ≠ 1)) and            ish and will be reduced to nothing.” Further, pro posi-
 its asymptotes.                                                tion IX.35 implies that this sum equals the area of the
    The quadratic hyperbola (i.e., a figure represented by       rectangle BG. Significantly, Fermat still chose to rely on
 y = 1/x 2 ), for instance, is defined here in terms of a        the authority of the ancients, hinting at the method of
@@ -340,13 +340,13 @@ division, and the extraction of roots, which may be considered a kind of divisio
 or again, to find a fourth line which is to one of the given lines as the unit is to the other (which is equivalent to division); or, finally, to find one, two, or several mean proportionals between the unit and some other line (which is the same as extracting the square root, cube root, etc., of the given line). Thus, for instance, given two segments BD, BE, the division of their lengths is represented by BC in figure $6$ , in which AB represents the unit length.
 Although the proof was Euclid-like in appearance (because of the diagram and the use of the theory of similar triangles), the introduction of the unit length and its use for defining the operations with segments set it radically apart and opened completely new horizons for geometric proofs. Not only had measurements of length been absent from Euclidean-style proofs thus far, but also, as a consequence of the very existence of these operations, the essential dimensionality traditionally associated with geometric theorems lost its significance.
 Descartes used expressions such as a  -  b, $a/b$ , $a^{2}$ , $b^{3}$ , and their roots, but he stressed that they should all be understood as “only simple lines, which, however, I name squares, cubes, etc., so that I make use of the terms employed in algebra.” With the removal of dimensionality, the requirement of homogeneity also became unnecessary. Unlike his predecessors, who handled magnitudes only when they had a direct geometric significance, Descartes could not see any problem in forming an expression such as $a^{2}b^{2} - b$ and then extracting its cube root.
-In order to do so, he said “we must consider the quantity $a^{2}b^{2}$ divided once by the unit, and the quantity b multiplied twice by the unit.” Sentences of this kind would be simply in com pre he ns i ble to Greek geometers, as well as to their Islamic and Renaissance followers.
+In order to do so, he said “we must consider the quantity $a^{2}b^{2}$ divided once by the unit, and the quantity b multiplied twice by the unit.” Sentences of this kind would be simply incomprehensible to Greek geometers, as well as to their Islamic and Renaissance followers.
 This algebraization of geometry, and particularly the newly created possibility of proving geometric facts via algebraic procedures, was strongly related to the recent consolidation of the idea of an algebraic equation, seen as an autonomous mathematical entity, for which formal rules of manipulation were well-known and could be systematically applied. This idea reached
 
 136                                                                           II. The Origins of Modern Mathematics
 
                                                              not settled until the late nineteenth century. To a con-
-                      E                                      siderable extent these questions were about the nature
+                      E                                      sider able extent these questions were about the nature
                                                              of legitimate mathematical proof, and debates about
                                C                             them played an important role in undermining the long-
                                                              undisputed status of geometry as the basis for math-
@@ -377,13 +377,13 @@ in geometry was none other than newton [VI.14](/part-06/isaac-newton-16421727), 
 in the Arithmetica Universalis (1707), was emphatic in
                                                              a radical view about how one could achieve certainty
 expressing his views:
-                                                             in the mathematical sciences while distancing oneself
+                                                             in the mathematical sciences while distancing one self
   Equations are expressions of arithmetic computation        from geometry. He wrote as follows:
   and properly have no place in geometry, except in
                                                                One will not find figures in this work. The methods
   so far as truly geometrical quantities (lines, surfaces,
                                                                that I expound require neither constructions, nor geo-
-  solids and proportions) are thereby shown equal, some
+  solids and proportions) are there by shown equal, some
                                                                metrical or mechanical arguments, but only algebraic
   to others. Multiplications, divisions, and computations
                                                                operations, subject to a regular and uniform course.
@@ -404,10 +404,10 @@ the highest degree of certainty. He used his own cal-        philosophical discu
 culus only where strictly necessary, and barred algebra      knowledge and proof need not concern us here. How-
 from his treatise entirely.                                  ever, given his acquaintance with contemporary con-
                                                              ceptions, they do provide an insightful historical per-
-            5 Geometry and Proof in                          spective on proof as it was understood at the time. Of
+            5 Geometry and Proof in                          spec tive on proof as it was understood at the time. Of
          Eighteenth-Century Mathematics                      particular interest is the contrast he draws between
                                                              a philosophical argument, on the one hand, and a
-Mathematical analysis became the primary focus of            geometric proof, on the other. Whereas the former
+Mathematical analysis became the primary focus of            geometric proof, on the other. Where as the former
 mathematicians in the eighteenth century. Questions          deals with general concepts, the latter deals with con-
 relating to the foundations of analysis arose immedi-        crete, yet nonempirical, concepts, by reference to “visu-
 ately after the calculus began to be developed and were      alizable intuitions” (Anschauung). This difference is
@@ -421,7 +421,7 @@ Critique of Pure Reason.                                                the Form
   angle and he is left to find out, in his own way, what        ments in geometry and other parts of mathematics, not
   relation the sum of its angles bears to a right angle.       just of the methods but also of the aims of the vari-
   He has nothing but the concept of a figure enclosed by        ous subdisciplines. Logic, as a field of knowledge, also
-  three straight lines, and possessing three angles. How-      underwent significant changes and a gradual mathema-
+  three straight lines, and possessing three angles. How-      under went significant changes and a gradual mathema-
   ever long he meditates on this concept, he will never
                                                                tization that entirely transformed its scope and meth-
   produce anything new. He can analyze and clarify the
@@ -431,7 +431,7 @@ Critique of Pure Reason.                                                the Form
   metrician take up these questions. He at once begins by         In Göttingen in 1854 riemann [VI.49] gave his sem-
   constructing a triangle. Since he knows that the sum of      inal talk “On the hypotheses which lie at the foun-
   two right angles is exactly equal to the sum of all the
-                                                               dations of geometry.” At around the same time, the
+                                                               da tions of geometry.” At around the same time, the
   adjacent angles which can be constructed from a single
   point on a straight line, he prolongs one side of his tri-   works of bolyai [VI.34] and lobachevskii [VI.31](/part-06/nicolai-ivanovich-lobachevskii-17921856) on
   angle and obtains two adjacent angles, which together        non-Euclidean geometry, as well as the related ideas of
@@ -453,7 +453,7 @@ ity of the diagrams and the role that they play. As in the     tive geometry to 
 Elements, this diagram is not just a heuristic guide for       perspectives prompted a variety of attempts at unifi-
 what is no more than abstract reasoning, but rather an         cation and classification, the most significant of which
 “intuition,” a singular embodiment of the mathematical         were those based on group-theoretic ideas. Particularly
-idea that is clearly located not only in space, but rather     notable were those of klein [VI.57] and lie [VI.53](/part-06/sophus-lie-18421899) in the
+idea that is clearly located not only in space, but rather     not able were those of klein [VI.57] and lie [VI.53](/part-06/sophus-lie-18421899) in the
 in space and time. In fact,                                    1870 s. In 1882, Moritz Pasch published an influential
                                                                treatise on projective geometry devoted to a systematic
   I cannot represent to myself a line, however small, with-    exploration of its axiomatic foundations and the inter-
@@ -463,33 +463,33 @@ in space and time. In fact,                                    1870 s. In 1882, 
                                                                More systematically than any of his fellow nineteenth-
 This role played by diagrams as “visualizable intu-            century mathematicians, Pasch emphasized that all
 itions” is what provides, for Kant, the explanation of         geometric results should be obtained from axioms by
-why geometry is not just an empirical science, but also        strict logical deduction, without relying on analytical
-not just a huge tautology devoid of any synthetic con-         means, and above all without appeal to diagrams or to
+why geometry is not just an empirical science, but also        strict logical deduction, with out relying on analytical
+not just a huge tautology devoid of any synthetic con-         means, and above all with out appeal to diagrams or to
 tent. According to him, geometric proof is constrained         properties of the figures involved. Thus, although in
 by logic but it is much more than just a purely logi-          some ways he was consciously reverting to the canons
-cal analysis of the terms involved. This view was at the       of Euclid-like proof (which by then were somewhat loos-
+cal analysis of the terms involved. This view was at the       of Euclid-like proof (which by then were some what loos-
 heart of a novel philosophical analysis whose starting         ened), his attitude toward diagrams was fundamentally
-point was the then-entrenched conception of what a             different. Aware of the potential limitations of visualiz-
+point was the then-entrenched conception of what a             different. Aware of the potential limitations of visual iz-
 mathematical proof is.                                         ing diagrams (and perhaps their misleading influence)
 
 138                                                                          II. The Origins of Modern Mathematics
 
 he put a much greater emphasis on the pure logical              One major turning point, where the above trends
 structure of the proof than his predecessors had. Nev-       combined to produce a new kind of approach to proof,
-ertheless, he was not led to an outright formalist view      is to be found in the works of giuseppe peano [VI.62](/part-06/giuseppe-peano-18581932)
+er the less, he was not led to an out right form a list view      is to be found in the works of giuseppe peano [VI.62](/part-06/giuseppe-peano-18581932)
 of geometry and geometric proof. Rather, he consis-          and his Italian followers. Peano’s mainstream activities
 tently adopted an empirical approach to the origins and      were as a competent analyst, but he was also interested
 meaning of geometry and fell short of claiming that          in artificial languages, and particularly in developing an
 diagrams were for heuristic use only:                        artificial language that would allow a completely formal
                                                              treatment of mathematical proofs. In 1889 his success-
   The basic propositions [of geometry] cannot be under-      ful application of such a conceptual language to arith-
-  stood without corresponding drawings; they express
+  stood with out corresponding drawings; they express
                                                              metic yielded his famous postulates for the nat-
   what has been observed from certain, very simple facts.
   The theorems are not founded on observations, but          ural numbers [III.67](/part-03/the-peano-axioms). Pasch’s systems of axioms for
   rather, they are proved. Every inference performed dur-    projective geometry posed a challenge to Peano’s arti-
   ing a deduction must find confirmation in a drawing,         ficial language, and he set out to investigate the rela-
-  yet it is not justified by a drawing but from a certain     tionship between the logical and the geometric terms
+  yet it is not justified by a drawing but from a certain     tion ship between the logical and the geometric terms
   preceding statement (or a definition).                      involved in the deductive structure of geometry. In this
                                                              context he introduced the idea of an independent set
    Pasch’s work definitely contributed to diagrams los-
@@ -519,10 +519,10 @@ of mathematicians like cauchy [VI.29](/part-06/augustin-louis-cauchy-17891857), 
 [VI.44](/part-06/karl-weierstrass-18151897), cantor [VI.54](/part-06/georg-cantor-18451918), and dedekind [VI.50](/part-06/julius-wilhelm-richard-dedekind-18311916), which         tem, where theorems are deduced from hypothetical
 aimed at eliminating intuitive arguments and concepts        premises and where the basic terms are completely
 in favor of ever more elementary statements and defi-         detached from any empirical or intuitive significance.
-nitions. (In fact, it was not until the work of Dedekind       A new chapter in the history of geometry and of
+ni tions. (In fact, it was not until the work of Dedekind       A new chapter in the history of geometry and of
 on the foundations of arithmetic, in the last third of       proof was opened at the end of the nineteenth century
 the century, that the rigorous formulation pursued in        with the publication of hilbert’s [VI.63](/part-06/david-hilbert-18621943) Grundlagen
-these works was given any kind of axiomatic underpin-        der Geometrie, a work that synthesized and brought to
+these works was given any kind of axiomatic under pin-        der Geometrie, a work that synthesized and brought to
 ning.) The idea of investigating the axiomatic basis of      completion the various trends of geometric research
 mathematical theories, whether geometry, algebra, or         described above. Hilbert was able to achieve a com-
 arithmetic, and of exploring alternative possible sys-       prehensive analysis of the logical interrelations among
@@ -540,7 +540,7 @@ $II$ . $6$ .
 The Development of the Idea of Proof
 
 synthetic arithmetization of any given type of geometry, and thus helped to clarify the logical structure of Euclidean geometry as a deductive system. It also clarified the relationship between Euclidean geometry and the various other kinds of known geometries--non Euclidean, projective, or non-Archimedean. This focus on logic implied, among other things, that diagrams should be relegated to a merely heuristic role. In fact, although diagrams still appear in many proofs in the Grundlagen, the entire purpose of the logical analysis is to avoid being misled by diagrams.
-Proofs, and particularly geometric proofs, have thus become purely logical arguments, rather than arguments about diagrams. And at the same time, the essence and the role of the axioms from which the derivations in question start also underwent a dramatic change. Following Pasch’s lead, Hilbert introduced a new system of axioms for geometry that attempted to close the logical gaps inherent in earlier systems.
+Proofs, and particularly geometric proofs, have thus become purely logical arguments, rather than arguments about diagrams. And at the same time, the essence and the role of the axioms from which the derivations in question start also under went a dramatic change. Following Pasch’s lead, Hilbert introduced a new system of axioms for geometry that attempted to close the logical gaps inherent in earlier systems.
 These axioms were of five kinds--axioms of incidence, of order, of congruence, of parallels, and of continuity-- each of which expressed a particular way in which spatial intuition manifests itself in our understanding. They were formulated for three fundamental kinds of object: points, lines, and planes. These remained undefined, and the system of axioms was meant to provide an implicit definition of them.
 In other words, rather than defining points or lines at the outset and then postulating axioms that are assumed to be valid for them, a point and a line were not directly defined, except as entities that satisfy the axioms postulated by the system. Further, Hilbert demanded that the axioms in a system of this kind should be mutually independent, and introduced a method for checking that this demand is fulfilled; in order to do so, he constructed models of geometries that fail to satisfy a given axiom of the system but satisfy all the others.
 Hilbert also required that the system be consistent, and that the consistency of geometry could be made to depend, in his system, on that of arithmetic. He initially assumed that proving the consistency of arithmetic would not present a major obstacle and it was a long time before he realized that this was not the case. Two additional requirements that Hilbert initially introduced for axiomatic systems were simplicity and completeness.
@@ -550,22 +550,22 @@ $139$
 
 pleteness, meant for Hilbert in 1900 that any adequate axiomatization of a mathematical domain should allow for a derivation of all the known theorems of the discipline in question. Hilbert claimed that his axioms would indeed yield all the known results of Euclidean geometry, but of course this was not a property that he could formally prove. In fact, since this property of “completeness” cannot be formally checked for any given axiomatic system, it did not become one of the standard requirements of an axiomatic system.
 It is important to note that the concept of completeness used by Hilbert in 1900 is completely different from the currently accepted, model-theoretical one that appeared much later. The latter amounts to the requirement that in a given axiomatic system every true statement, be it known or unknown, should be provable. The use of undefined concepts and the concomitant conception of axioms as implicit definitions gave enormous impetus to the view of geometry as a purely logical system, such as Pieri had devised it, and eventually transformed the very idea of truth and proof in mathematics.
-Hilbert claimed on various occasions--echoing an idea of Dedekind--that, in his system, “points, lines, and planes” could be substituted by “chairs, tables, and beer mugs,” without thereby affecting in any sense the logical structure of the theory. Moreover, in the light of discussions about set-theoretical paradoxes, Hilbert strongly emphasized the view that the logical consistency of a concept implicitly defined by axioms was the essence of mathematical existence.
-Under the influence of these views, of the new methodological tools introduced by Hilbert, and of the successful overview of the foundations of geometry thus achieved, many mathematicians went on to promote new views of mathematics and new mathematical activities that in many senses went beyond the views embodied in Hilbert’s approach. On the one hand, a trend that thrived in the United States at the beginning of the twentieth century, led by Eliakim H.
-Moore, turned the study of systems of postulates into a mathematical field in its own right, independent of direct interest in the field of research defined by the systems in question. For instance, these mathematicians defined the minimal set of independent postulates for groups, fields, projective geometry, etc., without then proceeding to investigate of any of these individual disciplines.
+Hilbert claimed on various occasions--echoing an idea of Dedekind--that, in his system, “points, lines, and planes” could be substituted by “chairs, tables, and beer mugs,” with out there by affecting in any sense the logical structure of the theory. More over, in the light of discussions about set-theoretical paradoxes, Hilbert strongly emphasized the view that the logical consistency of a concept implicitly defined by axioms was the essence of mathematical existence.
+Under the influence of these views, of the new methodological tools introduced by Hilbert, and of the successful over view of the foundations of geometry thus achieved, many mathematicians went on to promote new views of mathematics and new mathematical activities that in many senses went beyond the views embodied in Hilbert’s approach. On the one hand, a trend that thrived in the United States at the beginning of the twentieth century, led by Eliakim H.
+Moore, turned the study of systems of postulates into a mathematical field in its own right, independent of direct interest in the field of research defined by the systems in question. For instance, these mathematicians defined the minimal set of independent postulates for groups, fields, projective geometry, etc., with out then proceeding to investigate of any of these individual disciplines.
 On the other hand, prominent mathematicians started to adopt and develop increasingly formalistic views of proof and of mathematical truth, and began applying them in a growing number of mathematical fields. The work of the
 
 $140$
 
 radically modernist mathematician felix hausdorff [VI.68](/part-06/felix-hausdor-18681942) provides important examples of this trend, as he was among the first to consistently associate Hilbert’s achievement with a new, formalistic view of geometry. In 1904 , for instance, he wrote: In all philosophical debates since Kant, mathematics, or at least geometry, has always been treated as heteronomous, as dependent on some external instance of what we could call, for want of a better term, intuition, be it pure or empirical, subjective or scientifically amended, innate or acquired.
 The most important and fundamental task of modern mathematics has been to set itself free from this dependency, to fight its way through from heteronomy to autonomy. Hilbert himself would pursue such a point of view around 1918 , when he engaged in the debates about the consistency of arithmetic and formulated his “finitist” program. This program did indeed adopt a strongly formalistic view, but it did so with the restricted aim of solving this particular problem.
-It is therefore important to stress that Hilbert’s conceptions of geometry were, and remained, essentially empiricist and that he never regarded his axiomatic analysis of geometry as part of an overall formalistic conception of mathematics. He considered the axiomatic approach as a tool for the conceptual clarification of existing, well-elaborated theories, of which geometry provided only the most prominent example.
-The implication of Hilbert’s axiomatic approach for the concept of proof and of truth in mathematics provoked strong reactions from some mathematicians, and prominently so from frege [VI.56](/part-06/gottlob-frege-18481925) . Frege’s views are closely related to the changing status of logic at the turn of the twentieth century and its gradual process of mathematization and formalization. This process was an outcome of the successive efforts through the nineteenth century of boole [VI.43](/part-06/george-boole-18151864), de morgan [VI.38] , Grassmann, Charles S.
+It is therefore important to stress that Hilbert’s conceptions of geometry were, and remained, essentially empiricist and that he never regarded his axiomatic analysis of geometry as part of an over all formalistic conception of mathematics. He considered the axiomatic approach as a tool for the conceptual clarification of existing, well-elaborated theories, of which geometry provided only the most prominent example.
+The implication of Hilbert’s axiomatic approach for the concept of proof and of truth in mathematics provoked strong reactions from some mathematicians, and prominently so from frege [VI.56](/part-06/gottlob-frege-18481925) . Frege’s views are closely related to the changing status of logic at the turn of the twentieth century and its gradual process of mathematization and formalization. This process was an out come of the successive efforts through the nineteenth century of boole [VI.43](/part-06/george-boole-18151864), de morgan [VI.38] , Grassmann, Charles S.
 Peirce, and Ernst Schröder at formulating an algebra of logic. The most significant step toward a new, formal conception of logic, however, came with the increased understanding of the role of the logical quantifiers [I.2](/part-01/language-and-grammar) (universal , ∀, and existential, ∃) in the process of formulating a modern mathematical proof.
-This understanding emerged in an informal, but increasingly clear, fashion as part of the process of the rigorization of analysis and the distancing from visual intuition, especially at the hands of Cauchy, bolzano [VI.28](/part-06/bernard-bolzano-17811848), and Weierstrass. It was formally defined and systematically codified for the first II. The Origins of Modern Mathematics time by Frege in his 1879 Begriffsschrift .
+This understanding emerged in an in formal, but increasingly clear, fashion as part of the process of the rigorization of analysis and the distancing from visual intuition, especially at the hands of Cauchy, bolzano [VI.28](/part-06/bernard-bolzano-17811848), and Weierstrass. It was formally defined and systematically codified for the first II. The Origins of Modern Mathematics time by Frege in his 1879 Begriffsschrift .
 Frege’s system, as well as similar ones proposed later by Peano and by russell [VI.71](/part-06/bertrand-arthur-william-russell-18721970), brought to the fore a clear distinction between propositional connectives and quantifiers, as well as between logical symbols and algebraic or arithmetic ones. Frege formulated the idea of a formal system, in which one defines in advance all the allowable symbols, all the rules that produce well-formed formulas, all axioms (i . e . , certain preselected, well-formed formulas), and all the rules of inference.
 In such systems any deduction can be checked syntactically--in other words, by purely symbolic means. On the basis of such systems Frege aimed to produce theories with no logical gaps in their proofs. This would apply not only to analysis and to its arithmetic foundation--the mathematical fields that provided the original motivation for his work--but also to the new systems of geometry that were evolving at the time. On the other hand, in Frege’s view the axioms of mathematical theories--even if they appear in the formal system merely as well-formed formulas--embody truths about the world.
-This is precisely the source of his criticism of Hilbert. It is the truth of the axioms, asserted Frege, that certifies their consistency, rather than the other way around, as Hilbert suggested. We thus see how foundational research in two separate fields--geometry and analysis--was inspired by different methodologies and philosophical outlooks, but converged at the turn of the twentieth century to create an entirely new conception of mathematical proof.
+This is precisely the source of his criticism of Hilbert. It is the truth of the axioms, asserted Frege, that certifies their consistency, rather than the other way around, as Hilbert suggested. We thus see how foundational research in two separate fields--geometry and analysis--was inspired by different methodologies and philosophical out looks, but converged at the turn of the twentieth century to create an entirely new conception of mathematical proof.
 In this conception a mathematical proof is seen as a purely logical construct validated in purely syntactic terms, independently of any visualization through diagrams. This conception has dominated mathematics ever since. Epilogue: Proof in the Twentieth Century The new notion of proof that stabilized at the beginning of the twentieth century provided an idealized model-- broadly accepted to this day--of what should constitute a valid mathematical argument. To be sure, actual proofs devised and published by mathematicians since that time are seldom presented as fully formalized texts.
 They typically present a clearly articulated argument in a language that is precise enough to convince the reader that it could--in principle, and perhaps with straightforward (if sustained) effort--be turned into one. Through out the decades, however, some limitations of this dominant idea have gradually emerged
 
@@ -580,8 +580,8 @@ Gödel’s work implied that Hilbert’s finitistic program was too optimistic, 
 For instance, in 1963 Paul Cohen established that the continuum hypothesis [IV.22](/part-04/set-theory) can be neither proved nor disproved in the usual systems of axioms for set theory. Most mathematicians simply accept this idea and regard the problem as solved (even if not in the way that was originally expected), but some contemporary set theorists, notably Hugh Woodin, maintain that there are good reasons to believe that the hypothesis is false. The strategy they follow in order to justify this assertion is fundamentally different from the formal notion of proof:
 they devise new axioms, demonstrate that these axioms have very desirable properties, argue that they should therefore be accepted, and then show that they imply the negation of $141$ the continuum hypothesis. (See set theory [IV.22](/part-04/set-theory) for further discussion .) A second important challenge came from the everincreasing length of significant proofs appearing in various mathematical domains.
 A prominent example was the classification theorem for finite simple groups [V.7](/part-05/the-classication-of-finite-simple-groups), whose proof was worked out in many separate parts by a large numbers of mathematicians. The resulting arguments, if put together, would reach about ten thousand pages, and errors have been found since the announcement in the early $1980s$ that the proof was complete. It has always been relatively straightforward to fix the errors and the theorem is indeed accepted and used by group theorists.
-Nevertheless, the notion of a proof that is too long for a single human being to check is a challenge to our conception of when a proof should be accepted as such. The more recent, very conspicuous cases of fermat’s last theorem [V.10](/part-05/fermats-last-theorem) and the poincaré conjecture [V.25](/part-05/the-poincar-conjecture) were hard to survey for different reasons: not only were they long (though nowhere near as long as the classification of finite simple groups) , but they were also very difficult.
+Nevertheless, the notion of a proof that is too long for a single human being to check is a challenge to our conception of when a proof should be accepted as such. The more recent, very conspicuous cases of fermat’s last theorem [V.10](/part-05/fermats-last-theorem) and the poincaré conjecture [V.25](/part-05/the-poincar-conjecture) were hard to survey for different reasons: not only were they long (though no where near as long as the classification of finite simple groups) , but they were also very difficult.
 In both cases there was a significant interval between the first announcement of the proofs and their complete acceptance by the mathematical community because checking them required enormous efforts by the very few people qualified to do so. There is no controversy about either of these two breakthroughs, but they do raise an interesting sociological problem:
-if somebody claims to have proved a theorem and nobody else is prepared to check it carefully (perhaps because, unlike the two theorems just mentioned, this one is not important enough for another mathematician to be prepared to spend the time that it would take), then what is the status of the theorem? Proofs based on probabilistic considerations have also appeared in various mathematical domains, including number theory, group theory, and combinatorics.
-It is sometimes possible to prove mathematical statements (see , for example, the discussion of random primality testing in computational number theory [IV.3](/part-04/computational-number-theory)), not with complete certainty, but in such a way that the probability of error is tiny--at most one in a trillion, say. In such cases, we may not have a formal proof, but the chances that we are mistaken in considering the given statement to be true are probably lower than, say, the chance that there is a significant mistake in one of the lengthy proofs mentioned above.
+if some body claims to have proved a theorem and nobody else is prepared to check it carefully (perhaps because, unlike the two theorems just mentioned, this one is not important enough for another mathematician to be prepared to spend the time that it would take), then what is the status of the theorem? Proofs based on probabilistic considerations have also appeared in various mathematical domains, including number theory, group theory, and combinatorics.
+It is some times possible to prove mathematical statements (see , for example, the discussion of random primality testing in computational number theory [IV.3](/part-04/computational-number-theory)), not with complete certainty, but in such a way that the probability of error is tiny--at most one in a trillion, say. In such cases, we may not have a formal proof, but the chances that we are mistaken in considering the given statement to be true are probably lower than, say, the chance that there is a significant mistake in one of the lengthy proofs mentioned above.
 Another challenge has come from the introduction of computer-assisted methods of proof. For instance,

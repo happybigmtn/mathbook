@@ -56,6 +56,6 @@ tions, Tentamen Novae Theoriae Musicae (1739), on the        rhetoric, and philo
 physics of music and including the first use of loga-         Cartesian science, a little mathematics, and much the-
 rithms in the theory of pitch, three different books on       ology framed by the then burning debate about pre-
 celestial mechanics and lunar theory, two on the theory      destination, freedom, and grace. Disgusted with the
-of shipbuilding, three on optics, and one on ballistics.     permanent climate of controversy and the endless
+of shipbuilding, three on optics, and one on ballistics.     permanent climate of controversy and the end less
    Our modern notion that functions [I.2 §2.2](/part-01/language-and-grammar) are a         metaphysical discussions among his Jansenist teach-
 fundamental object in mathematics is due to Euler.           ers, d’Alembert decided, after attaining his diploma

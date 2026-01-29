@@ -65,11 +65,11 @@ equations above are
 respectively. An equation is said to be elliptic if its sym-               iξ1 a1 (x) + · · · + iξn an (x) + b(x)
 bol is zero only when ξ = η = 0; thus, the second
                                                                  is then a polynomial in both x and ξ of degree m or
-equation is elliptic but the first is not. The fundamen-
+equation is elliptic but the first is not. The fund a men-
                                                                  less. Let us strengthen the hypothesis of ellipticity by
 tal regularity theorem, which is proved using fourier
                                                                  assuming that the terms in this expression that have
-analysis [III.27](/part-03/the-fourier-transform), states that an elliptic partial differen-
+analysis [III.27](/part-03/the-fourier-transform), states that an elliptic partial differ en-
                                                                  degree exactly m (jointly in x and ξ) define an invertible
 tial equation (subject to suitable boundary conditions,
                                                                  matrix whenever either x or ξ is nonzero. Let us also
@@ -111,7 +111,7 @@ The reason for introducing the Fredholm index is
 that it is a topological invariant of elliptic equations.                  iξ1 a1 (x) + · · · + iξn an (x) + b(x)
 This means that continuous variations in the coeffi-               determine a map from the unit sphere in (x, ξ)-space
 cients of an elliptic equation leave the Fredholm index          to the set GLk (C) of invertible k . imes k complex matrices.
-unchanged. (By contrast, the number of linearly inde-            Moreover, every such map comes from an elliptic equa-
+unchanged. (By contrast, the number of linearly inde-            More over, every such map comes from an elliptic equa-
 pendent solutions of an equation can vary as the coef-           tion (possibly of a more general type than we have dis-
 ficients of the equation vary.) The Fredholm index is             cussed up to now, but an equation to which the basic
 therefore constant on each connected component of                regularity theorem guaranteeing the existence of the
@@ -126,17 +126,17 @@ V.2.   The Atiyah–Singer Index Theorem                                        
 
 S 2 n−1 → GLk (C). Further more, Bott’s theorem asserts       the Bott invariant. The Atiyah–Singer index theorem
 that, provided that k ⩾ n, one such map can be con-         then asserts that the topological index of an elliptic
-tinuously deformed into another if and only if the Bott     equation is equal to the Fredholm or analytical index of
+tinuous ly deformed into another if and only if the Bott     equation is equal to the Fredholm or analytical index of
 invariants of the two maps agree. In the special case       the equation. The proof has two stages. In the first, the-
 n = k = 1, where we are dealing with maps from the          orems are proved that allow one to transform an elliptic
 one-dimensional circle into the nonzero complex num-        equation on a general manifold into an elliptic equation
-bers, or in other words closed paths in C that do not       on a sphere without changing the topological or analyti-
+bers, or in other words closed paths in C that do not       on a sphere with out changing the topological or analyti-
 pass through the origin, the Bott invariant is just the     cal indices. For example, it may be shown that two ellip-
 classical winding number, which measures the num-           tic equations on different manifolds that are the com-
 ber of times such a path winds around the origin. We        mon “boundary” of an elliptic equation on a manifold of
 may therefore regard the Bott invariant as a generalized    one higher dimension must have the same topological
 winding number.                                             and analytical indices. In the second stage of the proof
-   The index theorem for equations of the type that we      the Bott periodicity theorem and an explicit computa-
+   The index theorem for equations of the type that we      the Bott periodicity theorem and an explicit com put a-
 are considering in this section asserts that the Fred-      tion are applied to identify the topological and analyti-
 holm index of an elliptic equation is equal to the Bott     cal indices of elliptic equations on spheres. Through out
 invariant of its symbol. For instance, in the case of the   both stages, an important tool is K-theory [IV.6 §6](/part-04/algebraic-topology),
@@ -164,7 +164,7 @@ It is possible to define elliptic equations not just for
                                                             had in mind were related to the simple equation with
 functions f of n variables, but also for functions
                                                             which we began this article. Solutions of the equation
-defined on a manifold [I.3 §6.9](/part-01/fundamental-definitions). Particularly accessi-
+defined on a manifold [I.3 §6.9](/part-01/fundamental-definitions). Particularly access i-
 ble to analysis are the elliptic equations on closed man-                         ∂f    ∂f
                                                                                      +i    =0
 ifolds, that is, on manifolds that are finite in extent                            ∂x    ∂y
@@ -178,4 +178,4 @@ manifold has a Fredholm index.                              called the riemann�
 equations on closed manifolds and it has roughly the        the Riemann–Roch theorem to a complex manifold
 same form as the index theorem that we studied in           [III.6 §2](/part-03/calabiyau-manifolds) of any dimension.
 the previous section. One builds out of the symbol an          The Atiyah–Singer index theorem also has impor-
-invariant called the topological index, which generalizes   tant applications outside of complex geometry. The
+invariant called the topological index, which generalizes   tant applications out side of complex geometry. The

@@ -6,7 +6,7 @@ largest that 4 y − x can be if (x, y) is a point on the       partial derivati
 curve. So we want to find the largest value of V for          G(x, y) to be zero. And asking for the other two par-
 which the corresponding contour 4 y − x = V contains          tial derivatives to be zero is equivalent to requiring
 a point on the curve. The value of V increases as the        that ∇F = λ∇G. The remarkable fact about this refor-
-lines move up the diagram, and the uppermost line that       mulation is that it has turned a constrained optimiza-
+lines move up the diagram, and the upper most line that       mulation is that it has turned a constrained optimiza-
 touches the curve is the one labeled 4 y − x = 7. So the      tion problem involving x and y into an unconstrained
 maximum value we are looking for is 7, and it occurs at      problem involving x, y, and λ.
 the point where the line 4 y − x = 7 touches the curve.
@@ -14,7 +14,7 @@ It is easy to check that this point is (1, 2).               4   The General Met
    How could we locate this point algebraically, rather
 than by drawing? The important thing to notice is that       In real problems we may wish to optimize a func-
 the optimizing line is tangent to the curve: the line and    tion F of many variables x1 , . . . , xn under many con-
-the curve are parallel at their common point. The line       straints G1 (x1 , . . . , xn ) = 0, G2 (x1 , . . . , xn ) = 0, . . . ,
+the curve are parallel at their common point. The line       strain ts G1 (x1 , . . . , xn ) = 0, G2 (x1 , . . . , xn ) = 0, . . . ,
 was chosen to be a contour of the function F . The curve     Gm (x1 , . . . , xn ) = 0. In this case we introduce a
 is also a contour: the 0 contour of G. From the discus-      Lagrange multiplier for each constraint and define the
 sion in the previous section we know that these con-         Lagrangian L by the formula
@@ -40,7 +40,7 @@ partial derivative equations,
 from which we conclude that                                  where the objective function F is a cost (which we are
                     2+λ             7−. ambda probably trying to minimize), and the constraints force
                x=         ,     y=        .            (4)   us to allocate spending among different items so as to
-                      3λ              3. ambda Substituting these values into the equation G(x, y) =        satisfy certain overall demands. For instance, we might
+                      3λ              3. ambda Substituting these values into the equation G(x, y) =        satisfy certain over all demands. For instance, we might
 0, we obtain                                                 want to minimize the total cost of supplies of various
                      13(1 − λ2 )                             different foodstuffs that between them had to satisfy
                                  = 0,

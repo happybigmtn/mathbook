@@ -74,7 +74,7 @@ were equal to p/q, then we would have                                           
                                     q!
                    p(q − 1)! =                .                for all integers a and q and for some constant C de-
                                          j!
-                                   j=0                         pending on α. In words, α cannot be too well approxi-
+                                   j=0                         pending on α. In words, α cannot be too well approx i-
 The left-hand side and the terms of the sum with j ⩽ q         mated by rationals. Roth later proved that the exponent
 are all integers. Therefore the quantity                       n here can actually be replaced by 2 + ε for any ε > 0.
            q!                                                 (For more on these topics, see liouville’s theorem

@@ -25,7 +25,7 @@ Introduction
 
 The notion of “digital information” emerged in the middle of the twentieth century, in response to the advent of the telegraph and to the beginnings of computer science, which at the time was principally a theoretical discipline. Of course, the use of electricity to communicate signals goes back further, but the earlier uses involved signals of a “continuous” nature: music, voice, etc.
 The new era was characterized by the transmission of (or the need to transmit) more “discrete” messages, i.e., messages such as English sentences, which can be described as finite sequences of letters taken from some finite alphabet. The phrase “digital information” came to be applied to such families of messages. Digital information posed some novel challenges to the engineers and mathematicians charged with the task of communicating such messages. The root cause of these challenges is “noise.” Every communication medium is noisy, and never transmits any signal completely accurately.
-In the case of continuous signals, somehow the receivers (typically , our ears and eyes) can adjust to such errors and learn to discount them. For example, if you play a very old recording of a musical performance, then there will typically be a crackling noise, but it is possible to ignore this, unless the quality is very bad indeed, and concentrate on the music. However, in the case of digital information errors can have a more catastrophic effect.
+In the case of continuous signals, some how the receivers (typically , our ears and eyes) can adjust to such errors and learn to discount them. For example, if you play a very old recording of a musical performance, then there will typically be a crackling noise, but it is possible to ignore this, unless the quality is very bad indeed, and concentrate on the music. However, in the case of digital information errors can have a more catastrophic effect.
 To see this, suppose that we are communicating in English sentences and that the communication medium makes occasional mistakes by altering one of the transmitted letters. In such a scenario the message
 
 WE ARE NOT READY
@@ -39,7 +39,7 @@ All it takes is one error on the part of the communication medium, and the entir
 VII.6.    Reliable Transmission of Information                                                                    879
 
    Here is one way of achieving this. To communicate        doing so it may make some errors. The alphabet and the
-any message, the sender of the message repeats every        process that underlies the errors are what specifies the
+any message, the sender of the message repeats every        process that under lies the errors are what specifies the
 letter, say five times. For example, to send the message     channel.
   WE ARE NOT READY                                             The alphabet Σ varies from scenario to scenario. In
                                                             the example described above, the alphabet consisted of
@@ -74,7 +74,7 @@ we will show in the rest of this article, when transmit-    with probability p i
 ting long messages one can do much better. However,         chosen uniformly at random. Further more, and this is
 in order to understand this issue, we need to define         very crucial to this model, the errors are assumed to be
 the process of communication, the model of error, and       independent, i.e., the channel repeats this process for
-the measures of performance more carefully. We do           each letter it transmits without any memory of how it
+the measures of performance more carefully. We do           each letter it transmits with out any memory of how it
 so next.                                                    acted on previous symbols. We refer to this model as
                                                             the Σ-symmetric channel with parameter p (or Σ-SC(p))
                         2     Model                         in the rest of this article. A special case of particular
@@ -84,7 +84,7 @@ so next.                                                    acted on previous sy
 The central object of attention in the problem of infor-    bet {0, 1}. Then, if the input bit is 0, say, the corre-
 mation transmission is the “channel of communica-           sponding output bit will be 0 with probability 1 − p and
 tion,” or simply the channel. The channel has an input      1 with probability p.
-(the original signal to be communicated) and an out-           While this model of error may seem rather oversim-
+(the original signal to be communicated) and an out-           While this model of error may seem rather over sim-
 put (the signal after it is transmitted). The input con-    plified (and even unnatural if Σ is not the binary alpha-
 sists of a sequence of elements from some finite set:        bet {0, 1}), it turns out that it captures the essence of
 by analogy with the English-language example, these         most mathematical challenges that arise when one tries
@@ -261,7 +261,7 @@ The condition on p is important here. It ensures that          small.” Let z b
 when the sequence E(m) passes through the channel,             ming ball of radius r about z is the set of all sequences
 the most likely output corresponding to any given term,        w with Hamming distance at most r from z. How big is
 out of the |Σ| different possibilities, is the same as the      this set? Well, in order to specify a sequence w with
-input. Without this condition, there would be no rea-          Hamming distance exactly d from z, it is enough to
+input. With out this condition, there would be no rea-          Hamming distance exactly d from z, it is enough to
 son to expect z to be close to E(m). We shall argue that       specify
                                                                      the set of d places where w and z differ. There
 there is a number C, depending only on the error proba-        are n d ways of choosing this set, so the number of
@@ -284,7 +284,7 @@ case of the binary alphabet {0, 1}. In this case we are                         
                                                                                   r      r !(n − r )!
 choosing a random function E from {0, 1}k to {0, 1}n ,
 and we would like to show that, under suitable circum-         If we now use stirling’s formula [III.31](/part-03/the-gamma-function) or the looser
-stances, the resulting code will almost certainly be very      approximation n! = (n/e)n , then we find that this is
+st ances, the resulting code will almost certainly be very      approximation n! = (n/e)n , then we find that this is
 reliable. In order to do this, we shall focus on a single      about (1/α(1 − α))n , which is 2 H(α)n , where
 message m, and rely on two basic ideas.
                                                                       H(α) = −α log2 α − (1 − α) log2 (1 − α).
@@ -400,7 +400,7 @@ is an efficient algorithm for working out what m was,
 but, remarkably, it is possible to compute m with a                be zero) and the number of unknowns is greater than
 polynomial-time algorithm (in n), which we shall now               the number of constraints, there must be a nontrivial
 describe.                                                          solution: that is, a solution where A(x) and B(x) are
-  What must the decoding algorithm do? It is given                 not both the zero polynomial. Moreover, we can find
+  What must the decoding algorithm do? It is given                 not both the zero polynomial. More over, we can find
 the numbers α1 , . . . , αn and the received sequence              such a solution by Gaussian elimination, which takes
 z1 , . . . , zn and is required to find a polynomial M of           at most Cn3 steps.
 degree k − 1 or less such that M(αi ) = zi for all but at             To summarize: we construct a code by exploiting the
@@ -414,10 +414,10 @@ of errors is at most 2 (n − k)).                                   purposes of
 easier: one can determine the coefficients of a polyno-              systems of simultaneous equations.
 mial of degree k − 1 from k of its values by solving k
 simultaneous equations. However, if some of the val-               4.2   Reducing the Size of the Alphabet Using
-ues we use are incorrect, then we will end up with a                     Good Codes
+ues we use are in correct, then we will end up with a                     Good Codes
 completely different polynomial, so this method is not              The ideas described in the previous section show us
 easy to use for the problem we actually face.                      how to build codes with efficient encoding and decod-
-  To overcome this difficulty, let us imagine that                   ing algorithms, but they use relatively large alphabets.
+  To over come this difficulty, let us imagine that                   ing algorithms, but they use relatively large alphabets.
 M exists and that the errors introduced into the                   In this section we shall exploit these results to build
 sequence M(α1 ), . . . , M(αn ) occur at i1 , . . . , is , where   binary codes.
     1
@@ -491,7 +491,7 @@ gave rise to it, and interprets that binary sequence as an     the biggest succe
 Most known forms of storage media, and in particu-              Finally, it must be stressed that while many of the
 lar standards for audio and data CDs and DVDs, pre-          codes used are based on ones that are studied in the
 scribe error-correcting codes based on Reed–Solomon          mathematical literature, this should not be taken to
-codes. Specifically, they are based on a code that maps       mean that they can be deployed immediately without
+codes. Specifically, they are based on a code that maps       mean that they can be deployed immediately with out
 F223      255
   256 to F256 , where F256 is the finite field with 256 ele-   further design. For example, the Mariner spacecraft
 ments. In audio CDs, codes are use to protect from           used not a Reed–Muller code but a variant of it designed
@@ -536,7 +536,7 @@ est in codes constructed with the help of insights from      information owes mu
 graph theory [III.34]. Many of the good properties           non (1948) and Hamming (1950), which formed the
 of turbo codes have been observed only empirically:          basis for much of this article. The Reed–Solomon codes
 that is, the codes seem to work very well in practice        of section 4.1 are from Reed and Solomon (1960). Their
-but it has not yet been proved rigorously that they do.      decoding algorithm originates in the work of Peterson
+but it has not yet been proved rigorously that they do.      decoding algorithm originates in the work of Peters on
 Nevertheless, the observations have been so compelling       (1960), though the algorithm given here is significantly
 that new standards for communication are starting to         simplified. The technique of composing codes is due to
 prescribe these codes.                                       Forney (1966).

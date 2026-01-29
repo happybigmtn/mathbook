@@ -5,7 +5,7 @@
 ρ : G → GLn (C), where GLn (C) is the group of n . imes n            on PDEs, which excited particular attention, contained
 invertible matrices over C), the associated character χ         the result now known as the cauchy–kovalevskaya
 is the map G → C such that χ(g) = trace ρ(g) for                theorem [IV.12 §§2.2, 2.4], an important tool in estab-
-g ∈ G. Frobenius proved the orthogonality relations,            lishing the existence of analytic solutions of PDEs.
+g ∈ G. Frobenius proved the orthogonality relations,            li shing the existence of analytic solutions of PDEs.
 recognized the connection of his characters with matrix            That same year Kovalevskaya returned to Russia and,
 representations of the group, calculated the charac-            unable to find a suitable position, temporarily aban-
 ter tables of the symmetric groups, the alternating             doned mathematics. In 1880, at the invitation of cheby-
@@ -49,7 +49,7 @@ traveled to Heidelberg, where she was taught mathe-             functions [V.31]
 matics by Du Bois-Reymond. The following year she               integrals.
 moved to Berlin to work with weierstrass [VI.44](/part-06/karl-weierstrass-18151897).                  Kovalevskaya became a full professor of mathemat-
 Berlin University was closed to women but Weierstrass           ics at the University of Stockholm in 1889, the first
-agreed to tutor her privately. Under his supervision            woman anywhere to achieve such a position. Shortly
+agreed to tutor her privately. Under his supervision            woman any where to achieve such a position. Shortly
 Kovalevskaya completed dissertations on partial dif-            afterward, she was nominated by Chebyshev for cor-
 ferential equations (PDEs), Abelian integrals, and Sat-         responding membership of the Russian Academy of
 urn’s rings, and in 1874 she became the first woman              Sciences, her subsequent election breaking the gender

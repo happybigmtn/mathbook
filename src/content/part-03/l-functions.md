@@ -27,9 +27,9 @@ bubbles of similar sizes naturally organize themselves          L-function if it
 into hexagonal lattices, and so on.) The Leech lattice          a formal definition of course, but in fact there is no
 plays a similar role in twenty-four dimensions: it is the       formal definition of “an L-function.” (People have tried
 “most symmetrical” of all twenty-four-dimensional lat-          to give one, but there is no real consensus about what
-tices, with a degree of symmetry that is quite extraor-         the right definition should be.) What happens in prac-
+tices, with a degree of symmetry that is quite extra or-         the right definition should be.) What happens in prac-
 dinary. It is discussed in more detail in the general           tice is that a mathematician finds a way of associating
-goals of mathematical research [I.4 §4](/part-01/general-goals).                        a sequence a1 , a2 , . . . of numbers with a mathemati-
+goals of mathematical research [I.4 §4](/part-01/general-goals).                        a sequence a1 , a2 , . . . of numbers with a mathemat i-
                                                                 cal object X, and if evidence then emerges to suggest
 III.47 L-Functions                                              that the associated Dirichlet series L(s) shares the good
          Kevin Buzzard                                          properties of the zeta function, then L(s) will be called
@@ -62,14 +62,14 @@ sequence a1 , a2 , a3 , . . . , we define the Dirichlet series
                       1 s   2     3
                                                                even when s is a complex number, as long as it has a
                               s
-                    =    an /n .                                sufficiently large real part. Moreover, it defines a holo-
+                    =    an /n .                                sufficiently large real part. More over, it defines a holo-
                         n⩾1
                                                                 morphic function [I.3 §5.6](/part-01/fundamental-definitions) in the region of the com-
 Here, s could be a positive integer, or a real number, for      plex plane where the sum converges. For example, the
 example. As long as our sequence a1 , a2 , . . . does not       Dirichlet series defining the zeta function converges for
 grow too quickly (which we shall henceforth assume),            every s such that Re(s) > 1. A standard fact about the
 the series L(s) will converge for all sufficiently large          zeta function is that it has a unique extension to a holo-
-values of s. Moreover, it may be a very “rich” object,          morphic function of s for any complex number s ≠ 1.
+values of s. More over, it may be a very “rich” object,          morphic function of s for any complex number s ≠ 1.
 even if the initial sequence is simple. For example, if         This phenomenon is known as meromorphic continua-
 an = 1 for all n, then the resulting function L(s) is           tion of the zeta function. It is similar to the fact that the
 the famous riemann zeta function [IV.2 §3](/part-04/number-theory) ζ(s) =               infinite sum 1 + x + x 2 + x 3 + · · · converges only when

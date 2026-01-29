@@ -3,23 +3,23 @@
 106                                                                                  II. The Origins of Modern Mathematics
 
 Corry, L. 1996. Modern Algebra and the Rise of Mathe-             1.1   Abacists and Algorists
-  matical Structures. Science Networks, volume 17. Basel:
+  mat ical Structures. Science Networks, volume 17. Basel:
   Birkhäuser.                                                     Returning to the example of multiplication, an obvi-
 Edwards, H. M. 1984. Galois Theory. New York: Springer.           ous point is that how you try to multiply two numbers
 Heath, T. L. 1956. The Thirteen Books of Euclid’s Elements,       together is strongly influenced by how you represent
   2 nd edn. (3 vols.). New York: Dover.                            those numbers. To see this, try multiplying the Roman
-Høyrup, J. 2002. Lengths, Widths, Surfaces: A Portrait of Old     numerals CXLVII and XXIX together without first con-
+Høyrup, J. 2002. Lengths, Widths, Surfaces: A Portrait of Old     numerals CXLVII and XXIX together with out first con-
   Babylonian Algebra and Its Kin. New York: Springer.             verting them into their decimal counterparts, 147 and
 Klein, J. 1968. Greek Mathematical Thought and the Origin         29. It is difficult and time-consuming, and explains why
   of Algebra, translated by E. Brann. Cambridge, MA: The
                                                                   arithmetic in the Roman empire was extremely rudi-
   MIT Press.
-                                                                  mentary. A numeration system can be additive, as it
+                                                                  ment ary. A numeration system can be additive, as it
 Netz, R. 2004. The Transformation of Mathematics in the
                                                                   was for the Romans, or positional, like ours today. If it
   Early Mediterranean World: From Problems to Equations.
   Cambridge: Cambridge University Press.                          is positional, then it can use one or several bases—for
-Parshall, K. H. 1988. The art of algebra from al-Khwārizmı̄      instance, the Sumerians used both base 10 and base 60.
+Par shall, K. H. 1988. The art of algebra from al-Khwārizmı̄      instance, the Sumerians used both base 10 and base 60.
   to Viète: A study in the natural selection of ideas. History       For a long time, many processes of calculation used
   of Science 26:129–64.                                           abacuses. Originally, these were lines traced on sand,
      . 1989. Toward a history of nineteenth-century invari-       onto which one placed stones (the Latin for small stone
@@ -35,9 +35,9 @@ Sesiano, J. 1999. Une Introduction à l’histoire de l’algèbre:
   Romandes.                                                       ten units, one hundred units, etc., according to which
 Van der Waerden, B. 1985. A History of Algebra from al-           row or column it was in. The four arithmetic operations
   Khwārizmı̄ to Emmy Noether. New York: Springer.                could then be carried out by moving the tokens accord-
-Wussing, H. 1984. The Genesis of the Abstract Group Con-          ing to precise rules. The Chinese counting frame can be
+Wussing, H. 1984. The Genes is of the Abstract Group Con-          ing to precise rules. The Chinese counting frame can be
   cept: A Contribution to the History of the Origin of Abstract   regarded as a version of the abacus.
-  Group Theory, translated by A. Shenitzer. Cambridge, MA:           In the twelfth century, when the Arabic mathemati-
+  Group Theory, translated by A. Shenitzer. Cambridge, MA:           In the twelfth century, when the Arabic mathemat i-
   The MIT Press.                                                  cal works were translated into Latin, the denary posi-
                                                                   tional numeration system spread through Europe. This
                                                                   system was particularly suitable for carrying out the
@@ -49,7 +49,7 @@ II.4 Algorithms
 It is not easy to give a precise definition of the word               Although the signs for the numerals had been adapt-
 “algorithm.” One can provide approximate synonyms:                ed from Indian practice, the numerals became known
                                                                   as Arabic. And the origin of the word “algorithm” is
-some other words that (sometimes) mean roughly the
+some other words that (some times) mean roughly the
                                                                   Arabic: it arose from a distortion of the name al-
 same thing are “rule,” “technique,” “procedure,” and
                                                                   khwārizmı̄ [VI.5](/part-06/abu-jafar-muhammad-ibn-musa-al-khwarizm-vi55-william-kingdon-cliord-18451879), who was the author of the oldest
@@ -60,11 +60,11 @@ long multiplication, the method one learns in high
 school for multiplying two positive integers together.
                                                                   h
                                                                   . isāb al-jabr wa’l-muqābala (“The compendious book
-However, although informal explanations and well-
+However, although in formal explanations and well-
                                                                   on calculation by completion and balancing”), gave rise
 chosen examples do give a good idea of what an algo-
                                                                   to the word “algebra.”
-rithm is, the concept has undergone a long evolution: it
+rithm is, the concept has under gone a long evolution: it
 was not until the twentieth century that a satisfactory
                                                                   1.2   Finiteness
 formal definition was achieved, and ideas about algo-
@@ -77,7 +77,7 @@ II.4.   Algorithms                                                              
 the seventeenth century, according to d’alembert’s           [III.22], which goes back to the third century b.c.e. It
 [VI.20](/part-06/jean-le-rond-dalembert-17171783) Encyclopédie, the word was used in a more gen-       is a procedure described by euclid [VI.2](/part-06/euclid-ca) to determine
 eral sense, referring not just to arithmetic but also to     the greatest common divisor (gcd) of two positive inte-
-methods in algebra and to other calculational proce-         gers a and b. (Sometimes the greatest common divisor
+methods in algebra and to other calculational proce-         gers a and b. (Some times the greatest common divisor
 dures such as “the algorithm of the integral calculus”       is known as the highest common factor (hcf).)
 or “the algorithm of sines.”                                    When one first meets the concept of the greatest com-
   Gradually, the term came to mean any process of sys-       mon divisor of a and b, it is usually defined to be the
@@ -90,7 +90,7 @@ the following naive definition:                               sor of a and b, th
                                                              determining d is provided by the first two propositions
 An algorithm is a set of finitely many rules for manip-
                                                              of Book VII of Euclid’s Elements. Here is the first one:
-ulating a finite amount of data in order to produce a
+ulat ing a finite amount of data in order to produce a
                                                              “Two unequal numbers being set out, and the less being
 result in a finite number of steps.
                                                              continually subtracted in turn from the greater, if the
@@ -167,10 +167,10 @@ the gcd of the given                   c        a−b              equivalent. S
                                                                  to a polynomial-time algorithm [IV.20 §2](/part-04/computational-complexity), while the
                                                                  time taken by the first is exponentially long.
   One further observation is needed if we want to show
-that this procedure works. It is the following fundamen-         2.1.3    Generalizations
-tal fact about the positive integers, sometimes known
+that this procedure works. It is the following fund a men-         2.1.3    Generalizations
+tal fact about the positive integers, some times known
 as the well-ordering principle.                                  Euclid’s algorithm can be generalized to many other
-                                                                 contexts where we have notions of addition, subtrac-
+                                                                 contexts where we have notions of addition, sub trac-
 (iii) A strictly decreasing sequence of positive integers        tion, and multiplication. For example, there is a variant
       a0 > a1 > a2 > · · · must be finite.                        of it that applies to the ring [III.81 §1](/part-03/rings-ideals-and-modules) Z[i] of Gaussian
                                                                  integers, that is, numbers of the form a + bi, where a
@@ -263,7 +263,7 @@ are not integers (see numerical analysis [IV.21](/part-04/numerical-analysis)).
 In around 1670, newton [VI.14](/part-06/isaac-newton-16421727) devised a method for           obtain a new function g(p), you are effectively moving
 finding roots of equations, which he explained with ref-       the origin from (0, 0) to the point (a, 0). Then when
 erence to the example x 3 − 2 x − 5 = 0. His explanation       you forget all powers of p other than the constant and
-starts with the observation that the root x is approxi-       linear terms, you are finding the best linear approxima-
+starts with the observation that the root x is approx i-       linear terms, you are finding the best linear approxima-
 mately equal to 2. He therefore writes x = 2 + p and          tion to the function g—which, geometrically speaking,
 obtains an equation for p by substituting 2 + p for x in      is the tangent line to g at the point (0, g(0)). Thus, the
 the original equation. This new equation works out to         approximate value you obtain for p is the x-coordinate
@@ -367,7 +367,7 @@ $111$
 
 tive definition. To give an idea of what this means, let us consider addition and multiplication as functions from N $\times$ N to N . To emphasize this, we shall write sum (x , y) and prod (x , y) for x  +  y and xy, respectively. A familiar fact about multiplication is that it is “repeated addition.” Let us examine this idea more precisely. We can define the function “prod” in terms of the function “sum” by means of the following two rules: prod (1 ,  y) equals y and prod $(x + 1$ ,  y) equals sum (prod (x , y), y).
 Thus, if you know prod (x , y) and you know how to calculate sums, then you can work out prod (x $+ 1$ , y). Since you also know the “base case” prod ( $1$ , y), a simple inductive argument shows that these simple rules completely determine the function “prod.” We have just seen how one function can be “recursively defined” in terms of another. We now want to understand the class of all functions from N n to N that can be built up in a few basic ways, of which recursion is the most important. We shall refer to functions from N n to N as n-ary functions.
-To begin with, we need an initial stock of functions out of which the rest will be built. It turns out that a very simple set of functions is enough. Most basic are the constant functions: that is, functions that take every n-tuple in N n to some fixed positive integer c. Another very simple function, but the function that allows us to create much more interesting ones, is the successor function, which takes a positive integer n to the next one, $n + 1$ . Finally, we have projection functions: the function U k n takes a sequence ($x^{1}$ , . . .
+To begin with, we need an initial stock of functions out of which the rest will be built. It turns out that a very simple set of functions is enough. Most basic are the constant functions: that is, functions that take every n-tuple in N n to some fixed positive integer c. Another very simple function, but the function that allows us to create much more interesting ones, is the success or function, which takes a positive integer n to the next one, $n + 1$ . Finally, we have projection functions: the function U k n takes a sequence ($x^{1}$ , . . .
 , x n) in N n and maps it to the kth coordinate x k . We then have two ways of constructing functions from other functions. The first is substitution. Given an m-ary function φand m n-ary functions. si1 , . . . , $\psi^{m}$ , one defines an n-ary function by ($x^{1}$ , . . . , x n)   $\to$ φ ( $\psi^{1} ( x^{1}$ , . . . , x n), . . . , $\psi$ m ($x^{1}$ , . . . , x n)). For example, (x + y){}2 = prod (sum (x , y), sum (x , y)), so we can obtain the function (x , y)\to (x + y)2 from the functions “sum” and “prod” by means of substitution.
 The second method of construction is called primitive recursion. This is a more general form of the inductive method we used above in order to construct the function “prod” from the function “sum.” Given an $(n - 1)$ - ary function $\psi$ and an $(n + 1)$ - ary function μ, one defines an n-ary function φ by saying that
 
@@ -395,7 +395,7 @@ we have just described.                                                 and μ(y
                                                                         grows more slowly. This allows us to define a “diag-
 If you think for a while about primitive recursion and                  onal” function A(y) = A(y, y) that is not primi-
 know a small amount about programming computers,                        tive recursive because it grows faster than any of the
-you should be able to convince yourself that they are                   functions A(x, y).
+you should be able to convince your self that they are                   functions A(x, y).
 effectively computable: that is, that for any primitive                     If we are trying to understand in a precise way which
 recursive function there is an algorithm for computing                  functions can be calculated algorithmically, then our
 it. (For example, the operation of primitive recursion                  definition will surely have to encompass functions like
@@ -425,7 +425,7 @@ following recurrence rules:
                                                                         calculable” functions. This claim is widely believed,
 For example, A(2, y + 1) = A(1, A(2, y)) = A(2, y) + 2.                 but it is a conviction that cannot be proved since
 From this and the fact that A(2, 1) = 2 it follows that                 the notion of recursive function is a mathematically
-A(2, y) = 2 y for every y. In a similar way one can                      precise concept while that of an effectively calcula-
+A(2, y) = 2 y for every y. In a similar way one can                      precise concept while that of an effectively calcul a-
 show that A(3, y) = 2 y , and in general that for each x                 ble function is an intuitive notion, rather like that of
 
 $II$ . $4$ .
@@ -445,7 +445,7 @@ The Entscheidungspr oblem, or decision problem, was also asked by Hilbert, in 19
 His argument is outlined in the insolubility of the halting problem [V.20](/part-05/the-insolubility-of-the-halting-problem). $4$ Properties of Algorithms $4$ . $1$ Iteration versus Recursion As previously mentioned, we often encounter computation rules which define each element of a sequence in terms of the preceding elements. This gives rise to two different ways of carrying out the computation. $113$ The first is iteration: one computes the first terms, then one obtains succeeding terms by means of a recurrence formula.
 The second is recursion, a procedure which seems circular at first because one defines a procedure in terms of itself. However, this is allowed because the procedure calls on itself with smaller values of the variables. The concept of recursion is subtle and powerful. Let us try to clarify the difference between recursion and iteration with some examples. Suppose that we wish to compute $n! = 1$ · $2$ · $3$ · · · $(n - 1)$ · n. An obvious way of doing it is to note the recurrence relation $n! = n$ · $(n - 1)$ ! and the initial value $1$ ! $= 1$ .
 Having done so, one could then compute successively the numbers $2$ ! , $3$ ! , $4$ ! , and so on until one reached n!, which would be the iterative approach. Alternatively, one could say that if fact (n) is the result of a procedure that leads to n!, then fact (n) = $n \times$ fact $(n - 1)$ , which would be a recursive procedure. The second approach says that to obtain n! it suffices to know how to obtain $(n - 1)$ ! , and to obtain $(n - 1)$ ! it suffices to know how to obtain (n $- 2$ ) ! , and so on. Since one knows that $1$ ! $= 1$ , one can obtain n!.
-Thus, recursion is a bit like iteration but thought of “backwards.” In some ways this example is too simple to show clearly the difference between the two procedures. Moreover, if one wishes to compute n!, then iteration seems simpler and more natural than recursion. We now look at an example where recursion is far simpler than iteration. $4$ . $1$ . $1$ The Tower of Hanoi The Tower of Hanoi is a problem that goes back to Édouard Lucas in 1884 .
+Thus, recursion is a bit like iteration but thought of “backwards.” In some ways this example is too simple to show clearly the difference between the two procedures. More over, if one wishes to compute n!, then iteration seems simpler and more natural than recursion. We now look at an example where recursion is far simpler than iteration. $4$ . $1$ . $1$ The Tower of Hanoi The Tower of Hanoi is a problem that goes back to Édouard Lucas in 1884 .
 One is given n disks, all of different sizes and each with a hole in the middle, stacked on a peg A in order of size, with the largest one at the bottom. We also have two empty pegs B and C. The problem is to move the stack from peg A to peg B while obeying the following rules. One is allowed to move just one disk at a time, and each move consists in taking the top disk from one of the pegs and putting it onto another peg. In addition, no disk may ever be placed above a smaller disk. The problem is easy if you have just three disks, but becomes rapidly harder as the number of disks increases.
 However, with the help of recursion one can see very quickly that an algorithm exists for moving the disks in the required way. Indeed, suppose that we know a procedure H (n $- 1$ ) that solves the problem for n $- 1$ disks. Here is a procedure H (n) for n disks: move
 
@@ -463,7 +463,7 @@ Thus, HAB (n) is deduced from HAC (n − 1) and HBC (n −         sive procedur
 1), which are clearly equivalent to HAB (n − 1). Since         r = 0, in which case we know that 1 b +0 r = d. Once we
 HAB (1) is certainly easy, we have the full recursion.         reach this, we can “run back up” through Euclid’s algo-
    One can easily check by induction that this proce-          rithm, successively modifying our pair (u, v) according
-dure takes 2 n − 1 moves—moreover, it turns out that            to the rule just given. Notice, incidentally, that the fact
+dure takes 2 n − 1 moves—more over, it turns out that            to the rule just given. Notice, incidentally, that the fact
 the task cannot be accomplished in fewer moves. Thus,          that this procedure exists is a proof of Bézout’s lemma.
 the number of moves is an exponential function of n,
 so for large n the procedure will be very long.                4.2     Complexity
@@ -483,7 +483,7 @@ steps have so far taken place, and therefore the amount        There is also its
 of memory needed, beyond that required to store the            maximum amount of memory a computer needs in
 positions of the disks, is very small.                         order to implement it. Complexity theory is the study
                                                                of the computational resources that are needed to carry
-4.1.2   The Extended Euclid Algorithm                          out various tasks. It is discussed in detail in computa-
+4.1.2   The Extended Euclid Algorithm                          out various tasks. It is discussed in detail in com put a-
                                                                tional complexity [IV.20](/part-04/computational-complexity)—here we shall give a hint
 Euclid’s algorithm is another example that lends itself
                                                                of it by examining the complexity of one algorithm.
@@ -509,7 +509,7 @@ tive integers (a, b) there exist (not necessarily positive)
 integers u and v such that
                                                                sion of a by b is less than a/2. To see this, notice that
                ua + vb = d = gcd(a, b).                        if b ⩾ a/2 then the remainder is a − b, which is at
-How can we obtain such integers u and v? The answer            most a/2, whereas if b ⩽ a/2 then we know that the
+How can we obtain such integers u and v? The answer            most a/2, where as if b ⩽ a/2 then we know that the
 is given by the extended Euclid algorithm, which again         remainder is at most b and so is again at most a/2. It
 
 II.4.   Algorithms                                                                                                 115
@@ -549,7 +549,7 @@ set a = 38, b = 21, and find integers u and v such that       seem to be a good 
 38 u + 21 v = 1. We begin by writing down the first step        but calculating it on a computer looks very hard, too,
 of Euclid’s algorithm:                                       as there are so many numbers between 1030 and 1031 .
                      38 = 1 . imes 21 + 17.                       However, if one chooses a random sample of 10 000
-                                                             numbers between 1030 and 1031 and does the calcula-
+                                                             numbers between 1030 and 1031 and does the calcul a-
 This tells us that 17 = 38 − 21. Now we write down the
                                                              tion for just those numbers, then with high probability
 second step:
@@ -602,7 +602,7 @@ When should we regard such a sequence as “random”?           transcendental 
 One idea is to consider simple statistical tests: we         coefficients? There are two kinds of answers to such
 would expect that in the long run the frequency of zeros     questions: either one actually exhibits a number such
 should be roughly the same as that of ones, and more         as π and proves that it is transcendental (this was done
-generally that any small subsequence such as 00110           by Carl Lindemann in 1873), or one gives an “indirect
+generally that any small subsequence such as 00110           by Carl Lindemann in 1873), or one gives an “in direct
 should appear with the “right” frequency (which for          existence proof,” such as cantor’s [VI.54](/part-06/georg-cantor-18451918) demonstra-
                             1
 this sequence would be 32      since it has length 5).       tion that there are “far more” real numbers than there
@@ -627,7 +627,7 @@ sequence of zeros and ones should be called random if        be constructed expl
 
 $II$ . $5$ .
 
-The Development of Rigor in Mathematical Analysis Not many working mathematicians have subscribed to these principles, but almost all would agree that there is an important difference between constructive proofs and indirect proofs of existence, a difference that has come to seem more important with the rise of computer science. This has added a further level of refinement: sometimes, even if you know that a mathematical object can be produced algorithmically, you still care whether the algorithm can be made to work in a reasonably short time.
+The Development of Rigor in Mathematical Analysis Not many working mathematicians have subscribed to these principles, but almost all would agree that there is an important difference between constructive proofs and in direct proofs of existence, a difference that has come to seem more important with the rise of computer science. This has added a further level of refinement: some times, even if you know that a mathematical object can be produced algorithmically, you still care whether the algorithm can be made to work in a reasonably short time.
 
 $5$ . $2$ . $2$
 
@@ -667,13 +667,13 @@ example, one could define a number n to be divisible          associated with di
 by a number m if and only if there exists an integer q       we are principally discussing. In the third quarter of
 such that qm = n. Using this definition, we can give a        the seventeenth century rival methods for the differ-
 more precise proof: if n is divisible by 6, then n = 6 q      ential and integral calculus were devised by newton
-for some q, and therefore n = 2(3 q), which proves that       [VI.14](/part-06/isaac-newton-16421727) and leibniz [VI.15](/part-06/gottfried-wilhelm-leibniz-16461716), who thereby synthesized
+for some q, and therefore n = 2(3 q), which proves that       [VI.14](/part-06/isaac-newton-16421727) and leibniz [VI.15](/part-06/gottfried-wilhelm-leibniz-16461716), who there by synthesized
 n is divisible by 2. Thus we have used the definitions        and extended a considerable amount of earlier work
 to show that the definition of divisibility by 2 holds        concerned with tangents and normals to curves and
 whenever the definition of divisibility by 6 holds.           with the areas of regions bounded by curves. The tech-
    Historically, mathematical writers have been satis-       niques were highly successful, and were extended read-
 fied with varying levels of rigor. Results and methods        ily in a variety of directions, most notably in mechanics
-have often been widely used without a full justification      and in differential equations.
+have often been widely used with out a full justification      and in differential equations.
 of the kind just outlined, particularly in bodies of math-      The key common feature of this research was the use
 ematical thought that are new and rapidly developing.        of infinities: in some sense, it involved devising meth-
 Some ancient cultures, the Egyptians for example, had        ods for combining infinitely many infinitely small quan-
@@ -691,7 +691,7 @@ ments. The kind of deductive, or synthetic, argument         many of them, it ma
 we illustrated earlier would have been described as a        tive total (rather than just 0, from adding up infinitely
 proof more geometrico—in the geometrical way. While          many zeros, or an infinite number, as we would get
 Euclid’s arguments, assumptions, and definitions are          if we added the same finite number to itself infinitely
-not wholly rigorous by today’s standards, the basic idea     many times). Many techniques for doing such calcula-
+not wholly rigorous by today’s standards, the basic idea     many times). Many techniques for doing such calcul a-
 was clear: one proceeds from clear definitions and gen-       tions were devised, though the interpretation of what
 erally agreed basic ideas (such as that the whole is         was taking place varied. Were the infinities involved
 greater than the part) to deduce theorems (also called       “real” or merely “potential”? If something is “really”
@@ -710,7 +710,7 @@ $119$
 ways (two lengths can be added, have a ratio, and so on). When x changes to x  +  dx, $u$ and $v$ change to u  +  du and v  +  dv, respectively. Leibniz concluded that the product uv would then change to $uv + udv + vdu,$ so that d (uv)  =  u dv  +  v du. His argument is, roughly, that d (uv) = (u + du ) (v + dv) - uv. Expanding the right-hand side using regular algebra and then simplifying gives u dv  +  v du  +  du dv. But the term du dv is a second-order infinitesimal, vanishingly small compared with the first-order differentials, and is thus treated as equal to $0$ .
 Indeed, one aspect of the problems is that there appears to be an inconsistency in the way that infinitesimals are treated. For instance, if you want to work out the derivative of $y = x{}^{2}$ , the calculation corresponding to the one just given (expanding (x + dx)2 , and so on) shows that  dy/dx = 2 x + dx. We then treat the dx on the right-hand side as zero, but the one on the left-hand side seems as though it ought to be an infinitesimal nonzero quantity, since otherwise we could not divide by it. So is it zero or not? And if not, how do we get around the apparent inconsistency?
 At a slightly more technical level, the calculus required mathematicians to deal repeatedly with the “ultimate” values of ratios of the form dy  /  dx when the quantities in both numerator and denominator approach or actually reach $0$ . This phrasing uses, once again, the differential notation of Leibniz, though the same issues arose for Newton with a slightly different notational and conceptual approach. Newton generally spoke of variables as depending on time, and he sought (for example) the values approached when “evanescent increments”--vanishingly small time intervals-- are considered.
-One long-standing set of confusions arose precisely from this idea that variable quantities were in the process of changing, whether with time or with changes in the value of another variable. This means that we talk about values of a variable approaching a given value, but without a clear idea of what this “approach” actually is.
+One long-standing set of confusions arose precisely from this idea that variable quantities were in the process of changing, whether with time or with changes in the value of another variable. This means that we talk about values of a variable approaching a given value, but with out a clear idea of what this “approach” actually is.
 
 $2$
 
@@ -723,7 +723,7 @@ Of course, had the calculus not turned out to be an enormously fruitful field of
 120                                                                             II. The Origins of Modern Mathematics
 
 made far more accessible. Problems of areas, maxima                Probably the most famous eighteenth-century cri-
-and minima, the formulation and solution of differen-            tique of the language and methods of eighteenth-cen-
+and minima, the formulation and solution of differ en-            tique of the language and methods of eighteenth-cen-
 tial equations to describe the shape of hanging chains          tury analysis is due to the philosopher George Berke-
 or the positions of points on vibrating strings, applica-       ley (1685–1753). Berkeley’s motto, “To be is to be
 tions to celestial mechanics, the investigation of prob-        perceived,” expresses his idealist stance, which was
@@ -767,7 +767,7 @@ discussed the potential distinction between the sum
 and the value of an infinite sum, Bernoulli arguing that
                                                                 to the success and wide use of his important textbooks.
 something like 1−2+6−24+120+· · · has no sum but
-                                                                Euler’s reasoning is sometimes regarded as rather care-
+                                                                Euler’s reasoning is some times regarded as rather care-
 that this algebraic expression does constitute a value.
                                                                 less since he operated rather freely with the notation of
 Whatever may have been meant by this, Euler defended
@@ -784,8 +784,8 @@ example of 1 − x + x 2 − x 3 + · · · , which comes from
                                   1                                                          =     .
 that 1 − 1 + 1 − 1 + · · · = 2 . His view was not uni-                                n=1
                                                                                           n2     6
-versally accepted. Similar controversies arose in con-          His method is as follows. Using the known series ex-
-sidering how to extend the values of functions outside          pansion for sin x he considered the zeros of
+versa lly accepted. Similar controversies arose in con-          His method is as follows. Using the known series ex-
+side ring how to extend the values of functions out side          pansion for sin x he considered the zeros of
 their usual domain, for example with the logarithms of                       √
                                                                           sin x         x    x2   x3
 negative numbers.                                                           √     =1−      +    −    + ··· .
@@ -793,7 +793,7 @@ negative numbers.                                                           √ 
 
 $II$ . $5$ .
 
-The Development of Rigor in Mathematical Analysis These lie at $\pi^{2}$ , (2\pi)2 , (3\pi)2 , . . . . Applying (without argument) the factor theorem for finite algebraic equations he expressed this equation as √ sin x x x x √
+The Development of Rigor in Mathematical Analysis These lie at $\pi^{2}$ , (2\pi)2 , (3\pi)2 , . . . . Applying (with out argument) the factor theorem for finite algebraic equations he expressed this equation as √ sin x x x x √
 
 $= 1 - {}^{2}1 - 1 -$
 
@@ -815,7 +815,7 @@ $\pi24\pi29\pi26$
 
 and multiplying both sides by $\pi^{2}$ gives the required sum. We now think of this approach as having several problems. The product of the infinitely many terms may or may not represent a finite value, and today we would specify conditions for when it does. Also, applying a result about (finite) polynomials to (infinite) power series is a step that requires justification. Euler himself was to provide alternative arguments for this result later in his life.
 But the fact that he may have known counterexamples--situations in which such usages would not work--was not, for him, a decisive obstacle. This view, in which one reasoned in a generic situation that might admit a few exceptions, was common at his time, and it was only in the late nineteenth century that a concerted effort was made to state the results of analysis in ways that set out precisely the conditions under which the theorems would hold. Euler did not dwell on the interpretation of infinite sums or infinitesimals.
-Sometimes he was happy to regard differentials as actually equal to zero, and to derive the meaning of a ratio of differentials from the context of the problem: An infinitely small quantity is nothing but a vanishing quantity and therefore will be actually equal to $0$ . . . . Hence there are not so many mysteries hidden in this concept as there are usually believed to be. These supposed mysteries have rendered the calculus of the infinitely small quite suspect to many people.
+Some times he was happy to regard differentials as actually equal to zero, and to derive the meaning of a ratio of differentials from the context of the problem: An infinitely small quantity is nothing but a vanishing quantity and therefore will be actually equal to $0$ . . . . Hence there are not so many mysteries hidden in this concept as there are usually believed to be. These supposed mysteries have rendered the calculus of the infinitely small quite suspect to many people.
 This statement, from the Institutiones Calculi Differential is of 1755 , was followed by a discussion of proportions in which one of the ratios is $0/0$ , and a justification of the fact that differentials may be neglected in calculations with ordinary numbers. This accurately
 
 $121$
@@ -855,7 +855,7 @@ primary focus of the methods moved away from geom-
 etry, so that in work of the second half of the eighteenth
                                                                between the “algebraic” infinite process of the series
 century we increasingly see calculus treated as “alge-
-                                                               expansion on the one hand, and the use of differen-
+                                                               expansion on the one hand, and the use of differ en-
 braic analysis” of “analytic functions.” The term “ana-
                                                                tials on the other. Lagrange did not see the original
 lytic” was used in a variety of senses. For many writers,
@@ -885,7 +885,7 @@ known functions. He first sought to show that “in gen-          self continued
 eral” no negative or fractional powers would appear            held on to older approaches using infinitesimals, which
 in the expansion, and from this he obtained a power-           they found more intuitively accessible for the students
 series representation. His arguments here are surpris-         as well as better adapted to the solution of problems
-ing, and somewhat ad hoc, and I use an example given           in elementary mechanics. Cauchy’s self-imposed exile
+ing, and some what ad hoc, and I use an example given           in elementary mechanics. Cauchy’s self-imposed exile
 by Fraser (1987). The slightly strange notation is based       from Paris in the 1830 s further limited the impact of
 on that of Lagrange. Suppose that one seeks an expan-          his approach, which was initially taken up only by a
                   √
@@ -893,12 +893,12 @@ sion of f (x) = x + i in powers of i. In general, only         few of his studen
 
 $II$ . $5$ .
 
-The Development of Rigor in Mathematical Analysis Nonetheless, Cauchy’s definitions of limit, of continuity, and of the derivative gradually came into general use in France, and were influential elsewhere as well, especially in Italy. Moreover, his methods of using these definitions in proofs, and particularly his use of mean value theorems in various forms, moved analysis from a collection of symbolic manipulations of quantities with special properties toward the science of argument about infinite processes using close estimation via the manipulation of inequalities.
-In some respects, Cauchy’s greatest contribution lay in his clear definitions. For earlier writers, the sum of an infinite series was a somewhat vague notion, sometimes interpreted by a kind of convergence argument (as with the sum of a geometric series such as
+The Development of Rigor in Mathematical Analysis Nonetheless, Cauchy’s definitions of limit, of continuity, and of the derivative gradually came into general use in France, and were influential elsewhere as well, especially in Italy. More over, his methods of using these definitions in proofs, and particularly his use of mean value theorems in various forms, moved analysis from a collection of symbolic manipulations of quantities with special properties toward the science of argument about infinite processes using close estimation via the manipulation of inequalities.
+In some respects, Cauchy’s greatest contribution lay in his clear definitions. For earlier writers, the sum of an infinite series was a some what vague notion, some times interpreted by a kind of convergence argument (as with the sum of a geometric series such as
 
 $\infty$
 
- -  n) and sometimes as the value of the function
+ -  n) and some times as the value of the function
 
 $n = {}^{0}2$
 
@@ -1011,7 +1011,7 @@ Weierstrass and His School
 
 Weierstrass had a passion for mathematics as a student at Bonn and Münster, but his student career was very uneven. He spent the years from 1840$to$1856$as$ a high school teacher, under taking research independently but at first publishing obscurely. Papers from 1854 onward in Journal für die reine und angewandte Mathematik (otherwise known as Crelle’s Journal) attracted wide attention to his talent, and he obtained a professorship in Berlin in 1856 .
 Weierstrass began to lecture regularly on mathematical analysis, and his approach to the subject developed into a series of four courses of lectures given cyclically between the early $1860s$ and 1890 . The lectures evolved over time and were attended by a large number of important mathematical researchers. They also indirectly influenced many others through the circulation of unpublished notes. This circle included R. Lipschitz, P. du Bois-Reymond, H. A. Schwarz, O. Hölder, Cantor, L. Koenigsberger, G. Mittag-Leffler, kovalevskaya [VI.59](/part-06/sofya-sonya-kovalevskaya-18501891), and L.
-Fuchs, to name only some of the most important. Through their use of Weierstrass i an approaches in their own research, and their espousal of his ideas in their own lectures, these approaches became widely used well before the eventual publication of a version of his lectures late in his life. The account that follows is based largely on the 1878 version of the lectures. His approach was also influential outside Germany: parts of it were absorbed in France in the lectures of hermite [VI.47](/part-06/charles-hermite-18221901) and jordan [VI.52](/part-06/camille-jordan-18381922), for example.
+Fuchs, to name only some of the most important. Through their use of Weierstrassian approaches in their own research, and their espousal of his ideas in their own lectures, these approaches became widely used well before the eventual publication of a version of his lectures late in his life. The account that follows is based largely on the 1878 version of the lectures. His approach was also influential out side Germany: parts of it were absorbed in France in the lectures of hermite [VI.47](/part-06/charles-hermite-18221901) and jordan [VI.52](/part-06/camille-jordan-18381922), for example.
 Weierstrass’s approach builds on that of Cauchy (though the detailed relationship between the two bodies of work has never been fully examined) . The two overarching themes of Weierstrass’s approach are, on the one hand, the banning of the idea of motion, or changing values of a variable, from limit processes, and, on the other, the representation of functions, notably of a complex variable. The two are intimately linked.
 Essential to the motion-free definition of a limit is Weierstrass’s nascent investigation of what we would now call the topology of the real line or complex plane, with the idea of a limit point, and a clear distinction between local and global behavior. The central objects of study for Weierstrass are functions (of one
 
@@ -1029,7 +1029,7 @@ under the operation of subtraction. He attempted a uni-     tures. A series conv
 fied approach to the definition of rational and irrational    its sequence of partial sums converges, though now
 numbers which involved unit fractions and decimal           the convergence is phrased in the following terms: the
                                                                     
-expansions and now seems somewhat murky. Weier-             series fn (x) converges to s0 at x = x0 if, given an
+expansions and now seems some what murky. Weier-             series fn (x) converges to s0 at x = x0 if, given an
 strass’s definition of the real numbers appears unsatis-     arbitrary positive , there is an integer N such that
 factory to modern eyes, but the general path of arithme-    |s0 − (f1 (x0 ) + f2 (x0 ) + · · · + fn (x0 ))| <  for every
 tization of analysis was established by this approach. In   n > N. The convergence is uniform on a domain of the
@@ -1047,7 +1047,7 @@ exponential functions with polynomial exponents of a        than any other leadi
 certain type.                                               examples to illustrate difficulties with received notions
    The limit definition given by Weierstrass has thor-       and to distinguish between different kinds of analyti-
 oughly modern features:                                     cal behavior. One of his best-known examples was of
-                                                            an every where-continuous but nowhere-differentiable
+                                                            an every where-continuous but no where-differentiable
   That a variable quantity x becomes infinitely small                                     
                                                             function, namely f (x) = bn cos(an x), which is uni-
   simultaneously with another quantity y means: “After
@@ -1055,7 +1055,7 @@ oughly modern features:                                     cal behavior. One of
   the assumption of an arbitrarily small quantity  a
   bound δ for x may be found, such that for every value
                                                             entiable at any x if ab > 1 + 32 π . Similarly he con-
-  of x for which |x| < δ, the corresponding value of |y|    structed functions for which the Dirichlet principle
+  of x for which |x| < δ, the corresponding value of |y|    struc ted functions for which the Dirichlet principle
   will be less than .”                                     fails, examples of sets constituting “natural bound-
                                Weierstrass (1988, p. 57)    aries,” that is, obstacles to continuing series expan-
                                                             sions into larger domains, and so forth. The careful
@@ -1068,7 +1068,7 @@ statements about linked inequalities. The framing of        dealt with generic c
 hypotheses in terms of inequalities became a guiding        lutely precise statements in a way that has for the most
 motif in the work of Weierstrass’s school: here we men-     part endured to the present. This was also to become
 tion in passing the Lipschitz and Hölder conditions in      a pattern and an imperative in other areas of mathe-
-the existence theory for differential equations. The clar-   matics, though sometimes the passage from reasoning
+the existence theory for differential equations. The clar-   matics, though some times the passage from reasoning
 ity that this language gave to problems involving the       from generic examples to fully expressed hypotheses
 interchange of limits, for example, meant that previ-       and definitions took decades. (Algebraic geometry pro-
 ously intractable problems could now be handled in          vides a famous example, one in which reasoning with
@@ -1084,17 +1084,17 @@ mathematics generally.                                       reader might feel t
 Analysis became the model subdiscipline for rigor for           Dedekind’s construction stimulated a good deal of
 a variety of reasons. Of course, analysis was important      discussion, especially in Germany, about the best way
 for the sheer volume and range of application of its         to found the real numbers. Participants included Can-
-results. Not everyone agreed with the precise way in         tor, E. Heine, and the logician frege [VI.56](/part-06/gottlob-frege-18481925). Heine
+results. Not every one agreed with the precise way in         tor, E. Heine, and the logician frege [VI.56](/part-06/gottlob-frege-18481925). Heine
 which Weierstrass approached foundational questions          and Cantor, for example, considered real numbers as
 (through series, rational functions, and so on). Indeed,     equivalence classes of Cauchy sequences of rationals,
 Riemann’s more geometric approach had also attracted         together with a machinery that permitted them to
 followers, if not exactly a school, and the insights         define the basic arithmetical operations. A very simi-
-his approach afforded were enthusiastic ally embraced.         lar approach was proposed by the French mathemati-
+his approach afforded were enthusiastic ally embraced.         lar approach was proposed by the French mathemat i-
 However, any subsequent discussion had to take place         cian Charles Méray. Frege, by contrast, in his 1884 Die
 at a level of rigor comparable to that which Weierstrass     Grundlagen der Arithmetik, sought to found the inte-
 had attained. While approaches to the foundations of         gerson logic. While his attempts to construct the reals
 analysis were to vary, the idea that limits should be rig-   along these lines did not bear fruit, he had an impor-
-orously handled in much the way that Weierstrass did         tant role in his insistence that the various construc-
+orously handled in much the way that Weierstrass did         tant role in his insistence that the various con struc-
 was not to alter. Among the remaining central issues         tions should not merely be mathematically functional
 for rigor was the definition of the number systems.           but should also be demonstrably free from internal
    For the real numbers, probably the most success-          contradiction.
@@ -1122,7 +1122,7 @@ ment of the first set is less than every element of the       1880 to 1910 towar
 second, and such that taken together they contain all        origin in the work of Cantor, a student of Weierstrass
 the rationals. Such cuts may obviously be produced by        who began studying discontinuities of Fourier series in
 an element x, in which case x is either the greatest ele-    the early 1870 s. Cantor became concerned about how
-ment of A1 or the least element of A2 . But sometimes        to distinguish between different types of infinite sets.
+ment of A1 or the least element of A2 . But some times        to distinguish between different types of infinite sets.
 A1 does not have a greatest element, or A2 a least ele-      His proofs that the rational numbers and the algebraic
 ment, and in that case we can use the cut to define a         numbers are countable [III.11](/part-03/countable-and-uncountable-sets) while the reals are not
 
@@ -1132,9 +1132,9 @@ led him to a hierarchy of infinite sets of different car-       by avoiding the 
 dinality. The importance of this discovery for analysis       was to refer to mathematics as the science of “∈,” or
 was at first not widely recognized, though in the 1880 s        set membership, rather than the science of quantity.
 Mittag-Leffler and Hurwitz both made significant appli-          Nonetheless, Zermelo’s axioms as a foundational strat-
-cations of notions about derived sets (the set of limit       egy were contested. For one thing, a consistency proof
-points of a given set) and dense or nowhere-dense sets.       for the axioms was lacking. Such “meaning-free” axiom-
-   Cantor gradually came to the view that set theory          atization was also contested on the grounds that it
+ca tions of notions about derived sets (the set of limit       egy were contested. For one thing, a consistency proof
+points of a given set) and dense or no where-dense sets.       for the axioms was lacking. Such “meaning-free” axiom-
+   Cantor gradually came to the view that set theory          at ization was also contested on the grounds that it
 could function as a foundational tool for all of math-        removed intuition from the picture.
 ematics. As early as 1882 he wrote that the science              Against the complex and rapidly developing back-
 of sets encompassed arithmetic, function theory, and          ground of mathematics in the early twentieth century,
@@ -1152,8 +1152,8 @@ abstract sense. The work of lebesgue [VI.72](/part-06/henri-lebesgue-18751941) a
 tied set theory to the calculus in a very concrete and        1914, and the set-theoretic definition of functions may
 intimate way.                                                 be dated from that time. However, research in analysis
    A further key step in the establishment of the foun-       has been largely distinct from, and generally avoids, the
-dations of analysis in the early twentieth century was        foundational issues that may remain in connection with
-a new emphasis on mathematical theories as axiomatic          this vocabulary. This is not at all to say that contempo-
+da tions of analysis in the early twentieth century was        foundational issues that may remain in connection with
+a new emphasis on mathematical theories as axiomatic          this vocabulary. This is not at all to say that con tempo-
 structures. This received enormous impetus from the           rary mathematicians treat analysis in a purely formal
 work of Hilbert, who, beginning in the 1890 s, had             way. The intuitive content associated with numbers and
 sought to provide a renewed axiomatization of geom-           functions is very much a part of the way of thinking of
@@ -1167,12 +1167,12 @@ ematician posits a system satisfying the fundamental          cal debates about 
 properties they possess. A real number (or whatever           longer very lively.
 object) is then defined by the set of axioms provided.            A coda to this story is provided by the researches of
 As Epple has pointed out, such definitions were con-           robinson [VI.95](/part-06/abraham-robinson-19181974) (1918–74) into “nonstandard” analy-
-sidered to be ontologically neutral in that they did not      sis, published in 1961. Robinson was an expert in model
+side red to be ontologically neutral in that they did not      sis, published in 1961. Robinson was an expert in model
 provide methods for telling real numbers from other           theory: the study of the relationship between systems
 objects, or even state whether they existed at all (Epple     of logical axioms and the structures that may satisfy
 2003, p. 316). Hilbert’s student Ernst Zermelo began          them. His differentials were obtained by adjoining to
 work on axiomatizing set theory along these lines, pub-       the regular real numbers a set of “differentials,” which
-lishing his axioms in 1908 (see [IV.22 §3](/part-04/set-theory)). Problems         satisfied the axioms of an ordered field (in which there
+li shing his axioms in 1908 (see [IV.22 §3](/part-04/set-theory)). Problems         satisfied the axioms of an ordered field (in which there
 with set theory had emerged in the form of paradoxes,         is ordinary arithmetic like that of the real numbers)
 the most famous due to russell [VI.71](/part-06/bertrand-arthur-william-russell-18721970): if S is the set       but in addition had elements that were smaller than
 of all sets that do not contain themselves, then it is        1/n for every positive integer n. In the eyes of some,

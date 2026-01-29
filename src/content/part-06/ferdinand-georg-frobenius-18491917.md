@@ -2,7 +2,7 @@
 
 VI.58.    Ferdinand Georg Frobenius                                                                                   783
 
-(1910) and gravitation (1918). Klein was an interna-             1892, when he returned to Berlin as successor to kro-
+(1910) and gravitation (1918). Klein was an interna-             1892, when he returned to Berlin as success or to kro-
 tional figure who traveled widely, including to the               necker [VI.48](/part-06/leopold-kronecker-18231891). He retired in 1916, and died one year
 United States and the United Kingdom, and he played              later.
 a significant role in the first International Congresses              His early contributions were to analysis and the
@@ -14,7 +14,7 @@ Grace Chisholm Young and Mary Winston.                           and number theo
 center of Germany and one of the mathematical cen-               the degrees of the irreducible factors that occur when
 ters of the world. He possessed an outstanding abil-             it is reduced modulo a prime ideal. In particular, one
 ity to “see” the truth in mathematical statements and            may ask for the “density” (suitably defined) of the
-to bring mathematical fields together without feeling             set of prime ideals modulo which a given pattern of
+to bring mathematical fields together with out feeling             set of prime ideals modulo which a given pattern of
 the necessity for detailed calculations and justification         irreducible-factor degrees arises. Pursuing ideas of Kro-
 (which he left to his students and others). He believed          necker, Frobenius proved that, if the galois group
 strongly in the unity of mathematics.                            [V.21](/part-05/the-insolubility-of-the-quintic) is the symmetric group [III.68](/part-03/permutation-groups), then that den-
@@ -30,7 +30,7 @@ Klein, F. 1921–23. Gesammelte mathematische Abhand-
   lungen, three volumes. Berlin: Springer. (Reprinted, 1973.
                                                                  in 1925 and is now known as the Chebotaryov density
   Volume 3 contains lists of Klein’s publications, lectures,
-  and dissertations directed by him.)                            theorem, or, sometimes, the Frobenius–Chebotaryov
+  and dissertations directed by him.)                            theorem, or, some times, the Frobenius–Chebotaryov
       . 1979. Development of Mathematics in the 19 th Cen-        density theorem.
   tury, translated by M. Ackerman. Brookline, MA: Math Sci-          Another well-known and important contribution was
   Press.                                                         to the theory of matrices and linear transformations,
@@ -55,6 +55,6 @@ on infinite series representations of analytic func-              variables. Thi
 tions of one variable. For four years he worked as               of certain sets of complex numbers, which he called
 a schoolteacher in Berlin before he became Außeror-              Gruppencharacte re, one for each conjugacy class in
 dentlicher Professor (associate professor) at Berlin Uni-        the group, that arose as the solutions of sets of linear
-versity. After less than two years, in 1875, he was called       equations connected with the group. Nowadays they
+ver sity. After less than two years, in 1875, he was called       equations connected with the group. Nowadays they
 to a full professorship at the Eidgenössische Technis-           are defined differently: for each complex linear repre-
 che Hochschule in Zürich, where he remained until                sentation ρ of the group G (that is, homomorphism

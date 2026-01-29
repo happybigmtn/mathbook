@@ -4,11 +4,11 @@ VII . $5$ .
 
 The Mathematics of Algorithm Design
 
-most convenient route can be consistent with macroscopic behavior described in terms of a function minimization. And the simple, local rules that control how packets are transmitted through the Internet can correspond to a maximizing of aggregate utility across the entire network. One thought-provoking difference is that, whereas the microscopic rules governing physical systems are fixed, for engineered systems such as transport or communication networks we may be able to choose the microscopic rules so as to achieve the macroscopic consequences we judge desirable.
+most convenient route can be consistent with macroscopic behavior described in terms of a function minimization. And the simple, local rules that control how packets are transmitted through the Internet can correspond to a maximizing of aggregate utility across the entire network. One thought-provoking difference is that, where as the microscopic rules governing physical systems are fixed, for engineered systems such as transport or communication networks we may be able to choose the microscopic rules so as to achieve the macroscopic consequences we judge desirable.
 
 Further Reading
 
-Beckmann, M., C. B. Mc Guire, and C. B. Winsten. 1956 . Studies in the Economics of Transportation. Cowles Commission Monograph. New Haven, CT: Yale University Press. Braess, D. 1968 . Über ein Paradoxon aus der Verkehrsplanung. Unternehmenfors chung $12$ : $258 - 68$ . Cohen, J. E. 1988 . The counter intuitive in conflict and cooperation. American Scientist $76$ : $576 - 84$ . Department for Transport. 2004 . Feasibility study of road pricing in the UK. Available from www.dft.gov.uk. Jacobson, V. 1988 . Congestion avoidance and control. Computer Communication Review 18(4) : $314 - 29$ .
+Beckmann, M., C. B. Mc Guire, and C. B. Winsten. 1956 . Studies in the Economics of Transportation. Cowles Commission Monograph. New Haven, CT: Yale University Press. Braess, D. 1968 . Über ein Paradox on aus der Verkehrsplanung. Unternehmenfors chung $12$ : $258 - 68$ . Cohen, J. E. 1988 . The counter intuitive in conflict and cooperation. American Scientist $76$ : $576 - 84$ . Department for Transport. 2004 . Feasibility study of road pricing in the UK. Available from www.dft.gov.uk. Jacobson, V. 1988 . Congestion avoidance and control. Computer Communication Review 18(4) : $314 - 29$ .
 Kelly, F. P. 1991 . Network routing. Philosophical Transactions of the Royal Society of London $A337$ : $343 - 67$ . . 2001 . Mathematical modeling of the Internet. In Mathematics Unlimited -- 2001 and Beyond, edited by B. Engquist and W. Schmid, $pp.685 - 702$ . Berlin: Springer. Low, S. H., F. Paganini, and J. C. Doyle. 2002 . Internet congestion control. IEEE Control Systems Magazine $22$ : $28 - 43$ . Wardrop, J. G. 1952 . Some theoretical aspects of road traffic research. Proceedings of the Institute of Civil Engineers $1$ : $325 - 78$ . VII . $5$ The Mathematics of Algorithm
 
 Design
@@ -19,13 +19,13 @@ $1$
 
 The Goals of Algorithm Design
 
-When computer science began to emerge as a subject at universities in the $1960s$ and $1970s$ , it drew some amount of puzzlement from the practitioners of more established fields. Indeed, it is not initially clear why computer science should be viewed as a distinct academic discipline. The world abounds with novel technologies, but we do not generally create a separate field around each one; rather, we tend to view them
+When computer science began to emerge as a subject at universities in the $1960s$ and $1970s$ , it drew some amount of puzzlement from the practitioners of more established fields. Indeed, it is not initially clear why computer science should be viewed as a distinct academic discipline. The world a bounds with novel technologies, but we do not generally create a separate field around each one; rather, we tend to view them
 
 $871$
 
 as by-products of existing branches of science and engineering. What is special about computers? Viewed in retrospect, such debates highlighted an important issue: computer science is not so much about the computer as a specific piece of technology as it is about the more general phenomenon of computation itself, the design of processes that represent and manipulate information. Such processes turn out to obey their own inherent laws, and they are performed not only by computers but by people, by organizations, and by systems that arise in nature.
 We will refer to these computational processes as algorithms. For the purposes of our discussion in this article, one can think of an algorithm informally as a step-by-step sequence of instructions, expressed in a stylized language, for solving a problem. This view of algorithms is general enough to capture both the way a computer processes data and the way a person performs calculations by hand. For example, the rules for adding and multiplying numbers that we learn as children are algorithms; the rules used by an airline company for scheduling flights constitute an algorithm;
-and the rules used by a search engine like Google for ranking Web pages constitute an algorithm. It is also fair to say that the rules used by the human brain to identify objects in the visual field constitute a kind of algorithm, though we are currently a long way from understanding what this algorithm looks like or how it is implemented on our neural hardware. A common theme here is that one can reason about all these algorithms without recourse to specific computing devices or computer programming languages, instead expressing them using the language of mathematics.
+and the rules used by a search engine like Google for ranking Web pages constitute an algorithm. It is also fair to say that the rules used by the human brain to identify objects in the visual field constitute a kind of algorithm, though we are currently a long way from understanding what this algorithm looks like or how it is implemented on our neural hardware. A common theme here is that one can reason about all these algorithms with out recourse to specific computing devices or computer programming languages, instead expressing them using the language of mathematics.
 In fact, the notion of an algorithm as we now think of it was formalized in large part by the work of mathematical logicians in the $1930s$ , and algorithmic reasoning is implicit in the past several millennia of mathematical activity. (For example, equation-solving methods have always tended to have a strong algorithmic flavor; the geometric constructions of the ancient Greeks were inherently algorithmic as well .) Today, the mathematical analysis of algorithms occupies a central position in computer science;
 reasoning about algorithms independently of the specific devices on which they run can yield insight into general design principles and fundamental constraints on computation. At the same time, computer-science research struggles to keep two diverging views in focus: this more abstract view that formulates algorithms mathematically, and the more applied view that the public
 
@@ -39,10 +39,10 @@ and the host of other creations we have come to expect
 from computer technology. The tension between these
 two views means that the field’s mathematical formu-                     10
                                                                                                                 14
-lations are continually being tested against their imple-
+la tions are continually being tested against their imple-
 mentation in practice; it provides novel avenues for
 mathematical notions to influence widely used appli-                                22                      11
-cations; and it sometimes leads to new mathematical
+ca tions; and it some times leads to new mathematical
 problems motivated by these applications.
    The goal of this short article is to illustrate this          (b)
 balance between the mathematical formalism and the
@@ -128,13 +128,13 @@ cannot be solved by efficient algorithms. The TSP is a              4   Algorith
 natural candidate for such a conjecture; after decades                    Intractable Problems
 of failed attempts to find an efficient algorithm for         In the previous section we discussed how researchers
 the TSP, one would like to be able to prove a theo-        have identified a large class of natural problems, in-
-rem that says, “There is no polynomial-time algorithm      cluding the TSP, for which it is strongly believed that no
+rem that says, “There is no polynomial-time algorithm      clud ing the TSP, for which it is strongly believed that no
 that finds an optimal solution to every instance of the     efficient algorithm exists. While this explains our diffi-
 TSP.” A theory known as np-completeness [IV.20 §4](/part-04/computational-complexity)         culties in solving these problems optimally, it leaves
 provides a unifying framework for thinking about such      open a natural question: what should we do when
 questions; it shows that a large class of computational    actually confronted by such a problem in practice?
 problems, containing literally thousands of naturally         There are a number of different strategies for ap-
-arising problems (including the TSP), are equivalent       proaching such computationally intractable problems.
+arising problems (including the TSP), are equivalent       pro a ching such computationally intractable problems.
 with respect to polynomial-time solvability: there is an   One of these is approximation: for problems like the
 efficient algorithm for one if and only if there is an       TSP that involve choosing an optimal solution from
 efficient algorithm for all. It is a major open problem      among many possibilities, we could try to formulate
@@ -196,9 +196,9 @@ we have an efficient way to find a tour that is at most
                                                               exponentially better than the approach of dividing n
 twice as long as the shortest one possible.                                         √
                                                               by all numbers up to n: see computational number
-   People trying to solve large instances of computa-
+   People trying to solve large instances of com put a-
                                                               theory [IV.3 §2](/part-04/computational-number-theory).) Problems in knot theory [III.44](/part-03/knot-polynomials),
-tionally hard problems in practice frequently use algo-
+tion ally hard problems in practice frequently use algo-
                                                               such as the character ization of unknotted loops, have
 rithms that have been observed empirically to give
                                                               a similar algorithmic side. Suppose we are given a cir-
@@ -222,7 +222,7 @@ current tour; for example, it might look at sets of cities
                                                               original intent of the mathematicians who posed the
 that are visited consecutively and see if visiting them in
 the opposite order would shorten the tour. Researchers        questions more generally.
-have drawn connections between local-search algo-                Rather than attempting to enumerate the intersec-
+have drawn connections between local-search algo-                Rather than attempting to enumerate the inter sec-
 rithms and phenomena in nature; for example, just as          tion of algorithmic ideas with all the different branches
 a large molecule contorts itself in space trying to find       of mathematics, we conclude this article with two case
 a minimum-energy conformation, we can imagine the             studies that involve the design of algorithms for partic-
@@ -245,7 +245,7 @@ Web’s history, people began to develop search engines       duce a more refine
 that would index the information on the Web, and pro-       these refinements repeatedly, will they converge to a
 duce relevant Web pages in response to user queries.        stable solution?
 But of the thousands or millions of pages relevant to a        In fact, this sequence of refinements can be viewed
-topic on the Web, which few should the search engine        as an algorithm for computing the principal eigenvec-
+topic on the Web, which few should the search engine        as an algorithm for computing the principal eigen vec-
 present to a user? This is the ranking problem: how to      tor [I.3 §4.3](/part-01/fundamental-definitions) of a particular matrix; this both estab-
 determine the “best” resources on a given topic. Note       lishes the convergence of the process and characterizes
 the contrast with concrete problems like the TSP. There,    the end result. To establish this connection, we intro-
@@ -269,7 +269,7 @@ engines that determined rankings using link analysis.       you a better hub).
    The simplest such analysis would just count the num-        How do eigenvectors come into this? Suppose we
 ber of links to a page: in response to the query “newspa-   define a matrix M with one row and one column for
 pers,” for example, one could rank pages by the number      each page under consideration; the (i, j) entry equals
-of incoming links they receive from other pages con-        1 if page i links to page j, and it equals 0 otherwise.
+of in coming links they receive from other pages con-        1 if page i links to page j, and it equals 0 otherwise.
 taining the term—in effect, allowing pages containing        We encode the authority weights in a vector a, where
 the term “newspapers” to vote on the result. Such a         the coordinate ai is the authority weight of page i.
 scheme will generally do well for the top few items,        The hub weights can be similarly written as a vector h.
@@ -305,11 +305,11 @@ pages it links to. In other words, receiving links from     experience long dela
 high-quality pages raises one’s own quality. This too       computation, and some of the messages between them
 can be written as multiplication by a matrix, obtained      may be lost. This leads to significant challenges in rea-
 from M T by dividing each row’s entries by the num-         soning about distributed systems, because this pattern
-ber of outgoing links from the corresponding page;          of failures can cause each process to have a slightly
+ber of out going links from the corresponding page;          of failures can cause each process to have a slightly
 repeated updates again converge to an eigenvector.          different view of the computation. It is easily possible
 (There is a further wrinkle here: repeated updating in      for there to be two runs of the system, with different
 this case tends to cause all weight to pool at “dead-end”   patterns of failure, that are “in distinguishable” from
-pages that have no outgoing links and hence nowhere         the point of view of some process P ; in other words,
+pages that have no out going links and hence no where         the point of view of some process P ; in other words,
 to pass their weight. Thus, to obtain the Page Rank mea-     P will have the same view of each, simply because the
 sure used in applications, one adds a tiny quantity ε > 0   differences in the runs did not affect any of the com-
 in each iteration to the weight of each page; this is       munications that it received. This can pose a problem
@@ -336,7 +336,7 @@ coordination and consistency among the communicat-          three processes, we 
 ing processes.                                              number of dimensions.) While it is far from obvious,
   As a simple example illustrating these issues, con-       researchers have been able to show that the correctness
 sider a network of automatic teller machines (ATMs).        of distributed algorithms can be closely connected with
-When you withdraw an amount of money x at one of            the topological properties of the complexes that they
+When you with draw an amount of money x at one of            the topological properties of the complexes that they
 these ATMs, it must do two things: (1) notify a central     define.
 bank computer to deduct x from your account; and               This is another powerful example of the way in which
 (2) emit the correct amount of money in physical bills.     mathematical ideas can appear unexpectedly in the

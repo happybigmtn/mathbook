@@ -3,9 +3,9 @@
 $706$
 
 that f is a differentiable function from $R^{2}$ to R . We can visualize its graph as a smooth surface in $R^{3}$ lying above the xy-plane. Suppose also that f is compactly supported, which means that there exists an M such that  f(x , $y) = 0$ if the distance from (x ,  y) to (0, 0) is greater than M. We would now like to bound the size of f , as measured by some L p norm, in terms of the size of its gradient [I.3](/part-01/fundamental-definitions). ablaf , as measured by some other L p norm. The L p norm of a function f is defined here as $1/p|f(x$ , $y)|^{p}dxdy$ f $p =$ .
-$R^{2}$ In one dimension, it is clear that no such bound is possible. For instance, we could have a differentiable function that was $1$ every where on the interval [− M , M], $0$ every where outside the wider interval [− (M + 1)$, M + 1 ]$ , and gently decaying from $1$ to $0$ in between. Then if we increased M we would not change the size of the derivative: we would just move the two nonzero parts of the derivative further apart. On the other hand, by increasing M we could increase the size of f as much as we liked.
-However, we cannot do this sort of construction in two dimensions, because now the “boundary” of the function increases as the size of the function increases. The Sobolev inequality tells us that if $1 \le p < 2$ and $r = 2p/(2 - p)$ , then f   r $\le$ C p $\nablaf$   p . To see why this might be reasonable, consider the case $p = 1$ , so that $r = 2$ . Let $f$ be a function that is $1$ every where inside the circle of radius M about the origin and $0$ every where outside the circle of radius $M + 1$ .
-Then as M increases, the norm  $f^{2}$ increases in proportion to M (since  f   $\frac{2}{2}$ is approximately equal to the area of the circle of radius M), and so does $\nablaf{}^{1} ($ since it is roughly proportional to the length of the boundary of the circle). As this informal argument suggests, there are close connections between the Sobolev inequality and the isoperimetric inequality in the plane. And like the isoperimetric inequality, the Sobolev inequality has an n-dimensional version for each n:
+$R^{2}$ In one dimension, it is clear that no such bound is possible. For instance, we could have a differentiable function that was $1$ every where on the interval [− M , M], $0$ every where out side the wider interval [− (M + 1)$, M + 1 ]$ , and gently decaying from $1$ to $0$ in between. Then if we increased M we would not change the size of the derivative: we would just move the two nonzero parts of the derivative further apart. On the other hand, by increasing M we could increase the size of f as much as we liked.
+However, we cannot do this sort of construction in two dimensions, because now the “boundary” of the function increases as the size of the function increases. The Sobolev inequality tells us that if $1 \le p < 2$ and $r = 2p/(2 - p)$ , then f   r $\le$ C p $\nablaf$   p . To see why this might be reasonable, consider the case $p = 1$ , so that $r = 2$ . Let $f$ be a function that is $1$ every where inside the circle of radius M about the origin and $0$ every where out side the circle of radius $M + 1$ .
+Then as M increases, the norm  $f^{2}$ increases in proportion to M (since  f   $\frac{2}{2}$ is approximately equal to the area of the circle of radius M), and so does $\nablaf{}^{1} ($ since it is roughly proportional to the length of the boundary of the circle). As this in formal argument suggests, there are close connections between the Sobolev inequality and the isoperimetric inequality in the plane. And like the isoperimetric inequality, the Sobolev inequality has an n-dimensional version for each n:
 it is the same result, except that now the condition is that $1 \le p < n,$ and $r$ is equal to $np/(n - p)$ .
 
 $V$ . $20$
@@ -18,10 +18,10 @@ What does it mean to understand a certain area of mathematics completely? One po
 
 V. Theorems and Problems
 
-Jim is half the age of his mother, and in twelve years’ time he will be three-fifths of her age. How old is his mother now? For a child who is just old enough to understand the concept of “three-fifths,” this is likely to be an impossibly difficult problem. A bright and slightly older child may be able to solve it after some hard thought, which will probably include a certain amount of trial and error. But for anybody who has learned how to translate such problems into equations and who knows how to solve two simultaneous linear equations, the problem is utterly routine:
+Jim is half the age of his mother, and in twelve years’ time he will be three-fifths of her age. How old is his mother now? For a child who is just old enough to understand the concept of “three-fifths,” this is likely to be an impossibly difficult problem. A bright and slightly older child may be able to solve it after some hard thought, which will probably include a certain amount of trial and error. But for any body who has learned how to translate such problems into equations and who knows how to solve two simultaneous linear equations, the problem is utterly routine:
 let x be Jim’s age and y his mother’s; then the problem tells us that $2x = y$ and $5(x + 12) = 3(y + 12)$ ; the second equation can be rearranged to give $3y - 5x = 24$ ; substituting $y = 2x$ gives $x = 24$ , so $y = 48$ . The more mathematics one learns, the more one finds that problems that once seemed to be difficult and to require ingenuity have become routine in this sort of way, and it is eventually tempting to ask whether all of mathematics might, ultimately, be reducible to a mechanical procedure.
 And even if you think that that is a bit much to hope for, you can still ask the question about certain natural classes of problems, such as simultaneous linear equations. Perhaps there is always a mechanical procedure for solving the problems in any sufficiently “natural” class, even if there is not necessarily a systematic way of finding the mechanical procedure. One class of problems that has been intensively studied for several centuries is that of Diophantine equations, which are equations in one or more variables where one stipulates that the solutions should be integers.
-The most famous Diophantine equation is the Fermat equation x n  +  y $n = z$ n , but this is somewhat complicated because one of the variables, n, appears as an exponent. Suppose we restrict attention to polynomial equations, such as $x^{2} - xy + y^{2} = 157$ . Is there a systematic way of telling whether such an equation has integer solutions? The left-hand side of the equation $x^{2} - xy + y^{2} = 157$ is equal to (x2 + y2 + (x - y)2)/2 .
+The most famous Diophantine equation is the Fermat equation x n  +  y $n = z$ n , but this is some what complicated because one of the variables, n, appears as an exponent. Suppose we restrict attention to polynomial equations, such as $x^{2} - xy + y^{2} = 157$ . Is there a systematic way of telling whether such an equation has integer solutions? The left-hand side of the equation $x^{2} - xy + y^{2} = 157$ is equal to (x2 + y2 + (x - y)2)/2 .
 Therefore, any solution (x ,  y) must satisfy $x^{2} + y^{2} \le 314$ , which makes it a short task to search through all possibilities until one discovers the solution $x = 12$ and $y = 13$ (or vice versa). However, an exhaustive search is not always possible: consider, for example, the equation $2x^{2} - y^{2} = 1$ . This is a special case of the Pell equation, discussed in algebraic numbers [IV.1](/part-04/number-theory) . The Pell equation can be solved systematically, with the help of continued fractions [III.22] , and this leads
 
 V.20.   The Insolubility of the Halting Problem                                                                    707
@@ -41,7 +41,7 @@ asked the more general question alluded to earlier: is       shall use the anach
 there a universal procedure for determining the truth        paragraph began.
 or falsity of any mathematical statement? This question         It turns out that once one has any sufficiently precise
 became known as the Entscheidungspr oblem (which              notion of “algorithm,” one is just a few short steps away
-means “decision problem” in German).                         from a negative answer to Hilbert’s En ts che id un gs prob-
+means “decision problem” in German).                         from a negative answer to Hilbert’s Entscheidungsprob-
                                                              lem. To see this, imagine that L is some programming
   Hilbert expected, or at least hoped, that the answers
                                                              language (such as Pascal or C++). Given any string of
@@ -50,14 +50,14 @@ to both questions would be yes. In other words, he
 hoped that the mathematicians of his day were in the
                                                              present that string of symbols to my computer as a pro-
 position of the child who has not yet learned how to
-                                                             gram in L, will the program run forever, or will it eventu-
+                                                             gram in L, will the program run for ever, or will it eventu-
 solve simultaneous equations. Perhaps a new age was
                                                              ally stop? This is called the halting problem. (Note that
 dawning in which it would be possible, at least in princi-
                                                              the word “problem” really means “class of problems.”)
 ple, to solve all mathematical problems systematically
                                                              The halting problem may not seem very mathematical,
-and without relying on native wit.
+and with out relying on native wit.
                                                              but certain instances of it certainly are. For example,
    The evidence in favor of such a view was not very
                                                              suppose that after a quick look at a program you realize

@@ -9,8 +9,8 @@ both came to conjecture. Rigorous proofs of this state-     R.) These objects ha
 ment, the uniformization theorem, were to be given          dom, so it should not be surprising that there are now
 only in 1907, by Poincaré and Koebe independently.          infinitely many distinct notions of “magnitude,” which
   The formal definition of a Fuchsian group is as fol-       all provide different answers to the question “how large
-lows. A subgroup H of the group of all Möbius transfor-     is a given function f ?” (or to the closely related ques-
-mations is said to act discontinuously if, for every com-   tion “how close together are two functions f and g?”).
+lows. A subgroup H of the group of all Möbius trans for-     is a given function f ?” (or to the closely related ques-
+ma tions is said to act discontinuously if, for every com-   tion “how close together are two functions f and g?”).
 pact set K in the disk D the sets h(K) and K are disjoint   In some cases, certain functions may have infinite mag-
 except for finitely many h ∈ H. A Fuchsian group is a        nitude by one measure and finite magnitude by another
 subgroup H of the group of all Möbius transformations       (similarly, a pair of functions may be very close by one
@@ -27,7 +27,7 @@ When one works with real or complex numbers, there          analysis, these char
 is a natural notion of the magnitude of a number x,         ety of standard function spaces and their associated
 namely its modulus |x|. One can also use this notion        norms, which are available to describe functions both
 of magnitude to define a distance |x − y| between two        qualitatively and quantitatively.
-numbers x and y and thereby say in a quantitative way          Formally, a function space is a normed space [III.62](/part-03/normed-spaces-and-banach-spaces)
+numbers x and y and there by say in a quantitative way          Formally, a function space is a normed space [III.62](/part-03/normed-spaces-and-banach-spaces)
 which pairs of numbers are close and which ones are         X, the elements of which are functions (with some fixed
 far apart.                                                  domain and range). A majority (but certainly not all)
    The situation becomes more complicated, however,         of the standard function spaces considered in analysis
@@ -45,7 +45,7 @@ area. Because of this, one abandons the idea that there     decay, boundedness, 
 should be only one notion of “magnitude” for boxes,         The actual value of the norm f X makes this informa-
 and instead accepts that there is a multiplicity of such    tion quantitative. It may tell us how regular f is, how
 notions and that they can all be useful: for some appli-    much decay it has, by which constant it is bounded, or
-cations one may wish to distinguish the large-volume        how large its integral is.
+ca tions one may wish to distinguish the large-volume        how large its integral is.
 boxes from the small-volume boxes, while in others one
 may wish to distinguish the eccentric boxes from the                  2    Examples of Function Spaces
 round boxes. Of course, there are several relationships     We now present a sample of commonly used function
@@ -59,7 +59,7 @@ III . $29$ .
 
 Function Spaces
 
-$C^{0}$ [− 1 , 1 ]2 . $1$ This space consists of all continuous functions [I.3](/part-01/fundamental-definitions) from [− 1 , 1 ] to R , and is sometimes denoted  C[− 1 , 1 ] . Continuous functions are regular enough to allow one to avoid many of the technical subtleties associated with very rough functions. Continuous functions on a compact [III.9](/part-03/compactness-and-compactication) interval such as [− 1 , 1 ] are bounded, so the most natural norm to place on this space is the supremum norm, denoted  f   $\infty$ , which is the largest possible value of | f (x) | .
+$C^{0}$ [− 1 , 1 ]2 . $1$ This space consists of all continuous functions [I.3](/part-01/fundamental-definitions) from [− 1 , 1 ] to R , and is some times denoted  C[− 1 , 1 ] . Continuous functions are regular enough to allow one to avoid many of the technical subtleties associated with very rough functions. Continuous functions on a compact [III.9](/part-03/compactness-and-compactication) interval such as [− 1 , 1 ] are bounded, so the most natural norm to place on this space is the supremum norm, denoted  f   $\infty$ , which is the largest possible value of | f (x) | .
 (Formally , it is defined to be sup |f(x)| : $x \in$ [− 1 , 1 ], but for continuous functions on [− 1 , 1 ] the two definitions are equivalent .) The supremum norm is the norm associated with uniform convergence: a sequence $f^{1}$ , $f^{2}$ , . . . converges uniformly to f if and only if  f $n - f\infty$ tends to $0$ as $n$ tends to $\infty.$ The space $C^{0}$ [− 1 , 1 ] has the useful property that one can multiply functions together as well as adding them. This makes it a basic example of a Banach algebra. $2$ . 2 C1 [− 1 , 1 ]
 
 This is a space that has a more restricted membership than $C^{0}$ [− 1 , 1 ] : not only must a function $f$ in $C^{1}$ [− 1 , 1 ] be continuous but it must also have a derivative that is continuous. The supremum norm here is no longer a natural one, because a sequence of continuously differentiable functions can converge in this norm to a non differentiable function. Instead, the right norm here is the $C^{1}$ - norm  f   C 1 [− 1 , 1 ] , which is defined to be f $\infty +$ f $\infty$ . Notice that the $C^{1}$ - norm measures both the size of a function and the size of its derivative.
@@ -68,7 +68,7 @@ We will not discuss these variants here .) The Lebesgue Spaces $L^{p}$ [− 1 , 
 
 $211$
 
-of x for which |f(x)| is very large, then  f   $\infty$ is very large, even if a typical value of | f (x) | is much smaller. It is sometimes more advantageous to work with norms that are less influenced by the values of a function on small sets. The L pnorm of a function f is
+of x for which |f(x)| is very large, then  f   $\infty$ is very large, even if a typical value of | f (x) | is much smaller. It is some times more advantageous to work with norms that are less influenced by the values of a function on small sets. The L pnorm of a function f is
 
 $1/p1|f(x)|^{p}dx$
 
@@ -82,7 +82,7 @@ This function lies in $L\infty$ [− 1 , 1 ] (since the set 0 has measure zero, 
 
 $212$
 
-to consider these generalized differentiable functions because without them the space W k, p [− 1 , 1 ] would not be complete. Sobolev norms are particularly natural and useful in the analytical study of partial differential equations and mathematical physics. For instance, the $W^{1}$ , 2 norm can be interpreted as (the square root of) an “energy” associated with a function. $3$ Properties of Function Spaces There are many ways in which knowledge of the structure of function spaces can assist in the study of functions.
+to consider these generalized differentiable functions because with out them the space W k, p [− 1 , 1 ] would not be complete. Sobolev norms are particularly natural and useful in the analytical study of partial differential equations and mathematical physics. For instance, the $W^{1}$ , 2 norm can be interpreted as (the square root of) an “energy” associated with a function. $3$ Properties of Function Spaces There are many ways in which knowledge of the structure of function spaces can assist in the study of functions.
 For instance, if one has a good basis for the function space, so that every function in the space is a (possibly infinite) linear combination of basis elements, and one has some quantitative estimates on how this linear combination converges to the original function, then this allows one to represent that function efficiently in terms of a number of coefficients, and also allows one to approximate that function by smoother functions. For instance, one basic result about $L^{2}$ [− 1 , 1 ] is the Plancherel theorem, which asserts, among other things, that there are numbers
 
  (  a $n)\infty n = - \infty$ such that
@@ -103,6 +103,6 @@ III. Mathematical Concepts
 
 true if one replaces the interval [− 1 , 1 ] by a set of infinite measure, such as the real line R .) These inclusions cannot be reversed; however, one does have the Sobolev embedding theorem, which allows one to “trade” regularity for integrability. This result tells us that spaces with lots of regularity but low integrability can be embedded into spaces with low regularity but high integrability.
 A sample estimate of this type is f $\infty \le$ f W 1 , 1 [− 1 , 1 ] , which tells us that if the integrals of |f(x)|$and$|f (x)| are both finite, then f must be bounded (which is a far stronger integrability condition than the finiteness of  f   ${}^{1})$ . Another very useful concept is that of duality [III.19](/part-03/duality). Given a function space X, one can define the dual space X ∗ , which is formally defined as the class of all continuous linear functionals on X, or more precisely all maps ω : X $\to$ R (or ω :
-X $\to$ C , if the function space is complex valued) that are linear and continuous with respect to the norm of X. For example, it turns out that every linear functional ω on the space $L^{p}$ [− 1 , 1 ] is of the form $1ω(f) =$ f (x) g (x) dx $- 1$ q for some function $g$ in  L[− 1 , 1 ] , where q is the dual or conjugate exponent of p, defined by the equation $1/p + 1/q = 1$ . One can sometimes analyze functions in a function space by looking instead at how the linear functionals in the dual space act on those functions. Similarly, one can often analyze a continuous linear operator T :
+X $\to$ C , if the function space is complex valued) that are linear and continuous with respect to the norm of X. For example, it turns out that every linear functional ω on the space $L^{p}$ [− 1 , 1 ] is of the form $1ω(f) =$ f (x) g (x) dx $- 1$ q for some function $g$ in  L[− 1 , 1 ] , where q is the dual or conjugate exponent of p, defined by the equation $1/p + 1/q = 1$ . One can some times analyze functions in a function space by looking instead at how the linear functionals in the dual space act on those functions. Similarly, one can often analyze a continuous linear operator T :
 X $\to$ Y from one function space to another by first considering the adjoint operator T ∗ : Y ∗ $\to$ X ∗ , defined for all linear functionals ω : Y $\to$ R by letting T ∗ ω be the functional on X defined by the formula T ∗ ω (x)  =  ω (T x). We mention one more important fact about function spaces, which is that certain function spaces X “interpolate” between two other function spaces $X^{0}$ and $X^{1}$ . For example, there is a natural sense in which the spaces $L^{p}$ [− 1 , 1 ] with $1 < p < \infty$ “lie between” the spaces $L^{1}$ [− 1 , 1 ]$and$ L. nfty [− 1 , 1 ] .
-The precise definition of interpolation is too technical for this article, but its usefulness lies in the fact that the “extreme” spaces $X^{0}$ and $X^{1}$ are often easier to deal with than the “intermediate” spaces X. For this reason, it is sometimes possible to prove difficult results about X by proving much easier results about $X^{0}$ and $X^{1}$ and “interpolating” between them. For instance, it can be used to give
+The precise definition of interpolation is too technical for this article, but its usefulness lies in the fact that the “extreme” spaces $X^{0}$ and $X^{1}$ are often easier to deal with than the “intermediate” spaces X. For this reason, it is some times possible to prove difficult results about X by proving much easier results about $X^{0}$ and $X^{1}$ and “interpolating” between them. For instance, it can be used to give

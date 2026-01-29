@@ -6,7 +6,7 @@
 nections between very different domains we give only           ments in the postwar world. Having resigned from the
 one as an example. Around 1931 Wiener discussed the           National Academy of Sciences in 1941 because of its
 following (Lebesgue) integral equation with the German        alleged bureaucracy and complacency, Wiener never-
-mathematical astrophysicist Eberhard Hopf:                    theless accepted, shortly before his death in 1964 while
+mathematical astrophysicist Eberhard Hopf:                    the less accepted, shortly before his death in 1964 while
                         . nfty                                     traveling, the National Medal of Science from President
               f (t) =       W (t − τ)f (τ) dτ.
                         0                                     Johnson.
@@ -27,18 +27,18 @@ prediction and filtering.                                      opera singer moth
    Wiener’s discussion of such disparate fields of appli-      his life by the rich cultural atmosphere of the late Haps-
 cation could not fail to invoke philosophically relevant      burg Empire. He was, as the algebraist Richard Brauer
 notions such as causality, information (Wiener is con-        described him, as much artist as mathematician. After
-sidered together with Claude Shannon as the founder           his first semester at the University of Vienna in 1916,
+side red together with Claude Shannon as the founder           his first semester at the University of Vienna in 1916,
 of the modern concept of information), control, feed-         Artin was drafted into the Austrian Army, in which he
 back, and finally the wide-ranging theory of “cyber-           served until the end of World War I. In 1919 he enrolled
 netics.” Cybernetics (literally, the art of steering) can     at the University of Leipzig, and completed his doctor-
 be retrospectively connected to earlier discussions in        ate under the direction of Gustav Herglotz in only two
 Greek antiquity (Plato), to James Watt’s centrifugal gov-     years.
 ernor, and to Ampère’s philosophical writings. Wiener’s          Artin spent the academic year 1921–22 at the math-
-broad outlook resulted from his collaboration with            ematically vibrant University of Göttingen, and then
-colleagues from very different domains: mathemati-             moved to the recently opened University of Hamburg.
+broad out look resulted from his collaboration with            ematically vibrant University of Göttingen, and then
+colleagues from very different domains: mathemat i-             moved to the recently opened University of Hamburg.
 cal (R. E. A. C. Paley), physical (Hopf), technical (Julian   He achieved the rank of full professor in 1926. While
-Bigelow, Bush), and physiological (Arturo Rosenblueth).       at Hamburg, Artin oversaw the work of eleven doc-
-However, this outlook left him vulnerable to criticism        toral students, including Max Zorn and Hans Zassen-
+Bigelow, Bush), and physiological (Arturo Rosenblueth).       at Hamburg, Artin over saw the work of eleven doc-
+However, this out look left him vulnerable to criticism        toral students, including Max Zorn and Hans Zassen-
 and to philosophical and political misinterpretati on.         haus. Artin’s years at Hamburg were among the most
 The prominent mathematician Hans Freudenthal was              productive of his life.
 a sharp-tongued critic of Wiener’s epoch-making book             Artin’s work in class field theory [V.28](/part-05/from-quadratic-reciprocity-to-vi38-augustus-de-morgan-18061871), the sub-

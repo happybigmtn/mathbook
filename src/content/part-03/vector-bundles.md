@@ -3,13 +3,13 @@
 III.98. Wavelets                                                                                                     313
 
 points are in fact stable minimizers. Even more fun-           with each point x is the tangent plane at x, which varies
-damental is the question of the existence of minimiz-          continuously with x and can be identified in a natural
+da mental is the question of the existence of minimiz-          continuously with x and can be identified in a natural
 ers or other critical points. Here mathematicians have         way with a two-dimensional vector space. A more pre-
 devoted great ingenuity to designing appropriate func-         cise definition is as follows: a vector bundle of rank n
 tion spaces within which “generalized” solutions can be        over X is a topological space E, together with a continu-
 found. But these weak solutions need not be smooth,            ous map p : E → X, such that the inverse image p−1 (x)
 and so the further question of their regularity and/or         of each point x (that is, the set of points in E that map
-possible singularities must then be addressed.                 to x) is an n-dimensional vector space. Moreover, for
+possible singularities must then be addressed.                 to x) is an n-dimensional vector space. More over, for
    However, these are all highly technical mathemat-           every sufficiently small region U of X, the inverse image
 ical issues, far beyond the scope of this article. We          of U is homeomorphic to Rn . imes U (this property is called
 end our discussion here, in the hope that our exces-           local triviality). The most obvious vector bundle of rank
