@@ -1,0 +1,83 @@
+# Buildings
+
+III . $5$ .
+
+Buildings
+
+$i - 1i - 1$
+
+i
+
+i
+
+$i + 1i + 1i + 2i + 2$
+
+}
+
+σ i
+
+Figure $4$ The generator σ i .
+
+permutations [III.68](/part-03/permutation-groups) of { $1$ , . . . , n}. Indeed, any braid determines a permutation by the rule i   $\to$ right-hand label of ith string. Ignoring everything except the behavior at the ends gives a surjective homomorphism B n $\to$ S n , which maps σ i to the transposition (i , i $+ 1$ ). This is not an isomorphism, however, as B n is infinite. In fact, σ i has infinite order, whereas the transposition (i , $i + 1)$ squares to the identity. In his celebrated 1925 paper “Theorie der Zöpfe,” artin [VI.86](/part-06/emil-artin-18981962) showed that multiplication in B n is completely described by the relations σ i σ j  =  σ j σ i $(|i - j| \ge 2)$ , $σ^{i}σ^{i} + {}^{1}σ^{i} = σ^{i} + {}^{1}σ^{i}σ^{i} + {}^{1}$ . These relations have subsequently acquired importance in statistical physics, where they are known as the Yang-Baxter equations. In groups defined by generators and relations it is usually difficult (there being no method that works uniformly in all cases) to decide whether an arbitrary word in the generators represents the identity element (see geometric and combinatorial group theory [IV.10](/part-04/geometric-and-combinatorial-group-theory)). For B n , Artin solved this problem geometrically, by “combing the braid.” An alternative algebraic method, due to Garside ( 1967 ), also decides when two elements in B n are conjugate. In relation to the decidability of such questions, and in many other respects, braid groups display close affinities with linear groups: that is, groups in which all elements behave as if they were invertible N $\times$ N matrices. Although such similarities suggested that it should be possible to prove that braid groups genuinely are linear, the problem of doing so remained unsolved for many years, until in 2001 a proof was eventually found by Bigelow and independently by Krammer.
+
+$161$
+
+The groups described here are, strictly speaking, braid groups of the plane, the plane being the object punctured. Other braid groups also occur, often in surprising contexts. The connection with statistical physics has already been mentioned. They also arise in algebraic geometry, when algebraic curves become punctured by discarding exceptional points. Thus, though originating in topology, braids may intervene significantly in areas such as “constructive Galois theory” that seem at first sight to be purely algebraic. III . $5$ Buildings
+
+Mark Ronan
+
+The invertible linear transformations on a vector space form a group, called the general linear group. If n is the dimension of the vector space and K is the field of scalars, then it is denoted by GL n (K), and if we pick a basis for the vector space, then each group element can be written as an n $\times$ n matrix whose determinant [III.15](/part-03/determinants) is nonzero. This group and its subgroups are of great interest in mathematics, and can be studied “geometrically” in the following way. Instead of looking at the vector space V , where of course the origin plays a unique role and is fixed by the group, we use the projective space [I.3](/part-01/fundamental-definitions) associated with V : the points of projective space are the one-dimensional subspaces of V , the lines are the two-dimensional subspaces, the planes are the three-dimensional subspaces, and so on. Several important subgroups of GL n (K) can be obtained by imposing constraints on the linear maps (or matrices). For example, SL n (K) consists of all linear transformations of determinant $1$ . The group O (n) consists of all linear transformations α of an n-dimensional real inner-product space such that αv, αw = v, w for any two vectors $v$ and  w(or in matrix terms all real matrices A such that AA $T = I )$; more generally, one can define many similar subgroups of GL n (K) by taking all linear maps that preserve certain forms, such as bilinear or sesquilinear forms. These subgroups are called classical groups. The classical groups are either simple or close to simple (for example, we can often make them simple by quotienting out by the subgroup of scalar matrices). When K is the field of real or complex numbers, the classical groups are Lie groups. Lie groups and their classification are discussed in lie theory [III.48](/part-03/lie-theory) : the simple Lie groups comprise the classical groups, which fall into one of four families, known as A n , B n , C n , and D n (where n is a natural number), along with other types known as $E^{6}$ , $E^{7}$ , $E^{8}$ ,
+
+162                                                                                           III. Mathematical Concepts
+
+F4 , and G2 . The subscripts are related to the dimen-            obtained by taking a basis for the vector space, and
+sions of the groups. For example, the groups of type              then taking all subspaces generated by subsets of this
+An are the groups of invertible linear transformations            basis. For example, in the A3 case our vector space
+in n + 1 dimensions.                                              is four dimensional, so a basis has four elements;
+   These simple Lie groups have analogues over any                its subsets span four 1-spaces, six 2-spaces, and four
+field, where they are often referred to as groups of               3-spaces. To visualize this apartment it helps to view
+Lie type. For example, K can be a finite field, in which            the four 1-spaces as the vertices of a tetrahedron, the
+case the groups are finite. It turns out that almost all           six 2-spaces as the midpoints of its edges, and the four
+finite simple groups are of Lie type: see the classi-              3-spaces as the midpoints of its faces. The apartment
+fication of finite simple groups [V.7](/part-05/the-classication-of-finite-simple-groups). A geometric                 has twenty-four chambers, six for each face of the orig-
+theory underlying the classical groups had been devel-            inal tetrahedron, and they form a triangular tiling of
+oped by the first half of the twentieth century. It used           the surface of the tetrahedron. This surface is topolog-
+projective space and various subgeometries of projec-             ically equivalent to a sphere, as are all apartments of
+tive space, which made it possible to provide analogues           this building: such buildings are called spherical. The
+for the classical groups, but it did not provide ana-             buildings for the groups of Lie type are all spherical,
+logues for the groups of types E6 , E7 , E8 , F4 , and G2 . For   and, just as A3 is related to the tetrahedron, their apart-
+this reason, Jacques Tits looked for a geometric theory           ments are related to the regular and semiregular poly-
+that would embrace all families, and ended up creating            hedra in n dimensions, where n is the subscript in the
+the theory of buildings.                                          Lie notation given earlier.
+   The full abstract definition of a building is somewhat             Buildings have the following two noteworthy fea-
+complicated, so instead we shall try to give some idea of         tures. First, any two chambers lie in a common apart-
+the concept by looking at the building associated with            ment: this is not obvious in the example above but it can
+the groups GLn (K) and SLn (K), which are of type An−1 .          be proved using linear algebra. Second, in any building
+This building is an abstract simplicial complex, which            all apartments are isomorphic and any two apartments
+can be thought of as a higher-dimensional analogue of a           intersect nicely: more precisely, if A and A are apart-
+graph [III.34]. It consists of a collection of points called      ments, then A ∩ A is convex and there is an isomor-
+vertices; as in a graph, some pairs of vertices form              phism from A to A that fixes A∩A . These two features
+edges; however, it is then possible for triples of ver-           were originally used by Tits in defining buildings.
+tices to form two-dimensional faces, and for sets of k               The theory of spherical buildings does not just give
+vertices to form (k − 1)-dimensional “simplexes.” (The            a pleasing geometric basis for the groups of Lie type: it
+geometrical meaning of the word “simplex” is a con-               can also be used to construct the ones of types E6 , E7 ,
+vex hull of a finite set of points in general position: for        E8 , and F4 , for an arbitrary field K, without the need for
+instance, a three-dimensional simplex is a tetrahedron.)          sophisticated machinery such as Lie algebras. Once the
+All faces of simplexes must also be included, so for              building has been constructed (and a construction can
+example three vertices cannot form a two-dimensional              be given in a surprisingly simple manner), a theorem of
+face unless each pair is joined by an edge.                       Tits on the existence of automorphisms shows that the
+   To form the building of type An−1 , we start by taking         groups themselves must exist.
+all the 1-spaces, 2-spaces, 3-spaces, and so on (corre-              In a spherical building the apartments are tilings of
+sponding to points, lines, planes, and so on, in projec-          a sphere, but other types of buildings also play signifi-
+tive space), and treat them as “vertices.” The simplexes          cant roles. Of particular importance are affine buildings,
+are formed by all nested sequences of proper sub-                 in which the apartments are tilings of Euclidean space;
+spaces: for example, a 2-space inside a 4-space inside a          such buildings arise in a natural way from groups, such
+5-space will form a “triangle” whose vertices are these           as GLn (K), where K is a p-adic field [III.51](/part-03/local-and-global-in-number-theory). For such
+three subspaces. The simplexes of maximal dimen-                  fields there are two buildings, one spherical and one
+sion have n − 1 vertices: a 1-space inside a 2-space              affine, but the affine one carries more information and
+inside a 3-space, and so on. These simplexes are called           yields the spherical building as a structure “at infin-
+chambers.                                                         ity.” Going beyond affine buildings, there are hyperbolic
+   There are many subspaces, so a building is a huge              buildings, whose apartments are tilings of hyperbolic
+object. However, buildings have important subgeome-               space; they arise naturally in the study of hyperbolic
+tries called apartments, which in the An−1 case are               Kac–Moody groups.
+
