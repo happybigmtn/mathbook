@@ -1,59 +1,102 @@
 # Algebraic Topology
 
-IV.6.   Algebraic Topology                                                                                           383
+IV.6.   Algebraic Topology
 
-though of course it would bring us no nearer to turning         problem [V.33](/part-05/the-three-body-problem), of computing the future movements
-the conjecture into a theorem.                                  of Earth, the Sun, and the Moon under the influence of
-   In this article we have seen only a glimpse of the           gravity. Topology allows the possibility of making qual-
-modern theory of arithmetic geometry, and perhaps I             it ative predictions when quantitative ones are impossi-
-have over emphasized mathematicians’ successes at the            ble. For example, a simple topological fact is that a trip
-expense of the much larger territory of questions, like         from New York to Montevideo must cross the equator
-Lang’s conjecture above, about which we remain wholly           at some point, although we cannot say exactly where.
+though of course it would bring us no nearer to turning
+the conjecture into a theorem.
+   In this article we have seen only a glimpse of the
+modern theory of arithmetic geometry, and perhaps I
+have over emphasized mathematicians’ successes at the
+expense of the much larger territory of questions, like
+Lang’s conjecture above, about which we remain wholly
 ignorant. At this stage in the history of mathematics,
-we can confidently say that the schemes attached to               1   Connectedness and Intersection Numbers
+we can confidently say that the schemes attached to
 Diophantine problems have geometry. What remains
-is to say as much as we can about what this geom-               Perhaps the simplest topological property is one called
-etry is like, and in this respect, despite the progress         connectedness. This can be defined in various ways, as
-described here, our understanding is still quite unsat-         we shall see in a moment, but once we have a notion of
-is factory when compared with our knowledge of more              what it means for a space to be connected we can then
-classical geometric situations.                                 divide a topological space up into connected pieces,
-                                                                called components. The number of these pieces is a sim-
-Further Reading                                                 ple but useful invariant [I.4 §2.2](/part-01/general-goals): if two spaces have
-                                                                different numbers of connected components, then they
+is to say as much as we can about what this geom-
+etry is like, and in this respect, despite the progress
+described here, our understanding is still quite unsat-
+is factory when compared with our knowledge of more
+classical geometric situations.
+Further Reading
 Dieudonné, J. 1985. History of Algebraic Geometry. Mon-
-                                                                are not homeomorphic.
   terey, CA: Wadsworth.
-Silverman, J., and J. Tate. 1992. Rational Points on Elliptic      For nice topological spaces, the different definitions
-  Curves. New York: Springer.                                   of connectedness are equivalent. However, they can be
-                                                                generalized to give ways of measuring the number of
-                                                                holes in a space; these generalizations are interestingly
-IV.6 Algebraic Topology                                         different and all of them are important.
-        Burt Totaro                                                The first interpretation of connectedness uses the
-                                                                notion of a path, which is defined to be a continuous
-                      Introduction                              mapping f from the unit interval [0, 1] to a given space
-Topology is concerned with the properties of a geomet-          X. (We think of f as a path from f (0) to f (1).) Let us
-ric shape that are unchanged when we continuously               declare two points of X to be equivalent if there is a
-deform it. In more technical terms, topology tries to           path from one to the other. The set of equivalence
-classify topological spaces [III.90](/part-03/topological-spaces), where two spaces          classes [I.2 §2.3](/part-01/language-and-grammar) is called the set of path components
-are considered the same if they are homeomorphic.               of X and is written π0 (X). This is a very natural way of
-Algebraic topology assigns numbers to a topological             defining the “number of connected pieces” into which
-space, which can be thought of as the “number of holes”         X breaks up. One can generalize this notion by con-
-in that space. These holes can be used to show that             side ring mappings into X from other standard spaces
-two spaces are not homeomorphic: if they have differ-            such as spheres: this leads to the notion of homotopy
-ent numbers of holes of some kind, then one cannot              groups, which will be the topic of section 2.
-be a continuous deformation of the other. In the happi-            A different way of thinking about connectedness is
-est cases, we can hope to show the converse statement:          based on functions from X to the real line rather than
-that two spaces with the same number of holes (in some          functions from a line segment into X. Let us assume
-precise sense) are homeomorphic.                                that we are in a situation where it makes sense to dif-
-   Topology is a relatively new branch of mathematics,          ferentiate functions on X. For example, X could be an
-with its origins in the nineteenth century. Before that,        open subset of some Euclidean space, or more gener-
-mathematics usually sought to solve problems exactly:           ally a smooth manifold [I.3 §6.9](/part-01/fundamental-definitions). Consider all the real-
-to solve an equation, to find the path of a falling body,        valued functions on X whose derivative is every where
-to compute the probability that a game of dice will             equal to zero: these functions form a real vector space
-lead to bankruptcy. As the complexity of mathemat i-             [I.3 §2.3](/part-01/fundamental-definitions), which we call H 0 (X, R) (the “zeroth cohom-
-cal problems grew, it became clear that most problems           ology group of X with real coefficients”). Calculus tells
-would never be solved by an exact formula: a classic            us that if a function defined on an interval has deriva-
-example is the problem, known as the three-body                 tive zero, then it must be constant, but that is not true
+Silverman, J., and J. Tate. 1992. Rational Points on Elliptic
+  Curves. New York: Springer.
+IV.6 Algebraic Topology
+
+Topology is concerned with the properties of a geomet-
+ric shape that are unchanged when we continuously
+deform it. In more technical terms, topology tries to
+classify topological spaces [III.90](/part-03/topological-spaces), where two spaces
+are considered the same if they are homeomorphic.
+Algebraic topology assigns numbers to a topological
+space, which can be thought of as the “number of holes”
+in that space. These holes can be used to show that
+two spaces are not homeomorphic: if they have differ-
+ent numbers of holes of some kind, then one cannot
+be a continuous deformation of the other. In the happi-
+est cases, we can hope to show the converse statement:
+that two spaces with the same number of holes (in some
+precise sense) are homeomorphic.
+   Topology is a relatively new branch of mathematics,
+with its origins in the nineteenth century. Before that,
+mathematics usually sought to solve problems exactly:
+to solve an equation, to find the path of a falling body,
+to compute the probability that a game of dice will
+lead to bankruptcy. As the complexity of mathemat i-
+cal problems grew, it became clear that most problems
+would never be solved by an exact formula: a classic
+example is the problem, known as the three-body
+
+383
+problem [V.33](/part-05/the-three-body-problem), of computing the future movements
+of Earth, the Sun, and the Moon under the influence of
+gravity. Topology allows the possibility of making qual-
+it ative predictions when quantitative ones are impossi-
+ble. For example, a simple topological fact is that a trip
+from New York to Montevideo must cross the equator
+at some point, although we cannot say exactly where.
+1   Connectedness and Intersection Numbers
+Perhaps the simplest topological property is one called
+connectedness. This can be defined in various ways, as
+we shall see in a moment, but once we have a notion of
+what it means for a space to be connected we can then
+divide a topological space up into connected pieces,
+called components. The number of these pieces is a sim-
+ple but useful invariant [I.4 §2.2](/part-01/general-goals): if two spaces have
+different numbers of connected components, then they
+are not homeomorphic.
+For nice topological spaces, the different definitions
+of connectedness are equivalent. However, they can be
+generalized to give ways of measuring the number of
+holes in a space; these generalizations are interestingly
+different and all of them are important.
+Burt Totaro
+notion of a path, which is defined to be a continuous
+Introduction                              mapping f from the unit interval [0, 1] to a given space
+X. (We think of f as a path from f (0) to f (1).) Let us
+declare two points of X to be equivalent if there is a
+path from one to the other. The set of equivalence
+classes [I.2 §2.3](/part-01/language-and-grammar) is called the set of path components
+of X and is written π0 (X). This is a very natural way of
+defining the “number of connected pieces” into which
+X breaks up. One can generalize this notion by con-
+side ring mappings into X from other standard spaces
+such as spheres: this leads to the notion of homotopy
+groups, which will be the topic of section 2.
+A different way of thinking about connectedness is
+based on functions from X to the real line rather than
+functions from a line segment into X. Let us assume
+that we are in a situation where it makes sense to dif-
+ferentiate functions on X. For example, X could be an
+open subset of some Euclidean space, or more gener-
+ally a smooth manifold [I.3 §6.9](/part-01/fundamental-definitions). Consider all the real-
+valued functions on X whose derivative is every where
+equal to zero: these functions form a real vector space
+[I.3 §2.3](/part-01/fundamental-definitions), which we call H 0 (X, R) (the “zeroth cohom-
+ology group of X with real coefficients”). Calculus tells
+us that if a function defined on an interval has deriva-
+tive zero, then it must be constant, but that is not true
 
 $384$
 
@@ -94,114 +137,186 @@ In particular, this will happen if M is compact [III.9](/part-03/compactness-and
 To see why this might be true, consider again the case where A and B are curves and M is two dimensional: if A and B meet at a point with weight $1$ , we can wiggle one of them to turn that point into three points with weights $1$ , $- 1$ , and $1$ , but the total contribution to the intersection number is unchanged. This is illustrated in figure $2$ . As a result, the intersection number A · B is defined for any two submanifolds of complementary dimension: if they do not intersect transversely, one can move them until they do and use the definition we have just given.
 In particular, if two submanifolds have nonzero intersection number, then they can never be moved to
 
-IV.6.   Algebraic Topology                                                                                        385
+IV.6.   Algebraic Topology
 
-                                                                                     X X B B A A X X
-
-                                                                   Figure 4 Multiplication in the fundamental
-                                                                     group and in higher homotopy groups.
-          Figure 3 A surface bounded by a knot.
-
-                                                            are regarded as equivalent if one can be continuously
-be disjoint from each other. This is another way to         deformed to the other while all the time staying inside
-describe the earlier arguments about connectedness.         X. If this is the case, we say that they are homotopic. To
-It is easy to write down one curve from New York to         be more formal about this, let us suppose that f0 and
-Montevideo whose intersection number with the equa-         f1 are two loops. Then a homotopy between f0 and f1
+be disjoint from each other. This is another way to
+describe the earlier arguments about connectedness.
+It is easy to write down one curve from New York to
+Montevideo whose intersection number with the equa-
 tor is equal to 1. Therefore, no matter how we move that    is a collection of loops fs in X, one for each s between
-curve (provided that we keep the endpoints fixed: more       0 and 1, such that the function F (s, t) = fs (t) is a con-
-generally, if either A or B has a boundary, then that       tinuous function from [0, 1]2 to X. Thus, as s increases
-boundary should be kept fixed), its intersection num-        from 0 to 1, the loop fs moves continuously from f0 to
+curve (provided that we keep the endpoints fixed: more
+generally, if either A or B has a boundary, then that
+boundary should be kept fixed), its intersection num-
 ber with the equator will always be 1, and in particular    f1 . If two loops are homotopic, then we count them as
-it must meet the equator in at least one point.             the same. So the elements of the homotopy group are
-   One of many applications of intersection numbers in      not actually loops but equivalence classes, or homotopy
-topology is the idea of linking numbers, which comes        classes, of loops.
-from knot theory [III.44](/part-03/knot-polynomials). A knot is a path in space that      Even this is not quite correct, because for technical
+it must meet the equator in at least one point.
+   One of many applications of intersection numbers in
+topology is the idea of linking numbers, which comes
+from knot theory [III.44](/part-03/knot-polynomials). A knot is a path in space that
 begins and ends at the same point, or, more formally, a     reasons we need to impose an extra condition on our
-closed connected one-dimensional submanifold of R3 .        loops: that they all start from (and therefore end at)
+closed connected one-dimensional submanifold of R3 .
 Given any knot K, it is always possible to find a surface    a given point, called the base point. If X is connected,
 S in R3 with K as its boundary (see figure 3). Now let L     it turns out not to matter what this base point is, but
 be a knot that is disjoint from K. The linking number
-                                                            we need it to be the same for all loops. The reason for
 of K with L is defined to be the intersection number
-                                                            this is that it gives us a way to multiply two loops: if x
 of L with the surface S. The properties of intersection
-                                                            is the base point and A and B are two loops that start
 numbers imply that if the linking number of K with L
-                                                            and end at x, then we can define a new loop by going
 is nonzero, then the knots K and L are “linked,” in the
-                                                            around A and then going around B. This is illustrated
 sense that it is impossible to pull them apart.
-                                                            in figure 4. We regard this new loop as the product of
-                                                            the loops A and B. It is not hard to check that the homo-
-               2 Homotopy Groups
-                                                            topy class of this product depends only on the homo-
-If we remove the origin from the plane R2 , then we         topy classes of A and B, and that the resulting binary
+
+If we remove the origin from the plane R2 , then we
 obtain a new space that is different from the plane in a     operation turns the set of homotopy classes of loops
 fundamental way: it has a hole in it. However, we cannot    into a group [I.3 §2.1](/part-01/fundamental-definitions). It is this group that we call the
-detect this difference by counting components, since         fundamental group of X. It is denoted π1 (X).
-both the plane and the plane with out the origin are con-       The fundamental group can be computed for most of
-nected. We begin this section by defining an invariant       the spaces we are likely to encounter. This makes it an
-called the fundamental group, which does detect this        important way to distinguish one space from another.
-kind of hole.                                               First of all, for any n the fundamental group of Rn is the
+detect this difference by counting components, since
+both the plane and the plane with out the origin are con-
+nected. We begin this section by defining an invariant
+called the fundamental group, which does detect this
+kind of hole.
    As a first approximation, one could say that the ele-     trivial group with just one element, because any loop in
-ments of the fundamental group of a space X are loops,      Rn can be continuously shrunk to its base point. On the
-which can be formally defined as continuous functions        other hand, the fundamental group of R2 \{0}, the plane
-f from [0, 1] to X such that f (0) = f (1). However,        with the origin removed, is isomorphic to the group Z
-this is not quite accurate, for two reasons. The first       of the integers. This tells us that we can associate with
+ments of the fundamental group of a space X are loops,
+which can be formally defined as continuous functions
+f from [0, 1] to X such that f (0) = f (1). However,
+this is not quite accurate, for two reasons. The first
 reason, which is extremely important, is that two loops     any loop in R2 \ {0} an integer that does not change
 
-386                                                                                      IV. Branches of Mathematics
+385
+X X B B A A X X
+Figure 4 Multiplication in the fundamental
+group and in higher homotopy groups.
+Figure 3 A surface bounded by a knot.
+are regarded as equivalent if one can be continuously
+deformed to the other while all the time staying inside
+X. If this is the case, we say that they are homotopic. To
+be more formal about this, let us suppose that f0 and
+f1 are two loops. Then a homotopy between f0 and f1
+0 and 1, such that the function F (s, t) = fs (t) is a con-
+tinuous function from [0, 1]2 to X. Thus, as s increases
+from 0 to 1, the loop fs moves continuously from f0 to
+the same. So the elements of the homotopy group are
+not actually loops but equivalence classes, or homotopy
+classes, of loops.
+Even this is not quite correct, because for technical
+loops: that they all start from (and therefore end at)
+we need it to be the same for all loops. The reason for
+this is that it gives us a way to multiply two loops: if x
+is the base point and A and B are two loops that start
+and end at x, then we can define a new loop by going
+around A and then going around B. This is illustrated
+in figure 4. We regard this new loop as the product of
+the loops A and B. It is not hard to check that the homo-
+2 Homotopy Groups
+topy class of this product depends only on the homo-
+topy classes of A and B, and that the resulting binary
+fundamental group of X. It is denoted π1 (X).
+The fundamental group can be computed for most of
+the spaces we are likely to encounter. This makes it an
+important way to distinguish one space from another.
+First of all, for any n the fundamental group of Rn is the
+Rn can be continuously shrunk to its base point. On the
+other hand, the fundamental group of R2 \{0}, the plane
+with the origin removed, is isomorphic to the group Z
+of the integers. This tells us that we can associate with
 
-if we modify the loop in a continuous way. This inte-          we need a different invariant. And it is possible to base
-ger is known as the winding number. Intuitively, the           such an invariant on the observation that even if loops
-winding number measures the total number of times              can always be shrunk, there are other maps that cannot.
-that the mapping goes around the origin, with coun-            Indeed, the sphere itself cannot be shrunk to a point.
-ter clockwise circuits counting positively and clockwise        To say this more formally, the identity map from the
-ones negatively. Since the fundamental group of R2 \{0}        sphere to itself is not homotopic to a map from the
-is not the trivial group, R2 \ {0} cannot be homeomor-         sphere to just one point.
-phic to the plane. (It is an interesting exercise to try to       This idea leads to the notion of higher-dimensional
-find an elementary proof of this result—that is, a proof        homotopy groups of a topological space X. The rough
-that does not use, or implicitly reconstruct, any of the       idea is to measure the number of “n-dimensional holes”
-machinery of algebraic topology. Such proofs do exist,         in X, for any natural number n, by considering all the
-but it is tricky to find them.)                                 continuous mappings from the n-sphere to X. We want
-   A classic application of the fundamental group is           to see whether any of these spheres wrap around a hole
-to prove the fundamental theorem of algebra                    in X. Once again, we consider two mappings from S n
-[V.13](/part-05/the-fundamental-theorem-of-algebra), which states that every nonconstant polyno-            to X to be equivalent if they are homotopic. And the
-mial with complex coefficients has a complex root. (The          elements of the nth homotopy group πn (X) are again
-proof is sketched in the article just cited, though the        defined to be the homotopy classes of these mappings.
-fundamental group is not explicitly mentioned there.)             Let f be a continuous map from [0, 1] to X with
-   The fundamental group tells us about the number             f (0) = f (1) = x. If we like we can turn the interval
-of “one-dimensional holes” that a space has. A basic           [0, 1] into the circle S 1 by “identifying” the points 0
-example is given by the circle, which has fundamental          and 1: then f becomes a map from S 1 to X, with one
-group Z, just as R2 \ {0} does, and for essentially the        specified point in S 1 mapping to x. In order to be able to
-same reason: given a path in the circle that begins and        define a group operation for mappings from a higher-
-ends at the same point, we can see how many times it           dimensional S n , we similarly fix a point s in S n and a
-goes around the circle. In the next section we shall see       base point x in X and look just at maps that send s
-some more examples.                                            to x.
-   Before we think about higher-dimensional holes, we             Let A and B be two continuous mappings from S n to
-first need to discuss one of the most important topolog-        X with this property. The “product” mapping A·B from
-ical spaces: the n-dimensional sphere. For any natural         S n to X is defined as follows. First “pinch” the equator
-number n, this is defined to be the set of points in Rn+1       of S n down to a point. When n = 1, the equator con-
+386
+
+if we modify the loop in a continuous way. This inte-
+ger is known as the winding number. Intuitively, the
+winding number measures the total number of times
+that the mapping goes around the origin, with coun-
+ter clockwise circuits counting positively and clockwise
+ones negatively. Since the fundamental group of R2 \{0}
+is not the trivial group, R2 \ {0} cannot be homeomor-
+phic to the plane. (It is an interesting exercise to try to
+find an elementary proof of this result—that is, a proof
+that does not use, or implicitly reconstruct, any of the
+machinery of algebraic topology. Such proofs do exist,
+but it is tricky to find them.)
+   A classic application of the fundamental group is
+to prove the fundamental theorem of algebra
+[V.13](/part-05/the-fundamental-theorem-of-algebra), which states that every nonconstant polyno-
+mial with complex coefficients has a complex root. (The
+proof is sketched in the article just cited, though the
+fundamental group is not explicitly mentioned there.)
+   The fundamental group tells us about the number
+of “one-dimensional holes” that a space has. A basic
+example is given by the circle, which has fundamental
+group Z, just as R2 \ {0} does, and for essentially the
+same reason: given a path in the circle that begins and
+ends at the same point, we can see how many times it
+goes around the circle. In the next section we shall see
+some more examples.
+   Before we think about higher-dimensional holes, we
+first need to discuss one of the most important topolog-
+ical spaces: the n-dimensional sphere. For any natural
+number n, this is defined to be the set of points in Rn+1
 at distance 1 from the origin. It is denoted S n . Thus, the   sists of just two points and the result is a figure eight.
-0-sphere S 0 consists of two points, the 1-sphere S 1 is       Similarly, for general n, we end up with two copies of
+0-sphere S 0 consists of two points, the 1-sphere S 1 is
 the circle, and the 2-sphere S 2 is the usual sphere, like     S n that touch each other, one made out of the northern
-the surface of Earth. Higher-dimensional spheres take a        hemisphere and one out of the southern hemisphere of
-little bit of getting used to, but we can work with them       the original unpinched copy of S n . We now use the map
-in the same way that we can with lower-dimensional             A to map the bottom half into X and the map B to map
-spheres. For example, we can construct the 2-sphere            the top half into X, with the equator mapping to the
-from a closed two-dimensional disk by identifying all          base point x. (For both halves, the pinched equator is
-the points on the boundary circle with each other. In          playing the part of the point s.)
-the same way, the 3-sphere can be obtained from a solid           As in the one-dimensional case, this operation makes
-three-dimensional ball by identifying all the points on        the set πn (X) into a group, and this group is the nth
-the boundary 2-sphere. A related picture is to think           homotopy group of the space X. One can think of it
-of the 3-sphere as being obtained from our familiar            as measuring how many “n-dimensional holes” a space
-three-dimensional space R3 by adding one point “at             has.
-infinity.”                                                         These groups are the beginning of “algebraic” topol-
-   Now let us think about the familiar sphere S 2 . This       ogy: starting from any topological space, we construct
-has trivial fundamental group, since any loop drawn            an algebraic object, in this case a group. If two spaces
-on the sphere can be shrunk to a point. However, this          are homeomorphic, then their fundamental groups
+the surface of Earth. Higher-dimensional spheres take a
+little bit of getting used to, but we can work with them
+in the same way that we can with lower-dimensional
+spheres. For example, we can construct the 2-sphere
+from a closed two-dimensional disk by identifying all
+the points on the boundary circle with each other. In
+the same way, the 3-sphere can be obtained from a solid
+three-dimensional ball by identifying all the points on
+the boundary 2-sphere. A related picture is to think
+of the 3-sphere as being obtained from our familiar
+three-dimensional space R3 by adding one point “at
+infinity.”
+   Now let us think about the familiar sphere S 2 . This
+has trivial fundamental group, since any loop drawn
+on the sphere can be shrunk to a point. However, this
 does not mean that the topology of S 2 is trivial. It just     (and higher homotopy groups) must be isomorphic.
-means that in order to detect its interesting properties       This is richer than the original idea of just measuring
+means that in order to detect its interesting properties
+
+IV. Branches of Mathematics
+we need a different invariant. And it is possible to base
+such an invariant on the observation that even if loops
+can always be shrunk, there are other maps that cannot.
+Indeed, the sphere itself cannot be shrunk to a point.
+To say this more formally, the identity map from the
+sphere to itself is not homotopic to a map from the
+sphere to just one point.
+This idea leads to the notion of higher-dimensional
+homotopy groups of a topological space X. The rough
+idea is to measure the number of “n-dimensional holes”
+in X, for any natural number n, by considering all the
+continuous mappings from the n-sphere to X. We want
+to see whether any of these spheres wrap around a hole
+in X. Once again, we consider two mappings from S n
+to X to be equivalent if they are homotopic. And the
+elements of the nth homotopy group πn (X) are again
+defined to be the homotopy classes of these mappings.
+Let f be a continuous map from [0, 1] to X with
+f (0) = f (1) = x. If we like we can turn the interval
+[0, 1] into the circle S 1 by “identifying” the points 0
+and 1: then f becomes a map from S 1 to X, with one
+specified point in S 1 mapping to x. In order to be able to
+define a group operation for mappings from a higher-
+dimensional S n , we similarly fix a point s in S n and a
+base point x in X and look just at maps that send s
+to x.
+Let A and B be two continuous mappings from S n to
+X with this property. The “product” mapping A·B from
+S n to X is defined as follows. First “pinch” the equator
+of S n down to a point. When n = 1, the equator con-
+Similarly, for general n, we end up with two copies of
+hemisphere and one out of the southern hemisphere of
+the original unpinched copy of S n . We now use the map
+A to map the bottom half into X and the map B to map
+the top half into X, with the equator mapping to the
+base point x. (For both halves, the pinched equator is
+playing the part of the point s.)
+As in the one-dimensional case, this operation makes
+the set πn (X) into a group, and this group is the nth
+homotopy group of the space X. One can think of it
+as measuring how many “n-dimensional holes” a space
+has.
+These groups are the beginning of “algebraic” topol-
+ogy: starting from any topological space, we construct
+an algebraic object, in this case a group. If two spaces
+are homeomorphic, then their fundamental groups
+This is richer than the original idea of just measuring
 
 $IV$ . $6$ .
 
@@ -244,55 +359,93 @@ But this is completely untrue for $4$ - manifolds and in higher dimensions: ther
 These $4$ - manifolds are all simply connected, and yet no two of them are homeomorphic or even homotopy equivalent .) An obvious way in which we might try to distinguish different spaces is to use higher homotopy groups, and indeed this works in simple cases. For example, $\pi^{2}$ of the connected sum of r copies of $S^{2} \times S^{2}$ is isomorphic to $Z^{2r}$ . Also, we can show that the sphere S n of any dimension is not contractible (although it is simply connected for $n \ge 2)$ by computing that $\pi^{n}(S^{n})$ is isomorphic to the integers (rather than the trivial group) .
 Thus, each continuous map from the n-sphere to itself determines an integer, called the degree of the map,
 
-IV.6.   Algebraic Topology                                                                                            389
+IV.6.   Algebraic Topology
 
-                                                                                                      ...
-
-                   Sphere            One-holed torus                    Two-holed torus
-                                     Figure 8 A sphere, a torus, and a surface of genus 2.
-
-which generalizes the notion of winding number for                  The Hopf map is an important construction, and will
-maps from the circle to itself.                                   reappear more than once later in this article.
+which generalizes the notion of winding number for
+maps from the circle to itself.
    In general, however, the homotopy groups are not a
-practical way of distinguishing one space from another,                        4    Homology Groups and
-because they are amazingly hard to compute. A first                                 the Cohomology Ring
+practical way of distinguishing one space from another,
+because they are amazingly hard to compute. A first
 hint of this was Hopf’s 1931 discovery that π3 (S 2 ) is
-isomorphic to the integers: it is clear that the 2-sphere         Homotopy groups, then, can be rather mysterious and
-has a two-dimensional hole, as measured by π2 (S 2 )             very hard to calculate. Fortunately, there is a different
-Z, but in what sense does it have a three-dimensional             way to measure the number of holes in a topological
-hole? This does not correspond to our naive view of               space: homology and cohomology groups. The defini-
-what such a hole should be. The problem of com-                   tions are more subtle than the definition of homotopy
-puting the homotopy groups of spheres turns out to                groups, but the groups turn out to be easier to compute
-be one of the hardest in all of mathematics: some of              and are for this reason much more commonly used.
-what we know is shown in table 1, but despite massive                Recall that elements of the nth homotopy group
-efforts the homotopy groups πi (S 2 ), for example, are            πn (X) of a topological space X are represented by
-known only for i ⩽ 64. There are tantalizing patterns in          continuous maps from the n-sphere to X. Let X be a
-these calculations, with a number-theoretic flavor, but            manifold, for simplicity. There are two key differences
-it seems impossible to formulate a precise guess for              between homotopy groups and homology groups. The
-the homotopy groups of spheres in general. And com-               first is that the basic objects of homology are more
-puting the homotopy groups for spaces more complex                general than n-dimensional spheres: every closed ori-
-than spheres is even more complicated.                            ented n-dimensional submanifold A of X determines
-   To get an idea of the difficulties involved, let us define        an element of the nth homology group of X, Hn (X).
-the so-called Hopf map from S 3 to S 2 , which turns out          This might make homology groups seem much big-
-to represent a nonzero element of π3 (S 2 ). There are            ger than homotopy groups, but that is not the case,
-in fact several equivalent definitions. One of them is to          because of the second major difference between homo-
+isomorphic to the integers: it is clear that the 2-sphere
+has a two-dimensional hole, as measured by π2 (S 2 )
+Z, but in what sense does it have a three-dimensional
+hole? This does not correspond to our naive view of
+what such a hole should be. The problem of com-
+puting the homotopy groups of spheres turns out to
+be one of the hardest in all of mathematics: some of
+what we know is shown in table 1, but despite massive
+efforts the homotopy groups πi (S 2 ), for example, are
+known only for i ⩽ 64. There are tantalizing patterns in
+these calculations, with a number-theoretic flavor, but
+it seems impossible to formulate a precise guess for
+the homotopy groups of spheres in general. And com-
+puting the homotopy groups for spaces more complex
+than spheres is even more complicated.
+   To get an idea of the difficulties involved, let us define
+the so-called Hopf map from S 3 to S 2 , which turns out
+to represent a nonzero element of π3 (S 2 ). There are
+in fact several equivalent definitions. One of them is to
 regard a point (x1 , x2 , x3 , x4 ) in S 3 as a pair of complex   topy and homology. As with homotopy, the elements of
-numbers (z1 , z2 ) such that |z1 |2 + |z2 |2 = 1. This we         the homology groups are not the submanifolds them-
-do by setting z1 = x1 + ix2 and z2 = x3 + ix4 . We then           selves but equivalence classes of submanifolds, but
-map the pair (z1 , z2 ) to the complex number z1 /z2 .            the definition of the equivalence relation for homol-
-This may not look like a map to S 2 , but it is because           ogy makes it much easier for two of these sub man i-
-z2 may be zero, so in fact the image of the map is not C          folds to be equivalent than it is for two spheres to be
-but the Riemann sphere C ∪ . nfty, which can be identified              homotopic.
-with S 2 in a natural way.                                           We shall not give a formal definition of homology, but
-   Another way of defining the Hopf map is to regard               here are some examples that convey some of its flavor.
+numbers (z1 , z2 ) such that |z1 |2 + |z2 |2 = 1. This we
+do by setting z1 = x1 + ix2 and z2 = x3 + ix4 . We then
+map the pair (z1 , z2 ) to the complex number z1 /z2 .
+This may not look like a map to S 2 , but it is because
+z2 may be zero, so in fact the image of the map is not C
+but the Riemann sphere C ∪ . nfty, which can be identified
+with S 2 in a natural way.
+   Another way of defining the Hopf map is to regard
 points (x1 , x2 , x3 , x4 ) in S 3 as unit quaternions. In the    Let X be the plane with the origin removed and let A be
-article on quaternions in this volume [III.76](/part-03/quaternions-octonions-and-normed-iv25-probabilistic-models-of-critical-phenomena), it is shown       a circle that goes around the origin. If we continuously
-that each unit quaternion can be associated with a rota-          deform this circle, we will obtain a new curve that is
-tion of the sphere. If we fix some point s in the sphere           homotopic to the original circle, but with homology we
-and map each unit quaternion to the image of s under              can do more. For instance, we can start with a continu-
-the associated rotation, then we get a map from S 3 to            ous deformation that causes two of its points to touch
-S 2 that is homotopic to the map defined in the previous           and turns it into a figure eight. One half of this figure
-paragraph.                                                        eight will have to contain the origin, but we can leave
+article on quaternions in this volume [III.76](/part-03/quaternions-octonions-and-normed-iv25-probabilistic-models-of-critical-phenomena), it is shown
+that each unit quaternion can be associated with a rota-
+tion of the sphere. If we fix some point s in the sphere
+and map each unit quaternion to the image of s under
+the associated rotation, then we get a map from S 3 to
+S 2 that is homotopic to the map defined in the previous
+paragraph.
+
+389
+...
+Sphere
+Figure 8 A sphere, a torus, and a surface of genus 2.
+The Hopf map is an important construction, and will
+reappear more than once later in this article.
+4    Homology Groups and
+the Cohomology Ring
+Homotopy groups, then, can be rather mysterious and
+very hard to calculate. Fortunately, there is a different
+way to measure the number of holes in a topological
+space: homology and cohomology groups. The defini-
+tions are more subtle than the definition of homotopy
+groups, but the groups turn out to be easier to compute
+and are for this reason much more commonly used.
+Recall that elements of the nth homotopy group
+πn (X) of a topological space X are represented by
+continuous maps from the n-sphere to X. Let X be a
+manifold, for simplicity. There are two key differences
+between homotopy groups and homology groups. The
+first is that the basic objects of homology are more
+general than n-dimensional spheres: every closed ori-
+ented n-dimensional submanifold A of X determines
+an element of the nth homology group of X, Hn (X).
+This might make homology groups seem much big-
+ger than homotopy groups, but that is not the case,
+because of the second major difference between homo-
+the homology groups are not the submanifolds them-
+selves but equivalence classes of submanifolds, but
+the definition of the equivalence relation for homol-
+ogy makes it much easier for two of these sub man i-
+folds to be equivalent than it is for two spheres to be
+homotopic.
+We shall not give a formal definition of homology, but
+here are some examples that convey some of its flavor.
+a circle that goes around the origin. If we continuously
+deform this circle, we will obtain a new curve that is
+homotopic to the original circle, but with homology we
+can do more. For instance, we can start with a continu-
+ous deformation that causes two of its points to touch
+and turns it into a figure eight. One half of this figure
+eight will have to contain the origin, but we can leave
 
 $390$
 
@@ -328,61 +481,107 @@ that looks like a torus, except that the hole in the middle has been shrunk to z
 closed loop in the torus determines an element of the first homology group $Z^{2}$ , which measures how many A more general rule is that if X is a manifold and B is a compact oriented $(n + 1)$ - dimensional submanifold times the loop winds around the meridian and longituof X with a boundary, then this boundary ∂B will be dinal directions of the torus. And finally, the homology of the torus in dimension $2$ is isomorphic to Z because equivalent to zero (which is the same as saying that [∂ B ] = 0$in$ Hn(X) ) : see figure $9$ . the torus is a closed orientable manifold.
 That tells us that the whole torus defines an element of the second The group operation is easy to define: if A and B are homology group of the torus, which is in fact a gentwo disjoint submanifolds of X, giving rise to homology classes [A] and [B] , then [A] $+$ [B] is the homolerator of that group. By contrast, the homotopy group
 
-IV.6.   Algebraic Topology                                                                                          391
+IV.6.   Algebraic Topology
 
-π2 (S 1 . imes S 1 ) is the trivial group: there are no interest-             A⬘
-ing maps from the 2-sphere to the 2-torus, but homol-                     A
-                                                                                                A
+π2 (S 1 . imes S 1 ) is the trivial group: there are no interest-
+ing maps from the 2-sphere to the 2-torus, but homol-
 ogy shows that there are interesting maps from other
-closed 2-manifolds to the 2-torus.                                                          B
-   As we have mentioned, calculating homology groups                                                         B B⬘
+closed 2-manifolds to the 2-torus.
+   As we have mentioned, calculating homology groups
 is much easier than calculating homotopy groups. The
-                                                                      Figure 10 A2 = A · A = 0, A · B = [point],
 main reason for this is the existence of results that tell
-                                                                                and B 2 = B · B = 0.
 you the homology groups of a space that is built up
 from smaller pieces in terms of the homology groups of
-those pieces and their intersections. Another important        way that, taken together, the cohomology groups of X
-property of homology groups is that they are “functo-          form a ring [III.81 §1](/part-03/rings-ideals-and-modules). (Of course, we could do this for
-rial” in the sense that a continuous map f from a space        the homology groups, but the cohomology groups form
-X to a space Y leads in a natural way to a homomor-            a so-called graded ring. In particular, if [A] ∈ H i (X)
-phism f∗ from Hi (X) to Hi (Y ) for each i: f∗ ([A]) is        and [B] ∈ H j (X), then [A] · [B] ∈ H i+j (X).)
-defined to be [f (A)]. In other words, f∗ ([A]) is the             The multiplication of cohomology classes has a rich
-equivalence class of the image of A under f .                  geometric meaning, especially on manifolds: it is given
-   We can define the closely related idea of “cohom-            by the intersection of two submanifolds. This gener-
-ology” simply by a different numbering. Let X be                alizes our discussion of intersection numbers in sec-
-a closed oriented n-dimensional manifold. Then we              tion 1: there we considered zero-dimensional inter sec-
-define the ith cohomology group H i (X) to be the               tions of submanifolds, where as we are now considering
-homology group Hn−i (X). Thus, one way to write down           (cohomology classes of) higher-dimensional inter sec-
-a cohomology class (an element of H i (X)) is by choos-        tions. To be precise, let S and T be closed oriented sub-
-ing a closed oriented submanifold S of codimension i           manifolds of X, of codimension i and j, respectively.
-in X. (This means that the dimension of S is n − i.) We        By moving S slightly (which does not change its class
-write [S] for the corresponding cohomology class.              in H i (X)) we can assume that S and T intersect trans-
-   For more general spaces than manifolds, cohomology          versely, which implies that the intersection of S and
-is not just a simple renumbering of homology. Infor-           T is a smooth submanifold of codimension i + j in X.
-mally, if X is a topological space, then we think of an        Then the product of the cohomology classes [S] and
-element of H i (X) as being represented by a codimen-          [T ] is simply the cohomology class of the intersection
-sion-i subspace of X that can move around freely in            S ∩ T in H i+j (X). (In addition, the submanifold S ∩ T
-X. For example, suppose that f is a continuous map             in her its an orientation from S, T , and X: this is needed
-from X to an i-dimensional manifold. If X is a manifold        to define the associated cohomology class.)
-and f is sufficiently “well-behaved,” then the inverse              As a result, to compute the cohomology ring of a
-image of a “typical” point in the manifold will be an i-       manifold, it is enough to specify a basis for the cohom-
-codimensional submanifold of X, and as we move the             ology groups (which, as we have already discussed, are
-point about, this submanifold will vary continuously,          relatively easy to determine) using some submanifolds
-and will do so in a way that is similar to the way that a      and to see how these submanifolds intersect. For exam-
-circle became two circles and a sphere became a torus          ple, we can compute the cohomology ring of the 2-
+those pieces and their intersections. Another important
+property of homology groups is that they are “functo-
+rial” in the sense that a continuous map f from a space
+X to a space Y leads in a natural way to a homomor-
+phism f∗ from Hi (X) to Hi (Y ) for each i: f∗ ([A]) is
+defined to be [f (A)]. In other words, f∗ ([A]) is the
+equivalence class of the image of A under f .
+   We can define the closely related idea of “cohom-
+ology” simply by a different numbering. Let X be
+a closed oriented n-dimensional manifold. Then we
+define the ith cohomology group H i (X) to be the
+homology group Hn−i (X). Thus, one way to write down
+a cohomology class (an element of H i (X)) is by choos-
+ing a closed oriented submanifold S of codimension i
+in X. (This means that the dimension of S is n − i.) We
+write [S] for the corresponding cohomology class.
+   For more general spaces than manifolds, cohomology
+is not just a simple renumbering of homology. Infor-
+mally, if X is a topological space, then we think of an
+element of H i (X) as being represented by a codimen-
+sion-i subspace of X that can move around freely in
+X. For example, suppose that f is a continuous map
+from X to an i-dimensional manifold. If X is a manifold
+and f is sufficiently “well-behaved,” then the inverse
+image of a “typical” point in the manifold will be an i-
+codimensional submanifold of X, and as we move the
+point about, this submanifold will vary continuously,
+and will do so in a way that is similar to the way that a
+circle became two circles and a sphere became a torus
 earlier. If X is a more general topological space, the map     torus as shown in figure 10. For another example, it
-f still determines a cohomology class in H i (X), which        is not hard to show that the cohomology of the com-
-we think of as being represented by the inverse image          plex projective plane [III.72](/part-03/projective-space) CP2 has a basis given
-in X of any point in the manifold.                             by three basic submanifolds: a point, which belongs
-   However, even when X is an oriented n-dimensional           to H 4 (CP2 ) because it is a submanifold of codimen-
-manifold, cohomology has distinct advantages over              sion 4; a complex projective line CP1 = S 2 , which
-homology. This may seem odd, since the cohomology              belongs to H 2 (CP2 ); and the whole manifold CP2 , which
-groups are the homology groups with different names.            is in H 0 (CP2 ) and represents the identity element 1 of
-However, this renumbering allows us to give very useful        the cohomology ring. The product in the cohomology
-extra algebraic structure to the cohomology groups of          ring is described by saying that [CP1 ][CP1 ] = [point],
-X: not only can we add cohomology classes, we can mul-         because any two distinct lines CP1 in the plane meet
-tiply them as well. Further more, we can do so in such a        transversely in a single point.
+f still determines a cohomology class in H i (X), which
+we think of as being represented by the inverse image
+in X of any point in the manifold.
+   However, even when X is an oriented n-dimensional
+manifold, cohomology has distinct advantages over
+homology. This may seem odd, since the cohomology
+groups are the homology groups with different names.
+However, this renumbering allows us to give very useful
+extra algebraic structure to the cohomology groups of
+X: not only can we add cohomology classes, we can mul-
+tiply them as well. Further more, we can do so in such a
+
+391
+A⬘
+A
+A
+B
+B B⬘
+Figure 10 A2 = A · A = 0, A · B = [point],
+and B 2 = B · B = 0.
+way that, taken together, the cohomology groups of X
+form a ring [III.81 §1](/part-03/rings-ideals-and-modules). (Of course, we could do this for
+the homology groups, but the cohomology groups form
+a so-called graded ring. In particular, if [A] ∈ H i (X)
+and [B] ∈ H j (X), then [A] · [B] ∈ H i+j (X).)
+The multiplication of cohomology classes has a rich
+geometric meaning, especially on manifolds: it is given
+by the intersection of two submanifolds. This gener-
+alizes our discussion of intersection numbers in sec-
+tion 1: there we considered zero-dimensional inter sec-
+tions of submanifolds, where as we are now considering
+(cohomology classes of) higher-dimensional inter sec-
+tions. To be precise, let S and T be closed oriented sub-
+manifolds of X, of codimension i and j, respectively.
+By moving S slightly (which does not change its class
+in H i (X)) we can assume that S and T intersect trans-
+versely, which implies that the intersection of S and
+T is a smooth submanifold of codimension i + j in X.
+Then the product of the cohomology classes [S] and
+[T ] is simply the cohomology class of the intersection
+S ∩ T in H i+j (X). (In addition, the submanifold S ∩ T
+in her its an orientation from S, T , and X: this is needed
+to define the associated cohomology class.)
+As a result, to compute the cohomology ring of a
+manifold, it is enough to specify a basis for the cohom-
+ology groups (which, as we have already discussed, are
+relatively easy to determine) using some submanifolds
+and to see how these submanifolds intersect. For exam-
+ple, we can compute the cohomology ring of the 2-
+is not hard to show that the cohomology of the com-
+plex projective plane [III.72](/part-03/projective-space) CP2 has a basis given
+by three basic submanifolds: a point, which belongs
+to H 4 (CP2 ) because it is a submanifold of codimen-
+sion 4; a complex projective line CP1 = S 2 , which
+belongs to H 2 (CP2 ); and the whole manifold CP2 , which
+is in H 0 (CP2 ) and represents the identity element 1 of
+the cohomology ring. The product in the cohomology
+ring is described by saying that [CP1 ][CP1 ] = [point],
+because any two distinct lines CP1 in the plane meet
+transversely in a single point.
 
 $392$
 

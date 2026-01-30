@@ -44,71 +44,116 @@ Similarly, the difference set, denoted $A - A,$ is the set of all $x - y$ such t
 }, and the special case of Waring’s problem asks whether every sufficiently large integer belongs to $C + C + C + C.$ The twin prime conjecture is slightly more complicated: it states not just that $2$ belongs to the set P - P but that it does so “infinitely many times.” (In a similar way, if A is the set in the previous paragraph, then $A - A$ contains the number $4$ three times .) These problems are notoriously difficult. However, remarkably, there are some closely related problems that look just as hard at first, but which have been solved.
 For instance, Vinogradov’s three-primes theorem is the statement that every sufficiently large odd integer is the sum of three odd primes. With out the “sufficiently large” this would answer the ternary Goldbach problem, which asks whether every odd number from $9$ onward is a sum of three odd primes. (How large is “sufficiently large”? Well, until recently you needed your number to have about 7000000 digits, but in 2002 this was reduced to under 1500 digits .) As for Waring’s
 
-716                                                                                      V. Theorems and Problems
+716
 
-problem, it is known that every sufficiently large pos-        function [III.25](/part-03/the-exponential-and-logarithmic-functions) to reformulate our counting problem
-itive integer is a sum of seven cubes. More generally,       as a problem about estimating a certain integral.
-it seems likely that, for any k, every sufficiently large         As is customary in this area, let us write e(x) instead
-integer can be written as a sum of at most 100 k kth          of e2π ix . The two basic properties that we shall use of
-powers (where 100 is just a randomly chosen largish          the function e(x) are that e(x+y) = e(x)e(y) and that
-                                                              1
-number—it is possible that even 4 k kth powers are             0 e(nx) dx = 1 if n = 0, and 0 if n is any other integer.
-                                                                                                                 
-enough), and although a proof of this is well beyond         Let us also adopt the convention that if we write p⩽n ,
-today’s mathematical technology, it has been shown           then we are summing over all odd primes less than or
-that a little over k log k kth powers are enough. Since      equal to n. Now define a function F (x) by the formula
-                                                                      
+problem, it is known that every sufficiently large pos-
+itive integer is a sum of seven cubes. More generally,
+it seems likely that, for any k, every sufficiently large
+integer can be written as a sum of at most 100 k kth
+powers (where 100 is just a randomly chosen largish
+number—it is possible that even 4 k kth powers are
+enough), and although a proof of this is well beyond
+today’s mathematical technology, it has been shown
+that a little over k log k kth powers are enough. Since
 log k is a very slowly growing function, this result is,     F (x) = p ⩽N e(px). That is,
 in a certain sense, not too far from a solution to the
-                                                             F (x) = e(3 x) + e(5 x) + e(7 x) + e(11 x) + · · · + e(qx),
 problem.
-   How does one obtain results such as these? Some of        where q is the largest prime less than or equal to
-the proofs are pretty complicated, so we cannot give         n. This is a sum of exponentials—hence the phrase
-a full answer here. However, we can at least explain         “exponential sums.” Next, we consider the cube of this
-one idea that is fundamental to many of the argu-            function:
-ments, namely the use of exponential sums. Let us illus-       F (x)3 = (e(3 x) + e(5 x) + e(7 x) + · · · + e(qx))3 .
+   How does one obtain results such as these? Some of
+the proofs are pretty complicated, so we cannot give
+a full answer here. However, we can at least explain
+one idea that is fundamental to many of the argu-
+ments, namely the use of exponential sums. Let us illus-
 trate it by looking at the beginning of the proof of the
-Vinogradov three-primes theorem.                             When we multiply out the right-hand side, we obtain
-   Imagine, then, that we have a very large odd integer      the sum of all terms of the form e(p1 x)e(p2 x)e(p3 x),
-n and we wish to prove that it is a sum of three odd         where p1 , p2 , and p3 are primes between 3 and q.
-                                                                                                   1
-primes. Here is an argument that strongly suggests that         The integral we shall look at is 0 F (x)3 e(−nx) dx.
-our task is impossible: if n is over three times larger      From our discussion in the previous paragraph, we
-than the largest known prime, as it may very well be,        know that this will be the sum of all integrals of the
-                                                                    1
-then we cannot produce three primes that add up to           form 0 e(p1 x)e(p2 x)e(p3 x)e(−nx) dx. Now the first
-n with out finding a new prime. Indeed, we could take          basic property of e(x) tells us that this last integral
-                                                                          1
-                                     100
-n to be astronomically large, 1010 + 1, say, and then        is equal to 0 e((p1 + p2 + p3 − n)x) dx, and the sec-
-1                                                            ond one then tells us that it is 1 if p1 + p2 + p3 =
+Vinogradov three-primes theorem.
+   Imagine, then, that we have a very large odd integer
+n and we wish to prove that it is a sum of three odd
+primes. Here is an argument that strongly suggests that
+our task is impossible: if n is over three times larger
+than the largest known prime, as it may very well be,
+then we cannot produce three primes that add up to
+n with out finding a new prime. Indeed, we could take
+n to be astronomically large, 1010 + 1, say, and then
+1
 3 n would be far beyond any prime that has ever been
-discovered or is ever likely to be discovered.               n and 0 otherwise. Therefore, when we sum over all
-   This argument is, however, flawed, and the clue to         possible triples p1 , p2 , p3 of odd primes less than or
-what is wrong with it lies in the word “produce.” We         equal to n, we get a contribution of 1 for each triple
-do not have to produce the three primes to show              that adds up to n and 0 for all other triples. In other
-                                                                                     1
-that they exist, any more than Euclid had to specify         words, the integral 0 F (x)3 e(−nx) dx exactly equals
-an infinite sequence of primes in order to show that          the number of ways of writing n as a sum of three
-there were infinitely many. (For a proof that there are,      odd primes.
-see [IV.2 §2](/part-04/number-theory).) But, one might ask, what alternative could      This “reduces” our problem to that of estimating
-                                                                            1
-there possibly be to actually finding three odd primes        the integral 0 F (x)3 e(−nx) dx. But the function F (x)
-that add up to n?                                            looks rather difficult to analyze. Is it really feasible
-                                                                                                  
-   This question has a beautifully simple answer: we         to estimate an expression such as p ⩽N e(px), which
-shall attempt to count, or rather estimate, the number       mixes prime numbers with exponentials?
-of triples p1 , p2 , p3 of odd primes such that p1 + p2 +       Surprisingly, it is. The details are complicated, but
-p3 = n. If the estimate we manage to obtain is rather        the fact that it can be done becomes less mysterious
+discovered or is ever likely to be discovered.
+   This argument is, however, flawed, and the clue to
+what is wrong with it lies in the word “produce.” We
+do not have to produce the three primes to show
+that they exist, any more than Euclid had to specify
+an infinite sequence of primes in order to show that
+there were infinitely many. (For a proof that there are,
+see [IV.2 §2](/part-04/number-theory).) But, one might ask, what alternative could
+there possibly be to actually finding three odd primes
+that add up to n?
+   This question has a beautifully simple answer: we
+shall attempt to count, or rather estimate, the number
+of triples p1 , p2 , p3 of odd primes such that p1 + p2 +
+p3 = n. If the estimate we manage to obtain is rather
 large, and if in addition we can show that it is reason-     after one thinks for a moment about which exponen-
-ably accurate, then the actual number of such triples        tial sums we definitely can estimate. Are there at least
+ably accurate, then the actual number of such triples
 must also be rather large. This will imply that there is     some sets A of integers for which we can handle sums
-                                                                          
 such a triple, and will not require us to “produce” one.     of the form a∈A e(ax)? Yes there are: arithmetic pro-
-   However, our answer immediately raises a difficult-         gressions. Suppose A is the set {s, s + d, s + 2 d, . . . ,
-looking question: how do we estimate the number of           s + (m − 1)d}: that is, the arithmetic progression of
-such triples? This is where exponential sums come in.        length m and common difference d that starts at s.
-We shall use certain properties of the exponential           Then, using the basic properties of e(x), we find that
+   However, our answer immediately raises a difficult-
+looking question: how do we estimate the number of
+such triples? This is where exponential sums come in.
+We shall use certain properties of the exponential
+
+V. Theorems and Problems
+function [III.25](/part-03/the-exponential-and-logarithmic-functions) to reformulate our counting problem
+as a problem about estimating a certain integral.
+As is customary in this area, let us write e(x) instead
+of e2π ix . The two basic properties that we shall use of
+the function e(x) are that e(x+y) = e(x)e(y) and that
+1
+0 e(nx) dx = 1 if n = 0, and 0 if n is any other integer.
+
+Let us also adopt the convention that if we write p⩽n ,
+then we are summing over all odd primes less than or
+equal to n. Now define a function F (x) by the formula
+
+F (x) = e(3 x) + e(5 x) + e(7 x) + e(11 x) + · · · + e(qx),
+where q is the largest prime less than or equal to
+n. This is a sum of exponentials—hence the phrase
+“exponential sums.” Next, we consider the cube of this
+function:
+F (x)3 = (e(3 x) + e(5 x) + e(7 x) + · · · + e(qx))3 .
+When we multiply out the right-hand side, we obtain
+the sum of all terms of the form e(p1 x)e(p2 x)e(p3 x),
+where p1 , p2 , and p3 are primes between 3 and q.
+1
+The integral we shall look at is 0 F (x)3 e(−nx) dx.
+From our discussion in the previous paragraph, we
+know that this will be the sum of all integrals of the
+1
+form 0 e(p1 x)e(p2 x)e(p3 x)e(−nx) dx. Now the first
+basic property of e(x) tells us that this last integral
+1
+100
+is equal to 0 e((p1 + p2 + p3 − n)x) dx, and the sec-
+ond one then tells us that it is 1 if p1 + p2 + p3 =
+n and 0 otherwise. Therefore, when we sum over all
+possible triples p1 , p2 , p3 of odd primes less than or
+equal to n, we get a contribution of 1 for each triple
+that adds up to n and 0 for all other triples. In other
+1
+words, the integral 0 F (x)3 e(−nx) dx exactly equals
+the number of ways of writing n as a sum of three
+odd primes.
+This “reduces” our problem to that of estimating
+1
+the integral 0 F (x)3 e(−nx) dx. But the function F (x)
+looks rather difficult to analyze. Is it really feasible
+
+to estimate an expression such as p ⩽N e(px), which
+mixes prime numbers with exponentials?
+Surprisingly, it is. The details are complicated, but
+the fact that it can be done becomes less mysterious
+tial sums we definitely can estimate. Are there at least
+
+gressions. Suppose A is the set {s, s + d, s + 2 d, . . . ,
+s + (m − 1)d}: that is, the arithmetic progression of
+length m and common difference d that starts at s.
+Then, using the basic properties of e(x), we find that
 
 $V$ . $27$ .
 
@@ -124,64 +169,107 @@ other related results and techniques are discussed in [IV.2](/part-04/number-the
 It is not hard to prove that if A is any set of integers of size n, then the size of $A + A$ must be between $2n - 1$ and $n(n + 1)/2$ . (The first happens if A is an arithmetic progression and the second happens if all the sums you can make are different .) What can we say about A if the size of A + A is at most $100n$ , or, more generally, is at most Cn for some constant C that remains fixed as n tends to infinity? Suppose that we can find an arithmetic progression P of size at most $50n$ such that A is a subset of P . Then A + A is a subset of P + P , which has size at most $100n - 1$ .
 So if A is two percent of an arithmetic progression, then $A + A$ has size at most $100n$ . However, there are other ways of producing such sets. Suppose, for instance, that A consists of all numbers of up to seven digits such that the third, fourth, and fifth digits from the end are $0$ : that is, numbers such as 3500026
 
-718                                                                                        V. Theorems and Problems
+718
 
-or 99 000 90. There are 100 . imes 100 = 10 000 of these. If       it his theorem a aureum, or golden theorem), is consid-
-we add two of them together, then we get a number like        ered a crown jewel of number theory, and with good
-138 00 162 or 141 00 068, which is made up of a num-          cause. Where as its statement could be rediscovered
-ber between 0 and 198, followed by two 0 s, followed           by a sufficiently ingenious student (indeed, it actu-
-by a second number between 0 and 198 (written with            ally has been rediscovered on a regular basis at the
-0 s in front if these are needed to make it up to three        Arnold Ross mathematics summer program for several
+or 99 000 90. There are 100 . imes 100 = 10 000 of these. If
+we add two of them together, then we get a number like
+138 00 162 or 141 00 068, which is made up of a num-
+ber between 0 and 198, followed by two 0 s, followed
+by a second number between 0 and 198 (written with
+0 s in front if these are needed to make it up to three
 digits). There are 199 . imes 199 of these, which is less than     decades), rare is the student who comes up with a proof
-40 000. Therefore, the size of A + A is less than four        unassisted.
-times the size of A. However, A does not fill up two              The law is most conveniently stated in a formulation
-percent of any arithmetic progression P : such a pro-         due to legendre [VI.24](/part-06/adrien-marie-legendre-17521833). For n an integer not divisible
-gression would have to have common difference 1 and            by the prime p, write ( np ) = 1 if n is congruent to some
-include both the numbers 0 and 99 000 99, and 10 000          perfect square modulo p, and ( n   p ) = −1 if it is not. Then
-is nothing like two percent of 9 900 100.                     quadratic reciprocity states the following. (The prime 2
-   However, A is a very structured set: it is an example      must be treated separately.)
+40 000. Therefore, the size of A + A is less than four
+times the size of A. However, A does not fill up two
+percent of any arithmetic progression P : such a pro-
+gression would have to have common difference 1 and
+include both the numbers 0 and 99 000 99, and 10 000
+is nothing like two percent of 9 900 100.
+   However, A is a very structured set: it is an example
 of a two-dimensional arithmetic progression. Roughly
-                                                              Theorem (quadratic reciprocity). Suppose that p and
 speaking, an ordinary, or one-dimensional, arithmetic
-progression is one that you build up by starting with         q are two different primes, neither equal to 2. Then
-                                                                p    q
-a number s and repeatedly adding another one, d,              ( q )( p ) = −1 if p and q are both congruent to 3
-                                                                               p   q
-called the common difference. You build up a two-              modulo 4, and ( q )( p ) = 1 otherwise.
-dimensional arithmetic progression by using two “com-                                                          p    q
-                                                                 For instance, if p = 13 and q = 29, then ( q )( p ) = 1.
-mon differences” d1 and d2 . That is, you have a start-        Since 29 is congruent modulo 13 to the perfect square
-ing number s and you look at numbers of the form              16, it must be that 13 is congruent to some perfect
-s + ad1 + bd2 , specifying that a should be between 0         square modulo 29, and in fact 100 = 3 · 29 + 13.
-and m1 − 1 and b should be between 0 and m2 − 1.                 This statement is simple but also mysterious, be-
-Our set A is a two-dimensional progression with s = 0,        cause it violates our intuition that congruences mod-
-d1 = 1, d2 = 100 000, and m1 = m2 = 100.                      ulo different primes should act independently. For
-   In a similar way one can define higher-dimensional          instance, the Chinese remainder theorem asserts that
-progressions. It is not hard to show that if P is an r -      (in a suitably precise sense) knowing that a random
-dimensional progression, then the size of P + P is less       integer is odd or even does not prejudice it toward
+progression is one that you build up by starting with
+a number s and repeatedly adding another one, d,
+called the common difference. You build up a two-
+dimensional arithmetic progression by using two “com-
+mon differences” d1 and d2 . That is, you have a start-
+ing number s and you look at numbers of the form
+s + ad1 + bd2 , specifying that a should be between 0
+and m1 − 1 and b should be between 0 and m2 − 1.
+Our set A is a two-dimensional progression with s = 0,
+d1 = 1, d2 = 100 000, and m1 = m2 = 100.
+   In a similar way one can define higher-dimensional
+progressions. It is not hard to show that if P is an r -
+dimensional progression, then the size of P + P is less
 than 2 r times the size of P . Therefore, if A is a subset     having any particular remainder modulo 3. Number
-of P and the size of P is at most C times the size of A,      theorists are fond of using geometric language to
+of P and the size of P is at most C times the size of A,
 then the size of A + A is at most the size of P + P , which   describe this situation, referring to phenomena asso-
-is at most 2 r C times the size of A.                          ciated with congruences modulo a single prime (or
-   This tells us that if A is a large subset of a low-        a power of a single prime) as local phenomena (see
-dimensional arithmetic progression, then A has a small        local and global in number theory [III.51](/part-03/local-and-global-in-number-theory)). The
-sumset. Freiman’s theorem is the remarkable statement         Chinese remainder theorem can be interpreted as say-
-that these are the only sets with small sumsets. That         ing that local phenomena at one point really are local,
-is, if A + A is not much larger than A, then there must       in that they do not influence local phenomena at
-be some low-dimensional arithmetic progression P that         another point. However, just as a particle physicist can-
-contains A and is not much bigger than A. Exponential         not explain the behavior of the universe by analyz-
-sums are vital for the proof of this theorem as well.         ing individual particles in isolation, one cannot hope
+is at most 2 r C times the size of A.
+   This tells us that if A is a large subset of a low-
+dimensional arithmetic progression, then A has a small
+sumset. Freiman’s theorem is the remarkable statement
+that these are the only sets with small sumsets. That
+is, if A + A is not much larger than A, then there must
+be some low-dimensional arithmetic progression P that
+contains A and is not much bigger than A. Exponential
+sums are vital for the proof of this theorem as well.
 Freiman’s theorem has had many applications, and is
-                                                              to understand the behavior of integers by looking at
 likely to have many more.
-                                                              individual primes in isolation. Quadratic reciprocity
-                                                              thus emerges as one of the first known examples of
-V.28 From Quadratic Reciprocity to                            a global phenomenon, proving to be a “fundamental
-     Class Field Theory                                       force” that binds together two different primes. The
-        Kiran S. Kedlaya                                      interplay between local and global is built thoroughly
-                                                              into our modern understanding of number theory, but
-The law of quadratic reciprocity, discovered by euler         the phenomenon of quadratic reciprocity was where it
-[VI.19](/part-06/leonhard-euler-17071783) and first proved by gauss [VI.26](/part-06/carl-friedrich-gauss-17771855) (who dubbed          first came to light.
+V.28 From Quadratic Reciprocity to
+     Class Field Theory
+
+The law of quadratic reciprocity, discovered by euler
+[VI.19](/part-06/leonhard-euler-17071783) and first proved by gauss [VI.26](/part-06/carl-friedrich-gauss-17771855) (who dubbed
+
+V. Theorems and Problems
+it his theorem a aureum, or golden theorem), is consid-
+ered a crown jewel of number theory, and with good
+cause. Where as its statement could be rediscovered
+by a sufficiently ingenious student (indeed, it actu-
+ally has been rediscovered on a regular basis at the
+Arnold Ross mathematics summer program for several
+unassisted.
+The law is most conveniently stated in a formulation
+due to legendre [VI.24](/part-06/adrien-marie-legendre-17521833). For n an integer not divisible
+by the prime p, write ( np ) = 1 if n is congruent to some
+perfect square modulo p, and ( n   p ) = −1 if it is not. Then
+quadratic reciprocity states the following. (The prime 2
+must be treated separately.)
+Theorem (quadratic reciprocity). Suppose that p and
+q are two different primes, neither equal to 2. Then
+p    q
+( q )( p ) = −1 if p and q are both congruent to 3
+p   q
+modulo 4, and ( q )( p ) = 1 otherwise.
+p    q
+For instance, if p = 13 and q = 29, then ( q )( p ) = 1.
+Since 29 is congruent modulo 13 to the perfect square
+16, it must be that 13 is congruent to some perfect
+square modulo 29, and in fact 100 = 3 · 29 + 13.
+This statement is simple but also mysterious, be-
+cause it violates our intuition that congruences mod-
+ulo different primes should act independently. For
+instance, the Chinese remainder theorem asserts that
+(in a suitably precise sense) knowing that a random
+integer is odd or even does not prejudice it toward
+theorists are fond of using geometric language to
+ciated with congruences modulo a single prime (or
+a power of a single prime) as local phenomena (see
+local and global in number theory [III.51](/part-03/local-and-global-in-number-theory)). The
+Chinese remainder theorem can be interpreted as say-
+ing that local phenomena at one point really are local,
+in that they do not influence local phenomena at
+another point. However, just as a particle physicist can-
+not explain the behavior of the universe by analyz-
+ing individual particles in isolation, one cannot hope
+to understand the behavior of integers by looking at
+individual primes in isolation. Quadratic reciprocity
+thus emerges as one of the first known examples of
+a global phenomenon, proving to be a “fundamental
+force” that binds together two different primes. The
+Kiran S. Kedlaya
+into our modern understanding of number theory, but
+the phenomenon of quadratic reciprocity was where it
+first came to light.
 
 $V$ . $28$ .
 
@@ -211,133 +299,187 @@ One might expect to find an nth power reciprocity law that looks like this by wo
 (Even if an ideal is the set of all multiples of some number, that number is not unique, since one can multiply it by a unit. For instance, both $2$ and $- 2$ generate the ideal of all even numbers .) Using Kummer’s theory, Kummer and Eisenstein managed to formulate broad generalizations of quadratic reciprocity for higher powers. hilbert [VI.63](/part-06/david-hilbert-18621943) then realized that these should fit together as part of some sort of maximally general reciprocity law.
 He also gave a candidate for this law, inspired by a reformulation of quadratic reciprocity itself in terms of the norm residue symbol. For a prime p, and any nonzero integers $m$ and $n$, the norm residue m, n symbol (p) equals $1$ if, for all sufficiently large k, the equations $mx^{2} + ny^{2}$ ≡ $z^{2} ($ mod $p^{k})$ have solutions where x, y, and z are not all divisible by p k ; otherwise the symbol equals $- 1$ . In other words, the symbol equals $1$ if the equation $mx^{2} + ny^{2} = z^{2}$ has $a$ solution in the p-adic numbers [III.51](/part-03/local-and-global-in-number-theory) .
 
-720                                                                                         V. Theorems and Problems
+720
 
-  Hilbert’s formulation of quadratic reciprocity is that,      problem) remains mostly unsolved, except in some spe-
-for any nonzero m and n,                                       cial cases. For instance, the theory of elliptic func-
-                    m, n                                      tions [V.31](/part-05/the-riemannroch-theorem) solves this problem for fields of the form
-                               = 1,                               . qrt{p}                                    Q( −d) with d > 0 via the theory of complex multi-
-                    p
-                                                               plication. Some additional examples emerged from the
+  Hilbert’s formulation of quadratic reciprocity is that,
+for any nonzero m and n,
+
 where the product is taken over all primes p and the
-                                                               work of Shimura on modular forms [III.59](/part-03/modular-forms), leading to
 prime p = . nfty. The latter requires some explanation: we
-         m, n                                                   the Shimura reciprocity law.
+
 write ( . nfty ) = 1 if and only if m and n are not both neg-
-                                                                  This last example shows that the story of reci-
 ative, i.e., if the equation mx 2 +ny 2 = z2 has a solution
-                                                               pro city laws is not yet complete. Any new instance of
 in the real numbers. This fits into a general pattern, that
-                                                               explicit class field theory would reveal another reci-
 conditions quantified over “all prime numbers” must
-                                                               pro city law that had previously been hidden from view.
 also account for the so-called infinite prime.
-                                                               Some exciting new conjectures in this direction have
    It should also be clarified that Hilbert’s product only
-                                                               been advanced by Bertolini, Darmon, and Dasgupta,
 makes sense by virtue of the fact that, for fixed m
-                                                               who have proposed some new constructions of Abe-
-and n, ( m, n  p ) = 1 for all but finitely many p. This is      lian extensions using p-adic analysis. These are analo-
+and n, ( m, n  p ) = 1 for all but finitely many p. This is
 because in general, since approximately half the inte-
-                                                               gous to the aforementioned constructions using ellip-
 gers mod p k are quadratic residues, it is easy to solve
-                                                               tic functions, in which one evaluates a transcendental
 the equation mx 2 + ny 2 = z2 : difficulties arise only
-                                                               function at a special value. At first, there seems to be no
 when multiplication by m or n identifies many of these
-                                                               reason to expect the resulting complex number to have
 quadratic residues. For instance, if m and n are (posi-
-                                                               any special properties, but in fact it turns out to be an
 tive) prime numbers, then only those two primes con-
-                                                               algebraic number that generates an appropriate Abe-
 tribute to the product; the two resulting factors can be
-                                                               lian extension of the base field. While one can check in
-related to ( m            n
-                n ) and ( m ), which leads back to quadratic
-                                                               individual examples, using computer calculations, that
+related to ( m
+
 reciprocity.
-                                                               the construction seems to be converging p-adically to
    Using this formulation, Hilbert was able to state and
-                                                               a particular generator of the right field, a proof seems
 prove a form of quadratic reciprocity over any num-
-                                                               out of reach at present.
 ber field [III.63](/part-03/number-fields), in which the corresponding product
 of symbols is quantified over the prime ideals of the
-                                                               Further Reading
 number field (together with some “infinite primes”).
-Hilbert also conjectured a higher-power reciprocity law        Ireland, K., and M. Rosen. 1990. A Classical Introduction to
-over any number field. That conjecture was tackled by             Modern Number Theory, 2 nd edn. New York: Springer.
-Hasse, Takagi, and finally artin [VI.86](/part-06/emil-artin-18981962), who stated a          Lemmermeyer, F. 2000. Reciprocity Laws, from Euler to
-general reciprocity law. Its statement is a bit too techni-      Eisenstein. Berlin: Springer.
+Hilbert also conjectured a higher-power reciprocity law
+over any number field. That conjecture was tackled by
+Hasse, Takagi, and finally artin [VI.86](/part-06/emil-artin-18981962), who stated a
+general reciprocity law. Its statement is a bit too techni-
 cal to include here; we limit ourselves to observing that
 Artin’s reciprocity law, when applied to a number field
-K, describes certain norm residue symbols in terms of          V.29     Rational Points on Curves and
-Abelian extensions of K, i.e., number fields containing                  the Mordell Conjecture
+K, describes certain norm residue symbols in terms of
+Abelian extensions of K, i.e., number fields containing
 K whose groups of symmetries (galois groups [V.21](/part-05/the-insolubility-of-the-quintic))
-are commutative.                                               Suppose that we wish to study a Diophantine equation
-   The Abelian extensions of Q are easy to describe: the       such as x 3 + y 3 = z3 . A simple observation we can
-Kronecker–Weber theorem asserts that they are all con-         make is that studying integer solutions to this equation
-tained in fields generated by roots of 1. This explains         is more or less equivalent to studying rational solutions
-the role of the roots of 1 in the classical reciprocity        to the equation a3 + b 3 = 1: indeed, if we had integers
-laws. However, describing the Abelian extensions of an         x, y, and z such that x 3 + y 3 = z3 , then we could set
-arbitrary number field K is some what harder. They can           a = x/z and b = y/z and obtain rational numbers with
-at least be classified in terms of the structure of the         a3 + b3 = 1. Conversely, given rational numbers a and
-field K itself; this is what is commonly referred to as         b with a3 + b 3 = 1, we could multiply a and b by the
-class field theory.                                             lowest common multiple z of their denominators and
-   However, the problem of explicitly specifying gener-        set x = az and y = bz, obtaining integers x, y, and z
-ators of the Abelian extensions of K (Hilbert’s twelfth        such that x 3 + y 3 = z3 .
+are commutative.
+   The Abelian extensions of Q are easy to describe: the
+Kronecker–Weber theorem asserts that they are all con-
+tained in fields generated by roots of 1. This explains
+the role of the roots of 1 in the classical reciprocity
+laws. However, describing the Abelian extensions of an
+arbitrary number field K is some what harder. They can
+at least be classified in terms of the structure of the
+field K itself; this is what is commonly referred to as
+class field theory.
+   However, the problem of explicitly specifying gener-
+ators of the Abelian extensions of K (Hilbert’s twelfth
 
-V.29.   Rational Points on Curves and the Mordell Conjecture                                                       721
+V. Theorems and Problems
+problem) remains mostly unsolved, except in some spe-
+cial cases. For instance, the theory of elliptic func-
+ m, n
+= 1,                               . qrt{p}                                    Q( −d) with d > 0 via the theory of complex multi-
+p
+plication. Some additional examples emerged from the
+work of Shimura on modular forms [III.59](/part-03/modular-forms), leading to
+m, n
+This last example shows that the story of reci-
+pro city laws is not yet complete. Any new instance of
+explicit class field theory would reveal another reci-
+pro city law that had previously been hidden from view.
+Some exciting new conjectures in this direction have
+been advanced by Bertolini, Darmon, and Dasgupta,
+who have proposed some new constructions of Abe-
+lian extensions using p-adic analysis. These are analo-
+gous to the aforementioned constructions using ellip-
+tic functions, in which one evaluates a transcendental
+function at a special value. At first, there seems to be no
+reason to expect the resulting complex number to have
+any special properties, but in fact it turns out to be an
+algebraic number that generates an appropriate Abe-
+lian extension of the base field. While one can check in
+n
+n ) and ( m ), which leads back to quadratic
+individual examples, using computer calculations, that
+the construction seems to be converging p-adically to
+a particular generator of the right field, a proof seems
+out of reach at present.
+Further Reading
+Ireland, K., and M. Rosen. 1990. A Classical Introduction to
+Modern Number Theory, 2 nd edn. New York: Springer.
+Lemmermeyer, F. 2000. Reciprocity Laws, from Euler to
+Eisenstein. Berlin: Springer.
+V.29     Rational Points on Curves and
+the Mordell Conjecture
+Suppose that we wish to study a Diophantine equation
+such as x 3 + y 3 = z3 . A simple observation we can
+make is that studying integer solutions to this equation
+is more or less equivalent to studying rational solutions
+to the equation a3 + b 3 = 1: indeed, if we had integers
+x, y, and z such that x 3 + y 3 = z3 , then we could set
+a = x/z and b = y/z and obtain rational numbers with
+a3 + b3 = 1. Conversely, given rational numbers a and
+b with a3 + b 3 = 1, we could multiply a and b by the
+lowest common multiple z of their denominators and
+set x = az and y = bz, obtaining integers x, y, and z
+such that x 3 + y 3 = z3 .
 
-   The advantage of doing this is that it reduces the                                                  R'
+V.29.   Rational Points on Curves and the Mordell Conjecture
+
+   The advantage of doing this is that it reduces the
 number of variables by 1 and focuses our attention on
 the plane curve u3 + v 3 = 1, which is a simpler object
-than the surface x 3 + y 3 = z3 . A curve of this kind,                      E              Q
+than the surface x 3 + y 3 = z3 . A curve of this kind,
 defined by one or more polynomial equations, is called
 an algebraic curve.
    Even though we are interested in rational points on
 the curve, it can be helpful to regard the curve as
-an abstract object that has many manifestations. (See                         P
+an abstract object that has many manifestations. (See
 arithmetic geometry [IV.5](/part-04/arithmetic-geometry) for a fuller discussion of
-                                                                     L
 this point.) For instance, if we think of u and v as com-
 plex numbers, then the “curve” u3 + v 3 = 1 becomes
-                                                                                                            R
 a two-dimensional object, which means that it starts
 to have a genuinely interesting geometry. To be pre-
-cise, it can be regarded as a two-dimensional manifold             Figure 1 The group law for an elliptic curve.
+cise, it can be regarded as a two-dimensional manifold
 [I.3 §6.9](/part-01/fundamental-definitions) living in R4 . From a complex perspective it is
-a one-dimensional subset of C2 , but from either per-        operation on it as follows: given any two points P and
-spec tive it has a potentially interesting topology. For      Q on E, let L be the line through P and Q (where we
-instance, if we compactify [III.9](/part-03/compactness-and-compactication) the curve by consid-      define this to be the tangent to the curve at P if P = Q ).
-ering it as a subset not of C2 but of the complex pro-       In general, L intersects E in three points, of which P
+a one-dimensional subset of C2 , but from either per-
+spec tive it has a potentially interesting topology. For
+instance, if we compactify [III.9](/part-03/compactness-and-compactication) the curve by consid-
+ering it as a subset not of C2 but of the complex pro-
 jective plane [I.3 §6.7](/part-01/fundamental-definitions), then we turn it into a compact     and Q are two; let R be the third. Finally, let R be
-surface. As such, it must have a genus [III.33](/part-03/genus), which,      the reflection of R in the x-axis (which also belongs
-roughly speaking, tells us how many holes it has.            to E because E has the form y 2 = f (x)). This con-
+surface. As such, it must have a genus [III.33](/part-03/genus), which,
+roughly speaking, tells us how many holes it has.
    Surprisingly, it turns out that this geometrical def-     struc tion of R from P and Q , which is illustrated in
-inition of the genus of a curve is intimately related        figure 1, defines a binary operation on the points of
-to the algebraic question of how many rational points        E. Remarkably, this binary operation turns E into an
-the curve contains. Consider, for instance, the curve        Abelian group, at least when we also include a point
-u2 + v 2 = 1, which corresponds to the Diophantine           at infinity and adopt the convention that the point at
+inition of the genus of a curve is intimately related
+to the algebraic question of how many rational points
+the curve contains. Consider, for instance, the curve
+u2 + v 2 = 1, which corresponds to the Diophantine
 equation x 2 + y 2 = z 2 . Since there are infinitely many    infinity is the intersection of E with any vertical line.
 Pythagorean triples that are not multiples of each other,    The point at infinity is the identity of the group, since a
-there are infinitely many rational points on the curve        vertical line through a point P intersects E in the reflec-
-u2 + v 2 = 1. In order to calculate the genus of the         tion P of P in the x-axis, and when we reflect P in the
-curve, we first rewrite it as (u + iv)(u − iv) = 1. This      x-axis we get P again.
-shows that the function (u, v) → u+iv is a homeomor-           It is laborious, but basically straightforward, to come
-phism from the curve to the set C \ {0} of all nonzero       up with a formula for the “group law” of an elliptic
-complex numbers, which itself is homeomorphic to a           curve—that is, a formula for the coordinates of R in
-sphere with two points removed. The compactification          terms of the coordinates of P and Q . Once one does so,
+there are infinitely many rational points on the curve
+u2 + v 2 = 1. In order to calculate the genus of the
+curve, we first rewrite it as (u + iv)(u − iv) = 1. This
+shows that the function (u, v) → u+iv is a homeomor-
+phism from the curve to the set C \ {0} of all nonzero
+complex numbers, which itself is homeomorphic to a
+sphere with two points removed. The compactification
 adds in these points, giving us a surface of genus 0, so     it becomes clear that if P and Q have rational coordin-
 we say that the curve u2 + v 2 = 1 has genus 0. It turns     ates, then so does R. Thus, the set of all rational points
 out that a curve of genus 0 always has either no rational    on an elliptic curve E forms a subgroup. This simple
-points or infinitely many.                                    fact can be used to produce rather easily some very
+points or infinitely many.
    In general, the larger the genus, the harder it is to     large solutions to the corresponding Diophantine equa-
-find rational solutions. A curve of genus 1 is called         tions. For instance, one can start with a small solu-
+find rational solutions. A curve of genus 1 is called
 an elliptic curve [III.21](/part-03/elliptic-curves). It is possible for an ellip-     tion, associate with it a rational point P, and then use
-tic curve to contain infinitely many rational points as       the formula for the binary operation to calculate 2 P,
+tic curve to contain infinitely many rational points as
 well, but the set of such points turns out to have a very    then 4 P, then 8 P, and so on. Unless n P = 0 for some
 restricted structure. To explain this, let us consider an    n (which can certainly happen), in no time at all one
-elliptic curve E of the form y 2 = ax 3 + bx 2 + cx + d      has a point on the curve with rational coordinates that
+elliptic curve E of the form y 2 = ax 3 + bx 2 + cx + d
 (a form into which any elliptic curve can be put). If we     have huge numerators and denominators. To give an
 think of it as a curve in R2 , then we can define a binary    idea of the sort of solutions that can be obtained in
+
+721
+R'
+E
+P
+L
+R
+Figure 1 The group law for an elliptic curve.
+operation on it as follows: given any two points P and
+Q on E, let L be the line through P and Q (where we
+define this to be the tangent to the curve at P if P = Q ).
+In general, L intersects E in three points, of which P
+the reflection of R in the x-axis (which also belongs
+to E because E has the form y 2 = f (x)). This con-
+figure 1, defines a binary operation on the points of
+E. Remarkably, this binary operation turns E into an
+Abelian group, at least when we also include a point
+at infinity and adopt the convention that the point at
+vertical line through a point P intersects E in the reflec-
+tion P of P in the x-axis, and when we reflect P in the
+x-axis we get P again.
+It is laborious, but basically straightforward, to come
+up with a formula for the “group law” of an elliptic
+curve—that is, a formula for the coordinates of R in
+terms of the coordinates of P and Q . Once one does so,
+fact can be used to produce rather easily some very
+tions. For instance, one can start with a small solu-
+the formula for the binary operation to calculate 2 P,
+has a point on the curve with rational coordinates that

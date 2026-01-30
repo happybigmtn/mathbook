@@ -27,72 +27,103 @@ b. Kraków, Poland, 1892 ;  d. Lwów, Poland, 1945 Functional analysis; real ana
 Two years after his studies were interrupted by the out break of World War I, Banach returned to Kraków, where on a summer evening in 1916 he was “discovered” by Hugo Steinhaus, who over heard the words “Lebesgue integral” and brought him to Lwów. Steinhaus considered this event as his “greatest mathematical discovery.” It was also through Steinhaus that Banach met his future wife, Łucja Braus, whom he married in 1920 . In the same year Professor Antoni Łomnicki engaged Banach as his assistant at the Lwów Polytechnic, even though Banach had not yet finished his studies.
 This was the beginning of the meteoric rise of Banach’s scientific career. In June 1920 Banach defended his doctoral dissertation, “On operations on abstract sets and their application to integral equations,” at the Jan Kazimierz University in Lwów. His dissertation was written in Polish and published in 1922 in French. In his thesis Banach introduced the concept of complete normed linear spaces,
 
-810                                                                                              VI. Mathematicians
+810
 
-which are today known as banach spaces [III.62](/part-03/normed-spaces-and-banach-spaces) (the          The next day Banach was likely to appear with several
-name was proposed by Fréchet in 1928). The theory             small sheets of paper containing out lines of proofs he
-combined the contributions of riesz [VI.74](/part-06/frigyes-frdric-riesz-18801956), Volterra,        had completed.
+which are today known as banach spaces [III.62](/part-03/normed-spaces-and-banach-spaces) (the
+name was proposed by Fréchet in 1928). The theory
+combined the contributions of riesz [VI.74](/part-06/frigyes-frdric-riesz-18801956), Volterra,
 fredholm [VI.66](/part-06/ivar-fredholm-18661927), Lévy, and hilbert [VI.63](/part-06/david-hilbert-18621943) on con-
-                                                            One day in 1935, Banach proposed that the open prob-
 crete spaces and on integral equations into a general
-                                                            lems should be collected in a notebook. This notebook
 theory. Banach’s dissertation could be viewed as the
-                                                            later became famous under the name “The Scottish
 birth of functional analysis, since Banach spaces are one
-                                                            Book.” In the years 1935–41 over 190 problems from
 of its central objects of study.
-                                                            various branches of mathematical analysis were pro-
    On April 17, 1922, the Jan Kazimierz University in
-                                                            posed in this notebook, and the collection was pub-
 Lwów awarded Banach his habilitation (a degree allow-
-                                                            lished in English in 1957 by Ulam. A version with
 ing him to teach at the university), after which he was
-                                                            commentaries was published in 1981 by Birkhäuser as
 appointed Docent in Mathematics. On July 22, 1922,
-                                                            The Scottish Book, Mathematics from the Scottish Café
 he became a professor of the university (and a full
-                                                            (edited by R. D. Mauldin).
 professor from 1927). Banach achieved great research
-                                                               Banach was also the author of the books Mechanics
 results and became an authority in functional analy-
-                                                            (in two volumes, 1929 and 1930; English translation
 sis and measure theory [III.55](/part-03/measures). During the academic
-                                                            in 1951), Differential and Integral Calculus (in two vol-
 year 1924–25 Banach was on sabbatical leave in Paris,
-                                                            umes, 1929 and 1930, with several editions in Polish),
 where he met lebesgue [VI.72](/part-06/henri-lebesgue-18751941), who became a lifelong
-friend.                                                     Introduction to the Theory of Real Functions (in two vol-
-                                                            umes, written by Banach before the war, although only
+friend.
    In Lwów a group of talented young mathematicians
-around Banach and Steinhaus soon became the Lwów            the first volume remains), and ten textbooks (jointly
-School of Mathematics and started the journal Stu-          written with Stożek and sierpiński [VI.77](/part-06/wacaw-sierpinski-18821969)) for primary
-dia Mathematica in 1929. Among the members of this          and secondary schools on arithmetic, geometry, and
+around Banach and Steinhaus soon became the Lwów
+School of Mathematics and started the journal Stu-
+dia Mathematica in 1929. Among the members of this
 school were S. Mazur, S. Ulam, W. Orlicz, J. P. Schauder,   algebra (published in the years 1930–36 and reprinted
-H. Auerbach, M. Kac, S. Kaczmarz, S. Ruziewicz, and         in 1944–47).
-W. Nikliborc. Banach also collaborated with Steinhaus,         Banach’s famous discoveries in functional analysis
-Saks, and Kuratowski. Many of these mathematicians          had three important steps. First, he considered abstract
-were later killed by the Germans during the occupation      linear spaces, where functions are treated like points
-of Poland.                                                  or vectors, sets of functions as function spaces, and
-   In 1932, Banach’s famous book Theory of Linear           operations on functions as operators. Second, he intro-
-Operations appeared in French (a Polish version was         duced the norm  ·  of a mathematical object, that
-published the year before) as part of a new series of       is, a quantity that in some (possibly abstract) sense
-mathematical monographs, of which he was one of the         describes the length, size, or extent of the object. The
-founders. This was the first monograph on functional         distance between two abstract elements x and y is then
-analysis as an independent discipline, and it was the       given naturally by d(x, y) = x − y. The third impor-
-culmination of more than a decade of intense activity       tant step was to introduce the notion of “complete-
-by Banach and others.                                       ness” for these spaces. In such general spaces (Banach
-   Banach and the mathematicians around him liked           spaces) he was able to prove several fundamental the-
-to discuss mathematics in the Café Szkocka (“Scottish       orems, like the uniform boundedness principle, the
-café”). This unconventional way of doing mathemat-          open mapping theorem, and the closed graph theorem.
-ics made the atmosphere of Lwów unique—it is one            What these results say, roughly speaking, is that in a
-of the rare cases in mathematics of genuine teamwork        Banach space we cannot have bad (pathological) behav-
-among a large group. Turowicz and Ulam noted that           ior every where—there is always some part of the space
-(see Kaluza 1996, pp. 62, 74):                              where our linear map or other object is well-behaved.
-                                                               Names like Banach space, Banach algebra, Banach
-  Banach liked to spend most of his days in a café. He      lattice, Banach manifold, Banach measure, the Hahn–
+H. Auerbach, M. Kac, S. Kaczmarz, S. Ruziewicz, and
+W. Nikliborc. Banach also collaborated with Steinhaus,
+Saks, and Kuratowski. Many of these mathematicians
+were later killed by the Germans during the occupation
+of Poland.
+   In 1932, Banach’s famous book Theory of Linear
+Operations appeared in French (a Polish version was
+published the year before) as part of a new series of
+mathematical monographs, of which he was one of the
+founders. This was the first monograph on functional
+analysis as an independent discipline, and it was the
+culmination of more than a decade of intense activity
+by Banach and others.
+   Banach and the mathematicians around him liked
+to discuss mathematics in the Café Szkocka (“Scottish
+café”). This unconventional way of doing mathemat-
+ics made the atmosphere of Lwów unique—it is one
+of the rare cases in mathematics of genuine teamwork
+among a large group. Turowicz and Ulam noted that
+(see Kaluza 1996, pp. 62, 74):
+  Banach liked to spend most of his days in a café. He
   liked the noise and the music. They did not prevent
-                                                            Banach theorem, the Banach fixed point theorem,
   him from concentrating and thinking. It was difficult to
   out last or out drink Banach during these sessions. Prob-   the Banach–Mazur game, the Banach–Mazur distance
-  lems posed right there were discussed, often with no      between isomorphic spaces, Banach limits, the Ban-
+  lems posed right there were discussed, often with no
   solution evident even after several hours of thinking.    ach–Saks property, the Banach–Alaoglu theorem, and
+
+VI. Mathematicians
+The next day Banach was likely to appear with several
+small sheets of paper containing out lines of proofs he
+had completed.
+One day in 1935, Banach proposed that the open prob-
+lems should be collected in a notebook. This notebook
+later became famous under the name “The Scottish
+Book.” In the years 1935–41 over 190 problems from
+various branches of mathematical analysis were pro-
+posed in this notebook, and the collection was pub-
+lished in English in 1957 by Ulam. A version with
+commentaries was published in 1981 by Birkhäuser as
+The Scottish Book, Mathematics from the Scottish Café
+(edited by R. D. Mauldin).
+Banach was also the author of the books Mechanics
+(in two volumes, 1929 and 1930; English translation
+in 1951), Differential and Integral Calculus (in two vol-
+umes, 1929 and 1930, with several editions in Polish),
+Introduction to the Theory of Real Functions (in two vol-
+umes, written by Banach before the war, although only
+the first volume remains), and ten textbooks (jointly
+written with Stożek and sierpiński [VI.77](/part-06/wacaw-sierpinski-18821969)) for primary
+and secondary schools on arithmetic, geometry, and
+in 1944–47).
+Banach’s famous discoveries in functional analysis
+had three important steps. First, he considered abstract
+linear spaces, where functions are treated like points
+or vectors, sets of functions as function spaces, and
+operations on functions as operators. Second, he intro-
+duced the norm  ·  of a mathematical object, that
+is, a quantity that in some (possibly abstract) sense
+describes the length, size, or extent of the object. The
+distance between two abstract elements x and y is then
+given naturally by d(x, y) = x − y. The third impor-
+tant step was to introduce the notion of “complete-
+ness” for these spaces. In such general spaces (Banach
+spaces) he was able to prove several fundamental the-
+orems, like the uniform boundedness principle, the
+open mapping theorem, and the closed graph theorem.
+What these results say, roughly speaking, is that in a
+Banach space we cannot have bad (pathological) behav-
+ior every where—there is always some part of the space
+where our linear map or other object is well-behaved.
+Names like Banach space, Banach algebra, Banach
+lattice, Banach manifold, Banach measure, the Hahn–
+Banach theorem, the Banach fixed point theorem,
+between isomorphic spaces, Banach limits, the Ban-

@@ -1,62 +1,96 @@
 # Mathematics and Cryptography
 
-VII.7.   Mathematics and Cryptography                                                                              887
+VII.7.   Mathematics and Cryptography
 
-   Over the years, coding theory has amassed a wide          and algorithmic developments to meet this need. It has
-variety of results. Some of these give better con struc-      also provided entirely new possibilities, such as “digital
-tions of codes with faster algorithms. Others provide        signatures” (which will be discussed later).
-theoretical upper limits on how well codes can per-             One of the oldest and most basic methods of cryptog-
-form. The theory uses an enormous variety of math-           raphy is simple substitution. Suppose that a message to
-ematical tools, many of them more advanced than the          be enciphered consists of a piece of English text. Before
-ones described in this article. Most not able among them      it is sent, the sender and recipient agree on a permu-
-are algebraic geometry and graph theory, which are           tation of the twenty-six letters of the alphabet, which
-used to construct very good codes, and the theory of         they keep private. An enciphered message might then
-orthogonal polynomials, which is used to prove limits        look something like
+   Over the years, coding theory has amassed a wide
+variety of results. Some of these give better con struc-
+tions of codes with faster algorithms. Others provide
+theoretical upper limits on how well codes can per-
+form. The theory uses an enormous variety of math-
+ematical tools, many of them more advanced than the
+ones described in this article. Most not able among them
+are algebraic geometry and graph theory, which are
+used to construct very good codes, and the theory of
+orthogonal polynomials, which is used to prove limits
 on parameters of codes, such as their rate and relia-
-                                                                       ZPLKKWL MFUPP UFL XA EUXMFLP
 bility. Most of the highlights of this vast literature are
-covered in Pless and Huffman (1998).                          For very short messages this method is reasonably
-                                                             secure—it is just possible to work out the meaning
-Further Reading                                              of the above example by matching letter patterns to
+covered in Pless and Huffman (1998).
+Further Reading
 Hamming, R. W. 1950. Error detecting and error correcting    those commonly seen in English, but it is quite chal-
-  codes. Bell System Technical Journal 29:147–60.            leng ing! However, for longer messages, simply count-
+  codes. Bell System Technical Journal 29:147–60.
 Forney Jr., G. D. 1966. Concatenated Codes. Cambridge, MA:   ing the frequencies of each letter and comparing those
-  MIT Press.                                                 counts with the frequencies of letters in natural lan-
+  MIT Press.
 Peters on, W. W. 1960. Encoding and error-correction pro-     guage will almost always reveal the hidden permutation
   cedures for Bose–Chaudhuri codes. IEEE Transactions on     sufficiently to allow the meaning to be easily recovered.
   Information Theory 6:459–70.
-                                                                A major leap forward in cryptography came with the
 Pless, V. S., and W. C. Huffman, eds. 1998. Handbook of
-  Coding Theory, two volumes. Amsterdam: North-Holland.      advent of mechanical encryption devices in the twenti-
+  Coding Theory, two volumes. Amsterdam: North-Holland.
 Reed, I. S., and G. Solomon. 1960. Polynomial codes over     eth century, of which the German Enigma used during
   certain finite fields. SIAM Journal of Applied Mathematics   World War II is perhaps the most famous example. An
-  8:300–4.                                                   account of the fascinating Enigma story and the role of
+  8:300–4.
 Shannon, C. E. 1948. A mathematical theory of communica-     the code breakers of Bletchley Park appears in Simon
   tion. Bell System Technical Journal 27:379–423, 623–56.    Singh’s excellent book on cryptography (Singh 1999).
-                                                             It is interesting that the principle on which Enigma
-VII.7 Mathematics and Cryptography                           operates is a development of the simple substitution
-                                                             method. Each letter of the input message is enciphered
-         Clifford Cocks
-                                                             exactly as a simple substitution, but with the addi-
-                                                             tional rule that the permutation controlling the sub-
-            1   Introduction and History
-                                                             stitution changes after every letter. A complex electro-
-Cryptography is the science of hiding the meaning or         mechanical device controls the substitution process in
-content of communications. The aim is that an adver-         a deterministic way. The recipient can decipher the
-sary who sees a message only in its enciphered state         message only if he or she can set up another device
-cannot make sense of or derive useful information from       in exactly the same way as the originator. The informa-
-what is seen. On the other hand, the intended recip-         tion needed to do this is called the key. Making sure
-ient must be able to decipher the true meaning. For          that keys are known only by the right people is called
-most of history cryptography has been an art practiced       key management. Until the advent of public-key cryp-
-seriously only by a few—such as governments for mil-         tography (to be discussed later), key management was
-itary and diplomatic communications—for whom the             a major inconvenience and expense for anyone wanting
-consequences of unauthorized disclosure of informa-          to secure their communications.
+VII.7 Mathematics and Cryptography
+
+Cryptography is the science of hiding the meaning or
+content of communications. The aim is that an adver-
+sary who sees a message only in its enciphered state
+cannot make sense of or derive useful information from
+what is seen. On the other hand, the intended recip-
+ient must be able to decipher the true meaning. For
+most of history cryptography has been an art practiced
+seriously only by a few—such as governments for mil-
+itary and diplomatic communications—for whom the
+consequences of unauthorized disclosure of informa-
 tion are damaging enough to justify the expense and
-inconvenience of enciphering messages. Recently this                   2    Stream Ciphers and Linear
-has changed: one of the results of the information rev-                    Feedback Shift Registers
+inconvenience of enciphering messages. Recently this
+has changed: one of the results of the information rev-
 olution has been the need for instant and secure com-
-munication for all on demand. Fortunately, mathemat-         Since the advent of computers, information has tended
-ics has come to the rescue and provided theoretical          to be transmitted as binary data: that is, as a stream
+munication for all on demand. Fortunately, mathemat-
+ics has come to the rescue and provided theoretical
+
+887
+and algorithmic developments to meet this need. It has
+also provided entirely new possibilities, such as “digital
+signatures” (which will be discussed later).
+One of the oldest and most basic methods of cryptog-
+raphy is simple substitution. Suppose that a message to
+be enciphered consists of a piece of English text. Before
+it is sent, the sender and recipient agree on a permu-
+tation of the twenty-six letters of the alphabet, which
+they keep private. An enciphered message might then
+look something like
+ZPLKKWL MFUPP UFL XA EUXMFLP
+For very short messages this method is reasonably
+secure—it is just possible to work out the meaning
+of the above example by matching letter patterns to
+leng ing! However, for longer messages, simply count-
+counts with the frequencies of letters in natural lan-
+A major leap forward in cryptography came with the
+advent of mechanical encryption devices in the twenti-
+account of the fascinating Enigma story and the role of
+It is interesting that the principle on which Enigma
+operates is a development of the simple substitution
+method. Each letter of the input message is enciphered
+Clifford Cocks
+exactly as a simple substitution, but with the addi-
+tional rule that the permutation controlling the sub-
+1   Introduction and History
+stitution changes after every letter. A complex electro-
+mechanical device controls the substitution process in
+a deterministic way. The recipient can decipher the
+message only if he or she can set up another device
+in exactly the same way as the originator. The informa-
+tion needed to do this is called the key. Making sure
+that keys are known only by the right people is called
+key management. Until the advent of public-key cryp-
+tography (to be discussed later), key management was
+a major inconvenience and expense for anyone wanting
+to secure their communications.
+2    Stream Ciphers and Linear
+Feedback Shift Registers
+Since the advent of computers, information has tended
+to be transmitted as binary data: that is, as a stream
 
 $888$
 
@@ -115,213 +149,305 @@ The U.S. National Institute of Standards and Technology recently held a competit
 The $128$ bits in each block are thought of as $16$ bytes (a byte consists of eight bits), arranged in $a4 \times 4$ square. Each byte is then thought of as an element of $F^{256}$ , the field of order $256$ . Encryption consists of ten or more rounds (the exact number depending upon the key length); and each round mixes the data and the key. A round consists of a series of steps, typically as follows. First, each byte, regarded as an element of the finite field $F^{256}$ , is replaced by its inverse in the field, except that $0$ is left unchanged.
 Each byte is then regarded as an element of the vector space of dimension $8$ over the field $F^{2}$ and an invertible linear transformation is applied. Each row of the $4 \times 4$ square is then rotated, by a different number of bytes for each row. Next, the values of each column of the square are taken to be the coefficients of a degree $3$ polynomial over $F^{256}$ and this is multiplied by a fixed polynomial
 
-890                                                                                     VII. The Influence of Mathematics
+890
 
-and reduced modulo x 4 + 1. Finally, the key for the            limited the use of encryption to those organizations
-round, which is derived linearly from the encryption            that could afford the physical security and separate
-key, is added modulo 2 to the 128 bits.                         communication channels necessary for distributing
-  It can be seen that all of these steps are reversible,        keys reliably.
-which makes decipherment straightforward. It is likely             The following remarkable, counter intuitive pro posi-
-that AES will take over from DES as the most widely             tion forms the basis of public-key cryptography: it is
-used block cipher.                                              possible for two entities to communicate information
-                                                                in such a way that they start with no secret shared
-                   4   One-Time Key                             information; an adversary has access to all commu-
-                                                                nications between them; at the end the entities have
+and reduced modulo x 4 + 1. Finally, the key for the
+round, which is derived linearly from the encryption
+key, is added modulo 2 to the 128 bits.
+  It can be seen that all of these steps are reversible,
+which makes decipherment straightforward. It is likely
+that AES will take over from DES as the most widely
+used block cipher.
+
 The various encryption methods described above rely
-                                                                shared secret knowledge that the adversary is unable
 on the computational difficulty of recovering some
-                                                                to determine.
 secret that protects the enciphered data. There is one
-                                                                   It is easy to see how useful such a capability could
 classic encryption method that does not rely on this
-                                                                be. Consider, for example, some one making a pur-
 property. This is the “one-time key.” Imagine that the
-                                                                chase over the Internet. Having identified a product one
 message to be enciphered is encoded as a sequence
-                                                                wishes to buy the next step is to send personal infor-
 of bits (for example, the standard ASCII encoding that
-                                                                mation such as credit card details to the vendor. With
 represents each character as eight bits). Suppose that
-                                                                public-key cryptography it is possible to do this in a
 ahead of time the sender and recipient have shared
-                                                                secure manner straightaway.
 a sequence of random key bits r1 , . . . , rn at least as
-                                                                   How might public-key cryptography be possible? The
 long as the message. Suppose that the message bits are
-                                                                structure of a solution was proposed by James Ellis in
 p1 , p2 , . . . , pn .
-                                                                1969,1 with the first public description by Diffie and
   The enciphered message is then x1 , x2 , . . . , xn , where
-                                                                Hellman (1976). The critical idea is to use a function
 xi = pi + ri . Here, as usual, addition is mod 2 addition
-                                                                that is hard to invert unless you have an “inverse key”
 in each bit. If the bits ri are fully random, then knowing
-                                                                that helps you to do so.
 the sequence xi gives no information whatsoever about
-                                                                   More formally, a one-way function H is a mapping
 the message sequence pi . This system is called one-time
-                                                                from a set X to itself, with the property that if you are
 key. It is very secure as long as the key is used only once.
-                                                                told the value y = H(x) for some x ∈ X, then it is
 However, it is impractical to use this method except
-                                                                computationally hard to determine x. The inverse key
 in very specialized situations because of the need for
-                                                                is a secret value, z, say, used in creating the function H,
 sender and recipient to share and keep safe possibly
-                                                                with the property that if you know z then it becomes
 large quantities of key material.
-                                                                computationally easy to recover x from H(x).
-                                                                   We can use this to solve the problem of secure key
-            5   Public-Key Cryptography                         exchange as follows. Let us suppose that Bob wishes to
-All of the examples of encryption methods that we               send some data securely to Alice. (Particularly useful
-have seen so far have had the following structure. Two          would be a shared secret that they can use later as a
-communicators agree on an algorithm or method for               key for subsequent communications.) Alice begins by
-encryption. The choice of method (e.g., simple substi-          generating a one-way function H with an inverse key
-tution, AES, or one-time key) can be made public with-          z. She then communicates the function H to Bob, but
-out the security of the system being compromised. The           the inverse key remains her personal secret, which she
-two communicators also agree on a secret key in the             reveals to no one—not even to Bob. Bob takes the data
-form required by the chosen encryption method. This             x that he wishes to send, computes H(x), and returns
-key needs to be kept secure and never revealed to any           the result of his computation to Alice. Because Alice
-adversary. The communicators encipher and decipher              has the inverse key z, she can reverse the function H
-messages using the algorithm and secret key.                    and there by recover x.
-  This presents a major problem: how can the commu-                Now suppose that an adversary manages to read all
-nicators securely share the secret key? It would be inse-       the communications between Alice and Bob. Then the
+
+All of the examples of encryption methods that we
+have seen so far have had the following structure. Two
+communicators agree on an algorithm or method for
+encryption. The choice of method (e.g., simple substi-
+tution, AES, or one-time key) can be made public with-
+out the security of the system being compromised. The
+two communicators also agree on a secret key in the
+form required by the chosen encryption method. This
+key needs to be kept secure and never revealed to any
+adversary. The communicators encipher and decipher
+messages using the algorithm and secret key.
+  This presents a major problem: how can the commu-
+nicators securely share the secret key? It would be inse-
 cure to exchange this over the same system that they
-will later use to send enciphered messages. Until so-             1. See “The possibility of secure non-secret digital encryption,”
-called public-key methods were discovered this issue            available at www.cesg.gov.uk/site/publications/media/possnse.pdf.
+will later use to send enciphered messages. Until so-
+called public-key methods were discovered this issue
 
-VII.7.    Mathematics and Cryptography                                                                             891
+VII. The Influence of Mathematics
+limited the use of encryption to those organizations
+that could afford the physical security and separate
+communication channels necessary for distributing
+keys reliably.
+The following remarkable, counter intuitive pro posi-
+tion forms the basis of public-key cryptography: it is
+possible for two entities to communicate information
+in such a way that they start with no secret shared
+4   One-Time Key
+nications between them; at the end the entities have
+shared secret knowledge that the adversary is unable
+to determine.
+It is easy to see how useful such a capability could
+be. Consider, for example, some one making a pur-
+chase over the Internet. Having identified a product one
+wishes to buy the next step is to send personal infor-
+mation such as credit card details to the vendor. With
+public-key cryptography it is possible to do this in a
+secure manner straightaway.
+How might public-key cryptography be possible? The
+structure of a solution was proposed by James Ellis in
+1969,1 with the first public description by Diffie and
+Hellman (1976). The critical idea is to use a function
+that is hard to invert unless you have an “inverse key”
+that helps you to do so.
+More formally, a one-way function H is a mapping
+from a set X to itself, with the property that if you are
+told the value y = H(x) for some x ∈ X, then it is
+computationally hard to determine x. The inverse key
+is a secret value, z, say, used in creating the function H,
+with the property that if you know z then it becomes
+computationally easy to recover x from H(x).
+We can use this to solve the problem of secure key
+5   Public-Key Cryptography
+send some data securely to Alice. (Particularly useful
+would be a shared secret that they can use later as a
+key for subsequent communications.) Alice begins by
+generating a one-way function H with an inverse key
+z. She then communicates the function H to Bob, but
+the inverse key remains her personal secret, which she
+reveals to no one—not even to Bob. Bob takes the data
+x that he wishes to send, computes H(x), and returns
+the result of his computation to Alice. Because Alice
+has the inverse key z, she can reverse the function H
+and there by recover x.
+Now suppose that an adversary manages to read all
+the communications between Alice and Bob. Then the
+1. See “The possibility of secure non-secret digital encryption,”
+available at www.cesg.gov.uk/site/publications/media/possnse.pdf.
 
-adversary will know the function H and the value H(x).        be shown to be equivalent to the ability to factorize N.
-However, Alice has not communicated the inverse key           The value of d is Alice’s private key (or “inverse key” in
-z, so the adversary is faced with the computationally         the terminology above): it is the secret that can undo
-intractable problem of inverting H. Therefore, Bob has        the encryption function H.
-successfully transmitted the secret x to Alice with out          This is because H(x)d mod N can be shown to equal
-the adversary being able to work out what it is. (For         x. Indeed, the significance of the number (P −1)(Q−1)
-a more precise idea of what computational intractabil-        is that it equals φ(N), the number of integers less
-ity is and a further discussion of one-way functions,         than N and coprime to N. euler’s theorem [III.58](/part-03/modular-arithmetic)
-see computational complexity [IV.20](/part-04/computational-complexity), especially              states that xφ(N) ≡ 1 mod N whenever x is coprime
-section 7.)                                                   to N. Therefore, x mφ(N) ≡ 1 mod N as well, so if de
-   It can be helpful to imagine the one-way function H        has the form mφ(N) + 1, as we are assuming, then
-as a padlock and the inverse key as the key that unlocks      H(x)d ≡ x de ≡ x mod N. In other words, if you raise x
-the padlock. Then if Alice wants to receive an enci-          to the power e mod N and then raise that to the power
-phered message from Bob, she sends him her padlock,           d mod N you get back to x. (An important point is that
-retaining the key. Bob locks (enciphers) the message          raising numbers to powers mod N is computationally
-into a box with the padlock, and returns it. Only Alice,      easy by the method of “repeated squaring.” This is dis-
-who is in possession of the padlock key, can unlock           cussed in computational number theory [IV.3 §2](/part-04/computational-number-theory).)
-(decipher) the message.                                         While it has not been proved that the only way for
-                                                              an adversary to defeat the RSA encryption system is to
-5.1      RSA                                                  factorize N, no other general attack has been found.
-                                                              This has created interest in finding improved factor-
+VII.7.    Mathematics and Cryptography
+
+adversary will know the function H and the value H(x).
+However, Alice has not communicated the inverse key
+z, so the adversary is faced with the computationally
+intractable problem of inverting H. Therefore, Bob has
+successfully transmitted the secret x to Alice with out
+the adversary being able to work out what it is. (For
+a more precise idea of what computational intractabil-
+ity is and a further discussion of one-way functions,
+see computational complexity [IV.20](/part-04/computational-complexity), especially
+section 7.)
+   It can be helpful to imagine the one-way function H
+as a padlock and the inverse key as the key that unlocks
+the padlock. Then if Alice wants to receive an enci-
+phered message from Bob, she sends him her padlock,
+retaining the key. Bob locks (enciphers) the message
+into a box with the padlock, and returns it. Only Alice,
+who is in possession of the padlock key, can unlock
+(decipher) the message.
+5.1
 It is all very well to have such a framework, but it
-                                                              ization methods. A number of new subexponential
 leaves open an obvious question: how can one produce
-                                                              methods—elliptic curve factorization (Lenstra 1987),
 a one-way function with an inverse key? The following
-                                                              the multiple polynomial quadratic sieve (Silverman
 method was published by Rivest, Shamir, and Adleman
-                                                              1987), and the number field sieve (Lenstra and Lenstra
 (1978). It relies on the fact that it is relatively easy to
-                                                              1993)—have been discovered in the years since the RSA
 find large prime numbers and multiply them to pro-
-                                                              algorithm was found. See computational number
 duce a composite number, but it is much harder, if you
-                                                              theory [IV.3 §3](/part-04/computational-number-theory) for discussions of some of them.
 are given that composite number, to determine its two
-prime factors.                                                5.1.1    Implementation Details
+prime factors.
    To create a one-way function by their method, Alice
-first finds two large prime numbers P and Q. She then           The security of the RSA system depends on the primes
-calculates the integer N = P Q and sends it to Bob,           P and Q being large enough to make factorization hard.
-together with another integer e called the encryption         However, the larger they are, the slower the encryption
-exponent. The values N and e are called the public            process is. Thus, there is a trade-off between security
-parameters because it does not matter if an adversary         and the speed of encryption. A typical choice that is
-knows what they are.                                          often made is to use primes that are each of 512 bits.
-   Bob then expresses the secret value x that he wishes          For the deciphering method to work, the encryp-
-to send to Alice as a number modulo N. Next, he com-          tion exponent e must have no factors in common with
-putes H(x), which is defined to be x e mod N, that is,         either (P − 1) or (Q − 1). This assumption was needed
-                                                              when we applied Euler’s theorem, and if it does not
+first finds two large prime numbers P and Q. She then
+calculates the integer N = P Q and sends it to Bob,
+together with another integer e called the encryption
+exponent. The values N and e are called the public
+parameters because it does not matter if an adversary
+knows what they are.
+   Bob then expresses the secret value x that he wishes
+to send to Alice as a number modulo N. Next, he com-
+putes H(x), which is defined to be x e mod N, that is,
 the remainder when x e is divided by N. Bob sends H(x)
-                                                              hold then the encryption function is not invertible.
 to Alice.
-                                                              Values such as 17 or 216 + 1 are often used in prac-
    Upon receipt of Bob’s message, Alice needs to recover
-                                                              tice, because making e small reduces the amount of
 x from x e mod N. This she can do by first calculating
-                                                              computation needed to calculate the encrypted value
 the number d that satisfies the equation
-                                                              x e mod N. (These two values of e are also well-suited
-               de ≡ 1   mod (P − 1)(Q − 1).                   to calculation by repeated squaring.)
+
 To do this efficiently, Alice can use euclid’s algo-
-                                                              5.2     Diffie–Hellman
 rithm [III.22]. Notice, however, that this would not be
-possible if she did not know the values of P and Q. In        Another approach to generating a shared secret was
+possible if she did not know the values of P and Q. In
 fact, the ability to calculate the correct value of d can     published by Whitfield Diffie and Martin Hellman. In
 
-892                                                                                VII. The Influence of Mathematics
+891
+be shown to be equivalent to the ability to factorize N.
+The value of d is Alice’s private key (or “inverse key” in
+the terminology above): it is the secret that can undo
+the encryption function H.
+This is because H(x)d mod N can be shown to equal
+x. Indeed, the significance of the number (P −1)(Q−1)
+is that it equals φ(N), the number of integers less
+than N and coprime to N. euler’s theorem [III.58](/part-03/modular-arithmetic)
+states that xφ(N) ≡ 1 mod N whenever x is coprime
+to N. Therefore, x mφ(N) ≡ 1 mod N as well, so if de
+has the form mφ(N) + 1, as we are assuming, then
+H(x)d ≡ x de ≡ x mod N. In other words, if you raise x
+to the power e mod N and then raise that to the power
+d mod N you get back to x. (An important point is that
+raising numbers to powers mod N is computationally
+easy by the method of “repeated squaring.” This is dis-
+cussed in computational number theory [IV.3 §2](/part-04/computational-number-theory).)
+While it has not been proved that the only way for
+an adversary to defeat the RSA encryption system is to
+RSA
+This has created interest in finding improved factor-
+ization methods. A number of new subexponential
+methods—elliptic curve factorization (Lenstra 1987),
+the multiple polynomial quadratic sieve (Silverman
+1987), and the number field sieve (Lenstra and Lenstra
+1993)—have been discovered in the years since the RSA
+algorithm was found. See computational number
+theory [IV.3 §3](/part-04/computational-number-theory) for discussions of some of them.
+5.1.1    Implementation Details
+The security of the RSA system depends on the primes
+P and Q being large enough to make factorization hard.
+However, the larger they are, the slower the encryption
+process is. Thus, there is a trade-off between security
+and the speed of encryption. A typical choice that is
+often made is to use primes that are each of 512 bits.
+For the deciphering method to work, the encryp-
+tion exponent e must have no factors in common with
+either (P − 1) or (Q − 1). This assumption was needed
+when we applied Euler’s theorem, and if it does not
+hold then the encryption function is not invertible.
+Values such as 17 or 216 + 1 are often used in prac-
+tice, because making e small reduces the amount of
+computation needed to calculate the encrypted value
+x e mod N. (These two values of e are also well-suited
+de ≡ 1   mod (P − 1)(Q − 1).
+5.2     Diffie–Hellman
+Another approach to generating a shared secret was
 
-their protocol Alice and Bob jointly create a shared          a group G and some element g ∈ G. We will require
-secret, which can then be used as the key for one of          the group to be Abelian and will use “+” to denote the
-the conventional cryptographic systems such as AES.           group operation. (In the examples so far, the groups
-To do this, they agree on a large prime number P and a        under consideration were multiplicative groups con-
-primitive element g modulo P , which means a number           sisting of elements coprime to some integer N, so by
+892
+
+their protocol Alice and Bob jointly create a shared
+secret, which can then be used as the key for one of
+the conventional cryptographic systems such as AES.
+To do this, they agree on a large prime number P and a
+primitive element g modulo P , which means a number
 g such that g P −1 ≡ 1 mod P , but g m ≡ 1 mod P for any     using additive notation we are taking a “logarithmic”
-m < P − 1.                                                    perspective.)
-   Alice then creates her own private key a, a number           To execute the protocol Alice computes some pri-
-randomly chosen between 1 and P − 1, and calculates           vate integer a and computes and sends ag to Bob. Note
-ga = g a mod P and sends this to Bob.                         that Alice can compute this sum of a elements of G in
-   Bob similarly creates his own private key b between        time of order logarithmic in a by successive doubling
-1 and P − 1 and calculates and sends gb = g b mod P           and adding. (In the multiplicative groups considered
-to Alice.                                                     earlier, “doubling” is squaring, “adding” is multiplying,
-   Alice and Bob can now create the shared secret             and “multiplying by a” is raising to the power a.)
-g ab mod P . Alice calculates this as gba mod P and Bob         Similarly, Bob computes a private integer b and
+m < P − 1.
+   Alice then creates her own private key a, a number
+randomly chosen between 1 and P − 1, and calculates
+ga = g a mod P and sends this to Bob.
+   Bob similarly creates his own private key b between
+1 and P − 1 and calculates and sends gb = g b mod P
+to Alice.
+   Alice and Bob can now create the shared secret
+g ab mod P . Alice calculates this as gba mod P and Bob
 calculates this as gab mod P . Note that all of these terms   computes and sends bg to Alice.
-can be calculated in time logarithmic in a and b through        Both Alice and Bob can calculate the shared value
-repeated squaring.                                            abg. An adversary will know only G, g, ag, and bg.
-   An adversary, however, would see only g a mod P and          The question is: which groups can be used in practical
-  b mod P , and would also know g and P . How could           cryptographic systems? The critical property is that the
+can be calculated in time logarithmic in a and b through
+repeated squaring.
+   An adversary, however, would see only g a mod P and
+  b mod P , and would also know g and P . How could
 g
-g ab mod P be determined from this? One method is             discrete logarithm problem in G must be hard; in other
-to solve what is called the discrete logarithm problem.       words, given G, g, and ag it should be a hard problem
-This is the problem of calculating a if you know P , g,       to determine a.
-and g a mod P . For large P this appears to be a com-           One type of group that has aroused interest for cryp-
-putationally intractable problem. It is not known for         to graphic purposes is the additive group generated by
-certain whether there is a faster way for the adver-          points on an elliptic curve [III.21](/part-03/elliptic-curves). An elliptic curve
-sary to calculate g ab mod P than computing discrete          has an equation of the form
-logarithms—this is called the Diffie–Hellman problem—                              y 2 = x 3 + ax + b.
+g ab mod P be determined from this? One method is
+to solve what is called the discrete logarithm problem.
+This is the problem of calculating a if you know P , g,
+and g a mod P . For large P this appears to be a com-
+putationally intractable problem. It is not known for
+certain whether there is a faster way for the adver-
+sary to calculate g ab mod P than computing discrete
+logarithms—this is called the Diffie–Hellman problem—
 but at present no better method is known.
-   It is not obvious how to find primitive elements in         It is an interesting exercise to sketch this curve over
+   It is not obvious how to find primitive elements in
 general, but it is much easier if, as is usually the case,    the real numbers—the shape depends upon how many
-the prime P has been constructed so as to ensure that         times the curve
-the factorization of P − 1 is known. For instance, if P is                        y = x 3 + ax + b
+the prime P has been constructed so as to ensure that
+the factorization of P − 1 is known. For instance, if P is
 of the form 2 Q + 1, where Q is also a prime (such num-
-                                                              crosses the x-axis.
 bers are called Sophie Germain primes), then it can be
-                                                                 It is possible to define an “addition rule” (often called
 shown that for any a, exactly one of a and −a has the
-                                                              a group law) on the points of this curve, as follows.
 property that its Qth power is congruent to −1 mod P ,
-                                                              Given two points A and B on the curve, the straight
 and this one is a primitive element. In practice, one can
-                                                              line joining them must meet the curve in a third point,
 find such primes by a process of trial and error: for
-                                                              C say. This is because a straight line must meet a cubic
 example, one can choose a number Q randomly and
-                                                              in three places precisely. Define A + B to be the mirror
 use randomized primality tests to see whether Q and
-                                                              image of C in the x-axis (see figure 3).
 2 Q + 1 are prime. Assuming that, as every one believes,
-                                                                 It is obvious that A + B = B + A from this definition.
 such pairs occur with the “expected” frequency, the
-                                                              What is rather more surprising is that the associative
 probability of finding one on any given attempt is large
-                                                              law holds. That is, for any three points A, B, and C we
 enough for this approach to be feasible.
-                                                              have ((A + B) + C) = (A + (B + C)). There are some deep
-                                                              reasons why this is true, but of course it can be verified
 5.3   Other Groups
-                                                              by just doing the algebra.
-The Diffie–Hellman protocol can be expressed in the                To use this for cryptography the group is formed
-language of group theory [I.3 §2.1](/part-01/fundamental-definitions). Suppose we have          from the set of points on an elliptic curve defined over
+The Diffie–Hellman protocol can be expressed in the
+language of group theory [I.3 §2.1](/part-01/fundamental-definitions). Suppose we have
+
+VII. The Influence of Mathematics
+a group G and some element g ∈ G. We will require
+the group to be Abelian and will use “+” to denote the
+group operation. (In the examples so far, the groups
+under consideration were multiplicative groups con-
+sisting of elements coprime to some integer N, so by
+perspective.)
+To execute the protocol Alice computes some pri-
+vate integer a and computes and sends ag to Bob. Note
+that Alice can compute this sum of a elements of G in
+time of order logarithmic in a by successive doubling
+and adding. (In the multiplicative groups considered
+earlier, “doubling” is squaring, “adding” is multiplying,
+and “multiplying by a” is raising to the power a.)
+Similarly, Bob computes a private integer b and
+Both Alice and Bob can calculate the shared value
+abg. An adversary will know only G, g, ag, and bg.
+The question is: which groups can be used in practical
+cryptographic systems? The critical property is that the
+discrete logarithm problem in G must be hard; in other
+words, given G, g, and ag it should be a hard problem
+to determine a.
+One type of group that has aroused interest for cryp-
+to graphic purposes is the additive group generated by
+points on an elliptic curve [III.21](/part-03/elliptic-curves). An elliptic curve
+has an equation of the form
+y 2 = x 3 + ax + b.
+It is an interesting exercise to sketch this curve over
+times the curve
+y = x 3 + ax + b
+crosses the x-axis.
+It is possible to define an “addition rule” (often called
+a group law) on the points of this curve, as follows.
+Given two points A and B on the curve, the straight
+line joining them must meet the curve in a third point,
+C say. This is because a straight line must meet a cubic
+in three places precisely. Define A + B to be the mirror
+image of C in the x-axis (see figure 3).
+It is obvious that A + B = B + A from this definition.
+What is rather more surprising is that the associative
+law holds. That is, for any three points A, B, and C we
+have ((A + B) + C) = (A + (B + C)). There are some deep
+reasons why this is true, but of course it can be verified
+by just doing the algebra.
+To use this for cryptography the group is formed
+from the set of points on an elliptic curve defined over
 
 VII . $7$ .
 
@@ -353,68 +479,98 @@ In practice she may have these values themselves signed and certified by a trust
 This is similar to a one-way function except that we are no longer assuming that for each y there is exactly one x that maps to y. However, the hash function should ideally also be collision free, which means that, even though there are many pairs of messages that hash to the same value, it is not easy to find any. Such hash functions need to be carefully designed, but there are some recognized standard hash functions (two of which are called $MD5$ and SHA - $1$ ). Suppose that x is the message to be signed, and let X be the output when you apply the hash function to x.
 The digital signature that Alice appends to the message is $Y = X$ d mod N. Observe that anyone in possession of Alice’s public key can verify the signature by following these steps. First, calculate the hashed value X of the message x, which is possible because the hash function is made public. Next, compute $Z = Y$ e mod N, which can be done because the parameters N and e are also public. Finally, verify that X equals Z. In order to fake such a signature, you have to find Y with the property that Y e ≡ X mod N. That is, you must know how
 
-894                                                                              VII. The Influence of Mathematics
+894
 
 to calculate X d , which is computationally intractable if   where B is the point on the curve corresponding to his
-you do not already know d.                                   identity.
-  It is also possible to construct digital signatures          Alice and Bob are now able to communicate with-
-using a public key based on discrete logarithms (Diffie–       out any initial key exchange, using the common key
-Hellman type) rather than on factorization (RSA type).       w(x A, B) = w(A, x B). The important point is that
-The U.S. standards body has published such a proposal:       unlike other public-key systems this can be done with-
-the Digital Signature Standard (1994).                       out any need to share public keys.
+you do not already know d.
+  It is also possible to construct digital signatures
+using a public key based on discrete logarithms (Diffie–
+Hellman type) rather than on factorization (RSA type).
+The U.S. standards body has published such a proposal:
+the Digital Signature Standard (1994).
 
-                                                             7.2   Communication Protocols
-        7   Some Current Research Topics
-                                                             A second area of activity is the study of proposed pro-
 Cryptography remains an active and fascinating area
-                                                             tocols, especially those likely to become international
 for research—there are undoubtedly more results and
-                                                             standards. When public-key methods are to be used
 ideas to be discovered. For a good over view of current
-                                                             in practical communication the sequence of bits to be
 activity one should look at recent proceedings of the
-                                                             transmitted needs to be clearly defined, so that both
 main conferences, such as Crypto, Eurocrypt, or Asia-
-                                                             communicating parties understand the same thing by
 crypt (these are published in the Springer series Lecture
-                                                             each bit sent. For example, if an n-bit number is
 Notes in Computer Science). The comprehensive book
-                                                             transmitted, are the bits transmitted in increasing or
 on cryptography by Menezes, van Oorschott, and Van-
-                                                             decreasing order of significance? The rules or proto-
 stone (1996) is a good way to get up to speed on present
-                                                             cols are often enshrined in public standards, and it is
 theory. In this final section I out line just a few of the
-                                                             important that they do not introduce any weakness into
 directions in which the subject is moving.
-                                                             the system.
-                                                                An example of the sort of weakness that can be intro-
 7.1   New Public-Key Methods
-                                                             duced in this way is one discovered by Coppersmith
-One important area of investigation is the search            (1997) in a seminal paper. He showed that in a low-
-for new public-key methods and signature schemes.            exponent RSA system (for example, one with encryp-
-Recently some interesting new ideas have come from           tion exponent equal to 17) a weakness arises if too
-the use of pairings on elliptic curves (Boneh and            many of the bits of the number that is to be enciphered
-Franklin 2001). These are maps w from pairs of points        are set to publicly known values. This is something
-on the curve to either the finite field over which the         that is natural to want to do, if, as is often the case,
-curve is defined or an extension field.                        a large public-key modulus is being used to transmit a
+One important area of investigation is the search
+for new public-key methods and signature schemes.
+Recently some interesting new ideas have come from
+the use of pairings on elliptic curves (Boneh and
+Franklin 2001). These are maps w from pairs of points
+on the curve to either the finite field over which the
+curve is defined or an extension field.
    A pairing w is bilinear, in the sense that w(A+B, C) =    much shorter communication key. As a result of Cop-
-w(A, C)w(B, C) and w(A, B + C) = w(A, B)w(A, C),             per smith’s discovery such fields are nowadays usually
-where addition is the group operation defined on points       padded out before they are encrypted, with bits that
+w(A, C)w(B, C) and w(A, B + C) = w(A, B)w(A, C),
+where addition is the group operation defined on points
 of the curve and multiplication takes place in the field.     vary unpredictably.
    One way that such a map can be used is to create an
-                                                             7.3   Control of Information
 “identity-based cryptosystem.” Here, a user’s identity
-serves as his or her public key, which eliminates the        Using public-key methods, one can control very pre-
-need for directories or other public-key infrastructure      cisely how information is released, shared, or gener-
-in order to store and propagate public keys.                 ated. Research in this area is usually focused on finding
-   In such a system, a central authority decides upon        elegant and efficient ways of achieving different sorts
-a curve, a pairing map w, and a hash function that           of control in a variety of situations. As a simple exam-
-maps identities to points on the curve. All of this is       ple, we might want to create a secret that is shared
-made public, but there is also a secret parameter, an        between N people in such a way that if any K people
-integer x.                                                   combine their share (where K < N) they can reconstruct
-   Suppose that the hash function maps Alice’s identity      the secret, but no information can be gained about the
-to the point A on the curve. The authority calculates        secret by any smaller number than K collaborating.
-Alice’s private key x A and issues it to her when she           Another example of this type of control is a protocol
-registers, after making appropriate checks on her iden-      that allows two participants to create an RSA modulus
-tity. Similarly, Bob would receive his private key x B,       (a product of two primes) in such a way that neither
+serves as his or her public key, which eliminates the
+need for directories or other public-key infrastructure
+in order to store and propagate public keys.
+   In such a system, a central authority decides upon
+a curve, a pairing map w, and a hash function that
+maps identities to points on the curve. All of this is
+made public, but there is also a secret parameter, an
+integer x.
+   Suppose that the hash function maps Alice’s identity
+to the point A on the curve. The authority calculates
+Alice’s private key x A and issues it to her when she
+registers, after making appropriate checks on her iden-
+tity. Similarly, Bob would receive his private key x B,
+
+VII. The Influence of Mathematics
+identity.
+Alice and Bob are now able to communicate with-
+out any initial key exchange, using the common key
+w(x A, B) = w(A, x B). The important point is that
+unlike other public-key systems this can be done with-
+out any need to share public keys.
+7.2   Communication Protocols
+7   Some Current Research Topics
+A second area of activity is the study of proposed pro-
+tocols, especially those likely to become international
+standards. When public-key methods are to be used
+in practical communication the sequence of bits to be
+transmitted needs to be clearly defined, so that both
+communicating parties understand the same thing by
+each bit sent. For example, if an n-bit number is
+transmitted, are the bits transmitted in increasing or
+decreasing order of significance? The rules or proto-
+cols are often enshrined in public standards, and it is
+important that they do not introduce any weakness into
+the system.
+An example of the sort of weakness that can be intro-
+duced in this way is one discovered by Coppersmith
+(1997) in a seminal paper. He showed that in a low-
+exponent RSA system (for example, one with encryp-
+tion exponent equal to 17) a weakness arises if too
+many of the bits of the number that is to be enciphered
+are set to publicly known values. This is something
+that is natural to want to do, if, as is often the case,
+a large public-key modulus is being used to transmit a
+per smith’s discovery such fields are nowadays usually
+padded out before they are encrypted, with bits that
+7.3   Control of Information
+Using public-key methods, one can control very pre-
+cisely how information is released, shared, or gener-
+ated. Research in this area is usually focused on finding
+elegant and efficient ways of achieving different sorts
+of control in a variety of situations. As a simple exam-
+ple, we might want to create a secret that is shared
+between N people in such a way that if any K people
+combine their share (where K < N) they can reconstruct
+the secret, but no information can be gained about the
+secret by any smaller number than K collaborating.
+Another example of this type of control is a protocol
+that allows two participants to create an RSA modulus
+(a product of two primes) in such a way that neither

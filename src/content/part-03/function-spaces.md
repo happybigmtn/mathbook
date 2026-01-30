@@ -1,59 +1,94 @@
 # Function Spaces
 
-210                                                                                         III. Mathematical Concepts
+210
 
-with the concept. However, the idea that every Riemann         Now let us turn to functions with a fixed domain
+with the concept. However, the idea that every Riemann
 surface might arise from either the sphere, the Euclid-     and range. (A good case to have in mind is functions
-ean plane, or the hyperbolic plane was something they       f : [−1, 1] → R from the interval [−1, 1] to the real line
+ean plane, or the hyperbolic plane was something they
 both came to conjecture. Rigorous proofs of this state-     R.) These objects have infinitely many degrees of free-
-ment, the uniformization theorem, were to be given          dom, so it should not be surprising that there are now
-only in 1907, by Poincaré and Koebe independently.          infinitely many distinct notions of “magnitude,” which
-  The formal definition of a Fuchsian group is as fol-       all provide different answers to the question “how large
+ment, the uniformization theorem, were to be given
+only in 1907, by Poincaré and Koebe independently.
+  The formal definition of a Fuchsian group is as fol-
 lows. A subgroup H of the group of all Möbius trans for-     is a given function f ?” (or to the closely related ques-
 ma tions is said to act discontinuously if, for every com-   tion “how close together are two functions f and g?”).
 pact set K in the disk D the sets h(K) and K are disjoint   In some cases, certain functions may have infinite mag-
-except for finitely many h ∈ H. A Fuchsian group is a        nitude by one measure and finite magnitude by another
-subgroup H of the group of all Möbius transformations       (similarly, a pair of functions may be very close by one
-that acts discontinuously on the disk D.                    measure and very far apart by another). Again, this
-                                                            situation may seem chaotic, but it simply reflects the
-III.29 Function Spaces                                      fact that functions have many distinct characteristics—
-                                                            some are tall, some are broad, some are smooth, some
-         Terence Tao
-                                                            are oscillatory, and so forth—and that, depending on
-                                                            the application at hand, one may need to give more
-           1   What Is a Function Space?
-                                                            weight to one of these characteristics than to others. In
-When one works with real or complex numbers, there          analysis, these characteristics are embodied in a vari-
-is a natural notion of the magnitude of a number x,         ety of standard function spaces and their associated
-namely its modulus |x|. One can also use this notion        norms, which are available to describe functions both
-of magnitude to define a distance |x − y| between two        qualitatively and quantitatively.
-numbers x and y and there by say in a quantitative way          Formally, a function space is a normed space [III.62](/part-03/normed-spaces-and-banach-spaces)
-which pairs of numbers are close and which ones are         X, the elements of which are functions (with some fixed
-far apart.                                                  domain and range). A majority (but certainly not all)
-   The situation becomes more complicated, however,         of the standard function spaces considered in analysis
-when one deals with objects with more degrees of            are not just normed spaces but also banach spaces
-freedom. Consider for instance the problem of deter-        [III.62](/part-03/normed-spaces-and-banach-spaces). The norm f X of a function f in X is the func-
-mining the “magnitude” of a three-dimensional rect-         tion space’s way of measuring how large f is. It is com-
-angular box. There are several candidates for such a        mon, though not universal, for the norm to be defined
+except for finitely many h ∈ H. A Fuchsian group is a
+subgroup H of the group of all Möbius transformations
+that acts discontinuously on the disk D.
+III.29 Function Spaces
+
+When one works with real or complex numbers, there
+is a natural notion of the magnitude of a number x,
+namely its modulus |x|. One can also use this notion
+of magnitude to define a distance |x − y| between two
+numbers x and y and there by say in a quantitative way
+which pairs of numbers are close and which ones are
+far apart.
+   The situation becomes more complicated, however,
+when one deals with objects with more degrees of
+freedom. Consider for instance the problem of deter-
+mining the “magnitude” of a three-dimensional rect-
+angular box. There are several candidates for such a
 magnitude: length, width, height, volume, surface area,     by a simple formula and for the space X to consist pre-
-diameter (the length of a long diagonal), eccentric-        cisely of those functions f for which the resulting def-
-ity, and so forth. Unfortunately, these magnitudes do       inition f X makes sense and is finite. Thus, the mere
-not give equivalent comparisons: for example, box A         fact that a function f belongs to a function space X can
-may be longer and have a greater volume than box B,         already convey some qualitative information about that
-but box B may be wider and have a greater surface           function. For example, it may imply some regularity,1
+diameter (the length of a long diagonal), eccentric-
+ity, and so forth. Unfortunately, these magnitudes do
+not give equivalent comparisons: for example, box A
+may be longer and have a greater volume than box B,
+but box B may be wider and have a greater surface
 area. Because of this, one abandons the idea that there     decay, boundedness, or integrability on the function f .
-should be only one notion of “magnitude” for boxes,         The actual value of the norm f X makes this informa-
+should be only one notion of “magnitude” for boxes,
 and instead accepts that there is a multiplicity of such    tion quantitative. It may tell us how regular f is, how
 notions and that they can all be useful: for some appli-    much decay it has, by which constant it is bounded, or
-ca tions one may wish to distinguish the large-volume        how large its integral is.
+ca tions one may wish to distinguish the large-volume
 boxes from the small-volume boxes, while in others one
-may wish to distinguish the eccentric boxes from the                  2    Examples of Function Spaces
+may wish to distinguish the eccentric boxes from the
 round boxes. Of course, there are several relationships     We now present a sample of commonly used function
-between the different notions of magnitude (e.g., the        spaces. For simplicity we shall consider only spaces of
-isoperimetric inequality [IV.26] allows one to place        functions from [−1, 1] to R.
+between the different notions of magnitude (e.g., the
+isoperimetric inequality [IV.26] allows one to place
 an upper limit on the possible volume if one knows the
 surface area), so the situation is not as disorganized as     1. The more smoothly a function varies, the more “regular” it is
-it may at first appear.                                      considered to be.
+it may at first appear.
+
+III. Mathematical Concepts
+Now let us turn to functions with a fixed domain
+f : [−1, 1] → R from the interval [−1, 1] to the real line
+dom, so it should not be surprising that there are now
+infinitely many distinct notions of “magnitude,” which
+all provide different answers to the question “how large
+nitude by one measure and finite magnitude by another
+(similarly, a pair of functions may be very close by one
+measure and very far apart by another). Again, this
+situation may seem chaotic, but it simply reflects the
+fact that functions have many distinct characteristics—
+some are tall, some are broad, some are smooth, some
+Terence Tao
+are oscillatory, and so forth—and that, depending on
+the application at hand, one may need to give more
+1   What Is a Function Space?
+weight to one of these characteristics than to others. In
+analysis, these characteristics are embodied in a vari-
+ety of standard function spaces and their associated
+norms, which are available to describe functions both
+qualitatively and quantitatively.
+Formally, a function space is a normed space [III.62](/part-03/normed-spaces-and-banach-spaces)
+X, the elements of which are functions (with some fixed
+domain and range). A majority (but certainly not all)
+of the standard function spaces considered in analysis
+are not just normed spaces but also banach spaces
+[III.62](/part-03/normed-spaces-and-banach-spaces). The norm f X of a function f in X is the func-
+tion space’s way of measuring how large f is. It is com-
+mon, though not universal, for the norm to be defined
+cisely of those functions f for which the resulting def-
+inition f X makes sense and is finite. Thus, the mere
+fact that a function f belongs to a function space X can
+already convey some qualitative information about that
+function. For example, it may imply some regularity,1
+The actual value of the norm f X makes this informa-
+how large its integral is.
+2    Examples of Function Spaces
+spaces. For simplicity we shall consider only spaces of
+functions from [−1, 1] to R.
+considered to be.
 
 III . $29$ .
 

@@ -1,72 +1,107 @@
 # Hilbert Spaces
 
-III.37.   Hilbert Spaces                                                                                             219
+III.37.   Hilbert Spaces
 
 point of the energy functional E[U]. This heat equation     as t tends to 0. The left-hand side of the identity is the
-is used to establish the existence of harmonic maps         trace of the heat kernel of ΔM . That is,
-and to construct a continuous deformation of a given                 . nfty
-                                                                     
-map Φ(0, ·) to a harmonic map Φ(+. nfty, ·). The curva-                         e−t. ambda i = tr e−tΔM =       p(t, x, x) dx,
-                                                                                                M
-ture assumption on the target manifold N is responsi-                i=0
+is used to establish the existence of harmonic maps
+and to construct a continuous deformation of a given
+map Φ(0, ·) to a harmonic map Φ(+. nfty, ·). The curva-
+ture assumption on the target manifold N is responsi-
 
 ble for the crucial monotonicity properties of the har-     where p(t, x, y) is such that any solution of the heat
-monic map heat flow, which come to light through the         equation ∂u/∂t − ΔM u = 0 with u(0, x) = u0 (x) is
-use of the energy estimates.                                given by the expression
+monic map heat flow, which come to light through the
+use of the energy estimates.
    An even more spectacular application of a defor-
-                                                                        u(t, x) =        p(t, x, y)u0 (y) dy.
-mation principle of this kind appears in the three-                                  M
-dimensional ricci flow [III.78](/part-03/ricci-flow)                              The right-hand side of the Weyl identity reflects the
-                   ∂                                        short-term asymptotics of the heat kernel p(t, x, y).
-                      $g_{ij} = -2 \mathrm{Ric}_{ij}(g)$.
-                   ∂t                                         The heat-flow approach to the proof of the index the-
+mation principle of this kind appears in the three-
+dimensional ricci flow [III.78](/part-03/ricci-flow)
+
 This is a quasilinear heat evolution of a family of met-
-                                                            orems can be viewed as a refinement of both sides of
 rics gij (t) on a given manifold M. In this case the
-                                                            the Weyl identity. The trace on the left-hand side is
 flow is not necessarily regular; nonetheless, it can be
-                                                            replaced by a more complicated “super-trace,” while
 extended as a flow with “surgeries” in such a way that
-                                                            the right-hand side involves full asymptotics of the
 the structure of the surgeries and the long-term behav-
-                                                            heat kernel, which requires one to understand subtle
 ior of the flow can be precisely analyzed. This analy-
-                                                            cancelations. The simplest example of this kind is the
 sis shows in particular that any three-dimensional sim-
-                                                            Gauss–Bonnet formula
 ply connected manifold is diffeomorphic to a three-
-dimensional sphere, which gives the proof of the                                  χ(M) = 2π         R,
-                                                                                                M
+dimensional sphere, which gives the proof of the
 Poincaré conjecture.
-   The long-term behavior of the heat equation is also      which connects the Euler characteristic of a two-dimen-
-important in the analysis of reaction–diffusion sys-         sional manifold M and the integral of its scalar curva-
-tems and associated biological phenomena. This was          ture. The Euler characteristic χ(M) arises from a linear
-suggested already in the work of turing [VI.94](/part-06/alan-turing-19121954) in          combination of traces of the heat flows associated with
-his attempt to understand morphogenesis (the for-           the Hodge Laplacian (d + d∗ )2 restricted to the space
-mation of inhomogeneous patterns such as animal-            of exterior differential 0-forms, 1-forms, and 2-forms.
-coat patterns from a nearly homogeneous initial state)      A proof of a general atiyah–singer index theorem
-by means of exponential instabilities in the reaction–      [V.2](/part-05/the-atiyahsinger-index-theorem) involves heat flows associated with an operator
-diffusion equations                                          given by the square of a Dirac operator.
-    $\partial u/\partial t = \mu\Delta u + f (u, v)$, . artial v/. artial t = \nu. elta v + g(u, v)                           III.37    Hilbert Spaces
+   The long-term behavior of the heat equation is also
+important in the analysis of reaction–diffusion sys-
+tems and associated biological phenomena. This was
+suggested already in the work of turing [VI.94](/part-06/alan-turing-19121954) in
+his attempt to understand morphogenesis (the for-
+mation of inhomogeneous patterns such as animal-
+coat patterns from a nearly homogeneous initial state)
+by means of exponential instabilities in the reaction–
+diffusion equations
+    ∂
+
+    ∂t
    These examples emphasize the long-term behavior of
 the heat equation, and in particular the tendency of its    The theory of vector spaces [I.3 §2.3](/part-01/fundamental-definitions) and linear
 solutions to converge to an equilibrium, or alternatively   maps [I.3 §4.2](/part-01/fundamental-definitions) underpins a large part of mathematics.
 to develop exponential instabilities. However, it turns     However, angles cannot be defined using vector space
-out that the short-term behavior of the heat equation       concepts alone, since linear maps do not in general pre-
-on a manifold M is of the utmost importance in connec-      serve angles. An inner product space can be thought of
-tion with the geometry and topology of M. This connec-      as a vector space with just enough extra structure for
+out that the short-term behavior of the heat equation
+on a manifold M is of the utmost importance in connec-
+tion with the geometry and topology of M. This connec-
 tion is twofold: first, one seeks to establish a relation-   the notion of angle to make sense.
-ship between the spectrum of ΔM and the geometry of            The simplest example of an inner product on a vector
-M; second, one can use an analysis of the short-term        space is the standard scalar product defined on Rn , the
-behavior to prove index theorems. The former aspect,        space of all real sequences of length n, as follows. If
-in the context of planar domains, is captured by Marc       v = (v1 , . . . , vn ) and w = (w1 , . . . , wn ) are two such
-Kac’s well-known question, “Can one hear the shape of       sequences, then their scalar product, denoted v, w,
-a drum?” For manifolds it begins with the Weyl formula      is the sum v1 w1 + v2 w2 + · · · + vn wn . (For example,
-           . nfty
-                             1                             the scalar product of (3, 2, −1) and (1, 4, 4) is 3 . imes 1 +
-                 e−t. ambda i =             (Vol(M) + O(t))
-           i=0
-                           (4π t)n/2                        2 . imes 4 + (−1) × 4 = 7.)
+ship between the spectrum of ΔM and the geometry of
+M; second, one can use an analysis of the short-term
+behavior to prove index theorems. The former aspect,
+in the context of planar domains, is captured by Marc
+Kac’s well-known question, “Can one hear the shape of
+a drum?” For manifolds it begins with the Weyl formula
+
+219
+trace of the heat kernel of ΔM . That is,
+. nfty
+
+e−t. ambda i = tr e−tΔM =
+M
+i=0
+equation ∂u/∂t − ΔM u = 0 with u(0, x) = u0 (x) is
+given by the expression
+u(t, x) =        p(t, x, y)u0 (y) dy.
+M
+The right-hand side of the Weyl identity reflects the
+∂
+$g_{ij} = -2 \mathrm{Ric}_{ij}(g)$.
+∂t
+orems can be viewed as a refinement of both sides of
+the Weyl identity. The trace on the left-hand side is
+replaced by a more complicated “super-trace,” while
+the right-hand side involves full asymptotics of the
+heat kernel, which requires one to understand subtle
+cancelations. The simplest example of this kind is the
+Gauss–Bonnet formula
+χ(M) = 2π
+M
+which connects the Euler characteristic of a two-dimen-
+sional manifold M and the integral of its scalar curva-
+ture. The Euler characteristic χ(M) arises from a linear
+combination of traces of the heat flows associated with
+the Hodge Laplacian (d + d∗ )2 restricted to the space
+of exterior differential 0-forms, 1-forms, and 2-forms.
+A proof of a general atiyah–singer index theorem
+[V.2](/part-05/the-atiyahsinger-index-theorem) involves heat flows associated with an operator
+given by the square of a Dirac operator.
+∂
+u = μΔu + f (u, v),
+∂t
+concepts alone, since linear maps do not in general pre-
+serve angles. An inner product space can be thought of
+as a vector space with just enough extra structure for
+The simplest example of an inner product on a vector
+space is the standard scalar product defined on Rn , the
+space of all real sequences of length n, as follows. If
+v = (v1 , . . . , vn ) and w = (w1 , . . . , wn ) are two such
+sequences, then their scalar product, denoted v, w,
+is the sum v1 w1 + v2 w2 + · · · + vn wn . (For example,
+. nfty
+
+e−t. ambda i =
+i=0
+(4π t)n/2                        2 . imes 4 + (−1) × 4 = 7.)
 
 $220$
 

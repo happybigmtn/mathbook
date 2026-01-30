@@ -1,136 +1,206 @@
 # The Weil Conjectures
 
-V.35.   The Weil Conjectures                                                                                    729
+V.35.   The Weil Conjectures
 
-a hyperbolic metric on any simply connected proper         Kuga, Ihara, and Deligne showed that in fact Ramanu-
-open subset of C.                                          jan’s conjecture is a consequence of the Weil conjec-
+a hyperbolic metric on any simply connected proper
+open subset of C.
   If a Riemann surface is not simply connected, it is at   tures, so that Deligne’s proof of the latter in 1974 also
 least a quotient [I.3 §3.3](/part-01/fundamental-definitions) of a simply connected sur-     resolved the former.
-face, namely its universal cover [III.93](/part-03/universal-covers). For example,      We begin with a brief historical summary of develop-
-a torus is a quotient of the complex plane (in many        ments prior to weil [VI.93](/part-06/andr-weil-19061998) and follow this with a more
+face, namely its universal cover [III.93](/part-03/universal-covers). For example,
+a torus is a quotient of the complex plane (in many
 possible ways that are topologically but not biholomor-    precise description of the statement of his conjectures.
 ph ically equivalent). Thus, the uniformization theorem     Finally, we sketch the ideas behind their proof.
 tells us that a general Riemann surface is a quotient
-of the sphere, the Euclidean plane, or the hyperbolic                  1   An Auspicious Prologue
+of the sphere, the Euclidean plane, or the hyperbolic
 plane. For a more detailed discussion of what such a
-                                                           Our story begins with the seminal work of riemann
-quotient might be like, see fuchsian groups [III.28](/part-03/fuchsian-groups).      [VI.49] on the classical zeta function [IV.2 §3](/part-04/number-theory), which
-                                                           we recall is defined by the sum
-Waring’s Problem                                                                         1
-                                                                                 ζ(s) =       .
-   See problems and results in additive                                                 n n
-                                                                                            s
+quotient might be like, see fuchsian groups [III.28](/part-03/fuchsian-groups).
+Waring’s Problem
+   See problems and results in additive
 
-       number theory [V.27](/part-05/problems-and-results-in-vi36-peter-gustav-lejeune-dirichlet-18051859)                                euler [VI.19](/part-06/leonhard-euler-17071783) had studied this function for real values
-                                                           of s, but Riemann, in his remarkable eight-page paper
-                                                           of 1859, went much further. He looked at complex val-
 V.35 The Weil Conjectures
-                                                           ues as well, and therefore had at his disposal the con-
-        Brian Osserman
-                                                           sider able resources of complex analysis. In particular,
-                                                           although the above sum for ζ(s) converges only for
-The Weil conjectures constitute one of the central
-                                                           complex numbers s that have real part Re(s) strictly
-landmarks of twentieth-century algebraic geometry
-                                                           greater than 1, Riemann showed that the function itself
-[IV.4](/part-04/algebra): not only was their proof a dramatic triumph,
-                                                           can be extended to an analytic function defined on the
-but they were the driving force behind a striking num-
-                                                           entire complex plane, except at the point s = 1, at which
-ber of fundamental advances in the field. The conjec-
-                                                           it tends to infinity. He showed, more over, that ζ(s)
-tures treat a very elementary problem: how to count the
-                                                           satisfies a certain functional equation relating ζ(s) to
-number of solutions to systems of polynomial equa-         ζ(1 − s), which introduced an important kind of sym-
-tions over finite fields [I.3 §2.2](/part-01/fundamental-definitions). While one might ulti-   metry around the line Re(s) = 12 . Most famously (or
-mately be more interested in solutions over, say, the      infamously), he conjectured what is now known as the
-field of rational numbers, the problem is far more          riemann hypothesis [I.4 §3](/part-01/general-goals): that, aside from easily
-tractable over finite fields, and local–global prin-         analyzed “trivial zeros” on the negative real axis, every
-ciples [III.51](/part-03/local-and-global-in-number-theory) such as the birch–swinnerton-dyer          zero of ζ(s) occurs on the line Re(s) = 12 . Riemann’s
-conjecture [V.4](/part-05/the-birchswinnerton-dyer-conjecture) establish strong, albeit subtle, rela-    motivation for studying ζ(s) was to analyze the dis-
-tion ships between the two cases.                           tribution of prime numbers, but it fell to later authors
-  More over, there are some basic questions that have       (hadamard [VI.65](/part-06/jacques-hadamard-18651963), de la vallée poussin [VI.67](/part-06/charles-jean-de-la-valle-poussin-18661962), and
-nonobvious connections to the Weil conjectures. The        Van Koch) to bring this vision to fruition. They used
-most famous of these is the Ramanujan conjecture,          the zeta function to prove the prime number theorem
-which concerns the coefficients of Δ(q), one of the most     [I.4 §3](/part-01/general-goals), which determined the asymptotic distribution
-fundamental examples of a modular form [III.59](/part-03/modular-forms). We        of prime numbers, and also showed that the Riemann
-obtain the function τ(n) from the formula for Δ(q) as      hypothesis is equivalent to a particularly strong upper
-follows:                                                   bound for the error term in the prime number theorem.
-                    . nfty
-                                       . nfty
-                                                             At first glance, the Riemann hypothesis might appear
-         Δ(q) = q       (1 − qn )24 =         τ(n)q n .    to be completely special, a one-of-a-kind conjecture.
-                    n=1                 n=1
-                                                           However, it was not long before dedekind [VI.50](/part-06/julius-wilhelm-richard-dedekind-18311916) gen-
-ramanujan [VI.82](/part-06/srinivasa-ramanujan-18871920) conjectured that |τ(p)| ⩽ 2 p 11/2        eralized the Riemann hypothesis to a whole family of
-for any prime number p. This is closely related to a       zeta functions, and in doing so opened the door to fur-
-statement on the number of ways of writing p as a          ther generalization. Just as we can think of the complex
-sum of twenty-four squares. Work of Eichler, Shimura,      numbers as being obtained from the real numbers by
 
-730                                                                                         V. Theorems and Problems
+The Weil conjectures constitute one of the central
+landmarks of twentieth-century algebraic geometry
+[IV.4](/part-04/algebra): not only was their proof a dramatic triumph,
+but they were the driving force behind a striking num-
+ber of fundamental advances in the field. The conjec-
+tures treat a very elementary problem: how to count the
+number of solutions to systems of polynomial equa-
+tions over finite fields [I.3 §2.2](/part-01/fundamental-definitions). While one might ulti-   metry around the line Re(s) = 12 . Most famously (or
+mately be more interested in solutions over, say, the
+field of rational numbers, the problem is far more
+tractable over finite fields, and local–global prin-
+ciples [III.51](/part-03/local-and-global-in-number-theory) such as the birch–swinnerton-dyer
+conjecture [V.4](/part-05/the-birchswinnerton-dyer-conjecture) establish strong, albeit subtle, rela-    motivation for studying ζ(s) was to analyze the dis-
+tion ships between the two cases.
+  More over, there are some basic questions that have
+nonobvious connections to the Weil conjectures. The
+most famous of these is the Ramanujan conjecture,
+which concerns the coefficients of Δ(q), one of the most     [I.4 §3](/part-01/general-goals), which determined the asymptotic distribution
+fundamental examples of a modular form [III.59](/part-03/modular-forms). We
+obtain the function τ(n) from the formula for Δ(q) as
+follows:
+
+ramanujan [VI.82](/part-06/srinivasa-ramanujan-18871920) conjectured that |τ(p)| ⩽ 2 p 11/2
+for any prime number p. This is closely related to a
+statement on the number of ways of writing p as a
+sum of twenty-four squares. Work of Eichler, Shimura,
+
+729
+Kuga, Ihara, and Deligne showed that in fact Ramanu-
+jan’s conjecture is a consequence of the Weil conjec-
+We begin with a brief historical summary of develop-
+ments prior to weil [VI.93](/part-06/andr-weil-19061998) and follow this with a more
+1   An Auspicious Prologue
+Our story begins with the seminal work of riemann
+[VI.49] on the classical zeta function [IV.2 §3](/part-04/number-theory), which
+we recall is defined by the sum
+ 1
+ζ(s) =       .
+n n
+s
+number theory [V.27](/part-05/problems-and-results-in-vi36-peter-gustav-lejeune-dirichlet-18051859)
+of s, but Riemann, in his remarkable eight-page paper
+of 1859, went much further. He looked at complex val-
+ues as well, and therefore had at his disposal the con-
+Brian Osserman
+sider able resources of complex analysis. In particular,
+although the above sum for ζ(s) converges only for
+complex numbers s that have real part Re(s) strictly
+greater than 1, Riemann showed that the function itself
+can be extended to an analytic function defined on the
+entire complex plane, except at the point s = 1, at which
+it tends to infinity. He showed, more over, that ζ(s)
+satisfies a certain functional equation relating ζ(s) to
+ζ(1 − s), which introduced an important kind of sym-
+infamously), he conjectured what is now known as the
+riemann hypothesis [I.4 §3](/part-01/general-goals): that, aside from easily
+analyzed “trivial zeros” on the negative real axis, every
+zero of ζ(s) occurs on the line Re(s) = 12 . Riemann’s
+tribution of prime numbers, but it fell to later authors
+(hadamard [VI.65](/part-06/jacques-hadamard-18651963), de la vallée poussin [VI.67](/part-06/charles-jean-de-la-valle-poussin-18661962), and
+Van Koch) to bring this vision to fruition. They used
+the zeta function to prove the prime number theorem
+of prime numbers, and also showed that the Riemann
+hypothesis is equivalent to a particularly strong upper
+bound for the error term in the prime number theorem.
+. nfty
+                   . nfty
+                     At first glance, the Riemann hypothesis might appear
+Δ(q) = q
+n=1                 n=1
+However, it was not long before dedekind [VI.50](/part-06/julius-wilhelm-richard-dedekind-18311916) gen-
+eralized the Riemann hypothesis to a whole family of
+zeta functions, and in doing so opened the door to fur-
+ther generalization. Just as we can think of the complex
+numbers as being obtained from the real numbers by
+
+730
 
 including a square root of −1, that is, a root of the poly-   is just the field of integers modulo p. More generally,
-nomial x 2 + 1, one can obtain a number field [III.63](/part-03/number-fields),        we can obtain Fq by adding roots of polynomials to Fp
-the fundamental object of study in algebraic num-             just as we do to Q to obtain number fields; in fact, a
-ber theory [IV.1](/part-04/number-theory), from the field Q of rational num-           single root of a single irreducible polynomial of degree
-bers by including roots of more general polynomials.          r will do.
-For each number field K we have the ring of integers OK ,         Artin studied a certain class of curves in the plane.
-which enjoys many of the same properties as the classi-       Here, “plane” means F2 q , that is, the set of all pairs (x, y)
-cal integers Z. Starting from this observation, Dedekind      with x and y in Fq . A curve C is simply the subset
-defined a more general class of zeta functions, one for        of these points where some polynomial f (x, y) with
-each such ring, which now bear his name. The classical        coefficients in Fq vanishes. Of course, if F is any field
-zeta function ζ(s) was the Dedekind zeta function in          that contains Fq , then the coefficients are also in F , so it
-the case OK = Z. However, it was not at all straight for-      makes sense to talk about C(F ), the curve in the larger
-ward to establish the existence of a functional equation      “plane” F 2 defined by the same equation f (x, y) = 0. If
-for Dedekind zeta functions: this was an open problem         F is also a finite field, then C(F ) is obviously also finite.
-until 1917, when it was settled by Hecke, who showed          The finite fields F containing Fq turn out to be the fields
-at the same time that Dedekind zeta functions could be        Fqm for m ⩾ 1. For each m ⩾ 1 let us define Nm (C) to
-extended to the complex plane, there by ensuring that          be the number of points belonging to the curve C(Fqm ).
-the Riemann hypothesis makes sense for them as well.          The sequence N1 (C), N2 (C), N3 (C), . . . is what we shall
-   With such ideas in the air, it was not long before         try to understand.
-geometry entered the picture. artin [VI.86](/part-06/emil-artin-18981962) first intro-          Given our plane curve C, we can define the ring
-duced zeta functions and the Riemann hypothesis for           of polynomial functions OC of C. This is simply the
-certain curves over finite fields in his 1923 thesis, not-      ring of polynomial functions on the plane (i.e., in
-ing that the ring of polynomial functions on such a           two variables), modulo the equivalence relation
-curve shares precisely the properties of rings of inte-       [I.2 §2.3](/part-01/language-and-grammar) that two functions taking the same values
-gers that Dedekind used to define his zeta functions.          on C should be considered the same. Formally, OC is
-Artin quickly observed first that his new zeta func-           simply the quotient [I.3 §3.3](/part-01/fundamental-definitions) ring Fq [x, y]/(f (x, y)).
-tions were strongly analogous to Dedekind zeta func-          Artin’s basic observation was that the definition of the
-tions, and second that they were often more tractable:        Dedekind zeta function could be applied equally well
-evidence for both observations is provided by the             to the ring OC , yielding a zeta function ZC (t) associ-
-fact that he was able to check explicitly that the Rie-       ated with C. However, in our geometric context we have
-mann hypothesis was satisfied for a number of specific          the following equivalent and more elementary formula,
-curves. The difference between the two situations is           which explicitly relates ZC (t) to the number of points
-encapsulated as follows: while in the number field case        over finite fields:
-                                                                                           . nfty
-                                                                                           
-one can think of the zeta function as counting primes,                                                   tm
-                                                                           ZC (t) = exp         Nm (C)        .           (1)
-in the case of a function field the zeta function may                                                     m
-                                                                                          m=1
+nomial x 2 + 1, one can obtain a number field [III.63](/part-03/number-fields),
+the fundamental object of study in algebraic num-
+ber theory [IV.1](/part-04/number-theory), from the field Q of rational num-
+bers by including roots of more general polynomials.
+For each number field K we have the ring of integers OK ,
+which enjoys many of the same properties as the classi-
+cal integers Z. Starting from this observation, Dedekind
+defined a more general class of zeta functions, one for
+each such ring, which now bear his name. The classical
+zeta function ζ(s) was the Dedekind zeta function in
+the case OK = Z. However, it was not at all straight for-
+ward to establish the existence of a functional equation
+for Dedekind zeta functions: this was an open problem
+until 1917, when it was settled by Hecke, who showed
+at the same time that Dedekind zeta functions could be
+extended to the complex plane, there by ensuring that
+the Riemann hypothesis makes sense for them as well.
+   With such ideas in the air, it was not long before
+geometry entered the picture. artin [VI.86](/part-06/emil-artin-18981962) first intro-
+duced zeta functions and the Riemann hypothesis for
+certain curves over finite fields in his 1923 thesis, not-
+ing that the ring of polynomial functions on such a
+curve shares precisely the properties of rings of inte-
+gers that Dedekind used to define his zeta functions.
+Artin quickly observed first that his new zeta func-
+tions were strongly analogous to Dedekind zeta func-
+tions, and second that they were often more tractable:
+evidence for both observations is provided by the
+fact that he was able to check explicitly that the Rie-
+mann hypothesis was satisfied for a number of specific
+curves. The difference between the two situations is
+encapsulated as follows: while in the number field case
+one can think of the zeta function as counting primes,
+in the case of a function field the zeta function may
 be expressed in terms of the more geometric data of
-                                                                 Schmidt generalized Artin’s definition to all curves
 counting points on the given curve. In a 1931 paper
-                                                              over finite fields, and gave an elegant description of
 F. K. Schmidt generalized Artin’s work, and exploited
-                                                              the zeta function for curves, bearing out Artin’s obser-
 this geometry to prove a strong form of the functional
-                                                              vat i ons in the cases he was able to compute. The nicest
 equation for such zeta functions. And then, in 1933,
-                                                              form of Schmidt’s theorem applies to curves that sat-
 Hasse proved the Riemann hypothesis in the special
-                                                              isfy two additional conditions. The first condition is
 case of elliptic curves [III.21](/part-03/elliptic-curves) over finite fields.
-                                                              that, rather than considering the curve C in the plane,
-                                                              we will want to “compactify” it by considering instead
-           2   Zeta Functions of Curves
-                                                              a projective curve; we can think of this as adding some
-We now discuss in more detail the definition and prop-         “points at infinity,” thus increasing Nm (C) slightly. Sec-
-erties of zeta functions associated with curves over          ond, we will want to impose a technical condition of
-finite fields, as well as the theorems of Schmidt and           smoothness on C, which is analogous to asking that C
-Hasse. Let Fq denote the finite field with q elements,          be a manifold [I.3 §6.9](/part-01/fundamental-definitions).
-where q = p r for some prime number p and some pos-              In order to state Schmidt’s result, recall that there is
+
+We now discuss in more detail the definition and prop-
+erties of zeta functions associated with curves over
+finite fields, as well as the theorems of Schmidt and
+Hasse. Let Fq denote the finite field with q elements,
+where q = p r for some prime number p and some pos-
 itive integer r . The simplest case is when q = p, and Fp     a notion of the genus [IV.4 §10](/part-04/algebra) of a smooth projective
+
+V. Theorems and Problems
+we can obtain Fq by adding roots of polynomials to Fp
+just as we do to Q to obtain number fields; in fact, a
+single root of a single irreducible polynomial of degree
+r will do.
+Artin studied a certain class of curves in the plane.
+Here, “plane” means F2 q , that is, the set of all pairs (x, y)
+with x and y in Fq . A curve C is simply the subset
+of these points where some polynomial f (x, y) with
+coefficients in Fq vanishes. Of course, if F is any field
+that contains Fq , then the coefficients are also in F , so it
+makes sense to talk about C(F ), the curve in the larger
+“plane” F 2 defined by the same equation f (x, y) = 0. If
+F is also a finite field, then C(F ) is obviously also finite.
+The finite fields F containing Fq turn out to be the fields
+Fqm for m ⩾ 1. For each m ⩾ 1 let us define Nm (C) to
+be the number of points belonging to the curve C(Fqm ).
+The sequence N1 (C), N2 (C), N3 (C), . . . is what we shall
+try to understand.
+Given our plane curve C, we can define the ring
+of polynomial functions OC of C. This is simply the
+ring of polynomial functions on the plane (i.e., in
+two variables), modulo the equivalence relation
+[I.2 §2.3](/part-01/language-and-grammar) that two functions taking the same values
+on C should be considered the same. Formally, OC is
+simply the quotient [I.3 §3.3](/part-01/fundamental-definitions) ring Fq [x, y]/(f (x, y)).
+Artin’s basic observation was that the definition of the
+Dedekind zeta function could be applied equally well
+to the ring OC , yielding a zeta function ZC (t) associ-
+ated with C. However, in our geometric context we have
+the following equivalent and more elementary formula,
+which explicitly relates ZC (t) to the number of points
+over finite fields:
+. nfty
+
+tm
+ZC (t) = exp         Nm (C)        .           (1)
+m
+m=1
+Schmidt generalized Artin’s definition to all curves
+over finite fields, and gave an elegant description of
+the zeta function for curves, bearing out Artin’s obser-
+vat i ons in the cases he was able to compute. The nicest
+form of Schmidt’s theorem applies to curves that sat-
+isfy two additional conditions. The first condition is
+that, rather than considering the curve C in the plane,
+we will want to “compactify” it by considering instead
+2   Zeta Functions of Curves
+a projective curve; we can think of this as adding some
+“points at infinity,” thus increasing Nm (C) slightly. Sec-
+ond, we will want to impose a technical condition of
+smoothness on C, which is analogous to asking that C
+be a manifold [I.3 §6.9](/part-01/fundamental-definitions).
+In order to state Schmidt’s result, recall that there is
 
 $V$ . $35$ .
 
@@ -161,65 +231,77 @@ The following year, in a remarkable paper in the Bulletin of the American Mathem
 (ii) more explicitly, if $n = dim$ V , we can write $P^{1}(t)P^{3}(t)$ · · · $P^{2n} - {}^{1}(t)Z^{V}(t) =$ , $P^{0}(t)P^{2}(t)$ · · · $P^{2n}(t)$ where each root of each P i (t) is a complex number of norm $q - i/2$ ; (iii) the roots of P i (t) are interchanged with the roots of $P^{2n} - i(t)$ under the substitution $t \to 1/q^{n}t;$ (iv) if V is the reduction modulo p of a variety Ṽ defined over a subfield of C , then b $i = deg$ P i (t) is the ith Betti number of Ṽ using the usual topology.
 The last part of (ii) is known as the Riemann hypothesis, while (iii) constitutes a functional equation for
 
-732                                                                                       V. Theorems and Problems
+732
 
-the substitution t → 1/qn t. Betti numbers are a well-      and developed a candidate for a Weil cohomology, the
-known invariant from algebraic topology [IV.6](/part-04/algebraic-topology): if           étale cohomology. Indeed, he noted that one could in
+the substitution t → 1/qn t. Betti numbers are a well-
+known invariant from algebraic topology [IV.6](/part-04/algebraic-topology): if
 we return to Schmidt’s theorem (2) in the case of curves,    fact extend the list of desired properties of a Weil
 the degrees 1, 2 g, 1 of 1 − t, P (t), 1 − qt are precisely   cohomology in such a way that the Weil conjectures
-the Betti numbers of a complex curve of genus g.             would follow almost immediately. These properties
-                                                             were known but extremely difficult in the classical case,
-                    4 The Proof                              and included the “hard Lefschetz theorem.” In a burst
-                                                             of optimism, Grothendieck referred to them as the
+the Betti numbers of a complex curve of genus g.
 Weil’s conjectures were inspired by a very intuitive
-                                                             “standard conjectures,” and envisioned that the Weil
 topological picture, derived from considering V (Fqm )
-                                                             conjectures would ultimately be proved through them.
 as the set of fixed points of Φqm . For getting for the
-                                                                However, the final chapter of the story did not go
 moment that Φqm makes sense only over finite fields,
-                                                             entirely according to Grothendieck’s plan. His stu-
 if we imagine that V were defined over the complex
-                                                             dent Deligne set about working on the problem, and
 numbers, then by using the complex topology we could
-                                                             was ultimately able to complete an exceedingly sub-
 study the fixed points of Φqm by the lefschetz fixed
-                                                             tle and intricate proof using induction on the dimen-
 point theorem [V.11 §3](/part-05/fixed-point-theorems), obtaining a formula in terms
-                                                             sion of the variety. The étale cohomology played an
 of the action of Φqm on the cohomology groups
-                                                             absolutely fundamental role in Deligne’s proof, but
 [IV.6 §4](/part-04/algebraic-topology). Indeed, we could deduce the factorization in
-                                                             he also introduced other ideas into the picture, most
 (ii) almost immediately (and in particular the rational-
-                                                             notably a classical geometric construction of Lefschetz,
 ity asserted in (i)), with each factor Pi (t) correspond-
-                                                             as well as some work of Rankin on the Ramanu-
 ing to the action of Frobenius on the ith cohomology
-                                                             jan conjecture. In the end, he was able to conclude
 group, and we would also have deg Pi (t) given by the
-                                                             the hard Lefschetz theorem from his work, but the
 ith Betti number of V . More over, the functional equa-
-                                                             rest of the standard conjectures remain unsolved to
 tion would follow from a concept known as poincaré
-                                                             this day.
 duality [III.19 §7](/part-03/duality).
    It was not long before it became clear that such coho-    Acknowledgments. I would like to thank Kiran Kedlaya,
-mol og ical arguments might become more than just              Nicholas Katz, and Jean-Pierre Serre for their helpful corre-
-                                                             spondence.
+mol og ical arguments might become more than just
 motivation: there could be a cohomology theory for
 algebraic varieties over finite fields that would mimic
-                                                             Further Reading
 the properties of the classical topological theory and
-would allow one to prove the Weil conjectures. Such a        Dieudonné, J. 1975. The Weil conjectures. Mathematical
-cohomology theory is now known as a Weil cohomology.           Intelligencer 10:7–21.
-Serre was the first to seriously attempt to develop such      Katz, N. 1976. An over view of Deligne’s proof of the Rie-
-                                                               mann hypothesis for varieties over finite fields. In Math-
+would allow one to prove the Weil conjectures. Such a
+cohomology theory is now known as a Weil cohomology.
+Serre was the first to seriously attempt to develop such
 a theory, but he had only limited success. In 1960,
-                                                               ematical Developments Arising from Hilbert Problems,
 Dwork provided a brief detour by using p-adic analy-
-                                                               edited by F. E. Browder, pp. 275–305. Providence, RI:
-sis [III.51](/part-03/local-and-global-in-number-theory) to prove parts (i) and (iii) of the conjec-       American Mathematical Society.
+sis [III.51](/part-03/local-and-global-in-number-theory) to prove parts (i) and (iii) of the conjec-
 tures: that is, the rationality and the functional equa-     Weil, A. 1949. Numbers of solutions of equations in finite
-tion. Shortly there after, building on comments of Serre        fields. Bulletin of the American Mathematical Society 55:
-and in collaboration with Artin, Grothendieck proposed         497–508.
+tion. Shortly there after, building on comments of Serre
+and in collaboration with Artin, Grothendieck proposed
+
+V. Theorems and Problems
+and developed a candidate for a Weil cohomology, the
+étale cohomology. Indeed, he noted that one could in
+would follow almost immediately. These properties
+were known but extremely difficult in the classical case,
+4 The Proof                              and included the “hard Lefschetz theorem.” In a burst
+of optimism, Grothendieck referred to them as the
+“standard conjectures,” and envisioned that the Weil
+conjectures would ultimately be proved through them.
+However, the final chapter of the story did not go
+entirely according to Grothendieck’s plan. His stu-
+dent Deligne set about working on the problem, and
+was ultimately able to complete an exceedingly sub-
+tle and intricate proof using induction on the dimen-
+sion of the variety. The étale cohomology played an
+absolutely fundamental role in Deligne’s proof, but
+he also introduced other ideas into the picture, most
+notably a classical geometric construction of Lefschetz,
+as well as some work of Rankin on the Ramanu-
+jan conjecture. In the end, he was able to conclude
+the hard Lefschetz theorem from his work, but the
+rest of the standard conjectures remain unsolved to
+this day.
+Nicholas Katz, and Jean-Pierre Serre for their helpful corre-
+spondence.
+Further Reading
+Dieudonné, J. 1975. The Weil conjectures. Mathematical
+Intelligencer 10:7–21.
+Katz, N. 1976. An over view of Deligne’s proof of the Rie-
+mann hypothesis for varieties over finite fields. In Math-
+ematical Developments Arising from Hilbert Problems,
+edited by F. E. Browder, pp. 275–305. Providence, RI:
+American Mathematical Society.
+fields. Bulletin of the American Mathematical Society 55:
+497–508.

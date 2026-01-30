@@ -22,73 +22,99 @@ A research mathematician, like a creative artist, has to be passionately interes
 I went through such a period in my second year of research, and Jean-Pierre Serre, perhaps the outstanding mathematician of my generation, told me that he too had contemplated giving up at one stage. Only the mediocre are supremely confident of their ability. The better you are, the higher the standards you set your self--you can see beyond your immediate reach. Many would-be mathematicians also have talents and interests in other directions and they may have a difficult choice to make between embarking on a mathematical career and pursuing something else.
 The great Gauss is reputed to have wavered between mathematics and philology, Pascal deserted mathematics at an early age for theology, while Descartes and Leibniz are also famous as philosophers. Some mathematicians move into physics (e . g . , Freeman Dyson) while others (e . g . , Harish Chandra, Raoul Bott) have moved the other way. You should not regard mathematics as a closed world, and the interaction between mathematics and other disciplines is healthy both for the individual and for society.
 
-VIII.6.   Advice to a Young Mathematician                                                                      1001
+VIII.6.   Advice to a Young Mathematician
 
-Psychology                                                 The Role of Curiosity
+Psychology
 
-Because of the intense mental concentration required       The driving force in research is curiosity. When is a par-
+Because of the intense mental concentration required
 in mathematics, psychological pressures can be consid-     ticular result true? Is that the best proof, or is there a
-erable, even when things are going well. Depending on      more natural or elegant one? What is the most general
-your personality this may be a major or only a minor       context in which the result holds?
-problem, but one can take steps to reduce the ten-            If you keep asking your self such questions when
-                                                           reading a paper or listening to a lecture, then sooner or
+erable, even when things are going well. Depending on
+your personality this may be a major or only a minor
+problem, but one can take steps to reduce the ten-
 sion. Interaction with fellow students—attending lec-
-                                                           later a glimmer of an answer will emerge—some pos-
 tures, seminars, and conferences—both widens one’s
-                                                           sible route to investigate. When this happens to me I
 horizons and provides important social support. Too
-                                                           always take time out to pursue the idea to see where
 much isolation and introspection can be dangerous,
-                                                           it leads or whether it will stand up to scrutiny. Nine
 and time spent in apparently idle conversation is not
-                                                           times out of ten it turns out to be a blind alley, but
 really wasted.
-                                                           occasionally one strikes gold. The difficulty is in know-
   Collaboration, initially with fellow students or one’s
-                                                           ing when an idea that is initially promising is in fact
 supervisor, has many benefits, and long-term coll abo-
-                                                           going no where. At this stage one has to cut one’s losses
 ration with coworkers can be extremely fruitful both in
-                                                           and return to the main road. Often the decision is not
 mathematical terms and at the personal level. There is     clear-cut, and in fact I frequently return to a previously
-always the need for hard quiet thought on one’s own,       discarded idea and give it another try.
-but this can be enhanced and balanced by discussion           Ironically, good ideas can emerge unexpectedly from
-and exchange of ideas with friends.                        a bad lecture or seminar. I often find myself listen-
-                                                           ing to a lecture where the result is beautiful and the
-Problems versus Theory                                     proof ugly and complicated. Instead of trying to fol-
-                                                           low a messy proof on the blackboard, I spend the
-Mathematicians are some times categorized as either         rest of the hour thinking about producing a more ele-
+always the need for hard quiet thought on one’s own,
+but this can be enhanced and balanced by discussion
+and exchange of ideas with friends.
+Problems versus Theory
+Mathematicians are some times categorized as either
 “problem solvers” or “theorists.” It is certainly true     gant proof. Usually, but not always, with out success,
 that there are extreme cases that highlight this divi-     but even then my time is better spent, since I have
 sion (Erdős versus Grothendieck, for example) but most    thought hard about the problem in my own way. This is
-mathematicians lie some where in between, with their        much better than passively following another person’s
-work involving both the solution of problems and the       reasoning.
+mathematicians lie some where in between, with their
+work involving both the solution of problems and the
 development of some theory. In fact, a theory that does
-not lead to the solution of concrete and interesting       Examples
+not lead to the solution of concrete and interesting
 problems is not worth having. Conversely, any really
-                                                           If you are, like me, some one who prefers large vistas
 deep problem tends to stimulate the development of
-                                                           and powerful theories (I was influenced but not con-
 theory for its solution (Fermat’s last theorem being a
-                                                           verted by Grothendieck), then it is essential to be able
 classic example).
-                                                           to test general results by applying them to simple exam-
   What bearing does this have on a beginning student?
-                                                           ples. Over the years I have built up a large array of
 Although one has to read books and papers and absorb
-                                                           such examples, drawn from a variety of fields. These
 general concepts and techniques (theory), realistically,   are examples where one can do concrete calculations,
-a student has to focus on one or more specific prob-        some times with elaborate formulas, that help to make
-lems. This provides something to chew on and to test       the general theory understandable. They keep your
-one’s mettle. A definite problem, which one struggles       feet on the ground. Interestingly enough, Grothendieck
-with and under stands in detail, is also an invaluable      eschewed examples, but fortunately he was in close
-benchmark against which to measure the utility and         touch with Serre, who was able to rectify this omis-
-strength of available theories.                            sion. There is no clear-cut distinction between exam-
-  Depending on how the research goes, the eventual         ple and theory. Many of my favorite examples come
-Ph. D. thesis may strip away most of the theory and         from my early training in classical projective geom-
-focus only on the essential problem, or else it may        etry: the twisted cubic, the quadric surface, or the Klein
-describe a wider scenario into which the problem nat-      representation of lines in 3-space. Nothing could be
-urally fits.                                                more concrete or classical and all can be looked at
+a student has to focus on one or more specific prob-
+lems. This provides something to chew on and to test
+one’s mettle. A definite problem, which one struggles
+with and under stands in detail, is also an invaluable
+benchmark against which to measure the utility and
+strength of available theories.
+  Depending on how the research goes, the eventual
+Ph. D. thesis may strip away most of the theory and
+focus only on the essential problem, or else it may
+describe a wider scenario into which the problem nat-
+urally fits.
+
+1001
+The Role of Curiosity
+The driving force in research is curiosity. When is a par-
+more natural or elegant one? What is the most general
+context in which the result holds?
+If you keep asking your self such questions when
+reading a paper or listening to a lecture, then sooner or
+later a glimmer of an answer will emerge—some pos-
+sible route to investigate. When this happens to me I
+always take time out to pursue the idea to see where
+it leads or whether it will stand up to scrutiny. Nine
+times out of ten it turns out to be a blind alley, but
+occasionally one strikes gold. The difficulty is in know-
+ing when an idea that is initially promising is in fact
+going no where. At this stage one has to cut one’s losses
+and return to the main road. Often the decision is not
+discarded idea and give it another try.
+Ironically, good ideas can emerge unexpectedly from
+a bad lecture or seminar. I often find myself listen-
+ing to a lecture where the result is beautiful and the
+proof ugly and complicated. Instead of trying to fol-
+low a messy proof on the blackboard, I spend the
+rest of the hour thinking about producing a more ele-
+much better than passively following another person’s
+reasoning.
+Examples
+If you are, like me, some one who prefers large vistas
+and powerful theories (I was influenced but not con-
+verted by Grothendieck), then it is essential to be able
+to test general results by applying them to simple exam-
+ples. Over the years I have built up a large array of
+such examples, drawn from a variety of fields. These
+some times with elaborate formulas, that help to make
+the general theory understandable. They keep your
+feet on the ground. Interestingly enough, Grothendieck
+eschewed examples, but fortunately he was in close
+touch with Serre, who was able to rectify this omis-
+sion. There is no clear-cut distinction between exam-
+ple and theory. Many of my favorite examples come
+from my early training in classical projective geom-
+etry: the twisted cubic, the quadric surface, or the Klein
+representation of lines in 3-space. Nothing could be
+more concrete or classical and all can be looked at
 
 1002
 
@@ -173,166 +199,207 @@ For neither genius with out learning nor learning with out genius can make a per
 My first observation is that each mathematician is a special case, and in general mathematicians tend to behave like “fermions,” i.e., they avoid working in areas that are too trendy, where as physicists behave a lot more like “bosons,” which coalesce in large packs, often “overselling” their achievements--an attitude that mathematicians despise.
 It might be tempting at first to regard mathematics as a collection of separate branches, such as geometry, algebra, analysis, number theory, etc., where the first is dominated by the attempt to understand the concept of “space,” the second by the art of manipulating symbols, the third by access to “infinity” and the “continuum,” and so on. This, however, does not do justice to one of the most important features of the mathematical world, namely
 
-1006                                                                                                               VIII. Final Perspectives
+1006
 
-that it is virtually impossible to isolate any of the above                 algebraic geometry, in which he spent the rest of his
-parts from the others with out depriving them of their                       mathematical life:
+that it is virtually impossible to isolate any of the above
+parts from the others with out depriving them of their
 essence. In this way the corpus of mathematics resem-
-                                                                              Je me rappelle encore de cette impression saisissante
 bles a biological entity, which can only survive as a
-                                                                              (toute subjective certes), comme si je quittais des
-whole and which would perish if separated into disjoint                       steppes arides et revêches, pour me retrouver soudain
-pieces.                                                                       dans une sorte de “pays promis” aux richesses luxu-
-   The scientific life of mathematicians can be pictured                       riantes, se multipliant à l’infini part out où il plait à la
-as an exploration of the geography of the “mathemat-                          main de se poser, pour cueillir ou pour fouiller.2
+whole and which would perish if separated into disjoint
+pieces.
+   The scientific life of mathematicians can be pictured
+as an exploration of the geography of the “mathemat-
 ical reality” which they unveil gradually in their own
-                                                                               Most mathematicians adopt a pragmatic attitude
 private mental frame.
-                                                                            and see themselves as explorers of this “mathematical
    This process often begins with an act of rebellion
-                                                                            world” whose existence they do not have any wish to
 against the dogmatic descriptions of that space that
-                                                                            question, and whose structure they uncover by a mix-
 can be found in existing books. Young, prospective
-                                                                            ture of intuition and a great deal of rational thought.
 mathematicians begin to realize that their own percep-
-                                                                            The former is not so different from “poetical desire”
 tion of the mathematical world captures some features
-                                                                            (as emphasized by the French poet Paul Valery), while
 that do not quite fit in with the existing dogma. This
-                                                                            the latter requires intense periods of concentration.
 initial rebellion is, in most cases, due to ignorance, but
-                                                                               Each generation builds a mental picture that reflects
 it can nevertheless be beneficial, as it frees people from
-                                                                            their own understanding of this world. They construct
 reverence for authority and allows them to rely on their
-                                                                            mental tools that penetrate more and more deeply into
 intuition, provided that that intuition can be backed up
-                                                                            it, so that they can explore aspects of it that were
 by actual proofs. Once a mathematician truly gets to
-                                                                            previously hidden.
 know, in an original and “personal” manner, some small
-                                                                               Where things get really interesting is when unex-
 part of the mathematical world, however esoteric it may
-                                                                            pected bridges emerge between parts of the mathe-
 look at first,1 the journey can properly start. It is of
-                                                                            mat ical world that were remote from each other in
 course vital not to break the “fil d’Arianne” (“Ariadne’s
-                                                                            the mental picture that had been developed by pre-
 thread”): that way one can constantly keep a fresh eye
-                                                                            vious generations of mathematicians. When this hap-
 on whatever one encounters along the way, but one can
-                                                                            pens, one gets the feeling that a sudden wind has blown
 also go back to the source if one ever begins to feel lost.
-                                                                            away the fog that was hiding parts of a beautiful land-
    It is also vital to keep moving. Otherwise, one risks
-                                                                            scape. In my own work this type of great surprise has
 confining one self to a relatively small area of extreme
-                                                                            come mostly from the interaction with physics. The
 technical specialization, there by limiting one’s percep-
-                                                                            mathematical concepts that arise naturally in physics
 tion of the mathematical world and of its huge, even
-                                                                            often turn out to be fundamental, as Hadamard pointed
 bewildering, diversity.
-                                                                            out. For him they exhibit
    The fundamental point in this respect is that, even
-though many mathematicians have spent their lives                             not this short lived novelty which can too often influ-
-exploring different parts of that world, with different                         ence the mathematician left to his own devices, but the
-                                                                              infinitely fecund novelty that springs from the nature
+though many mathematicians have spent their lives
+exploring different parts of that world, with different
 perspectives, they all agree on its contours and inter-
-                                                                              of things.
 connections. Whatever the origin of one’s journey, one
-day, if one walks far enough, one is bound to stumble                         I will end this article with some more “practical”
-on a well-known town: for instance, elliptic functions,                     advice. Note, though, that each mathematician is a
-modular forms, or zeta functions. “All roads lead to                        “special case” and one should not take the advice too
-Rome,” and the mathematical world is “connected.” Of                        seriously.
+day, if one walks far enough, one is bound to stumble
+on a well-known town: for instance, elliptic functions,
+modular forms, or zeta functions. “All roads lead to
+Rome,” and the mathematical world is “connected.” Of
 course, this is not to say that all parts of mathematics
-                                                                            Walks. One very sane exercise, when fighting with a
 look alike, and it is worth quoting what Grothendieck
-                                                                            very complicated problem (often involving com put a-
 says (in Récoltes et Semailles) in comparing the land-
-                                                                            tions), is to go for a long walk (no paper or pencil)
 scape of analysis in which he first worked with that of
 
-                                                                              2. Translation: “I still remember this strong impression (completely
-  1. My own starting point was the localization of roots of polyno-         subjective of course), as if I was leaving dry and gloomy steppes and
+  1. My own starting point was the localization of roots of polyno-
 mials. Fortunately, I was invited at a very early age to attend a confer-   finding myself suddenly in a sort of ‘promised land’ of luxuriant rich-
 ence in Seattle, at which I was introduced to the roots of all my future    ness, which spread out to infinity wherever one might wish to put out
-work on factors.                                                            one’s hand to gather from it or delve about in it.”
+work on factors.
 
-VIII.6.   Advice to a Young Mathematician                                                                        1007
+VIII. Final Perspectives
+algebraic geometry, in which he spent the rest of his
+mathematical life:
+Je me rappelle encore de cette impression saisissante
+(toute subjective certes), comme si je quittais des
+steppes arides et revêches, pour me retrouver soudain
+dans une sorte de “pays promis” aux richesses luxu-
+riantes, se multipliant à l’infini part out où il plait à la
+main de se poser, pour cueillir ou pour fouiller.2
+Most mathematicians adopt a pragmatic attitude
+and see themselves as explorers of this “mathematical
+world” whose existence they do not have any wish to
+question, and whose structure they uncover by a mix-
+ture of intuition and a great deal of rational thought.
+The former is not so different from “poetical desire”
+(as emphasized by the French poet Paul Valery), while
+the latter requires intense periods of concentration.
+Each generation builds a mental picture that reflects
+their own understanding of this world. They construct
+mental tools that penetrate more and more deeply into
+it, so that they can explore aspects of it that were
+previously hidden.
+Where things get really interesting is when unex-
+pected bridges emerge between parts of the mathe-
+mat ical world that were remote from each other in
+the mental picture that had been developed by pre-
+vious generations of mathematicians. When this hap-
+pens, one gets the feeling that a sudden wind has blown
+away the fog that was hiding parts of a beautiful land-
+scape. In my own work this type of great surprise has
+come mostly from the interaction with physics. The
+mathematical concepts that arise naturally in physics
+often turn out to be fundamental, as Hadamard pointed
+out. For him they exhibit
+not this short lived novelty which can too often influ-
+ence the mathematician left to his own devices, but the
+infinitely fecund novelty that springs from the nature
+of things.
+I will end this article with some more “practical”
+advice. Note, though, that each mathematician is a
+“special case” and one should not take the advice too
+seriously.
+Walks. One very sane exercise, when fighting with a
+very complicated problem (often involving com put a-
+tions), is to go for a long walk (no paper or pencil)
+2. Translation: “I still remember this strong impression (completely
+subjective of course), as if I was leaving dry and gloomy steppes and
+one’s hand to gather from it or delve about in it.”
 
-and do the computation in one’s head, irrespective of         girls’ school had a wonderful mathematics teacher who
-whether one initially feels that “it is too complicated       showed me the beauty of Euclidean geometry and cal-
-to be done like that.” Even if one does not succeed, it       culus. In contrast, I did not respect the science teach-
-trains the live memory and sharpens one’s skills.             ers, and since those at university were not much better
-                                                              I never really learned any physics.
+VIII.6.   Advice to a Young Mathematician
+
+and do the computation in one’s head, irrespective of
+whether one initially feels that “it is too complicated
+to be done like that.” Even if one does not succeed, it
+trains the live memory and sharpens one’s skills.
 Lying down. Mathematicians usually have a hard time
-                                                                 Very successful within this limited sphere, I was
 explaining to their partner that the times when they
-                                                              highly motivated to be a research mathematician. While
 work with most intensity are when they are lying
-                                                              in some respects I had enormous self-confidence, in
 down in the dark on a sofa. Unfortunately, with e-mail
-                                                              other ways I grew to feel very inadequate. One basic
 and the invasion of computer screens in all mathe-
-                                                              problem was that some how I had absorbed the mes-
 mat ical institutions, the opportunity to isolate one self
-                                                              sage that women are second rate as far as professional
 and concentrate is becoming rarer, and all the more
-                                                              life is concerned and are therefore to be ignored. I had
 valuable.
-                                                              no female friends and did not really value my kind of
-Being brave. There are several phases in the pro-             intelligence, thinking it boring and practical (female),
-cess that leads to the discovery of new mathematics.          and not truly creative (male). There were many ways of
-While the checking phase is scary, but involves just          saying this: women keep the home fires burning while
-rationality and concentration, the first, more creative,       men go out into the world, women are muses not poets,
-phase is of a totally different nature. In some sense, it      women do not have the true soul needed to be a math-
-requires a kind of protection of one’s ignorance, since       ematician, etc. And there still are many ways of saying
+Being brave. There are several phases in the pro-
+cess that leads to the discovery of new mathematics.
+While the checking phase is scary, but involves just
+rationality and concentration, the first, more creative,
+phase is of a totally different nature. In some sense, it
+requires a kind of protection of one’s ignorance, since
 this also protects one from the billions of reasons there     this. Recently an amusing letter circulated among my
-will always be for not looking at a problem that has          feminist friends: it listed various common and contra-
-already been unsuccessfully attacked by many other            dictory prejudices in different scientific fields, the mes-
-mathematicians.                                               sage being that women are perceived to be in capable of
-                                                              whatever is most valued.
-Setbacks. Through out their working lives, including              Another problem that became apparent a little later
-at the very early stages, mathematicians will receive         was that I had managed to write a successful Ph. D. the-
-preprints from competitors and feel disrupted. The            sis while learning very little mathematics. My thesis was
+will always be for not looking at a problem that has
+already been unsuccessfully attacked by many other
+mathematicians.
+Setbacks. Through out their working lives, including
+at the very early stages, mathematicians will receive
+preprints from competitors and feel disrupted. The
 only suggestion I have here is to try to convert this feel-   in von Neumann algebras, a specialized topic that did
-ing of frustration into an injection of positive energy       not relate to anything with real meaning for me. I could
-for working harder. However, this is not always easy.         see no way forward in that field, and yet I knew almost
-                                                              nothing else. When I arrived in Moscow in my last year
+ing of frustration into an injection of positive energy
+for working harder. However, this is not always easy.
 Grudging approbation. A colleague of mine once
-                                                              of graduate study, Gel’fand gave me a paper to read on
 said, “We [mathematicians] work for the grudging
-                                                              the cohomology of the Lie algebra of vector fields on
 approbation of a few friends.” It is true that, since
-                                                              a manifold, and I did not know what cohomology was,
 research work is of a rather solitary nature, we badly
-                                                              what a manifold was, what a vector field was, or what
 need that approbation in one way or another, but quite
-                                                              a Lie algebra was.
 frankly one should not expect much. In fact, the only
-                                                                 Though this ignorance was partly the fault of an over-
 real judge is one self. Nobody else is in as good a posi-
-                                                              specialized educational system, it also resulted from
 tion to know what work was involved, and caring too
-                                                              my lack of contact with the wider world of mathe-
 much about the opinion of others is a waste of time:
-                                                              matics. I had solved the problem of how to reconcile
 so far no theorem has been proved as the result of a
-                                                              being a woman with being a mathematician by essen-
 vote. As Feynman put it, “Why do you care what other
-                                                              tially leading two separate lives. My isolation increased
 people think?”
-                                                              upon my return from Moscow. Having switched fields
-                                                              from functional analysis to topology, I had little guid-
 IV. Dusa Mc Duff
-                                                              ance, and I was too afraid of appearing ignorant to ask
-I started my adult life in a very different situation          many questions. Also, I had a baby while I was a post-
-from most of my contemporaries. Always brought up             doc, and was therefore very busy coping with practical
-to think I would have an independent career, I had            matters. At that stage, with no understanding of the
-also received a great deal of encouragement from my           process of doing mathematics, I was learning mostly
-family and school to do mathematics. Unusually, my            by reading, unaware of the essential role played by
+I started my adult life in a very different situation
+from most of my contemporaries. Always brought up
+to think I would have an independent career, I had
+also received a great deal of encouragement from my
+family and school to do mathematics. Unusually, my
+
+1007
+girls’ school had a wonderful mathematics teacher who
+showed me the beauty of Euclidean geometry and cal-
+culus. In contrast, I did not respect the science teach-
+ers, and since those at university were not much better
+I never really learned any physics.
+Very successful within this limited sphere, I was
+highly motivated to be a research mathematician. While
+in some respects I had enormous self-confidence, in
+other ways I grew to feel very inadequate. One basic
+problem was that some how I had absorbed the mes-
+sage that women are second rate as far as professional
+life is concerned and are therefore to be ignored. I had
+no female friends and did not really value my kind of
+intelligence, thinking it boring and practical (female),
+and not truly creative (male). There were many ways of
+saying this: women keep the home fires burning while
+men go out into the world, women are muses not poets,
+women do not have the true soul needed to be a math-
+ematician, etc. And there still are many ways of saying
+feminist friends: it listed various common and contra-
+dictory prejudices in different scientific fields, the mes-
+sage being that women are perceived to be in capable of
+whatever is most valued.
+Another problem that became apparent a little later
+was that I had managed to write a successful Ph. D. the-
+sis while learning very little mathematics. My thesis was
+not relate to anything with real meaning for me. I could
+see no way forward in that field, and yet I knew almost
+nothing else. When I arrived in Moscow in my last year
+of graduate study, Gel’fand gave me a paper to read on
+the cohomology of the Lie algebra of vector fields on
+a manifold, and I did not know what cohomology was,
+what a manifold was, what a vector field was, or what
+a Lie algebra was.
+Though this ignorance was partly the fault of an over-
+specialized educational system, it also resulted from
+my lack of contact with the wider world of mathe-
+matics. I had solved the problem of how to reconcile
+being a woman with being a mathematician by essen-
+tially leading two separate lives. My isolation increased
+upon my return from Moscow. Having switched fields
+from functional analysis to topology, I had little guid-
+ance, and I was too afraid of appearing ignorant to ask
+many questions. Also, I had a baby while I was a post-
+doc, and was therefore very busy coping with practical
+matters. At that stage, with no understanding of the
+process of doing mathematics, I was learning mostly
+by reading, unaware of the essential role played by
 
 1008
 
@@ -351,54 +418,96 @@ Once they move into action with their skill and talent they find diamonds instea
 As each new author finds cleverer proofs or treatments of a theory, the treatment evolves toward the one that contains the “shortest proofs.” Unfortunately, these are often in a form that causes the new student to ponder, “How did anyone think of this?” By going back to the original sources one can usually see the subject evolving naturally and understand how it has reached its modern form.
 (There will remain those unexpected and brilliant steps at which one can only marvel at the genius of the invent or, but there are far fewer of these than you might think .) As an example, I usually recommend reading Weyl’s original papers on the representation
 
-VIII.6.   Advice to a Young Mathematician                                                                       1009
+VIII.6.   Advice to a Young Mathematician
 
-theory of compact Lie groups and the derivation of          are combined with new ideas. Those working in cer-
-his character formula, alongside one of the many mod-       tain fields (number theory, for example) who do not
-ern treatments. Similarly, I recommend his book The         put in the time and substantial effort needed to learn
-Concept of a Riemann Surface to some one who knows           these tools are putting themselves at a great disadvan-
-complex analysis and wants to learn about the modern        tage. Not to learn the tools is like trying to demolish a
-theory of Riemann surfaces, which is of central impor-      building with just a chisel. Even if you are very adept at
+theory of compact Lie groups and the derivation of
+his character formula, alongside one of the many mod-
+ern treatments. Similarly, I recommend his book The
+Concept of a Riemann Surface to some one who knows
+complex analysis and wants to learn about the modern
+theory of Riemann surfaces, which is of central impor-
 tance to many areas of mathematics. It is also in struc-     using the chisel, some body with a bulldozer will have a
-tive to study the collected works of superb mathemat i-      huge advantage and will not need to be nearly as skilful
+tive to study the collected works of superb mathemat i-
 cians such as Weyl. Be sides learning their theorems one     as you.
-uncovers how their minds work. There is almost always          (iv) Doing research in mathematics is frustrating and
-a natural line of thought that leads from one paper to      if being frustrated is something you cannot get used
-the next and certain developments are then appreciated      to, then mathematics may not be an ideal occupation
-as inevitable. This can be very inspiring.                  for you. Most of the time one is stuck, and if this is not
-   (ii) On the other hand, you should question dogma        the case for you, then either you are exceptionally tal-
-and “standard conjectures,” even if these have been         ented or you are tackling problems that you knew how
-made by brilliant people. Many standard conjectures         to solve before you started. There is room for some
-are made on the basis of special cases that one under-      work of the latter kind, and it can be of a high qual-
-stands. Beyond that, they are some times little more         ity, but most of the big breakthroughs are earned the
-than wishful thinking: one just hopes that the gen-         hard way, with many false steps and long periods of lit-
+uncovers how their minds work. There is almost always
+a natural line of thought that leads from one paper to
+the next and certain developments are then appreciated
+as inevitable. This can be very inspiring.
+   (ii) On the other hand, you should question dogma
+and “standard conjectures,” even if these have been
+made by brilliant people. Many standard conjectures
+are made on the basis of special cases that one under-
+stands. Beyond that, they are some times little more
+than wishful thinking: one just hopes that the gen-
 eral picture is not significantly different from the pic-     tle progress, or even negative progress. There are ways
-ture that the special cases suggest. There are a num-       to make this aspect of research less unpleasant. Many
-ber of instances that I know of where some one set           people these days work jointly, which, be sides the obvi-
+ture that the special cases suggest. There are a num-
+ber of instances that I know of where some one set
 out to prove a result that was generally believed to be     ous advantage of bringing different expertise to bear
-true and made no progress until they seriously ques-        on a problem, allows one to share the frustration. For
+true and made no progress until they seriously ques-
 tioned it. Having said that, I also find it a bit irritat-   most people this is a big positive (and in mathemat-
-ing when, for no particularly good reason, skepticism       ics the corresponding sharing of the joy and credit on
-is thrown on certain special conjectures, such as the       making a breakthrough has not, so far at least, led to
-Riemann hypothesis, or on their provability. While as       many big fights in the way that it has in some other
+ing when, for no particularly good reason, skepticism
+is thrown on certain special conjectures, such as the
+Riemann hypothesis, or on their provability. While as
 a scientist one should certainly adopt a critical atti-     areas of science). I often advise students to try to have
-tude (especially toward some of the artificial objects       a range of problems at hand at any given moment. The
-that we mathematicians have invented), it is important      least challenging should still be difficult enough that
-psychologically that we have beliefs about our math-        solving it will give you satisfaction (for with out that,
-ematical universe and about what is true and what is        what is the point?) and with luck it will be of interest
-provable.                                                   to others. Then you should have a range of more chal-
+tude (especially toward some of the artificial objects
+that we mathematicians have invented), it is important
+psychologically that we have beliefs about our math-
+ematical universe and about what is true and what is
+provable.
    (iii) Do not confuse “elementary” with “easy”: a proof   leng ing problems, with the most difficult ones being
 can certainly be elementary with out being easy. In fact,    central unsolved problems. One should attack these
-there are many examples of theorems for which a lit-        on and off over time, looking at them from different
-tle sophistication makes the proof easy to understand       points of view. It is important to keep exposing one self
-and brings out the underlying ideas, where as an ele-        to the possibility of solving very difficult problems and
-ment ary treatment that avoids sophisticated notions         perhaps benefiting from a bit of luck.
-hides what is going on. At the same time, beware of           (v) Go to your departmental colloquium every week,
-equating sophistication with quality or with the “beef      and hope that its organizers have made some good
+there are many examples of theorems for which a lit-
+tle sophistication makes the proof easy to understand
+and brings out the underlying ideas, where as an ele-
+ment ary treatment that avoids sophisticated notions
+hides what is going on. At the same time, beware of
+equating sophistication with quality or with the “beef
 of an argument” (an expression that I apparently like to    choices for speakers. It is important to have a broad
-use a lot in this context: many of my former students       awareness of mathematics. Be sides learning about in-
-have teased me about it). There is a tendency among         te resting problems and progress that people are mak-
-some young mathematicians to think that using fancy         ing in other fields, you can often have an idea stimu-
-and sophisticated language means that what they are         lated in your mind when the speaker is talking about
-doing is deep. Nevertheless, modern tools are power-        something quite different. Also, you may learn of a
-ful when they are understood properly and when they         technique or theory that could be applied to one of the
+use a lot in this context: many of my former students
+have teased me about it). There is a tendency among
+some young mathematicians to think that using fancy
+and sophisticated language means that what they are
+doing is deep. Nevertheless, modern tools are power-
+ful when they are understood properly and when they
+
+1009
+are combined with new ideas. Those working in cer-
+tain fields (number theory, for example) who do not
+put in the time and substantial effort needed to learn
+these tools are putting themselves at a great disadvan-
+tage. Not to learn the tools is like trying to demolish a
+building with just a chisel. Even if you are very adept at
+huge advantage and will not need to be nearly as skilful
+(iv) Doing research in mathematics is frustrating and
+if being frustrated is something you cannot get used
+to, then mathematics may not be an ideal occupation
+for you. Most of the time one is stuck, and if this is not
+the case for you, then either you are exceptionally tal-
+ented or you are tackling problems that you knew how
+to solve before you started. There is room for some
+work of the latter kind, and it can be of a high qual-
+ity, but most of the big breakthroughs are earned the
+hard way, with many false steps and long periods of lit-
+to make this aspect of research less unpleasant. Many
+people these days work jointly, which, be sides the obvi-
+on a problem, allows one to share the frustration. For
+ics the corresponding sharing of the joy and credit on
+making a breakthrough has not, so far at least, led to
+many big fights in the way that it has in some other
+a range of problems at hand at any given moment. The
+least challenging should still be difficult enough that
+solving it will give you satisfaction (for with out that,
+what is the point?) and with luck it will be of interest
+to others. Then you should have a range of more chal-
+on and off over time, looking at them from different
+points of view. It is important to keep exposing one self
+to the possibility of solving very difficult problems and
+perhaps benefiting from a bit of luck.
+(v) Go to your departmental colloquium every week,
+and hope that its organizers have made some good
+awareness of mathematics. Be sides learning about in-
+te resting problems and progress that people are mak-
+ing in other fields, you can often have an idea stimu-
+lated in your mind when the speaker is talking about
+something quite different. Also, you may learn of a
+technique or theory that could be applied to one of the

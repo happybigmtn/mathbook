@@ -31,61 +31,100 @@ Albert Einstein once said, “You can confirm a theory with experiment, but no p
 If this seems fruitful, then the final step requires the mathematician to prove that the apparent pattern is really there, and is not a shimmering mirage above the desert sands. A computer is used by a pure mathematician in much the same way that a telescope is used by a theoretical astronomer.
 It shows us “what’s out there.” Neither the computer nor the telescope can provide a theoretical explanation for what it sees, but both of them extend the reach of the mind by providing numerous examples that might otherwise be hidden, and from which one has some chance of perceiving, and then demonstrating, the existence of patterns, or universal laws.
 
-992                                                                                             VIII. Final Perspectives
+992
 
-   In this article I would like to show you some exam-       something nice happens, then take the result and use
-ples of this process at work. Naturally the focus will       another package to learn something else, and so forth.
-be on examples in which some degree of success has           Many are the times when I have written little programs
-been realized, rather than on the much more numer-           in Mathematica or Maple and then gone away for the
-ous cases where no pattern could be perceived, at least      weekend leaving the computer running and searching
-by my eyes. Since my work is mainly in combinator-           for interesting phenomena.
+   In this article I would like to show you some exam-
+ples of this process at work. Naturally the focus will
+be on examples in which some degree of success has
+been realized, rather than on the much more numer-
+ous cases where no pattern could be perceived, at least
+by my eyes. Since my work is mainly in combinator-
 ics and discrete mathematics, the focus will also be on
-those areas of mathematics. It should not be inferred        2.2   Neil Sloane’s Database of Integer Sequences
+those areas of mathematics. It should not be inferred
 that experimental methods are not used in other areas;
-only that I don’t know those applications well enough        Aside from a CAS, another indispensable tool for
-to write about them.                                         experimentally inclined mathematicians, particularly
-   In one short article we cannot even begin to do jus-      for combinatorialists, is Neil Sloane’s “On-Line Ency-
-tice to the richly varied, broad, and deep achievements      clopedia of Integer Sequences,” which is on the Web at
-of experimental mathematics. For further reading, see        www.research.att.com/ ̃njas. At present, this contains
-the journal Experimental Mathematics and the books           nearly 100 000 integer sequences and has full search
-by Borwein and Bailey (2003) and Borwein et al. (2004).      capabilities. A great deal of information is given for
+only that I don’t know those applications well enough
+to write about them.
+   In one short article we cannot even begin to do jus-
+tice to the richly varied, broad, and deep achievements
+of experimental mathematics. For further reading, see
+the journal Experimental Mathematics and the books
+by Borwein and Bailey (2003) and Borwein et al. (2004).
    In the following sections we give first a brief descrip-   each sequence.
-tion of some of the useful tools in the armament of             Suppose that for each positive integer n you have an
-experimental mathematics, and then some successful           associated set of objects that you want to count. You
-examples of the method, if it is a method. The examples      might, for example, be trying to determine the number
-have been chosen subject to fairly severe restrictions:      of sets of size n with some given property, or you might
-                                                             wish to know how many prime divisors n has (which is
-  (i) the use of computer exploration was vital to the       the same as counting the set of these prime divisors).
-      success of the project; and                            Suppose further that you’ve found the answer for n =
- (ii) the out come of the effort was the discovery of a        1, 2, 3, . . . , 10, say, but you haven’t been able to find any
-      new theorem in pure mathematics.                       simple formula for the general answer.
-                                                                Here’s a concrete example. Suppose you’re working
+tion of some of the useful tools in the armament of
+experimental mathematics, and then some successful
+examples of the method, if it is a method. The examples
+have been chosen subject to fairly severe restrictions:
+  (i) the use of computer exploration was vital to the
+
+ (ii) the out come of the effort was the discovery of a
+
 I must apologize for including several examples from
-                                                             on such a problem, and the answers that you get for
 my own work, but those are the ones with which I am
-                                                             n = 1, 2, . . . , 10 are 1, 1, 1, 1, 2, 3, 6, 11, 23, 47. The
 most familiar.
-                                                             next step should be to look online to see if the human
-                                                             race has encountered your sequence before. You might
-      2   Some of the Tools in the Toolbox                   find nothing at all, or you might find that the result
-2.1   Computer Algebra Systems                               that you’d been hoping for has long since been known,
-                                                             or you might find that your sequence is mysteriously
-The mathematician who enjoys using computers will            the same as another sequence that arose in quite a dif-
-find an enormous number of programs and packages              ferent context. In the third case, an example of which
-available, beginning with the two major computer alge-       is described below in section 3, something interesting
-bra systems (CASs), Maple and Mathematica. These pro-        will surely happen next. If you haven’t tried this before,
-grams can provide so much assistance to a working            do look up the little example sequence above, and see
-mathematician that they must be regarded as essen-           what it represents.
+
+2.1   Computer Algebra Systems
+The mathematician who enjoys using computers will
+find an enormous number of programs and packages
+available, beginning with the two major computer alge-
+bra systems (CASs), Maple and Mathematica. These pro-
+grams can provide so much assistance to a working
+mathematician that they must be regarded as essen-
 tial pieces of one’s professional armamentarium. They
-are extremely user-friendly and capable.                     2.3   Krattenthaler’s Package “Rate”
+are extremely user-friendly and capable.
    Typically one uses a CAS in interactive mode, mean-
-ing that you type in a one-line command and the pro-         A very helpful Mathematica package for guessing the
-gram responds with its output, then you type in another      form of hypergeometric sequences has been written
-line, etc. This modus operandi will suffice for many pur-      by Christian Krattenthaler and is available from his
-poses, but for best results one should learn the pro-        Web site. The name of the package is Rate (rot’-eh),
-gramming languages that are embedded in these pack-          which is the German word for “guess.”
-ages. With a little knowledge of programming, one can          To say what a hypergeometric sequence is, let’s first
+ing that you type in a one-line command and the pro-
+gram responds with its output, then you type in another
+line, etc. This modus operandi will suffice for many pur-
+poses, but for best results one should learn the pro-
+gramming languages that are embedded in these pack-
+ages. With a little knowledge of programming, one can
 ask the computer to look at larger and larger cases until    recall that a rational function of n is a quotient of
+
+VIII. Final Perspectives
+something nice happens, then take the result and use
+another package to learn something else, and so forth.
+Many are the times when I have written little programs
+in Mathematica or Maple and then gone away for the
+weekend leaving the computer running and searching
+for interesting phenomena.
+2.2   Neil Sloane’s Database of Integer Sequences
+Aside from a CAS, another indispensable tool for
+experimentally inclined mathematicians, particularly
+for combinatorialists, is Neil Sloane’s “On-Line Ency-
+clopedia of Integer Sequences,” which is on the Web at
+www.research.att.com/ ̃njas. At present, this contains
+nearly 100 000 integer sequences and has full search
+capabilities. A great deal of information is given for
+Suppose that for each positive integer n you have an
+associated set of objects that you want to count. You
+might, for example, be trying to determine the number
+of sets of size n with some given property, or you might
+wish to know how many prime divisors n has (which is
+the same as counting the set of these prime divisors).
+success of the project; and
+1, 2, 3, . . . , 10, say, but you haven’t been able to find any
+new theorem in pure mathematics.
+Here’s a concrete example. Suppose you’re working
+on such a problem, and the answers that you get for
+n = 1, 2, . . . , 10 are 1, 1, 1, 1, 2, 3, 6, 11, 23, 47. The
+next step should be to look online to see if the human
+race has encountered your sequence before. You might
+2   Some of the Tools in the Toolbox
+that you’d been hoping for has long since been known,
+or you might find that your sequence is mysteriously
+the same as another sequence that arose in quite a dif-
+ferent context. In the third case, an example of which
+is described below in section 3, something interesting
+will surely happen next. If you haven’t tried this before,
+do look up the little example sequence above, and see
+what it represents.
+2.3   Krattenthaler’s Package “Rate”
+A very helpful Mathematica package for guessing the
+form of hypergeometric sequences has been written
+by Christian Krattenthaler and is available from his
+Web site. The name of the package is Rate (rot’-eh),
+which is the German word for “guess.”
+To say what a hypergeometric sequence is, let’s first
 
 VIII . $5$ .
 
@@ -123,59 +162,76 @@ How about this one: in the block of values of $n$ between $2^{a}$ and $2^{a} + {
 1 It was totally unexpected to find a property of the values of this sequence that involved the multiplicative structure of the positive integers, rather than their additive structure, which would have been quite natural. This is because the theory of partitions of integers belongs to the additive theory of numbers, and multiplicative properties of partitions are rare and always cherished. Once this relative primality is noticed, the proof is easy. If m is the smallest n for which b (n), b (n $+ 1$ ) fail to be relatively prime, then suppose $p > 1$ divides both of them.
 If $m = 2k + 1$ is odd, then the recurrence $1$ . Two positive integers are relatively prime if they have no common factor.
 
-VIII.5.   Mathematics: An Experimental Science                                                                            995
+VIII.5.   Mathematics: An Experimental Science
 
-                                          Table 1 The first ninety-five values of b(n).
+implies that p divides b(k) and b(k + 1), contradict-
+ing the minimality, where as if m = 2 k is even, the
+recurrence again gives that result, finishing the proof.
+  Why was it so interesting that consecutive values
+appeared to be relatively prime? Well, at once that
+raised the question of whether every possible relatively
+prime pair (r , s) of positive integers occurs as a pair of
+consecutive values of this sequence, and if so, whether
+every such pair occurs once and only once. Both of
+those possibilities are supported by the table of val-
+ues above, and upon further investigation both turned
+out to be true. See Calkin and Wilf (2000) for details.
+  The bottom line here is that every positive rational
+number occurs once and only once, and in reduced form,
+among the members of the sequence {b(n)/b(n + 1)}. nfty
+Hence the partition function b(n) induces an enu-
+meration of the rational numbers, a result which was
+found by gazing at a computer screen and looking for
+patterns.
+Moral: be sure to spend many hours each day gazing at
+your computer screen and looking for patterns.
 
-           0   1    2     3     4     5       6     7    8      9    10    11    12    13    14   15    16    17   18
+One of the great strengths of computer algebra systems
+is that they are very good at factoring. They can factor
+very large integers and very complicated expressions.
+Whenever you run into some large expression as the
 
-           1    1    2    1     3     2       3     1    4      3      5    2     5      3    4     1    5     4     7
-
-          19   20   21   22    23    24      25   26    27     28    29    30    31    32    33   34    35    36   37
-
-           3    8    5    7     2     7       5     8    3      7      4    5     1      6    5     9    4    11     7
-
-          38   39   40   41    42    43      44   45    46     47    48    49    50    51    52   53    54    55   56
-
-          10    3   11    8    13     5      12     7    9      2      9    7    12     5    13    8    11     3    10
-
-          57   58   59   60    61    62      63   64    65     66    67    68    69    70    71   72    73    74   75
-
-           7   11    4    9     5     6       1     7    6     11      5   14     9     13    4   15    11    18     7
-
-          76   77   78   79    80    81      82   83    84     85    86    87    88    89    90   91    92    93   94
-
-          17   10   13    3    14    11      19     8   21     13    18     5    17     12   19     7   16     9    11
-
-implies that p divides b(k) and b(k + 1), contradict-               answer to a problem that interests you, it is good prac-
-ing the minimality, where as if m = 2 k is even, the                  tice to ask your CAS to factor it for you. Some times the
-recurrence again gives that result, finishing the proof.             results will surprise you. This is one such story.
-  Why was it so interesting that consecutive values                    The theory of Young tableaux forms an important
-appeared to be relatively prime? Well, at once that                 part of modern combinatorics. To create a Young
-raised the question of whether every possible relatively            tableau we choose a positive integer n and a partition
-prime pair (r , s) of positive integers occurs as a pair of         n = a1 +a2 +· · ·+ak of that integer. We’ll use the inte-
-consecutive values of this sequence, and if so, whether             ger n = 6 and the partition 6 = 3 + 2 + 1 as an example.
-every such pair occurs once and only once. Both of                  Next we draw the Ferrers board of the partition, which
-those possibilities are supported by the table of val-              is a truncated chessboard that has a1 squares in its
-ues above, and upon further investigation both turned               first row, a2 in its second row, etc., the rows being left-
-out to be true. See Calkin and Wilf (2000) for details.             justified. In our example, the Ferrers board is as shown
-  The bottom line here is that every positive rational              in figure 1.
-number occurs once and only once, and in reduced form,                 To make a tableau, we insert the labels 1, 2, . . . , n
-among the members of the sequence {b(n)/b(n + 1)}. nfty       0 .        into the n cells of the board in such a way that the
-Hence the partition function b(n) induces an enu-                   labels increase from left to right across each row and
-meration of the rational numbers, a result which was                increase from top to bottom down every column. With
-found by gazing at a computer screen and looking for                our example, one way to do this is as shown in figure 2.
-patterns.                                                              One of several important properties of tableaux is
-Moral: be sure to spend many hours each day gazing at               that there is a one-to-one correspondence, known as
-your computer screen and looking for patterns.                      the Robinson–Schensted–Knuth (RSK) correspondence,
-                                                                    which assigns to every permutation of n letters a pair
-                                                                    of tableaux of the same shape. One use of the RSK cor-
-           4   An Unexpected Factorization
-                                                                    respondence is to find the length of the longest increas-
-One of the great strengths of computer algebra systems              ing subsequence in the vector of values of a given per-
-is that they are very good at factoring. They can factor            mutation. It turns out that this length is the same as
-very large integers and very complicated expressions.               the length of the first row of either of the tableaux
-Whenever you run into some large expression as the                  to which the permutation corresponds under the RSK
+995
+Table 1 The first ninety-five values of b(n).
+0   1    2     3     4     5
+1    1    2    1     3     2
+19   20   21   22    23    24
+3    8    5    7     2     7
+38   39   40   41    42    43
+10    3   11    8    13     5
+57   58   59   60    61    62
+7   11    4    9     5     6
+76   77   78   79    80    81
+17   10   13    3    14    11
+answer to a problem that interests you, it is good prac-
+tice to ask your CAS to factor it for you. Some times the
+results will surprise you. This is one such story.
+The theory of Young tableaux forms an important
+part of modern combinatorics. To create a Young
+tableau we choose a positive integer n and a partition
+n = a1 +a2 +· · ·+ak of that integer. We’ll use the inte-
+ger n = 6 and the partition 6 = 3 + 2 + 1 as an example.
+Next we draw the Ferrers board of the partition, which
+is a truncated chessboard that has a1 squares in its
+first row, a2 in its second row, etc., the rows being left-
+justified. In our example, the Ferrers board is as shown
+in figure 1.
+To make a tableau, we insert the labels 1, 2, . . . , n
+0 .
+labels increase from left to right across each row and
+increase from top to bottom down every column. With
+our example, one way to do this is as shown in figure 2.
+One of several important properties of tableaux is
+that there is a one-to-one correspondence, known as
+the Robinson–Schensted–Knuth (RSK) correspondence,
+which assigns to every permutation of n letters a pair
+of tableaux of the same shape. One use of the RSK cor-
+4   An Unexpected Factorization
+respondence is to find the length of the longest increas-
+ing subsequence in the vector of values of a given per-
+mutation. It turns out that this length is the same as
+the length of the first row of either of the tableaux
+to which the permutation corresponds under the RSK
 
 $996$
 
@@ -280,150 +336,218 @@ in which
 
 (8)
 
-998                                                                                            VIII. Final Perspectives
+998
 
 is lower triangular, with the numbers { 12 Δ2 j (2μ)}n−1
-                                                      j=0       At this point the news is all good. While it is true that
 on its diagonal. Of course, if we can do this, then from     the matrix entries are fairly complicated, the fact that
-(8), since det En (μ) = 1, we will have proved the the-      leaps off the page and warms the heart of the experi-
-orem (7), since the determinant of the product of two        mental mathematician is that all of the polynomials in \mu matrices is the product of their determinants, and the       factor into linear factors with pleasant-looking integer
+(8), since det En (μ) = 1, we will have proved the the-
+orem (7), since the determinant of the product of two
+matrices is the product of their determinants, and the
 determinant of a triangular matrix (i.e., of a matrix all    coefficients. So there is hope for conjecturing a gen-
-of whose entries below the diagonal are 0 s) is simply        eral form of the E matrix. Will this benign situation
-the product of its diagonal entries.                         persist when n = 5? A further computation reveals
-   But how shall we find this matrix En (μ)? By holding       that E5 (μ) is as shown in figure 3. Now it is a “cer-
+of whose entries below the diagonal are 0 s) is simply
+the product of its diagonal entries.
+   But how shall we find this matrix En (μ)? By holding
 tightly to the hand of our computer and letting it guide     tainty” that some nice formulas exist for the entries of
-us there. More precisely,                                    the general matrix En (μ). The Rate package, described
-                                                             in section 2.3, would certainly facilitate the next step,
+us there. More precisely,
   (i) we will look at the matrix En (μ) for various small
-                                                             which is to find general formulas for the entries of the
-      values of n, and from those data we will conjec-
-                                                             E matrix. The final result is that the (i, j) entry of En (μ)
-      ture the formula for the general (i, j) entry of the
-                                                             is 0 if i > j and
-      matrix; and then
- (ii) we will (well actually “we” won’t, but Andrews did)              (−1)j−i (i)2(j−i) (2μ + 2 j + i + 2)j−i
-      prove that the conjectured entries of the matrix             4 j−i (j − i)!(μ + i + 1)j−i (μ + j + i + 12 )j−i
-      are correct.
-                                                             otherwise.
-  It was in step (ii) above that an extraordinary twenty-       After divining that the E matrix has the above form,
-one-stage event occurred which was successfully man-         Andrews now faced the task of proving that it works,
-aged by Andrews. What he did was to set up a system of       i.e., that Mn En (μ) is lower triangular and has the
+
+ (ii) we will (well actually “we” won’t, but Andrews did)
+
+  It was in step (ii) above that an extraordinary twenty-
+one-stage event occurred which was successfully man-
+aged by Andrews. What he did was to set up a system of
 twenty-one propositions, each of them a fairly technical     diagonal entries specified above. It was in this part
-hypergeometric identity. Next, he carried out a simul-       of the work that the twenty-one-fold induction was
-taneous induction on these twenty-one propositions.          unleashed. Another proof of the evaluation of the Mills–
-That is to say, he showed that if, say, the thirteenth       Robbins–Rumsey determinant is in Petkovšek and Wilf
-proposition was true for a certain value of n, then so       (1996). That proof begins with Andrews’s discovery of
-was the fourteenth, etc., and if they were all true for      the above form of the En (μ) matrix, and then uses
-that value of n, then the first proposition was true for      the machinery of the so-called WZ method (Petkovšek
-n + 1. The reader should be sure to look at Andrews          et al. 1996), instead of a twenty-one-stage induction, to
-(1998) to gain more of the flavor and substance of what       prove that the matrix performs the desired triangula-
-was done than can be conveyed in this short summary.         tion (8).
+hypergeometric identity. Next, he carried out a simul-
+taneous induction on these twenty-one propositions.
+That is to say, he showed that if, say, the thirteenth
+proposition was true for a certain value of n, then so
+was the fourteenth, etc., and if they were all true for
+that value of n, then the first proposition was true for
+n + 1. The reader should be sure to look at Andrews
+(1998) to gain more of the flavor and substance of what
+was done than can be conveyed in this short summary.
   Here we will confine ourselves to a few comments
-                                                             Moral: never give up, even when defeat seems certain.
 about step (i) of the program above. So, let’s look at the
 matrix En (μ) for some small values of n. The condition
-that En (μ) is upper triangular with 1 s on the diagonal                   7   The Computation of π
+that En (μ) is upper triangular with 1 s on the diagonal
 means that
-               j−1
-                                                             In 1997, a remarkable formula for π was found (Bailey
-               
-                     (Mn )i, k ek, j = −(Mn )i, j ,             et al. 1997). This formula permits the computation of
-               k=0                                           just a single hexadecimal digit of π , if desired, using
-      ⩽ i ⩽ j − 1 and 1 ⩽ 
-for0                    j⩽  n − 1. We can regard these    minimal space and time. For example, we might com-
-    n                      n
-as 2 equations in the 2 above-diagonal entries of            pute the trillionth digit of π , with out ever having to
-En (μ) and we can ask our CAS to find those entries, for      deal with any of the earlier ones, in a time that is faster
-some small values of n. Here is E4 (μ):                      than what we might attain if we had to calculate all of
-     ⎛                                             ⎞         the first trillion digits. For example, Bailey et al. found
-      1 0         0                   0
-     ⎜                                             ⎟         that in the hexadecimal expansion of π , the block of
-     ⎜                            6(μ + 5)         ⎟
-     ⎜0 1 − 1                                      ⎟
-     ⎜           μ + 2   (μ +  2)(μ +  3)(2μ + 11) ⎟         fourteen digits in positions 1010 through 1010 + 13 are
-     ⎜                                             ⎟
-     ⎜                                             ⎟.        921 C73 C6838 FB2. The formula is
-     ⎜                             6(μ + 5)        ⎟
-     ⎜0 0         1         −                      ⎟
-     ⎜                        (μ + 3)(2μ + 11) ⎟                   . nfty
-     ⎝                                             ⎠                    1      4        2        1        1
-                                                              π=          i 8 i + 1
-                                                                                   −        −        −       . (9)
-      0 0         0                   1                            i=0
-                                                                       16            8 i + 4   8 i + 5   8 i +6
 
-VIII.5.   Mathematics: An Experimental Science                                                                                 999
+for0 
+    n
+as 2 equations in the 2 above-diagonal entries of
+En (μ) and we can ask our CAS to find those entries, for
+some small values of n. Here is E4 (μ):
+     ⎛
 
-                    ⎛                                                                                           ⎞
-                      1     0       0                       0                                0
-                    ⎜                                                                                        ⎟
-                    ⎜                                                                                        ⎟
-                    ⎜               1               6(μ + 5)                             30(μ + 6)           ⎟
-                    ⎜0      1    −                                          −                                ⎟
-                    ⎜              μ+2      (μ + 2)(μ + 3)(2μ + 11)           (μ + 2)(μ + 3)(μ + 4)(2μ + 15) ⎟
-                    ⎜                                                                                        ⎟
-                    ⎜                                                                                        ⎟
-                    ⎜                                     6(μ + 5)                      30(μ + 6)            ⎟
-                    ⎜                                                                                        ⎟
-                    ⎜0      0       1             −                                                          ⎟
-                    ⎜                                 (μ + 3)(2μ + 11)           (μ + 3)(μ + 4)(2μ + 15)     ⎟
-                    ⎜                                                                                        ⎟
-                    ⎜                                                                                        ⎟
-                    ⎜                                                                   6(2μ + 13)           ⎟
-                    ⎜0      0       0                       1                      −                         ⎟
-                    ⎜                                                                                        ⎟
-                    ⎜                                                                (μ + 4)(2μ + 15)        ⎟
-                    ⎝                                                                                        ⎠
-                     0      0       0                       0                               1
+     ⎜
+     ⎜
+     ⎜0 1 − 1
+     ⎜
+     ⎜
+     ⎜
+     ⎜
+     ⎜0 0
+     ⎜
+     ⎝
 
-                                             Figure 3 The upper triangular matrix E5 (μ).
+VIII. Final Perspectives
+j=0       At this point the news is all good. While it is true that
+leaps off the page and warms the heart of the experi-
+mental mathematician is that all of the polynomials in \mu factor into linear factors with pleasant-looking integer
+eral form of the E matrix. Will this benign situation
+persist when n = 5? A further computation reveals
+that E5 (μ) is as shown in figure 3. Now it is a “cer-
+the general matrix En (μ). The Rate package, described
+in section 2.3, would certainly facilitate the next step,
+which is to find general formulas for the entries of the
+values of n, and from those data we will conjec-
+E matrix. The final result is that the (i, j) entry of En (μ)
+ture the formula for the general (i, j) entry of the
+is 0 if i > j and
+matrix; and then
+(−1)j−i (i)2(j−i) (2μ + 2 j + i + 2)j−i
+prove that the conjectured entries of the matrix
+are correct.
+otherwise.
+After divining that the E matrix has the above form,
+Andrews now faced the task of proving that it works,
+i.e., that Mn En (μ) is lower triangular and has the
+of the work that the twenty-one-fold induction was
+unleashed. Another proof of the evaluation of the Mills–
+Robbins–Rumsey determinant is in Petkovšek and Wilf
+(1996). That proof begins with Andrews’s discovery of
+the above form of the En (μ) matrix, and then uses
+the machinery of the so-called WZ method (Petkovšek
+et al. 1996), instead of a twenty-one-stage induction, to
+prove that the matrix performs the desired triangula-
+tion (8).
+Moral: never give up, even when defeat seems certain.
+7   The Computation of π
+j−1
+In 1997, a remarkable formula for π was found (Bailey
+
+(Mn )i, k ek, j = −(Mn )i, j ,             et al. 1997). This formula permits the computation of
+k=0
+⩽ i ⩽ j − 1 and 1 ⩽ 
+j⩽  n − 1. We can regard these    minimal space and time. For example, we might com-
+n
+pute the trillionth digit of π , with out ever having to
+deal with any of the earlier ones, in a time that is faster
+than what we might attain if we had to calculate all of
+⎞
+1 0
+⎟
+6(μ + 5)
+⎟
+μ + 2   (μ +  2)(μ +  3)(2μ + 11) ⎟
+⎟
+⎟.
+6(μ + 5)
+1
+(μ + 3)(2μ + 11) ⎟
+⎠
+π=          i 8 i + 1
+−        −        −       . (9)
+0 0
+16            8 i + 4   8 i + 5   8 i +6
 
-  In our discussion here we will limit ourselves to de-                  a computer can never investigate infinitely many cases,
-scr ib ing how we might have found the specific expan-                      no matter how fast it is. But computers are useful
-sion (9) once we had decided that an interesting expan-                  for proving theorems despite that handicap. We have
-sion of the form                                                         seen several examples of how a mathematician can act
-                            . nfty
-                             1 
-                                b−1
-                                         ak                              in concert with a computer to explore a world within
-                    π=                        .                 (10)     mathematics. From such explorations there can grow
-                            i=0
-                                c i
-                                    k=1
-                                        bi +k
-                                                                         understanding, and conjectures, and roads to proofs,
-might exist. This, of course, leaves open the question                   and phenomena that would not have been imaginable in
-of how the discovery of the form (10) was singled out                    the pre-computer era. This role of computation within
-in the first place.                                                       pure mathematics seems destined only to expand over
-  The strategy will be to use the linear dependency                      the coming years and to be imbued into our students
-algorithm described in section 2.4. More precisely, we                   along with euclid’s [VI.2](/part-06/euclid-ca) axioms and other staples of
-want to find a nontrivial integer linear combination of                   mathematical education.
-π and the seven numbers                                                    At the other end of the rainbow there may lie a more
-                . nfty
-                         1                                               far-reaching role for computers. Perhaps one day we
-          αk =                   (k = 1, . . . , 7)
-                i=0 (8 i + k)16 i                                          will be able to input some hypotheses and a desired
-that sums to 0. As in equation (3), we now compute the                   conclusion, press the “Enter” key, and get a print out
-seven numbers αj and we look for a relation                              of a proof. There are a few fields of mathematics in
-                                                                         which we can do such things, notably in the proofs of
-    mπ + m1 α1 + m2 α2 + · · · + m7 α7 = 0                               identities (Petkovšek et al. 1996; Greene and Wilf 2007),
-                                              (m, mi ∈ Z)                but in general the road to that brave new world remains
-                                                                         long and uncharted.
+VIII.5.   Mathematics: An Experimental Science
+
+  In our discussion here we will limit ourselves to de-
+scr ib ing how we might have found the specific expan-
+sion (9) once we had decided that an interesting expan-
+sion of the form
+might exist. This, of course, leaves open the question
+of how the discovery of the form (10) was singled out
+in the first place.
+  The strategy will be to use the linear dependency
+algorithm described in section 2.4. More precisely, we
+want to find a nontrivial integer linear combination of
+π and the seven numbers
+
+that sums to 0. As in equation (3), we now compute the
+seven numbers αj and we look for a relation
+    mπ + m1 α1 + m2 α2 + · · · + m7 α7 = 0
 by using, for example, the Maple Integer Relations
 package. The output vector,
-                                                                         Further Reading
-      (m, m1 , m2 , . . . , m7 ) = (1, −4, 0, 0, 2, 1, 1, 0),
-                                                                         Andrews, G. E. 1998. Pfaff’s method. I. The Mills–Robbins–
-yields the identity (9). You should do this calculation                    Rumsey determinant. Discrete Mathematics 193:43–60.
-for your self, then prove that the apparent identity is in                Bailey, D. H., and S. Plouffe. 1997. Recognizing numeri-
-fact true, and, finally, look for something similar that                    cal constants. In Proceedings of the Organic Mathematics
-uses powers of 64 instead of 16. Good luck!                                Workshop, 12–14 December 1995, Simon Fraser Univer-
-                                                                           sity. Conference Proceedings of the Canadian Mathemat-
-Moral: even as late as the year 1997 c.e., something new                   ical Society, volume 20. Ottawa: Canadian Mathematical
-and interesting was said about the number π .                              Society.
-                                                                         Bailey, D. H., P. Borwein, and S. Plouffe. 1997. On the
-                        8    Conclusions                                   rapid computation of various polylogarithmic constants.
-                                                                           Mathematics of Computation 66:903–13.
-When computers first appeared in mathematicians’                          Borwein, J.. and D. H. Bailey. 2003. Mathematics by Experi-
-environments the almost universal reaction was that                        ment: Plausible Reasoning in the 21 st Century. Wellesley,
-they would never be useful for proving theorems since                      MA: A. K. Peters.
+
+yields the identity (9). You should do this calculation
+for your self, then prove that the apparent identity is in
+fact true, and, finally, look for something similar that
+uses powers of 64 instead of 16. Good luck!
+Moral: even as late as the year 1997 c.e., something new
+and interesting was said about the number π .
+When computers first appeared in mathematicians’
+environments the almost universal reaction was that
+they would never be useful for proving theorems since
+
+999
+⎛                                                                                           ⎞
+1     0       0                       0                                0
+⎜                                                                                        ⎟
+⎜                                                                                        ⎟
+⎜               1               6(μ + 5)                             30(μ + 6)           ⎟
+⎜0      1    −                                          −                                ⎟
+⎜              μ+2      (μ + 2)(μ + 3)(2μ + 11)           (μ + 2)(μ + 3)(μ + 4)(2μ + 15) ⎟
+⎜                                                                                        ⎟
+⎜                                                                                        ⎟
+⎜                                     6(μ + 5)                      30(μ + 6)            ⎟
+⎜                                                                                        ⎟
+⎜0      0       1             −                                                          ⎟
+⎜                                 (μ + 3)(2μ + 11)           (μ + 3)(μ + 4)(2μ + 15)     ⎟
+⎜                                                                                        ⎟
+⎜                                                                                        ⎟
+⎜                                                                   6(2μ + 13)           ⎟
+⎜0      0       0                       1                      −                         ⎟
+⎜                                                                                        ⎟
+⎜                                                                (μ + 4)(2μ + 15)        ⎟
+⎝                                                                                        ⎠
+0      0       0                       0                               1
+Figure 3 The upper triangular matrix E5 (μ).
+a computer can never investigate infinitely many cases,
+no matter how fast it is. But computers are useful
+for proving theorems despite that handicap. We have
+seen several examples of how a mathematician can act
+. nfty
+ 1 
+b−1
+ak                              in concert with a computer to explore a world within
+π=                        .                 (10)     mathematics. From such explorations there can grow
+i=0
+c i
+k=1
+bi +k
+understanding, and conjectures, and roads to proofs,
+and phenomena that would not have been imaginable in
+the pre-computer era. This role of computation within
+pure mathematics seems destined only to expand over
+the coming years and to be imbued into our students
+along with euclid’s [VI.2](/part-06/euclid-ca) axioms and other staples of
+mathematical education.
+At the other end of the rainbow there may lie a more
+. nfty
+1                                               far-reaching role for computers. Perhaps one day we
+αk =
+i=0 (8 i + k)16 i
+conclusion, press the “Enter” key, and get a print out
+of a proof. There are a few fields of mathematics in
+which we can do such things, notably in the proofs of
+identities (Petkovšek et al. 1996; Greene and Wilf 2007),
+(m, mi ∈ Z)                but in general the road to that brave new world remains
+long and uncharted.
+Further Reading
+(m, m1 , m2 , . . . , m7 ) = (1, −4, 0, 0, 2, 1, 1, 0),
+Andrews, G. E. 1998. Pfaff’s method. I. The Mills–Robbins–
+Rumsey determinant. Discrete Mathematics 193:43–60.
+Bailey, D. H., and S. Plouffe. 1997. Recognizing numeri-
+cal constants. In Proceedings of the Organic Mathematics
+Workshop, 12–14 December 1995, Simon Fraser Univer-
+sity. Conference Proceedings of the Canadian Mathemat-
+ical Society, volume 20. Ottawa: Canadian Mathematical
+Society.
+Bailey, D. H., P. Borwein, and S. Plouffe. 1997. On the
+8    Conclusions                                   rapid computation of various polylogarithmic constants.
+Mathematics of Computation 66:903–13.
+Borwein, J.. and D. H. Bailey. 2003. Mathematics by Experi-
+ment: Plausible Reasoning in the 21 st Century. Wellesley,
+MA: A. K. Peters.

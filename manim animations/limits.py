@@ -4,167 +4,173 @@ import numpy as np
 
 class LimitsScene(Scene):
     """
-    Limits visualization.
+    Limits - Feynman Style Visualization
 
-    Shows the concept of limits, one-sided limits,
-    infinite limits, and limit laws.
+    Shows what "approaching" means through the classic example
+    of walking toward a wall, but never quite reaching it.
     """
 
     def construct(self):
-        # Title
-        title = Text("Limits", font_size=44, color=BLUE)
-        subtitle = MathTex(r"\\lim_{x \\to a} f(x) = L", font_size=28, color=YELLOW)
-        subtitle.next_to(title, DOWN)
-
+        # Start with Zeno's paradox - walking to a wall
+        title = Text("The Infinite Walk", font_size=36, color=BLUE)
         self.play(Write(title))
-        self.play(Write(subtitle))
-        self.wait(2)
+        self.wait(1)
+        self.play(title.animate.scale(0.6).to_edge(UP))
 
-        self.play(FadeOut(subtitle))
-        self.play(title.animate.to_edge(UP))
+        # Create a scene: person and wall
+        ground = Line(LEFT * 5, RIGHT * 5, color=GREEN, stroke_width=3)
+        ground.to_edge(DOWN, buff=2)
 
-        # Intuitive definition
-        def_title = Text("Intuitive Definition:", font_size=26)
-        def_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(def_title))
+        wall = Rectangle(width=0.5, height=3, color=GRAY, fill_opacity=0.8)
+        wall.next_to(ground, RIGHT, buff=-0.5)
+        wall.shift(UP * 1.5)
 
-        definition = Text(
-            "As x gets closer and closer to a,\nf(x) gets closer and closer to L",
-            font_size=22,
-            line_spacing=1.5,
+        person = Text("🏃", font_size=50)
+        person.move_to(ground.get_left() + UP * 0.5)
+
+        wall_label = Text("Wall", font_size=24).next_to(wall, UP)
+
+        self.play(Create(ground), Create(wall), Write(wall_label))
+        self.play(Create(person))
+        self.wait(1)
+
+        # The rule: walk half the remaining distance each step
+        rule = Text(
+            "Rule: Each step covers half the remaining distance",
+            font_size=24,
+            color=YELLOW,
         )
-        definition.next_to(def_title, DOWN, buff=0.3)
-
-        self.play(Write(definition))
+        rule.to_edge(DOWN, buff=1)
+        self.play(Write(rule))
         self.wait(2)
 
-        self.play(FadeOut(definition), FadeOut(def_title))
+        # Animate the steps
+        steps = []
+        current_pos = person.get_center()
+        wall_pos = wall.get_left()
 
-        # Visual example
+        for i in range(5):
+            # Calculate half the remaining distance
+            remaining = wall_pos[0] - current_pos[0]
+            step_distance = remaining / 2
+
+            # Create step marker
+            step_num = MathTex(f"\\text{{Step {i + 1}}}", font_size=20)
+            step_num.next_to(person, UP, buff=0.5)
+
+            # Distance text
+            dist_text = MathTex(
+                f"\\frac{{{remaining:.1f}}}{{2}} = {step_distance:.2f}", font_size=18
+            )
+            dist_text.next_to(person, DOWN, buff=0.3)
+
+            # Move person
+            new_pos = current_pos + RIGHT * step_distance
+            self.play(
+                person.animate.move_to(new_pos),
+                Write(step_num),
+                Write(dist_text),
+                run_time=1,
+            )
+
+            steps.extend([step_num, dist_text])
+            current_pos = new_pos
+
+            self.wait(0.5)
+
+        # The paradox
+        paradox = Text("Will you ever reach the wall?", font_size=28, color=RED)
+        paradox.to_edge(DOWN, buff=0.5)
+
+        self.play(Write(paradox))
+        self.wait(2)
+
+        # Clear for the resolution
+        self.play(
+            *[
+                FadeOut(obj)
+                for obj in [ground, wall, wall_label, person, rule, paradox] + steps
+            ]
+        )
+
+        # Resolution: limits
+        resolution_title = Text("The Resolution: Limits", font_size=32, color=GREEN)
+        self.play(Write(resolution_title))
+        self.wait(1)
+        self.play(resolution_title.animate.scale(0.7).to_edge(UP))
+
+        # Show the distance approaching zero
         axes = Axes(
-            x_range=[-1, 5, 1],
-            y_range=[-1, 8, 1],
+            x_range=[0, 6, 1],
+            y_range=[0, 10, 2],
             axis_config={"color": WHITE},
-            x_length=8,
-            y_length=4,
+            x_length=9,
+            y_length=5,
         )
-        axes.next_to(title, DOWN, buff=0.5)
+        axes.next_to(resolution_title, DOWN, buff=0.5)
 
-        # Function: f(x) = x^2
-        graph = axes.plot(lambda x: x**2, x_range=[0, 3], color=BLUE, stroke_width=3)
+        # Distance after n steps: 10 / 2^n (starting from 10 units away)
+        distance_graph = axes.plot(
+            lambda n: 10 / (2**n),
+            x_range=[0, 5.5],
+            color=BLUE,
+            stroke_width=3,
+        )
 
-        # Point of interest
-        a = 2
-        L = a**2
+        x_label = Text("Step number", font_size=20).next_to(axes.x_axis, DOWN)
+        y_label = Text("Distance to wall", font_size=20).next_to(axes.y_axis, LEFT)
 
-        point_a = Dot(axes.c2p(a, 0), color=RED, radius=0.08)
-        point_L = Dot(axes.c2p(0, L), color=RED, radius=0.08)
-        point_on_graph = Dot(axes.c2p(a, L), color=YELLOW, radius=0.1)
+        self.play(Create(axes), Create(x_label), Create(y_label))
+        self.play(Create(distance_graph))
 
-        a_label = MathTex(r"a", font_size=20).next_to(point_a, DOWN)
-        L_label = MathTex(r"L", font_size=20).next_to(point_L, LEFT)
+        # Show the steps as points
+        points = VGroup()
+        for n in range(6):
+            x = n
+            y = 10 / (2**n)
+            point = Dot(axes.c2p(x, y), color=YELLOW, radius=0.08)
+            points.add(point)
 
-        self.play(Create(axes), Create(graph))
-        self.play(Create(point_a), Create(point_L), Create(point_on_graph))
-        self.play(Write(a_label), Write(L_label))
+        self.play(*[Create(point) for point in points])
+        self.wait(1)
 
-        # Animate approach
-        approach_text = Text("As x → a, f(x) → L", font_size=22, color=GREEN)
-        approach_text.next_to(axes, DOWN, buff=0.5)
-        self.play(Write(approach_text))
+        # Show the limit
+        limit_line = DashedLine(
+            axes.c2p(0, 0),
+            axes.c2p(6, 0),
+            color=RED,
+            stroke_width=2,
+        )
+
+        limit_text = MathTex(
+            r"\\lim_{n \\to \\infty} \\frac{10}{2^n} = 0", font_size=28, color=RED
+        )
+        limit_text.next_to(axes, RIGHT).shift(UP * 2)
+
+        self.play(Create(limit_line))
+        self.play(Write(limit_text))
         self.wait(2)
+
+        # Key insight
+        insight = Text(
+            "The limit is where you're headed, not where you are",
+            font_size=24,
+            color=YELLOW,
+        )
+        insight.to_edge(DOWN, buff=0.8)
+
+        self.play(Write(insight))
+        self.wait(3)
 
         self.play(
             FadeOut(axes),
-            FadeOut(graph),
-            FadeOut(point_a),
-            FadeOut(point_L),
-            FadeOut(point_on_graph),
-            FadeOut(a_label),
-            FadeOut(L_label),
-            FadeOut(approach_text),
+            FadeOut(x_label),
+            FadeOut(y_label),
+            FadeOut(distance_graph),
+            FadeOut(points),
+            FadeOut(limit_line),
+            FadeOut(limit_text),
+            FadeOut(insight),
+            FadeOut(resolution_title),
+            FadeOut(title),
         )
-
-        # One-sided limits
-        one_sided_title = Text("One-Sided Limits:", font_size=26, color=GREEN)
-        one_sided_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(one_sided_title))
-
-        one_sided = VGroup(
-            MathTex(
-                r"\\lim_{x \\to a^+} f(x) \\text{ (right-hand limit)}", font_size=24
-            ),
-            MathTex(
-                r"\\lim_{x \\to a^-} f(x) \\text{ (left-hand limit)}", font_size=24
-            ),
-            Text(
-                "The limit exists only if both one-sided limits exist and are equal",
-                font_size=20,
-            ),
-        ).arrange(DOWN, buff=0.3)
-        one_sided.next_to(one_sided_title, DOWN, buff=0.5)
-
-        self.play(*[Write(o) for o in one_sided])
-        self.wait(2)
-
-        self.play(FadeOut(one_sided), FadeOut(one_sided_title))
-
-        # Limit laws
-        laws_title = Text("Limit Laws:", font_size=26, color=YELLOW)
-        laws_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(laws_title))
-
-        laws = VGroup(
-            MathTex(
-                r"\\lim_{x \\to a} [f(x) + g(x)] = \\lim_{x \\to a} f(x) + \\lim_{x \\to a} g(x)",
-                font_size=20,
-            ),
-            MathTex(
-                r"\\lim_{x \\to a} [cf(x)] = c \\lim_{x \\to a} f(x)", font_size=20
-            ),
-            MathTex(
-                r"\\lim_{x \\to a} [f(x)g(x)] = \\lim_{x \\to a} f(x) \\cdot \\lim_{x \\to a} g(x)",
-                font_size=20,
-            ),
-            MathTex(
-                r"\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}",
-                font_size=20,
-            ),
-        ).arrange(DOWN, buff=0.3)
-        laws.next_to(laws_title, DOWN, buff=0.5)
-
-        self.play(*[Write(l) for l in laws])
-        self.wait(2)
-
-        self.play(FadeOut(laws), FadeOut(laws_title))
-
-        # Important limits
-        important_title = Text("Important Limits:", font_size=26, color=GREEN)
-        important_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(important_title))
-
-        important = VGroup(
-            MathTex(r"\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1", font_size=24),
-            MathTex(
-                r"\\lim_{x \\to \\infty} \\left(1 + \\frac{1}{x}\\right)^x = e",
-                font_size=24,
-            ),
-            MathTex(r"\\lim_{x \\to 0} \\frac{e^x - 1}{x} = 1", font_size=24),
-        ).arrange(DOWN, buff=0.4)
-        important.next_to(important_title, DOWN, buff=0.5)
-
-        self.play(*[Write(i) for i in important])
-        self.wait(3)
-
-        self.play(FadeOut(important), FadeOut(important_title))
-
-        # Summary
-        summary = VGroup(
-            Text("Limits", font_size=36, color=BLUE),
-            MathTex(r"\\lim_{x \\to a} f(x) = L", font_size=28),
-            Text("The foundation of calculus", font_size=24),
-        ).arrange(DOWN, buff=0.4)
-
-        self.play(Write(summary))
-        self.wait(3)
-        self.play(FadeOut(summary), FadeOut(title))

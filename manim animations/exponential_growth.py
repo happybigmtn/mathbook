@@ -4,141 +4,152 @@ import numpy as np
 
 class ExponentialGrowthScene(Scene):
     """
-    Exponential Growth visualization.
+    Exponential Growth - Feynman Style Visualization
 
-    Shows exponential vs linear growth, doubling time,
-    and real-world applications.
+    Shows the difference between linear and exponential growth
+    through the classic rice on a chessboard story.
     """
 
     def construct(self):
-        # Title
-        title = Text("Exponential Growth", font_size=44, color=BLUE)
-        subtitle = MathTex(r"f(t) = A_0 e^{rt}", font_size=28, color=YELLOW)
-        subtitle.next_to(title, DOWN)
-
+        # Start with the chessboard story
+        title = Text("The Chessboard Problem", font_size=36, color=BLUE)
         self.play(Write(title))
-        self.play(Write(subtitle))
+        self.wait(1)
+        self.play(title.animate.scale(0.6).to_edge(UP))
+
+        story = Text("Put 1 grain of rice on the first square,", font_size=24)
+        story2 = Text("then double it on each square...", font_size=24)
+        story.shift(UP * 1.5)
+        story2.next_to(story, DOWN, buff=0.3)
+
+        self.play(Write(story))
+        self.play(Write(story2))
         self.wait(2)
 
-        self.play(FadeOut(subtitle))
-        self.play(title.animate.to_edge(UP))
+        # Show the progression
+        squares = VGroup(
+            VGroup(
+                MathTex(r"\\text{Square 1:}", font_size=22), MathTex(r"1", font_size=28)
+            ).arrange(RIGHT, buff=0.5),
+            VGroup(
+                MathTex(r"\\text{Square 2:}", font_size=22), MathTex(r"2", font_size=28)
+            ).arrange(RIGHT, buff=0.5),
+            VGroup(
+                MathTex(r"\\text{Square 3:}", font_size=22), MathTex(r"4", font_size=28)
+            ).arrange(RIGHT, buff=0.5),
+            VGroup(
+                MathTex(r"\\text{Square 4:}", font_size=22), MathTex(r"8", font_size=28)
+            ).arrange(RIGHT, buff=0.5),
+            VGroup(
+                MathTex(r"\\text{Square 10:}", font_size=22),
+                MathTex(r"512", font_size=28),
+            ).arrange(RIGHT, buff=0.5),
+            VGroup(
+                MathTex(r"\\text{Square 20:}", font_size=22),
+                MathTex(r"524,288", font_size=28),
+            ).arrange(RIGHT, buff=0.5),
+            VGroup(
+                MathTex(r"\\text{Square 30:}", font_size=22),
+                MathTex(r"\\approx 1 \\text{ billion}", font_size=24),
+            ).arrange(RIGHT, buff=0.5),
+            VGroup(
+                MathTex(r"\\text{Square 64:}", font_size=22),
+                MathTex(r"\\approx 18 \\text{ quintillion}", font_size=24),
+            ).arrange(RIGHT, buff=0.5),
+        ).arrange(DOWN, buff=0.3)
+        squares.shift(DOWN * 0.5)
 
-        # Setup axes
+        self.play(FadeOut(story), FadeOut(story2))
+
+        for square in squares:
+            self.play(Write(square))
+            self.wait(0.3)
+
+        self.wait(2)
+
+        # The punchline
+        punchline = Text("More rice than exists on Earth!", font_size=28, color=RED)
+        punchline.to_edge(DOWN, buff=0.5)
+
+        self.play(Write(punchline))
+        self.wait(2)
+
+        self.play(FadeOut(squares), FadeOut(punchline))
+
+        # Compare linear vs exponential
+        compare_title = Text("Linear vs Exponential Growth", font_size=30, color=GREEN)
+        self.play(Write(compare_title))
+        self.wait(1)
+        self.play(compare_title.animate.scale(0.7).to_edge(UP))
+
+        # Create axes
         axes = Axes(
             x_range=[0, 5, 1],
-            y_range=[0, 10, 2],
+            y_range=[0, 20, 5],
             axis_config={"color": WHITE},
-            x_length=7,
+            x_length=8,
             y_length=5,
         )
-        axes.next_to(title, DOWN, buff=0.5)
+        axes.next_to(compare_title, DOWN, buff=0.5)
 
-        # Linear vs exponential
-        linear_graph = axes.plot(
-            lambda x: x + 1, x_range=[0, 5], color=GREEN, stroke_width=3
-        )
-        linear_label = MathTex(
-            r"\\text{Linear: } f(x) = x + 1", font_size=20, color=GREEN
-        )
+        # Linear: y = 2x
+        linear = axes.plot(lambda x: 2 * x, x_range=[0, 5], color=GREEN, stroke_width=3)
+        linear_label = MathTex(r"\\text{Linear: } y = 2x", font_size=22, color=GREEN)
         linear_label.next_to(axes, RIGHT).shift(UP * 2)
 
-        exp_graph = axes.plot(
-            lambda x: np.exp(0.5 * x), x_range=[0, 5], color=BLUE, stroke_width=3
-        )
-        exp_label = MathTex(
-            r"\\text{Exponential: } f(x) = e^{0.5x}", font_size=20, color=BLUE
-        )
+        # Exponential: y = 2^x
+        exp = axes.plot(lambda x: 2**x, x_range=[0, 4.3], color=BLUE, stroke_width=3)
+        exp_label = MathTex(r"\\text{Exponential: } y = 2^x", font_size=22, color=BLUE)
         exp_label.next_to(axes, RIGHT)
 
         self.play(Create(axes))
-        self.play(Create(linear_graph), Write(linear_label))
-        self.play(Create(exp_graph), Write(exp_label))
+        self.play(Create(linear), Write(linear_label))
+        self.play(Create(exp), Write(exp_label))
+
+        # Highlight the difference
+        highlight = Text(
+            "Exponential eventually dwarfs linear", font_size=24, color=YELLOW
+        )
+        highlight.to_edge(DOWN, buff=0.8)
+
+        self.play(Write(highlight))
+        self.wait(2)
+
+        # Show doubling time
+        self.play(
+            FadeOut(linear),
+            FadeOut(linear_label),
+            FadeOut(highlight),
+        )
+
+        doubling_title = Text("The Doubling Time", font_size=28, color=GREEN)
+        doubling_title.next_to(compare_title, DOWN, buff=0.5)
+        self.play(Write(doubling_title))
+
+        # Mark doubling points
+        for n in range(4):
+            x = n
+            y = 2**n
+            point = Dot(axes.c2p(x, y), color=YELLOW, radius=0.1)
+            label = MathTex(f"2^{n} = {y}", font_size=18)
+            label.next_to(point, UP, buff=0.2)
+            self.play(Create(point), Write(label))
+
+        doubling_formula = MathTex(
+            r"T_{\\text{double}} = \\frac{\\ln(2)}{r}", font_size=26
+        )
+        doubling_formula.next_to(axes, RIGHT).shift(UP)
+
+        self.play(Write(doubling_formula))
         self.wait(2)
 
         self.play(
             FadeOut(axes),
-            FadeOut(linear_graph),
-            FadeOut(linear_label),
-            FadeOut(exp_graph),
+            FadeOut(exp),
             FadeOut(exp_label),
+            FadeOut(doubling_title),
+            FadeOut(doubling_formula),
+            *[FadeOut(obj) for obj in self.mobjects if isinstance(obj, (Dot, MathTex))],
+            FadeOut(compare_title),
+            FadeOut(title),
         )
-
-        # Doubling time
-        double_title = Text("Doubling Time:", font_size=26, color=GREEN)
-        double_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(double_title))
-
-        doubling = VGroup(
-            MathTex(
-                r"T_{\\text{double}} = \\frac{\\ln(2)}{r} \\approx \\frac{0.693}{r}",
-                font_size=26,
-            ),
-            Text("Time it takes for a quantity to double", font_size=20),
-        ).arrange(DOWN, buff=0.4)
-        doubling.next_to(double_title, DOWN, buff=0.5)
-
-        self.play(*[Write(d) for d in doubling])
-        self.wait(2)
-
-        self.play(FadeOut(doubling), FadeOut(double_title))
-
-        # The Rule of 70
-        rule_title = Text("The Rule of 70:", font_size=26, color=YELLOW)
-        rule_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(rule_title))
-
-        rule = VGroup(
-            MathTex(
-                r"\\text{Doubling time} \\approx \\frac{70}{\\text{growth rate (\\%)}}",
-                font_size=24,
-            ),
-            Text("Example: 7% growth rate → doubling in ~10 years", font_size=20),
-        ).arrange(DOWN, buff=0.4)
-        rule.next_to(rule_title, DOWN, buff=0.5)
-
-        self.play(*[Write(r) for r in rule])
-        self.wait(2)
-
-        self.play(FadeOut(rule), FadeOut(rule_title))
-
-        # Applications
-        apps_title = Text("Real-World Examples:", font_size=26, color=GREEN)
-        apps_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(apps_title))
-
-        applications = VGroup(
-            Text("• Population growth", font_size=22),
-            Text("• Compound interest", font_size=22),
-            Text("• Radioactive decay (negative growth)", font_size=22),
-            Text("• Viral spread (initial phases)", font_size=22),
-            Text("• Moore's Law (transistor count)", font_size=22),
-        ).arrange(DOWN, aligned_edge=LEFT, buff=0.3)
-        applications.next_to(apps_title, DOWN, buff=0.5)
-        applications.to_edge(LEFT, buff=1)
-
-        self.play(*[Write(app) for app in applications])
-        self.wait(3)
-
-        self.play(FadeOut(applications), FadeOut(apps_title))
-
-        # Warning about unsustainability
-        warning = Text(
-            "Nothing can grow exponentially forever!", font_size=26, color=RED
-        )
-        warning.next_to(title, DOWN, buff=1)
-
-        self.play(Write(warning))
-        self.wait(2)
-
-        self.play(FadeOut(warning))
-
-        # Summary
-        summary = VGroup(
-            Text("Exponential Growth", font_size=36, color=BLUE),
-            MathTex(r"f(t) = A_0 e^{rt}", font_size=28),
-            Text("The power of compound growth", font_size=24),
-        ).arrange(DOWN, buff=0.4)
-
-        self.play(Write(summary))
-        self.wait(3)
-        self.play(FadeOut(summary), FadeOut(title))

@@ -66,75 +66,112 @@ Roughly speaking, the nth homology group tells you how many interestingly differ
 It is therefore tempting to say that a space is at least n dimensional if there is room inside it for interesting maps from n-dimensional manifolds. This thought leads to a whole class of definitions. The homological dimension of a structure X is defined to be the largest n for which some substructure of X has a nontrivial nth homology group. (It is necessary to consider substructures, because homology groups can also be trivial when there is too much room:
 it then becomes easy to deform a continuous map and show that it is equivalent to a constant map .) However, homology is a very general concept and there are many different homology theories, so there are many different notions of homological dimension. Some of these are geometric, but there are also homology theories for algebraic structures: for example, using suitable theories, one can
 
-III.17.   Dimension                                                                                                      183
+III.17.   Dimension
 
-define the homological dimension of algebraic struc-               remove the middle thirds of these two closed intervals
-tures such as rings [III.81 §1](/part-03/rings-ideals-and-modules) or groups [I.3 §2.1](/part-01/fundamental-definitions). This        to produce a set X2 , so X2 is the union of the intervals
-is a very good example of geometrical ideas having an             [0, 19 ], [ 29 , 13 ], [ 23 , 79 ], and [ 89 , 1].
-algebraic payoff.                                                     In general, Xn is a union of closed intervals, and Xn+1
-   Now let us turn to a fifth and final (for this article at        is what you get by removing the middle thirds of each
-least) intuitive idea about dimension, namely the way it          of these intervals—so Xn+1 consists of twice as many
-affects how we measure size. If you want to convey how             intervals as Xn , but they are a third of the size. Once you
-big a shape X is, then a good way of doing so is to give          have produced the sequence X0 , X1 , X2 , . . . , you define
-the length of X if X is one dimensional, the area if it is        the Cantor set to be the intersection of all the Xi : that
-two dimensional, and the volume if it is three dimen-             is, all the real numbers that remain, no matter how
-sional. Of course, this presupposes that you already              far you go with the process of removing middle thirds
-know what the dimension is, but, as we shall see, there           of intervals. It is not hard to show that these are pre-
-is a way of deciding which measure is the most appro-             cisely the numbers whose ternary expansions consist
-priate with out determining the dimension in advance.              just of 0 s and 2 s. (There are some numbers that have
-Then the tables are turned: we can actually define the             two different ternary expansions. For instance, 3 can
-                                                                                                                         1
+define the homological dimension of algebraic struc-
+tures such as rings [III.81 §1](/part-03/rings-ideals-and-modules) or groups [I.3 §2.1](/part-01/fundamental-definitions). This
+is a very good example of geometrical ideas having an
+algebraic payoff.
+   Now let us turn to a fifth and final (for this article at
+least) intuitive idea about dimension, namely the way it
+affects how we measure size. If you want to convey how
+big a shape X is, then a good way of doing so is to give
+the length of X if X is one dimensional, the area if it is
+two dimensional, and the volume if it is three dimen-
+sional. Of course, this presupposes that you already
+know what the dimension is, but, as we shall see, there
+is a way of deciding which measure is the most appro-
+priate with out determining the dimension in advance.
+Then the tables are turned: we can actually define the
 
-dimension to be the number that corresponds to the                be written either as 0.1 or as 0.02222 . . . . In such cases
-best measure.                                                     we take the recurring expansion rather than the ter-
-   To do this, we use the fact that length, area, and vol-                            1
-                                                                  minating one. So 3 belongs to the Cantor set.) Indeed,
-ume scale in different ways when you expand a shape.               when you remove middle thirds for the nth time, you
-If you take a curve and expand it by a factor of 2 (in all        are removing all numbers that have a 1 in the nth place
+dimension to be the number that corresponds to the
+best measure.
+   To do this, we use the fact that length, area, and vol-
+ume scale in different ways when you expand a shape.
+If you take a curve and expand it by a factor of 2 (in all
 directions), then its length doubles. More generally, if
-                                                                  after the “decimal” (in fact, ternary) point.
 you expand by a factor of C, then the length multiplies
-                                                                    The Cantor set has many interesting properties. For
 by C. However, if you take a two-dimensional shape and
-                                                                  example, it is uncountable [III.11](/part-03/countable-and-uncountable-sets), but it also has mea-
 expand it by C, then its area multiplies by C 2 . (Roughly
-                                                                  sure [III.55](/part-03/measures) zero. Briefly, the first of these assertions
 speaking, this is because each little portion of the shape
-                                                                  follows from the fact that there is a different element
 expands by C “in two directions” so you have to mul-
-                                                                  of the Cantor set for every subset A of the natural num-
 tiply the area by C twice.) And the volume of a three-
-                                                                  bers (just take the ternary number 0.a1 a2 a3 . . . , where
 dimensional shape multiplies by C 3 : for instance, the
-                                                                  ai = 2 whenever i ∈ A and ai = 0 otherwise), and there
 volume of a sphere of radius 3 is twenty-seven times
-                                                                  are uncountably many subsets of the natural numbers.
 the volume of a sphere of radius 1.
-                                                                  To justify the second, note that the total length of the
-   It may look as though we still have to decide in                                              2
-                                                                  intervals making up Xn is ( 3 )n (since one removes a
+   It may look as though we still have to decide in
 advance whether we will talk about length, area, or vol-
-                                                                  third of Xn−1 to produce Xn ). Since the Cantor set is
 ume before we can even begin to think about how the
-                                                                  contained in every Xn , its measure must be smaller
-measurement scales when we expand the shape. But                         2
-                                                                  than ( 3 )n , whatever n is, which means that it must be
+measurement scales when we expand the shape. But
 this is not the case. For instance, if we expand a square
-                                                                  zero. Thus, the Cantor set is very large in one respect
 by a factor of 2, then we obtain a new square that can
-be divided up into four congruent copies of the original          and very small in another.
-square. So, with out having decided in advance that we               A further property of the Cantor set is that it is self-
-are talking about area, we can say that the size of the           similar. The set X1 consists of two intervals, and if you
-new square is four times that of the old square.                  look at just one of these intervals as the middle thirds
-   This observation has a remarkable consequence:                 are repeatedly removed, then what you see is just like
-there are sets to which it is natural to assign a dimen-          the construction of the whole Cantor set, but scaled
-sion that is not an integer! Perhaps the simplest exam-           down by a factor of 3. That is, the Cantor set consists
-ple is a famous set first defined by cantor [VI.54](/part-06/georg-cantor-18451918) and             of two copies of itself, each scaled down by a factor
-now known as the Cantor set. This set is produced as              of 3. From this we deduce the following statement: if
-follows. You start with the closed interval [0, 1], and           you expand the Cantor set by a factor of 3, then you can
-call it X0 . Then you form a set X1 by removing the mid-          divide the expanded set up into two congruent copies
-dle third of X0 : that is, you remove all points between          of the original, so it is “twice as big.”
-1        2             1      2
+be divided up into four congruent copies of the original
+square. So, with out having decided in advance that we
+are talking about area, we can say that the size of the
+new square is four times that of the old square.
+   This observation has a remarkable consequence:
+there are sets to which it is natural to assign a dimen-
+sion that is not an integer! Perhaps the simplest exam-
+ple is a famous set first defined by cantor [VI.54](/part-06/georg-cantor-18451918) and
+now known as the Cantor set. This set is produced as
+follows. You start with the closed interval [0, 1], and
+call it X0 . Then you form a set X1 by removing the mid-
+dle third of X0 : that is, you remove all points between
+1
 3 and 3 , but leave 3 and 3 themselves. So X1 is the
-                                                                    What consequence should this have for the dimen-
 union of the closed intervals [0, 13 ] and [ 23 , 1]. Next, you   sion of the Cantor set? Well, if the dimension is d, then
+
+183
+remove the middle thirds of these two closed intervals
+to produce a set X2 , so X2 is the union of the intervals
+[0, 19 ], [ 29 , 13 ], [ 23 , 79 ], and [ 89 , 1].
+In general, Xn is a union of closed intervals, and Xn+1
+is what you get by removing the middle thirds of each
+of these intervals—so Xn+1 consists of twice as many
+intervals as Xn , but they are a third of the size. Once you
+have produced the sequence X0 , X1 , X2 , . . . , you define
+the Cantor set to be the intersection of all the Xi : that
+is, all the real numbers that remain, no matter how
+far you go with the process of removing middle thirds
+of intervals. It is not hard to show that these are pre-
+cisely the numbers whose ternary expansions consist
+just of 0 s and 2 s. (There are some numbers that have
+two different ternary expansions. For instance, 3 can
+1
+be written either as 0.1 or as 0.02222 . . . . In such cases
+we take the recurring expansion rather than the ter-
+1
+minating one. So 3 belongs to the Cantor set.) Indeed,
+when you remove middle thirds for the nth time, you
+are removing all numbers that have a 1 in the nth place
+after the “decimal” (in fact, ternary) point.
+The Cantor set has many interesting properties. For
+example, it is uncountable [III.11](/part-03/countable-and-uncountable-sets), but it also has mea-
+sure [III.55](/part-03/measures) zero. Briefly, the first of these assertions
+follows from the fact that there is a different element
+of the Cantor set for every subset A of the natural num-
+bers (just take the ternary number 0.a1 a2 a3 . . . , where
+ai = 2 whenever i ∈ A and ai = 0 otherwise), and there
+are uncountably many subsets of the natural numbers.
+To justify the second, note that the total length of the
+2
+intervals making up Xn is ( 3 )n (since one removes a
+third of Xn−1 to produce Xn ). Since the Cantor set is
+contained in every Xn , its measure must be smaller
+2
+than ( 3 )n , whatever n is, which means that it must be
+zero. Thus, the Cantor set is very large in one respect
+and very small in another.
+A further property of the Cantor set is that it is self-
+similar. The set X1 consists of two intervals, and if you
+look at just one of these intervals as the middle thirds
+are repeatedly removed, then what you see is just like
+the construction of the whole Cantor set, but scaled
+down by a factor of 3. That is, the Cantor set consists
+of two copies of itself, each scaled down by a factor
+of 3. From this we deduce the following statement: if
+you expand the Cantor set by a factor of 3, then you can
+divide the expanded set up into two congruent copies
+of the original, so it is “twice as big.”
+2
+What consequence should this have for the dimen-

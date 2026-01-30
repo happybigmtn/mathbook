@@ -1,62 +1,108 @@
 # Georg Cantor (1845–1918)
 
-778                                                                                                         VI. Mathematicians
+778
 
 and culminated in the following statement by Lie in
-1893: “I am no pupil of Klein’s, nor is the reverse the         VI.54      Georg Cantor
-case, although this would be nearer to the truth.”)             b. Saint Petersburg, Russia, 1845; d. Halle, Germany, 1918
-   Lie returned (after his first trip abroad) to Oslo            Set theory; transfinite numbers; the continuum hypothesis
+1893: “I am no pupil of Klein’s, nor is the reverse the
+case, although this would be nearer to the truth.”)
+   Lie returned (after his first trip abroad) to Oslo
 and, in 1872, a chair of mathematics at the univer-
-sity was created especially for him. During the early           Although born in Russia, Cantor was raised and edu-
-1870 s Lie worked on turning his line–sphere trans for-           cated in Prussia and spent his entire career as pro-
-mation into a general theory of contact transforma-             fessor of mathematics at the University of Halle. He
-tions. From 1873 he worked on a systematic study of             studied at the Universities of Berlin and Göttingen with
-continuous transformation groups (today known as lie            kronecker [VI.48](/part-06/leopold-kronecker-18231891), kummer [VI.40], and weierstrass
-groups [III.48 §1](/part-03/lie-theory)), his aim being to classify lie alge-        [VI.44](/part-06/karl-weierstrass-18151897), and received his Ph. D. from the University of
-bras [III.48 §§2, 3] and apply the results to the solu-         Berlin in 1867. His dissertation, “De aequationibus
-tion of differential equations. He also published studies        secundi gradus indeterminatis” (“On indeterminate
-on minimal surfaces [III.94 §3.1](/part-03/variational-methods). In Norway, however,          equations of the second grade”), dealt with work in
-there was no scientific milieu, and he felt very isolated.       number theory on Diophantine equations, work that
-In 1884 Klein and his friend Adolf Mayer in Leipzig             had been pioneered by lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813), gauss [VI.26](/part-06/carl-friedrich-gauss-17771855),
-tried to help him by sending their student Friedrich            and legendre [VI.24](/part-06/adrien-marie-legendre-17521833). The following year he accepted
-Engel to study with him and to help him with the for-           a position in the mathematics department at the Uni-
-mulation and writing of his new ideas. The work that            ver sity of Halle, where he spent the rest of his aca-
-Engel and Lie started together resulted in three vol-           demic career. There, his Habilitationssc hrift was again
-umes, The orie der Transformations gruppen (1888–93).             devoted to number theory, and dealt with transforma-
-In 1886 Lie accepted the professorship in Leipzig (in           tions of ternary quadratic forms.
-succession to Klein, who had moved to Göttingen). In               It was at Halle that Cantor’s colleague, Eduard Heine,
-Leipzig he became a leading mathematician and a cen-            was working on difficult problems involving trigono-
-tral figure in the European community of mathemat i-              metric series, and he interested Cantor in the problem
-cians. Promising new students from both France and              of determining the conditions under which a trigono-
-the United States were sent to study with him. Be sides          metric series of the form
-teaching he continued his research on transformation                                       . nfty
-                                                                                           
-groups and differential equations, and he solved the                     f (x) = 12 a0 +         (an sin nx + bn cos nx)
-so-called Helmholtz space problem (characterizing the                                     n=1
+sity was created especially for him. During the early
+1870 s Lie worked on turning his line–sphere trans for-
+mation into a general theory of contact transforma-
+tions. From 1873 he worked on a systematic study of
+continuous transformation groups (today known as lie
+groups [III.48 §1](/part-03/lie-theory)), his aim being to classify lie alge-
+bras [III.48 §§2, 3] and apply the results to the solu-
+tion of differential equations. He also published studies
+on minimal surfaces [III.94 §3.1](/part-03/variational-methods). In Norway, however,
+there was no scientific milieu, and he felt very isolated.
+In 1884 Klein and his friend Adolf Mayer in Leipzig
+tried to help him by sending their student Friedrich
+Engel to study with him and to help him with the for-
+mulation and writing of his new ideas. The work that
+Engel and Lie started together resulted in three vol-
+umes, The orie der Transformations gruppen (1888–93).
+In 1886 Lie accepted the professorship in Leipzig (in
+succession to Klein, who had moved to Göttingen). In
+Leipzig he became a leading mathematician and a cen-
+tral figure in the European community of mathemat i-
+cians. Promising new students from both France and
+the United States were sent to study with him. Be sides
+teaching he continued his research on transformation
+groups and differential equations, and he solved the
+so-called Helmholtz space problem (characterizing the
 
-geometry of space in terms of groups of transforma-             uniquely represented a given function. In other words,
-tions). In 1898, the year before he died, Lie returned to       could it be that two different trigonometric series could
-Oslo to take up a position created especially for him.          represent the same function? Heine had shown, in
-   The theory of transformation groups, which Lie ini-          1870, that if f (x) is continuous in general (i.e., for all
-tiated and developed in the study of differential equa-          but a finite number of points of discontinuity, at which
-tions, has grown into a field of its own, the theory of Lie      points Heine added that the function need not neces-
-groups and Lie algebras, which today permeates large            sarily be finite), the representation is unique if we insist
-parts of mathematics and mathematical physics.                  that the series is uniformly convergent to f in gen-
-                                                                eral. Cantor was able to establish much more general
-Further Reading                                                 results, and in five papers written between 1870 and
-Borel, A. 2001. Essays in the History of Lie Groups and         1872 he was able to show that such representations
-  Algebraic Groups. Providence, RI: American Mathematical       were unique even if an infinite number of exceptional
-  Society.                                                      points were allowed, so long as these exceptional points
-Hawkins, T. 2000. Emergence of the Theory of Lie Groups.        (i.e., points at which the function failed to be continu-
+geometry of space in terms of groups of transforma-
+tions). In 1898, the year before he died, Lie returned to
+Oslo to take up a position created especially for him.
+   The theory of transformation groups, which Lie ini-
+tiated and developed in the study of differential equa-
+tions, has grown into a field of its own, the theory of Lie
+groups and Lie algebras, which today permeates large
+parts of mathematics and mathematical physics.
+Further Reading
+Borel, A. 2001. Essays in the History of Lie Groups and
+  Algebraic Groups. Providence, RI: American Mathematical
+  Society.
+Hawkins, T. 2000. Emergence of the Theory of Lie Groups.
   New York: Springer.
-                                                                ous) were distributed over the domain of the function’s
 Laudal, O. A., and B. Jahrien, eds. 1994. Proceedings, Sophus
-                                                                definition in a particular way, constituting what Cantor
   Lie Memorial Conference. Oslo: Scandinavian University
-  Press.                                                        called “point sets of the first species.” His studies of
-Stubhaug, A. 2002. The Mathematician Sophus Lie. Berlin:        these and related point sets eventually led Cantor to
-  Springer.                                                     his much more abstract and powerful theory of sets
-                                        Arild Stubhaug          and transfinite numbers.
+  Press.
+Stubhaug, A. 2002. The Mathematician Sophus Lie. Berlin:
+  Springer.
+
+VI. Mathematicians
+VI.54
+b. Saint Petersburg, Russia, 1845; d. Halle, Germany, 1918
+Set theory; transfinite numbers; the continuum hypothesis
+Although born in Russia, Cantor was raised and edu-
+cated in Prussia and spent his entire career as pro-
+fessor of mathematics at the University of Halle. He
+studied at the Universities of Berlin and Göttingen with
+kronecker [VI.48](/part-06/leopold-kronecker-18231891), kummer [VI.40], and weierstrass
+[VI.44](/part-06/karl-weierstrass-18151897), and received his Ph. D. from the University of
+Berlin in 1867. His dissertation, “De aequationibus
+secundi gradus indeterminatis” (“On indeterminate
+equations of the second grade”), dealt with work in
+number theory on Diophantine equations, work that
+had been pioneered by lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813), gauss [VI.26](/part-06/carl-friedrich-gauss-17771855),
+and legendre [VI.24](/part-06/adrien-marie-legendre-17521833). The following year he accepted
+a position in the mathematics department at the Uni-
+ver sity of Halle, where he spent the rest of his aca-
+demic career. There, his Habilitationssc hrift was again
+devoted to number theory, and dealt with transforma-
+tions of ternary quadratic forms.
+It was at Halle that Cantor’s colleague, Eduard Heine,
+was working on difficult problems involving trigono-
+metric series, and he interested Cantor in the problem
+of determining the conditions under which a trigono-
+metric series of the form
+. nfty
+
+f (x) = 12 a0 +
+n=1
+uniquely represented a given function. In other words,
+could it be that two different trigonometric series could
+represent the same function? Heine had shown, in
+1870, that if f (x) is continuous in general (i.e., for all
+but a finite number of points of discontinuity, at which
+points Heine added that the function need not neces-
+sarily be finite), the representation is unique if we insist
+that the series is uniformly convergent to f in gen-
+eral. Cantor was able to establish much more general
+results, and in five papers written between 1870 and
+1872 he was able to show that such representations
+were unique even if an infinite number of exceptional
+points were allowed, so long as these exceptional points
+(i.e., points at which the function failed to be continu-
+ous) were distributed over the domain of the function’s
+definition in a particular way, constituting what Cantor
+called “point sets of the first species.” His studies of
+these and related point sets eventually led Cantor to
+his much more abstract and powerful theory of sets
+Arild Stubhaug          and transfinite numbers.
 
 $VI$ . $54$ .
 

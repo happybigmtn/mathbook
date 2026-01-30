@@ -20,61 +20,106 @@ If U is such an operator defined on a Hilbert space H , then we can associate wi
 Over the years many alternative proofs were offered, the simplest being a “geometric” proof due to riesz [VI.74](/part-06/frigyes-frdric-riesz-18801956), which we will describe below. To give the rough idea of von Neumann’s proof it is convenient to use the fact (which follows from the spectral theorem [III.50](/part-03/linear-operators-and-their-properties) ) that any unitary operator U on a Hilbert space H has a “functional model.” That is, we can realize the Hilbert space H as a function space, consisting of all (equivalence classes of) square-integrable functions with respect to some
 finite measure [III.55](/part-03/measures), in such a way that U becomes a multiplication operator M φ (f)  =  φf , where φ is a complexvalued measurable function that satisfies $|φ(x)| = 1$ for almost every x. It is not hard to see, after passing to such a functional model, that von Neumann’s
 
-690                                                                                            V. Theorems and Problems
+690
 
-theorem follows immediately from its one-dimensional                To simplify the discussion let us now “discretize”
-case as expressed by formula (1). Note that in this case         the situation. Instead of considering the continuous
-the orthogonal projection to the space of invariant ele-         families (Tτ ) and (Uτ ) we shall fix a transformation
-ments takes a function f to the function g such that             T = Tτ0 (say, for τ0 = 1) and let U be the corresponding
-g(x) = f (x) if φ(x) = 1 and g(x) = 0 otherwise.                 unitary operator. Assume that our volume-preserving
-  Riesz’s proof is based on the observation that the             transformation T is ergodic, which means that there
-orthogonal complement of the subspace Hinv of U-in-              is no proper subset A ⊂ X of positive volume such
-variant vectors is spanned by the set of vectors of the          that T (A) ⊂ A. This assumption can easily be shown
-form Ug − g. To see this, note first that if f ∈ Hinv ,           to be equivalent to the fact that the only elements of
-then                                                             L2 (X) that satisfy Uf = f are the constant functions.
-              f , U g = U −1 f , g = f , g,                It follows from von Neumann’s theorem that for any
-                                                                 f ∈ L2 (X) the averages
+theorem follows immediately from its one-dimensional
+case as expressed by formula (1). Note that in this case
+the orthogonal projection to the space of invariant ele-
+ments takes a function f to the function g such that
+g(x) = f (x) if φ(x) = 1 and g(x) = 0 otherwise.
+  Riesz’s proof is based on the observation that the
+orthogonal complement of the subspace Hinv of U-in-
+variant vectors is spanned by the set of vectors of the
+form Ug − g. To see this, note first that if f ∈ Hinv ,
+then
+
 from which it follows that f , U g − g = 0 and thus
-                                                                                                1    
-                                                                                                    N−1
-that f is orthogonal to Ug − g. Conversely, if f ∈ Hinv ,                      AN, M (f ) =             U nf
-then f , U f − f  = f , U f  − f , f . This is less than                                N − M n=M
-0, by the cauchy–schwarz inequality [V.19](/part-05/inequalities) and the               converge to a constant whose value is easy to find
-fact that U f  = f  but Uf = f . In particular, f is        by performing term-by-term integration: it is equal to
-not orthogonal to U f − f . Thus, Hinv is the orthogonal         ( f dm)/vol(X). Since von Neumann’s theorem also
-complement of the (closed) subspace of H generated               tells us that lim N−M→. nfty AN, M (f ) is always a U -invariant
-by functions of the form U g − g.                                function, we see that the assumption of ergodicity is a
-   Now the conclusion of von Neumann’s theorem holds             necessary and sufficient condition for the time average
+that f is orthogonal to Ug − g. Conversely, if f ∈ Hinv ,
+then f , U f − f  = f , U f  − f , f . This is less than
+0, by the cauchy–schwarz inequality [V.19](/part-05/inequalities) and the
+fact that U f  = f  but Uf = f . In particular, f is
+not orthogonal to U f − f . Thus, Hinv is the orthogonal
+complement of the (closed) subspace of H generated
+by functions of the form U g − g.
+   Now the conclusion of von Neumann’s theorem holds
 trivially if f ∈ Hinv , since then P f = f and U n f = f for     represented by lim N−M→. nfty AN, M (f ) to equal the space
-every n. On the other hand, if f = Ug − g, then P f = 0.         average, ( f dm)/vol(X).
-As for the averages, we know that U n f = U n+1 g −U n g,           It is also possible to use von Neumann’s theorem
-                                N−1
-from which it follows that n=M U n f = U N g − U M g.            to strengthen a classical theorem of poincaré [VI.61](/part-06/jules-henri-poincar-18541912),
-Since U N g − U M g is at most 2g for every M and            called Poincaré’s recurrence theorem. This result states
-N, we find that                                                   that if X is a set of finite volume, as above, and A is
-                             
-                            N−1                                  a subset of X with nonzero volume, then “almost all
-                        1
-                                U nf                             points of A return infinitely often to A.” In other words,
-                      N − M n=M
-                                                                 if we set Ã to be the set of all points x ∈ A such that
-has norm at most 2g/(N − M) and hence tends to 0.              T n x ∈ A for infinitely many n, then the measure of the
+every n. On the other hand, if f = Ug − g, then P f = 0.
+As for the averages, we know that U n f = U n+1 g −U n g,
+from which it follows that n=M U n f = U N g − U M g.
+Since U N g − U M g is at most 2g for every M and
+N, we find that
+has norm at most 2g/(N − M) and hence tends to 0.
 So the theorem is true in this case as well. It is straight-     set of points in A but not in Ã is 0. The main step in
-forward to check that the set of functions for which             the proof of Poincaré’s theorem is to prove the same
-the theorem holds is a closed linear subspace of H ,             about the set A1 , which consists of all points x ∈ A
-and therefore the theorem is proved.                             such that T n x ∈ A for some positive integer n. To see
-   The reason that von Neumann’s theorem and other               why this is true, let B be the set of all points in A but
-similar results are relevant to physics is that it is often      not in A1 . The sets B, T −1 B, T −2 B, . . . all have the same
-possible to represent the evolution of the parameters            measure, since T is volume preserving. (T −n B is defined
-associated with a physical system by a subset X ⊂ Rd             to be the set of all x such that T n x ∈ B.) Since X has
-that has finite d-dimensional volume, together with a             finite volume, there must exist positive integers m and
-continuous family (Tτ )τ∈R of volume-preserving trans-           n such that the intersection of T −m B and T −(m+n) B
-formations from X to X. With each such transforma-               has positive measure, and from this it follows that the
-tion Tτ one can associate the unitary map Uτ , defined            measure of B ∩ T −n B is also positive. But if x ∈ B then
-on L2 (X) (the Hilbert space of square-integrable func-          x ∈ A1 , so T n x ∈ A and therefore T n x ∈ B, so this is
-tions on X) by the formula (Uτ f )(x) = f (Tτ x).                a contradiction.
-The fact that these maps are unitary follows from                   Now let us apply the von Neumann ergodic theorem
-the fact that the transformations Tτ preserve volume;            with f equal to the characteristic function of a set A
-also, it follows from the fact that the transformations          (that is, f (x) = 1 when x ∈ A and f (x) = 0 otherwise)
-Tτ depend continuously on τ that the maps Uτ do                  and U defined in terms of T as before. Suppose also that
-as well.                                                         the set X has volume 1 and write \mu for the measure on
+forward to check that the set of functions for which
+the theorem holds is a closed linear subspace of H ,
+and therefore the theorem is proved.
+   The reason that von Neumann’s theorem and other
+similar results are relevant to physics is that it is often
+possible to represent the evolution of the parameters
+associated with a physical system by a subset X ⊂ Rd
+that has finite d-dimensional volume, together with a
+continuous family (Tτ )τ∈R of volume-preserving trans-
+formations from X to X. With each such transforma-
+tion Tτ one can associate the unitary map Uτ , defined
+on L2 (X) (the Hilbert space of square-integrable func-
+tions on X) by the formula (Uτ f )(x) = f (Tτ x).
+The fact that these maps are unitary follows from
+the fact that the transformations Tτ preserve volume;
+also, it follows from the fact that the transformations
+Tτ depend continuously on τ that the maps Uτ do
+as well.
+
+V. Theorems and Problems
+To simplify the discussion let us now “discretize”
+the situation. Instead of considering the continuous
+families (Tτ ) and (Uτ ) we shall fix a transformation
+T = Tτ0 (say, for τ0 = 1) and let U be the corresponding
+unitary operator. Assume that our volume-preserving
+transformation T is ergodic, which means that there
+is no proper subset A ⊂ X of positive volume such
+that T (A) ⊂ A. This assumption can easily be shown
+to be equivalent to the fact that the only elements of
+L2 (X) that satisfy Uf = f are the constant functions.
+f , U g = U −1 f , g = f , g,
+f ∈ L2 (X) the averages
+1    
+N−1
+AN, M (f ) =
+N − M n=M
+converge to a constant whose value is easy to find
+by performing term-by-term integration: it is equal to
+( f dm)/vol(X). Since von Neumann’s theorem also
+tells us that lim N−M→. nfty AN, M (f ) is always a U -invariant
+function, we see that the assumption of ergodicity is a
+necessary and sufficient condition for the time average
+average, ( f dm)/vol(X).
+It is also possible to use von Neumann’s theorem
+N−1
+to strengthen a classical theorem of poincaré [VI.61](/part-06/jules-henri-poincar-18541912),
+called Poincaré’s recurrence theorem. This result states
+that if X is a set of finite volume, as above, and A is
+
+N−1                                  a subset of X with nonzero volume, then “almost all
+1
+U nf                             points of A return infinitely often to A.” In other words,
+N − M n=M
+if we set Ã to be the set of all points x ∈ A such that
+T n x ∈ A for infinitely many n, then the measure of the
+the proof of Poincaré’s theorem is to prove the same
+about the set A1 , which consists of all points x ∈ A
+such that T n x ∈ A for some positive integer n. To see
+why this is true, let B be the set of all points in A but
+not in A1 . The sets B, T −1 B, T −2 B, . . . all have the same
+measure, since T is volume preserving. (T −n B is defined
+to be the set of all x such that T n x ∈ B.) Since X has
+finite volume, there must exist positive integers m and
+n such that the intersection of T −m B and T −(m+n) B
+has positive measure, and from this it follows that the
+measure of B ∩ T −n B is also positive. But if x ∈ B then
+x ∈ A1 , so T n x ∈ A and therefore T n x ∈ B, so this is
+a contradiction.
+Now let us apply the von Neumann ergodic theorem
+with f equal to the characteristic function of a set A
+(that is, f (x) = 1 when x ∈ A and f (x) = 0 otherwise)
+and U defined in terms of T as before. Suppose also that
+the set X has volume 1 and write \mu for the measure on

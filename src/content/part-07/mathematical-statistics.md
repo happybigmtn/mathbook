@@ -31,68 +31,107 @@ Mathematical statistics helps us to decide when one estimate is preferable to an
 One benefit of the under taking is the discovery that the mean turns out to be inferior to nonintuitive “shrinkage estimators” even when the data are drawn from a probability distribution [III.71](/part-03/probability-distributions) as natural as the bell-shaped curve (that is, are normally distributed [III.71](/part-03/probability-distributions) ). To get an idea of why the mean may not always give you the most useful estimate, consider the following situation. You have a collection of a hundred coins and you would like to estimate their biases.
 That is, you would like to estimate a sequence of a hundred numbers, where the nth number $\theta$ n is the probability that the nth coin will come up heads when it is flipped. Suppose that you flip each coin five times and note down how many times it shows heads. What should your estimate be for the sequence $(\theta^{1}$ , . . . , $\theta^{100})$ ? If you use the
 
-VII.10.   Mathematical Statistics                                                                                    917
+VII.10.   Mathematical Statistics
 
-means, then your guess for θn will be the number of                    Table 1 Batting averages for eighteen
-times the nth coin shows heads, divided by 5. How-                        major league players in 1970.
+means, then your guess for θn will be the number of
+times the nth coin shows heads, divided by 5. How-
 ever, if you do this, then you are likely to get some very
-                                                                      Batting    Batting
 anomalous results. For instance, if all the coins happen
-                                                                      average   average
-to be unbiased, then the probability that any given coin       Player after 45 remainder James–Stein Remaining
-shows up heads five times is 1/32, so you are likely           number at bats of season    estimator   at bats
+to be unbiased, then the probability that any given coin
+shows up heads five times is 1/32, so you are likely
 to guess that around three of the coins have biases of
-1. So you will be guessing that if you flip those coins            1      0.400      0.346        0.293         367
-                                                                  2      0.378      0.298        0.289         426
+1. So you will be guessing that if you flip those coins
 five hundred times then they will come up heads every
-                                                                  3      0.356      0.276        0.284         521
 single time.
-                                                                  4      0.333      0.221        0.279         276
-   Many alternative methods of estimation have been               5      0.311      0.273        0.275         418
-proposed in order to deal with this obvious problem.              6      0.311      0.270        0.275         467
-However, one must be careful: if a coin comes up                  7      0.289      0.263        0.270         586
-heads five times it could be that θi really is equal               8      0.267      0.210        0.265         138
-to 1. What reason is there to believe that a different             9      0.244      0.269        0.261         510
-method of estimation is not in fact taking us further            10      0.244      0.230        0.261         200
-from the truth?                                                  11      0.222      0.264        0.256         277
-   Here is a second example, drawn from work of                  12      0.222      0.256        0.256         270
-                                                                 13      0.222      0.304        0.256         434
+   Many alternative methods of estimation have been
+proposed in order to deal with this obvious problem.
+However, one must be careful: if a coin comes up
+heads five times it could be that θi really is equal
+to 1. What reason is there to believe that a different
+method of estimation is not in fact taking us further
+from the truth?
+   Here is a second example, drawn from work of
 Bradley Efron, this time concerning a situation from
-                                                                 14      0.222      0.264        0.256         538
 real life. Table 1 shows the batting averages of eigh-
-                                                                 15      0.222      0.226        0.256         186
 teen baseball players. The first column shows the pro-
-                                                                 16      0.200      0.285        0.251         558
-portion of “hits” for each player in their first forty-five        17      0.178      0.319        0.247         405
-times at bat, and the second column shows the pro-               18      0.156      0.200        0.242          70
+portion of “hits” for each player in their first forty-five
+times at bat, and the second column shows the pro-
 portion of hits at the end of the season. Consider the
 task of predicting the second column given only the
-first column. Once again, the obvious approach is to          one begins with a set X (for the moment taken to be
-use the average. In other words, one would simply use        finite) and a collection of numbers P (x), one for each
-the first column as a predict or of the second column.         x ∈ X, which are positive and sum to one. This function
-The third column is obtained by a shrinkage estimator:       P (x) is called a probability distribution. The basic prob-
-more precisely, it takes a number y in the first column       lem of probability is this. You are given the probability
-and replaces it by 0.265+0.212(y −0.265). The number         distribution P (x) and a subset A ⊂ X, and you must
-0.265 is the average of the entries in the first column,      compute or approximate P (A), which is defined to be
-so the shrinkage estimator is replacing each entry in        the sum of P (x) for x in A. (In probabilistic terms, each
-the first column by one that is about five times closer        x has a probability P (x) of being chosen, and P (A) is
-to the average. (How the number 0.212 is chosen will         the probability that x belongs to A.) This simple for-
-be explained later.) If you look at the table, you will      mulation hides wonderful mathematical problems. For
-see that the shrinkage estimators in the third column        example, X might be the set of all sequences of pluses
-are better predictors of the second column in almost         and minuses of length 100 (e.g., +−−++−−−−−· · · ),
+first column. Once again, the obvious approach is to
+use the average. In other words, one would simply use
+the first column as a predict or of the second column.
+The third column is obtained by a shrinkage estimator:
+more precisely, it takes a number y in the first column
+and replaces it by 0.265+0.212(y −0.265). The number
+0.265 is the average of the entries in the first column,
+so the shrinkage estimator is replacing each entry in
+the first column by one that is about five times closer
+to the average. (How the number 0.212 is chosen will
+be explained later.) If you look at the table, you will
+see that the shrinkage estimators in the third column
+are better predictors of the second column in almost
 every case, and certainly on average. Indeed, the sum of     and each pattern might be equally likely, in which case
-squared differences between the James–Stein estimator         P (x) = 1/2100 for every sequence x. Finally, A might be
-and the truth divided by the sum of squared differences       the set of sequences such that for every positive integer
-between the usual estimator and the truth is 0.29. That      k ⩽ 100 the number of + symbols in the first k places
-is a threefold improvement.                                  is larger than the number of − symbols in the first k
-   There is beautiful mathematics behind this improve-       places. This is a mathematical model for the following
-ment and a clear sense in which the new estimator            probability problem: if you and a friend flip a fair coin a
-is always better than the average. We describe the           hundred times, then what is the chance that your friend
-framework, ideas, and extensions of this example as          is always ahead? One might expect this chance to be
-                                                                                                              1
-an introduction to the mathematics of statistics.            very small. It turns out, however, to be about 12  , though
+squared differences between the James–Stein estimator
+and the truth divided by the sum of squared differences
+between the usual estimator and the truth is 0.29. That
+is a threefold improvement.
+   There is beautiful mathematics behind this improve-
+ment and a clear sense in which the new estimator
+is always better than the average. We describe the
+framework, ideas, and extensions of this example as
+an introduction to the mathematics of statistics.
    Before beginning, it will be useful to distinguish be-    verifying this is a far from trivial exercise. (Our poor
 tween probability and statistics. In probability theory,     intuitions about chance fluctuations have been used to
+
+917
+Table 1 Batting averages for eighteen
+major league players in 1970.
+Batting    Batting
+average   average
+Player after 45 remainder James–Stein Remaining
+number at bats of season    estimator   at bats
+1
+2      0.378      0.298        0.289         426
+3      0.356      0.276        0.284         521
+4      0.333      0.221        0.279         276
+5
+6
+7
+8
+9
+10
+11
+12
+13      0.222      0.304        0.256         434
+14      0.222      0.264        0.256         538
+15      0.222      0.226        0.256         186
+16      0.200      0.285        0.251         558
+17
+18
+one begins with a set X (for the moment taken to be
+finite) and a collection of numbers P (x), one for each
+x ∈ X, which are positive and sum to one. This function
+P (x) is called a probability distribution. The basic prob-
+lem of probability is this. You are given the probability
+distribution P (x) and a subset A ⊂ X, and you must
+compute or approximate P (A), which is defined to be
+the sum of P (x) for x in A. (In probabilistic terms, each
+x has a probability P (x) of being chosen, and P (A) is
+the probability that x belongs to A.) This simple for-
+mulation hides wonderful mathematical problems. For
+example, X might be the set of all sequences of pluses
+and minuses of length 100 (e.g., +−−++−−−−−· · · ),
+P (x) = 1/2100 for every sequence x. Finally, A might be
+the set of sequences such that for every positive integer
+k ⩽ 100 the number of + symbols in the first k places
+is larger than the number of − symbols in the first k
+places. This is a mathematical model for the following
+probability problem: if you and a friend flip a fair coin a
+hundred times, then what is the chance that your friend
+is always ahead? One might expect this chance to be
+1
+very small. It turns out, however, to be about 12  , though
 
 $918$
 

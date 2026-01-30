@@ -4,74 +4,143 @@ import numpy as np
 
 class LogarithmsScene(Scene):
     """
-    Logarithms visualization.
+    Logarithms - Feynman Style Visualization
 
-    Shows the relationship between logarithms and exponents,
-    logarithm properties, and natural logarithm.
+    Shows logarithms as the answer to "how many digits?" and
+    their relationship to exponents through concrete examples.
     """
 
     def construct(self):
-        # Title
-        title = Text("Logarithms", font_size=44, color=BLUE)
-        subtitle = MathTex(r"\\log_b(x) = y \\iff b^y = x", font_size=28, color=YELLOW)
-        subtitle.next_to(title, DOWN)
-
+        # Start with a practical question
+        title = Text("How Many Digits?", font_size=36, color=BLUE)
         self.play(Write(title))
-        self.play(Write(subtitle))
-        self.wait(2)
+        self.wait(1)
+        self.play(title.animate.scale(0.6).to_edge(UP))
 
-        self.play(FadeOut(subtitle))
-        self.play(title.animate.to_edge(UP))
-
-        # Definition
-        def_title = Text("Definition:", font_size=26)
-        def_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(def_title))
-
-        definition = VGroup(
-            MathTex(
-                r"\\log_b(x) \\text{ is the exponent } y \\text{ such that } b^y = x",
-                font_size=24,
-            ),
-            Text("Logarithms are the inverse of exponentiation", font_size=20),
+        # Show powers of 10
+        powers = VGroup(
+            MathTex(r"10^0 = 1", font_size=28),
+            MathTex(r"10^1 = 10", font_size=28),
+            MathTex(r"10^2 = 100", font_size=28),
+            MathTex(r"10^3 = 1,000", font_size=28),
+            MathTex(r"10^6 = 1,000,000", font_size=28),
         ).arrange(DOWN, buff=0.4)
-        definition.next_to(def_title, DOWN, buff=0.3)
+        powers.shift(UP * 0.5)
 
-        self.play(*[Write(d) for d in definition])
+        question = Text("What power of 10 gives 500?", font_size=26, color=YELLOW)
+        question.to_edge(DOWN, buff=1)
+
+        for power in powers:
+            self.play(Write(power))
+            self.wait(0.3)
+
+        self.play(Write(question))
         self.wait(2)
 
-        self.play(FadeOut(definition), FadeOut(def_title))
+        # The answer
+        answer = MathTex(r"10^{2.699...} = 500", font_size=30, color=GREEN)
+        answer.next_to(question, UP, buff=0.5)
 
-        # Graph of log
+        log_answer = MathTex(r"\\log_{10}(500) = 2.699...", font_size=30, color=GREEN)
+        log_answer.next_to(answer, UP, buff=0.3)
+
+        self.play(Write(answer))
+        self.play(Write(log_answer))
+        self.wait(2)
+
+        self.play(
+            FadeOut(powers),
+            FadeOut(question),
+            FadeOut(answer),
+            FadeOut(log_answer),
+        )
+
+        # Visual: logarithm as "number of digits minus one"
+        digits_title = Text(
+            "Logarithm ≈ (Number of Digits) - 1", font_size=28, color=GREEN
+        )
+        self.play(Write(digits_title))
+        self.wait(1)
+        self.play(digits_title.animate.scale(0.8).to_edge(UP))
+
+        # Show examples
+        examples = VGroup(
+            VGroup(
+                MathTex(r"5", font_size=32),
+                Text("→ 1 digit →", font_size=20),
+                MathTex(r"\\log(5) \\approx 0.7", font_size=24),
+            ).arrange(RIGHT, buff=0.3),
+            VGroup(
+                MathTex(r"50", font_size=32),
+                Text("→ 2 digits →", font_size=20),
+                MathTex(r"\\log(50) \\approx 1.7", font_size=24),
+            ).arrange(RIGHT, buff=0.3),
+            VGroup(
+                MathTex(r"500", font_size=32),
+                Text("→ 3 digits →", font_size=20),
+                MathTex(r"\\log(500) \\approx 2.7", font_size=24),
+            ).arrange(RIGHT, buff=0.3),
+            VGroup(
+                MathTex(r"5000", font_size=32),
+                Text("→ 4 digits →", font_size=20),
+                MathTex(r"\\log(5000) \\approx 3.7", font_size=24),
+            ).arrange(RIGHT, buff=0.3),
+        ).arrange(DOWN, buff=0.5)
+        examples.shift(DOWN * 0.5)
+
+        for example in examples:
+            self.play(Write(example))
+            self.wait(0.5)
+
+        self.wait(2)
+
+        self.play(FadeOut(examples), FadeOut(digits_title))
+
+        # The inverse relationship
+        inverse_title = Text(
+            "Logarithms are the Inverse of Exponents", font_size=28, color=GREEN
+        )
+        self.play(Write(inverse_title))
+        self.wait(1)
+        self.play(inverse_title.animate.scale(0.8).to_edge(UP))
+
+        # Create axes
         axes = Axes(
             x_range=[0.1, 5, 1],
-            y_range=[-2, 2, 0.5],
+            y_range=[-2, 3, 1],
             axis_config={"color": WHITE},
             x_length=7,
-            y_length=4,
+            y_length=5,
         )
-        axes.next_to(title, DOWN, buff=0.5)
+        axes.next_to(inverse_title, DOWN, buff=0.5)
 
+        # ln(x)
         log_graph = axes.plot(
             lambda x: np.log(x), x_range=[0.1, 5], color=BLUE, stroke_width=3
         )
         log_label = MathTex(r"y = \\ln(x)", font_size=24, color=BLUE)
         log_label.next_to(axes, RIGHT).shift(UP)
 
+        # e^x
         exp_graph = axes.plot(
-            lambda x: np.exp(x), x_range=[-2, 1.5], color=GREEN, stroke_width=3
+            lambda x: np.exp(x), x_range=[-1.5, 1.2], color=RED, stroke_width=3
         )
-        exp_label = MathTex(r"y = e^x", font_size=24, color=GREEN)
+        exp_label = MathTex(r"y = e^x", font_size=24, color=RED)
         exp_label.next_to(axes, RIGHT).shift(DOWN)
 
         self.play(Create(axes))
         self.play(Create(log_graph), Write(log_label))
         self.play(Create(exp_graph), Write(exp_label))
 
-        # Show they are inverses
-        inverse_text = Text("Inverse functions: reflection across y=x", font_size=20)
-        inverse_text.next_to(axes, DOWN, buff=0.5)
-        self.play(Write(inverse_text))
+        # Show reflection across y=x
+        diagonal = DashedLine(
+            axes.c2p(0.1, 0.1), axes.c2p(3, 3), color=YELLOW, stroke_opacity=0.4
+        )
+        self.play(Create(diagonal))
+
+        reflection_text = Text("Reflection across y = x", font_size=22, color=YELLOW)
+        reflection_text.to_edge(DOWN, buff=0.8)
+        self.play(Write(reflection_text))
         self.wait(2)
 
         self.play(
@@ -80,77 +149,8 @@ class LogarithmsScene(Scene):
             FadeOut(log_label),
             FadeOut(exp_graph),
             FadeOut(exp_label),
-            FadeOut(inverse_text),
+            FadeOut(diagonal),
+            FadeOut(reflection_text),
+            FadeOut(inverse_title),
+            FadeOut(title),
         )
-
-        # Properties
-        props_title = Text("Logarithm Properties:", font_size=26, color=GREEN)
-        props_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(props_title))
-
-        properties = VGroup(
-            MathTex(r"\\log_b(xy) = \\log_b(x) + \\log_b(y)", font_size=24),
-            MathTex(r"\\log_b(\\frac{x}{y}) = \\log_b(x) - \\log_b(y)", font_size=24),
-            MathTex(r"\\log_b(x^n) = n\\log_b(x)", font_size=24),
-            MathTex(r"\\log_b(1) = 0, \\quad \\log_b(b) = 1", font_size=24),
-        ).arrange(DOWN, buff=0.4)
-        properties.next_to(props_title, DOWN, buff=0.5)
-
-        self.play(*[Write(p) for p in properties])
-        self.wait(2)
-
-        self.play(FadeOut(properties), FadeOut(props_title))
-
-        # Change of base
-        change_title = Text("Change of Base Formula:", font_size=26, color=YELLOW)
-        change_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(change_title))
-
-        change_formula = MathTex(
-            r"\\log_b(x) = \\frac{\\log_c(x)}{\\log_c(b)}", font_size=28
-        )
-        change_formula.next_to(change_title, DOWN, buff=0.5)
-
-        self.play(Write(change_formula))
-
-        example = MathTex(
-            r"\\log_2(8) = \\frac{\\ln(8)}{\\ln(2)} = \\frac{2.079}{0.693} = 3",
-            font_size=24,
-        )
-        example.next_to(change_formula, DOWN, buff=0.5)
-
-        self.play(Write(example))
-        self.wait(2)
-
-        self.play(FadeOut(change_formula), FadeOut(example), FadeOut(change_title))
-
-        # Applications
-        apps_title = Text("Applications:", font_size=26, color=GREEN)
-        apps_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(apps_title))
-
-        applications = VGroup(
-            Text("• Measuring earthquake intensity (Richter scale)", font_size=20),
-            Text("• Sound intensity (decibels)", font_size=20),
-            Text("• pH scale in chemistry", font_size=20),
-            Text("• Algorithm complexity analysis", font_size=20),
-            Text("• Compound interest calculations", font_size=20),
-        ).arrange(DOWN, aligned_edge=LEFT, buff=0.3)
-        applications.next_to(apps_title, DOWN, buff=0.5)
-        applications.to_edge(LEFT, buff=1)
-
-        self.play(*[Write(app) for app in applications])
-        self.wait(3)
-
-        self.play(FadeOut(applications), FadeOut(apps_title))
-
-        # Summary
-        summary = VGroup(
-            Text("Logarithms", font_size=36, color=BLUE),
-            MathTex(r"\\log_b(x) = y \\iff b^y = x", font_size=28),
-            Text("The inverse of exponentiation", font_size=24),
-        ).arrange(DOWN, buff=0.4)
-
-        self.play(Write(summary))
-        self.wait(3)
-        self.play(FadeOut(summary), FadeOut(title))

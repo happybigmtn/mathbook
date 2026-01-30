@@ -1,59 +1,102 @@
 # The Fourier Transform
 
-204                                                                                       III. Mathematical Concepts
+204
 
-“convert convolutions into multiplication.” That is, if          What are the symmetry properties enjoyed by even
-we find a suitable way of regarding a and b as func-           and odd functions? A useful way to regard them is as
-tions on ZN , then the Fourier transform of a ∗ b is the      follows. We have a group of two transformations of the
+“convert convolutions into multiplication.” That is, if
+we find a suitable way of regarding a and b as func-
+tions on ZN , then the Fourier transform of a ∗ b is the
 function r → â(r )b̂(r ). Therefore, to work out a∗b we     real line: one is the identity map ι : x → x and the
-can work out â and b̂, multiply them together for each       other is the reflection ρ : x → −x. Now any trans for-
+can work out â and b̂, multiply them together for each
 r , and take the inverse Fourier transform of the result.     mation φ of the real line gives rise to a transforma-
-All stages of this calculation are quick, so calculating      tion of the functions defined on the real line: given a
-convolutions is quick.                                        function f , the transformed function is the function
-   This immediately leads to a quick way of multiply-         g(x) = f (φ(x)). In the case at hand, if φ = ι then the
-ing the two polynomials a0 + a1 x + · · · + am x m and        transformed function is just f (x), while if φ = ρ then
-b0 +b1 x +· · ·+bn x n together, since the coefficients of      it is f (−x). If f is either even or odd, then both the
-the product are given by the sequence c = a ∗ b. If all       transformed functions are scalar multiples of the orig-
+All stages of this calculation are quick, so calculating
+convolutions is quick.
+   This immediately leads to a quick way of multiply-
+ing the two polynomials a0 + a1 x + · · · + am x m and
+b0 +b1 x +· · ·+bn x n together, since the coefficients of
+the product are given by the sequence c = a ∗ b. If all
 the ai are between 0 and 9, it is a quick process to evalu-   inal function f . In particular, when φ = ρ, the trans-
-ate the product polynomial at x = 10 (since none of the       formed function is f (x) when f is even (so the scalar
-coefficients cr will have many digits), so we also have         multiple is 1) and −f (x) when f is odd (so the scalar
-a method of multiplying two n-digit integers together         multiple is −1).
-that is far faster than long multiplication. These are           The procedure just described can be thought of as
-two of the huge number of applications of the fast            a very simple prototype of the general notion of a
-Fourier transform. A more direct source of applications       Fourier transform. Very broadly speaking, a Fourier
-occurs in engineering, where one frequently wishes to         transform is a systematic way to decompose “generic”
-analyze a signal by looking at its Fourier transform. A       functions into a superposition of “symmetric” func-
-very surprising application is to quantum com put a-            tions. These symmetric functions are usually quite
-tion [III.74](/part-03/quantum-computation): a famous result of Peter Shor is that one      explicitly defined: for instance, one of the most impor-
-can use a quantum computer to factorize large integers        tant examples is a decomposition into the trigono-
-very quickly; this algorithm depends in an essential way      metric functions [III.92](/part-03/trigonometric-functions) sin(nx) and cos(nx). They
-on the fast Fourier transform, but uses the power of          are also often related to physical concepts such as fre-
-quantum computing in an almost miraculous way to              quency or energy. The symmetry will usually be asso-
-divide the N log N steps into N lots of log N steps that      ciated with a group [I.3 §2.1](/part-01/fundamental-definitions) G, which is usually Abe-
-can be carried out “in parallel.”                             lian. (In the case considered above, it is the two-element
-                                                              group.) Indeed, the Fourier transform is a fundamental
-III.27 The Fourier Transform                                  tool in the study of groups, and more precisely in the
-                                                              representation theory [IV.9](/part-04/representation-theory) of groups, which con-
-         Terence Tao
-                                                              cerns different ways in which a group can be regarded
-Let f be a function from R to R. Typically, there is          as a group of symmetries. It is also related to topics in
-not much that one can say about f , but certain func-         linear algebra, such as the representation of a vector as
-tions have useful symmetry properties. For instance,          linear combinations of an orthonormal basis [III.37](/part-03/bayesian-analysis),
-f is called even if f (−x) = f (x) for every x, and it        or as linear combinations of eigenvectors [I.3 §4.3](/part-01/fundamental-definitions) of
-is called odd if f (−x) = −f (x) for every x. Further-        a matrix or linear operator [III.50](/part-03/linear-operators-and-their-properties).
-more, every function f can be written as a superposition         For a more complicated example, let us fix a positive
+ate the product polynomial at x = 10 (since none of the
+coefficients cr will have many digits), so we also have
+a method of multiplying two n-digit integers together
+that is far faster than long multiplication. These are
+two of the huge number of applications of the fast
+Fourier transform. A more direct source of applications
+occurs in engineering, where one frequently wishes to
+analyze a signal by looking at its Fourier transform. A
+very surprising application is to quantum com put a-
+tion [III.74](/part-03/quantum-computation): a famous result of Peter Shor is that one
+can use a quantum computer to factorize large integers
+very quickly; this algorithm depends in an essential way
+on the fast Fourier transform, but uses the power of
+quantum computing in an almost miraculous way to
+divide the N log N steps into N lots of log N steps that
+can be carried out “in parallel.”
+III.27 The Fourier Transform
+
+Let f be a function from R to R. Typically, there is
+not much that one can say about f , but certain func-
+tions have useful symmetry properties. For instance,
+f is called even if f (−x) = f (x) for every x, and it
+is called odd if f (−x) = −f (x) for every x. Further-
+more, every function f can be written as a superposition
 of an even part, fe , and an odd part, fo . For instance,     integer n and let us define a systematic way of decom-
-the function f (x) = x 3 + 3 x 2 + 3 x + 1 is neither even      posing functions from C to C, that is, complex-valued
-nor odd, but it can be written as fe (x) + fo (x), where      functions defined on the complex plane. If f is such a
-fe (x) = 3 x 2 + 1 and fo (x) = x 3 + 3 x. For a general        function and j is an integer between 0 and n − 1, then
-function f , the decomposition is unique and is given         we say that f is a harmonic of order j if it has the fol-
-by the formulas                                               lowing property. Let ω = e2π i/n , so that ω is a primi-
-                                                              tive nth root of 1 (meaning that ωn = 1 but no smaller
-               fe (x) = 12 (f (x) + f (−x))
-                                                              positive power of ω gives 1). Then f (ωz) = ωj f (z)
-and                                                           for every z ∈ C. Notice that if n = 2, then ω = −1, so
-                                                              when j = 0 we recover the definition of an even func-
-               fo (x) = 12 (f (x) − f (−x)).                  tion and when j = 1 we recover the definition of an odd
+the function f (x) = x 3 + 3 x 2 + 3 x + 1 is neither even
+nor odd, but it can be written as fe (x) + fo (x), where
+fe (x) = 3 x 2 + 1 and fo (x) = x 3 + 3 x. For a general
+function f , the decomposition is unique and is given
+by the formulas
+
+and
+
+III. Mathematical Concepts
+What are the symmetry properties enjoyed by even
+and odd functions? A useful way to regard them is as
+follows. We have a group of two transformations of the
+other is the reflection ρ : x → −x. Now any trans for-
+tion of the functions defined on the real line: given a
+function f , the transformed function is the function
+g(x) = f (φ(x)). In the case at hand, if φ = ι then the
+transformed function is just f (x), while if φ = ρ then
+it is f (−x). If f is either even or odd, then both the
+transformed functions are scalar multiples of the orig-
+formed function is f (x) when f is even (so the scalar
+multiple is 1) and −f (x) when f is odd (so the scalar
+multiple is −1).
+The procedure just described can be thought of as
+a very simple prototype of the general notion of a
+Fourier transform. Very broadly speaking, a Fourier
+transform is a systematic way to decompose “generic”
+functions into a superposition of “symmetric” func-
+tions. These symmetric functions are usually quite
+explicitly defined: for instance, one of the most impor-
+tant examples is a decomposition into the trigono-
+metric functions [III.92](/part-03/trigonometric-functions) sin(nx) and cos(nx). They
+are also often related to physical concepts such as fre-
+quency or energy. The symmetry will usually be asso-
+ciated with a group [I.3 §2.1](/part-01/fundamental-definitions) G, which is usually Abe-
+lian. (In the case considered above, it is the two-element
+group.) Indeed, the Fourier transform is a fundamental
+tool in the study of groups, and more precisely in the
+representation theory [IV.9](/part-04/representation-theory) of groups, which con-
+Terence Tao
+cerns different ways in which a group can be regarded
+as a group of symmetries. It is also related to topics in
+linear algebra, such as the representation of a vector as
+linear combinations of an orthonormal basis [III.37](/part-03/bayesian-analysis),
+or as linear combinations of eigenvectors [I.3 §4.3](/part-01/fundamental-definitions) of
+a matrix or linear operator [III.50](/part-03/linear-operators-and-their-properties).
+For a more complicated example, let us fix a positive
+posing functions from C to C, that is, complex-valued
+functions defined on the complex plane. If f is such a
+function and j is an integer between 0 and n − 1, then
+we say that f is a harmonic of order j if it has the fol-
+lowing property. Let ω = e2π i/n , so that ω is a primi-
+tive nth root of 1 (meaning that ωn = 1 but no smaller
+fe (x) = 12 (f (x) + f (−x))
+positive power of ω gives 1). Then f (ωz) = ωj f (z)
+for every z ∈ C. Notice that if n = 2, then ω = −1, so
+when j = 0 we recover the definition of an even func-
+fo (x) = 12 (f (x) − f (−x)).
 
 III . $27$ .
 
@@ -98,130 +141,215 @@ R d $\to$ C , the ones considered to be “basic” are the plane waves $f(x) = 
 This explains the name “plane waves.” It turns out that if a function f is sufficiently “nice” (e . g . , smooth and rapidly decreasing as x gets large), then it can be represented uniquely as the superposition of plane waves, where a “superposition” is now interpreted as an integral rather than a summation. More precisely, we have the formula$s^{1}$ f ${} ( ξ)e^{2}\pi$ ix·ξ $dξ,f(x) =$ R $d_{1}$ . In some texts, the Fourier transform is defined slightly differently, with factors such as $2\pi$ and $- 1$ being moved to other places.
 These notational differences have some minor benefits and drawbacks, but they are all equivalent to each other.
 
-206                                                                                                             III. Mathematical Concepts
+206
 
-where                                                                    Fourier transform, is very simple: the Fourier transform
-                                                                         lets one write an arbitrary function as a superposition
-                 fˆ(ξ) =         f (x)e−2π ix·ξ dx.
-                            Rd                                           of plane waves, and the Laplacian has a very simple
-The function fˆ(ξ) is known as the Fourier transform                     effect on each plane wave. To be explicit about it,
+where
+
+The function fˆ(ξ) is known as the Fourier transform
 of f , and the second formula is known as the Fourier
-                                                                                  Δf (x) = Δ              fˆ(ξ)e2π ix·ξ dξ
-in version formula. These two formulas show how to                                                    Rd
+in version formula. These two formulas show how to
 determine the Fourier-transformed function from the
-                                                                                            =        fˆ(ξ)Δe2π ix·ξ dξ
-original function and vice versa. One can view the quan-                                        Rd
+original function and vice versa. One can view the quan-
 tity fˆ(ξ) as the extent to which the function f contains
-                                                                                            =        (−4π 2 |ξ|2 )fˆ(ξ)e2π ix·ξ dξ,
-a component that oscillates at frequency ξ. As it turns                                         Rd
+a component that oscillates at frequency ξ. As it turns
 
-out, there is no difficulty in justifying the convergence                  which gives us a formula for the Laplacian of a gen-
-of these integrals when f is sufficiently nice, though                     eral function. Here we have interchanged the Laplacian
-the issue again becomes more subtle for functions that                   Δ with an integral; this can be rigorously justified for
-are some what rough or slowly decaying. In this case,                     suitably nice f , but we omit the details.
-the underlying group is the Euclidean group Rd (which                      This formula represents Δf as a superposition of
-can also be thought of as the group of d-dimensional                     plane waves. But any such representation is unique, and
-translations); note that both the position variable x and                the Fourier in version formula tells us that
-the frequency variable ξ are contained in Rd , so Rd is                                  Δf (x) =               (ξ)e2π ix·ξ dξ.
-                                                                                                               Δf
-also the Pontryagin dual group in this setting.2                                                          Rd
+out, there is no difficulty in justifying the convergence
+of these integrals when f is sufficiently nice, though
+the issue again becomes more subtle for functions that
+are some what rough or slowly decaying. In this case,
+the underlying group is the Euclidean group Rd (which
+can also be thought of as the group of d-dimensional
+translations); note that both the position variable x and
+the frequency variable ξ are contained in Rd , so Rd is
+also the Pontryagin dual group in this setting.2
 
-   One major application of the Fourier transform lies in                Therefore,
-understanding various linear operations on functions,                                       (ξ) = (−4π 2 |ξ|2 )fˆ(ξ),
-                                                                                           Δf
+   One major application of the Fourier transform lies in
+understanding various linear operations on functions,
 such as, for instance, the Laplacian on Rd . Given a func-
-                                                                         a fact that can also be derived directly from the def-
 tion f : Rd → C, its Laplacian Δf is defined by the
-                                                                         inition of the Fourier transform using integration by
 formula
-                              d                                         parts. This identity shows that the Fourier transform
-                                  ∂2 f
-                     Δf (x) =          ,                                 diagonalizes the Laplacian: the operation of taking the
-                                  ∂xj2
-                              j=1                                        Laplacian, when viewed using the Fourier transform, is
-where we think of the vector x in coordinate form, x =                   nothing more than multiplication of a function F (ξ) by
+where we think of the vector x in coordinate form, x =
 (x1 , . . . , xd ), and of f as a function f (x1 , . . . , xd ) of d     the multiplier −4π 2 |ξ|2 . The quantity −4π 2 |ξ|2 can be
-real variables. To avoid technicalities let us consider                  interpreted as the energy level associated4 with the fre-
-only those functions that are smooth enough for the                      quency ξ. In other words, the Laplacian can be viewed
-above formula to make sense with out any difficulty.                        as a Fourier multiplier, meaning that to calculate the
-  In general, there is no obvious relationship between a                 Laplacian you take the Fourier transform, multiply by
-function f and its Laplacian Δf . But when f is a plane                  the multiplier, and then take the inverse Fourier trans-
-wave such as f (x) = e2π ix·ξ , there is a very simple                   form again. This viewpoint allows one to manipulate
-relationship:                                                            the Laplacian very easily. For instance, we can iterate
-                Δe2π ix·ξ = −4π 2 |ξ|2 e2π ix·ξ .                        the above formula to compute higher powers of the
-                                                                         Laplacian:
+real variables. To avoid technicalities let us consider
+only those functions that are smooth enough for the
+above formula to make sense with out any difficulty.
+  In general, there is no obvious relationship between a
+function f and its Laplacian Δf . But when f is a plane
+wave such as f (x) = e2π ix·ξ , there is a very simple
+relationship:
+
 That is, the effect of the Laplacian on the plane wave
-                                                                             
-                                                                             Δ                          ˆ(ξ) for n = 0, 1, 2, . . . .
-                                                                               n f (ξ) = (−4π 2 |ξ|2 )n f
 e2π ix·ξ is to multiply it by the scalar −4π 2 |ξ|2 . In
-other words, the plane wave is an eigenfunction3 for                     Indeed, we are now in a position to develop more gen-
-the Laplacian Δ, with eigenvalue −4π 2 |ξ|2 . (More gen-                 eral functions of the Laplacian. For instance, we can
-erally, plane waves will be eigenfunctions for any lin-                  take a square root as follows:
-ear operation that commutes with translations.) There-                                  
-                                                                                          −Δf (ξ) = 2π |ξ|fˆ(ξ).
+other words, the plane wave is an eigenfunction3 for
+the Laplacian Δ, with eigenvalue −4π 2 |ξ|2 . (More gen-
+erally, plane waves will be eigenfunctions for any lin-
+ear operation that commutes with translations.) There-
 fore, the Laplacian, when viewed through the lens of the
-                                                                         This leads to the theory of fractional differential oper-
-                                                                         ators (which are in turn a special case of pseudo differ-
   2. This is because of our reliance on the dot product; if one did
-not want to use this dot product, the Pontryagin dual would instead      ential operators), as well as the more general theory
+not want to use this dot product, the Pontryagin dual would instead
 be (Rd )∗ , the dual vector space to Rd . But this subtlety is not too
 important in most applications.
-  3. Strictly speaking, this is a generalized eigenfunction, as plane      4. When taking this view, it is customary to replace Δ by −Δ in order
-waves are not square-integrable on Rd .                                  to make the energies positive.
+  3. Strictly speaking, this is a generalized eigenfunction, as plane
+waves are not square-integrable on Rd .
 
-III.27.   The Fourier Transform                                                                                       207
+III. Mathematical Concepts
+Fourier transform, is very simple: the Fourier transform
+lets one write an arbitrary function as a superposition
+fˆ(ξ) =
+Rd                                           of plane waves, and the Laplacian has a very simple
+effect on each plane wave. To be explicit about it,
+Δf (x) = Δ              fˆ(ξ)e2π ix·ξ dξ
+Rd
+=        fˆ(ξ)Δe2π ix·ξ dξ
+Rd
+=        (−4π 2 |ξ|2 )fˆ(ξ)e2π ix·ξ dξ,
+Rd
+which gives us a formula for the Laplacian of a gen-
+eral function. Here we have interchanged the Laplacian
+Δ with an integral; this can be rigorously justified for
+suitably nice f , but we omit the details.
+This formula represents Δf as a superposition of
+plane waves. But any such representation is unique, and
+the Fourier in version formula tells us that
+Δf (x) =
+Δf
+Rd
+Therefore,
+ (ξ) = (−4π 2 |ξ|2 )fˆ(ξ),
+Δf
+a fact that can also be derived directly from the def-
+inition of the Fourier transform using integration by
+d                                         parts. This identity shows that the Fourier transform
+∂2 f
+Δf (x) =          ,                                 diagonalizes the Laplacian: the operation of taking the
+∂xj2
+j=1                                        Laplacian, when viewed using the Fourier transform, is
+nothing more than multiplication of a function F (ξ) by
+interpreted as the energy level associated4 with the fre-
+quency ξ. In other words, the Laplacian can be viewed
+as a Fourier multiplier, meaning that to calculate the
+Laplacian you take the Fourier transform, multiply by
+the multiplier, and then take the inverse Fourier trans-
+form again. This viewpoint allows one to manipulate
+the Laplacian very easily. For instance, we can iterate
+Δe2π ix·ξ = −4π 2 |ξ|2 e2π ix·ξ .
+Laplacian:
+
+Δ                          ˆ(ξ) for n = 0, 1, 2, . . . .
+n f (ξ) = (−4π 2 |ξ|2 )n f
+Indeed, we are now in a position to develop more gen-
+eral functions of the Laplacian. For instance, we can
+take a square root as follows:
+
+−Δf (ξ) = 2π |ξ|fˆ(ξ).
+This leads to the theory of fractional differential oper-
+ators (which are in turn a special case of pseudo differ-
+ential operators), as well as the more general theory
+4. When taking this view, it is customary to replace Δ by −Δ in order
+to make the energies positive.
 
-of functional calculus [IV.15 §3.1](/part-04/operator-algebras), in which one                   There are many directions in which to generalize the
-starts with a given operator (such as the Laplacian) and         above set of ideas. For instance, one can replace the
-then studies various functions of that operator, such            Laplacian by a more general operator and the plane
-as square roots, exponentials, inverses, and so forth.           waves by (generalized) eigenfunctions of that operator.
-  As the above discussion shows, the Fourier transform           This leads to the subject of spectral theory [III.86](/part-03/the-spectrum)
-can be used to develop a number of interesting oper-             and functional calculus; one can also study the alge-
-ations, which have particular importance in the theory           bra of Fourier multipliers (and of convolution) more
-of differential equations. To analyze these operations            abstractly, which leads to the theory of C ∗ -algebras
-effectively, one needs various estimates on the Fourier           [IV.15 §3](/part-04/operator-algebras). One can also go beyond the theory of lin-
-transform. For instance, it is often important to know           ear operators and study bilinear, multilinear, or even
-how the size of a function f , as measured by some               fully nonlinear operators. This leads in particular to
-norm, relates to the size of its Fourier transform, as           the theory of paraproducts, which are generalizations
-measured by a possibly different norm. For a further              of the pointwise product operation (f (x), g(x)) →
-discussion of this point, see function spaces [III.29](/part-03/function-spaces).          f g(x) that are of importance in differential equations.
-One particularly important and striking estimate of this         In another direction, one can replace Euclidean space
-type is the Plancherel identity,                                 Rd by a more general group, in which case the notion
-                                                                 of a plane wave is replaced by the notion of a char-
-                   |f (x)|2 dx =         |fˆ(ξ)|2 dξ,
-              Rd                   Rd                            acter (if the group is Abelian) or a representation (if
-which shows that the L2 -norm of a Fourier transform is          the group is non-Abelian). There are other variants of
-actually equal to the L2 -norm of the original function.         the Fourier transform, such as the Laplace transform
-The Fourier transform is therefore a unitary operation,          or the Mellin transform (for more about other trans-
-so one can view the frequency-space representation of            forms, see the article transforms [III.91](/part-03/transforms)), which are
-a function as being in some sense a “rotation” of the            very similar algebraically to the Fourier transform and
-physical-space representation.                                   play similar roles (for instance, the Laplace transform is
-  Developing further estimates related to the Fourier            also useful in analyzing differential equations). We have
-transform and associated operators is a major compo-             already seen that Fourier transforms are connected to
-nent of harmonic analysis. A variant of the Plancherel           Taylor series; there is also a connection to some other
-identity is the convolution formula:                             important series expansions, notably Dirichlet series,
-                                                                 as well as expansions of functions in terms of special
-          f (y)g(x − y) dy =            fˆ(ξ)ĝ(ξ)e2π ix·ξ dξ.
-     Rd                            Rd                            polynomials [III.85](/part-03/special-functions) such as orthogonal polynomials
-This formula allows one to analyze the convolution               or spherical harmonics [III.87](/part-03/spherical-harmonics).
-                                                                    The Fourier transform decomposes a function ex-
-             f ∗ g(x) =         f (y)g(x − y) dy
-                           Rd                                    actly into many components, each of which has a pre-
-of two functions f and g in terms of their Fourier trans-        cise frequency. In some applications it is more useful
-forms; in particular, if the Fourier coefficients of f or          to adopt a “fuzzier” approach, in which a function is
-g are small, then we expect the convolution f ∗ g to be          decomposed into fewer components but each compo-
-small as well. This relationship means that the Fourier          nent has a range of frequencies rather than consisting
-transform controls certain correlations of a function            purely of a single frequency. Such decompositions can
-with itself and with other functions, which makes the            have the advantage of being less constrained by the
-Fourier transform an important tool in understand-               uncertainty principle, which asserts that it is impossi-
-ing the randomness and uniform distribution proper-              ble for both a function and its Fourier transform to be
-ties of various objects in probability theory, harmonic          concentrated in very small regions of Rd . This leads
-analysis, and number theory. For instance, one can pur-          to some variants of the Fourier transform, such as
-sue the above ideas to establish the central limit theo-         wavelet transforms [VII.3](/part-07/wavelets-and-applications), which are better suited
-rem, which asserts that the sum of many independent              to a number of problems in applied and computational
-random variables will eventually resemble a gaussian             mathematics, and also to certain questions in harmonic
-distribution [III.71 §5](/part-03/probability-distributions); one can even use such meth-            analysis and differential equations. The uncertainty
-ods to establish vinogradov’s theorem [V.27](/part-05/problems-and-results-in-vi36-peter-gustav-lejeune-dirichlet-18051859), that               principle, being fundamental to quantum mechanics,
-every sufficiently large odd number is the sum of three            also connects the Fourier transform to mathematical
-primes.                                                          physics, and in particular to the connections between
+III.27.   The Fourier Transform
+
+of functional calculus [IV.15 §3.1](/part-04/operator-algebras), in which one
+starts with a given operator (such as the Laplacian) and
+then studies various functions of that operator, such
+as square roots, exponentials, inverses, and so forth.
+  As the above discussion shows, the Fourier transform
+can be used to develop a number of interesting oper-
+ations, which have particular importance in the theory
+of differential equations. To analyze these operations
+effectively, one needs various estimates on the Fourier
+transform. For instance, it is often important to know
+how the size of a function f , as measured by some
+norm, relates to the size of its Fourier transform, as
+measured by a possibly different norm. For a further
+discussion of this point, see function spaces [III.29](/part-03/function-spaces).
+One particularly important and striking estimate of this
+type is the Plancherel identity,
+
+which shows that the L2 -norm of a Fourier transform is
+actually equal to the L2 -norm of the original function.
+The Fourier transform is therefore a unitary operation,
+so one can view the frequency-space representation of
+a function as being in some sense a “rotation” of the
+physical-space representation.
+  Developing further estimates related to the Fourier
+transform and associated operators is a major compo-
+nent of harmonic analysis. A variant of the Plancherel
+identity is the convolution formula:
+
+     Rd
+This formula allows one to analyze the convolution
+
+of two functions f and g in terms of their Fourier trans-
+forms; in particular, if the Fourier coefficients of f or
+g are small, then we expect the convolution f ∗ g to be
+small as well. This relationship means that the Fourier
+transform controls certain correlations of a function
+with itself and with other functions, which makes the
+Fourier transform an important tool in understand-
+ing the randomness and uniform distribution proper-
+ties of various objects in probability theory, harmonic
+analysis, and number theory. For instance, one can pur-
+sue the above ideas to establish the central limit theo-
+rem, which asserts that the sum of many independent
+random variables will eventually resemble a gaussian
+distribution [III.71 §5](/part-03/probability-distributions); one can even use such meth-
+ods to establish vinogradov’s theorem [V.27](/part-05/problems-and-results-in-vi36-peter-gustav-lejeune-dirichlet-18051859), that
+every sufficiently large odd number is the sum of three
+primes.
+
+207
+There are many directions in which to generalize the
+above set of ideas. For instance, one can replace the
+Laplacian by a more general operator and the plane
+waves by (generalized) eigenfunctions of that operator.
+This leads to the subject of spectral theory [III.86](/part-03/the-spectrum)
+and functional calculus; one can also study the alge-
+bra of Fourier multipliers (and of convolution) more
+abstractly, which leads to the theory of C ∗ -algebras
+[IV.15 §3](/part-04/operator-algebras). One can also go beyond the theory of lin-
+ear operators and study bilinear, multilinear, or even
+fully nonlinear operators. This leads in particular to
+the theory of paraproducts, which are generalizations
+of the pointwise product operation (f (x), g(x)) →
+f g(x) that are of importance in differential equations.
+In another direction, one can replace Euclidean space
+Rd by a more general group, in which case the notion
+of a plane wave is replaced by the notion of a char-
+|f (x)|2 dx =
+Rd
+the group is non-Abelian). There are other variants of
+the Fourier transform, such as the Laplace transform
+or the Mellin transform (for more about other trans-
+forms, see the article transforms [III.91](/part-03/transforms)), which are
+very similar algebraically to the Fourier transform and
+play similar roles (for instance, the Laplace transform is
+also useful in analyzing differential equations). We have
+already seen that Fourier transforms are connected to
+Taylor series; there is also a connection to some other
+important series expansions, notably Dirichlet series,
+as well as expansions of functions in terms of special
+f (y)g(x − y) dy =
+Rd
+or spherical harmonics [III.87](/part-03/spherical-harmonics).
+The Fourier transform decomposes a function ex-
+f ∗ g(x) =
+Rd                                    actly into many components, each of which has a pre-
+cise frequency. In some applications it is more useful
+to adopt a “fuzzier” approach, in which a function is
+decomposed into fewer components but each compo-
+nent has a range of frequencies rather than consisting
+purely of a single frequency. Such decompositions can
+have the advantage of being less constrained by the
+uncertainty principle, which asserts that it is impossi-
+ble for both a function and its Fourier transform to be
+concentrated in very small regions of Rd . This leads
+to some variants of the Fourier transform, such as
+wavelet transforms [VII.3](/part-07/wavelets-and-applications), which are better suited
+to a number of problems in applied and computational
+mathematics, and also to certain questions in harmonic
+analysis and differential equations. The uncertainty
+principle, being fundamental to quantum mechanics,
+also connects the Fourier transform to mathematical
+physics, and in particular to the connections between

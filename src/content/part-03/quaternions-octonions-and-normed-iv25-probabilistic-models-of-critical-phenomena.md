@@ -1,67 +1,102 @@
 # Quaternions, Octonions, and Normed            IV.25   Probabilistic Models of Critical Phenomena
 
-IV.25.   Probabilistic Models of Critical Phenomena                                                                     657
+IV.25.   Probabilistic Models of Critical Phenomena
 
-a large critical Galton–Watson tree does not depend on          nature of the population’s evolution depends critically
-the offspring distribution. This is another example of           on which way the balance tips between adding new
-universality.                                                   members and losing old ones.
-   This result and variants of it provide a lot of use-            A porous rock with randomly arranged microscopic
-ful information about the asymptotic behavior of large          pores has water spilled on top. If there are few pores,
-trees. Many interesting functions of the tree can be            the water will not percolate through the rock, but if
-rewritten in terms of the contour function and by               there are many pores, it will. Surprisingly, there is a
-Aldous’s theorem they will converge to similar func-            critical degree of porosity that exactly separates these
-tions of the Brownian excursion, whose distribution can         behaviors. If the rock’s porosity is below the critical
-be computed explicitly with the help of stochastic cal-         value, then water cannot flow completely through the
-culus. To give just one example, this technique can be          rock, but if its porosity exceeds the critical value, even
-used to calculate the limiting distribution of the height       slightly, then water will percolate all the way through.
-of the tree θ n . Let the variance of the offspring distri-         A block of iron placed in a magnetic field will become
-bution be σ , and let us define the rescaled height of a         magnetized. If the magnetic field is extinguished, then
-                                                  √
-tree to be its original height multiplied by σ /2 n. The        the iron will remain magnetized if the temperature is
-probability that this is at least x turns out to converge,      below the Curie temperature 770 ◦ C (1418 ◦ F), but not
-as n gets large, to the quantity                                if the temperature is above this critical value. It is strik-
-                 . nfty
-                                                               ing that there is a specific temperature above which
-             2         (4 x 2 k2 − 1) exp(−2 k2 x 2 ).            the magnetization of the iron does not merely remain
-                 k=1
-                                                                small, but actually vanishes.
-                                                                   The above are three examples of critical phenom-
+a large critical Galton–Watson tree does not depend on
+the offspring distribution. This is another example of
+universality.
+   This result and variants of it provide a lot of use-
+ful information about the asymptotic behavior of large
+trees. Many interesting functions of the tree can be
+rewritten in terms of the contour function and by
+Aldous’s theorem they will converge to similar func-
+tions of the Brownian excursion, whose distribution can
+be computed explicitly with the help of stochastic cal-
+culus. To give just one example, this technique can be
+used to calculate the limiting distribution of the height
+of the tree θ n . Let the variance of the offspring distri-
+bution be σ , and let us define the rescaled height of a
+tree to be its original height multiplied by σ /2 n. The
+probability that this is at least x turns out to converge,
+as n gets large, to the quantity
+
 Acknowledgments. The author is indebted to Gilles Stoltz
-for his help with the simulations and to Gordon Slade for       ena. In each example, global properties of the sys-
-his remarks on the first version of this article.                tem change abruptly as a relevant parameter (fertility,
-                                                                degree of porosity, or temperature) is varied through
-Further Reading                                                 a critical value. For parameter values just below the
-                                                                critical value, the over all organization of the system is
+for his help with the simulations and to Gordon Slade for
+his remarks on the first version of this article.
+Further Reading
 Aldous, D. 1993. The continuum random tree. III. Annals of
-  Probability 21:248–89.                                        quite different from how it is for values just above. The
+  Probability 21:248–89.
 Bachelier, L. 1900. Théorie de la spéculation. Annales Scien-   sharpness of the transition is remarkable. How does it
-  tifiques de l’École Normale Supérieure (3) 17:21–86.           occur so suddenly?
+  tifiques de l’École Normale Supérieure (3) 17:21–86.
 Billingsley, P. 1968. Convergence of Probability Measures.
-  New York: John Wiley.                                         1.2   Theory
+  New York: John Wiley.
 Durrett, R. 1984. Brownian Motion and Martingales in Analy-
-  sis. Belmont, CA: Wadsworth.                                  The mathematical theory of critical phenomena is cur-
+  sis. Belmont, CA: Wadsworth.
 Einstein, A. 1956. Investigations on the Theory of the Brown-   rently under going intense development. Intertwined
-  ian Movement. New York: Dover.                                with the science of phase transitions, it draws on ideas
-Revuz, D., and M. Yor. 1991. Continuous Martingales and         from probability theory and statistical physics. The
-  Brownian Motion. New York: Springer.                          theory is inherently probabilistic: each possible config-
+  ian Movement. New York: Dover.
+Revuz, D., and M. Yor. 1991. Continuous Martingales and
+  Brownian Motion. New York: Springer.
 Stroock, D. W., and S. R. S. Varadhan. 1979. Multi dimensional
-                                                                uration of the system (e.g., a particular arrangement of
   Diffusion Processes. New York: Springer.
 Wiener, N. 1923. Differential space. Journal of Mathematical
-                                                                pores in a rock, or of the magnetic states of the individ-
-  Physics Massachusetts Institute of Technology 2:131–74.       ual atoms in a block of iron) is assigned a probability,
-                                                                and the typical behavior of this ensemble of random
-                                                                configurations is analyzed as a function of parameters
-IV.25 Probabilistic Models of                                   of the system (e.g., porosity or temperature).
-      Critical Phenomena                                          The theory of critical phenomena is now guided to a
-          Gordon Slade                                          large degree by a profound insight from physics known
-                                                                as universality, which, at present, is more of a phi-
-                 1      Critical Phenomena                      losophy than a mathematical theorem. The notion of
-                                                                universality refers to the fact that many essential fea-
+  Physics Massachusetts Institute of Technology 2:131–74.
+IV.25 Probabilistic Models of
+
 1.1   Examples
-                                                                tures of the transition at a critical point depend on
-A population can explode if its birth rate exceeds              relatively few attributes of the system under consid-
-its death rate, but otherwise it becomes extinct. The           eration. In particular, simple mathematical models can
+A population can explode if its birth rate exceeds
+its death rate, but otherwise it becomes extinct. The
+
+657
+nature of the population’s evolution depends critically
+on which way the balance tips between adding new
+members and losing old ones.
+A porous rock with randomly arranged microscopic
+pores has water spilled on top. If there are few pores,
+the water will not percolate through the rock, but if
+there are many pores, it will. Surprisingly, there is a
+critical degree of porosity that exactly separates these
+behaviors. If the rock’s porosity is below the critical
+value, then water cannot flow completely through the
+rock, but if its porosity exceeds the critical value, even
+slightly, then water will percolate all the way through.
+A block of iron placed in a magnetic field will become
+magnetized. If the magnetic field is extinguished, then
+√
+the iron will remain magnetized if the temperature is
+below the Curie temperature 770 ◦ C (1418 ◦ F), but not
+if the temperature is above this critical value. It is strik-
+. nfty
+
+2
+k=1
+small, but actually vanishes.
+The above are three examples of critical phenom-
+ena. In each example, global properties of the sys-
+tem change abruptly as a relevant parameter (fertility,
+degree of porosity, or temperature) is varied through
+a critical value. For parameter values just below the
+critical value, the over all organization of the system is
+quite different from how it is for values just above. The
+occur so suddenly?
+1.2   Theory
+The mathematical theory of critical phenomena is cur-
+with the science of phase transitions, it draws on ideas
+from probability theory and statistical physics. The
+theory is inherently probabilistic: each possible config-
+uration of the system (e.g., a particular arrangement of
+pores in a rock, or of the magnetic states of the individ-
+ual atoms in a block of iron) is assigned a probability,
+and the typical behavior of this ensemble of random
+configurations is analyzed as a function of parameters
+of the system (e.g., porosity or temperature).
+Critical Phenomena
+Gordon Slade
+as universality, which, at present, is more of a phi-
+1
+universality refers to the fact that many essential fea-
+tures of the transition at a critical point depend on
+relatively few attributes of the system under consid-
+eration. In particular, simple mathematical models can
 
 $658$
 
@@ -168,192 +203,259 @@ as $p \to p^{c} -$ .
 
 Here, the numbers $C^{1}$ , $C^{2}$ , and $C^{3}$ are constants that depend on m. By contrast, the exponents β, δ, and γ take on the same values for every $m \ge 2$ . Indeed, those values are $β = 1$ , $δ = 2$ , and $γ = 1$ . They are called critical exponents, and they are universal in the sense that they do not depend on the precise form of the law that governs how the individual organisms reproduce. Related exponents will appear below in other models.
 
-660                                                                                      IV. Branches of Mathematics
+660
 
-                 3 Random Graphs                              from 1, the value it takes when no edges are present
-                                                              and every cluster consists of a single vertex, to n, when
 An active research field in discrete mathematics with
-                                                              there is just one connected cluster consisting of all the
 many applications is the study of objects known as
-                                                              vertices. In particular, N = 1 when p = 0, and N = n
 graphs [III.34]. These are used to model systems such
-                                                              when p = 1. At a certain point between these extremes,
 as the Internet, the World Wide Web, and highway net-
-                                                              N under goes a dramatic jump.
 works. Mathematically, a graph is a collection of ver-
-                                                                It is possible to guess where the jump might take
 tices (which might represent computers, Web pages, or
-                                                              place, by considering the degree of a typical vertex x.
 cities) joined in pairs by edges (physical connections
-                                                              This means the number of neighbors of x, that is, other
 between computers, hyperlinks between Web pages,
-                                                              vertices that are directly linked to x by a single edge.
 highways). Graphs are also called networks, vertices are
-                                                              Each vertex has n − 1 potential neighbors, and for each
 also called nodes or sites, and edges are also called links
-                                                              one the probability that it is an actual neighbor is p,
 or bonds.
-                                                              so the expected degree of any given vertex is p(n − 1).
-                                                              When p is less than 1/(n − 1), each vertex has, on aver-
 3.1   The Basic Model of a Random Graph
-                                                              age, less than one neighbor, where as when p exceeds
-A major subarea of graph theory, initiated by Erdős and      1/(n − 1), it has, again on average, more than one. This
-Rényi in 1960, concerns the properties that a graph typ-      suggests that pc = 1/(n−1) will be a critical value, with
-ically has when it has been generated randomly. A nat-        N being small when p is below pc , and large when p is
-ural way to do this is to take n vertices and for each        above pc .
-pair to decide randomly (by the toss of a coin, say)            This is indeed the case. If we set pc = 1/(n − 1) and
-whether it should be linked by an edge. More generally,       write p = pc (1 + ε), with ε a fixed number between
-one can choose a number p between 0 and 1 and let             −1 and +1, then ε = p(n − 1) − 1. Since p(n − 1) is
+A major subarea of graph theory, initiated by Erdős and
+Rényi in 1960, concerns the properties that a graph typ-
+ically has when it has been generated randomly. A nat-
+ural way to do this is to take n vertices and for each
+pair to decide randomly (by the toss of a coin, say)
+whether it should be linked by an edge. More generally,
+one can choose a number p between 0 and 1 and let
 p be the probability that any given pair is linked. (This     the average degree of each vertex, ε is a measure of
-would correspond to using a biased coin to make the           how much the average degree differs from 1. Erdős and
-decisions.) The properties of random graphs come into         Rényi showed that, in an appropriate sense, as n goes
-their own when n is large, and of particular interest is      to infinity,
-the fact that there is a phase transition.                                        ⎧
-                                                                                  ⎪
-                                                                                  ⎪ 2ε −2 log n if ε < 0,
-                                                                                  ⎪
-                                                                                  ⎨
-3.2   The Phase Transition                                                   N ∼ An2/3          if ε = 0,
-                                                                                  ⎪
-                                                                                  ⎪
-                                                                                  ⎪
-                                                                                  ⎩2εn          if ε > 0.
+would correspond to using a biased coin to make the
+decisions.) The properties of random graphs come into
+their own when n is large, and of particular interest is
+the fact that there is a phase transition.
+3.2   The Phase Transition
 If x and y are vertices in a graph, then a path from x
-to y is a sequence of vertices that starts with x and         The A in the above formula is not a constant but a cer-
-ends with y in such a way that neighboring terms of           tain random variable that is independent of n (the dis-
-the sequence are joined by edges. (If the vertices are        tribution of which we have not specified here). When
-represented by points and the edges by lines, then a          ε = 0 and n is large, the formula will tell us, for any
-path is a way of getting from x to y by traveling along       a < b, the approximate probability that N lies between
-the lines.) If x and y are joined by a path, then they        an2/3 and bn2/3 . To put it another way, A is the limiting
-are said to be connected. A component, or connected           distribution of the quantity n−2/3 N when ε = 0.
-cluster, in a graph is what you obtain if you take a vertex      There is a marked difference between the behavior of
-together with all the other vertices that are connected       the functions log n, n2/3 , and n, for large n. The small
-to it.                                                        clusters present for p < pc correspond to what is called
-   Any graph decomposes naturally into its connected          a subcritical phase, where as in the so-called supercriti-
+to y is a sequence of vertices that starts with x and
+ends with y in such a way that neighboring terms of
+the sequence are joined by edges. (If the vertices are
+represented by points and the edges by lines, then a
+path is a way of getting from x to y by traveling along
+the lines.) If x and y are joined by a path, then they
+are said to be connected. A component, or connected
+cluster, in a graph is what you obtain if you take a vertex
+together with all the other vertices that are connected
+to it.
+   Any graph decomposes naturally into its connected
 clusters. These will, in general, have different sizes (as     cal phase, where p > pc , there is a “giant cluster” whose
-measured by the number of vertices), and given a graph        size is of the same order of magnitude as the entire
+measured by the number of vertices), and given a graph
 it is interesting to know the size of its largest cluster,    graph (see figure 4).
-which we shall denote by N. If we are considering a              It is interesting to consider the “evolution” of the ran-
-random graph with n vertices, then the value of N will        dom graph, as p is increased from subcritical to super-
-depend on the multitude of random choices made when           critical values. (Here one can imagine more and more
-the graph was generated, and thus N is itself a ran-          edges being randomly added to the graph.) A remark-
-dom variable. The possible values of N are everything         able coalescence occurs, in which many smaller clusters
+which we shall denote by N. If we are considering a
+random graph with n vertices, then the value of N will
+depend on the multitude of random choices made when
+the graph was generated, and thus N is itself a ran-
+dom variable. The possible values of N are everything
 
-IV.25.      Probabilistic Models of Critical Phenomena                                                            661
+IV. Branches of Mathematics
+3 Random Graphs
+and every cluster consists of a single vertex, to n, when
+there is just one connected cluster consisting of all the
+vertices. In particular, N = 1 when p = 0, and N = n
+when p = 1. At a certain point between these extremes,
+N under goes a dramatic jump.
+It is possible to guess where the jump might take
+place, by considering the degree of a typical vertex x.
+This means the number of neighbors of x, that is, other
+vertices that are directly linked to x by a single edge.
+Each vertex has n − 1 potential neighbors, and for each
+one the probability that it is an actual neighbor is p,
+so the expected degree of any given vertex is p(n − 1).
+When p is less than 1/(n − 1), each vertex has, on aver-
+age, less than one neighbor, where as when p exceeds
+1/(n − 1), it has, again on average, more than one. This
+suggests that pc = 1/(n−1) will be a critical value, with
+N being small when p is below pc , and large when p is
+above pc .
+This is indeed the case. If we set pc = 1/(n − 1) and
+write p = pc (1 + ε), with ε a fixed number between
+−1 and +1, then ε = p(n − 1) − 1. Since p(n − 1) is
+how much the average degree differs from 1. Erdős and
+Rényi showed that, in an appropriate sense, as n goes
+to infinity,
+⎧
+⎪
+⎪ 2ε −2 log n if ε < 0,
+⎪
+⎨
+N ∼ An2/3
+⎪
+⎪
+⎪
+⎩2εn          if ε > 0.
+The A in the above formula is not a constant but a cer-
+tain random variable that is independent of n (the dis-
+tribution of which we have not specified here). When
+ε = 0 and n is large, the formula will tell us, for any
+a < b, the approximate probability that N lies between
+an2/3 and bn2/3 . To put it another way, A is the limiting
+distribution of the quantity n−2/3 N when ε = 0.
+There is a marked difference between the behavior of
+the functions log n, n2/3 , and n, for large n. The small
+clusters present for p < pc correspond to what is called
+a subcritical phase, where as in the so-called supercriti-
+size is of the same order of magnitude as the entire
+It is interesting to consider the “evolution” of the ran-
+dom graph, as p is increased from subcritical to super-
+critical values. (Here one can imagine more and more
+edges being randomly added to the graph.) A remark-
+able coalescence occurs, in which many smaller clusters
 
-      (a)                                                   individual when the probability of each potential off-
-                                                            spring being born was p. By analogy, for the random
-                                                            graph it is natural to take an arbitrary vertex v and
-                                                            define χ(p) to be the average size of the connected
-                                                            cluster containing v. Since all the vertices play iden-
-                                                            tical roles, χ(p) is independent of the particular choice
-                                                            of v. If we fix a value of ε, set p = pc (1 + ε), and let n
-                                                            tend to infinity, it turns out that the behavior of χ(p)
-                                                            is described by the formula
-                                                                                    ⎧
-                                                                                    ⎪
-                                                                                    ⎪ 1/|ε| if ε < 0,
-                                                                                    ⎪
-                                                                                    ⎨
-                                                                            χ(p) ∼ cn1/3 if ε = 0,
-                                                                                    ⎪
-                                                                                    ⎪
-                                                                                    ⎪
-                                                                                    ⎩4ε2 n if ε > 0,
+IV.25.
 
-                                                            where c is a constant. Thus the expected cluster size
-                                                            is independent of n when ε < 0, grows like n1/3 when
-                         p = 34 pc = 0.0012
-                                                            p = pc , and is much larger—indeed, of the same order
-                                                            of magnitude n as the entire system—when ε > 0.
-      (b)
-                                                               To continue the analogy with branching processes,
-                                                            let Pk (p) denote the probability that the cluster con-
-                                                            taining the arbitrary vertex v consists of at least k ver-
-                                                            tices. Again this does not depend on the particular
-                                                            choice of v. In the subcritical phase, when p = pc (1+ε)
-                                                            for some fixed negative value of ε, the probability Pk (p)
-                                                            is essentially independent of n and is exponentially
-                                                            small in k. Thus, large clusters are extremely rare. How-
-                                                            ever, at the critical point p = pc , Pk (p) decays like
-                                                                               . qrt{a} multiple of 1/ k (for an appropriate range of k).
-                                                            This much slower square-root decay is similar to what
-                                                            happens for branching processes.
-
-                                                            3.4   Other Thresholds
-                         p = 54 pc = 0.0020                 It is not only the largest cluster size that jumps. An-
 Figure 4 The largest cluster (black) and second largest     other quantity that does so is the probability that a
 cluster (dots) in random graphs with 625 vertices. These    random graph is connected, meaning that there is a
 clusters have sizes (a) 17 and 11 and (b) 284 and 16. The   single connected cluster that contains all the n ver-
-hundreds of edges in the graphs are not clearly shown.      tices. For what values of the edge-probability p is this
-                                                            likely? It is known that the property of being connected
-rapidly merge into a giant cluster whose size is pro-       has a sharp threshold, at pconn = (1/n) log n, in the
+hundreds of edges in the graphs are not clearly shown.
+rapidly merge into a giant cluster whose size is pro-
 portion al to the size of the entire system. The coales-     following sense. If p = pconn (1 + ε) for some fixed
-                                                            negative ε, then the probability that the graph is con-
 cence is thorough, in the sense that in the supercritical
-                                                            nected approaches 0 as n → . nfty. If on the other hand ε
 phase the giant cluster dominates everything: indeed,
-                                                            is positive, then the probability approaches 1. Roughly
 the second-largest cluster is known to have asymptotic
-                                                            speaking, if you add edges randomly, then the graph
 size only 2ε −2 log n, which makes it far smaller than
-                                                            suddenly changes from being almost certainly not con-
 the giant cluster.
-                                                            nected to almost certainly connected as the proportion
-                                                            of edges present moves from just below pconn to just
 3.3    Cluster Size
-                                                            above it.
-For branching processes, we defined the quantity χ(p)           There is a wide class of properties with thresholds
+For branching processes, we defined the quantity χ(p)
 to be the average size of the family tree spawned by an     of this sort. Other examples include the absence of any
 
-662                                                                                       IV. Branches of Mathematics
+Probabilistic Models of Critical Phenomena
+(a)
+spring being born was p. By analogy, for the random
+graph it is natural to take an arbitrary vertex v and
+define χ(p) to be the average size of the connected
+cluster containing v. Since all the vertices play iden-
+tical roles, χ(p) is independent of the particular choice
+of v. If we fix a value of ε, set p = pc (1 + ε), and let n
+tend to infinity, it turns out that the behavior of χ(p)
+is described by the formula
+⎧
+⎪
+⎪ 1/|ε| if ε < 0,
+⎪
+⎨
+χ(p) ∼ cn1/3 if ε = 0,
+⎪
+⎪
+⎪
+⎩4ε2 n if ε > 0,
+where c is a constant. Thus the expected cluster size
+is independent of n when ε < 0, grows like n1/3 when
+p = 34 pc = 0.0012
+p = pc , and is much larger—indeed, of the same order
+of magnitude n as the entire system—when ε > 0.
+(b)
+To continue the analogy with branching processes,
+let Pk (p) denote the probability that the cluster con-
+taining the arbitrary vertex v consists of at least k ver-
+tices. Again this does not depend on the particular
+choice of v. In the subcritical phase, when p = pc (1+ε)
+for some fixed negative value of ε, the probability Pk (p)
+is essentially independent of n and is exponentially
+small in k. Thus, large clusters are extremely rare. How-
+ever, at the critical point p = pc , Pk (p) decays like
+. qrt{a} multiple of 1/ k (for an appropriate range of k).
+This much slower square-root decay is similar to what
+happens for branching processes.
+3.4   Other Thresholds
+p = 54 pc = 0.0020                 It is not only the largest cluster size that jumps. An-
+tices. For what values of the edge-probability p is this
+likely? It is known that the property of being connected
+has a sharp threshold, at pconn = (1/n) log n, in the
+negative ε, then the probability that the graph is con-
+nected approaches 0 as n → . nfty. If on the other hand ε
+is positive, then the probability approaches 1. Roughly
+speaking, if you add edges randomly, then the graph
+suddenly changes from being almost certainly not con-
+nected to almost certainly connected as the proportion
+of edges present moves from just below pconn to just
+above it.
+There is a wide class of properties with thresholds
 
-                   Figure 5 Bond-percolation configurations on a 14 . imes 14 piece of the square lattice Z2
-                          for p = 0.25, p = 0.45, p = 0.55, p = 0.75. The critical value is pc = 12 .
+662
 
-isolated vertex (a vertex with no incident edge), and the       the medium on a macroscopic scale, and otherwise it
-presence of a Hamiltonian cycle (a closed loop that vis-        cannot. Thus, when an infinite cluster exists, it is said
-its every vertex exactly once). Below the threshold, the        that “percolation occurs.”
-random graph almost certainly does not have the prop-             Percolation on the square lattice Z2 is depicted in
-erty, where as above the threshold it almost certainly           figure 5. Percolation in a three-dimensional physical
-does. The transition occurs abruptly.                           medium is modeled using Z3 . It is instructive, and
-                                                                mathematically interesting, to think how the model’s
-                     4   Percolation                            behavior might change as the dimension d is varied.
-The percolation model was introduced by Broadbent                 For d = 1, percolation will not occur unless p = 1.
-and Hammersley in 1957 as a model of fluid flow in                The simple observation that leads to this conclusion is
-a porous medium. The medium contains a network of               the following. Given any particular sequence of m con-
-randomly arranged microscopic pores through which               secutive edges, the probability that they are all occu-
-fluid can flow. A d-dimensional medium can be mod-                pied is pm , and if p < 1, then this goes to zero as
-eled with the help of the infinite d-dimensional lat-            m goes to infinity. The situation is quite different for
-tice Zd , which consists of all points x of the form            d ⩾ 2.
+isolated vertex (a vertex with no incident edge), and the
+presence of a Hamiltonian cycle (a closed loop that vis-
+its every vertex exactly once). Below the threshold, the
+random graph almost certainly does not have the prop-
+erty, where as above the threshold it almost certainly
+does. The transition occurs abruptly.
+The percolation model was introduced by Broadbent
+and Hammersley in 1957 as a model of fluid flow in
+a porous medium. The medium contains a network of
+randomly arranged microscopic pores through which
+fluid can flow. A d-dimensional medium can be mod-
+eled with the help of the infinite d-dimensional lat-
+tice Zd , which consists of all points x of the form
 (x1 , . . . , xd ), where each xi is an integer. This set can
-be made into a graph in a natural way if we join each           4.1   The Phase Transition
+be made into a graph in a natural way if we join each
 point to the 2 d points that differ from it by ±1 in
-                                                                For d ⩾ 2, there is a phase transition. Let θ(p) denote
 one coordinate and are the same in the others. (So,
-                                                                the probability that any given vertex of Zd is in an
 for example, in Z2 the neighbors of (2, 3) are the four
-                                                                infinite connected cluster. (This probability does not
 points (1, 3), (3, 3), (2, 2), and (2, 4).) One thinks of the
-edges as representing all pores potentially present in          depend on the choice of vertex.) It is known that for
-the medium.                                                     d ⩾ 2 there is a critical value pc , depending on d, such
-   To model the medium itself, one first chooses a               that θ(p) is zero if p < pc and positive if p > pc . The
-porosity parameter p, which is a number between 0               exact value of pc is not known in general, but a special
-and 1. Each edge (or bond) of the above graph is then           symmetry of the square lattice allows for a proof that
-                                                                      1
-retained with probability p and deleted with probability        pc = 2 when d = 2.
-1 − p, with all choices independent. The retained edges           Using the fact that θ(p) is the probability that any
-are referred to as “occupied” and the deleted ones as           particular vertex lies in an infinite cluster, it can be
-“vacant.” The result is a random subgraph of Zd whose           shown that when θ(p) > 0 there must be an infinite
-edges are the occupied bonds. These model the pores             connected cluster some where in Zd , while when θ(p) =
-actually present in a macroscopic chunk of the medium.          0 there will not be one. Thus, percolation occurs when
-   For fluid to flow through the medium there must be a           p > pc but not when p < pc , and the system’s behavior
-set of pores connected together on a macroscopic scale.         changes abruptly at the critical value. A deeper argu-
-This idea is captured in the model by the existence of          ment shows that when p > pc there must be exactly one
-an infinite cluster in the random subgraph, that is, a           infinite cluster; infinite clusters cannot coexist on Zd .
-collection of infinitely many points all connected to one        This is analogous to the situation in the random graph,
-another. The basic question is whether or not an infinite        where one giant cluster dominates when p is above the
-cluster exists. If it does, then fluid can flow through           critical value.
+edges as representing all pores potentially present in
+the medium.
+   To model the medium itself, one first chooses a
+porosity parameter p, which is a number between 0
+and 1. Each edge (or bond) of the above graph is then
+retained with probability p and deleted with probability
+1 − p, with all choices independent. The retained edges
+are referred to as “occupied” and the deleted ones as
+“vacant.” The result is a random subgraph of Zd whose
+edges are the occupied bonds. These model the pores
+actually present in a macroscopic chunk of the medium.
+   For fluid to flow through the medium there must be a
+set of pores connected together on a macroscopic scale.
+This idea is captured in the model by the existence of
+an infinite cluster in the random subgraph, that is, a
+collection of infinitely many points all connected to one
+another. The basic question is whether or not an infinite
+cluster exists. If it does, then fluid can flow through
+
+IV. Branches of Mathematics
+Figure 5 Bond-percolation configurations on a 14 . imes 14 piece of the square lattice Z2
+for p = 0.25, p = 0.45, p = 0.55, p = 0.75. The critical value is pc = 12 .
+the medium on a macroscopic scale, and otherwise it
+cannot. Thus, when an infinite cluster exists, it is said
+that “percolation occurs.”
+Percolation on the square lattice Z2 is depicted in
+figure 5. Percolation in a three-dimensional physical
+medium is modeled using Z3 . It is instructive, and
+mathematically interesting, to think how the model’s
+4   Percolation                            behavior might change as the dimension d is varied.
+For d = 1, percolation will not occur unless p = 1.
+The simple observation that leads to this conclusion is
+the following. Given any particular sequence of m con-
+secutive edges, the probability that they are all occu-
+pied is pm , and if p < 1, then this goes to zero as
+m goes to infinity. The situation is quite different for
+d ⩾ 2.
+4.1   The Phase Transition
+For d ⩾ 2, there is a phase transition. Let θ(p) denote
+the probability that any given vertex of Zd is in an
+infinite connected cluster. (This probability does not
+depend on the choice of vertex.) It is known that for
+d ⩾ 2 there is a critical value pc , depending on d, such
+that θ(p) is zero if p < pc and positive if p > pc . The
+exact value of pc is not known in general, but a special
+symmetry of the square lattice allows for a proof that
+1
+pc = 2 when d = 2.
+Using the fact that θ(p) is the probability that any
+particular vertex lies in an infinite cluster, it can be
+shown that when θ(p) > 0 there must be an infinite
+connected cluster some where in Zd , while when θ(p) =
+0 there will not be one. Thus, percolation occurs when
+p > pc but not when p < pc , and the system’s behavior
+changes abruptly at the critical value. A deeper argu-
+ment shows that when p > pc there must be exactly one
+infinite cluster; infinite clusters cannot coexist on Zd .
+This is analogous to the situation in the random graph,
+where one giant cluster dominates when p is above the
+critical value.
 
 $IV$ . $25$ .
 
@@ -454,62 +556,75 @@ $1$
 white independently with probabilit$y^{2}$ , which is the critical probability for site percolation on the triangular lattice. It is not hard to show that there is a path, also illustrated in figure $6$ , which starts at the bottom and all along its length is gray to the left and white to the right. The exploration process is this random path, which can be thought of as the gray $/$ white interface. The boundary conditions at the bottom force it to be infinite.
 The exploration process provides information about the boundaries separating large critical clusters of different color, and from this it is possible to extract
 
-IV.25.   Probabilistic Models of Critical Phenomena                                                                    665
+IV.25.   Probabilistic Models of Critical Phenomena
 
-             Figure 6 The exploration process.
-
-                                                              Figure 7 The two regions are related by a conformal trans-
 information about critical exponents. It is the macro-
-                                                              formation, depicted in the upper figures. In the lower fig-
 scopic large-scale structure that is essential, so inter-     ures, the limiting critical crossing probabilities are identi-
-est is focused on the exploration process in the limit        cal.
+est is focused on the exploration process in the limit
 as the spacing between vertices of the triangular lattice
 goes to zero. In other words, what does the curve in
-                                                              there is an occupied path inside the region that joins
 figure 6 typically look like in the limit as the size of the
-                                                              one arc to the other, or more accurately the limit of
 hexagons shrinks to zero? It is now known that this
-                                                              this probability as the lattice spacing between vertices
 limit is described by a newly discovered stochastic
-                                                              is reduced to zero. For p < pc , clusters with diameter
 process [IV.24 §1](/part-04/stochastic-processes) called the Schramm–Loewner evolu-
-                                                              much larger than the correlation length ξ(p) (measured
 tion (SLE) with parameter six, or SLE6 for short. The
-                                                              by the number of steps in the lattice) are extremely
 SLE processes were introduced by Schramm in 2000,
-                                                              rare. However, to cross the region, a cluster needs to be
 and have become a topic of intense current research
-                                                              larger and larger as the lattice spacing goes to zero. It
 activity.
-                                                              follows that the crossing probability is 0. When p > pc ,
    This is a major step forward in the understanding
-                                                              there is exactly one infinite cluster, from which it can
 of two-dimensional site percolation on the triangular
-                                                              be deduced that if the lattice spacing is very small, then
 lattice, but much remains to be done. In particular, it is
-                                                              with very high probability there will be a crossing of the
 still an unsolved problem to prove universality. There is
-                                                              region. In the limit, the crossing probability is 1. What
 currently no proof that critical exponents exist for bond
-                                                              if p = pc ? There are three remarkable predictions for
 percolation on the square lattice Z2 , although universal-
-                                                              critical crossing probabilities.
 ity predicts that the critical exponents for the square
-lattice should also take on the interesting values listed       The first prediction is that critical crossing proba-
-above.                                                        bilities are universal, which is to say that they are the
-                                                              same for all finite-range two-dimensional bond- or site-
-                                                              percolation models. (As always, we are talking about
+lattice should also take on the interesting values listed
+above.
 4.5.2    Crossing Probabilities
-                                                              the limiting probabilities as the lattice spacing goes
-In order to understand two-dimensional percolation, it        to zero.)
-is very helpful to understand the probability that there        The second prediction is that the critical cross-
-will be a path from one side of a region of the plane         ing probabilities are conformally invariant. A confor-
-to another, especially when the parameter p takes its         mal transformation is a transformation that locally
-critical value pc .                                           preserves angles, as shown in figure 7. The remark-
-   To make this idea precise, fix a simply connected           able riemann mapping theorem [V.34](/part-05/the-uniformization-theorem) states that
-region in the plane (i.e., a region with no holes), and       any two simply connected regions that are not the
-fix two arcs on the boundary of the region. The crossing       entire plane are related by a conformal transformation.
-probability (which depends on p) is the probability that      The statement that the critical crossing probability is
+In order to understand two-dimensional percolation, it
+is very helpful to understand the probability that there
+will be a path from one side of a region of the plane
+to another, especially when the parameter p takes its
+critical value pc .
+   To make this idea precise, fix a simply connected
+region in the plane (i.e., a region with no holes), and
+fix two arcs on the boundary of the region. The crossing
+probability (which depends on p) is the probability that
+
+665
+Figure 6 The exploration process.
+Figure 7 The two regions are related by a conformal trans-
+formation, depicted in the upper figures. In the lower fig-
+cal.
+there is an occupied path inside the region that joins
+one arc to the other, or more accurately the limit of
+this probability as the lattice spacing between vertices
+is reduced to zero. For p < pc , clusters with diameter
+much larger than the correlation length ξ(p) (measured
+by the number of steps in the lattice) are extremely
+rare. However, to cross the region, a cluster needs to be
+larger and larger as the lattice spacing goes to zero. It
+follows that the crossing probability is 0. When p > pc ,
+there is exactly one infinite cluster, from which it can
+be deduced that if the lattice spacing is very small, then
+with very high probability there will be a crossing of the
+region. In the limit, the crossing probability is 1. What
+if p = pc ? There are three remarkable predictions for
+critical crossing probabilities.
+The first prediction is that critical crossing proba-
+bilities are universal, which is to say that they are the
+same for all finite-range two-dimensional bond- or site-
+percolation models. (As always, we are talking about
+the limiting probabilities as the lattice spacing goes
+to zero.)
+The second prediction is that the critical cross-
+ing probabilities are conformally invariant. A confor-
+mal transformation is a transformation that locally
+preserves angles, as shown in figure 7. The remark-
+able riemann mapping theorem [V.34](/part-05/the-uniformization-theorem) states that
+any two simply connected regions that are not the
+entire plane are related by a conformal transformation.
+The statement that the critical crossing probability is
 
 $666$
 
@@ -587,67 +702,83 @@ $h \to 0 +$
 positive or zero? If M  +  (T) is positive, then the magnetization persists after the external field is turned off. In this case there will be a discontinuity in the graph of M versus $h$ at $h = 0$ . Whether or not this happens depends on the temperature T . In the limit as T is reduced to zero, a small difference in the energies of two configurations results in an enormous difference in their probabilities. When $h > 0$ and the temperature is reduced to zero, only the minimal energy configuration, in which all spins are $+ 1$ , has any chance of occurring.
 This is the case no matter how small the external field becomes, so $M + (0) = 1$ . On the other hand, in the limit of infinitely high temperature, all configurations become equally likely and the spontaneous magnetization is equal to zero.
 
-668                                                                                              IV. Branches of Mathematics
+668
 
-                           M(h, T )
-                                                                       temperature Tc . For T > Tc , the magnetic susceptibil-
-                                                              T < Tc   ity, denoted χ(T ), is defined to be the rate of change of
-                                                              T = Tc   M(h, T ) with respect to h, at h = 0. This partial deriva-
-                                                              T > Tc   tive in h diverges as T approaches Tc from above, and
-                        M+                                             the exponent γ is defined by
-
-                                                                                  χ(T ) ∼ C(T − Tc )−γ ,    as T → Tc+ .
-                                                h
-                                                                       Finally, δ describes the manner in which the mag net i-
-                                                                       zation goes to zero as the external field is reduced to
-                                                                       zero at the critical temperature. That is,
-
-                                                                                   M(h, Tc ) ∼ Ch1/δ ,     as h → 0+ .
-
-                                                                       These critical exponents, like those for percolation, are
-                                                                       predicted to be universal and to obey various scaling
-      1
-                                                                       relations. They are now understood mathematically in
-                                                                       all dimensions except d = 3.
   M+(T)
 
-                                                                       5.4   Exact Solution for d = 2
-
-                                                                       In 1944, Onsager published a famous paper in which
-      0                                                                he gave an exact solution of the two-dimensional Ising
-      T=0                             T = Tc
-                                                                       model. His remarkable computation is a landmark in
-      Figure 9 Magnetization versus external field, and                 the development of the theory of critical phenomena.
-      spontaneous magnetization versus temperature.                    With the exact solution as a starting point, critical expo-
-                                                                       nents could be calculated. As with two-dimensional
-                                                                       percolation, the exponents take interesting values:
    For dimensions d ⩾ 2, the behavior of M+ (T ) when T
-lies between these two extremes is quite surprising. In                                    1         7
-                                                                                       β = 8,   γ = 4,     δ = 15.
+lies between these two extremes is quite surprising. In
 particular, it is not differentiable every where: there is a
-critical temperature Tc , depending on the dimension,                  5.5   Mean-Field Theory for d ⩾ 4
+critical temperature Tc , depending on the dimension,
 such that the spontaneous magnetization is strictly
-positive for T < Tc and zero for T > Tc , and it is at                 Two modifications of the Ising model are relatively easy
-T = Tc that different i ability fails. Schematic graphs of                to analyze. One is to formulate the model on the infi-
-the magnetization versus h and the spontaneous mag-                    nite binary tree, rather than on the integer lattice Zd .
-net ization versus T are shown in figure 9. What hap-                    Another is to formulate the Ising model on the so-called
-pens at the critical temperature itself is delicate. In all            “complete graph,” which is the graph consisting of n
-dimensions except d = 3 it has been proved that there                  vertices with an edge joining every pair of vertices, and
-is no spontaneous magnetization at the critical temper-                then take the limit as n goes to infinity. In the latter,
-ature, which is to say that M+ (Tc ) = 0. It is believed that          known as the Curie–Weiss model, each spin interacts
-this is true when d = 3 as well, but it remains an open                equally with all the other spins, or, put another way,
-problem to prove it.                                                   each spin feels the mean field of all the other spins. In
-                                                                       each of these modifications, the critical exponents take
-5.3       Critical Exponents                                           on the so-called mean-field values
-The phase transition for the Ising model is again de-                                       1
-                                                                                       β = 2,    γ = 1,    δ = 3.
+positive for T < Tc and zero for T > Tc , and it is at
+T = Tc that different i ability fails. Schematic graphs of
+the magnetization versus h and the spontaneous mag-
+net ization versus T are shown in figure 9. What hap-
+pens at the critical temperature itself is delicate. In all
+dimensions except d = 3 it has been proved that there
+is no spontaneous magnetization at the critical temper-
+ature, which is to say that M+ (Tc ) = 0. It is believed that
+this is true when d = 3 as well, but it remains an open
+problem to prove it.
+5.3
+The phase transition for the Ising model is again de-
 scribed by critical exponents. The critical exponent β,
-given by                                                               Ingenious methods have been used to prove that the
-                                                                       Ising model on Zd has these same critical exponents
-              M+ (T ) ∼ C(Tc − T )β ,          as T → Tc− ,
-                                                                       in dimensions d ⩾ 4, although in dimension 4 there
-indicates how the spontaneous magnetization disap-                     remain unresolved issues concerning logarithmic cor-
-pears as the temperature increases toward the critical                 rections to the asymptotic formulas.
+given by
+
+indicates how the spontaneous magnetization disap-
+pears as the temperature increases toward the critical
+
+IV. Branches of Mathematics
+M(h, T )
+temperature Tc . For T > Tc , the magnetic susceptibil-
+T < Tc   ity, denoted χ(T ), is defined to be the rate of change of
+T = Tc   M(h, T ) with respect to h, at h = 0. This partial deriva-
+T > Tc   tive in h diverges as T approaches Tc from above, and
+M+                                             the exponent γ is defined by
+χ(T ) ∼ C(T − Tc )−γ ,    as T → Tc+ .
+h
+Finally, δ describes the manner in which the mag net i-
+zation goes to zero as the external field is reduced to
+zero at the critical temperature. That is,
+M(h, Tc ) ∼ Ch1/δ ,     as h → 0+ .
+These critical exponents, like those for percolation, are
+predicted to be universal and to obey various scaling
+1
+relations. They are now understood mathematically in
+all dimensions except d = 3.
+5.4   Exact Solution for d = 2
+In 1944, Onsager published a famous paper in which
+0
+T=0
+model. His remarkable computation is a landmark in
+Figure 9 Magnetization versus external field, and
+spontaneous magnetization versus temperature.
+nents could be calculated. As with two-dimensional
+percolation, the exponents take interesting values:
+1
+β = 8,   γ = 4,     δ = 15.
+5.5   Mean-Field Theory for d ⩾ 4
+Two modifications of the Ising model are relatively easy
+to analyze. One is to formulate the model on the infi-
+nite binary tree, rather than on the integer lattice Zd .
+Another is to formulate the Ising model on the so-called
+“complete graph,” which is the graph consisting of n
+vertices with an edge joining every pair of vertices, and
+then take the limit as n goes to infinity. In the latter,
+known as the Curie–Weiss model, each spin interacts
+equally with all the other spins, or, put another way,
+each spin feels the mean field of all the other spins. In
+each of these modifications, the critical exponents take
+Critical Exponents
+1
+β = 2,    γ = 1,    δ = 3.
+Ingenious methods have been used to prove that the
+Ising model on Zd has these same critical exponents
+M+ (T ) ∼ C(Tc − T )β ,
+in dimensions d ⩾ 4, although in dimension 4 there
+remain unresolved issues concerning logarithmic cor-
+rections to the asymptotic formulas.
 
 $IV$ . $25$ .
 
@@ -708,10 +839,8 @@ The sphere has the same mean curvature at every point, but then it is pretty cle
 One can show that the minimal surface (the exact mathematical solution to the minimization problem) has constant mean curvature: its mean curvature is the same at every point. Isoperimetric principles turn up all over mathematics: in the study of partial differential equations, the calculus of variations, harmonic analysis, computational algorithms, probability theory, and almost every branch of geometry. The aim of the first part of this article is to describe a branch of mathematics, highdimensional geometry, whose starting point is the fundamental isoperimetric principle:
 that the sphere is the surface of least area that encloses a given volume. The most remarkable feature of high-dimensional geometry is its intimate connection to the theory of probability: geometric objects in high-dimensional space exhibit many of the characteristic properties of random distributions. The aim of the second part of this article is to out line the links between the geometry and probability.
 
-IV.26.   High-Dimensional Geometry and Its Probabilistic Analogues                                                          671
+IV.26.   High-Dimensional Geometry and Its Probabilistic Analogues
 
-              2    High-Dimensional Spaces
-                                                                                    (0,1)                        (1,1)
 So far we have discussed only two- and three-dimen-
 sional geometry. Higher-dimensional spaces seem to
 be impossible for humans to visualize but it is easy to
@@ -719,53 +848,90 @@ provide a mathematical description of them by extend-
 ing the usual description of three-dimensional space
 in terms of Cartesian coordinates. In three dimen-
 sions, a point (x, y, z) is given by three coordin-
-ates; in n-dimensional space, the points are n-tuples                               (0,0)                        (1,0)
+ates; in n-dimensional space, the points are n-tuples
 (x1 , x2 , . . . , xn ). As in two and three dimensions, the
-points are related to one another in that we can add two                              Figure 2 The unit square.
+points are related to one another in that we can add two
 of them together to produce a third, by simply adding
 corresponding coordinates:
-                                                                         Whatever the dimension, a special geometric role is
-         (2, 3, . . . , 7) + (1, 5, . . . , 2) = (3, 8, . . . , 9).   played by the unit sphere: that is, the surface consist-
-By relating points to one another, addition gives the                 ing of all points that are a distance of 1 unit from
-space some structure or “shape.” The space is not just                a fixed point, the center. As one might expect, the
-a jumble of unrelated points.                                         corresponding solid sphere, or unit ball, consisting of
-   To describe the shape of the space completely, we                  all points enclosed by the unit sphere, also plays a
-also need to specify the distance between any two                     special role. There is a simple relationship between
+
+By relating points to one another, addition gives the
+space some structure or “shape.” The space is not just
+a jumble of unrelated points.
+   To describe the shape of the space completely, we
+also need to specify the distance between any two
 points. In two dimensions,
-                           the distance of a point (x, y)            the (n-dimensional) volume of the unit ball and the
-from the origin is x 2 + y 2 by the Pythagorean theo-                 (n − 1)-dimensional “area” of the sphere. If we let vn
-rem (and the fact that the axes are perpendicular). Simi-             denote the volume of the unit ball in n dimensions,
-larly, the distance between two points (u, v) and (x, y)              then the surface area is nvn . One way to see this is
-is                                                                   to imagine enlarging the unit ball by a factor slightly
-                    (x − u)2 + (y − v)2 .                             greater than 1, say 1 + ε. This is pictured in figure 3. The
-In n dimensions we define the distance between points                  enlarged ball has volume (1 + ε)n vn and so the volume
-(u1 , u2 , . . . , un ) and (x1 , x2 , . . . , xn ) to be             of the shell between the two spheres is ((1+ε)n −1)vn .
-                                                                     Since the shell has thickness ε, this volume is approx i-
-       (x1 − u1 )2 + (x2 − u2 )2 + · · · + (xn − un )2 .              mately the surface area multiplied by ε. So the surface
-   Volume is defined in n-dimensional space roughly as                 area is approximately
-follows. We start by defining a cube in n dimensions.                                        (1 + ε)n − 1
-The two- and three-dimensional cases, the square and                                                     vn .
-                                                                                                  ε
-the usual three-dimensional cube, are very familiar. The              By taking the limit as ε approaches 0 we obtain the
+from the origin is x 2 + y 2 by the Pythagorean theo-
+rem (and the fact that the axes are perpendicular). Simi-
+larly, the distance between two points (u, v) and (x, y)
+is
+In n dimensions we define the distance between points
+(u1 , u2 , . . . , un ) and (x1 , x2 , . . . , xn ) to be
+     
+
+   Volume is defined in n-dimensional space roughly as
+follows. We start by defining a cube in n dimensions.
+The two- and three-dimensional cases, the square and
+the usual three-dimensional cube, are very familiar. The
 set of all points in the xy-plane whose coordinates are
-                                                                      surface area exactly:
 between 0 and 1 is a square of side 1 unit (as shown in
-                                                                                             (1 + ε)n − 1
-figure 2), and, similarly, the set of all points (x, y, z) for                           lim               vn .
-                                                                                         ε→0       ε
+figure 2), and, similarly, the set of all points (x, y, z) for
 which x, y, and z are all between 0 and 1 is a unit cube.
-In n-dimensional space the analogous cube consists of                 One can check that this limit is nvn either by expanding
-those points whose coordinates are all between 0 and 1.               the power (1 + ε)n or by observing that the expression
-We stipulate that the unit cube has volume 1. Now, if                 is the formula for a derivative.
-we double the size of a plane figure, its area increases                  So far we have discussed bodies in n-dimensional
-by a factor of 4. If we double a three-dimensional body,              space with out being too precise about what kind of sets
-its volume increases by a factor of 8. In n-dimensional               we are considering. Many of the statements in this arti-
-space, the volume scales as the nth power of size: so a               cle hold true for quite general sets. But a special role
-cube of side t has volume t n . To find the volume of a                is played in high-dimensional geometry by convex sets
-more general set we try to approximate it by covering                 (a set is convex if it contains the entire line segment
-it with little cubes whose total volume is as small as                joining any two of its points). Balls and cubes are both
-possible. The volume of the set is calculated as a limit              examples of convex sets. The next section describes
-of these approximate volumes.                                         a fundamental principle which holds for very general
+In n-dimensional space the analogous cube consists of
+those points whose coordinates are all between 0 and 1.
+We stipulate that the unit cube has volume 1. Now, if
+we double the size of a plane figure, its area increases
+by a factor of 4. If we double a three-dimensional body,
+its volume increases by a factor of 8. In n-dimensional
+space, the volume scales as the nth power of size: so a
+cube of side t has volume t n . To find the volume of a
+more general set we try to approximate it by covering
+it with little cubes whose total volume is as small as
+possible. The volume of the set is calculated as a limit
+of these approximate volumes.
+
+671
+2    High-Dimensional Spaces
+(0,1)                        (1,1)
+(0,0)
+Figure 2 The unit square.
+Whatever the dimension, a special geometric role is
+(2, 3, . . . , 7) + (1, 5, . . . , 2) = (3, 8, . . . , 9).   played by the unit sphere: that is, the surface consist-
+ing of all points that are a distance of 1 unit from
+a fixed point, the center. As one might expect, the
+corresponding solid sphere, or unit ball, consisting of
+all points enclosed by the unit sphere, also plays a
+special role. There is a simple relationship between
+      the distance of a point (x, y)            the (n-dimensional) volume of the unit ball and the
+(n − 1)-dimensional “area” of the sphere. If we let vn
+denote the volume of the unit ball in n dimensions,
+then the surface area is nvn . One way to see this is
+
+(x − u)2 + (y − v)2 .                             greater than 1, say 1 + ε. This is pictured in figure 3. The
+enlarged ball has volume (1 + ε)n vn and so the volume
+of the shell between the two spheres is ((1+ε)n −1)vn .
+Since the shell has thickness ε, this volume is approx i-
+(x1 − u1 )2 + (x2 − u2 )2 + · · · + (xn − un )2 .
+area is approximately
+(1 + ε)n − 1
+vn .
+ε
+By taking the limit as ε approaches 0 we obtain the
+surface area exactly:
+(1 + ε)n − 1
+lim
+ε→0       ε
+One can check that this limit is nvn either by expanding
+the power (1 + ε)n or by observing that the expression
+is the formula for a derivative.
+So far we have discussed bodies in n-dimensional
+space with out being too precise about what kind of sets
+we are considering. Many of the statements in this arti-
+cle hold true for quite general sets. But a special role
+is played in high-dimensional geometry by convex sets
+(a set is convex if it contains the entire line segment
+joining any two of its points). Balls and cubes are both
+examples of convex sets. The next section describes
+a fundamental principle which holds for very general
 
 $672{}^{1} + ε1$
 
@@ -964,63 +1130,105 @@ Such a statement flies in the face of our intuition about the huge variety of sh
 Just as in the case of the Brunn-Minkowski inequality, we have to take into account the possibility that our body could be long and thin and so have small volume but very large surface. So we have to start by applying a linear transformation that stretches the body in certain directions (but does not bend the shape) . For example, if we start with a triangle, we first transform it into an equilateral triangle and then measure its surface and its volume.
 Once we have transformed our body as best we can, it turns out that we can specify precisely which convex body has the largest surface for a given volume. In two dimensions it is the triangle, in three it is the tetrahedron, and in n dimensions it is the natural analogue of these: the n-dimensional convex set (called a simplex) which
 
-IV.26.   High-Dimensional Geometry and Its Probabilistic Analogues                                              677
+IV.26.   High-Dimensional Geometry and Its Probabilistic Analogues
 
-has n + 1 corners. The fact that this set has the largest               6   Deviation in Probability
+has n + 1 corners. The fact that this set has the largest
 surface was proved by the present author using an
-                                                            If you toss a fair coin repeatedly, you expect that
 inequality from harmonic analysis discovered by Bras-
-                                                            heads will occur on roughly half the tosses, and tails
 camp and Lieb; the fact that the simplex is the only con-
-                                                            on roughly half. More over, as the number of tosses
 vex set with maximal surface (in the sense described)
-                                                            increases, you expect the proportion of heads to get
-was proved by Barthe.                                                              1                1
-   In addition to geometric deviation principles, two       closer and closer to 2 . The number 2 is called the
-other methods have played a central role in the mod-        expected number of heads per toss. The number of
-ern development of high-dimensional geometry; these         heads yielded by a given toss is either 1 or 0, with
-methods grew out of two branches of probability             equal probability, so the expected number of heads is
-theory. One is the study of sums of random points in        the average of these, namely 12 .
-normed spaces [III.62](/part-03/normed-spaces-and-banach-spaces) and how big they are, which             The crucial unspoken assumption that we make
-provides important geometrical information about the        about the tosses of the coin is that they are inde-
-spaces themselves. The other, the theory of Gaussian        pendent : that the out comes of different tosses do
-processes, depends upon a detailed understanding of         not influence one another. (Independence and other
-how to cover sets in high-dimensional space efficiently       basic probabilistic concepts are discussed in probabil-
-with small balls. This issue may sound abstruse but         ity distributions [III.71](/part-03/probability-distributions).) The coin-tossing principle,
-it addresses a fundamental problem: how to measure          or its generalization to other random experiments, is
-(or estimate) the complexity of a geometric object. If      called the strong law of large numbers. The average
-we know that our object can be covered by one ball          of a large number of independent repetitions of a ran-
+was proved by Barthe.
+   In addition to geometric deviation principles, two
+other methods have played a central role in the mod-
+ern development of high-dimensional geometry; these
+methods grew out of two branches of probability
+theory. One is the study of sums of random points in
+normed spaces [III.62](/part-03/normed-spaces-and-banach-spaces) and how big they are, which
+provides important geometrical information about the
+spaces themselves. The other, the theory of Gaussian
+processes, depends upon a detailed understanding of
+how to cover sets in high-dimensional space efficiently
+with small balls. This issue may sound abstruse but
+it addresses a fundamental problem: how to measure
+(or estimate) the complexity of a geometric object. If
+we know that our object can be covered by one ball
 of radius 1, ten balls of radius 12 , fifty-seven balls of   dom quantity will be close to the expected value of the
-radius 14 , and so on, then we have a good idea of how      quantity.
-complicated the object can be.                                 The strong law of large numbers for coin tosses is
-   The modern view of high-dimensional space has re-        fairly simple to demonstrate. The general form, which
-vealed that it is at once much more complicated than        applies to much more complicated random quantities,
-was previously thought and at the same time in other        is considerably more difficult. It was first established by
+radius 14 , and so on, then we have a good idea of how
+complicated the object can be.
+   The modern view of high-dimensional space has re-
+vealed that it is at once much more complicated than
+was previously thought and at the same time in other
 ways much simpler. The first of these is well illustrated    kolmogorov [VI.88](/part-06/andrei-nikolaevich-kolmogorov-19031987) in the early part of the twentieth
-by the solution of a problem posed by Borsuk in the         century.
-1930 s. A set is said to have diameter at most d if no          The fact that averages accumulate near the expected
+by the solution of a problem posed by Borsuk in the
+1930 s. A set is said to have diameter at most d if no
 two points in the set are further than d from each other.   value is certainly useful to know, but for most pur-
-In connection with his work in topology, Borsuk asked       poses in statistics and probability theory it is vital
-whether every set of diameter 1 in n-dimensional space      to have more detailed information. If we focus our
-could be broken into n + 1 pieces of smaller diameter.      attention near the expected value, we may ask how
-In two and three dimensions this is always possible,        the average is distributed around this number. For
+In connection with his work in topology, Borsuk asked
+whether every set of diameter 1 in n-dimensional space
+could be broken into n + 1 pieces of smaller diameter.
+In two and three dimensions this is always possible,
 and as late as the 1960 s it was expected that the answer    example, if the expected value is 12 , as for coin toss-
-should be yes in all dimensions. However, a few years       ing, we might ask, what is the chance that the aver-
-ago, Kahn and Kalai showed that       in n dimensions it    age is as large as 0.55 or as small as 0.42? We want
-                                  √
-might require something like e n pieces, enormously         to know how likely it is that our average number of
-more than n + 1.                                            heads will deviate from the expected value by a given
+should be yes in all dimensions. However, a few years
+ago, Kahn and Kalai showed that
+might require something like e n pieces, enormously
+more than n + 1.
    On the other hand, the simplicity of high-dimensional    amount.
-space is reflected in a fact discovered by Johnson and          The bar chart in figure 10 shows the probabilities
-Lindenstrauss: if we pick a configuration of n points        of obtaining each of the possible numbers of heads,
-(in whatever dimension we like), we can find an almost       with twenty tosses of a coin. The height of each
-perfect copy of the configuration sitting in a space of      bar shows the chance that the corresponding num-
-dimension much smaller than n: roughly the logarithm        ber of heads will occur. As we would expect from the
+space is reflected in a fact discovered by Johnson and
+Lindenstrauss: if we pick a configuration of n points
+(in whatever dimension we like), we can find an almost
+perfect copy of the configuration sitting in a space of
+dimension much smaller than n: roughly the logarithm
 of n. In the last few years this fact has found applica-    strong law of large numbers, the taller bars are con-
-tions in the design of computer algorithms, since many      centrated near the middle. Superimposed upon the
-computational problems can be phrased geometrically         chart is a curve that plainly approximates the prob-
-and become much simpler if the dimension involved           abilities quite well. This is the famous “bell-shaped”
-is small.                                                   or “normal” curve. It is a shifted and rescaled copy of
+tions in the design of computer algorithms, since many
+computational problems can be phrased geometrically
+and become much simpler if the dimension involved
+is small.
+
+677
+6   Deviation in Probability
+If you toss a fair coin repeatedly, you expect that
+heads will occur on roughly half the tosses, and tails
+on roughly half. More over, as the number of tosses
+increases, you expect the proportion of heads to get
+1
+closer and closer to 2 . The number 2 is called the
+expected number of heads per toss. The number of
+heads yielded by a given toss is either 1 or 0, with
+equal probability, so the expected number of heads is
+the average of these, namely 12 .
+The crucial unspoken assumption that we make
+about the tosses of the coin is that they are inde-
+pendent : that the out comes of different tosses do
+not influence one another. (Independence and other
+basic probabilistic concepts are discussed in probabil-
+ity distributions [III.71](/part-03/probability-distributions).) The coin-tossing principle,
+or its generalization to other random experiments, is
+called the strong law of large numbers. The average
+of a large number of independent repetitions of a ran-
+quantity.
+The strong law of large numbers for coin tosses is
+fairly simple to demonstrate. The general form, which
+applies to much more complicated random quantities,
+is considerably more difficult. It was first established by
+century.
+The fact that averages accumulate near the expected
+poses in statistics and probability theory it is vital
+to have more detailed information. If we focus our
+attention near the expected value, we may ask how
+the average is distributed around this number. For
+ing, we might ask, what is the chance that the aver-
+in n dimensions it    age is as large as 0.55 or as small as 0.42? We want
+√
+to know how likely it is that our average number of
+heads will deviate from the expected value by a given
+The bar chart in figure 10 shows the probabilities
+of obtaining each of the possible numbers of heads,
+with twenty tosses of a coin. The height of each
+bar shows the chance that the corresponding num-
+ber of heads will occur. As we would expect from the
+centrated near the middle. Superimposed upon the
+chart is a curve that plainly approximates the prob-
+abilities quite well. This is the famous “bell-shaped”
+or “normal” curve. It is a shifted and rescaled copy of
 
 6780 . $15$
 

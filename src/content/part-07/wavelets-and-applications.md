@@ -1,79 +1,100 @@
 # Wavelets and Applications
 
-848                                                                                    VII. The Influence of Mathematics
+848
 
 article has not had the space to cover: immunology,
-radiology, developmental biology, and the design of             VII.3 Wavelets and Applications
-medical devices and synthetic biomaterials, to name                     Ingrid Daubechies
+radiology, developmental biology, and the design of
+medical devices and synthetic biomaterials, to name
 just a few of the most obvious omissions. Never the-
-less, this collection of examples and introductory dis-                            1     Introduction
+less, this collection of examples and introductory dis-
 cus sions allows us to draw a few conclusions about
-                                                                One of the best ways to understand a function is to
 mathematical biology. The range of biological problems
-                                                                expand it in terms of a well-chosen set of “basic” func-
 needing explanation by mathematics is enormous and
-                                                                tions, of which trigonometric functions [III.92](/part-03/trigonometric-functions) are
 techniques from many different branches of mathe-
-                                                                perhaps the best-known example. Wavelets are fami-
 matics are important. It is not so easy in mathemat i-
-                                                                lies of functions that are very good building blocks for
 cal biology to extract simple, clear mathematical ques-
-                                                                a number of purposes. They emerged in the 1980 s from
 tions to work on, because biological systems typically
-                                                                a synthesis of older ideas in mathematics, physics,
 operate in a complex environment where it is diffi-
-                                                                electrical engineering, and computer science, and have
 cult to decide what should be counted as the system
-                                                                since found applications in a wide range of fields.
 and what as the parts. Finally, biology is a source of
-                                                                The following example, concerning image compression,
 new, interesting, and difficult questions for mathemat i-
-                                                                illustrates several important properties of wavelets.
 cians, whose participation in the biological revolution
-is necessary for a full understanding of the biology                         2   Compressing an Image
+is necessary for a full understanding of the biology
 itself.
-                                                                Directly storing an image on a computer uses a lot of
-                                                                memory. Since memory is a limited resource, it is highly
 Further Reading
-                                                                desirable to find more efficient ways of storing images,
-Durrett, R., and S. Levin. 1994. The importance of being        or rather to find compressions of images. One of the
+Durrett, R., and S. Levin. 1994. The importance of being
   discrete (and spatial). Theoretical Population Biology 46:    main ways of doing this is to express the image as a
-  363–94.                                                       function and write that function as a linear combina-
-Eddy, D. M. 1980. Screening for Cancer: Theory, Analysis        tion of basic functions of some kind. Typically, most
-  and Design. Englewood Cliffs, NJ: Prentice-Hall.               of the coefficients in the expansion will be small, and
+  363–94.
+Eddy, D. M. 1980. Screening for Cancer: Theory, Analysis
+  and Design. Englewood Cliffs, NJ: Prentice-Hall.
 Fall, C., E. Marland, J. Wagner, and J. Tyson. 2002. Compu-     if the basic functions are chosen in a good way it may
   tational Cell Biology. New York: Springer.
-                                                                well be that one can change all these small coefficients
 Fitch, W. M., R. M. Bush, C. A. Bender, and N. J. Cox. 1997.
-                                                                to zero with out changing the original function in a way
   Long term trends in the evolution of H(3) HA1 human
-                                                                that is visually detectable.
   influenza type A. Proceedings of the National Academy of
-  Sciences of the United States of America 94:7712–18.             Digital images are typically given by large collections
+  Sciences of the United States of America 94:7712–18.
 Grossberg, S. 1982. Studies of Mind and Brain: Neural Princi-   of pixels (short for picture elements; see figure 1).
-  ples of Learning, Perception, Development, Cognition, and        The boat image in figure 1 is made up of 256 . imes 384
-  Motor Control. Boston, MA: Kluwer.                            pixels; each pixel has one of 256 possible gray values,
+  ples of Learning, Perception, Development, Cognition, and
+  Motor Control. Boston, MA: Kluwer.
 Keener, J., and J. Sneyd. 1998. Mathematical Physiology. New    ranging from pitch black to pure white. (Similar ideas
-  York: Springer.                                               apply to color images, but for this exposition, it is sim-
+  York: Springer.
 Levin, S., B. Grenfell, A. Hastings, and A. Perelson. 1997.     pler to keep track of only one color.) Writing a num-
-  Mathematical and computational challenges in popula-          ber between 0 and 255 requires 8 digits in binary; the
-  tion biology and ecosystems science. Science 275:334–43.      resulting 8-bit requirement to register the gray level for
-Nijhout, H. F. 2002. The nature of robustness in develop-       each of the 256 . imes 384 = 98 304 pixels thus gives a total
+  Mathematical and computational challenges in popula-
+  tion biology and ecosystems science. Science 275:334–43.
+Nijhout, H. F. 2002. The nature of robustness in develop-
   ment. Bioessays 24(6):553–63.
-                                                                memory requirement of 786 432 bits, for just this one
 Pevzner, P. A. 2000. Computational Molecular Biology: An
-                                                                image.
   Algorithmic Approach. Cambridge, MA: MIT Press.
-                                                                   This memory requirement can be significantly re-
 Schlick, T. 2002. Molecular Modeling and Simulation. New
-                                                                duced. In figure 2, two squares of 36 . imes 36 pixels are high-
   York: Springer.
 Semple, C., and M. Steel. 2003. Phylogenetics. Oxford: Ox-
-                                                                light ed, in different areas of the image. As is clear from
-  ford University Press.                                        its blowup, square A has fewer distinctive characteris-
-Waterman, M. S. 1995. Introduction to Computational Biol-       tics than square B (a blowup of which is shown in fig-
-  ogy: Maps, Sequences, and Genomes. London: Chapman            ure 1), and should therefore be describable with fewer
-  and Hall.                                                     bits. Square B has more features, but it too contains
+  ford University Press.
+Waterman, M. S. 1995. Introduction to Computational Biol-
+  ogy: Maps, Sequences, and Genomes. London: Chapman
+  and Hall.
+
+VII. The Influence of Mathematics
+VII.3 Wavelets and Applications
+Ingrid Daubechies
+1     Introduction
+One of the best ways to understand a function is to
+expand it in terms of a well-chosen set of “basic” func-
+tions, of which trigonometric functions [III.92](/part-03/trigonometric-functions) are
+perhaps the best-known example. Wavelets are fami-
+lies of functions that are very good building blocks for
+a number of purposes. They emerged in the 1980 s from
+a synthesis of older ideas in mathematics, physics,
+electrical engineering, and computer science, and have
+since found applications in a wide range of fields.
+The following example, concerning image compression,
+illustrates several important properties of wavelets.
+2   Compressing an Image
+Directly storing an image on a computer uses a lot of
+memory. Since memory is a limited resource, it is highly
+desirable to find more efficient ways of storing images,
+or rather to find compressions of images. One of the
+function and write that function as a linear combina-
+tion of basic functions of some kind. Typically, most
+of the coefficients in the expansion will be small, and
+well be that one can change all these small coefficients
+to zero with out changing the original function in a way
+that is visually detectable.
+Digital images are typically given by large collections
+The boat image in figure 1 is made up of 256 . imes 384
+pixels; each pixel has one of 256 possible gray values,
+apply to color images, but for this exposition, it is sim-
+ber between 0 and 255 requires 8 digits in binary; the
+resulting 8-bit requirement to register the gray level for
+each of the 256 . imes 384 = 98 304 pixels thus gives a total
+memory requirement of 786 432 bits, for just this one
+image.
+This memory requirement can be significantly re-
+duced. In figure 2, two squares of 36 . imes 36 pixels are high-
+light ed, in different areas of the image. As is clear from
+its blowup, square A has fewer distinctive characteris-
+tics than square B (a blowup of which is shown in fig-
+ure 1), and should therefore be describable with fewer
+bits. Square B has more features, but it too contains
 
 (smaller) squares that consist of many similar pixels;
 again this can be used to describe this region with fewer
@@ -82,277 +103,431 @@ assigning 8 bits to each pixel.
   These arguments suggest that a change in the rep-
 resentation of the image can lead to reduced memory
 requirements: instead of a huge assembly of pixels, all
-                                                            Figure 4 Subsquare 1 has constant gray level, while sub-
-equally small, the image should be viewed as a combi-       squares 2 and 3 do not, but they can be split horizontally (2)
-nation of regions of different size, each of which has       or vertically (3) into two regions with (almost) constant gray
-more or less constant gray value; each such region can      level. Subsquare 4 needs finer subdivision to be reduced to
-then be described by its size (or scale), by where it       “simple” regions.
+equally small, the image should be viewed as a combi-
+nation of regions of different size, each of which has
+more or less constant gray value; each such region can
+then be described by its size (or scale), by where it
 appears in the image, and by the 8-bit number that tells
-us its average gray value. Given any subregion of the         To use this decomposition for image compression,
+us its average gray value. Given any subregion of the
 image, it is easy to check whether it is already of this    one should be able to implement it easily in an auto-
 simple type by comparing it with its average gray value.    mated way. This could be done as follows:
 For square A, taking the average makes virtually no dif-
-ference, but for square B, the average gray value is not      • first, determine the average gray value for the
-sufficient to characterize this portion of the image (see         whole image (assumed to be square, for simplic-
-figure 3).                                                       ity);
-  When square B is subdivided into yet smaller sub-           • compare a square with this constant gray value
-squares, some of them have a virtually constant gray            with the original image; if it is close enough, then
-level (e.g., in the top-left or bottom-left regions of          we are done (but it will have been a very boring
-square B); others, such as subsquares 2 and 3 (see fig-          image);
-ure 4), that are not of just one constant gray level may      • if more features are needed than only the average
-still have a simple gray level substructure that can be         gray value, subdivide the image into four equal-
-easily characterized with a few bits.                           sized squares;
+ference, but for square B, the average gray value is not
+sufficient to characterize this portion of the image (see
+figure 3).
+  When square B is subdivided into yet smaller sub-
+squares, some of them have a virtually constant gray
+level (e.g., in the top-left or bottom-left regions of
+square B); others, such as subsquares 2 and 3 (see fig-
+ure 4), that are not of just one constant gray level may
+still have a simple gray level substructure that can be
+easily characterized with a few bits.
 
-850                                                                             VII. The Influence of Mathematics
+Figure 4 Subsquare 1 has constant gray level, while sub-
+squares 2 and 3 do not, but they can be split horizontally (2)
+or vertically (3) into two regions with (almost) constant gray
+level. Subsquare 4 needs finer subdivision to be reduced to
+“simple” regions.
+To use this decomposition for image compression,
+• first, determine the average gray value for the
+whole image (assumed to be square, for simplic-
+ity);
+• compare a square with this constant gray value
+with the original image; if it is close enough, then
+we are done (but it will have been a very boring
+image);
+• if more features are needed than only the average
+gray value, subdivide the image into four equal-
+sized squares;
+
+850
 
   • for each of these subsquares, determine their aver-
-    age gray value, and compare with the subsquare                                224      176
+    age gray value, and compare with the subsquare
     itself;
   • for those subsquares that are not sufficiently char-
-    acterized by their average gray value, subdivide                              112      128
+    acterized by their average gray value, subdivide
     again into four further equal-sized subsquares
-    (each now having an area one sixteenth of the                     Figure 5 The average gray values for
-    original image);                                                      four subsquares of a square.
+    (each now having an area one sixteenth of the
+    original image);
   • and so on.
-                                                            the top-right subsquare is given by 160 + [80 − 16 +
 In some of the subsquares it may be necessary to
-                                                            (−32)]/2 = 176.
 divide down to the pixel level (as in subsquare 4 in
-                                                               It is thus this process, rather than simply averaging
 figure 4, for example), but in most cases subdivision
-                                                            over smaller and smaller squares as described above,
 can be stopped much earlier. Although this method
-                                                            that needs to be repeated. We now turn to the ques-
 is very easy to implement automatically, and leads to
-                                                            tion of making the whole decomposition procedure as
 a description using many fewer bits for images such
-                                                            efficient as possible.
 as the one shown, it is still some what wasteful. For
-                                                               A complete decomposition of a 256 . imes 256 square,
 instance, if the average gray level of the original image
-                                                            from “top” (largest square) to “bottom” (the three types
 is 160, and we next determine the gray levels of each
-                                                            of “differences” for the 2 . imes 2 subsquares), involves
 of the four quarter images as 224, 176, 112, and 128,
-                                                            the computation of many numbers (in fact exactly
 then we have really computed one number too many:
-                                                            256 . imes 256 before pruning), some of which are them-
 the average of the gray levels for the four equal-sized
-                                                            selves combinations of many of the original pixel val-
 subimages is automatically the gray level of the whole
-                                                            ues. For instance, the grayscale average of the whole
 image, so it is unnecessary to store all five numbers. In
-                                                            256 . imes 256 square requires adding 256 . imes 256 = 65 536
 addition to the average gray value for a square, one just
-                                                            numbers with values between 0 and 255 and then divid-
 needs to store the extra information contained in the
-                                                            ing the result by 65 536; another example, the differ-
 average gray values of its four quarters, given by the
-                                                            ence between the averages of the left and right halves,
 three numbers that describe
-                                                            requires adding the 256 . imes 128 = 32 768 grayscale num-
-  • how much darker (or lighter) the left half of the       bers for the left half and then subtracting from this
-    square is than the right,                               sum A the sum B of another 32 768 numbers. On the
-  • how much darker (or lighter) the top half of the        other hand, the sum of the pixel grayscale values over
-    square is than the bottom, and                          the whole square is simply A + B, a sum of two 33-
-  • how much darker (or lighter) the diagonal from          bit numbers instead of 65 536 numbers of 8 bits each.
+  • how much darker (or lighter) the left half of the
+    square is than the right,
+  • how much darker (or lighter) the top half of the
+    square is than the bottom, and
+  • how much darker (or lighter) the diagonal from
     lower left to upper right is than the other diagonal.   This allows us to make a considerable saving in com-
-                                                            putational complexity if A and B are computed before
 Consider for example a square divided up into four sub-     the average over the whole square. A computationally
-squares with average values 224, 176, 112, and 128,         optimal implementation of the ideas explained so far
-as shown in figure 5. The average gray value for the         must therefore proceed along a different path from the
-whole square can easily be checked to be 160. Now           one sketched above.
-let us do three further calculations. First, we work out       Indeed, a much better procedure is to start from
-the average gray values of the top half and the bottom      the other end of the scale. Instead of starting with the
+squares with average values 224, 176, 112, and 128,
+as shown in figure 5. The average gray value for the
+whole square can easily be checked to be 160. Now
+let us do three further calculations. First, we work out
+the average gray values of the top half and the bottom
 half, which are 200 and 120, respectively, and calculate    whole image and repeatedly subdividing it, one begins
-their difference, which is 80. Then we do the same for       at the pixel level and builds up. If the image has 2 J . imes 2 J
+their difference, which is 80. Then we do the same for
 the left half and the right half, obtaining the difference   pixels in total, then it can also be viewed as consisting
-168 − 152 = 16. Finally, we divide the four squares up      of 2 J−1 . imes 2 J−1 “superpixels,” each of which is a small
-diagonally: the average over the bottom-left and top-       square of 2 . imes 2 pixels. For each 2 . imes 2 square, the aver-
+168 − 152 = 16. Finally, we divide the four squares up
+diagonally: the average over the bottom-left and top-
 right squares is 144, the average over the other two is     age of the four gray values can be computed (this is
-176, and the difference between these two is −32.            the gray value of the superpixel), as well as the three
-   From these four numbers one can reconstruct the          types of differences indicated above. More over, these
-four original averages. For example, the average for        computations are all very simple.
+176, and the difference between these two is −32.
+   From these four numbers one can reconstruct the
+four original averages. For example, the average for
 
-VII.3.   Wavelets and Applications                                                                                    851
+VII. The Influence of Mathematics
+224
+112
+Figure 5 The average gray values for
+four subsquares of a square.
+the top-right subsquare is given by 160 + [80 − 16 +
+(−32)]/2 = 176.
+It is thus this process, rather than simply averaging
+over smaller and smaller squares as described above,
+that needs to be repeated. We now turn to the ques-
+tion of making the whole decomposition procedure as
+efficient as possible.
+A complete decomposition of a 256 . imes 256 square,
+from “top” (largest square) to “bottom” (the three types
+of “differences” for the 2 . imes 2 subsquares), involves
+the computation of many numbers (in fact exactly
+256 . imes 256 before pruning), some of which are them-
+selves combinations of many of the original pixel val-
+ues. For instance, the grayscale average of the whole
+256 . imes 256 square requires adding 256 . imes 256 = 65 536
+numbers with values between 0 and 255 and then divid-
+ing the result by 65 536; another example, the differ-
+ence between the averages of the left and right halves,
+requires adding the 256 . imes 128 = 32 768 grayscale num-
+bers for the left half and then subtracting from this
+sum A the sum B of another 32 768 numbers. On the
+other hand, the sum of the pixel grayscale values over
+the whole square is simply A + B, a sum of two 33-
+bit numbers instead of 65 536 numbers of 8 bits each.
+putational complexity if A and B are computed before
+optimal implementation of the ideas explained so far
+must therefore proceed along a different path from the
+one sketched above.
+Indeed, a much better procedure is to start from
+the other end of the scale. Instead of starting with the
+at the pixel level and builds up. If the image has 2 J . imes 2 J
+of 2 J−1 . imes 2 J−1 “superpixels,” each of which is a small
+square of 2 . imes 2 pixels. For each 2 . imes 2 square, the aver-
+the gray value of the superpixel), as well as the three
+types of differences indicated above. More over, these
+computations are all very simple.
 
-  The next step is to store the three difference values          • a very coarse approximation, and
-for each of the 2 . imes 2 squares and organize their aver-          • additional layers giving detail at successively finer
-ages, the gray values of the 2 J−1 . imes 2 J−1 superpixels,             scales j, with j ranging from 0 (the coarsest level)
-into a new square. This square can be divided, in turn,           to J − 1 (the first superpixel level).
+VII.3.   Wavelets and Applications
+
+  The next step is to store the three difference values
+for each of the 2 . imes 2 squares and organize their aver-
+ages, the gray values of the 2 J−1 . imes 2 J−1 superpixels,
+into a new square. This square can be divided, in turn,
 into 2 J−2 . imes 2 J−2 “super-superpixels,” each of which is
-a small square of 2 . imes 2 superpixels (and thus stands          More over, within each scale j the detail layer consists
+a small square of 2 . imes 2 superpixels (and thus stands
 for 4 . imes 4 “standard” pixels), and so on. At the very end,     of many pieces, each of which has a definite localiza-
 after J levels of “zooming out,” there is only one super J -   tion (indicating to which of the superj -pixels it per-
-pixel remaining; its gray value is the average over the       tains), and all the pieces have “size” 2 j . (That is, the
-whole image. The last three differences that were com-         size, in pixel widths, of the corresponding superj -pixel
-puted in this pixel-level-up process correspond exactly       is 2 j .) In particular, the building blocks are very small
-to the largest-scale differences that the top-down pro-        at fine scales and become gradually larger as the scale
-cedure would have computed first, at much greater              becomes coarser.
+pixel remaining; its gray value is the average over the
+whole image. The last three differences that were com-
+puted in this pixel-level-up process correspond exactly
+to the largest-scale differences that the top-down pro-
+cedure would have computed first, at much greater
 computational expense.
-   Carrying out the procedure from the pixel level up,               3   Wavelet Transforms of Functions
+   Carrying out the procedure from the pixel level up,
 none of the individual averaging or differencing compu-
-tat i ons involves more than two numbers; the total num-        In the image-compression example we needed to look
-ber of these elementary computations, for the whole           at three types of differences at each level (horizontal,
-transform, is only 8(22 J −1)/3. For the 256 . imes 256 square        vertical, and diagonal) because the example was a two-
-discussed before, J = 8, so the total is 174 752, which       dimensional image. For a one-dimensional signal, one
-is about the number of computations needed for just           type of difference suffices. Given a function f from R to
-one level in the top-down procedure.                          R, one can write a wavelet transform of f that is entirely
-   How can all this lead to compression? At each stage        analogous to the image example. For simplicity, let us
-of the process, three species of difference numbers are        look at a function f such that f (x) = 0 except when x
-accumulated, at different levels and corresponding to          belongs to the interval [0, 1].
-different positions. The total number of differences cal-          Let us now consider successive approximations of f
+tat i ons involves more than two numbers; the total num-
+ber of these elementary computations, for the whole
+transform, is only 8(22 J −1)/3. For the 256 . imes 256 square
+discussed before, J = 8, so the total is 174 752, which
+is about the number of computations needed for just
+one level in the top-down procedure.
+   How can all this lead to compression? At each stage
+of the process, three species of difference numbers are
+accumulated, at different levels and corresponding to
+different positions. The total number of differences cal-
 culated is 3(1 + 22 + · · · + 22(J−1) ) = 22 J − 1. Together   by step functions: that is, functions that change value in
-with the gray value of the whole square, this means           only finitely many places. More precisely, for each posi-
-we end up with exactly as many numbers as we had              tive integer j, divide the interval [0, 1] up into 2 j equal
-gray values for the original 2 J . imes 2 J pixels. However,         intervals, denoting the interval from k2−j to (k + 1)2−j
-many of these difference numbers will be very small            by Ij, k (so that k runs from 0 to 2 j − 1). Then define a
-(as argued before), and can just as well be dropped           function Pj (f ) by setting its value on Ij, k to be the aver-
-or put to zero, and if the image is reconstructed from        age value of f on that interval. This is illustrated in fig-
-the remainder there will be no perceptible loss of qual-      ure 6, which shows the step function P3 (f ) for a func-
-ity. Once we have set these very small differences to          tion f whose graph is shown as well. As j increases,
-zero, a list that enumerates all the differences (in some      the width of the intervals Ij, k decreases, and Pj (f ) gets
-prearranged order) can be made much shorter: when-            closer to f . (In more precise mathematical terms, if
-ever a long stretch of Z zeros is encountered, it can         p < . nfty and f belongs to the function space [III.29](/part-03/function-spaces)
-be replaced by the statement “insert Z zeros now,”            Lp , then Pj (f ) converges to f in Lp .)
-which requires only a prearranged symbol (for “insert            Each approximation Pj (f ) of f can be computed eas-
-zeros now”), followed by the number of bits needed            ily from the approximation Pj+1 (f ) at the next-finer
+with the gray value of the whole square, this means
+we end up with exactly as many numbers as we had
+gray values for the original 2 J . imes 2 J pixels. However,
+many of these difference numbers will be very small
+(as argued before), and can just as well be dropped
+or put to zero, and if the image is reconstructed from
+the remainder there will be no perceptible loss of qual-
+ity. Once we have set these very small differences to
+zero, a list that enumerates all the differences (in some
+prearranged order) can be made much shorter: when-
+ever a long stretch of Z zeros is encountered, it can
+be replaced by the statement “insert Z zeros now,”
+which requires only a prearranged symbol (for “insert
+zeros now”), followed by the number of bits needed
 for Z, i.e., log2 Z. This achieves, as desired, a signifi-     scale: the average of the values that Pj+1 (f ) takes on
-cant compression of the data that need to be stored for       the two intervals Ij+1,2 k and Ij+1,2 k+1 gives the value
-large images. (In practice, however, image compression        that Pj (f ) takes on Ij, k .
-involves many more issues, to which we shall return              Of course, some information about f is lost when we
-briefly below.)                                                move from Pj+1 (f ) to Pj (f ). On every interval Ij, k , the
-  The very simple image decomposition described               difference between Pj+1 (f ) and Pj (f ) is a step func-
-above is an elementary example of a wavelet decom-            tion, with constant levels on the Ij+1, l , that takes on
-position. The data that are retained consist of               exactly opposite values on each pair (Ij+1,2 k , Ij+1,2 k+1 ).
+cant compression of the data that need to be stored for
+large images. (In practice, however, image compression
+involves many more issues, to which we shall return
+briefly below.)
+  The very simple image decomposition described
+above is an elementary example of a wavelet decom-
+position. The data that are retained consist of
 
-852                                                                                      VII. The Influence of Mathematics
+851
+• a very coarse approximation, and
+• additional layers giving detail at successively finer
+scales j, with j ranging from 0 (the coarsest level)
+to J − 1 (the first superpixel level).
+More over, within each scale j the detail layer consists
+tains), and all the pieces have “size” 2 j . (That is, the
+size, in pixel widths, of the corresponding superj -pixel
+is 2 j .) In particular, the building blocks are very small
+at fine scales and become gradually larger as the scale
+becomes coarser.
+3   Wavelet Transforms of Functions
+In the image-compression example we needed to look
+at three types of differences at each level (horizontal,
+vertical, and diagonal) because the example was a two-
+dimensional image. For a one-dimensional signal, one
+type of difference suffices. Given a function f from R to
+R, one can write a wavelet transform of f that is entirely
+analogous to the image example. For simplicity, let us
+look at a function f such that f (x) = 0 except when x
+belongs to the interval [0, 1].
+Let us now consider successive approximations of f
+only finitely many places. More precisely, for each posi-
+tive integer j, divide the interval [0, 1] up into 2 j equal
+intervals, denoting the interval from k2−j to (k + 1)2−j
+by Ij, k (so that k runs from 0 to 2 j − 1). Then define a
+function Pj (f ) by setting its value on Ij, k to be the aver-
+age value of f on that interval. This is illustrated in fig-
+ure 6, which shows the step function P3 (f ) for a func-
+tion f whose graph is shown as well. As j increases,
+the width of the intervals Ij, k decreases, and Pj (f ) gets
+closer to f . (In more precise mathematical terms, if
+p < . nfty and f belongs to the function space [III.29](/part-03/function-spaces)
+Lp , then Pj (f ) converges to f in Lp .)
+Each approximation Pj (f ) of f can be computed eas-
+ily from the approximation Pj+1 (f ) at the next-finer
+the two intervals Ij+1,2 k and Ij+1,2 k+1 gives the value
+that Pj (f ) takes on Ij, k .
+Of course, some information about f is lost when we
+move from Pj+1 (f ) to Pj (f ). On every interval Ij, k , the
+difference between Pj+1 (f ) and Pj (f ) is a step func-
+tion, with constant levels on the Ij+1, l , that takes on
+exactly opposite values on each pair (Ij+1,2 k , Ij+1,2 k+1 ).
 
-     (a)                             (b)                            layer of detail consists of a sum of simple “difference
-             f (x)                                                  contributions” that all have width proportional to the
-                                                       P3 f (x)     scale. More over, this decomposition is realized by using
-                                                                    translates and dilates of the single function H(x), often
-                                                                    called the Haar wavelet, after Alfred Haar, who first
- 0                               0
-                                                                    defined it at the start of the twentieth century (though
-              1           1 x                    1           1 x
-              2                                  2                  not in a wavelet context). The functions H(2 j x − k)
-                                                                    constitute an orthogonal set of functions, meaning
-                                                                    that the inner product H(2 j x − k)H(2 j x − k ) dx is
-Figure 6 Graphs of (a) the function f and (b) its approx i-          zero except when j = j and k = k ; if we define
-mation P3 (f ), which is constant on every interval between         Hj, k (x) = 2 j/2 H(2 j x − k), then we also have that
+852
+
+     (a)
+
+ 0
+
+Figure 6 Graphs of (a) the function f and (b) its approx i-
+mation P3 (f ), which is constant on every interval between
 l/8 and (l + 1)/8, with l = 0, 1, . . . , 7, and exactly equal to     [Hj, k (x)]2 dx = 1. A consequence of this is that the
 the average of f on each of these intervals.
-                                                                    wavelet coefficients wj, k (f ) that appear when we write
-                                                                    the “jth layer” Pj+1 (f )(x) − Pj (f )(x) of the function
-                                                                                                    
-The difference Pj+1 (f ) − Pj (f ) of the two approxima-             f as a linear combination k wj, k (f )Hj, k (x) are given
-tion functions, over all of [0, 1], consists of a juxta-            by the formula wj, k (f ) = f (x)Hj, k (x) dx.
-position of such up-and-down (or down-and-up) step                     Haar wavelets are a good tool for exposition, but for
-functions, and can therefore be written as a sum of                 most applications, including image compression, they
-translates of the same up-and-down function, with                   are not the best choice. Basically, this is because replac-
-appropriate coefficients:                                             ing a function simply by its averages over intervals (in
-                                    j −1
-                                   2                               one dimension) or squares (in two dimensions) results
-     Pj+1 (f )(x) − Pj (f )(x) =           aj, k Uj (x − 2−j k),     in a very-low-quality approximation, as illustrated in
-                                     k=0                            figure 7(b).
-where                                                                  As the scale of approximation is made finer and finer
-        ⎧
-        ⎪
-        ⎪ 1 for x between 0 and 2−(j+1) ,                           (i.e., as the j in Pj (f ) increases), the difference between
-        ⎪
-        ⎨
-                                                                    f and Pj (f ) becomes smaller; with a piecewise-con-
+The difference Pj+1 (f ) − Pj (f ) of the two approxima-
+tion functions, over all of [0, 1], consists of a juxta-
+position of such up-and-down (or down-and-up) step
+functions, and can therefore be written as a sum of
+translates of the same up-and-down function, with
+appropriate coefficients:
+     Pj+1 (f )(x) − Pj (f )(x) =
+where
+
 Uj (x) = −1 for x between 2−(j+1) and 2 . imes 2−(j+1) ,
-        ⎪
-        ⎪                                                           stant approximation, however, this requires correc-
-        ⎪
-        ⎩0  for all other x.
-                                                                    tions at almost every scale “to get it right” in the end.
-  More over, the “difference functions” Uj at the dif-                Unless the original happens to be made up of large
-ferent levels are all scaled copies of a single function            areas where it is roughly constant, many small-scale
-H, which takes the value 1 between 0 and 12 and −1                  Haar wavelets will be required even in stretches where
-          1
-between 2 and 1; indeed, Uj (x) = H(2 j x). It follows               the function just has a consistent, sustained slope,
-that each difference Pj+1 (f )(x) − Pj (f )(x) is a linear           with out “genuine” fine features.
-combination of the functions H(2 j x − k), with k rang-                 The right framework to discuss these questions
-ing from 0 to 2 j − 1; adding many such differences, for              is that of approximation schemes. An approximation
-successive j, shows that PJ (f )(x)−P0 (f )(x) is a linear          scheme can be defined by providing a family of “build-
-combination of the collection of functions H(2 j x − k),             ing blocks,” often with a natural order in which they
-with j ranging from 0 to J − 1 and k ranging from 0 to              are usually enumerated. A common way of measuring
-2 j − 1. Picking larger and larger J makes PJ (f ) closer            the quality of an approximation scheme is to define VN
-and closer to f ; one finds that f − P0 (f ) (i.e., the dif-         to be the space of all linear combinations of the first
-ference between f and its average) can be viewed as a               N building blocks, and then to let AN f be the clos-
-(possibly infinite) linear combination of the functions              est function in VN to f , where distance is measured
-H(2 j x −k), now with j ranging over all the nonnegative             by the L2 -norm (though other norms can also be used).
-integers.                                                           Then one examines how the distance f − AN f 2 =
-  This decomposition is very similar to what was done               [ |f (x) − AN f (x)|2 dx]1/2 decays as N tends to infin-
-for images at the start of the article, but in one dimen-           ity. An approximation scheme is said to be of order L
-sion instead of two and presented in a more abstract                for a class of functions F if f − AN f 2 ⩽ CN −L for all
-way. The basic ingredients are that f minus its aver-               functions f in F , where C typically depends on f but
-age has been decomposed into a sum of layers at suc-                must be independent of N. The order of an approxima-
-cessively finer and finer scales, and that each extra                 tion scheme for smooth functions is closely linked to
 
-VII.3.   Wavelets and Applications                                                                                             853
+  More over, the “difference functions” Uj at the dif-
+ferent levels are all scaled copies of a single function
+H, which takes the value 1 between 0 and 12 and −1
 
-                        (a)                                  (b)                           (c)
-                                 f (x)
+between 2 and 1; indeed, Uj (x) = H(2 j x). It follows
+that each difference Pj+1 (f )(x) − Pj (f )(x) is a linear
+combination of the functions H(2 j x − k), with k rang-
+ing from 0 to 2 j − 1; adding many such differences, for
+successive j, shows that PJ (f )(x)−P0 (f )(x) is a linear
+combination of the collection of functions H(2 j x − k),
+with j ranging from 0 to J − 1 and k ranging from 0 to
+2 j − 1. Picking larger and larger J makes PJ (f ) closer
+and closer to f ; one finds that f − P0 (f ) (i.e., the dif-
+ference between f and its average) can be viewed as a
+(possibly infinite) linear combination of the functions
+H(2 j x −k), now with j ranging over all the nonnegative
+integers.
+  This decomposition is very similar to what was done
+for images at the start of the article, but in one dimen-
+sion instead of two and presented in a more abstract
+way. The basic ingredients are that f minus its aver-
+age has been decomposed into a sum of layers at suc-
+cessively finer and finer scales, and that each extra
 
-                    0                          1 x       0                     1 x     0                      1 x
+VII. The Influence of Mathematics
+(b)
+f (x)
+P3 f (x)     scale. More over, this decomposition is realized by using
+translates and dilates of the single function H(x), often
+called the Haar wavelet, after Alfred Haar, who first
+0
+defined it at the start of the twentieth century (though
+1
+2
+constitute an orthogonal set of functions, meaning
+that the inner product H(2 j x − k)H(2 j x − k ) dx is
+zero except when j = j and k = k ; if we define
+Hj, k (x) = 2 j/2 H(2 j x − k), then we also have that
+wavelet coefficients wj, k (f ) that appear when we write
+the “jth layer” Pj+1 (f )(x) − Pj (f )(x) of the function
+
+f as a linear combination k wj, k (f )Hj, k (x) are given
+by the formula wj, k (f ) = f (x)Hj, k (x) dx.
+Haar wavelets are a good tool for exposition, but for
+most applications, including image compression, they
+are not the best choice. Basically, this is because replac-
+ing a function simply by its averages over intervals (in
+j −1
+2                               one dimension) or squares (in two dimensions) results
+aj, k Uj (x − 2−j k),     in a very-low-quality approximation, as illustrated in
+k=0                            figure 7(b).
+As the scale of approximation is made finer and finer
+⎧
+⎪
+⎪ 1 for x between 0 and 2−(j+1) ,
+⎪
+⎨
+f and Pj (f ) becomes smaller; with a piecewise-con-
+⎪
+⎪
+⎪
+⎩0  for all other x.
+tions at almost every scale “to get it right” in the end.
+Unless the original happens to be made up of large
+areas where it is roughly constant, many small-scale
+Haar wavelets will be required even in stretches where
+1
+the function just has a consistent, sustained slope,
+with out “genuine” fine features.
+The right framework to discuss these questions
+is that of approximation schemes. An approximation
+scheme can be defined by providing a family of “build-
+ing blocks,” often with a natural order in which they
+are usually enumerated. A common way of measuring
+the quality of an approximation scheme is to define VN
+to be the space of all linear combinations of the first
+N building blocks, and then to let AN f be the clos-
+est function in VN to f , where distance is measured
+by the L2 -norm (though other norms can also be used).
+Then one examines how the distance f − AN f 2 =
+[ |f (x) − AN f (x)|2 dx]1/2 decays as N tends to infin-
+ity. An approximation scheme is said to be of order L
+for a class of functions F if f − AN f 2 ⩽ CN −L for all
+functions f in F , where C typically depends on f but
+must be independent of N. The order of an approxima-
+tion scheme for smooth functions is closely linked to
+
+VII.3.   Wavelets and Applications
 
 Figure 7 (a) The original function. (b), (c) Approximations of f by a function that equals a polynomial on each interval
 [k2−3 , (k + 1)2−3 ). The best approximation of f by a piecewise-constant function is shown in (b); the best by a continuous
 piecewise-linear function is in (c).
 
-the performance of the approximation scheme on poly-                        Take now any continuously differentiable function f
-nomials (because smooth functions can be replaced in                     defined on the interval [0, 1]. Typically f − Pj Haar (f )2
-estimations, at very little cost, by the polynomials given               equals about C2−j ; for an approximation scheme of
-by their Taylor expansions). In particular, the types                    order 2, that same difference would be about C 2−2 j .
-of approximation schemes considered here can have                        In order to achieve the same accuracy as Pj Haar (f ), the
-order L only if they perfectly reproduce polynomials of                  piecewise-linear scheme would thus require only j/2
-degree at most L − 1. In other words, there should exist                 levels instead of j levels. For higher orders L, the gain
-some N0 such that if p is any polynomial of degree at                    would be even greater. If the projections Pj gave rise
-most L − 1 and N ⩾ N0 , then AN p = p.                                   to a higher-order approximation scheme like this, then
-   In the Haar case, applied to functions f that differ                   the difference Pj+1 (f )(x)−Pj (f )(x) would be so small
-from zero only between 0 and 1, the building blocks                      as not to matter, even for modest values of j, wherever
-consist of the function φ that takes the value 1 on [0, 1]               the function f was reasonably smooth; for these val-
-and 0 out side, together with the families {Hj, k ; k =                    ues of j, the difference would be important only near
-                                                                         points where the function was not as smooth, and so
+the performance of the approximation scheme on poly-
+nomials (because smooth functions can be replaced in
+estimations, at very little cost, by the polynomials given
+by their Taylor expansions). In particular, the types
+of approximation schemes considered here can have
+order L only if they perfectly reproduce polynomials of
+degree at most L − 1. In other words, there should exist
+some N0 such that if p is any polynomial of degree at
+most L − 1 and N ⩾ N0 , then AN p = p.
+   In the Haar case, applied to functions f that differ
+from zero only between 0 and 1, the building blocks
+consist of the function φ that takes the value 1 on [0, 1]
+and 0 out side, together with the families {Hj, k ; k =
 0, . . . , 2 j − 1} for j = 0, 1, 2, . . . . We saw above that
-                                                                         only in those places would a contribution be needed
 Pj Haar (f ) can be written as a linear combination of the
-                                                                         from “difference coefficients” at very fine scales.
 first 1 + 20 + 21 + · · · + 2 j−1 = 2 j building blocks φ,
-                                                                            This is a powerful motivation to develop a frame-
 H0,0 , H1,0 , H1,1 , H2,0 , . . . , Hj−1,2 j−1 −1 . Because the Haar
-                                                                         work similar to that for Haar, but with fancier “gen-
 wavelets are orthogonal to each other, this is also the
-                                                                         eralized averages and differences” corresponding to
 linear combination of these basis functions that is clos-
-                                                                         successive Pj (f ) associated with higher-order approx-
 est to f , so that Pj Haar (f ) = AHaar     2 j
-                                               . Figure 7 shows (for
-                                                                         imation schemes. This can be done, and was done in an
-j = 3) both AHaar     f  and      A PL
-                                       f , which   is the best approx-
-                 2 j                 2 j                                   exciting period in the 1980 s to which we shall return
-imation of f by a continuous, piecewise-linear function                  briefly below. In these constructions, the generalized
-with breakpoints at k2−j , k = 0, 1, . . . , 2 j −1. It turns out         averages and differences are typically computed by
-that if you are trying to approximate a function f using                 combining more than two finer-scale entries each time,
-Haar wavelets, then the best decay you can obtain, even                  in appropriate linear combinations. The correspond-
-if f is smooth, is of the form f − Pj Haar (f )2 ⩽ C2−j ,               ing function decomposition represents functions as
-or f − AHaar N   f 2 ⩽ CN −1 for N = 2 j . This means                   (possibly infinite) linear combinations of wavelets ψj, k
-that approximation by Haar wavelets is a first-order                      derived from a wavelet ψ. As in the case of H, ψj, k (x)
-approximation scheme. Approximation by continuous                        is defined to be 2 j/2 ψ(2 j x − k). Thus, the functions
-piecewise-linear functions is a second-order scheme:                     ψj, k are again normalized translates and dilates of a
-for smooth f , f − APL                         −2 for N = 2 j . Note
-                               N f 2 ⩽ CN                               single function; this is due to our using systematically
-that the difference between the two schemes can also                      the same averaging operator to go from scale j + 1 to
-be seen from the maximal degree d of polynomials they                    scale j, and the same differencing operator to quantify
-“reproduce” perfectly: clearly both schemes can repro-                   the difference between levels j + 1 and j, regard less of
-duce constants (d = 0); the piecewise-linear scheme can                  the value of j. There is no absolutely compelling reason
-also reproduce linear functions (d = 1), where as the                     to use the same averaging and differencing operator
-Haar scheme cannot.                                                      for the transition between any two successive levels,
+j = 3) both AHaar     f  and
+
+imation of f by a continuous, piecewise-linear function
+with breakpoints at k2−j , k = 0, 1, . . . , 2 j −1. It turns out
+that if you are trying to approximate a function f using
+Haar wavelets, then the best decay you can obtain, even
+if f is smooth, is of the form f − Pj Haar (f )2 ⩽ C2−j ,
+or f − AHaar N   f 2 ⩽ CN −1 for N = 2 j . This means
+that approximation by Haar wavelets is a first-order
+approximation scheme. Approximation by continuous
+piecewise-linear functions is a second-order scheme:
+for smooth f , f − APL
+that the difference between the two schemes can also
+be seen from the maximal degree d of polynomials they
+“reproduce” perfectly: clearly both schemes can repro-
+duce constants (d = 0); the piecewise-linear scheme can
+also reproduce linear functions (d = 1), where as the
+Haar scheme cannot.
+
+853
+(a)                                  (b)                           (c)
+f (x)
+0                          1 x       0                     1 x     0                      1 x
+Take now any continuously differentiable function f
+defined on the interval [0, 1]. Typically f − Pj Haar (f )2
+equals about C2−j ; for an approximation scheme of
+order 2, that same difference would be about C 2−2 j .
+In order to achieve the same accuracy as Pj Haar (f ), the
+piecewise-linear scheme would thus require only j/2
+levels instead of j levels. For higher orders L, the gain
+would be even greater. If the projections Pj gave rise
+to a higher-order approximation scheme like this, then
+the difference Pj+1 (f )(x)−Pj (f )(x) would be so small
+as not to matter, even for modest values of j, wherever
+the function f was reasonably smooth; for these val-
+ues of j, the difference would be important only near
+points where the function was not as smooth, and so
+only in those places would a contribution be needed
+from “difference coefficients” at very fine scales.
+This is a powerful motivation to develop a frame-
+work similar to that for Haar, but with fancier “gen-
+eralized averages and differences” corresponding to
+successive Pj (f ) associated with higher-order approx-
+. Figure 7 shows (for
+imation schemes. This can be done, and was done in an
+A PL
+f , which   is the best approx-
+2 j
+briefly below. In these constructions, the generalized
+averages and differences are typically computed by
+combining more than two finer-scale entries each time,
+in appropriate linear combinations. The correspond-
+ing function decomposition represents functions as
+(possibly infinite) linear combinations of wavelets ψj, k
+derived from a wavelet ψ. As in the case of H, ψj, k (x)
+is defined to be 2 j/2 ψ(2 j x − k). Thus, the functions
+ψj, k are again normalized translates and dilates of a
+−2 for N = 2 j . Note
+N f 2 ⩽ CN                               single function; this is due to our using systematically
+the same averaging operator to go from scale j + 1 to
+scale j, and the same differencing operator to quantify
+the difference between levels j + 1 and j, regard less of
+the value of j. There is no absolutely compelling reason
+to use the same averaging and differencing operator
+for the transition between any two successive levels,
 
 $854$
 
@@ -397,132 +572,184 @@ As a result, the number of coefficients needed for the wavelet expansion of smoo
 This feature is characteristic for all wavelet expansions, whether they are with respect to an orthonormal basis, a basis that is nonorthogonal, or even a redundant family. Figure $9$ illustrates this for one type of redundant expansion, which uses the so-called Mexican hat wavelets, which are given by √$2\psi(x) = (2 2/ 3)\pi - 1/4(1 - 4x^{2})e - 2x$ ; this wavelet gets its name from the shape of its graph, which looks like the cross section of a Mexican hat (see the figure). The smoother a function f is (i . e .
 , the more times it is differentiable), the faster its wavelet coefficients will decay as j increases, provided the wavelet $\psi$ has sufficiently many vanishing moments. The converse statement is also true: one can read off how smooth the function is at $x^{0}$ from how the wavelet coefficients w j, k (f) decay, as j increases. Here one restricts attention to the “relevant” pairs (j , k). In other words, one considers only the pairs where $\psi$ j, k is localized near $x^{0}$ . (In more precise terms, this converse statement can be
 
-856                                                                                      VII. The Influence of Mathematics
+856
 
-                           1                                     less of the function f . This is called linear approxima-
-                                                                 tion, because the collection of all functions of the form
-                  −2 −1 0        1    2                          AN f is contained in the linear span VN of the first N
-                       −1
-                                                                 basis functions. Some of the function spaces mentioned
-                                                                 above can be characterized by specifying the decay of
-                                                                 f − AN f 2 as N increases, where AN is defined in
-                                                                 terms of an appropriate wavelet basis.
-                                                                    However, when it is compression that we are inter-
-                                                                 ested in, we are really carrying out a different kind of
-                                                                 approximation. Given a function f , and a desired accu-
-                                                                 racy, we want to approximate f to within that accuracy
-                                                                 by a linear combination of as few basis functions as
-                                                                 possible, but we are not trying to choose those func-
-                                                                 tions from the first few levels. In other words, we are no
-                                                                 longer interested in the ordering of the basis functions
-                                                                 and we do not prefer one label (j, k) over another.
-                                                                    If we want to formalize this, we can define an approx-
-                                                                 imation AN f to be the closest linear combination to f
-                               ψ [MH]                            that is made up of at most N basis functions. By anal-
-                                                                 ogy with linear approximation, we can then define the
-                                                                 set VN as the set of all possible linear combinations of
 Figure 9 A function with a single discontinuity (top) is
-                                                                 N basis functions. However, the sets VN are no longer
-approximated by finite linear combinations of Mexican hat         linear spaces: two arbitrary elements VN are typically
-            [MH]
-wavelets ψj, l ; the graph of ψ[MH] is at the bottom of the       combinations of two different collections of N basis
+approximated by finite linear combinations of Mexican hat
+
+wavelets ψj, l ; the graph of ψ[MH] is at the bottom of the
 figure. Adding finer scales leads to increased precision. Left:    functions, so that their sum has no reason to belong
 successive approximations for j = 1, 3, 5, and 7. Right: total   to VN (though it will belong to V2 N ). For this reason,
 contributions from the wavelets at the scales needed to
-                                                                 AN f is called a nonlinear approximation of f .
 bridge from one j to the next. (In this example, j increases
-             1                                                      One can go further and define classes of functions
+
 in steps of 2 .) The finer the scale, the more the extra detail
-is concentrated near the discontinuity point.                    by imposing conditions on the decay of f − AN f ,
-                                                                 as N increases, with respect to some function space
-                                                                 norm  · . This can of course be done starting from
-reformulated as an exact character ization of the so-             any basis; wavelet bases distinguish themselves from
-called Lipschitz spaces C α , for all noninteger α that          many other bases (such as the trigonometric functions)
-are strictly less than the number of vanishing moments           in that the resulting function spaces turn out to be
-of ψ.)                                                           standard function spaces, such as the Besov spaces,
-   Wavelet coefficients can be used to characterize                for example. We have referred several times to func-
-many other useful properties of functions, both global           tions that are smooth in many places but have pos-
-and local. Because of this, wavelets are good bases not          sible discontinuities in isolated points, and argued
-just for L2 -spaces or the Lipschitz spaces, but also            that they can be approximated well by linear com-
-for many other function spaces, such as, for instance,           bi nations of a fairly small number of wavelets. Such
-the Lp -spaces with 1 < p < . nfty, the sobolev spaces                functions are special cases of elements of particular
-[III.29 §2.4](/part-03/function-spaces), and a wide range of Besov spaces. The             Besov spaces, and their good approximation proper-
-versatility of wavelets is partly due to their connec-           ties by sparse wavelet expansions can be viewed as
-tion with powerful techniques developed in harmonic              a consequence of the character ization of these Besov
-analysis through out the twentieth century.                       spaces by nonlinear approximation schemes using
-   We have already seen in some detail that wavelet              wavelets.1
+is concentrated near the discontinuity point.
+reformulated as an exact character ization of the so-
+called Lipschitz spaces C α , for all noninteger α that
+are strictly less than the number of vanishing moments
+of ψ.)
+   Wavelet coefficients can be used to characterize
+many other useful properties of functions, both global
+and local. Because of this, wavelets are good bases not
+just for L2 -spaces or the Lipschitz spaces, but also
+for many other function spaces, such as, for instance,
+the Lp -spaces with 1 < p < . nfty, the sobolev spaces
+[III.29 §2.4](/part-03/function-spaces), and a wide range of Besov spaces. The
+versatility of wavelets is partly due to their connec-
+tion with powerful techniques developed in harmonic
+analysis through out the twentieth century.
+   We have already seen in some detail that wavelet
 bases are associated with approximation schemes of
 different orders. So far we have considered approx i-
-mation schemes in which the AN f are always linear                 1. More types of wavelet families, as well as many generalizations,
-combinations of the same N building blocks, regard-              can be found on the Internet at www.wavelet.org.
+mation schemes in which the AN f are always linear
+combinations of the same N building blocks, regard-
 
-VII.3.   Wavelets and Applications                                                                                 857
+VII. The Influence of Mathematics
+1                                     less of the function f . This is called linear approxima-
+tion, because the collection of all functions of the form
+−2 −1 0
+−1
+basis functions. Some of the function spaces mentioned
+above can be characterized by specifying the decay of
+f − AN f 2 as N increases, where AN is defined in
+terms of an appropriate wavelet basis.
+However, when it is compression that we are inter-
+ested in, we are really carrying out a different kind of
+approximation. Given a function f , and a desired accu-
+racy, we want to approximate f to within that accuracy
+by a linear combination of as few basis functions as
+possible, but we are not trying to choose those func-
+tions from the first few levels. In other words, we are no
+longer interested in the ordering of the basis functions
+and we do not prefer one label (j, k) over another.
+If we want to formalize this, we can define an approx-
+imation AN f to be the closest linear combination to f
+ψ [MH]                            that is made up of at most N basis functions. By anal-
+ogy with linear approximation, we can then define the
+set VN as the set of all possible linear combinations of
+N basis functions. However, the sets VN are no longer
+linear spaces: two arbitrary elements VN are typically
+[MH]
+combinations of two different collections of N basis
+AN f is called a nonlinear approximation of f .
+1
+by imposing conditions on the decay of f − AN f ,
+as N increases, with respect to some function space
+norm  · . This can of course be done starting from
+any basis; wavelet bases distinguish themselves from
+many other bases (such as the trigonometric functions)
+in that the resulting function spaces turn out to be
+standard function spaces, such as the Besov spaces,
+for example. We have referred several times to func-
+tions that are smooth in many places but have pos-
+sible discontinuities in isolated points, and argued
+that they can be approximated well by linear com-
+bi nations of a fairly small number of wavelets. Such
+functions are special cases of elements of particular
+Besov spaces, and their good approximation proper-
+ties by sparse wavelet expansions can be viewed as
+a consequence of the character ization of these Besov
+spaces by nonlinear approximation schemes using
+wavelets.1
+1. More types of wavelet families, as well as many generalizations,
+can be found on the Internet at www.wavelet.org.
 
-   5     Wavelets in More than One Dimension                 superpixel gray values (the results of averaging both
-                                                             horizontally and vertically); the other three rectangles
+VII.3.   Wavelets and Applications
+
+   5     Wavelets in More than One Dimension
 There are many ways to extend the one-dimensional
-                                                             are left unchanged. Figure 10 shows the result of this
 constructions to higher dimensions. An easy way to
-                                                             process for the original boat image, though the wavelet
 construct a multi dimensional wavelet basis is to com-
-                                                             basis used here is not the Haar basis, but a symmetric
 bine several one-dimensional wavelet bases. The image
-                                                             biorthogonal wavelet basis that has been adopted in the
 decomposition at the start is an example of such a
-                                                             JPEG 2000 image compression standard. The result is a
 combination: it combines two one-dimensional Haar
-                                                             decomposition of the original image into its component
 decompositions. We saw earlier that a 2 . imes 2 superpixel
-                                                             wavelets. The fact that so much of this is gray indicates
 could be decomposed as follows. First, think of it as
-                                                             that a lot of this information can be discarded with out
 arranged in two rows of two numbers, representing the
-                                                             affecting the image quality.
 gray levels of the corresponding pixels. Next, for each
-row replace its two numbers by their average and their          Figure 11 illustrates that the number of vanishing
-difference, obtaining a new 2 . imes 2 array. Finally, do the      moments is important not just when the wavelet basis
-same process to the columns of the new array. This           is used for characterizing properties of functions, but
-produces four numbers, the result of, respectively,          also when it comes to image analysis. It shows an image
-                                                             that has been decomposed in two different ways: once
-  • averaging both horizontally and vertically,              with Haar wavelets, the other with the JPEG 2000 stan-
-  • averaging horizontally and differencing vertically,       dard biorthogonal wavelet basis. In both cases, all but
-  • differencing horizontally and averaging vertically,       the largest 5% of the wavelet coefficients have been
-    and                                                      set to zero, and we are looking at the correspond-
-  • differencing both horizontally and vertically.            ing reconstructions of the images, neither of which is
-                                                             perfect. However, the wavelet used in the JPEG 2000
+row replace its two numbers by their average and their
+difference, obtaining a new 2 . imes 2 array. Finally, do the
+same process to the columns of the new array. This
+produces four numbers, the result of, respectively,
+  • averaging both horizontally and vertically,
+  • averaging horizontally and differencing vertically,
+  • differencing horizontally and averaging vertically,
+    and
+  • differencing both horizontally and vertically.
 The first is the average gray level for the superpixel,
-                                                             standard has four vanishing moments, and therefore
 which is needed as the input for the next round of the
-                                                             gives a much better approximation in smoothly vary-
 decomposition at the next scale up. The other three
-                                                             ing parts of the image than the Haar basis. More over,
 correspond to the three types of “differences” already
-                                                             the reconstruction obtained from the Haar expansion
 encountered earlier. If we start with a rectangular image
-                                                             is “blockier” and less attractive.
 that consists of 2 K rows, each containing 2 J pixels, then
 we end up with 2 K−1 . imes 2 J−1 numbers of each of the
-four types. Each collection is naturally arranged in a               6   Truth in Advertising: Closer to
-rectangle of half the size of the original (in both direc-                True Image Compression
+four types. Each collection is naturally arranged in a
+rectangle of half the size of the original (in both direc-
 tions); it is customary in the image-processing litera-
 ture to put the rectangle with gray values for the super-    Image compression has been discussed several times in
-pixels in the top left; the other three rectangles each      this article, and it is indeed a context in which wavelets
-group together all the differences (or wavelet coeffi-          are used. However, in practice there is much more to
+pixels in the top left; the other three rectangles each
+group together all the differences (or wavelet coeffi-
 cients) of the other three kinds. (See the level 1 decom-    image compression than the simple idea of dropping
-position in figure 10.) The rectangle that results from       all but the largest wavelet coefficients, taking the result-
-horizontal differencing and vertical averaging typically      ing truncated list of coefficients, and replacing each of
-has large coefficients at places where the original image      the many long stretches of zeros by its runlength. In
-has vertical edges (such as the boat masts in the exam-      this short section we shall give a glimpse of the large
-ple above); likewise, the horizontal averaging/vertical      gap between the mathematical theory of wavelets as
-differencing rectangle has large coefficients for hori-         discussed above and the real-life practice of engineers
+position in figure 10.) The rectangle that results from
+horizontal differencing and vertical averaging typically
+has large coefficients at places where the original image
+has vertical edges (such as the boat masts in the exam-
+ple above); likewise, the horizontal averaging/vertical
+differencing rectangle has large coefficients for hori-
 zontal edges in the original (such as the stripes in the     who want to compress images.
-sails); the horizontal differencing/vertical differencing         First of all, compression applications set a “bit bud-
+sails); the horizontal differencing/vertical differencing
 rectangle selects for diagonal features. The three differ-    get,” and all the information to be stored has to fit
-ent types of “difference terms” indicate that we have         within the bit budget; statistical estimates and infor-
-here three basic wavelets (instead of just one in the        mation-theoretic arguments about the class of images
-one-dimensional case).                                       under consideration are used to allocate different num-
-   In order to go to the next round, one scale up, the       bers of bits to different types of coefficients. This bit
-scenario is repeated on the rectangle that contains the      allocation is much more gradual and subtle than just
+ent types of “difference terms” indicate that we have
+here three basic wavelets (instead of just one in the
+one-dimensional case).
+   In order to go to the next round, one scale up, the
+scenario is repeated on the rectangle that contains the
+
+857
+superpixel gray values (the results of averaging both
+horizontally and vertically); the other three rectangles
+are left unchanged. Figure 10 shows the result of this
+process for the original boat image, though the wavelet
+basis used here is not the Haar basis, but a symmetric
+biorthogonal wavelet basis that has been adopted in the
+JPEG 2000 image compression standard. The result is a
+decomposition of the original image into its component
+wavelets. The fact that so much of this is gray indicates
+that a lot of this information can be discarded with out
+affecting the image quality.
+Figure 11 illustrates that the number of vanishing
+moments is important not just when the wavelet basis
+is used for characterizing properties of functions, but
+also when it comes to image analysis. It shows an image
+that has been decomposed in two different ways: once
+with Haar wavelets, the other with the JPEG 2000 stan-
+dard biorthogonal wavelet basis. In both cases, all but
+the largest 5% of the wavelet coefficients have been
+set to zero, and we are looking at the correspond-
+ing reconstructions of the images, neither of which is
+perfect. However, the wavelet used in the JPEG 2000
+standard has four vanishing moments, and therefore
+gives a much better approximation in smoothly vary-
+ing parts of the image than the Haar basis. More over,
+the reconstruction obtained from the Haar expansion
+is “blockier” and less attractive.
+6   Truth in Advertising: Closer to
+True Image Compression
+this article, and it is indeed a context in which wavelets
+are used. However, in practice there is much more to
+all but the largest wavelet coefficients, taking the result-
+ing truncated list of coefficients, and replacing each of
+the many long stretches of zeros by its runlength. In
+this short section we shall give a glimpse of the large
+gap between the mathematical theory of wavelets as
+discussed above and the real-life practice of engineers
+First of all, compression applications set a “bit bud-
+within the bit budget; statistical estimates and infor-
+mation-theoretic arguments about the class of images
+under consideration are used to allocate different num-
+bers of bits to different types of coefficients. This bit
+allocation is much more gradual and subtle than just
 
 Figure 10 Wavelet decomposition of the boat image, together with a grayscale rendition of the wavelet coefficients. The
 decompositions are shown after one level of averaging and differencing, as well as after two and three levels. In the rectangles
@@ -534,17 +761,28 @@ Figure 11 Top: original image, with blowup. Bottom: approximations obtained by e
 basis, and discarding the 95% smallest wavelet coefficients. Left: Haar wavelet transform. Right: wavelet transform using the
 so-called 9–7 biorthogonal wavelet basis.
 
-retaining or dropping coefficients. Even so, many coef-             tion about the addresses cancel out a large portion
-ficients will get no bits assigned to them, meaning that           of the gain made by the nonlinear wavelet approxima-
-they are indeed dropped altogether.                               tion. Every practical wavelet-based image-compression
-   Because some coefficients are dropped, care has to               scheme uses some sort of clever approach to deal with
-be taken that each of the remaining coefficients is                 this problem. One implementation exploits the obser-
+retaining or dropping coefficients. Even so, many coef-
+ficients will get no bits assigned to them, meaning that
+they are indeed dropped altogether.
+   Because some coefficients are dropped, care has to
+be taken that each of the remaining coefficients is
 given its correct address, i.e., its (j, k1 , k2 ) label, which   vation that at locations in the image where wavelet coef-
-is essential for “decompressing” the stored informa-              ficients of some species are negligibly small at some
-tion in order to reconstruct the image (or rather, an             scale j, the wavelet coefficients of the same species
-approximation to it). If you do not have a good strat-            at finer scales are often very small as well. (Check it
-egy for doing this, then you can easily find that the              out on the boat image decomposition given above.) At
-computational resources needed to encode informa-                 each such location, this method sets a whole tree of
+is essential for “decompressing” the stored informa-
+tion in order to reconstruct the image (or rather, an
+approximation to it). If you do not have a good strat-
+egy for doing this, then you can easily find that the
+computational resources needed to encode informa-
+
+tion about the addresses cancel out a large portion
+of the gain made by the nonlinear wavelet approxima-
+tion. Every practical wavelet-based image-compression
+scheme uses some sort of clever approach to deal with
+this problem. One implementation exploits the obser-
+ficients of some species are negligibly small at some
+scale j, the wavelet coefficients of the same species
+at finer scales are often very small as well. (Check it
+out on the boat image decomposition given above.) At
+each such location, this method sets a whole tree of
 
 VII . $3$ .
 
@@ -560,7 +798,7 @@ Brief Over view of Several Influences
 
 on the Development of Wavelets
 
-Most of what is now called “wavelet theory” was developed in the $1980s$ and early $1990s$ . It built on existing work and insights from many fields, including harmonic analysis (mathematics) , computer vision and computer graphics (computer science) , signal analysis and signal compression (electrical engineering), coherent states (theoretical physics), and seismology (geophysics). These different strands did not come together all at once but were brought together gradually, often as the result of serendipitous circumstances and involving many different agents.
+Most of what is now called “wavelet theory” was developed in the $1980s$ and early $1990s$ . It built on existing work and insights from many fields, including harmonic analysis (mathematics), computer vision and computer graphics (computer science), signal analysis and signal compression (electrical engineering), coherent states (theoretical physics), and seismology (geophysics). These different strands did not come together all at once but were brought together gradually, often as the result of serendipitous circumstances and involving many different agents.
 In harmonic analysis, the roots of wavelet theory go back to work by littlewood [VI.79](/part-06/john-edensor-littlewood-18851977) and Paley in the $1930s$ . An important general principle in Fourier analysis is that the smoothness of a function is reflected in its fourier transform [III.27](/part-03/the-fourier-transform) : the smoother the function, the faster the decay of its transform. Littlewood and Paley addressed the question of characterizing local smoothness.
 Consider, for example, a periodic function with period $1$ that has just one discontinuity in the interval [0 , 1) (which is then repeated at all integer translates of that point), and is smooth elsewhere. Is the smoothness reflected in the Fourier transform?
 
@@ -609,57 +847,90 @@ This split of f into its lower and upper frequency halves, or subbands, is thus 
 A concept of central importance in quantum physics is that of a unitary representation [IV.15](/part-04/operator-algebras) of a lie group [III.48](/part-03/lie-theory) on some hilbert space [III.37](/part-03/bayesian-analysis). In other words, given a Lie group G and a Hilbert space H, one interprets the elements g of G as unitary transformations of H. The elements of H are called states, and for certain Lie groups, if v is some fixed state, then the family of vectors {gv; g $\in$ G} is called a family of coherent states. Coherent states go back to work by Schrödinger in the $1920s$ .
 Their name dates back to the $1950s$ , when they were used in quantum optics: the word “coherent” referred to the coherence of the light they were describing. These families turned out
 
-VII.3.   Wavelets and Applications                                                                                      861
+VII.3.   Wavelets and Applications
 
 to be of interest in a much wider range of settings in
-quantum physics, and the name stuck, even out side                                                w(t)
+quantum physics, and the name stuck, even out side
 the original setting of optics. In many applications it
-helps not to use the whole family of coherent states                                     0                  t
+helps not to use the whole family of coherent states
 but only those coherent states that correspond to a cer-
 tain kind of discrete subset of G. Wavelets turn out to
 be just such a subfamily of coherent states: one starts
-with a single, basic wavelet, and the transformations                0                   t 0                        t
+with a single, basic wavelet, and the transformations
 that convert it (by dilation and translation) into the
 remaining wavelets form a discrete semigroup of such
 transformations.
    Despite the fact that wavelets synthesized ideas from
 all these fields, their discovery originated in another
-area altogether. In the late 1970 s, the geophysicist                                         0                  t
+area altogether. In the late 1970 s, the geophysicist
 J. Morlet was working for an oil company. Dis sat is-
 fied with the existing techniques for extracting spe-
 cial types of signals from seismograms, he came up
 with an ad hoc transform that combined translations
-and scalings: nowadays, it would be called a redun-                                                     0
-                                                                                   0 t                                   t
+and scalings: nowadays, it would be called a redun-
 dant wavelet transform. Other transforms in seismol-
 ogy with which Morlet was familiar involve comparing
-the seismic traces with special functions of the form          Figure 13 Top: an example of a window function w that
-Wm, n (t) = w(t − nτ) cos(mωt), where w is a smooth             is used in practice by geophysicists, with just below it two
-function that gently rises from 0 to 1 and then gently         examples of w(t−nτ)eimt , i.e., two “traditional” geophysics
+the seismic traces with special functions of the form
+Wm, n (t) = w(t − nτ) cos(mωt), where w is a smooth
+function that gently rises from 0 to 1 and then gently
 decays to 0 again, all within a finite interval. Several dif-   wavelets. Bottom: a wavelet as used by Morlet, with two
-ferent examples of functions w, proposed by several            translates and dilates just below it—these have constant
-                                                               shape, unlike the “traditional” ones.
+ferent examples of functions w, proposed by several
 different scientists, are used in practice: because the
 functions Wm, n look like small waves (they oscillate,
-but have a nice beginning and end because of w) they           some years later, more mature forms of wavelet theory
-are typically called “wavelets of X,” named after pro-         impinged on their field again.
-poser X for that particular w. The reference functions            A few years later, in 1985, standing in line for a
-in Morlet’s new ad hoc family, which he used to com-           photocopy machine at his university, harmonic analy-
-pare pieces of seismic traces, were different in that they      sis expert Y. Meyer heard about this work and real-
-were produced from a function w by scaling instead             ized it presented an interestingly different take on
-of multiplying them by increasingly oscillating trigono-       the scaling techniques with which he and other har-
-metric functions. Because of this, they always had the         monic analysts had long been familiar. At the time, no
-same shape, and Morlet called them “wavelets of con-           wavelet bases were known in which the initial func-
-stant shape” (see figure 13) in order to distinguish them       tion ψ combined the properties of smoothness and
-from the wavelets of X (or Y, or Z, etc.).                     good decay. Indeed, there seemed to be a sub lim i-
-   Morlet taught himself to work with this new trans-          nal expectation in papers on wavelet expansions that
-form and found it numerically useful, but had difficulty         no such orthonormal wavelet bases could exist. Meyer
-explaining his intuition to others because he had no           set out to prove this, and to every one’s surprise and
-underlying theory. A former classmate pointed him in           delight he failed in the best possible way—by find-
-the direction of A. Grossmann, a theoretical physicist,        ing a counterexample, the first smooth wavelet basis!
-who made the connection with coherent states and,              Except that it later turned out not to have been the very
-together with Morlet and other collaborators, started to       first: a few years before, a different harmonic analyst,
-develop a theory for the transform in the early 1980 s.         O. Stromberg, had constructed a different example, but
-Out side the field of geophysics it was no longer neces-         this had not attracted attention at the time.
-sary to use the phrase “of constant shape,” so this was           Meyer’s proof was ingenious, and worked because
-quickly dropped, which annoyed geophysicists when,             of some seemingly miraculous cancellations, which is
+but have a nice beginning and end because of w) they
+are typically called “wavelets of X,” named after pro-
+poser X for that particular w. The reference functions
+in Morlet’s new ad hoc family, which he used to com-
+pare pieces of seismic traces, were different in that they
+were produced from a function w by scaling instead
+of multiplying them by increasingly oscillating trigono-
+metric functions. Because of this, they always had the
+same shape, and Morlet called them “wavelets of con-
+stant shape” (see figure 13) in order to distinguish them
+from the wavelets of X (or Y, or Z, etc.).
+   Morlet taught himself to work with this new trans-
+form and found it numerically useful, but had difficulty
+explaining his intuition to others because he had no
+underlying theory. A former classmate pointed him in
+the direction of A. Grossmann, a theoretical physicist,
+who made the connection with coherent states and,
+together with Morlet and other collaborators, started to
+develop a theory for the transform in the early 1980 s.
+Out side the field of geophysics it was no longer neces-
+sary to use the phrase “of constant shape,” so this was
+quickly dropped, which annoyed geophysicists when,
+
+861
+w(t)
+0
+0
+0
+0
+0 t                                   t
+Figure 13 Top: an example of a window function w that
+is used in practice by geophysicists, with just below it two
+examples of w(t−nτ)eimt , i.e., two “traditional” geophysics
+translates and dilates just below it—these have constant
+shape, unlike the “traditional” ones.
+some years later, more mature forms of wavelet theory
+impinged on their field again.
+A few years later, in 1985, standing in line for a
+photocopy machine at his university, harmonic analy-
+sis expert Y. Meyer heard about this work and real-
+ized it presented an interestingly different take on
+the scaling techniques with which he and other har-
+monic analysts had long been familiar. At the time, no
+wavelet bases were known in which the initial func-
+tion ψ combined the properties of smoothness and
+good decay. Indeed, there seemed to be a sub lim i-
+nal expectation in papers on wavelet expansions that
+no such orthonormal wavelet bases could exist. Meyer
+set out to prove this, and to every one’s surprise and
+delight he failed in the best possible way—by find-
+ing a counterexample, the first smooth wavelet basis!
+Except that it later turned out not to have been the very
+first: a few years before, a different harmonic analyst,
+O. Stromberg, had constructed a different example, but
+this had not attracted attention at the time.
+Meyer’s proof was ingenious, and worked because
+of some seemingly miraculous cancellations, which is

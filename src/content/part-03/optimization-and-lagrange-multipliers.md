@@ -14,64 +14,94 @@ This means that we can narrow down the search for the maximum and minimum values
 If F has a maximum value, it will occur at a point where the tangent plane is horizontal. The tangent plane at each point (x , y) is the graph of the linear function that best approximates F near (x , y). For small values of $h$ and $k$, F (x + h, y + k) will be approximately equal to F (x , y) plus a function of the form (h , $k)\to ah + bk,$ that is, F (x , y) plus a linear function of $h$ and $k$. As explained in some fundamental mathematical definitions [I.3](/part-01/fundamental-definitions), the derivative of F at (x , y) is this linear map.
 The map can be represented by the pair of numbers (a , b), which can in turn be thought of as a vector in $R^{2}$ . This derivative vector is usually called the gradient of the function F at the point (x , y) and is written $\nablaF$ (x , y). In vector notation (writing x for (x , y) and h for (h , k)), the approximation to F near (x , y) is $F(x + h)\approxF(x) + h$ · $\nablaF$ . (1)
 
-256                                                                                                   III. Mathematical Concepts
+256
 
-Thus, ∇F points in the direction in which F increases              6
+Thus, ∇F points in the direction in which F increases
 most rapidly if you start at x, and the magnitude of ∇F
-is the slope of the “graph” of F in this direction.                5
+is the slope of the “graph” of F in this direction.
    The components a and b of the gradient can be calcu-
-                                                                   4
 lated using partial differentiation. The number a tells
-us how quickly F (x, y) changes as we vary x while                 3                                   19
+us how quickly F (x, y) changes as we vary x while
 keeping y fixed: so to find a, we differentiate F (x, y) =
-                                                                                                       18
-2 x +10 y −x 2 +2 xy −3 y 2 with respect to x, treating y              2
-as a constant. In this case we get the partial derivative                                              14
-                  ∂F (x, y)
-                                                                   1                                   8
-             a=             = 2 − 2 x + 2 y.
-                     ∂x                                                                                0
-                                                                   0
-Similarly,                                                             0                 2            4             6       8
-                  ∂F (x, y)                                                           Figure 1 A contour plot.
-              b=            = 10 + 2 x − 6 y.
-                      ∂y
+2 x +10 y −x 2 +2 xy −3 y 2 with respect to x, treating y
+as a constant. In this case we get the partial derivative
+
+Similarly,
+
   Now, if we want to locate points where the tangent
-plane is horizontal, then we want to find the points at                 3
+plane is horizontal, then we want to find the points at
 which the gradient is zero: that is, the points at which
-the vector (a, b) is the zero vector. So we solve the pair             2
-of simultaneous equations                                                       4 y − x = 7
-                     2 − 2 x + 2 y = 0,                                  1
-                   10 + 2 x − 6 y = 0
-to get x = 4, y = 3. Thus, the only candidate for the                  0
+the vector (a, b) is the zero vector. So we solve the pair
+of simultaneous equations
+
+to get x = 4, y = 3. Thus, the only candidate for the
 maximum is the point (4, 3), where F takes the value 19.
-It can be checked that 19 is indeed the maximum value              −1
-of F .                                                                                            4 y − x = −7
-                                                                   −2
-             2 The Gradient and Contours
-One of the most common ways of representing surfaces               −3
-(landscapes on maps, for example) is by means of con-                      −3       −2       −1        0        1       2   3
+It can be checked that 19 is indeed the maximum value
+of F .
+
+One of the most common ways of representing surfaces
+(landscapes on maps, for example) is by means of con-
 tour lines, or curves of constant height. In the xy-plane,
-                                                                                Figure 2 Constrained optimization.
 we plot several curves of the form F (x, y) = V , for var-
 ious “representative” values of V . For the function we
-considered earlier,                                                             3    Constrained Optimization
-                                  2
-        F (x, y) = 2 x + 10 y − x + 2 xy − 3 y ,     2                                  and Lagrange Multipliers
+considered earlier,
 
-the values 0, 8, 14, 18, 19 yield the contour plot shown      It often happens that we are interested in the maxi-
-in figure 1. The 14 contour, for example, contains all         mum or minimum value of an objective function that
-the points at which the surface has height 14. The fig-        depends upon several variables whose values are con-
+the values 0, 8, 14, 18, 19 yield the contour plot shown
+in figure 1. The 14 contour, for example, contains all
+the points at which the surface has height 14. The fig-
 ure indicates that this particular surface is an elliptical   strained to satisfy certain equations or inequalities.
-hump whose peak occurs at (4, 3) and has height 19.           Consider, for example, the following problem.
+hump whose peak occurs at (4, 3) and has height 19.
   There is a simple geometrical relationship between
-                                                              Find the maximum value of
 the contour lines and the gradient vector. The vector
-equation (1) shows that the direction h in which F is                                    F (x, y) = 4 y − x
-instantaneously constant is the direction which makes         over all pairs (x, y) satisfying the constraint
+equation (1) shows that the direction h in which F is
+instantaneously constant is the direction which makes
 the scalar product h · ∇F equal to 0: the direction per-
-                                                                       G(x, y) = x 2 − xy + y 2 − x + y − 4 = 0.                (2)
 pendicular to ∇F . At each point, the gradient vector is
-perpendicular to the contour through that point. This            Figure 2 shows the curve in the xy-plane defined by
-fact under lies the method of Lagrange multipliers that        G(x, y) = 0 (an ellipse), and also a number of contour
-we shall discuss in the next section.                         lines of the function 4 y − x. Our aim is to find the
+perpendicular to the contour through that point. This
+fact under lies the method of Lagrange multipliers that
+we shall discuss in the next section.
+
+III. Mathematical Concepts
+6
+5
+4
+3
+18
+2
+14
+∂F (x, y)
+1                                   8
+a=
+∂x                                                                                0
+0
+0
+∂F (x, y)
+b=
+∂y
+3
+2
+4 y − x = 7
+2 − 2 x + 2 y = 0,                                  1
+10 + 2 x − 6 y = 0
+0
+−1
+4 y − x = −7
+−2
+2 The Gradient and Contours
+−3
+−3
+Figure 2 Constrained optimization.
+3    Constrained Optimization
+2
+F (x, y) = 2 x + 10 y − x + 2 xy − 3 y ,     2
+It often happens that we are interested in the maxi-
+mum or minimum value of an objective function that
+depends upon several variables whose values are con-
+Consider, for example, the following problem.
+Find the maximum value of
+F (x, y) = 4 y − x
+over all pairs (x, y) satisfying the constraint
+G(x, y) = x 2 − xy + y 2 − x + y − 4 = 0.                (2)
+Figure 2 shows the curve in the xy-plane defined by
+G(x, y) = 0 (an ellipse), and also a number of contour
+lines of the function 4 y − x. Our aim is to find the

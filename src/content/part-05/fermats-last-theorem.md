@@ -1,87 +1,108 @@
 # Fermat’s Last Theorem
 
-V.10.    Fermat’s Last Theorem                                                                                        691
+V.10.    Fermat’s Last Theorem
 
-X. Then one can check that f , U n f  = μ(A ∩ T −n A).          The ergodic theorems of von Neumann and Birkhoff
-It follows that                                                 have been generalized over the years in many differ-
-                               1    
-                                   N−1                          ent directions. These far-reaching extensions of ergodic
-         f , AN, M (f ) =             μ(A ∩ T −n A).           theorems, and more generally the ergodic method, have
-                             N − M n=M
-                                                                found impressive applications in such diverse fields
-If we let N − M tend to infinity, then AN, M f tends              as statistical mechanics, number theory, probability
-to a U-invariant function g. Since g is U-invariant,            theory, harmonic analysis, and combinatorics.
+X. Then one can check that f , U n f  = μ(A ∩ T −n A).
+It follows that
+
+If we let N − M tend to infinity, then AN, M f tends
+to a U-invariant function g. Since g is U-invariant,
 f , g = U n f , g for every n, and therefore f , g =
-AN, M (f ), g for every N and M, and finally f , g =          Further Reading
+AN, M (f ), g for every N and M, and finally f , g =
 g, g. By the Cauchy–Schwarz inequality, this is at least
-( g(x) dμ)2 = ( f (x) dμ)2 = μ(A)2 . Therefore, we              Furstenberg, H. 1981. Recurrence in Ergodic Theory and
-                                                                  Combinatorial Number Theory. M. B. Porter Lectures.
+( g(x) dμ)2 = ( f (x) dμ)2 = μ(A)2 . Therefore, we
 deduce that
-                                                                  Princeton, NJ: Princeton University Press.
-                1    
-                    N−1
-         lim            μ(A ∩ T −n A) ⩾ (μ(A))2 .               Krengel, U. 1985. Ergodic Theorems, with a supplement by
-        N−M→. nfty N − M                                               A. Brunel. De Gruyter Studies in Mathematics, volume 6.
-                    n=M
-                                                                  Berlin: Walter de Gruyter.
+
 If you choose two “random sets” of measure μ(A),
-                                                                Mackey, G. W. 1974. Ergodic theory and its significance for
 then their intersection will typically be (μ(A))2 , so the
-                                                                  statistical mechanics and probability theory. Advances in
-inequality above is saying that the average intersection          Mathematics 12:178–268.
+inequality above is saying that the average intersection
 of A with T −n A is at least as big as the “expected” inter-
 section. This result, due to Khinchin, gives more precise
-information about the nature of Poincaré recurrence.            The Fermat–Euler Theorem
-   When a unitary operator is defined in terms of a                 See modular arithmetic [III.58](/part-03/modular-arithmetic)
+information about the nature of Poincaré recurrence.
+   When a unitary operator is defined in terms of a
 measure-preserving transformation as above, it is nat-
 ural to ask whether the averages converge not just in
-the sense of the L2 -norm but also in the more clas-            V.10     Fermat’s Last Theorem
+the sense of the L2 -norm but also in the more clas-
 sical sense of convergence almost every where. (For a
-                                                                Many people, even if they are not mathematicians, are
 related thought in a different context, see carleson’s
-                                                                aware of the existence of Pythagorean triples: that is,
 theorem [V.5](/part-05/carlesons-theorem).) The answer is that they do, as was
-                                                                triples of positive integers (x, y, z) such that x 2 +y 2 =
 shown by birkhoff [VI.78](/part-06/george-birkho-18841944) soon after he learned of
-                                                                z2 . These give us examples of right-angled triangles
 von Neumann’s theorem. He proved that for each inte-
-                                                                with integer side lengths, of which the best known is
 grable function f one could find a function f ∗ such
-that f ∗ (T x) = f ∗ (x) for almost every x, and such           the “(3, 4, 5) triangle.” For any two integers m and n,
-that                                                            we have that (m2 −n2 )2 +(2 mn)2 = (m2 +n2 )2 , which
-                    1 
-                       N−1                                      gives us an infinite supply of Pythagorean triples, and
-               lim          f (T n x) = f ∗ (x)                 in fact every Pythagorean triple is a multiple of a triple
-              N→. nfty N
-                        n=0
-                                                                of this form.
+that f ∗ (T x) = f ∗ (x) for almost every x, and such
+that
+
 for almost every x. Suppose that the transformation T
-                                                                   fermat [VI.12](/part-06/pierre-fermat-1601665) asked the very natural question of
 is ergodic, let A ⊂ X be a set of positive measure, and
-                                                                whether similar triples existed for higher powers: that
 let f (x) be the characteristic function of A. It follows
-                                                                is, could there be a solution in positive integers of the
 from Birkhoff’s theorem that for almost every x ∈ X
-                                                                equation x n + y n = zn for some power n ⩾ 3? For
 one has
-                                                                instance, is it possible to express a cube as a sum of
-               1 
-                   N−1
-                                  f dμ   μ(A)                   two other cubes? Or rather, Fermat famously claimed
-           lim       f (T n x) =       =      .
-           N→. nfty N                 μ(X)    μ(X)                   that it was not possible, and that he had a proof that
-                 n=0
-Since the expression                                            space did not permit him to write down. Over the next
-                                                                three and a half centuries, this problem became the
-                         1 
-                               N−1
-                      lim      f (T n x)                        most famous unsolved problem in mathematics. Given
-                     N→. nfty N
-                           n=0                                  the amount of effort that went into it, one can be virtu-
+
+Since the expression
 describes the frequency of visits of T n x to the set A, we     ally certain that Fermat did not in fact have a proof: the
 see that in an ergodic system the images x, T x, T 2 x, . . .   problem appears to be irreducibly difficult, and solv-
-of a typical point x ∈ A visit A with a frequency that          able only by techniques that were developed much later
-equals the proportion of the space occupied by A.               than Fermat.
+of a typical point x ∈ A visit A with a frequency that
+equals the proportion of the space occupied by A.
+
+691
+The ergodic theorems of von Neumann and Birkhoff
+have been generalized over the years in many differ-
+1    
+N−1                          ent directions. These far-reaching extensions of ergodic
+f , AN, M (f ) =
+N − M n=M
+found impressive applications in such diverse fields
+as statistical mechanics, number theory, probability
+theory, harmonic analysis, and combinatorics.
+Further Reading
+Furstenberg, H. 1981. Recurrence in Ergodic Theory and
+Combinatorial Number Theory. M. B. Porter Lectures.
+Princeton, NJ: Princeton University Press.
+1    
+N−1
+lim
+N−M→. nfty N − M
+n=M
+Berlin: Walter de Gruyter.
+Mackey, G. W. 1974. Ergodic theory and its significance for
+statistical mechanics and probability theory. Advances in
+Mathematics 12:178–268.
+The Fermat–Euler Theorem
+See modular arithmetic [III.58](/part-03/modular-arithmetic)
+V.10     Fermat’s Last Theorem
+Many people, even if they are not mathematicians, are
+aware of the existence of Pythagorean triples: that is,
+triples of positive integers (x, y, z) such that x 2 +y 2 =
+z2 . These give us examples of right-angled triangles
+with integer side lengths, of which the best known is
+the “(3, 4, 5) triangle.” For any two integers m and n,
+we have that (m2 −n2 )2 +(2 mn)2 = (m2 +n2 )2 , which
+1 
+N−1                                      gives us an infinite supply of Pythagorean triples, and
+lim
+N→. nfty N
+n=0
+of this form.
+fermat [VI.12](/part-06/pierre-fermat-1601665) asked the very natural question of
+whether similar triples existed for higher powers: that
+is, could there be a solution in positive integers of the
+equation x n + y n = zn for some power n ⩾ 3? For
+instance, is it possible to express a cube as a sum of
+1 
+N−1
+f dμ   μ(A)                   two other cubes? Or rather, Fermat famously claimed
+lim
+N→. nfty N
+n=0
+space did not permit him to write down. Over the next
+three and a half centuries, this problem became the
+1 
+N−1
+lim      f (T n x)                        most famous unsolved problem in mathematics. Given
+N→. nfty N
+n=0                                  the amount of effort that went into it, one can be virtu-
+able only by techniques that were developed much later
+than Fermat.
 
 $692$
 

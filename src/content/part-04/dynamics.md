@@ -28,253 +28,389 @@ Each body is represented by a single point, namely its center of mass, and the m
 We can work out the total force on the ith body by adding up all these forces for $j = i$. Since a unit vector in the direction from r i to r j is (r j - r i) / r j - r i , we obtain a force of $r^{j} - r^{i}$ m i m j . g r $j - r^{i}3j \n\text{eq i}$ (There is a cube on the bottom rather than a square in order to compensate for the magnitude of r j - r i .) A solution to the N-body problem is a set of differentiable vector functions ($r^{1}$ (t), . . .
 , r N (t)), depending on time t, that satisfy the N differential equations r j (t) - r i (t) m i r i (t) = g m i m j , r $j(t) - r^{i}(t){}^{3}j \n\text{eq i}$ which result from Newton’s second law, which states that force = mass $\times$ acceleration.
 
-494                                                                                           IV. Branches of Mathematics
+494
 
-   Newton was able to solve the two-body problem ex-             The differential equation x (t) = −x(t) is of sec-
-plicitly. By neglecting the influence of other planets,         ond order, but it is nevertheless a continuous dynam-
-he derived the laws formulated by Johannes Kepler,             ical system because it is equivalent to the system of
-which describe how each planet moves in an elliptic            two first-order differential equations x1 (t) = x2 (t) and
-orbit around the sun. However, the jump to N > 2               x2 (t) = −x1 (t). In a similar way, the system of differ-
-makes an enormous difference to the complication of             ential equations of the N-body problem can be brought
-the problem: except in very special cases, the system          into standard form by introducing new variables. The
-of equations can no longer be solved explicitly (see           equations are equivalent to a system of 6 N first-order
-the three-body problem [V.33](/part-05/the-three-body-problem)). Nevertheless, New-             differential equations in the variables of the position
-ton’s equations are of great practical importance when         vectors ri = (xi1 , xi2 , xi3 ) and the velocity vectors
-it comes to guiding satellites and other space missions.       ri = (yi1 , yi2 , yi3 ). Thus, the N-body problem is a good
-                                                               example of a continuous dynamical system.
+   Newton was able to solve the two-body problem ex-
+plicitly. By neglecting the influence of other planets,
+he derived the laws formulated by Johannes Kepler,
+which describe how each planet moves in an elliptic
+orbit around the sun. However, the jump to N > 2
+makes an enormous difference to the complication of
+the problem: except in very special cases, the system
+of equations can no longer be solved explicitly (see
+the three-body problem [V.33](/part-05/the-three-body-problem)). Nevertheless, New-
+ton’s equations are of great practical importance when
+it comes to guiding satellites and other space missions.
    (ii) newton’s method [II.4 §2.3](/part-02/algorithms) for solving equa-
-                                                                 In general, if we have a dynamical system consisting
 tions is quite different and does not involve differ en-
-                                                               of n equations, then we can write the ith equation in
 tial equations. We consider a differentiable function f
-                                                               the form
 of one real variable and wish to determine a zero of f ,
-                                                                               xi (t) = fi (x1 (t), . . . , xn (t)),
 that is, a solution to the equation f (x) = 0. Newton’s
-idea was to define a new function:                              or alternatively we can write all the equations at once
-                                 f (x)                         in the form x (t) = f (x(t)), where x(t) is the vec-
-                  Nf (x) = x −         .                       tor (x1 (t), . . . , xn (t)) and f = (f1 , . . . , fn ) is a function
-                                 f (x)
-                                                               from Rn to Rn . Note that f is assumed not to depend
+idea was to define a new function:
+
 To put this more geometrically, Nf (x) is the x-coordi-
-                                                               on t. If it does, then the system can be brought into
 nate of the point where the tangent line to the graph
-                                                               standard form by adding the variable xn+1 = t and the
 y = f (x) at the point (x, f (x)) crosses the x-axis.
-                                                               differential equation xn+1 (t) = 1, which increases the
 (If f (x) = 0, then this tangent line is horizontal and
-                                                               dimension of the system from n to n + 1.
 Nf (x) is not defined.)
-                                                                  The simplest systems are linear ones, where f is
    Under many circumstances, if x is close to a zero
-                                                               a linear map: that is, f (x) is given by Ax for some
 of f , then Nf (x) is significantly closer. Therefore, if
-                                                               constant n . imes n matrix A. The system above, x1 (t) =
 we start with some value x0 and form the sequence
-                                                               x2 (t) and x2 (t) = −x1 (t), is an example of a linear
 obtained by repeated application of Nf , that is, the
-                                                               system. Most systems, however, including the one for
 sequence x0 , x1 , x2 , . . . , where x1 = Nf (x0 ), x2 =
-                                                               the N-body problem, are nonlinear. If the function f
 Nf (x1 ), and so on, we can expect that this sequence
-                                                               is “nice” (for instance, differentiable), then uniqueness
 will converge to a zero of f . And this is true: if the
-                                                               and existence of solutions are guaranteed for any ini-
 initial value x0 is sufficiently close to a zero, then the
-                                                               tial point x0 . That is, there is exactly one solution that
 sequence does indeed converge toward that zero, and
-                                                               passes through the point x0 at time t = 0. For example,
 does so extremely quickly, basically doubling the num-
-                                                               in the N-body problem there is exactly one solution for
 ber of correct digits in each step. This rapid conver-
-                                                               any given set of initial position vectors and initial veloc-
 gence makes Newton’s method very useful for numeri-
-                                                               ity vectors. It also follows from uniqueness that any
 cal computations.
-                                                               pair of orbits must either coincide or be totally disjoint.
-                                                               (Bear in mind that the word “orbit” in this context does
 1.2   Continuous Dynamical Systems
-                                                               not mean the set of positions of a single point mass,
-We can think of a continuous dynamical system as a sys-        but rather the evolution of the vector that represents
-tem of first-order differential equations, which deter-          all the positions and velocities of all the masses.)
-mine how the system evolves in time. A solution is                Although it is seldom possible to express solutions to
-called an orbit or trajectory, and is parametrized by a        nonlinear systems explicitly, we know that they exist,
-number t, which one usually thinks of as time, that            and we call the dynamical system deterministic since
-takes real values and varies continuously: hence the           solutions are completely determined by their initial
-name “continuous” dynamical system. A periodic orbit           conditions. For a given system and given initial con-
+We can think of a continuous dynamical system as a sys-
+tem of first-order differential equations, which deter-
+mine how the system evolves in time. A solution is
+called an orbit or trajectory, and is parametrized by a
+number t, which one usually thinks of as time, that
+takes real values and varies continuously: hence the
+name “continuous” dynamical system. A periodic orbit
 of period T is a solution that repeats itself after time T ,   ditions it is therefore theoretically possible to predict
-but not earlier.                                               its entire future evolution.
+but not earlier.
 
-IV.14.   Dynamics                                                                                                             495
+IV. Branches of Mathematics
+The differential equation x (t) = −x(t) is of sec-
+ond order, but it is nevertheless a continuous dynam-
+ical system because it is equivalent to the system of
+two first-order differential equations x1 (t) = x2 (t) and
+x2 (t) = −x1 (t). In a similar way, the system of differ-
+ential equations of the N-body problem can be brought
+into standard form by introducing new variables. The
+equations are equivalent to a system of 6 N first-order
+differential equations in the variables of the position
+vectors ri = (xi1 , xi2 , xi3 ) and the velocity vectors
+ri = (yi1 , yi2 , yi3 ). Thus, the N-body problem is a good
+example of a continuous dynamical system.
+In general, if we have a dynamical system consisting
+of n equations, then we can write the ith equation in
+the form
+xi (t) = fi (x1 (t), . . . , xn (t)),
+or alternatively we can write all the equations at once
+f (x)                         in the form x (t) = f (x(t)), where x(t) is the vec-
+Nf (x) = x −
+f (x)
+from Rn to Rn . Note that f is assumed not to depend
+on t. If it does, then the system can be brought into
+standard form by adding the variable xn+1 = t and the
+differential equation xn+1 (t) = 1, which increases the
+dimension of the system from n to n + 1.
+The simplest systems are linear ones, where f is
+a linear map: that is, f (x) is given by Ax for some
+constant n . imes n matrix A. The system above, x1 (t) =
+x2 (t) and x2 (t) = −x1 (t), is an example of a linear
+system. Most systems, however, including the one for
+the N-body problem, are nonlinear. If the function f
+is “nice” (for instance, differentiable), then uniqueness
+and existence of solutions are guaranteed for any ini-
+tial point x0 . That is, there is exactly one solution that
+passes through the point x0 at time t = 0. For example,
+in the N-body problem there is exactly one solution for
+any given set of initial position vectors and initial veloc-
+ity vectors. It also follows from uniqueness that any
+pair of orbits must either coincide or be totally disjoint.
+(Bear in mind that the word “orbit” in this context does
+not mean the set of positions of a single point mass,
+but rather the evolution of the vector that represents
+all the positions and velocities of all the masses.)
+Although it is seldom possible to express solutions to
+nonlinear systems explicitly, we know that they exist,
+and we call the dynamical system deterministic since
+solutions are completely determined by their initial
+conditions. For a given system and given initial con-
+its entire future evolution.
 
-1.3   Discrete Dynamical Systems                                       influenced by them. Poincaré’s work became the pre-
-                                                                       lude to topological dynamics, which focuses on topolog-
-A discrete dynamical system is a system that evolves                   ical properties of solutions to dynamical systems and
-in jumps: “time,” in such a system, is best repre-                     takes a qualitative approach to them.
+IV.14.   Dynamics
+
+1.3   Discrete Dynamical Systems
+A discrete dynamical system is a system that evolves
+in jumps: “time,” in such a system, is best repre-
 sented by an integer rather than a real number. A good
-                                                                          Of special interest is the long-term behavior of a sys-
 example is Newton’s method for solving equations. In
-                                                                       tem. A periodic orbit is called stable if all orbits through
 this instance, the sequence of points we saw earlier,
-                                                                       points sufficiently close to it stay close to it at all future
 x0 , x1 , . . . , xk , . . . , where xk = Nf (xk−1 ), is called the
-                                                                       times. It is called asymptotically stable if all sufficiently
 orbit of x0 . We say that it is obtained by iteration of
-                                                                       close orbits approach it as time tends to infinity. Let
 the function Nf , i.e., by repeated application of the
-                                                                       us illustrate this by two linear examples in discrete
 function.
-                                                                       dynamics. For the real function F (x) = −x, all points
-  This idea can easily be generalized to other map-                    have a periodic orbit: 0 has period 1 and all other x
-pings F : X → X, where X could be the real axis,                       have period 2. Every orbit is stable, but none is asymp-
-an interval in the real axis, the plane, a subset of the               totically stable. The real function G(x) = 12 x has only
-plane, or some more complicated space. The impor-                      one periodic orbit, namely 0. Since G(0) = 0, this orbit
-tant thing is that the output F (x) of any input x can                 has period 1, and we call it a fixed point. If you take
-be used as the next input. This guarantees that the                    any number and repeatedly divide it 2, then the result-
-orbit of any x0 in X is defined for all future times.                   ing sequence will approach 0, so the fixed point 0 is
-That is, we can define a sequence, x0 , x1 , . . . , xk , . . . ,       asymptotically stable.
-where xk = F (xk−1 ) for every k. If the function F                       One of the methods introduced by Poincaré during
-has an inverse F −1 , then we can iterate both forwards                his study of the three-body problem was a reduction
-and backwards and obtain the full orbit of x0 as the                   from a continuous dynamical system, in dimension n,
+  This idea can easily be generalized to other map-
+pings F : X → X, where X could be the real axis,
+an interval in the real axis, the plane, a subset of the
+plane, or some more complicated space. The impor-
+tant thing is that the output F (x) of any input x can
+be used as the next input. This guarantees that the
+orbit of any x0 in X is defined for all future times.
+That is, we can define a sequence, x0 , x1 , . . . , xk , . . . ,
+where xk = F (xk−1 ) for every k. If the function F
+has an inverse F −1 , then we can iterate both forwards
+and backwards and obtain the full orbit of x0 as the
 bi-infinite sequence . . . , x−2 , x−1 , x0 , x1 , x2 , . . . , where   say, to an associated discrete dynamical system, a map-
-xk = F (xk−1 ) and, equivalently, xk−1 = F −1 (xk ), for all           ping in dimension n − 1. The idea is as follows. Sup-
-integer values.                                                        pose we have a periodic orbit of period T > 0 in some
-   The orbit of x0 is periodic of period k if it repeats               continuous system. Choose a point x0 on the orbit and
-itself after time k, but not earlier, i.e., if xk = x0 , but           a hypersurface Σ through x0 , for instance part of a
-xj ≠ x0 for j = 1, . . . , k − 1. The orbit is called pre-             hyperplane, such that the orbit cuts through Σ at x0 .
-periodic if it is eventually periodic, in other words if               For any point in Σ that is sufficiently close to x0 , one
-there exist  ⩾ 1 and k ⩾ 1 such that x is periodic                   can follow its orbit around and see where it next inter-
-of period k, but none of the xj for 0 ⩽ j <  are peri-                sects Σ. This defines a transformation, known as the
-odic. The notion of pre-periodicity has no counterpart                 Poincaré map, which takes the original point to the
-in continuous dynamics.                                                next point of intersection of its orbit with Σ. It fol-
-  A discrete dynamical system is deterministic, since                  lows from the fact that dynamical systems have unique
-the orbit of any given initial point x0 is completely                  solutions that every Poincaré map is injective in the
-determined once you know x0 .                                          neighborhood of x0 (within Σ) for which the Poincaré
-                                                                       map is defined. One can perform both forwards and
-1.4   Stability                                                        backwards iterations. Note that the periodic orbit of
-                                                                       x0 in the continuous system is stable (respectively,
+xk = F (xk−1 ) and, equivalently, xk−1 = F −1 (xk ), for all
+integer values.
+   The orbit of x0 is periodic of period k if it repeats
+itself after time k, but not earlier, i.e., if xk = x0 , but
+xj ≠ x0 for j = 1, . . . , k − 1. The orbit is called pre-
+periodic if it is eventually periodic, in other words if
+there exist  ⩾ 1 and k ⩾ 1 such that x is periodic
+of period k, but none of the xj for 0 ⩽ j <  are peri-
+odic. The notion of pre-periodicity has no counterpart
+in continuous dynamics.
+  A discrete dynamical system is deterministic, since
+the orbit of any given initial point x0 is completely
+determined once you know x0 .
+1.4   Stability
 The modern theory of dynamics was greatly influenced
-                                                                       asymptotically stable) exactly when the fixed point x0
 by the work of poincaré [VI.61](/part-06/jules-henri-poincar-18541912), and in particular by
-                                                                       of the Poincaré map in the discrete system is stable
 his prize-winning memoir on the three-body problem,
-                                                                       (respectively, asymptotically stable).
 succeeded by three more elaborate volumes on celes-
 tial mechanics, all from the late nineteenth century. The
-                                                                       1.5   Chaotic Behavior
 memoir was written in response to a competition where
-one of the proposed problems concerned stability of                    The notion of chaotic dynamics arose in the 1970 s. It
-the solar system. Poincaré introduced the so-called                    has been used in different settings, and there is no sin-
-restricted three-body problem, where the third body is                 gle definition that covers all uses of the term. However,
-assumed to have an infinitely small mass: it does not                   the property that best characterizes chaos is the phe-
-influence the motion of the other two bodies but it is                  nomenon of sensitive dependence on initial conditions.
+one of the proposed problems concerned stability of
+the solar system. Poincaré introduced the so-called
+restricted three-body problem, where the third body is
+assumed to have an infinitely small mass: it does not
+influence the motion of the other two bodies but it is
 
-496                                                                                     IV. Branches of Mathematics
+495
+influenced by them. Poincaré’s work became the pre-
+lude to topological dynamics, which focuses on topolog-
+ical properties of solutions to dynamical systems and
+takes a qualitative approach to them.
+Of special interest is the long-term behavior of a sys-
+tem. A periodic orbit is called stable if all orbits through
+points sufficiently close to it stay close to it at all future
+times. It is called asymptotically stable if all sufficiently
+close orbits approach it as time tends to infinity. Let
+us illustrate this by two linear examples in discrete
+dynamics. For the real function F (x) = −x, all points
+have a periodic orbit: 0 has period 1 and all other x
+have period 2. Every orbit is stable, but none is asymp-
+totically stable. The real function G(x) = 12 x has only
+one periodic orbit, namely 0. Since G(0) = 0, this orbit
+has period 1, and we call it a fixed point. If you take
+any number and repeatedly divide it 2, then the result-
+ing sequence will approach 0, so the fixed point 0 is
+asymptotically stable.
+One of the methods introduced by Poincaré during
+his study of the three-body problem was a reduction
+from a continuous dynamical system, in dimension n,
+ping in dimension n − 1. The idea is as follows. Sup-
+pose we have a periodic orbit of period T > 0 in some
+continuous system. Choose a point x0 on the orbit and
+a hypersurface Σ through x0 , for instance part of a
+hyperplane, such that the orbit cuts through Σ at x0 .
+For any point in Σ that is sufficiently close to x0 , one
+can follow its orbit around and see where it next inter-
+sects Σ. This defines a transformation, known as the
+Poincaré map, which takes the original point to the
+next point of intersection of its orbit with Σ. It fol-
+lows from the fact that dynamical systems have unique
+solutions that every Poincaré map is injective in the
+neighborhood of x0 (within Σ) for which the Poincaré
+map is defined. One can perform both forwards and
+backwards iterations. Note that the periodic orbit of
+x0 in the continuous system is stable (respectively,
+asymptotically stable) exactly when the fixed point x0
+of the Poincaré map in the discrete system is stable
+(respectively, asymptotically stable).
+1.5   Chaotic Behavior
+The notion of chaotic dynamics arose in the 1970 s. It
+has been used in different settings, and there is no sin-
+gle definition that covers all uses of the term. However,
+the property that best characterizes chaos is the phe-
+nomenon of sensitive dependence on initial conditions.
 
-Poincaré was the first to observe sensitivity to initial          Sensitivity is also important in the notion of so-called
-conditions in his treatment of the three-body problem.        strange attractors. A set A is called an attractor if all
-  Instead of describing his observations let us look          orbits that start in A stay in A and if all orbits through
-at a much simpler example from discrete dynamics.             nearby points get closer and closer to A. In continuous
-Take as a dynamical space X the half-open unit inter-         systems, some simple sets that can be attractors are
+496
+
+Poincaré was the first to observe sensitivity to initial
+conditions in his treatment of the three-body problem.
+  Instead of describing his observations let us look
+at a much simpler example from discrete dynamics.
+Take as a dynamical space X the half-open unit inter-
 val [0, 1), and let F be the function that doubles a num-     equilibrium points, periodic orbits (limit cycles), and
-ber and reduces it modulo 1. That is, F (x) = 2 x when         surfaces such as a torus. In contrast to these examples,
-           1                             1
-0 ⩽ x < 2 and F (x) = 2 x − 1 when 2 ⩽ x < 1. Let x0           strange attractors have both complicated geometry and
-be a number in X and let its iterates be x1 = F (x0 ),        complicated dynamics: the geometry is fractal and the
+ber and reduces it modulo 1. That is, F (x) = 2 x when
+
+0 ⩽ x < 2 and F (x) = 2 x − 1 when 2 ⩽ x < 1. Let x0
+be a number in X and let its iterates be x1 = F (x0 ),
 x2 = F (x1 ), and so on. Then xk is the fractional part of    dynamics sensitive. We shall see examples of fractals
 2 k x0 . (The fractional part of a real number t is what you   later on.
-get when you subtract the largest integer less than t.)          The best-known strange attractor is the Lorenz at-
-   A good way to understand the behavior of the se-           tract or. In the early 1960 s, the meteorologist Edward N.
+get when you subtract the largest integer less than t.)
+   A good way to understand the behavior of the se-
 quence x0 , x1 , x2 , . . . of iterates is to consider the    Lorenz studied a three-dimensional continuous dynam-
-binary expansion of x0 . Suppose, for example, that this      ical system that gave a simplified model of heat flow.
-begins 0.110100010100111 . . . . To double a number           While doing so, he noticed that if he restarted his com-
+binary expansion of x0 . Suppose, for example, that this
+begins 0.110100010100111 . . . . To double a number
 when it is written in binary, all you have to do is shift     puter with its initial conditions chosen as the output
-every digit to the left (just as one does in the deci-        of an earlier calculation, then the trajectory started to
-mal system when multiplying by 10). So 2 x0 will have          diverge from the one he had previously observed. The
-a binary expansion that begins 1.10100010100111 . . . .       explanation he found was that the computer used more
-To obtain F (x0 ), we have to take the fractional part        precision in its internal calculations than it showed
-of this, which we do by subtracting the initial 1. This       in its output. For this reason, it was not immediately
-gives us x1 = 0.10100010100111 . . . . Repeating the          apparent that the initial conditions were in fact very
-process we find that x2 = 0.0100010100111 . . . , x3 =         slightly different from before. Because the system was
-0.100010100111 . . . , and so on. (Notice that when we        sensitive, this tiny difference eventually made a much
-calculated x3 from x2 there was no need to subtract 1,        bigger difference. He coined the poetic phrase “the but-
-since the first digit after the “decimal point” was a 0.)      terfly effect” to describe this phenomenon, suggesting
-Now consider a different choice of initial number, x0 =        that a small disturbance such as a butterfly flickering its
-0.110100010110110 . . . . The first nine digits after the      wings could in time have a dramatic effect on the long-
-decimal point are the same as the first nine digits of         term evolution of the weather and trigger a tornado
+every digit to the left (just as one does in the deci-
+mal system when multiplying by 10). So 2 x0 will have
+a binary expansion that begins 1.10100010100111 . . . .
+To obtain F (x0 ), we have to take the fractional part
+of this, which we do by subtracting the initial 1. This
+gives us x1 = 0.10100010100111 . . . . Repeating the
+process we find that x2 = 0.0100010100111 . . . , x3 =
+0.100010100111 . . . , and so on. (Notice that when we
+calculated x3 from x2 there was no need to subtract 1,
+since the first digit after the “decimal point” was a 0.)
+Now consider a different choice of initial number, x0 =
+0.110100010110110 . . . . The first nine digits after the
+decimal point are the same as the first nine digits of
 x0 , so x0 is very close to x0 . However, if we apply F ten   thousands of miles away. Computer simulations of the
-times to x0 and x0 , then their respective eleventh dig-      Lorenz system indicate that solutions are attracted to
-its have shifted leftwards and become the first digits         a complicated set that “looks like” a strange attractor.
+times to x0 and x0 , then their respective eleventh dig-
+its have shifted leftwards and become the first digits
 of x10 = 0.00111 . . . and x10 = 0.10110 . . . . These two    The question of whether it actually was one remained
 numbers differ by almost 12 , so they are not at all close.    open for a long time. It is not obvious how trustwor-
-  In general, if we know x0 to an accuracy of k binary        thy computer simulations are when one is studying
-digits and no more, then after k iterations of the map F      sensitive systems, since the computer rounds off the
-we have lost all information: xk could lie any where in        numbers in each step. In 1998 Warwick Tucker gave
+  In general, if we know x0 to an accuracy of k binary
+digits and no more, then after k iterations of the map F
+we have lost all information: xk could lie any where in
 the interval [0, 1). Therefore, even though the system is     a computer-assisted proof that the Lorenz attractor
-deterministic, it is impossible to predict its long-term      is in fact a strange attractor. He used interval arith-
-behavior with out knowing x0 with perfect accuracy.            metic, where numbers are represented by intervals and
+deterministic, it is impossible to predict its long-term
+behavior with out knowing x0 with perfect accuracy.
   This is true in general: it is impossible to make long-     estimates can be made precise.
-term predictions in any part of a dynamical system that          For topological reasons, sensitivity to initial condi-
+term predictions in any part of a dynamical system that
 shows sensitivity to initial conditions unless the initial    tions is possible for continuous dynamical systems
-conditions are known exactly. In practical applications       only when the dimension is at least 3. For discrete
-this is never the case. For instance, when applying a         systems where the map F is injective, the dimension
-mathematical model to perform weather forecasts, one          must be at least 2. However, for noninjective mappings,
+conditions are known exactly. In practical applications
+this is never the case. For instance, when applying a
+mathematical model to perform weather forecasts, one
 does not know the initial conditions exactly, and this is     sensitivity can occur for one-dimensional systems, as
-why reliable long-term forecasting is impossible.             we saw with the example given earlier. This is one of
+why reliable long-term forecasting is impossible.
 
-IV.14.   Dynamics                                                                                                 497
+IV. Branches of Mathematics
+Sensitivity is also important in the notion of so-called
+strange attractors. A set A is called an attractor if all
+orbits that start in A stay in A and if all orbits through
+nearby points get closer and closer to A. In continuous
+systems, some simple sets that can be attractors are
+surfaces such as a torus. In contrast to these examples,
+1
+strange attractors have both complicated geometry and
+complicated dynamics: the geometry is fractal and the
+The best-known strange attractor is the Lorenz at-
+tract or. In the early 1960 s, the meteorologist Edward N.
+ical system that gave a simplified model of heat flow.
+While doing so, he noticed that if he restarted his com-
+of an earlier calculation, then the trajectory started to
+diverge from the one he had previously observed. The
+explanation he found was that the computer used more
+precision in its internal calculations than it showed
+in its output. For this reason, it was not immediately
+apparent that the initial conditions were in fact very
+slightly different from before. Because the system was
+sensitive, this tiny difference eventually made a much
+bigger difference. He coined the poetic phrase “the but-
+terfly effect” to describe this phenomenon, suggesting
+that a small disturbance such as a butterfly flickering its
+wings could in time have a dramatic effect on the long-
+term evolution of the weather and trigger a tornado
+Lorenz system indicate that solutions are attracted to
+a complicated set that “looks like” a strange attractor.
+thy computer simulations are when one is studying
+sensitive systems, since the computer rounds off the
+numbers in each step. In 1998 Warwick Tucker gave
+is in fact a strange attractor. He used interval arith-
+metic, where numbers are represented by intervals and
+For topological reasons, sensitivity to initial condi-
+only when the dimension is at least 3. For discrete
+systems where the map F is injective, the dimension
+must be at least 2. However, for noninjective mappings,
+we saw with the example given earlier. This is one of
 
-the reasons that discrete one-dimensional dynamical         some specified family of systems, are in fact topolog-
-systems have been intensively studied.                      ically equivalent to it. We say that they all have the
-                                                            same qualitative behavior. An example of the kind of
-1.6   Structural Stability                                  family one might consider is the set of all real quad-
-Two dynamical systems are said to be topologically          ratic polynomials of the form x 2 + a. This family is
-equivalent if there is a homeomorphism (a continuous        parametrized by a, and the systems close to a given
-map with continuous inverse) that maps the orbits of        polynomial x 2 + a0 are all the polynomials x 2 + a for
+IV.14.   Dynamics
+
+the reasons that discrete one-dimensional dynamical
+systems have been intensively studied.
+1.6   Structural Stability
+Two dynamical systems are said to be topologically
+equivalent if there is a homeomorphism (a continuous
+map with continuous inverse) that maps the orbits of
 one system onto the orbits of the other, and vice versa.    which a is close to a0 . We shall return to the question
-Roughly speaking, this means that there is a continu-       of structural stability when we discuss holomorphic
-ous change of variables that turns one system into the      dynamics later.
-other.                                                         If a family of dynamical systems parametrized by a
-  As an example, consider the discrete dynamical sys-       variable a is not structurally stable, it may still be that
-tem given by the real quadratic polynomial F (x) =          the system with parameter a0 is topologically equiv-
-4 x(1 − x). Suppose we were to make the substitution         alent to all systems with parameter a in some region
-y = −4 x + 2. How could we describe the system in            that contains a0 . A major goal of research into dynam-
-terms of y? Well, if we apply F , then we change x to       ics is to understand not just the qualitative structure
-4 x(1 − x), which means that y = −4 x+2 changes F (x)         of each system in the family, but also the structure of
-to −4 F (x) + 2 = −16 x(1 − x) + 2. But                       the parameter space, that is, how it is divided up into
-          −16 x(1 − x) + 2 = 16 x 2 − 16 x + 2                 such regions of stability. The boundaries that separate
-                                                            these regions form what is called the bifurcation set :
-                             = (−4 x + 2)2 − 2
-                                                            if a0 belongs to this set, then there will be parameters
-                             = y 2 − 2.                     a arbitrarily close to a0 for which the corresponding
-Therefore, the effect of applying the polynomial func-       system has a different qualitative behavior.
-tion F to x is to apply a different polynomial function         A description and classification of structurally stable
-to y, namely Q(y) = y 2 − 2. Since the change of vari-      systems and a classification of possible bifurcations is
-ables from x to −4 x + 2 is continuous and invertible,       not within reach for general dynamical systems. How-
-one says that the functions F and Q are conjugate.          ever, one of the success stories in the subject, holomor-
-   Because F and Q are conjugate, the orbit of any          phic dynamics, studies a special class of dynamical sys-
-x0 under F becomes, after the change of variables,          tems for which many of these goals have been attained.
-the orbit of the corresponding point y0 = −4 x0 + 2          It is time to turn our attention to this class.
+Roughly speaking, this means that there is a continu-
+ous change of variables that turns one system into the
+other.
+  As an example, consider the discrete dynamical sys-
+tem given by the real quadratic polynomial F (x) =
+4 x(1 − x). Suppose we were to make the substitution
+y = −4 x + 2. How could we describe the system in
+terms of y? Well, if we apply F , then we change x to
+4 x(1 − x), which means that y = −4 x+2 changes F (x)
+to −4 F (x) + 2 = −16 x(1 − x) + 2. But
+
+Therefore, the effect of applying the polynomial func-
+tion F to x is to apply a different polynomial function
+to y, namely Q(y) = y 2 − 2. Since the change of vari-
+ables from x to −4 x + 2 is continuous and invertible,
+one says that the functions F and Q are conjugate.
+   Because F and Q are conjugate, the orbit of any
+x0 under F becomes, after the change of variables,
+the orbit of the corresponding point y0 = −4 x0 + 2
 under Q. That is, for every k we have yk = −4 xk +2. The
-two systems are topologically equivalent: if you want to                2   Holomorphic Dynamics
+two systems are topologically equivalent: if you want to
 understand the dynamics of one of them, you can if you
 study the other, since its dynamics will be qualitatively   Holomorphic dynamics is the study of discrete dynam-
-the same.                                                   ical systems where the map to be iterated is a holo-
-   For continuous dynamical systems the notion of           morphic function [I.3 §5.6](/part-01/fundamental-definitions) of the complex numbers
+the same.
+   For continuous dynamical systems the notion of
 equivalence is slightly looser in that we allow a homeo-    [I.3 §1.5](/part-01/fundamental-definitions). Complex numbers are typically denoted by z.
-morphism between two topologically equivalent sys-          In this article, we shall consider iterations of complex
-tems to map one orbit onto another with out respect-         polynomials and rational functions (that is, functions
+morphism between two topologically equivalent sys-
+tems to map one orbit onto another with out respect-
 ing the exact time evolution, but for discrete dynamical    like (z 2 +1)/(z 3 +1) that are ratios of polynomials), but
-systems we must demand that the time evolution is           much of what we shall say about them is true for more
-respected as in the example above: in other words, we       general holomorphic functions, such as exponential
-insist on conjugacy.                                        [III.25](/part-03/the-exponential-and-logarithmic-functions) and trigonometric [III.92](/part-03/trigonometric-functions) functions.
-   The term dynamical system was coined by Stephen             Whenever one restricts attention to a special kind
-Smale in the 1960 s and has taken off since then. Smale       of dynamical system, there will be tools that are spe-
+systems we must demand that the time evolution is
+respected as in the example above: in other words, we
+insist on conjugacy.
+   The term dynamical system was coined by Stephen
+Smale in the 1960 s and has taken off since then. Smale
 evolved the theory of robust systems, also named struc-     cially adapted to that situation. In holomorphic dynam-
 tur ally stable systems, a notion that was introduced in     ics these tools come from complex analysis. When we
-the 1930 s by Alexander A. Andronov and Lev S. Pon-          concentrate on rational functions, there are more spe-
+the 1930 s by Alexander A. Andronov and Lev S. Pon-
 tryagin. A dynamical system is called structurally sta-     cial tools, and if we restrict further to polynomials, then
 ble if all systems sufficiently close to it, belonging to     there are yet others, as we shall see.
+
+497
+some specified family of systems, are in fact topolog-
+ically equivalent to it. We say that they all have the
+same qualitative behavior. An example of the kind of
+family one might consider is the set of all real quad-
+ratic polynomials of the form x 2 + a. This family is
+parametrized by a, and the systems close to a given
+polynomial x 2 + a0 are all the polynomials x 2 + a for
+of structural stability when we discuss holomorphic
+dynamics later.
+If a family of dynamical systems parametrized by a
+variable a is not structurally stable, it may still be that
+the system with parameter a0 is topologically equiv-
+alent to all systems with parameter a in some region
+that contains a0 . A major goal of research into dynam-
+ics is to understand not just the qualitative structure
+of each system in the family, but also the structure of
+the parameter space, that is, how it is divided up into
+−16 x(1 − x) + 2 = 16 x 2 − 16 x + 2
+these regions form what is called the bifurcation set :
+= (−4 x + 2)2 − 2
+if a0 belongs to this set, then there will be parameters
+= y 2 − 2.                     a arbitrarily close to a0 for which the corresponding
+system has a different qualitative behavior.
+A description and classification of structurally stable
+systems and a classification of possible bifurcations is
+not within reach for general dynamical systems. How-
+ever, one of the success stories in the subject, holomor-
+phic dynamics, studies a special class of dynamical sys-
+tems for which many of these goals have been attained.
+It is time to turn our attention to this class.
+2   Holomorphic Dynamics
+ical systems where the map to be iterated is a holo-
+morphic function [I.3 §5.6](/part-01/fundamental-definitions) of the complex numbers
+In this article, we shall consider iterations of complex
+polynomials and rational functions (that is, functions
+much of what we shall say about them is true for more
+general holomorphic functions, such as exponential
+[III.25](/part-03/the-exponential-and-logarithmic-functions) and trigonometric [III.92](/part-03/trigonometric-functions) functions.
+Whenever one restricts attention to a special kind
+of dynamical system, there will be tools that are spe-
+concentrate on rational functions, there are more spe-
 
 $498$
 
@@ -402,16 +538,16 @@ In this section we shall list several common properties of Julia sets. The proof
 
 • The Julia set is the set of points for which the system displays sensitivity to initial conditions, i.e., the chaotic subset of the dynamical system.
 
-502                                                                                           IV. Branches of Mathematics
+502
 
-  • The repelling orbits belong to the Julia set and                  (a)
+  • The repelling orbits belong to the Julia set and
     form a dense subset of the set. That is, any point in
     the Julia set can be approximated arbitrarily well
     by a repelling point. This is the definition origi-
     nally used by Julia. (Of course, the name “Julia set”
     was used only later.)
   • For any point z in the Julia set, the set of iterated
-                 ". nfty
+
     preimages k=1 F −k (z) forms a dense subset of
     the Julia set. This property is used when one is
     making computer pictures of Julia sets.
@@ -423,10 +559,10 @@ In this section we shall list several common properties of Julia sets. The proof
     of Ĉ except at most one or two exceptional points.
     This property demonstrates an extreme sensitivity
     to initial conditions.
-  • If Ω is a union of Fatou components that is com-                                   φ −2           ψ −2
+  • If Ω is a union of Fatou components that is com-
     pletely invariant (that is, F (Ω) = Ω = F −1 (Ω)),
     then the boundary of Ω coincides with the Julia
-    set. This justifies the definition of the Julia set                 (b)
+    set. This justifies the definition of the Julia set
     of a polynomial as the boundary of the attracting
     basin of . nfty. Compare also with figure 2, where the
     attracting basins of Qc30 and Ac0 (. nfty) are examples
@@ -442,23 +578,36 @@ In this section we shall list several common properties of Julia sets. The proof
     of z is mapped bijectively onto F (Uz ), a neighbor-
     hood of F (z). The Julia set in Uz and the Julia set
     in F (Uz ) look alike.
-                                                                 Figure 5 (a) Some equipotentials and external rays R0 (θ)
-All but the last two properties can easily be verified            of Q0 in A0 (. nfty), the set of complex numbers of modulus
-in the example Q0 . In this case the exceptional points          greater than 1. (b) The corresponding equipotentials and
-                                                                 external rays R−2 (θ) of Q−2 in A−2 (. nfty), the set of complex
+All but the last two properties can easily be verified
+in the example Q0 . In this case the exceptional points
 are 0 and . nfty.
-                                                                 numbers not in K−2 = J−2 = [−2, 2]. The external rays that
-                                                                                                 1
-                                                                 are drawn have arguments θ = 12   p, where p = 0, 1, . . . , 11.
 2.7     Böttcher Maps and Potentials
 
 2.7.1    Böttcher Maps
-                                                                   The polynomial Q−2 (z) is not topologically equiv-
-Consider the quadratic polynomial Q−2 (z) = z2 − 2.              alent to Q0 (w) = w 2 , but when z is big enough, it
-If z belongs to the interval [−2, 2], then z 2 belongs to        behaves in a similar way, since 2 is small compared
-the interval [0, 4], so Q−2 (z) also belongs to the inter-       with z2 . We can express this similarity with an appro-
-val [−2, 2]. It follows that this interval is contained in       priate holomorphic change of variables. Indeed, sup-
-the filled Julia set K−2 .                                        pose that z = w + 1/w. Then when w changes to w 2 ,
+Consider the quadratic polynomial Q−2 (z) = z2 − 2.
+If z belongs to the interval [−2, 2], then z 2 belongs to
+the interval [0, 4], so Q−2 (z) also belongs to the inter-
+val [−2, 2]. It follows that this interval is contained in
+the filled Julia set K−2 .
+
+IV. Branches of Mathematics
+(a)
+". nfty
+φ −2
+(b)
+Figure 5 (a) Some equipotentials and external rays R0 (θ)
+of Q0 in A0 (. nfty), the set of complex numbers of modulus
+greater than 1. (b) The corresponding equipotentials and
+external rays R−2 (θ) of Q−2 in A−2 (. nfty), the set of complex
+numbers not in K−2 = J−2 = [−2, 2]. The external rays that
+1
+are drawn have arguments θ = 12   p, where p = 0, 1, . . . , 11.
+The polynomial Q−2 (z) is not topologically equiv-
+alent to Q0 (w) = w 2 , but when z is big enough, it
+behaves in a similar way, since 2 is small compared
+with z2 . We can express this similarity with an appro-
+priate holomorphic change of variables. Indeed, sup-
+pose that z = w + 1/w. Then when w changes to w 2 ,
 
 $IV$ . $14$ .
 
@@ -597,7 +746,7 @@ Conjectures
 
 The above discussion raises an obvious question: we have a good understanding of the hyperbolic components of the complement of ∂M, but are there components that are not hyperbolic? The following
 
-508                                                                                     IV. Branches of Mathematics
+508
 
 conjecture expresses a widely held belief, but it is as
 yet unproved.
@@ -618,50 +767,67 @@ ment of M. The Julia set Jc can in these cases be thought
 of as a “strange repeller”: the dynamics is chaotic and
 the geometry is fractal (except for c = 0).
   The main conjecture about the Mandelbrot set is,
-however, the following.                                       Figure 9 A copy of M within M. The address of the copy is
-                                                              given by the arguments of the two external rays that+ land
-The local connectivity conjecture. The Mandelbrot             at the cusp, the root point of the copy. Here the arguments
-                                                                   3      4
-set is locally connected.                                     are 15 and 15 . Compare with figure 8. The rays are drawn to
-                                                              indicate where the “decorations” should be cut off in order
-   This conjecture, often referred to as MLC, is impor-       to have the bare copy of M.
+however, the following.
+The local connectivity conjecture. The Mandelbrot
+set is locally connected.
+   This conjecture, often referred to as MLC, is impor-
 tant for many reasons. To begin with, it is known that
-it implies the hyperbolicity conjecture. Second, if M is      of degree 2 k , but locally it may behave like a quad-
+it implies the hyperbolicity conjecture. Second, if M is
 locally connected, then ΨM , the inverse of ΦM , which is
-                                                              ratic polynomial. The same is true for a rational func-
 a holomorphic bijection from the set out side the closed
-                                                              tion or an iterate of it. By a quadratic-like mapping we
 unit disk to the complement of the Mandelbrot set, has
-                                                              mean a triple (f , V , W ) where V and W are open sim-
 a continuous extension to the unit circle, and all exter-
-                                                              ply connected domains (that is, connected open sets
 nal rays land in a continuous manner. This would give
-                                                              with out holes), . ar{V} ⊂ W , and f is a holomorphic map
 us a useful parametrization of ∂M. One can then give
-                                                              that maps V onto W with degree 2. (This means that
 a beautifully simple abstract combinatorial description
-                                                              every point in W has two preimages, up to multiplic-
 of M, despite the fact that ∂M is a complicated fractal.
-                                                              ity, in V .) Such a map f has a single critical point ω
 (Mitsuhiro Shishikura has proved that the hausdorff
-                                                              in V , and behaves in many ways like a quadratic poly-
 dimension [III.17](/part-03/dimension) of ∂M is the maximum possible in
-                                                              nomial. The filled Julia set Kf is defined as the set of
 the plane, namely 2.)
-                                                              points z in V for which the iterates f k (z) stay in V for
-                                                              all k ⩾ 0. A dichotomy similar to the one for quadratic
 2.9   Universality of M
-                                                              polynomials holds for quadratic-like mappings as well:
-The Mandelbrot set is remarkably ubiquitous. For ex-          Kf is connected if and only if the critical point ω is
-ample, homeomorphic copies of M appear inside M               contained in Kf . For any quadratic-like mapping with a
-itself, as is apparent from figure 9. Inside other fam-        connected filled Julia set, Douady and Hubbard have
-ilies of holomorphic mappings that depend holomor-            defined a strategy, called straightening, which asso-
-ph ically on some parameter, we again find homeomor-            ciates with the mapping a unique c-value in M. For a
-phic copies of M. For this reason, M is said to be            family of quadratic-like mappings {fλ }λ∈Λ the Mandel-
-universal. Douady and Hubbard have captured the rea-          brot set MΛ is defined as the set of . ambda for which Kf. ambda is
-son behind the phenomenon of universality by defin-            connected. We obtain through straightening a mapping
-ing a notion of a quadratic-like mapping. The kth iter-       Ξ : MΛ → M, which takes . ambda to the uniquely associated
-ate of a quadratic polynomial is globally a polynomial        c-value.
+The Mandelbrot set is remarkably ubiquitous. For ex-
+ample, homeomorphic copies of M appear inside M
+itself, as is apparent from figure 9. Inside other fam-
+ilies of holomorphic mappings that depend holomor-
+ph ically on some parameter, we again find homeomor-
+phic copies of M. For this reason, M is said to be
+universal. Douady and Hubbard have captured the rea-
+son behind the phenomenon of universality by defin-
+ing a notion of a quadratic-like mapping. The kth iter-
+ate of a quadratic polynomial is globally a polynomial
+
+IV. Branches of Mathematics
+Figure 9 A copy of M within M. The address of the copy is
+given by the arguments of the two external rays that+ land
+at the cusp, the root point of the copy. Here the arguments
+3      4
+are 15 and 15 . Compare with figure 8. The rays are drawn to
+indicate where the “decorations” should be cut off in order
+to have the bare copy of M.
+of degree 2 k , but locally it may behave like a quad-
+ratic polynomial. The same is true for a rational func-
+tion or an iterate of it. By a quadratic-like mapping we
+mean a triple (f , V , W ) where V and W are open sim-
+ply connected domains (that is, connected open sets
+with out holes), . ar{V} ⊂ W , and f is a holomorphic map
+that maps V onto W with degree 2. (This means that
+every point in W has two preimages, up to multiplic-
+ity, in V .) Such a map f has a single critical point ω
+in V , and behaves in many ways like a quadratic poly-
+nomial. The filled Julia set Kf is defined as the set of
+points z in V for which the iterates f k (z) stay in V for
+all k ⩾ 0. A dichotomy similar to the one for quadratic
+polynomials holds for quadratic-like mappings as well:
+Kf is connected if and only if the critical point ω is
+contained in Kf . For any quadratic-like mapping with a
+connected filled Julia set, Douady and Hubbard have
+defined a strategy, called straightening, which asso-
+ciates with the mapping a unique c-value in M. For a
+family of quadratic-like mappings {fλ }λ∈Λ the Mandel-
+brot set MΛ is defined as the set of . ambda for which Kf. ambda is
+connected. We obtain through straightening a mapping
+Ξ : MΛ → M, which takes . ambda to the uniquely associated
+c-value.
 
 $IV$ . $14$ .
 

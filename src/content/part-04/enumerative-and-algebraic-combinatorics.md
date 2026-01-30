@@ -1,128 +1,202 @@
 # Enumerative and Algebraic Combinatorics
 
-550                                                                                        IV. Branches of Mathematics
+550
 
-                                                               mathematics. A genuine mathematical fact has to incor-
-IV.18 Enumerative and Algebraic                                porate infinitely many facts, and the generic enum era-
-      Combinatorics                                            tion problem is to enumerate not just one set but all
-                                                               the sets in an infinite family.
-         Doron Zeilberger
-                                                                  To be precise, given an infinite sequence of sets
-                                                               {An }. nftyn=0 , where each set An consists of objects sat-
-                    1   Introduction
-                                                               i sfy ing some combinatorial specifications that depend
-Enumeration, otherwise known as counting, is the old-          on the parameter n, answer the question: How many
-est mathematical subject, while algebraic combinator-          elements does An have?
-ics is one of the youngest. Some cynics claim that alge-          In a moment we shall look at some examples. But
-braic combinatorics is not really a new subject but            before we can learn how to answer this kind of ques-
-just a new name given to enumerative combinator-               tion, let us consider a meta-question: What is an
-ics in order to enhance its (former) poor image, but           answer?
-algebraic combinatorics is in fact the synthesis of two           This was posed, and beautifully answered, by Herbert
-opposing trends: abstraction of the concrete and con-          Wilf. To give some background to Wilf’s meta-answer,
-cretization of the abstract. The former trend dominated        let us examine answers to some famous instances of
-the first half of the twentieth century, starting with          enumeration questions.
-Hilbert’s “theological” proof of the fundamental the-             In the list below, when we are given a set An (which
-orem of invariants, in which he showed by abstract             will change from example to example), we shall write an
-means that certain invariants existed, but not how to          instead of |An |. That is, an will stand for the number
-find them. The latter trend is dominating con tempo-             of elements of An .
+IV.18 Enumerative and Algebraic
+
+Enumeration, otherwise known as counting, is the old-
+est mathematical subject, while algebraic combinator-
+ics is one of the youngest. Some cynics claim that alge-
+braic combinatorics is not really a new subject but
+just a new name given to enumerative combinator-
+ics in order to enhance its (former) poor image, but
+algebraic combinatorics is in fact the synthesis of two
+opposing trends: abstraction of the concrete and con-
+cretization of the abstract. The former trend dominated
+the first half of the twentieth century, starting with
+Hilbert’s “theological” proof of the fundamental the-
+orem of invariants, in which he showed by abstract
+means that certain invariants existed, but not how to
+find them. The latter trend is dominating con tempo-
 rary mathematics, thanks to the omnipresence of The
-Mighty Computer.                                               (i) I Ching. If An is the set of all subsets of {1, . . . , n},
-   The abstraction trend consists of the categorization,          then an = 2 n .
-conceptualizati on, structuralizati on, and fancification         (ii) Rabbi Levi Ben Gerson. If An is the set of permu-
-(in short, “bourbakization” [VI.96](/part-06/nicolas-bourbaki-1935)) of mathematics.              tat i ons [III.68](/part-03/permutation-groups) on {1, . . . , n}, then an = n!.
-Enumeration did not escape this trend, and in the hands        (iii) Catalan. If An is the set of legal bracketings with n
-of such giants as Gian-Carlo Rota and Richard Stanley             opening brackets and n closing brackets, then an =
-in America and Marco Schützenberger and Dominique                 (2 n)!/(n + 1)!n!. (A legal bracketing is a sequence of
-Foata in France, classical, enumerative combinator-               n opening brackets and n closing brackets such that
-ics became more conceptual, structural, and algebraic.            at no point in the sequence has the number of closing
-However, as algebraic combinatorics has established               brackets exceeded the number of opening brackets.
-itself as a fully fledged and separate mathematical spe-           For instance, when n = 2 the legal bracketings are
-ciality, the more recent trend toward the explicit, con-          [ ][ ] and [ [ ] ].)
-crete, and constructive has left its mark as well. It has      (iv) leonardo of pisa [VI.6](/part-06/leonardo-of-pisa-known-as-fibonacci-vi57-christian-felix-klein-18491925). Let An be the set of
-revealed that many algebraic structures have hidden               finite sequences that consist only of 1 s and 2 s and
-combinatorial underpinnings; the attempts to unearth              that sum to n. (For example, when n = 4 the pos-
-these have led to many fascinating discoveries and                sible sequences are 1111, 112, 121, 211, and 22.)
-unsolved problems.                                                In this case, we have three equivalent answers as
-                                                                  follows.
+Mighty Computer.
+   The abstraction trend consists of the categorization,
+conceptualizati on, structuralizati on, and fancification
+(in short, “bourbakization” [VI.96](/part-06/nicolas-bourbaki-1935)) of mathematics.
+Enumeration did not escape this trend, and in the hands
+of such giants as Gian-Carlo Rota and Richard Stanley
+in America and Marco Schützenberger and Dominique
+Foata in France, classical, enumerative combinator-
+ics became more conceptual, structural, and algebraic.
+However, as algebraic combinatorics has established
+itself as a fully fledged and separate mathematical spe-
+ciality, the more recent trend toward the explicit, con-
+crete, and constructive has left its mark as well. It has
+revealed that many algebraic structures have hidden
+combinatorial underpinnings; the attempts to unearth
+these have led to many fascinating discoveries and
+unsolved problems.
 1.1   Enumeration
-                                                                    (i)                     √The fundamental theorem of enumeration, indepen-                                  1      1+ 5 n+1   1− 5 n+1
-                                                                            an = √                −          .
-dently discovered by several anonymous cave dwellers,                              5       2          2
-states that                                                       (ii)
-                                                                                                        
-                     |A| =     1.                                                              
-                                                                                               n/2!
-                                                                                                     n−k
-                              a∈A                                                      an =                .
-                                                                                              k=0
-                                                                                                      k
+The fundamental theorem of enumeration, indepen-
+dently discovered by several anonymous cave dwellers,
+states that
 In words: the number of elements in A is the sum over
-all elements of A of the constant function 1.                     (iii) an = Fn+1 , where Fn is the sequence defined by
-   While this formula is still useful after all these years,            the recurrence Fn = Fn−1 + Fn−2 , subject to the
-enumerating specific finite sets is no longer considered                  initial conditions F0 = 0, F1 = 1.
+all elements of A of the constant function 1.
+   While this formula is still useful after all these years,
+enumerating specific finite sets is no longer considered
 
-IV.18.    Enumerative and Algebraic Combinatorics                                                                        551
+IV. Branches of Mathematics
+mathematics. A genuine mathematical fact has to incor-
+porate infinitely many facts, and the generic enum era-
+Combinatorics
+the sets in an infinite family.
+Doron Zeilberger
+To be precise, given an infinite sequence of sets
+{An }. nftyn=0 , where each set An consists of objects sat-
+1   Introduction
+i sfy ing some combinatorial specifications that depend
+on the parameter n, answer the question: How many
+elements does An have?
+In a moment we shall look at some examples. But
+before we can learn how to answer this kind of ques-
+tion, let us consider a meta-question: What is an
+answer?
+This was posed, and beautifully answered, by Herbert
+Wilf. To give some background to Wilf’s meta-answer,
+let us examine answers to some famous instances of
+enumeration questions.
+In the list below, when we are given a set An (which
+will change from example to example), we shall write an
+instead of |An |. That is, an will stand for the number
+of elements of An .
+(i) I Ching. If An is the set of all subsets of {1, . . . , n},
+then an = 2 n .
+(ii) Rabbi Levi Ben Gerson. If An is the set of permu-
+tat i ons [III.68](/part-03/permutation-groups) on {1, . . . , n}, then an = n!.
+(iii) Catalan. If An is the set of legal bracketings with n
+opening brackets and n closing brackets, then an =
+(2 n)!/(n + 1)!n!. (A legal bracketing is a sequence of
+n opening brackets and n closing brackets such that
+at no point in the sequence has the number of closing
+brackets exceeded the number of opening brackets.
+For instance, when n = 2 the legal bracketings are
+[ ][ ] and [ [ ] ].)
+(iv) leonardo of pisa [VI.6](/part-06/leonardo-of-pisa-known-as-fibonacci-vi57-christian-felix-klein-18491925). Let An be the set of
+finite sequences that consist only of 1 s and 2 s and
+that sum to n. (For example, when n = 4 the pos-
+sible sequences are 1111, 112, 121, 211, and 22.)
+In this case, we have three equivalent answers as
+follows.
+(i)                     . qrt{1}
+an = √                −          .
+5
+
+    
+|A| =     1.                                                              
+n/2!
+n−k
+a∈A                                                      an =                .
+k=0
+k
+(iii) an = Fn+1 , where Fn is the sequence defined by
+the recurrence Fn = Fn−1 + Fn−2 , subject to the
+initial conditions F0 = 0, F1 = 1.
 
-(v) cayley [VI.46](/part-06/arthur-cayley-18211895). If An is the set of labeled trees on            Traditionally, the main customers of enumeration
-  n vertices, then an = nn−2 . (A tree is a connected             were probability and statistics. In fact, discrete prob-
-  graph [III.34] with out cycles, and it is labeled if the         ability is almost synonymous with enumerative com-
-  vertices have distinct names.)                                  binatorics, since the probability of an event E occur-
-(vi) If An is the set of labeled simple graphs with n             ring is the ratio of the number of successful cases
-  vertices, then an = 2 n(n−1)/2 . (A graph is simple if it        divided by the total number. Also, statistical physics is,
-  has neither loops nor multiple edges.)                          by and large, weighted enumeration of lattice models
-(vii) If An is the set of labeled connected simple graphs         (see phase transitions and universality [IV.25]).
-  on n vertices (that is, graphs for which every vertex           About fifty years ago, another important customer
-  can be reached from every other by a path), then an             came along: computer science. Here one is interested in
-  is n! times the coefficient of x n in the power-series            the computational complexity [IV.20](/part-04/computational-complexity) of algorithms:
-  expansion of                                                    that is, in the number of steps it takes to execute them.
-                           . nfty
-                            2 k(k−1)/2
-                    log                  xk .                                             2     Methods
-                           k=0
-                                 k!
+IV.18.    Enumerative and Algebraic Combinatorics
 
-(viii) If An is the set of Latin squares of size n (n . imes n         The following tools are indispensable to the enum era-
-  matrices each of whose rows and columns is a per-               tive combinatorialist.
+(v) cayley [VI.46](/part-06/arthur-cayley-18211895). If An is the set of labeled trees on
+  n vertices, then an = nn−2 . (A tree is a connected
+  graph [III.34] with out cycles, and it is labeled if the
+  vertices have distinct names.)
+(vi) If An is the set of labeled simple graphs with n
+  vertices, then an = 2 n(n−1)/2 . (A graph is simple if it
+  has neither loops nor multiple edges.)
+(vii) If An is the set of labeled connected simple graphs
+  on n vertices (that is, graphs for which every vertex
+  can be reached from every other by a path), then an
+  is n! times the coefficient of x n in the power-series
+  expansion of
+
+(viii) If An is the set of Latin squares of size n (n . imes n
+  matrices each of whose rows and columns is a per-
   mutation of {1, . . . , n}), then not even a good approx-
-  imation for an is known.                                        2.1   Decomposition
+  imation for an is known.
 
-                                                                            |A ∪ B| = |A| + |B|       (if A ∩ B = ∅).
   In 1982, Wilf defined an answer as follows.
-                                                                  In words: the size of the union of two disjoint sets
-Definition. An answer is a polynomial-time algorithm               equals the sum of their sizes.
+Definition. An answer is a polynomial-time algorithm
 (in n) for computing an .
 
-   Wilf arrived at this definition after he refereed a                                 |A . imes B| = |A| · |B|.
-paper proposing a “formula” for the answer to ques-               In words: the size of the Cartesian product of two sets
-tion (viii), and realized that its “computational com-            (that is, the set of all pairs (a, b), where a ∈ A and
-plexity” exceeds that of the caveman’s formula of direct          b ∈ B) equals the product of their sizes.
+   Wilf arrived at this definition after he refereed a
+paper proposing a “formula” for the answer to ques-
+tion (viii), and realized that its “computational com-
+plexity” exceeds that of the caveman’s formula of direct
 counting.
-   What is a “formula”? It is really an algorithm that                                    |AB | = |A||B| .
+   What is a “formula”? It is really an algorithm that
 inputs n and outputs an . For example, an = 2 n is
-                                                                  In words: the size of the set of functions from B to A
 shorthand for the recursive algorithm
-                                                                  equals the size of A raised to the power the size of B.
-         if n = 0 then an = 1,                                    For example, the number of 0–1 sequences of length n,
-         else an = 2 · an−1 ,                                     which can be viewed as functions from {1, 2, . . . , n} to
-                                                                  {0, 1}, equals 2 n .
+
 which takes O(n) steps. However, using the algorithm
 
-         if n = 0 then an = 1,                                    2.2   Refinement
-         else if n is odd, then an = 2 an−1 ,                      If                  .
-         else an = a2 n/2                                                       An =       Bnk    (disjoint union),
-                                                                                      k
 takes O(log n) steps, much faster than Wilf demands.
-In other cases, like enumerating self-avoiding walks,             and if bnk , the number of elements of Bnk , is “nice” (and
-the best algorithm known is exponential, O(c n ), and             even if it is not), then
-                                                                                               
-any lowering of the constant c is a major advance. (A                                     an =   bnk .
-self-avoiding walk is a sequence of points x0 , x1 , . . . , xn                                   k
+In other cases, like enumerating self-avoiding walks,
+the best algorithm known is exponential, O(c n ), and
+any lowering of the constant c is a major advance. (A
+self-avoiding walk is a sequence of points x0 , x1 , . . . , xn
 
-in the two-dimensional integer lattice, where each xi             The idea here is that it may be possible to take a set An
-is one of the four neighbors of xi−1 and no two of                that is difficult to count, and split it up into disjoint sets
-the xi are equal.) Notwithstanding these exceptions,              Bnk that are easier to count. For example, consider the
-Wilf’s meta-answer is a very useful general guideline             set An of example (iv). This can be split into a disjoint
-for evaluating answers.                                           union of subsets Bnk , where each Bnk consists of the
+in the two-dimensional integer lattice, where each xi
+is one of the four neighbors of xi−1 and no two of
+the xi are equal.) Notwithstanding these exceptions,
+Wilf’s meta-answer is a very useful general guideline
+for evaluating answers.
+
+551
+Traditionally, the main customers of enumeration
+were probability and statistics. In fact, discrete prob-
+ability is almost synonymous with enumerative com-
+binatorics, since the probability of an event E occur-
+ring is the ratio of the number of successful cases
+divided by the total number. Also, statistical physics is,
+by and large, weighted enumeration of lattice models
+(see phase transitions and universality [IV.25]).
+About fifty years ago, another important customer
+came along: computer science. Here one is interested in
+the computational complexity [IV.20](/part-04/computational-complexity) of algorithms:
+that is, in the number of steps it takes to execute them.
+. nfty
+ 2 k(k−1)/2
+log                  xk .                                             2     Methods
+k=0
+k!
+The following tools are indispensable to the enum era-
+tive combinatorialist.
+2.1   Decomposition
+|A ∪ B| = |A| + |B|       (if A ∩ B = ∅).
+In words: the size of the union of two disjoint sets
+equals the sum of their sizes.
+|A . imes B| = |A| · |B|.
+In words: the size of the Cartesian product of two sets
+(that is, the set of all pairs (a, b), where a ∈ A and
+b ∈ B) equals the product of their sizes.
+|AB | = |A||B| .
+In words: the size of the set of functions from B to A
+equals the size of A raised to the power the size of B.
+if n = 0 then an = 1,
+else an = 2 · an−1 ,
+{0, 1}, equals 2 n .
+if n = 0 then an = 1,
+else if n is odd, then an = 2 an−1 ,
+else an = a2 n/2
+k
+and if bnk , the number of elements of Bnk , is “nice” (and
+even if it is not), then
+
+an =   bnk .
+k
+The idea here is that it may be possible to take a set An
+that is difficult to count, and split it up into disjoint sets
+Bnk that are easier to count. For example, consider the
+set An of example (iv). This can be split into a disjoint
+union of subsets Bnk , where each Bnk consists of the
 
 $552$
 
@@ -180,147 +254,207 @@ $\infty$
 A power series n $= {}^{0}$ a n x n is called formal when one sheds its analytical connotation as a Taylor series of a function, and there by obviates the need to worry about convergence. For example, the sum n $= {}^{0}$ n! n! x n is perfectly legal as a formal power series even though it converges only when $x = 0$ . As for weight enumerators, consider the following situation. Suppose that we want to study the age distribution of a finite population. One way of doing this is to ask $121$ questions. For each $i$ between $0$ and $120$ , we ask those whose age is i to raise their hand.
 Then we count each of these age-groups one by one, compiling
 
-IV.18.   Enumerative and Algebraic Combinatorics                                                                           553
+IV.18.   Enumerative and Algebraic Combinatorics
 
-a table of ai (0 ⩽ i ⩽ 120), and finally computing the          attribute γ on A . imes B by letting γ(a, b) equal α(a)+β(b),
-generating function                                            then
-                                                                                      
-                               
-                               120
-                                                                        |A . imes B|x =          x γ(a, b)
-                     f (x) =         ai x i .
-                                                                                       (a, b)∈A . imes B
-                               i=0                                                        
-But if the size of the population is much less than 120, it                        =               x α(a)+β(b)
-                                                                                       (a, b)∈A . imes B
-is much more efficient, because fewer questions would                                       
-be needed, to ask every person their age and then to                               =               x α(a) · x β(b)
-declare the weight of a person of age i to be x i . Then                               (a, b)∈A . imes B
-                                                                                        
-the generating function is the sum of these weights.                               =             x α(a) · x β(b)
-That is,                  
-                                                                                       a∈A b∈B
-                                                                                                          
-                 f (x) =       x age(person) ,                                     =          x α(a) ·           ·x β(b)
-                        persons
-                                                                                        a∈A                b∈B
+a table of ai (0 ⩽ i ⩽ 120), and finally computing the
+generating function
+But if the size of the population is much less than 120, it
+is much more efficient, because fewer questions would
+be needed, to ask every person their age and then to
+declare the weight of a person of age i to be x i . Then
+the generating function is the sum of these weights.
+That is,
+
 which is a natural extension of the caveman’s formula
-                                                                                   = |A|x · |B|x .
 of naive counting. Once we know f (x) we can eas-
-ily compute statistically interesting quantities, like the       Let us see how these facts can be useful. First, con-
-average and the variance, which work out to be μ =             sider the infinite set A, of all (finite) sequences of 1 s
-f (1)/f (1) and σ 2 = f (1)/f (1)+μ −μ 2 , respectively.       and 2 s, and let the attribute be “sum of entries.” Then
-   The general scenario is that we have an interesting         the weight of 1221 is x 6 , and, in general, the weight of
+ily compute statistically interesting quantities, like the
+average and the variance, which work out to be μ =
+f (1)/f (1) and σ 2 = f (1)/f (1)+μ −μ 2 , respectively.
+   The general scenario is that we have an interesting
 (finite or infinite) combinatorial set, let us call it A, and    a sequence (a1 · · · ar ) is x a1 +···+ak . The set A can be
-a certain numerical attribute, α : A → N, which assigns        naturally decomposed as
+a certain numerical attribute, α : A → N, which assigns
 to each element of A a natural number. (Here we allow
-                                                                                   A = {φ} ∪ 1 A ∪ 2 A,
 0 as a natural number.) Then the weight enumerator of
-A with respect to α is defined by the formula                   where φ is the empty word, and 1 A is short for the set
-                            
-                    f (x) =     x α(a) .                       of all sequences obtained by prefixing a 1 to members
-                              a∈A                              of A, and analogously for 2 A. Applying | · |x , we get
+A with respect to α is defined by the formula
 We shall also use the notation |A|x for f (x). Obviously,
-                                                                               |A|x = 1 + x|A|x + x 2 |A|x ,
 this equals
-                        . nfty
-                                                              which, in this simple case, can be solved explicitly, to
-                           an x n ,
-                                                               yield, once again
-                        n=0
 
-where an is the number of members of A whose                                                       1
-                                                                                    |A|x =               .
-α equals n. Hence if we have some kind of explicit                                            1 − x − x2
-expression for f (x), we immediately have an “explicit”           A legal bracketing L is either empty (in which case
-expression for the actual sequence an assuming, that           the weight is x 0 = 1), or else, as we have already
-is, that one considers the operations needed to calcu-         noted, it can be written as L = [L1 ]L2 , where L1 and
-late the nth coefficient an of f (x) as constituting an          L2 are (shorter) legal bracketings. Conversely, whenever
+where an is the number of members of A whose
+α equals n. Hence if we have some kind of explicit
+expression for f (x), we immediately have an “explicit”
+expression for the actual sequence an assuming, that
+is, that one considers the operations needed to calcu-
+late the nth coefficient an of f (x) as constituting an
 explicit expression for an . Even if one does not, then it     L1 and L2 are legal bracketings, so is [L1 ]L2 . Let L be
 is still often possible to get a “nice” formula for an , or,   the (infinite) set of all legal bracketings, and define the
-failing this, to extract the asymptotics.                      weight of a legal bracketing to be x n , where n is the
-   The fundamental operations for naive counting also          number of bracket pairs [ ]. For example, the weight of
+failing this, to extract the asymptotics.
+   The fundamental operations for naive counting also
 hold for weighted counting: just replace | · | by | · |x .     [ ] is x and the weight of [ [ ] [ [ ] [ ] ] ] is x 5 . The set L
-For example,                                                   decomposes naturally as follows:
-                 |A ∪ B|x = |A|x + |B|x                                            L = {φ} ∪ ([L] × L),
+For example,
+
 (if A ∩ B = ∅) and
-                                                               where φ denotes the empty word and [L] × L denotes
-                 |A . imes B|x = |A|x · |B|x .                      the set of all words of the form [L1 ]L2 with L1 and
-Let us quickly see why the second of these is true. If         L2 in L. This leads to the nonlinear (in fact, quadratic)
-the members of A and B are endowed with numeri-                equation
-cal attributes α and β, respectively, and one defines an                              |L|x = 1 + x|L|2 x ,
 
-554                                                                                                 IV. Branches of Mathematics
+Let us quickly see why the second of these is true. If
+the members of A and B are endowed with numeri-
+cal attributes α and β, respectively, and one defines an
 
-which yields, thanks to the Babylonians, the explicit                  be its generating function. If we know the “form” of an ,
-expression                               √                             we can often deduce the form of f (x) (and vice versa).
-                                     1 − 1 − 4 x
-                          |L|x =                  .                     (i) If an is a polynomial in n, then f (x) has the form
-                                          2 x
-This in turn gives us the answer to example (iii) above,                                                   P (x)
-                                                                                              f (x) =              ,
-via Newton’s binomial theorem.                                                                          (1 − x)d+1
-   Legal bracketings are equivalent to so-called binary                      where P is a polynomial function and d is the
-trees, that is, unlabeled ordered trees where every                          degree of the polynomial that describes an .
-vertex has either no children or exactly two chil-                      (ii) If an is a quasi-polynomial in n (i.e., there exists an
-dren. For instance, when we write the legal bracketing                       integer N such that for each r = 0, . . . , N − 1, the
-[ [ ] [ ] ] [ [ ] ] [ [ ] [ [ ] ] ] in the form [L1 ]L2 we can think         function m → am N+r is a polynomial in m), then,
-of [ [ ] [ ] ] [ [ ] ] [ [ ] [ [ ] ] ] as the parent, with children          for some (finite) sequence of integers d1 , d2 , . . .
-L1 = [ ] [ ] and L2 = [ [ ] ] [ [ ] [ [ ] ] ]. Then L1 ’s chil-              and some polynomial function P ,
-dren are φ and [ ], while L2 ’s are [ ] and [ [ ] [ [ ] ] ]. This                                        P (x)
-process continues until we have reached φ down every                            f (x) =                                             .
-                                                                                          (1 − x)d1 (1 − x 2 )d2 (1 − x 3 )d3 · · ·
-branch of the family.                                                  (iii) If an is C-recursive, that is, if it satisfies a linear
-   If we try to count penta-trees instead, where each ver-                   recurrence equation with constant coefficients
+553
+attribute γ on A . imes B by letting γ(a, b) equal α(a)+β(b),
+then
+
+
+120
+|A . imes B|x =          x γ(a, b)
+f (x) =         ai x i .
+(a, b)∈A . imes B
+i=0                                                        
+=
+(a, b)∈A . imes B
+
+=
+(a, b)∈A . imes B
+ 
+=
+
+a∈A b∈B
+                 
+f (x) =
+persons
+a∈A                b∈B
+= |A|x · |B|x .
+Let us see how these facts can be useful. First, con-
+sider the infinite set A, of all (finite) sequences of 1 s
+and 2 s, and let the attribute be “sum of entries.” Then
+the weight of 1221 is x 6 , and, in general, the weight of
+naturally decomposed as
+A = {φ} ∪ 1 A ∪ 2 A,
+where φ is the empty word, and 1 A is short for the set
+
+f (x) =     x α(a) .                       of all sequences obtained by prefixing a 1 to members
+a∈A                              of A, and analogously for 2 A. Applying | · |x , we get
+|A|x = 1 + x|A|x + x 2 |A|x ,
+. nfty
+                                      which, in this simple case, can be solved explicitly, to
+an x n ,
+yield, once again
+n=0
+1
+|A|x =               .
+1 − x − x2
+A legal bracketing L is either empty (in which case
+the weight is x 0 = 1), or else, as we have already
+noted, it can be written as L = [L1 ]L2 , where L1 and
+L2 are (shorter) legal bracketings. Conversely, whenever
+weight of a legal bracketing to be x n , where n is the
+number of bracket pairs [ ]. For example, the weight of
+decomposes naturally as follows:
+|A ∪ B|x = |A|x + |B|x
+where φ denotes the empty word and [L] × L denotes
+|A . imes B|x = |A|x · |B|x .
+L2 in L. This leads to the nonlinear (in fact, quadratic)
+equation
+|L|x = 1 + x|L|2 x ,
+
+554
+
+which yields, thanks to the Babylonians, the explicit
+expression
+This in turn gives us the answer to example (iii) above,
+via Newton’s binomial theorem.
+   Legal bracketings are equivalent to so-called binary
+trees, that is, unlabeled ordered trees where every
+vertex has either no children or exactly two chil-
+dren. For instance, when we write the legal bracketing
+[ [ ] [ ] ] [ [ ] ] [ [ ] [ [ ] ] ] in the form [L1 ]L2 we can think
+of [ [ ] [ ] ] [ [ ] ] [ [ ] [ [ ] ] ] as the parent, with children
+L1 = [ ] [ ] and L2 = [ [ ] ] [ [ ] [ [ ] ] ]. Then L1 ’s chil-
+dren are φ and [ ], while L2 ’s are [ ] and [ [ ] [ [ ] ] ]. This
+process continues until we have reached φ down every
+branch of the family.
+   If we try to count penta-trees instead, where each ver-
 tex may only have exactly zero or five children, then the
-                                                                                  an = c1 an−1 + c2 an−2 + · · · + cd an−d
 generating function, alias weight-enumerator, satisfies
-the quintic equation                                                        (a good example is the Fibonacci sequence), then
-                                                                            f (x) is a rational function of x: that is, f (x) =
-                          f = x + f 5,
-                                                                            P (x)/Q(x), where P and Q are polynomials.
-which, according to abel [VI.33](/part-06/niels-henrik-abel-18021829) and galois [VI.41](/part-06/variste-galois-18111832), is                (iv) If an satisfies a linear recurrence equation of the
-not solvable by radicals (see the insolubility of the                       form
+the quintic equation
+which, according to abel [VI.33](/part-06/niels-henrik-abel-18021829) and galois [VI.41](/part-06/variste-galois-18111832), is
+not solvable by radicals (see the insolubility of the
 quintic [V.21](/part-05/the-insolubility-of-the-quintic)). However, solvability by radicals is not
-everything. More than 200 years ago, lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813)                       c0 (n)an = c1 (n)an−1 + c2 (n)an−2
-devised a beautiful and extremely useful formula for                                                           + · · · + cd (n)an−d ,
+everything. More than 200 years ago, lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813)
+devised a beautiful and extremely useful formula for
 extracting the coefficients of the generating function
-                                                                            where the coefficients ci (n) are polynomial in n,
 from the equation it satisfies, now called the Lagrange
-                                                                            then it is said to be P-recursive. (For example, an =
 in version formula. Using it one can easily show that the
-                                                                            n! is P-recursive since we have the recurrence an =
 number of complete k-ary trees with (k−1)m+1 leaves
-                                                                            nan−1 .) If this is the case, then f (x) is D-finite,
 is
-                         (km)!                                              which means that it satisfies a linear differential
-                                     .                                      equation with polynomial coefficients (in x).
-                  ((k − 1)m + 1)!m!
+
   A multivariate generalization of the Lagrange inver-
-                                                                         In the case of an = n! the recurrence an = nan−1 is
 sion formula, discovered by the great Bayesian proba-
-                                                                       first order. A natural example of a P-recursive sequence
 bilist I. J. Good, enables one to enumerate colored trees
-                                                                       satisfying a higher-order linear recurrence with polyno-
 and many other extensions.
-                                                                       mial coefficients is the sequence that counts the num-
-                                                                       ber of involutions on {1, . . . , n}. (An involution is a
 3.1   Enumeration Ansatzes
-                                                                       permutation that equals its inverse.) Let us call this
-If one wants to turn enumerative combinatorics into                    number wn . The sequence (wn ) satisfies the recurrence
-a theory rather than a collection of solved problems,                  relation
-one needs to introduce classification, and enumer-                                     wn = wn−1 + (n − 1)wn−2 .
-ation paradigms for counting sequences. But since                      This recurrence follows from the fact that in the per-
-“paradigm” is such a pretentious word, let us use the                  mutation n belongs either to a 1-cycle or to a 2-cycle.
-much humbler German word “ansatz,” which roughly                       The former case accounts for wn−1 of the involutions,
-means “form of solution.”                                              and the latter for (n−1)wn−2 of them. (There are n − 1
+If one wants to turn enumerative combinatorics into
+a theory rather than a collection of solved problems,
+one needs to introduce classification, and enumer-
+ation paradigms for counting sequences. But since
+“paradigm” is such a pretentious word, let us use the
+much humbler German word “ansatz,” which roughly
+means “form of solution.”
    Let (an ). nfty
-            n=0 be a sequence, and let                                 ways of choosing the cycle-mate, i, say, of n, and delet-
-                                 . nfty
-                                                                      ing the resulting cycle leaves an involution of the n − 2
-                       f (x) =         an x n
-                                 n=0
-                                                                       elements {1, . . . , i − 1, i + 1, . . . , n − 1}.)
+
+IV. Branches of Mathematics
+be its generating function. If we know the “form” of an ,
+. qrt{1} − 1 − 4 x
+|L|x =                  .                     (i) If an is a polynomial in n, then f (x) has the form
+2 x
+P (x)
+f (x) =              ,
+(1 − x)d+1
+where P is a polynomial function and d is the
+degree of the polynomial that describes an .
+(ii) If an is a quasi-polynomial in n (i.e., there exists an
+integer N such that for each r = 0, . . . , N − 1, the
+function m → am N+r is a polynomial in m), then,
+for some (finite) sequence of integers d1 , d2 , . . .
+and some polynomial function P ,
+P (x)
+f (x) =
+(1 − x)d1 (1 − x 2 )d2 (1 − x 3 )d3 · · ·
+(iii) If an is C-recursive, that is, if it satisfies a linear
+recurrence equation with constant coefficients
+an = c1 an−1 + c2 an−2 + · · · + cd an−d
+(a good example is the Fibonacci sequence), then
+f (x) is a rational function of x: that is, f (x) =
+f = x + f 5,
+P (x)/Q(x), where P and Q are polynomials.
+(iv) If an satisfies a linear recurrence equation of the
+form
+c0 (n)an = c1 (n)an−1 + c2 (n)an−2
++ · · · + cd (n)an−d ,
+where the coefficients ci (n) are polynomial in n,
+then it is said to be P-recursive. (For example, an =
+n! is P-recursive since we have the recurrence an =
+nan−1 .) If this is the case, then f (x) is D-finite,
+(km)!                                              which means that it satisfies a linear differential
+.                                      equation with polynomial coefficients (in x).
+((k − 1)m + 1)!m!
+In the case of an = n! the recurrence an = nan−1 is
+first order. A natural example of a P-recursive sequence
+satisfying a higher-order linear recurrence with polyno-
+mial coefficients is the sequence that counts the num-
+ber of involutions on {1, . . . , n}. (An involution is a
+permutation that equals its inverse.) Let us call this
+number wn . The sequence (wn ) satisfies the recurrence
+relation
+wn = wn−1 + (n − 1)wn−2 .
+This recurrence follows from the fact that in the per-
+mutation n belongs either to a 1-cycle or to a 2-cycle.
+The former case accounts for wn−1 of the involutions,
+and the latter for (n−1)wn−2 of them. (There are n − 1
+n=0 be a sequence, and let
+. nfty
+                                     ing the resulting cycle leaves an involution of the n − 2
+f (x) =         an x n
+n=0
+elements {1, . . . , i − 1, i + 1, . . . , n − 1}.)
 
 $IV$ . $18$ .
 
@@ -383,74 +517,120 @@ q
 
 $i = 0i = 0$
 
-556                                                                                          IV. Branches of Mathematics
+556
 
-Using the algebraic identity 1 + y = (1 − y 2 )/(1 − y),           All we need to do is to take the combinatorics out of
-we have                                                            the closet, and make it explicit. The plus sign turns
-      . nfty
-                       . nfty
-                                                                  into (disjoint) union, the multiplication sign becomes
-                          1 − q2 i
-          (1 + qi ) =                                              Cartesian product, and induction turns into recursion.
-      i=0               i=0
-                              1 − qi
-
-. nfty                              But what about the combinatorial counterpart of the
-                                              2 i
-                                   i=0 (1 − q )                    minus sign? In 1982, Garsia and Steven Milne filled this
-                   = 
-. nfty                 
-. nfty
-                          i=0 (1 − q )    i=0 (1 − q
-                                    2 i               2 i+1 )
-                                                                   gap by producing an ingenious “involution principle”
-                        . nfty
-                                 1                                that enables one to translate the implication
-                   =                    .
-                              1 − q2 i+1
-                        i=0                                                a=b     and c = d      ⇒    a−c =b−d
-Hence g(q) = f (q), and the identity o(n) = d(n)                   into a bijective argument, in the sense that if C ⊂ A and
-follows by extracting the coefficient of qn .                        D ⊂ B, and there are natural bijections f : A → B and
-   For a very long time, these kinds of manipulation               g : C → D establishing that |A| = |B|, and |C| = |D|,
-were considered to belong to the realm of analysis,                then it is possible to construct an explicit bijection
-and in order to justify the manipulations of the infi-              between A\C and B\D. Let us define it in terms of peo-
-nite series and products, one talked about the “region             ple. Suppose that in a certain village all the adults are
-of convergence,” usually |q| < 1, and every step had               married, with the result that there is a natural bijec-
-to be justified by the appropriate analytical theorem.              tion from the set of married men to the set of mar-
-Only relatively recently did people come to realize that           ried women, m → Wife Of (m), with its inverse w →
-no analysis need be involved: everything makes sense               Husband Of (w). In addition, some of the people have
-in the completely elementary and much more rigorous                extramarital affairs, but only one per person, and all
-(from the philosophical viewpoint) algebra of formal               within the village. There is a natural bijection from the
-power series. One still needs to worry about conver-               set of cheating men to the set of cheating women, called
-gence, so as to exclude, for example, an infinite product           m → Mi stress Of (m), with its inverse w → Lover Of (w).
+Using the algebraic identity 1 + y = (1 − y 2 )/(1 − y),
+we have
 
 . nfty
-like i=0 (1 + x), but the notion of convergence in the             It follows that there are as many faithful men as there
-ring of formal power series is much more user-friendly             are faithful women. But how do we match them up?
-than its analytical namesake.                                      (One might imagine, for example, that each faithful man
-   Even though invoking analysis was a red herring,                wants a faithful woman to go to church with him.)
-Euler’s proof, while purely algebraic and elementary,                 Here is how it is done. A faithful man first asks his
-is nevertheless still manipulatorics. It would be much             wife to come with him. If she is faithful, she agrees. If
-nicer to find a direct bijection between the sets Dis(n)            she is not, she has a lover, and that lover has a wife. So
-and Odd(n). Such a bijection was given by Glaisher.                she tells her husband: “Sorry, hubby, I am going to the
-Given a distinct partition, write each of its parts as             pub with my lover, but my lover’s wife may be free.” If
-2 r · s, where s is odd, and replace it by 2 r copies of s.          this happens, then the man asks the wife of the lover
-(For example, 12 = 4 · 3, so we would replace 12 by                of his wife to go with him, and if she is faithful, she
-3 + 3 + 3 + 3.) The output is obviously a partition of the         agrees. If she is not he keeps asking the wife of the lover
-same integer n, but now into odd parts. For example,               of the woman who has just rejected his proposal. Since
-the partition (10, 5, 4) is transformed to the new par-            the village is finite, he will eventually get to a faithful
-tition (5, 5, 5, 1, 1, 1, 1). To define the inverse trans for-       woman.
-mation, take an odd part a and count how many times                   The reaction of the combinatorial enumeration com-
-it shows up. If it shows up m times, then write m in               munity to the involution principle was mixed. On the
-binary notation, m = 2 s1 + · · · + 2 sk , and replace the m         one hand it had the universal appeal of a general prin-
+
+. nfty
+. nfty
+
+Hence g(q) = f (q), and the identity o(n) = d(n)
+follows by extracting the coefficient of qn .
+   For a very long time, these kinds of manipulation
+were considered to belong to the realm of analysis,
+and in order to justify the manipulations of the infi-
+nite series and products, one talked about the “region
+of convergence,” usually |q| < 1, and every step had
+to be justified by the appropriate analytical theorem.
+Only relatively recently did people come to realize that
+no analysis need be involved: everything makes sense
+in the completely elementary and much more rigorous
+(from the philosophical viewpoint) algebra of formal
+power series. One still needs to worry about conver-
+gence, so as to exclude, for example, an infinite product
+
+. nfty
+like i=0 (1 + x), but the notion of convergence in the
+ring of formal power series is much more user-friendly
+than its analytical namesake.
+   Even though invoking analysis was a red herring,
+Euler’s proof, while purely algebraic and elementary,
+is nevertheless still manipulatorics. It would be much
+nicer to find a direct bijection between the sets Dis(n)
+and Odd(n). Such a bijection was given by Glaisher.
+Given a distinct partition, write each of its parts as
+2 r · s, where s is odd, and replace it by 2 r copies of s.
+(For example, 12 = 4 · 3, so we would replace 12 by
+3 + 3 + 3 + 3.) The output is obviously a partition of the
+same integer n, but now into odd parts. For example,
+the partition (10, 5, 4) is transformed to the new par-
+tition (5, 5, 5, 1, 1, 1, 1). To define the inverse trans for-
+mation, take an odd part a and count how many times
+it shows up. If it shows up m times, then write m in
+binary notation, m = 2 s1 + · · · + 2 sk , and replace the m
 copies of a by the k parts: 2 s1 a, . . . , 2 sk a. It is not hard   ciple, one that should be useful in many attempts to
-to check that if you do the first transformation to a par-          find bijective proofs of combinatorial identities. On the
-tition in Dis(n) and then do the second transformation,            other hand, its universality is also a major drawback,
-you get back to the partition you started with.                    since involution-principle proofs usually do not give
-   When we perform algebraic (and logical, and even                any insight into the specific structures involved, and
-analytical) manipulations, we are really rearranging and           one feels a bit cheated. Such a proof answers the let-
-combining symbols, and hence we are doing combina-                 ter of the question, but it misses its spirit. Given a
-torics in disguise. In fact, everything is combinatorics.          proof of this kind, one still hopes for a really natural,
+to check that if you do the first transformation to a par-
+tition in Dis(n) and then do the second transformation,
+you get back to the partition you started with.
+   When we perform algebraic (and logical, and even
+analytical) manipulations, we are really rearranging and
+combining symbols, and hence we are doing combina-
+torics in disguise. In fact, everything is combinatorics.
+
+IV. Branches of Mathematics
+All we need to do is to take the combinatorics out of
+the closet, and make it explicit. The plus sign turns
+. nfty
+
+                                          into (disjoint) union, the multiplication sign becomes
+1 − q2 i
+(1 + qi ) =
+i=0
+1 − qi
+But what about the combinatorial counterpart of the
+2 i
+i=0 (1 − q )                    minus sign? In 1982, Garsia and Steven Milne filled this
+=
+i=0 (1 − q )    i=0 (1 − q
+2 i               2 i+1 )
+gap by producing an ingenious “involution principle”
+. nfty
+         1                                that enables one to translate the implication
+=
+1 − q2 i+1
+i=0                                                a=b     and c = d      ⇒    a−c =b−d
+into a bijective argument, in the sense that if C ⊂ A and
+D ⊂ B, and there are natural bijections f : A → B and
+g : C → D establishing that |A| = |B|, and |C| = |D|,
+then it is possible to construct an explicit bijection
+between A\C and B\D. Let us define it in terms of peo-
+ple. Suppose that in a certain village all the adults are
+married, with the result that there is a natural bijec-
+tion from the set of married men to the set of mar-
+ried women, m → Wife Of (m), with its inverse w →
+Husband Of (w). In addition, some of the people have
+extramarital affairs, but only one per person, and all
+within the village. There is a natural bijection from the
+set of cheating men to the set of cheating women, called
+m → Mi stress Of (m), with its inverse w → Lover Of (w).
+It follows that there are as many faithful men as there
+are faithful women. But how do we match them up?
+(One might imagine, for example, that each faithful man
+wants a faithful woman to go to church with him.)
+Here is how it is done. A faithful man first asks his
+wife to come with him. If she is faithful, she agrees. If
+she is not, she has a lover, and that lover has a wife. So
+she tells her husband: “Sorry, hubby, I am going to the
+pub with my lover, but my lover’s wife may be free.” If
+this happens, then the man asks the wife of the lover
+of his wife to go with him, and if she is faithful, she
+agrees. If she is not he keeps asking the wife of the lover
+of the woman who has just rejected his proposal. Since
+the village is finite, he will eventually get to a faithful
+woman.
+The reaction of the combinatorial enumeration com-
+munity to the involution principle was mixed. On the
+one hand it had the universal appeal of a general prin-
+find bijective proofs of combinatorial identities. On the
+other hand, its universality is also a major drawback,
+since involution-principle proofs usually do not give
+any insight into the specific structures involved, and
+one feels a bit cheated. Such a proof answers the let-
+ter of the question, but it misses its spirit. Given a
+proof of this kind, one still hopes for a really natural,
 
 $IV$ . $18$ .
 
@@ -466,169 +646,228 @@ We have n n $c(n) =$ a (k) b (n - k), k $k = 0$ since we must (i) decide the siz
 $n = 0n = 0k = 0\infty\infty b(nk) n - k$ a (k) x $k = x$ . (nk) ! k! $k = 0nk = 0$ Hence EGF (C) = EGF (A) EGF (B). Iterating, we get EGF ( A1$\times$ A2$\times$ · · · $\times$ Ak$) =$ EGF ( A1 ) · · · EGF ( A  k) . In particular, if all the A i are the same, we have that the EGF of ordered k-tuples, A k , equals [EGF (A)] k . But if “order does not matter,” then the EGF of k-sets of Aobjects is [EGF (A)] k / k ! , since there are exactly k! ways of arranging a k-set into an ordered array (since all labels are distinct, all these objects are different).
 Summing from $k = 0$ to $k = \infty$ we get the “fundamental theorem of exponential generating functions.” If B is a labeled combinatorial family that can be viewed as sets of “connected components” that belong to a combinatorial family A, then EGF (B) $=$ exp [EGF (A)] . This useful theorem was part of the physics folklore for many years, and was also implicit in many older combinatorial proofs. However, it was explicated only
 
-558                                                                                            IV. Branches of Mathematics
+558
 
-in the early 1970 s. It was fully “categorized” by means           same as (a2 , a3 , . . . , an , a1 ), which is the same as
-of Joyal’s theory of species, which grew to be a beau-            (a3 , . . . , an , a1 , a2 ), etc., which means that we can pick
-tiful theory of enumeration in the hands of the école             the first entry arbitrarily, after which we have (n − 1)!
-Québecoise (the Labelle and Bergeron frères, Leroux,              choices for placing the remaining entries. The EGF for
-and others).                                                      cycles is therefore
-   Here are some venerable examples. Let us try to find                 . nfty
-                                                                                           . nfty
-                                                                                            
-                                                                         (n − 1)!             1
-the EGF of set partitions. That is, let us try to figure out                          xn =             xn
-                                                                      n=1
-                                                                              n!            n=1
-                                                                                                  n
+in the early 1970 s. It was fully “categorized” by means
+of Joyal’s theory of species, which grew to be a beau-
+tiful theory of enumeration in the hands of the école
+Québecoise (the Labelle and Bergeron frères, Leroux,
+and others).
+   Here are some venerable examples. Let us try to find
+the EGF of set partitions. That is, let us try to figure out
 an expression for
-                        . nfty
-                                                                                        = − log(1 − x) = log(1 − x)−1 .
-                          b(n)      n
-                                   x ,
-                        n=0
-                              n!                                  Using the fundamental theorem, we get that the EGF of
-                                                                  permutations is
 where b(n) (so-called Bell numbers) denotes the num-
-                                                                                                             . nfty
-                                                                                                                        . nfty
-                                                                                                                         
-ber of set partitions of an n-element set.                                                                                 n!
-                                                                   exp(log(1 − x)−1 ) = (1 − x)−1 =               xn =               xn,
-   Recall that a set partition of a set A is a set of pairwise-                                             n=0          n=0
-                                                                                                                                n!
+ber of set partitions of an n-element set.
+   Recall that a set partition of a set A is a set of pairwise-
 disjoint nonempty subsets of A, {A1 , . . . , Ar }, such that
-                                                                  and voilà we have a beautiful new proof that the
 the union of all the Ai equals A. For example, the set
-                                                                  number of permutations on n objects is n!.
 partitions of the 2-element set {1, 2} are {{1}, {2}} and
-                                                                     This argument may not look very impressive. But a
 {{1, 2}}.
-                                                                  slight modification leads immediately to the (ordinary)
    The atomic objects in this example are nonempty sets.
-                                                                  generating function for the number of permutations on
 (We think of a set A as being the “trivial” partition of
-                                                                  {1, . . . , n} with exactly k cycles, which we shall denote
 itself into just one set.) Let a(n) be the number of ways
-                                                                  by c(n, k). Here we are fixing n and letting k vary, so
-of partitioning a set of size n into one nonempty set.                                                    n
-                                                                  the generating function is Cn (α) = k=0 c(n, k)αk . All
+of partitioning a set of size n into one nonempty set.
 Clearly, when n = 0 this cannot be done, so a(0) = 0.
-                                                                  we have to do to calculate this is go from naive count-
 When n ⩾ 1 there is exactly one way of doing it, so the
-                                                                  ing to weighted counting, and assign to each permu-
 EGF of the sequence a(n) is
-                            . nfty
-                                                                  tation the weight α#cycles . The fundamental theorem of
-                              1 n
-             A(x) = 0 +           x = ex − 1.                     exponential generating functions carries over word-for-
-                           n=1
-                               n!                                 word to weighted counting. The weighted EGF for cycles
-It follows immediately from the fundamental theorem               is α log(1−x)−1 , so the weighted EGF for permutations
-that                                                              is
-                 . nfty
-                   b(n) n       x                                                                                 . nfty
-                                                                                                                   
-                          x = ee −1 ,            (1)
-                                                                     exp(α · log(1 − x)−1 ) = (1 − x)−α =
-                                                                                                                     (α)n
-                      n!                                                                                                        xn,
-                n=0
-                                                                                                                   n=0
-                                                                                                                           n!
+
+It follows immediately from the fundamental theorem
+that
+
 an identity of Bell. Nowadays, with computer algebra
-                                                                  where
 systems, this can be used immediately to crank out the
-                                                                               (α)n = α(α + 1) · · · (α + n − 1)
 first 100 terms of the sequence b(n). For example, in
-Maple one simply types                                            is the so-called rising factorial. We have therefore
-                                                                  derived the far less trivial result that the number of
-  taylor(exp(exp(x)-1), x=0,101);                                  permutations of {1, . . . , n} with exactly k cycles equals
-                                                                  the coefficient of αk in (α)n .
+Maple one simply types
+  taylor(exp(exp(x)-1), x=0,101);
 so this is definitely an answer in the Wilfian sense. We
-can also easily derive recurrences (albeit ones that need            About ten years ago (Ehrenpreis and Zeilberger 1994)
-at least O(n) memory), by differentiating both sides of            I used this technique to give a combinatorial proof of
-(1) and comparing coefficients.                                     the Pythagorean theorem in the form
-   That was really easy, so let us go on and prove some-                              sin2 z + cos2 z = 1.
+can also easily derive recurrences (albeit ones that need
+at least O(n) memory), by differentiating both sides of
+(1) and comparing coefficients.
+   That was really easy, so let us go on and prove some-
 thing much deeper. How about an EGF-style proof of
-                                                                  The functions sin z and cos z are the weighted EGFs for
 Levi Ben Gerson’s celebrated formula for the number
-                                                                  increasing sequences of odd and even lengths, respec-
 of permutations on n objects, n! (example (ii) ear-
-                                                                  tively, with weight (−1)[length/2] . Hence the left-hand
 lier)? Every permutation can be decomposed into a
-                                                                  side is the weighted EGF for ordered pairs of increasing
 disjoint union of cycles, so the atomic objects are
-                                                                  sequences
 now cycles. How many n-cycles are there? The answer
-is of course (n − 1)!, since (a1 , a2 , . . . , an ) is the                   a1 < · · · < ak ,        b1 < · · · < br ,
+is of course (n − 1)!, since (a1 , a2 , . . . , an ) is the
 
-IV.18.   Enumerative and Algebraic Combinatorics                                                                             559
+IV. Branches of Mathematics
+same as (a2 , a3 , . . . , an , a1 ), which is the same as
+(a3 , . . . , an , a1 , a2 ), etc., which means that we can pick
+the first entry arbitrarily, after which we have (n − 1)!
+choices for placing the remaining entries. The EGF for
+cycles is therefore
+. nfty
+                    . nfty
+
+(n − 1)!             1
+xn =
+n=1
+n!            n=1
+n
+. nfty
+                                                                = − log(1 − x) = log(1 − x)−1 .
+b(n)      n
+x ,
+n=0
+n!                                  Using the fundamental theorem, we get that the EGF of
+permutations is
+. nfty
+           . nfty
+
+n!
+exp(log(1 − x)−1 ) = (1 − x)−1 =               xn =               xn,
+n=0
+n!
+and voilà we have a beautiful new proof that the
+number of permutations on n objects is n!.
+This argument may not look very impressive. But a
+slight modification leads immediately to the (ordinary)
+generating function for the number of permutations on
+{1, . . . , n} with exactly k cycles, which we shall denote
+by c(n, k). Here we are fixing n and letting k vary, so
+n
+the generating function is Cn (α) = k=0 c(n, k)αk . All
+we have to do to calculate this is go from naive count-
+ing to weighted counting, and assign to each permu-
+. nfty
+tation the weight α#cycles . The fundamental theorem of
+   1 n
+A(x) = 0 +
+n=1
+n!                                 word to weighted counting. The weighted EGF for cycles
+is α log(1−x)−1 , so the weighted EGF for permutations
+is
+. nfty
+  b(n) n
+
+x = ee −1 ,            (1)
+exp(α · log(1 − x)−1 ) = (1 − x)−α =
+(α)n
+n!                                                                                                        xn,
+n=0
+n=0
+n!
+where
+(α)n = α(α + 1) · · · (α + n − 1)
+is the so-called rising factorial. We have therefore
+derived the far less trivial result that the number of
+permutations of {1, . . . , n} with exactly k cycles equals
+the coefficient of αk in (α)n .
+About ten years ago (Ehrenpreis and Zeilberger 1994)
+I used this technique to give a combinatorial proof of
+the Pythagorean theorem in the form
+sin2 z + cos2 z = 1.
+The functions sin z and cos z are the weighted EGFs for
+increasing sequences of odd and even lengths, respec-
+tively, with weight (−1)[length/2] . Hence the left-hand
+side is the weighted EGF for ordered pairs of increasing
+sequences
+a1 < · · · < ak ,
 
-such that k and r have the same parity, the sets                        carbon atoms “look the same.” Indeed, counting iso-
+IV.18.   Enumerative and Algebraic Combinatorics
+
+such that k and r have the same parity, the sets
 {a1 , . . . , ak } and {b1 , . . . , br } are disjoint, and the union   mers was Pólya’s initial motivation (see mathematics
-of the two sets is {1, 2, . . . , k + r }. There is a killer            and chemistry [VII.1 §2.3](/part-07/mathematics-and-chemistry)).
-involution on these sets of pairs defined as follows.                       The main idea is to view unlabeled objects as equiv-
-  If ak < br then map the pair to                                       alence classes of easy-to-count labeled objects, and to
-                                                                        count these equivalence classes. But what is the equiv-
-      a1 < · · · < ak < br ,          b1 < · · · < br −1 .
-                                                                        alence? The answer is that there is always a symme-
-and otherwise map it to                                                 try group [I.3 §2.1](/part-01/fundamental-definitions) involved, and it leads to a natural
-                                                                        equivalence relation. Let the symmetry group be G, and
-      a1 < · · · < ak−1 ,             b1 < · · · < br < ak .
-                                                                        let the set of labeled objects be A. Then two objects a
-  For example, the pair                                                 and b of A are regarded as equivalent if b = g(a) for
-           1, 3, 5, 6           2, 4, 7, 8, 9, 10, 11, 12,              some member g of the group G. This means that there
-                                                                        is some symmetry g in the group G that transforms a
-whose sign is (−1)2 · (−1)4 = 1, goes to the pair                       to b. This is easily seen to be an equivalence relation
-           1, 3, 5, 6, 12       2, 4, 7, 8, 9, 10, 11,                  and the equivalence classes are the sets
+of the two sets is {1, 2, . . . , k + r }. There is a killer
+involution on these sets of pairs defined as follows.
+  If ak < br then map the pair to
+
+and otherwise map it to
+
+  For example, the pair
+
+whose sign is (−1)2 · (−1)4 = 1, goes to the pair
 
 whose sign is (−1) · (−1)3 = −1 (and vice versa).
-                        2                                                        Orbit(a) = {g(a) | g ∈ G},     a ∈ A,
-   Since this mapping changes the sign, and is an involu-               which are known as orbits. Calling each orbit a “family,”
-tion, all such pairs can be paired up into mutually can-                we have the task of counting the number of families.
-celing pairs. But this mapping is undefined for one spe-                 Note that G is a subgroup of the group of permutations
-cial pair, namely the pair (empty, empty), whose weight                 of the finite set A.
-is 1. Therefore, the EGF for the sum of the weights of                     Suppose that there is a picnic consisting of many
-all pairs is 1, which explains the right-hand side.                     families and we want to count the number of families.
-   Yet another application of this method is a proof                    One way would be to define some “canonical head” of
-of André’s generating function for the number of up–                    each family, say “mother,” and count the number of
-down permutations. A permutation of a1 · · · an is                      mothers. But some daughters look like mothers, so this
-called up–down (or some times zigzag) if a1 < a2 >                       is not so easy. On the other hand, you cannot just count
-a3 < a4 > a5 < · · · . Let an be the number of up–down                  everybody, since then you would count each family sev-
-permutations. Then                                                      eral times. The problem is that “naive” counting of peo-
-                 . nfty
-                  a(n)                                                 ple (or objects) is giving a credit of 1 to each person,
-                              x n = sec x + tan x.                      and this is inappropriate if we are trying to count fam-
-                n=0
-                        n!
-                                                                        ilies. If instead we were to ask each person “How big
-This is equivalent to saying that                                       is your family?” and add to our count the reciprocal
-                        . nfty
-                         a(n)                                          of that number, then the calculation would come out
-            cos x ·                  x n = 1 + sin x.
-                                n!                                      just right, since a family of size k would get a credit
-                        n=0
-                                                                        of 1/k for each of its members, and would therefore
+   Since this mapping changes the sign, and is an involu-
+tion, all such pairs can be paired up into mutually can-
+celing pairs. But this mapping is undefined for one spe-
+cial pair, namely the pair (empty, empty), whose weight
+is 1. Therefore, the EGF for the sum of the weights of
+all pairs is 1, which explains the right-hand side.
+   Yet another application of this method is a proof
+of André’s generating function for the number of up–
+down permutations. A permutation of a1 · · · an is
+called up–down (or some times zigzag) if a1 < a2 >
+a3 < a4 > a5 < · · · . Let an be the number of up–down
+permutations. Then
+
+This is equivalent to saying that
+
 Can you find the appropriate set and the killer involu-
-                                                                        have been counted exactly once by the end. Going back
 tion?
-                                                                        to counting orbits, we see by the same reasoning that
-                                                                        their number is
-           6    Pólya–Redfield Enumeration                                                            1
-                                                                                                            .
-Often in enumeration it is easy enough to count labeled                                      a∈A
-                                                                                                 |Orbit(a)|
-objects, but what about unlabeled ones? For example,                    The conceptual opposite of “orbit of a” is the subgroup
-the number of labeled (simple) graphs on n vertices                     of members of G that fix a:
+
+Often in enumeration it is easy enough to count labeled
+objects, but what about unlabeled ones? For example,
+the number of labeled (simple) graphs on n vertices
 (example (vi)) is trivially 2 n(n−1)/2 , but how many un-
-                                                                                     Fix(a) = {g ∈ G | g(a) = a}.
 labeled graphs are there on n vertices? This is much
-harder, and in general there are no “nice” answers, but                 (This is some times known as the stabilizer of a.) To
-the best known way is via a powerful technique initi-                   each element b = ga in the orbit of a, we can asso-
-ated by Pólya, which was largely anticipated by Red-                    ciate the left coset g Fix(a) of Fix(a). This association
-field. Pólya enumeration lends itself very efficiently to                  turns out to be a well-defined one-to-one correspon-
-counting chemical isomers, since, for example, all the                  dence between the orbit of a and the cosets of Fix(a)
+harder, and in general there are no “nice” answers, but
+the best known way is via a powerful technique initi-
+ated by Pólya, which was largely anticipated by Red-
+field. Pólya enumeration lends itself very efficiently to
+counting chemical isomers, since, for example, all the
+
+559
+carbon atoms “look the same.” Indeed, counting iso-
+and chemistry [VII.1 §2.3](/part-07/mathematics-and-chemistry)).
+The main idea is to view unlabeled objects as equiv-
+alence classes of easy-to-count labeled objects, and to
+count these equivalence classes. But what is the equiv-
+a1 < · · · < ak < br ,
+alence? The answer is that there is always a symme-
+try group [I.3 §2.1](/part-01/fundamental-definitions) involved, and it leads to a natural
+equivalence relation. Let the symmetry group be G, and
+a1 < · · · < ak−1 ,
+let the set of labeled objects be A. Then two objects a
+and b of A are regarded as equivalent if b = g(a) for
+1, 3, 5, 6
+is some symmetry g in the group G that transforms a
+to b. This is easily seen to be an equivalence relation
+1, 3, 5, 6, 12
+2                                                        Orbit(a) = {g(a) | g ∈ G},     a ∈ A,
+which are known as orbits. Calling each orbit a “family,”
+we have the task of counting the number of families.
+Note that G is a subgroup of the group of permutations
+of the finite set A.
+Suppose that there is a picnic consisting of many
+families and we want to count the number of families.
+One way would be to define some “canonical head” of
+each family, say “mother,” and count the number of
+mothers. But some daughters look like mothers, so this
+is not so easy. On the other hand, you cannot just count
+everybody, since then you would count each family sev-
+eral times. The problem is that “naive” counting of peo-
+. nfty
+ a(n)
+x n = sec x + tan x.                      and this is inappropriate if we are trying to count fam-
+n=0
+n!
+ilies. If instead we were to ask each person “How big
+is your family?” and add to our count the reciprocal
+. nfty
+ a(n)                                          of that number, then the calculation would come out
+cos x ·
+n!                                      just right, since a family of size k would get a credit
+n=0
+of 1/k for each of its members, and would therefore
+have been counted exactly once by the end. Going back
+to counting orbits, we see by the same reasoning that
+their number is
+6    Pólya–Redfield Enumeration
+.
+a∈A
+|Orbit(a)|
+The conceptual opposite of “orbit of a” is the subgroup
+of members of G that fix a:
+Fix(a) = {g ∈ G | g(a) = a}.
+(This is some times known as the stabilizer of a.) To
+each element b = ga in the orbit of a, we can asso-
+ciate the left coset g Fix(a) of Fix(a). This association
+turns out to be a well-defined one-to-one correspon-
+dence between the orbit of a and the cosets of Fix(a)
 
 $560$
 
@@ -686,67 +925,100 @@ Another pillar of enumeration is the principle of inclusion-exclusion (nicknamed
 
 $\pi$ of 1 , . . . , n} and the ith sin is having $\pi$ [i ] =  i, then $|A^{S}| = (n - |S|)$ ! , and we get that the number of derangements (permutations with out fixed points) is n $n_{1}$ n ( - 1)k( - 1)k , $(n - k)$ ! $= n!$ k! k $k = 0k = 0$
 
-IV.18.   Enumerative and Algebraic Combinatorics                                                                         561
+IV.18.   Enumerative and Algebraic Combinatorics
 
 which yields the answer : “closest integer to n!/e.” This    an array of k left-justified rows with λ1 entries in the
-is some times called the “umbrella problem”: if on a          first row, λ2 entries in the second row, and so on, such
-rainy day n absent-minded people go to a party and           that every row and every column is increasing, and the
-leave an umbrella by the door, and if on their depar-        set of entries is {1, 2, . . . , n}. For example, there are two
-ture they each take a random umbrella, then the prob-        standard Young tableaux whose shape is 22,
-ability that nobody ends up with the right umbrella is                          1    2          1   3
-about 1/e.                                                                                               ,
-                                                                                3    4          2   4
+is some times called the “umbrella problem”: if on a
+rainy day n absent-minded people go to a party and
+leave an umbrella by the door, and if on their depar-
+ture they each take a random umbrella, then the prob-
+ability that nobody ends up with the right umbrella is
+about 1/e.
    The PIE is a special case of Möbius in version on gen-
-                                                             and three of shape 31,
 eral partially ordered sets (posets) where the poset hap-
-pens to be the Boolean lattice. This realization was pub-         1   2    3          1    2   4             1   3   4
-                                                                                                                         .
-lished in a seminal paper by Rota (1964) and reprinted            4                   3                      2
+pens to be the Boolean lattice. This realization was pub-
+lished in a seminal paper by Rota (1964) and reprinted
 in his collected works. It is considered by many to be the   Let f. ambda be the number of standard Young tableaux of
-big bang that started modern algebraic combinatorics.        shape λ. For example, for n = 4: f4 = 1, f31 = 3, f22 =
-Möbius’s original in version formula is recovered when        2, f211 = 3, and f1111 = 1. The sum of the squares of
-the partially ordered set is N and the partial order is      these numbers is 12 + 32 + 22 + 32 + 12 = 24 = 4!.
-divisibility.                                                  The number f. ambda is the dimension of the irreducible
-   A contemporary account of enumeration from the            representation parametrized by λ. It follows by a result
-“algebraic” point of view can be found in a marvelous        in representation theory [IV.9](/part-04/representation-theory) known as Frobenius
-two-volume set by Stanley (2000), which I strongly           reciprocity that the same is true for all n. In other
-recommend.                                                   words,                
-                                                                                      fλ2 = n!,
-            7    Algebraic Combinatorics                                             λ*n
+big bang that started modern algebraic combinatorics.
+Möbius’s original in version formula is recovered when
+the partially ordered set is N and the partial order is
+divisibility.
+   A contemporary account of enumeration from the
+“algebraic” point of view can be found in a marvelous
+two-volume set by Stanley (2000), which I strongly
+recommend.
 
-So far I have described one of the routes to algebraic       a result known as the Young–Frobenius identity. A gor-
-combinatorics: abstraction and conceptualizati on of          geous bijective proof of this identity, which has many
-classical enumeration. The other route, “concretization      beautiful properties, was given by Gilbert Robinson
-of the abstract,” is almost every where dense in math-        and Craige Schensted and later extended by Donald
-ematics, and cannot be described in a few pages. Let         Knuth, and is now known as the Robinson–Schensted–
-me quote from the preface of the excellent New Per-          Knuth correspondence. It inputs a permutation π =
-spec tiv es in Algebraic Combinatorics by Billera et al.       π1 π2 · · · πn , and outputs a pair of Young tableaux of
-(1999).                                                      the same shape, there by proving the identity.
-                                                               Algebraic combinatorics is currently a very active
+So far I have described one of the routes to algebraic
+combinatorics: abstraction and conceptualizati on of
+classical enumeration. The other route, “concretization
+of the abstract,” is almost every where dense in math-
+ematics, and cannot be described in a few pages. Let
+me quote from the preface of the excellent New Per-
+spec tiv es in Algebraic Combinatorics by Billera et al.
+(1999).
   Algebraic combinatorics involves the use of techniques     field, and as mathematics is becoming more and more
-  from algebra, topology, and geometry in the solution       concrete, constructive, and algorithmic, there are going
+  from algebra, topology, and geometry in the solution
   of combinatorial problems, or the use of combinato-
-                                                             to be many more combinatorial structures discovered
   rial methods to attack problems in these areas. Prob-
-                                                             in all areas of mathematics (and science!) and this
   lems amenable to the methods of algebraic combina-
   torics arise in these or other areas of mathematics or     will guarantee that algebraic combinatorialists will stay
-  from diverse parts of applied mathematics. Because of      very busy for a long time to come.
+  from diverse parts of applied mathematics. Because of
   this interplay with many fields of mathematics, alge-
   braic combinatorics is an area in which a wide variety     Further Reading
   of ideas and methods come together.
-                                                             Billera, L. J., A. Bjorner, C. Greene, R. E. Simion, and R P.
-                                                               Stanley, eds. 1999. New Perspectives in Algebraic Combi-
 7.1   Tableaux
-                                                               natorics. Cambridge: Cambridge University Press.
-An interesting class of objects that initially came up       Ehrenpreis, L., and D. Zeilberger. 1994. Two EZ proofs of
-in group representation theory, but that turned out            sin2 z + cos2 z = 1. American Mathematical Monthly 101:
-                                                               691.
+An interesting class of objects that initially came up
+in group representation theory, but that turned out
 to be useful in many other areas—such as, for exam-
-                                                             Rota, G.-C. 1964. On the foundations of combinatorial
 ple, the theory of algorithms—are Young tableaux. They
-                                                               theory. I. Theory of Möbius functions. Zeitschrift für
-were first used by Reverend Alfred Young to construct           Wahrscheinlichk eitstheorie und Verwandte Gebiete 2:340–
-explicit bases for the irreducible representations             68.
-[IV.9 §2](/part-04/representation-theory) of the symmetric group [III.68](/part-03/permutation-groups). For any par-      Stanley, R. P. 2000. Enumerative Combinatorics, volumes 1
+were first used by Reverend Alfred Young to construct
+explicit bases for the irreducible representations
+[IV.9 §2](/part-04/representation-theory) of the symmetric group [III.68](/part-03/permutation-groups). For any par-
 tition λ = λ1 · · · . ambda k of n, a Young tableau of shape . ambda is     and 2. Cambridge: Cambridge University Press.
+
+561
+first row, λ2 entries in the second row, and so on, such
+that every row and every column is increasing, and the
+set of entries is {1, 2, . . . , n}. For example, there are two
+standard Young tableaux whose shape is 22,
+1    2
+,
+3    4          2   4
+and three of shape 31,
+1   2    3
+.
+4
+shape λ. For example, for n = 4: f4 = 1, f31 = 3, f22 =
+2, f211 = 3, and f1111 = 1. The sum of the squares of
+these numbers is 12 + 32 + 22 + 32 + 12 = 24 = 4!.
+The number f. ambda is the dimension of the irreducible
+representation parametrized by λ. It follows by a result
+in representation theory [IV.9](/part-04/representation-theory) known as Frobenius
+reciprocity that the same is true for all n. In other
+words,
+fλ2 = n!,
+7    Algebraic Combinatorics
+a result known as the Young–Frobenius identity. A gor-
+geous bijective proof of this identity, which has many
+beautiful properties, was given by Gilbert Robinson
+and Craige Schensted and later extended by Donald
+Knuth, and is now known as the Robinson–Schensted–
+Knuth correspondence. It inputs a permutation π =
+π1 π2 · · · πn , and outputs a pair of Young tableaux of
+the same shape, there by proving the identity.
+Algebraic combinatorics is currently a very active
+concrete, constructive, and algorithmic, there are going
+to be many more combinatorial structures discovered
+in all areas of mathematics (and science!) and this
+very busy for a long time to come.
+Billera, L. J., A. Bjorner, C. Greene, R. E. Simion, and R P.
+Stanley, eds. 1999. New Perspectives in Algebraic Combi-
+natorics. Cambridge: Cambridge University Press.
+Ehrenpreis, L., and D. Zeilberger. 1994. Two EZ proofs of
+sin2 z + cos2 z = 1. American Mathematical Monthly 101:
+691.
+Rota, G.-C. 1964. On the foundations of combinatorial
+theory. I. Theory of Möbius functions. Zeitschrift für
+Wahrscheinlichk eitstheorie und Verwandte Gebiete 2:340–
+68.
+Stanley, R. P. 2000. Enumerative Combinatorics, volumes 1

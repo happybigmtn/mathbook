@@ -1,127 +1,191 @@
 # The Language and Grammar of Mathematics
 
-8                                                                                                     I. Introduction
+8
 
-[IV.16](/part-04/mirror-symmetry), general relativity and the einstein equa-             To illustrate the sort of clarity and simplicity that is
-tions [IV.13](/part-04/general-relativity-and-the-einstein-equations), and operator algebras [IV.15](/part-04/operator-algebras) describe       needed in mathematical discourse, let us consider the
-some fascinating examples of how mathematics and            famous mathematical sentence “Two plus two equals
-physics have enriched each other.                           four” as a sentence of English rather than of mathemat-
-                                                            ics, and try to analyze it grammatically. On the face of it,
-I.2   The Language and Grammar of                           it contains three nouns (“two,” “two,” and “four”), a verb
-      Mathematics                                           (“equals”) and a conjunction (“plus”). However, looking
-                                                            more carefully we may begin to notice some oddities.
-                   1   Introduction                         For example, although the word “plus” resembles the
-                                                            word “and,” the most obvious example of a conju nc-
-It is a remarkable phenomenon that children can learn       tion, it does not behave in quite the same way, as is
-to speak with out ever being consciously aware of the        shown by the sentence “Mary and Peter love Paris.” The
-sophisticated grammar they are using. Indeed, adults        verb in this sentence, “love,” is plural, where as the verb
+[IV.16](/part-04/mirror-symmetry), general relativity and the einstein equa-
+tions [IV.13](/part-04/general-relativity-and-the-einstein-equations), and operator algebras [IV.15](/part-04/operator-algebras) describe
+some fascinating examples of how mathematics and
+physics have enriched each other.
+I.2   The Language and Grammar of
+
+It is a remarkable phenomenon that children can learn
+to speak with out ever being consciously aware of the
+sophisticated grammar they are using. Indeed, adults
 too can live a perfectly satisfactory life with out ever     in the previous sentence, “equals,” was singular. So the
 thinking about ideas such as parts of speech, subjects,     word “plus” seems to take two objects (which happen
-predicates, or subordinate clauses. Both children and       to be numbers) and produce out of them a new, sin-
-adults can easily recognize ungrammatical sentences,        gle object, while “and” conjoins “Mary” and “Peter” in
+predicates, or subordinate clauses. Both children and
+adults can easily recognize ungrammatical sentences,
 at least if the mistake is not too subtle, and to do this   a looser way, leaving them as distinct people.
 it is not necessary to be able to explain the rules that
-                                                               Reflecting on the word “and” a bit more, one finds
 have been violated. Nevertheless, there is no doubt that
-                                                            that it has two very different uses. One, as above, is to
 one’s understanding of language is hugely enhanced by
-                                                            link two nouns, where as the other is to join two whole
 a knowledge of basic grammar, and this understanding
-                                                            sentences together, as in “Mary likes Paris and Peter
 is essential for any body who wants to do more with
-                                                            likes New York.” If we want the basics of our language
 language than use it unreflectingly as a means to a
-                                                            to be absolutely clear, then it will be important to be
 nonlinguistic end.
-                                                            aware of this distinction. (When mathematicians are at
    The same is true of mathematical language. Up to
-                                                            their most formal, they simply outlaw the noun-linking
 a point, one can do and speak mathematics with out
-                                                            use of “and”—a sentence such as “3 and 5 are prime
 knowing how to classify the different sorts of words
-                                                            numbers” is then paraphrased as “3 is a prime number
 one is using, but many of the sentences of advanced
-                                                            and 5 is a prime number.”)
 mathematics have a complicated structure that is much
-easier to understand if one knows a few basic terms            This is but one of many similar questions: any body
-of mathematical grammar. The object of this section         who has tried to classify all words into the standard
-is to explain the most important mathematical “parts        eight parts of speech will know that the classification is
-of speech,” some of which are similar to those of nat-      hopelessly inadequate. What, for example, is the role of
-ural languages and others quite different. These are         the word “six” in the sentence “This section has six sub-
-normally taught right at the beginning of a university      sections”? Unlike “two” and “four” earlier, it is certainly
-course in mathematics. Much of The Companion can be         not a noun. Since it modifies the noun “subsection” it
-understood with out a precise knowledge of mathemat-         would traditionally be classified as an adjective, but
+easier to understand if one knows a few basic terms
+of mathematical grammar. The object of this section
+is to explain the most important mathematical “parts
+of speech,” some of which are similar to those of nat-
+ural languages and others quite different. These are
+normally taught right at the beginning of a university
+course in mathematics. Much of The Companion can be
+understood with out a precise knowledge of mathemat-
 ical grammar, but a careful reading of this article will    it does not behave like most adjectives: the sentences
 help the reader who wishes to follow some of the later,     “My car is not very fast” and “Look at that tall build-
-more advanced parts of the book.                            ing” are perfectly grammatical, where as the sentences
-   The main reason for using mathematical grammar is        “My car is not very six” and “Look at that six building”
-that the statements of mathematics are supposed to          are not just nonsense but ungrammatical nonsense. So
+more advanced parts of the book.
+   The main reason for using mathematical grammar is
+that the statements of mathematics are supposed to
 be completely precise, and it is not possible to achieve    do we classify adjectives further into numerical adjec-
 complete precision unless the language one uses is free     tives and nonnumerical adjectives? Perhaps we do, but
-of many of the vaguenesses and ambiguities of ordinary      then our troubles will be only just beginning. For exam-
-speech. Mathematical sentences can also be highly com-      ple, what about possessive adjectives such as “my” and
+of many of the vaguenesses and ambiguities of ordinary
+speech. Mathematical sentences can also be highly com-
 plex: if the parts that made them up were not clear and     “your”? In general, the more one tries to refine the clas-
-simple, then the unclarities would rapidly accumulate       sification of English words, the more one realizes how
-and render the sentences unintelligible.                    many different grammatical roles there are.
+simple, then the unclarities would rapidly accumulate
+and render the sentences unintelligible.
 
-I.2.   The Language and Grammar of Mathematics                                                                           9
+I. Introduction
+To illustrate the sort of clarity and simplicity that is
+needed in mathematical discourse, let us consider the
+famous mathematical sentence “Two plus two equals
+four” as a sentence of English rather than of mathemat-
+ics, and try to analyze it grammatically. On the face of it,
+it contains three nouns (“two,” “two,” and “four”), a verb
+Mathematics
+more carefully we may begin to notice some oddities.
+1   Introduction
+word “and,” the most obvious example of a conju nc-
+tion, it does not behave in quite the same way, as is
+shown by the sentence “Mary and Peter love Paris.” The
+verb in this sentence, “love,” is plural, where as the verb
+to be numbers) and produce out of them a new, sin-
+gle object, while “and” conjoins “Mary” and “Peter” in
+Reflecting on the word “and” a bit more, one finds
+that it has two very different uses. One, as above, is to
+link two nouns, where as the other is to join two whole
+sentences together, as in “Mary likes Paris and Peter
+likes New York.” If we want the basics of our language
+to be absolutely clear, then it will be important to be
+aware of this distinction. (When mathematicians are at
+their most formal, they simply outlaw the noun-linking
+use of “and”—a sentence such as “3 and 5 are prime
+numbers” is then paraphrased as “3 is a prime number
+and 5 is a prime number.”)
+This is but one of many similar questions: any body
+who has tried to classify all words into the standard
+eight parts of speech will know that the classification is
+hopelessly inadequate. What, for example, is the role of
+the word “six” in the sentence “This section has six sub-
+sections”? Unlike “two” and “four” earlier, it is certainly
+not a noun. Since it modifies the noun “subsection” it
+would traditionally be classified as an adjective, but
+ing” are perfectly grammatical, where as the sentences
+“My car is not very six” and “Look at that six building”
+are not just nonsense but ungrammatical nonsense. So
+then our troubles will be only just beginning. For exam-
+ple, what about possessive adjectives such as “my” and
+sification of English words, the more one realizes how
+many different grammatical roles there are.
 
-              2   Four Basic Concepts                        Although one cannot directly substitute the phrase “is
-                                                             an element of” for “is,” one can do so if one is prepared
+I.2.   The Language and Grammar of Mathematics
+
 Another word that famously has three quite distinct
-                                                             to modify the rest of the sentence a little.
 meanings is “is.” The three meanings are illustrated in
-                                                                There are three common ways to denote a specific
 the following three sentences.
-                                                             set. One is to list its elements inside curly brackets:
-   (1) 5 is the square root of 25.                           {2, 3, 5, 7, 11, 13, 17, 19}, for example, is the set whose
-   (2) 5 is less than 10.                                    elements are the eight numbers 2, 3, 5, 7, 11, 13, 17,
-   (3) 5 is a prime number.                                  and 19. The majority of sets considered by mathemat i-
-                                                             cians are too large for this to be feasible—indeed, they
-In the first of these sentences, “is” could be replaced       are often infinite—so a second way to denote sets is
-by “equals”: it says that two objects, 5 and the square      to use dots to imply a list that is too long to write
+   (1) 5 is the square root of 25.
+   (2) 5 is less than 10.
+   (3) 5 is a prime number.
+In the first of these sentences, “is” could be replaced
+by “equals”: it says that two objects, 5 and the square
 root of 25, are in fact one and the same object, just as     down: for example, the expressions {1, 2, 3, . . . , 100}
 it does in the English sentence “London is the capital of    and {2, 4, 6, 8, . . . } can be used to represent the set of
-the United Kingdom.” In the second sentence, “is” plays      all positive integers up to 100 and the set of all positive
-a completely different role. The words “less than 10”         even numbers, respectively. A third way, and the way
-form an adjectival phrase, specifying a property that        that is most important, is to define a set via a property:
-numbers may or may not have, and “is” in this sentence       an example that shows how this is done is the expres-
+the United Kingdom.” In the second sentence, “is” plays
+a completely different role. The words “less than 10”
+form an adjectival phrase, specifying a property that
+numbers may or may not have, and “is” in this sentence
 is like “is” in the English sentence “Grass is green.” As    sion {x : x is prime and x < 20}. To read an expres-
 for the third sentence, the word “is” there means “is an     sion such as this, one first reads the opening curly
 example of,” as it does in the English sentence “Mercury     bracket as “The set of.” Next, one reads the symbol
-is a planet.”                                                that occurs before the colon. The colon itself one reads
-   These differences are reflected in the fact that the        as “such that.” Finally, one reads what comes after the
-sentences cease to resemble each other when they are         colon, which is the property that determines the ele-
-written in a more symbolic way. An obvious way to write      ments of the set. In this instance, we end up saying,
-            √
-(1) is 5 = 25. As for (2), it would usually be written       “The set of x such that x is prime and x is less than 20,”
-5 < 10, where the symbol “<” means “is less than.” The       which is in fact equal to the set {2, 3, 5, 7, 11, 13, 17, 19}
-third sentence would normally not be written symbol-         considered earlier.
-ically because the concept of a prime number is not             Many sentences of mathematics can be rewritten in
-quite basic enough to have universally recognized sym-       set-theoretic terms. For example, sentence (2) earlier
+is a planet.”
+   These differences are reflected in the fact that the
+sentences cease to resemble each other when they are
+written in a more symbolic way. An obvious way to write
+
+(1) is 5 = 25. As for (2), it would usually be written
+5 < 10, where the symbol “<” means “is less than.” The
+third sentence would normally not be written symbol-
+ically because the concept of a prime number is not
+quite basic enough to have universally recognized sym-
 bols associated with it. However, it is some times useful     could be written as 5 ∈ {n : n < 10}. Often there is
-to do so, and then one must invent a suitable symbol.        no point in doing this (as here, where it is much eas-
-One way to do it would be to adopt the convention that       ier to write 5 < 10) but there are circumstances where
+to do so, and then one must invent a suitable symbol.
+One way to do it would be to adopt the convention that
 if n is a positive integer, then P (n) stands for the sen-   it becomes extremely convenient. For example, one of
-tence “n is prime.” Another way, which does not hide         the great advances in mathematics was the use of Carte-
-the word “is,” is to use the language of sets.               sian coordinates to translate geometry into algebra
-                                                             and the way this was done was to define geometrical
+tence “n is prime.” Another way, which does not hide
+the word “is,” is to use the language of sets.
 2.1    Sets
-                                                             objects as sets of points, where points were themselves
 Broadly speaking, a set is a collection of objects, and in   defined as pairs or triples of numbers. So, for exam-
-mathematical discourse these objects are mathematical        ple, the set {(x, y) : x 2 + y 2 = 1} is (or represents)
-ones such as numbers, points in space, or even other         a circle of radius 1 with its center at the origin (0, 0).
-sets. If we wish to rewrite sentence (3) symbolically,       That is because, by the Pythagorean
-                                                                                                       theorem, the dis-
+mathematical discourse these objects are mathematical
+ones such as numbers, points in space, or even other
+sets. If we wish to rewrite sentence (3) symbolically,
 another way to do it is to define P to be the collection,     tance from (0, 0) to (x, y) is x 2 + y 2 , so the sentence
-or set, of all prime numbers. Then we can rewrite it         “x 2 + y 2 = 1” can be reexpressed geometrically as “the
-as “5 belongs to the set P .” This notion of belonging       distance from (0, 0) to (x, y) is 1.” If all we ever cared
-to a set is sufficiently basic to deserve its own symbol,      about was which points were in the circle, then we could
-and the symbol used is “∈.” So a fully symbolic way of       make do with sentences such as “x 2 + y 2 = 1,” but in
-writing the sentence is 5 ∈ P .                              geometry one often wants to consider the entire cir-
-  The members of a set are usually called its elements,      cle as a single object (rather than as a multiplicity of
-and the symbol “∈” is usually read “is an element of.”       points, or as a property that points might have), and
-So the “is” of sentence (3) is more like “∈” than “=.”       then set-theoretic language is indispensable.
+or set, of all prime numbers. Then we can rewrite it
+as “5 belongs to the set P .” This notion of belonging
+to a set is sufficiently basic to deserve its own symbol,
+and the symbol used is “∈.” So a fully symbolic way of
+writing the sentence is 5 ∈ P .
+  The members of a set are usually called its elements,
+and the symbol “∈” is usually read “is an element of.”
+So the “is” of sentence (3) is more like “∈” than “=.”
+
+9
+2   Four Basic Concepts
+an element of” for “is,” one can do so if one is prepared
+to modify the rest of the sentence a little.
+There are three common ways to denote a specific
+set. One is to list its elements inside curly brackets:
+{2, 3, 5, 7, 11, 13, 17, 19}, for example, is the set whose
+elements are the eight numbers 2, 3, 5, 7, 11, 13, 17,
+and 19. The majority of sets considered by mathemat i-
+cians are too large for this to be feasible—indeed, they
+are often infinite—so a second way to denote sets is
+to use dots to imply a list that is too long to write
+all positive integers up to 100 and the set of all positive
+even numbers, respectively. A third way, and the way
+that is most important, is to define a set via a property:
+an example that shows how this is done is the expres-
+that occurs before the colon. The colon itself one reads
+as “such that.” Finally, one reads what comes after the
+colon, which is the property that determines the ele-
+ments of the set. In this instance, we end up saying,
+√
+“The set of x such that x is prime and x is less than 20,”
+which is in fact equal to the set {2, 3, 5, 7, 11, 13, 17, 19}
+considered earlier.
+Many sentences of mathematics can be rewritten in
+set-theoretic terms. For example, sentence (2) earlier
+no point in doing this (as here, where it is much eas-
+ier to write 5 < 10) but there are circumstances where
+the great advances in mathematics was the use of Carte-
+sian coordinates to translate geometry into algebra
+and the way this was done was to define geometrical
+objects as sets of points, where points were themselves
+ple, the set {(x, y) : x 2 + y 2 = 1} is (or represents)
+a circle of radius 1 with its center at the origin (0, 0).
+That is because, by the Pythagorean
+        theorem, the dis-
+“x 2 + y 2 = 1” can be reexpressed geometrically as “the
+distance from (0, 0) to (x, y) is 1.” If all we ever cared
+about was which points were in the circle, then we could
+make do with sentences such as “x 2 + y 2 = 1,” but in
+geometry one often wants to consider the entire cir-
+cle as a single object (rather than as a multiplicity of
+points, or as a property that points might have), and
+then set-theoretic language is indispensable.
 
 $10$
 
@@ -138,7 +202,7 @@ If the number is n, then this produces the slightly longer phrase, “the square
 For another discussion of adjectives see arithmetic geometry [IV.5](/part-04/arithmetic-geometry) . I. Introduction another one, some times of the same kind and some times not. “The square root of” transforms numbers into numbers, as do “four plus,” “two times,” “the cosine of,” and “the logarithm of.” A nonnumerical example is “the center of gravity of,” which transforms geometrical shapes (provided they are not too exotic or complicated to have a center of gravity) into points-- meaning that if S stands for a shape, then “the center of gravity of S” stands for a point.
 A function is, roughly speaking, a mathematical transformation of this kind. It is not easy to make this definition more precise. To ask, “What is a function?” is to suggest that the answer should be a thing of some sort, but functions seem to be more like processes. More over, when they appear in mathematical sentences they do not behave like nouns. (They are more like prepositions, though with a definite difference that will be discussed in the next subsection .) One might therefore think it inappropriate to ask what kind of object “the square root of” is.
 Should one not simply be satisfied with the grammatical analysis already given? As it happens, no. Over and over again, through out mathematics, it is useful to think of a mathematical phenomenon, which may be complex and very unthinglike, as a single object. We have already seen a simple example: a collection of infinitely many points in the plane or space is some times better thought of as a single geometrical shape. Why should one wish to do this for functions? Here are two reasons.
-First, it is convenient to be able to say something like, “The derivative of sin is cos,” or to speak in general terms about some functions being differentiable and others not. More generally, functions can have properties, and in order to discuss those properties one needs to think of functions as things. Second, many algebraic structures are most naturally thought of as sets of functions. (See , for example, the discussion of groups and symmetry in [I.3](/part-01/fundamental-definitions) .
+First, it is convenient to be able to say something like, “The derivative of sin is cos,” or to speak in general terms about some functions being differentiable and others not. More generally, functions can have properties, and in order to discuss those properties one needs to think of functions as things. Second, many algebraic structures are most naturally thought of as sets of functions. (See , for example, the discussion of groups and symmetry in [I.3](/part-01/fundamental-definitions).
 See also hilbert spaces [III.37](/part-03/bayesian-analysis), function spaces [III.29](/part-03/function-spaces), and vector spaces [I.3](/part-01/fundamental-definitions).) If f is a function, then the notation f (x) $=$ y means that f turns the object x into the object y. Once one starts to speak formally about functions, it becomes important to specify exactly which objects are to be subjected to the transformation in question, and what sort of objects they can be transformed into.
 One of the main reasons for this is that it makes it possible to discuss another notion that is central to mathematics, that of inverting a function. (See [I.4](/part-01/general-goals) for a discussion of why it is central .) Roughly speaking, the inverse of a function is another function that undoes it, and that it
 
@@ -165,129 +229,189 @@ Relations
 Let us now think about the grammar of the phrase “less than” in sentence ( $2$ ) . As with “the square root of,” it must always be followed by a mathematical object (in this case a number again) . Once we have done this we obtain a phrase such as “less than n,” which is importantly different from “the square root of n” because it behaves like an adjective rather than a noun, and refers to a property rather than an object. This is just how prepositions behave in English:
 look, for example, at the word “under” in the sentence “The cat is under the table.” At a slightly higher level of formality, mathematicians like to avoid too many parts of speech, as we have already seen for adjectives. So there is no symbol for “less than”: instead, it is combined with the previous word “is” to make the phrase “is less than,” which is
 
-12                                                                                                    I. Introduction
+12
 
-                                                                What exactly is it that these two relations have in
-                                                             common? The answer is that they both take a set (in
-                                                             the first case the set of all geometrical shapes, and in
-                                                             the second the set of all whole numbers) and split it into
-                                                             parts, called equivalence classes, where each part con-
-                                                             sists of objects that one wishes to regard as essentially
-                                                             the same. In the first example, a typical equivalence
-                                                             class is the set of all shapes that are similar to some
-                                                             given shape; in the second, it is the set of all integers
-                                                             that leave a given remainder when you divide by m (for
-                Figure 1 Similar shapes.                     example, if m = 7 then one of the equivalence classes
-                                                             is the set {. . . , −16, −9, −2, 5, 12, 19, . . . }).
-                                                                An alternative definition of what it means for a rela-
 denoted by the symbol “<.” The grammatical rules for
-                                                             tion ∼, defined on a set A, to be an equivalence relation
 this symbol are once again simple. To use “<” in a sen-
-                                                             is that it has the following three properties. First, it is
 tence, one should precede it by a noun and follow it
-                                                             reflexive, which means that x ∼ x for every x in A. Sec-
 by a noun. For the resulting grammatically correct sen-
-                                                             ond, it is symmetric, which means that if x and y are
 tence to make sense, the nouns should refer to numbers
-                                                             elements of A and x ∼ y, then it must also be the case
 (or perhaps to more general objects that can be put in
-                                                             that y ∼ x. Third, it is transitive, meaning that if x, y,
 order). A mathematical “object” that behaves like this
-                                                             and z are elements of A such that x ∼ y and y ∼ z,
 is called a relation, though it might be more accurate
-                                                             then it must be the case that x ∼ z. (To get a feel for
 to call it a potential relationship. “Equals” and “is an
-                                                             these properties, it may help if you satisfy your self that
 element of” are two other examples of relations.
-                                                             the relations “is similar to” and “is congruent (mod m)
    As with functions, it is important, when specifying
-                                                             to” both have all three properties, while the relation
 a relation, to be careful about which objects are to be
-                                                             “<,” defined on the positive integers, is transitive but
 related. Usually a relation comes with a set A of objects
-                                                             neither reflexive nor symmetric.)
 that may or may not be related to each other. For exam-
-                                                                One of the main uses of equivalence relations is to
 ple, the relation “<” might be defined on the set of all
-                                                             make precise the notion of quotient [I.3 §3.3](/part-01/fundamental-definitions) con-
 positive integers, or alternatively on the set of all real
-                                                             struc tions.
 numbers; strictly speaking these are different relations.
 Some times relations are defined with reference to two
-                                                             2.4   Binary Operations
 sets A and B. For example, if the relation is “∈,” then
 A might be the set of all positive integers and B the set    Let us return to one of our earlier examples, the sen-
-of all sets of positive integers.                            tence “Two plus two equals four.” We have analyzed
-   There are many situations in mathematics where one        the word “equals” as a relation, an expression that sits
-wishes to regard different objects as “essentially the        between the noun phrases “two plus two” and “four”
-same,” and to help us make this idea precise there is        and makes a sentence out of them. But what about
-a very important class of relations known as equiva-         “plus”? That also sits between two nouns. However, the
+of all sets of positive integers.
+   There are many situations in mathematics where one
+wishes to regard different objects as “essentially the
+same,” and to help us make this idea precise there is
+a very important class of relations known as equiva-
 lence relations. Here are two examples. First, in elemen-    result, “two plus two,” is not a sentence but a noun
-tary geometry one some times cares about shapes but           phrase. That pattern is characteristic of binary opera-
-not about sizes. Two shapes are said to be similar if        tions. Some familiar examples of binary operations are
-one can be transformed into the other by a combina-          “plus,” “minus,” “times,” “divided by,” and “raised to
+tary geometry one some times cares about shapes but
+not about sizes. Two shapes are said to be similar if
+one can be transformed into the other by a combina-
 tion of reflections, rotations, translations, and enlarge-    the power.”
-ments (see figure 1); the relation “is similar to” is an         As with functions, it is customary, and convenient,
-equivalence relation. Second, when doing arithmetic          to be careful about the set to which a binary operation
-modulo m [III.59](/part-03/modular-forms), one does not wish to distinguish          is applied. From a more formal point of view, a binary
-between two whole numbers that differ by a multiple           operation on a set A is a function that takes pairs of
-of m: in this case one says that the numbers are con-        elements of A and produces further elements of A from
-gruent (mod m); the relation “is congruent (mod m)           them. To be more formal still, it is a function with the
-to” is another equivalence relation.                         set of all pairs (x, y) of elements of A as its domain
+ments (see figure 1); the relation “is similar to” is an
+equivalence relation. Second, when doing arithmetic
+modulo m [III.59](/part-03/modular-forms), one does not wish to distinguish
+between two whole numbers that differ by a multiple
+of m: in this case one says that the numbers are con-
+gruent (mod m); the relation “is congruent (mod m)
+to” is another equivalence relation.
 
-I.2.   The Language and Grammar of Mathematics                                                                       13
+I. Introduction
+What exactly is it that these two relations have in
+common? The answer is that they both take a set (in
+the first case the set of all geometrical shapes, and in
+the second the set of all whole numbers) and split it into
+parts, called equivalence classes, where each part con-
+sists of objects that one wishes to regard as essentially
+the same. In the first example, a typical equivalence
+class is the set of all shapes that are similar to some
+given shape; in the second, it is the set of all integers
+that leave a given remainder when you divide by m (for
+Figure 1 Similar shapes.
+is the set {. . . , −16, −9, −2, 5, 12, 19, . . . }).
+An alternative definition of what it means for a rela-
+tion ∼, defined on a set A, to be an equivalence relation
+is that it has the following three properties. First, it is
+reflexive, which means that x ∼ x for every x in A. Sec-
+ond, it is symmetric, which means that if x and y are
+elements of A and x ∼ y, then it must also be the case
+that y ∼ x. Third, it is transitive, meaning that if x, y,
+and z are elements of A such that x ∼ y and y ∼ z,
+then it must be the case that x ∼ z. (To get a feel for
+these properties, it may help if you satisfy your self that
+the relations “is similar to” and “is congruent (mod m)
+to” both have all three properties, while the relation
+“<,” defined on the positive integers, is transitive but
+neither reflexive nor symmetric.)
+One of the main uses of equivalence relations is to
+make precise the notion of quotient [I.3 §3.3](/part-01/fundamental-definitions) con-
+struc tions.
+2.4   Binary Operations
+tence “Two plus two equals four.” We have analyzed
+the word “equals” as a relation, an expression that sits
+between the noun phrases “two plus two” and “four”
+and makes a sentence out of them. But what about
+“plus”? That also sits between two nouns. However, the
+phrase. That pattern is characteristic of binary opera-
+tions. Some familiar examples of binary operations are
+“plus,” “minus,” “times,” “divided by,” and “raised to
+As with functions, it is customary, and convenient,
+to be careful about the set to which a binary operation
+is applied. From a more formal point of view, a binary
+operation on a set A is a function that takes pairs of
+elements of A and produces further elements of A from
+them. To be more formal still, it is a function with the
+set of all pairs (x, y) of elements of A as its domain
 
-and with A as its range. This way of looking at it is         mathematical discourse. If P and Q are statements
-not reflected in the notation, however, since the symbol       (note here the mathematical habit of representing not
-for the operation comes between x and y rather than           just numbers but any objects whatsoever by single let-
-before them: we write x + y rather than +(x, y).              ters), then P ∧Q is the statement that is true if and only
-   There are four properties that a binary operation may      if both P and Q are true.
-have that are very useful if one wants to manipulate             Another connective is the word “or,” a word that has
-sentences in which it appears. Let us use the symbol ∗        a more specific meaning for mathematicians than it
-to denote an arbitrary binary operation on some set A.        has for normal speakers of the English language. The
-The operation ∗ is said to be commutative if x ∗ y is         mathematical use is illustrated by the tiresome joke of
-always equal to y ∗ x, and associative if x ∗ (y ∗ z) is      responding, “Yes please,” to a question such as, “Would
-always equal to (x ∗ y) ∗ z. For example, the opera-          you like your coffee with or with out sugar?” The sym-
-tions “plus” and “times” are commutative and associa-         bol for “or,” if one wishes to use a symbol, is “∨,” and
-tive, where as “minus,” “divided by,” and “raised to the       the statement P ∨ Q is true if and only if P is true or
-power” are neither (for instance, 9 − (5 − 3) = 7 while       Q is true. This is taken to include the case when they
+I.2.   The Language and Grammar of Mathematics
+
+and with A as its range. This way of looking at it is
+not reflected in the notation, however, since the symbol
+for the operation comes between x and y rather than
+before them: we write x + y rather than +(x, y).
+   There are four properties that a binary operation may
+have that are very useful if one wants to manipulate
+sentences in which it appears. Let us use the symbol ∗
+to denote an arbitrary binary operation on some set A.
+The operation ∗ is said to be commutative if x ∗ y is
+always equal to y ∗ x, and associative if x ∗ (y ∗ z) is
+always equal to (x ∗ y) ∗ z. For example, the opera-
+tions “plus” and “times” are commutative and associa-
+tive, where as “minus,” “divided by,” and “raised to the
+power” are neither (for instance, 9 − (5 − 3) = 7 while
 (9 − 5) − 3 = 1). These last two operations raise another     are both true, so “or,” for mathematicians, is always the
 issue: unless the set A is chosen carefully, they may not     so-called inclusive version of the word.
-always be defined. For example, if one restricts one’s            A third important connective is “implies,” which is
-attention to the positive integers, then the expression       usually written “⇒.” The statement P ⇒ Q means,
-3 − 5 has no meaning. There are two conventions one           roughly speaking, that Q is a consequence of P , and
-could imagine adopting in response to this. One might         is some times read as “if P then Q.” However, as with
-decide not to insist that a binary operation should be        “or,” this does not mean quite what it would in English.
-defined for every pair of elements of A, and to regard         To get a feel for the difference, consider the following
-it as a desirable extra property of an operation if it        even more extreme example of mathematical pedantry.
-is defined every where. But the convention actually in          At the supper table, my young daughter once said, “Put
-force is that binary operations do have to be defined          your hand up if you are a girl.” One of my sons, to tease
-every where, so that “minus,” though a perfectly good          her, put his hand up on the grounds that, since she had
-binary operation on the set of all integers, is not a         not added, “and keep it down if you are a boy,” his doing
-binary operation on the set of all positive integers.         so was compatible with her command.
-   An element e of A is called an identity for ∗ if e ∗ x =      Something like this attitude is taken by mathemat i-
-x ∗ e = x for every element x of A. The two most obvi-        cians to the word “implies,” or to sentences containing
+always be defined. For example, if one restricts one’s
+attention to the positive integers, then the expression
+3 − 5 has no meaning. There are two conventions one
+could imagine adopting in response to this. One might
+decide not to insist that a binary operation should be
+defined for every pair of elements of A, and to regard
+it as a desirable extra property of an operation if it
+is defined every where. But the convention actually in
+force is that binary operations do have to be defined
+every where, so that “minus,” though a perfectly good
+binary operation on the set of all integers, is not a
+binary operation on the set of all positive integers.
+   An element e of A is called an identity for ∗ if e ∗ x =
+x ∗ e = x for every element x of A. The two most obvi-
 ous examples are 0 and 1, which are identities for “plus”     the word “if.” The statement P ⇒ Q is considered to
 and “times,” respectively. Finally, if ∗ has an identity e    be true under all circumstances except one: it is not
-and x belongs to A, then an inverse for x is an element       true if P is true and Q is false. This is the definition
-y such that x ∗ y = y ∗ x = e. For example, if ∗ is           of “implies.” It can be confusing because in English
+and x belongs to A, then an inverse for x is an element
+y such that x ∗ y = y ∗ x = e. For example, if ∗ is
 “plus” then the inverse of x is −x, while if ∗ is “times”     the word “implies” suggests some sort of connection
-then the inverse is 1/x.                                      between P and Q, that P in some way causes Q or is
-   These basic properties of binary operations are fun-       at least relevant to it. If P causes Q then certainly P
-da mental to the structures of abstract algebra. See           cannot be true with out Q being true, but all a mathe-
-four important algebraic structures [I.3 §2](/part-01/fundamental-definitions) for              matician cares about is this logical consequence and
-further details.                                              not whether there is any reason for it. Thus, if you
-                                                              want to prove that P ⇒ Q, all you have to do is rule
-             3   Some Elementary Logic                        out the possibility that P could be true and Q false
-                                                              at the same time. To give an example: if n is a posi-
+then the inverse is 1/x.
+   These basic properties of binary operations are fun-
+da mental to the structures of abstract algebra. See
+four important algebraic structures [I.3 §2](/part-01/fundamental-definitions) for
+further details.
+
 3.1    Logical Connectives
-                                                              tive integer, then the statement “n is a perfect square
-A logical connective is the mathematical equivalent of a      with final digit 7” implies the statement “n is a prime
+A logical connective is the mathematical equivalent of a
 conjunction. That is, it is a word (or symbol) that joins     number,” not because there is any connection between
-two sentences to produce a new one. We have already           the two but because no perfect square ends in a 7. Of
-discussed an example, namely “and” in its sentence-           course, implications of this kind are less interesting
-linking meaning, which is some times written by the            mathematically than more genuine-seeming ones, but
-symbol “∧,” particularly in more formal or abstract           the reward for accepting them is that, once again, one
+two sentences to produce a new one. We have already
+discussed an example, namely “and” in its sentence-
+linking meaning, which is some times written by the
+symbol “∧,” particularly in more formal or abstract
+
+13
+mathematical discourse. If P and Q are statements
+(note here the mathematical habit of representing not
+just numbers but any objects whatsoever by single let-
+ters), then P ∧Q is the statement that is true if and only
+if both P and Q are true.
+Another connective is the word “or,” a word that has
+a more specific meaning for mathematicians than it
+has for normal speakers of the English language. The
+mathematical use is illustrated by the tiresome joke of
+responding, “Yes please,” to a question such as, “Would
+you like your coffee with or with out sugar?” The sym-
+bol for “or,” if one wishes to use a symbol, is “∨,” and
+the statement P ∨ Q is true if and only if P is true or
+Q is true. This is taken to include the case when they
+A third important connective is “implies,” which is
+usually written “⇒.” The statement P ⇒ Q means,
+roughly speaking, that Q is a consequence of P , and
+is some times read as “if P then Q.” However, as with
+“or,” this does not mean quite what it would in English.
+To get a feel for the difference, consider the following
+even more extreme example of mathematical pedantry.
+At the supper table, my young daughter once said, “Put
+your hand up if you are a girl.” One of my sons, to tease
+her, put his hand up on the grounds that, since she had
+not added, “and keep it down if you are a boy,” his doing
+so was compatible with her command.
+Something like this attitude is taken by mathemat i-
+cians to the word “implies,” or to sentences containing
+true if P is true and Q is false. This is the definition
+of “implies.” It can be confusing because in English
+between P and Q, that P in some way causes Q or is
+at least relevant to it. If P causes Q then certainly P
+cannot be true with out Q being true, but all a mathe-
+matician cares about is this logical consequence and
+not whether there is any reason for it. Thus, if you
+want to prove that P ⇒ Q, all you have to do is rule
+3   Some Elementary Logic
+at the same time. To give an example: if n is a posi-
+tive integer, then the statement “n is a perfect square
+with final digit 7” implies the statement “n is a prime
+the two but because no perfect square ends in a 7. Of
+course, implications of this kind are less interesting
+mathematically than more genuine-seeming ones, but
+the reward for accepting them is that, once again, one
 
 $14$
 
@@ -313,75 +437,94 @@ $7$
 
 allowed to be fractions: if $a = 3$ and $b = {}^{3}$ then $ab = 7$ with out either $a$ or $b$ equaling $1$ , but this does not show that $7$ is not a prime. Implicit in the opening symbols ∀a, b is the idea that $a$ and $b$ are intended to be positive integers. If this had not been clear from the context, then we could have used the symbol N (which stands for the set of all positive integers) and started sentence ( $10$ ) with ∀a, $b\inN$ instead.
 
-I.2.   The Language and Grammar of Mathematics                                                                         15
+I.2.   The Language and Grammar of Mathematics
 
-3.3    Negation                                             3.4   Free and Bound Variables
+3.3    Negation
 
-The basic idea of negation in mathematics is very sim-      Suppose we say something like, “At time t the speed of
-ple: there is a symbol, “¬,” which means “not,” and if      the projectile is v.” The letters t and v stand for real
-P is any mathematical statement, then ¬P stands for         numbers, and they are called variables, because in the
+The basic idea of negation in mathematics is very sim-
+ple: there is a symbol, “¬,” which means “not,” and if
+P is any mathematical statement, then ¬P stands for
 the statement that is true if and only if P is not true.    back of our mind is the idea that they are changing.
-                                                            More generally, a variable is any letter used to stand
 However, this is another example of a word that has
-                                                            for a mathematical object, whether or not one thinks of
 a slightly more restricted meaning to mathematicians
-                                                            that object as changing through time. Let us look once
 than it has in ordinary speech.
-                                                            again at the formal sentence that said that a positive
   To illustrate this phenomenon once again, let us take
-                                                            integer m is prime:
 A to be a set of positive integers and ask ourselves what
 the negation is of the sentence “Every number in the set     (10) ∀a, b    ab = m ⇒ ((a = 1) ∨ (b = 1)).
 A is odd.” Many people when asked this question will
-suggest, “Every number in the set A is even.” However,      In this sentence, there are three variables, a, b, and m,
+suggest, “Every number in the set A is even.” However,
 this is wrong: if one thinks carefully about what exactly   but there is a very important grammatical and semantic
 would have to happen for the first sentence to be false,     difference between the first two and the third. Here are
-                                                            two results of that difference. First, the sentence does
 one realizes that all that is needed is that at least one
-                                                            not really make sense unless we already know what m
 number in A should be even. So in fact the negation
-                                                            is from the context, where as it is important that a and b
 of the sentence is, “There exists a number in A that is
-                                                            do not have any prior meaning. Second, while it makes
 even.”
-                                                            perfect sense to ask, “For which values of m is sen-
   What explains the temptation to give the first, incor-
-                                                            tence (10) true?” it makes no sense at all to ask, “For
 rect answer? One possibility emerges when one writes
-                                                            which values of a is sentence (10) true?” The letter m
 the sentence more formally, thus:
-                                                            in sentence (10) stands for a fixed number, not speci-
-                                                            fied in this sentence, while the letters a and b, because
- (11) ∀n ∈ A      n is odd.
-                                                            of the initial ∀a, b, do not stand for numbers—rather,
-                                                            in some way they search through all pairs of positive
+ (11) ∀n ∈ A
 The first answer is obtained if one negates just the last
-                                                            integers, trying to find a pair that multiply together to
 part of this sentence, “n is odd”; but what is asked for
-                                                            give m. Another sign of the difference is that you can
 is the negation of the whole sentence. That is, what is
-                                                            ask, “What number is m?” but not, “What number is
 wanted is not
-                                                            a?” A fourth sign is that the meaning of sentence (10)
-                                                            is completely unaffected if one uses different letters for
  (12) ∀n ∈ A ¬(n is odd),
-                                                            a and b, as in the reformulation
 
-but rather                                                  (10 ) ∀c, d    cd = m ⇒ ((c = 1) ∨ (d = 1)).
+but rather
 
- (13) ¬(∀n ∈ A       n is odd),                             One cannot, however, change m to n with out estab-
-                                                            li shing first that n denotes the same integer as m. A
-which is equivalent to                                      variable such as m, which denotes a specific object, is
-                                                            called a free variable. It sort of hovers there, free to take
- (14) ∃n ∈ A      n is even.                                any value. A variable like a and b, of the kind that does
-                                                            not denote a specific object, is called a bound variable,
-A second possible explanation is that one is inclined       or some times a dummy variable. (The word “bound”
-(for psycholinguistic reasons) to think of the phrase       is used mainly when the variable appears just after a
-“every element of A” as denoting something like a sin-      quantifier, as in sentence (10).)
-gle, typical element of A. If that comes to have the feel      Yet another indication that a variable is a dummy
-of a particular number n, then we may feel that the         variable is when the sentence in which it occurs can
+ (13) ¬(∀n ∈ A
+which is equivalent to
+ (14) ∃n ∈ A
+A second possible explanation is that one is inclined
+(for psycholinguistic reasons) to think of the phrase
+“every element of A” as denoting something like a sin-
+gle, typical element of A. If that comes to have the feel
+of a particular number n, then we may feel that the
 negation of “n is odd” is “n is even.” The remedy is not    be rewritten with out it. For instance, the expression
-                                                            100
-to think of the phrase “every element of A” on its own:        n=1 f (n) is shorthand for f (1) + f (2) + · · · + f (100),
+to think of the phrase “every element of A” on its own:
 it should always be part of the longer phrase, “for every   and the second way of writing it does not involve the
-element of A.”                                              letter n, so n was not really standing for anything in
+element of A.”
+
+15
+3.4   Free and Bound Variables
+Suppose we say something like, “At time t the speed of
+the projectile is v.” The letters t and v stand for real
+numbers, and they are called variables, because in the
+More generally, a variable is any letter used to stand
+for a mathematical object, whether or not one thinks of
+that object as changing through time. Let us look once
+again at the formal sentence that said that a positive
+integer m is prime:
+In this sentence, there are three variables, a, b, and m,
+two results of that difference. First, the sentence does
+not really make sense unless we already know what m
+is from the context, where as it is important that a and b
+do not have any prior meaning. Second, while it makes
+perfect sense to ask, “For which values of m is sen-
+tence (10) true?” it makes no sense at all to ask, “For
+which values of a is sentence (10) true?” The letter m
+in sentence (10) stands for a fixed number, not speci-
+fied in this sentence, while the letters a and b, because
+n is odd.
+of the initial ∀a, b, do not stand for numbers—rather,
+in some way they search through all pairs of positive
+integers, trying to find a pair that multiply together to
+give m. Another sign of the difference is that you can
+ask, “What number is m?” but not, “What number is
+a?” A fourth sign is that the meaning of sentence (10)
+is completely unaffected if one uses different letters for
+a and b, as in the reformulation
+(10 ) ∀c, d    cd = m ⇒ ((c = 1) ∨ (d = 1)).
+n is odd),
+li shing first that n denotes the same integer as m. A
+variable such as m, which denotes a specific object, is
+called a free variable. It sort of hovers there, free to take
+n is even.
+not denote a specific object, is called a bound variable,
+or some times a dummy variable. (The word “bound”
+is used mainly when the variable appears just after a
+quantifier, as in sentence (10).)
+Yet another indication that a variable is a dummy
+variable is when the sentence in which it occurs can
+100
+n=1 f (n) is shorthand for f (1) + f (2) + · · · + f (100),
+letter n, so n was not really standing for anything in

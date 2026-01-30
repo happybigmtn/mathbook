@@ -35,67 +35,102 @@ There are similar definitions for other fields be sides R , and also in higher d
 See some fundamental mathematical definitions [I.3](/part-01/fundamental-definitions) for more details about projective geometry. III . $73$ Quadratic Forms Ben Green A quadratic form is a homogeneous polynomial of degree $2$ in some finite set of unknowns $x^{1}$ , $x^{2}$ , . . . , x n : an example is $q(x^{1}$ , $x^{2}$ , x3) = (x1)2 - 3 x1 x2 + 4(x3)2 . Here, the coefficients $1$ , $- 3$ , and $4$ are integers, but the idea generalizes straightforward ly from Z to any ring R.
 Since linear functions are undeniably important and $2$ is the next positive integer after $1$ , one might expect quadratic forms to be important as well, and indeed they are, in many different branches of mathematics, including linear algebra itself. Here are two theorems about quadratic forms.
 
-268                                                                                            III. Mathematical Concepts
+268
 
-Theorem 1. If x, y, and z are three points in Rd ,            advantage of this more abstract approach over the con-
-then the distances between them satisfy the triangle          crete definition we gave at the beginning is that it is not
-inequality                                                    necessary to specify a basis for Rd .
-                |x − z| ⩽ |x − y| + |y − z|.                    If one makes a good choice of basis, then the quad-
-                                                              ratic form can be made to look particularly pleasant:
-Theorem 2. An odd prime p can be written as the sum           we may always choose a basis in such a way that
+Theorem 1. If x, y, and z are three points in Rd ,
+then the distances between them satisfy the triangle
+inequality
+
+Theorem 2. An odd prime p can be written as the sum
 of two squares if and only if it leaves remainder 1 on
-                                                                      q(x) = x12 + · · · + xs2 − xs+1
-                                                                                                  2
-                                                                                                      − · · · − xt2
 division by 4.
-                                                              for some s and t satisfying 0 ⩽ s ⩽ t ⩽ d. Here
   It is not at first sight clear why theorem 1 has any-
-                                                              x1 , . . . , xt are the coefficients of x with respect to the
 thing to do with quadratic forms. The reason is that the
-                                                              basis we have carefully chosen. The quantity s − t is
 square of the Euclidean distance
-                                                             called the signature of the form. When s = d (as is
-                  |x| = x12 + · · · + xd2                     the case for the form defining the Euclidean distance)
-is a quadratic form over the real numbers R (here, the        the form is said to be positive definite. Forms that are
-xi are the coordinates of x). This form is derived from       not positive definite occur very commonly. For exam-
-the inner product                                             ple, the form x 2 + y 2 + z 2 − t 2 is used to define
-                                                              minkowski space [I.3 §6.8](/part-01/fundamental-definitions), which plays a key role in
-                x, y = x1 y1 + · · · + xd yd                special relativity.
-by taking |x|2 to be x, x. The inner product satisfies          We turn now to examples of quadratic forms in num-
-the relations                                                 ber theory, beginning with two very famous theorems
-                                                              about quadratic forms over the integers Z. The first is
+
+is a quadratic form over the real numbers R (here, the
+xi are the coordinates of x). This form is derived from
+the inner product
+
+by taking |x|2 to be x, x. The inner product satisfies
+the relations
   (i) x, x ⩾ 0 for all x ∈ Rd , with equality if and only   theorem 2, mentioned at the start of the article. It is
-      if x = 0.                                               due to fermat [VI.12](/part-06/pierre-fermat-1601665). There are many related results
+
  (ii) x, y + z = x, y + x, z for all x, y, z ∈ Rd .     for other binary quadratic forms such as x 2 + 2 y 2 and
-(iii) . ambda x, y = x, . ambda y = λx, y for all λ ∈ R and           x 2 + 3 y 2 . In general, however, the question of which
-      x, y ∈ Rd .                                             primes are represented by x 2 +ny 2 is extremely subtle
-(iv) x, y = y, x for all x, y ∈ Rd .                      and interesting, and leads one to class field theory
-                                                              [V.28](/part-05/from-quadratic-reciprocity-to-vi38-augustus-de-morgan-18061871).
+(iii) . ambda x, y = x, . ambda y = λx, y for all λ ∈ R and
+
+(iv) x, y = y, x for all x, y ∈ Rd .
 More generally, any function φ(x, y) that satisfies
-these relations is called an inner product. The triangle         In 1770 lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813) showed that every number
-inequality is a consequence of arguably the most impor-       n can be written as a sum of four squares. In fact, the
-tant inequality in mathematics, the cauchy–schwarz            number of such representations of n, r4 (n), is given by
-inequality [V.19](/part-05/inequalities)                                             the formula
-                                                                                                 
-                                                                                        r4 (n) =   d.
-                     |x, y| ⩽ |x| |y|.                                                         d|n
-                                                                                                 4d
+these relations is called an inner product. The triangle
+inequality is a consequence of arguably the most impor-
+tant inequality in mathematics, the cauchy–schwarz
+inequality [V.19](/part-05/inequalities)
   Not all quadratic forms on Rd come from inner prod-
-ucts, but they do all come from symmetric bilinear            This formula can be explained using the theory of mod-
-forms g : Rd . imes Rd → R. These are functions of two             ular forms [III.59](/part-03/modular-forms), one of the most important topics
-variables that satisfy all the axioms of an inner prod-       in number theory. Indeed, the generating series
-uct except possibly (i), the positivity criterion. Given                                 . nfty
-                                                                                         
-a quadratic form q(x) = g(x, x), one may recover g                             f (z) =         r4 (n)e2π inz
-                                                                                         n=0
+ucts, but they do all come from symmetric bilinear
+forms g : Rd . imes Rd → R. These are functions of two
+variables that satisfy all the axioms of an inner prod-
+uct except possibly (i), the positivity criterion. Given
+a quadratic form q(x) = g(x, x), one may recover g
 using the polarization identity
-                                                              is a theta series, as a result of which it satisfies certain
-                     1
-        g(x, y) = 2 (q(x + y) − q(x) − q(y)).                 transformations that identify it as a modular form.
-This correspondence between quadratic forms and                  A remarkable theorem of Conway and Schneeberger
-symmetric bilinear forms works just as well when R            states that if a quadratic form a1 x12 + a2 x22 + a3 x32 +
-is replaced by any field k, except that there are some         a4 x42 with a1 , . . . , a4 ∈ N represents all the positive
-serious technical issues when k has characteristic two        integers less than or equal to 15, then it represents
-(due to the presence of the fraction 12 in the above          all positive integers. ramanujan [VI.82](/part-06/srinivasa-ramanujan-18871920) listed fifty-five
-formula). In linear algebra one often defines quadratic        such forms; actually, one of his forms did not repre-
-forms by first discussing symmetric bilinear forms. The        sent 15, but the remaining fifty-four forms constitute
+
+This correspondence between quadratic forms and
+symmetric bilinear forms works just as well when R
+is replaced by any field k, except that there are some
+serious technical issues when k has characteristic two
+(due to the presence of the fraction 12 in the above
+formula). In linear algebra one often defines quadratic
+forms by first discussing symmetric bilinear forms. The
+
+III. Mathematical Concepts
+advantage of this more abstract approach over the con-
+crete definition we gave at the beginning is that it is not
+necessary to specify a basis for Rd .
+|x − z| ⩽ |x − y| + |y − z|.
+ratic form can be made to look particularly pleasant:
+we may always choose a basis in such a way that
+q(x) = x12 + · · · + xs2 − xs+1
+2
+− · · · − xt2
+for some s and t satisfying 0 ⩽ s ⩽ t ⩽ d. Here
+x1 , . . . , xt are the coefficients of x with respect to the
+basis we have carefully chosen. The quantity s − t is
+                                     called the signature of the form. When s = d (as is
+|x| = x12 + · · · + xd2
+the form is said to be positive definite. Forms that are
+not positive definite occur very commonly. For exam-
+ple, the form x 2 + y 2 + z 2 − t 2 is used to define
+minkowski space [I.3 §6.8](/part-01/fundamental-definitions), which plays a key role in
+x, y = x1 y1 + · · · + xd yd
+We turn now to examples of quadratic forms in num-
+ber theory, beginning with two very famous theorems
+about quadratic forms over the integers Z. The first is
+if x = 0.
+x 2 + 3 y 2 . In general, however, the question of which
+x, y ∈ Rd .
+and interesting, and leads one to class field theory
+[V.28](/part-05/from-quadratic-reciprocity-to-vi38-augustus-de-morgan-18061871).
+In 1770 lagrange [VI.22](/part-06/joseph-louis-lagrange-17361813) showed that every number
+n can be written as a sum of four squares. In fact, the
+number of such representations of n, r4 (n), is given by
+the formula
+
+r4 (n) =   d.
+|x, y| ⩽ |x| |y|.                                                         d|n
+4d
+This formula can be explained using the theory of mod-
+ular forms [III.59](/part-03/modular-forms), one of the most important topics
+in number theory. Indeed, the generating series
+. nfty
+
+f (z) =
+n=0
+is a theta series, as a result of which it satisfies certain
+1
+g(x, y) = 2 (q(x + y) − q(x) − q(y)).
+A remarkable theorem of Conway and Schneeberger
+states that if a quadratic form a1 x12 + a2 x22 + a3 x32 +
+a4 x42 with a1 , . . . , a4 ∈ N represents all the positive
+integers less than or equal to 15, then it represents
+all positive integers. ramanujan [VI.82](/part-06/srinivasa-ramanujan-18871920) listed fifty-five
+such forms; actually, one of his forms did not repre-
+sent 15, but the remaining fifty-four forms constitute

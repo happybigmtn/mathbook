@@ -1,67 +1,102 @@
 # Transforms
 
-III.91.   Transforms                                                                                                               303
+III.91.   Transforms
 
-The Zariski topology. This is used in algebraic                       whose union is X), we may find a finite subcollection
-geometry [IV.4](/part-04/algebra). It is specified by giving its closed sets             {U1 , . . . , Uk } ⊆ C that still covers X. Specializing this
-(and hence, by complementation, its open sets)—these                  definition to R2 with the usual topology, it can indeed
-are the zero loci of systems of polynomial equations.                 be proved that a set S ⊆ R2 is compact (in the subspace
-On C2 , for example, these closed sets are precisely the              topology) if and only if it is closed and bounded. See
-sets of the form                                                      compactness and compactification [III.9](/part-03/compactness-and-compactication) for more
-                                                                      information.
+The Zariski topology. This is used in algebraic
+geometry [IV.4](/part-04/algebra). It is specified by giving its closed sets
+(and hence, by complementation, its open sets)—these
+are the zero loci of systems of polynomial equations.
+On C2 , for example, these closed sets are precisely the
+sets of the form
 {(z1 , z2 ) : f1 (z1 , z2 ) = f2 (z1 , z2 )
-                                      = · · · = fk (z1 , z2 ) = 0},
-                                                                      III.91 Transforms
 where f1 , . . . , fk are polynomials. To show that this
-                                                                                T. W. Körner
 defines a topology is some what nontrivial, the diffi-
-culty being to show that an arbitrary intersection of                 If we have a finite sequence a0 , a1 , . . . , an of real num-
-closed sets is closed (which is equivalent to the asser-              bers (written briefly as a), then we can look at the
-tion that an arbitrary union of open sets is open). This              polynomial
+culty being to show that an arbitrary intersection of
+closed sets is closed (which is equivalent to the asser-
+tion that an arbitrary union of open sets is open). This
 is a consequence of Hilbert’s basis theorem.
-                                                                                    Pa (t) = a0 + a1 t + · · · + an t n .
   The notion of topological space is a very good exam-
-                                                                      Conversely, given a polynomial Q of degree m ⩽ n, we
 ple of the power of abstraction in mathematics. The
-                                                                      can recover a unique sequence b0 , b1 , . . . , bn such that
 definition is simple and covers a wide variety of nat-
-ural situations, yet it has enough content that one                                  Q(t) = b0 + b1 t + · · · + bn t n
-can make interesting definitions and prove theorems                    by, for example, taking bk = Q(k) (0)/k!.
-purely within the world of topological spaces. It is often              We observe that if a0 , a1 , . . . , an and b0 , b1 , . . . , bn
-fun to take a familiar concept, that applies to R or R2 ,             are finite sequences, then
+ural situations, yet it has enough content that one
+can make interesting definitions and prove theorems
+purely within the world of topological spaces. It is often
+fun to take a familiar concept, that applies to R or R2 ,
 say, and try to find an analogue of it in the world of
-general topological spaces. We give two examples.                                        Pa (t)Pb (t) = Pa∗b (t),
-                                                                      where a ∗ b = c is a sequence c0 , c1 , . . . , c2 n given by
+general topological spaces. We give two examples.
 Connectedness. The rough idea of connectedness is
-that a connected set is one that does not break up into                           ck = a0 bk + a1 bk−1 + · · · + ak b0 ,
-pieces in an obvious way. Most people would imagine                   where we interpret ai and bi as 0 if i > n. This sequence
-that they could discern, from a list of pictures of rea-              is called the convolution of the sequences a and b.
-son ably sensible subsets of R2 , which were connected                    To see the kind of use that one can make of this
-and which were not. But can one give a precise math-                  observation, consider what happens when we throw
-ematical definition that applies to all sets, including                two dice, the first of which has probability au of show-
-potentially very wild ones, and says whether they are                 ing u and the second of which has probability bv of
-connected or not? For example, is the space                           showing v. The probability that their sum is k is given
-            S = ((Q . imes R) ∪ (R . imes Q)) \ (Q . imes Q),                        by the number ck defined above. If we take both au and
-which consists of all points with exactly one rational                bu to be the probability of throwing u with an ordinary
-                                                                                                       1
-coordinate, connected or not (with the subspace topol-                fair die (so they are equal to 6 if 1 ⩽ u ⩽ 6, and 0
-ogy)? It turns out that a definition can indeed be given,              otherwise), then
-and more over that it applies not just to R2 but to gen-                             Pc (t) = Pa (t)Pb (t)
+that a connected set is one that does not break up into
+pieces in an obvious way. Most people would imagine
+that they could discern, from a list of pictures of rea-
+son ably sensible subsets of R2 , which were connected
+and which were not. But can one give a precise math-
+ematical definition that applies to all sets, including
+potentially very wild ones, and says whether they are
+connected or not? For example, is the space
+
+which consists of all points with exactly one rational
+coordinate, connected or not (with the subspace topol-
+ogy)? It turns out that a definition can indeed be given,
+and more over that it applies not just to R2 but to gen-
 eral topological spaces. We say that a space X is con-
-                                                                                           = ( 16 (t + t 2 + · · · + t 6 ))2 .
 nected if there is no decomposition X = U1 ∪ U2 of X
-into two disjoint, nonempty, open sets. We leave it to                This polynomial can be rewritten as
-the reader to decide whether S is connected or not.                    1              4   2            2             3
-                                                                       36 (t(t + 1)(t + t + 1))(t(t + t + 1)(t + 1))
-Compactness. This is one of the most important con-                            1
-                                                                            = 36 (t(t + 1)(t 2 + t + 1))(t(t 4 + t 2 + 1)(t 3 + 1))
+into two disjoint, nonempty, open sets. We leave it to
+the reader to decide whether S is connected or not.
+Compactness. This is one of the most important con-
 cepts in all of mathematics, but it can appear strange
-                                                                            = PA (t)PB (t),
 at first sight. It comes from attempting to abstract the
-notion of a closed and bounded set (in R2 , say) to a                 where A and B are two different sequences, given by
-general topological space. We say that X is compact if,               A1 = A4 = 16 , A2 = A3 = 26 , and Au = 0 otherwise,
-                                                                                                           1
-given any collection C of open sets U that cover X (i.e.,             and B1 = B3 = B4 = B5 = B6 = B8 = 6 , and Bv = 0
+notion of a closed and bounded set (in R2 , say) to a
+general topological space. We say that X is compact if,
+given any collection C of open sets U that cover X (i.e.,
+
+303
+whose union is X), we may find a finite subcollection
+{U1 , . . . , Uk } ⊆ C that still covers X. Specializing this
+definition to R2 with the usual topology, it can indeed
+be proved that a set S ⊆ R2 is compact (in the subspace
+topology) if and only if it is closed and bounded. See
+compactness and compactification [III.9](/part-03/compactness-and-compactication) for more
+information.
+= · · · = fk (z1 , z2 ) = 0},
+III.91 Transforms
+T. W. Körner
+If we have a finite sequence a0 , a1 , . . . , an of real num-
+bers (written briefly as a), then we can look at the
+polynomial
+Pa (t) = a0 + a1 t + · · · + an t n .
+Conversely, given a polynomial Q of degree m ⩽ n, we
+can recover a unique sequence b0 , b1 , . . . , bn such that
+Q(t) = b0 + b1 t + · · · + bn t n
+by, for example, taking bk = Q(k) (0)/k!.
+We observe that if a0 , a1 , . . . , an and b0 , b1 , . . . , bn
+are finite sequences, then
+Pa (t)Pb (t) = Pa∗b (t),
+where a ∗ b = c is a sequence c0 , c1 , . . . , c2 n given by
+ck = a0 bk + a1 bk−1 + · · · + ak b0 ,
+where we interpret ai and bi as 0 if i > n. This sequence
+is called the convolution of the sequences a and b.
+To see the kind of use that one can make of this
+observation, consider what happens when we throw
+two dice, the first of which has probability au of show-
+ing u and the second of which has probability bv of
+showing v. The probability that their sum is k is given
+S = ((Q . imes R) ∪ (R . imes Q)) \ (Q . imes Q),
+bu to be the probability of throwing u with an ordinary
+1
+fair die (so they are equal to 6 if 1 ⩽ u ⩽ 6, and 0
+otherwise), then
+Pc (t) = Pa (t)Pb (t)
+= ( 16 (t + t 2 + · · · + t 6 ))2 .
+This polynomial can be rewritten as
+1
+36 (t(t + 1)(t + t + 1))(t(t + t + 1)(t + 1))
+1
+= 36 (t(t + 1)(t 2 + t + 1))(t(t 4 + t 2 + 1)(t 3 + 1))
+= PA (t)PB (t),
+where A and B are two different sequences, given by
+A1 = A4 = 16 , A2 = A3 = 26 , and Au = 0 otherwise,
+1
+and B1 = B3 = B4 = B5 = B6 = B8 = 6 , and Bv = 0
 
 $304$
 

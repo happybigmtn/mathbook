@@ -116,53 +116,72 @@ The story for two-dimensional, connected, compact manifolds is much richer than 
 This is to say that there is no path from one side of the loop to the other that avoids the loop yet remains very close to it. The Möbius strip (see figure $6$ ) is not orientable because there are paths from one side of the central loop to the other that do not cross the central loop yet remain very close to it. The orientable, compact, connected, topological, two-dimensional manifolds are in one-to-one correspondence with a collection of fundamental foods: the apple, the doughnut, the two-holed pretzel, the three holed pretzel, the four-holed pretzel, and so on (see figure $7$ ).
 Technically, they are classified by an integer, called the genus. This is $0$ for the sphere, $1$ for the torus, $2$ for the two-holed torus, etc. The genus counts the number of holes that appear in a given example from
 
-400                                                                                   IV. Branches of Mathematics
-
-                                                                                                  ...
-
-                 Sphere          One-holed torus                  Two-holed torus
-                                  Figure 7 The orientable manifolds of dimension 2.
-
-              Figure 8 Cutting and gluing.
+400
 
 figure 7. To say that this classifies them is to say that
 two such manifolds are the same if and only if they have
 the same genus. This is a theorem due to poincaré
 [VI.61](/part-06/jules-henri-poincar-18541912).
-   As it turns out, every topological two-dimensional             Projective plane                  Klein bottle
+   As it turns out, every topological two-dimensional
 manifold has exactly one smooth structure, so the list
-                                                            Figure 9 Two nonorientable surfaces. To form the projec-
 in figure 7 is the same as the list of the smooth ori-
-                                                            tive plane, one identifies the boundary of the Möbius strip
-en table two-dimensional manifolds. Here one should          with the boundary of the hemisphere.
+en table two-dimensional manifolds. Here one should
 keep in mind that the notion of a smooth manifold is
 intrinsic, and therefore independent of how the man-
 ifold is represented as a surface in 3-space, or in any     that first cuts a disk out of an orientable two-dimen-
-other space. For example, the surfaces of an orange,        sional manifold and then glues on a Möbius strip.
-a banana, and a watermelon each represent embed-            To be more precise, note that the Möbius strip has
-ded images of the two-dimensional sphere, the left most      a circle as its boundary. Cut a disk out of any given
-example in figure 7.                                         orientable, two-dimensional manifold and the result
+other space. For example, the surfaces of an orange,
+a banana, and a watermelon each represent embed-
+ded images of the two-dimensional sphere, the left most
+example in figure 7.
    The shapes illustrated in figure 7 suggest an idea that   also has a circular boundary. Glue the latter circular
 plays a key role when it comes to classifying manifolds     boundary to the Möbius strip boundary, smooth the
-of higher dimensions. Notice that the two-holed torus       corners, and the result is a smooth manifold that is
+of higher dimensions. Notice that the two-holed torus
 can be viewed as the result of taking two one-holed tori,   nonorientable. Every nonorientable, topological (and
-cutting disks out of both, gluing the results together      thus every nonorientable, smooth), two-dimensional
-across their boundary circles, and then smoothing the       manifold is obtained in this way. More over, the man-
+cutting disks out of both, gluing the results together
+across their boundary circles, and then smoothing the
 corners. This operation is depicted in figure 8. This sort   ifold you get depends only on the number of holes (the
-of cutting and gluing operation is an example of what       genus) of the orientable manifold that is used.
-is called a surgery. The analogous surgery can also be         The manifold obtained from the surgery of a Möbius
-done with a one-holed torus and a two-holed torus to        strip with a sphere is called the projective plane. The
+of cutting and gluing operation is an example of what
+is called a surgery. The analogous surgery can also be
+done with a one-holed torus and a two-holed torus to
 obtain a three-holed torus. And so on. Thus, all of the     one that uses the Möbius strip and the torus is called
-oriented two-dimensional manifolds can be built using       the Klein bottle. These shapes are illustrated in figure 9.
-standard surgeries on copies of just two fundamental        No nonorientable example can be put into three-dimen-
-building blocks: the one-holed torus and the sphere.        sional Euclidean space in a clean way; any such place-
-Here is a nice exercise to test your understanding of       ment is forced to have portions that pass through other
-this process. Suppose that you perform a surgery, as        portions, as can be seen in the illustration of the Klein
-in figure 8, on a sphere and another manifold M. Prove       bottle.
-that the resulting manifold is the same, with regard to        How does one prove that the list given above ex-
-its topological and smooth structure, as M.                 hausts all two-dimensional manifolds? One method
+oriented two-dimensional manifolds can be built using
+standard surgeries on copies of just two fundamental
+building blocks: the one-holed torus and the sphere.
+Here is a nice exercise to test your understanding of
+this process. Suppose that you perform a surgery, as
+in figure 8, on a sphere and another manifold M. Prove
+that the resulting manifold is the same, with regard to
+its topological and smooth structure, as M.
    As it turns out, all of the nonorientable two-dimen-     uses versions of the geometric techniques that are
 sional manifolds can be built using a version of surgery    discussed below in the three-dimensional context.
+
+IV. Branches of Mathematics
+...
+Sphere
+Figure 7 The orientable manifolds of dimension 2.
+Figure 8 Cutting and gluing.
+Projective plane
+Figure 9 Two nonorientable surfaces. To form the projec-
+tive plane, one identifies the boundary of the Möbius strip
+with the boundary of the hemisphere.
+sional manifold and then glues on a Möbius strip.
+To be more precise, note that the Möbius strip has
+a circle as its boundary. Cut a disk out of any given
+orientable, two-dimensional manifold and the result
+corners, and the result is a smooth manifold that is
+thus every nonorientable, smooth), two-dimensional
+manifold is obtained in this way. More over, the man-
+genus) of the orientable manifold that is used.
+The manifold obtained from the surgery of a Möbius
+strip with a sphere is called the projective plane. The
+the Klein bottle. These shapes are illustrated in figure 9.
+No nonorientable example can be put into three-dimen-
+sional Euclidean space in a clean way; any such place-
+ment is forced to have portions that pass through other
+portions, as can be seen in the illustration of the Klein
+bottle.
+How does one prove that the list given above ex-
+hausts all two-dimensional manifolds? One method
 
 $IV$ . $7$ .
 
@@ -231,62 +250,95 @@ One can associate with this equivalence class the point (x , y) = (cos t, sin t)
 That is, the subgroup can be recovered from the manifold in a relatively straightforward fashion using the fact that each point in the manifold lies in a coordinate chart where its distance function is the same as that of the associated model space. Even before Perelman’s work there was a tremendous amount of evidence for the validity of the geometrization conjecture, much of it supplied by Thurston. In order to discuss this evidence, a small digression is required to give some of the background. First, I need to bring in the notion of a link in the three-dimensional sphere.
 A link is the name given to a finite disjoint
 
-IV.7.   Differential Topology                                                                                         403
+IV.7.   Differential Topology
 
-                                                               manifolds by using surgeries on it. Further more, Ray-
-                                                               mond Lickorish proved that every three-dimensional
-                                                               manifold can be obtained by using surgery on some
-                                                               link in the three-dimensional sphere. Unfortunately,
-                                                               this character ization of three-dimensional manifolds
-                                                               via surgeries on links does not provide a satisfactory
-                                                               resolution to the central quest of classifying smooth
-                                                               structures because the process is far from unique: for
-                                                               any given manifold there is a bewildering assortment of
-                                                               links and surgeries that can be used to produce it. More-
-        Figure 10 A link formed out of two knots.              over, as of this writing, there is no known way to clas-
-                                                               sify knots and links in the three-dimensional sphere.
-union of knots. Figure 10 depicts an example of one               In any event, here is a taste of Thurston’s evidence
-that is made out of two knots.                                 for his geometrization conjecture. Given any link, all
+union of knots. Figure 10 depicts an example of one
+that is made out of two knots.
    I also need the notion of surgery on a link. To this end,   but finitely many of the three-dimensional manifolds
-thicken the link so as to view it as a union of knotted,       you can produce from it by surgery satisfy the conclu-
-solid tubes. (Think of the knot as the copper in an insu-      sions of the geometrization conjecture. Thurston also
-lated wire and view the solid tube as the copper plus          proved that, given any knot apart from the unknot, all
-the surrounding insulation.) Notice that the boundary          but finitely many surgeries on it produce a manifold
-of any given component tube is really a copy of our            with a hyperbolic geometric structure.
-one-holed torus from figure 7. Therefore, removing any             By the way, Perelman’s proof of the geometrization
-one of the tubes leaves a tubular-shaped missing region        theorem gives as a special case a proof of the Poincaré
-from the three-dimensional sphere whose boundary is            conjecture, proposed by Poincaré in 1904. To state this
-a torus.                                                       we need the notion of a simply connected manifold. This
-   Now, to define a surgery, imagine removing a knotted         is a manifold with the property that any closed loop in
-tube and then gluing it back in a different way. That is,       it can be shrunk down to a point. To be more precise,
-imagine gluing the boundary of the tube to the bound-          designate a point in the manifold as the “base point.”
-ary of the resulting missing region using an identifica-        Then any path in the manifold that starts and ends at
-tion that is not the same as the original. For example,        the chosen base point can be continuously deformed
-take the “unknot,” a standard round circle in a given          in such a way that at each stage of the deformation
-plane, here viewed as living inside a coordinate chart         the path still starts and ends at the base point, and so
-of the three-dimensional sphere. Take out the solid            that the end result is the trivial path that starts at the
-tube around it, and then replace the tube by gluing the        base point and just stays there. For example, the two-
-boundary in the “wrong” way, as follows. Consider the          dimensional sphere is simply connected, but the torus
-left most torus in figure 11 as the boundary of the com-         is not, since a loop that goes “once around” the torus
-ple ment of the tube in R3 . Consider the middle torus          (for example, any of the loops R or L in the various
-as the inside of the tube. The “wrong” gluing identifies        tori of figure 11) cannot be shrunk to a point. In fact,
-the circles marked “R” and “L” on the left most torus           a sphere is the only two-dimensional manifold that is
-with their counterparts on the middle torus. The result-       simply connected, and spheres are simply connected in
-ing space is a three-dimensional manifold which turns          all dimensions greater than 1.
+thicken the link so as to view it as a union of knotted,
+solid tubes. (Think of the knot as the copper in an insu-
+lated wire and view the solid tube as the copper plus
+the surrounding insulation.) Notice that the boundary
+of any given component tube is really a copy of our
+one-holed torus from figure 7. Therefore, removing any
+one of the tubes leaves a tubular-shaped missing region
+from the three-dimensional sphere whose boundary is
+a torus.
+   Now, to define a surgery, imagine removing a knotted
+tube and then gluing it back in a different way. That is,
+imagine gluing the boundary of the tube to the bound-
+ary of the resulting missing region using an identifica-
+tion that is not the same as the original. For example,
+take the “unknot,” a standard round circle in a given
+plane, here viewed as living inside a coordinate chart
+of the three-dimensional sphere. Take out the solid
+tube around it, and then replace the tube by gluing the
+boundary in the “wrong” way, as follows. Consider the
+left most torus in figure 11 as the boundary of the com-
+ple ment of the tube in R3 . Consider the middle torus
+as the inside of the tube. The “wrong” gluing identifies
+the circles marked “R” and “L” on the left most torus
+with their counterparts on the middle torus. The result-
+ing space is a three-dimensional manifold which turns
 out to be the product of the circle with the two-dimen-
-                                                               The Poincaré conjecture. Every compact, simply con-
 sional sphere. That is to say, it is the set of ordered
-                                                               nected, three-dimensional manifold is the three-dimen-
 pairs (x, y), where x is a point in the circle and y is
-                                                               sional sphere.
 a point in the two-dimensional sphere. There are many
 other possible ways to glue the boundary torus, and
-                                                               2.5   Dimension 4
 almost all of the corresponding surgeries give rise to
-distinct three-dimensional manifolds. One of these is          This is the weird dimension. Nobody has managed to
-illustrated in the right most part of figure 11.                 formulate a useful and viable conjecture for the clas-
-   In general, given any link one can construct a count-       sification of smooth, compact, four-dimensional man-
-ably infinite set of distinct, smooth three-dimensional         ifolds. On the other hand, the classification story for
+distinct three-dimensional manifolds. One of these is
+illustrated in the right most part of figure 11.
+   In general, given any link one can construct a count-
+ably infinite set of distinct, smooth three-dimensional
+
+403
+manifolds by using surgeries on it. Further more, Ray-
+mond Lickorish proved that every three-dimensional
+manifold can be obtained by using surgery on some
+link in the three-dimensional sphere. Unfortunately,
+this character ization of three-dimensional manifolds
+via surgeries on links does not provide a satisfactory
+resolution to the central quest of classifying smooth
+structures because the process is far from unique: for
+any given manifold there is a bewildering assortment of
+links and surgeries that can be used to produce it. More-
+Figure 10 A link formed out of two knots.
+sify knots and links in the three-dimensional sphere.
+In any event, here is a taste of Thurston’s evidence
+for his geometrization conjecture. Given any link, all
+you can produce from it by surgery satisfy the conclu-
+sions of the geometrization conjecture. Thurston also
+proved that, given any knot apart from the unknot, all
+but finitely many surgeries on it produce a manifold
+with a hyperbolic geometric structure.
+By the way, Perelman’s proof of the geometrization
+theorem gives as a special case a proof of the Poincaré
+conjecture, proposed by Poincaré in 1904. To state this
+we need the notion of a simply connected manifold. This
+is a manifold with the property that any closed loop in
+it can be shrunk down to a point. To be more precise,
+designate a point in the manifold as the “base point.”
+Then any path in the manifold that starts and ends at
+the chosen base point can be continuously deformed
+in such a way that at each stage of the deformation
+the path still starts and ends at the base point, and so
+that the end result is the trivial path that starts at the
+base point and just stays there. For example, the two-
+dimensional sphere is simply connected, but the torus
+is not, since a loop that goes “once around” the torus
+(for example, any of the loops R or L in the various
+tori of figure 11) cannot be shrunk to a point. In fact,
+a sphere is the only two-dimensional manifold that is
+simply connected, and spheres are simply connected in
+all dimensions greater than 1.
+The Poincaré conjecture. Every compact, simply con-
+nected, three-dimensional manifold is the three-dimen-
+sional sphere.
+2.5   Dimension 4
+This is the weird dimension. Nobody has managed to
+formulate a useful and viable conjecture for the clas-
+sification of smooth, compact, four-dimensional man-
+ifolds. On the other hand, the classification story for
 
 $404$
 

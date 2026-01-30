@@ -14,87 +14,117 @@ Terence Tao
 It goes with out saying that integration is one of the fundamental concepts of single-variable calculus. However, there are in fact three concepts of integration that appear in the subject: the indefinite integral f (also known as the antiderivative), the unsigned definite integral [a , b] f (x) dx (which one would use to find the area under a curve, or the mass of a one-dimensional object of varying density), and the signed definite inteb gral a f (x) dx (which one would use, for instance, to compute the work required to move a particle from a to b).
 For simplicity we shall restrict our attention here to functions f : R $\to$ R that are continuous on the entire real line (and similarly, when we come to differential forms, we shall discuss only forms that are continuous on the entire domain). We shall also informally use terminology such as “infinitesimal” in order to avoid having to discuss the (routine) “epsilon-delta” analytical issues that one must resolve in order to make these integration concepts fully rigorous. These three concepts of integration are of course closely related to each other in single-variable calculus;
 indeed, the fundamental theorem of calculus b [I.3](/part-01/fundamental-definitions) relates the signed definite integral a  f(x)dx to any one of the indefinite integrals $F = f$ by the formula b f (x) $dx = F$ (b) - F (a), (1) a while the signed and unsigned integrals are related by the simple identity b a $f(x)dx = -f(x)dx =$ f (x) dx, (2) a b [a , b] which is valid whenever a $\le$ b. $175$ When one moves from single-variable calculus to several-variable calculus, though, these three concepts begin to diverge significantly from each other.
-The indefinite integral generalizes to the notion of a solution to a differential equation, or to an integral of a connection, vector field [IV.6](/part-04/algebraic-topology) , or bundle [IV.6](/part-04/algebraic-topology) . The unsigned definite integral generalizes to the lebesgue integral [III.55](/part-03/measures), or more generally to integration on a measure space. Finally, the signed definite integral generalizes to the integration of forms, which will be our focus here.
+The indefinite integral generalizes to the notion of a solution to a differential equation, or to an integral of a connection, vector field [IV.6](/part-04/algebraic-topology), or bundle [IV.6](/part-04/algebraic-topology). The unsigned definite integral generalizes to the lebesgue integral [III.55](/part-03/measures), or more generally to integration on a measure space. Finally, the signed definite integral generalizes to the integration of forms, which will be our focus here.
 While these three concepts are still related to each other, they are not as interchangeable as they are in the single-variable setting. The integration-of forms concept is of fundamental importance in differential topology, geometry, and physics, and also yields one of the most important examples of cohomology [IV.6](/part-04/algebraic-topology), namely de Rham cohomology, which (roughly speaking) measures the extent to which the fundamental theorem of calculus fails in higher dimensions and on general manifolds.
 To provide some motivation for the concept, let us informally revisit one of the basic applications of the signed definite integral from physics, namely computing the amount of work required to move a one dimensional particle from point a to point b in the presence of an external field.
 (For example, one might be moving a charged particle in an electric field .) At the infinitesimal level, the amount of work required to move a particle from a point x i $\in$ R to a nearby point $x^{i} + {}^{1} \inR$ is (up to a small error) proportional to the displacement $\Delta x^{i} = x^{i} + {}^{1} - x^{i}$ , with the constant of proportionality f (x i) depending on the initial location x i of the particle. Thus, the total work required for this is approximately f (x i) $\Delta$ x i .
 Note that we do not require $x^{i} + {}^{1}$ to be to the right of $x^{i}$ , so the displacement $\Delta x^{i}($ or the infinitesimal work f (x i) $\Delta$ x i) may well be negative. To return to the non infinitesimal problem of computing the work required to move from a to b, we arbitrarily select a discrete path $x^{0} = a,x^{1}$ , $x^{2}$ , . . . , $x^{n} = b$ from a to b, and approximate the work as $n - 1$ b $f(x)dx\approx$ f (x i) $\Delta$ x i . (3) a $i = 0$ Again, we do not require x i $+ {}^{1}$ to be to the right of x i ; it is quite possible for the path to “backtrack” repeatedly:
 for instance, one might have $x^{i} < x^{i} + {}^{1} > x^{i} + {}^{2}$ for some i. However, it turns out that the effect of such backtracking eventually cancels itself out; regard less of what path we choose, the expression ( $3$ ) above converges as the maximum step size tends to zero, and the
 
-176                                                                                                     III. Mathematical Concepts
+176
 
-limit is the signed definite integral                                      instead of one. In the one-dimensional case, we did not
-                               b                                          need to specify exactly which path we used to get from
-                                   f (x) dx,                       (4)    a to b, because all backtracking canceled itself out.
-                               a
-                                                 n−1                     However, in higher dimensions, the exact choice of the
+limit is the signed definite integral
 provided only that the total length i=0 |Δxi | of the
-path (which controls the amount of backtracking in-                       path γ becomes important.
-volved) stays bounded. In particular, in the case when                      Formally, a path from a to b can be described (or
-a = b, so that all paths are closed (i.e., x0 = xn ), we see              parametrized) as a continuously differentiable function
-that the signed definite integral is zero:                                 γ from the unit interval [0, 1] to Rn such that γ(0) =
-                           a                                              a and γ(1) = b. For instance, the line segment from
-                               f (x) dx = 0.                       (5)    a to b can be parametrized as γ(t) = (1 − t)a + tb.
-                          a
-  From this in formal definition of the signed definite                      This segment also has many other parametrizations,
-integral it is obvious that we have the concatenation                     such as γ̃(t) = (1 − t 2 )a + t 2 b; however, as in the one-
-formula                                                                   dimensional case, the exact choice of parametrization
-            c                  b                 c                        does not ultimately influence the integral. On the other
-                f (x) dx =         f (x) dx +        f (x) dx      (6)    hand, the reverse line segment (−γ)(t) = ta + (1 − t)b
-           a                   a                 b
-                                                                          from b to a is a genuinely different path; the integral
-regard less of the relative position of the real numbers
-                                                                          along −γ will turn out to be the negative of the integral
-a, b, and c. In particular (setting a = c and using (5))
-                                                                          along γ.
-we conclude that
-                   b                     a                                  As in the one-dimensional case, we will need to
-                       f (x) dx = −          f (x) dx.                    approximate the continuous path γ by a discrete path
-                   a                     b
-Thus, if we reverse a path from a to b to form                            x0 = γ(t0 ), x1 = γ(t1 ), x2 = γ(t2 ), . . . , xn = γ(tn ),
-a path from b to a, then the sign of the integral                         where γ(t0 ) = a and γ(tn ) = b. Again, we allow some
-changes. This contrasts with the unsigned definite inte-                   backtracking: ti+1 is not necessarily larger than ti . The
-gral [a, b] f (x) dx, since the set [a, b] of numbers                      displacement Δxi = xi+1 − xi ∈ Rn from xi to xi+1 is
-between a and b is exactly the same as the set of num-                    now a vector rather than a scalar. (Indeed, with an eye
-bers between b and a. Thus we see that paths are not                      on the generalization to manifolds, one should think
-quite the same as sets: they carry an orientation which                   of Δxi as an infinitesimal tangent vector to the ambi-
-can be reversed, where as sets do not.                                     ent space Rn at the point xi .) In the one-dimensional
-  Now let us move from one-dimensional integration                        case, we converted the scalar displacement Δxi into
-to higher-dimensional integration: that is, from single-                  a new number f (xi )Δxi , which was linearly related
-variable calculus to several-variable calculus. It turns                  to the original displacement by a proportionality con-
-out that there are two objects whose dimensions may                       stant f (xi ) that depended on the position xi . In higher
-increase: the “ambient space,”1 which will now be Rn                      dimensions, we again have a linear dependence, but
-instead of R, and the path, which will now become an
-                                                                          this time, since the displacement is a vector, we must
-oriented k-dimensional manifold S, over which the inte-
-                                                                          replace the simple constant of proportionality by a lin-
-gration will take place. For example, if n = 3 and k = 2,
-                                                                          ear transformation ωxi from Rn to R. Thus, ωxi (Δxi )
-then one is integrating over a surface that lives in R3 .
-                                                                          represents the infinitesimal “work” required to move
-  Let us begin with the case n ⩾ 1 and k = 1. Here, we
-                                                                          from xi to xi+1 . In technical terms, ωxi is a linear func-
-will be integrating over a continuously differentiable
-                                                                          tional on the space of tangent vectors at xi , and is thus
-path (or oriented rectifiable curve) γ in Rn starting and
-                                                                          a cotangent vector at xi . By analogy with (3), the net
-ending at points a and b, respectively. (These points
-                                                                          work γ ω required to move from a to b along the path
-may or may not be distinct, depending on whether the
-                                                                          γ is approximated by
-path is open or closed.) From a physical point of view,
-we are still computing the work required to move from                                                 
-                                                                                                      n−1
-                                                                                                 ω≈         ωxi (Δxi ).            (7)
-a to b, but now we are moving in several dimensions                                          γ
-                                                                                                      i=0
+path (which controls the amount of backtracking in-
+volved) stays bounded. In particular, in the case when
+a = b, so that all paths are closed (i.e., x0 = xn ), we see
+that the signed definite integral is zero:
+  From this in formal definition of the signed definite
+integral it is obvious that we have the concatenation
+formula
 
-                                                                          As in the one-dimensional case, one can show that
-  1. We will start with integration on Euclidean spaces Rn for sim-       the right-hand side of (7) converges if the maximum
+regard less of the relative position of the real numbers
+a, b, and c. In particular (setting a = c and using (5))
+we conclude that
+
+Thus, if we reverse a path from a to b to form
+a path from b to a, then the sign of the integral
+changes. This contrasts with the unsigned definite inte-
+gral [a, b] f (x) dx, since the set [a, b] of numbers
+between a and b is exactly the same as the set of num-
+bers between b and a. Thus we see that paths are not
+quite the same as sets: they carry an orientation which
+can be reversed, where as sets do not.
+  Now let us move from one-dimensional integration
+to higher-dimensional integration: that is, from single-
+variable calculus to several-variable calculus. It turns
+out that there are two objects whose dimensions may
+increase: the “ambient space,”1 which will now be Rn
+instead of R, and the path, which will now become an
+oriented k-dimensional manifold S, over which the inte-
+gration will take place. For example, if n = 3 and k = 2,
+then one is integrating over a surface that lives in R3 .
+  Let us begin with the case n ⩾ 1 and k = 1. Here, we
+will be integrating over a continuously differentiable
+path (or oriented rectifiable curve) γ in Rn starting and
+ending at points a and b, respectively. (These points
+may or may not be distinct, depending on whether the
+path is open or closed.) From a physical point of view,
+we are still computing the work required to move from
+a to b, but now we are moving in several dimensions
+
+  1. We will start with integration on Euclidean spaces Rn for sim-
 plicity, although the true power of the integration-of-forms concept is
-                                                                          step size sup0⩽i⩽n−1 |Δxi | of the path converges to
-much more apparent when we integrate on more general spaces, such                                  n−1
-as abstract n-dimensional manifolds.                                      zero and the total length i=0 |Δxi | of the path stays
+much more apparent when we integrate on more general spaces, such
+as abstract n-dimensional manifolds.
+
+III. Mathematical Concepts
+instead of one. In the one-dimensional case, we did not
+b                                          need to specify exactly which path we used to get from
+f (x) dx,                       (4)    a to b, because all backtracking canceled itself out.
+a
+n−1                     However, in higher dimensions, the exact choice of the
+path γ becomes important.
+Formally, a path from a to b can be described (or
+parametrized) as a continuously differentiable function
+γ from the unit interval [0, 1] to Rn such that γ(0) =
+a                                              a and γ(1) = b. For instance, the line segment from
+f (x) dx = 0.                       (5)    a to b can be parametrized as γ(t) = (1 − t)a + tb.
+a
+This segment also has many other parametrizations,
+such as γ̃(t) = (1 − t 2 )a + t 2 b; however, as in the one-
+dimensional case, the exact choice of parametrization
+c
+f (x) dx =
+a
+from b to a is a genuinely different path; the integral
+along −γ will turn out to be the negative of the integral
+along γ.
+b
+f (x) dx = −          f (x) dx.                    approximate the continuous path γ by a discrete path
+a
+x0 = γ(t0 ), x1 = γ(t1 ), x2 = γ(t2 ), . . . , xn = γ(tn ),
+where γ(t0 ) = a and γ(tn ) = b. Again, we allow some
+backtracking: ti+1 is not necessarily larger than ti . The
+displacement Δxi = xi+1 − xi ∈ Rn from xi to xi+1 is
+now a vector rather than a scalar. (Indeed, with an eye
+on the generalization to manifolds, one should think
+of Δxi as an infinitesimal tangent vector to the ambi-
+ent space Rn at the point xi .) In the one-dimensional
+case, we converted the scalar displacement Δxi into
+a new number f (xi )Δxi , which was linearly related
+to the original displacement by a proportionality con-
+stant f (xi ) that depended on the position xi . In higher
+dimensions, we again have a linear dependence, but
+this time, since the displacement is a vector, we must
+replace the simple constant of proportionality by a lin-
+ear transformation ωxi from Rn to R. Thus, ωxi (Δxi )
+represents the infinitesimal “work” required to move
+from xi to xi+1 . In technical terms, ωxi is a linear func-
+tional on the space of tangent vectors at xi , and is thus
+a cotangent vector at xi . By analogy with (3), the net
+work γ ω required to move from a to b along the path
+γ is approximated by
+
+n−1
+ω≈         ωxi (Δxi ).            (7)
+γ
+i=0
+As in the one-dimensional case, one can show that
+the right-hand side of (7) converges if the maximum
+step size sup0⩽i⩽n−1 |Δxi | of the path converges to
+n−1
+zero and the total length i=0 |Δxi | of the path stays
 
 III . $16$ .
 

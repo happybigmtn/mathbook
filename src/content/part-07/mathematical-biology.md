@@ -1,120 +1,195 @@
 # Mathematical Biology
 
-VII.2.   Mathematical Biology                                                                                       837
+VII.2.   Mathematical Biology
 
 uses all available information; it is related to the prob-   Hyde, S., S. Andersson, K. Larsson, Z. Blum, T. Landh, S.
-lem of reconstructing a 3 D structure from a 2 D projec-         Lidin, and B. W. Ninham. 1997. The Language of Shape.
-tion. The operation has been fully described and is now        The Role of Curvature in Condensed Matter: Physics,
-available in Mathematica.                                      Chemistry and Biology. Amsterdam: Elsevier.
-                                                             Parr, R. G., and W. Yang. 1989. Density-Functional Theory of
+lem of reconstructing a 3 D structure from a 2 D projec-
+tion. The operation has been fully described and is now
+available in Mathematica.
    The generalized inverse also enables one to handle
-                                                               Atoms and Molecules. Oxford: Oxford University Press.
 redundant axes in quasicrystals, but usually the inter-
-                                                             Thomas, J. M. 2003. Poetic suggestion in chemical science.
-esting problems are nonlinear. Other inverse problems          Nova Acta Leopoldina NF 88:109–39.
-include the following.                                       Wales, D. J. 2004. Energy Landscapes. Cambridge: Cam-
-                                                               bridge University Press.
-  (i) Finding the arrangement of atoms that gives rise       Wells, A. F. 1984. Structural Inorganic Chemistry. Oxford:
-      to the observed scattering patterns of X-rays or         Oxford University Press.
-      electrons from a crystal.                              Wolfram, S. 2002. A New Kind of Science. Champaign, IL:
- (ii) Reconstructing a 3 D image from 2 D projections in         Wolfram Media.
-      microscopy or X-ray tomography.
+esting problems are nonlinear. Other inverse problems
+include the following.
+  (i) Finding the arrangement of atoms that gives rise
+
+ (ii) Reconstructing a 3 D image from 2 D projections in
+
 (iii) Reconstructing the geometry of a molecule given
-      probable interatomic distances (and perhaps bond
-                                                             VII.2 Mathematical Biology
-      angles and torsion angles).                                     Michael C. Reed
+
 (iv) Finding the way in which a protein molecule folds
-                                                                                 1    Introduction
-      to give an active site, given the sequence of con-
-      stituent amino acids.                                  Mathematical biology is an extremely large and diverse
- (v) Finding the pathway to producing a molecule syn-        field. It studies objects ranging from molecules to glob-
-      thet ically, given that it occurs in nature.            al ecosystems and the mathematical methods come
-(vi) Finding the sequence of rules that generate a mem-      from many of the subdisciplines of the mathematical
-      brane or a plant or another biological object, given   sciences: ordinary and partial differential equations,
-      that it takes a certain shape.                         probability theory, numerical analysis, control theory,
-                                                             graph theory, combinatorics, geometry, computer sci-
-  Some questions of this type do not have unique an-         ence, and statistics. The most that one short article can
-swers. For example, the classic question as to whether       do is to illustrate by selected examples this diversity
-the shape of a drumhead can be determined from its           and the range of new mathematical questions that arise
-vibration spectrum (can you hear the shape of a drum?)       naturally in the biological sciences.
+
+ (v) Finding the pathway to producing a molecule syn-
+
+(vi) Finding the sequence of rules that generate a mem-
+
+  Some questions of this type do not have unique an-
+swers. For example, the classic question as to whether
+the shape of a drumhead can be determined from its
+vibration spectrum (can you hear the shape of a drum?)
 has been answered in the negative: two vibrating mem-
 branes with different shapes may have the same spec-
-                                                                            2   How Do Cells Work?
 trum. It was thought that this ambiguity might also be
 the case for crystal structures. Linus Pauling suggested     From the simplest point of view, cells are large bio-
 that there might be two different crystal structures that     chemical factories that take inputs and manufacture
-were homometric (that is, giving the same diffraction         lots of intermediate products and outputs. For exam-
-pattern), but no definite example has been found.             ple, when a cell divides, its DNA must be copied
-                                                             and that requires the biochemical synthesis of large
-                    5   Conclusion                           numbers of adenine, cytosine, guanine, and thymine
-                                                             molecules. Biochemical reactions are usually catalyzed
-As the examples in this article show, mathematics and        by enzymes, proteins that facilitate a reaction but are
-chemistry have a symbiotic relationship, with develop-       not used up by it. Consider, for example, a reaction in
-ments in one often stimulating advances in the other.        which chemical A is converted to chemical B with the
-Many interesting problems, including several that we         help of an enzyme E. If a(t) and b(t) are the respec-
-have mentioned here, are still waiting to be solved.         tive concentrations of A and B at time t, then one typi-
-                                                             cally writes down a differential equation for b(t), which
+were homometric (that is, giving the same diffraction
+pattern), but no definite example has been found.
+As the examples in this article show, mathematics and
+chemistry have a symbiotic relationship, with develop-
+ments in one often stimulating advances in the other.
+Many interesting problems, including several that we
+have mentioned here, are still waiting to be solved.
 Further Reading
-                                                             takes the form
 Cotton, F. A. 1990. Chemical Applications of Group Theory.
-                                                                          b (t) = f (a, b, E) + · · · − · · · .
   New York: Wiley Interscience.
-Hollas, J. M. 2003. Modern Spectroscopy. New York: John      Here, f is the rate of production, which typically
-  Wiley.                                                     depends on a, b, and E. Of course B may be produced
+Hollas, J. M. 2003. Modern Spectroscopy. New York: John
+  Wiley.
 
-838                                                                                VII. The Influence of Mathematics
+837
+Lidin, and B. W. Ninham. 1997. The Language of Shape.
+The Role of Curvature in Condensed Matter: Physics,
+Chemistry and Biology. Amsterdam: Elsevier.
+Parr, R. G., and W. Yang. 1989. Density-Functional Theory of
+Atoms and Molecules. Oxford: Oxford University Press.
+Thomas, J. M. 2003. Poetic suggestion in chemical science.
+Nova Acta Leopoldina NF 88:109–39.
+Wales, D. J. 2004. Energy Landscapes. Cambridge: Cam-
+bridge University Press.
+Wells, A. F. 1984. Structural Inorganic Chemistry. Oxford:
+to the observed scattering patterns of X-rays or
+electrons from a crystal.
+Wolfram Media.
+microscopy or X-ray tomography.
+probable interatomic distances (and perhaps bond
+VII.2 Mathematical Biology
+angles and torsion angles).
+1    Introduction
+to give an active site, given the sequence of con-
+stituent amino acids.
+field. It studies objects ranging from molecules to glob-
+thet ically, given that it occurs in nature.
+from many of the subdisciplines of the mathematical
+brane or a plant or another biological object, given   sciences: ordinary and partial differential equations,
+that it takes a certain shape.
+graph theory, combinatorics, geometry, computer sci-
+ence, and statistics. The most that one short article can
+do is to illustrate by selected examples this diversity
+and the range of new mathematical questions that arise
+naturally in the biological sciences.
+2   How Do Cells Work?
+lots of intermediate products and outputs. For exam-
+ple, when a cell divides, its DNA must be copied
+and that requires the biochemical synthesis of large
+5   Conclusion                           numbers of adenine, cytosine, guanine, and thymine
+molecules. Biochemical reactions are usually catalyzed
+by enzymes, proteins that facilitate a reaction but are
+not used up by it. Consider, for example, a reaction in
+which chemical A is converted to chemical B with the
+help of an enzyme E. If a(t) and b(t) are the respec-
+tive concentrations of A and B at time t, then one typi-
+cally writes down a differential equation for b(t), which
+takes the form
+b (t) = f (a, b, E) + · · · − · · · .
+Here, f is the rate of production, which typically
+depends on a, b, and E. Of course B may be produced
 
-by other reactions (which would lead to additional pos-       mechanism that is not even in our network. The enzyme
+838
+
+by other reactions (which would lead to additional pos-
 itive terms + · · · ) and may be used as a substrate itself   E is a protein produced by the cell via instructions from
-in still other reactions (which would lead to additional      a gene. It turns out that some times the concentration
+in still other reactions (which would lead to additional
 negative terms − · · · ). So, given a particular cell func-   of free E inhibits the messenger RNA that codes for
-tion or biochemical pathway, we can just write down           the production of E itself. Then, if we introduce X and
-the appropriate set of nonlinear coupled ordinary dif-        reduce free E, the inhibition is removed and the cell
-ferential equations for the chemical concentrations and       automatically increases its rate of production of E, thus
-solve it by hand or by machine computation. However,          raising the amount of free E and with it raising the
-this straightforward approach is often unsuccessful.          reaction rate f .
-First of all, there are a lot of parameters (and variables)      This illustrates a fundamental difficulty in study-
-in these equations and measuring them in the context          ing cell biochemistry, indeed a difficulty in studying
-of real living cells is difficult. Second, different cells       many biological systems. These systems are very large
-behave differently and may have different functions, so         and very complex. To gain understanding, it is natural
-we would expect the parameters to be different. Third,         to concentrate on particular relatively simple subsys-
-cells are alive and change what they are doing, so the        tems. But one always has to be aware that the subsys-
-parameters may themselves be functions of time. But           tems exist in a larger context that may contain vari-
-the greatest difficulty is that the particular pathway          ables (excluded by the simplification) that are crucial
-under study is not really isolated. Rather, it is embed-      for understanding the behavior and biological function
-ded in a much larger system. How do we know that our          of the subsystem itself.
-model system will continue to behave in the same way             Although cells exhibit remarkable homeostasis, they
-when embedded in this larger context? We need new             also under go spectacular changes. For example, cell
-theorems in dynamical systems that answer questions           division requires unzipping of the DNA, synthesis of
-such as this, not for general “complex systems” but for       two new complementary strands, the movement apart
-the particular kinds of complex systems that arise in         of the two new DNAs, and the pinching off of the
-important biological problems.                                mother cell to produce two daughters. How does a cell
-   Cells continue to accomplish many basic tasks even         do all this? In the case of yeast cells, which are compar-
-though their environments (i.e., their inputs) are con-       ative ly simple, the actions of the biochemical pathways
-stantly changing. A brief example of this phenomenon,         are quite well understood, partly because of the mathe-
-which is known as homeostasis, will illustrate the prob-      mat ical work of John Tyson. But as our brief discussion
-lem of “context.” Let us suppose that the chemical reac-      makes clear, biochemistry is not all there is to cell divi-
-tion above is one step in the pathway for making the          sion; an important additional feature is motion. Materi-
+tion or biochemical pathway, we can just write down
+the appropriate set of nonlinear coupled ordinary dif-
+ferential equations for the chemical concentrations and
+solve it by hand or by machine computation. However,
+this straightforward approach is often unsuccessful.
+First of all, there are a lot of parameters (and variables)
+in these equations and measuring them in the context
+of real living cells is difficult. Second, different cells
+behave differently and may have different functions, so
+we would expect the parameters to be different. Third,
+cells are alive and change what they are doing, so the
+parameters may themselves be functions of time. But
+the greatest difficulty is that the particular pathway
+under study is not really isolated. Rather, it is embed-
+ded in a much larger system. How do we know that our
+model system will continue to behave in the same way
+when embedded in this larger context? We need new
+theorems in dynamical systems that answer questions
+such as this, not for general “complex systems” but for
+the particular kinds of complex systems that arise in
+important biological problems.
+   Cells continue to accomplish many basic tasks even
+though their environments (i.e., their inputs) are con-
+stantly changing. A brief example of this phenomenon,
+which is known as homeostasis, will illustrate the prob-
+lem of “context.” Let us suppose that the chemical reac-
+tion above is one step in the pathway for making the
 thymines necessary for cell division. If the cell is a can-   als are being transported all the time through out cells
-cer cell, we would like to turn off this pathway, and a        from one specific place to another (so their motion is
+cer cell, we would like to turn off this pathway, and a
 reasonable way to try to do this would be to put into the     not just diffusion), and indeed, cells themselves move.
-cell a compound X that binds to E, there by reducing the       How does this happen? The answer is that materials
-amount of free enzyme available to make the reaction          are transported by special molecules called molecular
-run. Two homeostatic mechanisms immediately come              motors that turn the energy of chemical bonds into
-into play. First, a typical reaction is inhibited by its      mechanical force. Since bonds are formed and broken
-product: that is, f decreases as b increases. This makes      stochastically (that is, some randomness is involved),
-biological sense because it ensures that B is not over-       the study of molecular motors leads naturally to new
-produced. So, when the amount of free E is reduced and        questions in stochastic ordinary and partial dif-
-the rate f declines, the resulting decrease in b drives       ferential equations [IV.24](/part-04/stochastic-processes). A good introduction to
-the rate up again. Second, if the rate f is lower than        the mathematics of cell biology is Fall et al. (2002).
+cell a compound X that binds to E, there by reducing the
+amount of free enzyme available to make the reaction
+run. Two homeostatic mechanisms immediately come
+into play. First, a typical reaction is inhibited by its
+product: that is, f decreases as b increases. This makes
+biological sense because it ensures that B is not over-
+produced. So, when the amount of free E is reduced and
+the rate f declines, the resulting decrease in b drives
+the rate up again. Second, if the rate f is lower than
 usual, the concentration a typically rises since A is not
 being used up as quickly, which also drives the rate
-                                                                                   3   Genomics
 f up again since f increases as a increases. Given the
-network in which A and B are embedded, one can imag-          To understand the mathematics that was involved in
-ine calculating how much f will drop if we put a cer-         sequencing the human genome it is useful to start with
-tain amount of X into the cell. In fact, f may drop even      the following simple question. Suppose that we cut up a
-less than we calculate because of another homeostatic         line segment into smaller segments and are presented
+network in which A and B are embedded, one can imag-
+ine calculating how much f will drop if we put a cer-
+tain amount of X into the cell. In fact, f may drop even
+less than we calculate because of another homeostatic
+
+VII. The Influence of Mathematics
+mechanism that is not even in our network. The enzyme
+a gene. It turns out that some times the concentration
+the production of E itself. Then, if we introduce X and
+reduce free E, the inhibition is removed and the cell
+automatically increases its rate of production of E, thus
+raising the amount of free E and with it raising the
+reaction rate f .
+This illustrates a fundamental difficulty in study-
+ing cell biochemistry, indeed a difficulty in studying
+many biological systems. These systems are very large
+and very complex. To gain understanding, it is natural
+to concentrate on particular relatively simple subsys-
+tems. But one always has to be aware that the subsys-
+tems exist in a larger context that may contain vari-
+ables (excluded by the simplification) that are crucial
+for understanding the behavior and biological function
+of the subsystem itself.
+Although cells exhibit remarkable homeostasis, they
+also under go spectacular changes. For example, cell
+division requires unzipping of the DNA, synthesis of
+two new complementary strands, the movement apart
+of the two new DNAs, and the pinching off of the
+mother cell to produce two daughters. How does a cell
+do all this? In the case of yeast cells, which are compar-
+ative ly simple, the actions of the biochemical pathways
+are quite well understood, partly because of the mathe-
+mat ical work of John Tyson. But as our brief discussion
+makes clear, biochemistry is not all there is to cell divi-
+sion; an important additional feature is motion. Materi-
+from one specific place to another (so their motion is
+How does this happen? The answer is that materials
+are transported by special molecules called molecular
+motors that turn the energy of chemical bonds into
+mechanical force. Since bonds are formed and broken
+stochastically (that is, some randomness is involved),
+the study of molecular motors leads naturally to new
+questions in stochastic ordinary and partial dif-
+ferential equations [IV.24](/part-04/stochastic-processes). A good introduction to
+the mathematics of cell biology is Fall et al. (2002).
+3   Genomics
+To understand the mathematics that was involved in
+sequencing the human genome it is useful to start with
+the following simple question. Suppose that we cut up a
+line segment into smaller segments and are presented
 
 VII . $2$ .
 
@@ -135,60 +210,104 @@ Each of the fragments is cloned, in order to get enough mass, and then sequenced
 So, in the end we have a very large restriction mapping problem except that we can only say that given fragments overlap with probabilities that are themselves hard to estimate. A further difficulty is that DNA tends to have large blocks that repeat in different parts of the word. As a result of these complications, the problem is much harder than the restriction mapping problem described earlier. It is clear that graph theory, combinatorics, probability theory, statistics, and the design of algorithms all play central roles in sequencing a genome.
 Sequence alignment is important in other problems as well. In phylogenetics (see below) one would like a way of saying how similar two genes or genomes
 
-840                                                                                VII. The Influence of Mathematics
+840
 
-are. When studying proteins, one can some times pre-           do, they must be able to sense the environment and
-dict protein three-dimensional structure by searching         signal the DNA to change the protein content of the
-databases for known proteins with the most similar            cell. Thus, while sequencing DNA and understanding
-amino acid sequence. To illustrate how complex these          specific biochemical reactions are important first steps
+are. When studying proteins, one can some times pre-
+dict protein three-dimensional structure by searching
+databases for known proteins with the most similar
+amino acid sequence. To illustrate how complex these
 problems are, consider a sequence {ai }1000    i=1 of one     in understanding cells, the hard and interesting work
-thousand letters from our four-letter alphabet. We wish       to come is to understand networks of genes and bio-
+thousand letters from our four-letter alphabet. We wish
 to say how similar it is to another sequence {bi }1000 i=1 .
-                                                              chemical reactions. It is these networks, in which pro-
-Naively, one could just compare ai with bi and define          teins control genes and genes control proteins, that
-                                         
+Naively, one could just compare ai with bi and define
 a metric [III.56](/part-03/metric-spaces) like d({ai }, {bi }) = δ(ai , bi ). How-    carry out and control specific cellular functions. The
-ever, DNA sequences have evolved typically by inser-          mathematics will be ordinary differential equations for
-tions and deletions as well as by substitutions. Thus         chemical concentrations and variables that indicate to
-if the sequence ACACAC · · · lost its first C to become        what extent a gene is turned on. Since transport into
-AACAC · · · , the two sequences would be very far apart       and out of the nucleus occurs, partial differential equa-
-in this metric even though they are very similar and          tions will be involved. And, finally, since some of the
-related in a simple way. The way around this difficulty         molecular species occur in very small numbers, con-
-is to allow sequences to include a fifth symbol, –, which      cent ration (molecules per unit volume) may not be a
+ever, DNA sequences have evolved typically by inser-
+tions and deletions as well as by substitutions. Thus
+if the sequence ACACAC · · · lost its first C to become
+AACAC · · · , the two sequences would be very far apart
+in this metric even though they are very similar and
+related in a simple way. The way around this difficulty
+is to allow sequences to include a fifth symbol, –, which
 stands for the place of a deletion or a place opposite an     useful approximation for computations about chem-
-insertion. Thus, given two sequences (of perhaps dif-         ical binding and dissociation: they are probabilistic
-ferent lengths), we wish to find how they can be aug-          events.
-mented with dashes to give the minimum possible dis-             Two kinds of statistical data can give hints about
-tance between them. A little thought will convince the        the components of these gene networks. First, there
+insertion. Thus, given two sequences (of perhaps dif-
+ferent lengths), we wish to find how they can be aug-
+mented with dashes to give the minimum possible dis-
+tance between them. A little thought will convince the
 reader that it is not feasible to use a brute-force search    are large numbers of population studies that corre-
-for a problem like this, even for the fastest computers—      late specific genotypes to specific phenotypes (such as
-there are so many potential augmentations that the            height, enzyme concentration, cancer incidence). Sec-
-search would take far too long. Serious and thought-          ond, tools known as microarrays allow us to measure
-ful algorithm development is required. Two excellent          the relative amounts of a large number of different mes-
-introductions to the material discussed in this section       senger RNAs in a group of cells. The amount of RNA
-are Waterman (1995) and Pevzner (2000).                       tells us how much a particular gene is turned on. Thus,
-                                                              microarrays allow us to find correlations that may indi-
-           4   Correlation and Causality                      cate that certain genes are turned on at the same time
-                                                              or perhaps in a sequence. Of course, correlation is not
-The central dogma of molecular biology is DNA →               causality and a consistent sequential relationship is
-RNA → proteins. That is, information is stored in DNA,        not necessarily causal either (sure, football causes win-
-it is transferred out of the nucleus by RNA, and the RNA      ter, a sociologist once said). Real biological progress
-is then used in the cell to make proteins that carry out      requires understanding the gene networks discussed
-the work of the cell through the metabolic processes          above; they are the mechanisms by which the genotypes
-discussed in section 2. Thus DNA directs the life of the      play out in the life of the cell.
-cell. Like most things in biology, the true situation is         A nice discussion of the relationship between popu-
-much more complicated. Genes, which are segments of           lation correlations and mechanisms occurs in Nijhout
-DNA that code for the manufacture of particular pro-          (2002), from which we take the following simple exam-
-teins, are some times turned on and some times turned           ple. Most phenotypic traits depend on many genes; sup-
-off. Usually, they are partially turned on; that is, the       pose that we consider a trait that depends on only two
-protein they code for is manufactured at some inter-          genes. Figure 1 depicts a surface that shows how the
-media te rate. This rate is controlled by the binding (or      trait in an individual depends on how much each of
-lack of binding) of small molecules or specific proteins       the genes is turned on. All three variables are scaled
-to the gene, or to the RNA that the gene codes for. Thus      from 0 to 1. Suppose that we study a population whose
+for a problem like this, even for the fastest computers—
+there are so many potential augmentations that the
+search would take far too long. Serious and thought-
+ful algorithm development is required. Two excellent
+introductions to the material discussed in this section
+are Waterman (1995) and Pevzner (2000).
+
+The central dogma of molecular biology is DNA →
+RNA → proteins. That is, information is stored in DNA,
+it is transferred out of the nucleus by RNA, and the RNA
+is then used in the cell to make proteins that carry out
+the work of the cell through the metabolic processes
+discussed in section 2. Thus DNA directs the life of the
+cell. Like most things in biology, the true situation is
+much more complicated. Genes, which are segments of
+DNA that code for the manufacture of particular pro-
+teins, are some times turned on and some times turned
+off. Usually, they are partially turned on; that is, the
+protein they code for is manufactured at some inter-
+media te rate. This rate is controlled by the binding (or
+lack of binding) of small molecules or specific proteins
+to the gene, or to the RNA that the gene codes for. Thus
 genes can produce proteins that inhibit (or excite) other     members have a genetic makeup that puts the individ-
-genes; this called a gene network.                            uals near the point X on the graph. If we do a statistical
-   In a way, this was obvious all along. If cells can         analysis of the population, we will find that gene B is
-respond to their environments by changing what they           highly statistically correlated to the trait, but gene A is
+genes; this called a gene network.
+   In a way, this was obvious all along. If cells can
+respond to their environments by changing what they
+
+VII. The Influence of Mathematics
+do, they must be able to sense the environment and
+signal the DNA to change the protein content of the
+cell. Thus, while sequencing DNA and understanding
+specific biochemical reactions are important first steps
+to come is to understand networks of genes and bio-
+chemical reactions. It is these networks, in which pro-
+teins control genes and genes control proteins, that
+
+mathematics will be ordinary differential equations for
+chemical concentrations and variables that indicate to
+what extent a gene is turned on. Since transport into
+and out of the nucleus occurs, partial differential equa-
+tions will be involved. And, finally, since some of the
+molecular species occur in very small numbers, con-
+cent ration (molecules per unit volume) may not be a
+ical binding and dissociation: they are probabilistic
+events.
+Two kinds of statistical data can give hints about
+the components of these gene networks. First, there
+late specific genotypes to specific phenotypes (such as
+height, enzyme concentration, cancer incidence). Sec-
+ond, tools known as microarrays allow us to measure
+the relative amounts of a large number of different mes-
+senger RNAs in a group of cells. The amount of RNA
+tells us how much a particular gene is turned on. Thus,
+microarrays allow us to find correlations that may indi-
+4   Correlation and Causality
+or perhaps in a sequence. Of course, correlation is not
+causality and a consistent sequential relationship is
+not necessarily causal either (sure, football causes win-
+ter, a sociologist once said). Real biological progress
+requires understanding the gene networks discussed
+above; they are the mechanisms by which the genotypes
+play out in the life of the cell.
+A nice discussion of the relationship between popu-
+lation correlations and mechanisms occurs in Nijhout
+(2002), from which we take the following simple exam-
+ple. Most phenotypic traits depend on many genes; sup-
+pose that we consider a trait that depends on only two
+genes. Figure 1 depicts a surface that shows how the
+trait in an individual depends on how much each of
+the genes is turned on. All three variables are scaled
+from 0 to 1. Suppose that we study a population whose
+uals near the point X on the graph. If we do a statistical
+analysis of the population, we will find that gene B is
+highly statistically correlated to the trait, but gene A is
 
 VII . $2$ .
 
@@ -228,59 +347,99 @@ The total potential energy is E (x) ≡ E i, j (x i , x j) and Newton’s equati
 Alternatively, one could assume that the protein will fold to the configuration that has the minimum potential energy. Finding this configuration would mean finding the roots of $\nabla$ E (x), by newton’s method [II.4](/part-02/algorithms) say, and then checking to see which root gives the lowest energy. Again this is an enormous computational task. It is not surprising that molecular dynamics calculations have been only moderately successful and have predicted the shapes of only relatively small molecules and proteins.
 The numerical problems are substantial and the choice of energy terms is some what speculative. Even more importantly, context matters, as it does in many biological problems. The way proteins fold depends on properties of the solution in which they sit. Many proteins have several preferred configurations and switch from one to the other depending on interactions with small molecules or other proteins. Finally, it has recently been discovered that proteins do
 
-842                                                                             VII. The Influence of Mathematics
+842
 
-not fold up by themselves from their linear configura-       several in the other. This gives a way of using geometry
-tion to their three-dimensional shape, but are helped       to classify the nature of the particular protein–protein
-and guided by other proteins called chaperones. It is       interaction.
-natural to ask whether there are quantifiable geometri-        Finally, let us touch on questions involving the pack-
+not fold up by themselves from their linear configura-
+tion to their three-dimensional shape, but are helped
+and guided by other proteins called chaperones. It is
+natural to ask whether there are quantifiable geometri-
 cal units larger than points (atoms) that could reason-     aging of DNA. The basic problem is easy to see. As
-ably form the basis for a good approximation to the         mentioned earlier, the human DNA double helix when
-dynamics of large molecules.                                stretched out linearly is about two meters long. A typ-
-   A start has been made in this direction by research      ical cell has a diameter of about one-hundredth of a
+ably form the basis for a good approximation to the
+dynamics of large molecules.
+   A start has been made in this direction by research
 groups studying the interactions of proteins with small     millimeter and its nucleus has a diameter of about one-
-molecules and other proteins. These interactions are        third that size. All of that DNA has to be packed into
-fundamental to cell biochemistry, cell-transport pro-       the nucleus. How is this done?
-cesses, and cell signaling, and so progress is vital to       At least the first stages are well understood. The
-understanding how cells work. Suppose one has two           DNA double helix is wound around proteins called his-
-large proteins that are bound to each other. The first       tones, which consist of about two hundred base pairs
-thing one would like to do is describe the geometry of      each, yielding chromatin, which is a sequence of such
-the binding region. One could do this as follows. Con-      DNA-wrapped histones connected by short segments
+molecules and other proteins. These interactions are
+fundamental to cell biochemistry, cell-transport pro-
+cesses, and cell signaling, and so progress is vital to
+understanding how cells work. Suppose one has two
+large proteins that are bound to each other. The first
+thing one would like to do is describe the geometry of
+the binding region. One could do this as follows. Con-
 sider an atom in either protein that is at point x. Given   of DNA. Then the chromatin is itself wrapped up and
-another atom at point y, there is a plane that divides      compacted; the geometrical details are not completely
-R3 into two open half-spaces: the points closer to x        understood. It is important to understand the packing
+another atom at point y, there is a plane that divides
+R3 into two open half-spaces: the points closer to x
 and the points closer to y. Now let Rx denote the inter-    and the mechanisms that create it, because the life of
-section of all such open half-spaces as y ranges over       the cell requires unpacking! When the cell divides, the
-the positions of all other atoms: that is, Rx consists      entire DNA helix must be unzipped to form two sepa-
-of those points that are closer to x than to any other      rate strands, which are the templates on which the two
-                                        "
-atom. The union of the boundaries, x ∂(Rx ), called         new copies of DNA will be built. Clearly this cannot be
-a Voronoi surface, consists of triangles and pieces of      done all at once but must involve local unwinding of
+section of all such open half-spaces as y ranges over
+the positions of all other atoms: that is, Rx consists
+of those points that are closer to x than to any other
+atom. The union of the boundaries, x ∂(Rx ), called
+a Voronoi surface, consists of triangles and pieces of
 planes and has the property that each point on the sur-     the DNA off the histones, local unzipping, synthesis,
-face is equidistant from at least two atom positions.       and then local repacking.
-To model the binding region between the two proteins,         It is equally challenging to understand the sequence
-we discard all pieces of the Voronoi surface that are       of events that occurs when a protein is synthesized
-equidistant from two atoms that belong to the same          from a gene. Transcription factors diffuse into the
-protein and keep just the ones that are equidistant         nucleus and bind to specific short segments of DNA
+face is equidistant from at least two atom positions.
+To model the binding region between the two proteins,
+we discard all pieces of the Voronoi surface that are
+equidistant from two atoms that belong to the same
+protein and keep just the ones that are equidistant
 from two atoms that are in different proteins. This sur-     (of about ten base pairs) in the regulatory region of
-face goes off to infinity, so we clip off the parts that       the gene. Of course, they will randomly bind wher-
+face goes off to infinity, so we clip off the parts that
 are not “close” to either protein. The result is a sur-     ever they see the same segment. Typically, one needs
-face with a boundary made up of polyhedral faces that       the binding of several different transcription factors
+face with a boundary made up of polyhedral faces that
 is a reasonable approximation of the interaction inter-     in the regulatory region along with RNA polymerase
-face between the two proteins. (This is not quite an        to start transcription of a gene. That process involves
+face between the two proteins. (This is not quite an
 accurate description: in the actual construction, “dis-     the unwinding of the gene-coding region from the his-
-tance” is weighted in a way that depends on the atoms       tones so that it can be transcribed, the transport of the
-involved.) Now choose colors representing the twenty        resulting RNA out of the nucleus, and the re compact-
-amino acids and color each side of each polyhedral          ification of the DNA. To understand these processes
-piece with the color of the amino acid that the clos-       fully, one will have to solve problems in partial differ-
-est atom is in. This divides each side of the surface       ential equations, geometry, combinatorics, probability
-into large colored patches corresponding to nearness        theory, and topology. De Witt Sumners is the mathe-
-of a particular amino acid on that side. The coloring       matician who brought the topological problems in the
+tance” is weighted in a way that depends on the atoms
+involved.) Now choose colors representing the twenty
+amino acids and color each side of each polyhedral
+piece with the color of the amino acid that the clos-
+est atom is in. This divides each side of the surface
+into large colored patches corresponding to nearness
+of a particular amino acid on that side. The coloring
 of the two sides of the boundary surface will be differ-     study of DNA (links, twists, knots, supercoiling) to the
-ent, of course, and the placement of the patches gives      attention of the mathematics community. A good ref-
-information about which amino acids in one protein are      erence for molecular dynamics and the general math-
+ent, of course, and the placement of the patches gives
+information about which amino acids in one protein are
 interacting with which amino acids in the other. In par-    ematical issues posed by biological macromolecules is
 ticular, one amino acid in one protein may interact with    Schlick (2002).
+
+VII. The Influence of Mathematics
+several in the other. This gives a way of using geometry
+to classify the nature of the particular protein–protein
+interaction.
+Finally, let us touch on questions involving the pack-
+mentioned earlier, the human DNA double helix when
+stretched out linearly is about two meters long. A typ-
+ical cell has a diameter of about one-hundredth of a
+third that size. All of that DNA has to be packed into
+the nucleus. How is this done?
+At least the first stages are well understood. The
+DNA double helix is wound around proteins called his-
+tones, which consist of about two hundred base pairs
+each, yielding chromatin, which is a sequence of such
+DNA-wrapped histones connected by short segments
+compacted; the geometrical details are not completely
+understood. It is important to understand the packing
+the cell requires unpacking! When the cell divides, the
+entire DNA helix must be unzipped to form two sepa-
+rate strands, which are the templates on which the two
+"
+new copies of DNA will be built. Clearly this cannot be
+done all at once but must involve local unwinding of
+and then local repacking.
+It is equally challenging to understand the sequence
+of events that occurs when a protein is synthesized
+from a gene. Transcription factors diffuse into the
+nucleus and bind to specific short segments of DNA
+the gene. Of course, they will randomly bind wher-
+the binding of several different transcription factors
+to start transcription of a gene. That process involves
+tones so that it can be transcribed, the transport of the
+resulting RNA out of the nucleus, and the re compact-
+ification of the DNA. To understand these processes
+fully, one will have to solve problems in partial differ-
+ential equations, geometry, combinatorics, probability
+theory, and topology. De Witt Sumners is the mathe-
+matician who brought the topological problems in the
+attention of the mathematics community. A good ref-
+erence for molecular dynamics and the general math-
 
 VII . $2$ .
 
@@ -310,113 +469,194 @@ What’s Wrong with Neurobiology?
 
 The short answer is that there is not enough theory. This may seem an odd thing to say, since neurobiology
 
-844                                                                             VII. The Influence of Mathematics
+844
 
-is the home of the Hodgkin–Huxley equations, which          as pattern recognition and decision making, or could
-are often cited as a triumph of mathematics in biol-        exhibit certain “psychological” properties (Grossberg
-ogy. In a series of papers in the early 1950 s, Hodgkin      1982). He also asked how these networks could be
-and Huxley described several experiments, and gave a        trained. At about the same time it was shown that net-
-theoretical basis for explaining them. Building on the      works of neuron-like elements connected in the right
-work of physicists and chemists (for example, Wal-          way could automatically compute good solutions of
-ter Nernst, Max Planck, and Kenneth Cole), they dis-        large, difficult problems like the traveling salesman
-covered the relationship between certain ionic con-         problem [VII.5 §2](/part-07/the-mathematics-of-algorithm-design). These and other factors, including
-ductances and the trans-membrane electrical potential,      the great interest in software engineering and artificial
-v(x, t), in the axons of neurons, and they formulated       intelligence, led to the emergence of a large community
-a mathematical model:                                       of researchers studying “neural networks.” The mem-
-              ∂v     ∂2 v                                    bers of this community were mostly computer scien-
-                 = α 2 + g(v, y1 , y2 , y3 ),
-              ∂t     ∂x                                     tists and physicists, so it was natural for them to con-
-             ∂yi                                            cent rate on the design of devices, rather than biology.
-                 = fi (v, yi ), i = 1, 2, 3.
-              ∂t                                            This was noticed, of course, by experimental neurobi-
-Here the yi are related to the membrane conduc-             ologists, who lost interest in collaborating with these
-tances of various ions. The equations have solutions        theorists.
-that are pulses that keep their shape and travel at            This brief history is of course an over simplification.
-constant velocity in a way that corresponds to the          There are mathematicians (and physicists and com-
+is the home of the Hodgkin–Huxley equations, which
+are often cited as a triumph of mathematics in biol-
+ogy. In a series of papers in the early 1950 s, Hodgkin
+and Huxley described several experiments, and gave a
+theoretical basis for explaining them. Building on the
+work of physicists and chemists (for example, Wal-
+ter Nernst, Max Planck, and Kenneth Cole), they dis-
+covered the relationship between certain ionic con-
+ductances and the trans-membrane electrical potential,
+v(x, t), in the axons of neurons, and they formulated
+a mathematical model:
+
+Here the yi are related to the membrane conduc-
+tances of various ions. The equations have solutions
+that are pulses that keep their shape and travel at
+constant velocity in a way that corresponds to the
 observed behavior of action potentials in real neurons.     puter scientists) who are essentially theoreticians for
 The ideas, both explicit and implicit, in these discover-   neuroscience. Some of them work on hypothetical net-
-ies form the basis of much single-neuron physiology.        works, typically either very small networks or networks
-Of course, mathematicians should not be too proud           with strong homogeneity properties, to discover what
-about this since Hodgkin and Huxley were biologists.        are the emergent behaviors of the systems. Others work
-The Hodgkin–Huxley equations were part of the stim-         on modeling real physiological neural networks, often
-ulus for interesting work by mathematicians on travel-      collaboratively with biologists. Usually, the models con-
-ing waves and pattern formation in reaction–diffusion        sist of ordinary differential equations for the firing
-equations.                                                  rates of the individual neurons or mean-field models
+ies form the basis of much single-neuron physiology.
+Of course, mathematicians should not be too proud
+about this since Hodgkin and Huxley were biologists.
+The Hodgkin–Huxley equations were part of the stim-
+ulus for interesting work by mathematicians on travel-
+ing waves and pattern formation in reaction–diffusion
+equations.
   However, not everything can be explained at the level     that involve integral equations. These mathematicians
-of just one neuron. Watch your hand as it reaches out       have made real contributions to neurobiology.
-gracefully to pick up an object. Think about the so-           But much more is needed, and to see why, it is use-
-called ocular–vestibular reflex in which motions of the      ful to think about just how difficult these problems
-head are automatically compensated for by motions           really are. First, there is no one-to-one correspondence
-of the eyes so that your gaze can remain fixed. Con-         between the cells of the central nervous system in dif-
-sider the fact that you are looking at stereotypical        ferent members of the same species (except in spe-
-black marks on a page and they mean something inside        cial cases like C. elegans). Second, neurons in the same
-your head. These are system properties, and the sys-        animal differ widely in their anatomy and physiology.
-tems are large indeed. There are approximately 1011         Third, the details of a particular network may well
-neurons in the central nervous system and on average        depend on the life history of the animal. Fourth, most
-each makes about one thousand connections to other          neurons are some what unreliable devices in that they
-neurons. These systems will not be understood just          give different outputs under repeated trials with the
-by examining their parts (the neurons) and, for obvi-       same input. Finally, one of the prime characteristics of
-ous reasons, experimentation is limited. Thus, experi-      neural systems is that they are plastic, adaptable, and
-mental neurobiology, like experimental physics, needs       ever changing. After all, if you remember anything of
-input from deep and imaginative theorists.                  what is written here, then your head is different from
-  The lack of a large theory community interacting          when you began. Between the level of the single neuron
-robustly with experiment a lists is to some extent a          and the psychological level, there are probably twenty
-historical accident. Grossberg asked how groups of          levels of networks, each network feeding into and being
-(quite simple) model neurons, if they were connected        controlled by networks at other levels. The mathemat-
-in the right ways, could accomplish various tasks such      ical objects that will enable us to classify, analyze, and
+of just one neuron. Watch your hand as it reaches out
+gracefully to pick up an object. Think about the so-
+called ocular–vestibular reflex in which motions of the
+head are automatically compensated for by motions
+of the eyes so that your gaze can remain fixed. Con-
+sider the fact that you are looking at stereotypical
+black marks on a page and they mean something inside
+your head. These are system properties, and the sys-
+tems are large indeed. There are approximately 1011
+neurons in the central nervous system and on average
+each makes about one thousand connections to other
+neurons. These systems will not be understood just
+by examining their parts (the neurons) and, for obvi-
+ous reasons, experimentation is limited. Thus, experi-
+mental neurobiology, like experimental physics, needs
+input from deep and imaginative theorists.
+  The lack of a large theory community interacting
+robustly with experiment a lists is to some extent a
+historical accident. Grossberg asked how groups of
+(quite simple) model neurons, if they were connected
+in the right ways, could accomplish various tasks such
 
-VII.2.   Mathematical Biology                                                                                     845
+VII. The Influence of Mathematics
+as pattern recognition and decision making, or could
+exhibit certain “psychological” properties (Grossberg
+1982). He also asked how these networks could be
+trained. At about the same time it was shown that net-
+works of neuron-like elements connected in the right
+way could automatically compute good solutions of
+large, difficult problems like the traveling salesman
+problem [VII.5 §2](/part-07/the-mathematics-of-algorithm-design). These and other factors, including
+the great interest in software engineering and artificial
+intelligence, led to the emergence of a large community
+of researchers studying “neural networks.” The mem-
+∂v     ∂2 v
+= α 2 + g(v, y1 , y2 , y3 ),
+∂t     ∂x
+∂yi
+= fi (v, yi ), i = 1, 2, 3.
+∂t
+ologists, who lost interest in collaborating with these
+theorists.
+This brief history is of course an over simplification.
+There are mathematicians (and physicists and com-
+works, typically either very small networks or networks
+with strong homogeneity properties, to discover what
+are the emergent behaviors of the systems. Others work
+on modeling real physiological neural networks, often
+collaboratively with biologists. Usually, the models con-
+sist of ordinary differential equations for the firing
+rates of the individual neurons or mean-field models
+have made real contributions to neurobiology.
+But much more is needed, and to see why, it is use-
+ful to think about just how difficult these problems
+really are. First, there is no one-to-one correspondence
+between the cells of the central nervous system in dif-
+ferent members of the same species (except in spe-
+cial cases like C. elegans). Second, neurons in the same
+animal differ widely in their anatomy and physiology.
+Third, the details of a particular network may well
+depend on the life history of the animal. Fourth, most
+neurons are some what unreliable devices in that they
+give different outputs under repeated trials with the
+same input. Finally, one of the prime characteristics of
+neural systems is that they are plastic, adaptable, and
+ever changing. After all, if you remember anything of
+what is written here, then your head is different from
+when you began. Between the level of the single neuron
+and the psychological level, there are probably twenty
+levels of networks, each network feeding into and being
+controlled by networks at other levels. The mathemat-
+ical objects that will enable us to classify, analyze, and
 
-understand how this all works have probably not yet         like to understand the emergent behavior on the large
-been discovered.                                            scale. To do this one creates mathematical models that
-                                                            relate the behavior on the small scale to the large scale.
-         8   Population Biology and Ecology                 However, on the small scale one is overwhelmed by the
-                                                            biological details. Which of these details should be in
-Let us begin with a simple example. Imagine a large         the model? Of course, there is no simple answer to this
-orchard of equally spaced trees and suppose that one        because, in fact, this is the heart of what we want to
+VII.2.   Mathematical Biology
+
+understand how this all works have probably not yet
+been discovered.
+
+Let us begin with a simple example. Imagine a large
+orchard of equally spaced trees and suppose that one
 tree has a disease. The disease can be transmitted only     know. Which of the bewildering variety of local proper-
-to nearest neighbors, and is transmitted with prob-         ties or variables give rise to the large-scale behavior and
-ability p. What is E(p), the expected percentage of         by what mechanisms? Further more, it is not obvious
+to nearest neighbors, and is transmitted with prob-
+ability p. What is E(p), the expected percentage of
 trees that will be infected? Intuitively, if p is small,    what kinds of model are best. Should we model each
-E(p) should be small, and if p is large, E(p) should        individual and its interactions, or should we use popu-
-be close to 100%. In fact, one can prove that E(p)          lation densities? Should we use deterministic models or
-changes very rapidly from being small to being large        stochastic models? These are also hard questions, and
-as p passes through a small transition region around        the answers depend on the system being studied and
+E(p) should be small, and if p is large, E(p) should
+be close to 100%. In fact, one can prove that E(p)
+changes very rapidly from being small to being large
+as p passes through a small transition region around
 a particular critical probability pc . One would expect p   the questions being asked. A nice discussion of these
 to decrease as the distance, d, between trees increases;    different modeling choices can be found in Durrett and
-farmers should choose d in such a way that p is less        Levin (1994).
-than the critical probability, in order to make E(p)           Let us focus again on a simple model: the so-called
-small. We see here a typical issue in ecological prob-      SIRS model for the spread of a disease in a population.
-lems: how does behavior on the large scale (tree epi-       A crucial parameter is the infectious contact number,
-demic or not) depend on behavior at the small scale         σ , which represents the average number of new infec-
+farmers should choose d in such a way that p is less
+than the critical probability, in order to make E(p)
+small. We see here a typical issue in ecological prob-
+lems: how does behavior on the large scale (tree epi-
+demic or not) depend on behavior at the small scale
 (the distance between trees). And, of course, the exam-     tions that an infected individual creates in the suscep-
 ple illustrates that understanding the biological situa-    tible population. For a serious disease one would like
-tion requires mathematics. For other examples of sharp      to bring the value of σ down to below 1 (so that an epi-
+tion requires mathematics. For other examples of sharp
 global changes in probabilistic models, see probabilis-     demic will be unlikely) by vaccination, which takes indi-
-tic models of critical phenomena [IV.25].                   vi duals from the susceptible category and puts them in
-   Suppose that we now widen our gaze to consider           the removed category. Since vaccination is expensive
+tic models of critical phenomena [IV.25].
+   Suppose that we now widen our gaze to consider
 forests—let us say the forests on the East coast of the     and it is difficult to vaccinate high percentages of the
-United States. We would like to understand how they         population, it is an important public-health problem to
-have come to be as they are. Most of them were not          know how much vaccination is needed to bring σ to
-planted in neat rows, so that is already a complica-        below 1. A little reflection shows us how difficult this
+United States. We would like to understand how they
+have come to be as they are. Most of them were not
+planted in neat rows, so that is already a complica-
 tion. But there are two other really new features. First,   problem really is. First of all, the population is not well
-there is not one species but many, and each species         mixed, so one may not be able to ignore spatial separa-
+there is not one species but many, and each species
 of tree has different properties: shape, seed dispersal,     tion, as is done in the SIRS model. Even more important,
 need for light, and so forth. The species are different,     σ depends on the social behavior of individuals and the
-but their properties affect each other because they are      subclasses of the population to which they belong (as
-living in the same space. Second, the species, and the      anyone with small children in school will attest). Thus,
-interactions between the species, are affected by the        we see a genuinely new issue here: if an ecological prob-
-physics of the environment. There are physical param-       lem involves animals, then the social behavior of the
+but their properties affect each other because they are
+living in the same space. Second, the species, and the
+interactions between the species, are affected by the
+physics of the environment. There are physical param-
 eters that vary on long timescales, like average temper-    animals may affect the biology.
-ature, and there are other parameters that vary on very        In fact, the issues are even deeper. Individuals in
+ature, and there are other parameters that vary on very
 short timescales, like wind speed (for seed dispersal).     groups, or species, or subpopulations, vary and it is
-Certain properties of forests may depend on the fluc-        just this variation on which natural selection acts. So,
-tuations in these parameters as much as on the values       to understand how an ecosystem got to where it is
+Certain properties of forests may depend on the fluc-
+tuations in these parameters as much as on the values
 themselves. Finally, one might have to take into account    today, one may have to take this individual variabil-
-the reaction of the ecosystem to catastrophic events        ity into account. Social behavior is also transmitted
-such as hurricanes or prolonged drought.                    from generation to generation, both biologically and
+the reaction of the ecosystem to catastrophic events
+such as hurricanes or prolonged drought.
    The difficulties are similar to those we have seen for     culturally, and therefore also evolves. For instance,
-other problems in mathematical biology. One would           there are many examples of plant and animal species
+other problems in mathematical biology. One would
+
+845
+like to understand the emergent behavior on the large
+scale. To do this one creates mathematical models that
+relate the behavior on the small scale to the large scale.
+8   Population Biology and Ecology
+biological details. Which of these details should be in
+the model? Of course, there is no simple answer to this
+because, in fact, this is the heart of what we want to
+ties or variables give rise to the large-scale behavior and
+by what mechanisms? Further more, it is not obvious
+individual and its interactions, or should we use popu-
+lation densities? Should we use deterministic models or
+stochastic models? These are also hard questions, and
+the answers depend on the system being studied and
+Levin (1994).
+Let us focus again on a simple model: the so-called
+SIRS model for the spread of a disease in a population.
+A crucial parameter is the infectious contact number,
+σ , which represents the average number of new infec-
+to bring the value of σ down to below 1 (so that an epi-
+vi duals from the susceptible category and puts them in
+the removed category. Since vaccination is expensive
+population, it is an important public-health problem to
+know how much vaccination is needed to bring σ to
+below 1. A little reflection shows us how difficult this
+mixed, so one may not be able to ignore spatial separa-
+subclasses of the population to which they belong (as
+anyone with small children in school will attest). Thus,
+we see a genuinely new issue here: if an ecological prob-
+lem involves animals, then the social behavior of the
+In fact, the issues are even deeper. Individuals in
+just this variation on which natural selection acts. So,
+to understand how an ecosystem got to where it is
+ity into account. Social behavior is also transmitted
+from generation to generation, both biologically and
+there are many examples of plant and animal species
 
 $846$
 
@@ -472,56 +712,95 @@ That is, between any two species $x$ and $y$ with character value c there should
 A collection of characters is called compatible if there exists a phylogenetic tree on which they are all convex. Determining when this is the case and finding an algorithm for constructing such a tree (or a minimal such tree) is called the perfect phylogeny problem. This problem is understood for collections of characters with binary values, but not in general. An alternative problem is the following. Note that we have been treating all the edges alike when in fact some may represent longer or shorter evolutionary steps.
 Suppose that we have a function w that assigns a positive number to each edge. Then, since there is a unique shortest path between any two vertices in the tree, w induces a distance function d w on V $\times$ V , and in particular on X. Now, suppose that we are given a distance function δ on X $\times$ X that tells us how far apart current species are. The question is whether there exists a phylogenetic tree and a weighting function w so that
 
-VII.2.   Mathematical Biology                                                                                     847
+VII.2.   Mathematical Biology
 
-δ(x, y) = dw (x, y) for all x, y ∈ X. If so, one would       on the discussion with the surgical team with immedi-
+δ(x, y) = dw (x, y) for all x, y ∈ X. If so, one would
 like an algorithm to construct the tree and the weights.     ate fluid dynamical simulations based on the patient’s
 If not, one would like to construct a family of trees that   actual vasculature (as revealed by the MRI) for each pro-
-satisfy the relation approximately.                          posed graft suggested. And he wants followup on each
-   Finally, we note that there is a blossoming field of       patient to check how well his simulations predicted the
-Markov processes on trees where the partial order on         actual postoperative flow.
-V forms the basis for the Markov condition. Not only            David Eddy is an applied mathematician who has
-are there wonderful mathematical questions relating          worked on health policy for thirty years. He first
-the geometry of the tree to the processes, but there         became prominent when he published Screening for
-are important issues for phylogenetics. Suppose that         Cancer: Theory, Analysis and Design (Eddy 1980), which
-one starts with characters defined only at the root and       grew out of his Ph. D. thesis. Because of this book,
-then allows them to “evolve” down the tree by (possibly      the American Cancer Society changed its re com men-
-different) Markov processes. Then, given the dis tr ibu-        dation for the frequency of Pap smears from once a
-tion of characters on the leaves, when can we recon-         year to once every three years, since Eddy’s model-
-struct the tree? These questions have even given rise        ing showed that the change would have little effect on
-to problems in algebraic geometry.                           the life expectancy of the average American woman. A
-   Phylogenetics is useful not only for determining our      short calculation easily estimates the amount of money
+satisfy the relation approximately.
+   Finally, we note that there is a blossoming field of
+Markov processes on trees where the partial order on
+V forms the basis for the Markov condition. Not only
+are there wonderful mathematical questions relating
+the geometry of the tree to the processes, but there
+are important issues for phylogenetics. Suppose that
+one starts with characters defined only at the root and
+then allows them to “evolve” down the tree by (possibly
+different) Markov processes. Then, given the dis tr ibu-
+tion of characters on the leaves, when can we recon-
+struct the tree? These questions have even given rise
+to problems in algebraic geometry.
+   Phylogenetics is useful not only for determining our
 past but also for controlling our present and future: see    saved in an economy that spends 15% of its gross
-Fitch et al. (1997), where you can find a phylogenetic        domestic product (GDP) on health care. Through out his
-reconstruction for the influenza A virus. An excellent        career Eddy has criticized both the indiscriminate use
-recent graduate text in this field is Semple and Steel        of diagnostic tests and the in correct use of the results
-(2003).                                                      by physicians and policy boards often ignorant of the
-                                                             basic facts of conditional probability. He has criticized
-            10   Mathematics in Medicine                     specific health-policy guidelines as based on seat-of-
-                                                             the-pants guesswork instead of quantitative analysis.
+Fitch et al. (1997), where you can find a phylogenetic
+reconstruction for the influenza A virus. An excellent
+recent graduate text in this field is Semple and Steel
+(2003).
+
 It is clear that an improved understanding of biological     In a classic case he distributed questionnaires to physi-
-systems leads, at least indirectly, to improved medical      cians at a conference on colorectal cancer. The physi-
-care. However, there are many cases in which mathe-          cians were asked to estimate the percentage drop in
-matics has a direct impact on medicine. We give two          mortality from colorectal cancers if all Americans over
-brief examples.                                              age fifty were to have the two most common diag-
-   Charles Taylor is a biomedical engineer at Stanford       nostic tests each year: fecal blood smear and flexible
-who works on the fluid dynamics of the cardiovascular         sigmoidoscopy. The answers were approximately uni-
-system. He wants to use fast simulations of flows as          formly distributed in a range from 2% to 95%. Even
-part of the medical decision-making process. Suppose         more startling was the fact that the physicians did not
-that a patient presents with leg weakness and is found       even know that they disagreed so dramatically. He has
-on magnetic resonance imaging (MRI) to have an arterial      used mathematical models to analyze the costs and
+systems leads, at least indirectly, to improved medical
+care. However, there are many cases in which mathe-
+matics has a direct impact on medicine. We give two
+brief examples.
+   Charles Taylor is a biomedical engineer at Stanford
+who works on the fluid dynamics of the cardiovascular
+system. He wants to use fast simulations of flows as
+part of the medical decision-making process. Suppose
+that a patient presents with leg weakness and is found
+on magnetic resonance imaging (MRI) to have an arterial
 constriction in the thigh. Typically, the surgical group     benefits of new and existing surgeries, medical treat-
-will meet and consider a variety of options including        ments, and drugs, and he has participated robustly in
-shunting blood from other vessels to a point below           debates on the current health-policy crisis. Through-
-the constriction or shunting blood around the con st ric-      out, he has pointed out that a hefty percentage of GDP
-tion with vessels removed from some other site in the        is spent on devices, drugs, and procedures with almost
-patient’s body. Among a fairly large number of possi-        no mathematical analysis of which are effective.
-ble choices, the surgical group chooses based on what           For more on the interrelations between mathemat-
-they have been taught and on their own experience. The       ics and medicine, see mathematics and medical
+will meet and consider a variety of options including
+shunting blood from other vessels to a point below
+the constriction or shunting blood around the con st ric-
+tion with vessels removed from some other site in the
+patient’s body. Among a fairly large number of possi-
+ble choices, the surgical group chooses based on what
+they have been taught and on their own experience. The
 characteristics of the flow after the graft are important     statistics [VII.11](/part-07/mathematics-and-medical-statistics).
 not just for recovery of function but to prevent the for-
 mation of possibly destructive clots. An important dif-
-                                                                               11 Conclusions
 ficul ty is that patients treated successfully are rarely
 seen again, so one does not know the actual characteris-     Mathematics and mathematicians have played impor-
 tics of the flow after the operation. Taylor wants to be in   tant roles in many fields of biology that this brief
+
+847
+on the discussion with the surgical team with immedi-
+posed graft suggested. And he wants followup on each
+patient to check how well his simulations predicted the
+actual postoperative flow.
+David Eddy is an applied mathematician who has
+worked on health policy for thirty years. He first
+became prominent when he published Screening for
+Cancer: Theory, Analysis and Design (Eddy 1980), which
+grew out of his Ph. D. thesis. Because of this book,
+the American Cancer Society changed its re com men-
+dation for the frequency of Pap smears from once a
+year to once every three years, since Eddy’s model-
+ing showed that the change would have little effect on
+the life expectancy of the average American woman. A
+short calculation easily estimates the amount of money
+domestic product (GDP) on health care. Through out his
+career Eddy has criticized both the indiscriminate use
+of diagnostic tests and the in correct use of the results
+by physicians and policy boards often ignorant of the
+basic facts of conditional probability. He has criticized
+10   Mathematics in Medicine
+the-pants guesswork instead of quantitative analysis.
+cians at a conference on colorectal cancer. The physi-
+cians were asked to estimate the percentage drop in
+mortality from colorectal cancers if all Americans over
+age fifty were to have the two most common diag-
+nostic tests each year: fecal blood smear and flexible
+sigmoidoscopy. The answers were approximately uni-
+formly distributed in a range from 2% to 95%. Even
+more startling was the fact that the physicians did not
+even know that they disagreed so dramatically. He has
+used mathematical models to analyze the costs and
+ments, and drugs, and he has participated robustly in
+debates on the current health-policy crisis. Through-
+out, he has pointed out that a hefty percentage of GDP
+is spent on devices, drugs, and procedures with almost
+no mathematical analysis of which are effective.
+For more on the interrelations between mathemat-
+ics and medicine, see mathematics and medical
+11 Conclusions

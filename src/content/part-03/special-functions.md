@@ -1,79 +1,109 @@
 # Special Functions
 
-290                                                                                                III. Mathematical Concepts
+290
 
-grows only linearly in the numbers of variables and             solve the differential equation
-constraints. However, Klee and Minty (1972) have given                                f (x) = 1/x                         (1)
+grows only linearly in the numbers of variables and
+constraints. However, Klee and Minty (1972) have given
 an example based on a perturbed n-dimensional cube
-(m = 2 n faces and diameter n), in which if the algo-            for all x > 0, subject to the condition f (1) = 0.
-rithm selects among possible pivots by choosing the               If we try f (x) = P (x)/Q(x), where P and Q are
-one for which the objective function increases at the           polynomials with no common factors, then we find that
-greatest rate per unit increase in that variable, then                  x(Q(x)P (x) − P (x)Q (x)) = Q(x)2 .
-it visits all 2 n vertices before reaching the optimum.          By comparing coefficients we can show that Q(0) =
-Indeed, for most deterministic pivot selection rules,           P (0) = 0, which shows that, contrary to our assump-
-examples are known in which the number of steps                 tions, both P (x) and Q(x) are divisible by x. Thus, we
-grows exponentially in n.                                       cannot solve equation (1) in terms of known functions.
+(m = 2 n faces and diameter n), in which if the algo-
+rithm selects among possible pivots by choosing the
+one for which the objective function increases at the
+greatest rate per unit increase in that variable, then
+it visits all 2 n vertices before reaching the optimum.
+Indeed, for most deterministic pivot selection rules,
+examples are known in which the number of steps
+grows exponentially in n.
    Fortunately, things are usually much better in prac-
-                                                                However, the fundamental theorem of calculus
 tical problems than in worst-case examples. Typically,
-                                                                [I.3 §5.5](/part-01/fundamental-definitions) tells us that equation (1) does indeed have a
 only O(m) steps are needed to solve a problem with
-                                                                solution, namely
-m constraints. More over, Khachian (1979) proved (by                                                 x
-                                                                                             1
-analysis of the so-called ellipsoid algorithm) that linear                          F (x) =     dt.
-                                                                                              t    1
+m constraints. More over, Khachian (1979) proved (by
+analysis of the so-called ellipsoid algorithm) that linear
 programs can in principle be solved by an algorithm
-                                                                Further study shows that the function F has many
 whose running time grows only polynomially in n. Thus
-                                                                useful properties. For example, using the substitution
 linear programming is much easier than “integer linear
-                                                                u = t/a, we find that
 programming,” in which x1 , . . . , xn are required to be
-                                                                                           a              ab
-integers and for which no algorithm with polynomial                                          1                 1
-                                                                              F (ab) =         dt +              dt
-running time is known.                                                                     1 t            a    t
-                                                                                           a              b
-   Karmarkar (1984) pioneered development of “inte-                                            1              1
-                                                                                     =           dt +           du
-rior” methods for linear programming problems. These                                       1   t          1   u
-move through the interior of the polytope P, rather than                             = F (a) + F (b),
+integers and for which no algorithm with polynomial
+running time is known.
+   Karmarkar (1984) pioneered development of “inte-
+rior” methods for linear programming problems. These
+move through the interior of the polytope P, rather than
 among its vertices, and can some times solve large LPs
-                                                                and, using the formula for differentiating an inverse
 more quickly than the simplex algorithm. Modern com-
-                                                                function, we find that F −1 is the solution of the differ-
 puter software uses both methods and can easily solve
-                                                                ential equation
 LPs with millions of variables and constraints.
-                                                                                   g (x) = g(x).
-Further Reading                                                 We therefore give the function a name (the logarithm)
-                                                                and add it to our list of standard functions.
+Further Reading
 Dantzig, G. 1963. Linear Programming and Extensions.
   Princeton, NJ: Princeton University Press.
-                                                                  At a more advanced level, integration by parts shows
-Karmarkar, N. 1984. A new polynomial-time algorithm for         that the gamma function [III.31](/part-03/the-gamma-function) (introduced by euler
-  linear programming. Combinatorica 4:373–95.                   [VI.19](/part-06/leonhard-euler-17071783))
-                                                                                               . nfty
+Karmarkar, N. 1984. A new polynomial-time algorithm for
+  linear programming. Combinatorica 4:373–95.
 Khachian, L. G. 1979. A polynomial algorithm in linear
-                                                                                 Γ (x) =           t x−1 e−t dt,
-  programming. Soviet Mathematics Doklady 20:191–94.                                           0
+  programming. Soviet Mathematics Doklady 20:191–94.
 Klee, V., and G. Minty. 1972. How good is the simplex algo-     defined for all x > 0, has the property that
   rithm? In Inequalities III, edited by O. Shisha, volume 16,
-  pp. 159–75. New York: Academic Press.                                         Γ (x) = (x − 1)Γ (x − 1)
-                                                                for all x > 1, and therefore Γ (n) = (n − 1)! for all
-Solitons                                                        integers n ⩾ 1 (since Γ (1) = 1). As one might expect
-                                                                from its association with factorials, the gamma func-
+  pp. 159–75. New York: Academic Press.
+Solitons
    See linear and nonlinear waves and
-                                                                tion turns out to be very useful in number theory and
-       solitons [III.49](/part-03/linear-and-nonlinear-waves-and-solitons)
-                                                                statistics.
-                                                                   In practice, a “special function” is any function that,
-III.85 Special Functions                                        like the logarithm and the gamma function, has been
-         T. W. Körner                                           extensively studied and has turned out to be useful.
-                                                                Some authors use the phrase “special functions” in a
-Suppose that the only functions we have come across             more restricted sense, meaning something like “func-
-are quotients of polynomials and that we are asked to           tions that turn up in the solution of physical problems”
+
+III.85 Special Functions
+
+Suppose that the only functions we have come across
+are quotients of polynomials and that we are asked to
+
+III. Mathematical Concepts
+solve the differential equation
+f (x) = 1/x
+for all x > 0, subject to the condition f (1) = 0.
+If we try f (x) = P (x)/Q(x), where P and Q are
+polynomials with no common factors, then we find that
+x(Q(x)P (x) − P (x)Q (x)) = Q(x)2 .
+By comparing coefficients we can show that Q(0) =
+P (0) = 0, which shows that, contrary to our assump-
+tions, both P (x) and Q(x) are divisible by x. Thus, we
+cannot solve equation (1) in terms of known functions.
+However, the fundamental theorem of calculus
+[I.3 §5.5](/part-01/fundamental-definitions) tells us that equation (1) does indeed have a
+solution, namely
+x
+1
+F (x) =     dt.
+t    1
+Further study shows that the function F has many
+useful properties. For example, using the substitution
+u = t/a, we find that
+a              ab
+1
+F (ab) =         dt +              dt
+1 t
+a              b
+1
+=           dt +           du
+1   t
+= F (a) + F (b),
+and, using the formula for differentiating an inverse
+function, we find that F −1 is the solution of the differ-
+ential equation
+g (x) = g(x).
+We therefore give the function a name (the logarithm)
+and add it to our list of standard functions.
+At a more advanced level, integration by parts shows
+that the gamma function [III.31](/part-03/the-gamma-function) (introduced by euler
+[VI.19](/part-06/leonhard-euler-17071783))
+. nfty
+Γ (x) =           t x−1 e−t dt,
+0
+Γ (x) = (x − 1)Γ (x − 1)
+for all x > 1, and therefore Γ (n) = (n − 1)! for all
+integers n ⩾ 1 (since Γ (1) = 1). As one might expect
+from its association with factorials, the gamma func-
+tion turns out to be very useful in number theory and
+solitons [III.49](/part-03/linear-and-nonlinear-waves-and-solitons)
+statistics.
+In practice, a “special function” is any function that,
+like the logarithm and the gamma function, has been
+T. W. Körner
+Some authors use the phrase “special functions” in a
+more restricted sense, meaning something like “func-
+tions that turn up in the solution of physical problems”
 
 III . $85$ .
 

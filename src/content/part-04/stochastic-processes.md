@@ -58,65 +58,88 @@ a
 
 as n tends to $\infty.$ That is, the limiting behavior of the √ distribution of $(1/ n)S^{n}$ is Gaussian with mean $0$ and standard deviation $1$ . Since the distribution of $S^{m} + n -$ S m is the same as that of S n (as we saw earlier), this also tells us the limiting behavior of the distribution of √ $(1/ n)(S^{m} + n - S^{m})$ for any m.
 
-IV.24.   Stochastic Processes                                                                                             649
+IV.24.   Stochastic Processes
 
   (n)
- St                                                                 Bt
+ St
 
-                                                            t
+  Figure 2 The rescaled random walk S (n) for n = 100.
 
-                                                                                                                           t
-
-  Figure 2 The rescaled random walk S (n) for n = 100.                   Figure 3 Simulation of linear Brownian motion.
-
-  3     From Random Walks to Brownian Motion                       an appropriate sense, to a stochastic process with con-
-                                                                   tinuous sample paths. This stochastic process is the
+  3     From Random Walks to Brownian Motion
 In the previous section, we looked at a sequence of ran-
-                                                                   Brownian motion Bt . The graph of a typical sample path
 dom variables S0 , S1 , S2 , . . . . This is another stochastic
-                                                                   is illustrated in figure 3. Notice how similar its general
 process, except that “time” is now represented by a pos-
-                                                                   behavior is to that of the graph in figure 2.
 itive integer. (One says that it is a discrete-time process.)
-                                                                      If we want to approximate a Brownian motion that
 Now let us try to do justice to the idea that Brownian
-                                                                   goes on for ever rather than stopping at 1, all we have
 motion is something like a random walk with infinitely
-                                                                   to do is let the rescaled random walk go on for ever,
 many infinitesimally small steps. (We are now looking
-                                                                   rather than stopping after n steps.
 at one-dimensional Brownian motion, rather than the
-                                                                      Now let us give a more precise definition. A linear
 three-dimensional Brownian motion discussed right at
-                                                                   Brownian motion starting at x is a collection (Bt )t ⩾0
 the beginning of this article.)
-                                                                   of real-valued random variables with the following
    It will be slightly simpler to think about a Brownian
-                                                                   properties.
 motion Bt that runs just for times t between 0 and 1. We
-hope that the distributions of Bt , and in particular of B1 ,        • B0 = x. (In other words, B0 (ω) = x for every ω in
-will be Gaussian, and the results from the last section                the underlying probability space.)
-suggest that this is exactly what we should expect if                • The sample paths are continuous.
-they are appropriately scaled limits of the distributions            • Given any s < t the distribution of Bt − Bs is
-of the Sn . To be precise, suppose we have a graph like                Gaussian with mean 0 and variance t − s.
-that of figure 1 but with some large number of steps n.               • More over, Bt − Bs is independent of the process
-Then the x-axis will go from 1 to n and the standard                   up to time s. (This implies the Markov property
-deviation of the height of the end of the graph will be                mentioned in section 1.)
+hope that the distributions of Bt , and in particular of B1 ,
+will be Gaussian, and the results from the last section
+suggest that this is exactly what we should expect if
+they are appropriately scaled limits of the distributions
+of the Sn . To be precise, suppose we have a graph like
+that of figure 1 but with some large number of steps n.
+Then the x-axis will go from 1 to n and the standard
+deviation of the height of the end of the graph will be
 . qrt{n}. Therefore, if we shrink the graph horizontally by
-                                                     . qrt{a} factor of n and vertically by a factor of n we will              Each of these properties has its counterpart for ran-
-obtain the graph of a random function S          (n) from [0, 1]   dom walks, as we saw in the previous section. There-
-to R, and the standard deviation of S (n) (1) will be 1.           fore, even though it is not easy to prove that Brownian
-Effectively, we are shrinking the time between the steps            motion exists, the result is nevertheless highly plausi-
-of the random walk from 1 to 1/n and shrinking the                 ble. (It turns out to be easy to construct a stochastic pro-
-                          √
-step size from 1 to 1/ n. Also, so that the functions              cess that satisfies all the properties above apart from
-S (n) are defined every where, we “join the dots” of the             the second; the difficulty is in obtaining the continuity
-graph with straight lines, just as we did in figure 1. A            of the sample paths.) Another important remark is that
-rescaled random walk of this kind is shown in figure 2.             the above properties characterize Brownian motion:
-   At this point, we shall simply assume that the dis-             any two stochastic processes with those properties are
-tributions of these rescaled random walks converge, in             essentially the same.
+a factor of n and vertically by a factor of n we will
+obtain the graph of a random function S
+to R, and the standard deviation of S (n) (1) will be 1.
+Effectively, we are shrinking the time between the steps
+of the random walk from 1 to 1/n and shrinking the
+step size from 1 to 1/ n. Also, so that the functions
+S (n) are defined every where, we “join the dots” of the
+graph with straight lines, just as we did in figure 1. A
+rescaled random walk of this kind is shown in figure 2.
+   At this point, we shall simply assume that the dis-
+tributions of these rescaled random walks converge, in
 
-650                                                                                       IV. Branches of Mathematics
+649
+Bt
+t
+t
+Figure 3 Simulation of linear Brownian motion.
+an appropriate sense, to a stochastic process with con-
+tinuous sample paths. This stochastic process is the
+Brownian motion Bt . The graph of a typical sample path
+is illustrated in figure 3. Notice how similar its general
+behavior is to that of the graph in figure 2.
+If we want to approximate a Brownian motion that
+goes on for ever rather than stopping at 1, all we have
+to do is let the rescaled random walk go on for ever,
+rather than stopping after n steps.
+Now let us give a more precise definition. A linear
+Brownian motion starting at x is a collection (Bt )t ⩾0
+of real-valued random variables with the following
+properties.
+• B0 = x. (In other words, B0 (ω) = x for every ω in
+the underlying probability space.)
+• The sample paths are continuous.
+• Given any s < t the distribution of Bt − Bs is
+Gaussian with mean 0 and variance t − s.
+• More over, Bt − Bs is independent of the process
+up to time s. (This implies the Markov property
+mentioned in section 1.)
+√
+Each of these properties has its counterpart for ran-
+(n) from [0, 1]   dom walks, as we saw in the previous section. There-
+fore, even though it is not easy to prove that Brownian
+motion exists, the result is nevertheless highly plausi-
+ble. (It turns out to be easy to construct a stochastic pro-
+√
+cess that satisfies all the properties above apart from
+the second; the difficulty is in obtaining the continuity
+of the sample paths.) Another important remark is that
+the above properties characterize Brownian motion:
+any two stochastic processes with those properties are
+essentially the same.
+
+650
 
    We have not yet said what it means for the rescaled
 random walks S (n) to “converge” to Brownian motion.
@@ -127,59 +150,88 @@ the “corresponding” function of the limiting Brownian
 motion Bt . For example, as we have already seen, the
 probability that S (n) (1) lies between a and b converges
 to
-                             b
-                      1           2
-                    . qrt{e}−x /2 dx.
-                      2π a
 But B1 is governed by the Gaussian distribution, so this
 is also the probability that B1 lies between a and b.
    A more interesting example is the proportion Xn of
-                                                                     Figure 4 Simulation of planar Brownian motion.
 times t between 0 and 1 for which S (n) (t) is positive, or
 rather the way that this proportion (which is a random
-variable that depends on the walk S (n) ) is distributed.       indeed, this is how three-dimensional Brownian motion
-This “converges in distribution” to the distribution of         is defined. However, it is not quite so obvious that this
-the corresponding proportion X for Brownian motion.             is a good definition. In particular, it seems to depend
-That is, for any a < b, the probability that the propor-        on our choice of coordinate system, which is worrying
-tion Xn lies between a and b converges to the proba-            if we want a good model for physical Brownian motion.
-bility that the proportion X lies between a and b. The             However, a central property of higher-dimensional
-probability distribution for X is known explicitly, and         Brownian motion (the definition just given clearly gen-
-is called Paul Lévy’s arcsine law:                              eralizes to any dimension d) is rotational invariance.
-                                b
-                                       dx                       That is, if we choose a different orthonormal basis
-            P [a ⩽ X ⩽ b] =                   .                [III.37](/part-03/bayesian-analysis) as our coordinate system, then we obtain the
-                               a    π x(1 − x)
-                                                                same stochastic process. The proof of this is a simple
+variable that depends on the walk S (n) ) is distributed.
+This “converges in distribution” to the distribution of
+the corresponding proportion X for Brownian motion.
+That is, for any a < b, the probability that the propor-
+tion Xn lies between a and b converges to the proba-
+bility that the proportion X lies between a and b. The
+probability distribution for X is known explicitly, and
+is called Paul Lévy’s arcsine law:
+
 Perhaps surprisingly, X is more likely to be close to 0
-                                                                deduction from the basic fact that the density func-
 or 1 than to 12 . The basic reason for this is that if s and
-                                                                tion [III.71 §3](/part-03/probability-distributions) of a vector made up of d independent
 t are two different times, then the events Bs > 0 and
-                                                                one-dimensional Gaussian random variables is
 Bt > 0 are positively correlated.
-                                                                                     1        2       2
-   The convergence of random walks to Brownian mo-                                        e−(x1 +···+xd )/2 .
-                                                                                 (2π )d/2
+   The convergence of random walks to Brownian mo-
 tion is just one special case of a much more general
-phenomenon (see, for example, Billingsley 1968). For            Since the quantity x12 + · · · + xd2 is just the square of
-instance, we can allow other probability distributions          the distance from 0 to (x1 , . . . , xd ), the density does
-for the individual steps of the random walk. A typi-            not change when you rotate.
-cal result is that if each individual step has mean 0              In the planar case d = 2, there is a much deeper
-(as is the case when we have +1 or −1 with probabil-            invariance property, which we shall explain in sec-
-    1                                                           tion 5.3.
+phenomenon (see, for example, Billingsley 1968). For
+instance, we can allow other probability distributions
+for the individual steps of the random walk. A typi-
+cal result is that if each individual step has mean 0
+(as is the case when we have +1 or −1 with probabil-
+    1
 ity 2 ) and finite variance, then the limiting process will
-always be a simple rescaling of Brownian motion. In this           It is not hard to incorporate the notion of a diffu-
-sense Brownian motion appears as a universal object:            sion constant into our model. (This is the constant σ 2
-it is the continuous limit of a wide range of discrete          mentioned in section 1 that measures how quickly the
-models. (See the introduction to probabilistic mod-             Brownian motion tends to spread out.) All one has to
-els of critical phenomena [IV.25] for a discussion              do is rescale from Bt to Bσ 2 t .
-of universality.)                                                  As one might expect, higher-dimensional Brown-
-   Now that we have discussed one-dimensional Brown-            ian motions are limits of higher-dimensional random
-ian motion, let us think about how to model random              walks. This helps to explain why mathematical Brown-
-continuous paths in three dimensions. An obvious way            ian motion is a good model for the physical phe-
-of doing it would be to take three independent Brown-           nomenon observed by Brown: the erratic displacements
+always be a simple rescaling of Brownian motion. In this
+sense Brownian motion appears as a universal object:
+it is the continuous limit of a wide range of discrete
+models. (See the introduction to probabilistic mod-
+els of critical phenomena [IV.25] for a discussion
+of universality.)
+   Now that we have discussed one-dimensional Brown-
+ian motion, let us think about how to model random
+continuous paths in three dimensions. An obvious way
+of doing it would be to take three independent Brown-
 ian motions, Bt1 , Bt2 , and Bt3 , and let these be the three   caused by collisions with molecules resemble the steps
-coordinates of a point in a random path in R3 . And             of a random walk with very small step size. See figure 4
+coordinates of a point in a random path in R3 . And
+
+IV. Branches of Mathematics
+b
+1           2
+. qrt{e}−x /2 dx.
+2π a
+Figure 4 Simulation of planar Brownian motion.
+indeed, this is how three-dimensional Brownian motion
+is defined. However, it is not quite so obvious that this
+is a good definition. In particular, it seems to depend
+on our choice of coordinate system, which is worrying
+if we want a good model for physical Brownian motion.
+However, a central property of higher-dimensional
+Brownian motion (the definition just given clearly gen-
+eralizes to any dimension d) is rotational invariance.
+b
+dx                       That is, if we choose a different orthonormal basis
+P [a ⩽ X ⩽ b] =
+a    π x(1 − x)
+same stochastic process. The proof of this is a simple
+deduction from the basic fact that the density func-
+tion [III.71 §3](/part-03/probability-distributions) of a vector made up of d independent
+one-dimensional Gaussian random variables is
+1        2       2
+e−(x1 +···+xd )/2 .
+(2π )d/2
+Since the quantity x12 + · · · + xd2 is just the square of
+the distance from 0 to (x1 , . . . , xd ), the density does
+not change when you rotate.
+In the planar case d = 2, there is a much deeper
+invariance property, which we shall explain in sec-
+tion 5.3.
+It is not hard to incorporate the notion of a diffu-
+sion constant into our model. (This is the constant σ 2
+mentioned in section 1 that measures how quickly the
+Brownian motion tends to spread out.) All one has to
+do is rescale from Bt to Bσ 2 t .
+As one might expect, higher-dimensional Brown-
+ian motions are limits of higher-dimensional random
+walks. This helps to explain why mathematical Brown-
+ian motion is a good model for the physical phe-
+nomenon observed by Brown: the erratic displacements
+of a random walk with very small step size. See figure 4
 
 $IV$ . $24$ .
 
@@ -243,126 +295,200 @@ Harmonic Functions
 
 A continuous function h defined on an open subset U of R d is called harmonic if the average value of h over any closed ball contained in U, or equivalently the average value over the boundary of any such ball, is equal to its value at the center of the ball. A basic result of analysis is that h is harmonic if and only if it is twice continuously differentiable and $\Delta h = 0$ . Harmonic functions play an important role in several
 
-IV.24.   Stochastic Processes                                                                                      653
+IV.24.   Stochastic Processes
 
-  Bτ                                                         started at x is very likely to leave U at a point close to
-                                                             x. Therefore, since g is continuous, the average value
-                                             U
-                                                             of g at the first exit point will be close to the value of
-                                                             g at any point near x.
-                                                                To show that h is harmonic is more interesting. Let
-                             x
-                                                             x be a point in U and suppose that the ball of radius
-                                                             r about x is contained in U. We would like to show
-                                                             that h(x) equals the average value of h on the bound-
-                            BT                               ary of this ball. Now h(x) is the average value of g
-                                                             at the point where a Brownian motion that starts at x
-                                                             leaves U. Let us work out this average by conditioning
-                                                             on the first point BT where the Brownian path leaves the
-           Figure 5 The probabilistic solution
-                                                             ball of radius r (see figure 5). By the rotational invari-
-                of the Dirichlet problem.
-                                                             ance of Brownian motion, this point will be evenly dis-
-                                                             tributed around the boundary of this ball. If we reach
+  Bτ
+
 areas of mathematics as well as in physics. For instance,    the boundary at a point y, then the average value of
-the electrical potential of a conduct or in equilibrium       g when the path leaves U (conditioning on this extra
-is a harmonic function out side the conduct or. And if         information) is h(y), by definition. Therefore, h(x) is
-the temperature of the boundary of a body is kept            indeed the average value of h on the boundary of the
-fixed (that is, although different parts of the bound-         ball of radius r .
-ary may have different temperatures, these tempera-              Convincing though this argument might seem, there
-tures do not change over time), then the equilibrium         is a subtlety concealed within it, connected with the
-temperature inside the body is also a harmonic func-         fact that a Brownian path will typically cross the bound-
+the electrical potential of a conduct or in equilibrium
+is a harmonic function out side the conduct or. And if
+the temperature of the boundary of a body is kept
+fixed (that is, although different parts of the bound-
+ary may have different temperatures, these tempera-
+tures do not change over time), then the equilibrium
+temperature inside the body is also a harmonic func-
 tion. (See the discussion of the heat equation in the next   ary of the ball many times. Suppose we tried a similar
-section.)                                                    argument, but this time we conditioned on the value
-   Harmonic functions have a very close relationship         at the last point where the path left the ball. If this
-with Brownian motion, which leads to one of the most         point was y, we could not then say that the expected
-important connections between probability and analy-         value of g where the path first reached the boundary of
-sis. This connection is already apparent from the fact       U was h(y) because from that point onward the path
-        f
-that Mt , defined in the previous section, is a martin-       would be forbidden to enter the ball again, and would
+section.)
+   Harmonic functions have a very close relationship
+with Brownian motion, which leads to one of the most
+important connections between probability and analy-
+sis. This connection is already apparent from the fact
+
+that Mt , defined in the previous section, is a martin-
 gale. It follows from this that h(Bt ) is a martingale if    therefore not be a Brownian motion.
-(and in fact only if) h is harmonic, since then the sec-        Recall that the Markov property of a Brownian motion
-ond term vanishes. However, we will explain the link         states that, given a fixed time T and another time t with
-between Brownian motion and harmonic functions in a          T < t, the value of Bt −BT is independent of Bs for s ⩽ T .
-more elementary way, from the classical Dirichlet prob-      It may seem that we are applying this principle in the
+(and in fact only if) h is harmonic, since then the sec-
+ond term vanishes. However, we will explain the link
+between Brownian motion and harmonic functions in a
+more elementary way, from the classical Dirichlet prob-
 lem. Let U be a bounded open set, and let g be a contin-     argument above, taking T to be the first time that the
-uous real-valued function defined on the boundary ∂U          Brownian motion reaches the boundary of the ball. But
+uous real-valued function defined on the boundary ∂U
 of U . The classical Dirichlet problem is to find a func-     if we do that, then T is not a fixed time since it depends
-tion h that is harmonic on U and is equal to g on the        on the Brownian motion. However, the argument can
-boundary.                                                    still be made to work because T is a so-called stopping
-   The Dirichlet problem has a remarkably simple solu-       time. Informally, this means that T does not depend on
-tion in terms of Brownian motion: take x ∈ U , start a       what the Brownian motion does after T . (Therefore the
-Brownian motion from x, and evaluate g at the point          last time it leaves the ball of radius r is not a stopping
-Bτ where this Brownian motion leaves U (see figure 5);        time, because whether or not a given time is this last
-then define h(x) to be the average value you get. Why         time depends on the subsequent behavior of the Brown-
-does this work? That is, why is the function h, defined       ian motion.) Brownian motion can be shown to have the
-in this way, harmonic, and why does it equal (or, to be      strong Markov property, which is like the usual Markov
-more accurate, converge to) g at the boundary?               property except that T is allowed to be a stopping time.
-   The answer to the last question is roughly that if x      Given this fact, it is not hard to show rigorously that h
-is very close to the boundary, then a Brownian motion        is harmonic.
+tion h that is harmonic on U and is equal to g on the
+boundary.
+   The Dirichlet problem has a remarkably simple solu-
+tion in terms of Brownian motion: take x ∈ U , start a
+Brownian motion from x, and evaluate g at the point
+Bτ where this Brownian motion leaves U (see figure 5);
+then define h(x) to be the average value you get. Why
+does this work? That is, why is the function h, defined
+in this way, harmonic, and why does it equal (or, to be
+more accurate, converge to) g at the boundary?
+   The answer to the last question is roughly that if x
+is very close to the boundary, then a Brownian motion
 
-654                                                                                        IV. Branches of Mathematics
+653
+started at x is very likely to leave U at a point close to
+x. Therefore, since g is continuous, the average value
+U
+of g at the first exit point will be close to the value of
+g at any point near x.
+To show that h is harmonic is more interesting. Let
+x
+x be a point in U and suppose that the ball of radius
+r about x is contained in U. We would like to show
+that h(x) equals the average value of h on the bound-
+BT                               ary of this ball. Now h(x) is the average value of g
+at the point where a Brownian motion that starts at x
+leaves U. Let us work out this average by conditioning
+on the first point BT where the Brownian path leaves the
+Figure 5 The probabilistic solution
+ball of radius r (see figure 5). By the rotational invari-
+of the Dirichlet problem.
+ance of Brownian motion, this point will be evenly dis-
+tributed around the boundary of this ball. If we reach
+g when the path leaves U (conditioning on this extra
+information) is h(y), by definition. Therefore, h(x) is
+indeed the average value of h on the boundary of the
+ball of radius r .
+Convincing though this argument might seem, there
+is a subtlety concealed within it, connected with the
+fact that a Brownian path will typically cross the bound-
+argument, but this time we conditioned on the value
+at the last point where the path left the ball. If this
+point was y, we could not then say that the expected
+value of g where the path first reached the boundary of
+U was h(y) because from that point onward the path
+f
+would be forbidden to enter the ball again, and would
+Recall that the Markov property of a Brownian motion
+states that, given a fixed time T and another time t with
+T < t, the value of Bt −BT is independent of Bs for s ⩽ T .
+It may seem that we are applying this principle in the
+Brownian motion reaches the boundary of the ball. But
+on the Brownian motion. However, the argument can
+still be made to work because T is a so-called stopping
+time. Informally, this means that T does not depend on
+what the Brownian motion does after T . (Therefore the
+last time it leaves the ball of radius r is not a stopping
+time, because whether or not a given time is this last
+time depends on the subsequent behavior of the Brown-
+ian motion.) Brownian motion can be shown to have the
+strong Markov property, which is like the usual Markov
+property except that T is allowed to be a stopping time.
+Given this fact, it is not hard to show rigorously that h
+is harmonic.
 
-5.2   The Heat Equation                                      5.3   Holomorphic Functions
+654
 
-Let f be a function on Rd (which we shall assume to          Let us now concentrate on the case d = 2. As usual, we
-be continuous and bounded). If we think of f as a tem-       identify R2 with the complex plane C. Let f = f1 + if2
-per at ure distribution at time 0, then the heat equa-         be a holomorphic function [I.3 §5.6](/part-01/fundamental-definitions) defined on C.
-tion [III.36](/part-03/the-heat-equation) models what happens to the temperature         Then the real part f1 and the imaginary part f2 of f
-at subsequent times. To find a solution to this equation      are both harmonic functions, so that f1 (Bt ) and f2 (Bt )
-with initial value f means to find a continuous function      are martingales. More precisely, Itô’s formula tells us
+5.2   The Heat Equation
+
+Let f be a function on Rd (which we shall assume to
+be continuous and bounded). If we think of f as a tem-
+per at ure distribution at time 0, then the heat equa-
+tion [III.36](/part-03/the-heat-equation) models what happens to the temperature
+at subsequent times. To find a solution to this equation
+with initial value f means to find a continuous function
 u(t, x), defined for every t ⩾ 0 and x ∈ Rd , that solves     that, for j = 1, 2,
-                                                                                    t ∂f                      t ∂f
-the partial differential equation                              fj (Bt ) = fj (x) +
-                                                                                           j
-                                                                                               (Bs ) d Bs1 +
-                                                                                                                     j
-                                                                                                                         (Bs ) d Bs2 ,
-                                                                                    0 ∂x1                     0 ∂x2
-                       ∂u
-                          = 12 Δu                      (2)   since the Itô term vanishes. As we saw in section 3,
-                       ∂t
-                                                             each of the two processes fj (Bt ) can be expressed as a
+the partial differential equation
 whenever t > 0, and that satisfies the condition
-                                                             time change of a linear Brownian motion βj . However, a
 u(0, x) = f (x) for every x. (The factor 12 in this equa-
-                                                             stronger result can also be proved, namely that the time
-tion is not important but it makes the probabilistic         change is the same in both cases and that the Brownian
-interpretation easier to express.)                           motions β1 and β2 are independent. This makes it pos-
-  The heat equation also has a simple solution in            sible to prove a “localized” rotational invariance, which
-terms of Brownian motion: u(t, x) is defined to be the        leads to the important conformal invariance property
-expected value of f (Bt ) when Bt is a Brownian motion       of Brownian motion. Roughly speaking, this states that
+tion is not important but it makes the probabilistic
+interpretation easier to express.)
+  The heat equation also has a simple solution in
+terms of Brownian motion: u(t, x) is defined to be the
+expected value of f (Bt ) when Bt is a Brownian motion
 that starts at x. This tells us that heat propagates like    the image of a planar Brownian motion under a con-
-a collection of infinitesimal Brownian particles.             formal (that is, angle-preserving) mapping is another
-   The preceding probabilistic representation is quite       planar Brownian motion run at a different speed.
+a collection of infinitesimal Brownian particles.
+   The preceding probabilistic representation is quite
 easy to derive since one can write down an explicit for-
-mula for the expectation of f (Bt ) in terms of the Gauss-          6   Stochastic Differential Equations
+mula for the expectation of f (Bt ) in terms of the Gauss-
 ian density function. Given this formula, all we have
-                                                             Imagine a Brownian particle in some water. If the tem-
-to do is differentiate it and check that the equation is      per at ure of the water rises, then we expect there to be
-satisfied. However, the connection between Brownian           more collisions with faster-moving molecules; this can
-motion and the heat equation is much deeper, and in          be modeled easily by increasing the diffusion constant.
-many other cases there is a probabilistic representa-        But what if the temperature in the water varied from
+to do is differentiate it and check that the equation is
+satisfied. However, the connection between Brownian
+motion and the heat equation is much deeper, and in
+many other cases there is a probabilistic representa-
 tion for a solution but no explicit formula. To take one     place to place? Then the particle would be more agi-
-example, suppose that we want to solve the heat equa-        tated in some parts of the water than in others. And
-tion in an open set U with Dirichlet boundary condi-         if the water was moving, with different parts moving
+example, suppose that we want to solve the heat equa-
+tion in an open set U with Dirichlet boundary condi-
 tions. This means that we specify an initial value f (x)     at different speeds, then one would need to super im-
-for the temperature of each point x ∈ U and stipu-           pose on the Brownian motion a “drift” term, to take into
-late that the temperature at the boundary is kept at         account that on average we would expect the particle
-0. In other words, we want to find a function u(t, x)         to move with the surrounding water.
-such that u(0, x) = f (x) for every x ∈ U, u(t, x) = 0          Stochastic differential equations are used to model
-for every time t ⩾ 0 and every x in the boundary             more complicated situations like this. Let us begin by
-of U , and u satisfies the heat equation inside U. In         considering the one-dimensional case. Let σ and b be
-this case, the solution is obtained as follows. Run a        two functions (which we shall assume to be continuous)
+for the temperature of each point x ∈ U and stipu-
+late that the temperature at the boundary is kept at
+0. In other words, we want to find a function u(t, x)
+such that u(0, x) = f (x) for every x ∈ U, u(t, x) = 0
+for every time t ⩾ 0 and every x in the boundary
+of U , and u satisfies the heat equation inside U. In
+this case, the solution is obtained as follows. Run a
 Brownian motion (Bt ) starting at x. Let gt = f (Bt ) if     defined on R. We think of σ (x) as telling us the rate
-it has not left U at any time before t, and let gt = 0       of diffusion at x and of b(x) as the drift at x. (For
-otherwise. Then define u(t, x) to be the expected value       the sake of a picture, one could think of σ (x) as the
-of gt .                                                      local temperature at x and b(x) as the velocity at x
-  Thus, in order to obtain the solution, we had to           of some “one-dimensional water.”) Let (Bt ) be a one-
-make just a small modification to the solution of the         dimensional Brownian motion.
-heat equation in Rd . An analytic treatment of this             The notation used for the associated stochastic dif-
-version of the heat equation would be much more              ferential equation is
-complicated.                                                               d Xt = σ (Xt ) d Bt + b(Xt ) dt.                          (3)
+it has not left U at any time before t, and let gt = 0
+otherwise. Then define u(t, x) to be the expected value
+of gt .
+  Thus, in order to obtain the solution, we had to
+make just a small modification to the solution of the
+heat equation in Rd . An analytic treatment of this
+version of the heat equation would be much more
+complicated.
+
+IV. Branches of Mathematics
+5.3   Holomorphic Functions
+Let us now concentrate on the case d = 2. As usual, we
+identify R2 with the complex plane C. Let f = f1 + if2
+be a holomorphic function [I.3 §5.6](/part-01/fundamental-definitions) defined on C.
+Then the real part f1 and the imaginary part f2 of f
+are both harmonic functions, so that f1 (Bt ) and f2 (Bt )
+are martingales. More precisely, Itô’s formula tells us
+t ∂f                      t ∂f
+fj (Bt ) = fj (x) +
+j
+(Bs ) d Bs1 +
+j
+(Bs ) d Bs2 ,
+0 ∂x1                     0 ∂x2
+∂u
+= 12 Δu                      (2)   since the Itô term vanishes. As we saw in section 3,
+∂t
+each of the two processes fj (Bt ) can be expressed as a
+time change of a linear Brownian motion βj . However, a
+stronger result can also be proved, namely that the time
+change is the same in both cases and that the Brownian
+motions β1 and β2 are independent. This makes it pos-
+sible to prove a “localized” rotational invariance, which
+leads to the important conformal invariance property
+of Brownian motion. Roughly speaking, this states that
+formal (that is, angle-preserving) mapping is another
+planar Brownian motion run at a different speed.
+6   Stochastic Differential Equations
+Imagine a Brownian particle in some water. If the tem-
+per at ure of the water rises, then we expect there to be
+more collisions with faster-moving molecules; this can
+be modeled easily by increasing the diffusion constant.
+But what if the temperature in the water varied from
+tated in some parts of the water than in others. And
+if the water was moving, with different parts moving
+pose on the Brownian motion a “drift” term, to take into
+account that on average we would expect the particle
+to move with the surrounding water.
+Stochastic differential equations are used to model
+more complicated situations like this. Let us begin by
+considering the one-dimensional case. Let σ and b be
+two functions (which we shall assume to be continuous)
+of diffusion at x and of b(x) as the drift at x. (For
+the sake of a picture, one could think of σ (x) as the
+local temperature at x and b(x) as the velocity at x
+of some “one-dimensional water.”) Let (Bt ) be a one-
+dimensional Brownian motion.
+The notation used for the associated stochastic dif-
+ferential equation is
+d Xt = σ (Xt ) d Bt + b(Xt ) dt.
 
 $IV$ . $24$ .
 
@@ -388,54 +514,85 @@ Then each child is assumed to have children, the numbers of children being indep
 , left to right, the children of $1$ are labeled (1, 1) , (1, 2), . . . , the children of $2$ are labeled (2, 1) , (2, 2) , . . . , and so on. (For instance, the children of (3, 4, 2) , if it is ever born, are labeled (3, 4, 2, 1) , (3, 4, 2, 2), . . . .) See the left-hand side of figure $6$ for a simple example of a tree. It is known that in this critical case the population will eventually die out with probability $1$ . (To avoid the certainty of this fate, the average number of children must be more than $1$ .
 A particular case of this process is discussed in [IV.25 §2] .) The genealogical tree, which we shall denote by $\theta,$ is a random variable. It is called the Galton-Watson tree with offspring distribution μ. A convenient way to represent this tree is via its so-called contour function, which is illustrated on the right-hand side of figure $6$ . Informally, we imagine the motion of a particle that starts from the root and explores the tree from the left to the
 
-656                                                                                               IV. Branches of Mathematics
+656
 
-                                                             Ctθ
-                          (1,2,1)                (1,2,2)
+right, moving continuously along the edges at constant
+vertical speed (we set the height of each edge to 1), until
+it has completely explored the tree and come back to its
+starting point, after which it stays at this point. Since
+the particle will go along each edge exactly twice in this
+evolution, once upward and once downward, the total
+time T (θ) needed to explore the tree is twice the num-
+ber of edges. The value Ctθ of the contour function at
+time t is the height of the particle at time t. All this
+should be clear from figure 6.
+   It may be that a typical tree dies out fairly quickly.
+However, our goal is to understand the shape of the
+tree when it is “conditioned to be large.” This is a bit
+like the difference between on the one hand picking
+a random person alive one thousand years ago and
+looking at the tree of all his or her descendants, and
+on the other hand looking at the tree of a random
+ancestor, alive one thousand years ago, of an individ-
+ual who is alive today. In the latter case the tree is
+guaranteed to continue for many generations with out
+dying out.
+   Suppose we condition on the event that the tree θ (or
+rather the population it represents) survives for n gen-
+erations. We may now ask all sorts of questions about
+this genealogical tree. How many individuals are there
+in a given generation of the tree? If we pick two indi-
+vi duals in the same generation, how far do we typically
+have to go back in the tree to reach a common ances-
+tor? Asymptotic answers to such questions are also of
+interest in computer science and in combinatorics.
+   We will condition on a slightly different event, namely
+the event that θ has exactly n edges. The conditioned
+tree is called θ n . It is a random tree with n edges, so
+T (θ n ) = 2 n.
 
-                            (1,1)          (1,2) (1,3)         2
-
-                                       1                 2     1
-
-                                               ∅                   12 3                          T (θ ) t
-
-                                    Figure 6 Left: a tree θ. Right: the contour function C θ .
-
-right, moving continuously along the edges at constant                In the particular case where the probability μ(k) of
-vertical speed (we set the height of each edge to 1), until        having k children is 2−(k+1), it is not hard to prove that
-it has completely explored the tree and come back to its           the distribution of θ n will actually be uniform over all
-starting point, after which it stays at this point. Since          trees with n edges. A famous theorem of Aldous gives
-                                                                                                                             n
-the particle will go along each edge exactly twice in this         the asymptotic behavior of the contour function C θ
-evolution, once upward and once downward, the total                as n → . nfty for general offspring distributions, and it
-time T (θ) needed to explore the tree is twice the num-            turns out to be very closely related to a linear Brownian
-ber of edges. The value Ctθ of the contour function at             motion.
-time t is the height of the particle at time t. All this              Notice that it cannot be a Brownian motion because it
-should be clear from figure 6.                                      exhibits some behavior that is very untypical: it begins
-   It may be that a typical tree dies out fairly quickly.          and ends at zero and remains positive for all time. How-
-However, our goal is to understand the shape of the                ever, we can use Brownian motion in a simple way to
-tree when it is “conditioned to be large.” This is a bit           define a notion called a Brownian excursion, for which
-like the difference between on the one hand picking                 the sample paths have the right shape. The rough idea
-a random person alive one thousand years ago and                   is to start a linear Brownian motion at zero, draw its
-looking at the tree of all his or her descendants, and             graph, and then pick out the part of the graph between
-on the other hand looking at the tree of a random                  x = x1 and x = x2 , where x1 is the point where it
-ancestor, alive one thousand years ago, of an individ-             last crosses the x-axis before x = 1 and x2 is the point
-ual who is alive today. In the latter case the tree is             where it first crosses the x-axis after x = 1. The corre-
-guaranteed to continue for many generations with out                sponding portion of the Brownian motion will start and
-dying out.                                                         end at zero and not cross zero in between. We then need
-   Suppose we condition on the event that the tree θ (or           to rescale it so that x goes from 0 to 1 instead of from
-rather the population it represents) survives for n gen-           x1 to x2 , and we also need to rescale the height appro-
-                                                                                                 √
-erations. We may now ask all sorts of questions about              priately, by dividing by 1/ x2 − x1 . Also, if the path
-this genealogical tree. How many individuals are there             is every where negative between x1 and x2 , we simply
-in a given generation of the tree? If we pick two indi-            turn it upside down to make it positive.
-vi duals in the same generation, how far do we typically               Aldous’s theorem states that the limiting dis tr ibu-
-                                                                                                        n
-have to go back in the tree to reach a common ances-               tion of the contour function C θ (rescaled in time by
-                                                                                                                         √
-tor? Asymptotic answers to such questions are also of              the factor 1/2 n and in space by the factor 1/ 2 n,
-interest in computer science and in combinatorics.                 like the rescaling in section 3) is a Brownian excursion.
-   We will condition on a slightly different event, namely          The surprising fact about this result is that it does not
-the event that θ has exactly n edges. The conditioned              depend on the offspring distribution μ. Since the con-
-tree is called θ n . It is a random tree with n edges, so          tour function completely determines the shape of the
-T (θ n ) = 2 n.                                                     corresponding tree, we find that the limiting shape of
+IV. Branches of Mathematics
+Ctθ
+(1,2,1)                (1,2,2)
+(1,1)          (1,2) (1,3)         2
+1                 2     1
+∅                   12 3                          T (θ ) t
+Figure 6 Left: a tree θ. Right: the contour function C θ .
+In the particular case where the probability μ(k) of
+having k children is 2−(k+1), it is not hard to prove that
+the distribution of θ n will actually be uniform over all
+trees with n edges. A famous theorem of Aldous gives
+n
+the asymptotic behavior of the contour function C θ
+as n → . nfty for general offspring distributions, and it
+turns out to be very closely related to a linear Brownian
+motion.
+Notice that it cannot be a Brownian motion because it
+exhibits some behavior that is very untypical: it begins
+and ends at zero and remains positive for all time. How-
+ever, we can use Brownian motion in a simple way to
+define a notion called a Brownian excursion, for which
+the sample paths have the right shape. The rough idea
+is to start a linear Brownian motion at zero, draw its
+graph, and then pick out the part of the graph between
+x = x1 and x = x2 , where x1 is the point where it
+last crosses the x-axis before x = 1 and x2 is the point
+where it first crosses the x-axis after x = 1. The corre-
+sponding portion of the Brownian motion will start and
+end at zero and not cross zero in between. We then need
+to rescale it so that x goes from 0 to 1 instead of from
+x1 to x2 , and we also need to rescale the height appro-
+√
+priately, by dividing by 1/ x2 − x1 . Also, if the path
+is every where negative between x1 and x2 , we simply
+turn it upside down to make it positive.
+Aldous’s theorem states that the limiting dis tr ibu-
+n
+tion of the contour function C θ (rescaled in time by
+√
+the factor 1/2 n and in space by the factor 1/ 2 n,
+like the rescaling in section 3) is a Brownian excursion.
+The surprising fact about this result is that it does not
+depend on the offspring distribution μ. Since the con-
+tour function completely determines the shape of the
+corresponding tree, we find that the limiting shape of

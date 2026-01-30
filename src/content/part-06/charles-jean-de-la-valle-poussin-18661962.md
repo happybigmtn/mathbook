@@ -1,57 +1,100 @@
 # Charles-Jean de la Vallée Poussin (1866–1962)
 
-792                                                                                                   VI. Mathematicians
+792
 
-this, see operator algebras [IV.15 §1](/part-04/operator-algebras).) The equa-          gence test and a summation method for Fourier series
-tions arise in the context of problems of mathematical      (1918).
-physics, e.g., in potential theory and in the theory of        In 1911 de la Vallée Poussin was responsible for sug-
-oscillations. Fredholm considered himself primarily a       gesting the Belgian Academy prize question that led to
-mathematical physicist, and his colleague Mittag-Leffler      Jackson’s and Bernstein’s theorems on the order of the
-tried in vain to have him awarded the Nobel Prize for       best approximation of a continuous function by poly-
-physics.                                                    nomials. His existence and uniqueness theorem for the
-                                                            Chebyshev problem for an over determined system of
-VI.67      Charles-Jean de la Vallée Poussin                linear equations (1911) was an important step in lin-
-b. Louvain, Belgium, 1866; d. Brussels, 1962                ear programming [III.84](/part-03/the-simplex-algorithm); his interpolation formula
-Analytic number theory; analysis                            (1908) was fundamental for sampling theory; and his
-                                                            character ization of new classes of quasi-analytic func-
-De la Vallée Poussin graduated in engineering (1890)        tions by the rate of decrease of their Fourier coefficients
-and mathematics (1891) from the Université Catholique       (1915) was a not able development.
-de Louvain, where he went on to teach mathematical             De la Vallée Poussin’s other achievements include
-analysis from 1891 until 1951. His lectures formed          determining a uniqueness condition for multipoint
-the basis for his renowned Cours d’Analyse Infinitési-       boundary-value problems (1929), which was a sig-
-male, which ran to many editions from 1903 to 1959.         nif i cant result for the study of nonoscillatory solu-
-A member of the most famous academies in Europe             tions of linear differential equations; and solving var-
-and the United States, with honorary doctorates from        ious problems of the conformal representation of
-Paris, Strasbourg, Toronto, and Oslo, he was the first       multiply connected regions (1930–31). In potential
-president (1920) of the International Union of Mathe-       theory he extended the concept of capacity to arbi-
-maticians (now the International Mathematical Union).       trary bounded sets, proved his extraction theorem for
-He was made a baron in 1930.                                bounded sequences of set functions, and, by intro duc-
-  De la Vallée Poussin’s main achievement was his           ing measure theory into poincaré’s [VI.61](/part-06/jules-henri-poincar-18541912) “méthode
-proof in 1896 of the prime number theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860)            de balayage” (“sweeping-out method”) for the dirich-
-(an asymptotic estimate for the distribution of prime       let problem [IV.12 §1](/part-04/analysis), he paved the way for modern
-numbers in the integers), first conjectured by gauss         abstract potential theory.
+this, see operator algebras [IV.15 §1](/part-04/operator-algebras).) The equa-
+tions arise in the context of problems of mathematical
+physics, e.g., in potential theory and in the theory of
+oscillations. Fredholm considered himself primarily a
+mathematical physicist, and his colleague Mittag-Leffler
+tried in vain to have him awarded the Nobel Prize for
+physics.
+VI.67
+b. Louvain, Belgium, 1866; d. Brussels, 1962
+Analytic number theory; analysis
+De la Vallée Poussin graduated in engineering (1890)
+and mathematics (1891) from the Université Catholique
+de Louvain, where he went on to teach mathematical
+analysis from 1891 until 1951. His lectures formed
+the basis for his renowned Cours d’Analyse Infinitési-
+male, which ran to many editions from 1903 to 1959.
+A member of the most famous academies in Europe
+and the United States, with honorary doctorates from
+Paris, Strasbourg, Toronto, and Oslo, he was the first
+president (1920) of the International Union of Mathe-
+maticians (now the International Mathematical Union).
+He was made a baron in 1930.
+  De la Vallée Poussin’s main achievement was his
+proof in 1896 of the prime number theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860)
+(an asymptotic estimate for the distribution of prime
+numbers in the integers), first conjectured by gauss
 [VI.26](/part-06/carl-friedrich-gauss-17771855) in around 1793. (The theorem was also proved
-independently by hadamard [VI.65](/part-06/jacques-hadamard-18651963) in the same year,         Further Reading
+independently by hadamard [VI.65](/part-06/jacques-hadamard-18651963) in the same year,
 also using complex function theory.) Shortly afterward,     Butzer, P., J. Mawhin, and P. Vetro, eds. 2000–4. Charles-
-de la Vallée Poussin followed his proof with a sharper        Jean de la Vallée Poussin. Collected Works—Oeuvres Sci-
-error term (1899), which he extended to prime numbers         entifiques, four volumes. Bruxelles/Palermo: Académie
-in an arithmetic progression.                                 Royale de Belgique/Circolo Matematico di Palermo.
+de la Vallée Poussin followed his proof with a sharper
+error term (1899), which he extended to prime numbers
+in an arithmetic progression.
   When lebesgue [VI.72](/part-06/henri-lebesgue-18751941) first published his inte-
-                                                                                                           Jean Mawhin
 gral [III.55](/part-03/measures) in 1902, de la Vallée Poussin immediately
 grasped its importance and, using an original approach,
-described it in the second edition of his Cours d’Analyse   VI.68      Felix Hausdorff
-                                                            b. Breslau, Germany (now Wrocław, Poland), 1868;
+described it in the second edition of his Cours d’Analyse   VI.68
 (1908). In addition, he introduced the concept of the
-                                                            d. Bonn, Germany, 1942
-characteristic function of a set (1915), and shortly        Set theory; topology
+characteristic function of a set (1915), and shortly
 afterward gave a decomposition theorem for the mea-
-sure generated by a continuous function of bounded          Hausdorff studied mathematics at Leipzig, Freiburg,
-variation (1916).                                           and Berlin between 1887 and 1891, and then started
-  Of particular importance for approximation theory         research in applied mathematics at Leipzig under Hein-
-and the summation of series is de la Vallée Poussin’s       rich Bruns. After his habilitation (1895) he taught first
-convolution integral (1908), for approximating peri-        at Leipzig and then later at Bonn (1910–13, 1921–35)
-odic functions by trigonometric polynomials. His other      and Greifswald (1913–21). He is best known for his
-significant results in this field include a lower bound       work in set theory and general topology, his magnum
-for the error in the best approximation of a contin-        opus being Grundzüge der Mengenlehre (“Basic fea-
-uous function by a polynomial (1910), and a conver-         tures of set theory”). It was published in 1914 and
+sure generated by a continuous function of bounded
+variation (1916).
+  Of particular importance for approximation theory
+and the summation of series is de la Vallée Poussin’s
+convolution integral (1908), for approximating peri-
+odic functions by trigonometric polynomials. His other
+significant results in this field include a lower bound
+for the error in the best approximation of a contin-
+uous function by a polynomial (1910), and a conver-
+
+VI. Mathematicians
+gence test and a summation method for Fourier series
+(1918).
+In 1911 de la Vallée Poussin was responsible for sug-
+gesting the Belgian Academy prize question that led to
+Jackson’s and Bernstein’s theorems on the order of the
+best approximation of a continuous function by poly-
+nomials. His existence and uniqueness theorem for the
+Chebyshev problem for an over determined system of
+Charles-Jean de la Vallée Poussin
+ear programming [III.84](/part-03/the-simplex-algorithm); his interpolation formula
+(1908) was fundamental for sampling theory; and his
+character ization of new classes of quasi-analytic func-
+tions by the rate of decrease of their Fourier coefficients
+(1915) was a not able development.
+De la Vallée Poussin’s other achievements include
+determining a uniqueness condition for multipoint
+boundary-value problems (1929), which was a sig-
+nif i cant result for the study of nonoscillatory solu-
+tions of linear differential equations; and solving var-
+ious problems of the conformal representation of
+multiply connected regions (1930–31). In potential
+theory he extended the concept of capacity to arbi-
+trary bounded sets, proved his extraction theorem for
+bounded sequences of set functions, and, by intro duc-
+ing measure theory into poincaré’s [VI.61](/part-06/jules-henri-poincar-18541912) “méthode
+de balayage” (“sweeping-out method”) for the dirich-
+let problem [IV.12 §1](/part-04/analysis), he paved the way for modern
+abstract potential theory.
+Further Reading
+Jean de la Vallée Poussin. Collected Works—Oeuvres Sci-
+entifiques, four volumes. Bruxelles/Palermo: Académie
+Royale de Belgique/Circolo Matematico di Palermo.
+Jean Mawhin
+Felix Hausdorff
+b. Breslau, Germany (now Wrocław, Poland), 1868;
+d. Bonn, Germany, 1942
+Set theory; topology
+Hausdorff studied mathematics at Leipzig, Freiburg,
+and Berlin between 1887 and 1891, and then started
+research in applied mathematics at Leipzig under Hein-
+rich Bruns. After his habilitation (1895) he taught first
+at Leipzig and then later at Bonn (1910–13, 1921–35)
+and Greifswald (1913–21). He is best known for his
+work in set theory and general topology, his magnum
+opus being Grundzüge der Mengenlehre (“Basic fea-
+tures of set theory”). It was published in 1914 and

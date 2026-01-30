@@ -1,0 +1,131 @@
+[
+  {
+    "url": "http://localhost:3005/part-03//",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  },
+  {
+    "url": "http://localhost:3005/part-03/axiom-of-choice/",
+    "katexErrors": 0,
+    "katexSnippets": [],
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": null
+  },
+  {
+    "url": "http://localhost:3005/part-03/bayesian-analysis/",
+    "katexErrors": 0,
+    "katexSnippets": [],
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": null
+  },
+  {
+    "url": "http://localhost:3005/part-03/braid-groups/",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  },
+  {
+    "url": "http://localhost:3005/part-03/buildings/",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  },
+  {
+    "url": "http://localhost:3005/part-03/c--algebras/",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  },
+  {
+    "url": "http://localhost:3005/part-03/c-algebras/",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  },
+  {
+    "url": "http://localhost:3005/part-03/calabi-yau-manifolds/",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  },
+  {
+    "url": "http://localhost:3005/part-03/generating-functions/",
+    "katexErrors": 0,
+    "katexSnippets": [],
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": null
+  },
+  {
+    "url": "http://localhost:3005/part-03/hilbert-spaces/",
+    "katexErrors": 0,
+    "katexSnippets": [],
+    "longTokens": [
+      "𝑡 𝑜 𝑡 ℎ 𝑒 𝑠 𝑝 𝑎 𝑐 𝑒 (d+d ∗ ) 2 restrictedtothespace of exterior differential 0-forms, 1-for"
+    ],
+    "spacedLetters": [],
+    "note": null
+  },
+  {
+    "url": "http://localhost:3005/part-03/jordan-normal-form/",
+    "katexErrors": 0,
+    "katexSnippets": [],
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": null
+  },
+  {
+    "url": "http://localhost:3005/part-03/modular-arithmetic/",
+    "katexErrors": 0,
+    "katexSnippets": [],
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": null
+  },
+  {
+    "url": "http://localhost:3005/part-03/special-functions/",
+    "katexErrors": 0,
+    "katexSnippets": [],
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": null
+  },
+  {
+    "url": "http://localhost:3005/part-03/vector-bundles/",
+    "katexErrors": 0,
+    "katexSnippets": [],
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": null
+  },
+  {
+    "url": "http://localhost:3005/part-04/algebra/",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  },
+  {
+    "url": "http://localhost:3005/part-04/analysis/",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  },
+  {
+    "url": "http://localhost:3005/part-04/number-theory/",
+    "katexErrors": 0,
+    "longTokens": [],
+    "spacedLetters": [],
+    "note": "page.waitForSelector: Timeout 45000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.prose-content')\u001b[22m\n"
+  }
+]

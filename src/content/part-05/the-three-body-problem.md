@@ -1,89 +1,133 @@
 # The Three-Body Problem
 
-726                                                                                         V. Theorems and Problems
+726
 
-   We will consider the form of the theorem mentioned             Recall that the gravitational force of a particle P1 on
-above involving a sequence of graphs. So let us suppose        a particle P2 has magnitude k2 m1 m2 /r 2 (in suitable
-for a contradiction that we have a “bad” sequence: that        units), where k is the Gaussian gravitational constant,
-is, a sequence G1 , G2 , . . . for which no Gi is a minor      particle Pi has mass mi , and the distance between the
-of any later Gj . Let the number of vertices of the first       particles is r . The direction of this force on P2 is toward
-graph G1 be k. Since no later Gi has G1 as a minor,            P1 (and there is a force of the same magnitude on P1 in
+   We will consider the form of the theorem mentioned
+above involving a sequence of graphs. So let us suppose
+for a contradiction that we have a “bad” sequence: that
+is, a sequence G1 , G2 , . . . for which no Gi is a minor
+of any later Gj . Let the number of vertices of the first
+graph G1 be k. Since no later Gi has G1 as a minor,
 it certainly follows that none of G2 , G3 , . . . has a com-   the direction of P2 ). Recall also Newton’s second law:
-plete minor of size k (or else we could delete some            force equals mass times acceleration. From these two
-edges and obtain G1 ). For this reason, Robertson and          laws we can easily derive the equations of motion for
-Seymour studied families of graphs that do not have            the three-body problem. Let the particles be P1 , P2 , and
-a complete minor of size k. They were able to show             P3 . Write mi for the mass of Pi , rij for the distance
-that every graph that does not have a complete minor           between Pi and Pj , and qij for the jth coordinate of the
-of size k may be built up in a certain way from graphs         position of Pi . Then the equations of motion are
-                                                                                                                       ⎫
-that are “nearly embeddable” into a fixed surface (that                d2 q1 i            q2 i − q1 i           q3 i − q1 i ⎪
-                                                                                  2
-                                                                              = k m2        3
-                                                                                                      2
-                                                                                                  + k m3        3    ,⎪⎪
-                                                                                                                       ⎪
-                                                                                                                       ⎪
-depends on the value of k). This means that in a cer-                  dt 2                r12                 r13     ⎪
-                                                                                                                       ⎪
-                                                                                                                       ⎪
-                                                                                                                       ⎪
-                                                                                                                       ⎪
-tain sense that can be made precise the graph is not                    2
-                                                                      d q2 i       2     q1 i − q2 i     2     q3 i − q2 i ⎬
-                                                                              =  k  m 1           + k   m 3          ,   (1)
-too far from a graph that is embeddable into the sur-                  dt 2                 3
-                                                                                           r12                  3
-                                                                                                               r23     ⎪
-                                                                                                                       ⎪
-                                                                                                                       ⎪
-                                                                                                                       ⎪
-face. By some very deep arguments, they were able to                                                                   ⎪
-                                                                                                                       ⎪
-                                                                      d2 q3 i            q1 i − q3 i           q2 i − q3 i ⎪⎪
-show that the family of all such graphs (the graphs that                  2
-                                                                              = k2 m1       3     + k2 m 2      3    .⎪⎪
-                                                                                                                       ⎭
-                                                                       dt                  r13                 r23
+plete minor of size k (or else we could delete some
+edges and obtain G1 ). For this reason, Robertson and
+Seymour studied families of graphs that do not have
+a complete minor of size k. They were able to show
+that every graph that does not have a complete minor
+of size k may be built up in a certain way from graphs
+that are “nearly embeddable” into a fixed surface (that
+depends on the value of k). This means that in a cer-
+tain sense that can be made precise the graph is not
+too far from a graph that is embeddable into the sur-
+face. By some very deep arguments, they were able to
+show that the family of all such graphs (the graphs that
 can be built up from nearly embeddable graphs, for a
-                                                               Here, i runs from 1 to 3; thus, there are nine equations,
 given surface) has a finite number of forbidden minors,
-                                                               all derived from the simple laws above. For instance, the
 there by proving the theorem.
-                                                               left-hand side of the first equation is the component of
-                                                               the acceleration of P1 in the ith direction, and the right-
-V.33     The Three-Body Problem                                hand side is the component of the force acting on P1 in
-                                                               this direction, divided by m1 .
-The three-body problem can be simply stated: three                If the units are chosen so that k2 = 1, then the
-point masses move in space under their mutual gravita-         potential energy V of the system is given by
-tional attraction; given their initial positions and veloc-                      m 2 m3     m3 m1     m1 m2
-                                                                           V =−          −          −         .
-ities, determine their subsequent motion. Initially, it                            r23        r31        r12
-may come as a surprise that this is a difficult prob-            Setting
-lem, since the analogous two-body problem can be                                                     
-                                                                                                     3       2
-                                                                                                            pij
-                                                                                 dqij
-solved fairly simply: more precisely, given any set of                pij = mi          and H =                   + V,
-                                                                                  dt                i, j=1
-                                                                                                            2 mi
+V.33     The Three-Body Problem
+The three-body problem can be simply stated: three
+point masses move in space under their mutual gravita-
+tional attraction; given their initial positions and veloc-
+ities, determine their subsequent motion. Initially, it
+may come as a surprise that this is a difficult prob-
+lem, since the analogous two-body problem can be
+solved fairly simply: more precisely, given any set of
 initial conditions, we can write down a formula, in
-terms of elementary functions (these are functions that        we can rewrite the equations in the hamiltonian form
-can be built up using the basic operations of arith-           [IV.16 §2.1.3](/part-04/mirror-symmetry)
-metic, together with a few standard functions such as                      dqij   ∂H           dpij    ∂H
-                                                                                =      ,            =−      ,            (2)
-the exponential [III.25](/part-03/the-exponential-and-logarithmic-functions) and trigonometric [III.92](/part-03/trigonometric-functions)                         dt    ∂pij          dt     ∂qij
-functions), that tells us the subsequent positions and         which is a set of eighteen first-order differential equa-
-velocities of the bodies. However, the three-body prob-        tions. Since this set is easier to use, it is now generally
-lem is a complicated nonlinear problem and it can-             preferred to (1).
-not be solved in this way, even if we are prepared to             A standard way of decreasing the complexity of a
-enlarge our stock of “standard functions” some what.            system of differential equations is to find an algebraic
-newton [VI.14](/part-06/isaac-newton-16421727) himself speculated that an exact solu-          integral for it: that is, a quantity that will remain con-
-tion “exceeds, if I am not mistaken, the force of any          stant for any given solution and that can be expressed
-human mind,” while hilbert [VI.63](/part-06/david-hilbert-18621943), in his celebrated          as an integral that gives rise to an algebraic depend-
-Paris address of 1900, put the problem in a category           ence between the variables. This allows us to reduce
-similar to fermat’s last theorem [V.10](/part-05/fermats-last-theorem). The prob-             the number of variables by expressing some of them in
-lem can be extended to any number of bodies and in             terms of others. The three-body problem has ten inde-
-the general case it is known as the n-body problem.            pendent algebraic integrals: six of them tell us about
+terms of elementary functions (these are functions that
+can be built up using the basic operations of arith-
+metic, together with a few standard functions such as
+the exponential [III.25](/part-03/the-exponential-and-logarithmic-functions) and trigonometric [III.92](/part-03/trigonometric-functions)
+functions), that tells us the subsequent positions and
+velocities of the bodies. However, the three-body prob-
+lem is a complicated nonlinear problem and it can-
+not be solved in this way, even if we are prepared to
+enlarge our stock of “standard functions” some what.
+newton [VI.14](/part-06/isaac-newton-16421727) himself speculated that an exact solu-
+tion “exceeds, if I am not mistaken, the force of any
+human mind,” while hilbert [VI.63](/part-06/david-hilbert-18621943), in his celebrated
+Paris address of 1900, put the problem in a category
+similar to fermat’s last theorem [V.10](/part-05/fermats-last-theorem). The prob-
+lem can be extended to any number of bodies and in
+the general case it is known as the n-body problem.
+
+V. Theorems and Problems
+Recall that the gravitational force of a particle P1 on
+a particle P2 has magnitude k2 m1 m2 /r 2 (in suitable
+units), where k is the Gaussian gravitational constant,
+particle Pi has mass mi , and the distance between the
+particles is r . The direction of this force on P2 is toward
+P1 (and there is a force of the same magnitude on P1 in
+force equals mass times acceleration. From these two
+laws we can easily derive the equations of motion for
+the three-body problem. Let the particles be P1 , P2 , and
+P3 . Write mi for the mass of Pi , rij for the distance
+between Pi and Pj , and qij for the jth coordinate of the
+position of Pi . Then the equations of motion are
+⎫
+d2 q1 i
+2
+= k m2        3
+2
++ k m3        3    ,⎪⎪
+⎪
+⎪
+dt 2
+⎪
+⎪
+⎪
+⎪
+2
+d q2 i       2     q1 i − q2 i     2     q3 i − q2 i ⎬
+=  k  m 1           + k   m 3          ,   (1)
+dt 2
+r12                  3
+r23     ⎪
+⎪
+⎪
+⎪
+⎪
+⎪
+d2 q3 i            q1 i − q3 i           q2 i − q3 i ⎪⎪
+2
+= k2 m1       3     + k2 m 2      3    .⎪⎪
+⎭
+dt                  r13                 r23
+Here, i runs from 1 to 3; thus, there are nine equations,
+all derived from the simple laws above. For instance, the
+left-hand side of the first equation is the component of
+the acceleration of P1 in the ith direction, and the right-
+hand side is the component of the force acting on P1 in
+this direction, divided by m1 .
+If the units are chosen so that k2 = 1, then the
+potential energy V of the system is given by
+m 2 m3     m3 m1     m1 m2
+V =−          −          −         .
+r23
+Setting
+
+3       2
+pij
+dqij
+pij = mi
+dt                i, j=1
+2 mi
+we can rewrite the equations in the hamiltonian form
+[IV.16 §2.1.3](/part-04/mirror-symmetry)
+dqij   ∂H
+=      ,            =−      ,            (2)
+dt    ∂pij
+which is a set of eighteen first-order differential equa-
+tions. Since this set is easier to use, it is now generally
+preferred to (1).
+A standard way of decreasing the complexity of a
+system of differential equations is to find an algebraic
+integral for it: that is, a quantity that will remain con-
+stant for any given solution and that can be expressed
+as an integral that gives rise to an algebraic depend-
+ence between the variables. This allows us to reduce
+the number of variables by expressing some of them in
+terms of others. The three-body problem has ten inde-
+pendent algebraic integrals: six of them tell us about
 
 $V$ . $33$ .
 

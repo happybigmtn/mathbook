@@ -1,250 +1,396 @@
 # Arithmetic Geometry
 
-372                                                                                        IV. Branches of Mathematics
+372
 
-where the aj, i1 ,..., in are indeterminates. If we write          with many nice pictures and reproductions. A Scrap-
-g1 f1 + · · · + gm fm as a polynomial in the variables           book of Complex Curve Theory (American Mathemat-
-x1 , . . . , xn , then all the coefficients must vanish, save      ical Society, Providence, RI, 2003), by C. H. Clemens,
-the constant term which must equal 1. Thus we get                and Complex Algebraic Curves (Cambridge University
-a system of linear equations in the indeterminates               Press, Cambridge, 1992), by F. Kirwan, also start at an
+where the aj, i1 ,..., in are indeterminates. If we write
+g1 f1 + · · · + gm fm as a polynomial in the variables
+x1 , . . . , xn , then all the coefficients must vanish, save
+the constant term which must equal 1. Thus we get
+a system of linear equations in the indeterminates
 aj, i1 ,..., in . The solvability of systems of linear equations   easily accessible level, but then delve more quickly into
-is well-known (with good computer implementations).              advanced subjects.
-Thus we can decide if there is a solution with deg gj ⩽             The best introduction to the techniques of algebraic
-100. Of course it is possible that 100 was too small             geometry is Undergraduate Algebraic Geometry (Cam-
-a guess, and we may have to repeat the process with              bridge University Press, Cambridge, 1988), by M. Reid.
-larger and larger degree bounds. Will this ever end?             For those wish ing for a general over view, An Invitation
-The answer is given by the following result, which was           to Algebraic Geometry (Springer, New York, 2000), by
-proved only recently.                                            K. E. Smith, L. Kahanpää, P. Kekäläinen, and W. Traves, is
-                                                                 a good choice, while Algebraic Geometry (Springer, New
-Effective Nullstellensatz. Let f1 , . . . , fm be polyno-         York, 1995), by J. Harris, and Basic Algebraic Geometry,
-mials of degree less than or equal to d in n variables,          volumes I and II (Springer, New York, 1994), by I. R.
-where d ⩾ 3, n ⩾ 2. If they have no common zero,                 Shafarevich, are suitable for more systematic readings.
+is well-known (with good computer implementations).
+Thus we can decide if there is a solution with deg gj ⩽
+100. Of course it is possible that 100 was too small
+a guess, and we may have to repeat the process with
+larger and larger degree bounds. Will this ever end?
+The answer is given by the following result, which was
+proved only recently.
+Effective Nullstellensatz. Let f1 , . . . , fm be polyno-
+mials of degree less than or equal to d in n variables,
+where d ⩾ 3, n ⩾ 2. If they have no common zero,
 then g1 f1 + · · · + gm fm = 1 has a solution such that
-deg gj ⩽ dn − d.                                                 IV.5 Arithmetic Geometry
+deg gj ⩽ dn − d.
   For most systems, one can find solutions such that
-                                                                        Jordan S. Ellenberg
 deg gj ⩽ (n − 1)(d − 1), but in general the upper bound
-                                                                 1   Diophantine Problems, Alone and in Teams
 dn − d cannot be improved.
-  As explained above, this provides a computational              Our goal is to sketch some of the essential ideas of
-method for deciding whether or not a system of polyno-           arithmetic geometry; we begin with a problem which,
-mial equations has a common solution. Unfortunately,             on the face of it, involves no geometry and only a bit of
-this is rather use less in practice as we end up with             arithmetic.
+  As explained above, this provides a computational
+method for deciding whether or not a system of polyno-
+mial equations has a common solution. Unfortunately,
+this is rather use less in practice as we end up with
 exceedingly large linear systems. We still do not have a
-                                                                 Problem. Show that the equation
 computationally effective and foolproof method.
-                                                                                      x 2 + y 2 = 7 z 2                  (1)
-      13    So, What Is Algebraic Geometry?                      has no solution in nonzero rational numbers x, y, z.
 
-To me algebraic geometry is a belief in the unity of               (Note that it is only in the coefficient 7 that (1) differs
-geometry and algebra. The most exciting and profound             from the Pythagorean equation x 2 + y 2 = z2 , which
-developments arise from the discovery of new connec-             we know has infinitely many solutions. It is a feature of
-tions. We have seen hints of some of these; many more            arithmetic geometry that modest changes of this kind
-were left unmentioned. Born with Cartesian coordin-              can have drastic effects!)
-ates, algebraic geometry is now intertwined with cod-            Solution. Suppose x, y, z are rational numbers satis-
-ing theory, number theory, computer-aided geometric              fying (1); we will derive from this a contradiction.
-design, and theoretical physics. Several of these con-             If n is the least common denominator of x, y, z, we
-nections have emerged in the last decade, and I hope             can write
+To me algebraic geometry is a belief in the unity of
+geometry and algebra. The most exciting and profound
+developments arise from the discovery of new connec-
+tions. We have seen hints of some of these; many more
+were left unmentioned. Born with Cartesian coordin-
+ates, algebraic geometry is now intertwined with cod-
+ing theory, number theory, computer-aided geometric
+design, and theoretical physics. Several of these con-
+nections have emerged in the last decade, and I hope
 to see many more in the future.
-                                                                             x = a/n,     y = b/n,       z = c/n
 
-Further Reading                                                  such that a, b, c, and n are integers. Our original
-                                                                 equation (1) now becomes
+Further Reading
 Most of the algebraic geometry literature is very tech-
-                                                                                  a 2      b 2    c 2
-nical. A not able exception is Plane Algebraic Curves                                  +        =7     ,
-                                                                                  n        n      n
+nical. A not able exception is Plane Algebraic Curves
 (Birkhäuser, Boston, MA, 1986), by E. Brieskorn and
-                                                                 and multiplying through by n2 one has
 H. Knörrer, which starts with a long over view of alge-
-braic curves through arts and sciences since antiquity,                               a2 + b2 = 7 c 2 .                  (2)
+braic curves through arts and sciences since antiquity,
 
-IV.5.   Arithmetic Geometry                                                                                                373
+IV. Branches of Mathematics
+with many nice pictures and reproductions. A Scrap-
+book of Complex Curve Theory (American Mathemat-
+ical Society, Providence, RI, 2003), by C. H. Clemens,
+and Complex Algebraic Curves (Cambridge University
+Press, Cambridge, 1992), by F. Kirwan, also start at an
+advanced subjects.
+The best introduction to the techniques of algebraic
+geometry is Undergraduate Algebraic Geometry (Cam-
+bridge University Press, Cambridge, 1988), by M. Reid.
+For those wish ing for a general over view, An Invitation
+to Algebraic Geometry (Springer, New York, 2000), by
+K. E. Smith, L. Kahanpää, P. Kekäläinen, and W. Traves, is
+a good choice, while Algebraic Geometry (Springer, New
+York, 1995), by J. Harris, and Basic Algebraic Geometry,
+volumes I and II (Springer, New York, 1994), by I. R.
+Shafarevich, are suitable for more systematic readings.
+IV.5 Arithmetic Geometry
+Jordan S. Ellenberg
+1   Diophantine Problems, Alone and in Teams
+Our goal is to sketch some of the essential ideas of
+arithmetic geometry; we begin with a problem which,
+on the face of it, involves no geometry and only a bit of
+arithmetic.
+Problem. Show that the equation
+x 2 + y 2 = 7 z 2                  (1)
+13    So, What Is Algebraic Geometry?
+(Note that it is only in the coefficient 7 that (1) differs
+from the Pythagorean equation x 2 + y 2 = z2 , which
+we know has infinitely many solutions. It is a feature of
+arithmetic geometry that modest changes of this kind
+can have drastic effects!)
+Solution. Suppose x, y, z are rational numbers satis-
+fying (1); we will derive from this a contradiction.
+If n is the least common denominator of x, y, z, we
+can write
+x = a/n,     y = b/n,       z = c/n
+such that a, b, c, and n are integers. Our original
+equation (1) now becomes
+a 2      b 2    c 2
++
+n        n      n
+and multiplying through by n2 one has
+a2 + b2 = 7 c 2 .
 
-If a, b, and c have a common factor m, then we can                     to find some solutions.) We call the problem of solving
-replace them by a/m, b/m, and c/m, and (2) still holds                 a polynomial equation over R a Diophantine problem
-for these new numbers. We may therefore suppose that                   over R. The subject of arithmetic geometry has no pre-
-a, b, and c are integers with no common factor.                        cise boundary, but to a first approximation one may say
-   We now reduce the above equation modulo 7 (see                      that it concerns the solution of Diophantine problems
-modular arithmetic [III.58](/part-03/modular-arithmetic)). Denote by ā and . ar{b} the                  over subrings of number fields [III.63](/part-03/number-fields). (To be honest,
-reductions of a and b modulo 7. The right-hand side of                 a problem is usually called Diophantine only when R is
-(2) is a multiple of 7, so it reduces to 0. We are left with           a subring of a number field. However, the more general
-                          ā2 + . ar{b}2 = 0.                        (3)    definition suits our current purposes.)
+IV.5.   Arithmetic Geometry
 
-Now there are only seven possibilities for ā, and seven                  With any particular equation like (2), one can asso-
-possibilities for . ar{b}. So the analysis of the solutions of              ciate infinitely many Diophantine problems, one for
-(3) amounts to checking the forty-nine choices of ā, . ar{b}               each commutative ring R. A central insight—in some
-and seeing which ones satisfy the equation. A few min-                 sense the basic insight—of modern algebraic geometry
-utes of calculation are enough to convince us that (3) is              is that this whole gigantic ensemble of problems can
-satisfied only if ā = . ar{b} = 0.                                          be treated as a single entity. This widening of scope
-   But saying that ā = . ar{b} = 0 is the same as saying that              reveals structure that is invisible if we consider each
-a and b are both multiples of 7. This being the case,                  problem on its own. The aggregate we make of all these
-a2 and b2 are both multiples of 49. It follows that their              Diophantine problems is called a scheme. We will return
-sum, 7 c 2 , is a multiple of 49 as well. Therefore, c 2 is             to schemes later, and will try, with out giving precise
-a multiple of 7, and this implies that c itself is a mul-              definitions, to convey some sense of what is meant by
-tiple of 7. In particular, a, b, and c share a common                  this not very suggestive term.
-factor of 7. We have now arrived at the desired contra-                   A word of apology: I will give only the barest sketch
-diction, since we chose a, b, and c to have no common                  of the immense progress that has taken place in arith-
-factor. Thus, the hypothesized solution leads us to a                  metic geometry in recent decades—there is simply too
-contradiction, so we are forced to conclude that there                 much to cover in an article of the present scope. I have
-is not, in fact, any solution to (1) consisting of nonzero             chosen instead to discuss at some length the idea of
-rational numbers.1                                                     a scheme, assuming, I hope, minimal technical know-
-                                                                       ledge on the part of the reader. In the final section,
+If a, b, and c have a common factor m, then we can
+replace them by a/m, b/m, and c/m, and (2) still holds
+for these new numbers. We may therefore suppose that
+a, b, and c are integers with no common factor.
+   We now reduce the above equation modulo 7 (see
+modular arithmetic [III.58](/part-03/modular-arithmetic)). Denote by ā and . ar{b} the
+reductions of a and b modulo 7. The right-hand side of
+(2) is a multiple of 7, so it reduces to 0. We are left with
+
+Now there are only seven possibilities for ā, and seven
+possibilities for . ar{b}. So the analysis of the solutions of
+(3) amounts to checking the forty-nine choices of ā, . ar{b}
+and seeing which ones satisfy the equation. A few min-
+utes of calculation are enough to convince us that (3) is
+satisfied only if ā = . ar{b} = 0.
+   But saying that ā = . ar{b} = 0 is the same as saying that
+a and b are both multiples of 7. This being the case,
+a2 and b2 are both multiples of 49. It follows that their
+sum, 7 c 2 , is a multiple of 49 as well. Therefore, c 2 is
+a multiple of 7, and this implies that c itself is a mul-
+tiple of 7. In particular, a, b, and c share a common
+factor of 7. We have now arrived at the desired contra-
+diction, since we chose a, b, and c to have no common
+factor. Thus, the hypothesized solution leads us to a
+contradiction, so we are forced to conclude that there
+is not, in fact, any solution to (1) consisting of nonzero
+rational numbers.1
   In general, the determination of rational solutions to
-                                                                       I shall discuss some outstanding problems in arith-
 a polynomial equation like (2) is called a Diophantine
-problem. We were able to dispose of (2) in a paragraph,                metic geometry with the help of the ideas developed
-but that turns out to be the exception: in general, Dio-               in the body of the article. It must be conceded that the
-phantine problems can be extraordinarily difficult. For                  theory of schemes, developed by Grothendieck and his
-instance, we might modify the exponents in (2) and                     collaborators in the 1960 s, belongs to algebraic geom-
-consider the equation                                                  etry as a whole, and not to arithmetic geometry alone.
-                                                                       I think, though, that in the arithmetic setting, the use
-                        x 5 + y 5 = 7 z5 .                       (4)
-                                                                       of schemes, and the concomitant extension of geomet-
-I do not know whether (4) has any solutions in nonzero                 ric ideas to contexts that seem “nongeometric” at first
-rational numbers or not; one can be sure, though, that                 glance, is particularly central.
+problem. We were able to dispose of (2) in a paragraph,
+but that turns out to be the exception: in general, Dio-
+phantine problems can be extraordinarily difficult. For
+instance, we might modify the exponents in (2) and
+consider the equation
+I do not know whether (4) has any solutions in nonzero
+rational numbers or not; one can be sure, though, that
 determining the answer would be a substantial piece
 of work, and it is quite possible that the most powerful
-                                                                                2   Geometry with out Geometry
 techniques available to us are insufficient to answer this
-simple question.                                                       Before we dive into the abstract theory of schemes, let
-   More generally, one can take an arbitrary commuta-                  us splash around a little longer among the polynomial
-tive ring [III.81](/part-03/rings-ideals-and-modules) R, and ask whether a certain polyno-                equations of degree 2. Though it is not obvious from
-mial equation has solutions in R. For instance, does                   our discussion so far, the solution of Diophantine prob-
-(2) have a solution with x, y, z in the polynomial                     lems is properly classified as part of geometry. Our goal
-ring C[t]? (The answer is yes. We leave it as an exercise              here will be to explain why this is so.
-                                                                         Suppose we consider the equation
+simple question.
+   More generally, one can take an arbitrary commuta-
+tive ring [III.81](/part-03/rings-ideals-and-modules) R, and ask whether a certain polyno-
+mial equation has solutions in R. For instance, does
+(2) have a solution with x, y, z in the polynomial
+ring C[t]? (The answer is yes. We leave it as an exercise
   1. Exercise: why does our argument not obtain a contradiction from
-the solution x = y = z = 0?                                                                 x 2 + y 2 = 1.                  (5)
+the solution x = y = z = 0?
 
-374                                                                                                   IV. Branches of Mathematics
+373
+to find some solutions.) We call the problem of solving
+a polynomial equation over R a Diophantine problem
+over R. The subject of arithmetic geometry has no pre-
+cise boundary, but to a first approximation one may say
+that it concerns the solution of Diophantine problems
+over subrings of number fields [III.63](/part-03/number-fields). (To be honest,
+a problem is usually called Diophantine only when R is
+a subring of a number field. However, the more general
+ā2 + . ar{b}2 = 0.                        (3)    definition suits our current purposes.)
+With any particular equation like (2), one can asso-
+ciate infinitely many Diophantine problems, one for
+each commutative ring R. A central insight—in some
+sense the basic insight—of modern algebraic geometry
+is that this whole gigantic ensemble of problems can
+be treated as a single entity. This widening of scope
+reveals structure that is invisible if we consider each
+problem on its own. The aggregate we make of all these
+Diophantine problems is called a scheme. We will return
+to schemes later, and will try, with out giving precise
+definitions, to convey some sense of what is meant by
+this not very suggestive term.
+A word of apology: I will give only the barest sketch
+of the immense progress that has taken place in arith-
+metic geometry in recent decades—there is simply too
+much to cover in an article of the present scope. I have
+chosen instead to discuss at some length the idea of
+a scheme, assuming, I hope, minimal technical know-
+ledge on the part of the reader. In the final section,
+I shall discuss some outstanding problems in arith-
+metic geometry with the help of the ideas developed
+in the body of the article. It must be conceded that the
+theory of schemes, developed by Grothendieck and his
+collaborators in the 1960 s, belongs to algebraic geom-
+etry as a whole, and not to arithmetic geometry alone.
+I think, though, that in the arithmetic setting, the use
+x 5 + y 5 = 7 z5 .                       (4)
+of schemes, and the concomitant extension of geomet-
+ric ideas to contexts that seem “nongeometric” at first
+glance, is particularly central.
+2   Geometry with out Geometry
+Before we dive into the abstract theory of schemes, let
+us splash around a little longer among the polynomial
+equations of degree 2. Though it is not obvious from
+our discussion so far, the solution of Diophantine prob-
+lems is properly classified as part of geometry. Our goal
+here will be to explain why this is so.
+Suppose we consider the equation
+x 2 + y 2 = 1.
 
-One can ask: which values of x, y ∈ Q satisfy (5)? This                    Of course, the conclusion of statement (A) holds for
-problem has a flavor very different from that of the pre-                    any nontrivial quadratic equation in x, not just (6); it
-vious section. There we looked at an equation with no                      is a consequence of the factor theorem.
-rational solutions. We shall see in a moment that (5),                        In this case, it is not really necessary to appeal to any
-by contrast, has infinitely many rational solutions. The                    theorem; one can find by direct computation that the
-solutions x = 0, y = 1 and x = 35 , y = − 45 are rep-                      solutions of (6) are x = 1 and x = (m2 − 1)/(m2 +
-resentative examples. (The four solutions (±1, 0) and                      1). We conclude that the intersection between the unit
-(0, ±1) are the ones that would be said, in the usual                      circle and Lm consists of (1, 0) and the point Pm with
-mathematical parlance, to be “staring you in the face.”)                   coordinates
-   Equation (5) is, of course, immediately recognizable                                           m2 − 1 −2 m
-                                                                                                           ,        .                (7)
-as “the equation of a circle.” What, precisely, do we                                             m2 + 1 m2 + 1
-mean by that assertion? We mean that the set of pairs of                     Equation (7) establishes a correspondence m → Pm ,
-real numbers (x, y) satisfying (5) forms a circle when                     which associates with each slope m a solution Pm to (5).
+374
+
+One can ask: which values of x, y ∈ Q satisfy (5)? This
+problem has a flavor very different from that of the pre-
+vious section. There we looked at an equation with no
+rational solutions. We shall see in a moment that (5),
+by contrast, has infinitely many rational solutions. The
+solutions x = 0, y = 1 and x = 35 , y = − 45 are rep-
+resentative examples. (The four solutions (±1, 0) and
+(0, ±1) are the ones that would be said, in the usual
+mathematical parlance, to be “staring you in the face.”)
+   Equation (5) is, of course, immediately recognizable
+as “the equation of a circle.” What, precisely, do we
+mean by that assertion? We mean that the set of pairs of
+real numbers (x, y) satisfying (5) forms a circle when
 plotted in the Cartesian plane.
-                                                                           What is more, since every point on the circle, other than
    So geometry, as usually construed, makes its en-
-                                                                           (1, 0) itself, is joined to (1, 0) by a unique line, we find
 trance in the figure of the circle. Now suppose that we
-                                                                           that we have established a one-to-one correspondence
 want to find more solutions to (5). One way to proceed
-                                                                           between slopes m and solutions, other than (1, 0), to
 is as follows. Let P be the point (1, 0), and let L be a
-                                                                           equation (5).
 line through P of slope m. Then we have the following
-                                                                              A very nice feature of this construction is that it
 geometric fact.
-                                                                           allows us to construct solutions to (5) not only over
- (G) The intersection of a line with a circle consists of                  R but over smaller fields, like Q: it is evident that, when
-     either zero, one, or two points; the case of a single                 m is rational, so are the coordinates of the solution
-     point occurs only when the line is tangent to the                     yielded by (7). For example, taking m = 2 yields the
-                                                                                      3     4
-     circle.                                                               solution ( 5 , − 5 ). In fact, not only does (7) show us that
-                                                                           (5) admits infinitely many solutions over Q, it also gives
-From (G) we conclude that, unless L is the tangent line                    us an explicit way to parametrize the solutions in terms
-to the circle at P, there is exactly one point other than                  of a variable m. We leave it as an exercise to prove that
-P where the line intersects the circle. In order to find                    the solutions of (5) over Q, apart from (1, 0), are in one-
-solutions (x, y) to (5), we must determine coordinates                     to-one correspondence with rational values of m. Alas,
-for this point. So suppose L is the line through (1, 0)                    rare is the Diophantine problem whose solutions can
-with slope m, which is to say it is the line Lm whose                      be parametrized in this way! Still, polynomial equations
-equation is y = m(x − 1). Then in order to find the                         like (5) with solutions that can be parametrized by one
-x-coordinates of the points of intersection between Lm                     or more variables play a special role in arithmetic geom-
-and the circle, we need to solve the simultaneous equa-                    etry; they are called rational varieties and constitute by
-tions y = m(x − 1) and x 2 + y 2 = 1; that is, we need                     any measure the best-understood class of examples in
-to solve x 2 + m2 (x − 1)2 = 1 or, equivalently,                           the subject.
-           (1 + m2 )x 2 − 2 m2 x + (m2 − 1) = 0.                     (6)       I want to draw your attention to one essential fea-
-  Of course, (6) has the solution x = 1. How many other                    ture of this discussion. We relied on geometric intu-
-solutions are there? The geometric argument above                          ition (e.g., our knowledge of facts like (G)) to give us
-leads us to believe that there is at most one solution                     ideas about how to construct solutions to (5). On the
-to (6). Alternatively, we can use the following algebraic                  other hand, now that we have erected an algebraic jus-
-fact, which is analogous2 to the geometric fact (G).                       tification for our construction, we can kick away our
-                                                                           geometric intuition as need less scaffolding. It was a
- (A) The equation (1 + m2 )x 2 − 2 m2 x + (m2 − 1) = 0                      geometric fact about lines and circles that suggested
-     has either zero, one, or two solutions in x.                          to us that (6) should have only one solution other than
-                                                                           x = 1. However, once one has had that thought, one can
-                                                                           prove that there is at most one such solution by means
+ (G) The intersection of a line with a circle consists of
+     either zero, one, or two points; the case of a single
+     point occurs only when the line is tangent to the
+     circle.
+From (G) we conclude that, unless L is the tangent line
+to the circle at P, there is exactly one point other than
+P where the line intersects the circle. In order to find
+solutions (x, y) to (5), we must determine coordinates
+for this point. So suppose L is the line through (1, 0)
+with slope m, which is to say it is the line Lm whose
+equation is y = m(x − 1). Then in order to find the
+x-coordinates of the points of intersection between Lm
+and the circle, we need to solve the simultaneous equa-
+tions y = m(x − 1) and x 2 + y 2 = 1; that is, we need
+to solve x 2 + m2 (x − 1)2 = 1 or, equivalently,
+
+  Of course, (6) has the solution x = 1. How many other
+solutions are there? The geometric argument above
+leads us to believe that there is at most one solution
+to (6). Alternatively, we can use the following algebraic
+fact, which is analogous2 to the geometric fact (G).
+ (A) The equation (1 + m2 )x 2 − 2 m2 x + (m2 − 1) = 0
+     has either zero, one, or two solutions in x.
   2. Note that (A), unlike (G), contains no mention of tangency; that is
 because the notion of tangency is more subtle in the algebraic setting,
-                                                                           of the purely algebraic statement (A), which involves no
-as we will see in section 4 below.                                         geometry whatsoever.
+as we will see in section 4 below.
 
-IV.5.   Arithmetic Geometry                                                                                                        375
+IV. Branches of Mathematics
+Of course, the conclusion of statement (A) holds for
+any nontrivial quadratic equation in x, not just (6); it
+is a consequence of the factor theorem.
+In this case, it is not really necessary to appeal to any
+theorem; one can find by direct computation that the
+solutions of (6) are x = 1 and x = (m2 − 1)/(m2 +
+1). We conclude that the intersection between the unit
+circle and Lm consists of (1, 0) and the point Pm with
+coordinates
+m2 − 1 −2 m
+,        .                (7)
+m2 + 1 m2 + 1
+Equation (7) establishes a correspondence m → Pm ,
+which associates with each slope m a solution Pm to (5).
+What is more, since every point on the circle, other than
+(1, 0) itself, is joined to (1, 0) by a unique line, we find
+that we have established a one-to-one correspondence
+between slopes m and solutions, other than (1, 0), to
+equation (5).
+A very nice feature of this construction is that it
+allows us to construct solutions to (5) not only over
+R but over smaller fields, like Q: it is evident that, when
+m is rational, so are the coordinates of the solution
+yielded by (7). For example, taking m = 2 yields the
+3     4
+solution ( 5 , − 5 ). In fact, not only does (7) show us that
+(5) admits infinitely many solutions over Q, it also gives
+us an explicit way to parametrize the solutions in terms
+of a variable m. We leave it as an exercise to prove that
+the solutions of (5) over Q, apart from (1, 0), are in one-
+to-one correspondence with rational values of m. Alas,
+rare is the Diophantine problem whose solutions can
+be parametrized in this way! Still, polynomial equations
+like (5) with solutions that can be parametrized by one
+or more variables play a special role in arithmetic geom-
+etry; they are called rational varieties and constitute by
+any measure the best-understood class of examples in
+the subject.
+(1 + m2 )x 2 − 2 m2 x + (m2 − 1) = 0.
+ture of this discussion. We relied on geometric intu-
+ition (e.g., our knowledge of facts like (G)) to give us
+ideas about how to construct solutions to (5). On the
+other hand, now that we have erected an algebraic jus-
+tification for our construction, we can kick away our
+geometric intuition as need less scaffolding. It was a
+geometric fact about lines and circles that suggested
+to us that (6) should have only one solution other than
+x = 1. However, once one has had that thought, one can
+prove that there is at most one such solution by means
+of the purely algebraic statement (A), which involves no
+geometry whatsoever.
 
-  The fact that our argument can stand with out any ref-        the equation over R. It is a distinction that makes a
-erence to geometry means that it can be applied in sit-        remarkable difference.
+IV.5.   Arithmetic Geometry
+
+  The fact that our argument can stand with out any ref-
+erence to geometry means that it can be applied in sit-
 ua tions that might not, at first glance, seem geometric.
-For instance, suppose we wished to study solutions to                3    From Varieties to Rings to Schemes
+For instance, suppose we wished to study solutions to
 (5) over the finite field F7 . Now this solution set would
-                                                               In this section, we will attempt to give a clearer answer
 not seem rightfully to be called “a circle” at all—it is
-                                                               to the question, “What is a scheme?” Instead of trying to
 just a finite set of points! Nonetheless, our geometri-
-                                                               lay out a precise definition—which requires more alge-
 cally inspired argument still works perfectly. The pos-
-                                                               braic apparatus than would fit comfortably here—we
-sible values of m in F7 are 0, 1, 2, 3, 4, 5, 6, and the       will approach the question by means of an analogy.
+sible values of m in F7 are 0, 1, 2, 3, 4, 5, 6, and the
 corresponding solutions Pm are (−1, 0), (0, −1), (2, 2),
 (5, 5), (5, 2), (2, 5), (0, 1). These seven points, together   3.1    Adjectives and Qualities
 with (1, 0), form the whole solution set of (5) over F7 .
-                                                               So let us think about adjectives. Any adjective, such as
    We have now started to reap the benefits of consid-
-                                                               “yellow” for instance, picks out a set of nouns to which
 ering a whole bundle of Diophantine problems at once;
-                                                               the adjective applies. For each adjective A, we might
 in order to find the solutions to (5) over F7 , we used
-                                                               call this set of nouns Γ (A). For instance, Γ (“yellow”) is
 a method that was inspired by the problem of find-
-                                                               an infinite set that might look like {lemon, school bus,
 ing solutions to (5) over R. Similarly, in general, meth-
-                                                               banana, sun, . . . }.3 And anyone would agree that Γ (A)
 ods suggested by geometry can help us solve Diophan-
-                                                               is an important thing to know about A.
 tine problems. And these methods, once translated into
-                                                                  Now suppose that, moved by a desire for lexical par-
 purely algebraic form, still apply in situations that do
-                                                               simony, a theoretician among us suggested that adjec-
-not appear to be geometric.                                    tives could in fact be dispensed with entirely. If, instead
-   We must now open our minds to the possibility that          of A, we spoke only of Γ (A), we could get by with a
-the purely algebraic appearance of certain equations is        grammatical theory involving only nouns.
-deceptive. Perhaps there could be a sense of “geometry”           Is this a good idea? Well, there are certainly some
-that was general enough to include entities like the           obvious ways that things could go wrong. For instance,
+not appear to be geometric.
+   We must now open our minds to the possibility that
+the purely algebraic appearance of certain equations is
+deceptive. Perhaps there could be a sense of “geometry”
+that was general enough to include entities like the
 solution set of (5) over F7 , and in which this particular     what if lots of different adjectives were sent to the same
-example had every right to be called a “circle.” And why       set of nouns? Then our new viewpoint would be less
-not? It has properties a circle has: most importantly for      precise than the old one. But it certainly seems that if
-us, it has either zero, one, or two intersection points        two adjectives apply to exactly the same set of nouns,
-with any line. Of course, there are features of “circle-       then it is fair to say that the adjectives are the same, or
-ness” which this set of points lacks: infinitude, continu-      at least synonymous.
-ity, roundness, etc. But these latter qualities turn out to       What about relationships between adjectives? For
-be inessential when we are doing arithmetic geometry.          instance, we can ask of two adjectives whether one
-From our viewpoint the set of solutions of (5) over F7         is stronger than another, in the way that “gigantic”
-has every right to be called the unit circle.                  is stronger than “large.” Is this relationship between
-   To sum up, you might think of the modern point of           adjectives still visible on the level of sets of nouns? The
-view as an upending of the traditional story of Carte-         answer is yes: it seems fair to say that A is “stronger
-sian space. There, we have geometric objects (curves,          than” B precisely when Γ (A) is a subset of Γ (B). In other
-lines, points, surfaces) and we ask questions such as,         words, what it means to say that “gigantic” is stronger
-“What is the equation of this curve?” or “What are the         than “large” is that all gigantic things are large, though
-coordinates of that point?” The underlying object is the       some large things may not be gigantic.
-geometric one, and the algebra is there to tell us about          So far, so good. We have paid a price in techni-
+example had every right to be called a “circle.” And why
+not? It has properties a circle has: most importantly for
+us, it has either zero, one, or two intersection points
+with any line. Of course, there are features of “circle-
+ness” which this set of points lacks: infinitude, continu-
+ity, roundness, etc. But these latter qualities turn out to
+be inessential when we are doing arithmetic geometry.
+From our viewpoint the set of solutions of (5) over F7
+has every right to be called the unit circle.
+   To sum up, you might think of the modern point of
+view as an upending of the traditional story of Carte-
+sian space. There, we have geometric objects (curves,
+lines, points, surfaces) and we ask questions such as,
+“What is the equation of this curve?” or “What are the
+coordinates of that point?” The underlying object is the
+geometric one, and the algebra is there to tell us about
 its properties. For us, the situation is exactly reversed:     cal difficulty: it is much more cumbersome to speak
-the underlying object is the equation, and the various         of infinite sets of nouns than it was to use simple,
-geometric properties of solution sets of the equation          familiar adjectives. But we have gained something, too:
+the underlying object is the equation, and the various
+geometric properties of solution sets of the equation
 are merely tools that tell us about the equation’s alge-
-braic properties. For an arithmetic geometer, “the unit          3. Of course, in real life, there are nouns whose relationship with
-                                                               “yellow” is not so clear-cut, but since our goal is to make this look like
+braic properties. For an arithmetic geometer, “the unit
 circle” is the equation x 2 + y 2 = 1. And the round thing     mathematics, let us pretend that every object in the world is either
-on the page? That is just a picture of the solutions to        definitively yellow or definitively not yellow.
+on the page? That is just a picture of the solutions to
+
+375
+the equation over R. It is a distinction that makes a
+remarkable difference.
+3    From Varieties to Rings to Schemes
+In this section, we will attempt to give a clearer answer
+to the question, “What is a scheme?” Instead of trying to
+lay out a precise definition—which requires more alge-
+braic apparatus than would fit comfortably here—we
+will approach the question by means of an analogy.
+So let us think about adjectives. Any adjective, such as
+“yellow” for instance, picks out a set of nouns to which
+the adjective applies. For each adjective A, we might
+call this set of nouns Γ (A). For instance, Γ (“yellow”) is
+an infinite set that might look like {lemon, school bus,
+banana, sun, . . . }.3 And anyone would agree that Γ (A)
+is an important thing to know about A.
+Now suppose that, moved by a desire for lexical par-
+simony, a theoretician among us suggested that adjec-
+tives could in fact be dispensed with entirely. If, instead
+of A, we spoke only of Γ (A), we could get by with a
+grammatical theory involving only nouns.
+Is this a good idea? Well, there are certainly some
+obvious ways that things could go wrong. For instance,
+set of nouns? Then our new viewpoint would be less
+precise than the old one. But it certainly seems that if
+two adjectives apply to exactly the same set of nouns,
+then it is fair to say that the adjectives are the same, or
+at least synonymous.
+What about relationships between adjectives? For
+instance, we can ask of two adjectives whether one
+is stronger than another, in the way that “gigantic”
+is stronger than “large.” Is this relationship between
+adjectives still visible on the level of sets of nouns? The
+answer is yes: it seems fair to say that A is “stronger
+than” B precisely when Γ (A) is a subset of Γ (B). In other
+words, what it means to say that “gigantic” is stronger
+than “large” is that all gigantic things are large, though
+some large things may not be gigantic.
+So far, so good. We have paid a price in techni-
+of infinite sets of nouns than it was to use simple,
+familiar adjectives. But we have gained something, too:
+3. Of course, in real life, there are nouns whose relationship with
+“yellow” is not so clear-cut, but since our goal is to make this look like
+definitively yellow or definitively not yellow.
 
 $376$
 
@@ -320,190 +466,299 @@ Schemes
 We have seen that each variety X gives rise to a ring Γ (X), and further more that the algebraic study of these rings can stand in for the geometric study of varieties. But just as not every set of nouns corresponds to an adjective, not every ring arises as the coordinate ring of a variety. For example, the ring Z of integers is not the coordinate ring of a variety, as we can see by the following argument: for every complex number a and every variety V , the constant function a is a function on V , and therefore C ⊂ Γ (V) for every variety V .
 Since Z does not contain C as a subring, it is not the coordinate ring of any variety. Now we are ready to imitate the set-theoretic grammarian’s coup de grâce. We know that some, but not all, rings arise from geometric objects (varieties); and we know that the geometry of these varieties is described by algebraic properties of these special rings. Why not, then, just consider every ring R to be a “geometric object” whose geometry is determined by algebraic properties of R? The grammarian needed to invent a
 
-378                                                                                    IV. Branches of Mathematics
+378
 
 new word, “quality,” to describe his generalized adjec-     Spec R, and it is Spec R that we call the scheme associ-
 tives; we are in the same position with our rings-that-     ated with R. (More precisely, Spec R is defined to be a
-are-not-coordinate-rings; we will call them schemes.        “locally ringed topological space” whose points are the
-   So, after all this work, the definition of scheme is      prime ideals of R, but we will not need the full power
+are-not-coordinate-rings; we will call them schemes.
+   So, after all this work, the definition of scheme is
 rather prosaic—schemes are rings! (In fact, we are hid-     of this definition for our discussion here.)
-ing some technicalities; it is correct to say that affine        We are now in a position to elucidate our claim,
-schemes are rings. Restricting our attention to affine        made in the first section, that a scheme incorporates
-schemes will not interfere with the phenomena that          into one package Diophantine problems over many dif-
-we are aiming to explain.) More interesting is to ask       ferent rings. Suppose, for instance, that R is the ring
-how we can carry out the task whose difficulty “dis-          Z[x, y]/(x 2 +y 2 −1). We are going to catalog the homo-
-concerted” the early algebraic geometers—how can we         morphisms f : R → Z. To specify f , I merely have to
-identify “geometric” features of arbitrary rings?           tell you the values of f (x) and f (y) in Z. But I cannot
+ing some technicalities; it is correct to say that affine
+schemes are rings. Restricting our attention to affine
+schemes will not interfere with the phenomena that
+we are aiming to explain.) More interesting is to ask
+how we can carry out the task whose difficulty “dis-
+concerted” the early algebraic geometers—how can we
+identify “geometric” features of arbitrary rings?
    For instance, if R is supposed to be an arbitrary geo-   choose these values arbitrarily: since x 2 + y 2 − 1 = 0
-metric object, it ought to have “points.” But what are      in R, it must be the case that f (x)2 +f (y)2 −1 = 0 in Z.
-the “points” of a ring? Clearly we cannot mean by this      In other words, the pair (f (x), f (y)) constitutes a solu-
+metric object, it ought to have “points.” But what are
+the “points” of a ring? Clearly we cannot mean by this
 the elements of the ring; for in the case R = Γ (X), the    tion over Z to the Diophantine equation x 2 + y 2 = 1.
 elements of R are functions on X, not points on X. What     What is more, the same argument shows that, for any
-we need, given a point p on X, is some entity attached      ring S, a homomorphism f : R → S yields a solution
-to the ring R that corresponds to p.                        over S to x 2 + y 2 = 1, and vice versa. In summary,
+we need, given a point p on X, is some entity attached
+to the ring R that corresponds to p.
    The key observation is that we can think of p as a
-                                                              for each S, there is a one-to-one correspondence be-
-map from Γ (X) to C: given a function f from Γ (X)            tween the set of ring homomorphisms from R to S,
-we map it to the complex number f (p). This map is a          and solutions over S to x 2 + y 2 = 1.
+map from Γ (X) to C: given a function f from Γ (X)
+we map it to the complex number f (p). This map is a
 homomorphism, called the evaluation homomorphism
-at p. Since points on X give us homomorphisms on            This behavior is what we have in mind when we say that
-Γ (X), a natural way to define the word “point” for the      the ring R “packages” information about Diophantine
-ring R = Γ (X), with out using geometry, is to say that      equations over different rings.
-a “point” is a homomorphism from R to C. It turns out          It turns out, just as one might hope, that every inter-
-that the kernel of such a homomorphism is a maximal         esting geometric property of varieties can be computed
+at p. Since points on X give us homomorphisms on
+Γ (X), a natural way to define the word “point” for the
+ring R = Γ (X), with out using geometry, is to say that
+a “point” is a homomorphism from R to C. It turns out
+that the kernel of such a homomorphism is a maximal
 ideal, i.e., a proper ideal in R which is contained in no   by means of the coordinate ring, which means it can
-larger ideal except R itself. More over, every maximal       be defined not only for varieties but also for general
+larger ideal except R itself. More over, every maximal
 ideal of R arises from a point p of X. So a very concise    schemes. We have already seen, for instance, that a vari-
-way to describe the points of X might be to say that        ety X is irreducible if and only if Γ (X) is an integral
-they are the maximal ideals of R. A modern algebraic        domain. Thus, we say in general that a scheme Spec R
-geometer would say that all prime ideals correspond to      is irreducible if and only if R is an integral domain (or,
-points, not only the maximal ones. The “points” cor-        more precisely, if the quotient of R by its nilradical is an
-responding to the nonmaximal ideals are not points          integral domain). One can speak of the connectedness
+way to describe the points of X might be to say that
+they are the maximal ideals of R. A modern algebraic
+geometer would say that all prime ideals correspond to
+points, not only the maximal ones. The “points” cor-
+responding to the nonmaximal ideals are not points
 in the usual sense of the term; for instance, the point     of a scheme, its dimension, whether it is smooth, and
-corresponding to the zero ideal (when it is prime) is       so forth. All these geometric properties turn out, like
-the “generic point,” which is in one sense every where       irreducibility, to have purely algebraic descriptions. In
-on X at once, and in another sense no where in par-          fact, to the arithmetic geometer’s way of thinking, all
-ticular at all. This description sounds rather woolly,      these are, at bottom, algebraic properties.
+corresponding to the zero ideal (when it is prime) is
+the “generic point,” which is in one sense every where
+on X at once, and in another sense no where in par-
+ticular at all. This description sounds rather woolly,
 but on the algebraic side the zero ideal is something
-                                                            3.4   Example: Spec Z, the Number Line
 quite concrete—and in fact, having a precise notion of
-“generic point” turns out quite often to be useful in       The first ring we encounter in our mathematical educa-
-making a certain species of vague geometric argument        tion—and the ring that is the ultimate subject of num-
-into a rigorous proof.                                      ber theory—is Z, the ring of integers. How does it fit into
+“generic point” turns out quite often to be useful in
+making a certain species of vague geometric argument
+into a rigorous proof.
    The definition we have arrived at makes sense for all     our picture? The scheme Spec Z has as its points the set
-rings R, and not just those of the form R = Γ (X). So       of prime ideals of Z, which come in two flavors: there
+rings R, and not just those of the form R = Γ (X). So
 we might define the “points” of a ring R to be its prime     are the principal ideals (p), with p a prime number; and
-ideals. The set of prime ideals of R is given the name      there is the zero ideal.
+ideals. The set of prime ideals of R is given the name
 
-IV.5.   Arithmetic Geometry                                                                                                               379
+IV. Branches of Mathematics
+“locally ringed topological space” whose points are the
+prime ideals of R, but we will not need the full power
+We are now in a position to elucidate our claim,
+made in the first section, that a scheme incorporates
+into one package Diophantine problems over many dif-
+ferent rings. Suppose, for instance, that R is the ring
+Z[x, y]/(x 2 +y 2 −1). We are going to catalog the homo-
+morphisms f : R → Z. To specify f , I merely have to
+tell you the values of f (x) and f (y) in Z. But I cannot
+in R, it must be the case that f (x)2 +f (y)2 −1 = 0 in Z.
+In other words, the pair (f (x), f (y)) constitutes a solu-
+ring S, a homomorphism f : R → S yields a solution
+over S to x 2 + y 2 = 1, and vice versa. In summary,
+for each S, there is a one-to-one correspondence be-
+tween the set of ring homomorphisms from R to S,
+and solutions over S to x 2 + y 2 = 1.
+This behavior is what we have in mind when we say that
+the ring R “packages” information about Diophantine
+equations over different rings.
+It turns out, just as one might hope, that every inter-
+esting geometric property of varieties can be computed
+be defined not only for varieties but also for general
+ety X is irreducible if and only if Γ (X) is an integral
+domain. Thus, we say in general that a scheme Spec R
+is irreducible if and only if R is an integral domain (or,
+more precisely, if the quotient of R by its nilradical is an
+integral domain). One can speak of the connectedness
+so forth. All these geometric properties turn out, like
+irreducibility, to have purely algebraic descriptions. In
+fact, to the arithmetic geometer’s way of thinking, all
+these are, at bottom, algebraic properties.
+3.4   Example: Spec Z, the Number Line
+The first ring we encounter in our mathematical educa-
+tion—and the ring that is the ultimate subject of num-
+ber theory—is Z, the ring of integers. How does it fit into
+of prime ideals of Z, which come in two flavors: there
+there is the zero ideal.
 
-   We are supposed to think of Z as the ring of “func-              tangents at (1, 0), since the vertical line x = 1 should
-tions” on Spec Z. How can an integer be a function? Well,           surely still be considered a tangent. The alternative is
-I merely need to tell you how to evaluate an integer n at           to declare that L2 is not tangent to V ; but then we
-a point of Spec Z. If the point is a nonzero prime ideal            are in the equally unsavory situation of having a line
-(p), then the evaluation homomorphism at (p) is pre-                which, while not tangent to the circle V , intersects it
-cisely the homomorphism whose kernel is (p); so the                 at only one point. You are now beginning to see why I
-value of n at (p) is just the reduction of n modulo p.              did not include an algebraic definition of “tangent” in
-At the point (0), the evaluation homomorphism is the                statement (A) above!
-identity map Z → Z; so the value of n at (0) is just n.                This quandary illustrates the nature of arithmetic
-                                                                    geometry nicely. When we move into novel contexts,
-    4   How Many Points Does a Circle Have?                         like geometry over Fp , some features stay fixed (such
-                                                                    as “a line intersects a circle in at most two points”),
-We now return to the method of section 2, paying                    while others have to be discarded (such as “there exists
-particular attention to the case where the equation                 exactly one line, which we may call the tangent line to
-x 2 + y 2 = 1 is considered over a finite field Fp .                  the circle at (1, 0), that intersects the circle at (1, 0) and
-   Let us write V for the scheme of solutions of x 2 +              no other point”4 ).
-y 2 = 1. For any ring R, we will denote by V (R) the set               Notwithstanding these subtleties, we are now ready
-of solutions of x 2 + y 2 = 1.                                      to compute the number of points in V (Fp ). First of
+IV.5.   Arithmetic Geometry
+
+   We are supposed to think of Z as the ring of “func-
+tions” on Spec Z. How can an integer be a function? Well,
+I merely need to tell you how to evaluate an integer n at
+a point of Spec Z. If the point is a nonzero prime ideal
+(p), then the evaluation homomorphism at (p) is pre-
+cisely the homomorphism whose kernel is (p); so the
+value of n at (p) is just the reduction of n modulo p.
+At the point (0), the evaluation homomorphism is the
+identity map Z → Z; so the value of n at (0) is just n.
+    4   How Many Points Does a Circle Have?
+We now return to the method of section 2, paying
+particular attention to the case where the equation
+x 2 + y 2 = 1 is considered over a finite field Fp .
+   Let us write V for the scheme of solutions of x 2 +
+y 2 = 1. For any ring R, we will denote by V (R) the set
+of solutions of x 2 + y 2 = 1.
    If R is a finite field Fp , the set V (Fp ) is a subset of F2 p .   all, when p = 2 one can check directly that (0, 1) and
-In particular, it is a finite set. So it is natural to wonder        (1, 0) are the only two points in V (F2 ). Having treated
-how large this set is: in other words, how many points              this case, we assume for the rest of this section that
-does a circle have?                                                 p is odd. It follows from basic number theory that the
-   In section 2, guided by our geometric intuition, we              equation m2 + 1 = 0 has a solution in Fp if and only
-observed that, for every m ∈ Q, the point                           if p ≡ 1 (mod 4), in which case there are exactly two
-                          m2 − 1 −2 m                                such m. So, if p ≡ 3 (mod 4), then every line Lm inter-
-                 Pm =           ,
-                          m2 + 1 m2 + 1                             sects the circle at a point other than (1, 0), and we have
-lies on V .                                                         p + 1 points in all. If p ≡ 1 (mod 4), there are two
-   The algebraic computation showing that Pm satisfies               choices of m for which Lm intersects V only at (1, 0);
-the equation x 2 + y 2 = 1 is no different over a finite              eliminating these two choices of m yields a total of
-field. So we might be inclined to think that V (Fp ) con-            p − 1 points in V (Fp ).
-sists of p + 1 points: namely, the points Pm for each                  We conclude that |V (Fp )| is equal to 2 when p = 2,
-m ∈ Fp , together with (1, 0).                                      to p − 1 when p ≡ 1 (mod 4), and to p + 1 when p ≡ 3
-   But this is not right: for instance, when p = 5 it is            (mod 4). The interested reader will find the following
-easy to check that the four points (0, 1), (0, −1), (1, 0),         exercises useful: how many solutions are there to x 2 +
-(−1, 0) make up all of V (F5 ). Computing Pm for vari-              3 y 2 = 1 over Fp ? What about x 2 + y 2 = 0?
-ous m, we quickly discover the problem; when m is 2                    More generally, let X be the scheme of solutions of
-or 3, the formula for Pm does not make sense, because               any system of equations
-the denominator m2 + 1 is zero! This is a wrinkle we                     F1 (x1 , . . . , xn ) = 0, F2 (x1 , . . . , xn ) = 0, . . . ,    (10)
-did not see over Q, where m2 + 1 was always positive.               where the Fi are polynomials with integral coeffi-
-   What is the geometric story here? Consider the inter-            cients. Then one can associate with F a list of integers
-section of the line L2 , that is, the line y = 2(x − 1),            N2 (X), N3 (X), N5 (X), . . . , where Np (X) is the number
-with V . If (x, y) belongs to this intersection, then               of solutions to (10) with x1 , . . . , xn ∈ Fp . This list of
-x 2 +(2(x−1))2 = 1, so 5 x 2 −8 x+3 = 0. Since 5 = 0 and              integers turns out to contain a surprising amount of
-8 = 3 in F5 , this equation can be written as 3 − 3 x = 0;           geometric information about the scheme X; even for
-in other words, x = 1, which in turn implies that y = 0.            the simplest schemes, the analysis of these lists is a
-In other words, the line L2 intersects the circle V at only         deep problem of intense current interest, as we will see
-one point!                                                          in the next section.
+In particular, it is a finite set. So it is natural to wonder
+how large this set is: in other words, how many points
+does a circle have?
+   In section 2, guided by our geometric intuition, we
+observed that, for every m ∈ Q, the point
+
+lies on V .
+   The algebraic computation showing that Pm satisfies
+the equation x 2 + y 2 = 1 is no different over a finite
+field. So we might be inclined to think that V (Fp ) con-
+sists of p + 1 points: namely, the points Pm for each
+m ∈ Fp , together with (1, 0).
+   But this is not right: for instance, when p = 5 it is
+easy to check that the four points (0, 1), (0, −1), (1, 0),
+(−1, 0) make up all of V (F5 ). Computing Pm for vari-
+ous m, we quickly discover the problem; when m is 2
+or 3, the formula for Pm does not make sense, because
+the denominator m2 + 1 is zero! This is a wrinkle we
+did not see over Q, where m2 + 1 was always positive.
+   What is the geometric story here? Consider the inter-
+section of the line L2 , that is, the line y = 2(x − 1),
+with V . If (x, y) belongs to this intersection, then
+x 2 +(2(x−1))2 = 1, so 5 x 2 −8 x+3 = 0. Since 5 = 0 and
+8 = 3 in F5 , this equation can be written as 3 − 3 x = 0;
+in other words, x = 1, which in turn implies that y = 0.
+In other words, the line L2 intersects the circle V at only
+one point!
    We are left with two possibilities, both disturbing to
-                                                                       4. In this case, the right attitude to adopt is that L2 is not tangent to
-our geometric intuition. We might declare that L2 is tan-           V , but that there are certain nontangent lines that intersect the circle
-gent to V ; but this means that V would have multiple               at a single point.
+our geometric intuition. We might declare that L2 is tan-
+gent to V ; but this means that V would have multiple
 
-380                                                                                            IV. Branches of Mathematics
+379
+tangents at (1, 0), since the vertical line x = 1 should
+surely still be considered a tangent. The alternative is
+to declare that L2 is not tangent to V ; but then we
+are in the equally unsavory situation of having a line
+which, while not tangent to the circle V , intersects it
+at only one point. You are now beginning to see why I
+did not include an algebraic definition of “tangent” in
+statement (A) above!
+This quandary illustrates the nature of arithmetic
+geometry nicely. When we move into novel contexts,
+like geometry over Fp , some features stay fixed (such
+as “a line intersects a circle in at most two points”),
+while others have to be discarded (such as “there exists
+exactly one line, which we may call the tangent line to
+the circle at (1, 0), that intersects the circle at (1, 0) and
+no other point”4 ).
+Notwithstanding these subtleties, we are now ready
+to compute the number of points in V (Fp ). First of
+(1, 0) are the only two points in V (F2 ). Having treated
+this case, we assume for the rest of this section that
+p is odd. It follows from basic number theory that the
+equation m2 + 1 = 0 has a solution in Fp if and only
+if p ≡ 1 (mod 4), in which case there are exactly two
+m2 − 1 −2 m                                such m. So, if p ≡ 3 (mod 4), then every line Lm inter-
+Pm =
+m2 + 1 m2 + 1                             sects the circle at a point other than (1, 0), and we have
+p + 1 points in all. If p ≡ 1 (mod 4), there are two
+choices of m for which Lm intersects V only at (1, 0);
+eliminating these two choices of m yields a total of
+p − 1 points in V (Fp ).
+We conclude that |V (Fp )| is equal to 2 when p = 2,
+to p − 1 when p ≡ 1 (mod 4), and to p + 1 when p ≡ 3
+(mod 4). The interested reader will find the following
+exercises useful: how many solutions are there to x 2 +
+3 y 2 = 1 over Fp ? What about x 2 + y 2 = 0?
+More generally, let X be the scheme of solutions of
+any system of equations
+F1 (x1 , . . . , xn ) = 0, F2 (x1 , . . . , xn ) = 0, . . . ,    (10)
+where the Fi are polynomials with integral coeffi-
+cients. Then one can associate with F a list of integers
+N2 (X), N3 (X), N5 (X), . . . , where Np (X) is the number
+of solutions to (10) with x1 , . . . , xn ∈ Fp . This list of
+integers turns out to contain a surprising amount of
+geometric information about the scheme X; even for
+the simplest schemes, the analysis of these lists is a
+deep problem of intense current interest, as we will see
+in the next section.
+4. In this case, the right attitude to adopt is that L2 is not tangent to
+V , but that there are certain nontangent lines that intersect the circle
+at a single point.
 
-        5 Some Problems in Classical and                       inclines us to make the estimate Np (XA, B ) ∼ p. Define
-       Contemporary Arithmetic Geometry                        ap to be the error in this estimate: ap = p − Np (XA, B ).
-                                                               It is worth remembering that when X was the scheme
+380
+
 In this section I will try to give an impression of a few of
-                                                               attached to x 2 + y 2 = 1, the behavior of p − Np (X)
 arithmetic geometry’s great successes, and to gesture
-                                                               was very regular; in particular, this quantity took the
 at some problems of current interest for researchers in
-                                                               value 1 at primes congruent to 1 mod 4 and −1 at
 the area.
-                                                               primes congruent to 3 mod 4. (We note, in particular,
    A word of warning is in order. In what follows, I will
-                                                               that the heuristic estimate Np (X) ∼ p is quite good in
 be trying to give brief and nontechnical descriptions
-                                                               this case.) Might one hope that ap displays the same
 of some mathematics of extreme depth and complex-
-                                                               kind of regularity?
 ity. Consequently, I will feel very free to oversimplify.
-                                                                  In fact, the behavior of the ap is very irregular, as a
 I will try to avoid making assertions that are actually
-                                                               famous theorem of Mazur shows; not only do the ap
 false, but I will often use definitions (like that of the
-                                                               fail to vary periodically, even their reductions modulo
 L-function attached to an elliptic curve) that do not
-                                                               various primes are irregular!
 exactly agree with those in the literature.
-                                                               Fact (Mazur). Suppose that  is a prime greater than 3,
-5.1   From Fermat to Birch–Swinnerton-Dyer                     and let b be a positive integer. It is not the case that
-                                                               ap takes the same value (mod ) for all primes p
+5.1   From Fermat to Birch–Swinnerton-Dyer
 The world is not lacking in expositions of the proof of
-                                                               congruent to 1 (mod b).5
 fermat’s last theorem [V.10](/part-05/fermats-last-theorem) and I will not attempt
-to give another one here, although it is with out ques-            On the other hand—if I may compress a 200-page
-tion the most not able contemporary achievement in              paper into a slogan—Wiles proved that, when A, B, C
-arithmetic geometry. (Here I am using the mathemat i-           is a solution to (11), the reductions mod  of the ap
-cian’s sense of “contemporary,” which, as the old joke         necessarily behaved periodically, contradicting Mazur’s
-goes, means “theorems proved since I entered graduate          theorem when  > 3. The case  = 3 is an old theorem
-school.” The shorthand for “theorems proved before I           of euler [VI.19](/part-06/leonhard-euler-17071783). This completes the proof of Fermat’s
-entered graduate school” is “classical.”) I will content       conjecture, and, I hope, bolsters our assertion that the
-myself with making some comments about the struc-              careful study of the values Np (X) is an interesting way
-ture of the proof, emphasizing connections with the            to study a variety X!
-parts of arithmetic geometry we have discussed above.             But the story does not end with Fermat. In general,
-   Fermat’s last theorem (rightly called “Fermat’s con-        if f (x) is a cubic polynomial with coefficients in Z and
-jecture,” since it is almost impossible to imagine that        no repeated roots, the curve E defined by the equation
-fermat [VI.12](/part-06/pierre-fermat-1601665) proved it) asserts that the equation                                         y 2 = f (x)                          (12)
-                      A + B  = C  ,                 (11)    is called an elliptic curve [III.21](/part-03/elliptic-curves) (note well that an
-                                                               elliptic curve is not an ellipse). The study of rational
+to give another one here, although it is with out ques-
+tion the most not able contemporary achievement in
+arithmetic geometry. (Here I am using the mathemat i-
+cian’s sense of “contemporary,” which, as the old joke
+goes, means “theorems proved since I entered graduate
+school.” The shorthand for “theorems proved before I
+entered graduate school” is “classical.”) I will content
+myself with making some comments about the struc-
+ture of the proof, emphasizing connections with the
+parts of arithmetic geometry we have discussed above.
+   Fermat’s last theorem (rightly called “Fermat’s con-
+jecture,” since it is almost impossible to imagine that
+fermat [VI.12](/part-06/pierre-fermat-1601665) proved it) asserts that the equation
 where  is an odd prime, has no solutions in positive
-                                                               points on elliptic curves (that is, pairs of rational num-
 integers A, B, C.
-                                                               bers satisfying (12)) has been occupying arithmetic
   The proof uses the crucial idea, introduced indepen-
-                                                               geometers since before our subject existed as such;
 dently by Frey and Hellegouarch, of associating with
-                                                               a decent treatment of the story would fill a book, as
 any solution (A, B, C) of (11) a certain variety XA, B ,
-                                                               indeed it does fill the book of Silverman and Tate
 namely the curve described by the equation
-                                                               (1992). We can define ap (E) to be p − Np (E) as above.
-                y 2 = x(x − A )(x + B  ).                    First of all, if our heuristic Np (E) ∼ p is a good esti-
-What can we say about Np (XA, B )? We begin with a sim-         mate, we might expect that ap (E) is small compared
-ple heuristic. There are p choices for x in Fp . For each      with p; and, in fact, a theorem of Hasse from the 1930 s
-                                                                                       √
-choice of x, there are either zero, one, or two choices        shows that ap (E) ⩽ 2 p for all but finitely many p.
+
+What can we say about Np (XA, B )? We begin with a sim-
+ple heuristic. There are p choices for x in Fp . For each
+choice of x, there are either zero, one, or two choices
 for y, depending on whether x(x − A )(x + B  ) is
-a quadratic nonresidue, zero, or a quadratic residue             5. The theorem proved by Mazur is stated by him in a very different
-                                                               and much more general way: he proves that certain modular curves
-in Fp . Since there are equally many quadratic residues        do not possess any rational points. This implies that a version of the
-and nonresidues in Fp , we might guess that those two          fact above is true, not only for XA, B , but for any equation of the form
-                                                               y 2 = f (x), where f is a cubic polynomial with out repeated roots. We
-cases arise equally often. If so, there would on average       will leave it to the other able treatments of Fermat to develop that
-be one choice of y for each of the p choices of x, which       point of view.
+a quadratic nonresidue, zero, or a quadratic residue
+in Fp . Since there are equally many quadratic residues
+and nonresidues in Fp , we might guess that those two
+cases arise equally often. If so, there would on average
+be one choice of y for each of the p choices of x, which
+
+IV. Branches of Mathematics
+5 Some Problems in Classical and
+Contemporary Arithmetic Geometry
+It is worth remembering that when X was the scheme
+attached to x 2 + y 2 = 1, the behavior of p − Np (X)
+was very regular; in particular, this quantity took the
+value 1 at primes congruent to 1 mod 4 and −1 at
+primes congruent to 3 mod 4. (We note, in particular,
+that the heuristic estimate Np (X) ∼ p is quite good in
+this case.) Might one hope that ap displays the same
+kind of regularity?
+In fact, the behavior of the ap is very irregular, as a
+famous theorem of Mazur shows; not only do the ap
+fail to vary periodically, even their reductions modulo
+various primes are irregular!
+Fact (Mazur). Suppose that  is a prime greater than 3,
+and let b be a positive integer. It is not the case that
+ap takes the same value (mod ) for all primes p
+congruent to 1 (mod b).5
+On the other hand—if I may compress a 200-page
+paper into a slogan—Wiles proved that, when A, B, C
+is a solution to (11), the reductions mod  of the ap
+necessarily behaved periodically, contradicting Mazur’s
+theorem when  > 3. The case  = 3 is an old theorem
+of euler [VI.19](/part-06/leonhard-euler-17071783). This completes the proof of Fermat’s
+conjecture, and, I hope, bolsters our assertion that the
+careful study of the values Np (X) is an interesting way
+to study a variety X!
+But the story does not end with Fermat. In general,
+if f (x) is a cubic polynomial with coefficients in Z and
+no repeated roots, the curve E defined by the equation
+y 2 = f (x)
+A + B  = C  ,                 (11)    is called an elliptic curve [III.21](/part-03/elliptic-curves) (note well that an
+elliptic curve is not an ellipse). The study of rational
+points on elliptic curves (that is, pairs of rational num-
+bers satisfying (12)) has been occupying arithmetic
+geometers since before our subject existed as such;
+a decent treatment of the story would fill a book, as
+indeed it does fill the book of Silverman and Tate
+(1992). We can define ap (E) to be p − Np (E) as above.
+y 2 = x(x − A )(x + B  ).
+mate, we might expect that ap (E) is small compared
+with p; and, in fact, a theorem of Hasse from the 1930 s
+√
+shows that ap (E) ⩽ 2 p for all but finitely many p.
+5. The theorem proved by Mazur is stated by him in a very different
+and much more general way: he proves that certain modular curves
+do not possess any rational points. This implies that a version of the
+fact above is true, not only for XA, B , but for any equation of the form
+y 2 = f (x), where f is a cubic polynomial with out repeated roots. We
+will leave it to the other able treatments of Fermat to develop that
+point of view.
 
 $IV$ . $5$ .
 

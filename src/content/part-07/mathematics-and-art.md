@@ -26,7 +26,7 @@ This is evident in some of the artistic styles and the philosophies that develop
 Hans Holbein’s (1497-1543) Ambassadors (1533), which illustrates how an artist can use a distorted variation on mathematical perspective to fool the eye (anamorphosis); Artemesia Gentileschi’s (1593-1652) deliberate correction of a smattering of blood in her first version of Judith Be heading Holofernes (1612-13) to a parabolic arc of blood in the second version ( 1620 ) to match a sketch that her friend, scientist, court mathematician, and amateur painter Galileo Galilei (1564-1642) had made as a study for his as yet unpublished law of projectile motion;
 various works of the Dutch portrait painter Johannes Vermeer (1632-75) using the camera obscura; Johann Hummel’s (1769-1852) paintings of the making of the great granite bowl in Berlin, which used Gaspard Monge’s (1746-1818) Géométrie Descriptive (1799); sculpture by Naum Gabo ${}^{1} (1890 - 1977)$ and his brother Antoine Pevsner (1886-1962) following their youthful academic study of solid geometry; and the mathematically understandable but physically $1$ . Gabo was born Naum Neemia Pevsner but changed his name to distinguish himself from his painter brother.
 
-VII.14.   Mathematics and Art                                                                                     945
+VII.14.   Mathematics and Art
 
 implausible scenes by Maurits Cornelis Escher (1898–
 1972).
@@ -38,57 +38,81 @@ ern art. This is followed by a short summary of the
 changing course of geometry in the nineteenth century
 through the development of non-Euclidean geometry
 and n-dimensional geometry. We then move on to the
-activities of artists, beginning in France in the early       Figure 1 An artist using Dürer’s perspective machine.
-twentieth century and continuing with the works of              © Copyright: The Trustees of the British Museum.
+activities of artists, beginning in France in the early
+twentieth century and continuing with the works of
 representative artists in other countries, all the while
-keeping in mind the mathematics that provoked their         Pacioli’s (1445–1517) De Divina Proportione (1509)
-artistic responses.                                         includes Leonardo’s unsurpassed woodcuts of poly-
-                                                            hedra (among them the first published illustration of a
-          2   Development of Perspective
-                                                            rhombicuboctohedron), and Dürer’s Unterweysung der
-During the fifteenth century artists were still primar-      Messung (1525) contains the first illustration of nets
-ily employed to produce images of sacred subjects,          for models of polyhedra. Dürer’s own new knowledge
-but there was an increased interest in having pictures      of perspective, whose secrets he had learned on a trip to
-match aspects of the physical world. Lacking any pre-       Italy from Germany, inspired him to create his famous
+keeping in mind the mathematics that provoked their
+artistic responses.
+
+During the fifteenth century artists were still primar-
+ily employed to produce images of sacred subjects,
+but there was an increased interest in having pictures
+match aspects of the physical world. Lacking any pre-
 cursors, artists had to devise their own axioms of lin-     illustrations of how to draw a picture in which all the
 ear perspective. At the beginning of the sixteenth cen-     elements are in one-point perspective (see figure 1).
-tury these early ideas of mathematical perspective were        In the seventeenth century, Girard Desargues (1591–
-spread by books that contained visual representations.      1661), a French engineer and architect who wrote on
-Mathematics that was previously known only in writing       practical subjects, continued the study of perspective
+tury these early ideas of mathematical perspective were
+spread by books that contained visual representations.
+Mathematics that was previously known only in writing
 or orally now took a visual form, which was copied in
-                                                            that had been begun by the Renaissance artists. In
 engravings and spread across Europe.
-                                                            doing so he invented a new, “non-Greek” way of doing
    The first writings on perspective were by Leon Bat-
-                                                            geometry, which he published in his Brouillon Project
 tista Albert i (1404–72) and Piero della Francesca, while
-                                                            d’une Atteinte aux Événemens des Rencontres du Cône
 the ideas of Filippo Brunelleschi (1377–1446), the Flo-
-                                                            avec un Plan (1639). In this essay, he attempted to
 rentine architect and engineer who was in fact the first
-                                                            unify the theory of conic sections through the use of
 to consider a mathematical theory of perspective, were
-                                                            projective techniques. This new projective geometry
 captured by his biographer Antonio Manetti (1423–97).
-                                                            [I.3 §6.7](/part-01/fundamental-definitions) was based on his earlier realization than an
 Artists and mathematicians continued to develop the
-                                                            artist can construct a perspective image with out using
 rules of perspective while looking for ways to best
-                                                            a point from out side the picture field. However, of the
 represent space and distance. Among the mathemat i-
-cians, Federico Commandino (1509–75), renowned for          original fifty printed copies of the Brouillon Project only
-his Latin editions of the works of Greek mathemat i-         one survives and his work, including his “perspective
-cians such as Euclid, archimedes [VI.3](/part-06/archimedes-ca), and apollo-        theorem,” was made known through the publications
+cians, Federico Commandino (1509–75), renowned for
+his Latin editions of the works of Greek mathemat i-
+cians such as Euclid, archimedes [VI.3](/part-06/archimedes-ca), and apollo-
 nius [VI.4](/part-06/apollonius-ca), was the first to write about perspective for    of other mathematicians. Abraham Bosse (1602–76), a
-the benefit of mathematicians rather than artists. His       friend of Desargues who ran a famous atelier where
-student Guidobaldi del Monte (1505–1647) published          the art of engraving was taught, was responsible for
-the influential book Perspectivae libri sex in 1600, in      publishing much of Desargues’s work, including that
-which he showed that any set of parallel lines not          on the theory of perspective. But Bosse’s promotion of
+the benefit of mathematicians rather than artists. His
+student Guidobaldi del Monte (1505–1647) published
+the influential book Perspectivae libri sex in 1600, in
+which he showed that any set of parallel lines not
 parallel to the plane of the picture will converge to a     Desargues’s innovative ideas created controversy in art
-vanishing point.                                            circles and seriously damaged his professional reputa-
+vanishing point.
    Great artists, notably Leonardo da Vinci (1452–1519)     tion. However, in the twentieth century, when engrav-
-and Albrecht Dürer (1471–1528), were now port ray-           ing was revived as an important art form, a replica of
-ing mathematics in a visual form. Mathematician Luca        Bosse’s studio was built in Paris.
+and Albrecht Dürer (1471–1528), were now port ray-
+ing mathematics in a visual form. Mathematician Luca
+
+945
+Figure 1 An artist using Dürer’s perspective machine.
+© Copyright: The Trustees of the British Museum.
+Pacioli’s (1445–1517) De Divina Proportione (1509)
+includes Leonardo’s unsurpassed woodcuts of poly-
+hedra (among them the first published illustration of a
+2   Development of Perspective
+rhombicuboctohedron), and Dürer’s Unterweysung der
+Messung (1525) contains the first illustration of nets
+for models of polyhedra. Dürer’s own new knowledge
+of perspective, whose secrets he had learned on a trip to
+Italy from Germany, inspired him to create his famous
+In the seventeenth century, Girard Desargues (1591–
+1661), a French engineer and architect who wrote on
+practical subjects, continued the study of perspective
+that had been begun by the Renaissance artists. In
+doing so he invented a new, “non-Greek” way of doing
+geometry, which he published in his Brouillon Project
+d’une Atteinte aux Événemens des Rencontres du Cône
+avec un Plan (1639). In this essay, he attempted to
+unify the theory of conic sections through the use of
+projective techniques. This new projective geometry
+[I.3 §6.7](/part-01/fundamental-definitions) was based on his earlier realization than an
+artist can construct a perspective image with out using
+a point from out side the picture field. However, of the
+original fifty printed copies of the Brouillon Project only
+one survives and his work, including his “perspective
+theorem,” was made known through the publications
+friend of Desargues who ran a famous atelier where
+the art of engraving was taught, was responsible for
+publishing much of Desargues’s work, including that
+on the theory of perspective. But Bosse’s promotion of
+circles and seriously damaged his professional reputa-
+ing was revived as an important art form, a replica of
+Bosse’s studio was built in Paris.
 
 $946$
 
@@ -153,10 +177,9 @@ The object is to be treated as a whole ... a product of an industrial order like
 In Circle, Gabo, referring back to the seventeen-year-old Realistic Manifesto, spells out what is meant by constructivism by guiding the reader to see how two cubes (shown in the photograph in figure $3$ ) can illustrate the distinction between two kinds of representation of the same object: carving and construction. The cubes have different methods of execution and different centers of interest: one is mass and the other makes visible the space in which mass exists. Constructivism created an artistic context in which a mathematically understood space became a sculptural element.
 As Gabo wrote:
 
-VII.14.   Mathematics and Art                                                                                       949
+VII.14.   Mathematics and Art
 
   Figure 3 Gabo’s two cubes: carving and construction.
-       Image courtesy of the Library of Congress.
 
 “The stereometrical method in which [the right-hand
 cube] is executed shows elementarily the constructive
@@ -165,8 +188,8 @@ principle of a sculptural space expression.”
 ums and catalogues. These models, designed by math-
 ematicians for teaching about surfaces, were made of
 string, cardboard, metal, and plaster. The same artists
-also studied photographs produced by the surrealist           Figure 4 Man Ray’s Allure de la Fonction Elliptique, 1936.
-Man Ray showing strings and striations of surface lines            Image courtesy of the National Gallery of Art.
+also studied photographs produced by the surrealist
+Man Ray showing strings and striations of surface lines
 on a model that had been found by another surrealist
 artist, Max Ernst, at the Institut Henri Poincaré in Paris.
 Ray portrayed these models with impressionistic pat-
@@ -184,62 +207,103 @@ to be “sculptural working out of mathematical equa-
 tions.” They inspired her to add strings to her own
 work. However, she wrote that her inspiration was not
 the mathematics exhibited by the strings, but rather
-                                                              Figure 5 Olivier’s Intersection of Two Hyperbolic Parabo-
-their power: “the tension I felt between myself and the       loids, 1830. Image courtesy of the Union College Permanent
-sea, the winds, and the hills.”                               Collection, Schenectady, NY.
+their power: “the tension I felt between myself and the
+sea, the winds, and the hills.”
    A close friend of both Gabo and Hepworth was the
 renowned sculptor Henry Moore (1898–1986). Moore
-too spoke and wrote about the influence of mathemat i-          ures at the ends with colored threads from one to the
-cal models on his work. He had seen stringed figures of        other to show what the form between would be. I saw
-Theodore Olivier (see figure 5) and after making many          the sculptural possibilities of them, and I did some.”
-of his own mathematical models introduced strings             Moore recognized that the use of strings connecting
-into his sculpture in 1938, later considering it to have      protrusions actually created a barrier between the solid
-been the most abstract of his work. He said he “had           sculpture and the space around the sculpture (see fig-
-gone to the Science Museum in South Kensington and            ure 6). The string barrier made it possible to see the
-had been greatly intrigued by some of the mathemat-           captured space. Moore and Gabo made different uses
-ical models ... hyperboloids and groins ... developed by          of the mathematical models. As Moore later put it,
-[Fabre de] Lagrange in Paris, that have geometric fig-         Gabo “developed this string idea so that his structure
+too spoke and wrote about the influence of mathemat i-
+cal models on his work. He had seen stringed figures of
+Theodore Olivier (see figure 5) and after making many
+of his own mathematical models introduced strings
+into his sculpture in 1938, later considering it to have
+been the most abstract of his work. He said he “had
+gone to the Science Museum in South Kensington and
+had been greatly intrigued by some of the mathemat-
+ical models ... hyperboloids and groins ... developed by
+[Fabre de] Lagrange in Paris, that have geometric fig-
 
-950                                                                              VII. The Influence of Mathematics
+949
+Image courtesy of the Library of Congress.
+Figure 4 Man Ray’s Allure de la Fonction Elliptique, 1936.
+Image courtesy of the National Gallery of Art.
+Figure 5 Olivier’s Intersection of Two Hyperbolic Parabo-
+loids, 1830. Image courtesy of the Union College Permanent
+Collection, Schenectady, NY.
+ures at the ends with colored threads from one to the
+other to show what the form between would be. I saw
+the sculptural possibilities of them, and I did some.”
+Moore recognized that the use of strings connecting
+protrusions actually created a barrier between the solid
+sculpture and the space around the sculpture (see fig-
+ure 6). The string barrier made it possible to see the
+captured space. Moore and Gabo made different uses
+of the mathematical models. As Moore later put it,
+Gabo “developed this string idea so that his structure
 
-                                                             Figure 7 Bill’s Eindeloze Kronkel, bronze, 1953–56. Image
-                                                                courtesy of Mary Ann Sullivan, Bluffton University.
+950
 
-                                                             ful arrangement, is an essential method to understand
-                                                             the world. For Bill, when mathematical relationships are
 Figure 6 Moore’s Stringed Figure No. 1, cherry wood and
 string, on oak base, 1937. Image (taken by Lee Stalsworth)   given form they “emanate undeniable aesthetic appeal,
-courtesy of the Hirshhorn Museum and Sculpture Gar-          such as goes out from space-models, as, for instance,
+courtesy of the Hirshhorn Museum and Sculpture Gar-
 den, Smithsonian Institution, Joseph H. Hirshhorn Purchase   those that stand in the Musée Poincaré in Paris.”
 Fund (1989).
-                                                             7.2   Holland and Escher
-always became space itself, where as I liked the con-         From the second half of the twentieth century onward
-trast between the solid and the strings ... I was making       there has been a groundswell of interest in the relation-
+always became space itself, where as I liked the con-
+trast between the solid and the strings ... I was making
 an out side shape a sculpture in its own right (Interior/     ship between mathematics and art, particularly since
-Exterior forms), yet one which was not completed until       1992 when artists and mathematicians from around
-each part was connected to the other.”                       the world began holding joint annual conferences to
-                                                             explore old and new ideas about the connections
-7     Other Countries, Other Times, Other Artists            between their disciplines. The popularity in the West
-                                                             of this interdisciplina ry study is in no small part due
+Exterior forms), yet one which was not completed until
+each part was connected to the other.”
+7     Other Countries, Other Times, Other Artists
 7.1    Switzerland and Max Bill
-                                                             to the unusual drawings and prints made by Maurits
-In the mid 1930 s the Swiss designer and artist Max           Cornelis Escher (1898–1972), a Dutch graphic artist—
-Bill (1908–94) became intrigued by a one-sided surface,      or “craftsman,” as he wished to be known. Escher
-unaware that it had been published in 1865 by the            was deeply interested in tessellations and “impossi-
-German mathematician and astronomer august fer-              ble” objects that are not constructible in three dimen-
-dinand möbius [VI.30](/part-06/august-ferdinand-mbius-17901868). Bill, when he needed a design         sions but that can nevertheless be portrayed in two
-for a sculpture to hang in a stairwell, independently        dimensions. While his oeuvre is not thought of as an
-invented his own möbius strip [IV.7 §2.3](/part-04/dierential-topology), by dangling       integral part of twentieth century art, he is greatly
-a long narrow rectangle of flexible material and then         appreciated by mathematicians and also by the general
-attaching the corners appropriately (1935).                  public. Among his best-known works are pictures based
-   Having been in formed some years later of the con-         on Penrose triangles and on the Möbius strip.
-nection between his sculpture and its mathematical             He was inspired by knowing and learning from math-
-forerunner, Bill, who liked the simplicity of geomet-        ematicians including Georg Pólya (1887–1985), Roger
-ric forms, continued to earn commissions by making           Penrose (1931–), and Harold Scott Mac Donald “Don-
-sculptures based on topological problems and single-         ald” Coxeter (1907–2003). Escher was introduced to the
-sided surfaces (see figure 7). In a 1955 essay on the         international mathematics community in 1954 when
-mathematical approach in contemporary art, he wrote          the organizing committee for the Amsterdam meet-
-that mathematics, by giving all phenomena a meaning-         ing of the International Congress of Mathematicians
+In the mid 1930 s the Swiss designer and artist Max
+Bill (1908–94) became intrigued by a one-sided surface,
+unaware that it had been published in 1865 by the
+German mathematician and astronomer august fer-
+dinand möbius [VI.30](/part-06/august-ferdinand-mbius-17901868). Bill, when he needed a design
+for a sculpture to hang in a stairwell, independently
+invented his own möbius strip [IV.7 §2.3](/part-04/dierential-topology), by dangling
+a long narrow rectangle of flexible material and then
+attaching the corners appropriately (1935).
+   Having been in formed some years later of the con-
+nection between his sculpture and its mathematical
+forerunner, Bill, who liked the simplicity of geomet-
+ric forms, continued to earn commissions by making
+sculptures based on topological problems and single-
+sided surfaces (see figure 7). In a 1955 essay on the
+mathematical approach in contemporary art, he wrote
+that mathematics, by giving all phenomena a meaning-
+
+VII. The Influence of Mathematics
+Figure 7 Bill’s Eindeloze Kronkel, bronze, 1953–56. Image
+courtesy of Mary Ann Sullivan, Bluffton University.
+ful arrangement, is an essential method to understand
+the world. For Bill, when mathematical relationships are
+such as goes out from space-models, as, for instance,
+7.2   Holland and Escher
+From the second half of the twentieth century onward
+there has been a groundswell of interest in the relation-
+1992 when artists and mathematicians from around
+the world began holding joint annual conferences to
+explore old and new ideas about the connections
+between their disciplines. The popularity in the West
+of this interdisciplina ry study is in no small part due
+to the unusual drawings and prints made by Maurits
+Cornelis Escher (1898–1972), a Dutch graphic artist—
+or “craftsman,” as he wished to be known. Escher
+was deeply interested in tessellations and “impossi-
+ble” objects that are not constructible in three dimen-
+sions but that can nevertheless be portrayed in two
+dimensions. While his oeuvre is not thought of as an
+integral part of twentieth century art, he is greatly
+appreciated by mathematicians and also by the general
+public. Among his best-known works are pictures based
+on Penrose triangles and on the Möbius strip.
+He was inspired by knowing and learning from math-
+ematicians including Georg Pólya (1887–1985), Roger
+Penrose (1931–), and Harold Scott Mac Donald “Don-
+ald” Coxeter (1907–2003). Escher was introduced to the
+international mathematics community in 1954 when
+the organizing committee for the Amsterdam meet-
+ing of the International Congress of Mathematicians
 
 VII . $14$ .
 
@@ -265,10 +329,9 @@ As we have seen, some artists were influenced by their own knowledge of mathemat
 Since the late $1960s$ , he has also been involved in the development of computer graphics. Dalí’$s_{1954}$ painting of Christ crucified on a hypercube was reproduced in $a_{1975}$ article about Banchoff’s pioneering work, which used computer animation to illustrate geometry beyond the third dimension. This led to a series of meetings between Banchoff and Dalí over the next decade, at which hypercubes and other aspects of geometry and art were discussed. One joint project was the design for a giant sculpture of a horse that would appear realistic from only one viewing position.
 Dalí eventually envisioned a horse with its head in front of the viewer and its rump some where on the moon--clearly a project solely of the imagination. Dalí created works using anamorphoses, as other artists, beginning with Leonardo, had done. He prized his interactions with scientists and mathematicians, later stating, “Scientists give me everything, even the immortality of the soul.” Dalí also met the French mathematician René Thom (1923-2002) to discuss catastrophe theory, which, in 1983 , he sought to represent in what turned out to be his last series of paintings.
 
-952                                                                                VII. The Influence of Mathematics
+952
 
 7.4   Other Recent Developments: The United States
-      and Helaman Ferguson
 
 So far we have seen how mathematics has influenced
 art. Occasionally, artists have actually created math-
@@ -286,9 +349,9 @@ twentieth century. As an artist, he carves in stone. In
 1994, he asked mathematician Alfred Gray (1939–98) to
 develop equations for a Costa surface (named after the
 graduate student who invented equations for describ-
-ing a minimal surface with holes), so that he could           Figure 8 Ferguson’s Invisible Handshake II : a triply punc-
-sculpt the surface (see figure 8). Gray developed the          tured torus with negative Gaussian curvature. Image cour-
-equations in terms of the Weierstrass zeta function.          tesy of the artist.
+ing a minimal surface with holes), so that he could
+sculpt the surface (see figure 8). Gray developed the
+equations in terms of the Weierstrass zeta function.
 This could be used with Mathematica, which made it
 possible for Ferguson to create a stone sculpture. Fer-
 guson sees his art as deriving from applied mathemat-
@@ -306,78 +369,132 @@ two centuries:
   tions (Hoffman–Meeks), discover fast parametric equa-
   tions for the surface (Gray), and finally return to nature
   with a sculpture, a solid form of a “soap film” big
-  enough to touch and climb on.                                     Figure 9 Robbin’s Lobofour, acrylic on canvas
-                                                                    with metal rods, 1982, collection of the artist.
+  enough to touch and climb on.
 
 7.5   The United States and Tony Robbin
-                                                              been a student of mathematics, was working on Ban-
-The development of n-dimensional geometry also had            choff’s parallel process or computer and managed to
-a powerful effect on many other European and Amer-             visualize for the first time a four-dimensional cube,
-ican artists, and this continued into the late twenti-        an event which radically changed his art, and which
-eth century. Interest was boosted in the 1970 s with           led him to develop two-dimensional works that por-
-the development of computer graphics by mathemat i-            trayed the spatial fourth dimension. Writing in his
-cians and artists. Examples can be found in the work of       book Fourfield: Computers, Art & the 4 th Dimension
-American artist Tony Robbin (1943–), who has explored         (1992), Robbin tells us, “When the fourth dimension
-concepts of dimension in painting, prints, and sculp-         becomes part of our intuition our understanding will
-ture (see figure 9). In late 1979, Robbin, who had also        soar.” Some of Robbin’s constructions, paintings, and
+The development of n-dimensional geometry also had
+a powerful effect on many other European and Amer-
+ican artists, and this continued into the late twenti-
+eth century. Interest was boosted in the 1970 s with
+the development of computer graphics by mathemat i-
+cians and artists. Examples can be found in the work of
+American artist Tony Robbin (1943–), who has explored
+concepts of dimension in painting, prints, and sculp-
+ture (see figure 9). In late 1979, Robbin, who had also
 
-VII.14.   Mathematics and Art                                                                                        953
+VII. The Influence of Mathematics
+and Helaman Ferguson
+Figure 8 Ferguson’s Invisible Handshake II : a triply punc-
+tured torus with negative Gaussian curvature. Image cour-
+tesy of the artist.
+Figure 9 Robbin’s Lobofour, acrylic on canvas
+with metal rods, 1982, collection of the artist.
+been a student of mathematics, was working on Ban-
+choff’s parallel process or computer and managed to
+visualize for the first time a four-dimensional cube,
+an event which radically changed his art, and which
+led him to develop two-dimensional works that por-
+trayed the spatial fourth dimension. Writing in his
+book Fourfield: Computers, Art & the 4 th Dimension
+(1992), Robbin tells us, “When the fourth dimension
+becomes part of our intuition our understanding will
+soar.” Some of Robbin’s constructions, paintings, and
 
-prints show figures in independent planes: that is,           century atelier was organized and reconstructed in
-in overlapping spaces that cannot be fully seen in           Paris in the twentieth century.
-three dimensions. If the viewer wants to see two               In World War II Hayter’s interest in mathematics
-structures in the same place at the same time and            revealed itself in a more practical way, when, in coll abo-
-rotating with respect to one another (as though pro-         ration with artist and patron of art Roland Penrose and
-jected from four-dimensional space), then looking at         others, he set up a camouflage unit and, as Art News
-one of Robbin’s wall-relief sculptures lit by red and        reported in 1941, constructed
+VII.14.   Mathematics and Art
+
+prints show figures in independent planes: that is,
+in overlapping spaces that cannot be fully seen in
+three dimensions. If the viewer wants to see two
+structures in the same place at the same time and
+rotating with respect to one another (as though pro-
+jected from four-dimensional space), then looking at
+one of Robbin’s wall-relief sculptures lit by red and
 blue light while wearing 3 D glasses (one red and one
-                                                               an apparatus which can duplicate the angle of the sun
 blue lens) will create a full stereoscopic effect of the
-                                                               and the consequent length of cast shadows at any
-four-dimensional figure. In digital prints it is Robbin’s       time of day, and day of the year, at any given latitude.
-lines and polyhedra that imply four dimensions, with           This complex of turntables, discs inscribed with a scale
-the two-dimensional picture being a shadow of the              of weeks, allowances for seasonal declination, and so
-higher-order object.                                           on is just the kind of working mathematics he really
-                                                               delights in.
+four-dimensional figure. In digital prints it is Robbin’s
+lines and polyhedra that imply four dimensions, with
+the two-dimensional picture being a shadow of the
+higher-order object.
 7.6   Hayter and Atelier 17
-                                                                                 8   Conclusion
 In 1927, the British surrealist and printmaker Stanley
-William Hayter (1901–88) decided to revive the almost        There has been a complex and fruitful relationship
+William Hayter (1901–88) decided to revive the almost
 lost skill of intaglio printing and established an experi-   between Western art and mathematics in the twenti-
 mental studio, “Atelier 17,” in Paris. This was followed     eth century. Gabo, Moore, Bill, Dalí, and Duchamp are
-by another in New York from 1940 to 1950 before he           not able artists who have been influenced by mathemat-
-returned to Paris. Hayter was aware that many of the         ics, and Poincaré, Banchoff, Penrose, and Coxeter are
+by another in New York from 1940 to 1950 before he
+returned to Paris. Hayter was aware that many of the
 artists who used his facilities were working with a “dif-    among the mathematicians who influenced them. In
-ferent space from that seen through the classical win-       the other direction, twentieth-century mathematicians,
-dow of Renaissance representation” that had existed          like their forebears in the fifteenth and sixteenth cen-
-when engraving flourished a hundred years earlier. The        turies, often turned to art to explore and exhibit, or
+ferent space from that seen through the classical win-
+dow of Renaissance representation” that had existed
+when engraving flourished a hundred years earlier. The
 founding of Atelier 17 was central to the revival of the     even just to explain more expressively, the meaning
-print as an autonomous art form, and Hayter’s sensitiv-      of their mathematics. They have also likened their cre-
-ity to the significance of mathematics in the experimen-      ative processes to those of artists. As the French mathe-
-tal techniques of printmaking (which had been evolving       matician andré weil [VI.93](/part-06/andr-weil-19061998) wrote to his sister, author
-since the nineteenth century) is quite apparent: “Man’s      Simone Weil (1909–43), from military prison in 1940,
-increasing consciousness of and power over space (in         “When I invented (I say invented, and not discovered)
-physics and mathematics) have been reflected in new           uniform spaces, I did not have the impression of work-
-and unorthodox methods of demonstrating space and            ing with resistant material, but rather the impression
-time graphically,” so that “many properties of matter        that a professional sculptor must have when he plays
-and space, which had been represented diagrammat-            by making a snowman.”
+print as an autonomous art form, and Hayter’s sensitiv-
+ity to the significance of mathematics in the experimen-
+tal techniques of printmaking (which had been evolving
+since the nineteenth century) is quite apparent: “Man’s
+increasing consciousness of and power over space (in
+physics and mathematics) have been reflected in new
+and unorthodox methods of demonstrating space and
+time graphically,” so that “many properties of matter
+and space, which had been represented diagrammat-
 ically only by the scientists, found their expression
-in graphic and affective forms.” A printmaker in the          Further Reading
-twentieth century could use an arrangement of trans-         Andersen, K. 2007. The Geometry of an Art: The History
-parent webs to define planes above the picture plane.           of the Mathematical Theory of Perspective from Albert i to
-Specifically, by hollowing out spaces in the plate being        Monge. New York: Springer.
-engraved—possibly even gouging all the way to the bot-       Field, J. V. 2005. Piero della Francesca: A Mathematician’s
-tom of the plate—the artist could make a projection in         Art. Oxford: Oxford University Press.
+in graphic and affective forms.” A printmaker in the
+twentieth century could use an arrangement of trans-
+parent webs to define planes above the picture plane.
+Specifically, by hollowing out spaces in the plate being
+engraved—possibly even gouging all the way to the bot-
+tom of the plate—the artist could make a projection in
 front of the plane of the picture. Although artists could    Gould, S. J., and R. R. Shearer. 1999. Boats and deckchairs.
-                                                               Natural History Magazine 10:32–44.
 have used this technique much earlier, it became impor-
-                                                             Hammer, M., and C. Lodder. 2000. Constructing Modernity:
 tant only at the end of the nineteenth century when
-                                                               The Art and Career of Naum Gabo. New Haven, CT: Yale
-the representation al aspect of intaglio had been chal-         University Press.
-lenged by photography. They therefore used the gouge         Henderson, L. 1983. The Fourth Dimension and Non-Euclid-
-to create the third dimension. Hayter also describes in        ean Geometry in Modern Art. Princeton, NJ: Princeton
-About Prints (1962) how Abraham Bosse’s seventeenth-           University Press.
+the representation al aspect of intaglio had been chal-
+lenged by photography. They therefore used the gouge
+to create the third dimension. Hayter also describes in
+About Prints (1962) how Abraham Bosse’s seventeenth-
+
+953
+century atelier was organized and reconstructed in
+Paris in the twentieth century.
+In World War II Hayter’s interest in mathematics
+revealed itself in a more practical way, when, in coll abo-
+ration with artist and patron of art Roland Penrose and
+others, he set up a camouflage unit and, as Art News
+reported in 1941, constructed
+an apparatus which can duplicate the angle of the sun
+and the consequent length of cast shadows at any
+time of day, and day of the year, at any given latitude.
+This complex of turntables, discs inscribed with a scale
+of weeks, allowances for seasonal declination, and so
+on is just the kind of working mathematics he really
+delights in.
+8   Conclusion
+There has been a complex and fruitful relationship
+not able artists who have been influenced by mathemat-
+ics, and Poincaré, Banchoff, Penrose, and Coxeter are
+the other direction, twentieth-century mathematicians,
+like their forebears in the fifteenth and sixteenth cen-
+turies, often turned to art to explore and exhibit, or
+of their mathematics. They have also likened their cre-
+ative processes to those of artists. As the French mathe-
+matician andré weil [VI.93](/part-06/andr-weil-19061998) wrote to his sister, author
+Simone Weil (1909–43), from military prison in 1940,
+“When I invented (I say invented, and not discovered)
+uniform spaces, I did not have the impression of work-
+ing with resistant material, but rather the impression
+that a professional sculptor must have when he plays
+by making a snowman.”
+Further Reading
+Andersen, K. 2007. The Geometry of an Art: The History
+of the Mathematical Theory of Perspective from Albert i to
+Monge. New York: Springer.
+Field, J. V. 2005. Piero della Francesca: A Mathematician’s
+Art. Oxford: Oxford University Press.
+Natural History Magazine 10:32–44.
+Hammer, M., and C. Lodder. 2000. Constructing Modernity:
+The Art and Career of Naum Gabo. New Haven, CT: Yale
+University Press.
+Henderson, L. 1983. The Fourth Dimension and Non-Euclid-
+ean Geometry in Modern Art. Princeton, NJ: Princeton
+University Press.
 
 $954$
 

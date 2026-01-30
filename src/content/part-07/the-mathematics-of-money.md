@@ -1,121 +1,193 @@
 # The Mathematics of Money
 
-910                                                                                  VII. The Influence of Mathematics
+910
 
-                                                                  asset. The simplest example of such a security is a
-VII.9 The Mathematics of Money                                    call option, which is the right, but not the obligation,
-         Mark Joshi                                               to buy a share for a pre-agreed price, K, on some
-                                                                  specified future date. The pre-agreed price is called
-                    1   Introduction                              the strike. The pricing of derivatives is heavily reliant
-                                                                  upon the principle of no arbitrage.
-The last twenty years have seen an explosive growth             Risk analysis and reduction. Any financial institution
-in the use of mathematics in finance. Mathematics has              has holdings and borrowings of assets; it needs to
-made its way into finance mainly via the application of            keep careful control of how much money it can lose
-two principles from economics: market efficiency and                from adverse market moves and to reduce these risks
-no arbitrage.                                                     as necessary to keep within the owners’ desired risk
-   Market efficiency is the idea that the financial mar-             profiles.
-kets price every asset correctly. There is no sense in          Portfolio optimization. Any investor in the markets
-which a share can be a “good buy,” because the mar-               will have notions of how much risk he wants to take
-ket has already taken all available information into              and how much return he wants to generate, and most
-account. Instead, the only way that we have of dis-               importantly of where he sees the trade-off between
-tinguishing between two assets is their differing risk             the two. There is, therefore, a theory of how to invest
-characteristics. For example, a technology share might            in shares in such a way as to maximize the return at
-offer a high rate of growth but also a high probability            a given level of risk. This theory relies greatly on the
-of losing a lot of money, while a U.K. or U.S. govern-            principle of market efficiency.
-ment bond would offer a much smaller rate of growth,             Statistical arbitrage. Crudely put, this is using mathe-
-but an extremely low probability of losing money. In              matics to predict price movements in the stock mar-
-fact, the probability of loss is so small in the latter case      ket, or indeed in any other market. Statistical arbi-
-that these instruments are generally regarded as being            trageurs laugh at the concept of market efficiency,
-risk less.                                                         and their objective is to exploit the inefficiencies in
-   No arbitrage, the second fundamental principle, sim-           the market to make money.
+VII.9 The Mathematics of Money
+
+The last twenty years have seen an explosive growth
+in the use of mathematics in finance. Mathematics has
+made its way into finance mainly via the application of
+two principles from economics: market efficiency and
+no arbitrage.
+   Market efficiency is the idea that the financial mar-
+kets price every asset correctly. There is no sense in
+which a share can be a “good buy,” because the mar-
+ket has already taken all available information into
+account. Instead, the only way that we have of dis-
+tinguishing between two assets is their differing risk
+characteristics. For example, a technology share might
+offer a high rate of growth but also a high probability
+of losing a lot of money, while a U.K. or U.S. govern-
+ment bond would offer a much smaller rate of growth,
+but an extremely low probability of losing money. In
+fact, the probability of loss is so small in the latter case
+that these instruments are generally regarded as being
+risk less.
+   No arbitrage, the second fundamental principle, sim-
 ply says that it is impossible to make money with out
-taking risk. It is some times called the “no free lunch”           Of these four areas, it is derivatives pricing that has
-principle. In this context, “making money” is defined            seen the greatest growth in recent years, and which
-to mean making more money than could be obtained                has seen the most powerful application of advanced
-by investing in a risk less government bond. A simple            mathematics.
+taking risk. It is some times called the “no free lunch”
+principle. In this context, “making money” is defined
+to mean making more money than could be obtained
+by investing in a risk less government bond. A simple
 application of the principle of no arbitrage is that if one
-changes dollars into yen and then the yen into euros                           2   Derivatives Pricing
+changes dollars into yen and then the yen into euros
 and then the euros back into dollars, then, apart from
-                                                                2.1   Black and Scholes
 any transaction costs, one will finish with the same
-number of dollars that one started with. This forces a          Many of the foundations of mathematical finance were
-simple relationship between the three foreign exchange          laid down by Bachelier (1900) in his thesis; his math-
-(FX) rates:                                                     ematical study of brownian motion [IV.24](/part-04/stochastic-processes) preceded
-                    FX$,€ = FX$, FX,€ .                 (1)   that of Einstein (see Einstein (1985), which contains his
-Of course, occasional anomalies and exceptions to               1905 paper). However, his work was neglected for many
-this relationship can occur, but these will be spotted          years and the great breakthrough in derivatives pricing
-by traders. The exploitation of the resulting arbitrage         was made by Black and Scholes (1973). They showed
-opportunity will quickly move the exchange rates until          that, under certain reasonable assumptions, it was pos-
-the opportunity disappears.                                     sible to use the principle of no arbitrage to guarantee
-  One can roughly divide the use of mathematics in              a unique price for a call option. The pricing of deriva-
-finance into four main areas.                                    tives had ceased to be an economics problem and had
-                                                                become a mathematics problem.
-Derivatives pricing. This is the use of mathematics                The result of Black and Scholes was deduced by ex-
- to price securities (i.e., financial instruments), whose        tending the principle of no arbitrage to encompass the
- value depends purely upon the behavior of another              idea that an arbitrage could result not just from static
+number of dollars that one started with. This forces a
+simple relationship between the three foreign exchange
+(FX) rates:
+Of course, occasional anomalies and exceptions to
+this relationship can occur, but these will be spotted
+by traders. The exploitation of the resulting arbitrage
+opportunity will quickly move the exchange rates until
+the opportunity disappears.
+  One can roughly divide the use of mathematics in
+finance into four main areas.
+Derivatives pricing. This is the use of mathematics
+ to price securities (i.e., financial instruments), whose
+ value depends purely upon the behavior of another
 
-VII.9.   The Mathematics of Money                                                                                                          911
+VII. The Influence of Mathematics
+asset. The simplest example of such a security is a
+call option, which is the right, but not the obligation,
+Mark Joshi
+specified future date. The pre-agreed price is called
+1   Introduction                              the strike. The pricing of derivatives is heavily reliant
+upon the principle of no arbitrage.
+Risk analysis and reduction. Any financial institution
+has holdings and borrowings of assets; it needs to
+keep careful control of how much money it can lose
+from adverse market moves and to reduce these risks
+as necessary to keep within the owners’ desired risk
+profiles.
+Portfolio optimization. Any investor in the markets
+will have notions of how much risk he wants to take
+and how much return he wants to generate, and most
+importantly of where he sees the trade-off between
+the two. There is, therefore, a theory of how to invest
+in shares in such a way as to maximize the return at
+a given level of risk. This theory relies greatly on the
+principle of market efficiency.
+Statistical arbitrage. Crudely put, this is using mathe-
+matics to predict price movements in the stock mar-
+ket, or indeed in any other market. Statistical arbi-
+trageurs laugh at the concept of market efficiency,
+and their objective is to exploit the inefficiencies in
+the market to make money.
+Of these four areas, it is derivatives pricing that has
+seen the greatest growth in recent years, and which
+has seen the most powerful application of advanced
+mathematics.
+2   Derivatives Pricing
+2.1   Black and Scholes
+Many of the foundations of mathematical finance were
+laid down by Bachelier (1900) in his thesis; his math-
+ematical study of brownian motion [IV.24](/part-04/stochastic-processes) preceded
+FX$,€ = FX$, FX,€ .                 (1)   that of Einstein (see Einstein (1985), which contains his
+1905 paper). However, his work was neglected for many
+years and the great breakthrough in derivatives pricing
+was made by Black and Scholes (1973). They showed
+that, under certain reasonable assumptions, it was pos-
+sible to use the principle of no arbitrage to guarantee
+a unique price for a call option. The pricing of deriva-
+tives had ceased to be an economics problem and had
+become a mathematics problem.
+The result of Black and Scholes was deduced by ex-
+tending the principle of no arbitrage to encompass the
+idea that an arbitrage could result not just from static
 
-holdings of securities, but also from continuously trad-                            50
+VII.9.   The Mathematics of Money
+
+holdings of securities, but also from continuously trad-
 ing them in a dynamic fashion depending upon their
-price movements. It is this principle of no dynamic                                 40
+price movements. It is this principle of no dynamic
 
-                                                              Black–Scholes price
 arbitrage that underpins derivatives pricing.
-  In order to properly formulate the principle, we have                             30
+  In order to properly formulate the principle, we have
 to use the language of probability theory.
-                                                                                    20
   An arbitrage is a trading strategy in a collection of
 assets, the portfolio, such that
-                                                                                    10
   (i) initially the portfolio has a value of zero;
- (ii) the probability that the portfolio will have a nega-                           0
-                                                                                      60    68    76   84   92 100 108 116 124 132 140
-      tive value in the future is zero;                                                                      Share price
+ (ii) the probability that the portfolio will have a nega-
+
 (iii) the probability that the portfolio will have a posi-
-                                                             Figure 1 The Black–Scholes price of a call option struck at
-      tive value in the future is greater than zero.         100 for various maturities. The value decreases as maturity
-                                                             decreases, with the bottom line denoting a maturity of zero.
+
    Note that we do not require the profit to be certain;
 we merely require that it is possible that money may
-be made with no risk taken. (Recall that the notion of       option, C(S, t), that expires at time T must be equal to
-making money is by comparison with a government                                     BS(S, t, r , σ , T ) = SΦ(d1 ) − Ke−r (T −t) Φ(d2 ),   (4)
+be made with no risk taken. (Recall that the notion of
+making money is by comparison with a government
 bond. The same is true of the “value” of a portfolio: it
-                                                             with
 will be considered positive in the future if its price has
-                                                                                                  log(S/K) + (r + σ 2 /2)(T − t)
-increased by more than that of a government bond.)                                         d1 =               √                            (5)
-                                                                                                            σ T −t
+increased by more than that of a government bond.)
    The prices of shares appear to fluctuate randomly,
-but often with a general upward or downward ten-             and
-dency. It is natural to model them by means of a Brown-                                           log(S/K) + (r − σ 2 /2)(T − t)
-                                                                                           d2 =               √                  .         (6)
-ian motion with an extra “drift term.” This is what Black                                                   σ T −t
+but often with a general upward or downward ten-
+dency. It is natural to model them by means of a Brown-
+ian motion with an extra “drift term.” This is what Black
 and Scholes did, except that it was the logarithm of the     Here, Φ(x) denotes the probability that a standard nor-
-share price S = St that was assumed to follow a Brown-       mal random variable has value less than x. As x tends
+share price S = St that was assumed to follow a Brown-
 ian motion Wt with a drift. This is a natural assumption     to . nfty, Φ(x) tends to 1, and as x tends to −. nfty, Φ(x) tends
-to make, because changes in prices behave multiplica-        to 0. If we let t tend to T , we find that d1 and d2 tend
-tively rather than additively. (For example, we measure      to . nfty if ST > K (in which case log(ST /K) > 0) and to −. nfty
-inflation in terms of percentage increases.) They also        if ST < K. It follows that the price C(S, t) converges to
-assumed the existence of a risk less bond, Bt , grow-         max(ST − K, 0), which is the value of a call option at
-ing at a constant rate. To put these assumptions more        expiry, just as one would expect. We illustrate this in
-formally:                                                    figure 1.
-               log S = log S0 + \mu t + σ Wt ,            (2)      There are a number of interesting aspects to this
-                          rt                                 result that go far beyond the formula itself. The first
-                 Bt = B 0 e .                          (3)
-                                                             and most important result is that the price is unique.
+to make, because changes in prices behave multiplica-
+tively rather than additively. (For example, we measure
+inflation in terms of percentage increases.) They also
+assumed the existence of a risk less bond, Bt , grow-
+ing at a constant rate. To put these assumptions more
+formally:
+
 Notice that the expectation of log S is log S0 + \mu t, so it   Using just the hypothesis that it is impossible to make a
 changes at a rate μ, which is called the drift. The term     risk less profit, along with some natural and innocuous
 σ is known as the volatility. The higher the volatility,     assumptions, we discover that there is only one possi-
-the greater the influence of the Brownian motion Wt ,         ble price for the option. This is a very strong conclu-
-and the more unpredictable the movements of S. (An           sion. It is not just the case that the option is a bad deal
-investor will want a large \mu and a small σ ; however,        if traded at a different price: if a call option is bought
-market efficiency ensures that such shares are rather          for less or sold for more than the Black–Scholes price,
-rare.) Under additional assumptions such as that there       then a risk less profit can be made.
-are no transaction costs, that trading in a share does          A second fact, which may seem rather paradoxical, is
+the greater the influence of the Brownian motion Wt ,
+and the more unpredictable the movements of S. (An
+investor will want a large \mu and a small σ ; however,
+market efficiency ensures that such shares are rather
+rare.) Under additional assumptions such as that there
+are no transaction costs, that trading in a share does
 not affect its price, and that it is possible to trade con-   that μ, the drift, does not appear any where in the Black–
-tinuous ly, Black and Scholes showed that if there is no      Scholes formula. This means that the expected behav-
-dynamic arbitrage, then at time t, the price of a call       ior of the share’s future mean price does not affect the
+tinuous ly, Black and Scholes showed that if there is no
+dynamic arbitrage, then at time t, the price of a call
+
+911
+50
+40
+Black–Scholes price
+30
+20
+10
+0
+60    68    76   84   92 100 108 116 124 132 140
+tive value in the future is zero;
+Figure 1 The Black–Scholes price of a call option struck at
+tive value in the future is greater than zero.
+decreases, with the bottom line denoting a maturity of zero.
+option, C(S, t), that expires at time T must be equal to
+BS(S, t, r , σ , T ) = SΦ(d1 ) − Ke−r (T −t) Φ(d2 ),   (4)
+with
+log(S/K) + (r + σ 2 /2)(T − t)
+d1 =
+σ T −t
+and
+log(S/K) + (r − σ 2 /2)(T − t)
+d2 =               √                  .         (6)
+σ T −t
+mal random variable has value less than x. As x tends
+to 0. If we let t tend to T , we find that d1 and d2 tend
+to . nfty if ST > K (in which case log(ST /K) > 0) and to −. nfty
+if ST < K. It follows that the price C(S, t) converges to
+max(ST − K, 0), which is the value of a call option at
+expiry, just as one would expect. We illustrate this in
+figure 1.
+log S = log S0 + \mu t + σ Wt ,
+rt                                 result that go far beyond the formula itself. The first
+Bt = B 0 e .
+and most important result is that the price is unique.
+ble price for the option. This is a very strong conclu-
+sion. It is not just the case that the option is a bad deal
+if traded at a different price: if a call option is bought
+for less or sold for more than the Black–Scholes price,
+then a risk less profit can be made.
+A second fact, which may seem rather paradoxical, is
+Scholes formula. This means that the expected behav-
+ior of the share’s future mean price does not affect the
 
 $912$
 
@@ -202,68 +274,96 @@ Introduction
 
 Once we have accepted that it is impossible to make money in finance with out taking risk, it becomes important to be able to measure and quantify risks. We wish to measure accurately how much risk we are taking and decide whether we are comfortable with that level of
 
-VII.9.    The Mathematics of Money                                                                                915
+VII.9.    The Mathematics of Money
 
 risk. For a given level of risk, we want to maximize our     assume that the set of changes tomorrow will be identi-
-expected return. When considering a new transaction,         cal to one of the sets of changes we have recorded. If we
-we will want to examine how it affects our risk lev-          assign equal probability to each of those changes, then
-els and returns. Certain transactions may even reduce        we get an approximation to the profit and loss dis tr ibu-
+expected return. When considering a new transaction,
+we will want to examine how it affects our risk lev-
+els and returns. Certain transactions may even reduce
 our risk while increasing our returns if they cancel out     tion, from which we can read off the desired percentile.
-other risk. (A risk that can be canceled out by other        Note that as we are using a day’s change for all assets
-risks that have a tendency to move in the opposite           simultaneously, we automatically get an approximation
-direction is called diversifiable.)                           to the joint distribution of all the asset prices.
-   The control of risk becomes particularly important           A second approach is to assume that asset price
-when dealing with portfolios of derivatives, which are       movements come from some well-known class of dis-
+other risk. (A risk that can be canceled out by other
+risks that have a tendency to move in the opposite
+direction is called diversifiable.)
+   The control of risk becomes particularly important
+when dealing with portfolios of derivatives, which are
 often of zero value initially but which can very quickly     tributions. For example, we could assume that the logs
-change value. Placing a limit on the value of the con-       of the asset price movements are jointly normal. We
-tracts held is therefore not of much use, and controls       would then use historical data to estimate the volatil-
-based on deal sizes are complicated by the fact that         ities and the correlations between the various prices.
-often many derivatives contracts largely cancel each         The main difficulty with this approach is obtaining
-other out; it is the residual risk that one wishes to        robust estimates of the correlations given a limited
-control.                                                     amount of data.
+change value. Placing a limit on the value of the con-
+tracts held is therefore not of much use, and controls
+based on deal sizes are complicated by the fact that
+often many derivatives contracts largely cancel each
+other out; it is the residual risk that one wishes to
+control.
 
-3.2      Value-at-Risk                                                    4   Portfolio Optimization
+3.2
 
 One method of limiting an institution’s risks in deriva-     4.1   Introduction
 tives trading is to place a limit on the amount it can
-                                                             The job of a fund manager is to maximize the return
 lose with a given probability over a specified period of
-                                                             on the money invested while minimizing the risk. If we
 time. For instance, one might consider the losses at a
-                                                             assume that markets are efficient, then there is no point
 1% level over ten days, or at a 5% level over one day.
-                                                             in trying to pick shares that we believe to be under val-
 This value is called Value-at-Risk or VAR.
-                                                             ued as we have assumed that they do not exist. A corol-
    To compute VAR one has to build up a probabilistic
-                                                             lary is that just as no shares are good buys, no shares
 model of how the portfolio of derivatives might change
-                                                             are bad buys. In any case, over half the shares in the
 in value over the time period. This requires a model
-                                                             market are owned via funds and therefore under the
 of how all the underlying assets can move. Given this
-                                                             control of fund managers. Therefore, the average fund
 model, one then builds up the distribution of possible
-                                                             manager cannot expect to out perform the market.
 profits and losses over the given time period. Once one
-                                                               It may seem that this does not leave much for fund
 has this distribution one simply reads off the desired
-                                                             managers to do, but in fact it leaves two things.
 percentile.
-   The issues involved in modeling the changes for VAR         (i) They can attempt to control the amount of risk
-computation are quite different from those for deriva-              they are taking.
-tives pricing. Typically, a VAR computation is done over      (ii) For a given level of risk, they can maximize their
-a very short time period, such as one or ten days, unlike          expected return.
+   The issues involved in modeling the changes for VAR
+computation are quite different from those for deriva-
+tives pricing. Typically, a VAR computation is done over
+a very short time period, such as one or ten days, unlike
 the pricing of an option, which deals with a long time
 frame. Also, one is not interested in the typical path for     To do these things requires an accurate model of the
-VAR, but instead one focuses on the extreme moves.           joint distribution of asset prices over the longer term,
-In addition, since it is the VAR of an entire portfolio      and a quantifiable notion of risk.
+VAR, but instead one focuses on the extreme moves.
+In addition, since it is the VAR of an entire portfolio
 that matters, one has to develop an accurate model
-                                                             4.2   The Capital Asset Pricing Model
 of the underlying assets’ joint distributions: the move-
-ment of one underlying asset could magnify the price         Portfolio theory has been in its modern form for
-movement of another, or it could act as a hedge.             longer than derivatives pricing. As an area, it relies
-   There are two main approaches to developing a prob-       less on stochastic calculus and more on economics.
+ment of one underlying asset could magnify the price
+movement of another, or it could act as a hedge.
+   There are two main approaches to developing a prob-
 abilistic model for computing VAR. The first, the histor-     We briefly review the key ideas. The best-known model
-ical approach, is to record all the daily changes over       for modeling portfolio returns is the capital asset pric-
-some time period, for example two years, and then            ing model (or CAPM), which was introduced in the
+ical approach, is to record all the daily changes over
+some time period, for example two years, and then
+
+915
+cal to one of the sets of changes we have recorded. If we
+assign equal probability to each of those changes, then
+we get an approximation to the profit and loss dis tr ibu-
+Note that as we are using a day’s change for all assets
+simultaneously, we automatically get an approximation
+to the joint distribution of all the asset prices.
+A second approach is to assume that asset price
+movements come from some well-known class of dis-
+of the asset price movements are jointly normal. We
+would then use historical data to estimate the volatil-
+ities and the correlations between the various prices.
+The main difficulty with this approach is obtaining
+robust estimates of the correlations given a limited
+amount of data.
+Value-at-Risk
+The job of a fund manager is to maximize the return
+on the money invested while minimizing the risk. If we
+assume that markets are efficient, then there is no point
+in trying to pick shares that we believe to be under val-
+ued as we have assumed that they do not exist. A corol-
+lary is that just as no shares are good buys, no shares
+are bad buys. In any case, over half the shares in the
+market are owned via funds and therefore under the
+control of fund managers. Therefore, the average fund
+manager cannot expect to out perform the market.
+It may seem that this does not leave much for fund
+managers to do, but in fact it leaves two things.
+(i) They can attempt to control the amount of risk
+they are taking.
+(ii) For a given level of risk, they can maximize their
+expected return.
+joint distribution of asset prices over the longer term,
+and a quantifiable notion of risk.
+4.2   The Capital Asset Pricing Model
+Portfolio theory has been in its modern form for
+longer than derivatives pricing. As an area, it relies
+less on stochastic calculus and more on economics.
+for modeling portfolio returns is the capital asset pric-
+ing model (or CAPM), which was introduced in the

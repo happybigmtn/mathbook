@@ -4,185 +4,257 @@ import numpy as np
 
 class DerivativesScene(Scene):
     """
-    Derivatives visualization.
+    Derivatives - Feynman Style Visualization
 
-    Shows the concept of instantaneous rate of change,
-    tangent lines, and the limit definition of derivative.
+    Shows the concept of instantaneous rate of change through
+    a falling ball example, building intuition visually.
     """
 
     def construct(self):
-        # Title
-        title = Text("Derivatives", font_size=44, color=BLUE)
-        subtitle = Text("Instantaneous Rate of Change", font_size=24, color=GRAY)
-        subtitle.next_to(title, DOWN)
-
+        # Start with a concrete problem: a falling ball
+        title = Text("How Fast is the Ball Falling?", font_size=36, color=BLUE)
         self.play(Write(title))
-        self.play(FadeIn(subtitle))
+        self.wait(1)
+        self.play(title.animate.scale(0.6).to_edge(UP))
+
+        # Create a vertical scene
+        ground = Line(LEFT * 4, RIGHT * 4, color=GREEN, stroke_width=4)
+        ground.to_edge(DOWN, buff=1)
+
+        building = Rectangle(width=1, height=5, color=GRAY, fill_opacity=0.3)
+        building.to_edge(DOWN, buff=1)
+        building.shift(LEFT * 3)
+
+        self.play(Create(ground), Create(building))
+
+        # Ball at the top
+        ball = Dot(building.get_top(), color=RED, radius=0.15)
+        ball_label = Text("Ball", font_size=20, color=RED).next_to(ball, UP, buff=0.2)
+
+        self.play(Create(ball), Write(ball_label))
+        self.wait(0.5)
+
+        # Drop the ball with trail
+        trail = TracedPath(ball.get_center, stroke_color=YELLOW, stroke_width=2)
+        self.add(trail)
+
+        # Animate falling with acceleration
+        def falling_path(t):
+            # h(t) = h0 - 0.5 * g * t^2
+            start_y = building.get_top()[1]
+            ground_y = ground.get_center()[1]
+            height = start_y - ground_y
+            progress = t**2  # accelerating fall
+            return building.get_top() + DOWN * height * progress
+
+        self.play(
+            MoveAlongPath(ball, ParametricFunction(falling_path, t_range=(0, 1))),
+            run_time=2,
+            rate_func=rate_functions.ease_in_quad,
+        )
+
+        self.wait(0.5)
+
+        # The question
+        question = Text(
+            "What was its speed at THIS moment?", font_size=28, color=YELLOW
+        )
+        question.to_edge(DOWN, buff=2.5)
+
+        # Show a specific point during the fall
+        ball.move_to(falling_path(0.5))  # Middle of fall
+        speed_point = Dot(ball.get_center(), color=YELLOW, radius=0.12)
+
+        self.play(Create(speed_point))
+        self.play(Write(question))
         self.wait(2)
 
-        self.play(FadeOut(subtitle))
-        self.play(title.animate.to_edge(UP))
+        # Clear for the method
+        self.play(
+            FadeOut(ground),
+            FadeOut(building),
+            FadeOut(ball),
+            FadeOut(ball_label),
+            FadeOut(trail),
+            FadeOut(speed_point),
+            FadeOut(question),
+            FadeOut(title),
+        )
 
-        # Setup axes
+        # Show the method: average speed over smaller and smaller intervals
+        method_title = Text("The Method: Zoom In", font_size=32, color=GREEN)
+        self.play(Write(method_title))
+        self.wait(1)
+        self.play(method_title.animate.scale(0.7).to_edge(UP))
+
+        # Create position-time graph
         axes = Axes(
-            x_range=[-1, 5, 1],
-            y_range=[-1, 8, 1],
+            x_range=[0, 3, 0.5],
+            y_range=[0, 5, 1],
             axis_config={"color": WHITE},
             x_length=8,
             y_length=5,
         )
-        axes.next_to(title, DOWN, buff=0.5)
+        axes.next_to(method_title, DOWN, buff=0.5)
 
-        # Function: f(x) = x^2
-        def func(x):
-            return x**2
+        # Position vs time for falling object: y = 5 - 0.5*t^2 (inverted parabola)
+        position_graph = axes.plot(
+            lambda t: 5 - 0.5 * t**2, x_range=[0, 3], color=BLUE, stroke_width=3
+        )
 
-        graph = axes.plot(func, x_range=[0, 3], color=BLUE, stroke_width=3)
-        graph_label = MathTex(r"f(x) = x^2", font_size=24, color=BLUE)
-        graph_label.next_to(axes, RIGHT).shift(UP * 2)
+        # Labels
+        time_label = Text("Time (s)", font_size=20).next_to(axes.x_axis, DOWN)
+        pos_label = Text("Height (m)", font_size=20).next_to(axes.y_axis, LEFT)
 
-        self.play(Create(axes), Create(graph), Write(graph_label))
+        self.play(Create(axes), Create(time_label), Create(pos_label))
+        self.play(Create(position_graph))
+        self.wait(1)
 
-        # Point of interest
-        x0 = 2
-        y0 = func(x0)
+        # Pick a point and show secant lines getting steeper
+        t0 = 1.5
+        y0 = 5 - 0.5 * t0**2
 
-        point = Dot(axes.c2p(x0, y0), color=YELLOW, radius=0.1)
-        point_label = MathTex(r"P", font_size=20).next_to(point, UR, buff=0.1)
+        point = Dot(axes.c2p(t0, y0), color=YELLOW, radius=0.1)
+        point_label = MathTex(r"t=1.5s", font_size=20, color=YELLOW).next_to(
+            point, UP, buff=0.1
+        )
 
         self.play(Create(point), Write(point_label))
 
-        # Secant lines approaching tangent
-        secant_title = Text("Secant lines approach tangent:", font_size=22)
-        secant_title.next_to(axes, DOWN, buff=0.3)
-        self.play(Write(secant_title))
+        # Show secant lines with decreasing delta_t
+        delta_ts = [1.0, 0.5, 0.2, 0.05]
+        prev_secant = None
+        prev_slope_text = None
+        prev_dt_text = None
 
-        h_tracker = ValueTracker(1.5)
+        for i, dt in enumerate(delta_ts):
+            t1 = t0 + dt
+            y1 = 5 - 0.5 * t1**2
 
-        secant_line = always_redraw(
-            lambda: axes.plot(
-                lambda x: y0
-                + (func(x0 + h_tracker.get_value()) - y0)
-                / h_tracker.get_value()
-                * (x - x0),
-                x_range=[x0 - 1, x0 + h_tracker.get_value() + 0.5],
+            # Secant line
+            secant = Line(
+                axes.c2p(t0, y0),
+                axes.c2p(t1, y1),
                 color=GREEN,
                 stroke_width=2,
             )
-        )
 
-        second_point = always_redraw(
-            lambda: Dot(
-                axes.c2p(x0 + h_tracker.get_value(), func(x0 + h_tracker.get_value())),
-                color=RED,
-                radius=0.08,
+            # Calculate slope
+            slope = (y1 - y0) / (t1 - t0)
+            slope_text = MathTex(
+                f"\\text{{Average speed}} = {slope:.2f} m/s", font_size=20
             )
-        )
+            slope_text.next_to(axes, RIGHT).shift(UP * 1.5)
 
-        h_label = always_redraw(
-            lambda: MathTex(f"h = {h_tracker.get_value():.2f}", font_size=20)
-            .next_to(axes, RIGHT)
-            .shift(DOWN)
-        )
+            # Delta t indicator
+            dt_text = MathTex(f"\\Delta t = {dt}", font_size=18, color=RED)
+            dt_text.next_to(axes.c2p(t0 + dt / 2, y0), DOWN, buff=0.3)
 
-        self.play(Create(secant_line), Create(second_point), Write(h_label))
+            if (
+                prev_secant is not None
+                and prev_slope_text is not None
+                and prev_dt_text is not None
+            ):
+                self.play(
+                    Transform(prev_secant, secant),
+                    FadeOut(prev_slope_text),
+                    FadeOut(prev_dt_text),
+                    Write(slope_text),
+                    Write(dt_text),
+                )
+            else:
+                self.play(
+                    Create(secant),
+                    Write(slope_text),
+                    Write(dt_text),
+                )
 
-        # Animate h getting smaller
-        self.play(h_tracker.animate.set_value(0.5), run_time=2)
-        self.play(h_tracker.animate.set_value(0.2), run_time=2)
-        self.play(h_tracker.animate.set_value(0.05), run_time=2)
+            prev_secant = secant
+            prev_slope_text = slope_text
+            prev_dt_text = dt_text
 
-        # Tangent line
+            self.wait(0.8)
+
+        # Now show the tangent line (the limit)
         tangent = axes.plot(
-            lambda x: y0 + 2 * x0 * (x - x0),
-            x_range=[0, 3],
-            color=YELLOW,
-            stroke_width=3,
+            lambda t: y0 + (-t0) * (t - t0),  # Derivative of -0.5*t^2 is -t
+            x_range=[t0 - 1, t0 + 1],
+            color=RED,
+            stroke_width=4,
         )
-        tangent_label = MathTex(r"\text{Tangent}", font_size=20, color=YELLOW)
-        tangent_label.next_to(axes, RIGHT).shift(DOWN * 2)
 
-        self.play(FadeOut(secant_line), FadeOut(second_point), FadeOut(h_label))
-        self.play(Create(tangent), Write(tangent_label))
+        tangent_text = Text("Instantaneous speed = -1.5 m/s", font_size=22, color=RED)
+        tangent_text.next_to(axes, RIGHT).shift(UP * 1.5)
 
-        # Slope = derivative
-        slope_text = MathTex(r"f'(2) = 4", font_size=28, color=YELLOW)
-        slope_text.next_to(axes, DOWN, buff=0.5)
-        self.play(Write(slope_text))
+        # Only fade out if they exist
+        if (
+            prev_secant is not None
+            and prev_slope_text is not None
+            and prev_dt_text is not None
+        ):
+            self.play(
+                FadeOut(prev_secant),
+                FadeOut(prev_slope_text),
+                FadeOut(prev_dt_text),
+                Create(tangent),
+                Write(tangent_text),
+            )
+        else:
+            self.play(
+                Create(tangent),
+                Write(tangent_text),
+            )
         self.wait(2)
 
+        # Clear for summary
         self.play(
             FadeOut(axes),
-            FadeOut(graph),
-            FadeOut(graph_label),
+            FadeOut(time_label),
+            FadeOut(pos_label),
+            FadeOut(position_graph),
             FadeOut(point),
             FadeOut(point_label),
             FadeOut(tangent),
-            FadeOut(tangent_label),
-            FadeOut(secant_title),
-            FadeOut(slope_text),
+            FadeOut(tangent_text),
+            FadeOut(method_title),
         )
 
-        # Definition
-        def_title = Text("Definition:", font_size=26, color=GREEN)
-        def_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(def_title))
+        # The key insight
+        insight_title = Text("The Key Insight", font_size=32, color=GREEN)
+        self.play(Write(insight_title))
+        self.wait(0.5)
+        self.play(insight_title.animate.scale(0.8).to_edge(UP))
 
-        definition = MathTex(
-            r"f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}", font_size=28
+        insights = VGroup(
+            Text("• Speed at an instant = slope of position curve", font_size=24),
+            Text("• Find it by zooming in until curve looks straight", font_size=24),
+            Text("• The slope of that line is the derivative", font_size=24),
+        ).arrange(DOWN, aligned_edge=LEFT, buff=0.5)
+        insights.to_edge(LEFT, buff=1)
+        insights.shift(DOWN * 0.5)
+
+        for insight in insights:
+            self.play(Write(insight))
+            self.wait(0.5)
+
+        self.wait(2)
+
+        # Final summary
+        self.play(
+            FadeOut(insights),
+            FadeOut(insight_title),
         )
-        definition.next_to(def_title, DOWN, buff=0.5)
 
-        self.play(Write(definition))
-        self.wait(2)
+        final = VGroup(
+            Text("Derivative = Instantaneous Rate of Change", font_size=32, color=BLUE),
+            Text(
+                "Found by zooming in until the curve is flat",
+                font_size=24,
+                color=YELLOW,
+            ),
+        ).arrange(DOWN, buff=0.5)
 
-        self.play(FadeOut(definition), FadeOut(def_title))
-
-        # Common derivatives
-        derivatives_title = Text("Common Derivatives:", font_size=26, color=YELLOW)
-        derivatives_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(derivatives_title))
-
-        common = VGroup(
-            MathTex(r"\\frac{d}{dx}(x^n) = nx^{n-1}", font_size=24),
-            MathTex(r"\\frac{d}{dx}(e^x) = e^x", font_size=24),
-            MathTex(r"\\frac{d}{dx}(\\ln x) = \\frac{1}{x}", font_size=24),
-            MathTex(r"\\frac{d}{dx}(\\sin x) = \\cos x", font_size=24),
-            MathTex(r"\\frac{d}{dx}(\\cos x) = -\\sin x", font_size=24),
-        ).arrange(DOWN, buff=0.3)
-        common.next_to(derivatives_title, DOWN, buff=0.5)
-
-        self.play(*[Write(c) for c in common])
-        self.wait(2)
-
-        self.play(FadeOut(common), FadeOut(derivatives_title))
-
-        # Applications
-        apps_title = Text("Applications:", font_size=26, color=GREEN)
-        apps_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(apps_title))
-
-        applications = VGroup(
-            Text("• Velocity and acceleration", font_size=22),
-            Text("• Optimization (max/min)", font_size=22),
-            Text("• Related rates", font_size=22),
-            Text("• Curve sketching", font_size=22),
-        ).arrange(DOWN, aligned_edge=LEFT, buff=0.3)
-        applications.next_to(apps_title, DOWN, buff=0.5)
-        applications.to_edge(LEFT, buff=1)
-
-        self.play(*[Write(app) for app in applications])
+        self.play(Write(final))
         self.wait(3)
 
-        self.play(FadeOut(applications), FadeOut(apps_title))
-
-        # Summary
-        summary = VGroup(
-            Text("Derivatives", font_size=36, color=BLUE),
-            MathTex(r"f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}", font_size=26),
-            Text("The fundamental tool of calculus", font_size=24),
-        ).arrange(DOWN, buff=0.4)
-
-        self.play(Write(summary))
-        self.wait(3)
-        self.play(FadeOut(summary), FadeOut(title))
+        self.play(FadeOut(final), FadeOut(title))

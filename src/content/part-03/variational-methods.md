@@ -1,65 +1,96 @@
 # Variational Methods
 
-310                                                                                          III. Mathematical Concepts
+310
 
 elements of the torus are the orbits of the action (which    has a local minimum (or maximum) at a point t0 , then
-are sets of the form {(x + m, y + n) : (m, n) ∈ Z2 })        (df /dt)(t0 ) = 0.
-with the quotient topology (which basically means that          The calculus of variations vastly extends this insight.
-two translates of Z2 are close when you think they are       The basic object to be considered is a functional F ,
+are sets of the form {(x + m, y + n) : (m, n) ∈ Z2 })
+with the quotient topology (which basically means that
+two translates of Z2 are close when you think they are
 close). The action of Z2 on R2 is free and discrete, which   which is applied not to real numbers but to functions,
-means that each nonzero element of Z2 moves a small          or rather to certain admissible classes of functions.
-neighborhood of each point entirely off itself. It turns      That is, F takes functions u to real numbers F (u).
-out that every sufficiently nice space X arises as the         If u0 is a minimizer of F (that is, F (u0 ) ⩽ F (u) for
+means that each nonzero element of Z2 moves a small
+neighborhood of each point entirely off itself. It turns
+out that every sufficiently nice space X arises as the
 quotient of its universal cover by a similar group action:   all admissible functions u), then we can expect that
-this group is the fundamental group [IV.6 §2](/part-04/algebraic-topology) of X.          “the derivative of F at u0 is zero.” Of course, this idea
-   As its name suggests, the universal cover has a uni-      has to be made precise, which one might expect to be
-versal property. Roughly speaking, a cover of a space        tricky since the space of admissible functions is infinite
-X is a space Y and a continuous surjection from Y to X       dimensional. But in practice these so-called variational
-such that the inverse image of a small neighborhood in       methods end up using just standard calculus, and they
+this group is the fundamental group [IV.6 §2](/part-04/algebraic-topology) of X.
+   As its name suggests, the universal cover has a uni-
+versal property. Roughly speaking, a cover of a space
+X is a space Y and a continuous surjection from Y to X
+such that the inverse image of a small neighborhood in
 X is a disjoint union of small neighborhoods in Y . If U     provide deep insights into the nature of minimizing
 is the universal cover of X and Y is any other cover of X,   functions u0 .
 then U can be made into a cover of Y in a natural way.
-For instance, one can define a cover of the torus by an                 2   One-Dimensional Problems
+For instance, one can define a cover of the torus by an
 infinite cylinder by wrapping the cylinder around, and
-                                                             The simplest situation to which variational techniques
 the cylinder can in turn be covered by the plane. Thus,
-                                                             apply involves functions of a single variable. Let us see
 all connected covers of X are quotients of the univer-
-                                                             why minimizers of appropriate functionals in this set-
 sal cover. What is more, each is the space of orbits for
-                                                             ting must automatically satisfy certain ordinary differ-
 the action on the universal cover of a subgroup of the
-                                                             ential equations.
 fundamental group of X. This observation sets up a cor-
-respondence between conjugacy classes of subgroups           2.1   Shortest Distance
+respondence between conjugacy classes of subgroups
 of the fundamental group of X and equivalence classes
-of covers. This “Galois correspondence” has many ana-        As a warmup problem, we shall show that the shortest
-logues elsewhere in mathematics, most classically in         path between two points in the plane is a line segment.
-the theory of field extensions (see the insolubility          Of course, this is obvious, but the methods we develop
-of the quintic [V.21](/part-05/the-insolubility-of-the-quintic)).                                      can be applied to much more interesting situations.
-   An example of the use of universal covers can               Suppose, then, that we are given two points P and
-be found in geometric and combinatorial group                Q in the plane. We take as our class of admissible
-theory [IV.10 §§7, 8].                                       functions all smooth, real-valued functions u, defined
-                                                             on some interval I = [a, b], such that u(a) = P and
-                                                             u(b) = Q. The length of this curve is
+of covers. This “Galois correspondence” has many ana-
+logues elsewhere in mathematics, most classically in
+the theory of field extensions (see the insolubility
+of the quintic [V.21](/part-05/the-insolubility-of-the-quintic)).
+   An example of the use of universal covers can
+be found in geometric and combinatorial group
+theory [IV.10 §§7, 8].
 III.94 Variational Methods
-         Lawrence C. Evans                                                 F [u] =       (1 + (u )2 )1/2 dx,        (1)
-                                                                                     I
 
 The calculus of variations is both a theory in itself and    where u = u(x) and a prime denotes differentiation
-a toolbox of techniques for studying certain kinds of        with respect to x. Now suppose that some particular
-(often extremely nonlinear) ordinary and partial differ-      curve u0 minimizes the length. We want to deduce that
-ential equations. These equations, which arise when we       the graph of u0 is a line segment, which we will do by
-seek critical points of appropriate “energy” function-       “setting the derivative of F to zero” at the minimizer
+a toolbox of techniques for studying certain kinds of
+(often extremely nonlinear) ordinary and partial differ-
+ential equations. These equations, which arise when we
+seek critical points of appropriate “energy” function-
 als, are usually far more tractable than other nonlinear     u0 .
-problems.                                                       To make sense of this idea, select any other smooth
-                                                             function w that is defined on our interval I and that
-                                                             vanishes at its endpoints. For each t define f (t) to be
-                  1   Critical Points
-                                                             F [u0 + tw]. Since the graph of the function u0 + tw
-Let us begin with a simple observation from first-            connects the given endpoints, and since u0 gives the
-year calculus, where we learn that if f = f (t) is a         minimum length, it follows that the function f , which
-smooth function defined on the real line R and if f           is just an ordinary function from R to R, has a minimum
+problems.
+
+Let us begin with a simple observation from first-
+year calculus, where we learn that if f = f (t) is a
+smooth function defined on the real line R and if f
+
+III. Mathematical Concepts
+(df /dt)(t0 ) = 0.
+The calculus of variations vastly extends this insight.
+The basic object to be considered is a functional F ,
+or rather to certain admissible classes of functions.
+That is, F takes functions u to real numbers F (u).
+If u0 is a minimizer of F (that is, F (u0 ) ⩽ F (u) for
+“the derivative of F at u0 is zero.” Of course, this idea
+has to be made precise, which one might expect to be
+tricky since the space of admissible functions is infinite
+dimensional. But in practice these so-called variational
+methods end up using just standard calculus, and they
+2   One-Dimensional Problems
+The simplest situation to which variational techniques
+apply involves functions of a single variable. Let us see
+why minimizers of appropriate functionals in this set-
+ting must automatically satisfy certain ordinary differ-
+ential equations.
+2.1   Shortest Distance
+As a warmup problem, we shall show that the shortest
+path between two points in the plane is a line segment.
+Of course, this is obvious, but the methods we develop
+can be applied to much more interesting situations.
+Suppose, then, that we are given two points P and
+Q in the plane. We take as our class of admissible
+functions all smooth, real-valued functions u, defined
+on some interval I = [a, b], such that u(a) = P and
+u(b) = Q. The length of this curve is
+Lawrence C. Evans
+I
+with respect to x. Now suppose that some particular
+curve u0 minimizes the length. We want to deduce that
+the graph of u0 is a line segment, which we will do by
+“setting the derivative of F to zero” at the minimizer
+To make sense of this idea, select any other smooth
+function w that is defined on our interval I and that
+vanishes at its endpoints. For each t define f (t) to be
+1   Critical Points
+F [u0 + tw]. Since the graph of the function u0 + tw
+connects the given endpoints, and since u0 gives the
+minimum length, it follows that the function f , which
+is just an ordinary function from R to R, has a minimum
 
 III . $94$ .
 

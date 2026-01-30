@@ -1,63 +1,74 @@
 # Set Theory
 
-IV.22.   Set Theory                                                                                                      615
+IV.22.   Set Theory
 
-                       Table 1 Some algorithmic developments in the history of numerical analysis.
-
-         Year       Development                                   Key early figures
-
-          263     Gaussian elimination                           Liu, Lagrange, Gauss, Jacobi
-         1671     Newton’s method                                Newton, Raphson, Simpson
-         1795     Least-squares fitting                           Gauss, Legendre
-         1814     Gauss quadrature                               Gauss, Jacobi, Christoffel, Stieltjes
-         1855     Adams ODE formulas                             Euler, Adams, Bashforth
-         1895     Runge–Kutta ODE formulas                       Runge, Heun, Kutta
-         1910     Finite differences for PDE                      Richardson, Southwell, Courant, von Neumann, Lax
-         1936     Floating-point arithmetic                      Torres y Quevedo, Zuse, Turing
-         1943     Finite elements for PDE                        Courant, Feng, Argyris, Clough
-         1946     Splines                                        Schoenberg, de Casteljau, Bezier, de Boor
-         1947     Monte Carlo simulation                         Ulam, von Neumann, Metropolis
-         1947     Simplex algorithm                              Kantorovich, Dantzig
-         1952     Lanczos and conjugate gradient iterations      Lanczos, Hestenes, Stiefel
-         1952     Stiff ODE solvers                               Curtiss, Hirschfelder, Dahlquist, Gear
-         1954     Fortran                                        Backus
-         1958     Orthogonal linear algebra                      Aitken, Givens, Householder, Wilkinson, Golub
-         1959     Quasi-Newton iterations                        David on, Fletcher, Powell, Broyden
-         1961     QR algorithm for eigenvalues                   Rutishauser, Kublanovskaya, Francis, Wilkinson
-         1965     Fast Fourier transform                         Gauss, Cooley, Tukey, Sande
-         1971     Spectral methods for PDE                       Chebyshev, Lanczos, Clenshaw, Orszag, Gottlieb
-         1971     Radial basis functions                         Hardy, Askey, Duchon, Micchelli
-         1973     Multigrid iterations                           Fedorenko, Bakhvalov, Brandt, Hackbusch
-         1976     EISPACK, LINPACK, LAPACK                       Moler, Stewart, Smith, Dongarra, Demmel, Bai
-         1976     Nonsymmetric Krylov iterations                 Vinsome, Saad, van der Vorst, Sorensen
-         1977     Preconditioned matrix iterations               van der Vorst, Meijerink
-         1977     MATLAB                                         Moler
-         1977     IEEE arithmetic                                Kahan
-         1982     Wavelets                                       Morlet, Grossmann, Meyer, Daubechies
-         1984     Interior methods in optimization               Fiacco, Mc Cormick, Karmarkar, Megiddo
-         1987     Fast multipole method                          Rokhlin, Greengard
-         1991     Automatic differentiation                       Iri, Bischof, Carle, Griewank
-
-than half of the authors of the EISPACK, LINPACK, and             Iserles, A., ed. 1992–. Acta Numerica (annual volumes).
-LAPACK libraries. Even the dates can be questioned; the             Cambridge: Cambridge University Press.
-fast Fourier transform is listed as 1965, for example,            Nocedal, J., and S. J. Wright. 1999. Numerical Optimization.
-since that is the year of the paper that brought it to              New York: Springer.
-                                                                  Powell, M. J. D. 1981. Approximation Theory and Methods.
+than half of the authors of the EISPACK, LINPACK, and
+LAPACK libraries. Even the dates can be questioned; the
+fast Fourier transform is listed as 1965, for example,
+since that is the year of the paper that brought it to
 the world’s attention, though Gauss made the same dis-
-                                                                    Cambridge: Cambridge University Press.
-covery 160 years earlier. Nor should one imagine that             Richtmyer, R. D., and K. W. Morton. 1967. Difference Meth-
-the years from 1991 to the present have been a blank!               ods for Initial-Value Problems. New York: Wiley Inter-
-No doubt in the future we shall identify developments               science.
+covery 160 years earlier. Nor should one imagine that
+the years from 1991 to the present have been a blank!
+No doubt in the future we shall identify developments
 from this period that deserve a place in the table.
 
-Further Reading                                                   IV.22 Set Theory
-Ciarlet, P. G. 1978. The Finite Element Method for Elliptic                Joan Bagaria
+Further Reading
+Ciarlet, P. G. 1978. The Finite Element Method for Elliptic
   Problems. Amsterdam: North-Holland.
-Golub, G. H., and C. F. Van Loan. 1996. Matrix Computations,                          1   Introduction
+Golub, G. H., and C. F. Van Loan. 1996. Matrix Computations,
   3 rd edn. Baltimore, MD: Johns Hopkins University Press.
 Hairer, E., S. P. Nørsett (for volume I), and G. Wanner. 1993,    Among all mathematical disciplines, set theory occu-
-  1996. Solving Ordinary Differential Equations, volumes I         pies a special place because it plays two very different
-  and II. New York: Springer.                                     roles at the same time: on the one hand, it is an area of
+  1996. Solving Ordinary Differential Equations, volumes I
+  and II. New York: Springer.
+
+615
+Table 1 Some algorithmic developments in the history of numerical analysis.
+Year
+263     Gaussian elimination
+1671     Newton’s method
+1795     Least-squares fitting
+1814     Gauss quadrature
+1855     Adams ODE formulas
+1895     Runge–Kutta ODE formulas
+1910     Finite differences for PDE
+1936     Floating-point arithmetic
+1943     Finite elements for PDE
+1946     Splines
+1947     Monte Carlo simulation
+1947     Simplex algorithm
+1952     Lanczos and conjugate gradient iterations
+1952     Stiff ODE solvers
+1954     Fortran
+1958     Orthogonal linear algebra
+1959     Quasi-Newton iterations
+1961     QR algorithm for eigenvalues
+1965     Fast Fourier transform
+1971     Spectral methods for PDE
+1971     Radial basis functions
+1973     Multigrid iterations
+1976     EISPACK, LINPACK, LAPACK
+1976     Nonsymmetric Krylov iterations
+1977     Preconditioned matrix iterations
+1977     MATLAB
+1977     IEEE arithmetic
+1982     Wavelets
+1984     Interior methods in optimization
+1987     Fast multipole method
+1991     Automatic differentiation
+Iserles, A., ed. 1992–. Acta Numerica (annual volumes).
+Cambridge: Cambridge University Press.
+Nocedal, J., and S. J. Wright. 1999. Numerical Optimization.
+New York: Springer.
+Powell, M. J. D. 1981. Approximation Theory and Methods.
+Cambridge: Cambridge University Press.
+Richtmyer, R. D., and K. W. Morton. 1967. Difference Meth-
+ods for Initial-Value Problems. New York: Wiley Inter-
+science.
+IV.22 Set Theory
+Joan Bagaria
+1   Introduction
+pies a special place because it plays two very different
+roles at the same time: on the one hand, it is an area of
 
 $616$
 
@@ -114,127 +125,190 @@ These are points x for which you can find a small neighborhood around x that con
 we can take the intersection of all the X n and call it X ω , and if we do that, then we can define X ω $+ {}^{1}$ to be the derivative of X ω , and so on. Thus, the reason that ordinals appear naturally is that we have two operations, taking the derivative and taking the intersection of everything so far, which correspond to successors and limits in the ordinal sequence. Cantor initially regarded superscripts such as $ω + 1$ as “tags” that marked the transfinite stages of the derivation. These tags later became the countable ordinal numbers.
 Cantor proved that for every closed set X there must be a countable ordinal α (which could be finite) such that $Xα = Xα + {}^{1}$ . It is easy to show that each X β in the sequence of derivatives is closed, and that it contains
 
-IV.22.   Set Theory                                                                                                   619
+IV.22.   Set Theory
 
-all but countably many points of the original set X.           need to continue with the development of set theory
-Therefore, X α is a closed set that contains no isolated       while avoiding the logical traps, or paradoxes, that orig-
+all but countably many points of the original set X.
+Therefore, X α is a closed set that contains no isolated
 points. Such sets are called perfect sets and it is not too    inated in the care less use of the intuitive notion of a set
-hard to show that they are either empty or have cardi-         (see the crisis in the foundations of mathematics
+hard to show that they are either empty or have cardi-
 nality 2א0 . From this it follows that X is either countable   [II.7](/part-02/foundations-crisis)). For instance, it seems intuitively clear that every
-or of cardinality 2א0 .                                        property determines a set, namely, the set of those
-   The intimate connection, discovered by Cantor, be-          objects that have that property. But then consider the
-tween transfinite ordinals and cardinals and the struc-         property of being an ordinal number. If this property
-ture of the continuum was destined to leave its mark           determined a set, this would be the set of all ordinal
-on the entire subsequent development of set theory.            numbers. But a moment of reflection shows that there
-                                                               cannot be such a set, since it would be well-ordered and
-            3   The Universe of All Sets                       would therefore correspond to an ordinal greater than
-In the discussion so far we have taken for granted that        all ordinals, which is absurd. Similarly, the property of
-every set has a cardinality, or in other words that for        being a set that is not an element of itself cannot deter-
-every set X there is a unique cardinal number that can         mine a set, for otherwise we fall into Russell’s paradox,
-be put into one-to-one correspondence with X. If κ is          that if A is such a set, then A is an element of A if and
-such a cardinal and f : X → κ is a bijection (recall           only if A is not an element of A, which is absurd. Thus,
-that we identify κ with the set of all its predecessors),      not every collection of objects, not even those that are
-then we can define an ordering on X by taking x < y if          defined by some property, can be taken to be a set. So
-and only if f (x) < f (y). Since κ is a well-ordered set,      what is a set? Zermelo’s 1908 axiomatization provides
-this makes X into a well-ordered set. But it is far from       the first attempt to capture our intuitive notion of set
-obvious that every set can be given a well-ordering:           in a short list of basic principles. It was later improved
+or of cardinality 2א0 .
+   The intimate connection, discovered by Cantor, be-
+tween transfinite ordinals and cardinals and the struc-
+ture of the continuum was destined to leave its mark
+on the entire subsequent development of set theory.
+
+In the discussion so far we have taken for granted that
+every set has a cardinality, or in other words that for
+every set X there is a unique cardinal number that can
+be put into one-to-one correspondence with X. If κ is
+such a cardinal and f : X → κ is a bijection (recall
+that we identify κ with the set of all its predecessors),
+then we can define an ordering on X by taking x < y if
+and only if f (x) < f (y). Since κ is a well-ordered set,
+this makes X into a well-ordered set. But it is far from
+obvious that every set can be given a well-ordering:
 indeed, it is not obvious even for the set R. (If you need     through contributions from skolem [VI.81](/part-06/thoralf-skolem-18871963), Abraham
-convincing of this, then try to find one.)                      Fraenkel, and von neumann [VI.91](/part-06/john-von-neumann-19031957), becoming what
-   Thus, to make full use of the theory of transfinite          is now known as Zermelo–Fraenkel set theory with the
-ordinals and cardinals and to solve some of the fun-           axiom of choice, or ZFC.
-da mental problems—such as computing where in the                  The basic idea behind the axioms of ZFC is that there
-aleph hierarchy of infinite cardinals the cardinal of R         is a “universe of all sets” that we would like to under-
-is—one must appeal to the well-ordering principle: the         stand, and the axioms give us the tools we need to build
-assertion that every set can be well-ordered. With out          sets out of other sets. In usual mathematical practice
-this assertion, one cannot even make sense of the ques-        we take sets of integers, sets of real numbers, sets of
-tions. The well-ordering principle was introduced by           functions, etc., but also sets of sets (such as sets of
-Cantor, but he was unable to prove it. hilbert [VI.63](/part-06/david-hilbert-18621943)         open sets in a topological space [III.90](/part-03/topological-spaces)), sets of sets
-listed proving that R could be well-ordered as part of         of sets (such as sets of open covers), and so on. Thus,
-the first problem in his celebrated list of twenty-three        the universe of all sets should consist not only of sets
-unsolved mathematical problems presented in 1900 at            of objects, but also of sets of sets of objects, etc. Now
-the Second International Congress of Mathematicians            it turns out that it is much more convenient to dis-
-in Paris. Four years later, Ernst Zermelo gave a proof         pense with “objects” altogether and consider only sets
-of the well-ordering principle that drew a lot of criti-       whose elements are sets, whose elements are also sets,
-cism for its use of the axiom of choice [III.1](/part-03/axiom-of-choice) (AC),          etc. Let us call those sets “pure sets.” The restriction
-a principle that had been tacitly used for many years          to pure sets is technically advantageous and yields a
-but which was now brought into focus by Zermelo’s              more elegant theory. More over, it is possible to model
+convincing of this, then try to find one.)
+   Thus, to make full use of the theory of transfinite
+ordinals and cardinals and to solve some of the fun-
+da mental problems—such as computing where in the
+aleph hierarchy of infinite cardinals the cardinal of R
+is—one must appeal to the well-ordering principle: the
+assertion that every set can be well-ordered. With out
+this assertion, one cannot even make sense of the ques-
+tions. The well-ordering principle was introduced by
+Cantor, but he was unable to prove it. hilbert [VI.63](/part-06/david-hilbert-18621943)
+listed proving that R could be well-ordered as part of
+the first problem in his celebrated list of twenty-three
+unsolved mathematical problems presented in 1900 at
+the Second International Congress of Mathematicians
+in Paris. Four years later, Ernst Zermelo gave a proof
+of the well-ordering principle that drew a lot of criti-
+cism for its use of the axiom of choice [III.1](/part-03/axiom-of-choice) (AC),
+a principle that had been tacitly used for many years
+but which was now brought into focus by Zermelo’s
 result. AC states that for every set X of pairwise-disjoint    traditional mathematical concepts such as real num-
-nonempty sets there is a set that contains exactly one         bers using pure sets, so one does not lose any mathe-
-element from each set in X. In a second, much more             mat ical power. Pure sets are built from nothing, i.e., the
-detailed, proof published in 1908, Zermelo spells out          empty set, by successively applying the “set of” opera-
-some of the principles or axioms involved in his proof         tion. A simple example is {∅, {∅, {∅}}}: to build this
-of the well-ordering principle, including AC.                  we start by forming {∅}, then {∅, {∅}}, and putting
-   In that same year, Zermelo published the first axiom-        these two sets together gives us {∅, {∅, {∅}}}. Thus, at
-at ization of set theory, the main motivation being the         every stage we form all the sets whose elements are sets
+nonempty sets there is a set that contains exactly one
+element from each set in X. In a second, much more
+detailed, proof published in 1908, Zermelo spells out
+some of the principles or axioms involved in his proof
+of the well-ordering principle, including AC.
+   In that same year, Zermelo published the first axiom-
+at ization of set theory, the main motivation being the
 
-620                                                                                                  IV. Branches of Mathematics
+619
+need to continue with the development of set theory
+while avoiding the logical traps, or paradoxes, that orig-
+(see the crisis in the foundations of mathematics
+property determines a set, namely, the set of those
+objects that have that property. But then consider the
+property of being an ordinal number. If this property
+determined a set, this would be the set of all ordinal
+numbers. But a moment of reflection shows that there
+cannot be such a set, since it would be well-ordered and
+3   The Universe of All Sets
+all ordinals, which is absurd. Similarly, the property of
+being a set that is not an element of itself cannot deter-
+mine a set, for otherwise we fall into Russell’s paradox,
+that if A is such a set, then A is an element of A if and
+only if A is not an element of A, which is absurd. Thus,
+not every collection of objects, not even those that are
+defined by some property, can be taken to be a set. So
+what is a set? Zermelo’s 1908 axiomatization provides
+the first attempt to capture our intuitive notion of set
+in a short list of basic principles. It was later improved
+Fraenkel, and von neumann [VI.91](/part-06/john-von-neumann-19031957), becoming what
+is now known as Zermelo–Fraenkel set theory with the
+axiom of choice, or ZFC.
+The basic idea behind the axioms of ZFC is that there
+is a “universe of all sets” that we would like to under-
+stand, and the axioms give us the tools we need to build
+sets out of other sets. In usual mathematical practice
+we take sets of integers, sets of real numbers, sets of
+functions, etc., but also sets of sets (such as sets of
+open sets in a topological space [III.90](/part-03/topological-spaces)), sets of sets
+of sets (such as sets of open covers), and so on. Thus,
+the universe of all sets should consist not only of sets
+of objects, but also of sets of sets of objects, etc. Now
+it turns out that it is much more convenient to dis-
+pense with “objects” altogether and consider only sets
+whose elements are sets, whose elements are also sets,
+etc. Let us call those sets “pure sets.” The restriction
+to pure sets is technically advantageous and yields a
+more elegant theory. More over, it is possible to model
+bers using pure sets, so one does not lose any mathe-
+mat ical power. Pure sets are built from nothing, i.e., the
+empty set, by successively applying the “set of” opera-
+tion. A simple example is {∅, {∅, {∅}}}: to build this
+we start by forming {∅}, then {∅, {∅}}, and putting
+these two sets together gives us {∅, {∅, {∅}}}. Thus, at
+every stage we form all the sets whose elements are sets
 
-                                                                           (vi) Regularity. Every set x belongs to Vα , for some
-                              . ambda V. ambda ordinal α.
-                                                                           (vii) Axiom of choice (AC). For every set X of pairwise-
-                                                                             disjoint nonempty sets there is a set that contains
-                           α +1                  Vα + 1
-                                                                             exactly one element from each set in X.
+620
 
-                                                                              Usually a further axiom appears on this list, called the
-                              α             Vα
-                                                                           pairing axiom. It asserts that for any two sets A and B
-                                                                           the set {A, B} exists. In particular, {A} exists. Apply-
-                                                                           ing the union axiom to the set {A, B} one then gets the
-                                                                           union A ∪ B of A and B. But pairing can be derived
-                                                                           from the other axioms. Another important axiom that
-          Figure 2 The universe V of all pure sets.                        appeared in Zermelo’s original list, one that is both nat-
-                                                                           ural and very useful, is the axiom of separation. It states
-already obtained in the previous stages. Once again,                       that for every set A and every definable property P , the
-this can be continued transfinitely: at limit stages we                     set of elements of A that have the property P is also
-collect into a set all the sets obtained so far, and keep                  a set. But this axiom is a consequence of the axiom of
-going. The universe of all (pure) sets, represented by the                 replacement, so there is no need to include it in the list.
-letter V and usually drawn as a V-shape with a vertical                    Using the axiom of separation one can easily prove the
-axis representing the ordinals (see figure 2), therefore                    existence of the empty set ∅, as well as the inter sec-
-forms a cumulative well-ordered hierarchy, indexed by                      tion A ∩ B and difference A − B of any two sets A and
-the ordinal numbers, beginning with the empty set ∅.                       B. The axiom of regularity is also known as the axiom
-That is, we let                                                            of foundation and it is usually stated as follows: every
-        V0 = ∅,                                                            nonempty set X has an ∈-minimal element, i.e., an ele-
-                                                                           ment that no element of X belongs to. In the presence
-      Vα+1 = P(Vα ),       the set of all subsets of Vα ,
-             .                                                             of the other axioms the two formulations are equiva-
-        Vλ =    Vβ ,       the union of all the Vβ , β < λ,                lent. We chose the formulation in terms of the Vα s to
-               β<. ambda stress the fact that this is a natural axiom based on
-if . ambda is a limit ordinal.                                                   the construction of the universe of all sets. But it is
-   The universe of all sets is then the union of all the                   important to notice that the notions of “ordinal” and
-sets Vα such that α is an ordinal. More concisely,                         the “cumulative hierarchy of Vα s” need not appear in
-                             .
-                         V =   Vα .                                        the formulation of the axioms of ZFC.
-                                   α                                          The axioms of ZFC lead a kind of double life. On
-3.1   The Axioms of ZFC                                                    the one hand, they tell us the things we can do with
-                                                                           sets. In this sense, ZFC is just like any other collec-
-The ZFC axioms, stated informally, are the following.                      tion of axioms for algebraic structures, e.g., the axioms
-                                                                           for groups [I.3 §2.1](/part-01/fundamental-definitions), or fields [I.3 §2.2](/part-01/fundamental-definitions): in both cases
+already obtained in the previous stages. Once again,
+this can be continued transfinitely: at limit stages we
+collect into a set all the sets obtained so far, and keep
+going. The universe of all (pure) sets, represented by the
+letter V and usually drawn as a V-shape with a vertical
+axis representing the ordinals (see figure 2), therefore
+forms a cumulative well-ordered hierarchy, indexed by
+the ordinal numbers, beginning with the empty set ∅.
+That is, we let
+
+if . ambda is a limit ordinal.
+   The universe of all sets is then the union of all the
+sets Vα such that α is an ordinal. More concisely,
+3.1   The Axioms of ZFC
+The ZFC axioms, stated informally, are the following.
 (i) Extensionality. If two sets have the same elements,
-                                                                           they give rules for creating new objects from old ones,
    they are equal.
-                                                                           though there are more rules for sets than there are for
 (ii) Power set. For every set x there is a set P(x) whose
-                                                                           group or field elements and they are more complicated.
    elements are all the subsets of x.
-                                                                           Thus, just as one studies abstract groups, i.e., algebraic
 (iii) Infinity. There is an infinite set.
-                                                                           structures that satisfy the axioms for groups, so one
 (iv) Replacement. If x is a set and φ is a function-
-                                                                           can study the mathematical structures that satisfy the
    class 1 restricted to x, then there is a set y = {φ(u) :
-                                                                           axioms of ZFC. These are called models of ZFC. Since,
    u ∈ x}.
-                                                 "                         for reasons to be explained below, models of ZFC are
 (v) Union. For every set x, there is a set x whose
-                                                                           not easy to come by, one is also interested in models
    elements are all the elements of the elements of x.
-                                                                           of fragments of ZFC: that is, of axiom systems A that
-                                                                           consist of just some of the axioms of ZFC. A model of a
   1. A function-class can be thought of as a function that is given as a
 definition rather than an object that has to exist as a set. The concept
-                                                                           fragment A of ZFC is defined to be a pair M, E, where
-will be made precise in section 3.2.                                       M is a nonempty set and E is a binary relation on M,
+will be made precise in section 3.2.
+
+IV. Branches of Mathematics
+(vi) Regularity. Every set x belongs to Vα , for some
+. ambda V. ambda ordinal α.
+(vii) Axiom of choice (AC). For every set X of pairwise-
+disjoint nonempty sets there is a set that contains
+α +1                  Vα + 1
+exactly one element from each set in X.
+Usually a further axiom appears on this list, called the
+α             Vα
+pairing axiom. It asserts that for any two sets A and B
+the set {A, B} exists. In particular, {A} exists. Apply-
+ing the union axiom to the set {A, B} one then gets the
+union A ∪ B of A and B. But pairing can be derived
+from the other axioms. Another important axiom that
+Figure 2 The universe V of all pure sets.
+ural and very useful, is the axiom of separation. It states
+that for every set A and every definable property P , the
+set of elements of A that have the property P is also
+a set. But this axiom is a consequence of the axiom of
+replacement, so there is no need to include it in the list.
+Using the axiom of separation one can easily prove the
+existence of the empty set ∅, as well as the inter sec-
+tion A ∩ B and difference A − B of any two sets A and
+B. The axiom of regularity is also known as the axiom
+of foundation and it is usually stated as follows: every
+V0 = ∅,
+ment that no element of X belongs to. In the presence
+Vα+1 = P(Vα ),
+.
+Vλ =    Vβ ,
+β<. ambda the construction of the universe of all sets. But it is
+important to notice that the notions of “ordinal” and
+the “cumulative hierarchy of Vα s” need not appear in
+.
+V =   Vα .                                        the formulation of the axioms of ZFC.
+α                                          The axioms of ZFC lead a kind of double life. On
+the one hand, they tell us the things we can do with
+sets. In this sense, ZFC is just like any other collec-
+tion of axioms for algebraic structures, e.g., the axioms
+for groups [I.3 §2.1](/part-01/fundamental-definitions), or fields [I.3 §2.2](/part-01/fundamental-definitions): in both cases
+they give rules for creating new objects from old ones,
+though there are more rules for sets than there are for
+group or field elements and they are more complicated.
+Thus, just as one studies abstract groups, i.e., algebraic
+structures that satisfy the axioms for groups, so one
+can study the mathematical structures that satisfy the
+axioms of ZFC. These are called models of ZFC. Since,
+"                         for reasons to be explained below, models of ZFC are
+not easy to come by, one is also interested in models
+of fragments of ZFC: that is, of axiom systems A that
+consist of just some of the axioms of ZFC. A model of a
+fragment A of ZFC is defined to be a pair M, E, where
+M is a nonempty set and E is a binary relation on M,
 
 $IV$ . $22$ .
 
@@ -251,7 +325,7 @@ The axiom of choice is equivalent, in the context of the other ZFC axioms, to th
 
 Formulas and Models
 
-The ZFC axioms can be formalized using the language of first-order logic for sets. The symbols of first-order logic are variables such as x, y, z, . . . ; the quantifiers “∀” (for all) and “∃” (there exists); the logical connectives “¬” (not) , “∧” (and), “∨” (or), “ $\to$ ” (if ..., then ...), and “↔” (if and only if); the equality symbol “  =  ” ; and parentheses. To make this first-order logic for sets we add one other symbol, “ $\in$ , ” standing for “is an element of,” and the quantifiers are understood to range over sets.
+The ZFC axioms can be formalized using the language of first-order logic for sets. The symbols of first-order logic are variables such as x, y, z, . . . ; the quantifiers “∀” (for all) and “∃” (there exists); the logical connectives “¬” (not), “∧” (and), “∨” (or), “ $\to$ ” (if ..., then ...), and “↔” (if and only if); the equality symbol “  =  ” ; and parentheses. To make this first-order logic for sets we add one other symbol, “ $\in$ , ” standing for “is an element of,” and the quantifiers are understood to range over sets.
 Here is how the axiom of extensionality is expressed in this language: ∀ $x$ ∀  y( ∀ $z(z\in^{x}$ ↔ $z\in^{y}) \to x = y)$ . This reads as: for every set x and every set y, if every set z belongs to x if and only if it belongs to y (i . e . , if $x$ and $y$ have the same elements), then $x$ and $y$ are equal. It is an example of a formula in our language. Formulas can be defined inductively as follows. The atomic formulas are $x = y$ and $x \in y.$ Using quantifiers and logical connectives one can build up more complicated formulas using the following rules:
 if φ and $\psi$ are formulas, then so are ¬φ, ( φ ∧ $\psi)$ , ( φ ∨ $\psi)$ , ( $φ \to \psi)$ , ( φ ↔ $\psi)$ , ∀xφ, and ∃xφ. Thus, formulas are the formal counterpart of sentences in English (or in any other natural language) that talk only about sets and the membership relation. (For another discussion of formal languages, see logic and model theory [IV.23](/part-04/logic-and-model-theory).) Conversely, any formula of the formal language can be interpreted as a sentence (in English) about sets, and it makes sense to ask whether the interpreted sentence is true or not.
 Usually, by “true” we mean “true in the universe V of all sets,” but it also makes sense to ask about the truth or falsity of a formula in any structure of the form M, E , where E is a binary relation on M. For example, the formula ∀x∃y x $\in$ y is true in all models M, E of ZFC, while the formula ∃x∀y y $\in$ x is false (because of the axiom of regularity). Any formula that can be deduced from the axioms of ZFC is true in all models of ZFC. Once we have defined what a formula is, we are in a position to make many statements precise that would otherwise not be.
@@ -277,60 +351,106 @@ Undecidable Statements
 
 In mathematics the truth of a mathematical statement φ is established by means of a proof from basic
 
-IV.22.   Set Theory                                                                                                 623
+IV.22.   Set Theory
 
 principles or axioms. Similarly, the falsity of φ is estab-   mathematical statement φ is undecidable in ZFC? This
-lished by a proof of ¬φ. It is tempting to believe that       question has a short but far-reaching answer. If we can
-there must always be a proof of either φ or ¬φ, but in        find a model M of ZFC in which φ is false, then there
-1931 gödel [VI.92](/part-06/kurt-gdel-19061978) proved in his famous incomplete-           cannot be a proof of φ (because that proof would show
-ness theorems [V.15](/part-05/gdels-theorem) that this is not the case. The first      that φ was true in M). Therefore, if we can find models
-incompleteness theorem says that in every axiomatic           M and N of ZFC with φ true in M and false in N, we
-formal system that is consistent and rich enough to           can conclude that φ is undecidable.
-develop basic arithmetic there are undecidable state-            Unfortunately, a consequence of Gödel’s second in-
-ments: that is, statements such that neither they nor         completeness theorem is that it is not possible to prove
-their negations are provable in the system. In partic-        in ZFC the existence of a model of ZFC. This is because
-ular, there are statements of the formal language of          another theorem of Gödel, called the completeness the-
-set theory that are neither provable nor disprovable          orem for first-order logic, asserts that ZFC is consistent
-from the ZFC axioms, supposing, that is, that ZFC is          if and only if it has a model. However, we can get around
-consistent.                                                   this difficulty by splitting the proof of the undecidabil-
-   But is ZFC consistent? The statement that asserts the      ity of φ into two relative consistency proofs: the first is
-consistency of ZFC, usually written as CON(ZFC), is the       a proof that if ZFC is consistent, then so is ZFC plus φ;
-translation into the language of set theory of:               and the second is a proof that if ZFC is consistent, then
-                                                              so is ZFC plus the negation of φ. That is, one assumes
-              0 = 1 is not provable in ZFC.
-                                                              that there is a model M of ZFC and proves the exis-
-This statement asserts that the sequence of symbols           tence of two models of ZFC: one where φ holds, and
-0 = 1 is not the last step of any formal proof from ZFC.      one where it fails. One can then conclude that either φ
-One can encode a formal proof as a finite sequence             and its negation are both unprovable in ZFC, or ZFC is
-of natural numbers that satisfies certain arithmetical         inconsistent, in which case everything is provable.
-properties, and there by regard the above statement               One of the most surprising results of twentieth-cen-
-as an arithmetical one. Gödel’s second incompleteness         tury mathematics is that the continuum hypothesis is
-theorem says that in any consistent axiomatic formal          undecidable in ZFC.
+lished by a proof of ¬φ. It is tempting to believe that
+there must always be a proof of either φ or ¬φ, but in
+1931 gödel [VI.92](/part-06/kurt-gdel-19061978) proved in his famous incomplete-
+ness theorems [V.15](/part-05/gdels-theorem) that this is not the case. The first
+incompleteness theorem says that in every axiomatic
+formal system that is consistent and rich enough to
+develop basic arithmetic there are undecidable state-
+ments: that is, statements such that neither they nor
+their negations are provable in the system. In partic-
+ular, there are statements of the formal language of
+set theory that are neither provable nor disprovable
+from the ZFC axioms, supposing, that is, that ZFC is
+consistent.
+   But is ZFC consistent? The statement that asserts the
+consistency of ZFC, usually written as CON(ZFC), is the
+translation into the language of set theory of:
+
+This statement asserts that the sequence of symbols
+0 = 1 is not the last step of any formal proof from ZFC.
+One can encode a formal proof as a finite sequence
+of natural numbers that satisfies certain arithmetical
+properties, and there by regard the above statement
+as an arithmetical one. Gödel’s second incompleteness
+theorem says that in any consistent axiomatic formal
 system that is rich enough to develop basic arithmetic,
-the arithmetical statement that asserts the consistency                 5   The Continuum Hypothesis
-of the system cannot be proved. Thus, if ZFC is con-          Cantor’s continuum hypothesis (CH), first formulated
-sistent, then its consistency can neither be proved nor       in 1878, states that every infinite set of real numbers
-disproved in ZFC.                                             is either countable or has the same cardinality as R.
-   ZFC is currently accepted as the standard formal sys-      In ZFC, since AC implies that every set, and in par-
-tem in which to develop mathematics. Thus, the truth          ticular every infinite set of real numbers, can be put
-of a mathematical statement is firmly established if its       into one-to-one and onto correspondence with a cardi-
-translation into the language of set theory is provable       nal number, one can easily see that CH is equivalent to
-in ZFC. But what about undecidable statements? Since          the assertion that the cardinality of R is א1 , or equiva-
-ZFC embodies all standard mathematical methods, the           lently, that 2א0 = א1 , the version of the statement that
-fact that a given mathematical statement φ is und ecid-        we mentioned earlier.
-able in ZFC means that the truth or falsity of φ cannot          Solving CH was the first problem in Hilbert’s famous
-be established by means of usual mathematical prac-           list of twenty-three unsolved problems, and has been
-tice. If all undecidable statements were like CON(ZFC),       one of the main driving forces for the development of
-this would probably not be a cause of worry, since they       set theory. In spite of many attempts at proving CH by
-seem not to directly affect the kind of mathematical           Cantor himself and by many leading mathematicians
-problems that people are usually interested in. But for       of the first third of the twentieth century, no major
-better or worse this is not so. As we will see, there         progress was made until, sixty years after its formula-
-are many statements of mathematical interest that are         tion, Gödel was able to prove its consistency with ZFC.
+the arithmetical statement that asserts the consistency
+of the system cannot be proved. Thus, if ZFC is con-
+sistent, then its consistency can neither be proved nor
+disproved in ZFC.
+   ZFC is currently accepted as the standard formal sys-
+tem in which to develop mathematics. Thus, the truth
+of a mathematical statement is firmly established if its
+translation into the language of set theory is provable
+in ZFC. But what about undecidable statements? Since
+ZFC embodies all standard mathematical methods, the
+fact that a given mathematical statement φ is und ecid-
+able in ZFC means that the truth or falsity of φ cannot
+be established by means of usual mathematical prac-
+tice. If all undecidable statements were like CON(ZFC),
+this would probably not be a cause of worry, since they
+seem not to directly affect the kind of mathematical
+problems that people are usually interested in. But for
+better or worse this is not so. As we will see, there
+are many statements of mathematical interest that are
 undecidable in ZFC.
-                                                              5.1   The Constructible Universe
    There is an obvious way of showing that a mathemat-
-ical statement has a proof: you just find one. But how         In 1938, Gödel found a way to construct, starting with
+ical statement has a proof: you just find one. But how
 can it be possible to prove, mathematically, that a given     a model M of ZFC, another model of ZFC, contained
+
+623
+question has a short but far-reaching answer. If we can
+find a model M of ZFC in which φ is false, then there
+cannot be a proof of φ (because that proof would show
+that φ was true in M). Therefore, if we can find models
+M and N of ZFC with φ true in M and false in N, we
+can conclude that φ is undecidable.
+Unfortunately, a consequence of Gödel’s second in-
+completeness theorem is that it is not possible to prove
+in ZFC the existence of a model of ZFC. This is because
+another theorem of Gödel, called the completeness the-
+orem for first-order logic, asserts that ZFC is consistent
+if and only if it has a model. However, we can get around
+this difficulty by splitting the proof of the undecidabil-
+ity of φ into two relative consistency proofs: the first is
+a proof that if ZFC is consistent, then so is ZFC plus φ;
+and the second is a proof that if ZFC is consistent, then
+so is ZFC plus the negation of φ. That is, one assumes
+0 = 1 is not provable in ZFC.
+that there is a model M of ZFC and proves the exis-
+tence of two models of ZFC: one where φ holds, and
+one where it fails. One can then conclude that either φ
+and its negation are both unprovable in ZFC, or ZFC is
+inconsistent, in which case everything is provable.
+One of the most surprising results of twentieth-cen-
+tury mathematics is that the continuum hypothesis is
+undecidable in ZFC.
+5   The Continuum Hypothesis
+Cantor’s continuum hypothesis (CH), first formulated
+in 1878, states that every infinite set of real numbers
+is either countable or has the same cardinality as R.
+In ZFC, since AC implies that every set, and in par-
+ticular every infinite set of real numbers, can be put
+into one-to-one and onto correspondence with a cardi-
+nal number, one can easily see that CH is equivalent to
+the assertion that the cardinality of R is א1 , or equiva-
+lently, that 2א0 = א1 , the version of the statement that
+we mentioned earlier.
+Solving CH was the first problem in Hilbert’s famous
+list of twenty-three unsolved problems, and has been
+one of the main driving forces for the development of
+set theory. In spite of many attempts at proving CH by
+Cantor himself and by many leading mathematicians
+of the first third of the twentieth century, no major
+progress was made until, sixty years after its formula-
+tion, Gödel was able to prove its consistency with ZFC.
+5.1   The Constructible Universe
+In 1938, Gödel found a way to construct, starting with
 
 $624$
 
@@ -343,9 +463,9 @@ Then, with the help of the Löwenheim-Skolem theorem, one can show that there is
 IV. Branches of Mathematics
 
 explicitly definable in one of the previous stages, L is the smallest possible model of ZFC containing all the ordinals, and in it the cardinality of R is also the smallest possible, namely א 1 . In fact, in L the generalized continuum hypothesis (GCH) holds: that is, for every ordinal α, $2$ א α has the smallest possible value, namely, $\alephα + {}^{1}$ . The theory of constructible sets went through an extraordinary development in the hands of Ronald Jensen.
-He showed that in L a well-known conjecture called Suslin’s hypothesis was false (see section $10$ below) and isolated two important combinatorial principles, known as ♦ (diamond) and   (square) , that hold in L. These two principles, which will not be defined here, enable us to carry out constructions of uncountable mathematical structures by induction on the ordinals in such a way that the construction does not break down at limit stages. This is extremely useful, because it allows one to prove consistency results with out going to the trouble of analyzing constructible sets:
+He showed that in L a well-known conjecture called Suslin’s hypothesis was false (see section $10$ below) and isolated two important combinatorial principles, known as ♦ (diamond) and   (square), that hold in L. These two principles, which will not be defined here, enable us to carry out constructions of uncountable mathematical structures by induction on the ordinals in such a way that the construction does not break down at limit stages. This is extremely useful, because it allows one to prove consistency results with out going to the trouble of analyzing constructible sets:
 if you can deduce a statement φ from ♦ or   , then it holds in L, since, by Jensen’s results, ♦ and   hold in L; it follows that φ is consistent with ZFC. There is also an important generalization of the notion of construct i bility, called inner model theory. Given any set A it is possible to build the constructible closure of A, which is the smallest model of ZF that contains all ordinals and A.
-This model, called L (A) , is built in the same way as L, but instead of beginning with the empty set one begins with the transitive closure of A, which consists of A, the elements of A, the elements of the elements of A, and so on. Models of this sort are examples of inner models: that is, models of ZF that contain all the ordinals and all the elements of their elements. Especially prominent are the inner models L (r), where r is a real number, and L (R), the constructible closure of the set of real numbers.
+This model, called L (A), is built in the same way as L, but instead of beginning with the empty set one begins with the transitive closure of A, which consists of A, the elements of A, the elements of the elements of A, and so on. Models of this sort are examples of inner models: that is, models of ZF that contain all the ordinals and all the elements of their elements. Especially prominent are the inner models L (r), where r is a real number, and L (R), the constructible closure of the set of real numbers.
 Also very important are the inner models of large-cardinal axioms, which will be discussed in section $6$ below. After the result of Gödel, and given the repeated failed attempts to prove CH in ZFC, the idea started to take shape that maybe it was undecidable. To prove this, it was necessary to find a way to build a model of ZFC in which CH is false. This was finally accomplished twenty-five years later, in 1963 , by Paul Cohen, using a revolutionary new technique called forcing.
 
 $5$ . $2$
@@ -396,58 +516,102 @@ Since AC holds in L, this amounted to constructing a model of ZF in which AC was
 The reason is that any well-ordering of A would be definable in L (A) with a finite number of ordinals and finitely many elements of A as parameters, and then each one of the c n would in its turn be definable by indicating its ordinal position in the well-ordering. But since the whole sequence of c n s is generic over L, no formula can distinguish one of the c n s from another unless they appear as parameters in the formula.
 Since we can choose two different c n s that do not appear as parameters in the definition of the well-ordering of A, and that well-ordering distinguishes all the c n s from each other, we have a contradiction. Therefore, the set A cannot be well-ordered, so AC does not hold.
 
-IV.22.   Set Theory                                                                                                627
+IV.22.   Set Theory
 
-   Immediately after Cohen’s proof of the independence       cardinals (see the next section), which have provided
-of AC from ZF and of CH from ZFC, a result for which         new insights into the continuum hypothesis (see the
-he got the Fields Medal in 1966, many set theorists          end of section 10).
-started developing the forcing technique in its full gen-       The large number of independence results obtained
-erality (notably Azriel Lévy, Dana Scott, Joseph Shoen-      by forcing have made very clear that the axioms of
+   Immediately after Cohen’s proof of the independence
+of AC from ZF and of CH from ZFC, a result for which
+he got the Fields Medal in 1966, many set theorists
+started developing the forcing technique in its full gen-
+erality (notably Azriel Lévy, Dana Scott, Joseph Shoen-
 field, and Robert Solovay) and began to apply it to other     ZFC are insufficient to answer many fundamental math-
-well-known mathematical problems. For instance, Solo-        ematical questions. Thus, it is desirable to find new
-vay constructed a model of ZF in which every set of          axioms that, once added to ZFC, will provide a solu-
-real numbers is lebesgue measurable [III.55](/part-03/measures), there by        tion to some of those questions. We shall discuss some
-showing that AC is necessary for the existence of non-       candidates in the next few sections.
+well-known mathematical problems. For instance, Solo-
+vay constructed a model of ZF in which every set of
+real numbers is lebesgue measurable [III.55](/part-03/measures), there by
+showing that AC is necessary for the existence of non-
 measurable sets. He also constructed a model of ZFC
-where every definable set of real numbers is Lebesgue                          6   Large Cardinals
+where every definable set of real numbers is Lebesgue
 measurable; therefore, nonmeasurable sets, although
-they can be proved to exist (see the example in sec-         As we have already seen, the collection of all ordinal
-tion 6.1 below), cannot be explicitly given; Solovay         numbers cannot form a set. But if it did, then to that
-and Stanley Tennenbaum developed the theory of iter-         set there would correspond an ordinal number κ. This
-ated forcing and used it to prove the consistency of         ordinal would coincide with the κth cardinal אκ , since
+they can be proved to exist (see the example in sec-
+tion 6.1 below), cannot be explicitly given; Solovay
+and Stanley Tennenbaum developed the theory of iter-
+ated forcing and used it to prove the consistency of
 Suslin’s hypothesis (see section 10 below); Adrian Math-     otherwise אκ would be a larger ordinal. More over, Vκ
-ias proved the consistency of the infinitary form of          would be a model of ZFC. We cannot prove in ZFC that
-ramsey’s theorem [IV.19 §2.2](/part-04/extremal-and-probabilistic-combinatorics); Saharon Shelah proved         there is an ordinal κ with these properties, for then
-the undecidability of the Whitehead problem in group         we would have proved in ZFC that ZFC has a model,
-theory; and Richard Laver proved the consistency of the      which is impossible by Gödel’s second incompleteness
+ias proved the consistency of the infinitary form of
+ramsey’s theorem [IV.19 §2.2](/part-04/extremal-and-probabilistic-combinatorics); Saharon Shelah proved
+the undecidability of the Whitehead problem in group
+theory; and Richard Laver proved the consistency of the
 Borel conjecture; to cite just a few remarkable examples     theorem. So, why do we not add to ZFC the axiom that
-from the 1970 s.                                              says that there is a cardinal κ such that Vκ is a model
+from the 1970 s.
    The forcing technique now pervades all of set theory.     of ZFC?
-It continues to be a research area of great interest,           This axiom, with the further requirement that κ be
-very sophisticated from the technical point of view and      regular, that is, not the limit of fewer than κ smaller
-of great beauty. It keeps producing important results,       cardinals, was proposed in 1930 by sierpiński [VI.77](/part-06/wacaw-sierpinski-18821969)
-with applications in many areas of mathematics, such         and tarski [VI.87](/part-06/alfred-tarski-19011983), and it is the first of the large-
-as topology, combinatorics, and analysis. Especially         cardinal axioms. A cardinal κ with those properties is
-influential has been the development over the last            called inaccessible.
-twenty-five years of the theory of proper forcing, intro-        Other notions of large cardinals, which implied inac-
-duced by Shelah. Proper forcing has proved very use-         cessibility, kept appearing during the twentieth cen-
+It continues to be a research area of great interest,
+very sophisticated from the technical point of view and
+of great beauty. It keeps producing important results,
+with applications in many areas of mathematics, such
+as topology, combinatorics, and analysis. Especially
+influential has been the development over the last
+twenty-five years of the theory of proper forcing, intro-
+duced by Shelah. Proper forcing has proved very use-
 ful in the context of forcing iterations, and in the for-    tury. Some of them originated in generalizations to
-mulation and study of new forcing axioms, which will         uncountable sets of the infinite version of Ramsey’s
-be dealt with in section 10, as well as in the analy-        theorem, which states that if each (unordered) pair
-sis of cardinal invariants of the continuum. These are       of elements of ω (i.e., of natural numbers) is painted
-uncountable cardinals associated with various topolog-       either red or blue, then there is an infinite subset X of
+mulation and study of new forcing axioms, which will
+be dealt with in section 10, as well as in the analy-
+sis of cardinal invariants of the continuum. These are
+uncountable cardinals associated with various topolog-
 ical or combinatorial properties of the real line that can   ω such that all pairs of elements of X have the same
-consistently take different values in different models         color. The natural generalization of the theorem to ω1
-obtained by forcing. An example of a cardinal invari-        turns out to be false. However, on the positive side, Paul
-ant is the least number of null sets needed to cover         Erdős and Richard Rado proved that for every cardinal
-the real line. Another important development has been        κ > 2א0 , if each pair of elements of κ is painted either
-the use of class forcing by Anthony Dodd and Ronald          red or blue, then there is a subset X of κ of size ω1 such
-Jensen for coding the universe into a single real num-       that all pairs of elements of X have the same color. This
-ber, which shows that, amazingly, one can always use         is one of the landmark results of the partition calculus,
-forcing to turn any model M into a model of the form         an important area of combinatorial set theory devel-
-L(r ) for some real number r . A more recent con tr ibu-       oped mainly by the Hungarian school, led by Erdős and
-tion is the invention by W. Hugh Woodin of new power-        András Hajnal. The problem of whether Ramsey’s the-
-ful forcing notions associated with the theory of large      orem can be generalized to some uncountable cardinal
+consistently take different values in different models
+obtained by forcing. An example of a cardinal invari-
+ant is the least number of null sets needed to cover
+the real line. Another important development has been
+the use of class forcing by Anthony Dodd and Ronald
+Jensen for coding the universe into a single real num-
+ber, which shows that, amazingly, one can always use
+forcing to turn any model M into a model of the form
+L(r ) for some real number r . A more recent con tr ibu-
+tion is the invention by W. Hugh Woodin of new power-
+ful forcing notions associated with the theory of large
+
+627
+cardinals (see the next section), which have provided
+new insights into the continuum hypothesis (see the
+end of section 10).
+The large number of independence results obtained
+by forcing have made very clear that the axioms of
+ematical questions. Thus, it is desirable to find new
+axioms that, once added to ZFC, will provide a solu-
+tion to some of those questions. We shall discuss some
+candidates in the next few sections.
+6   Large Cardinals
+As we have already seen, the collection of all ordinal
+numbers cannot form a set. But if it did, then to that
+set there would correspond an ordinal number κ. This
+ordinal would coincide with the κth cardinal אκ , since
+would be a model of ZFC. We cannot prove in ZFC that
+there is an ordinal κ with these properties, for then
+we would have proved in ZFC that ZFC has a model,
+which is impossible by Gödel’s second incompleteness
+says that there is a cardinal κ such that Vκ is a model
+This axiom, with the further requirement that κ be
+regular, that is, not the limit of fewer than κ smaller
+cardinals, was proposed in 1930 by sierpiński [VI.77](/part-06/wacaw-sierpinski-18821969)
+and tarski [VI.87](/part-06/alfred-tarski-19011983), and it is the first of the large-
+cardinal axioms. A cardinal κ with those properties is
+called inaccessible.
+Other notions of large cardinals, which implied inac-
+cessibility, kept appearing during the twentieth cen-
+uncountable sets of the infinite version of Ramsey’s
+theorem, which states that if each (unordered) pair
+of elements of ω (i.e., of natural numbers) is painted
+either red or blue, then there is an infinite subset X of
+color. The natural generalization of the theorem to ω1
+turns out to be false. However, on the positive side, Paul
+Erdős and Richard Rado proved that for every cardinal
+κ > 2א0 , if each pair of elements of κ is painted either
+red or blue, then there is a subset X of κ of size ω1 such
+that all pairs of elements of X have the same color. This
+is one of the landmark results of the partition calculus,
+an important area of combinatorial set theory devel-
+oped mainly by the Hungarian school, led by Erdős and
+András Hajnal. The problem of whether Ramsey’s the-
+orem can be generalized to some uncountable cardinal
 
 $628$
 
@@ -468,58 +632,106 @@ The proof given above of the existence of a non Lebesgue-measurable set of reals
 If such a measure exists, then the cardinality of the continuum cannot be א 1 , nor א 2 , nor any א n with n $<$ ω, etc. In fact, Ulam proved in 1930 that a positive solution to the measure problem implies that the cardinality of R is extremely large: it is greater than or equal to the least uncountable regular cardinal that is a limit of smaller cardinals.
 He also proved that the existence of a nontrivial countably additive measure on any set implies either a positive solution to the measure problem, or that there exists an uncountable cardinal κ with a (nontrivial) { $0$ , $1$ } - valued κ-additive measure that measures all its subsets. Such a cardinal is called measurable. If κ is measurable, then it is weakly compact, and therefore inaccessible. In fact, the set of
 
-IV.22.   Set Theory                                                                                                   629
+IV.22.   Set Theory
 
-weakly compact cardinals smaller than κ has measure            contain all elements of their elements), and in which
-1, and so κ is itself the κth weakly compact cardinal. It      certain large cardinals exist. The larger the cardinal,
-follows that the existence of a measurable cardinal can-       the more difficult it is to build the model. This work
-not be proved in ZFC, even if one adds the axiom that          is known as the inner model program.
-inaccessible, or weakly compact, cardinals exist (unless,         One of the striking consequences of the inner model
-of course, ZFC plus the existence of such cardinals is         program is that it provides a way of measuring the
-inconsistent). A complete clarification of the measure          consistency strength of virtually any set-theoretic state-
-problem was finally provided by Solovay, who showed             ment φ, using large cardinals. That is, there are large-
-that if the solution is positive, then there is an inner       cardinal axioms A1 and A2 such that the consistency of
-model with a measurable cardinal. Conversely, if there         ZFC plus φ implies that of ZFC plus A1 and is implied
-is a measurable cardinal, then one can build a forcing         by the consistency of ZFC plus A2 . We refer to A1
-extension where the measure problem has a positive             as a lower bound for the consistency of φ and to A2
-solution.                                                      as an upper bound. In the fortunate cases when the
-   An unexpected consequence of the existence of a             lower and upper bounds coincide, we obtain an exact
-measurable cardinal is that the universe V cannot be           measure of the consistency strength of φ. An upper
-L: that is, there are non constructible sets, and even          bound A2 is usually obtained by forcing over a model
-non constructible real numbers. In fact, if there is a          of ZFC plus A2 , where as a lower bound A1 is obtained
-measurable cardinal, then V is much larger than L.             by inner model theory. Earlier in this section we saw
-For instance, the first uncountable cardinal, א1 , is an        that the consistency strength of a positive solution to
-inaccessible cardinal in L.                                    the measure problem is exactly that of the existence of
-   After the invention of forcing and the subsequent           a measurable cardinal. We shall see another important
-avalanche of independence results, the hope arose that         example in the next section.
-axioms asserting the existence of large cardinals, like           Knowing upper and lower bounds for the consistency
-measurable cardinals, would settle some of the ques-           strength of set-theoretic statements—or, even better,
-tions that, thanks to the forcing technique, had been          knowing their exact consistency strength—is extremely
-proved undecidable in ZFC. It was soon shown, how-             useful for comparing them. Indeed, if the lower bound
-ever, by Lévy and Solovay, that large-cardinal axioms          for a sentence φ is greater than the upper bound for
-could not settle CH, as one could easily use forcing to        another sentence ψ, then we can conclude, via Gödel’s
-change the cardinality of the continuum and make CH            incompleteness theorem, that ψ does not imply φ.
+weakly compact cardinals smaller than κ has measure
+1, and so κ is itself the κth weakly compact cardinal. It
+follows that the existence of a measurable cardinal can-
+not be proved in ZFC, even if one adds the axiom that
+inaccessible, or weakly compact, cardinals exist (unless,
+of course, ZFC plus the existence of such cardinals is
+inconsistent). A complete clarification of the measure
+problem was finally provided by Solovay, who showed
+that if the solution is positive, then there is an inner
+model with a measurable cardinal. Conversely, if there
+is a measurable cardinal, then one can build a forcing
+extension where the measure problem has a positive
+solution.
+   An unexpected consequence of the existence of a
+measurable cardinal is that the universe V cannot be
+L: that is, there are non constructible sets, and even
+non constructible real numbers. In fact, if there is a
+measurable cardinal, then V is much larger than L.
+For instance, the first uncountable cardinal, א1 , is an
+inaccessible cardinal in L.
+   After the invention of forcing and the subsequent
+avalanche of independence results, the hope arose that
+axioms asserting the existence of large cardinals, like
+measurable cardinals, would settle some of the ques-
+tions that, thanks to the forcing technique, had been
+proved undecidable in ZFC. It was soon shown, how-
+ever, by Lévy and Solovay, that large-cardinal axioms
+could not settle CH, as one could easily use forcing to
+change the cardinality of the continuum and make CH
 hold or fail with out destroying the large cardinals. But
-Solovay proved in 1969 that, surprisingly, if there exists                    7   Cardinal Arithmetic
+Solovay proved in 1969 that, surprisingly, if there exists
 a measurable cardinal, then all Σ21 sets of real num-
-bers are Lebesgue measurable. So, while the axiom that         Beyond the continuum hypothesis, understanding the
-asserts the existence of a measurable cardinal cannot          behavior of the exponential function 2κ for arbitrary
-settle the size of the continuum, it has a profound effect      infinite cardinals κ has been a motivating force in set
-on its structure. It is indeed astonishing that measur-        theory. Cantor proved that 2κ > κ for all κ, and Dénes
-able cardinals, so far away from the sets of real num-         König proved that the cofinality of 2κ is always greater
-bers in the universe V , have such a strong influence on        than κ: that is, 2κ is not the limit of fewer than κ smaller
-their basic properties. While the relationship between         cardinals. The GCH, which, as we saw, holds in the con-
-large cardinals and the structure of the continuum is          structible universe L, states precisely that 2κ has the
-not yet fully understood, great progress has been made         least possible value, namely, the least cardinal greater
+bers are Lebesgue measurable. So, while the axiom that
+asserts the existence of a measurable cardinal cannot
+settle the size of the continuum, it has a profound effect
+on its structure. It is indeed astonishing that measur-
+able cardinals, so far away from the sets of real num-
+bers in the universe V , have such a strong influence on
+their basic properties. While the relationship between
+large cardinals and the structure of the continuum is
+not yet fully understood, great progress has been made
 in the last thirty years through the work done in descrip-     than κ, usually denoted by κ + . One might think that,
-tive set theory and determinacy, which will be described       as in the case of 2א0 , by forcing it should be possi-
-in sections 8 and 9 below.                                     ble to build models of ZFC where 2κ takes any pre-
-   Some of the deepest and most technically difficult            scribed value, subject only to the necessary require-
-work in set theory is currently devoted to the con struc-       ment that its cofinality should be greater than κ. This
-tion and analysis of canonical inner models for large          is true for cardinals κ that are regular, that is, not the
-cardinals. These are analogues of L for large cardinals,       limit of fewer than κ smaller cardinals. Indeed, William
-that is, they are models built in some canonical way           Easton showed that for any function F on the regu-
+tive set theory and determinacy, which will be described
+in sections 8 and 9 below.
+   Some of the deepest and most technically difficult
+work in set theory is currently devoted to the con struc-
+tion and analysis of canonical inner models for large
+cardinals. These are analogues of L for large cardinals,
+that is, they are models built in some canonical way
 that contain all the ordinals and are transitive (i.e., they   lar cardinals such that κ ⩽ . ambda implies F (κ) ⩽ F (λ)
+
+629
+contain all elements of their elements), and in which
+certain large cardinals exist. The larger the cardinal,
+the more difficult it is to build the model. This work
+is known as the inner model program.
+One of the striking consequences of the inner model
+program is that it provides a way of measuring the
+consistency strength of virtually any set-theoretic state-
+ment φ, using large cardinals. That is, there are large-
+cardinal axioms A1 and A2 such that the consistency of
+ZFC plus φ implies that of ZFC plus A1 and is implied
+by the consistency of ZFC plus A2 . We refer to A1
+as a lower bound for the consistency of φ and to A2
+as an upper bound. In the fortunate cases when the
+lower and upper bounds coincide, we obtain an exact
+measure of the consistency strength of φ. An upper
+bound A2 is usually obtained by forcing over a model
+of ZFC plus A2 , where as a lower bound A1 is obtained
+by inner model theory. Earlier in this section we saw
+that the consistency strength of a positive solution to
+the measure problem is exactly that of the existence of
+a measurable cardinal. We shall see another important
+example in the next section.
+Knowing upper and lower bounds for the consistency
+strength of set-theoretic statements—or, even better,
+knowing their exact consistency strength—is extremely
+useful for comparing them. Indeed, if the lower bound
+for a sentence φ is greater than the upper bound for
+another sentence ψ, then we can conclude, via Gödel’s
+incompleteness theorem, that ψ does not imply φ.
+7   Cardinal Arithmetic
+Beyond the continuum hypothesis, understanding the
+behavior of the exponential function 2κ for arbitrary
+infinite cardinals κ has been a motivating force in set
+theory. Cantor proved that 2κ > κ for all κ, and Dénes
+König proved that the cofinality of 2κ is always greater
+than κ: that is, 2κ is not the limit of fewer than κ smaller
+cardinals. The GCH, which, as we saw, holds in the con-
+structible universe L, states precisely that 2κ has the
+least possible value, namely, the least cardinal greater
+as in the case of 2א0 , by forcing it should be possi-
+ble to build models of ZFC where 2κ takes any pre-
+scribed value, subject only to the necessary require-
+ment that its cofinality should be greater than κ. This
+is true for cardinals κ that are regular, that is, not the
+limit of fewer than κ smaller cardinals. Indeed, William
+Easton showed that for any function F on the regu-
 
 $630$
 
@@ -582,58 +794,104 @@ More complex projective sets are obtained by taking complements of (Σ2)1 sets, 
 More over, the results and techniques of descriptive set theory, although originally developed for the study of sets of reals, also apply to definable sets in any Polish space (a separable and completemetriza ble space). These include basic examples such as R n , C , separable banach spaces [III.62](/part-03/normed-spaces-and-banach-spaces), etc., where projective sets arise in a very natural way.
 For example, in the space  C[0 , 1 ] of continuous real-valued functions on [0 , 1] with the sup norm, the set of every where differentiable functions is coanalytic, and the set of functions that satisfy the mean value theorem is (Π2)1 . Thus, since descriptive set theory deals with rather natural
 
-632                                                                                      IV. Branches of Mathematics
+632
 
-sets in Polish spaces of general mathematical interest,        sets to all projective sets of reals, and more generally
-it is not surprising that it has found many applica-           to all projective sets in Polish spaces.
-tions in other areas of mathematics such as harmonic              In spite of the enormous success of the known large-
-analysis, group actions, ergodic theory, and dynamical         cardinal axioms, not only in descriptive set theory but
-systems.                                                       also in many other areas of mathematics, their status as
-   Classical results of descriptive set theory are that        true axioms of set theory is still a matter of debate. This
+sets in Polish spaces of general mathematical interest,
+it is not surprising that it has found many applica-
+tions in other areas of mathematics such as harmonic
+analysis, group actions, ergodic theory, and dynamical
+systems.
+   Classical results of descriptive set theory are that
 all analytic sets, and hence also all coanalytic sets, are     is more so in the case of very large cardinals such as
-Lebesgue measurable and have the Baire property, and           the supercompact ones, the reason being that there is
-that all uncountable analytic sets contain a perfect set.      as yet no inner model theory available for them, which
-However, as we have already pointed out, one cannot            means that there is not even strong evidence for their
-prove in ZFC that all Σ21 sets have those properties,          consistency. However, it should be noted that, as Har-
-since in L there are counterexamples. By contrast, if          vey Friedman has shown, large cardinals are necessary
-there exists a measurable cardinal, then they do have          even for proving quite simple-looking and rather nat-
-them. But what about more complex projective sets?             ural statements about finite functions on the integers,
-   The theory of projective sets is closely tied to large      which provides evidence for their essential role in even
-cardinals. On the one hand, Solovay showed that if the         the most basic parts of mathematics. Another short-
-existence of an inaccessible cardinal is consistent, then      coming of the known large-cardinal axioms is that they
-so is the statement that every projective set of reals         cannot decide some fundamental questions. The most
-is Lebesgue measurable, has the Baire property, etc.           conspicuous is CH, but there are others.
+Lebesgue measurable and have the Baire property, and
+that all uncountable analytic sets contain a perfect set.
+However, as we have already pointed out, one cannot
+prove in ZFC that all Σ21 sets have those properties,
+since in L there are counterexamples. By contrast, if
+there exists a measurable cardinal, then they do have
+them. But what about more complex projective sets?
+   The theory of projective sets is closely tied to large
+cardinals. On the one hand, Solovay showed that if the
+existence of an inaccessible cardinal is consistent, then
+so is the statement that every projective set of reals
+is Lebesgue measurable, has the Baire property, etc.
 On the other hand, Shelah showed, quite unexpectedly,
-that the inaccessible cardinal is necessary, in the sense                      10    Forcing Axioms
+that the inaccessible cardinal is necessary, in the sense
 that if all Σ31 sets are Lebesgue measurable, then א1 is
-an inaccessible cardinal in L.                                 Another old and basic question about the continuum
-   Nearly all the classical properties of Borel and ana-       that the known large-cardinal axioms cannot solve is
-lytic sets are shared by the projective sets, assuming         Suslin’s hypothesis (SH). Cantor had proved that every
-that they are determined. So since the determinacy of          linearly ordered set that is dense (i.e., any two distinct
-all projective sets cannot be proved in ZFC and since it       elements have another element in between), complete
-allows for the extension of the theory of Borel and ana-       (i.e., every nonempty subset with an upper bound has a
+an inaccessible cardinal in L.
+   Nearly all the classical properties of Borel and ana-
+lytic sets are shared by the projective sets, assuming
+that they are determined. So since the determinacy of
+all projective sets cannot be proved in ZFC and since it
+allows for the extension of the theory of Borel and ana-
 lytic sets to all projective sets in a very elegant and sat-   supremum), separable (i.e., contains a dense countable
 is factory way, it constitutes an excellent candidate for a     subset), and with out endpoints is order-isomorphic to
-new set-theoretic axiom. This axiom is known as projec-        the real line. In 1920 Suslin conjectured that if instead
+new set-theoretic axiom. This axiom is known as projec-
 tive determinacy (PD). It implies, for instance, that every    of separability one assumes the weaker countable chain
-projective set is Lebesgue measurable, has the Baire           condition, or CCC, which demands that every pairwise-
-property, and has the perfect set property. In partic-         disjoint collection of open intervals should be at most
-ular, since every uncountable perfect set has the same         countable, then it must still be isomorphic to R. The
-cardinality as R, it implies that there is no projective       importance of SH for the development of set theory is
-counterexample to CH.                                          that it led to the discovery of a new class of axioms, the
-   One of the most remarkable advances in set theory           so-called forcing axioms.
-over the last twenty years is the proof that PD follows           In 1967, Solovay and Tennenbaum used forcing to
-from the existence of large cardinals. Martin and John         construct a model in which SH holds. The idea is to use
-Steel proved in 1988 that if there exist infinitely many        the forcing to destroy any counterexamples that there
-so-called Woodin cardinals, then PD holds. Woodin car-         might be to SH. But when one does this one may cre-
-dinals lie between measurable and supercompact in              ate new ones, and the result is that one needs to force
-the hierarchy of large cardinals. Subsequently, Woodin         again and again, transfinitely many times. The iteration
-showed that, surprisingly, the hypothesis that for each        of forcing is technically cumbersome and difficult to
-n it is consistent that there exist n Woodin cardinals         control, for many unwanted things can happen at the
-is necessary in order to obtain the consistency of PD.         limit stages. For instance, ω1 may be “collapsed,” i.e.,
-Thus the existence of infinitely many Woodin cardinals          it may become countable.
-is a sufficient, and essentially necessary, assumption              Fortunately, these difficulties can be dealt with. In
-for extending the classical theory of Borel and analytic       general, a forcing argument involves a partially ordered
+projective set is Lebesgue measurable, has the Baire
+property, and has the perfect set property. In partic-
+ular, since every uncountable perfect set has the same
+cardinality as R, it implies that there is no projective
+counterexample to CH.
+   One of the most remarkable advances in set theory
+over the last twenty years is the proof that PD follows
+from the existence of large cardinals. Martin and John
+Steel proved in 1988 that if there exist infinitely many
+so-called Woodin cardinals, then PD holds. Woodin car-
+dinals lie between measurable and supercompact in
+the hierarchy of large cardinals. Subsequently, Woodin
+showed that, surprisingly, the hypothesis that for each
+n it is consistent that there exist n Woodin cardinals
+is necessary in order to obtain the consistency of PD.
+Thus the existence of infinitely many Woodin cardinals
+is a sufficient, and essentially necessary, assumption
+for extending the classical theory of Borel and analytic
+
+IV. Branches of Mathematics
+sets to all projective sets of reals, and more generally
+to all projective sets in Polish spaces.
+In spite of the enormous success of the known large-
+cardinal axioms, not only in descriptive set theory but
+also in many other areas of mathematics, their status as
+true axioms of set theory is still a matter of debate. This
+the supercompact ones, the reason being that there is
+as yet no inner model theory available for them, which
+means that there is not even strong evidence for their
+consistency. However, it should be noted that, as Har-
+vey Friedman has shown, large cardinals are necessary
+even for proving quite simple-looking and rather nat-
+ural statements about finite functions on the integers,
+which provides evidence for their essential role in even
+the most basic parts of mathematics. Another short-
+coming of the known large-cardinal axioms is that they
+cannot decide some fundamental questions. The most
+conspicuous is CH, but there are others.
+10    Forcing Axioms
+Another old and basic question about the continuum
+that the known large-cardinal axioms cannot solve is
+Suslin’s hypothesis (SH). Cantor had proved that every
+linearly ordered set that is dense (i.e., any two distinct
+elements have another element in between), complete
+(i.e., every nonempty subset with an upper bound has a
+the real line. In 1920 Suslin conjectured that if instead
+condition, or CCC, which demands that every pairwise-
+disjoint collection of open intervals should be at most
+countable, then it must still be isomorphic to R. The
+importance of SH for the development of set theory is
+that it led to the discovery of a new class of axioms, the
+so-called forcing axioms.
+In 1967, Solovay and Tennenbaum used forcing to
+construct a model in which SH holds. The idea is to use
+the forcing to destroy any counterexamples that there
+might be to SH. But when one does this one may cre-
+ate new ones, and the result is that one needs to force
+again and again, transfinitely many times. The iteration
+of forcing is technically cumbersome and difficult to
+control, for many unwanted things can happen at the
+limit stages. For instance, ω1 may be “collapsed,” i.e.,
+it may become countable.
+Fortunately, these difficulties can be dealt with. In
+general, a forcing argument involves a partially ordered
 
 $IV$ . $22$ .
 
@@ -657,7 +915,7 @@ The analogous principle of generic absoluteness, but for proper partial ordering
 $634$
 
 is strong enough to decide many questions that the large-cardinal axioms are unable to settle. Most notably, Justin Moore has recently proved, following a series of results by Woodin, David Asperó, and Todorcevic, that BPFA implies that the cardinality of R is א 2 . To finish, we briefly mention some deep results that establish strong underlying connections between large cardinals, inner models, determinacy, forcing axioms, generic absoluteness, and the continuum. These results hold under the assumption that for every ordinal α there exists a Woodin cardinal greater than α.
-The first one, due to Shelah and Woodin, is that the theory of L (R) is generically absolute. That is, all sentences with real numbers as parameters that would hold in the L (R) of any generic extension of V are already true in the real L (R) . This kind of generic absoluteness implies that all sets of reals in L (R), and in particular the projective sets, are Lebesgue measurable, have the Baire property, etc. Further more, by refining the Martin-Steel result that large cardinals imply PD, Woodin showed that in L (R) every set of reals is determined.
+The first one, due to Shelah and Woodin, is that the theory of L (R) is generically absolute. That is, all sentences with real numbers as parameters that would hold in the L (R) of any generic extension of V are already true in the real L (R). This kind of generic absoluteness implies that all sets of reals in L (R), and in particular the projective sets, are Lebesgue measurable, have the Baire property, etc. Further more, by refining the Martin-Steel result that large cardinals imply PD, Woodin showed that in L (R) every set of reals is determined.
 Another result of Woodin is that there is an axiom, which he calls (∗), that is intended to play the role for subsets of ω 1 that PD plays for sets of natural numbers, in the sense that it decides “practically all” questions about those sets. Of course, no consistent axiom can really decide all questions that refer only to subsets of ω 1 , since by Gödel’s incompleteness theorem there will always be undecidable arithmetical statements.
 So, to formulate precisely the notion of deciding practically all questions, Woodin introduces a new logic, called $\Omega - logic,$ that strengthens ordinary first-order logic. One of the main features of $\Omega - logic$ is that the valid statements in $\Omega - logic$ are generically absolute. Under suitable large-cardinal hypotheses, (∗) is consistent in $\Omega-$ logic and decides in $\Omega - logic$ all questions that refer only to subsets of ω 1 . The main open problem is the $\Omega - conjecture,$ whose formulation is quite technical and beyond the scope of this article.
 If the $\Omega - conjecture$ is true, then any axiom compatible with the existence of large cardinals that decides all questions that depend exclusively on subsets of $ω^{1}$ in $\Omega - logic$ must imply the negation of CH. Thus, the theories ZFC plus CH and ZFC plus not-CH are not equally reasonable from the point of view of $\Omega - logic,$ since in the presence of large cardinals CH puts an unnecessary limitation on the possibility of settling all natural questions about subsets of $ω^{1}$ .

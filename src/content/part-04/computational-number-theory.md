@@ -1,146 +1,211 @@
 # Computational Number Theory
 
-348                                                                                       IV. Branches of Mathematics
+348
 
-   The correct analogue of the Riemann hypothesis for          Further Reading
+   The correct analogue of the Riemann hypothesis for
 L(E, s) turns out to be that all the nontrivial zeros lie
-                                                               Hardy and Wright’s classic book (1980) stands alone
 on the line Re(s) = 1. This is believed to be true. More-
-                                                               among introductory number theory texts for the qual-
 over, it is believed that they, like the zeros of ζ(s),
-                                                               ity of its discussion of analytic topics. The best intro-
 are distributed according to the rules that govern the
-                                                               duction to the heart of analytic number theory is the
 eigenvalues of randomly chosen matrices.
-                                                               masterful book by Davenport (2000). Everything you
    These L-functions often have zeros at s = 1 (which
-                                                               have ever wanted to know about the Riemann zeta
 is linked to the birch–swinnerton-dyer conjec-
-                                                               function is in Titchmarsh (1986). Finally, there are
 ture [V.4](/part-05/the-birchswinnerton-dyer-conjecture)) and these zeros repel zeros of Dirichlet L-
-                                                               two recently released books by modern masters of the
 functions (which is what was used by Goldfeld, Gross,
-                                                               subject (Iwaniec and Kowalski 2004; Montgomery and
 and Zagier, as mentioned in section 4, to get their lower
-                                                               Vaughan 2006) that introduce the reader to the key
 bound on h−q ).
-                                                               issues of the subject.
    L-functions arise in many areas of arithmetic geom-
-                                                                  The reference list below includes several papers, sig-
 etry, and their coefficients typically describe the num-
-                                                               nif i cant for this article, whose content is not discussed
 ber of points satisfying certain equations mod p. The
-                                                               in any of the listed books.
 Langlands program seeks to understand these connec-
-tions at a deep level.                                         Davenport, H. 2000. Multiplicative Number Theory, 3 rd edn.
-   It seems that every “natural” L-function has many             New York: Springer.
-of the same analytic properties as those discussed             Deligne, P. 1977. Applications de la formule des traces
-                                                                 aux sommes trigonométriques. In Cohomologie Étale (SGA
+tions at a deep level.
+   It seems that every “natural” L-function has many
+of the same analytic properties as those discussed
 in this article. Selberg has proposed that this phe-
-                                                                 4 1/2). Lecture Notes in Mathematics, volume 569. New
 nomenon should be even more general. Consider sums
-                                                                York: Springer.
-A(s) = n⩾1 an /ns that                                         Green, B., and T. Tao. 2008. The primes contain arbitrarily
-  • are well-defined when Re(s) > 1,                              long arithmetic progressions. Annals of Mathematics 167:
 
-  • have an Euler product p (1 + bp /p s + bp2 /p2 s +            481–547.
-    · · · ) in this (or an even smaller) region,               Hardy, G. H., and E. M. Wright. 1980. An Introduction to the
-  • have coefficients an that are smaller than any                 Theory of Numbers, 5 th edn. Oxford: Oxford University
-                                                                 Press.
+A(s) = n⩾1 an /ns that
+  • are well-defined when Re(s) > 1,
+
+  • have an Euler product p (1 + bp /p s + bp2 /p2 s +
+    · · · ) in this (or an even smaller) region,
+  • have coefficients an that are smaller than any
     given power of n, once n is sufficiently large,
-                                                               Ingham, A. E. 1949. Review 10,595 c (MR0029411). Mathe-
-  • satisfy |bn | < κnθ for some constants θ < 12 and            mat ical Reviews. Providence, RI: American Mathematical
-    κ > 0.                                                       Society.
-Selberg conjectures that we should be able to give a           Iwaniec, H., and E. Kowalski. 2004. Analytic Number Theory.
-good definition to A(s) on the whole complex plane,               AMS Colloquium Publications, volume 53. Providence, RI:
-and that A(s) should have a symmetry connecting the              American Mathematical Society.
-                                                               Montgomery, H. L., and R. C. Vaughan. 2006. Multiplica-
+  • satisfy |bn | < κnθ for some constants θ < 12 and
+    κ > 0.
+Selberg conjectures that we should be able to give a
+good definition to A(s) on the whole complex plane,
+and that A(s) should have a symmetry connecting the
 value of A(s) with A(1−s). Further more, he conjectures
-                                                                 tive Number Theory I: Classical Theory. Cambridge: Cam-
 that the Riemann hypothesis should hold for A(s)!
-                                                                 bridge University Press.
-  The current wishful thinking is that Selberg’s family        Soundararajan, K. 2007. Small gaps between prime num-
-of L-functions is precisely the same as those considered         bers: the work of Goldston–Pintz–Yıldırım. Bulletin of the
-by Langlands.                                                    American Mathematical Society 44:1–18.
-                                                               Titchmarsh, E. C. 1986. The Theory of the Riemann Zeta-
-                    13   Conclusion                              Function, 2 nd edn. Oxford: Oxford University Press.
+  The current wishful thinking is that Selberg’s family
+of L-functions is precisely the same as those considered
+by Langlands.
 In this article we have described current thinking on
 several key questions about the distribution of primes.
-                                                               IV.3 Computational Number Theory
 It is frustrating that after centuries of research so little
-                                                                       Carl Pomerance
 has been proved, the primes guarding their mysteries
 so jealously. Each new breakthrough seems to require
-                                                                                   1   Introduction
 brilliant ideas and extraordinary technical prowess. As
-euler [VI.19](/part-06/leonhard-euler-17071783) wrote in 1770:                                   Historically, computation has been a driving force in
-                                                               the development of mathematics. To help measure the
+euler [VI.19](/part-06/leonhard-euler-17071783) wrote in 1770:
   Mathematicians have tried in vain to discover some
-  order in the sequence of prime numbers but we have           sizes of their fields, the Egyptians invented geometry.
-  every reason to believe that there are some mysteries        To help predict the positions of the planets, the Greeks
-  which the human mind will never penetrate.                   invented trigonometry. Algebra was invented to deal
+  order in the sequence of prime numbers but we have
+  every reason to believe that there are some mysteries
+  which the human mind will never penetrate.
 
-IV.3.   Computational Number Theory                                                                                   349
+IV. Branches of Mathematics
+Further Reading
+Hardy and Wright’s classic book (1980) stands alone
+among introductory number theory texts for the qual-
+ity of its discussion of analytic topics. The best intro-
+duction to the heart of analytic number theory is the
+masterful book by Davenport (2000). Everything you
+have ever wanted to know about the Riemann zeta
+function is in Titchmarsh (1986). Finally, there are
+two recently released books by modern masters of the
+subject (Iwaniec and Kowalski 2004; Montgomery and
+Vaughan 2006) that introduce the reader to the key
+issues of the subject.
+The reference list below includes several papers, sig-
+nif i cant for this article, whose content is not discussed
+in any of the listed books.
+Davenport, H. 2000. Multiplicative Number Theory, 3 rd edn.
+New York: Springer.
+Deligne, P. 1977. Applications de la formule des traces
+aux sommes trigonométriques. In Cohomologie Étale (SGA
+4 1/2). Lecture Notes in Mathematics, volume 569. New
+
+Green, B., and T. Tao. 2008. The primes contain arbitrarily
+long arithmetic progressions. Annals of Mathematics 167:
+481–547.
+Hardy, G. H., and E. M. Wright. 1980. An Introduction to the
+Theory of Numbers, 5 th edn. Oxford: Oxford University
+Press.
+Ingham, A. E. 1949. Review 10,595 c (MR0029411). Mathe-
+mat ical Reviews. Providence, RI: American Mathematical
+Society.
+Iwaniec, H., and E. Kowalski. 2004. Analytic Number Theory.
+AMS Colloquium Publications, volume 53. Providence, RI:
+American Mathematical Society.
+Montgomery, H. L., and R. C. Vaughan. 2006. Multiplica-
+tive Number Theory I: Classical Theory. Cambridge: Cam-
+bridge University Press.
+Soundararajan, K. 2007. Small gaps between prime num-
+bers: the work of Goldston–Pintz–Yıldırım. Bulletin of the
+American Mathematical Society 44:1–18.
+Titchmarsh, E. C. 1986. The Theory of the Riemann Zeta-
+13   Conclusion                              Function, 2 nd edn. Oxford: Oxford University Press.
+IV.3 Computational Number Theory
+Carl Pomerance
+1   Introduction
+Historically, computation has been a driving force in
+the development of mathematics. To help measure the
+sizes of their fields, the Egyptians invented geometry.
+To help predict the positions of the planets, the Greeks
+invented trigonometry. Algebra was invented to deal
 
-with equations that arose when mathematics was used             in Diophantine equations (Fermat’s last theorem and
-to model the world. The list goes on, and it is not just        the ABC conjecture); and in elementary number theory
-historical. If anything, computation is more important          (primality and factorization). A secondary theme that
-than ever. Much of modern technology rests on algo-             we shall explore is the strong and constructive inter-
-rithms that compute quickly: examples range from the            play between computation, heuristic reasoning, and
-wavelets [VII.3](/part-07/wavelets-and-applications) that allow CAT scans, to the numerical         conjecture.
+IV.3.   Computational Number Theory
+
+with equations that arose when mathematics was used
+to model the world. The list goes on, and it is not just
+historical. If anything, computation is more important
+than ever. Much of modern technology rests on algo-
+rithms that compute quickly: examples range from the
+wavelets [VII.3](/part-07/wavelets-and-applications) that allow CAT scans, to the numerical
 extrapolation of extremely complex systems in order to
-predict weather and global warming, and to the com-                     2   Distinguishing Prime Numbers
-binatorial algorithms that lie behind Internet search                        from Composite Numbers
+predict weather and global warming, and to the com-
+binatorial algorithms that lie behind Internet search
 engines (see the mathematics of algorithm design
-[VII.5 §6](/part-07/the-mathematics-of-algorithm-design)).                                                    The problem is simple to state. Given an integer n > 1,
-   In pure mathematics we also compute, and many                decide if n is prime or composite. And we all know an
-of our great theorems and conjectures are, at root,             algorithm. Divide n by each positive integer in turn.
-motivated by computational experience. It is said that          Either we find a proper factor, in which case we know
-gauss [VI.26](/part-06/carl-friedrich-gauss-17771855), who was an excellent computation a list,           that n is composite, or we do not, in which case we
-needed only to work out a concrete example or two               know that n is prime. For example, take n = 269. It is
-to discover, and then prove, the underlying theorem.            odd, so it has no even divisors. It is not a multiple of 3,
-While some branches of pure mathematics have per-               so it has no divisor which is a multiple of 3. Continuing,
-haps lost contact with their computational origins, the         we rule out 5, 7, 11, and 13. The next possibility, 17, has
-advent of cheap computational power and convenient              a square that is greater than 269, which means that if
-mathematical software has helped to reverse this trend.         269 were a multiple of 17, then it would also have to be
-   One mathematical area where the new emphasis on              a multiple of some number less than 17. Since we have
-computation can be clearly felt is number theory, and           ruled that out, we can stop our trial division at 13 and
+[VII.5 §6](/part-07/the-mathematics-of-algorithm-design)).
+   In pure mathematics we also compute, and many
+of our great theorems and conjectures are, at root,
+motivated by computational experience. It is said that
+gauss [VI.26](/part-06/carl-friedrich-gauss-17771855), who was an excellent computation a list,
+needed only to work out a concrete example or two
+to discover, and then prove, the underlying theorem.
+While some branches of pure mathematics have per-
+haps lost contact with their computational origins, the
+advent of cheap computational power and convenient
+mathematical software has helped to reverse this trend.
+   One mathematical area where the new emphasis on
+computation can be clearly felt is number theory, and
 that is the main topic of this article. A prescient call-to-    conclude that 269 is prime. (If we were actually carrying
-arms was issued by Gauss as long ago as 1801:                   out the algorithm, we might try dividing 269 by 17, in
-                                                                which case we would discover that 269 = 15 . imes 17 + 14.
+arms was issued by Gauss as long ago as 1801:
   The problem of distinguishing prime numbers from
-                                                                At that point we would notice that the quotient, 15,
   composite numbers, and of resolving the latter into
-  their prime factors, is known to be one of the most           is less than 17, which is what would tell us that 172
-  important and useful in arithmetic. It has engaged the        was greater than 269. Then we could stop.) In general,
-  industry and wisdom of ancient and modern geometers           since a composite number n has a proper factor d with
-                                                                     √
-  to such an extent that it would be superfluous to dis-         d ⩽ n, one can give up on the trial dividing once one
-  cuss the problem at length. Nevertheless we must con-                 √
-                                                                passes n, at which point we know that n is prime.
+  their prime factors, is known to be one of the most
+  important and useful in arithmetic. It has engaged the
+  industry and wisdom of ancient and modern geometers
+  to such an extent that it would be superfluous to dis-
+  cuss the problem at length. Nevertheless we must con-
   fess that all methods that have been proposed thus far
-                                                                   This straightforward method is excellent for men-
   are either restricted to very special cases or are so labo-
   rious and difficult that even for numbers that do not
-                                                                tal computation with small numbers, and for machine
-  exceed the limits of tables constructed by estimable          computation for some what larger numbers. But it
-  men, they try the patience of even the practiced cal-         scales poorly, in that if you double the number of digits
-  culator. And these methods do not apply at all to             of n, then the time for the worst case is squared; it is
+  exceed the limits of tables constructed by estimable
+  men, they try the patience of even the practiced cal-
+  culator. And these methods do not apply at all to
   larger numbers. . . . Further, the dignity of the science     therefore an “exponential-time” algorithm. One might
-  itself seems to require that every possible means be          tolerate such an algorithm for twenty-digit inputs, but
+  itself seems to require that every possible means be
   explored for the solution of a problem so elegant and
-                                                                think how long it would take to establish the primality
   so celebrated.
-                                                                of a forty-digit number! And you can forget about num-
-  Factorization into primes is a very basic issue in            bers with hundreds or thousands of digits. The issue
-number theory, but essentially all branches of num-             of how the running time of an algorithm scales when
-ber theory have a computational component. And in               one goes to larger inputs is absolutely paramount in
-some areas there is such a robust computational liter-          measuring one algorithm against another. In contrast
-ature that we discuss the algorithms involved as math-          to the exponential time it takes to use trial division to
-ematically interesting objects in their own right. In this      recognize primes, consider the problem of multiplying
-article we will briefly present a few examples of the            two numbers. The school method of multiplication is
-computational spirit: in analytic number theory (the            to take each digit of one number in turn and multiply
-distribution of primes and the Riemann hypothesis);             it by the other number, forming a parallelogram array.
+  Factorization into primes is a very basic issue in
+number theory, but essentially all branches of num-
+ber theory have a computational component. And in
+some areas there is such a robust computational liter-
+ature that we discuss the algorithms involved as math-
+ematically interesting objects in their own right. In this
+article we will briefly present a few examples of the
+computational spirit: in analytic number theory (the
+distribution of primes and the Riemann hypothesis);
+
+349
+in Diophantine equations (Fermat’s last theorem and
+the ABC conjecture); and in elementary number theory
+(primality and factorization). A secondary theme that
+we shall explore is the strong and constructive inter-
+play between computation, heuristic reasoning, and
+conjecture.
+2   Distinguishing Prime Numbers
+from Composite Numbers
+The problem is simple to state. Given an integer n > 1,
+decide if n is prime or composite. And we all know an
+algorithm. Divide n by each positive integer in turn.
+Either we find a proper factor, in which case we know
+that n is composite, or we do not, in which case we
+know that n is prime. For example, take n = 269. It is
+odd, so it has no even divisors. It is not a multiple of 3,
+so it has no divisor which is a multiple of 3. Continuing,
+we rule out 5, 7, 11, and 13. The next possibility, 17, has
+a square that is greater than 269, which means that if
+269 were a multiple of 17, then it would also have to be
+a multiple of some number less than 17. Since we have
+ruled that out, we can stop our trial division at 13 and
+out the algorithm, we might try dividing 269 by 17, in
+which case we would discover that 269 = 15 . imes 17 + 14.
+At that point we would notice that the quotient, 15,
+is less than 17, which is what would tell us that 172
+was greater than 269. Then we could stop.) In general,
+since a composite number n has a proper factor d with
+. qrt{d} ⩽ n, one can give up on the trial dividing once one
+√
+passes n, at which point we know that n is prime.
+This straightforward method is excellent for men-
+tal computation with small numbers, and for machine
+computation for some what larger numbers. But it
+scales poorly, in that if you double the number of digits
+of n, then the time for the worst case is squared; it is
+tolerate such an algorithm for twenty-digit inputs, but
+think how long it would take to establish the primality
+of a forty-digit number! And you can forget about num-
+bers with hundreds or thousands of digits. The issue
+of how the running time of an algorithm scales when
+one goes to larger inputs is absolutely paramount in
+measuring one algorithm against another. In contrast
+to the exponential time it takes to use trial division to
+recognize primes, consider the problem of multiplying
+two numbers. The school method of multiplication is
+to take each digit of one number in turn and multiply
+it by the other number, forming a parallelogram array.
 
 $350$
 
@@ -192,65 +257,107 @@ Namely, given a large odd number n, choose twenty values of a at random from [1 
 If it tells us that n is composite, then we know for sure that n is composite; if it tells us that n is prime, then the chances that n is not prime are so small as to be more or less negligible. If three quarters of the numbers a in [1 , n − 1 ] provide the key to an easily checkable proof that the odd composite number n is indeed composite, surely it should not be so hard to find just one! How about checking small numbers a, in order, until one is found? Excellent, but when do we stop? Let us think about this for a moment.
 We have given up the power of randomness and are forcing ourselves to choose sequentially among small numbers for the trial bases a. Can we argue heuristically that they continue to behave as if
 
-352                                                                                      IV. Branches of Mathematics
+352
 
-they were random choices? Well, there are some con-            0 (mod n). For example, (x + 1)7 is equal to
-nections among them. For example, if taking a = 2 does           x 7 + 7 x 6 + 21 x 5 + 35 x 4 + 35 x 3 + 21 x 2 + 7 x + 1,
+they were random choices? Well, there are some con-
+nections among them. For example, if taking a = 2 does
 not result in a proof that n is composite, then neither
 will taking any power of 2. It is theoretically possible for   and we see each internal coefficient is a multiple of 7.
-2 and 3 not to give proofs that n is composite but for         Thus, we have (x + 1)7 ≡ x 7 + 1 (mod 7). (Two poly-
-6 to work just fine, but this turns out not to be very          nomials are congruent mod n if corresponding coeffi-
-common. So let us amend the heuristic and assume               cients are congruent mod n.) In general, if n is prime
-that we have independence for prime values of a. Up            and a is any integer, then via this binomial-theorem
-to log n log log n there are about log n primes (via the       idea and Fermat’s little theorem we have
-prime number theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860) discussed later in this                    (x + a)n ≡ x n + an ≡ x n + a (mod n).
+2 and 3 not to give proofs that n is composite but for
+6 to work just fine, but this turns out not to be very
+common. So let us amend the heuristic and assume
+that we have independence for prime values of a. Up
+to log n log log n there are about log n primes (via the
+prime number theorem [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860) discussed later in this
 article); so, heuristically, the probability that n is com-
-                                                               It is an easy exercise to show that this congruence in the
 posite, but that none of these primes help us to prove it,
-                                                              simple case a = 1 is actually equivalent to primality.
 is about 4− log n < n−4/3 . Since the infinite sum n−4/3
-                                                               But as with the Wilson criterion we know no way of
 converges, perhaps a stopping point of log n log log n
-                                                               quickly verifying that all these coefficients are indeed
 is sufficient, at least for large n.
-                                                               divisible by n.
    Miller was able to prove the slightly weaker result
-                                                                  However, one can do more with polynomials than
 that a stopping point of c(log n)2 is adequate, but
-                                                               raise them to powers. We can also divide one poly-
-his proof assumes a generalization of the riemann              nomial by another to find a quotient and a remain-
-hypothesis [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860). (We discuss the Riemann hypoth-             der, just as we do with integers. It makes sense, for
-esis below; the generalization that Miller assumes is          example, to say that g(x) ≡ h(x) (mod f (x)), mean-
-beyond the scope of this article.) In further work, Bach       ing that g(x) and h(x) leave the same remainder
-was able to show that we may take c = 2 in this                when divided by f (x). We will write g(x) ≡ h(x)
-last result. Summarizing, if this generalized Riemann          (mod n, f (x)) if the remainders upon division by f (x)
-hypothesis holds, and if the strong Fermat congruence          are congruent mod n. As with the powermod algo-
-holds for every positive integer a ⩽ 2(log n)2 , then n        rithm for integer congruences, we can quickly compute
-is prime. So, provided that a famous unproved hypoth-          g(x)n (mod n, f (x)), provided the degree of f (x) is
-esis in another field of mathematics is correct, one can        not too big. This is exactly what Agrawal et al. propose.
-decide in polynomial time, via a deterministic algo-           They have an auxiliary polynomial f (x) of not-too-high
-rithm, whether n is prime or composite. (It has been           degree such that, if
+his proof assumes a generalization of the riemann
+hypothesis [V.26](/part-05/the-prime-number-theorem-and-the-vi34-jnos-bolyai-18021860). (We discuss the Riemann hypoth-
+esis below; the generalization that Miller assumes is
+beyond the scope of this article.) In further work, Bach
+was able to show that we may take c = 2 in this
+last result. Summarizing, if this generalized Riemann
+hypothesis holds, and if the strong Fermat congruence
+holds for every positive integer a ⩽ 2(log n)2 , then n
+is prime. So, provided that a famous unproved hypoth-
+esis in another field of mathematics is correct, one can
+decide in polynomial time, via a deterministic algo-
+rithm, whether n is prime or composite. (It has been
 tempting to use this conditional test, for if it should
-ever lie to you and tell you that a particular compos-                    (x + a)n ≡ x n + a (mod n, f (x))
-ite number is prime, then this failure—if you were able        for each a = 1, 2, . . . , B, for a not-too-high bound B,
-to detect it—would be a disproof of one of the most            then n must be in a set that contains the primes and
-famous conjectures in mathematics. Perhaps this is not         certain composites that are easily recognized as com-
-too disastrous a failure!)                                     posit es. (Not all composites are hard to recognize as
-   After Miller’s test in the 1970 s, the question con-         such, e.g., any number with a small prime factor is easy
-tinually challenging us was whether it is possible to          to recognize.) These ideas put together form the pri-
-test for primality in polynomial time with out assuming         mality test of Agrawal et al. To give the argument in
-unproved hypotheses. Recently, Agrawal et al. (2004)           full detail one has to specify the auxiliary polynomial
-answered this question with a resounding yes. Their            f (x) that is used and what the bound B is, and one has
-idea begins with a combination of the binomial theo-           to prove rigorously that it is exactly the primes which
-rem and Fermat’s little theorem. Given an integer a,           pass the test.
-consider the polynomial (x + a)n and expand it in the             Agrawal et al. (2004) show that the auxiliary poly-
-usual way through the binomial theorem. Each inter me-          nomial f (x) can be taken to be the beautifully sim-
-diate term between the leading x n and the trailing an         ple x r − 1, with an elementary upper bound for r of
-has the coefficient n!/(j!(n − j)!) for some j between           about (log n)5 . Doing this leads to a time bound of
-1 and n − 1. If n is prime, then this coefficient, which         about (log n)10.5 for the algorithm. Using a numeri-
-is an integer, is divisible by n because n appears as          cally ineffective tool, they bring the time bound down
-a factor in the numerator that is not canceled by any          to (log n)7.5 . Recently, Lenstra and I presented a not-so-
-factors in the denominator. That is, the coefficient is          simple but numerically effective method of bringing the
+ever lie to you and tell you that a particular compos-
+ite number is prime, then this failure—if you were able
+to detect it—would be a disproof of one of the most
+famous conjectures in mathematics. Perhaps this is not
+too disastrous a failure!)
+   After Miller’s test in the 1970 s, the question con-
+tinually challenging us was whether it is possible to
+test for primality in polynomial time with out assuming
+unproved hypotheses. Recently, Agrawal et al. (2004)
+answered this question with a resounding yes. Their
+idea begins with a combination of the binomial theo-
+rem and Fermat’s little theorem. Given an integer a,
+consider the polynomial (x + a)n and expand it in the
+usual way through the binomial theorem. Each inter me-
+diate term between the leading x n and the trailing an
+has the coefficient n!/(j!(n − j)!) for some j between
+1 and n − 1. If n is prime, then this coefficient, which
+is an integer, is divisible by n because n appears as
+a factor in the numerator that is not canceled by any
+factors in the denominator. That is, the coefficient is
+
+IV. Branches of Mathematics
+0 (mod n). For example, (x + 1)7 is equal to
+x 7 + 7 x 6 + 21 x 5 + 35 x 4 + 35 x 3 + 21 x 2 + 7 x + 1,
+Thus, we have (x + 1)7 ≡ x 7 + 1 (mod 7). (Two poly-
+nomials are congruent mod n if corresponding coeffi-
+cients are congruent mod n.) In general, if n is prime
+and a is any integer, then via this binomial-theorem
+idea and Fermat’s little theorem we have
+(x + a)n ≡ x n + an ≡ x n + a (mod n).
+It is an easy exercise to show that this congruence in the
+           simple case a = 1 is actually equivalent to primality.
+But as with the Wilson criterion we know no way of
+quickly verifying that all these coefficients are indeed
+divisible by n.
+However, one can do more with polynomials than
+raise them to powers. We can also divide one poly-
+nomial by another to find a quotient and a remain-
+der, just as we do with integers. It makes sense, for
+example, to say that g(x) ≡ h(x) (mod f (x)), mean-
+ing that g(x) and h(x) leave the same remainder
+when divided by f (x). We will write g(x) ≡ h(x)
+(mod n, f (x)) if the remainders upon division by f (x)
+are congruent mod n. As with the powermod algo-
+rithm for integer congruences, we can quickly compute
+g(x)n (mod n, f (x)), provided the degree of f (x) is
+not too big. This is exactly what Agrawal et al. propose.
+They have an auxiliary polynomial f (x) of not-too-high
+degree such that, if
+(x + a)n ≡ x n + a (mod n, f (x))
+for each a = 1, 2, . . . , B, for a not-too-high bound B,
+then n must be in a set that contains the primes and
+certain composites that are easily recognized as com-
+posit es. (Not all composites are hard to recognize as
+such, e.g., any number with a small prime factor is easy
+to recognize.) These ideas put together form the pri-
+mality test of Agrawal et al. To give the argument in
+full detail one has to specify the auxiliary polynomial
+f (x) that is used and what the bound B is, and one has
+to prove rigorously that it is exactly the primes which
+pass the test.
+Agrawal et al. (2004) show that the auxiliary poly-
+nomial f (x) can be taken to be the beautifully sim-
+ple x r − 1, with an elementary upper bound for r of
+about (log n)5 . Doing this leads to a time bound of
+about (log n)10.5 for the algorithm. Using a numeri-
+cally ineffective tool, they bring the time bound down
+to (log n)7.5 . Recently, Lenstra and I presented a not-so-
+simple but numerically effective method of bringing the
 
 $IV$ . $3$ .
 
@@ -276,64 +383,101 @@ If n is composite, then at least one GCD will be larger than $1$ , and then a se
 This situation resembles the experimental sciences, where hypotheses are tested against experiments. Our experience with certain factoring algorithms is now so overwhelming that a scientist might claim that a physical law is involved. As mathematicians, we still search for proof, but fortunately the numbers we factor do not feel the need to wait for us. I often mention a contest problem from my high school years: factor 8051 . The trick is to notice that $8051 = 90^{2} - 7^{2} = (90 - 7)(90 + 7)$ , from which the factorization $83$ · $97$ can be read off.
 In fact every odd composite can be factored as the difference of two squares, an idea that goes back to fermat [VI.12](/part-06/pierre-fermat-1601665). Indeed, if n has the nontrivial factorization ab, then let $u = \frac{1}{2}(a + b)$ and $v = \frac{1}{2}(a - b)$ , so that $n = u^{2} - v^{2}$ , and $a = u + v,b = u - v.$ This method works very well if $n$ has a divisor very close to $n^{1}/ {}^{2}$ , as $n = 8051$ does, but in the worst case, the Fermat method is slower than trial division.
 
-354                                                                                     IV. Branches of Mathematics
+354
 
-  My quadratic sieve method (which follows work of          in their prime factorizations only the first k primes.
+  My quadratic sieve method (which follows work of
 Kraitchik, Brillhart–Morris on, and Schroeppel) tries to     It is an easy theorem that some nonempty subset of
-efficiently extend Fermat’s idea to all odd composites.       these numbers has product a square. The proof has
-For example, take n = 1649. We start just above n1/2        us associate with each of these numbers, which can be
-                                                                                           a  a      a
-with j = 41, and consider the numbers j 2 − 1649. As j      written in the form p1 1 p2 2 · · · pk k , an exponent vec-
+efficiently extend Fermat’s idea to all odd composites.
+For example, take n = 1649. We start just above n1/2
+with j = 41, and consider the numbers j 2 − 1649. As j
 runs, we will eventually hit a value where j 2 − 1649 is    tor (a1 , a2 , . . . , ak ). Since squares are detected by all
-a square, and so be able to use Fermat’s method. Let’s      even exponents, we really only care whether the expo-
-try it:                                                     nents ai are odd or even. Thus, we think of these vec-
-                  412 − 1649 = 32,                          tors as having coordinates 0 and 1, and when we add
-                                                            them (which corresponds to multiplying the underlying
-                  422 − 1649 = 115,                         numbers), we do so mod 2. Since we have k + 1 vectors,
-                  432 − 1649 = 200,                         each with only k coordinates, an easy matrix calculation
-                               ..                           leads quickly to a nonempty subset that adds up to the
-                                .                           0-vector. The product of the corresponding integers is
-Well, no squares yet, which is not surprising, since the    then a square.
-Fermat method is often very poor. But wait, do the             In our toy example with n = 1649, the first and
-first and third lines not multiply together to give a        third numbers, which are 32 = 25 30 50 and 200 =
-square? Yes they do, 32 · 200 = 802 . So, multiplying the   23 30 52 , have exponent vectors (5, 0, 0) and (3, 0, 2),
-first and third lines, and treating them as congruences      which reduce to (1, 0, 0) and (1, 0, 0), so we see that
-mod 1649, we have                                           the sum of them is (0, 0, 0), which indicates that we
-                                                            have a square. We were lucky that we could make do
-             (41 · 43)2 ≡ 802 (mod 1649).                   with just two vectors, instead of the four that the above
-That is, we have a pair u, v with u2 ≡ v 2 (mod 1649).      argument shows would be sufficient.
-This is not quite the same as having u2 −v 2 = 1649, but       In general with the quadratic sieve, one finds smooth
-we do have 1649 a divisor of u2 − v 2 = (u − v)(u + v).     numbers in the sequence j 2 − n, forms the expo-
-Now maybe 1649 divides one of these factors, but if         nent vectors mod 2, and then uses a matrix to find a
-it does not, then it is split between them, and so a        nonempty subset which adds up to the 0-vector, which
+a square, and so be able to use Fermat’s method. Let’s
+try it:
 
-computation of the GCD of u − v (or u + v) with             then corresponds to a set M for which j∈M f (j) is a
-1649 will reveal a proper factor. Now v = 80 and            square.
-u = 41 · 43 ≡ 114 (mod 1649), and so we see instantly          In addition, the “sieve” in the quadratic sieve comes
-that u ≡ ±v (mod 1649), so we are in business. The         in with the search for smooth values of f (j) = j 2 − n.
-GCD of 114 − 80 = 34 with 1649 is 17. Dividing, we see      These numbers are the consecutive values of a (quad-
-that 1649 = 17 · 97, and we are done.                       ratic) polynomial, so those divisible by a given prime
+Well, no squares yet, which is not surprising, since the    then a square.
+Fermat method is often very poor. But wait, do the
+first and third lines not multiply together to give a
+square? Yes they do, 32 · 200 = 802 . So, multiplying the   23 30 52 , have exponent vectors (5, 0, 0) and (3, 0, 2),
+first and third lines, and treating them as congruences
+mod 1649, we have
+
+That is, we have a pair u, v with u2 ≡ v 2 (mod 1649).
+This is not quite the same as having u2 −v 2 = 1649, but
+we do have 1649 a divisor of u2 − v 2 = (u − v)(u + v).     numbers in the sequence j 2 − n, forms the expo-
+Now maybe 1649 divides one of these factors, but if
+it does not, then it is split between them, and so a
+
+computation of the GCD of u − v (or u + v) with
+1649 will reveal a proper factor. Now v = 80 and
+u = 41 · 43 ≡ 114 (mod 1649), and so we see instantly
+that u ≡ ±v (mod 1649), so we are in business. The
+GCD of 114 − 80 = 34 with 1649 is 17. Dividing, we see
+that 1649 = 17 · 97, and we are done.
    Can we generalize this? In trying to factor n = 1649     can be found in regular places in the sequence. For
 we considered consecutive values of the quadratic poly-     example, in our illustration, j 2 − 1649 is divisible by 5
-                                                √
 nomial f (j) = j 2 − n for j starting just above n, and     precisely when j ≡ 2 or 3 (mod 5). A sieve very much
-viewed these as congruences j 2 ≡ f (j) (mod n). Then       like the sieve of Eratosthenes can then be used to effi-
+viewed these as congruences j 2 ≡ f (j) (mod n). Then
 
-we found a set M of numbers j with j∈M f (j) equal          ciently find the special numbers j where j 2 − n is
+we found a set M of numbers j with j∈M f (j) equal
 
-to a square, say v 2 . We then let u = j∈M j, so that       smooth. A key issue, though, is how smooth a value
-  2      2
-u ≡ v (mod n). Since u ≡ ±v (mod n), we could              f (j) has to be for us to decide to accept it. If we choose
-split n via the GCD of u − v and n.                         a smaller bound for the primes involved, we do not
-   There is another lesson that we can learn from our       have to find all that many of them to use the matrix
-small example with n = 1649. We used 32 and 200 to          method. But such very smooth values might be very
-form our square, but we ignored 115. If we had thought      rare. If we use a larger bound for the primes involved,
-about it, we might have noticed from the start that 32      then smooth values of f (j) may be more common,
-and 200 were more likely to be useful than 115. The         but we will need many of them. Some where between
-reason is that 32 and 200 are smooth numbers (mean-         smaller and larger is just right! In order to make the
+to a square, say v 2 . We then let u = j∈M j, so that
+  2
+u ≡ v (mod n). Since u ≡ ±v (mod n), we could
+split n via the GCD of u − v and n.
+   There is another lesson that we can learn from our
+small example with n = 1649. We used 32 and 200 to
+form our square, but we ignored 115. If we had thought
+about it, we might have noticed from the start that 32
+and 200 were more likely to be useful than 115. The
+reason is that 32 and 200 are smooth numbers (mean-
 ing that they have only small prime factors), while 115     choice, it would help to know how frequently values of
 is not smooth, having the relatively large prime factor     an irreducible quadratic polynomial are smooth. Unfor-
-23. Say you have k + 1 positive integers that involve       tunately, we do not have a theorem that tells us, but we
+23. Say you have k + 1 positive integers that involve
+
+IV. Branches of Mathematics
+in their prime factorizations only the first k primes.
+these numbers has product a square. The proof has
+us associate with each of these numbers, which can be
+a  a      a
+written in the form p1 1 p2 2 · · · pk k , an exponent vec-
+even exponents, we really only care whether the expo-
+nents ai are odd or even. Thus, we think of these vec-
+412 − 1649 = 32,
+them (which corresponds to multiplying the underlying
+422 − 1649 = 115,
+432 − 1649 = 200,
+..                           leads quickly to a nonempty subset that adds up to the
+.                           0-vector. The product of the corresponding integers is
+In our toy example with n = 1649, the first and
+third numbers, which are 32 = 25 30 50 and 200 =
+which reduce to (1, 0, 0) and (1, 0, 0), so we see that
+the sum of them is (0, 0, 0), which indicates that we
+have a square. We were lucky that we could make do
+(41 · 43)2 ≡ 802 (mod 1649).
+argument shows would be sufficient.
+In general with the quadratic sieve, one finds smooth
+nent vectors mod 2, and then uses a matrix to find a
+nonempty subset which adds up to the 0-vector, which
+then corresponds to a set M for which j∈M f (j) is a
+square.
+In addition, the “sieve” in the quadratic sieve comes
+in with the search for smooth values of f (j) = j 2 − n.
+These numbers are the consecutive values of a (quad-
+ratic) polynomial, so those divisible by a given prime
+√
+like the sieve of Eratosthenes can then be used to effi-
+ciently find the special numbers j where j 2 − n is
+smooth. A key issue, though, is how smooth a value
+2
+f (j) has to be for us to decide to accept it. If we choose
+a smaller bound for the primes involved, we do not
+have to find all that many of them to use the matrix
+method. But such very smooth values might be very
+rare. If we use a larger bound for the primes involved,
+then smooth values of f (j) may be more common,
+but we will need many of them. Some where between
+smaller and larger is just right! In order to make the
+tunately, we do not have a theorem that tells us, but we
 
 $IV$ . $3$ .
 
@@ -383,73 +527,110 @@ n s ζ (s) $n = 1$ Through various relatively routine calculations, one can then
 x ρ - log $(2\pi) - \frac{1}{2}$ log $(1 - x - 2)\psi(x) = x -$ ρ ρ if x itself is not a prime or prime power, and where the sum over the nontrivial zeros ρ of ζ is to be understood in the symmetric sense where we sum over those ρ with $|Imρ| < T$ and let $T \to \infty.$ Through elementary manipulations, an understanding of the function $\psi$ (x) readily gives an equivalent understanding of $\pi$ (x), and it should be clear now that $\psi$ (x) is intimately connected to the nontrivial zeros ρ of ζ. The function $\psi$ (x) defined above has a simple interpretation.
 It is the logarithm of the least common multiple of the integers in the interval [1 , x]. As with ( $1$ ) we have an elementary translation of the Riemann hypothesis: it is equivalent to the assertion that √ $|\psi(x) - x| < x$ log ${}^{2}x$ for all $x \ge 3$ . This inequality involves only the elementary concepts of least common multiple, natural logarithm, absolute value, and square root, yet it is equivalent to the Riemann hypothesis. A number of nontrivial zeros ρ of ζ (s) have actually been calculated and it has been verified that they lie on
 
-358                                                                                     IV. Branches of Mathematics
+358
 
-the line Re s = 12 . One might wonder how some one can         ondary term of order n log log n, and so for all suffi-
-computationally verify that a complex number ρ has            ciently large n, we have pn > n log n. By using explicit
-          1
-Re ρ = 2 . For example, suppose that we are carrying          zeta estimates, Rosser was able to put a numerical
+the line Re s = 12 . One might wonder how some one can
+computationally verify that a complex number ρ has
+
+Re ρ = 2 . For example, suppose that we are carrying
 calculations to (an unrealistically large) 1010 significant    bound on the “sufficiently large” in this statement, and
-digits, and suppose we come across a zero with real           then, by checking small cases, was able to prove that
-      1          100
-part 2 + 10−10 . It would be far beyond the precision         in fact pn > n log n for every n. The paper of Rosser
-of the calculation to be able to distinguish this num-        and Schoenfeld (1962) is filled with highly useful and
-ber from 12 itself. Nevertheless, we do have a method         numerically explicit inequalities of this kind.
-for seeing if particular zeros ρ satisfy Re ρ = 12 . There       Let us imagine for a moment that the Riemann
-are two ideas involved, one of which comes from ele-          hypothesis had been proved. Mathematics is never
-ment ary calculus. If we have a continuous real-valued         “used up,” as there is always that next problem around
-function f (x) defined on the real numbers, we can             the bend. Even if we know that all of zeta’s nontriv-
-some times use the intermediate value theorem to count         ial zeros lie on the line Im s = 12 , we can still ask how
+digits, and suppose we come across a zero with real
+
+part 2 + 10−10 . It would be far beyond the precision
+of the calculation to be able to distinguish this num-
+ber from 12 itself. Nevertheless, we do have a method
+for seeing if particular zeros ρ satisfy Re ρ = 12 . There
+are two ideas involved, one of which comes from ele-
+ment ary calculus. If we have a continuous real-valued
+function f (x) defined on the real numbers, we can
+some times use the intermediate value theorem to count
 zeros. For example, say f (1) > 0, f (1.7) < 0, f (2.3) >     they are distributed on this line. We have a fairly con-
-0. Then we know for sure that f has at least one zero         cise understanding of how many zeros there should
-between 1 and 1.7, and at least one zero between 1.7          be up to a given height T . In fact, as already found by
-and 2.3. If we know for other reasons that f has exactly      Riemann, this count is about (1/2π )T log T . Thus, on
-two zeros, then we have accounted for both of them.           average, the zeros would tend to get closer and closer
-To locate zeros of the complex function ζ(s), a real-         with about (1/2π ) log T of them in a unit interval near
-valued function g(t) is constructed with the property         height T .
+0. Then we know for sure that f has at least one zero
+between 1 and 1.7, and at least one zero between 1.7
+and 2.3. If we know for other reasons that f has exactly
+two zeros, then we have accounted for both of them.
+To locate zeros of the complex function ζ(s), a real-
+valued function g(t) is constructed with the property
 that ζ( 12 + it) = 0 if and only if g(t) = 0. By looking at
-                                                                 This tells us the average distance, or spacing, be-
 sign changes for g(t) for 0 < t < T , we can get a lower
-                                                          1   tween one zeta zero and the next, but there is much
 bound for the number of zeros ρ of ζ with Re ρ = 2
-                                                              more that one can ask about how these spacings are
 and 0 < Im ρ < T . In addition, we can use the so-called
-                                                              distributed. In order to discuss this question, it is very
 argument principle from complex analysis to count the
-                                                              convenient to “normalize” the spacings, so that the
 exact number of zeros with 0 < Im ρ < T . If we are
-                                                              average (normalized) gap between consecutive zeros
 lucky and this exact count is equal to our lower bound,
-                                                              is 1. By Riemann’s result, together with our assump-
 then we have accounted for all of ζ’s zeros here, show-
-                                   1                          tion of the Riemann hypothesis, this can be done if
 ing that they all have real part 2 (and, in addition, that
-                                                              we multiply a gap near T by (1/2π ) log T , or, equiv-
 they are all simple zeros). If the counts did not match,
-                                                              alently, if for each zero ρ we replace its imaginary
 it would not be a disproof of the Riemann hypothesis,
-                                                              part t = Im ρ by (1/2π )t log t. In this way we arrive
 but certainly it would indicate a region where we should
-                                                              at a sequence δ1 , δ2 , . . . of normalized gaps between
 be checking the data more closely. So far, whenever
-                                                              consecutive zeros, which on average are about 1.
 we have tried this approach, the counts have matched,
-though some times we have been forced to evaluate g(t)            Checking numerically, we see that some δn are large,
-at very closely spaced points.                                with others close to 0; it is just the average that is 1.
-   The first few nontrivial zeros were computed by Rie-        Mathematics is well equipped to study random phe-
-mann himself. The famous cryptographer and early              nomena, and we have names for various probability
-computer scientist alan turing [VI.94](/part-06/alan-turing-19121954) also computed          distributions [III.71](/part-03/probability-distributions), such as Poisson, Gaussian, etc.
-some zeta zeros. The current record for this kind of          Is this what is happening here? These zeta zeros are
-calculation is held by Gourdon, who has shown that            not random at all, but perhaps thinking in terms of
-the first 1013 zeta zeros with positive imaginary part         randomness has promise.
-all have real part equal to 12 , as predicted by Riemann.       In the early twentieth century, hilbert [VI.63](/part-06/david-hilbert-18621943) and
-Gourdon’s method is a modification of that pioneered           Pólya suggested that the zeros of the zeta function
-by Odlyzko and Schönhage (1988), who ushered in the           might correspond to the eigenvalues [I.3 §4.3](/part-01/fundamental-definitions) of some
-modern age of zeta-zero calculations.                         operator [III.50](/part-03/linear-operators-and-their-properties). Now this is provocative! But what
+though some times we have been forced to evaluate g(t)
+at very closely spaced points.
+   The first few nontrivial zeros were computed by Rie-
+mann himself. The famous cryptographer and early
+computer scientist alan turing [VI.94](/part-06/alan-turing-19121954) also computed
+some zeta zeros. The current record for this kind of
+calculation is held by Gourdon, who has shown that
+the first 1013 zeta zeros with positive imaginary part
+all have real part equal to 12 , as predicted by Riemann.
+Gourdon’s method is a modification of that pioneered
+by Odlyzko and Schönhage (1988), who ushered in the
+modern age of zeta-zero calculations.
    Explicit zeta-function calculations can lead to highly     operator? Some fifty years later in a now famous
-useful explicit prime number estimates. If pn is the          conversation between Dyson and Montgomery at the
-nth prime, then the prime number theorem implies              Institute for Advanced Study, it was conjectured that
-that pn ∼ n log n as n → . nfty. Actually, there is a sec-         the nontrivial zeros behave like the eigenvalues of
+useful explicit prime number estimates. If pn is the
+nth prime, then the prime number theorem implies
+that pn ∼ n log n as n → . nfty. Actually, there is a sec-
+
+IV. Branches of Mathematics
+ondary term of order n log log n, and so for all suffi-
+ciently large n, we have pn > n log n. By using explicit
+1
+zeta estimates, Rosser was able to put a numerical
+then, by checking small cases, was able to prove that
+1
+in fact pn > n log n for every n. The paper of Rosser
+and Schoenfeld (1962) is filled with highly useful and
+numerically explicit inequalities of this kind.
+Let us imagine for a moment that the Riemann
+hypothesis had been proved. Mathematics is never
+“used up,” as there is always that next problem around
+the bend. Even if we know that all of zeta’s nontriv-
+ial zeros lie on the line Im s = 12 , we can still ask how
+cise understanding of how many zeros there should
+be up to a given height T . In fact, as already found by
+Riemann, this count is about (1/2π )T log T . Thus, on
+average, the zeros would tend to get closer and closer
+with about (1/2π ) log T of them in a unit interval near
+height T .
+This tells us the average distance, or spacing, be-
+1   tween one zeta zero and the next, but there is much
+more that one can ask about how these spacings are
+distributed. In order to discuss this question, it is very
+convenient to “normalize” the spacings, so that the
+average (normalized) gap between consecutive zeros
+is 1. By Riemann’s result, together with our assump-
+1                          tion of the Riemann hypothesis, this can be done if
+we multiply a gap near T by (1/2π ) log T , or, equiv-
+alently, if for each zero ρ we replace its imaginary
+part t = Im ρ by (1/2π )t log t. In this way we arrive
+at a sequence δ1 , δ2 , . . . of normalized gaps between
+consecutive zeros, which on average are about 1.
+Checking numerically, we see that some δn are large,
+with others close to 0; it is just the average that is 1.
+Mathematics is well equipped to study random phe-
+nomena, and we have names for various probability
+distributions [III.71](/part-03/probability-distributions), such as Poisson, Gaussian, etc.
+Is this what is happening here? These zeta zeros are
+not random at all, but perhaps thinking in terms of
+randomness has promise.
+In the early twentieth century, hilbert [VI.63](/part-06/david-hilbert-18621943) and
+Pólya suggested that the zeros of the zeta function
+might correspond to the eigenvalues [I.3 §4.3](/part-01/fundamental-definitions) of some
+operator [III.50](/part-03/linear-operators-and-their-properties). Now this is provocative! But what
+conversation between Dyson and Montgomery at the
+Institute for Advanced Study, it was conjectured that
+the nontrivial zeros behave like the eigenvalues of
 
 $IV$ . $3$ .
 
@@ -479,150 +660,202 @@ And the proof itself established a long-sought and wonderful connection between 
 First note that the case $n = 3$ , namely $x^{3} + y^{3} = z^{3}$ , can be handled by elementary methods, and this in fact had already been done by euler [VI.19](/part-06/leonhard-euler-17071783). So, let us focus on the cases when $n \ge 4$ . 1 Let $S^{n}$ be the set of positive nth powers of integers. How likely is it that the sum of two members of S n is itself a member of S n ? Well, not at all likely, since Wiles has proved that this never occurs! But recall that we are trying to think naively. Let us try to mimic our situation by replacing the set S n with a random set.
 In fact, we will throw all of the powers together into one set. Following an idea of Erdős and Ulam ( 1971 ) we create a set R by a random process: each integer m is considered independently, and the chance it gets thrown into R is proportional to $m - 3/4$ . This process would typically give us about $x^{1}/ {}^{4}$ numbers in R in the interval [1 , x], or at least this would be the order of magnitude. Now the total number of fourth and higher powers between $1$ and $x$ is also about $x^{1}/ {}^{4}$ , $1$ . Actually, Fermat himself had a simple proof in the case $n = 4$ , but we ignore this.
 
-360                                                                                      IV. Branches of Mathematics
+360
 
-so we can take our random set R as modeling the sit-              The point is that events of the kind that we are con-
-uation for these powers, namely the union of all sets          side ring—that a given integer is a power—are not quite
-Sn for n ⩾ 4. We ask how likely it is to have a + b = c        independent. For instance, if A and B are both uth pow-
-where a, b, and c all come from R.                             ers, then so is AB, and this idea is exploited in the
-   The probability that a number m may be represented          infinite families just mentioned.
-as a + b with 0 < a < b < m and a, b ∈ R is propor-               So how do we neatly bar these trivialities and come to
-           
-tional to 0<a<m/2 a−3/4 (m − a)−3/4 , since for each a         the rescue of our heuristic argument? One simple way
-less than m the probability that a and m − a both lie in       to do this is to insist that the numbers x, y, z in (2) be
+so we can take our random set R as modeling the sit-
+uation for these powers, namely the union of all sets
+Sn for n ⩾ 4. We ask how likely it is to have a + b = c
+where a, b, and c all come from R.
+   The probability that a number m may be represented
+as a + b with 0 < a < b < m and a, b ∈ R is propor-
+
+tional to 0<a<m/2 a−3/4 (m − a)−3/4 , since for each a
+less than m the probability that a and m − a both lie in
 R is a−3/4 (m − a)−3/4 . Actually, there is a minor caveat     relatively prime. This gives no restriction whatsoever in
-                                                      1        the Fermat case of equal exponents, since a solution to
 when m is even, since then a = m − a when a = 2 m:
-                                           1
 to cover this, we add the single term ( 2 m)   −3/4
-                                                    to the     x n + y n = zn with d the greatest common divisor of x,
 above sum. Replacing each m − a in the sum with 2 m,
-                                                      1        y, z leads to the coprime solution (x/d)n + (y/d)n =
-we get a larger sum that is easy to estimate and turns         (z/d)n .
-out to be proportional to m−1/2 . That is, the chance             Concerning Fermat’s last theorem, one might ask
-that a random number m is a sum of two members of              how far it had actually been verified before the final
-R is at most a certain quantity that is proportional to        proof by Wiles. The paper by Buhler et al. (1993) reports
-m−1/2 . Now the events that would have to occur for            a verification for all exponents n up to 4 000 000. This
-m to be given as such a sum involve numbers smaller            type of calculation, which is far from trivial, has its
-than m, so the event that m itself is in R is indepen-         roots in nineteenth-century work of kummer [VI.40]
-dent of these. Therefore, the probability that m is not        and early-twentieth-century work of Vandiver. In fact,
-only the sum of two members of R, but also itself a            Buhler et al. (1993) also verify in the same range
-member of R, is at most a quantity proportional to             a related conjecture of Vandiver dealing with cyclo-
-                                                               tomic fields, but this conjecture may in fact be false
+we get a larger sum that is easy to estimate and turns
+out to be proportional to m−1/2 . That is, the chance
+that a random number m is a sum of two members of
+R is at most a certain quantity that is proportional to
+m−1/2 . Now the events that would have to occur for
+m to be given as such a sum involve numbers smaller
+than m, so the event that m itself is in R is indepen-
+dent of these. Therefore, the probability that m is not
+only the sum of two members of R, but also itself a
+member of R, is at most a quantity proportional to
 m−1/2 m−3/4 = m−5/4 . So now we can count how many
-                                                               in general.
 times we should expect a sum of two members of R to
-                                                                  The probabilistic thinking above, combined with
 itself be a member of R. This is at most a constant times
-       −5/4 . But this sum is convergent, so we expect        computation of small cases, can carry us deeply into
+
   mm
-                                                               some very provocative conjectures. The above prob-
 only finitely many examples. Further, since the tail of
-                                                               abilistic argument can easily be extended to suggest
 a convergent series is tiny, we do not expect any large
-                                                               that (2) has at most finitely many relatively prime solu-
 examples.
-                                                               tions x, y, z over all possible exponent triples u, v,
   Thus, this argument suggests that there are at most
-                                                               w with 1/u + 1/v + 1/w < 1. This conjecture has
 finitely many positive integer solutions to
-                                                               come to be known as the Fermat–Catalan conjecture,
-                     x u + y v = zw ,                    (2)   since it contains within it essentially Fermat’s last the-
-                                                               orem and also the Catalan conjecture (recently proved
 where the exponents u, v, w are at least 4. Since Fer-
-                                                               by Mihăilescu) that 8 and 9 are the only consecutive
 mat’s last theorem is the special case when u = v = w,
-                                                               powers.
 we would have at most finitely many counterexamples
-                                                                  It is good that we do allow for the possibility that
 to that as well.
-                                                               there are some solutions, and this is where our main
-   This seems tidy enough, but now we get a surprise!          topic of computing comes in. For example, since 1+8 =
+   This seems tidy enough, but now we get a surprise!
 There are actually infinitely many solutions to (2) in pos-     9, we have a solution to x 7 + y 3 = z2 , where x = 1,
-itive integers with u, v, w all at least 4. For example,       y = 2, and z = 3. (The exponent 7 is chosen to insure
+itive integers with u, v, w all at least 4. For example,
 note that 174 + 344 = 175 . This is the case a = 1, b = 2,     that the reciprocal sum of the exponents is less than 1.
 u = 4 of a more general identity: if a, b are positive inte-   Of course, we could replace 7 by any larger integer, but
-gers, and c = au + b u , we have (ac)u + (bc)u = c u+1 .       since in each case the power involved is the number
-Another way to get infinitely many examples is to build         1, they should all together be considered as just one
-on the possible existence of just one example. If x, y,        example.) Here are the known solutions to (2):
+gers, and c = au + b u , we have (ac)u + (bc)u = c u+1 .
+Another way to get infinitely many examples is to build
+on the possible existence of just one example. If x, y,
 z, u, v, w are positive integers satisfying (2), then with
-                                                                                      1 n + 23 = 32 ,
 the same exponents, we may replace x, y, z with avw x,
-auw y, auv z for any integer a, and so get infinitely                                   25 + 72 = 34 ,
-many solutions.                                                                      132 + 73 = 29 ,
+auw y, auv z for any integer a, and so get infinitely
+many solutions.
 
-IV.3.   Computational Number Theory                                                                                   361
+IV. Branches of Mathematics
+The point is that events of the kind that we are con-
+side ring—that a given integer is a power—are not quite
+independent. For instance, if A and B are both uth pow-
+ers, then so is AB, and this idea is exploited in the
+infinite families just mentioned.
+So how do we neatly bar these trivialities and come to
+
+the rescue of our heuristic argument? One simple way
+to do this is to insist that the numbers x, y, z in (2) be
+1        the Fermat case of equal exponents, since a solution to
+1
+to the     x n + y n = zn with d the greatest common divisor of x,
+1        y, z leads to the coprime solution (x/d)n + (y/d)n =
+(z/d)n .
+Concerning Fermat’s last theorem, one might ask
+how far it had actually been verified before the final
+proof by Wiles. The paper by Buhler et al. (1993) reports
+a verification for all exponents n up to 4 000 000. This
+type of calculation, which is far from trivial, has its
+roots in nineteenth-century work of kummer [VI.40]
+and early-twentieth-century work of Vandiver. In fact,
+Buhler et al. (1993) also verify in the same range
+a related conjecture of Vandiver dealing with cyclo-
+tomic fields, but this conjecture may in fact be false
+in general.
+The probabilistic thinking above, combined with
+−5/4 . But this sum is convergent, so we expect
+some very provocative conjectures. The above prob-
+abilistic argument can easily be extended to suggest
+that (2) has at most finitely many relatively prime solu-
+tions x, y, z over all possible exponent triples u, v,
+w with 1/u + 1/v + 1/w < 1. This conjecture has
+come to be known as the Fermat–Catalan conjecture,
+x u + y v = zw ,                    (2)   since it contains within it essentially Fermat’s last the-
+orem and also the Catalan conjecture (recently proved
+by Mihăilescu) that 8 and 9 are the only consecutive
+powers.
+It is good that we do allow for the possibility that
+there are some solutions, and this is where our main
+topic of computing comes in. For example, since 1+8 =
+y = 2, and z = 3. (The exponent 7 is chosen to insure
+since in each case the power involved is the number
+1, they should all together be considered as just one
+example.) Here are the known solutions to (2):
+1 n + 23 = 32 ,
+25 + 72 = 34 ,
+132 + 73 = 29 ,
 
-                       27 + 173 = 712 ,                       z w/u and y ⩽ zw/v , so that
-                        5      4       2
-                       3 + 11 = 122 ,                                   rad(x u y v zw ) ⩽ xyz ⩽ (zw )41/42 .
-                 8             2           3
-              33 + 1 549 034 = 15 613 ,                       Thus, the ABC conjecture with ε = 1/42 implies that
-           14143 + 2 213 4592 = 657 ,                         there are at most finitely many solutions.
-          92623 + 15 312 2832 = 1137 ,                           The ABC conjecture has many other marvelous con-
-                                                              sequences; for a delightful survey, see Granville and
-                 177 + 76 2713 = 21 063 9282 ,
-                                                              Tucker (2002). In fact, the ABC conjecture and its gen-
-                 438 + 96 2223 = 30 042 9072 .                eralizations can be used to prove so many things that I
-The larger members were found in an exhaustive com-           have joked that it is beginning to resemble a false state-
-puter search by Beukers and Zagier. Perhaps this is the       ment, since a false statement implies everything. But
-complete list of all solutions, or perhaps not—we have        probably the ABC conjecture is true. Indeed, though a
-no proof.                                                     bit harder to see, the Erdős–Ulam probabilistic argu-
-                                                              ment can be modified to provide heuristic evidence for
+IV.3.   Computational Number Theory
+
+The larger members were found in an exhaustive com-
+puter search by Beukers and Zagier. Perhaps this is the
+complete list of all solutions, or perhaps not—we have
+no proof.
    However, for particular choices of u, v, w, more can
-                                                              it too.
 be said. Using results from a famous paper of Faltings,
-                                                                 Basic to this argument is a perfectly rigorous result
 Darmon and Granville (1995) have shown that for any
-                                                              on the distribution of integers n for which rad(n)
 fixed choice of u, v, w with reciprocal sum at most 1,
-                                                              is below some bound. These ideas, which lead to a
 there are at most finitely many coprime triples x, y,
-                                                              more explicit version of the ABC conjecture, are worked
 z solving (2). For a particular choice of exponents, one
-                                                              through in the thesis of van Frankenhuijsen and by
 might try to actually find all of the solutions. If it can
-                                                              Stewart and Tenenbaum. Here is a slightly weaker state-
 be handled at all, this task can involve a delicate inter-
-                                                              ment: if a + b = c are relatively prime positive integers
 play between arithmetic geometry [IV.5](/part-04/arithmetic-geometry), effective
-                                                              and c is sufficiently large, then we have
-methods in transcendental number theory, and good                                                √
-hard computing. In particular, the exponent triple sets                        rad(abc) > c 1−1/ log c .             (3)
+methods in transcendental number theory, and good
+hard computing. In particular, the exponent triple sets
 {2, 3, 7}, {2, 3, 8}, {2, 3, 9}, and {2, 4, 5} are known to
-                                                                 One might like to know how the numerical evi-
 have all their solutions in the above table. See Poonen
-                                                              dence stacks up against (3). This inequality asserts
-et al. (2007) for the treatment of the case {2, 3, 7} and                                                
-                                                              that if rad(abc) = r , then log(c/r )/ log c < 1. So,
-links to other work.                                                                                              
-                                                              let T (a, b, c) denote the test statistic log(c/r )/ log c.
-   the abc conjecture [V.1](/part-05/the-abc-conjecture) of Oesterlé and Masser            There is a Web site maintained by Nitaj that contains a
+et al. (2007) for the treatment of the case {2, 3, 7} and
+links to other work.
+   the abc conjecture [V.1](/part-05/the-abc-conjecture) of Oesterlé and Masser
 is deceptively simple. It involves positive integer solu-     wealth of information about the ABC conjecture (www.
-tions to the equation a + b = c, hence the name. To           math.unicaen.fr/ ̃nitaj/abc.html). Checking the data,
-put some meaning into a + b = c, we define the radi-           there are quite a few examples with T (a, b, c) ⩾ 1, the
-cal of a nonzero integer n as the product of the primes       champion so far being
+tions to the equation a + b = c, hence the name. To
+put some meaning into a + b = c, we define the radi-
+cal of a nonzero integer n as the product of the primes
 that divide n, denoting this as rad(n). So, for exam-
-                                                               a = 72 · 412 · 3113 = 2 477 678 547 239
 ple, rad(10) = 10, rad(72) = 6, and rad(65 536) = 2.
-In particular, high powers have small radicals in com-         b = 1116 · 132 · 79 = 613 474 843 408 551 921 511
-paris on to the number itself, and so do many other             c = 2 · 33 · 523 · 953 = 613 474 845 886 230 468 750
+In particular, high powers have small radicals in com-
+paris on to the number itself, and so do many other
 numbers. Basically, the ABC conjecture asserts that if
-                                                               r = 2 · 3 · 5 · 7 · 11 · 13 · 41 · 79 · 311 · 953
 a + b = c, then the radical of abc cannot be too small.
-More specifically we have the following.                          = 28 828 335 646 110,
-                                                              so that
+More specifically we have the following.
 The ABC conjecture. For each ε > 0 there are at most
-                                                                                        log(c/r )
-finitely many relatively prime positive integer triples a,               T (a, b, c) =            = 2.43886 . . . .
-                                                                                            log c
+finitely many relatively prime positive integer triples a,
 b, c with a + b = c and rad(abc) < c 1−ε .
-                                                              Is it always true that T (a, b, c) < 2.5?
-  Note that the ABC conjecture immediately solves the            One can get carried away with heuristics, for getting
-Fermat–Catalan problem. Indeed, if u, v, w are positive       that one is not actually proving a theorem, but mak-
-integers with 1/u + 1/v + 1/w < 1, then it is easily          ing a guess. Heuristics are often based on the idea of
-found that we must have 1/u + 1/v + 1/w ⩽ 41/42.              randomness, and all bets are off if there is some under-
-Suppose we have a coprime solution to (2). Then x ⩽           lying structure. But how do we know that there is no
+  Note that the ABC conjecture immediately solves the
+Fermat–Catalan problem. Indeed, if u, v, w are positive
+integers with 1/u + 1/v + 1/w < 1, then it is easily
+found that we must have 1/u + 1/v + 1/w ⩽ 41/42.
+Suppose we have a coprime solution to (2). Then x ⩽
+
+361
+27 + 173 = 712 ,                       z w/u and y ⩽ zw/v , so that
+5      4       2
+3 + 11 = 122 ,                                   rad(x u y v zw ) ⩽ xyz ⩽ (zw )41/42 .
+8
+33 + 1 549 034 = 15 613 ,
+14143 + 2 213 4592 = 657 ,
+92623 + 15 312 2832 = 1137 ,
+sequences; for a delightful survey, see Granville and
+177 + 76 2713 = 21 063 9282 ,
+Tucker (2002). In fact, the ABC conjecture and its gen-
+438 + 96 2223 = 30 042 9072 .
+have joked that it is beginning to resemble a false state-
+ment, since a false statement implies everything. But
+probably the ABC conjecture is true. Indeed, though a
+bit harder to see, the Erdős–Ulam probabilistic argu-
+ment can be modified to provide heuristic evidence for
+it too.
+Basic to this argument is a perfectly rigorous result
+on the distribution of integers n for which rad(n)
+is below some bound. These ideas, which lead to a
+more explicit version of the ABC conjecture, are worked
+through in the thesis of van Frankenhuijsen and by
+Stewart and Tenenbaum. Here is a slightly weaker state-
+ment: if a + b = c are relatively prime positive integers
+and c is sufficiently large, then we have
+√
+rad(abc) > c 1−1/ log c .
+One might like to know how the numerical evi-
+dence stacks up against (3). This inequality asserts
+
+that if rad(abc) = r , then log(c/r )/ log c < 1. So,
+
+let T (a, b, c) denote the test statistic log(c/r )/ log c.
+There is a Web site maintained by Nitaj that contains a
+math.unicaen.fr/ ̃nitaj/abc.html). Checking the data,
+there are quite a few examples with T (a, b, c) ⩾ 1, the
+champion so far being
+a = 72 · 412 · 3113 = 2 477 678 547 239
+b = 1116 · 132 · 79 = 613 474 843 408 551 921 511
+c = 2 · 33 · 523 · 953 = 613 474 845 886 230 468 750
+r = 2 · 3 · 5 · 7 · 11 · 13 · 41 · 79 · 311 · 953
+= 28 828 335 646 110,
+so that
+log(c/r )
+T (a, b, c) =     
+log c
+Is it always true that T (a, b, c) < 2.5?
+One can get carried away with heuristics, for getting
+that one is not actually proving a theorem, but mak-
+ing a guess. Heuristics are often based on the idea of
+randomness, and all bets are off if there is some under-
+lying structure. But how do we know that there is no
 
 $362$
 

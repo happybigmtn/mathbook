@@ -1,456 +1,678 @@
 # Analytic Number Theory
 
-332                                                                                         IV. Branches of Mathematics
+332
 
-Cohen, H. 1993. A Course in Computational Algebraic Num-         25 . imes 637. Further more, the number 637 can be decom-
-  ber Theory. New York: Springer.                                posed further: it is 49 . imes 13. That is, 15 925 = 52 . imes 72 . imes 13.
+Cohen, H. 1993. A Course in Computational Algebraic Num-
+  ber Theory. New York: Springer.
 Ireland, K., and M. Rosen. 1982. A Classical Introduction to     This information helps us a lot, because if we can find
-  Modern Number Theory, 2 nd edn. New York: Springer.             integers a and b such that a2 + b2 = 13, then we can
+  Modern Number Theory, 2 nd edn. New York: Springer.
 Serre, J.-P. 1973. A Course in Arithmetic. New York: Springer.
-                                                                 multiply them by 5 . imes 7 = 35 and we will have a solution
-                                                                 to the original equation. Now we notice that a = 2 and
-Technical Articles and Books                                     b = 3 works, since 22 +32 = 13. Multiplying these num-
-Baker, A. 1971. Imaginary quadratic fields with class num-        bers by 35, we obtain the solution 702 + 1052 = 15 925
-  ber 2. Annals of Mathematics (2) 94:139–52.                    to the original equation.
-Brauer, R. 1950. On the Zeta-function of algebraic number           As this simple example shows, it is often useful to
-  fields. I. American Journal of Mathematics 69:243–50.           decompose positive integers multiplicative ly into com-
-Brauer, R. 1950. On the Zeta-function of algebraic number        pone nts that cannot be broken down any further. These
+Technical Articles and Books
+Baker, A. 1971. Imaginary quadratic fields with class num-
+  ber 2. Annals of Mathematics (2) 94:139–52.
+Brauer, R. 1950. On the Zeta-function of algebraic number
+  fields. I. American Journal of Mathematics 69:243–50.
+Brauer, R. 1950. On the Zeta-function of algebraic number
   fields. II. American Journal of Mathematics 72:739–46.
-                                                                 components are called prime numbers, and the fun-
 Goldfeld, D. 1985. Gauss’s class number problem for imagi-
-                                                                 da mental theorem of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic) states that
   nary quadratic fields. Bulletin of the American Mathemat-
   ical Society 13:23–37.
-                                                                 every positive integer can be written as a product of
-Granville, A., and G. Martin. 2006. Prime number races.          primes in exactly one way. That is, there is a one-to-one
-  American Mathematical Monthly 113:1–33.                        correspondence between positive integers and finite
-Gross, B., and D. Zagier. 1986. Heegner points and deriva-       products of primes. In many situations we know what
-  tives of L-series. Inventiones Mathematicae 84:225–320.        we need to know about a positive integer once we have
-Heegner, K. 1952. Diophantische Analysis und Mod ulf unk-          decomposed it into its prime factors and understood
-  tionen. Mathematische Zeitschrift 56:227–53.                   those, just as we can understand a lot about molecules
+Granville, A., and G. Martin. 2006. Prime number races.
+  American Mathematical Monthly 113:1–33.
+Gross, B., and D. Zagier. 1986. Heegner points and deriva-
+  tives of L-series. Inventiones Mathematicae 84:225–320.
+Heegner, K. 1952. Diophantische Analysis und Mod ulf unk-
+  tionen. Mathematische Zeitschrift 56:227–53.
 Hua, L.-K. 1942. On the least solution of Pell’s equation.
-                                                                 by studying the atoms of which they are composed. For
   Bulletin of the American Mathematical Society 48:731–35.
-                                                                 example, it is known that the equation x 2 + y 2 = n has
 Lang, S. 1970. Algebraic Number Theory. Reading, MA:
-  Addison-Wesley.                                                an integer solution if and only if every prime of the form
-Narkiewicz, W. 1973. Algebraic Numbers. Warsaw: Polish           4 m+3 occurs an even number of times in the prime fac-
-  Scientific Publishers.                                          tor ization of n. (This tells us, for instance, that there are
-Siegel, C. L. 1935. Über die Classenzahl quadratischer           no integer solutions to the equation x 2 + y 2 = 13 475,
-  Zahlörper. Acta Arithmetica 1:83–86.                           since 13 475 = 52 . imes 72 . imes 11, and 11 appears an odd
-Stark, H. 1967. A complete determination of the complex          number of times in this product.)
+  Addison-Wesley.
+Narkiewicz, W. 1973. Algebraic Numbers. Warsaw: Polish
+  Scientific Publishers.
+Siegel, C. L. 1935. Über die Classenzahl quadratischer
+  Zahlörper. Acta Arithmetica 1:83–86.
+Stark, H. 1967. A complete determination of the complex
   quadratic fields of class-number one. Michigan Mathe-
-                                                                    Once one begins the process of determining which
   mat ical Journal 14:1–27.
-                                                                 integers are primes and which are not, it is soon appar-
-                                                                 ent that there are many primes. However, as one goes
-IV.2 Analytic Number Theory                                      further and further, the primes seem to consist of a
-                                                                 smaller and smaller proportion of the positive integers.
-        Andrew Granville
-                                                                 They also seem to come in a some what irregular pat-
-                    1   Introduction                             tern, which raises the question of whether there is any
-                                                                 formula that describes all of them. Failing that, can one
-What is number theory? One might have thought that it            perhaps describe a large class of them? We can also ask
-was simply the study of numbers, but that is too broad           whether there are infinitely many primes. If there are,
-a definition, since numbers are almost ubiquitous in              can we quickly determine how many there are up to
-mathematics. To see what distinguishes number theory             a given point? Or at least give a good estimate for this
-from the rest of mathematics, let us look at the equa-           number? Finally, when one has spent long enough look-
-tion x 2 + y 2 = 15 925, and consider whether it has any         ing for primes, one cannot help but ask whether there
-solutions. One answer is that it certainly does: indeed,         is a quick way of recognizing them. This last question is
-                                          √
-the solution set forms a circle of radius 15 925 in the          discussed in computational number theory [IV.3](/part-04/computational-number-theory);
-plane. However, a number theorist is interested in inte-         the rest motivate the present article.
-ger solutions, and now it is much less obvious whether              Now that we have discussed what marks number
-any such solutions exist.                                        theory out from the rest of mathematics, we are ready
-   A useful first step in considering the above question          to make a further distinction: between algebraic and
+IV.2 Analytic Number Theory
+
+What is number theory? One might have thought that it
+was simply the study of numbers, but that is too broad
+a definition, since numbers are almost ubiquitous in
+mathematics. To see what distinguishes number theory
+from the rest of mathematics, let us look at the equa-
+tion x 2 + y 2 = 15 925, and consider whether it has any
+solutions. One answer is that it certainly does: indeed,
+the solution set forms a circle of radius 15 925 in the
+plane. However, a number theorist is interested in inte-
+ger solutions, and now it is much less obvious whether
+any such solutions exist.
+   A useful first step in considering the above question
 is to notice that 15 925 is a multiple of 25: in fact, it is     analytic number theory. The main difference is that
 
-IV.2.   Analytic Number Theory                                                                                                      333
+IV. Branches of Mathematics
+25 . imes 637. Further more, the number 637 can be decom-
+posed further: it is 49 . imes 13. That is, 15 925 = 52 . imes 72 . imes 13.
+integers a and b such that a2 + b2 = 13, then we can
+multiply them by 5 . imes 7 = 35 and we will have a solution
+to the original equation. Now we notice that a = 2 and
+b = 3 works, since 22 +32 = 13. Multiplying these num-
+bers by 35, we obtain the solution 702 + 1052 = 15 925
+to the original equation.
+As this simple example shows, it is often useful to
+decompose positive integers multiplicative ly into com-
+pone nts that cannot be broken down any further. These
+components are called prime numbers, and the fun-
+da mental theorem of arithmetic [V.14](/part-05/the-fundamental-theorem-of-arithmetic) states that
+every positive integer can be written as a product of
+primes in exactly one way. That is, there is a one-to-one
+correspondence between positive integers and finite
+products of primes. In many situations we know what
+we need to know about a positive integer once we have
+decomposed it into its prime factors and understood
+those, just as we can understand a lot about molecules
+by studying the atoms of which they are composed. For
+example, it is known that the equation x 2 + y 2 = n has
+an integer solution if and only if every prime of the form
+4 m+3 occurs an even number of times in the prime fac-
+tor ization of n. (This tells us, for instance, that there are
+no integer solutions to the equation x 2 + y 2 = 13 475,
+since 13 475 = 52 . imes 72 . imes 11, and 11 appears an odd
+number of times in this product.)
+Once one begins the process of determining which
+integers are primes and which are not, it is soon appar-
+ent that there are many primes. However, as one goes
+further and further, the primes seem to consist of a
+smaller and smaller proportion of the positive integers.
+Andrew Granville
+They also seem to come in a some what irregular pat-
+1   Introduction                             tern, which raises the question of whether there is any
+formula that describes all of them. Failing that, can one
+perhaps describe a large class of them? We can also ask
+whether there are infinitely many primes. If there are,
+can we quickly determine how many there are up to
+a given point? Or at least give a good estimate for this
+number? Finally, when one has spent long enough look-
+ing for primes, one cannot help but ask whether there
+is a quick way of recognizing them. This last question is
+√
+discussed in computational number theory [IV.3](/part-04/computational-number-theory);
+the rest motivate the present article.
+Now that we have discussed what marks number
+theory out from the rest of mathematics, we are ready
+to make a further distinction: between algebraic and
 
-in algebraic number theory (which is the main topic                  Many people dislike this proof, since it does not actu-
-of algebraic numbers [IV.1](/part-04/number-theory)) one typically considers              ally exhibit infinitely many primes: it merely shows that
-questions with answers that are given by exact formu-             there cannot be finitely many. It is more or less possi-
-las, where as in analytic number theory, the topic of              ble to correct this deficiency by defining the sequence
-this article, one looks for good approximations. For the          x1 = 2, x2 = 3, and xk+1 = x1 x2 · · · xk + 1 for each
-sort of quantity that one estimates in analytic num-              k ⩾ 2. Then each xk must contain at least one prime
-ber theory, one does not expect an exact formula to               factor, qk say, and these prime factors must be distinct,
-exist, except perhaps one of a rather artificial and un-           since if k < , then qk divides xk which divides x − 1,
-illuminating kind. One of the best examples of such a             while q divides x . This gives us an infinite sequence
-quantity is one we shall discuss in detail: the number            of primes.
-of primes less than or equal to x.                                   In the eighteenth century euler [VI.19](/part-06/leonhard-euler-17071783) gave a dif-
-   Since we are discussing approximations, we will need           ferent proof that there are infinitely many primes, one
-terminology that allows us to give some idea of the               that turned out to be highly influential in what was
-quality of an approximation. Suppose, for example, that           to come later. Suppose again that the list of primes
-we have a rather erratic function f (x) but are able to           is p1 , p2 , . . . , pk . As we have mentioned, the funda-
-show that, once x is large enough, f (x) is never big-            mental theorem of arithmetic implies that there is a
-ger than 25 x 2 . This is useful because we understand             one-to-one correspondence between the set of all inte-
-the function g(x) = x 2 quite well. In general, if we             gers and the set of products of the primes, which, if
-                                                                                                                  a   a      a
-can find a constant c such that |f (x)| ⩽ cg(x) for                those are the only primes, is the set {p1 1 p2 2 · · · pk k :
-every x, then we write f (x) = O(g(x)). A typical usage           a1 , a2 , . . . , ak ⩾ 0}. But, as Euler observed, this implies
-occurs in the sentence “the average number of prime               that a sum involving the elements of the first set should
-factors of an integer up to x is log log x + O(1)”; in            equal the analogous sum involving the elements of the
-other words, there exists some constant c > 0 such                second set:
-that |the average − log log x| ⩽ c once x is sufficiently                                   1
-large.                                                                     n⩾1
-                                                                                          ns
-   We write f (x) ∼ g(x) if limx→. nfty f (x)/g(x) = 1; and             n a positive integer
+IV.2.   Analytic Number Theory
 
-also f (x) ≈ g(x) when we are being a little less precise,                                          1
-                                                                      =                        a1 a2       ak s
-that is, when we want to say that f (x) and g(x) come                     a1 , a2 ,..., ak ⩾0
-                                                                                            (p1  p2 · · · pk )
-close when x is sufficiently large, but we cannot be, or                               1                   1                     1
-do not want to be, more specific about what we mean                    =             a                     a        ···            ak s
-                                                                            a1 ⩾0
-                                                                                  (p1 1 )s        a2 ⩾0
-                                                                                                        (p2 2 )s         ak ⩾0
-                                                                                                                               (p k )
+in algebraic number theory (which is the main topic
+of algebraic numbers [IV.1](/part-04/number-theory)) one typically considers
+questions with answers that are given by exact formu-
+las, where as in analytic number theory, the topic of
+this article, one looks for good approximations. For the
+sort of quantity that one estimates in analytic num-
+ber theory, one does not expect an exact formula to
+exist, except perhaps one of a rather artificial and un-
+illuminating kind. One of the best examples of such a
+quantity is one we shall discuss in detail: the number
+of primes less than or equal to x.
+   Since we are discussing approximations, we will need
+terminology that allows us to give some idea of the
+quality of an approximation. Suppose, for example, that
+we have a rather erratic function f (x) but are able to
+show that, once x is large enough, f (x) is never big-
+ger than 25 x 2 . This is useful because we understand
+the function g(x) = x 2 quite well. In general, if we
+can find a constant c such that |f (x)| ⩽ cg(x) for
+every x, then we write f (x) = O(g(x)). A typical usage
+occurs in the sentence “the average number of prime
+factors of an integer up to x is log log x + O(1)”; in
+other words, there exists some constant c > 0 such
+that |the average − log log x| ⩽ c once x is sufficiently
+large.
+   We write f (x) ∼ g(x) if limx→. nfty f (x)/g(x) = 1; and
+
+also f (x) ≈ g(x) when we are being a little less precise,
+that is, when we want to say that f (x) and g(x) come
+close when x is sufficiently large, but we cannot be, or
+do not want to be, more specific about what we mean
 by “come close.”
-                                              
-   It is convenient for us to use the notation for sums                   
-                                                                          k
-                                                                                      1      −1
+   It is convenient for us to use the notation for sums
 
-                                                              =         1−                .
-and       for product. Typically we will indicate beneath                            pj s
-                                                                          j=1
+and
 the symbol what terms the sum, or product, is to be
-                                                                 The last equality holds because each sum in the second-
 taken over. For example, m⩾2 will be a sum over all
-                                                                  last line is the sum of a geometric progression. Euler
 integers m that are greater than or equal to 2, where as
 
-                                                                 then noted that if we take s = 1, the right-hand side
    p prime will be a product over all primes p.
-                                                                  equals some rational number (since each pj > 1)
-        2   Bounds for the Number of Primes                       where as the left-hand side equals . nfty. This is a contra-
-                                                                  diction, so there cannot be finitely many primes. (To see
-Ancient Greek mathematicians knew that there were                 why the left-hand side is infinite when s = 1, note that
-                                                                             n+1
-infinitely many primes. Their beautiful proof by con-              (1/n) ⩾ n (1/t) dt since the function 1/t is decreas-
-                                                                                       N−1             N
-tradiction goes as follows. Suppose that there are only           ing, and therefore n=1 (1/n) ⩾ 1 (1/t) dt = log N
-finitely many primes, say k of them, which we will                 which tends to . nfty as N → . nfty.)
-                                                                                                                    
-denote by p1 , p2 , . . . , pk . What are the prime factors of       During the proof above, we gave a formula for n−s
-p1 p2 · · · pk + 1? Since this number is greater than 1 it        under the false assumption that there are only finitely
-must have at least one prime factor, and this must be             many primes. To correct it, all we have to do is rewrite
-pj for some j (since all primes are contained among               it in the obvious way with out that assumption:
-p1 , p2 , . . . , pk ). But then pj divides both p1 p2 · · · pk                                  
-                                                                                           1                1 −1
-and p1 p2 · · · pk +1, and hence their difference, 1, which                                    =         1 −       .     (1)
-                                                                                 n⩾1
-                                                                                          ns    p prime
-                                                                                                            ps
-is impossible.                                                              n a positive integer
 
-334                                                                                     IV. Branches of Mathematics
+Ancient Greek mathematicians knew that there were
+infinitely many primes. Their beautiful proof by con-
+tradiction goes as follows. Suppose that there are only
+finitely many primes, say k of them, which we will
+denote by p1 , p2 , . . . , pk . What are the prime factors of
+p1 p2 · · · pk + 1? Since this number is greater than 1 it
+must have at least one prime factor, and this must be
+pj for some j (since all primes are contained among
+p1 , p2 , . . . , pk ). But then pj divides both p1 p2 · · · pk
+and p1 p2 · · · pk +1, and hence their difference, 1, which
+is impossible.
 
-Now, however, we need to be a little careful about           from 5, and so on. By the end of this process, one is left
-whether the two sides of the formula converge. It is         with the primes up to x.
-safe to write down such a formula when both sides are          This suggests a way to guess at how many there are.
-absolutely convergent, and this is true when s > 1. (An      After deleting every second integer up to x other than
-infinite sum or product is absolutely convergent if the       2 (which we call “sieving by 2”) one is left with roughly
-value does not change when we take the terms in any          half the integers up to x; after sieving by 3, one is left
-order we want.)                                              with roughly two thirds of those that had remained;
-  Like Euler, we want to be able to interpret what hap-      continuing like this we expect to have about
-pens to (1) when s = 1. Since both sides converge and                                        1
-                                                                                  x      1−                         (4)
-are equal when s > 1, the natural thing to do is con-                                         p
-                                                                                    p ⩽y
+333
+Many people dislike this proof, since it does not actu-
+ally exhibit infinitely many primes: it merely shows that
+there cannot be finitely many. It is more or less possi-
+ble to correct this deficiency by defining the sequence
+x1 = 2, x2 = 3, and xk+1 = x1 x2 · · · xk + 1 for each
+k ⩾ 2. Then each xk must contain at least one prime
+factor, qk say, and these prime factors must be distinct,
+since if k < , then qk divides xk which divides x − 1,
+while q divides x . This gives us an infinite sequence
+of primes.
+In the eighteenth century euler [VI.19](/part-06/leonhard-euler-17071783) gave a dif-
+ferent proof that there are infinitely many primes, one
+that turned out to be highly influential in what was
+to come later. Suppose again that the list of primes
+is p1 , p2 , . . . , pk . As we have mentioned, the funda-
+mental theorem of arithmetic implies that there is a
+one-to-one correspondence between the set of all inte-
+gers and the set of products of the primes, which, if
+a   a      a
+those are the only primes, is the set {p1 1 p2 2 · · · pk k :
+a1 , a2 , . . . , ak ⩾ 0}. But, as Euler observed, this implies
+that a sum involving the elements of the first set should
+equal the analogous sum involving the elements of the
+second set:
+
+n⩾1
+ns
+n a positive integer
+
+=                        a1 a2       ak s
+a1 , a2 ,..., ak ⩾0
+(p1  p2 · · · pk )
+
+=
+a1 ⩾0
+(p1 1 )s        a2 ⩾0
+(p2 2 )s         ak ⩾0
+(p k )
+
+
+k
+1      −1
+=         1−                .
+for product. Typically we will indicate beneath
+j=1
+                                    The last equality holds because each sum in the second-
+last line is the sum of a geometric progression. Euler
+then noted that if we take s = 1, the right-hand side
+equals some rational number (since each pj > 1)
+2   Bounds for the Number of Primes
+diction, so there cannot be finitely many primes. (To see
+why the left-hand side is infinite when s = 1, note that
+n+1
+(1/n) ⩾ n (1/t) dt since the function 1/t is decreas-
+N−1             N
+ing, and therefore n=1 (1/n) ⩾ 1 (1/t) dt = log N
+which tends to . nfty as N → . nfty.)
+
+During the proof above, we gave a formula for n−s
+under the false assumption that there are only finitely
+many primes. To correct it, all we have to do is rewrite
+it in the obvious way with out that assumption:
+
+1                1 −1
+=
+n⩾1
+ns    p prime
+ps
+n a positive integer
+
+334
+
+Now, however, we need to be a little careful about
+whether the two sides of the formula converge. It is
+safe to write down such a formula when both sides are
+absolutely convergent, and this is true when s > 1. (An
+infinite sum or product is absolutely convergent if the
+value does not change when we take the terms in any
+order we want.)
+  Like Euler, we want to be able to interpret what hap-
+pens to (1) when s = 1. Since both sides converge and
+are equal when s > 1, the natural thing to do is con-
 sider their common limit as s tends to 1 from above.
-                                                             integers left by the time we have sieved with all the
-To do this we note, as above, that the left-hand side of                                    √
-                                                             primes up to y. Once y = x the undeleted integers
+To do this we note, as above, that the left-hand side of
 (1) is well approximated by
-                                                             are 1 and the primes up to x, since every composite
-                      . nfty
-                          dt    1                            has a prime factor no bigger than its square root. So, is
-                             =     ,
-                      1   ts   s−1                           (4) a good approximation for the number of primes up
-                                                                              √
-so it diverges as s → 1+ . We deduce that                    to x when y = x?
-                              1                                To answer this question, we need to be more precise
-                           1−     = 0.                 (2)
-                   p prime
-                               p                             about what the formula in (4) is estimating. It is sup-
-                                                             posed to approximate the number of integers up to x
-Taking logarithms and discarding negligible terms, we
-                                                             that have no prime factors less than or equal to y, plus
-then find that
-                      1                                     the number of primes up to y. The so-called inclusion–
-                             = . nfty.                  (3)       exclusion principle can be used to show that the approx-
-                   p prime
-                           p
-                                                             imation given in (4) is accurate to within 2 k , where k is
-So how numerous are the primes? One way to get an            the number of primes less than or equal to y. Unless k
-idea is to determine the behavior of the sum analo-          is very small, this error term of 2 k is far larger than the
-gous to (3) for other sequences of integers. For instance,   quantity we are trying to estimate, and the approxima-
-          2
-   n⩾1 1/n converges, so the primes are, in this sense,      tion is use less. It is quite good if k is less than a small
-more numerous than the squares. This argument works          constant times log x, but, as we have seen, this is far
-if we replace the power 2 by any s > 1, since then, as       less than the number of primes we expect up to y if
-                                                                  √
-we have just observed, the sum n⩾1 1/ns is about             y ≈ x. Thus it is not clear whether (4) can be used
-1/(s − 1) and in particular converges. In fact, since        to obtain a good estimate for the number of primes up
-                  2
-   n⩾1 1/n(log n) converges, we see that the primes          to x. What we can do, however, is use this argument to
-are in the same sense more numerous than the num-            give an upper bound for the number of primes up to
-bers {n(log n)2 : n ⩾ 1}, and hence there are infinitely      x, since the number of primes up to x is never more
-many integers x for which the number of primes less          than the number of integers up to x that are free of
-than or equal to x is at least x/(log x)2 .                  prime factors less than or equal to y, plus the number
-   Thus, there seem to be primes in abundance, but           of primes up to y, which is no more than 2 k plus the
-we would also like to verify our observations, made          expression in (4).
-from calculations, that the primes constitute a smaller         Now, by (2), we know that as y gets larger and larger
+so it diverges as s → 1+ . We deduce that
 
-and smaller proportion of the integers as the integers       the product p ⩽y (1 − 1/p) converges to zero. There-
+Taking logarithms and discarding negligible terms, we
+then find that
+
+So how numerous are the primes? One way to get an
+idea is to determine the behavior of the sum analo-
+gous to (3) for other sequences of integers. For instance,   quantity we are trying to estimate, and the approxima-
+
+   n⩾1 1/n converges, so the primes are, in this sense,
+more numerous than the squares. This argument works
+if we replace the power 2 by any s > 1, since then, as
+we have just observed, the sum n⩾1 1/ns is about
+1/(s − 1) and in particular converges. In fact, since
+
+   n⩾1 1/n(log n) converges, we see that the primes
+are in the same sense more numerous than the num-
+bers {n(log n)2 : n ⩾ 1}, and hence there are infinitely
+many integers x for which the number of primes less
+than or equal to x is at least x/(log x)2 .
+   Thus, there seem to be primes in abundance, but
+we would also like to verify our observations, made
+from calculations, that the primes constitute a smaller
+
+and smaller proportion of the integers as the integers
 become larger and larger. The easiest way to see this is     fore, for any small positive number ε we can find a
 
-to try to count the primes using the “sieve of Eratos-       y such that p ⩽y (1 − 1/p) < ε/2. Since every term in
+to try to count the primes using the “sieve of Eratos-
 thenes.” In the sieve of Eratosthenes one starts with all    this product is at least 1/2, the product is at least 1/2 k .
-the positive integers up to some number x. From these,       Hence, for any x ⩾ 22 k our error term, 2 k , is no bigger
-one deletes the numbers 4, 6, 8 and so on—that is, all       than the quantity in (4), and therefore the number of
-multiples of 2 apart from 2 itself. One then takes the       primes up to x is no larger than twice (4), which, by our
-first undeleted integer greater than 2, which is 3, and       choice of y, is less than εx. Since we were free to make
-deletes all its multiples—again, not including the num-      ε as small as we liked, the primes are indeed a vanishing
-ber 3 itself. Then one removes all multiples of 5 apart      proportion of all the integers, as we predicted.
+the positive integers up to some number x. From these,
+one deletes the numbers 4, 6, 8 and so on—that is, all
+multiples of 2 apart from 2 itself. One then takes the
+first undeleted integer greater than 2, which is 3, and
+deletes all its multiples—again, not including the num-
+ber 3 itself. Then one removes all multiples of 5 apart
 
-IV.2.   Analytic Number Theory                                                                                             335
+IV. Branches of Mathematics
+from 5, and so on. By the end of this process, one is left
+with the primes up to x.
+This suggests a way to guess at how many there are.
+After deleting every second integer up to x other than
+2 (which we call “sieving by 2”) one is left with roughly
+half the integers up to x; after sieving by 3, one is left
+with roughly two thirds of those that had remained;
+continuing like this we expect to have about
+
+x      1−                         (4)
+p
+p ⩽y
+integers left by the time we have sieved with all the
+√
+primes up to y. Once y = x the undeleted integers
+are 1 and the primes up to x, since every composite
+. nfty
+dt    1                            has a prime factor no bigger than its square root. So, is
+=     ,
+1   ts   s−1                           (4) a good approximation for the number of primes up
+√
+to x when y = x?
+         1                                To answer this question, we need to be more precise
+1−     = 0.                 (2)
+p prime
+p                             about what the formula in (4) is estimating. It is sup-
+posed to approximate the number of integers up to x
+that have no prime factors less than or equal to y, plus
+ 1                                     the number of primes up to y. The so-called inclusion–
+= . nfty.                  (3)       exclusion principle can be used to show that the approx-
+p prime
+p
+imation given in (4) is accurate to within 2 k , where k is
+the number of primes less than or equal to y. Unless k
+is very small, this error term of 2 k is far larger than the
+2
+tion is use less. It is quite good if k is less than a small
+constant times log x, but, as we have seen, this is far
+less than the number of primes we expect up to y if
+                             . qrt{y} ≈ x. Thus it is not clear whether (4) can be used
+to obtain a good estimate for the number of primes up
+2
+to x. What we can do, however, is use this argument to
+give an upper bound for the number of primes up to
+x, since the number of primes up to x is never more
+than the number of integers up to x that are free of
+prime factors less than or equal to y, plus the number
+of primes up to y, which is no more than 2 k plus the
+expression in (4).
+Now, by (2), we know that as y gets larger and larger
+the product p ⩽y (1 − 1/p) converges to zero. There-
+y such that p ⩽y (1 − 1/p) < ε/2. Since every term in
+Hence, for any x ⩾ 22 k our error term, 2 k , is no bigger
+than the quantity in (4), and therefore the number of
+primes up to x is no larger than twice (4), which, by our
+choice of y, is less than εx. Since we were free to make
+ε as small as we liked, the primes are indeed a vanishing
+proportion of all the integers, as we predicted.
 
-   Even though the error term in the inclusion–exclu-                    Table 1 Primes up to various x, and
-sion principle is too large for us to use that method to                 the over count in Gauss’s prediction.
-                         √
+IV.2.   Analytic Number Theory
+
+   Even though the error term in the inclusion–exclu-
+sion principle is too large for us to use that method to
 estimate (4) when y = x, we can still hope that (4) is
-                                                                                                            Over count:
-a good approximation for the number of primes up to                                                        x
-                                                                                                              dt
-x: perhaps a different argument would give us a much            x          π (x) = #{primes ⩽ x}                    − π (x)
-                                                                                                           2 log t
+a good approximation for the number of primes up to
+x: perhaps a different argument would give us a much
 smaller error term. And this turns out to be the case:
-in fact, the error never gets much bigger than (4). How-     108                        5 761 455                        753
-                  . qrt{109}                       50 847 534                      1 700
+in fact, the error never gets much bigger than (4). How-     108
+
 ever, when y = x the number of primes up to x is
-                                                             1010                     455 052 511                      3 103
 actually about 8/9 times (4). So why does (4) not give
-                                                             1011                   4 118 054 813                     11 587
 a good approximation? After sieving with prime p we
-                                                             1012                  37 607 912 018                     38 262
 supposed that roughly 1 in every p of the remaining
-                                                             1013                 346 065 536 839                    108 970
-integers were deleted: a careful analysis yields that this   1014               3 204 941 750 802                    314 889
-can be justified when p is small, but that this becomes       1015              29 844 570 422 669                  1 052 618
-an increasingly poor approximation of what really hap-       1016             279 238 341 033 925                  3 214 631
-pens for larger p; in fact (4) does not give a correct       1017           2 623 557 157 654 233                  7 956 588
-approximation once y is bigger than a fixed power of x.       1018          24 739 954 287 740 860                 21 949 554
-So what goes wrong? In the hope that the proportion          1019         234 057 667 276 344 607                 99 877 774
-                                                             1020       2 220 819 602 560 918 840                222 744 643
+integers were deleted: a careful analysis yields that this   1014
+can be justified when p is small, but that this becomes
+an increasingly poor approximation of what really hap-
+pens for larger p; in fact (4) does not give a correct
+approximation once y is bigger than a fixed power of x.
+So what goes wrong? In the hope that the proportion
 is roughly 1/p lies the unspoken assumption that the
-                                                             1021      21 127 269 486 018 731 928                597 394 253
 consequences of sieving by p are independent of what
-                                                             1022     201 467 286 689 315 906 290              1 932 355 207
 happened with the primes smaller than p. But if the
 primes under consideration are no longer small, then
-this assumption is false. This is one of the main rea-       central one it appears that the difference is something
-                                                                  √
-sons that it is hard to estimate the number of primes        like x.
-up to x, and indeed similar difficulties lie at the heart         In the 1930 s, Harald Cramér, the great probabil-
-of many related problems.                                    ity theorist, gave a probabilistic way of interpreting
-                                                             Gauss’s prediction. We can represent the primes as a
+this assumption is false. This is one of the main rea-
+sons that it is hard to estimate the number of primes
+up to x, and indeed similar difficulties lie at the heart
+of many related problems.
    One can refine the bounds given above but they do
-                                                             sequence of 0 s and 1 s. If we start with 3 and put a 1 each
 not seem to yield an asymptotic estimate for the primes
-                                                             time we encounter a prime and 0 otherwise, then we ob-
 (that is, an estimate which is correct to within a fac-
-                                                             tain the sequence 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, . . . . Cramér’s
 tor that tends to 1 as x gets large). The first good
-                                                             idea is to suppose that this sequence, which repre-
 guesses for such an estimate emerged at the begin-
-                                                             sents the primes, has the same properties as a “typical”
 ning of the nineteenth century, none better than what
-                                                             sequence of 0 s and 1 s, and to use this principle to make
 emerges from an observation of gauss [VI.26](/part-06/carl-friedrich-gauss-17771855), made
-                                                             precise conjectures about the primes. More precisely,
 when studying tables of primes up to three million
-                                                             let X3 , X4 , . . . be an infinite sequence of random vari-
 at sixteen years of age, that “the density of primes at
-                                                             ables [III.71 §4](/part-03/probability-distributions) taking the values 0 or 1, and let the
 around x is about 1/ log x.” Interpreting this, we guess     variable Xn equal 1 with probability 1/ log n (so that
-that the number of primes up to x is about                   it equals 0 with probability 1 − 1/ log n). Assume also
-                  
-                  x
-                       1        x
-                                     dt                      that the variables are independent, so for each m know-
-                           ≈              .                  ledge about the variables other than Xm tells us noth-
-                 n=2
-                     log n     2    log t
-                                                             ing about Xm itself. Cramér’s suggestion was that any
-Let us compare this prediction (rounded to the nearest       statement about the distribution of 1 s in the sequence
-integer) with the latest data on numbers of primes, dis-     that represents the primes will be true if and only if it is
-covered by a mixture of ingenuity and computational          true with probability 1 for his random sequences. Some
-power. Table 1 shows the actual numbers of primes            care is needed in interpreting this statement: for exam-
-up to various powers of 10 together with the differ-          ple, with probability 1 a random sequence will contain
-ence between these numbers and what Gauss’s formula          infinitely many even numbers. However, it is possible
-gives. The differences are far smaller than the num-          to formulate a general principle that takes account of
-bers themselves, so his prediction is amazingly accu-        such examples.
-rate. It does seem always to be an over count, but since         Here is an example of a use of the Gauss–Cramér
-the width of the last column is about half that of the       model. With the help of the central limit theorem
+that the number of primes up to x is about
 
-336                                                                                     IV. Branches of Mathematics
+Let us compare this prediction (rounded to the nearest
+integer) with the latest data on numbers of primes, dis-     that represents the primes will be true if and only if it is
+covered by a mixture of ingenuity and computational
+power. Table 1 shows the actual numbers of primes
+up to various powers of 10 together with the differ-
+ence between these numbers and what Gauss’s formula
+gives. The differences are far smaller than the num-
+bers themselves, so his prediction is amazingly accu-
+rate. It does seem always to be an over count, but since
+the width of the last column is about half that of the
+
+335
+Table 1 Primes up to various x, and
+the over count in Gauss’s prediction.
+√
+Over count:
+x
+dt
+x
+2 log t
+5 761 455
+. qrt{1010}                     455 052 511                      3 103
+1011                   4 118 054 813                     11 587
+1012                  37 607 912 018                     38 262
+1013                 346 065 536 839                    108 970
+3 204 941 750 802
+1015
+1016
+1017
+1018
+1019
+1020       2 220 819 602 560 918 840                222 744 643
+1021      21 127 269 486 018 731 928                597 394 253
+1022     201 467 286 689 315 906 290              1 932 355 207
+central one it appears that the difference is something
+√
+like x.
+In the 1930 s, Harald Cramér, the great probabil-
+ity theorist, gave a probabilistic way of interpreting
+Gauss’s prediction. We can represent the primes as a
+sequence of 0 s and 1 s. If we start with 3 and put a 1 each
+time we encounter a prime and 0 otherwise, then we ob-
+tain the sequence 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, . . . . Cramér’s
+idea is to suppose that this sequence, which repre-
+sents the primes, has the same properties as a “typical”
+sequence of 0 s and 1 s, and to use this principle to make
+precise conjectures about the primes. More precisely,
+let X3 , X4 , . . . be an infinite sequence of random vari-
+ables [III.71 §4](/part-03/probability-distributions) taking the values 0 or 1, and let the
+it equals 0 with probability 1 − 1/ log n). Assume also
+
+x
+1        x
+dt                      that the variables are independent, so for each m know-
+≈              .                  ledge about the variables other than Xm tells us noth-
+n=2
+log n     2    log t
+ing about Xm itself. Cramér’s suggestion was that any
+statement about the distribution of 1 s in the sequence
+true with probability 1 for his random sequences. Some
+care is needed in interpreting this statement: for exam-
+ple, with probability 1 a random sequence will contain
+infinitely many even numbers. However, it is possible
+to formulate a general principle that takes account of
+such examples.
+Here is an example of a use of the Gauss–Cramér
+model. With the help of the central limit theorem
+
+336
 
 [III.71 §5](/part-03/probability-distributions) one can prove that, with probability 1, there   Gauss’s conjecture for the number of primes up to x
-are                                                         is equivalent to gaining a good understanding of the
-                   x
-                      dt       √
-                          + O( x log x)                     zeros of the function ζ(s), that is, of the values of s
-                  2 log t                                   for which ζ(s) = 0. Riemann’s deep work gave birth to
-1 s among the first x terms in our sequence. The model        our subject, so it seems worthwhile to at least sketch
-tells us that the same should be true of the sequence       the key steps in the argument linking these seemingly
-representing primes, and so we predict that                 unconnected topics.
-                           x
-                                dt       √                     Riemann’s starting point was Euler’s formula (1). It is
-    #{primes up to x} =              + O( x log x),   (5)
-                           2   log t                        not hard to prove that this formula is valid when s is
-just as the table suggests.                                 complex, as long as its real part is greater than 1, so we
-  The Gauss–Cramér model provides a beautiful way           have
-to think about distribution questions concerning the                                            1 −1
-                                                                           ζ(s) =          1− s        .
-prime numbers, but it does not give proofs, and it does                           p prime
-                                                                                                p
+are
+
+1 s among the first x terms in our sequence. The model
+tells us that the same should be true of the sequence
+representing primes, and so we predict that
+    #{primes up to x} =
+just as the table suggests.
+  The Gauss–Cramér model provides a beautiful way
+to think about distribution questions concerning the
+prime numbers, but it does not give proofs, and it does
 not seem likely that it can be made into such a tool;
-                                                            If we take the logarithm of both sides and then differ-
 so for proofs we must look elsewhere. In analytic num-
-                                                            entiate, we obtain the equation
 ber theory one attempts to count objects that appear
-                                                                    ζ (s)           log p        log p
-naturally in arithmetic, yet which resist being counted           −       =                 =                  .
-                                                                     ζ(s)            p s −1               p ms
-easily. So far, our discussion of the primes has con-                        p prime          p prime m⩾1
+naturally in arithmetic, yet which resist being counted
+easily. So far, our discussion of the primes has con-
 
-centrated on upper and lower bounds that follow from        We need some way to distinguish between primes p ⩽
-their basic definition and a few elementary properties—      x and primes p > x; that is, we want to count those
-notably the fundamental theorem of arithmetic. Some         primes p for which x/p ⩾ 1, but not those with x/p <
-of these bounds are good and some not so good. To           1. This can be done using the step function that takes
-improve on these bounds we shall do something that          the value 0 for y < 1 and the value 1 for y > 1 (so
-seems unnatural at first, and reformulate our question       that its graph looks like a step). At y = 1, the point of
-as a question about complex functions. This will allow      discontinuity, it is convenient to give the function the
-us to draw on deep tools from analysis.                     average value, 12 . Perron’s formula, one of the big tools
-                                                            of analytic number theory. describes this step function
-3     The “Analysis” in Analytic Number Theory              by an integral, as follows. For any c > 0,
-                                                                                            ⎧
-These analytic techniques were born in an 1859 memoir                                       ⎪
-                                                                                            ⎪ 0 if 0 < y < 1,
-                                                                                            ⎪
-                                                                                            ⎨
-of riemann [VI.49], in which he looked at the function               1             ys
-                                                                                      ds = 12 if y = 1,
-                                                                   2π i s: Re(s)=c s         ⎪
-                                                                                            ⎪
-that appears in the formula (1) of Euler, but with one                                      ⎪
-                                                                                            ⎩1 if y > 1.
+centrated on upper and lower bounds that follow from
+their basic definition and a few elementary properties—
+notably the fundamental theorem of arithmetic. Some
+of these bounds are good and some not so good. To
+improve on these bounds we shall do something that
+seems unnatural at first, and reformulate our question
+as a question about complex functions. This will allow
+us to draw on deep tools from analysis.
+3     The “Analysis” in Analytic Number Theory
+These analytic techniques were born in an 1859 memoir
+of riemann [VI.49], in which he looked at the function
+that appears in the formula (1) of Euler, but with one
 crucial difference: now he considered complex values
-of s. To be precise, he defined what we now call the         The integral is a path integral along a vertical line in the
-Riemann zeta function as follows:                           complex plane: the line consisting of all points c + it
-                             1                             with t ∈ R. We apply Perron’s formula with y = x/p m ,
-                    ζ(s) =         .
-                                ns                          so that we count the term corresponding to p m when
-                           n⩾ 1                                                                                       1
-                                                            p m < x, but not when p m > x. To avoid the “ 2 ,”
+of s. To be precise, he defined what we now call the
+Riemann zeta function as follows:
 It can be shown quite easily that this sum converges
-                                                            assume that x is not a prime power. In that case we
 whenever the real part of s is greater than 1, as we
-                                                            obtain
-have already seen in the case of real s. However, one of           
-the great advantages of allowing complex values of s is                     log p
-                                                               p prime, m⩾1
-that the resulting function is holomorphic [I.3 §5.6](/part-01/fundamental-definitions),             p m ⩽x
-and we can use a process of analytic continuation to                                                               s
-                                                                          1                                     x       ds
-make sense of ζ(s) for every s apart from 1. (A simi-                =                     log p
-                                                                         2π i p prime, m⩾1         s: Re(s)=c   pm       s
+have already seen in the case of real s. However, one of
+the great advantages of allowing complex values of s is
+that the resulting function is holomorphic [I.3 §5.6](/part-01/fundamental-definitions),
+and we can use a process of analytic continuation to
+make sense of ζ(s) for every s apart from 1. (A simi-
 lar but more elementary example of this phenomenon
-                      
-is the infinite series n⩾0 zn , which converges if and                      1               ζ (s) x s
-                                                                     =−                              ds.                     (6)
-only if |z| < 1. However, when it does converge, it                       2π i   s: Re(s)=c ζ(s) s
+is the infinite series n⩾0 zn , which converges if and
+only if |z| < 1. However, when it does converge, it
 
-equals 1/(1 − z), and this formula defines a holomor-        We can justify swapping the order of the sum and
-phic function that is defined every where except z = 1.)      the integral if c is taken large enough, since every-
-Riemann proved the remarkable fact that confirming           thing then converges absolutely. Now the left-hand side
+equals 1/(1 − z), and this formula defines a holomor-
+phic function that is defined every where except z = 1.)
+Riemann proved the remarkable fact that confirming
 
-IV.2.   Analytic Number Theory                                                                                        337
+IV. Branches of Mathematics
+is equivalent to gaining a good understanding of the
+x
+dt       √
++ O( x log x)                     zeros of the function ζ(s), that is, of the values of s
+2 log t
+our subject, so it seems worthwhile to at least sketch
+the key steps in the argument linking these seemingly
+unconnected topics.
+x
+dt       √                     Riemann’s starting point was Euler’s formula (1). It is
++ O( x log x),   (5)
+2   log t                        not hard to prove that this formula is valid when s is
+complex, as long as its real part is greater than 1, so we
+have
+
+ζ(s) =          1− s        .
+p prime
+p
+If we take the logarithm of both sides and then differ-
+entiate, we obtain the equation
+ζ (s)           log p        log p
+−
+ζ(s)            p s −1               p ms
+p prime
+We need some way to distinguish between primes p ⩽
+x and primes p > x; that is, we want to count those
+primes p for which x/p ⩾ 1, but not those with x/p <
+1. This can be done using the step function that takes
+the value 0 for y < 1 and the value 1 for y > 1 (so
+that its graph looks like a step). At y = 1, the point of
+discontinuity, it is convenient to give the function the
+average value, 12 . Perron’s formula, one of the big tools
+of analytic number theory. describes this step function
+by an integral, as follows. For any c > 0,
+⎧
+⎪
+⎪ 0 if 0 < y < 1,
+⎪
+⎨
+1
+ds = 12 if y = 1,
+2π i s: Re(s)=c s         ⎪
+⎪
+⎪
+⎩1 if y > 1.
+The integral is a path integral along a vertical line in the
+complex plane: the line consisting of all points c + it
+ 1                             with t ∈ R. We apply Perron’s formula with y = x/p m ,
+ζ(s) =         .
+ns                          so that we count the term corresponding to p m when
+n⩾ 1                                                                                       1
+p m < x, but not when p m > x. To avoid the “ 2 ,”
+assume that x is not a prime power. In that case we
+obtain
+
+log p
+p prime, m⩾1
+p m ⩽x
+
+1                                     x       ds
+=
+2π i p prime, m⩾1         s: Re(s)=c   pm       s
+
+1
+=−                              ds.                     (6)
+2π i   s: Re(s)=c ζ(s) s
+We can justify swapping the order of the sum and
+the integral if c is taken large enough, since every-
+thing then converges absolutely. Now the left-hand side
 
-of the above equation is not counting the number of            (8), we can deduce that the only zeros of ζ(s) with
-primes up to x but rather a “weighted” version: for each       Re(s) < 0 lie at the negative even integers −2, −4, . . .
-prime p we add a weight of log p to the count. It turns        (the “trivial zeros”). So, to be able to use (7), we need to
-out, though, that Gauss’s prediction for the number of         determine the zeros inside the critical strip, the set of
-primes up to x follows so long as we can show that             all s such that 0 ⩽ Re(s) ⩽ 1. Here Riemann made yet
-x is a good estimate for this weighted count when x            another extraordinary observation which, if true, would
-is large. Notice that the sum in (6) is exactly the loga-      allow us tremendous insight into virtually every aspect
-rithm of the lowest common multiple of the integers            of the distribution of primes.
+IV.2.   Analytic Number Theory
+
+of the above equation is not counting the number of
+primes up to x but rather a “weighted” version: for each
+prime p we add a weight of log p to the count. It turns
+out, though, that Gauss’s prediction for the number of
+primes up to x follows so long as we can show that
+x is a good estimate for this weighted count when x
+is large. Notice that the sum in (6) is exactly the loga-
+rithm of the lowest common multiple of the integers
 less than or equal to x, which perhaps explains why
-                                                               The Riemann hypothesis. If 0 ⩽ Re(s) ⩽ 1 and ζ(s) =
 this weighted counting function for the primes is a nat-
-                                                               0, then Re(s) = 12 .
 ural function to consider. Another explanation is that
-if the density of primes near p is indeed about 1/ log p,         It is known that there are infinitely many zeros on the
-then multiplying by a weight of log p makes the density        line Re(s) = 12 , crowding closer and closer together as
-every where about 1.                                            we go up the line. The Riemann hypothesis has been
-   If you know some complex analysis, then you will            verified computationally for the ten billion zeros of
-know that Cauchy’s residue theorem allows one to eval-         lowest height (that is, with |Im(s)| smallest), it can be
-uate the integral in (6) in terms of the “residues” of         shown to hold for at least 40% of all zeros, and it fits
-the integrand (ζ (s)/ζ(s))(x s /s), that is, the poles of      nicely with many different heuristic assertions about
-this function. More over, for any function f that is ana-       the distribution of primes and other sequences. Yet, for
-lytic except perhaps at finitely many points, the poles         all that, it remains an unproved hypothesis, perhaps the
+if the density of primes near p is indeed about 1/ log p,
+then multiplying by a weight of log p makes the density
+every where about 1.
+   If you know some complex analysis, then you will
+know that Cauchy’s residue theorem allows one to eval-
+uate the integral in (6) in terms of the “residues” of
+the integrand (ζ (s)/ζ(s))(x s /s), that is, the poles of
+this function. More over, for any function f that is ana-
+lytic except perhaps at finitely many points, the poles
 of f (s)/f (s) are the zeros and poles of f . Each pole of     most famous and tantalizing in all of mathematics.
-f (s)/f (s) has order 1, and the residue is simply the            How did Riemann think of his “hypothesis”? Rie-
-order of the corresponding zero, or minus the order of         mann’s memoir gives no hint as to how he came up
-the corresponding pole, of f . Using these facts we can        with such an extraordinary conjecture, and for a long
-obtain the explicit formula                                    time afterwards it was held up as an example of the
-                                   xρ       ζ (0)            great heights to which humankind could ascend by
-                    log p = x −            −        . (7)      pure thought alone. However, in the 1920 s Siegel and
-       p prime, m⩾1             ρ:ζ(ρ)=0
-                                         ρ    ζ(0)
-         p m ⩽x                                                weil [VI.93](/part-06/andr-weil-19061998) got hold of Riemann’s unpublished notes
-                                                               and from these it is evident that Riemann had been
+f (s)/f (s) has order 1, and the residue is simply the
+order of the corresponding zero, or minus the order of
+the corresponding pole, of f . Using these facts we can
+obtain the explicit formula
+
 Here the zeros of ζ(s) are counted with multiplicity:
-                                                               able to determine the lowest few zeros to several dec-
 that is, if ρ is a zero of ζ(s) of order k, then there are k
-                                                               imal places through extensive hand calculations—so
 terms for ρ in the sum. It is astonishing that there can
-                                                               much for “pure thought alone”! Nevertheless, the Rie-
 be such a formula, an exact expression for the number
-                                                               mann hypothesis is a mammoth leap of imagination
 of primes up to x in terms of the zeros of a complicated
-                                                               and to have come up with an algorithm to calculate
 function: you can see why Riemann’s work stretched
-                                                               zeros of ζ(s) is a remarkable achievement. (See com-
 people’s imagination and had such an impact.
-                                                               putational number theory [IV.3](/part-04/computational-number-theory) for a discussion of
    Riemann made another surprising observation which
-                                                               how zeros of ζ(s) can be calculated.)
 allows us to easily determine the values of ζ(s) on the
-                                                                  If the Riemann hypothesis is true, then it is not hard
 left-hand side of the complex plane (where the function
-                                                               to prove the bound
-is not naturally defined). The idea is to multiply ζ(s) by                            ρ
-                                                                                    x        x 1/2
-some simple function so that the resulting product ξ(s)                                 
-                                                                                     ρ  ⩽ |Im(ρ)| .
+is not naturally defined). The idea is to multiply ζ(s) by
+some simple function so that the resulting product ξ(s)
 satisfies the functional equation
-                                                               Inserting this into (7) one can deduce that
-                  ξ(s) = ξ(1 − s)   for all s.           (8)                                    √
-                                                                                  log p = x + O( x log2 x).             (9)
-He determined that this can be done by taking ξ(s) =                       p prime
-1            −s/2 Γ ( 1 s)ζ(s). Here Γ (s) is the famous
+
+He determined that this can be done by taking ξ(s) =
+1
 2 s(s − 1)π
-                                                                            p ⩽x
-                      2
-gamma function [III.31](/part-03/the-gamma-function), which equals the factorial            This, in turn, can be “translated” into (5). In fact these
+gamma function [III.31](/part-03/the-gamma-function), which equals the factorial
 function at positive integers (that is, Γ (n) = (n − 1)!),     estimates hold if and only if the Riemann hypothesis
-and is well-defined and continuous for all other s.             is true.
-   A careful analysis of (1) reveals that there are no            The Riemann hypothesis is not an easy thing to
-zeros of ζ(s) with Re(s) > 1. Then, with the help of           understand, nor to fully appreciate. The equivalent, (5),
+and is well-defined and continuous for all other s.
+   A careful analysis of (1) reveals that there are no
+zeros of ζ(s) with Re(s) > 1. Then, with the help of
+
+337
+(8), we can deduce that the only zeros of ζ(s) with
+Re(s) < 0 lie at the negative even integers −2, −4, . . .
+(the “trivial zeros”). So, to be able to use (7), we need to
+determine the zeros inside the critical strip, the set of
+all s such that 0 ⩽ Re(s) ⩽ 1. Here Riemann made yet
+another extraordinary observation which, if true, would
+allow us tremendous insight into virtually every aspect
+of the distribution of primes.
+The Riemann hypothesis. If 0 ⩽ Re(s) ⩽ 1 and ζ(s) =
+0, then Re(s) = 12 .
+It is known that there are infinitely many zeros on the
+line Re(s) = 12 , crowding closer and closer together as
+we go up the line. The Riemann hypothesis has been
+verified computationally for the ten billion zeros of
+lowest height (that is, with |Im(s)| smallest), it can be
+shown to hold for at least 40% of all zeros, and it fits
+nicely with many different heuristic assertions about
+the distribution of primes and other sequences. Yet, for
+all that, it remains an unproved hypothesis, perhaps the
+How did Riemann think of his “hypothesis”? Rie-
+mann’s memoir gives no hint as to how he came up
+with such an extraordinary conjecture, and for a long
+time afterwards it was held up as an example of the
+
+log p = x −            −        . (7)      pure thought alone. However, in the 1920 s Siegel and
+p prime, m⩾1
+ρ    ζ(0)
+p m ⩽x
+and from these it is evident that Riemann had been
+able to determine the lowest few zeros to several dec-
+imal places through extensive hand calculations—so
+much for “pure thought alone”! Nevertheless, the Rie-
+mann hypothesis is a mammoth leap of imagination
+and to have come up with an algorithm to calculate
+zeros of ζ(s) is a remarkable achievement. (See com-
+putational number theory [IV.3](/part-04/computational-number-theory) for a discussion of
+how zeros of ζ(s) can be calculated.)
+If the Riemann hypothesis is true, then it is not hard
+to prove the bound
+ ρ
+x        x 1/2
+    
+ ρ  ⩽ |Im(ρ)| .
+Inserting this into (7) one can deduce that
+ξ(s) = ξ(1 − s)   for all s.
+log p = x + O( x log2 x).             (9)
+p prime
+−s/2 Γ ( 1 s)ζ(s). Here Γ (s) is the famous
+p ⩽x
+2
+This, in turn, can be “translated” into (5). In fact these
+is true.
+The Riemann hypothesis is not an easy thing to
+understand, nor to fully appreciate. The equivalent, (5),
 
 $338$
 
@@ -470,153 +692,229 @@ Primes in Arithmetic Progressions
 
 After giving good estimates for the number of primes up to x, which from now on we shall denote by $\pi$ (x), we might ask for the number of such primes that are congruent to a mod q. (If you do not know what this means, see modular arithmetic [III.58](/part-03/modular-arithmetic).) Let us write $\pi$ (x ; q, a) for this quantity. To start with, note that
 
-IV.2.   Analytic Number Theory                                                                                              339
+IV.2.   Analytic Number Theory
 
-there is only one prime congruent to 2 mod 4, and              2, −1 if n ≡ 4, −i if n ≡ 3, and 1 if n ≡ 1. To
-indeed there can be no more than one prime in any              see that this is a character, note that the powers of
-arithmetic progression a, a + q, a + 2 q, . . . if a and q      2 mod 5 are 2, 4, 3, 1, 2, 4, 3, 1, . . . , while the powers of
-have a common factor greater than 1. Let φ(q) denote           i are i, −1, −i, 1, i, −1, −i, 1, . . . .
-the number of integers a, 1 ⩽ a ⩽ q, such that (a, q) =          It can be shown that there are precisely φ(q) distinct
-1. (The notation (a, q) stands for the highest common          characters mod q. Their usefulness to us comes from
-factor of a and q.) Then all but a small finite number          the properties above, together with the following for-
-of the infinitely many primes belong to the φ(q) arith-         mula, in which the sum is over all characters mod q
-metic progressions a, a + q, a + 2 q, . . . with 1 ⩽ a < q      and χ̄(a) denotes the complex conjugate of χ(a):
-and (a, q) = 1. Calculation reveals that the primes seem                                 ⎧
-                                                                      1                 ⎨1 if n ≡ a (mod q),
-to be pretty evenly split between these φ(q) arithmetic                      χ̄(a)χ(n) =
-progressions, so we might guess that in the limit the                φ(q)                ⎩0 otherwise.
-                                                                             χ
+there is only one prime congruent to 2 mod 4, and
+indeed there can be no more than one prime in any
+arithmetic progression a, a + q, a + 2 q, . . . if a and q
+have a common factor greater than 1. Let φ(q) denote
+the number of integers a, 1 ⩽ a ⩽ q, such that (a, q) =
+1. (The notation (a, q) stands for the highest common
+factor of a and q.) Then all but a small finite number
+of the infinitely many primes belong to the φ(q) arith-
+metic progressions a, a + q, a + 2 q, . . . with 1 ⩽ a < q
+and (a, q) = 1. Calculation reveals that the primes seem
+to be pretty evenly split between these φ(q) arithmetic
+progressions, so we might guess that in the limit the
 proportion of primes in each of them is 1/φ(q). That
-                                                               What is this formula doing for us? Well, understand-
 is, whenever (a, q) = 1, we might conjecture that, as
-                                                               ing the set of integers congruent to a mod q is equiva-
 x → . nfty,
-                                π (x)                          lent to understanding the function that takes the value
-                  π (x; q, a) ∼       .               (11)     1 if n ≡ a (mod q) and 0 otherwise. This function
-                                φ(q)
-                                                               appears on the right-hand side of the formula. How-
-   It is far from obvious even that the number of primes
-                                                               ever, it is not a particularly nice function to deal with,
-congruent to a mod q is infinite. This is a famous the-
-                                                               so we write it as a linear combination of characters,
-orem of dirichlet [VI.36]. To begin to consider such
-                                                               which are much nicer functions because they are mul-
-questions we need a systematic way to identify integers
-                                                               tiplicative. The coefficient associated with the character
-n that are congruent to a mod q, and this Dirichlet pro-
-                                                               χ in this linear combination is the number χ̄(a)/φ(q).
-vided by introducing a class of functions now known
-as (Dirichlet) characters. Formally, a character mod q           From the formula, it follows that
-is a function χ from Z to C with the following three                
-                                                                           log p
-properties (in ascending order of interest):                    p prime, m⩾1
-                                                                    p m ⩽x
-  (i) χ(n) = 0 whenever n and q have a common factor            p m ≡a (mod q)
-                                                                                  1                      
-      greater than 1;                                                      =                    χ̄(a)             χ(p m ) log p.
- (ii) χ is periodic mod q (that is, χ(n + q) = χ(n) for                          φ(q) χ (mod q)      p prime, m⩾1
-      every integer n);                                                                                  p m ⩽x
 
-(iii) χ is multiplicative (that is, χ(mn) = χ(m)χ(n) for       The sum on the left-hand side is a natural adaptation of
-      any two integers m and n).                               the sum we considered earlier when we were counting
-                                                               all primes. And we can estimate it if we can get good
+   It is far from obvious even that the number of primes
+congruent to a mod q is infinite. This is a famous the-
+orem of dirichlet [VI.36]. To begin to consider such
+questions we need a systematic way to identify integers
+n that are congruent to a mod q, and this Dirichlet pro-
+vided by introducing a class of functions now known
+as (Dirichlet) characters. Formally, a character mod q
+is a function χ from Z to C with the following three
+properties (in ascending order of interest):
+  (i) χ(n) = 0 whenever n and q have a common factor
+
+ (ii) χ is periodic mod q (that is, χ(n + q) = χ(n) for
+
+(iii) χ is multiplicative (that is, χ(mn) = χ(m)χ(n) for
+
 An easy but important example of a character mod q
-                                                               estimates for each of the sums
-is the principal character χq , which takes the value 1 if                         
-(n, q) = 1 and 0 otherwise. If q is prime, then another                                   χ(p m ) log p.
-                                                 ·                                  p prime, m⩾1
-important example is the Legendre symbol ( q ): one sets                                p m ⩽x
+is the principal character χq , which takes the value 1 if
+(n, q) = 1 and 0 otherwise. If q is prime, then another
+important example is the Legendre symbol ( q ): one sets
   n
 ( q ) to be 0 if n is a multiple of q, 1 if n is a quadratic
-                                                               We approach these sums much as we did before, obtain-
 residue mod q, and −1 if n is a quadratic nonresidue
-                                                               ing an explicit formula, analogous to (7), (10), now in
 mod q. (An integer n is called a quadratic residue mod q
-                                                               terms of the zeros of the Dirichlet L-function:
 if n is congruent mod q to a perfect square.) If q is com-
-posite, then a function known as the Legendre–Jacobi                                         χ(n)
-                                                                                 L(s, χ) =           .
-symbol ( q· ), which generalizes the Legendre symbol,                                      n⩾1
-                                                                                                ns
+posite, then a function known as the Legendre–Jacobi
+symbol ( q· ), which generalizes the Legendre symbol,
 is also a character. This too is an important example
-                                                               This function turns out to have properties closely
 that helps us, in a slightly less direct way, to recognize
-                                                               analogous to the main properties of ζ(s). In particular,
 squares mod q.
-                                                               it is here that the multiplicativity of χ is all-important,
    These characters are all real-valued, which is the
-                                                               since it gives us a formula similar to (1):
 exception rather than the rule. Here is an example
-of a genuinely complex-valued character in the case                          χ(n)                          χ(p) −1
-                                                                                          =             1−           .      (12)
-q = 5. Set χ(n) to be 0 if n ≡ 0 (mod 5), i if n ≡                          n⩾1
-                                                                                     ns       p prime
-                                                                                                              ps
+of a genuinely complex-valued character in the case
+q = 5. Set χ(n) to be 0 if n ≡ 0 (mod 5), i if n ≡
 
-340                                                                                       IV. Branches of Mathematics
+339
+2, −1 if n ≡ 4, −i if n ≡ 3, and 1 if n ≡ 1. To
+see that this is a character, note that the powers of
+2 mod 5 are 2, 4, 3, 1, 2, 4, 3, 1, . . . , while the powers of
+i are i, −1, −i, 1, i, −1, −i, 1, . . . .
+It can be shown that there are precisely φ(q) distinct
+characters mod q. Their usefulness to us comes from
+the properties above, together with the following for-
+mula, in which the sum is over all characters mod q
+and χ̄(a) denotes the complex conjugate of χ(a):
+⎧
+1                 ⎨1 if n ≡ a (mod q),
+χ̄(a)χ(n) =
+φ(q)
+χ
+What is this formula doing for us? Well, understand-
+ing the set of integers congruent to a mod q is equiva-
+π (x)                          lent to understanding the function that takes the value
+π (x; q, a) ∼
+φ(q)
+appears on the right-hand side of the formula. How-
+ever, it is not a particularly nice function to deal with,
+so we write it as a linear combination of characters,
+which are much nicer functions because they are mul-
+tiplicative. The coefficient associated with the character
+χ in this linear combination is the number χ̄(a)/φ(q).
+From the formula, it follows that
+
+log p
+p prime, m⩾1
+p m ⩽x
+p m ≡a (mod q)
+1                      
+greater than 1;
+φ(q) χ (mod q)
+every integer n);
+The sum on the left-hand side is a natural adaptation of
+any two integers m and n).
+all primes. And we can estimate it if we can get good
+estimates for each of the sums
+
+χ(p m ) log p.
+·                                  p prime, m⩾1
+p m ⩽x
+We approach these sums much as we did before, obtain-
+ing an explicit formula, analogous to (7), (10), now in
+terms of the zeros of the Dirichlet L-function:
+ χ(n)
+L(s, χ) =           .
+n⩾1
+ns
+This function turns out to have properties closely
+analogous to the main properties of ζ(s). In particular,
+it is here that the multiplicativity of χ is all-important,
+since it gives us a formula similar to (1):
+ χ(n)
+=             1−           .      (12)
+n⩾1
+ns       p prime
+ps
 
-That is, L(s, χ) has an Euler product. We also believe         a prime less than q5.5 if q is sufficiently large. Obtain-
-the “generalized Riemann hypothesis” that all zeros ρ          ing a result of this type is not difficult when there are
-                                                     1
-of L(ρ, χ) = 0 in the critical strip satisfy Re(ρ) = 2 .       no Siegel zeros. If there are Siegel zeros, then we go
-This would imply that the number of primes up to x             back to the explicit formula, which is similar to (7) but
-that are congruent to a mod q can be estimated as              now concerns zeros of L(s, χ). If β is a Siegel zero, then
-                         π (x)     √                           it turns out that in the explicit formula there are now
-         π (x; q, a) =         + O( x log2 (qx)).      (13)                                                a
-                                                               two obviously large terms: x/φ(q) and −( q )x β /βφ(q).
-                         φ(q)
-                                                                       a
-                                                               When ( q ) = 1 it appears that they might almost cancel
+340
+
+That is, L(s, χ) has an Euler product. We also believe
+the “generalized Riemann hypothesis” that all zeros ρ
+of L(ρ, χ) = 0 in the critical strip satisfy Re(ρ) = 2 .
+This would imply that the number of primes up to x
+that are congruent to a mod q can be estimated as
+
 Therefore, the generalized Riemann hypothesis implies
-                                                               (since β is close to 1), but with more care we obtain
 the estimate we were hoping for (formula (11)), pro-
-vided that x is a little bigger than q2 .                            a xβ                        1
-                                                                x−        = (x − x β ) + x β 1 −       ∼ x(1 − β) log x.
-   In what range can we prove (11) unconditionally—                  q β                         β
-that is, with out the help of the generalized Riemann           This is a smaller main term than before, but it is not
-hypothesis? Although we can more or less translate the         too hard to show that it is bigger than the con tr ibu-
-proof of the prime number theorem over into this new           tions of all of the other zeros combined, because the
-setting, we find that it gives (11) only when x is very         Deuring–Heilbronn phenomenon implies that the Siegel
-large. In fact, x has to be bigger than an exponential         zero repels those zeros, forcing them to be far to the
-                                                                               a
-in a power of q, which is a lot bigger than the “x is a        left. When ( q ) = −1, the same two terms tell us that
+vided that x is a little bigger than q2 .
+   In what range can we prove (11) unconditionally—
+that is, with out the help of the generalized Riemann
+hypothesis? Although we can more or less translate the
+proof of the prime number theorem over into this new
+setting, we find that it gives (11) only when x is very
+large. In fact, x has to be bigger than an exponential
+in a power of q, which is a lot bigger than the “x is a
 little larger than q2 ” that we obtained from the general-     if (1 − β) log x is small, then there are twice as many
-ized Riemann hypothesis. We see a new type of problem          primes as we would expect up to x that are congruent
-emerging here, in which we are asking for a good start-        to a mod q.
-ing point for the range of x for which we obtain good             There is a close connection between Siegel zeros
-estimates, as a function of the modulus q; this does not       and class numbers, which are defined and discussed in
-have an analogy in our exploration of the prime num-           algebraic numbers [IV.1 §7](/part-04/number-theory). Dirichlet’s class number
-                                                                                                            √
-ber theorem. By the way, even though this bound “x is a        formula states that L(1, ( q· )) = π h−q / q for q > 6,
-                                                                                                                  √
+ized Riemann hypothesis. We see a new type of problem
+emerging here, in which we are asking for a good start-
+ing point for the range of x for which we obtain good
+estimates, as a function of the modulus q; this does not
+have an analogy in our exploration of the prime num-
+ber theorem. By the way, even though this bound “x is a
 little larger than q2 ” is far out of reach of current meth-   where h−q is the class number of the field Q( −q). A
-ods, it still does not seem to be the best answer; calcu-      class number is always a positive integer, so this result
-                                                                                                    ·         √
-la tions reveal that (11) seems to hold when x is just          immediately implies that L(1, ( q )) ⩾ π / q. Another
-a little bigger than q. So even the Riemann hypothesis         consequence is that h−q is small if and only if L(1, ( q· ))
-and its generalizations are not powerful enough to tell        is small. The reason this gives us information about
-us the precise behavior of the distribution of primes.         Siegel zeros is that one can show that the derivative
-                                                                        ·
-   Through out the twentieth century much thought was           L (σ , ( q )) is positive (and not too small) for real num-
-put in to bounding the number of zeros of Dirichlet L-         bers σ close to 1. This implies that L(1, ( q· )) is small
-functions near to the 1-line. It turns out that one can        if and only if L(s, ( q· )) has a real zero close to 1, that
-make enormous improvements in the range of x for               is, a Siegel zero β. When h−q = 1, the link is more
-which (11) holds (to “halfway between polynomial in            direct: it can be shown that the Siegel zero β is approx-
-                                                                                   . qrt{q} and exponential in q”) provided there are no Siegel          imately 1 − 6/(π q). (There are also more complicated
+ods, it still does not seem to be the best answer; calcu-
+la tions reveal that (11) seems to hold when x is just
+a little bigger than q. So even the Riemann hypothesis
+and its generalizations are not powerful enough to tell
+us the precise behavior of the distribution of primes.
+   Through out the twentieth century much thought was
+put in to bounding the number of zeros of Dirichlet L-
+functions near to the 1-line. It turns out that one can
+make enormous improvements in the range of x for
+which (11) holds (to “halfway between polynomial in
+q and exponential in q”) provided there are no Siegel
 zeros. These putative zeros β of L(s, ( q· )) would be real    formulas for larger values of h−q .)
-                              √
-numbers with β > 1 − c/ q; they can be shown to be                These connections show that getting good lower
-extremely rare if they exist at all.                           bounds on h−q is equivalent to getting good bounds
-   That Siegel zeros are rare is a consequence of the          on the possible range for Siegel zeros. Siegel showed
-Deuring–Heilbronn phenomenon: that zeros of L-func-            that for any ε > 0 there exists a constant cε > 0
-tions [III.47](/part-03/l-functions) repel each other, rather like similarly         such that L(1, ( q· )) ⩾ cε q−ε . His proof was unsatis-
-charged particles. (This phenomenon is akin to the             factory because by its very nature one cannot give an
-fact that different algebraic numbers repel one another,        explicit value for cε . Why not? Well, the proof comes
-part of the basis of the subject of Diophantine approx-        in two parts. The first assumes the generalized Rie-
-imation.)                                                      mann hypothesis, in which case an explicit bound fol-
-   How big is the smallest prime congruent to a mod q          lows easily. The second obtains a lower bound in terms
-when (a, q) = 1? Despite the possibility of the existence      of the first counterexample to the generalized Riemann
-of Siegel zeros, one can prove that there is always such       hypothesis. So if the generalized Riemann hypothesis is
+numbers with β > 1 − c/ q; they can be shown to be
+extremely rare if they exist at all.
+   That Siegel zeros are rare is a consequence of the
+Deuring–Heilbronn phenomenon: that zeros of L-func-
+tions [III.47](/part-03/l-functions) repel each other, rather like similarly
+charged particles. (This phenomenon is akin to the
+fact that different algebraic numbers repel one another,
+part of the basis of the subject of Diophantine approx-
+imation.)
+   How big is the smallest prime congruent to a mod q
+when (a, q) = 1? Despite the possibility of the existence
+of Siegel zeros, one can prove that there is always such
+
+IV. Branches of Mathematics
+a prime less than q5.5 if q is sufficiently large. Obtain-
+ing a result of this type is not difficult when there are
+1
+no Siegel zeros. If there are Siegel zeros, then we go
+back to the explicit formula, which is similar to (7) but
+now concerns zeros of L(s, χ). If β is a Siegel zero, then
+π (x)     √                           it turns out that in the explicit formula there are now
+π (x; q, a) =
+two obviously large terms: x/φ(q) and −( q )x β /βφ(q).
+φ(q)
+a
+When ( q ) = 1 it appears that they might almost cancel
+(since β is close to 1), but with more care we obtain
+a xβ
+x−        = (x − x β ) + x β 1 −       ∼ x(1 − β) log x.
+q β
+This is a smaller main term than before, but it is not
+too hard to show that it is bigger than the con tr ibu-
+tions of all of the other zeros combined, because the
+Deuring–Heilbronn phenomenon implies that the Siegel
+zero repels those zeros, forcing them to be far to the
+a
+left. When ( q ) = −1, the same two terms tell us that
+primes as we would expect up to x that are congruent
+to a mod q.
+There is a close connection between Siegel zeros
+and class numbers, which are defined and discussed in
+algebraic numbers [IV.1 §7](/part-04/number-theory). Dirichlet’s class number
+√
+formula states that L(1, ( q· )) = π h−q / q for q > 6,
+√
+class number is always a positive integer, so this result
+·         √
+immediately implies that L(1, ( q )) ⩾ π / q. Another
+consequence is that h−q is small if and only if L(1, ( q· ))
+is small. The reason this gives us information about
+Siegel zeros is that one can show that the derivative
+·
+L (σ , ( q )) is positive (and not too small) for real num-
+bers σ close to 1. This implies that L(1, ( q· )) is small
+if and only if L(s, ( q· )) has a real zero close to 1, that
+is, a Siegel zero β. When h−q = 1, the link is more
+direct: it can be shown that the Siegel zero β is approx-
+√
+imately 1 − 6/(π q). (There are also more complicated
+√
+These connections show that getting good lower
+bounds on h−q is equivalent to getting good bounds
+on the possible range for Siegel zeros. Siegel showed
+that for any ε > 0 there exists a constant cε > 0
+such that L(1, ( q· )) ⩾ cε q−ε . His proof was unsatis-
+factory because by its very nature one cannot give an
+explicit value for cε . Why not? Well, the proof comes
+in two parts. The first assumes the generalized Rie-
+mann hypothesis, in which case an explicit bound fol-
+lows easily. The second obtains a lower bound in terms
+of the first counterexample to the generalized Riemann
+hypothesis. So if the generalized Riemann hypothesis is
 
 $IV$ . $2$ .
 
@@ -859,91 +1157,112 @@ which holds for any $k \ge 0$ , by summing over all $n\inS.$ The reason for usin
 However, with a judicious choice of k the missing terms do not contribute much to the complete sum and we get a good answer. Minor variants work well for many questions. In the “combinatorial sieve” one selects which d are part of the upper and lower bound sums, not by counting the total number of prime factors they contain but instead using other criteria, such as the numbers of prime factors of d in each of several intervals. Using such a method, Brun showed that there cannot be too many twin primes $p, p + 2$ ;
 indeed, the sum of $1/p$ , over all primes p for which $p + 2$ is also prime, converges, in contrast with (3) .
 
-346                                                                                         IV. Branches of Mathematics
+346
 
-  In the “Selberg upper bound sieve” one comes up           an integral delay equation. Such an equation is typical
-with some numbers . ambda d that are nonzero only when             when we give precise estimates for questions that arise
-d ⩽ D (where D is chosen to be not too large), with         in sieve theory.
-the property that                                             Questions about the distribution of smooth numbers
-                           2                               arise frequently in the analysis of algorithms, and have
-            χm (n) ⩽     . ambda d   for all n.                    consequently been the focus of a lot of recent research.
-                        d|n
-                                                            (See computational number theory [IV.3 §3](/part-04/computational-number-theory) for an
-Summing over the appropriate n one then finds the            example of the use of smooth numbers.)
+  In the “Selberg upper bound sieve” one comes up
+with some numbers . ambda d that are nonzero only when
+d ⩽ D (where D is chosen to be not too large), with
+the property that
+
+Summing over the appropriate n one then finds the
 optimal solution by minimizing the resulting quad-
-ratic form. Lower bounds can also be obtained out                           11 The Circle Method
+ratic form. Lower bounds can also be obtained out
 of Selberg’s methods. It was by using such methods
-                                                            Another method of analysis that plays a prominent role
 that Chen was able to prove there are infinitely many
-                                                            in this subject is the so-called circle method, which goes
 primes p for which p + 2 has at most two prime fac-
-                                                            back to hardy [VI.73](/part-06/godfrey-harold-hardy-18771947) and littlewood [VI.79](/part-06/john-edensor-littlewood-18851977). This
 tors, and that Goldston, Pintz, and Yıldırım were able to
-                                                            method uses the fact that, for any integer n,
-establish that there are some times short gaps between                                     ⎧
-                                                                          1               ⎨1 if n = 0,
-primes. These methods are also an essential ingredient                        2 iπ nt
-                                                                            e        dt =
-in the work of Green and Tao. One can also get good                       0               ⎩0 otherwise.
-upper bounds on the number of primes in arithmetic          For example, if we wish to count the number, r (n), of
-progressions and short intervals:                           solutions to the equation p +q = n with p and q prime,
-                                                            we can express it as an integral as follows:
+establish that there are some times short gaps between
+primes. These methods are also an essential ingredient
+in the work of Green and Tao. One can also get good
+upper bounds on the number of primes in arithmetic
+progressions and short intervals:
   • the number of primes in any interval of length y
-                                                                                    1
-    is never greater than 2 y/ log y;                              r (n) =              e2 iπ (p+q−n)t dt
-  • the number of primes less than x in an arith-                             p, q⩽n    0
-                                                                            both prime
+    is never greater than 2 y/ log y;
+  • the number of primes less than x in an arith-
     metic progression mod q is never greater than
-                                                                             1                                      2
-    2 x/φ(q) log(x/q).                                                   =        e−2 iπ nt                  e2 iπ pt       dt.
-                                                                             0              p prime, p⩽n
+    2 x/φ(q) log(x/q).
 Notice that in each case the log in the denominator
-                                                            The first equality holds because the integrand is 0 when
 is of the number of integers being considered (y and
-                                                            p + q = n and 1 otherwise, and the second is easy to
 x/q, respectively), not log x as expected, though this
-                                                            check.
 will only make a significant difference if the number
-                                                               At first sight it looks more difficult to estimate the
 of integers being considered is small. Otherwise these
-                                                            integral than it is to estimate r (n) directly, but this
 inequalities are bigger than the expected quantity by a
-                                                            is not the case. For instance, the prime number theo-
 factor of 2. Can this “2” be improved? It will be difficult
-                                                            rem for arithmetic progressions allows us to estimate
-because we showed earlier that if there are Siegel zeros            
-                                                            P (t) = p⩽n e2 iπ pt when t is a rational /m with m
+because we showed earlier that if there are Siegel zeros
 then we get twice as many primes as expected in certain
-                                                            small. For in this case,
 arithmetic progressions. Therefore, if we can improve
-                                                                                             
-the “2” in these two formulas, then we can deduce that          P       =         e2 iπ a/m           1
-there are no Siegel zeros!                                         m      (a, m)=1             p⩽n,
-                                                                                               p≡a   (mod m)
-                                                                                          π (n)        π (n)
-               10   Smooth Numbers                                     ≈         e2 iπ a/m       = μ(m)       .
-                                                                         (a, m)=1
-                                                                                           φ(m)         φ(m)
+the “2” in these two formulas, then we can deduce that
+there are no Siegel zeros!
+
 An integer is y-smooth if all of its prime factors are
-                                                            If t is sufficiently close to /m, then P (t) ≈ P (/m);
 less than or equal to y. A proportion 1 − log 2 of the
-                        √                                   such values of t are called the major arcs and we believe
 integers up to x are x-smooth, and indeed, for any
-                                                            that the integral over the major arcs gives, in total,
 fixed u > 1 there exists some number ρ(u) > 0 such
-                                                            a very good approximation to r (n); indeed, we get
 that if x = y u , then a proportion ρ(u) of the integers
-                                                            something very close to the quantity one predicts from
 up to x are y-smooth. This proportion does not seem
-                                                            something like (15). Thus to prove the Goldbach con-
 to have any easy definition in general. For 1 ⩽ u ⩽ 2 we
-                                                            jecture we need to show that the contribution to the
 have ρ(u) = 1 − log u, but for larger u it is best defined
-                                                            integral from the other values of t (that is, from the
 as
-                         1 1                                minor arcs) is small. In many problems one can success-
-                 ρ(u) =      ρ(u − t) dt,                   fully do this, but no one has yet succeeded in doing so
-                         u 0
+
+IV. Branches of Mathematics
+an integral delay equation. Such an equation is typical
+when we give precise estimates for questions that arise
+in sieve theory.
+Questions about the distribution of smooth numbers
+     2                               arise frequently in the analysis of algorithms, and have
+χm (n) ⩽     . ambda d   for all n.
+d|n
+(See computational number theory [IV.3 §3](/part-04/computational-number-theory) for an
+example of the use of smooth numbers.)
+11 The Circle Method
+Another method of analysis that plays a prominent role
+in this subject is the so-called circle method, which goes
+back to hardy [VI.73](/part-06/godfrey-harold-hardy-18771947) and littlewood [VI.79](/part-06/john-edensor-littlewood-18851977). This
+method uses the fact that, for any integer n,
+⎧
+1               ⎨1 if n = 0,
+2 iπ nt
+e        dt =
+0
+For example, if we wish to count the number, r (n), of
+solutions to the equation p +q = n with p and q prime,
+we can express it as an integral as follows:
+      1
+r (n) =
+p, q⩽n    0
+both prime
+1                                      2
+=
+0              p prime, p⩽n
+The first equality holds because the integrand is 0 when
+p + q = n and 1 otherwise, and the second is easy to
+check.
+At first sight it looks more difficult to estimate the
+integral than it is to estimate r (n) directly, but this
+is not the case. For instance, the prime number theo-
+rem for arithmetic progressions allows us to estimate
+
+P (t) = p⩽n e2 iπ pt when t is a rational /m with m
+small. For in this case,
+                         
+P
+m
+p≡a   (mod m)
+             π (n)        π (n)
+10   Smooth Numbers
+(a, m)=1
+φ(m)         φ(m)
+If t is sufficiently close to /m, then P (t) ≈ P (/m);
+√                                   such values of t are called the major arcs and we believe
+that the integral over the major arcs gives, in total,
+a very good approximation to r (n); indeed, we get
+something very close to the quantity one predicts from
+something like (15). Thus to prove the Goldbach con-
+jecture we need to show that the contribution to the
+integral from the other values of t (that is, from the
+1 1                                minor arcs) is small. In many problems one can success-
+ρ(u) =
+u 0
 
 $IV$ . $2$ .
 

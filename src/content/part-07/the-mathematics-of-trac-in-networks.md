@@ -263,59 +263,103 @@ $\le$
 
 Note that the problem is of the same form as the ear$j\inJ$ lier optimization problem, but the function to be minimized now measures the total network delay per unit The Lagrange multipliers now have a more sophistitime. (Recall that the function to be minimized in the cated interpretation. Suppose that, in addition to the delay D j (y j), users of link j incur a traffic-dependent first optimization problem seemed initially to be rather toll arbitrary, with its eventual motivation being that its T j (y j) $=$ y j D j (y j) . minimization was achieved by a Wardrop equilibrium .)
 
-868                                                                                   VII. The Influence of Mathematics
+868
 
-Then \mu j is the generalized cost of using link j, defined       Each of a large but indeterminate number of flows is
+Then \mu j is the generalized cost of using link j, defined
 as the sum of the toll and the delay, and . ambda s is the mini-     controlled by a feedback loop that can know only of
-mum generalized cost over all routes serving the node         that flow’s experience of congestion. A flow does not
-pair s. If users select routes in an attempt to mini-         know how many other flows are sharing a link on its
-mize the sum of their tolls and their delays, then they       route, or even how many links are on its route. The
-will produce a flow pattern that minimizes total delay         links vary in capacity by many orders of magnitude, as
-in the network. Notice that the generalized cost \mu j is        do the numbers of flows sharing different links. It is
+mum generalized cost over all routes serving the node
+pair s. If users select routes in an attempt to mini-
+mize the sum of their tolls and their delays, then they
+will produce a flow pattern that minimizes total delay
+in the network. Notice that the generalized cost \mu j is
 (∂/∂yj )(yj D(yj )), which is the rate of increase in the     remarkable that so much has been achieved in such a
-total delay at link j as the flow yj is increased. So the      rapidly growing and heterogeneous network with con-
-assumption now is that, in a certain sense, drivers try       gestion controlled just at the endpoints. Why does this
-to minimize their contribution to the total delay rather      algorithm work so well?
-than minimizing their own delay.                                 In recent years theoreticians have shed some light on
-  We have seen that if drivers attempt to minimize            TCP’s success, by interpreting the protocol as a decen-
-their own delay, then the resulting equilibrium flows          tralized parallel algorithm that solves an optimization
-will minimize a certain objective function defined for         problem, just as the decentralized choices of drivers in
-the network. However, the objective function is cer-          a road network solve an optimization problem. We shall
-tainly not the total network delay, and thus there is         out line the argument, beginning with a more detailed
-no guarantee that when capacity is added to a network         description of TCP.2
-the situation is improved. We have also seen that, with          Packets transferred by TCP across the Internet con-
+total delay at link j as the flow yj is increased. So the
+assumption now is that, in a certain sense, drivers try
+to minimize their contribution to the total delay rather
+than minimizing their own delay.
+  We have seen that if drivers attempt to minimize
+their own delay, then the resulting equilibrium flows
+will minimize a certain objective function defined for
+the network. However, the objective function is cer-
+tainly not the total network delay, and thus there is
+no guarantee that when capacity is added to a network
+the situation is improved. We have also seen that, with
 the imposition of appropriate tolls, it is possible for the   tain sequence numbers indicating their order, and they
 self-interested behavior of drivers to lead to an equ i lib-    should arrive at their destination in that order. When
-rium pattern of flow that minimizes total delay. A major       a packet is received at the destination, it is acknow-
-challenge for governments and transport planners is to        ledged: an acknowledgment is a short packet sent by
-understand how insights from these and more sophisti-         the destination back to the source. If a packet has been
-cated models might be used to encourage more efficient          lost in the transfer, the source can tell this from the
-development and use of road networks (Department for          sequence numbers contained in the acknowledgments.
-Transport 2004).                                              The source keeps a copy of each packet sent until it
-                                                              has been positively acknowledged; these copies form
-          5   Flow Control in the Internet                    what is called a sliding window, and allow packets lost
-When a file is requested over the Internet, the com-           in transfer to be sent again by the source.
-puter that hosts that file breaks it into small packets           Meanwhile, stored in the source computer there is
-of data that are then transferred across the network          a numerical variable known as the congestion window
-by the transmission control protocol of the Internet, or      and denoted cwnd. The congestion window directs the
-TCP. The rate at which packets enter the network is con-      size of the sliding window in the following sense: if the
-trolled by TCP, which is implemented as software on           size of the sliding window is less than cwnd, then the
-the two computers that are the source and destination         computer increases it by sending out a packet; if it is
-of the data. The general approach is as follows (Jacob-       greater than or equal to cwnd, then it waits for positive
-son 1988). When a link within the network becomes             acknowledgments to come in, which have the effect of
-overloaded, one or more packets are lost; loss of a           reducing the size of the sliding window and, as we shall
+rium pattern of flow that minimizes total delay. A major
+challenge for governments and transport planners is to
+understand how insights from these and more sophisti-
+cated models might be used to encourage more efficient
+development and use of road networks (Department for
+Transport 2004).
+
+When a file is requested over the Internet, the com-
+puter that hosts that file breaks it into small packets
+of data that are then transferred across the network
+by the transmission control protocol of the Internet, or
+TCP. The rate at which packets enter the network is con-
+trolled by TCP, which is implemented as software on
+the two computers that are the source and destination
+of the data. The general approach is as follows (Jacob-
+son 1988). When a link within the network becomes
+overloaded, one or more packets are lost; loss of a
 packet is taken as an indication of congestion, the desti-    see, increasing cwnd as well. Thus, the size of the sliding
-nation in forms the source, and the source slows down.         window continually changes, moving in the direction of
-TCP then gradually increases its sending rate until it        a target size that is given by the congestion window.
-again receives an indication of congestion. This cycle           The congestion window itself is not a fixed number:
-of increase and decrease enables the source computers         rather, it is constantly being updated, and the precise
-to discover and use the available capacity, and to share      rules for how this is done are critical for TCP’s shar-
-it between different flows of packets.                          ing of capacity. The rules currently used are as follows.
+nation in forms the source, and the source slows down.
+TCP then gradually increases its sending rate until it
+again receives an indication of congestion. This cycle
+of increase and decrease enables the source computers
+to discover and use the available capacity, and to share
+it between different flows of packets.
    TCP has been outstandingly successful as the Inter-
-net has evolved from a small-scale research network to          2. Even our detailed description of TCP is simplified, concerning
-                                                              just the congestion-avoidance part of the protocol and omitting dis-
-today’s interconnection of hundreds of millions of end-       cussion of timeouts or of reactions to multiple congestion indication
+net has evolved from a small-scale research network to
+today’s interconnection of hundreds of millions of end-
 points and links. This in itself is a striking observation.   signals received within a single round-trip time.
+
+VII. The Influence of Mathematics
+Each of a large but indeterminate number of flows is
+that flow’s experience of congestion. A flow does not
+know how many other flows are sharing a link on its
+route, or even how many links are on its route. The
+links vary in capacity by many orders of magnitude, as
+do the numbers of flows sharing different links. It is
+rapidly growing and heterogeneous network with con-
+gestion controlled just at the endpoints. Why does this
+algorithm work so well?
+In recent years theoreticians have shed some light on
+TCP’s success, by interpreting the protocol as a decen-
+tralized parallel algorithm that solves an optimization
+problem, just as the decentralized choices of drivers in
+a road network solve an optimization problem. We shall
+out line the argument, beginning with a more detailed
+description of TCP.2
+Packets transferred by TCP across the Internet con-
+a packet is received at the destination, it is acknow-
+ledged: an acknowledgment is a short packet sent by
+the destination back to the source. If a packet has been
+lost in the transfer, the source can tell this from the
+sequence numbers contained in the acknowledgments.
+The source keeps a copy of each packet sent until it
+has been positively acknowledged; these copies form
+5   Flow Control in the Internet
+in transfer to be sent again by the source.
+Meanwhile, stored in the source computer there is
+a numerical variable known as the congestion window
+and denoted cwnd. The congestion window directs the
+size of the sliding window in the following sense: if the
+size of the sliding window is less than cwnd, then the
+computer increases it by sending out a packet; if it is
+greater than or equal to cwnd, then it waits for positive
+acknowledgments to come in, which have the effect of
+reducing the size of the sliding window and, as we shall
+window continually changes, moving in the direction of
+a target size that is given by the congestion window.
+The congestion window itself is not a fixed number:
+rather, it is constantly being updated, and the precise
+rules for how this is done are critical for TCP’s shar-
+ing of capacity. The rules currently used are as follows.
+2. Even our detailed description of TCP is simplified, concerning
+just the congestion-avoidance part of the protocol and omitting dis-
+cussion of timeouts or of reactions to multiple congestion indication
 
 VII . $4$ .
 
@@ -376,69 +420,100 @@ subject to
 
 Some aspects of this optimization problem are as we might expect: in particular, the inequality Ax $\le$ C simply adds up the flows through link j and requires that the sum not exceed the capacity C j of link j, for each link j $\in$ J. But, as before, the function being optimized is undoubtedly strange. The arctan function, illustrated
 
-870                                                                                    VII. The Influence of Mathematics
+870
 
-      arctan(x)                                                   an objective function for the entire network. The objec-
-                                                                  tive function has a surprising interpretation: it is as
-                                                                  if the usefulness of the flow rate xr to the source–
-                                                                  destination pair served by this route is given by a utility
-                                                                  function          . qrt{2}          xr Tr
-                  0                                                                     arctan √        ,
-                                                     x                               Tr             2
-Figure 4 The arctan function. The Internet’s TCP implic-          and the network is attempting to maximize the sum
-itly maximizes a sum of utilities over all the connections        of these utility functions across all source–destination
-present in a network: this function shows the shape of the        pairs, subject to constraints arising from the limited
+Figure 4 The arctan function. The Internet’s TCP implic-
+itly maximizes a sum of utilities over all the connections
+present in a network: this function shows the shape of the
 utility function for a single connection. The horizontal axis     capacities of the links.
 is proportional to the rate of the connection, and the vertical
-                                                                     The arctan function, illustrated in figure 4, is concave.
 axis is proportional to the usefulness of that rate. Both axes
 are scaled in terms of the round-trip time of the connection.     Thus, if two or more connections share an overloaded
-                                                                  link, the rates achieved will be approximately equal,
-                                                                  since otherwise the total utility could be increased by
-in figure 4, is the inverse function to the trigonometric          reducing the largest rate a little and increasing the
-function tan, and can also be defined as                           smallest rate a little. As a result, there is a tendency
-                                x
-                                 1                                for TCP to share resources more or less equitably. This
-                  arctan(x) =        du.
-                              1 + u2
-                                0                                 is very different from resource-control mechanisms in
-From this form, we see that its derivative with respect           traditional telephone networks where, if the network
-to x is 1/(1 + x 2 ).                                             is overloaded, some calls are blocked in order that the
-  Let us sketch the relationship between the opti-                calls that are accepted are unaffected by the overload.
+in figure 4, is the inverse function to the trigonometric
+function tan, and can also be defined as
+
+From this form, we see that its derivative with respect
+to x is 1/(1 + x 2 ).
+  Let us sketch the relationship between the opti-
 mization problem and the equilibrium rates and drop
-probabilities. Define the function                                                     6   Conclusion
-L(x, z; μ)                                                        The behavior of large-scale systems has been of great
-                      √
-                         2 xr Tr                                  interest to mathematicians for over a century, with
-          =         arctan √           + μ · (C − Ax − z),
-                 Tr           2                                   many examples coming from physics. For example, the
-            r ∈R
-                                                                  behavior of a gas can be described at the microscopic
+probabilities. Define the function
+L(x, z; μ)
+
 where μ = (\mu j , j ∈ J) is a vector of Lagrange multi-
-                                                                  level in terms of the position and velocity of each
 pliers, and z = C − Ax is a vector of slack variables,
-                                                                  molecule. At this level of detail a molecule’s velocity
 measuring the spare capacity on each of the links j ∈ J
-                                                                  appears as a random process, as the molecule bounces
 of the network. Then, using the derivative of the arctan
-                                                                  around off other molecules and the walls of the con-
 function,
-                                                                 tainer. Yet consistent with this detailed microscopic
-  ∂L         1                              ∂L
-      = (1 + 2 xr2 Tr2 )−1 −     \mu j Ajr and      = −\mu j .          description of the system is macroscopic behavior best
- ∂xr                                        ∂z j
-                             j∈J                                  described by quantities such as temperature and pres-
-We look for a maximum of L over x, z ⩾ 0; it turns out            sure. Similarly, the behavior of electrons in an elec-
-that this maximum is, under the identification \mu j = pj ,           trical network can be described in terms of random
-precisely the collection (xr , r ∈ R), (pj , j ∈ J) of            walks, and yet this simple description at the micro-
-rates and drop probabilities that we were looking for.            scopic level leads to rather sophisticated behavior at
-For example, setting to zero the partial derivative with          the macroscopic level: Kelvin showed that the pattern
-respect to xr gives the desired equation for xr .                 of potentials in a network of resistors is exactly the
-  In summary, for each link j ∈ J the Lagrange multi-             one that minimizes heat dissipation for a given level of
-plier \mu j arising from the optimization problem is pre-            current flow (Kelly 1991). The local, random behavior
-cisely the proportion pj of packets dropped at that link,         of the electrons causes the network as a whole to solve
-much as the Lagrange multipliers arising earlier were             a rather complex optimization problem.
-precisely the delays on links of a road traffic network.               In the last fifty years we have begun to realize that
-And the equilibrium reached by the interaction of many            large-scale engineered systems are often best under-
-competing TCPs, each implemented only on the source               stood in similar terms. Thus a microscopic description
-and destination computers, is effectively maximizing               of traffic flow in terms of each driver’s choice of the
+  ∂L
+
+ ∂xr
+We look for a maximum of L over x, z ⩾ 0; it turns out
+that this maximum is, under the identification \mu j = pj ,
+precisely the collection (xr , r ∈ R), (pj , j ∈ J) of
+rates and drop probabilities that we were looking for.
+For example, setting to zero the partial derivative with
+respect to xr gives the desired equation for xr .
+  In summary, for each link j ∈ J the Lagrange multi-
+plier \mu j arising from the optimization problem is pre-
+cisely the proportion pj of packets dropped at that link,
+much as the Lagrange multipliers arising earlier were
+precisely the delays on links of a road traffic network.
+And the equilibrium reached by the interaction of many
+competing TCPs, each implemented only on the source
+and destination computers, is effectively maximizing
+
+VII. The Influence of Mathematics
+arctan(x)
+tive function has a surprising interpretation: it is as
+if the usefulness of the flow rate xr to the source–
+destination pair served by this route is given by a utility
+function          . qrt{2}          xr Tr
+0
+x                               Tr             2
+and the network is attempting to maximize the sum
+of these utility functions across all source–destination
+pairs, subject to constraints arising from the limited
+The arctan function, illustrated in figure 4, is concave.
+link, the rates achieved will be approximately equal,
+since otherwise the total utility could be increased by
+reducing the largest rate a little and increasing the
+smallest rate a little. As a result, there is a tendency
+x
+1                                for TCP to share resources more or less equitably. This
+arctan(x) =
+1 + u2
+0                                 is very different from resource-control mechanisms in
+traditional telephone networks where, if the network
+is overloaded, some calls are blocked in order that the
+calls that are accepted are unaffected by the overload.
+6   Conclusion
+The behavior of large-scale systems has been of great
+√
+
+=
+Tr
+r ∈R
+behavior of a gas can be described at the microscopic
+level in terms of the position and velocity of each
+molecule. At this level of detail a molecule’s velocity
+appears as a random process, as the molecule bounces
+around off other molecules and the walls of the con-
+                                    tainer. Yet consistent with this detailed microscopic
+1
+= (1 + 2 xr2 Tr2 )−1 −     \mu j Ajr and
+∂z j
+j∈J                                  described by quantities such as temperature and pres-
+sure. Similarly, the behavior of electrons in an elec-
+trical network can be described in terms of random
+walks, and yet this simple description at the micro-
+scopic level leads to rather sophisticated behavior at
+the macroscopic level: Kelvin showed that the pattern
+of potentials in a network of resistors is exactly the
+one that minimizes heat dissipation for a given level of
+current flow (Kelly 1991). The local, random behavior
+of the electrons causes the network as a whole to solve
+a rather complex optimization problem.
+In the last fifty years we have begun to realize that
+large-scale engineered systems are often best under-
+stood in similar terms. Thus a microscopic description
+of traffic flow in terms of each driver’s choice of the

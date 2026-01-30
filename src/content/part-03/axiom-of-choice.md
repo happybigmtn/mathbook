@@ -18,55 +18,102 @@ Like the other axioms, the axiom of choice can seem so natural that one may not 
 , and then the fact that each individual set A n is countable allows us to write its elements in a list $a^{n1}$ , $a^{n2}$ , $a^{n3}$ , . . . . We then finish the proof by finding some systematic way of counting through the elements a nm . Now in that proof we actually made an infinite number of unspecified choices. We were told that each A n was countable and then for each A n we “chose” a listing of the elements of A n with out specifying the choice we had made. More over, since we are told absolutely nothing about the sets A n , it is clearly impossible to say how we choose to list them.
 This remark does not invalidate the proof, but it does show that it is nonconstructive. (Note , however, that if we are actually told what the sets A n are, then we may well be able to specify listings of their elements and there by give a constructive proof that the union of those particular sets is countable .) Here is another example. A graph [III.34] is bipartite if its vertices can be split into two classes X and Y in such a way that no two vertices in the same class
 
-158                                                                                       III. Mathematical Concepts
+158
 
-are connected by an edge. For example, any even cycle         [V.3](/part-05/the-banachtarski-paradox). This says that there is a way of dividing up
-(an even number of points arranged in a circle, with          a solid unit sphere into a finite number of subsets
-consecutive points joined) is bipartite, while no odd         and then reassembling these subsets (using rotations,
+are connected by an edge. For example, any even cycle
+(an even number of points arranged in a circle, with
+consecutive points joined) is bipartite, while no odd
 cycle is. Now, is an infinite disjoint union of even cycles    reflections, and translations) to form two solid unit
 bipartite? Of course it is: we just split each of the indi-   spheres. The proof does not provide an explicit way
-vidual cycles C into two classes XC and YC and then           of defining the subsets.
-let X be the union of the sets XC and Y be the union             It is some times claimed that the axiom of choice
-of the sets YC . But how do we choose for each cycle          has “undesirable” or “highly counter intuitive” conse-
-C which set to call XC and which to call YC ? Again,          quences, but in almost all cases a little thought reveals
-we cannot actually specify how we do this, so we are          that the consequence under consideration is actual-
-using the axiom of choice (even if we do not explicitly       ly not counter intuitive at all. For example, consider
-say so).                                                      the Banach–Tarski paradox above. Why does it seem
-   In general, the axiom of choice states that if we are      strange and paradoxical? It is because we feel that vol-
-given a family of nonempty sets Xi , then we may select       ume has not been preserved. And indeed, this feeling
-an element xi from each one. More precisely, it states        can be converted into a rigorous argument that the sub-
-that if the Xi are nonempty sets, where i ranges over         sets used in the decomposition cannot all be sets to
-some index set I, then there is a function f defined on I      which one can meaningfully assign a volume. But that
+vidual cycles C into two classes XC and YC and then
+let X be the union of the sets XC and Y be the union
+of the sets YC . But how do we choose for each cycle
+C which set to call XC and which to call YC ? Again,
+we cannot actually specify how we do this, so we are
+using the axiom of choice (even if we do not explicitly
+say so).
+   In general, the axiom of choice states that if we are
+given a family of nonempty sets Xi , then we may select
+an element xi from each one. More precisely, it states
+that if the Xi are nonempty sets, where i ranges over
+some index set I, then there is a function f defined on I
 such that f (i) ∈ Xi for all i. Such a function f is called   is not a paradox at all: we can say what we mean by the
-a choice function for the family.                             volume of a nice set such as a polyhedron, but there is
-   For one set we do not need any separate rule to do         no reason to suppose that we can give a sensible defini-
-this: indeed, the statement that a set X1 is nonempty is      tion of volume for all subsets of the sphere. (The sub-
-exactly the statement that there exists x1 ∈ X1 . (More       ject called measure theory can be used to give a volume
-formally, we might say that the function f that takes 1       to a very wide class of sets, called the measurable sets
+a choice function for the family.
+   For one set we do not need any separate rule to do
+this: indeed, the statement that a set X1 is nonempty is
+exactly the statement that there exists x1 ∈ X1 . (More
+formally, we might say that the function f that takes 1
 to x1 is a choice function for the “family” that consists     [III.55](/part-03/measures), but there is no reason at all to believe that all
-of the single set X1 .) For two sets, and indeed for any      sets should be measurable, and indeed it can be shown,
-finite collection of sets, one can prove the existence of      again by a use of the axiom of choice, that there are sets
-a choice function by induction on the number of sets.         that are not measurable.)
-But for infinitely many sets it turns out that one can-           There are two forms of the axiom of choice that
-not deduce the existence of a choice function from the        are more often used in daily mathematical life than
-other rules for building sets.                                the basic form we have been discussing. One is the
-   Why do people make a fuss about the axiom of               well-ordering principle, which states that every set can
+of the single set X1 .) For two sets, and indeed for any
+finite collection of sets, one can prove the existence of
+a choice function by induction on the number of sets.
+But for infinitely many sets it turns out that one can-
+not deduce the existence of a choice function from the
+other rules for building sets.
+   Why do people make a fuss about the axiom of
 choice? The main reason is that if it is used in a proof,     be well-ordered [III.66](/part-03/ordinals). The other is Zorn’s lemma,
-then that part of the proof is automatically noncon-          which states that under certain circumstances “maxi-
-struc tive. This is reflected in the very statement of the      mal” elements exist. For example, a basis for a vector
-axiom. For the other rules that we use, such as “one          space is precisely a maximal linearly independent set,
-may take the union of two sets,” the set whose exis-          and it turns out that Zorn’s lemma applies to the col-
-tence is being asserted is uniquely defined by its prop-       lection of linearly independent sets in a vector space,
-erties (u is an element of X ∪ Y if and only if it is an      which shows that every vector space has a basis.
-element of X or of Y or of both). But this is not the case       These two statements are called forms of the axiom
-with the axiom of choice: the object whose existence is       of choice because they are equivalent to it, in the sense
-asserted (a choice function) is not uniquely specified by      that each one both implies the axiom of choice and may
-its properties, and there will typically be many choice       be deduced from it, in the presence of the other rules
-functions.                                                    for building sets. A good way of seeing why these two
-   For this reason, the general view in mainstream math-      other forms of the axiom have a nonconstructive feel
-ematics is that, although there is nothing wrong with         to them is to spend a few minutes trying to find a well-
-using the axiom of choice, it is a good idea to signal        ordering of the reals, or a basis for the vector space of
-that one has used it, to draw attention to the fact that      all sequences of real numbers.
-one’s proof is not constructive.                                 For more about the axiom of choice, and especially
-   An example of a statement whose proof involves             about its relationship to the other axioms of formal set
-the axiom of choice is the banach–tarski paradox              theory, see set theory [IV.22](/part-04/set-theory).
+then that part of the proof is automatically noncon-
+struc tive. This is reflected in the very statement of the
+axiom. For the other rules that we use, such as “one
+may take the union of two sets,” the set whose exis-
+tence is being asserted is uniquely defined by its prop-
+erties (u is an element of X ∪ Y if and only if it is an
+element of X or of Y or of both). But this is not the case
+with the axiom of choice: the object whose existence is
+asserted (a choice function) is not uniquely specified by
+its properties, and there will typically be many choice
+functions.
+   For this reason, the general view in mainstream math-
+ematics is that, although there is nothing wrong with
+using the axiom of choice, it is a good idea to signal
+that one has used it, to draw attention to the fact that
+one’s proof is not constructive.
+   An example of a statement whose proof involves
+the axiom of choice is the banach–tarski paradox
+
+III. Mathematical Concepts
+[V.3](/part-05/the-banachtarski-paradox). This says that there is a way of dividing up
+a solid unit sphere into a finite number of subsets
+and then reassembling these subsets (using rotations,
+of defining the subsets.
+It is some times claimed that the axiom of choice
+has “undesirable” or “highly counter intuitive” conse-
+quences, but in almost all cases a little thought reveals
+that the consequence under consideration is actual-
+ly not counter intuitive at all. For example, consider
+the Banach–Tarski paradox above. Why does it seem
+strange and paradoxical? It is because we feel that vol-
+ume has not been preserved. And indeed, this feeling
+can be converted into a rigorous argument that the sub-
+sets used in the decomposition cannot all be sets to
+which one can meaningfully assign a volume. But that
+volume of a nice set such as a polyhedron, but there is
+no reason to suppose that we can give a sensible defini-
+tion of volume for all subsets of the sphere. (The sub-
+ject called measure theory can be used to give a volume
+to a very wide class of sets, called the measurable sets
+sets should be measurable, and indeed it can be shown,
+again by a use of the axiom of choice, that there are sets
+that are not measurable.)
+There are two forms of the axiom of choice that
+are more often used in daily mathematical life than
+the basic form we have been discussing. One is the
+well-ordering principle, which states that every set can
+which states that under certain circumstances “maxi-
+mal” elements exist. For example, a basis for a vector
+space is precisely a maximal linearly independent set,
+and it turns out that Zorn’s lemma applies to the col-
+lection of linearly independent sets in a vector space,
+which shows that every vector space has a basis.
+These two statements are called forms of the axiom
+of choice because they are equivalent to it, in the sense
+that each one both implies the axiom of choice and may
+be deduced from it, in the presence of the other rules
+for building sets. A good way of seeing why these two
+other forms of the axiom have a nonconstructive feel
+to them is to spend a few minutes trying to find a well-
+ordering of the reals, or a basis for the vector space of
+all sequences of real numbers.
+For more about the axiom of choice, and especially
+about its relationship to the other axioms of formal set
+theory, see set theory [IV.22](/part-04/set-theory).

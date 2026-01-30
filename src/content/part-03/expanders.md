@@ -12,79 +12,106 @@ We need to understand why a tiny viscosity dissipates a lot of energy. III . $24
 This definition is particularly interesting when G is sparse: in other words, when G has few edges. We shall concentrate on the important special case where G is regular of degree d for some fixed constant d that is independent of the number n of vertices: this means that every vertex is joined to exactly d others.
 When G is regular of degree d, the number of edges from S to its complement is obviously at most dm, so if c is some fixed constant (that is, not tending to zero with n), then the number of edges between any set of vertices and its complement is within a constant of the largest number possible. As this comment suggests, we are usually interested not in single graphs but in infinite families of graphs: we say that an infinite family of d-regular graphs is a family of expanders if there is a constant $c > 0$ such that each graph in the family is a c-expander.
 
-III.24.   Expanders                                                                                                  197
+III.24.   Expanders
 
-           2   The Existence of Expanders                      has 2 k vertices, so the time taken to list all the ver-
-                                                               tices and edges will be huge compared with k. How-
 The first person to prove that expanders exist was
-                                                               ever, for many purposes we do not actually need such
 Pinkser, who proved that if n is large and d ⩾ 3,
-                                                               a list: what matters is that there is a concise way of
 then almost every d-regular graph with n vertices is
-                                                               representing each vertex, and an efficient algorithm for
 an expander. That is, he proved that there is a con-
-                                                               listing the (representations of the) neighbors of any
 stant c > 0 such that for every fixed d ⩾ 3, the pro-
-                                                               given vertex. Here the 01 sequence itself is a very con-
 portion of d-regular graphs with n vertices that are
-                                                               cise representation, and given such a sequence σ it
 not expanders tends to zero as n tends to infinity.
-                                                               is very easy to list, in a time that is polynomial in k
 This proof was an early example of the probabilistic
-                                                               rather than 2 k , the k sequences that can be obtained by
 method [IV.19 §3](/part-04/extremal-and-probabilistic-combinatorics) in combinatorics. It is not hard to
-                                                               altering σ in one place. Graphs that can be efficiently
 see that if a d-regular graph is chosen uniformly at ran-
-                                                               described in this way (so that listing the neighbors of
 dom, then the expected number of edges leaving a set
-                                                               a vertex takes a time that is polynomial in the loga-
 S is d|S|(n − |S|)/n, which is at least ( 12 d)|S|. Stan-
-                                                               rithm of the number of vertices) are called strongly
 dard “tail estimates” are then used to prove that, for
-                                                               explicit.
 any fixed S, the probability that the number of edges
-                                                                 The quest for explicitly constructed expanders has
 leaving S is significantly different from its expected
-                                                               been the source of some beautiful mathematics, which
 value is extremely small: so small that if we add up the
-                                                               has often used ideas from fields such as number theory
 probabilities for all sets, then even the sum is small.
-                                                               and algebra. The first explicit expander was discovered
 So with high probability all sets S have at least c|S|
-                                                               by Margulis. We give his construction and another one;
 edges to their complement. (In one respect this descrip-
-                                                               we stress that although these constructions are very
 tion is misleading: it is not a straightforward matter
-                                                               simple to describe, it is rather less easy to prove that
 to discuss probabilities of events concerning random
-                                                               they really are expanders.
 d-regular graphs because the edges are not indepen-
-dently chosen. However, Bollobás has defined an equiv-             Margulis’s construction gives an 8-regular graph Gm
-alent model for random regular graphs that allows              for every integer m. The vertex set is Zm . imes Zm , where
-them to be handled.)                                           Zm is the set of all integers mod m. The neighbors of
-   Note that this proof does not give us an explicit           the vertex (x, y) are (x + y, y), (x − y, y), (x, y + x),
-description of any expander: it merely proves that             (x, y − x), (x + y + 1, y), (x − y + 1, y), (x, y + x + 1),
-they exist in abundance. This is a drawback to the             (x, y − x + 1) (all operations are mod m). Margulis’s
-proof, because, as we shall see later, there are appli-        proof that Gm is an expander was based on re pre sen-
-ca tions for expanders that depend on some kind of              tation theory [IV.9](/part-04/representation-theory) and did not provide any specific
-explicit description, or at least on an efficient method         bound on the expansion constant c. Gabber and Galil
-of producing expanders. But what exactly is an “explicit       later derived such a bound using harmonic analy-
-description” or an “efficient method”? There are many            sis [IV.11](/part-04/harmonic-analysis). Note that this family of graphs is strongly
-possible answers to this question, of which we shall dis-      explicit.
-cuss two. The first is to demand that there is an algo-            Another construction provides, for each prime p, a
+dently chosen. However, Bollobás has defined an equiv-
+alent model for random regular graphs that allows
+them to be handled.)
+   Note that this proof does not give us an explicit
+description of any expander: it merely proves that
+they exist in abundance. This is a drawback to the
+proof, because, as we shall see later, there are appli-
+ca tions for expanders that depend on some kind of
+explicit description, or at least on an efficient method
+of producing expanders. But what exactly is an “explicit
+description” or an “efficient method”? There are many
+possible answers to this question, of which we shall dis-
+cuss two. The first is to demand that there is an algo-
 rithm that can list, for any integer n, all the vertices and   3-regular graph with p vertices. This time the vertex
-edges of a d-regular c-expander with around n vertices         set is Zp , and a vertex x is connected to x + 1, x − 1,
-(we could be flexible about this and ask for the num-           and x −1 (where this is the inverse of x mod p, and we
-ber of vertices to be between n and n2 , say) in a time        define the inverse of 0 to be 0). The proof that these
-that is polynomial in n. (See computational complex-           graphs are expanders depends on a deep result in num-
-ity [IV.20 §2](/part-04/computational-complexity) for a discussion of polynomial-time algo-       ber theory, called the Selberg 3/16 theorem. This family
-rithms.) Descriptions of this kind are some times called        is only mildly explicit, since we are at present unable to
-“mildly explicit.”                                             generate large primes deterministical ly.
-   To get an idea of what is “mild” about this, consider          Until recently, the only known methods for explic-
-the following graph. Its vertices are all 01 sequences         itly constructing expanders were algebraic. However, in
-of length k, and two such sequences are joined by an           2002 Reingold, Vadhan, and Wigderson introduced the
-edge if they differ in exactly one place. This graph is         so-called zigzag product of graphs, and used it to give
-some times called the discrete cube in k dimensions. It         a combinatorial, iterative construction of expanders.
+edges of a d-regular c-expander with around n vertices
+(we could be flexible about this and ask for the num-
+ber of vertices to be between n and n2 , say) in a time
+that is polynomial in n. (See computational complex-
+ity [IV.20 §2](/part-04/computational-complexity) for a discussion of polynomial-time algo-
+rithms.) Descriptions of this kind are some times called
+“mildly explicit.”
+   To get an idea of what is “mild” about this, consider
+the following graph. Its vertices are all 01 sequences
+of length k, and two such sequences are joined by an
+edge if they differ in exactly one place. This graph is
+some times called the discrete cube in k dimensions. It
+
+197
+2   The Existence of Expanders
+tices and edges will be huge compared with k. How-
+ever, for many purposes we do not actually need such
+a list: what matters is that there is a concise way of
+representing each vertex, and an efficient algorithm for
+listing the (representations of the) neighbors of any
+given vertex. Here the 01 sequence itself is a very con-
+cise representation, and given such a sequence σ it
+is very easy to list, in a time that is polynomial in k
+rather than 2 k , the k sequences that can be obtained by
+altering σ in one place. Graphs that can be efficiently
+described in this way (so that listing the neighbors of
+a vertex takes a time that is polynomial in the loga-
+rithm of the number of vertices) are called strongly
+explicit.
+The quest for explicitly constructed expanders has
+been the source of some beautiful mathematics, which
+has often used ideas from fields such as number theory
+and algebra. The first explicit expander was discovered
+by Margulis. We give his construction and another one;
+we stress that although these constructions are very
+simple to describe, it is rather less easy to prove that
+they really are expanders.
+Margulis’s construction gives an 8-regular graph Gm
+for every integer m. The vertex set is Zm . imes Zm , where
+Zm is the set of all integers mod m. The neighbors of
+the vertex (x, y) are (x + y, y), (x − y, y), (x, y + x),
+(x, y − x), (x + y + 1, y), (x − y + 1, y), (x, y + x + 1),
+(x, y − x + 1) (all operations are mod m). Margulis’s
+proof that Gm is an expander was based on re pre sen-
+tation theory [IV.9](/part-04/representation-theory) and did not provide any specific
+bound on the expansion constant c. Gabber and Galil
+later derived such a bound using harmonic analy-
+sis [IV.11](/part-04/harmonic-analysis). Note that this family of graphs is strongly
+explicit.
+Another construction provides, for each prime p, a
+set is Zp , and a vertex x is connected to x + 1, x − 1,
+and x −1 (where this is the inverse of x mod p, and we
+define the inverse of 0 to be 0). The proof that these
+graphs are expanders depends on a deep result in num-
+ber theory, called the Selberg 3/16 theorem. This family
+is only mildly explicit, since we are at present unable to
+generate large primes deterministical ly.
+Until recently, the only known methods for explic-
+itly constructing expanders were algebraic. However, in
+2002 Reingold, Vadhan, and Wigderson introduced the
+so-called zigzag product of graphs, and used it to give
+a combinatorial, iterative construction of expanders.
 
 1983
 

@@ -1,133 +1,203 @@
 # Geometric and Combinatorial Group Theory
 
-IV.10.   Geometric and Combinatorial Group Theory                                                                            431
+IV.10.   Geometric and Combinatorial Group Theory
 
-in LG(C).15 However, these are not conjugacy classes                    program, the 1979 American Mathematical Society vol-
-of elements of LG(C), as before, but of homomorphisms                   ume titled Automorphic Forms, Representations, and
-from the Galois group of k to LG. The Langlands dual                    L-functions (but universally known as “The Corvallis
-was originally defined in a combinatorial manner, but                    Proceedings”) is more advanced, and as good a place
-there is now a conceptual definition. A few examples                     to start as any.
+in LG(C).15 However, these are not conjugacy classes
+of elements of LG(C), as before, but of homomorphisms
+from the Galois group of k to LG. The Langlands dual
+was originally defined in a combinatorial manner, but
+there is now a conceptual definition. A few examples
 of pairs (G, LG) are (GLn , GLn ), (SO2 n+1 , Sp2 n ), and
-(SLn , PGLn ).                                                          IV.10 Geometric and Combinatorial
+(SLn , PGLn ).
    In this way the Langlands program describes the rep-
-                                                                              Group Theory
 resentation theory as built out of the structure of G and
 the arithmetic of k.
-                                                                                 Martin R. Bridson
    Although this description indicates the flavor of
-                                                                                 1   What Are Combinatorial and
 the conjectures, it is not quite correct as stated. For
-                                                                                     Geometric Group Theory?
 instance, one has to modify the Galois group16 in such
-a way that the correspondence is true for the group                     Groups and geometry are ubiquitous in mathematics,
+a way that the correspondence is true for the group
 GL1 (k) = k∗ . When k = R, we get the representation
-                                                                        groups because the symmetries (or automorphisms
 theory of R∗ (or its compact form S 1 ), which is Fourier
-                                                                        [I.3 §4.1](/part-01/fundamental-definitions)) of any mathematical object in any context
 analysis; on the other hand, when k is a p-adic local
-                                                                        form a group and geometry because it allows one to
 field, the representation theory of k∗ is described by
-                                                                        think intuitively about abstract problems and to orga-
 local class field theory. We already see an extraordinary
-                                                                        nize families of objects into spaces from which one may
 aspect of the Langlands program: it precisely unifies
-                                                                        gain some global insight.
 and generalizes harmonic analysis and number theory.
-                                                                           The purpose of this article is to introduce the reader
    The most compelling versions of the Langlands pro-
-                                                                        to the study of infinite, discrete groups. I shall discuss
 gram are “equivalences of derived categories” between
-                                                                        both the combinatorial approach to the subject that
 the category of representations and certain geomet-
-                                                                        held sway for much of the twentieth century and the
 ric objects on the spaces of Langlands parameters.
-                                                                        more geometric perspective that has led to an enor-
 These conjectural statements are the hoped-for Fourier
-                                                                        mous flowering of the subject in the last twenty years. I
 transforms.
-                                                                        hope to convince the reader that the study of groups is
    Though much progress has been made, a large part of
-                                                                        a concern for all of mathematics rather than something
 the Langlands program remains to be proved. For finite
-                                                                        that belongs particularly to the domain of algebra.
 reductive groups, slightly weaker statements have been
-proved, mostly by Lusztig. As all but twenty-six of the                    The principal focus of geometric group theory is the
-finite simple groups arise from reductive groups, and                    interaction of geometry/topology and group theory,
-as the sporadic groups have had their character tables                  through group actions and through suitable transla-
-computed individually, this work already determines                     tions of geometric concepts into group theory. One
-the character tables of all the finite simple groups.                    wants to develop and exploit this interaction for the
-   For groups over R, the work of Harish-Chandra and                    benefit of both geometry/topology and group theory.
-later authors again confirms the conjectures. But for                    And, in keeping with our assertion that groups are
-other fields, only fragmentary theorems have been                        important through out mathematics, one hopes to illu-
-proved. There is much still to be done.                                 minate and solve problems from elsewhere in mathe-
-                                                                        matics by encoding them as problems in group theory.
-Further Reading                                                           Geometric group theory acquired a distinct identity
-                                                                        in the late 1980 s but many of its principal ideas have
+proved, mostly by Lusztig. As all but twenty-six of the
+finite simple groups arise from reductive groups, and
+as the sporadic groups have had their character tables
+computed individually, this work already determines
+the character tables of all the finite simple groups.
+   For groups over R, the work of Harish-Chandra and
+later authors again confirms the conjectures. But for
+other fields, only fragmentary theorems have been
+proved. There is much still to be done.
+Further Reading
 A nice introductory text on representation theory is
-                                                                        their roots in the end of the nineteenth century. At
 Alperin’s Local Representation Theory (Cambridge Uni-
-                                                                        that time, low-dimensional topology and combinato-
 ver sity Press, Cambridge, 1993). As for the Langlands
-                                                                        rial group theory emerged entwined. Roughly speak-
-                                                                        ing, combinatorial group theory is the study of groups
   15. The C here is because we are looking at representations on com-   defined in terms of presentations, that is, by means of
 plex vector spaces; if we were looking at representations on vector     generators and relations. In order to follow the rest of
 spaces over some field F, we would take LG(F).
   16. The appropriately modified Galois group is called the Weil–
-                                                                        this introduction the reader must first understand what
-Deligne group.                                                          these terms mean. Since their definitions would require
+Deligne group.
 
-432                                                                                            IV. Branches of Mathematics
+431
+program, the 1979 American Mathematical Society vol-
+ume titled Automorphic Forms, Representations, and
+L-functions (but universally known as “The Corvallis
+Proceedings”) is more advanced, and as good a place
+to start as any.
+IV.10 Geometric and Combinatorial
+Group Theory
+Martin R. Bridson
+1   What Are Combinatorial and
+Geometric Group Theory?
+Groups and geometry are ubiquitous in mathematics,
+groups because the symmetries (or automorphisms
+[I.3 §4.1](/part-01/fundamental-definitions)) of any mathematical object in any context
+form a group and geometry because it allows one to
+think intuitively about abstract problems and to orga-
+nize families of objects into spaces from which one may
+gain some global insight.
+The purpose of this article is to introduce the reader
+to the study of infinite, discrete groups. I shall discuss
+both the combinatorial approach to the subject that
+held sway for much of the twentieth century and the
+more geometric perspective that has led to an enor-
+mous flowering of the subject in the last twenty years. I
+hope to convince the reader that the study of groups is
+a concern for all of mathematics rather than something
+that belongs particularly to the domain of algebra.
+The principal focus of geometric group theory is the
+interaction of geometry/topology and group theory,
+through group actions and through suitable transla-
+tions of geometric concepts into group theory. One
+wants to develop and exploit this interaction for the
+benefit of both geometry/topology and group theory.
+And, in keeping with our assertion that groups are
+important through out mathematics, one hopes to illu-
+minate and solve problems from elsewhere in mathe-
+matics by encoding them as problems in group theory.
+Geometric group theory acquired a distinct identity
+in the late 1980 s but many of its principal ideas have
+their roots in the end of the nineteenth century. At
+that time, low-dimensional topology and combinato-
+rial group theory emerged entwined. Roughly speak-
+ing, combinatorial group theory is the study of groups
+this introduction the reader must first understand what
+these terms mean. Since their definitions would require
 
-an unacceptably long break in the flow of our discus-                    Another kind of question that raises basic issues
-sion, I will postpone them to the next section, but I                in combinatorial group theory takes the form: Does
-strongly advise the reader who is unfamiliar with the                there exist an algorithm to determine whether or not
+432
+
+an unacceptably long break in the flow of our discus-
+sion, I will postpone them to the next section, but I
+strongly advise the reader who is unfamiliar with the
 meaning of the expression Γ = a1 , . . . , an | r1 , . . . , rm    a group (or given elements of a group) has such-and-
-to pause and read that section before continuing with                such a property? For example, does there exist an algo-
-this one.                                                            rithm that can take any finite presentation and decide
-   The rough definition of combinatorial group theory                 in a finite number of steps whether or not the group
-just given misses the point that, like many parts of                 presented is trivial? Questions of this type led to a
-mathematics, it is a subject defined more by its core                 profound and mutually beneficial interaction between
-problems and its origins than by its fundamental defi-                group theory and logic, given full voice by the Hig-
-ni tions. The initial impetus for the subject came from               man embedding theorem, which we shall discuss in
-the description of discrete groups of hyperbolic isome-              section 6. More over, via the conduit of combinatorial
-tries and, most particularly, the discovery of the fun-              group theory, logic has influenced topology as well:
-da mental group [IV.6 §2](/part-04/algebraic-topology) of a manifold [I.3 §6.9](/part-01/fundamental-definitions) by                 one uses group-theoretic constructions to show, for
-poincaré [VI.61](/part-06/jules-henri-poincar-18541912) in 1895. The group-theoretic issues                 example, that there is no algorithm to determine which
-that emerged were brought into sharp focus by the                    pairs of compact triangulated manifolds are homeo-
-work of Tietze and Dehn in the first decade of the twen-              morphic in dimensions 4 and above. This shows that
-tieth century and drove much of combinatorial group                  certain kinds of classification results that have been
-theory for the remainder of the century.                             obtained in two and three dimensions do not have
-   Not all of the epoch-defining problems came from                   higher-dimensional analogues.
-topology: other areas of mathematics threw up funda-                    One might reasonably regard combinatorial group
-mental questions as well. Here are some of the forms                 theory as the attempt to develop algebraic techniques
-they took: Does there exist a group of the following                 to solve the types of questions described above, and in
-type? Which groups have the following property? What                 the course of doing so to identify classes of groups that
-are the subgroups of ...? Is the following group infinite?              are worthy of particular study. This last point, the ques-
-When can one determine the structure of a group from                 tion of which groups deserve our attention, is tackled
-its finite quotients? In the sections that follow I shall             head-on in the final section of this article.
-attempt to illustrate the mathematical culture associ-                  Some of the triumphs of combinatorial group theory
-ated with questions of this kind, but let me immedi-                 are intrinsically combinatorial in nature, but many
-ately mention some easily stated but difficult classical               more have had their true nature revealed by the intro-
-problems. (i) Let G be a group that is finitely gener-                duction of geometric techniques in the past twenty
-ated and suppose that there is some positive integer n               years. A fine example of this is the way in which Gro-
-such that x n = 1 for every x in G. Must G be finite?                 mov’s insights have connected algorithmic problems
-(ii) Is there a finitely presented group Γ and a surjec-              in group theory to so-called filling problems in Rie-
-tive homomorphism φ : Γ → Γ such that φ(γ) = 1 for                   mannian geometry. More over, the power of geomet-
-some γ ≠ 1? (iii) Does there exist a finitely presented,              ric group theory is by no means confined to improv-
-infinite, simple group [I.3 §3.3](/part-01/fundamental-definitions)? (iv) Is every countable            ing the techniques of combinatorial group theory: it
-group isomorphic to a subgroup of a finitely generated                naturally leads one to think about many other issues
-group, or even a finitely presented group?                            of fundamental importance. For example, it provides a
-  The first of these questions was asked by Burnside                  context in which one can illuminate and vastly extend
-in 1902 and the second by Hopf in connection with                    classical rigidity theorems [V.23](/part-05/mostows-strong-rigidity-theorem), such as that of
-his study of degree-1 maps between manifolds. I shall                Mostow. The key to applications such as this is the
-present the answers to all four questions (in section 5)             idea that finitely generated groups can usefully be
-to illustrate an important aspect of both combinatorial              regarded as geometric objects in their own right. This
-and geometric group theory: one develops techniques                  idea has its origins in the work of cayley [VI.46](/part-06/arthur-cayley-18211895)
-that allow the construction of explicit groups with pre-             (1878) and Dehn (1905) but its full force was recog-
-scribed properties. Such constructions are of particular             nized and promoted by Gromov, starting in the 1980 s.
-interest when they illustrate the diversity of possible              It is the key idea that underpins the later sections of
-phenomena in other branches of mathematics.                          this article.
+to pause and read that section before continuing with
+this one.
+   The rough definition of combinatorial group theory
+just given misses the point that, like many parts of
+mathematics, it is a subject defined more by its core
+problems and its origins than by its fundamental defi-
+ni tions. The initial impetus for the subject came from
+the description of discrete groups of hyperbolic isome-
+tries and, most particularly, the discovery of the fun-
+da mental group [IV.6 §2](/part-04/algebraic-topology) of a manifold [I.3 §6.9](/part-01/fundamental-definitions) by
+poincaré [VI.61](/part-06/jules-henri-poincar-18541912) in 1895. The group-theoretic issues
+that emerged were brought into sharp focus by the
+work of Tietze and Dehn in the first decade of the twen-
+tieth century and drove much of combinatorial group
+theory for the remainder of the century.
+   Not all of the epoch-defining problems came from
+topology: other areas of mathematics threw up funda-
+mental questions as well. Here are some of the forms
+they took: Does there exist a group of the following
+type? Which groups have the following property? What
+are the subgroups of ...? Is the following group infinite?
+When can one determine the structure of a group from
+its finite quotients? In the sections that follow I shall
+attempt to illustrate the mathematical culture associ-
+ated with questions of this kind, but let me immedi-
+ately mention some easily stated but difficult classical
+problems. (i) Let G be a group that is finitely gener-
+ated and suppose that there is some positive integer n
+such that x n = 1 for every x in G. Must G be finite?
+(ii) Is there a finitely presented group Γ and a surjec-
+tive homomorphism φ : Γ → Γ such that φ(γ) = 1 for
+some γ ≠ 1? (iii) Does there exist a finitely presented,
+infinite, simple group [I.3 §3.3](/part-01/fundamental-definitions)? (iv) Is every countable
+group isomorphic to a subgroup of a finitely generated
+group, or even a finitely presented group?
+  The first of these questions was asked by Burnside
+in 1902 and the second by Hopf in connection with
+his study of degree-1 maps between manifolds. I shall
+present the answers to all four questions (in section 5)
+to illustrate an important aspect of both combinatorial
+and geometric group theory: one develops techniques
+that allow the construction of explicit groups with pre-
+scribed properties. Such constructions are of particular
+interest when they illustrate the diversity of possible
+phenomena in other branches of mathematics.
+
+IV. Branches of Mathematics
+Another kind of question that raises basic issues
+in combinatorial group theory takes the form: Does
+there exist an algorithm to determine whether or not
+such a property? For example, does there exist an algo-
+rithm that can take any finite presentation and decide
+in a finite number of steps whether or not the group
+presented is trivial? Questions of this type led to a
+profound and mutually beneficial interaction between
+group theory and logic, given full voice by the Hig-
+man embedding theorem, which we shall discuss in
+section 6. More over, via the conduit of combinatorial
+group theory, logic has influenced topology as well:
+one uses group-theoretic constructions to show, for
+example, that there is no algorithm to determine which
+pairs of compact triangulated manifolds are homeo-
+morphic in dimensions 4 and above. This shows that
+certain kinds of classification results that have been
+obtained in two and three dimensions do not have
+higher-dimensional analogues.
+One might reasonably regard combinatorial group
+theory as the attempt to develop algebraic techniques
+to solve the types of questions described above, and in
+the course of doing so to identify classes of groups that
+are worthy of particular study. This last point, the ques-
+tion of which groups deserve our attention, is tackled
+head-on in the final section of this article.
+Some of the triumphs of combinatorial group theory
+are intrinsically combinatorial in nature, but many
+more have had their true nature revealed by the intro-
+duction of geometric techniques in the past twenty
+years. A fine example of this is the way in which Gro-
+mov’s insights have connected algorithmic problems
+in group theory to so-called filling problems in Rie-
+mannian geometry. More over, the power of geomet-
+ric group theory is by no means confined to improv-
+ing the techniques of combinatorial group theory: it
+naturally leads one to think about many other issues
+of fundamental importance. For example, it provides a
+context in which one can illuminate and vastly extend
+classical rigidity theorems [V.23](/part-05/mostows-strong-rigidity-theorem), such as that of
+Mostow. The key to applications such as this is the
+idea that finitely generated groups can usefully be
+regarded as geometric objects in their own right. This
+idea has its origins in the work of cayley [VI.46](/part-06/arthur-cayley-18211895)
+(1878) and Dehn (1905) but its full force was recog-
+nized and promoted by Gromov, starting in the 1980 s.
+It is the key idea that underpins the later sections of
+this article.
 
 $IV$ . $10$ .
 
@@ -151,138 +221,208 @@ for instance, the product of $ab - 1$ and bcca is $ab - 1$ bcca, which we can sh
  Indeed, if we want Φ to have these properties, then our definition is forced upon us: for example, Φ (ab $- 1$ ca) will have to be φ (a) φ (b) $- 1$ φ (c) φ (a), by the definition of a homomorphism. So the uniqueness is obvious. The rough reason that this definition really does give rise to a well-defined homomorphism is that the only equations that are true in F (S) are ones that are true in all groups: in order for Φ not to be a homomorphism, one would need a relation to hold in F (S) that did not hold in G, but this is impossible. Now let us return to our example Γ $\Delta$ .
 We would like to prove that it is (isomorphic to) the “freest” group with generators α, β, and γ that satisfies the relations α2 =  β2 =  γ2 =  (αβ)6 =  (αγ)6 =  (βγ)3 =  1 . But what exactly is this “freest” group that we are claiming is isomorphic to $Γ\Delta$ ? To avoid confusion about the meaning of α, β, and γ (are they elements of Γ $\Delta$ or of the group that we are trying to construct that will turn out to be isomorphic to Γ $\Delta$ ?) we shall use the letters a, b, and c
 
-434                                                                                             IV. Branches of Mathematics
+434
 
-when we answer this question. Thus, we are trying to                 generated by S that satisfies the relations in R: the only
-build the “freest” group with generators a, b, and c                 relations that hold in S | R are the ones that can be
-that satisfies the relations a2 = b2 = c 2 = (ab)6 =                  deduced from the relations R.
-(ac)6 = (bc)3 = 1, which we denote by G = a, b, c |                    A psychological advantage of switching to this more
-a2 , b2 , c 2 , (ab)6 , (ac)6 , (bc)3 .                             abstract setting is that, where as previously we began
-   There are two ways of going about this task. One is               with a group Γ and asked how we might present it, we
-to imitate the above discussion of the free group itself,            can now write down group presentations at will, start-
-except that now we say that two words are equivalent                 ing with any set S and prescribing a set of words R in
-if you can get from one to the other by inserting or                 the symbols S ±1 . This gives us a very flexible way of
-deleting not just inverse pairs but also one of the words            constructing a wide variety of groups. We might, for
+when we answer this question. Thus, we are trying to
+build the “freest” group with generators a, b, and c
+that satisfies the relations a2 = b2 = c 2 = (ab)6 =
+(ac)6 = (bc)3 = 1, which we denote by G = a, b, c |
+a2 , b2 , c 2 , (ab)6 , (ac)6 , (bc)3 .
+   There are two ways of going about this task. One is
+to imitate the above discussion of the free group itself,
+except that now we say that two words are equivalent
+if you can get from one to the other by inserting or
+deleting not just inverse pairs but also one of the words
 a2 , b2 , c 2 , (ab)6 , (ac)6 , or (bc)3 . For example, ab2 c is     example, use a group presentation to encode a ques-
-equivalent to ac in this group. G is then defined to be               tion from elsewhere in mathematics. We could then ask
-the set of equivalence classes of words with the product             about the properties of the group thus defined, and see
-coming from concatenation.                                           what they had to tell us about our original problem.
+equivalent to ac in this group. G is then defined to be
+the set of equivalence classes of words with the product
+coming from concatenation.
    A neater way to obtain G is more conceptual and ex-
-ploits the universal property of the free group. As G                      3    Why Study Finitely Presented Groups?
+ploits the universal property of the free group. As G
 is to be generated by a, b, and c, the universal prop-
-                                                                     Groups arise through out the whole of mathematics
 erty of the free group F (S) tells us that there will
-                                                                     as groups of automorphisms. These are maps from
 have to be a unique homomorphism Φ from F (S) to G
-                                                                     an object to itself that preserve all of the defin-
 such that Φ(a) = a, Φ(b) = b, and Φ(c) = c. More-
-                                                                     ing structure: two examples are the invertible lin-
 over, we require that all of a2 , b2 , c 2 , (ab)6 , (ac)6 ,
-                                                                     ear maps [I.3 §4.2](/part-01/fundamental-definitions) from a vector space [I.3 §2.3](/part-01/fundamental-definitions) to
 and (bc)3 must map to the identity element in G. It
-                                                                     itself, and the homeomorphisms from a topological
 follows that the kernel [I.3 §4.1](/part-01/fundamental-definitions) of Φ is a normal
-                                                                     space [III.90](/part-03/topological-spaces) to itself. Groups encapsulate the essence
 subgroup [I.3 §3.3](/part-01/fundamental-definitions) of F (S) that contains the set R =
-                                                                     of symmetry and for this reason demand our atten-
 {a2 , b2 , c 2 , (ab)6 , (ac)6 , (bc)3 }. Let us write R for
-                                                                     tion. We are driven to understand their general nature,
 the smallest normal subgroup of F (S) that contains
-                                                                     identify groups that deserve particular attention, and
 R (or equivalently the intersection of all normal sub-
-                                                                     develop techniques for constructing new groups (from
 groups of F (S) that contain R). Then there is a sur-
-                                                                     old ones, or from new ideas). And, reversing the pro-
 jective homomorphism from the quotient [I.3 §3.3](/part-01/fundamental-definitions)
-                                                                     cess of abstraction, when given a group, we want to
 F (S)/R to any group that is generated by a, b, and
-                                                                     find concrete instances of it. For example, we might
 c and satisfies the relations a2 = b 2 = c 2 = (ab)6 =
-                                                                     like to realize it as the group of automorphisms of
 (ac)6 = (bc)3 = 1. This quotient itself is the group we
-                                                                     some interesting object, with the aim of illuminating
 are looking for: it is the largest group generated by a,
-                                                                     the nature of both the object and the group. (See the
 b, and c that satisfies the relations in R.
-                                                                     article on representation theory [IV.9](/part-04/representation-theory) for more on
    Our assertion about ΓΔ is that it is isomorphic to the
-                                                                     this theme.)
 group G = a, b, c | a2 , b 2 , c 2 , (ab)6 , (ac)6 , (bc)3  that
 we have just described (in two ways). More precisely,
-                                                                     3.1       Why Present Groups in Terms of
 the map from F (S)/R to ΓΔ that takes a to α, b to β,
-                                                                               Generators and Relations?
 and c to γ is an isomorphism.
-   The above construction is very general. If we are given           The short answer is that this is the form in which
-a group Γ , then a presentation of Γ is a set S that gener-          groups often “appear in nature.” This is particularly
-ates Γ , together with a set R ⊂ F (S) of relations, such            true in topology. Before looking at a general result that
-that Γ is isomorphic to the quotient F (S)/R. If both            illustrates this point, let us examine a simple example.
-S and R are finite sets, one says that the presentation               Consider the group D of all isometries of R that are
-is finite. A group is finitely presented if it has a finite             generated by the reflections at the points 0, 1, and 2:
-presentation.                                                        that is, the group generated by the three functions α0 ,
-   We can also define presentations in the abstract,                  α1 , and α2 , which take x to −x, 2−x, and 4−x, respec-
-with out mentioning a group Γ in advance: given any                   tively. You may recognize this group to be the infinite
-set S and any subset R ⊂ F (S), we just define S | R                dihedral group, and you may notice that the generator
-to be the group F (S)/R. This is the “freest” group              α2 is superfluous, since it can be generated from α0
+   The above construction is very general. If we are given
+a group Γ , then a presentation of Γ is a set S that gener-
+ates Γ , together with a set R ⊂ F (S) of relations, such
+that Γ is isomorphic to the quotient F (S)/R. If both
+S and R are finite sets, one says that the presentation
+is finite. A group is finitely presented if it has a finite
+presentation.
+   We can also define presentations in the abstract,
+with out mentioning a group Γ in advance: given any
+set S and any subset R ⊂ F (S), we just define S | R
+to be the group F (S)/R. This is the “freest” group
 
-IV.10.   Geometric and Combinatorial Group Theory                                                                        435
+IV. Branches of Mathematics
+generated by S that satisfies the relations in R: the only
+relations that hold in S | R are the ones that can be
+deduced from the relations R.
+A psychological advantage of switching to this more
+abstract setting is that, where as previously we began
+with a group Γ and asked how we might present it, we
+can now write down group presentations at will, start-
+ing with any set S and prescribing a set of words R in
+the symbols S ±1 . This gives us a very flexible way of
+constructing a wide variety of groups. We might, for
+tion from elsewhere in mathematics. We could then ask
+about the properties of the group thus defined, and see
+what they had to tell us about our original problem.
+3    Why Study Finitely Presented Groups?
+Groups arise through out the whole of mathematics
+as groups of automorphisms. These are maps from
+an object to itself that preserve all of the defin-
+ing structure: two examples are the invertible lin-
+ear maps [I.3 §4.2](/part-01/fundamental-definitions) from a vector space [I.3 §2.3](/part-01/fundamental-definitions) to
+itself, and the homeomorphisms from a topological
+space [III.90](/part-03/topological-spaces) to itself. Groups encapsulate the essence
+of symmetry and for this reason demand our atten-
+tion. We are driven to understand their general nature,
+identify groups that deserve particular attention, and
+develop techniques for constructing new groups (from
+old ones, or from new ideas). And, reversing the pro-
+cess of abstraction, when given a group, we want to
+find concrete instances of it. For example, we might
+like to realize it as the group of automorphisms of
+some interesting object, with the aim of illuminating
+the nature of both the object and the group. (See the
+article on representation theory [IV.9](/part-04/representation-theory) for more on
+this theme.)
+3.1       Why Present Groups in Terms of
+Generators and Relations?
+The short answer is that this is the form in which
+groups often “appear in nature.” This is particularly
+true in topology. Before looking at a general result that
+illustrates this point, let us examine a simple example.
+Consider the group D of all isometries of R that are
+generated by the reflections at the points 0, 1, and 2:
+that is, the group generated by the three functions α0 ,
+α1 , and α2 , which take x to −x, 2−x, and 4−x, respec-
+tively. You may recognize this group to be the infinite
+dihedral group, and you may notice that the generator
+α2 is superfluous, since it can be generated from α0
 
-and α1 . But let us close our eyes to these observations          in ΓΔ this takes some work, and in the groups Gn we
-as we let a presentation emerge from the action.                  quickly find ourselves at a loss.
-   To this end, we choose an open interval U with the               Note that as well as allowing one to list the elements
-property that the images of U under the maps in D                 of the group effectively, a solution to the word prob-
-                                              1 3                 lem also allows one to determine the multiplication
+IV.10.   Geometric and Combinatorial Group Theory
+
+and α1 . But let us close our eyes to these observations
+as we let a presentation emerge from the action.
+   To this end, we choose an open interval U with the
+property that the images of U under the maps in D
 cover the whole of the real line, say U = (− 2 , 2 ). Now
-let us record two pieces of data: the only elements of            table, since deciding whether w1 w2 = w3 is the same
-D (apart from the identity) that fail to move U com-              as deciding whether w1 w2 w3−1 = 1.
+let us record two pieces of data: the only elements of
+D (apart from the identity) that fail to move U com-
 pletely off itself are α0 and α1 , and, among all prod-
-ucts of length at most 3 in those two letters, the only           3.2   Why Finitely Presented Groups?
-nontrivial ones that act as the identity on R are α20 and         The packaging of infinite objects into finite amounts
-α21 . You may like to prove that α0 , α1 | α20 , α21  is a      of data arises through out mathematics in the vari-
-presentation of D.                                                ous guises of compactness [III.9](/part-03/compactness-and-compactication). Finite presentation
-   This is in fact a special case of a general result, which      is basically a compactness condition: a group can be
-we now state. (The proof of it is some what involved.) Let         finitely presented if and only if it is the fundamental
-X be a topological space that is both path connected              group of a reasonable compact space, as we shall see
-[IV.6 §1](/part-04/algebraic-topology) and simply connected [III.93](/part-03/universal-covers), and let Γ be a           later.
-group of homeomorphisms from X to itself. Then any                   Another good reason for studying finitely presented
-choice of path-connected open subset U ⊂ X such that              groups is that the Higman embedding theorem (to be
-the images of U cover all of X gives rise to a present a-          discussed later) allows us to encode questions about
-tion Γ = S | R, where S = {γ ∈ Γ | γ(U) ∩ U = ∅}               arbitrary turing machines [IV.20 §1.1](/part-04/computational-complexity) as questions
-and R consists of all words w ∈ F (S) of length at most           about such groups and their subgroups.
+ucts of length at most 3 in those two letters, the only
+nontrivial ones that act as the identity on R are α20 and
+α21 . You may like to prove that α0 , α1 | α20 , α21  is a
+presentation of D.
+   This is in fact a special case of a general result, which
+we now state. (The proof of it is some what involved.) Let
+X be a topological space that is both path connected
+[IV.6 §1](/part-04/algebraic-topology) and simply connected [III.93](/part-03/universal-covers), and let Γ be a
+group of homeomorphisms from X to itself. Then any
+choice of path-connected open subset U ⊂ X such that
+the images of U cover all of X gives rise to a present a-
+tion Γ = S | R, where S = {γ ∈ Γ | γ(U) ∩ U = ∅}
+and R consists of all words w ∈ F (S) of length at most
 3 such that w = 1 in Γ . Thus, the identification of a
-suitable subset U provides one with a presentation of                   4    The Fundamental Decision Problems
+suitable subset U provides one with a presentation of
 Γ , and the task of a group theorist is to determine the
-                                                                  In exploring the geometry and topology of low-dimen-
 nature of the group from this information.
-                                                                  sional manifolds at the beginning of the twentieth cen-
-  To see how difficult this task is, you might like to              tury, Max Dehn saw that many of the problems that
-consider the groups                                               he was wrestling with could be “reduced” to questions
-   Gn = a1 , . . . , an | a−1         −2                         about finitely presented groups. For example, he gave
-                            i ai+1 ai ai+1 , i = 1, . . . , n,
-                                                                  a simple formula for associating with a knot diagram
-where we interpret i + 1 as 1 when i = n. One of G3 and           [III.44](/part-03/knot-polynomials) a finite presentation of a group. There was one
-G4 is trivial and the other is infinite. Can you decide            relation for each crossing in the diagram and he argued
-which is which?                                                   that the resulting group would be isomorphic to Z if
-  To illustrate a more subtle point, let us consider a            and only if the knot was the unknot: that is, if and only
-finitely presented group that we perhaps feel we under-            if it could be continuously deformed into a circle. It
-stand: the group ΓΔ that we were discussing earlier. If           is extremely hard to tell by staring at a knot diagram
-we want to describe this group to a blind friend unfa-            whether it is actually the unknot, so this seems like a
-miliar with the triangular tiling of the plane, what can          useful reduction until one realizes that it can be just as
-we say to make her understand the group, or at least              hard to tell whether a finitely presented group is iso-
-convince her that we understand the group?                        morphic to Z. For example, here is the presentation of
-   Our friend might reasonably ask us to list the ele-            Z that Dehn’s recipe associates with one of smallest
-ments of our group, so we begin to describe them as               possible pictures of the unknot, namely a diagram with
-products (words) in the given generators. But as we               just four crossings:
+  To see how difficult this task is, you might like to
+consider the groups
+   Gn = a1 , . . . , an | a−1
+where we interpret i + 1 as 1 when i = n. One of G3 and
+G4 is trivial and the other is infinite. Can you decide
+which is which?
+  To illustrate a more subtle point, let us consider a
+finitely presented group that we perhaps feel we under-
+stand: the group ΓΔ that we were discussing earlier. If
+we want to describe this group to a blind friend unfa-
+miliar with the triangular tiling of the plane, what can
+we say to make her understand the group, or at least
+convince her that we understand the group?
+   Our friend might reasonably ask us to list the ele-
+ments of our group, so we begin to describe them as
+products (words) in the given generators. But as we
 begin to do so we hit a problem: we do not want to
-                                                                    a1 , a2 , a3 , a4 , a5 |
 list any element more than once and in order to avoid
-redundancy we have to know which pairs of words                             a−1    −1      −1         −1 −1      −1    −1
-                                                                             1 a3 a4 , a2 a3 a1 , a3 a4 a2 , a4 a5 a4 a3 .
+redundancy we have to know which pairs of words
 
-w1 , w2 represent the same element of ΓΔ ; equivalently,            Thus Dehn’s investigations led him to understand
-we must be able to recognize which words w1−1 w2 are              how difficult it is to extract information from a group
-relations in the group. Determining which words are               presentation. In particular, he was the first to identify
-relations is called the word problem for the group. Even          the fundamental role of the word problem, which we
+w1 , w2 represent the same element of ΓΔ ; equivalently,
+we must be able to recognize which words w1−1 w2 are
+relations in the group. Determining which words are
+relations is called the word problem for the group. Even
+
+435
+in ΓΔ this takes some work, and in the groups Gn we
+quickly find ourselves at a loss.
+Note that as well as allowing one to list the elements
+of the group effectively, a solution to the word prob-
+1 3                 lem also allows one to determine the multiplication
+table, since deciding whether w1 w2 = w3 is the same
+as deciding whether w1 w2 w3−1 = 1.
+3.2   Why Finitely Presented Groups?
+The packaging of infinite objects into finite amounts
+of data arises through out mathematics in the vari-
+ous guises of compactness [III.9](/part-03/compactness-and-compactication). Finite presentation
+is basically a compactness condition: a group can be
+finitely presented if and only if it is the fundamental
+group of a reasonable compact space, as we shall see
+later.
+Another good reason for studying finitely presented
+groups is that the Higman embedding theorem (to be
+discussed later) allows us to encode questions about
+arbitrary turing machines [IV.20 §1.1](/part-04/computational-complexity) as questions
+about such groups and their subgroups.
+4    The Fundamental Decision Problems
+In exploring the geometry and topology of low-dimen-
+sional manifolds at the beginning of the twentieth cen-
+tury, Max Dehn saw that many of the problems that
+he was wrestling with could be “reduced” to questions
+−2
+i ai+1 ai ai+1 , i = 1, . . . , n,
+a simple formula for associating with a knot diagram
+[III.44](/part-03/knot-polynomials) a finite presentation of a group. There was one
+relation for each crossing in the diagram and he argued
+that the resulting group would be isomorphic to Z if
+and only if the knot was the unknot: that is, if and only
+if it could be continuously deformed into a circle. It
+is extremely hard to tell by staring at a knot diagram
+whether it is actually the unknot, so this seems like a
+useful reduction until one realizes that it can be just as
+hard to tell whether a finitely presented group is iso-
+morphic to Z. For example, here is the presentation of
+Z that Dehn’s recipe associates with one of smallest
+possible pictures of the unknot, namely a diagram with
+just four crossings:
+a1 , a2 , a3 , a4 , a5 |
+a−1    −1
+1 a3 a4 , a2 a3 a1 , a3 a4 a2 , a4 a5 a4 a3 .
+Thus Dehn’s investigations led him to understand
+how difficult it is to extract information from a group
+presentation. In particular, he was the first to identify
+the fundamental role of the word problem, which we
 
 $436$
 
@@ -297,120 +437,205 @@ $Γ^{2} \to G,$ there should be a unique homomorphism Φ : $Γ^{1}$ ∗ $Γ^{2} 
 let A ${}^{1} | R^{1}$ be a presentation of $Γ^{1}$ and let A ${}^{2} | R^{2}$ be a presentation of $Γ^{2}$ , with $A^{1}$ and $A^{2}$ disjoint, and then define $Γ^{1}$ ∗Γ 2 to be $A^{1}$ %A ${}^{2}|R^{1}$ %$R^{2}$ (where % denotes a union of disjoint sets). More intuitively, one can define Γ 1 ∗ Γ 2 to be the set of alternating sequences $a^{1}b^{1}$ · · · a n b n with each a i belonging to Γ 1 and each b j belonging to Γ 2 , with the extra condition that none of the a $i$ and $b$ j equals the identity, except possibly $a^{1}$ or b n .
 The group operations in Γ 1 and Γ 2 extend to this set in an obvious way: for example, $(a^{1}b^{1}a^{2})(a^{1}b^{1}) = a^{1}b^{1}a^{2}b^{1}$ , where $a^{2} = a^{2}a^{1}$ , except that if $a^{2}a^{1} = 1$ then the product cancels down to $a^{1}b^{2}$ , where $b^{2} = b^{1}b^{1}$ . Free products occur naturally in topology: if one has topological spaces $X^{1}$ , $X^{2}$ with marked points $p^{1} \inX^{1}$ , $p^{2} \inX^{2}$ , then the fundamental group [IV.6](/part-04/algebraic-topology) of the space $X^{1}$ ∨ $X^{2}$ obtained from $X^{1}$ % $X^{2}$ by making the
 
-IV.10.   Geometric and Combinatorial Group Theory                                                                     437
+IV.10.   Geometric and Combinatorial Group Theory
 
 identification p1 = p2 is the free product of π1 (X1 , p1 )   to itself) is injective. Thus, given Γ = A | R, we intro-
-and π1 (X2 , p2 ). The Seifert–van Kampen theorem tells      duce a symbol t ∉ A (usually called the stable letter), we
-one how to present the fundamental group of a space          choose for each b ∈ B1 words b̂, b̃ ∈ F (A) with b̂ = b
-obtained by gluing X1 and X2 along larger subspaces.         and b̃ = ψ(b) in Γ , and we define
+and π1 (X2 , p2 ). The Seifert–van Kampen theorem tells
+one how to present the fundamental group of a space
+obtained by gluing X1 and X2 along larger subspaces.
 If the inclusion of the subspaces gives rise to an injec-
-                                                                       Γ ∗ψ = A, t | R, t b̂t −1 b̃−1 (b ∈ B1 ).
 tion of fundamental groups, then one can express
-the fundamental group of the resulting space as an           This is the freest group we can build from Γ by adjoin-
-amalgamated free product, which we now define.                ing a new element t and requiring it to satisfy all the
-   Let Γ1 and Γ2 be two groups. If some other group          equations we want it to, namely t b̂t −1 = b̃ for every
-contains copies of Γ1 and Γ2 , then the intersection of      b ∈ B1 (which we can think of as saying that tbt −1 =
-those copies must contain the identity element. The          ψ(b)). This group is called an HNN extension of Γ (after
-free product Γ1 ∗ Γ2 was the freest group we could           Higman, Neumann, and Neumann).
-build that was subject to this minimal constraint. Now          Now we must show that the natural map from Γ to
-we shall insist that the copies of Γ1 and Γ2 intersect       Γ ∗ψ is injective. That is, if you take an element γ of Γ
-nontrivially, specify which of their subgroups must lie      and regard it as an element of Γ ∗ψ , you should not be
-in the intersection, and build the freest group that         able to use t and the relations in Γ ∗ψ to cancel γ down
-satisfies this constraint.                                    to the identity. This is proved with the help of the fol-
+the fundamental group of the resulting space as an
+amalgamated free product, which we now define.
+   Let Γ1 and Γ2 be two groups. If some other group
+contains copies of Γ1 and Γ2 , then the intersection of
+those copies must contain the identity element. The
+free product Γ1 ∗ Γ2 was the freest group we could
+build that was subject to this minimal constraint. Now
+we shall insist that the copies of Γ1 and Γ2 intersect
+nontrivially, specify which of their subgroups must lie
+in the intersection, and build the freest group that
+satisfies this constraint.
    Suppose, then, that A1 is a subgroup of Γ1 and that φ     lowing more general result known as Britton’s lemma.
-is an isomorphism from A1 to a subgroup A2 of Γ2 . As        Suppose that w is a word in the free group F (A, t). Then
-in the example of the free product, one can define the        the only circumstances under which it can give rise to
-“freest product that identifies A1 and A2 ” by means          the identity in the group Γ ∗ψ are if either it does not
-of a universal property. Again, one can establish the        involve t and represents the identity in Γ or it involves
-existence of such a group using presentations: if Γ1 =       t but can be simplified in an obvious way by contain-
-S1 | R1  and Γ2 = S2 | R2 , the group we seek takes      ing a “pinch.” A pinch is a subword of the form tbt −1 ,
-the form                                                     where b is a word in F (A) that represents an element
-                  S1 % S2 | R1 % R2 % T .                  of B1 (in which case we can replace it by ψ(b)), or one
-Here, T = {ua va−1 | a ∈ A1 }, where ua is some word         of the form t −1 b t, where b represents an element of
-that represents a in (the presentation of) Γ1 and va is      B2 (in which case we can replace it by ψ−1 (b )). Thus,
-a word that represents φ(a) in Γ2 .                          if you are given a word that involves t and contains
-  This group is called the amalgamated free product of       no pinches, then you know that it cannot be canceled
+is an isomorphism from A1 to a subgroup A2 of Γ2 . As
+in the example of the free product, one can define the
+“freest product that identifies A1 and A2 ” by means
+of a universal property. Again, one can establish the
+existence of such a group using presentations: if Γ1 =
+S1 | R1  and Γ2 = S2 | R2 , the group we seek takes
+the form
+
+Here, T = {ua va−1 | a ∈ A1 }, where ua is some word
+that represents a in (the presentation of) Γ1 and va is
+a word that represents φ(a) in Γ2 .
+  This group is called the amalgamated free product of
 Γ1 and Γ2 along A1 and A2 . It is often described by the     down to the identity.
-casual and ambiguous notation Γ1 ∗A1 =A2 Γ2 , or even           A similar noncancellation result holds for the amal-
-Γ1 ∗A Γ2 , where A  Aj is an abstract group.                gamated free product Γ1 ∗A1 =A2 Γ2 . If g1 , . . . , gn belong
+casual and ambiguous notation Γ1 ∗A1 =A2 Γ2 , or even
+Γ1 ∗A Γ2 , where A  Aj is an abstract group.
   Unlike with free products, it is no longer obvious that    to Γ1 but not to A1 and h1 , . . . , hn belong to Γ2 but not
 the maps Γi → Γ1 ∗A Γ2 implicit in this construction are     to A2 , then the word g1 h1 g2 h2 · · · gn hn cannot equal
-injective, but they do turn out to be, as was shown by       the identity in Γ1 ∗A1 =A2 Γ2 .
-Schreier in 1927.                                               These noncancellation results do far more than show
-  A related construction of Higman, Neumann, and             that the natural homomorphisms we have been con-
-Neumann in 1949 answers the following question:              side ring are injective: they also demonstrate further
-given a group Γ and an isomorphism ψ : B1 → B2               aspects of freeness in amalgamated free products and
-between subgroups of Γ , can one always embed Γ in           HNN extensions. For example, suppose that in the amal-
-a bigger group so that ψ becomes the restriction to B1       gamated free product Γ1 ∗A1 =A2 Γ2 we can find an ele-
-of a conjugation?                                            ment g of Γ1 that generates an infinite group that inter-
-  By now, having seen the idea in the context of             sects A1 in the identity and an element h of Γ2 that does
-both free products and amalgamated free products,            the same for A2 . Then the subgroup of Γ1 ∗A1 =A2 Γ2 gen-
-the reader may guess how one goes about answering            erated by g and h is the free group on those two gen-
-this question: one writes down the presentation of a         erators. With a little more effort, one can deduce that
-universal candidate for the desired enveloping group,        any finite subgroup of Γ1 ∗A1 =A2 Γ2 has to be conjugate
-denoted Γ ∗ψ , and then one sets about proving that the      to a subgroup of the obvious copy of either Γ1 or Γ2 .
-natural map from Γ to Γ ∗ψ (which takes each word            Similarly, the finite subgroups of Γ ∗ψ are conjugates
+injective, but they do turn out to be, as was shown by
+Schreier in 1927.
+  A related construction of Higman, Neumann, and
+Neumann in 1949 answers the following question:
+given a group Γ and an isomorphism ψ : B1 → B2
+between subgroups of Γ , can one always embed Γ in
+a bigger group so that ψ becomes the restriction to B1
+of a conjugation?
+  By now, having seen the idea in the context of
+both free products and amalgamated free products,
+the reader may guess how one goes about answering
+this question: one writes down the presentation of a
+universal candidate for the desired enveloping group,
+denoted Γ ∗ψ , and then one sets about proving that the
+natural map from Γ to Γ ∗ψ (which takes each word
 
-438                                                                                                IV. Branches of Mathematics
+437
+duce a symbol t ∉ A (usually called the stable letter), we
+choose for each b ∈ B1 words b̂, b̃ ∈ F (A) with b̂ = b
+and b̃ = ψ(b) in Γ , and we define
+Γ ∗ψ = A, t | R, t b̂t −1 b̃−1 (b ∈ B1 ).
+This is the freest group we can build from Γ by adjoin-
+ing a new element t and requiring it to satisfy all the
+equations we want it to, namely t b̂t −1 = b̃ for every
+b ∈ B1 (which we can think of as saying that tbt −1 =
+ψ(b)). This group is called an HNN extension of Γ (after
+Higman, Neumann, and Neumann).
+Now we must show that the natural map from Γ to
+Γ ∗ψ is injective. That is, if you take an element γ of Γ
+and regard it as an element of Γ ∗ψ , you should not be
+able to use t and the relations in Γ ∗ψ to cancel γ down
+to the identity. This is proved with the help of the fol-
+Suppose that w is a word in the free group F (A, t). Then
+the only circumstances under which it can give rise to
+the identity in the group Γ ∗ψ are if either it does not
+involve t and represents the identity in Γ or it involves
+t but can be simplified in an obvious way by contain-
+ing a “pinch.” A pinch is a subword of the form tbt −1 ,
+where b is a word in F (A) that represents an element
+S1 % S2 | R1 % R2 % T .
+of the form t −1 b t, where b represents an element of
+B2 (in which case we can replace it by ψ−1 (b )). Thus,
+if you are given a word that involves t and contains
+no pinches, then you know that it cannot be canceled
+A similar noncancellation result holds for the amal-
+gamated free product Γ1 ∗A1 =A2 Γ2 . If g1 , . . . , gn belong
+the identity in Γ1 ∗A1 =A2 Γ2 .
+These noncancellation results do far more than show
+that the natural homomorphisms we have been con-
+side ring are injective: they also demonstrate further
+aspects of freeness in amalgamated free products and
+HNN extensions. For example, suppose that in the amal-
+gamated free product Γ1 ∗A1 =A2 Γ2 we can find an ele-
+ment g of Γ1 that generates an infinite group that inter-
+sects A1 in the identity and an element h of Γ2 that does
+the same for A2 . Then the subgroup of Γ1 ∗A1 =A2 Γ2 gen-
+erated by g and h is the free group on those two gen-
+erators. With a little more effort, one can deduce that
+any finite subgroup of Γ1 ∗A1 =A2 Γ2 has to be conjugate
+to a subgroup of the obvious copy of either Γ1 or Γ2 .
+Similarly, the finite subgroups of Γ ∗ψ are conjugates
 
-of subgroups of Γ . We shall exploit these facts in the            take a free product of G with an infinite cyclic group
-constructions that follow.                                         s  Z. Let Σ1 be the set of all elements of G ∗ Z of the
-  There are many ways of combining groups that I                   form sn = gn s n with n ⩾ 1. Then the subgroup Σ1 
-have not mentioned here. I have chosen to focus on                 generated by Σ1 is isomorphic to the free group F (Σ1 ).
-amalgamated free products and HNN extensions partly                Similarly, if we let Σ2 = {s2 , s3 , . . . } (so it is Σ1 with the
-because they lead to transparent solutions of the basic            element s1 = g1 s removed), then Σ2  is isomorphic to
-problems discussed below but more because of their                 F (Σ2 ). It follows that the map ψ(sn ) = sn+1 gives rise to
-primitive appeal and the way in which they arise nat-              an isomorphism from Σ1  to Σ2 . Now take the HNN
-urally in the calculation of fundamental groups. They              extension (G ∗ Z)∗ψ , whose stable letter we denote by
-also mark the beginning of arboreal group theory,                  t. This group contains a copy of G, as we noted before.
-which we will discuss later. If space allowed, I would go          More over, since we have ensured that tsn t −1 = sn+1 for
-on to describe semidirect and wreath products, which               every n ⩾ 1, it can be generated by just the three ele-
-are also indispensable tools of the group theorist.                ments s1 , s, and t. Thus, we have embedded an arbitrary
-  Before turning to some applications of HNN exten-                countable group into a group with three generators. (We
-sions and amalgamated free products, I want to return              leave the reader to think about how one can vary this
-to the Burnside problem, which asks if there exist                 construction to produce a group with two generators.)
+438
+
+of subgroups of Γ . We shall exploit these facts in the
+constructions that follow.
+  There are many ways of combining groups that I
+have not mentioned here. I have chosen to focus on
+amalgamated free products and HNN extensions partly
+because they lead to transparent solutions of the basic
+problems discussed below but more because of their
+primitive appeal and the way in which they arise nat-
+urally in the calculation of fundamental groups. They
+also mark the beginning of arboreal group theory,
+which we will discuss later. If space allowed, I would go
+on to describe semidirect and wreath products, which
+are also indispensable tools of the group theorist.
+  Before turning to some applications of HNN exten-
+sions and amalgamated free products, I want to return
+to the Burnside problem, which asks if there exist
 finitely generated infinite groups all of whose ele-
-ments have a given finite order. This question gener-               5.3   There Are Uncountably Many Nonisomorphic
-ated important developments through out the twenti-                       Finitely Generated Groups
+ments have a given finite order. This question gener-
+ated important developments through out the twenti-
 eth century, particularly in Russia. It is appropriate to
-                                                                   This was proved by B. H. Neumann in 1932. Since there
 mention it here because it provides another illustration
-of the fact that it can be useful to study a universal             are infinitely many primes, there are uncountably many
+of the fact that it can be useful to study a universal
 
-object in order to solve a general question.                       nonisomorphic groups of the form       p∈P Zp , where P
-                                                                   is an infinite set of primes. We have seen that each of
-5.1   The Burnside Problem                                         these groups can be embedded in a finitely generated
-                                                                   group, and our earlier comments on finite subgroups
+object in order to solve a general question.
+5.1   The Burnside Problem
 Given an exponent m, one clarifies the problem at hand
-                                                                   of HNN extensions show that no two of the resulting
 by considering the free Burnside group Bn, m given by
-                                                                   finitely generated groups are isomorphic.
 the presentation a1 , . . . , an | Rm , where Rm consists
 of all mth powers in the free group F (a1 , . . . , an ). It is
-                                                                   5.4   An Answer to Hopf’s Question
 clear that Bn, m maps onto any group with at most n
-generators in which every element has order dividing               A group G is called Hopfian if every surjective homo-
-m. Therefore, there exists a finitely generated infinite             morphism from G to G is an isomorphism. Most
-group with all elements of the same finite order if and             familiar groups have this property: for example, finite
-only if, for suitable values of n and m, the group Bn, m            groups obviously do, as do Zn (as you can prove using
-is infinite. Thus, a question that takes the form, Does             linear algebra) and free groups. So too do groups of
-there exist a group such that ...?, becomes a question               matrices such as SLn (Z), as we shall discuss in a
-about just one group.                                              moment. A simple example of a non-Hopfian group is
-   Novikov and Adian showed in 1968 that Bn, m is infi-              the group consisting of all infinite sequences of inte-
-nite when n ⩾ 2 and m ⩾ 667 is odd. Determining                    gers (under pointwise addition), since the function that
-the exact range of values for which Bn, m is infinite is             takes (a1 , a2 , a3 , . . . ) to (a2 , a3 , a4 , . . . ) is a surjective
-an active area of research. Of far greater interest is the         homomorphism that contains (1, 0, 0, . . . ) in its kernel.
-open question of whether there exist finitely presented             But is there a finitely presented example? The answer
-infinite groups that are quotients of Bn, m . Zelmanov               is yes, and Higman was the first to construct one. The
-was awarded the Fields Medal for proving that each                 following examples are due to Baumslag and Solitar.
-Bn, m has only finitely many finite quotients.                           Let p ⩾ 2 be an integer and identify Z with the free
-                                                                   group a generated by a single generator a. Then the
+generators in which every element has order dividing
+m. Therefore, there exists a finitely generated infinite
+group with all elements of the same finite order if and
+only if, for suitable values of n and m, the group Bn, m
+is infinite. Thus, a question that takes the form, Does
+there exist a group such that ...?, becomes a question
+about just one group.
+   Novikov and Adian showed in 1968 that Bn, m is infi-
+nite when n ⩾ 2 and m ⩾ 667 is odd. Determining
+the exact range of values for which Bn, m is infinite is
+an active area of research. Of far greater interest is the
+open question of whether there exist finitely presented
+infinite groups that are quotients of Bn, m . Zelmanov
+was awarded the Fields Medal for proving that each
+Bn, m has only finitely many finite quotients.
 5.2   Every Countable Group Can Be Embedded
-                                                                   subgroups p Z and (p + 1)Z of Z are identified with the
-      in a Finitely Generated Group
-                                                                   powers of ap and ap+1 , respectively. Let ψ be the iso-
-Given a countable group G we can list its elements,                morphism between these subgroups that takes ap to
+
+Given a countable group G we can list its elements,
 g0 , g1 , g2 , . . . , taking g0 to be the identity. We can then   ap+1 and consider the corresponding HNN extension
+
+IV. Branches of Mathematics
+take a free product of G with an infinite cyclic group
+s  Z. Let Σ1 be the set of all elements of G ∗ Z of the
+form sn = gn s n with n ⩾ 1. Then the subgroup Σ1 
+generated by Σ1 is isomorphic to the free group F (Σ1 ).
+Similarly, if we let Σ2 = {s2 , s3 , . . . } (so it is Σ1 with the
+element s1 = g1 s removed), then Σ2  is isomorphic to
+F (Σ2 ). It follows that the map ψ(sn ) = sn+1 gives rise to
+an isomorphism from Σ1  to Σ2 . Now take the HNN
+extension (G ∗ Z)∗ψ , whose stable letter we denote by
+t. This group contains a copy of G, as we noted before.
+More over, since we have ensured that tsn t −1 = sn+1 for
+every n ⩾ 1, it can be generated by just the three ele-
+ments s1 , s, and t. Thus, we have embedded an arbitrary
+countable group into a group with three generators. (We
+leave the reader to think about how one can vary this
+construction to produce a group with two generators.)
+5.3   There Are Uncountably Many Nonisomorphic
+Finitely Generated Groups
+This was proved by B. H. Neumann in 1932. Since there
+are infinitely many primes, there are uncountably many
+nonisomorphic groups of the form
+is an infinite set of primes. We have seen that each of
+these groups can be embedded in a finitely generated
+group, and our earlier comments on finite subgroups
+of HNN extensions show that no two of the resulting
+finitely generated groups are isomorphic.
+5.4   An Answer to Hopf’s Question
+A group G is called Hopfian if every surjective homo-
+morphism from G to G is an isomorphism. Most
+familiar groups have this property: for example, finite
+groups obviously do, as do Zn (as you can prove using
+linear algebra) and free groups. So too do groups of
+matrices such as SLn (Z), as we shall discuss in a
+moment. A simple example of a non-Hopfian group is
+the group consisting of all infinite sequences of inte-
+gers (under pointwise addition), since the function that
+takes (a1 , a2 , a3 , . . . ) to (a2 , a3 , a4 , . . . ) is a surjective
+homomorphism that contains (1, 0, 0, . . . ) in its kernel.
+But is there a finitely presented example? The answer
+is yes, and Higman was the first to construct one. The
+following examples are due to Baumslag and Solitar.
+Let p ⩾ 2 be an integer and identify Z with the free
+group a generated by a single generator a. Then the
+subgroups p Z and (p + 1)Z of Z are identified with the
+in a Finitely Generated Group
+powers of ap and ap+1 , respectively. Let ψ be the iso-
+morphism between these subgroups that takes ap to
 
 $IV$ . $10$ .
 
@@ -468,116 +693,212 @@ Thus, since there is no algorithm to decide whether w $= 1$ in Γ , one cannot d
 By following a standard proof of this theorem with considerable care, Markov proved in 1958 that in dimensions $4$ and above there is no algorithm to decide which compact manifolds (presented as simplicial complexes, for example) are homeomorphic. His basic idea was to show that if there were an algorithm to determine which triangulated $4$ - manifolds are homeomorphic, then one could use it to determine which finitely presented groups are trivial, which we know is impossible.
 In order to implement this idea one has to be careful to arrange that the $4$ - manifolds associated with different presentations of the trivial group are homeomorphic: this is the delicate part of the argument. Strikingly, there does exist an algorithm to decide which compact three-dimensional manifolds are isomorphic. This is an extremely deep theorem that relies in particular on Perelman’s solution to thurston’s geometrization conjecture [IV.7](/part-04/dierential-topology) .
 
-IV.10.   Geometric and Combinatorial Group Theory                                                                           441
+IV.10.   Geometric and Combinatorial Group Theory
 
-            7   Topological Group Theory                            and a Klein bottle stuck together at a point. Picturing
-                                                                    the 2-complex for a, b | a2 , b3 , (ab)3  is already rather
 Let us change perspective now and look at the sym-
-                                                                    difficult.
 bols P ≡ a1 , . . . , a2 | r1 , . . . , rm  through the eyes of
-                                                                       The construction of K(P ) is the beginning of topo-
 a topologist. Instead of interpreting P as a recipe for
-                                                                    logical group theory. The Seifert–van Kampen theorem
 constructing a group, we regard it as a recipe for con-
-                                                                    (mentioned earlier) implies that the fundamental group
 struc ting a topological space [III.90](/part-03/topological-spaces), or more specif-
-                                                                    of K(P ) is the group presented by P . But the group
-ically a two-dimensional complex. Such spaces consist               no longer sits inertly in the form of an inscrutable
-of points, called vertices, some of which are linked by             presentation—now it acts on the universal covering
-directed paths, called edges, or 1-cells. If a collection of        [III.93](/part-03/universal-covers) of K(P ) by homeomorphisms known as “deck
-such 1-cells forms a cycle, then it can be filled in with            transformations.” Thus, through the simple con struc-
-a face, or 2-cell: topologically speaking, each face is a           tion of K(P ) (and the elegant theory of covering spaces
-disk with a directed cycle as its boundary.                         in topology) we achieve our aim of realizing an abstract
-   To see what this complex is, let us first consider the            finitely presented group as the group of symmetries of
-standard presentation P ≡ a, b | aba−1 b−1  of Z2 .               an object with a potentially rich structure, on which we
-(This is generated by a and b and the relation tells                can bring global geometric and topological techniques
-us that ab = ba.) We begin with a graph K 1 that                    to bear.
-has a single vertex and two edges (which are loops)                    To obtain an improved topological model for our
-that are directed and labeled a and b. Next, we take a              group, we can embed K(P ) in R5 (just as one can embed
-square [0, 1]×[0, 1], the sides of which are directed and           a finite graph [III.34] in R3 ) and consider the compact
-labeled a, b, a−1 , b−1 as we proceed around the bound-             four-dimensional manifold M obtained by taking all
-ary. Imagine gluing the boundary of the square to the               points that are a small fixed distance from the image.
-graph so as to respect the labeling of edges: with a bit            (I am assuming that the embedding is suitably “tame,”
-of thought, you should be able to see that the result               which one can arrange.) The mental picture to strive for
-is a torus, that is, a surface in the shape of a bagel.             here is a higher-dimensional analogue of the surface
-An observation that turns out to be important is that               (sleeve) one gets by taking the points in R3 that are a
-the fundamental group of the torus is Z2 , the group we             small fixed distance from an embedded graph. The fun-
-started with.                                                       da mental group of M is again the group presented by P ,
-   The idea of “gluing” is made precise by the use of               so now we have our arbitrary finitely presented group
-attaching maps: we take a continuous map φ from the                 acting on a manifold (the universal cover of M). This
-boundary of the square S to the graph K 1 that sends                allows us to use the tools of analysis and differential
-the corners of the square to the vertex of K 1 and sends            geometry.
-each side (minus its vertices) homeomorphic ally onto                   The constructions of K(P ) and M establish the more
-an open edge. The torus is then the quotient of K 1 % S             difficult implication of the theorem, promised earlier,
-by the equivalence relation that identifies each x in the            that a group can be finitely presented if and only if
-boundary of the square with its image φ(x).                         it is the fundamental group of a compact cell com-
-   With this more abstract language in hand, it is easy to          plex and of a compact 4-manifold. This result raises
-see how the above construction generalizes to arbitrary             several natural questions. First, are there better, more
-presentations: given a presentation P ≡ a1 , . . . , an |          informative, topological models for an arbitrary finitely
-r1 , . . . , rm , one takes a graph with a single vertex and       presented group Γ ? And if not, then what can one
-n oriented loops, which are labeled a1 , . . . , an . Then          say about the classes of groups defined by the natu-
-for each rj one attaches a polygonal disk by gluing its             ral constraints that arise when one tries to improve
-boundary circuit to the sequence of oriented edges that             the model? For example, we would like to construct
-traces out the word rj .                                            a lower-dimensional manifold with fundamental group
-   In general, the result will not be a surface as it was for       Γ , enabling us to exploit our physical insight into three-
-a, b | aba−1 b−1 . Rather, it will be a two-dimensional           dimensional geometry. But it turns out that the fun-
-complex with singularities along the edges and at the               da mental groups of compact three-dimensional man-
-vertex. You may find it instructive to do some more                  ifolds are very special; this observation lies near the
-examples. From a | a2  one gets the projective plane;             heart of a great deal of mathematics at the end of
-from a, b, c, d | aba−1 b−1 , cdc −1 d one gets a torus           the twentieth century. Other interesting fields open up
+ically a two-dimensional complex. Such spaces consist
+of points, called vertices, some of which are linked by
+directed paths, called edges, or 1-cells. If a collection of
+such 1-cells forms a cycle, then it can be filled in with
+a face, or 2-cell: topologically speaking, each face is a
+disk with a directed cycle as its boundary.
+   To see what this complex is, let us first consider the
+standard presentation P ≡ a, b | aba−1 b−1  of Z2 .
+(This is generated by a and b and the relation tells
+us that ab = ba.) We begin with a graph K 1 that
+has a single vertex and two edges (which are loops)
+that are directed and labeled a and b. Next, we take a
+square [0, 1]×[0, 1], the sides of which are directed and
+labeled a, b, a−1 , b−1 as we proceed around the bound-
+ary. Imagine gluing the boundary of the square to the
+graph so as to respect the labeling of edges: with a bit
+of thought, you should be able to see that the result
+is a torus, that is, a surface in the shape of a bagel.
+An observation that turns out to be important is that
+the fundamental group of the torus is Z2 , the group we
+started with.
+   The idea of “gluing” is made precise by the use of
+attaching maps: we take a continuous map φ from the
+boundary of the square S to the graph K 1 that sends
+the corners of the square to the vertex of K 1 and sends
+each side (minus its vertices) homeomorphic ally onto
+an open edge. The torus is then the quotient of K 1 % S
+by the equivalence relation that identifies each x in the
+boundary of the square with its image φ(x).
+   With this more abstract language in hand, it is easy to
+see how the above construction generalizes to arbitrary
+presentations: given a presentation P ≡ a1 , . . . , an |
+r1 , . . . , rm , one takes a graph with a single vertex and
+n oriented loops, which are labeled a1 , . . . , an . Then
+for each rj one attaches a polygonal disk by gluing its
+boundary circuit to the sequence of oriented edges that
+traces out the word rj .
+   In general, the result will not be a surface as it was for
+a, b | aba−1 b−1 . Rather, it will be a two-dimensional
+complex with singularities along the edges and at the
+vertex. You may find it instructive to do some more
+examples. From a | a2  one gets the projective plane;
+from a, b, c, d | aba−1 b−1 , cdc −1 d one gets a torus
 
-442                                                                                     IV. Branches of Mathematics
+441
+7   Topological Group Theory
+the 2-complex for a, b | a2 , b3 , (ab)3  is already rather
+difficult.
+The construction of K(P ) is the beginning of topo-
+logical group theory. The Seifert–van Kampen theorem
+(mentioned earlier) implies that the fundamental group
+of K(P ) is the group presented by P . But the group
+no longer sits inertly in the form of an inscrutable
+presentation—now it acts on the universal covering
+[III.93](/part-03/universal-covers) of K(P ) by homeomorphisms known as “deck
+transformations.” Thus, through the simple con struc-
+tion of K(P ) (and the elegant theory of covering spaces
+in topology) we achieve our aim of realizing an abstract
+finitely presented group as the group of symmetries of
+an object with a potentially rich structure, on which we
+can bring global geometric and topological techniques
+to bear.
+To obtain an improved topological model for our
+group, we can embed K(P ) in R5 (just as one can embed
+a finite graph [III.34] in R3 ) and consider the compact
+four-dimensional manifold M obtained by taking all
+points that are a small fixed distance from the image.
+(I am assuming that the embedding is suitably “tame,”
+which one can arrange.) The mental picture to strive for
+here is a higher-dimensional analogue of the surface
+(sleeve) one gets by taking the points in R3 that are a
+small fixed distance from an embedded graph. The fun-
+da mental group of M is again the group presented by P ,
+so now we have our arbitrary finitely presented group
+acting on a manifold (the universal cover of M). This
+allows us to use the tools of analysis and differential
+geometry.
+The constructions of K(P ) and M establish the more
+difficult implication of the theorem, promised earlier,
+that a group can be finitely presented if and only if
+it is the fundamental group of a compact cell com-
+plex and of a compact 4-manifold. This result raises
+several natural questions. First, are there better, more
+informative, topological models for an arbitrary finitely
+presented group Γ ? And if not, then what can one
+say about the classes of groups defined by the natu-
+ral constraints that arise when one tries to improve
+the model? For example, we would like to construct
+a lower-dimensional manifold with fundamental group
+Γ , enabling us to exploit our physical insight into three-
+dimensional geometry. But it turns out that the fun-
+da mental groups of compact three-dimensional man-
+ifolds are very special; this observation lies near the
+heart of a great deal of mathematics at the end of
+the twentieth century. Other interesting fields open up
 
-when one asks which groups arise as the fund a men-             symmetries had any fixed points. Before moving on to
-tal groups of compact spaces satisfying curvature             geometric group theory I should point out that there
-[III.13](/part-03/curvature) conditions, or constraints coming from complex       are many situations in which the most illuminating
-geometry.                                                     actions of a group are not free: one instead allows well-
-   A particularly rich set of constraints comes from the      understood stabilizers. (The stabilizer of a point is the
-following question. Can one arrange for an arbitrary          set of all symmetries in the group that leave that point
-finitely presented group to be the fundamental group           fixed.) For example, the natural way in which to study
-of a compact space (a complex or manifold, perhaps)           ΓΔ is by its action on the triangulated plane, each vertex
-whose universal cover is contractible [IV.6 §2](/part-04/algebraic-topology)? This         of which is left unmoved by twelve symmetries.
-is a natural question from the point of view of topology         A deeper illustration of the merits of seeking insight
-because a space with a contractible universal cover is,       into algebraic structure through nonfree actions on
-up to homotopy [IV.6 §2](/part-04/algebraic-topology), completely determined by            suitable topological spaces comes from the Bass–Serre
-its fundamental group. If the fundamental group is Γ ,        theory of groups acting on trees, which subsumes the
+442
+
+when one asks which groups arise as the fund a men-
+tal groups of compact spaces satisfying curvature
+[III.13](/part-03/curvature) conditions, or constraints coming from complex
+geometry.
+   A particularly rich set of constraints comes from the
+following question. Can one arrange for an arbitrary
+finitely presented group to be the fundamental group
+of a compact space (a complex or manifold, perhaps)
+whose universal cover is contractible [IV.6 §2](/part-04/algebraic-topology)? This
+is a natural question from the point of view of topology
+because a space with a contractible universal cover is,
+up to homotopy [IV.6 §2](/part-04/algebraic-topology), completely determined by
+its fundamental group. If the fundamental group is Γ ,
 then such a space is called a classifying space for Γ and     theory of amalgamated free products and HNN exten-
-its homotopy-invariant properties provide a rich array        sions, whose potency we saw earlier. (This theory and
-of invariants for the group Γ (getting away from the          its extensions often go under the heading of arboreal
-gross dependence that K(P ) has on P rather than Γ ).         group theory.)
-   If our earlier discussion of how hard it is to recognize      A tree is a connected graph that has no circuits in it.
-Γ from P has left you very skeptical about whether this       It is helpful to regard it as a metric space [III.56](/part-03/metric-spaces) in
-dependence can actually be removed, then your skep-           which each edge has length 1. The group actions that
-ticism is well-founded: there are many obstructions to        one allows on trees are those that take edges to edges
-the construction of compact classifying spaces for an         isometrically, never flipping an edge.
-arbitrary finitely presented group; the study of them             If a group Γ acts on a set X (in other words, if it can
-(under the generic name finiteness conditions) is a rich       be regarded as a group of symmetries of X), then the
-area at the interface of modern group theory, topology,       orbit of a point x ∈ X is the set of all its images gx with
-and homological algebra.                                      g ∈ Γ . A group Γ can be expressed as an amalgamated
-   One aspect of this area is the search for natural          free product A∗C B if and only if it acts on a tree in such
-conditions that ensure the existence of compact clas-         a way that there are two orbits of vertices, one orbit of
-sify ing spaces (not necessarily manifolds). This is one       edges, and stabilizers A, B, C (where A and B are the
-of several places where manifestations of nonpositive         stabilizers of adjacent vertices and intersect in C, which
-curvature play a fundamental role in modern group             is the edge stabilizer). HNN extensions correspond to
-theory. More combinatorial conditions also arise. For         actions with one orbit of vertices and one orbit of edges.
-example, Lyndon proved that for any presentation P ≡          Thus, amalgamated free products and HNN extensions
-A | r  where the single defining relation r ∈ F (A) is       appear as graphs of groups, which are the basic objects
-not a nontrivial power, the universal cover of K(P ) is       of Bass–Serre theory. These objects allow one to recover
-contractible.                                                 groups acting on trees from the quotient data of the
-   A neighboring and highly active area of research con-      action, i.e., the quotient space (which is a graph) and
-cerns questions of uniqueness and rigidity for classi-        the pattern of edge and vertex stabilizers.
-fying spaces. (Here, as is common, the word rigidity             An early benefit of Bass–Serre theory is a transparent
-is used to describe a situation in which requiring two        and instructive proof that any finite subgroup of A ∗C B
-objects to be equivalent in an apparently weak sense          is conjugate to a subgroup of either A or B: given any set
-forces them to be equivalent in an apparently stronger        V of vertices in a tree, there is a unique vertex or mid-
-sense.) For example, the (open) Borel conjecture asserts      point x minimizing max{d(x, v) | v ∈ V }; one applies
-that if two compact manifolds have isomorphic funda-          this observation with V an orbit of the finite subgroup;
-mental groups and contractible universal covers, then         x provides a fixed point for the action of the subgroup;
-those manifolds must be homeomorphic.                         and any point stabilizer is conjugate to a subgroup of
-   I have been talking mostly about realizing groups as       either A or B.
-fundamental groups, which led to certain free actions.           Arboreal group theory goes much deeper than this
-That is, we could interpret the elements of the group         first application suggests. It is the basis for a decompo-
-as symmetries of a topological space and none of these        sition theory of finitely presented groups from which
+its homotopy-invariant properties provide a rich array
+of invariants for the group Γ (getting away from the
+gross dependence that K(P ) has on P rather than Γ ).
+   If our earlier discussion of how hard it is to recognize
+Γ from P has left you very skeptical about whether this
+dependence can actually be removed, then your skep-
+ticism is well-founded: there are many obstructions to
+the construction of compact classifying spaces for an
+arbitrary finitely presented group; the study of them
+(under the generic name finiteness conditions) is a rich
+area at the interface of modern group theory, topology,
+and homological algebra.
+   One aspect of this area is the search for natural
+conditions that ensure the existence of compact clas-
+sify ing spaces (not necessarily manifolds). This is one
+of several places where manifestations of nonpositive
+curvature play a fundamental role in modern group
+theory. More combinatorial conditions also arise. For
+example, Lyndon proved that for any presentation P ≡
+A | r  where the single defining relation r ∈ F (A) is
+not a nontrivial power, the universal cover of K(P ) is
+contractible.
+   A neighboring and highly active area of research con-
+cerns questions of uniqueness and rigidity for classi-
+fying spaces. (Here, as is common, the word rigidity
+is used to describe a situation in which requiring two
+objects to be equivalent in an apparently weak sense
+forces them to be equivalent in an apparently stronger
+sense.) For example, the (open) Borel conjecture asserts
+that if two compact manifolds have isomorphic funda-
+mental groups and contractible universal covers, then
+those manifolds must be homeomorphic.
+   I have been talking mostly about realizing groups as
+fundamental groups, which led to certain free actions.
+That is, we could interpret the elements of the group
+as symmetries of a topological space and none of these
+
+IV. Branches of Mathematics
+symmetries had any fixed points. Before moving on to
+geometric group theory I should point out that there
+are many situations in which the most illuminating
+actions of a group are not free: one instead allows well-
+understood stabilizers. (The stabilizer of a point is the
+set of all symmetries in the group that leave that point
+fixed.) For example, the natural way in which to study
+ΓΔ is by its action on the triangulated plane, each vertex
+of which is left unmoved by twelve symmetries.
+A deeper illustration of the merits of seeking insight
+into algebraic structure through nonfree actions on
+suitable topological spaces comes from the Bass–Serre
+theory of groups acting on trees, which subsumes the
+sions, whose potency we saw earlier. (This theory and
+its extensions often go under the heading of arboreal
+group theory.)
+A tree is a connected graph that has no circuits in it.
+It is helpful to regard it as a metric space [III.56](/part-03/metric-spaces) in
+which each edge has length 1. The group actions that
+one allows on trees are those that take edges to edges
+isometrically, never flipping an edge.
+If a group Γ acts on a set X (in other words, if it can
+be regarded as a group of symmetries of X), then the
+orbit of a point x ∈ X is the set of all its images gx with
+g ∈ Γ . A group Γ can be expressed as an amalgamated
+free product A∗C B if and only if it acts on a tree in such
+a way that there are two orbits of vertices, one orbit of
+edges, and stabilizers A, B, C (where A and B are the
+stabilizers of adjacent vertices and intersect in C, which
+is the edge stabilizer). HNN extensions correspond to
+actions with one orbit of vertices and one orbit of edges.
+Thus, amalgamated free products and HNN extensions
+appear as graphs of groups, which are the basic objects
+of Bass–Serre theory. These objects allow one to recover
+groups acting on trees from the quotient data of the
+action, i.e., the quotient space (which is a graph) and
+the pattern of edge and vertex stabilizers.
+An early benefit of Bass–Serre theory is a transparent
+and instructive proof that any finite subgroup of A ∗C B
+is conjugate to a subgroup of either A or B: given any set
+V of vertices in a tree, there is a unique vertex or mid-
+point x minimizing max{d(x, v) | v ∈ V }; one applies
+this observation with V an orbit of the finite subgroup;
+x provides a fixed point for the action of the subgroup;
+and any point stabilizer is conjugate to a subgroup of
+either A or B.
+Arboreal group theory goes much deeper than this
+first application suggests. It is the basis for a decompo-
+sition theory of finitely presented groups from which
 
 $IV$ . $10$ .
 
@@ -603,242 +924,390 @@ First, there are positive constants c, C, and   such that cd (x , x)  -    $\le$
 In this case the map φ : $R^{2} \to Z^{2}$ that takes (x , y) to (x!, y !) (where x! denotes the largest integer less than or equal to x) is easily seen to be a quasi-isometry: if the Euclidean distance d between two points (x , y) and (x , y) is at least $10$ , say, then the graph distance between (x!, y !) and (x !, y !) will certainly lie between $\frac{1}{2}d$ and $2d$ . Notice how little we care about the local structure of the two spaces: the map φ is a quasi-isometry despite not even being continuous.
 It is not hard to check that if φ is a quasi-isometry from X to Y , then there is a quasi-isometry $\psi$ from Y to X that “quasi-inverts” φ, in the sense that every x in X is at most a bounded distance from $\psi$ φ (x) and every y in Y is at most a bounded distance from φ $\psi$ (y) . Once one has established this, it is easy to see that quasiisometry is an equivalence relation. Returning to Cayley graphs and word metrics, it turns out that if you take two different sets of generators for the same group, then the resulting Cayley graphs will be
 
-444                                                                                     IV. Branches of Mathematics
+444
 
-quasi-isometric. Thus, any property of a Cayley graph        1981. This theorem concerns the number of points
+quasi-isometric. Thus, any property of a Cayley graph
 that is invariant under quasi-isometry will be a property    within a distance r of the identity in a finitely generated
 not just of the graph but of the group itself. When deal-    group Γ . This will be a function f (r ), and Gromov was
 ing with such invariants we are free to think of Γ itself    interested in how the function f (r ) grows as r tends
-as a space (since we do not care which Cayley graph we       to infinity, and what that tells us about the group Γ .
-form), and we can replace it by any metric space that           If Γ is an Abelian group with d generators, then it is
+as a space (since we do not care which Cayley graph we
+form), and we can replace it by any metric space that
 is quasi-isometric to it, such as the universal cover of a   not hard to see that f (r ) is at most (2 r + 1)d (since
-closed Riemannian manifold with fundamental group Γ          each generator is raised to a power between −r and r ).
-(whose existence we discussed earlier). Then the tools       Thus, in this case f (r ) is bounded above by a polyno-
-of analysis can be brought to bear on it.                    mial in r . At the other extreme, if Γ is a free group with
-   A fundamental fact, discovered independently by           two generators a and b, say, then f (r ) is exponentially
-many people and often called the Milnor–Švarc lemma,         large, since all sequences of length r that consist of as
-provides a crucial link between the two main strands         and bs (and not their inverses) give different elements
-of geometric group theory. Let us call a metric space        of Γ .
-X a length space if the distance between each pair of           Given this sharp contrast in behavior, one might won-
-points is the infimum of the lengths of paths joining         der whether requiring f (r ) to be bounded above by
-them. The Milnor–Švarc lemma states that if a group Γ        a polynomial forces Γ to exhibit a great deal of com-
-acts “properly discontinuously” as a set of isometries       mutativity. Fortunately, there is a much-studied defi-
+closed Riemannian manifold with fundamental group Γ
+(whose existence we discussed earlier). Then the tools
+of analysis can be brought to bear on it.
+   A fundamental fact, discovered independently by
+many people and often called the Milnor–Švarc lemma,
+provides a crucial link between the two main strands
+of geometric group theory. Let us call a metric space
+X a length space if the distance between each pair of
+points is the infimum of the lengths of paths joining
+them. The Milnor–Švarc lemma states that if a group Γ
+acts “properly discontinuously” as a set of isometries
 of a length space X, and if the quotient is compact, then    nition that makes this idea precise. Given any group
 Γ is finitely generated and quasi-isometric to X (for any     G and any subgroup H of G, the commutator [G, H]
-choice of word metric).                                      is the subgroup generated by all elements of the form
+choice of word metric).
    We have seen an example of this already: Z2 is quasi-     ghg −1 h−1 , where g belongs to G and h belongs to H. If
-isometric to the Euclidean plane. Less obviously, the        G is Abelian, then [G, H] contains just the identity. If G
-same is true of ΓΔ . (Consider the map that takes each       is not Abelian, then [G, G] forms a group G1 that con-
-element α of ΓΔ to the point of Z2 nearest α(0).)            tains other elements be sides the identity, but it may be
-   The fundamental group of a compact Riemannian             that [G, G1 ] is trivial. In that case, one says that G is a
-manifold is quasi-isometric to the universal cover of        two-step nilpotent group. In general, a k-step nilpotent
-that manifold. Therefore, from the point of view of          group G is one where, if you form a sequence by setting
-quasi-isometry invariants, the study of such manifolds       G0 = G and Gi+1 = [G, Gi ] for each i, then you even-
+isometric to the Euclidean plane. Less obviously, the
+same is true of ΓΔ . (Consider the map that takes each
+element α of ΓΔ to the point of Z2 nearest α(0).)
+   The fundamental group of a compact Riemannian
+manifold is quasi-isometric to the universal cover of
+that manifold. Therefore, from the point of view of
+quasi-isometry invariants, the study of such manifolds
 is equivalent to the study of arbitrary finitely presented    tually reach the trivial group, and the first time you do
-groups. In a moment we will discuss some nontriv-            so is at Gk . A nilpotent group is a group that is k-step
-ial consequences of this equivalence. But first let us        nilpotent for some k.
-reflect on the fact that, when finitely generated groups          Gromov’s theorem states that a group has polyno-
-are considered as metric objects in the framework of         mial growth if and only if it has a nilpotent subgroup
-large-scale geometry, they present us with a new chal-       of finite index. This is a quite extraordinary fact: the
+groups. In a moment we will discuss some nontriv-
+ial consequences of this equivalence. But first let us
+reflect on the fact that, when finitely generated groups
+are considered as metric objects in the framework of
+large-scale geometry, they present us with a new chal-
 lenge: we should classify finitely generated groups up to     polynomial-growth condition is easily seen to be inde-
-quasi-isometry.                                              pendent of the choice of word metric and to be an
-   This is an impossible task, of course, but never the-      invariant of quasi-isometry. Thus the seemingly rigid
-less serves as a beacon in modern geometric group            and purely algebraic condition of having a nilpotent
-theory, one that has guided us toward many beauti-           subgroup of finite index is in fact a quasi-isometry
-ful theorems, particularly under the general heading of      invariant, and therefore a flabby, robust characteristic
-rigidity. For example, suppose that you come across a        of the group.
-finitely generated group Γ that is reminiscent of Zn on          In the past fifteen years quasi-isometric rigidity the-
+quasi-isometry.
+   This is an impossible task, of course, but never the-
+less serves as a beacon in modern geometric group
+theory, one that has guided us toward many beauti-
+ful theorems, particularly under the general heading of
+rigidity. For example, suppose that you come across a
+finitely generated group Γ that is reminiscent of Zn on
 a large scale: in other words, quasi-isometric to it. We     orems have been established for many other classes
-are not necessarily given any algebraically defined map       of groups, including lattices in semisimple Lie groups
-between this mystery group and Zn , and yet it tran-         and the fundamental groups of compact 3-manifolds
-spires that such a group must contain a copy of Zn as        (where the classification up to quasi-isometry involves
-a subgroup of finite index.                                   more than algebraic equivalences), as well as various
-   At the heart of this result is Gromov’s polynomial-       classes defined in terms of their graph of group decom-
-growth theorem, a landmark theorem published in              positions. In order to prove theorems of this type, one
+are not necessarily given any algebraically defined map
+between this mystery group and Zn , and yet it tran-
+spires that such a group must contain a copy of Zn as
+a subgroup of finite index.
+   At the heart of this result is Gromov’s polynomial-
+growth theorem, a landmark theorem published in
 
-IV.10.   Geometric and Combinatorial Group Theory                                                                  445
+IV. Branches of Mathematics
+1981. This theorem concerns the number of points
+to infinity, and what that tells us about the group Γ .
+If Γ is an Abelian group with d generators, then it is
+each generator is raised to a power between −r and r ).
+Thus, in this case f (r ) is bounded above by a polyno-
+mial in r . At the other extreme, if Γ is a free group with
+two generators a and b, say, then f (r ) is exponentially
+large, since all sequences of length r that consist of as
+and bs (and not their inverses) give different elements
+of Γ .
+Given this sharp contrast in behavior, one might won-
+der whether requiring f (r ) to be bounded above by
+a polynomial forces Γ to exhibit a great deal of com-
+mutativity. Fortunately, there is a much-studied defi-
+is the subgroup generated by all elements of the form
+G is Abelian, then [G, H] contains just the identity. If G
+is not Abelian, then [G, G] forms a group G1 that con-
+tains other elements be sides the identity, but it may be
+that [G, G1 ] is trivial. In that case, one says that G is a
+two-step nilpotent group. In general, a k-step nilpotent
+group G is one where, if you form a sequence by setting
+G0 = G and Gi+1 = [G, Gi ] for each i, then you even-
+so is at Gk . A nilpotent group is a group that is k-step
+nilpotent for some k.
+Gromov’s theorem states that a group has polyno-
+mial growth if and only if it has a nilpotent subgroup
+of finite index. This is a quite extraordinary fact: the
+pendent of the choice of word metric and to be an
+invariant of quasi-isometry. Thus the seemingly rigid
+and purely algebraic condition of having a nilpotent
+subgroup of finite index is in fact a quasi-isometry
+invariant, and therefore a flabby, robust characteristic
+of the group.
+In the past fifteen years quasi-isometric rigidity the-
+of groups, including lattices in semisimple Lie groups
+and the fundamental groups of compact 3-manifolds
+(where the classification up to quasi-isometry involves
+more than algebraic equivalences), as well as various
+classes defined in terms of their graph of group decom-
+positions. In order to prove theorems of this type, one
 
-must identify nontrivial invariants of quasi-isometry          Consider the simple example Γ = a, b | b2 a, baba.
+IV.10.   Geometric and Combinatorial Group Theory
+
+must identify nontrivial invariants of quasi-isometry
 that allow one to distinguish and relate various classes     In this group aba2 b represents the identity. How do we
-of spaces. In many cases such invariants come from           prove this? Well,
-the development of suitable analogues of the tools of              aba2 b = a(b2 a)ba2 b = ab(baba)ab
+of spaces. In many cases such invariants come from
+the development of suitable analogues of the tools of
 algebraic topology, modified so that they behave well
-                                                                          = abab = a(baba)a−1 = aa−1 = 1.
 with respect to quasi-isometries rather than continuous
-maps.                                                        Now let us think about the proof geometrically, via the
-                                                             Cayley graph. Since aba2 b = 1 in the group Γ , we
-                                                             obtain a cycle in this graph if we start at the identity
+maps.
      9   The Geometry of the Word Problem
-                                                             and go along edges labeled a, b, a, a, b, in that order
-It is time to explain the comments I made earlier            (in which case we visit the vertices 1, a, ab, aba, aba2 ,
-about the geometry inherent in the basic decision prob-      aba2 b = 1). The equalities in the proof can be thought
-lems of combinatorial group theory. I shall concentrate      of as a way of “contracting” this cycle down to the iden-
-exclusively on the geometry of the word problem.             tity by means of inserting or deleting small loops: for
+It is time to explain the comments I made earlier
+about the geometry inherent in the basic decision prob-
+lems of combinatorial group theory. I shall concentrate
+exclusively on the geometry of the word problem.
    Gromov’s filling theorem describes a startlingly inti-     instance, we could insert b, a, b, a into the list of edge
-mate connection between the highly geometric study           directions, since baba is a relation, or we could delete
-of disks with minimal area in riemannian geometry            a trivial loop of the form a, a−1 . This contraction can
-[I.3 §6.10](/part-01/fundamental-definitions) and the study of word problems, which            be given a more topological character if we turn our
-                                                             Cayley graph into a two-dimensional complex by filling
+mate connection between the highly geometric study
+of disks with minimal area in riemannian geometry
+[I.3 §6.10](/part-01/fundamental-definitions) and the study of word problems, which
 seems to belong more to algebra and logic.
-                                                             in each small loop with a face. Then the contraction of
    On the geometric side, the basic object of study is the
-                                                             the original cycle consists in gradually moving it across
 isoperimetric function Fill M (l) of a complete Rieman-
-                                                             these small faces.
 nian manifold M. Given any contractible closed path of
-                                                                Thus, the difficulty of demonstrating that a word w
 length l, there is a disk of minimal area that is bounded
-                                                             equals the identity is intimately connected with the
 by that path. The largest such area, over all closed paths
-                                                             area of w, denoted Area(w), which can be thought of
 of length l, is defined to be Fill M (l). Thus, the isoperi-
-                                                             algebraically as the smallest sequence of relations you
 metric function is the smallest function of which it is
-                                                             need to insert and delete to turn w into the identity, or
 true to say that every closed path of length l can be
-                                                             geometrically as the smallest number of faces you need
 filled by a disk of area at most Fill M (l).
-                                                             to make a disk that fills the cycle represented by w.
-   The image to have in mind here is that of a soap film:        The Dehn function δΓ : N → N bounds Area(w) in
-if one twists a circular wire of length l in Euclidean       terms of the length |w| of the word w: δΓ (n) is the
+   The image to have in mind here is that of a soap film:
+if one twists a circular wire of length l in Euclidean
 space and dips it in soap, the film that forms has area at    largest area of any word of length at most n that equals
-most l2 /4π , where as if one performs the same experi-       1 in Γ . If the Dehn function grows rapidly, then the
+most l2 /4π , where as if one performs the same experi-
 ment in hyperbolic space [I.3 §6.6](/part-01/fundamental-definitions), the area of the film     word problem is hard, since there are short words that
-is bounded by a linear function of l. Correspondingly,       are equal to the identity, but their area is very large,
-the isoperimetric functions of En and Hn (and quo-           so that any demonstration that they are equal to the
-tients of them by groups of isometries) are quadratic        identity has to be very long. Results bounding the Dehn
-and linear, respectively. In a moment we shall discuss       function are called isoperimetric inequalities.
-what types of isoperimetric functions arise when one            The subscript on δΓ is some what misleading since
-considers other geometries (more precisely, compact          different finite presentations of the same group will
-Riemannian manifolds).                                       in general yield different Dehn functions. This ambi-
-  To state the filling theorem we need to think about         guity is tolerated because it is tightly controlled: if the
+is bounded by a linear function of l. Correspondingly,
+the isoperimetric functions of En and Hn (and quo-
+tients of them by groups of isometries) are quadratic
+and linear, respectively. In a moment we shall discuss
+what types of isoperimetric functions arise when one
+considers other geometries (more precisely, compact
+Riemannian manifolds).
+  To state the filling theorem we need to think about
 the algebraic side as well. Here, we identify a function     groups defined by two finite presentations are isomor-
-that measures the complexity of a direct attack on the       phic, or just quasi-isometric, then the corresponding
-word problem for an arbitrary finitely presented group        Dehn functions have similar growth rates. More pre-
-Γ = A | R. If we wish to know whether a word w             cisely, they are equivalent, with respect to what is some-
-equals the identity in Γ and do not have any further         times called the standard equivalence relation “≃” of
+that measures the complexity of a direct attack on the
+word problem for an arbitrary finitely presented group
+Γ = A | R. If we wish to know whether a word w
+equals the identity in Γ and do not have any further
 insight into the nature of Γ , then there is not much we     geometric group theory: given two monotone functions
-can do other than repeatedly insert or remove the given      f , g : [0, . nfty) → [0, . nfty), one writes f  g if there exists a
-relations r ∈ R.                                             constant C > 0 such that f (l) ⩽ Cg(Cl+C)+Cl+C for
+can do other than repeatedly insert or remove the given
+relations r ∈ R.
 
-446                                                                                     IV. Branches of Mathematics
+445
+Consider the simple example Γ = a, b | b2 a, baba.
+prove this? Well,
+aba2 b = a(b2 a)ba2 b = ab(baba)ab
+= abab = a(baba)a−1 = aa−1 = 1.
+Now let us think about the proof geometrically, via the
+Cayley graph. Since aba2 b = 1 in the group Γ , we
+obtain a cycle in this graph if we start at the identity
+and go along edges labeled a, b, a, a, b, in that order
+(in which case we visit the vertices 1, a, ab, aba, aba2 ,
+aba2 b = 1). The equalities in the proof can be thought
+of as a way of “contracting” this cycle down to the iden-
+tity by means of inserting or deleting small loops: for
+directions, since baba is a relation, or we could delete
+a trivial loop of the form a, a−1 . This contraction can
+be given a more topological character if we turn our
+Cayley graph into a two-dimensional complex by filling
+in each small loop with a face. Then the contraction of
+the original cycle consists in gradually moving it across
+these small faces.
+Thus, the difficulty of demonstrating that a word w
+equals the identity is intimately connected with the
+area of w, denoted Area(w), which can be thought of
+algebraically as the smallest sequence of relations you
+need to insert and delete to turn w into the identity, or
+geometrically as the smallest number of faces you need
+to make a disk that fills the cycle represented by w.
+The Dehn function δΓ : N → N bounds Area(w) in
+terms of the length |w| of the word w: δΓ (n) is the
+1 in Γ . If the Dehn function grows rapidly, then the
+are equal to the identity, but their area is very large,
+so that any demonstration that they are equal to the
+identity has to be very long. Results bounding the Dehn
+function are called isoperimetric inequalities.
+The subscript on δΓ is some what misleading since
+different finite presentations of the same group will
+in general yield different Dehn functions. This ambi-
+guity is tolerated because it is tightly controlled: if the
+phic, or just quasi-isometric, then the corresponding
+Dehn functions have similar growth rates. More pre-
+cisely, they are equivalent, with respect to what is some-
+times called the standard equivalence relation “≃” of
+f , g : [0, . nfty) → [0, . nfty), one writes f  g if there exists a
+constant C > 0 such that f (l) ⩽ Cg(Cl+C)+Cl+C for
+
+446
 
 all l ⩾ 0, and f ≃ g if f  g and g  f ; and one extends     exponential, for example that of
 this relation to include functions from N to [0, . nfty).
-                                                                           a, b | aba−1 bab−1 a−1 b −2 .
   You will have noticed a resemblance between the
-definitions of Fill M (l) and δΓ (n). The filling theorem        If the word problem for Γ is unsolvable, then δΓ (n)
-relates them precisely: it states that if M is a smooth       will grow faster than any recursive function (indeed this
+definitions of Fill M (l) and δΓ (n). The filling theorem
+relates them precisely: it states that if M is a smooth
 compact manifold, then Fill M (l) ≃ δΓ (l), where Γ is the     serves as a definition of such groups).
 fundamental group π1 M of M.
-  For example, since Z2 is the fundamental group of           9.2   The Word Problem and Geodesics
-the torus T = R2 /Z2 , which has Euclidean geometry,          A closed geodesic on a Riemannian manifold is a loop
-δZ2 (l) is quadratic.                                         that locally minimizes distance, such as a loop formed
-                                                              by an elastic band when released on a perfectly smooth
-9.1   What Are the Dehn Functions?                            surface. Examples such as the great circles on a sphere
-                                                              or the waist of an hourglass show that manifolds may
+  For example, since Z2 is the fundamental group of
+the torus T = R2 /Z2 , which has Euclidean geometry,
+δZ2 (l) is quadratic.
+9.1   What Are the Dehn Functions?
 We have seen that the complexity of word problems
-                                                              contain closed geodesics that are null-homotopic: that
 is related to the study of isoperimetric problems in
-                                                              is, they can be moved continuously until they are
 Riemannian and combinatorial geometry. Such insights
-                                                              reduced to a point. But can one construct a compact
 have, in the last fifteen years, led to great advances in
-                                                              topological manifold with the property that no matter
 the understanding of the nature of Dehn functions. For
-                                                              what metric one puts on it there will always be infinitely
 example, one can ask for which numbers ρ the func-
-                                                              many such geodesics? (Technically, if you go around a
 tion nρ is a Dehn function. The set of all such numbers,
-                                                              geodesic loop n times, then you get a geodesic; we avoid
 which can be shown to be countable, is known as the
-                                                              this by counting only “primitive” geodesics.)
 isoperimetric spectrum, denoted IP, and it is now largely
-                                                                 From a purely geometric point of view this is a daunt-
 understood.
-                                                              ing problem: all specific metric information has been
    Following work by many authors, Brady and Brid-
-                                                              stripped away and one has to deal with an arbitrary
 son proved that the closure of IP is {1} ∪ [2, . nfty). The
-                                                              metric on the floppy topological object left behind. But
 finer structure of IP was described by Birget, Rips,
-                                                              group theory provides a solution: if the Dehn function
 and Sapir in terms of the time functions of Tur-
-                                                              of the fundamental group π1 M grows at least as fast as
-ing machines. A further result by the same authors               n
-                                                              22 , then in any Riemannian metric on M there will be
-and Ol’shanskii explains how fundamental Dehn func-           infinitely many closed geodesics that are null-homotopic.
-tions are to understanding the complexity of arbitrary        The proof of this is too technical to sketch here.
+ing machines. A further result by the same authors
+and Ol’shanskii explains how fundamental Dehn func-
+tions are to understanding the complexity of arbitrary
 approaches to the word problem for finitely generated
 groups Γ : the word problem for Γ lies in NP if and only if
-                                                                    10 Which Groups Should One Study?
 Γ is a subgroup of a finitely presented group with poly-
-nomial Dehn function. (Here, NP is the class of prob-         Several special classes of groups have emerged from
-lems in the famous “P versus NP” question: see compu-         our previous discussion, such as nilpotent groups,
-tational complexity [IV.20 §3](/part-04/computational-complexity) for a description of           3-manifold groups, groups with linear Dehn functions,
-this class.)                                                  and groups with a single defining relation. Now we shall
-  The structure of IP raises an obvious question: What        change viewpoint and ask which groups present them-
-can one say about the two classes of groups singled out       selves for study as we set out to explore the universe of
-as special—those with linear Dehn functions and those         all finitely presented groups, starting with the easiest
-with quadratic ones? The true nature of the class of          ones.
-groups with a quadratic Dehn function remains obscure            The trivial group comes first, of course, followed by
-for the moment but there is a beautifully definitive           the finite groups. Finite groups are discussed in vari-
-description of those with a linear Dehn function: they        ous other places in this volume, so I shall ignore them
-are the word hyperbolic groups, which we shall discuss        in what follows and adopt the approach of large-scale
-in the next section.                                          geometry, blurring the distinction between groups that
-  Not all Dehn functions are of the form nα : there           have a common subgroup of finite index.
-are Dehn functions such as nα log n, for example,                The first infinite group is surely Z, but what comes
-and others that grow more quickly than any iterated           next is open to debate. If one wants to retain the
+nomial Dehn function. (Here, NP is the class of prob-
+lems in the famous “P versus NP” question: see compu-
+tational complexity [IV.20 §3](/part-04/computational-complexity) for a description of
+this class.)
+  The structure of IP raises an obvious question: What
+can one say about the two classes of groups singled out
+as special—those with linear Dehn functions and those
+with quadratic ones? The true nature of the class of
+groups with a quadratic Dehn function remains obscure
+for the moment but there is a beautifully definitive
+description of those with a linear Dehn function: they
+are the word hyperbolic groups, which we shall discuss
+in the next section.
+  Not all Dehn functions are of the form nα : there
+are Dehn functions such as nα log n, for example,
+and others that grow more quickly than any iterated
 
-IV.10.   Geometric and Combinatorial Group Theory                                                                    447
+IV. Branches of Mathematics
+a, b | aba−1 bab−1 a−1 b −2 .
+If the word problem for Γ is unsolvable, then δΓ (n)
+will grow faster than any recursive function (indeed this
+9.2   The Word Problem and Geodesics
+A closed geodesic on a Riemannian manifold is a loop
+that locally minimizes distance, such as a loop formed
+by an elastic band when released on a perfectly smooth
+surface. Examples such as the great circles on a sphere
+or the waist of an hourglass show that manifolds may
+contain closed geodesics that are null-homotopic: that
+is, they can be moved continuously until they are
+reduced to a point. But can one construct a compact
+topological manifold with the property that no matter
+what metric one puts on it there will always be infinitely
+many such geodesics? (Technically, if you go around a
+geodesic loop n times, then you get a geodesic; we avoid
+this by counting only “primitive” geodesics.)
+From a purely geometric point of view this is a daunt-
+ing problem: all specific metric information has been
+stripped away and one has to deal with an arbitrary
+metric on the floppy topological object left behind. But
+group theory provides a solution: if the Dehn function
+of the fundamental group π1 M grows at least as fast as
+n
+22 , then in any Riemannian metric on M there will be
+infinitely many closed geodesics that are null-homotopic.
+The proof of this is too technical to sketch here.
+10 Which Groups Should One Study?
+Several special classes of groups have emerged from
+our previous discussion, such as nilpotent groups,
+3-manifold groups, groups with linear Dehn functions,
+and groups with a single defining relation. Now we shall
+change viewpoint and ask which groups present them-
+selves for study as we set out to explore the universe of
+all finitely presented groups, starting with the easiest
+ones.
+The trivial group comes first, of course, followed by
+the finite groups. Finite groups are discussed in vari-
+ous other places in this volume, so I shall ignore them
+in what follows and adopt the approach of large-scale
+geometry, blurring the distinction between groups that
+have a common subgroup of finite index.
+The first infinite group is surely Z, but what comes
+next is open to debate. If one wants to retain the
 
-safety of commutativity, then finitely generated Abe-           the classical sense of differential geometry) tends to
-lian groups come next. Then, as one slowly relin-              −. nfty. This is captured by the fact that triangles look
-quishes commutativity and control over growth and              increasingly degenerate: there is a constant δ(n), with
-construct i bility, one passes through the progressively         δ(n) → 0 as n → . nfty, such that any side of a triangle in
+IV.10.   Geometric and Combinatorial Group Theory
+
+safety of commutativity, then finitely generated Abe-
+lian groups come next. Then, as one slowly relin-
+quishes commutativity and control over growth and
+construct i bility, one passes through the progressively
 larger classes of nilpotent, polycyclic, solvable, and ele-    the scaled hyperbolic space (H2 , (1/n)d) is contained
-ment ary amenable groups. We have already met nil-              in the δ(n)-neighborhood of the union of the other two
-potent groups in our discussion of Gromov’s polyno-            sides. More colloquially, triangles in H2 are uniformly
-mial-growth theorem. They crop up in many contexts as          thin and get increasingly thin as one rescales the metric.
-the most natural generalization of Abelian groups and             With this picture in mind, one might move a little
-much is known about them, not least because one can            away from trees by asking which groups have Cayley
-prove a great deal by induction on the k for which they        graphs in which all triangles are uniformly thin. (It
-are k-step nilpotent. One can also exploit the fact that       makes little sense to specify the thinness constant δ
-G is built from the finitely generated Abelian groups           since it will change when one changes generating set.)
-Gi /Gi+1 in a very controlled way. The larger class of         The answer is Gromov’s hyperbolic groups. This is a
+ment ary amenable groups. We have already met nil-
+potent groups in our discussion of Gromov’s polyno-
+mial-growth theorem. They crop up in many contexts as
+the most natural generalization of Abelian groups and
+much is known about them, not least because one can
+prove a great deal by induction on the k for which they
+are k-step nilpotent. One can also exploit the fact that
+G is built from the finitely generated Abelian groups
+Gi /Gi+1 in a very controlled way. The larger class of
 polycyclic groups is built in a similar way, while finitely     fascinating class of groups that has many equivalent
-generated solvable groups are built in a finite number          definitions and arises in many contexts. For example,
-of steps from Abelian groups that need not be finitely          we have already met it as the class of groups that have
-generated. This last class is not only larger but wilder;      linear Dehn functions. (It is not at all obvious that these
-the isomorphism problem is solvable among polycyclic           two definitions are equivalent.)
-groups, for example, but unsolvable among solvable                Gromov’s great insight is that because the thin-tri-
-groups. By definition a group G is solvable if its derived      angles condition encapsulates so much of the essence
-series, defined inductively by G(n) = [G(n−1) , G(n−1) ]        of the large-scale geometry of negatively curved mani-
-with G(0) = G, terminates in a finite number of steps.          folds, hyperbolic groups share many of the rich proper-
-   The concept known as amenability forms an impor-            ties enjoyed by the groups that act nicely by isometries
-tant link between geometry, analysis, and group theory.        on such spaces. Thus, for example, hyperbolic groups
-Solvable groups are amenable but not vice versa. It is         have only finitely many conjugacy classes of finite sub-
-not quite the case that a finitely presented group is           groups, contain no copy of Z2 , and (after accounting
-amenable if and only if it does not contain a free sub-        for torsion) have compact classifying spaces. Their con-
-group of rank 2, but for a novice this serves as a good        jugacy problems can be solved in less than quadratic
-rule of thumb.                                                 time, and Sela showed that one can even solve the
-   Now, let us return to Z in a more adventurous frame         isomorphism problem among torsion-free hyperbolic
-of mind, throw away the security of commutativity, and         groups. In addition to their many fascinating proper-
-start taking free products instead. In this more liber-        ties and natural definition, a further source of interest
-ated approach, finitely generated free groups appear            in hyperbolic groups is the fact that in a precise sta-
-after Z as the first groups in the universe. What comes         tistical sense, a random finitely presented group will be
-next? Thinking geometrically, we might note that free          hyperbolic.
-groups are precisely those groups that have a tree as a           Spaces of negative and nonpositive curvature have
-Cayley graph and then ask which groups have Cayley             played a central role in many branches of mathemat-
-graphs that are tree-like.                                     ics in the last twenty years. There is no room even to
+generated solvable groups are built in a finite number
+of steps from Abelian groups that need not be finitely
+generated. This last class is not only larger but wilder;
+the isomorphism problem is solvable among polycyclic
+groups, for example, but unsolvable among solvable
+groups. By definition a group G is solvable if its derived
+series, defined inductively by G(n) = [G(n−1) , G(n−1) ]
+with G(0) = G, terminates in a finite number of steps.
+   The concept known as amenability forms an impor-
+tant link between geometry, analysis, and group theory.
+Solvable groups are amenable but not vice versa. It is
+not quite the case that a finitely presented group is
+amenable if and only if it does not contain a free sub-
+group of rank 2, but for a novice this serves as a good
+rule of thumb.
+   Now, let us return to Z in a more adventurous frame
+of mind, throw away the security of commutativity, and
+start taking free products instead. In this more liber-
+ated approach, finitely generated free groups appear
+after Z as the first groups in the universe. What comes
+next? Thinking geometrically, we might note that free
+groups are precisely those groups that have a tree as a
+Cayley graph and then ask which groups have Cayley
+graphs that are tree-like.
    A key property of a tree is that all of its triangles are   begin to justify this assertion here but it does guide us
-degenerate: if you take any three points in the tree and       in where to look for natural enlargements of the class
-join them by shortest paths, then every point in one           of hyperbolic groups: we want nonpositively curved
-of these paths is contained in at least one other path         groups, defined by requiring that their Cayley graphs
-as well. This is a manifestation of the fact that trees        enjoy a key geometric feature that cocompact groups
-are spaces of infinite negative curvature. To get a feel-       of isometries inherit from simply connected spaces of
-ing for why, consider what happens when one rescales           nonpositive curvature (“CAT(0) spaces”). But in con-
-the metric on a space of bounded negative curvature            trast to the hyperbolic case, the class of groups that one
-such as the hyperbolic plane H2 . If we replace the stan-      obtains varies considerably when one perturbs the def-
-dard distance function d(x, y) by (1/n)d(x, y) and             inition, and delineating the resulting classes and their
-let n tend to . nfty, then the curvature of this space (in          (rich) properties has been the subject of much research.
+degenerate: if you take any three points in the tree and
+join them by shortest paths, then every point in one
+of these paths is contained in at least one other path
+as well. This is a manifestation of the fact that trees
+are spaces of infinite negative curvature. To get a feel-
+ing for why, consider what happens when one rescales
+the metric on a space of bounded negative curvature
+such as the hyperbolic plane H2 . If we replace the stan-
+dard distance function d(x, y) by (1/n)d(x, y) and
+let n tend to . nfty, then the curvature of this space (in
+
+447
+the classical sense of differential geometry) tends to
+−. nfty. This is captured by the fact that triangles look
+increasingly degenerate: there is a constant δ(n), with
+δ(n) → 0 as n → . nfty, such that any side of a triangle in
+in the δ(n)-neighborhood of the union of the other two
+sides. More colloquially, triangles in H2 are uniformly
+thin and get increasingly thin as one rescales the metric.
+With this picture in mind, one might move a little
+away from trees by asking which groups have Cayley
+graphs in which all triangles are uniformly thin. (It
+makes little sense to specify the thinness constant δ
+since it will change when one changes generating set.)
+The answer is Gromov’s hyperbolic groups. This is a
+definitions and arises in many contexts. For example,
+we have already met it as the class of groups that have
+linear Dehn functions. (It is not at all obvious that these
+two definitions are equivalent.)
+Gromov’s great insight is that because the thin-tri-
+angles condition encapsulates so much of the essence
+of the large-scale geometry of negatively curved mani-
+folds, hyperbolic groups share many of the rich proper-
+ties enjoyed by the groups that act nicely by isometries
+on such spaces. Thus, for example, hyperbolic groups
+have only finitely many conjugacy classes of finite sub-
+groups, contain no copy of Z2 , and (after accounting
+for torsion) have compact classifying spaces. Their con-
+jugacy problems can be solved in less than quadratic
+time, and Sela showed that one can even solve the
+isomorphism problem among torsion-free hyperbolic
+groups. In addition to their many fascinating proper-
+ties and natural definition, a further source of interest
+in hyperbolic groups is the fact that in a precise sta-
+tistical sense, a random finitely presented group will be
+hyperbolic.
+Spaces of negative and nonpositive curvature have
+played a central role in many branches of mathemat-
+ics in the last twenty years. There is no room even to
+in where to look for natural enlargements of the class
+of hyperbolic groups: we want nonpositively curved
+groups, defined by requiring that their Cayley graphs
+enjoy a key geometric feature that cocompact groups
+of isometries inherit from simply connected spaces of
+nonpositive curvature (“CAT(0) spaces”). But in con-
+trast to the hyperbolic case, the class of groups that one
+obtains varies considerably when one perturbs the def-
+inition, and delineating the resulting classes and their
+(rich) properties has been the subject of much research.

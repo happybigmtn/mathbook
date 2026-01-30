@@ -55,141 +55,212 @@ Although this is defined explicitly as a certain integral, if one wants to answe
 Harmonic analysis, as a subfield of analysis, is particularly concerned not just with qualitative properties like the ones mentioned earlier, but also with quantitative bounds that relate to those properties. For instance, instead of merely knowing that a function f is bounded, one may wish to know how bounded it is. That is, what is the smallest $M \ge 0$ such that $|f(x)| \le M$ for all (or almost all )$x \in R$ ; this number is known as the sup norm or L $\infty$ - norm of f , and is denoted  f   L $\infty$ .
 Or instead of assuming that f is square integrable one can quantify this by introducing the $L^{2}$ - norm  f   {}L 2 = ( |f(x)|2 dx)1/2 ; more generally one can quantify pth-power integrability for $0 < p < \infty$ via the $L^{p}$ - norm  f   {}L p = ( |f(x)|pdx)1/p . Similarly, most of the other qualitative properties mentioned above can be quantified by a variety of norms [III.62](/part-03/normed-spaces-and-banach-spaces),
 
-450                                                                                      IV. Branches of Mathematics
+450
 
-which assign a nonnegative number (or +. nfty) to any             referred to as an operator. (In some contexts it is also
-given function and which provide some quantitative           called a transform [III.91](/part-03/transforms).) Operators may seem like
-measure of one characteristic of that function. Be sides      fairly complicated mathematical objects—their inputs
-being of importance in pure harmonic analysis, quanti-       and outputs are functions, which in turn have inputs
-tative estimates involving these norms are also useful       and outputs that are usually numbers—but they are in
-in applied mathematics, for instance in performing an        fact a very natural concept since there are many sit-
-error analysis of some numerical algorithm.                  ua tions where one wants to transform functions. For
-   Functions tend to have infinitely many degrees of          example, differentiation can be thought of as an oper-
-freedom, and it is thus unsurprising that the number         ator, which takes a function f to its derivative df /dx.
+which assign a nonnegative number (or +. nfty) to any
+given function and which provide some quantitative
+measure of one characteristic of that function. Be sides
+being of importance in pure harmonic analysis, quanti-
+tative estimates involving these norms are also useful
+in applied mathematics, for instance in performing an
+error analysis of some numerical algorithm.
+   Functions tend to have infinitely many degrees of
+freedom, and it is thus unsurprising that the number
 of norms one can place on a function is infinite as well:     This operator has a well-known (partial) inverse, inte-
-there are many ways of quantifying how “large” a func-       gration, which takes f to the function F that is defined
-tion is. These norms can often differ quite dramatically      by the formula
-                                                                                          x
+there are many ways of quantifying how “large” a func-
+tion is. These norms can often differ quite dramatically
 from each other. For instance, if a function f is very
-                                                                              F (x) =         f (y) dy.
-large for just a few values, so that its graph has tall,                                 −. nfty
-thin “spikes,” then it will have a very large L. nfty -norm,      A less intuitive, but particularly important, example
-but |f (x)| dx, its L1 -norm, may well be quite small.       is the fourier transform [III.27](/part-03/the-fourier-transform). This takes f to a
-Conversely, if f has a very broad and spread-out graph,      function fˆ, given by the formula
-then it is possible for |f (x)| dx to be very large even                            . nfty
-                                                                          fˆ(x) =        e−2π ixy f (y) dy.
-if |f (x)| is small for every x: such a function has a                              −. nfty
-large L1 -norm but a small L. nfty -norm. Similar examples        It is also of interest to consider operators that take
-can be constructed to show that the L2 -norm some-           two or more inputs. Two particularly common exam-
-times behaves very differently from either the L1 -norm       ples are the pointwise product and convolution. If f and
+large for just a few values, so that its graph has tall,
+thin “spikes,” then it will have a very large L. nfty -norm,
+but |f (x)| dx, its L1 -norm, may well be quite small.
+Conversely, if f has a very broad and spread-out graph,
+then it is possible for |f (x)| dx to be very large even
+if |f (x)| is small for every x: such a function has a
+large L1 -norm but a small L. nfty -norm. Similar examples
+can be constructed to show that the L2 -norm some-
+times behaves very differently from either the L1 -norm
 or the L. nfty -norm. However, it turns out that the L2 -norm     g are two functions, then their pointwise product f g
 lies “between” these two norms, in the sense that if one     is defined in the obvious way:
 controls both the L1 -norm and the L. nfty -norm, then one
-                                                                             (f g)(x) = f (x)g(x).
 also automatically controls the L2 -norm. Intuitively, the
 reason is that if the L. nfty -norm is not too large then one     The convolution, denoted f ∗ g, is defined as follows:
-                                                                                     . nfty
 eliminates all the spiky functions, and if the L1 -norm is
-                                                                       f ∗ g(x) =         f (y)g(x − y) dy.
-small then one eliminates most of the broad functions;                              −. nfty
-the remaining functions end up being well-behaved in         This is just a very small sample of interesting opera-
-the intermediate L2 -norm. More quantitatively, we have      tors that one might look at. The original purpose of
-the inequality                                               harmonic analysis was to understand the operators
-                              1/2    1/2                     that were connected to Fourier analysis, real analysis,
-                f L2 ⩽ f L1 f L. nfty ,
-                                                             and complex analysis. Nowadays, however, the subject
+small then one eliminates most of the broad functions;
+the remaining functions end up being well-behaved in
+the intermediate L2 -norm. More quantitatively, we have
+the inequality
+
 which follows easily from the trivial algebraic fact that    has grown considerably, and the methods of harmonic
 if |f (x)| ⩽ M, then |f (x)|2 ⩽ M|f (x)|. This inequality    analysis have been brought to bear on a much broader
-is a special case of hölder’s inequality [V.19](/part-05/inequalities), which       set of operators. For example, they have been partic-
-is one of the fundamental inequalities in harmonic           ularly fruitful in understanding the solutions of vari-
-analysis. The idea that control of two “extreme” norms       ous linear and nonlinear partial differential equations,
-automatically implies further control on “intermedi-         since the solution of any such equation can be viewed
-ate” norms can be generalized tremendously and leads         as an operator applied to the initial conditions. They
-to very powerful and convenient methods known as             are also very useful in analytic and combinatorial num-
+is a special case of hölder’s inequality [V.19](/part-05/inequalities), which
+is one of the fundamental inequalities in harmonic
+analysis. The idea that control of two “extreme” norms
+automatically implies further control on “intermedi-
+ate” norms can be generalized tremendously and leads
+to very powerful and convenient methods known as
 interpolation, which is another basic tool in this area.     ber theory, when one is faced with understanding the
-   The study of a single function and all its norms          oscillation present in various expressions such as expo-
-eventually gets some what tiresome, though. Nearly all        nential sums. Harmonic analysis has also been applied
-fields of mathematics become a lot more interesting           to analyze operators that arise in geometric measure
-when one considers not just objects, but also maps           theory, probability theory, ergodic theory, numerical
-between objects. In our case, the objects in question        analysis, and differential geometry.
-are functions, and, as was mentioned in the intro duc-          A primary concern of harmonic analysis is to obtain
+   The study of a single function and all its norms
+eventually gets some what tiresome, though. Nearly all
+fields of mathematics become a lot more interesting
+when one considers not just objects, but also maps
+between objects. In our case, the objects in question
+are functions, and, as was mentioned in the intro duc-
 tion, a map that takes functions to functions is usually     both qualitative and quantitative information about
 
-IV.11.     Harmonic Analysis                                                                                        451
+IV. Branches of Mathematics
+referred to as an operator. (In some contexts it is also
+called a transform [III.91](/part-03/transforms).) Operators may seem like
+fairly complicated mathematical objects—their inputs
+and outputs are functions, which in turn have inputs
+and outputs that are usually numbers—but they are in
+fact a very natural concept since there are many sit-
+ua tions where one wants to transform functions. For
+example, differentiation can be thought of as an oper-
+ator, which takes a function f to its derivative df /dx.
+gration, which takes f to the function F that is defined
+by the formula
+x
+F (x) =         f (y) dy.
+−. nfty
+A less intuitive, but particularly important, example
+is the fourier transform [III.27](/part-03/the-fourier-transform). This takes f to a
+function fˆ, given by the formula
+. nfty
+fˆ(x) =        e−2π ixy f (y) dy.
+−. nfty
+It is also of interest to consider operators that take
+two or more inputs. Two particularly common exam-
+ples are the pointwise product and convolution. If f and
+(f g)(x) = f (x)g(x).
+. nfty
+f ∗ g(x) =         f (y)g(x − y) dy.
+−. nfty
+This is just a very small sample of interesting opera-
+tors that one might look at. The original purpose of
+harmonic analysis was to understand the operators
+1/2    1/2                     that were connected to Fourier analysis, real analysis,
+f L2 ⩽ f L1 f L. nfty ,
+and complex analysis. Nowadays, however, the subject
+set of operators. For example, they have been partic-
+ularly fruitful in understanding the solutions of vari-
+ous linear and nonlinear partial differential equations,
+since the solution of any such equation can be viewed
+as an operator applied to the initial conditions. They
+are also very useful in analytic and combinatorial num-
+oscillation present in various expressions such as expo-
+nential sums. Harmonic analysis has also been applied
+to analyze operators that arise in geometric measure
+theory, probability theory, ergodic theory, numerical
+analysis, and differential geometry.
+A primary concern of harmonic analysis is to obtain
 
-the effects of these operators on generic functions.           basic theory of summation of Fourier series, which his-
-A typical example of a quantitative estimate is the           tori cally was one of the main motivations for studying
-inequality                                                    harmonic analysis.
-                  f ∗ gL. nfty ⩽ f L2 gL2 ,                     In this section, we shall consider functions f that are
-                                                              periodic with period 2π : that is, functions such that
+IV.11.     Harmonic Analysis
+
+the effects of these operators on generic functions.
+A typical example of a quantitative estimate is the
+inequality
+
 which is true for all f , g ∈ L2 . This result, which is a
-                                                              f (x + 2π ) = f (x) for all x. An example of such a func-
 special case of Young’s inequality, is easy to prove: one
-                                                              tion is f (x) = 3 + sin(x) − 2 cos(3 x). A function like
 just writes out the definition of f ∗ g(x) and applies
-                                                              this, which can be written as a finite linear combina-
-the cauchy–schwarz inequality [V.19](/part-05/inequalities). As a conse-             tion of functions of the form sin(nx) and cos(nx), is
-quence, one can draw the qualitative conclusion that          called a trigonometric polynomial. The word “polyno-
-the convolution of two functions in L2 is always con-         mial” is used here because any such function can be
-tinuous. Let us briefly sketch the argument, since it is       expressed as a polynomial in sin(x) and cos(x), or
-an instructive one.                                           alternatively, and some what more conveniently, as a
-   A fundamental fact about functions in L2 is that any       polynomial in eix and e−ix . That is, it can be written
-such function f can be approximated arbitrarily well              N
-                                                              as n=−N cn einx for some N and some choice of coef-
+the cauchy–schwarz inequality [V.19](/part-05/inequalities). As a conse-
+quence, one can draw the qualitative conclusion that
+the convolution of two functions in L2 is always con-
+tinuous. Let us briefly sketch the argument, since it is
+an instructive one.
+   A fundamental fact about functions in L2 is that any
+such function f can be approximated arbitrarily well
 (in the L2 -norm) by a function f ̃ that is continuous and     ficients (cn : −N ⩽ n ⩽ N). If we know that f can
-compactly supported. (The second condition means that         be expressed in this form, then we can work out the
-f ̃ takes the value zero every where out side some inter-        coefficient cn quite easily: it is given by the formula
-val [−M, M].) Given any two functions f and g in L2 , let                              2π
-                                                                                   1
-f ̃ and g̃ be approximations of this kind. It is an exercise                 cn =          f (x)e−inx dx.
-                                                                                  2π 0
+compactly supported. (The second condition means that
+f ̃ takes the value zero every where out side some inter-
+val [−M, M].) Given any two functions f and g in L2 , let
+f ̃ and g̃ be approximations of this kind. It is an exercise
 in real analysis to prove that f ̃ ∗ g̃ is continuous, and
-                                                                It is a remarkable and very important fact that we
 it follows easily from the inequality above that f ̃ ∗ g̃ is
-                                                              can say something similar about a much wider class of
 close to f ∗ g in the L. nfty -norm, since
-                                                              functions—if, that is, we now allow infinite linear com-
-         f ∗ g − f ̃ ∗ g̃ = f ∗ (g − g̃) + (f − f ̃) ∗ g̃.      bi nations. Suppose that f is a periodic function that is
-                                                              also continuous (or, more generally, that f is absolutely
+
 Therefore, f ∗ g can be approximated arbitrarily well
-                                                              integrable, meaning that the integral of |f (x)| between
 in the L. nfty -norm by continuous functions. A standard
-                                                              0 and 2π is finite). We can then define the Fourier coef-
 result in basic real analysis (that a uniform limit of con-
-                                                              ficients fˆ(n) of f , using exactly the formula we had
 tinuous functions is continuous) now tells us that f ∗ g
-                                                              above for cn :
 is continuous.
-                                                                                       2π
-                                                                                   1
-   Notice the general structure of this argument, which                   fˆ(n) =         f (x)e−inx dx.
-                                                                                  2π 0
+   Notice the general structure of this argument, which
 occurs frequently in harmonic analysis. First, one iden-
-                                                              The example of trigonometric polynomials now sug-
 tifies a “simple” class of functions for which one can
-                                                              gests that one should have the identity
 easily prove the result one wants. Next, one proves that
-                                                                                          . nfty
-                                                                                          
 every function in a much wider class can be approx i-
-                                                                              f (x) =          fˆ(n)einx ,
-mated in a suitable sense by simple functions. Finally,                                 n=−. nfty
-one uses this information to deduce that the result           expressing f as a sort of “infinite trigonometric poly-
-holds for functions in the wider class as well. In our        nomial,” but this is not always true, and even when it is
-case, the simple functions were the continuous func-          true it takes some effort to justify it rigorously, or even
-tions of finite support, the wider class consisted of          to say precisely what the infinite sum means.
-square-integrable functions, and the suitable sense of          To make the question more precise, let us introduce
-approximation was closeness in the L2 -norm.                  for each natural number N the Dirichlet summation
-   We shall give some further examples of qualita-            operator SN . This takes a function f to the function
-tive and quantitative analysis of operators in the next       SN f that is defined by the formula
-section.                                                                                   
-                                                                                           N
-                                                                             SN f (x) =          fˆ(n)einx .
-                                                                                          n=−N
-            2   Example: Fourier Summation
-                                                              The question we would like to answer is whether SN f
-To illustrate the interplay between quantitative and          converges to f as N → . nfty. The answer turns out to
-qualitative results, we shall now sketch some of the          be surprisingly complicated: not only does it depend
+mated in a suitable sense by simple functions. Finally,
+one uses this information to deduce that the result
+holds for functions in the wider class as well. In our
+case, the simple functions were the continuous func-
+tions of finite support, the wider class consisted of
+square-integrable functions, and the suitable sense of
+approximation was closeness in the L2 -norm.
+   We shall give some further examples of qualita-
+tive and quantitative analysis of operators in the next
+section.
+
+To illustrate the interplay between quantitative and
+qualitative results, we shall now sketch some of the
+
+451
+basic theory of summation of Fourier series, which his-
+tori cally was one of the main motivations for studying
+harmonic analysis.
+f ∗ gL. nfty ⩽ f L2 gL2 ,
+periodic with period 2π : that is, functions such that
+f (x + 2π ) = f (x) for all x. An example of such a func-
+tion is f (x) = 3 + sin(x) − 2 cos(3 x). A function like
+this, which can be written as a finite linear combina-
+tion of functions of the form sin(nx) and cos(nx), is
+called a trigonometric polynomial. The word “polyno-
+mial” is used here because any such function can be
+expressed as a polynomial in sin(x) and cos(x), or
+alternatively, and some what more conveniently, as a
+polynomial in eix and e−ix . That is, it can be written
+N
+as n=−N cn einx for some N and some choice of coef-
+be expressed in this form, then we can work out the
+coefficient cn quite easily: it is given by the formula
+2π
+1
+cn =
+2π 0
+It is a remarkable and very important fact that we
+can say something similar about a much wider class of
+functions—if, that is, we now allow infinite linear com-
+f ∗ g − f ̃ ∗ g̃ = f ∗ (g − g̃) + (f − f ̃) ∗ g̃.
+also continuous (or, more generally, that f is absolutely
+integrable, meaning that the integral of |f (x)| between
+0 and 2π is finite). We can then define the Fourier coef-
+ficients fˆ(n) of f , using exactly the formula we had
+above for cn :
+2π
+1
+fˆ(n) =
+2π 0
+The example of trigonometric polynomials now sug-
+gests that one should have the identity
+. nfty
+
+f (x) =          fˆ(n)einx ,
+n=−. nfty
+expressing f as a sort of “infinite trigonometric poly-
+nomial,” but this is not always true, and even when it is
+true it takes some effort to justify it rigorously, or even
+to say precisely what the infinite sum means.
+To make the question more precise, let us introduce
+for each natural number N the Dirichlet summation
+operator SN . This takes a function f to the function
+SN f that is defined by the formula
+
+N
+SN f (x) =          fˆ(n)einx .
+n=−N
+2   Example: Fourier Summation
+The question we would like to answer is whether SN f
+converges to f as N → . nfty. The answer turns out to
+be surprisingly complicated: not only does it depend
 
 $452$
 

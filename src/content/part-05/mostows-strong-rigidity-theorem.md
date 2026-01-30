@@ -1,93 +1,108 @@
 # Mostow’s Strong Rigidity Theorem
 
-V.23.   Mostow’s Strong Rigidity Theorem                                                                             711
+V.23.   Mostow’s Strong Rigidity Theorem
 
 integers q we can achieve an accuracy of 1/q2 using
-a denominator of q.                                          V.23 Mostow’s Strong Rigidity
-   A different argument shows that we cannot do sub-               Theorem
+a denominator of q.
+   A different argument shows that we cannot do sub-
 stantially better than this. Let p and q be any two posi-
-                     √                                                David Fisher
 tive integers. Since 2 is irrational, p 2 and 2 q2 are dis-
-tinct positive integers, which implies that |p2 − 2 q2 | ⩾             1   What Are Rigidity Theorems?
-                                          . qrt{1}. On factorizing, we deduce that |p −q 2|(p +q 2) ⩾
-1. We can now divide through by q2 and obtain the            A typical rigidity theorem is a statement that some class
-                     √inequality |p/q − 2|(p/q + 2) ⩾ 1/q2 . We may                of objects is much smaller than one might expect. To
-as well assume that p/q is less than 2, since other-         make this notion clear, let us look at some examples of
-                                             √
-wise it is not a good approximation to 2. But then           moduli spaces [IV.8](/part-04/moduli-spaces) that might lead us to expect that
-         . qrt{p}/q + 2 is less than 4, so the inequality implies that       spaces of a certain type would in general be large.
-         √
+tinct positive integers, which implies that |p2 − 2 q2 | ⩾
+1. On factorizing, we deduce that |p −q 2|(p +q 2) ⩾
+1. We can now divide through by q2 and obtain the
+inequality |p/q − 2|(p/q + 2) ⩾ 1/q2 . We may
+as well assume that p/q is less than 2, since other-
+wise it is not a good approximation to 2. But then
+
+p/q + 2 is less than 4, so the inequality implies that
+
 |p/q − 2| ⩾ 1/4 q2 . Thus, with a denominator of q we
-cannot achieve an accuracy better than 1/4 q2 .                              2   Some Moduli Spaces
+cannot achieve an accuracy better than 1/4 q2 .
    A generalization of this argument proves Liouville’s
-                                                             A flat metric on an n-dimensional manifold [I.3 §6.9](/part-01/fundamental-definitions)
 theorem: if x is an irrational root of a polynomial of
-                                                             is a metric [III.56](/part-03/metric-spaces) that is locally isometric to the usual
 degree d and p and q are integers, then |p/q − x| can-
-                                                       √     metric on the Euclidean space Rn . In other words, every
 not be substantially smaller than 1/qd . When x = 2
-                                                             point x in the manifold is contained in a neighborhood
 this reduces to what we have just shown, since then
-                                                             Nx such that there is a distance-preserving bijection
 x 2 − 2 = 0 and we can set d = 2. However, from
-                                                             from Nx to a subset of Rn . For our first example, we
 Liouville’s theorem we know many similar facts, such
-                  . qrt{3}                                         shall consider flat metrics on a torus. We shall consider
+
 as that |p/q − 2| cannot be substantially smaller
-           3.                                                just the two-dimensional torus, but the phenomena we
+
 than 1/q
-                                                             shall discuss occur in higher dimensions as well.
    Roth’s theorem, proved in 1955, is the astonishing
-                                                                The simplest way of putting a flat metric on the two-
 assertion that the power d that appears in Liouville’s
-                                                             dimensional torus T2 is to view it as the quotient
 theorem can be improved—almost as far as 2. To be
-                                                             [I.3 §3.3](/part-01/fundamental-definitions) of R2 by a discrete subgroup, or lattice, that is
 precise, given any irrational root x of any polynomial,
-                                                             isomorphic to Z2 . In fact, it is not too hard to see that
 and any number r > 2, there is a constant c > 0 with
-                                                             every flat metric arises in essentially this way. How-
 the property that |p/q − x| is always at least as big
-                                                             ever, there is a choice involved: the choice of which lat-
 as c/qr . (The proof gives no information whatsoever
-                                                             tice to take. An obvious choice is Z2 itself. But one can
 about c beyond the fact that it is positive. It is a major
-                                                             also take any invertible linear transformation A, apply
 open problem to understand something about how c
-                                                             it to Z2 , and then define the torus as R2 /A(Z2 ), which
 depends on r and x.)
-                                                             gives rise to another metric. A natural question to ask
    To see why this is a much deeper result than Liou-
-                                           . qrt{3}                 is, when do two choices of A give rise to the same met-
 ville’s theorem, consider the example of 2. Underlying
-                        . qrt{3}                                   ric? Usually, one studies only the cases when the deter-
 the proof that |p/q − 2| is never much smaller than
-                                                             minant [III.15](/part-03/determinants) of A is 1, since it is easy to deduce from
 1/q3 is the simple fact that p3 and 2 q3 are distinct inte-
-                                                             these what happens in general. The group of all such
 gers and therefore differ by at least 1. In order to prove
-                                                             linear maps is called SL2 (R).
 a substantially better result such as Roth’s theorem,
-                                                                If A is orthogonal, then it just rotates the lattice Z2
 one must show much more: that p 3 and 2 q3 differ by
-                                                             and therefore A(Z2 ) gives rise to the same metric as
 an amount that grows as p and q grow. For example, if
-                                                             Z2 . What is slightly less obvious is that there are other
 one wishes to prove Roth’s theorem when r = 52 , it is
-                                                             maps A that give rise to this metric as well, namely all
 necessary to show that p 3 and 2 q3 must always differ
-                                                √            maps of determinant 1 whose matrices with respect to
 by an amount comparable to or greater than p, and it
-                                                             the standard basis of R2 have integer entries. The group
 is far from obvious why this should be so.
-                                                             of all these maps is called SL2 (Z). If A belongs to SL2 (Z),
-                                                             then the reason that A(Z2 ) gives rise to the same metric
 The Mordell Conjecture
-                                                             as Z2 is simple: A(Z2 ) is actually equal to Z2 .
    See rational points on curves and
-                                                                Loosely speaking, what we have just done is iden-
-       the mordell conjecture [V.29](/part-05/rational-points-on-curves-and-vi40-ernst-eduard-kummer-18101893)
-                                                             tify the space of flat metrics on T2 with the set
+
+711
+V.23 Mostow’s Strong Rigidity
+Theorem
+√                                                David Fisher
+1   What Are Rigidity Theorems?
+. qrt{A} typical rigidity theorem is a statement that some class
+√of objects is much smaller than one might expect. To
+make this notion clear, let us look at some examples of
+√
+moduli spaces [IV.8](/part-04/moduli-spaces) that might lead us to expect that
+√
+spaces of a certain type would in general be large.
+. qrt{2}   Some Moduli Spaces
+A flat metric on an n-dimensional manifold [I.3 §6.9](/part-01/fundamental-definitions)
+is a metric [III.56](/part-03/metric-spaces) that is locally isometric to the usual
+√     metric on the Euclidean space Rn . In other words, every
+point x in the manifold is contained in a neighborhood
+Nx such that there is a distance-preserving bijection
+from Nx to a subset of Rn . For our first example, we
+. qrt{3}
+3.
+shall discuss occur in higher dimensions as well.
+The simplest way of putting a flat metric on the two-
+dimensional torus T2 is to view it as the quotient
+[I.3 §3.3](/part-01/fundamental-definitions) of R2 by a discrete subgroup, or lattice, that is
+isomorphic to Z2 . In fact, it is not too hard to see that
+every flat metric arises in essentially this way. How-
+ever, there is a choice involved: the choice of which lat-
+tice to take. An obvious choice is Z2 itself. But one can
+also take any invertible linear transformation A, apply
+it to Z2 , and then define the torus as R2 /A(Z2 ), which
+gives rise to another metric. A natural question to ask
+. qrt{3}                 is, when do two choices of A give rise to the same met-
+. qrt{3}                                   ric? Usually, one studies only the cases when the deter-
+minant [III.15](/part-03/determinants) of A is 1, since it is easy to deduce from
+these what happens in general. The group of all such
+linear maps is called SL2 (R).
+If A is orthogonal, then it just rotates the lattice Z2
+and therefore A(Z2 ) gives rise to the same metric as
+Z2 . What is slightly less obvious is that there are other
+maps A that give rise to this metric as well, namely all
+√            maps of determinant 1 whose matrices with respect to
+the standard basis of R2 have integer entries. The group
+of all these maps is called SL2 (Z). If A belongs to SL2 (Z),
+then the reason that A(Z2 ) gives rise to the same metric
+as Z2 is simple: A(Z2 ) is actually equal to Z2 .
+Loosely speaking, what we have just done is iden-
+the mordell conjecture [V.29](/part-05/rational-points-on-curves-and-vi40-ernst-eduard-kummer-18101893)
+tify the space of flat metrics on T2 with the set
 
 $712SL^{2}(Z)SL^{2}(R)/$ SO (2). (This is notation for the set S$L^{2}$ (R), with two maps A and B considered equivalent if B can be expressed as A multiplied by a product of matrices from SO ( $2$ ) and S$L^{2}$ (Z) .) In higher dimensions, a similar discussion shows that one can identify the space of flat metrics on the n-dimensional torus T n with SL n (Z) SL n (R)  /  SO (n). Returning to two dimensions, a torus is a surface of genus $1$ (since it has one “ hole ”).
 A similar construction gives rise to a moduli space of metrics on a surface of higher genus, but now the metrics will be hyperbolic rather than flat. The uniformization theorem [V.34](/part-05/the-uniformization-theorem) says that any compact connected surface admits a metric of constant curvature [III.13](/part-03/curvature) :

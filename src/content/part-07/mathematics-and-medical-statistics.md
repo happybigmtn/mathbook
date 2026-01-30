@@ -42,75 +42,96 @@ A Historical Perspective
 
 One of the first uses of probability theory in the late seventeenth century was in the development of
 
-922                                                                             VII. The Influence of Mathematics
+922
 
-“life-tables” of mortality in order to decide premiums      (iii) A semi-parametric approach in which only part of
-for annuities, and Charles Babbage’s work on life-tables          the model is parametrized, while the rest is left
-in 1824 helped motivate him to design his “difference              unspecified.
-engine” (although it was not until 1859 that Scheutz’s      (iv) A Bayesian approach in which not only is a full
-implementation of the engine finally calculated a life-            parametric model specified, but an additional
-table). However, statistical analysis of medical data was         “prior” distribution is provided for the parame-
-a matter of arithmetic rather than mathematics until              ters.
+“life-tables” of mortality in order to decide premiums
+for annuities, and Charles Babbage’s work on life-tables
+in 1824 helped motivate him to design his “difference
+engine” (although it was not until 1859 that Scheutz’s
+implementation of the engine finally calculated a life-
+table). However, statistical analysis of medical data was
+a matter of arithmetic rather than mathematics until
 the growth of the “biometric” school founded by Fran-
 cis Galton and Karl Pearson at the end of the nineteenth    These are not absolute distinctions: for example, some
-century. This group introduced the use of families of       apparently “model-free” procedures may turn out to
-probability distributions [III.71](/part-03/probability-distributions) to describe popula-      match procedures that are derived under certain para-
+century. This group introduced the use of families of
+probability distributions [III.71](/part-03/probability-distributions) to describe popula-
 tions, as well as concepts of correlation and regression    metric assumptions.
-in anthropology, biology, and eugenics. Meanwhile,            Another complicating factor is the multiplicity of
-agriculture and genetics motivated Fisher’s huge con-       possible aims of a statistical analysis. These may
-tributions in the theory of likelihood (see below) and      include
+in anthropology, biology, and eugenics. Meanwhile,
+agriculture and genetics motivated Fisher’s huge con-
+tributions in the theory of likelihood (see below) and
 significance testing. Postwar statistical developments
-                                                              • estimating unknown parameters, such as the mean
 were influenced by industrial applications and a U.S.-
-                                                                reduction in blood pressure when giving a certain
 led increase in mathematical rigor, but from around the
-                                                                dose of a certain drug to a defined population;
 1970 s medical research, particularly concerning ran-
-                                                              • predicting future quantities, such as the number of
 domized trials and survival analysis, has been a major
-                                                                people with AIDS in a country in ten years’ time;
 methodological driver in statistics.
-                                                              • testing a hypothesis, such as whether a particu-
    For around thirty years after 1945 there were many
-                                                                lar drug improves survival for a particular class
 attempts to put statistical inference on a sound foun-
-                                                                of patents, or equivalently assessing the “null
 dational or axiomatic basis, but no consensus could be
-                                                                hypothesis” that it has no effect;
 reached. This has given rise to a widespread ecu men i-
-                                                              • making decisions, such as whether to provide a
 cal perspective which makes use of a mix of statisti-
-                                                                particular treatment in a health care system.
 cal “philosophies” which we shall illustrate below. The
 some what uncomfortable lack of an axiomatic basis
-                                                            A common aspect of these objectives is that any conclu-
 can make statistical work deeply unattractive to many
-                                                            sion should be accompanied by some form of assess-
 mathematicians, but it provides a great stimulus to
-                                                            ment of the potential for an error having been made,
 those engaged in the area.
-                                                            and any estimate or prediction should have an asso-
-                                                            ciated expression of uncertainty. It is this concern for
-                      3   Models                            “second-order” properties that distinguishes a statis-
-In this context, by a model we mean a mathemat i-            tical “inference” based on probability theory from a
-cal description of a probability distribution for one       purely algorithmic approach to producing conclusions
-or more currently uncertain quantities. Such a quan-        from data.
+In this context, by a model we mean a mathemat i-
+cal description of a probability distribution for one
+or more currently uncertain quantities. Such a quan-
 tity might, for example, be the out come of a patient
-who is treated with a particular drug, or the future                     4 The Nonparametric or
-survival time of a patient with cancer. We can iden-                      “Model-Free” Approach
+who is treated with a particular drug, or the future
+survival time of a patient with cancer. We can iden-
 tify four broad approaches to modeling—these brief
-                                                            Now let us introduce a running example that will be
 descriptions make use of terms that will be covered
-                                                            used to illustrate the various approaches.
 properly in later sections.
-                                                              Matthews and Farewell (1985) report data on sixty-
-  (i) A nonparametric or “model-free” approach that         four patients from Seattle’s Fred Hutchinson Cancer Re-
-      leaves unspecified the precise form for the proba-     search Center who had been diagnosed with advanced-
-      bility distributions of interest.                     stage non-Hodgkin’s lymphoma: for each patient the
+  (i) A nonparametric or “model-free” approach that
+
  (ii) A full parametric model in which a specific form is    information comprises their follow-up time since diag-
-      assumed for each probability distribution, which      nosis, whether their follow-up ended in death, whether
-      depends on a limited number of unknown param-         they presented with clinical symptoms, their stage of
-      eters.                                                disease (stage IV or not), and whether a large abdominal
+
+VII. The Influence of Mathematics
+(iii) A semi-parametric approach in which only part of
+the model is parametrized, while the rest is left
+unspecified.
+(iv) A Bayesian approach in which not only is a full
+parametric model specified, but an additional
+“prior” distribution is provided for the parame-
+ters.
+apparently “model-free” procedures may turn out to
+match procedures that are derived under certain para-
+Another complicating factor is the multiplicity of
+possible aims of a statistical analysis. These may
+include
+• estimating unknown parameters, such as the mean
+reduction in blood pressure when giving a certain
+dose of a certain drug to a defined population;
+• predicting future quantities, such as the number of
+people with AIDS in a country in ten years’ time;
+• testing a hypothesis, such as whether a particu-
+lar drug improves survival for a particular class
+of patents, or equivalently assessing the “null
+hypothesis” that it has no effect;
+• making decisions, such as whether to provide a
+particular treatment in a health care system.
+A common aspect of these objectives is that any conclu-
+sion should be accompanied by some form of assess-
+ment of the potential for an error having been made,
+and any estimate or prediction should have an asso-
+ciated expression of uncertainty. It is this concern for
+3   Models                            “second-order” properties that distinguishes a statis-
+tical “inference” based on probability theory from a
+purely algorithmic approach to producing conclusions
+from data.
+4 The Nonparametric or
+“Model-Free” Approach
+Now let us introduce a running example that will be
+used to illustrate the various approaches.
+Matthews and Farewell (1985) report data on sixty-
+four patients from Seattle’s Fred Hutchinson Cancer Re-
+leaves unspecified the precise form for the proba-     search Center who had been diagnosed with advanced-
+bility distributions of interest.
+assumed for each probability distribution, which
+depends on a limited number of unknown param-
+eters.
 
 Mathematics and Medical Statistics
 

@@ -226,134 +226,202 @@ $3$
 
  -  ∂ ${}^{0}T^{0}α +i = 1$
 
-486                                                                                          IV. Branches of Mathematics
+486
 
-Defining ∇0 = −∂0 , ∇i = ∂i , and introducing the Ein-         Notice that the mass m has dropped out! Thus, the
-stein summation convention, under which summation             gravitational field accelerates all objects at a given posi-
-is implicit when an index appears both upstairs and           tion in the same way. This explains the fact, recorded
-downstairs, we may rewrite this as                            already in late antiquity by Ioannes Philoponus and
-                                                              popularized in Western Europe by Galileo, that the
-                          ∇\mu Tμν = 0.                  (10)
-                                                              time it takes objects to fall from a given height is
-These equations are Lorentz invariant.                        independent of their weight.
-   The above relations embody the conservation of                It was Einstein who first interpreted this property as
-stress–energy–momentum at a differential level. Inte-          a sort of covariance with respect to transformations
-grating (10) between homologous hypersurfaces and             to noninertial, that is to say accelerated, frames. For
-applying the Minkowski-space version of the diver-            instance, in the case of a constant gravitational field,
-gence theorem, one obtains global balance laws. If            which corresponds to the case φ(z) = f z, we can pass
-one assumes that Tαβ is compactly supported, then,            to the accelerated frame
+Defining ∇0 = −∂0 , ∇i = ∂i , and introducing the Ein-
+stein summation convention, under which summation
+is implicit when an index appears both upstairs and
+downstairs, we may rewrite this as
+These equations are Lorentz invariant.
+   The above relations embody the conservation of
+stress–energy–momentum at a differential level. Inte-
+grating (10) between homologous hypersurfaces and
+applying the Minkowski-space version of the diver-
+gence theorem, one obtains global balance laws. If
+one assumes that Tαβ is compactly supported, then,
 integrating between t = t1 and t = t2 , one obtains
-                                                                                        z̃ = z + 12 f t 2
-                  1   2   3                1   2   3
-             T0α dx dx dx =           T0α dx dx dx .   (11)   and write (12) as
-      t=t2                     t=t1
-                                                                                       dv
-With respect to the chosen Lorentz frame, the zeroth                                      = 0.                   (13)
-                                                                                       dt
-component of the above equation represents the con-           Similarly, one can reverse the argument to “simulate” a
-servation of total energy, while the remaining compo-         gravitational field when none is present by expressing
-nents represent conservation of total momentum.               (13) in an accelerated frame.
+
+With respect to the chosen Lorentz frame, the zeroth
+component of the above equation represents the con-
+servation of total energy, while the remaining compo-
+nents represent conservation of total momentum.
   In the case of a perfect fluid, if we close the sys-
-tem (10) by adjoining a conservation law for particle         3.2   Vectors, Tensors, and Equations in
-number                                                              General Coordinates
-                     ∇α (nuα ) = 0
-                                                              Exactly what the equivalence principle means in gen-
+tem (10) by adjoining a conservation law for particle
+number
 and postulate constitutive relations between ρ, p, par-
-                                                              eral is some what obscure and has been the subject
 ticle number density n, and entropy per particle s,
-                                                              of debate ever since Einstein introduced it. Never the-
-compatible with the laws of thermodynamics, then we           less, the above considerations suggest that, even in the
-arrive at the so-called relativistic Euler equations.         absence of gravity, it would be useful to know how
-                                                              various objects and equations appear when expressed
-         3    From Special to General Relativity              in arbitrary coordinate systems. That is to say, let us
+compatible with the laws of thermodynamics, then we
+arrive at the so-called relativistic Euler equations.
+
 With the elements of special relativity at hand, together     change from our Minkowski coordinates x 0 , x 1 , x 2 , x 3
-with their deep implications for the nature of energy,        to the most general coordinate system, which we shall
-momentum, and stress, we can now pass to the formu-           write as . ar{x} . ar{\mu} = . ar{x} . ar{\mu} (x 0 , x 1 , x 2 , x 3 ), where . ar{\mu} ranges over
-lation of general relativity.                                 0, 1, 2, 3.
-                                                                 Expressing scalar functions in arbitrary coordinates
-3.1     The Equivalence Principle                             poses no problem. But what about vector fields? If v
-                                                              is a vector field expressed in Minkowski coordinates
-Einstein understood as early as 1907 that the most pro-       as (v 0 , v 1 , v 2 , v 3 ), how do we express v in our new
-found aspect of the gravitational force could not be          coordinates . ar{x} . ar{\mu} ?
-described within the relativity principle as he had for-         One has to think a bit about what a vector field actu-
-mulated it in 1905. This aspect is what he called the         ally is. The correct point of view is to consider a vec-
-equivalence principle.                                        tor field v as a first-order differential operator defined
-  The easiest setting in which to understand this prin-       (using Einstein’s summation convention) by v(f ) =
+with their deep implications for the nature of energy,
+momentum, and stress, we can now pass to the formu-
+lation of general relativity.
+3.1     The Equivalence Principle
+Einstein understood as early as 1907 that the most pro-
+found aspect of the gravitational force could not be
+described within the relativity principle as he had for-
+mulated it in 1905. This aspect is what he called the
+equivalence principle.
+  The easiest setting in which to understand this prin-
 ciple is that of the “test particle” with velocity v(t) in    v μ ∂\mu f . So we seek v . ar{\mu} such that v(f ) = v . ar{\mu} ∂. ar{\mu} f for all
-a fixed gravitational field φ. In this case, we have that       functions f . The chain rule then gives us our answer:
+a fixed gravitational field φ. In this case, we have that
 the classical gravitational force is given by f = −m∇φ,
-                                                                                        ∂ . ar{x} . ar{\mu} ν
-and we may rewrite Newton’s second law m(dv/dt) =                                      v . ar{\mu} =  v .                (14)
-                                                                                        ∂x ν
+and we may rewrite Newton’s second law m(dv/dt) =
 f as
-                                                               What about tensors, such as the stress–energy–mo-
-                       dv
-                           = −∇φ.                     (12)    mentum tensor T ? In view of the definition (9), we seek
-                        dt
 
-IV.13.   General Relativity and the Einstein Equations                                                                  487
+IV. Branches of Mathematics
+Notice that the mass m has dropped out! Thus, the
+gravitational field accelerates all objects at a given posi-
+tion in the same way. This explains the fact, recorded
+already in late antiquity by Ioannes Philoponus and
+popularized in Western Europe by Galileo, that the
+∇\mu Tμν = 0.                  (10)
+time it takes objects to fall from a given height is
+independent of their weight.
+It was Einstein who first interpreted this property as
+a sort of covariance with respect to transformations
+to noninertial, that is to say accelerated, frames. For
+instance, in the case of a constant gravitational field,
+which corresponds to the case φ(z) = f z, we can pass
+to the accelerated frame
+z̃ = z + 12 f t 2
+1   2   3
+T0α dx dx dx =
+t=t2
+dv
+= 0.
+dt
+Similarly, one can reverse the argument to “simulate” a
+gravitational field when none is present by expressing
+(13) in an accelerated frame.
+3.2   Vectors, Tensors, and Equations in
+General Coordinates
+∇α (nuα ) = 0
+Exactly what the equivalence principle means in gen-
+eral is some what obscure and has been the subject
+of debate ever since Einstein introduced it. Never the-
+less, the above considerations suggest that, even in the
+absence of gravity, it would be useful to know how
+various objects and equations appear when expressed
+3    From Special to General Relativity
+to the most general coordinate system, which we shall
+write as . ar{x} . ar{\mu} = . ar{x} . ar{\mu} (x 0 , x 1 , x 2 , x 3 ), where . ar{\mu} ranges over
+0, 1, 2, 3.
+Expressing scalar functions in arbitrary coordinates
+poses no problem. But what about vector fields? If v
+is a vector field expressed in Minkowski coordinates
+as (v 0 , v 1 , v 2 , v 3 ), how do we express v in our new
+coordinates . ar{x} . ar{\mu} ?
+One has to think a bit about what a vector field actu-
+ally is. The correct point of view is to consider a vec-
+tor field v as a first-order differential operator defined
+(using Einstein’s summation convention) by v(f ) =
+functions f . The chain rule then gives us our answer:
+∂ . ar{x} . ar{\mu} ν
+v . ar{\mu} =  v .
+∂x ν
+What about tensors, such as the stress–energy–mo-
+dv
+= −∇φ.                     (12)    mentum tensor T ? In view of the definition (9), we seek
+dt
 
-T. ar{\mu}ν̄ such that                                                3.3   Lorentzian Geometry
-                                            . ar{\mu}   ν̄
-                   T (u, v) = T. ar{\mu}ν̄ u v ,               (15)
-                                                               The profound insight of replacing the fixed Minkowski
-where the numbers u. ar{\mu} are the components of u with             η with a dynamic g brought Einstein to what we now
+IV.13.   General Relativity and the Einstein Equations
+
+T. ar{\mu}ν̄ such that
+
+where the numbers u. ar{\mu} are the components of u with
 respect to the coordinates . ar{x} . ar{\mu} as we have just calculated    call Lorentzian geometry. Lorentzian geometry gener-
-them above. (Note that these components depend on              alizes Minkowski geometry following the blueprint of
+them above. (Note that these components depend on
 the point q. This is why it is now essential to distinguish    riemann [VI.49]. That is, we replace the Minkowski
-R4 q from R4 .) Again, the chain rule gives us the answer:      metric η by a general map
-                                   ∂x ν ∂x \mu T. ar{\mu}ν̄ = Tμν                    .                                g : R4 q . imes R4 q → R.
-                                   ∂ . ar{x} ν̄ ∂ . ar{x} . ar{\mu}
-Classically, we write                                          In other words, we replace η by a symmetric covariant
-            T = T. ar{\mu}ν̄ d. ar{x} . ar{\mu} d. ar{x} ν̄ = Tμν dx \mu dx ν .          2-tensor, which is expressed in arbitrary coordinates
-                                                               x \mu by
+R4 q from R4 .) Again, the chain rule gives us the answer:
+Classically, we write
+
 One can interpret the above as a shorthand notation for
-(15), but it also tells us how to compute T. ar{\mu}ν̄ from Tμν                              gμν dx \mu dx ν .
-by formally applying the chain rule to d. ar{x} . ar{\mu}.                More over, we require that at each point q the bilin-
-   There is another covariant symmetric 2-tensor be-           ear form g(· , ·) can be diagonalized to the Minkowski
-sides T that is relevant here. This is the Minkowski met-      form (6). Loosely speaking, a Lorentzian metric is one
-ric itself. Indeed, the classical form of the Minkowski        that “looks locally like the Minkowski metric,” just as
-metric (5) corresponds to the representation                   a riemannian metric [I.3 §6.10](/part-01/fundamental-definitions) looks locally like the
-                        ημν dx \mu dx ν ,                        Euclidean metric.
-where the ημν for Minkowski coordinates x \mu are given             Just as with the Minkowski metric, the bilinear form
-by η00 = −1, η0 i = 0, ηij = 1 if i = j, and ηij = 0 if         g permits us to classify nonzero vectors vq at a point q
-i = j. To avoid the cumbersome notation · , ·, let us       as timelike, null, or spacelike and to define proper times
-refer to the Minkowski metric as η. Following the above,       of world lines γ(s) = (x 0 (s), x 1 (s), x 2 (s), x 3 (s)) by
-we may express η in general coordinates . ar{x} . ar{\mu} by               the formula (7), but with γ̇, γ̇ replaced by gμν ẋ μ ẋ ν .
-                        η. ar{\mu}ν̄ d. ar{x} . ar{\mu} d. ar{x} ν̄ ,                  It is in this sense that we can speak of the geometry
-                                                               of g.
+(15), but it also tells us how to compute T. ar{\mu}ν̄ from Tμν
+by formally applying the chain rule to d. ar{x} . ar{\mu}.
+   There is another covariant symmetric 2-tensor be-
+sides T that is relevant here. This is the Minkowski met-
+ric itself. Indeed, the classical form of the Minkowski
+metric (5) corresponds to the representation
+where the ημν for Minkowski coordinates x \mu are given
+by η00 = −1, η0 i = 0, ηij = 1 if i = j, and ηij = 0 if
+i = j. To avoid the cumbersome notation · , ·, let us
+refer to the Minkowski metric as η. Following the above,
+we may express η in general coordinates . ar{x} . ar{\mu} by
 where η. ar{\mu}ν̄ is computed by formal application of the
-                                                                  In view of Minkowski’s formulation of the special rel-
 chain rule.
-                                                               ativity principle as the statement that the equations
    It is clear that if one tries to transform an equa-
-                                                               of physics refer to space-time only through geomet-
 tion such as (10) into general coordinates, then the
-                                                               ric quantities associated with the Minkowski metric, it
 components of η and their derivatives will appear in
-                                                               is natural to look for a generalization of this princi-
 the equations. Einstein (always thinking “algebraically”)
-                                                               ple, and indeed a suitable version immediately suggests
 was seeking laws of motion for both matter and the
-                                                               itself. It is the principle that the equations of physics
 gravitational field that would have the same form in
-                                                               refer to the space-time coordinates only via geometric
 all coordinate systems. As he understood it, this meant
-                                                               quantities naturally associated with g.
 that all objects that appear should transform as ten-
-sors and should be considered a priori “unknown.” He             We saw earlier that the kinematic constraint on
-referred to this principle as “general covariance.” This       “test particles,” as formulated geometrically for the
-suggests that η should be replaced by an unknown sym-          Minkowski metric, was that dγ/ds should be timelike;
-metric 2-tensor. Let us call this 2-tensor g. One can of       this makes sense for an arbitrary Lorentzian metric.
-course try to write down an equation for the “unknown”         But how does one formulate differential equations? For
-g that forces it to be the “known” Minkowski metric η.         instance, how does one formulate an analogue of (10)
-Thus, “general covariance” per se does not force one to        that refers only to g?
-abandon η. But in view of the fact that g and T have             It turned out that in the Riemannian case, a set of
-the same number of components, it was a natural step           natural geometric concepts suitable for the task had
-to consider g as the embodiment of the gravitational           already been developed in the nineteenth and early
-field and to try to look for an equation that related g         twentieth centuries by Riemann, Bianchi, Christoffel,
-and T directly. In this way, the framework of general          Ricci, and Levi-Civita. These carry over directly to the
-relativity was born.                                           Lorentzian case.
+sors and should be considered a priori “unknown.” He
+referred to this principle as “general covariance.” This
+suggests that η should be replaced by an unknown sym-
+metric 2-tensor. Let us call this 2-tensor g. One can of
+course try to write down an equation for the “unknown”
+g that forces it to be the “known” Minkowski metric η.
+Thus, “general covariance” per se does not force one to
+abandon η. But in view of the fact that g and T have
+the same number of components, it was a natural step
+to consider g as the embodiment of the gravitational
+field and to try to look for an equation that related g
+and T directly. In this way, the framework of general
+relativity was born.
+
+487
+3.3   Lorentzian Geometry
+. ar{\mu}   ν̄
+T (u, v) = T. ar{\mu}ν̄ u v ,
+The profound insight of replacing the fixed Minkowski
+η with a dynamic g brought Einstein to what we now
+alizes Minkowski geometry following the blueprint of
+metric η by a general map
+∂x ν ∂x \mu T. ar{\mu}ν̄ = Tμν                    .                                g : R4 q . imes R4 q → R.
+∂ . ar{x} ν̄ ∂ . ar{x} . ar{\mu}
+In other words, we replace η by a symmetric covariant
+T = T. ar{\mu}ν̄ d. ar{x} . ar{\mu} d. ar{x} ν̄ = Tμν dx \mu dx ν .
+x \mu by
+gμν dx \mu dx ν .
+More over, we require that at each point q the bilin-
+ear form g(· , ·) can be diagonalized to the Minkowski
+form (6). Loosely speaking, a Lorentzian metric is one
+that “looks locally like the Minkowski metric,” just as
+a riemannian metric [I.3 §6.10](/part-01/fundamental-definitions) looks locally like the
+ημν dx \mu dx ν ,                        Euclidean metric.
+Just as with the Minkowski metric, the bilinear form
+g permits us to classify nonzero vectors vq at a point q
+as timelike, null, or spacelike and to define proper times
+of world lines γ(s) = (x 0 (s), x 1 (s), x 2 (s), x 3 (s)) by
+the formula (7), but with γ̇, γ̇ replaced by gμν ẋ μ ẋ ν .
+η. ar{\mu}ν̄ d. ar{x} . ar{\mu} d. ar{x} ν̄ ,                  It is in this sense that we can speak of the geometry
+of g.
+In view of Minkowski’s formulation of the special rel-
+ativity principle as the statement that the equations
+of physics refer to space-time only through geomet-
+ric quantities associated with the Minkowski metric, it
+is natural to look for a generalization of this princi-
+ple, and indeed a suitable version immediately suggests
+itself. It is the principle that the equations of physics
+refer to the space-time coordinates only via geometric
+quantities naturally associated with g.
+We saw earlier that the kinematic constraint on
+“test particles,” as formulated geometrically for the
+Minkowski metric, was that dγ/ds should be timelike;
+this makes sense for an arbitrary Lorentzian metric.
+But how does one formulate differential equations? For
+instance, how does one formulate an analogue of (10)
+that refers only to g?
+It turned out that in the Riemannian case, a set of
+natural geometric concepts suitable for the task had
+already been developed in the nineteenth and early
+twentieth centuries by Riemann, Bianchi, Christoffel,
+Ricci, and Levi-Civita. These carry over directly to the
+Lorentzian case.
 
 $488$
 
@@ -429,77 +497,98 @@ T μν and the tensor R μν $- {}^{2}$ g μν R. The form
 
 is then uniquely determined by the requirement that it should give the correct Newtonian limit when one makes the identifications $g^{00}$ ∼ $1 + 2φ/c^{2}$ , g $ij$ ∼ $(1 - 2φ/c^{2})δ$ ij . $g^{0j}$ ∼ $0$ , The form (1) corresponds to the usual units $G = c = 1$ . Note that ( $1$ ), when written out explicitly, is nonlinear in the metric components g μν .
 
-IV.13.   General Relativity and the Einstein Equations                                                           489
+IV.13.   General Relativity and the Einstein Equations
 
    Einstein did not stop at the Newtonian limit. By con-    3.5   The Manifold Concept
 side ring geodesic motion in solutions of the linearized
-                                                            We have been able to get this far with out really address-
 equations (20), Einstein was able to determine the cor-
-                                                            ing the question of where the metric g is defined. In
 rect value for the anomalous precession of the perihe-
-                                                            passing from the Minkowski metric to a general g,
 lion of Mercury, an effect that Newtonian theory was
-                                                            Einstein did not originally have in mind replacing the
 unable to explain. Since (20) had no adjustable param-
-                                                            domain R4 . But it is clear in the Riemannian case from
 eters after determining the Newtonian limit, this was
-                                                            the theory of surfaces that the natural object for a
 a genuine test of the theory. A few years later the
-                                                            metric to live on is not necessarily R2 but a general
 gravitational “bending” of light was observed. This had
-                                                            surface. For instance, the metric dθ 2 + sin θ dφ2 nat-
 been calculated theoretically in the context of the geo-
-                                                            urally lives on the sphere S2 . In saying this, we are
 metric optics approximation where light rays follow
-                                                            to understand that one requires several coordinate
 null geodesics in a fixed space-time background. Post-
-                                                            systems of the type (θ, φ) to cover all of S2 . The n-
 Newtonian predictions of (1) have now been verified by
-                                                            dimensional generalization of the object where Rie-
 various solar system tests, confirming general relativity
-                                                            mannian or Lorentzian metrics naturally live is a man-
 in this regime to a high degree of accuracy.
-                                                            ifold [I.3 §6.9](/part-01/fundamental-definitions). Manifolds are the structures obtained
    One special case of (20) is when we postulate that
-                                                            by consistently smoothly pasting together local coordi-
 Tμν = 0. The equations then simplify to
-                                                            nate systems.
-                        Rμν = 0.                     (21)     Thus, general relativity allows the space-time contin-
-These are known as the vacuum equations. The Min-           uum not to be R4 but instead to be a general mani-
+These are known as the vacuum equations. The Min-
 kowski metric (5) is a particular solution (but not the     fold M, which may very well be topologically inequiv-
-only one!).                                                 alent to R4 , just as S2 is inequivalent to R2 . We call
-  The vacuum equations can be derived formally as the       the pair (M, g) a Lorentzian manifold. Properly put, the
-euler–lagrange equations [III.94](/part-03/variational-methods) corresponding to          unknown in the Einstein equations is not just g but the
-the so-called Hilbert Lagrangian:                           pair (M, g).
-                                                             It is interesting that this fundamental fact, namely
-            L(g) = R −g dx 0 dx 1 dx 2 dx 3 .               that the topology of space-time is not a priori de-
-                  √                                         termined by the equations, arises almost as an after-
+only one!).
+  The vacuum equations can be derived formally as the
+euler–lagrange equations [III.94](/part-03/variational-methods) corresponding to
+the so-called Hilbert Lagrangian:
+
 (The expression −g dx 0 dx 1 dx 2 dx 3 denotes the nat-
-                                                            thought. More over, it was a thought that took many
 ural volume form associated with g.) hilbert [VI.63](/part-06/david-hilbert-18621943),
-                                                            years to be clarified.
 who was following closely Einstein’s struggle to formu-
 late a theory of gravity with a dynamic metric g, arrived
-                                                            3.6   Waves, Gauges, and Hyperbolicity
 at his Lagrangian (actually a more general version of
-the above yielding the coupled Einstein–Maxwell sys-        When written out explicitly in arbitrary coordinates
-tem) very shortly before Einstein obtained the general      (try it!), the Einstein equations do not appear to be
-equations (20).                                             of any usual type, such as elliptic (like the poisson
-  Many of the most interesting phenomena that come          equation [IV.12 §1](/part-04/analysis)), parabolic (like the heat equa-
+the above yielding the coupled Einstein–Maxwell sys-
+tem) very shortly before Einstein obtained the general
+equations (20).
+  Many of the most interesting phenomena that come
 from the equations (20) are already present in the vac-     tion [I.3 §5.4](/part-01/fundamental-definitions)), or hyperbolic (like the wave equation
-uum case (21). This is some what ironic, because it was      [I.3 §5.4](/part-01/fundamental-definitions); see [IV.12 §2.5](/part-04/analysis) for more about these differ-
+uum case (21). This is some what ironic, because it was
 the forms of T and (10) that dictated (20). Note, in con-   ent classes of PDEs). This is related to the fact that,
-trast, that in the Newtonian theory (2), the “vacuum”       given a solution, one can form a “new” solution by com-
-equations μ = 0 and standard boundary conditions at         posing the old solution with a coordinate transforma-
-infinity imply φ = 0. Thus, the Newtonian theory of the      tion. We can do this for new coordinate systems whose
-vacuum is trivial.                                          coordinate transformations differ from the identity
-  The part of the curvature tensor Rμνλρ that is not        only in a ball. This fact, known as the hole argument,
-forced to vanish from (21) is known as the Weyl cur-        confused Einstein and his mathematical collaborator
-vature. This curvature measures the “tidal” distortion      Marcel Grossmann, who were thinking algebraically in
+trast, that in the Newtonian theory (2), the “vacuum”
+equations μ = 0 and standard boundary conditions at
+infinity imply φ = 0. Thus, the Newtonian theory of the
+vacuum is trivial.
+  The part of the curvature tensor Rμνλρ that is not
+forced to vanish from (21) is known as the Weyl cur-
+vature. This curvature measures the “tidal” distortion
 of families of geodesics. Thus, the “local strength” of     terms of the form of the equations in coordinates, and
 gravitational fields in vacuum regions is related in the     temporarily led them to reject “general covariance.”
 Newtonian limit to the tidal forces on macroscopic test     The resulting backtracking delayed the final correct
-matter, not the norm of the gravitational force.            formulation of (1) by about two years. The geometric
+matter, not the norm of the gravitational force.
+
+489
+We have been able to get this far with out really address-
+ing the question of where the metric g is defined. In
+passing from the Minkowski metric to a general g,
+Einstein did not originally have in mind replacing the
+domain R4 . But it is clear in the Riemannian case from
+the theory of surfaces that the natural object for a
+metric to live on is not necessarily R2 but a general
+surface. For instance, the metric dθ 2 + sin θ dφ2 nat-
+urally lives on the sphere S2 . In saying this, we are
+to understand that one requires several coordinate
+systems of the type (θ, φ) to cover all of S2 . The n-
+dimensional generalization of the object where Rie-
+mannian or Lorentzian metrics naturally live is a man-
+ifold [I.3 §6.9](/part-01/fundamental-definitions). Manifolds are the structures obtained
+by consistently smoothly pasting together local coordi-
+nate systems.
+Rμν = 0.                     (21)     Thus, general relativity allows the space-time contin-
+uum not to be R4 but instead to be a general mani-
+alent to R4 , just as S2 is inequivalent to R2 . We call
+the pair (M, g) a Lorentzian manifold. Properly put, the
+unknown in the Einstein equations is not just g but the
+pair (M, g).
+                                      It is interesting that this fundamental fact, namely
+L(g) = R −g dx 0 dx 1 dx 2 dx 3 .
+√
+thought. More over, it was a thought that took many
+years to be clarified.
+3.6   Waves, Gauges, and Hyperbolicity
+When written out explicitly in arbitrary coordinates
+(try it!), the Einstein equations do not appear to be
+of any usual type, such as elliptic (like the poisson
+equation [IV.12 §1](/part-04/analysis)), parabolic (like the heat equa-
+[I.3 §5.4](/part-01/fundamental-definitions); see [IV.12 §2.5](/part-04/analysis) for more about these differ-
+given a solution, one can form a “new” solution by com-
+posing the old solution with a coordinate transforma-
+tion. We can do this for new coordinate systems whose
+coordinate transformations differ from the identity
+only in a ball. This fact, known as the hole argument,
+confused Einstein and his mathematical collaborator
+Marcel Grossmann, who were thinking algebraically in
+formulation of (1) by about two years. The geometric
 
 $490$
 
@@ -527,118 +616,204 @@ Nonlinearity of Gravitational Radiation
 
 In any physical theory in which one can formulate the problem of dynamics, the most basic question is the
 
-IV.13.   General Relativity and the Einstein Equations                                                                 491
+IV.13.   General Relativity and the Einstein Equations
 
-stability of the trivial solution. In other words, if we       gether and try to consider (22) for all values of r . What
-make a small change to the “initial conditions,” will the      happens then to the metric (22) at r = 2 m? In the (r , t)
-resulting change to the solution be small as well? In the      coordinates, the metric element appears to be singular.
+stability of the trivial solution. In other words, if we
+make a small change to the “initial conditions,” will the
+resulting change to the solution be small as well? In the
 case of general relativity, this is the question of stabil-    But this turns out to be an illusion! By a simple change
-ity of the Minkowski space-time R3+1 . This fund a men-          of coordinates, one can easily extend the metric reg-
-tal result was proven for the vacuum equations (21) in         ularly as a solution of (21) beyond r = 2 m. That is,
-1993 by Christodoulou and Klainerman.                          there exists a manifold M that contains both a region
-   The proof of the stability of Minkowski space made          r > 2 m and a region 0 < r < 2 m, separated by a reg-
-it possible to formulate the laws of gravitational radi-       ular (null) hypersurface H + . The metric element (22)
-ation rigorously. Gravitational radiation is yet to be         is valid every where except on H + , where it must be
-observed directly, but it has been inferred, originally        rewritten in regular coordinates.
-by Hulse and Taylor, from the energy loss of a binary             It turns out that the hypersurface H + can be char-
-system. This work gave them the only Nobel prize               acterized by an exceptional global property: it defines
-(1993) directly associated with the Einstein equations!        the boundary of the region of space-time that can send
-The blueprint for the mathematical formulation of the          signals to null infinity I + , or, in the physical interpreta-
-radiation problem is based on work of Bondi and later          tion, to distant observers. In general, the set of points
-Penrose. One associates with the space-time (M, g) an          that cannot send signals to null infinity I + is known
-ideal boundary “at infinity,” known as null infinity and         as the black hole region of space-time. Thus, the region
-denoted I + . Physically, the points of I + correspond         0 < r < 2 m is the black hole region of M, and H + is
-to observers who are far away from the isolated self-          known as the event horizon.
-gravitating system but who are receiving its signals.             These issues took a long time to be sorted out,
-Gravitational radiation can be identified with certain          partly because the language of global Lorentzian geom-
-tensors defined on I + from rescaled boundary limits of         etry was developed long after the original formula-
-various geometric quantities. As Christodoulou was to          tion of the Einstein equations. The global geometry of
-discover, the laws of gravitational radiation are them-        the extended space-time M was clarified by Synge in
-selves nonlinear, and the nonlinearity is potentially          around 1950 and finally by Kruskal in 1960. The name
-relevant for observation.                                      “black hole” is due to the imaginative physicist John
-                                                               Wheeler. From their beginnings as a theoretical curios-
-4.2   Black Holes                                              ity, black holes have become part of the accepted astro-
-                                                               physical explanation for a wide variety of phenomena,
+ity of the Minkowski space-time R3+1 . This fund a men-
+tal result was proven for the vacuum equations (21) in
+1993 by Christodoulou and Klainerman.
+   The proof of the stability of Minkowski space made
+it possible to formulate the laws of gravitational radi-
+ation rigorously. Gravitational radiation is yet to be
+observed directly, but it has been inferred, originally
+by Hulse and Taylor, from the energy loss of a binary
+system. This work gave them the only Nobel prize
+(1993) directly associated with the Einstein equations!
+The blueprint for the mathematical formulation of the
+radiation problem is based on work of Bondi and later
+Penrose. One associates with the space-time (M, g) an
+ideal boundary “at infinity,” known as null infinity and
+denoted I + . Physically, the points of I + correspond
+to observers who are far away from the isolated self-
+gravitating system but who are receiving its signals.
+Gravitational radiation can be identified with certain
+tensors defined on I + from rescaled boundary limits of
+various geometric quantities. As Christodoulou was to
+discover, the laws of gravitational radiation are them-
+selves nonlinear, and the nonlinearity is potentially
+relevant for observation.
+4.2   Black Holes
 Perhaps no prediction of general relativity is better
-                                                               and in particular are thought to represent the end-state
 known today than that of black holes.
-                                                               for the gravitational collapse of many stars.
   The story of black holes begins with the so-called
-Schwarzschild metric:                                          4.3   Space-Time Singularities
-       2 m            2 m −1
-  − 1−    dt 2 + 1 −       dr 2                                A second natural problem poses itself in relation to
-        r             r
-                                                               the Schwarzschild metric (22), now considered in the
-                          + r 2 (dθ 2 + sin2 θ dφ2 ).   (22)   region r < 2 m of the extended space-time M: what
-The parameter m here is a positive constant. This is           happens at r = 0?
-a solution of the vacuum Einstein equations (21) that            A computation reveals that as r → 0, the Kretchmann
-was found in 1916. The original interpretation of (22)         scalar Rμνλρ R μνλρ blows up. Since this expression is a
-was that it modeled the gravitational field in a vacuum         geometric invariant, it follows that, unlike the situation
-region out side a star. That is to say, (22) was considered     at r = 2 m, the space-time is not regularly extendable
-only in some coordinate range r > R0 , for an R0 > 2 m,         beyond 0. More over, timelike geodesics (freely falling
-and the metric was matched at r = R0 to a “static” inte-       observers in the test particle approximation) entering
-rior metric satisfying the coupled Einstein–Euler sys-         the black hole region reach r = 0 in finite proper time,
-tem in the coordinate range r ⩽ R0 . (This latter metric       so they are “incomplete” in the sense that they can-
-is again of the form (22), but with m = m(r ) such that        not be continued indefinitely. They thus “observe” the
-m → 0 as r → 0.)                                               breakdown of the geometry of the space-time metric.
-   From the theoretical point of view, a natural problem       More over, macroscopic observers approaching r = 0
-poses itself. Suppose we do away with the star alto-           are torn apart by the gravitational “tidal forces.”
+Schwarzschild metric:
 
-492                                                                                           IV. Branches of Mathematics
+  − 1−    dt 2 + 1 −
+
+The parameter m here is a positive constant. This is
+a solution of the vacuum Einstein equations (21) that
+was found in 1916. The original interpretation of (22)
+was that it modeled the gravitational field in a vacuum
+region out side a star. That is to say, (22) was considered     at r = 2 m, the space-time is not regularly extendable
+only in some coordinate range r > R0 , for an R0 > 2 m,
+and the metric was matched at r = R0 to a “static” inte-
+rior metric satisfying the coupled Einstein–Euler sys-
+tem in the coordinate range r ⩽ R0 . (This latter metric
+is again of the form (22), but with m = m(r ) such that
+m → 0 as r → 0.)
+   From the theoretical point of view, a natural problem
+poses itself. Suppose we do away with the star alto-
+
+491
+gether and try to consider (22) for all values of r . What
+happens then to the metric (22) at r = 2 m? In the (r , t)
+coordinates, the metric element appears to be singular.
+of coordinates, one can easily extend the metric reg-
+ularly as a solution of (21) beyond r = 2 m. That is,
+there exists a manifold M that contains both a region
+r > 2 m and a region 0 < r < 2 m, separated by a reg-
+ular (null) hypersurface H + . The metric element (22)
+is valid every where except on H + , where it must be
+rewritten in regular coordinates.
+It turns out that the hypersurface H + can be char-
+acterized by an exceptional global property: it defines
+the boundary of the region of space-time that can send
+signals to null infinity I + , or, in the physical interpreta-
+tion, to distant observers. In general, the set of points
+that cannot send signals to null infinity I + is known
+as the black hole region of space-time. Thus, the region
+0 < r < 2 m is the black hole region of M, and H + is
+known as the event horizon.
+These issues took a long time to be sorted out,
+partly because the language of global Lorentzian geom-
+etry was developed long after the original formula-
+tion of the Einstein equations. The global geometry of
+the extended space-time M was clarified by Synge in
+around 1950 and finally by Kruskal in 1960. The name
+“black hole” is due to the imaginative physicist John
+Wheeler. From their beginnings as a theoretical curios-
+ity, black holes have become part of the accepted astro-
+physical explanation for a wide variety of phenomena,
+and in particular are thought to represent the end-state
+for the gravitational collapse of many stars.
+4.3   Space-Time Singularities
+2 m
+dr 2
+r
+the Schwarzschild metric (22), now considered in the
++ r 2 (dθ 2 + sin2 θ dφ2 ).   (22)   region r < 2 m of the extended space-time M: what
+happens at r = 0?
+A computation reveals that as r → 0, the Kretchmann
+scalar Rμνλρ R μνλρ blows up. Since this expression is a
+geometric invariant, it follows that, unlike the situation
+beyond 0. More over, timelike geodesics (freely falling
+observers in the test particle approximation) entering
+the black hole region reach r = 0 in finite proper time,
+so they are “incomplete” in the sense that they can-
+not be continued indefinitely. They thus “observe” the
+breakdown of the geometry of the space-time metric.
+More over, macroscopic observers approaching r = 0
+are torn apart by the gravitational “tidal forces.”
+
+492
 
    In the early years of the subject, it was thought that    fact is related to the celebrated positive energy theorem
-this seemingly pathological behavior was connected to        of Schoen and Yau.
+this seemingly pathological behavior was connected to
 the high degree of symmetry of the Schwarzschild met-
-ric and that “generic” solutions would not exhibit such      4.4   Cosmology
-phenomena. That this is not the case was shown by Pen-       The space-times (M, g) discussed previously are all
-rose’s celebrated incompleteness theorem of 1965. This       idealized representations of isolated systems. The “rest
-states that solutions to the initial value problem for       of the universe” is excised and replaced by an “asymp-
-the Einstein equations coupled to appropriate matter         totically flat end”; far-away observers are placed at an
-will always contain such incomplete timelike or null         ideal boundary “at infinity.” But what if we are more
-geodesics if the initial data hypersurface is noncom-        ambitious and consider our space-time (M, g) as rep-
-pact and contains what is known as a closed trapped          re sent ing the whole universe? The study of this latter
-surface. The Schwarzschild case may appear to sug-           problem is known as cosmology.
-gest that such incomplete geodesics are associated with         Observations suggest that on very large scales the
-the curvature blowing up. However, the situation can in      universe is approximately homogeneous and isotropic.
-fact be very different, as is apparent in the celebrated      This is some times known as the Copernican principle.
-Kerr solutions, a remarkable two-parameter family of         Interestingly, one cannot solve the Poisson equation (2)
-solutions to the vacuum equations (21), discovered only      with a constant ∇φ and constant nonzero \mu on R4 .
-in 1963, which are rotating versions of (22). In the         Thus, in Newtonian physics, cosmology never became a
-Kerr solutions, incomplete timelike geodesics meet a         rational science.1 General relativity, on the other hand,
-so-called Cauchy horizon, a smooth boundary of the           does admit homogeneous and isotropic solutions as
-region of space-time that is uniquely determined by          well as their perturbations. Indeed, cosmological solu-
-initial data.                                                tions of the Einstein equations were studied by Einstein
-   The theorem of Penrose gives rise to two important        himself, de Sitter, Friedmann, and Lemaitre in the early
-conjectures. The first, known as weak cosmic censor-          years of the subject.
-ship, says roughly that for generic physically plausi-          When general relativity was formulated, the pre-
-ble initial data for suitable Einstein-matter systems,       vailing view was that the universe should be static.
-geodesic incompleteness, if it occurs, is always con-        This led Einstein to add a term Λgμν to the left-hand
-fined to black hole regions. The second, strong cos-          side of his equations, fine-tuned so as to allow for
-mic censorship, says roughly that for generic admis-         such a solution. The constant Λ is known as the cos-
-sible initial data, incompleteness of the solution is        mol og ical constant. The expansion of the universe is
-always associated with a local obstruction to extend-        now considered to be an observational fact, beginning
+ric and that “generic” solutions would not exhibit such
+phenomena. That this is not the case was shown by Pen-
+rose’s celebrated incompleteness theorem of 1965. This
+states that solutions to the initial value problem for
+the Einstein equations coupled to appropriate matter
+will always contain such incomplete timelike or null
+geodesics if the initial data hypersurface is noncom-
+pact and contains what is known as a closed trapped
+surface. The Schwarzschild case may appear to sug-
+gest that such incomplete geodesics are associated with
+the curvature blowing up. However, the situation can in
+fact be very different, as is apparent in the celebrated
+Kerr solutions, a remarkable two-parameter family of
+solutions to the vacuum equations (21), discovered only
+in 1963, which are rotating versions of (22). In the
+Kerr solutions, incomplete timelike geodesics meet a
+so-called Cauchy horizon, a smooth boundary of the
+region of space-time that is uniquely determined by
+initial data.
+   The theorem of Penrose gives rise to two important
+conjectures. The first, known as weak cosmic censor-
+ship, says roughly that for generic physically plausi-
+ble initial data for suitable Einstein-matter systems,
+geodesic incompleteness, if it occurs, is always con-
+fined to black hole regions. The second, strong cos-
+mic censorship, says roughly that for generic admis-
+sible initial data, incompleteness of the solution is
+always associated with a local obstruction to extend-
 ability, such as the blow-up of curvature. The latter con-   with the fundamental discoveries of Hubble. Expand-
-jecture would ensure that the unique solution of the         ing universes can be modeled to a first approxima-
-initial value problem is the only classical space-time       tion by so-called Friedmann–Lemaitre solutions to the
-that can arise from the data. That is to say, it would       Einstein–Euler system, with various values of Λ. In the
-imply that classical determinism holds for the Einstein      past direction, these solutions are singular: this singu-
-equations.                                                   lar behavior is often given the suggestive name “the big
-   Both conjectures are false if we drop the assumption      bang.”
+jecture would ensure that the unique solution of the
+initial value problem is the only classical space-time
+that can arise from the data. That is to say, it would
+imply that classical determinism holds for the Einstein
+equations.
+   Both conjectures are false if we drop the assumption
 that the initial data are generic, and this is one rea-
-son for their difficulty. Indeed, Christodoulou has con-       4.5   Future Developments
+son for their difficulty. Indeed, Christodoulou has con-
 struc ted spherically symmetric solutions of the cou-
-                                                             The plethora of exact solutions of the Einstein equa-
 pled Einstein-scalar field system (arising from regular
-                                                             tions gives us a taste of what the qualitative behavior
 initial data) that are geodesically incomplete but do not
-                                                             of more general solutions may be. But a true qualita-
 contain black hole regions. Such space-times are said to
-                                                             tive understanding of the nature of general solutions
 contain naked singularities.
-                                                             has been achieved only in a neighborhood of the very
    Naked singularities are easy to construct if one does
 not require that they arise from the collapse of regu-
-lar initial data. An example is the Schwarzschild metric       1. One can study “Newtonian cosmology” by modifying the foun-
-                                                             da tions of the Newtonian theory so as to describe the theory with a
-(22) for m < 0. This metric, however, does not admit a       nonmetric connection on, say, T3 . imes R. But this step is of course inspired
-complete asymptotically flat Cauchy hypersurface. This        by general relativity (see section 3.5).
+lar initial data. An example is the Schwarzschild metric
+(22) for m < 0. This metric, however, does not admit a
+complete asymptotically flat Cauchy hypersurface. This
+
+IV. Branches of Mathematics
+of Schoen and Yau.
+4.4   Cosmology
+The space-times (M, g) discussed previously are all
+idealized representations of isolated systems. The “rest
+of the universe” is excised and replaced by an “asymp-
+totically flat end”; far-away observers are placed at an
+ideal boundary “at infinity.” But what if we are more
+ambitious and consider our space-time (M, g) as rep-
+re sent ing the whole universe? The study of this latter
+problem is known as cosmology.
+Observations suggest that on very large scales the
+universe is approximately homogeneous and isotropic.
+This is some times known as the Copernican principle.
+Interestingly, one cannot solve the Poisson equation (2)
+with a constant ∇φ and constant nonzero \mu on R4 .
+Thus, in Newtonian physics, cosmology never became a
+rational science.1 General relativity, on the other hand,
+does admit homogeneous and isotropic solutions as
+well as their perturbations. Indeed, cosmological solu-
+tions of the Einstein equations were studied by Einstein
+himself, de Sitter, Friedmann, and Lemaitre in the early
+years of the subject.
+When general relativity was formulated, the pre-
+vailing view was that the universe should be static.
+This led Einstein to add a term Λgμν to the left-hand
+side of his equations, fine-tuned so as to allow for
+such a solution. The constant Λ is known as the cos-
+mol og ical constant. The expansion of the universe is
+now considered to be an observational fact, beginning
+ing universes can be modeled to a first approxima-
+tion by so-called Friedmann–Lemaitre solutions to the
+Einstein–Euler system, with various values of Λ. In the
+past direction, these solutions are singular: this singu-
+lar behavior is often given the suggestive name “the big
+bang.”
+4.5   Future Developments
+The plethora of exact solutions of the Einstein equa-
+tions gives us a taste of what the qualitative behavior
+of more general solutions may be. But a true qualita-
+tive understanding of the nature of general solutions
+has been achieved only in a neighborhood of the very
+1. One can study “Newtonian cosmology” by modifying the foun-
+da tions of the Newtonian theory so as to describe the theory with a
+nonmetric connection on, say, T3 . imes R. But this step is of course inspired
+by general relativity (see section 3.5).

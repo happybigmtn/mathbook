@@ -4,180 +4,236 @@ import numpy as np
 
 class NumberSystemsScene(Scene):
     """
-    Number Systems visualization.
+    Number Systems - Feynman Style Visualization
 
-    Shows the expansion from ℕ to ℤ to ℚ to ℝ to ℂ,
-    with the equations that motivated each expansion.
+    Shows WHY we needed to expand from natural numbers to complex numbers
+    through concrete problems that couldn't be solved.
     """
 
     def construct(self):
-        # Title
-        title = Text("The Number Systems", font_size=44, color=BLUE)
-        subtitle = Text("From Natural to Complex Numbers", font_size=24, color=GRAY)
-        subtitle.next_to(title, DOWN)
-
+        # Start with counting apples
+        title = Text("Why Do We Need More Numbers?", font_size=36, color=BLUE)
         self.play(Write(title))
-        self.play(FadeIn(subtitle))
+        self.wait(1)
+        self.play(title.animate.scale(0.6).to_edge(UP))
+
+        # Show natural numbers with apples
+        apples = VGroup(
+            *[Circle(radius=0.2, color=RED, fill_opacity=0.8) for _ in range(5)]
+        )
+        apples.arrange(RIGHT, buff=0.3)
+        apples.shift(UP * 2)
+
+        count_text = Text("Counting apples: 1, 2, 3, 4, 5...", font_size=24)
+        count_text.next_to(apples, DOWN, buff=0.5)
+
+        self.play(*[Create(apple) for apple in apples])
+        self.play(Write(count_text))
         self.wait(2)
 
-        self.play(FadeOut(subtitle))
-        self.play(title.animate.to_edge(UP))
+        # The first problem: subtraction
+        self.play(FadeOut(apples), FadeOut(count_text))
 
-        # Natural Numbers
-        natural_title = Text("Natural Numbers (ℕ)", font_size=28, color=GREEN)
-        natural_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(natural_title))
+        problem1 = Text(
+            "Problem: I have 3 apples, you take 5.", font_size=28, color=RED
+        )
+        problem1.shift(UP * 1)
 
-        naturals = MathTex(r"\mathbb{N} = \\1, 2, 3, 4, 5, ...\\", font_size=28)
-        naturals.next_to(natural_title, DOWN, buff=0.3)
-
-        self.play(Write(naturals))
-
-        # Problem
-        problem1 = MathTex(r"2 - 3 = ?", font_size=26, color=RED)
-        problem1.next_to(naturals, DOWN, buff=0.5)
+        visual1 = VGroup(
+            Text("🍎 🍎 🍎", font_size=40),
+            Text("- 5", font_size=40, color=RED),
+            Text("= ???", font_size=40, color=YELLOW),
+        ).arrange(RIGHT, buff=0.5)
+        visual1.shift(DOWN * 0.5)
 
         self.play(Write(problem1))
-        self.wait(1)
+        self.play(Write(visual1))
+        self.wait(2)
 
-        self.play(FadeOut(naturals), FadeOut(problem1), FadeOut(natural_title))
+        # Solution: negative numbers
+        solution1 = Text("Solution: Negative Numbers!", font_size=26, color=GREEN)
+        solution1.to_edge(DOWN, buff=1)
 
-        # Integers
-        int_title = Text("Integers (ℤ)", font_size=28, color=BLUE)
-        int_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(int_title))
+        result1 = MathTex(r"3 - 5 = -2", font_size=32, color=GREEN)
+        result1.next_to(visual1, DOWN, buff=0.5)
 
-        integers = MathTex(r"\mathbb{Z} = \\..., -2, -1, 0, 1, 2, ...\\", font_size=28)
-        integers.next_to(int_title, DOWN, buff=0.3)
-
-        self.play(Write(integers))
-
-        # Problem
-        problem2 = MathTex(r"2 \div 3 = ?", font_size=26, color=RED)
-        problem2.next_to(integers, DOWN, buff=0.5)
-
-        self.play(Write(problem2))
-        self.wait(1)
-
-        self.play(FadeOut(integers), FadeOut(problem2), FadeOut(int_title))
-
-        # Rational Numbers
-        rat_title = Text("Rational Numbers (ℚ)", font_size=28, color=YELLOW)
-        rat_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(rat_title))
-
-        rationals = MathTex(
-            r"\mathbb{Q} = \\left\\{ \\frac{p}{q} : p, q \in \mathbb{Z}, q \\neq 0 \\right\\}",
-            font_size=24,
-        )
-        rationals.next_to(rat_title, DOWN, buff=0.3)
-
-        self.play(Write(rationals))
-
-        # Problem
-        problem3 = MathTex(r"x^2 = 2", font_size=26, color=RED)
-        problem3.next_to(rationals, DOWN, buff=0.5)
-
-        sqrt2 = MathTex(r"\sqrt{2} \\notin \\mathbb{Q}", font_size=24, color=RED)
-        sqrt2.next_to(problem3, DOWN, buff=0.2)
-
-        self.play(Write(problem3))
-        self.play(Write(sqrt2))
-        self.wait(1)
-
-        self.play(
-            FadeOut(rationals), FadeOut(problem3), FadeOut(sqrt2), FadeOut(rat_title)
-        )
-
-        # Real Numbers
-        real_title = Text("Real Numbers (ℝ)", font_size=28, color=PURPLE)
-        real_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(real_title))
-
-        reals = MathTex(
-            r"\mathbb{R} = \\mathbb{Q} \\cup \\text{irrationals}", font_size=26
-        )
-        reals.next_to(real_title, DOWN, buff=0.3)
-
-        self.play(Write(reals))
-
-        # Problem
-        problem4 = MathTex(r"x^2 = -1", font_size=26, color=RED)
-        problem4.next_to(reals, DOWN, buff=0.5)
-
-        self.play(Write(problem4))
-        self.wait(1)
-
-        self.play(FadeOut(reals), FadeOut(problem4), FadeOut(real_title))
-
-        # Complex Numbers
-        complex_title = Text("Complex Numbers (ℂ)", font_size=28, color=ORANGE)
-        complex_title.next_to(title, DOWN, buff=0.5)
-        self.play(Write(complex_title))
-
-        complexes = MathTex(
-            r"\mathbb{C} = \\left\\{ a + bi : a, b \\in \\mathbb{R}, i^2 = -1 \\right\\}",
-            font_size=22,
-        )
-        complexes.next_to(complex_title, DOWN, buff=0.3)
-
-        self.play(Write(complexes))
-
-        # Complex plane visualization
-        plane = ComplexPlane(
-            x_range=[-2, 2, 1],
-            y_range=[-2, 2, 1],
-            background_line_style={"stroke_opacity": 0.4},
-        )
-        plane.scale(0.8)
-        plane.next_to(complexes, DOWN, buff=0.5)
-
-        # Show a complex number
-        z_point = Dot(plane.c2p(1, 1), color=YELLOW, radius=0.1)
-        z_label = MathTex(r"z = 1 + i", font_size=22).next_to(z_point, UR, buff=0.1)
-
-        self.play(Create(plane))
-        self.play(Create(z_point), Write(z_label))
+        self.play(Write(solution1))
+        self.play(FadeOut(visual1[2]))
+        self.play(Write(result1))
         self.wait(2)
 
         self.play(
-            FadeOut(plane),
-            FadeOut(z_point),
-            FadeOut(z_label),
-            FadeOut(complexes),
-            FadeOut(complex_title),
+            FadeOut(problem1), FadeOut(visual1), FadeOut(solution1), FadeOut(result1)
         )
 
-        # Tower visualization
-        tower_title = Text("The Tower of Number Systems:", font_size=28, color=GREEN)
-        tower_title.next_to(title, DOWN, buff=0.5)
+        # Second problem: sharing
+        problem2 = Text(
+            "Problem: Share 3 apples among 2 people", font_size=28, color=RED
+        )
+        problem2.shift(UP * 1)
+
+        apples2 = VGroup(
+            *[Circle(radius=0.2, color=RED, fill_opacity=0.8) for _ in range(3)]
+        )
+        apples2.arrange(RIGHT, buff=0.3)
+        apples2.shift(UP * 0.5)
+
+        people = VGroup(
+            Text("👤", font_size=50),
+            Text("👤", font_size=50),
+        ).arrange(RIGHT, buff=2)
+        people.shift(DOWN * 0.5)
+
+        self.play(Write(problem2))
+        self.play(*[Create(apple) for apple in apples2])
+        self.play(Write(people))
+        self.wait(2)
+
+        # Show the split
+        arrow1 = Arrow(apples2[0].get_bottom(), people[0].get_top(), color=YELLOW)
+        arrow2 = Arrow(apples2[1].get_bottom(), people[1].get_top(), color=YELLOW)
+        arrow3 = Arrow(
+            apples2[2].get_bottom(),
+            (people[0].get_top() + people[1].get_top()) / 2,
+            color=YELLOW,
+        )
+
+        self.play(Create(arrow1), Create(arrow2), Create(arrow3))
+
+        solution2 = Text("Solution: Fractions!", font_size=26, color=GREEN)
+        solution2.to_edge(DOWN, buff=1)
+
+        result2 = MathTex(r"3 \\div 2 = 1.5 = \\frac{3}{2}", font_size=32, color=GREEN)
+        result2.next_to(people, DOWN, buff=0.5)
+
+        self.play(Write(solution2))
+        self.play(Write(result2))
+        self.wait(2)
+
+        self.play(
+            FadeOut(problem2),
+            FadeOut(apples2),
+            FadeOut(people),
+            FadeOut(arrow1),
+            FadeOut(arrow2),
+            FadeOut(arrow3),
+            FadeOut(solution2),
+            FadeOut(result2),
+        )
+
+        # Third problem: diagonal of square
+        problem3 = Text("Problem: Diagonal of a 1×1 square", font_size=28, color=RED)
+        problem3.shift(UP * 1.5)
+
+        # Draw square
+        square = Square(side_length=2, color=BLUE)
+        square.shift(DOWN * 0.5)
+
+        # Diagonal
+        diagonal = Line(
+            square.get_corner(UL), square.get_corner(DR), color=YELLOW, stroke_width=3
+        )
+
+        # Labels
+        label1 = MathTex(r"1", font_size=24).next_to(square, LEFT)
+        label2 = MathTex(r"1", font_size=24).next_to(square, DOWN)
+        question = MathTex(r"?", font_size=28, color=YELLOW).next_to(
+            diagonal, UR, buff=0.2
+        )
+
+        self.play(Write(problem3))
+        self.play(Create(square))
+        self.play(Create(diagonal), Write(label1), Write(label2), Write(question))
+        self.wait(2)
+
+        # Show Pythagorean theorem
+        theorem = MathTex(r"1^2 + 1^2 = ?^2", font_size=28)
+        theorem.next_to(square, DOWN, buff=0.8)
+
+        result3 = MathTex(r"? = \\sqrt{2} \\approx 1.414...", font_size=28, color=GREEN)
+        result3.next_to(theorem, DOWN, buff=0.3)
+
+        solution3 = Text("Solution: Irrational Numbers!", font_size=26, color=GREEN)
+        solution3.to_edge(DOWN, buff=0.5)
+
+        self.play(Write(theorem))
+        self.play(Write(result3))
+        self.play(Write(solution3))
+        self.wait(2)
+
+        self.play(
+            FadeOut(problem3),
+            FadeOut(square),
+            FadeOut(diagonal),
+            FadeOut(label1),
+            FadeOut(label2),
+            FadeOut(question),
+            FadeOut(theorem),
+            FadeOut(result3),
+            FadeOut(solution3),
+        )
+
+        # Final problem: x² = -1 (already done in complex_numbers, so summarize)
+        problem4 = Text("Problem: x² = -1", font_size=32, color=RED)
+
+        visual4 = Text("No solution on the number line...", font_size=24)
+        visual4.shift(DOWN * 0.5)
+
+        solution4 = Text("Solution: Add a new dimension!", font_size=26, color=GREEN)
+        solution4.shift(DOWN * 1.5)
+
+        self.play(Write(problem4))
+        self.play(Write(visual4))
+        self.wait(1)
+        self.play(Write(solution4))
+        self.wait(2)
+
+        # Show the tower
+        self.play(FadeOut(problem4), FadeOut(visual4), FadeOut(solution4))
+
+        tower_title = Text("The Tower of Numbers", font_size=32, color=BLUE)
         self.play(Write(tower_title))
+        self.wait(0.5)
+        self.play(tower_title.animate.scale(0.7).to_edge(UP))
 
+        # Build the tower visually
         tower = VGroup(
-            MathTex(
-                r"\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R} \\subset \\mathbb{C}",
-                font_size=32,
-            ),
-            Text("Each solves equations the previous couldn't", font_size=20),
-        ).arrange(DOWN, buff=0.5)
-        tower.next_to(tower_title, DOWN, buff=0.5)
-
-        self.play(Write(tower[0]))
-        self.play(Write(tower[1]))
-        self.wait(3)
-
-        self.play(FadeOut(tower), FadeOut(tower_title))
-
-        # Summary
-        summary = VGroup(
-            Text("Number Systems", font_size=36, color=BLUE),
-            MathTex(
-                r"\\mathbb{N} \\to \\mathbb{Z} \\to \\mathbb{Q} \\to \\mathbb{R} \\to \\mathbb{C}",
-                font_size=28,
-            ),
-            Text("Each expansion enables new mathematics", font_size=24),
+            VGroup(
+                Text("ℕ", font_size=40, color=GREEN), Text("(counting)", font_size=18)
+            ).arrange(DOWN, buff=0.1),
+            VGroup(
+                Text("ℤ", font_size=40, color=BLUE), Text("(negative)", font_size=18)
+            ).arrange(DOWN, buff=0.1),
+            VGroup(
+                Text("ℚ", font_size=40, color=YELLOW), Text("(fractions)", font_size=18)
+            ).arrange(DOWN, buff=0.1),
+            VGroup(
+                Text("ℝ", font_size=40, color=PURPLE), Text("(complete)", font_size=18)
+            ).arrange(DOWN, buff=0.1),
+            VGroup(
+                Text("ℂ", font_size=40, color=ORANGE), Text("(complex)", font_size=18)
+            ).arrange(DOWN, buff=0.1),
         ).arrange(DOWN, buff=0.4)
+        tower.shift(DOWN * 0.5)
 
-        self.play(Write(summary))
+        for level in tower:
+            self.play(Write(level))
+            self.wait(0.3)
+
+        # Key insight
+        insight = Text(
+            "Each new level solves problems the previous couldn't",
+            font_size=24,
+            color=YELLOW,
+        )
+        insight.to_edge(DOWN, buff=0.8)
+
+        self.play(Write(insight))
         self.wait(3)
-        self.play(FadeOut(summary), FadeOut(title))
+
+        self.play(
+            FadeOut(tower),
+            FadeOut(insight),
+            FadeOut(tower_title),
+            FadeOut(title),
+        )

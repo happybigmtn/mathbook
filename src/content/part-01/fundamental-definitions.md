@@ -43,131 +43,191 @@ The Main Number Systems
 
 Almost always, the first mathematical concept that a child is exposed to is the idea of numbers, and numbers retain a central place in mathematics at all levels.
 
-I.3.   Some Fundamental Mathematical Definitions                                                                   17
+I.3.   Some Fundamental Mathematical Definitions
 
-However, it is not as easy as one might think to say       1.2   The Integers
+However, it is not as easy as one might think to say
 what the word “number” means: the more mathemat-
-                                                           The natural numbers are not the only whole numbers,
 ics one learns, the more uses of this word one comes
-                                                           since they do not include zero or negative numbers,
 to know, and the more sophisticated one’s concept of
-                                                           both of which are indispensable to mathematics. One
 number becomes. This individual development paral-
-                                                           of the first reasons for introducing zero was that it
 lels a historical development that took many centuries
-                                                           is needed for the normal decimal notation of positive
 (see from numbers to number systems [II.1](/part-02/from-numbers-to-number-systems)).
-                                                           integers—how else could one conveniently write 1005?
-   The modern view of numbers is that they are best        However, it is now thought of as much more than just
+   The modern view of numbers is that they are best
 regarded not individually but as parts of larger wholes,   a convenience, and the property that makes it signif-
-called number systems; the distinguishing features of      icant is that it is an additive identity, which means
-number systems are the arithmetical operations—such        that adding zero to any number leaves that number
+called number systems; the distinguishing features of
+number systems are the arithmetical operations—such
 as addition, multiplication, subtraction, division, and    unchanged. And while it is not particularly interest-
-extraction of roots—that can be performed on them.         ing to do to a number something that has no effect,
-This view of numbers is very fruitful and provides a       the property itself is interesting and distinguishes zero
+extraction of roots—that can be performed on them.
+This view of numbers is very fruitful and provides a
 springboard into abstract algebra. The rest of this sec-   from all other numbers. An immediate illustration of
-tion gives a brief description of the five main number      this is that it allows us to think about negative numbers:
-systems.                                                   if n is a positive integer, then the defining property of
-                                                           −n is that when you add it to n you get zero.
-1.1    The Natural Numbers                                    Some body with little mathematical experience may
-                                                           unthinkingly assume that numbers are for counting
-The natural numbers, otherwise known as the positive       and find negative numbers objectionable because the
+tion gives a brief description of the five main number
+systems.
+1.1    The Natural Numbers
+The natural numbers, otherwise known as the positive
 integers, are the numbers familiar even to young chil-     answer to a question beginning “How many” is never
 dren: 1, 2, 3, 4, and so on. It is the natural numbers     negative. However, simple counting is not the only use
-that we use for the very basic mathematical purpose        for numbers, and there are many situations that are
+that we use for the very basic mathematical purpose
 of counting. The set of all natural numbers is usually     naturally modeled by a number system that includes
-denoted N. (Some mathematicians prefer to include 0        both positive and negative numbers. For example, neg-
+denoted N. (Some mathematicians prefer to include 0
 as a natural number as well: for instance, this is the     ative numbers are some times used for the amount of
 usual convention in logic and set theory. Both conven-     money in a bank account, for temperature (in degrees
 tions are to be found in this book, but it should always   Celsius or Fahrenheit), and for altitude compared with
-be clear which one is being used.)                         sea level.
-  Of course, the phrase “1, 2, 3, 4, and so on” does not      The set of all integers—positive, negative, and zero—
+be clear which one is being used.)
+  Of course, the phrase “1, 2, 3, 4, and so on” does not
 constitute a formal definition, but it does suggest the     is usually denoted Z (for the German word “Zahlen,”
 following basic picture of the natural numbers, one that   meaning “numbers”). Within this system, subtraction
-we tend to take for granted.                               is always possible: that is, if m and n are integers, then
-                                                           so is m − n.
+we tend to take for granted.
   (i) Given any natural number n there is another, n+1,
-      that comes next—known as the success or of n.         1.3   The Rational Numbers
+
  (ii) A list that starts with 1 and follows each number    So far we have considered only whole numbers. If we
-      by its success or will include every natural number   form all possible fractions as well, then we obtain the
-      exactly once and nothing else.                       rational numbers. The set of all rational numbers is
-                                                           denoted Q (for “quotients”).
-This picture is encapsulated by the peano axioms             One of the main uses of numbers be sides counting is
-[III.67](/part-03/the-peano-axioms).                                                  measurement, and most quantities that we measure are
-  Given two natural numbers m and n one can add            ones that can vary continuously, such as length, weight,
+
+This picture is encapsulated by the peano axioms
+[III.67](/part-03/the-peano-axioms).
+  Given two natural numbers m and n one can add
 them together or multiply them, obtaining in each case     temperature, and velocity. For these, whole numbers
-a new natural number. By contrast, subtraction and         are inadequate.
-division are not always possible. If we want to give         A more theoretical justification for the rational num-
-                                           5
-meaning to expressions such as 8 − 13 or 7 , then we       bers is that they form a number system in which
-must work in a larger number system.                       division is always possible—except by zero. This fact,
+a new natural number. By contrast, subtraction and
+division are not always possible. If we want to give
+meaning to expressions such as 8 − 13 or 7 , then we
+must work in a larger number system.
 
-18                                                                                                       I. Introduction
+17
+1.2   The Integers
+The natural numbers are not the only whole numbers,
+since they do not include zero or negative numbers,
+both of which are indispensable to mathematics. One
+of the first reasons for introducing zero was that it
+is needed for the normal decimal notation of positive
+integers—how else could one conveniently write 1005?
+However, it is now thought of as much more than just
+icant is that it is an additive identity, which means
+that adding zero to any number leaves that number
+ing to do to a number something that has no effect,
+the property itself is interesting and distinguishes zero
+this is that it allows us to think about negative numbers:
+if n is a positive integer, then the defining property of
+−n is that when you add it to n you get zero.
+Some body with little mathematical experience may
+unthinkingly assume that numbers are for counting
+and find negative numbers objectionable because the
+for numbers, and there are many situations that are
+both positive and negative numbers. For example, neg-
+sea level.
+The set of all integers—positive, negative, and zero—
+is always possible: that is, if m and n are integers, then
+so is m − n.
+that comes next—known as the success or of n.
+by its success or will include every natural number   form all possible fractions as well, then we obtain the
+exactly once and nothing else.
+denoted Q (for “quotients”).
+One of the main uses of numbers be sides counting is
+measurement, and most quantities that we measure are
+ones that can vary continuously, such as length, weight,
+are inadequate.
+A more theoretical justification for the rational num-
+5
+bers is that they form a number system in which
+division is always possible—except by zero. This fact,
 
-together with some basic properties of the arithmetical           The set of all real numbers is denoted R. A more
-operations, means that Q is a field. What fields are and          abstract view of R is that it is an extension of the
-why they are important will be explained in more detail         rational number system to a larger field, and in fact the
-later (section 2.2).                                            only one possible in which processes of the above kind
-                                                                always give rise to numbers that themselves belong
-1.4   The Real Numbers                                          to R.
-A famous discovery of the ancient Greeks, often attrib-           Because real numbers are intimately connected with
-uted, despite very inadequate evidence, to the school           the idea of limits (of successive approximations), a true
-of pythagoras [VI.1](/part-06/pythagoras-ca), was that the square root of 2 is          appreciation of the real number system depends on an
-not a rational number. That is, there is no fraction p/q        understanding of mathematical analysis, which will be
-such that (p/q)2 = 2. The Pythagorean theorem about             discussed in section 5.
+18
+
+together with some basic properties of the arithmetical
+operations, means that Q is a field. What fields are and
+why they are important will be explained in more detail
+later (section 2.2).
+1.4   The Real Numbers
+A famous discovery of the ancient Greeks, often attrib-
+uted, despite very inadequate evidence, to the school
+of pythagoras [VI.1](/part-06/pythagoras-ca), was that the square root of 2 is
+not a rational number. That is, there is no fraction p/q
+such that (p/q)2 = 2. The Pythagorean theorem about
 right-angled triangles (which was probably known at
-least a thousand years before Pythagoras) tells us that         1.5   The Complex Numbers
+least a thousand years before Pythagoras) tells us that
 if a square has sides of length 1, then the length of
-                  √                                             Many polynomial equations, such as the equation x 2 =
+
 its diagonal is 2. Consequently, there are lengths that
-                                                                2, do not have rational solutions but can be solved in R.
 cannot be measured by rational numbers.
-                                                                However, there are many other equations that cannot
    This argument seems to give strong practical reasons
-                                                                be solved even in R. The simplest example is the equa-
 for extending our number system still further. How-
-                                                                tion x 2 = −1, which has no real solution since the
 ever, such a conclusion can be resisted: after all, we
-                                                                square of any real number is positive or zero. In order
 cannot make any measurements with infinite precision,
-                                                                to get around this problem, mathematicians introduce
 so in practice we round off to a certain number of dec-
-                                                                a symbol, i, which they treat as a number, and they sim-
 imal places, and as soon as we have done so we have
-                                                                ply stipulate that i2 is to be regarded as equal to −1.
 presented our measurement as a rational number. (This
-                                                                The complex number system, denoted C, is the set of all
 point is discussed more fully in numerical analysis
-                                                                numbers of the form a+bi, where a and b are real num-
 [IV.21](/part-04/numerical-analysis).)
-                                                                bers. To add or multiply complex numbers, one treats i
    Nevertheless, the theoretical arguments for going
-beyond the rational numbers are irresistible. If we             as a variable (like x, say), but any occurrences of i2 are
-want to solve polynomial equations, take logarithms             replaced by −1. Thus,
-[III.25 §4](/part-03/the-exponential-and-logarithmic-functions), do trigonometry, or work with the gauss-                   (a + bi) + (c + di) = (a + c) + (b + d)i
+beyond the rational numbers are irresistible. If we
+want to solve polynomial equations, take logarithms
+[III.25 §4](/part-03/the-exponential-and-logarithmic-functions), do trigonometry, or work with the gauss-
 ian distribution [III.71 §5](/part-03/probability-distributions), to give just four exam-
-                                                                and
 ples from an almost end less list, then irrational num-
-bers will appear every where we look. They are not used                (a + bi)(c + di) = ac + bci + adi + bdi 2
-directly for the purposes of measurement, but they are                                 = (ac − bd) + (bc + ad)i.
+bers will appear every where we look. They are not used
+directly for the purposes of measurement, but they are
 needed if we want to reason theoretically about the
-physical world by describing it mathematically. This               There are several remarkable points to note about
-necessarily involves a certain amount of idealization:          this definition. First, despite its apparently artificial
-it is far more convenient to say that the length of the         nature, it does not lead to any inconsistency. Secondly,
-                                 √
-diagonal of a unit square is 2 than it is to talk about         although complex numbers do not directly count or
-what would be observed, and with what degree of cer-            measure anything, they are immensely useful. Thirdly,
-tainty, if one tried to measure this length as accurately       and perhaps most surprisingly, even though the num-
-as possible.                                                    ber i was introduced to help us solve just one equa-
-   The real numbers can be thought of as the set of             tion, it in fact allows us to solve all polynomial equa-
-all numbers with a finite or infinite decimal expansion.          tions. This is the famous fundamental theorem of
-In the latter case, they are defined not directly but by         algebra [V.13](/part-05/the-fundamental-theorem-of-algebra).
-a process of successive approximation. For example,                One explanation for the utility of complex numbers
-the squares of the numbers 1, 1.4, 1.41, 1.414, 1.4142,         is that they provide a concise way to talk about many
+physical world by describing it mathematically. This
+necessarily involves a certain amount of idealization:
+it is far more convenient to say that the length of the
+diagonal of a unit square is 2 than it is to talk about
+what would be observed, and with what degree of cer-
+tainty, if one tried to measure this length as accurately
+as possible.
+   The real numbers can be thought of as the set of
+all numbers with a finite or infinite decimal expansion.
+In the latter case, they are defined not directly but by
+a process of successive approximation. For example,
+the squares of the numbers 1, 1.4, 1.41, 1.414, 1.4142,
 1.41421, . . . , get as close as you like to 2, if you go far   aspects of geometry, via Argand diagrams. These rep-
-enough along the sequence, which is what we mean by             resent complex numbers as points in the plane, the
-saying that the square root of 2 is the infinite decimal         number a+bi corresponding to the point with coordin-
-                                                                                     . qrt{1}.41421 . . . .                                                 ates (a, b). If r = a2 + b2 and θ = tan−1 (b/a), then
+enough along the sequence, which is what we mean by
+saying that the square root of 2 is the infinite decimal
+1.41421 . . . .
+
+I. Introduction
+The set of all real numbers is denoted R. A more
+abstract view of R is that it is an extension of the
+rational number system to a larger field, and in fact the
+only one possible in which processes of the above kind
+always give rise to numbers that themselves belong
+to R.
+Because real numbers are intimately connected with
+the idea of limits (of successive approximations), a true
+appreciation of the real number system depends on an
+understanding of mathematical analysis, which will be
+discussed in section 5.
+1.5   The Complex Numbers
+. qrt{2}, do not have rational solutions but can be solved in R.
+However, there are many other equations that cannot
+be solved even in R. The simplest example is the equa-
+tion x 2 = −1, which has no real solution since the
+square of any real number is positive or zero. In order
+to get around this problem, mathematicians introduce
+a symbol, i, which they treat as a number, and they sim-
+ply stipulate that i2 is to be regarded as equal to −1.
+The complex number system, denoted C, is the set of all
+numbers of the form a+bi, where a and b are real num-
+bers. To add or multiply complex numbers, one treats i
+as a variable (like x, say), but any occurrences of i2 are
+replaced by −1. Thus,
+(a + bi) + (c + di) = (a + c) + (b + d)i
+and
+(a + bi)(c + di) = ac + bci + adi + bdi 2
+= (ac − bd) + (bc + ad)i.
+There are several remarkable points to note about
+this definition. First, despite its apparently artificial
+nature, it does not lead to any inconsistency. Secondly,
+√
+although complex numbers do not directly count or
+measure anything, they are immensely useful. Thirdly,
+and perhaps most surprisingly, even though the num-
+ber i was introduced to help us solve just one equa-
+tion, it in fact allows us to solve all polynomial equa-
+tions. This is the famous fundamental theorem of
+algebra [V.13](/part-05/the-fundamental-theorem-of-algebra).
+One explanation for the utility of complex numbers
+is that they provide a concise way to talk about many
+resent complex numbers as points in the plane, the
+number a+bi corresponding to the point with coordin-
+√
+ates (a, b). If r = a2 + b2 and θ = tan−1 (b/a), then
 
 $I$ . $3$ .
 
@@ -196,7 +256,7 @@ $19$
 More formally, a symmetry of S is a function f from S to itself such that the distance between any two points $x$ and $y$ of S is the same as the distance between the transformed points f (x) and f (y). This idea can be hugely generalized: if S is any mathematical structure, then a symmetry of S is a function from S to itself that preserves its structure. If S is a geometrical shape, then the mathematical structure that should be preserved is the distance between any two of its points.
 But there are many other mathematical structures that a function may be asked to preserve, most notably algebraic structures of the kind that will soon be discussed. It is fruitful to draw an analogy with the geometrical situation and regard any structure-preserving function as a sort of symmetry. Because of its extreme generality, symmetry is an all pervasive concept within mathematics; and wherever symmetries appear, structures known as groups follow close behind.
 To explain what these are and why they appear, let us return to the example of an equilateral triangle, which has, as it turns out, six possible symmetries. Why is this? Well, let f be a symmetry of an equilateral triangle with vertices A, B, and C and suppose for convenience that this triangle has sides of length $1$ . Then f (A), f (B), and f (C) must be three points of the triangle and the distances between these points must all be $1$ .
-It follows that f (A), f (B), and f (C) are distinct vertices of the triangle, since the furthest apart any two points can be is $1$ and this happens only when the two points are distinct vertices. So f (A), f (B), and f (C) are the vertices A, B, and C in some order. But the number of possible orders of A, B, and C is $6$ . It is not hard to show that, once we have chosen f (A) , f (B), and f (C), the rest of what f does is completely determined. (For example, if X is the midpoint of A and C, then f (X) must be the midpoint of f (A) and f (C) since there is
+It follows that f (A), f (B), and f (C) are distinct vertices of the triangle, since the furthest apart any two points can be is $1$ and this happens only when the two points are distinct vertices. So f (A), f (B), and f (C) are the vertices A, B, and C in some order. But the number of possible orders of A, B, and C is $6$ . It is not hard to show that, once we have chosen f (A), f (B), and f (C), the rest of what f does is completely determined. (For example, if X is the midpoint of A and C, then f (X) must be the midpoint of f (A) and f (C) since there is
 
 $1$
 
@@ -216,59 +276,103 @@ However, a very general rule when defining mathematical structures is that if a 
 Having listed these properties, one may then view the whole situation abstractly by regarding the properties as axioms and saying that a field is any set with two binary operations that satisfy all those axioms. However, when one works in a field, one usually thinks of the axioms not as a list of statements but rather as a general license to do all the algebraic manipulations that one can do when talking about rational, real, and complex numbers.
 Clearly, the more axioms one has, the harder it is to find a mathematical structure that satisfies them, and it is indeed the case that fields are harder to come by than groups. For this reason, the best way to understand fields is probably to concentrate on examples. In addition to Q , R , and C , one other field stands out as fundamental, namely F p , which is the set of integers modulo a prime p, with addition and multiplication also defined modulo p (see modular arithmetic [III.58](/part-03/modular-arithmetic)) .
 
-I.3.   Some Fundamental Mathematical Definitions                                                                      21
+I.3.   Some Fundamental Mathematical Definitions
 
-   What makes fields interesting, however, is not so          and (0, 1). Then every point in the plane is a so-called
-much the existence of these basic examples as the fact       linear combination ax + by of the basis vectors x and
-that there is an important process of extension that         y. To interpret the expression ax + by, first rewrite
-allows one to build new fields out of old ones. The idea      it as a(1, 0) + b(0, 1). Then a times the unit vector
-is to start with a field F, find a polynomial P that has       (1, 0) is (a, 0) and b times the unit vector (0, 1) is
-no roots in F, and “adjoin” a new element to F with          (0, b) and when you add (a, 0) and (0, b) coordinate
+   What makes fields interesting, however, is not so
+much the existence of these basic examples as the fact
+that there is an important process of extension that
+allows one to build new fields out of old ones. The idea
+is to start with a field F, find a polynomial P that has
+no roots in F, and “adjoin” a new element to F with
 the stipulation that it is a root of P . This produces an    by coordinate you get the vector (a, b).
-extended field F , which consists of everything that one         Here is another situation where linear combinations
-can produce from this root and from elements of F            appear. Suppose you are presented with the differential
-using addition and multiplication.                           equation (d2 y/dx 2 ) + y = 0, and happen to know (or
-   We have already seen an important example of this         notice) that y = sin x and y = cos x are two possible
-process: in the field R, the polynomial P (x) = x 2 + 1       solutions. Then you can easily check that y = a sin x +
-has no root, so we adjoined the element i and let C be       b cos x is a solution for any pair of numbers a and b.
-the field of all combinations of the form a + bi.             That is, any linear combination of the existing solutions
+extended field F , which consists of everything that one
+can produce from this root and from elements of F
+using addition and multiplication.
+   We have already seen an important example of this
+process: in the field R, the polynomial P (x) = x 2 + 1
+has no root, so we adjoined the element i and let C be
+the field of all combinations of the form a + bi.
    We can apply exactly the same process to the field F3 ,    sin x and cos x is another solution. It turns out that all
 in which again the equation x 2 + 1 = 0 has no solution.     solutions are of this form, so we can regard sin x and
-If we do so, then we obtain a new field, which, like C,       cos x as “basis vectors” for the “space” of solutions of
-consists of all combinations of the form a+bi, but now       the differential equation.
-a and b belong to F3 . Since F3 has three elements, this        Linear combinations occur in many many contexts
-new field has nine elements. Another example is the           through out mathematics. To give one more example,
-        √
-field Q( 2), which consists of all numbers of the form        an arbitrary polynomial of degree 3 has the form
-      . qrt{a} + b 2, where now a and b are rational numbers. A           ax3 + bx 2 + cx + d, which is a linear combination of
-slightly more complicated example is Q(γ), where γ is        the four basic polynomials 1, x, x 2 , and x 3 .
-a root of the polynomial x 3 − x − 1. A typical element         A vector space is a mathematical structure in which
+If we do so, then we obtain a new field, which, like C,
+consists of all combinations of the form a+bi, but now
+a and b belong to F3 . Since F3 has three elements, this
+new field has nine elements. Another example is the
+
+field Q( 2), which consists of all numbers of the form
+
+a + b 2, where now a and b are rational numbers. A
+slightly more complicated example is Q(γ), where γ is
+a root of the polynomial x 3 − x − 1. A typical element
 of this field has the form a + bγ + cγ 2 , with a, b, and c   the notion of linear combination makes sense. The
 rational. If one is doing arithmetic in Q(γ), then when-     objects that belong to the vector space are usually
-ever γ 3 appears, it can be replaced by γ + 1 (because       called vectors, unless we are talking about a specific
+ever γ 3 appears, it can be replaced by γ + 1 (because
 γ 3 − γ − 1 = 0), just as i2 can be replaced by −1 in the    example and are thinking of them as concrete objects
-complex numbers. For more on why field extensions             such as polynomials or solutions of a differential equa-
-are interesting, see the discussion of automorphisms         tion. Slightly more formally, a vector space is a set V
-in section 4.1.                                              such that, given any two vectors v and w (that is, ele-
+complex numbers. For more on why field extensions
+are interesting, see the discussion of automorphisms
+in section 4.1.
    A second very significant justification for introducing     ments of V ) and any two real numbers a and b, we can
-fields is that they can be used to form vector spaces,        form the linear combination av + bw.
-and it is to these that we now turn.                            Notice that this linear combination involves objects
-                                                             of two different kinds, the vectors v and w and the
-2.3    Vector Spaces                                         numbers a and b. The latter are known as scalars. The
-                                                             operation of forming linear combinations can be bro-
-One of the most convenient ways to represent points          ken up into two constituent parts: addition and scalar
+fields is that they can be used to form vector spaces,
+and it is to these that we now turn.
+2.3    Vector Spaces
+One of the most convenient ways to represent points
 in a plane that stretches out to infinity in all directions   multiplication. To form the combination av + bw, first
-is to use Cartesian coordinates. One chooses an origin       multiply the vectors v and w by the scalars a and
-and two directions X and Y , usually at right angles to      b, obtaining the vectors av and bw, and then add
-each other. Then the pair of numbers (a, b) stands for       these resulting vectors to obtain the full combination
-the point you reach in the plane if you go a distance a      av + bw.
-in direction X and a distance b in direction Y (where if        The definition of linear combination must obey cer-
-a is a negative number such as −2, this is interpreted       tain natural rules. Addition of vectors must be commu-
-as going a distance +2 in the opposite direction to X,       tative and associative, with an identity (the zero vector )
-and similarly for b).                                        and an inverse for each v (written −v). Scalar multipli-
-   Another way of saying the same thing is this. Let x       cation must obey a sort of associative law, namely that
+is to use Cartesian coordinates. One chooses an origin
+and two directions X and Y , usually at right angles to
+each other. Then the pair of numbers (a, b) stands for
+the point you reach in the plane if you go a distance a
+in direction X and a distance b in direction Y (where if
+a is a negative number such as −2, this is interpreted
+as going a distance +2 in the opposite direction to X,
+and similarly for b).
+   Another way of saying the same thing is this. Let x
 and y stand for the unit vectors in directions X and Y ,     a(bv) and (ab)v are always equal. We also need two
-respectively, so their Cartesian coordinates are (1, 0)      distributive laws: (a + b)v = av + bv and a(v + w) =
+respectively, so their Cartesian coordinates are (1, 0)
+
+21
+and (0, 1). Then every point in the plane is a so-called
+linear combination ax + by of the basis vectors x and
+y. To interpret the expression ax + by, first rewrite
+it as a(1, 0) + b(0, 1). Then a times the unit vector
+(1, 0) is (a, 0) and b times the unit vector (0, 1) is
+(0, b) and when you add (a, 0) and (0, b) coordinate
+Here is another situation where linear combinations
+appear. Suppose you are presented with the differential
+equation (d2 y/dx 2 ) + y = 0, and happen to know (or
+notice) that y = sin x and y = cos x are two possible
+solutions. Then you can easily check that y = a sin x +
+b cos x is a solution for any pair of numbers a and b.
+That is, any linear combination of the existing solutions
+cos x as “basis vectors” for the “space” of solutions of
+the differential equation.
+Linear combinations occur in many many contexts
+through out mathematics. To give one more example,
+√
+an arbitrary polynomial of degree 3 has the form
+√
+ax3 + bx 2 + cx + d, which is a linear combination of
+the four basic polynomials 1, x, x 2 , and x 3 .
+A vector space is a mathematical structure in which
+called vectors, unless we are talking about a specific
+such as polynomials or solutions of a differential equa-
+tion. Slightly more formally, a vector space is a set V
+such that, given any two vectors v and w (that is, ele-
+form the linear combination av + bw.
+Notice that this linear combination involves objects
+of two different kinds, the vectors v and w and the
+numbers a and b. The latter are known as scalars. The
+operation of forming linear combinations can be bro-
+ken up into two constituent parts: addition and scalar
+multiply the vectors v and w by the scalars a and
+b, obtaining the vectors av and bw, and then add
+these resulting vectors to obtain the full combination
+av + bw.
+The definition of linear combination must obey cer-
+tain natural rules. Addition of vectors must be commu-
+tative and associative, with an identity (the zero vector )
+and an inverse for each v (written −v). Scalar multipli-
+cation must obey a sort of associative law, namely that
+distributive laws: (a + b)v = av + bv and a(v + w) =
 
 $22$
 
@@ -291,133 +395,199 @@ Creating New Structures Out of Old Ones
 
 An important first step in understanding the definition of some mathematical structure is to have a supply of examples. With out examples, a definition is dry and
 
-I.3.   Some Fundamental Mathematical Definitions                                                                       23
+I.3.   Some Fundamental Mathematical Definitions
 
-abstract. With them, one begins to have a feeling for         such as the commutativity and associativity of addition
-the structure that its definition alone cannot usually         and multiplication are then true in Q(i) for the simple
-provide.                                                      reason that they are true in the larger set C.
-   One reason for this is that it makes it much easier          Even though Q(i) is contained in C, it is a more inter-
-to answer basic questions. If you have a general state-       esting field in some important ways. But how can this
-ment about structures of a given type and want to know        be? Surely, one might think, an object cannot become
+abstract. With them, one begins to have a feeling for
+the structure that its definition alone cannot usually
+provide.
+   One reason for this is that it makes it much easier
+to answer basic questions. If you have a general state-
+ment about structures of a given type and want to know
 whether it is true, then it is very helpful if you can test   more interesting when most of it is taken away. But a
-it in a wide range of particular cases. If it passes all      moment’s further thought shows that it certainly can:
-the tests, then you have some evidence in favor of the        for example, the set of all prime numbers contains fas-
-statement. If you are lucky, you may even be able to see      cin at ing mysteries of a kind that one does not expect
+it in a wide range of particular cases. If it passes all
+the tests, then you have some evidence in favor of the
+statement. If you are lucky, you may even be able to see
 why it is true; alternatively, you may find that the state-    to encounter in the set of all positive integers. As for
-ment is true for each example you try, but always for         fields, the fundamental theorem of algebra [V.13](/part-05/the-fundamental-theorem-of-algebra)
-reasons that depend on particular features of the exam-       tells us that every polynomial equation has a solution
-ple you are examining. Then you will know that you            in C. This is very definitely not true in Q(i). So in Q(i),
-should try to avoid these features if you want to find a       and in many other fields of a similar kind, we can ask
-counterexample. If you do find a counterexample, then          which polynomial equations have solutions. This turns
-the general statement is false, but it may still happen       out to be a deep and important question that simply
-that a modification to the statement is true and useful.       does not arise in the larger field C.
-In that case, the counterexample will help you to find           In general, given an example X of an algebraic struc-
-an appropriate modification.                                   ture, a substructure of X is a subset Y that has rel-
-   The moral, then, is that examples are important. So        evant closure properties. For instance, groups have
-how does one find them? There are two completely dif-          subgroups, vector spaces have subspaces, rings have
-ferent approaches. One is to build them from scratch.         subrings (and also ideals [III.81](/part-03/rings-ideals-and-modules)), and so on. If the
-For example, one might define a group G to be the              property defining the substructure Y is a sufficiently
-group of all symmetries of an icosahedron. Another,           interesting one, then Y may well be significantly differ-
-which is the main topic of this section, is to take some      ent from X and may therefore be a useful addition to
-examples that have already been constructed and build         one’s stock of examples.
-new ones out of them. For instance, the group Z2 ,              This discussion has focused on algebra, but interest-
+ment is true for each example you try, but always for
+reasons that depend on particular features of the exam-
+ple you are examining. Then you will know that you
+should try to avoid these features if you want to find a
+counterexample. If you do find a counterexample, then
+the general statement is false, but it may still happen
+that a modification to the statement is true and useful.
+In that case, the counterexample will help you to find
+an appropriate modification.
+   The moral, then, is that examples are important. So
+how does one find them? There are two completely dif-
+ferent approaches. One is to build them from scratch.
+For example, one might define a group G to be the
+group of all symmetries of an icosahedron. Another,
+which is the main topic of this section, is to take some
+examples that have already been constructed and build
+new ones out of them. For instance, the group Z2 ,
 which consists of all pairs of integers (x, y), with addi-    ing substructures abound in analysis and geometry as
-tion defined by the obvious rule (x, y) + (x , y ) =           well. For example, the plane R2 is not a particularly
-(x + x , y + y ), is a “product” of two copies of the         interesting set, but it has subsets, such as the mandel-
-group Z. As we shall see, this notion of product is very      brot set [IV.14 §2.8](/part-04/dynamics), to give just one example, that are
-general and can be applied in many other contexts. But        still far from fully understood.
+tion defined by the obvious rule (x, y) + (x , y ) =
+(x + x , y + y ), is a “product” of two copies of the
+group Z. As we shall see, this notion of product is very
+general and can be applied in many other contexts. But
 first let us look at an even more basic method of finding
-new examples.                                                 3.2   Products
+new examples.
 
-3.1    Substructures                                          Let G and H be two groups. The product group G . imes H
-                                                              has as its elements all pairs of the form (g, h) such
+3.1    Substructures
 As we saw earlier, the set C of all complex numbers,
-                                                              that g belongs to G and h belongs to H. This definition
 with the operations of addition and multiplication,
-                                                              shows how to build the elements of G . imes H out of the
 forms one of the most basic examples of a field. It
-                                                              elements of G and the elements of H. But to define a
 also contains many subfields: that is, subsets that them-
-                                                              group we need to do more: we are given binary oper-
 selves form fields. Take, for example, the set Q(i) of all
-                                                              ations on G and H and we must use them to build a
 complex numbers of the form a + bi for which a and
-                                                              binary operation on G . imes H. If g1 and g2 are elements of
 b are rational. This is a subset of C and is also a field.
-                                                              G, let us write g1 g2 for the result of applying G’s binary
 To show this, one must prove that Q(i) is closed under
-                                                              operation to them, as is customary, and let us do the
 addition, multiplication, and the taking of inverses.
-                                                              same for H. Then there is an obvious binary operation
 That is, if z and w are elements of Q(i), then z + w
-                                                              we can define on the pairs, namely
 and zw must be as well, as must −z and 1/z (this
-last requirement applying only when z = 0). Axioms                       (g1 , h1 )(g2 , h2 ) = (g1 g2 , h1 h2 ).
+last requirement applying only when z = 0). Axioms
 
-24                                                                                                             I. Introduction
+23
+such as the commutativity and associativity of addition
+and multiplication are then true in Q(i) for the simple
+reason that they are true in the larger set C.
+Even though Q(i) is contained in C, it is a more inter-
+esting field in some important ways. But how can this
+be? Surely, one might think, an object cannot become
+moment’s further thought shows that it certainly can:
+for example, the set of all prime numbers contains fas-
+cin at ing mysteries of a kind that one does not expect
+fields, the fundamental theorem of algebra [V.13](/part-05/the-fundamental-theorem-of-algebra)
+tells us that every polynomial equation has a solution
+in C. This is very definitely not true in Q(i). So in Q(i),
+and in many other fields of a similar kind, we can ask
+which polynomial equations have solutions. This turns
+out to be a deep and important question that simply
+does not arise in the larger field C.
+In general, given an example X of an algebraic struc-
+ture, a substructure of X is a subset Y that has rel-
+evant closure properties. For instance, groups have
+subgroups, vector spaces have subspaces, rings have
+subrings (and also ideals [III.81](/part-03/rings-ideals-and-modules)), and so on. If the
+property defining the substructure Y is a sufficiently
+interesting one, then Y may well be significantly differ-
+ent from X and may therefore be a useful addition to
+one’s stock of examples.
+This discussion has focused on algebra, but interest-
+well. For example, the plane R2 is not a particularly
+interesting set, but it has subsets, such as the mandel-
+brot set [IV.14 §2.8](/part-04/dynamics), to give just one example, that are
+still far from fully understood.
+3.2   Products
+Let G and H be two groups. The product group G . imes H
+has as its elements all pairs of the form (g, h) such
+that g belongs to G and h belongs to H. This definition
+shows how to build the elements of G . imes H out of the
+elements of G and the elements of H. But to define a
+group we need to do more: we are given binary oper-
+ations on G and H and we must use them to build a
+binary operation on G . imes H. If g1 and g2 are elements of
+G, let us write g1 g2 for the result of applying G’s binary
+operation to them, as is customary, and let us do the
+same for H. Then there is an obvious binary operation
+we can define on the pairs, namely
+(g1 , h1 )(g2 , h2 ) = (g1 g2 , h1 h2 ).
 
-That is, one applies the binary operation from G to the         every symmetry can be written in the form T i R j , where
-first coordinate and the binary operation from H to the          i is 0, 1, 2, or 3 and j is 0 or 1. (Geometrically, this says
-second.                                                         that you can produce any symmetry by either rotat-
-   One can form products of vector spaces in a very sim-        ing through a multiple of 90◦ or reflecting and then
-ilar way. If V and W are two vector spaces, then the ele-       rotating.)
-ments of V . imes W are all pairs of the form (v, w) with               This suggests that we might be able to regard D4 as
-v in V and w in W . Addition and scalar multiplication          a product of the group {I, T , T 2 , T 3 }, consisting of four
-are defined by the formulas                                      rotations, with the group {I, R}, consisting of the iden-
-         (v1 , w1 ) + (v2 , w2 ) = (v1 + v2 , w1 + w2 )         tity I and the reflection R. We could even write (T i , Rj )
-                                                                instead of T i R j . However, we have to be careful. For
-and                                                             instance, (T R)(T R) does not equal T 2 R 2 = T 2 but I.
-                      λ(v, w) = (. ambda v, . ambda w).                       The correct rule for multiplication can be deduced from
-                                                                the fact that RT R = T −1 (which in geometrical terms is
-The dimension of the resulting space is the sum of the
-                                                                saying that if you reflect the square, rotate it counter-
-dimensions of V and W . (It is actually more usual to
-                                                                clockwise through 90◦ , and reflect back, then the result
-denote this space by V ⊕ W and call it the direct sum of
-                                                                is a clockwise rotation through 90◦ ). It turns out to be
-V and W . Nevertheless, it is a product construction.)
-                                                                                                           j
-  It is not always possible to define product structures                  (T i , Rj )(T i , Rj ) = (T i+(−1) i , R j+j ).
-in this simple way. For example, if F and F are two             For example, the product of (T , R) with (T 3 , R) is
-fields, we might be tempted to define a “product field”            T −2 R 2 , which equals T 2 .
-F . imes F using the formulas
-                                                                  This is a simple example of a “semidirect product” of
-         (x1 , y1 ) + (x2 , y2 ) = (x1 + x2 , y1 + y2 )         two groups. In general, given two groups G and H, there
-                                                                may be several interesting ways of defining a binary
+24
+
+That is, one applies the binary operation from G to the
+first coordinate and the binary operation from H to the
+second.
+   One can form products of vector spaces in a very sim-
+ilar way. If V and W are two vector spaces, then the ele-
+ments of V . imes W are all pairs of the form (v, w) with
+v in V and w in W . Addition and scalar multiplication
+are defined by the formulas
+
 and
-                                                                operation on the set of pairs (g, h), and therefore
-            (x1 , y1 )(x2 , y2 ) = (x1 x2 , y1 y2 ).            several potentially interesting new groups.
+The dimension of the resulting space is the sum of the
+dimensions of V and W . (It is actually more usual to
+denote this space by V ⊕ W and call it the direct sum of
+V and W . Nevertheless, it is a product construction.)
+  It is not always possible to define product structures
+in this simple way. For example, if F and F are two
+fields, we might be tempted to define a “product field”
+F . imes F using the formulas
+
+and
+
 However, this definition does not give us a field. Most
-of the axioms hold, including the existence of additive         3.3   Quotients
-and multiplicative identities—they are (0, 0) and (1, 1),       Let us write Q[x] for the set of all polynomials in the
-respectively—but the nonzero element (1, 0) does not            variable x with rational coefficients: that is, expres-
-have a multiplicative inverse, since the product of (1, 0)      sions like 2 x 4 − 32 x + 6. Any two such polynomials
+of the axioms hold, including the existence of additive
+and multiplicative identities—they are (0, 0) and (1, 1),
+respectively—but the nonzero element (1, 0) does not
+have a multiplicative inverse, since the product of (1, 0)
 and (x, y) is (x, 0), which can never equal (1, 1).
-                                                                can be added, subtracted, or multiplied together and
   Occasionally we can define more complicated binary
-                                                                the result will be another polynomial. This makes Q[x]
 operations that do make the set F . imes F into a field. For
-                                                                into a commutative ring, but not a field, because if you
 instance, if F = F = R, then we can define addition as
-                                                                divide one polynomial by another then the result is not
 above but define multiplication in a less obvious way
-                                                                (necessarily) a polynomial.
 as follows:
-                                                                  We will now convert Q[x] into a field in what may at
      (x1 , y1 )(x2 , y2 ) = (x1 x2 − y1 y2 , x1 y2 + x2 y1 ).   first seem a rather strange way: by regarding the poly-
-Then we obtain C, the field of complex numbers, since            nomial x 3 − x − 1 as “equivalent” to the zero polyno-
-the pair (x, y) can be identified with the complex num-          mial. To put this another way, whenever a polynomial
-ber x + iy. However, this is not a product field in the          involves x 3 we will allow ourselves to replace x 3 by
-general sense we are discussing.                                x+1, and we will regard the new polynomial that results
-   Returning to groups, what we defined earlier was the          as equivalent to the old one. For example, writing “∼”
-direct product of G and H. However, there are other,            for “is equivalent to”:
-more complicated products of groups, which can be                        x 5 = x 3 x 2 ∼ (x + 1)x 2 = x 3 + x 2
+Then we obtain C, the field of complex numbers, since
+the pair (x, y) can be identified with the complex num-
+ber x + iy. However, this is not a product field in the
+general sense we are discussing.
+   Returning to groups, what we defined earlier was the
+direct product of G and H. However, there are other,
+more complicated products of groups, which can be
 used to give a much richer supply of examples. To illus-
-                                                                                      ∼ x + 1 + x 2 = x 2 + x + 1.
 trate this, let us consider the dihedral group D4 , which
-is the group of all symmetries of a square, of which            Notice that in this way we can convert any polynomial
-there are eight. If we let R stand for one of the reflec-        into one of degree at most 2, since whenever the degree
-tions and T for a counter clockwise quarter turn, then           is higher, you can reduce it by taking out x 3 from the
+is the group of all symmetries of a square, of which
+there are eight. If we let R stand for one of the reflec-
+tions and T for a counter clockwise quarter turn, then
+
+I. Introduction
+every symmetry can be written in the form T i R j , where
+i is 0, 1, 2, or 3 and j is 0 or 1. (Geometrically, this says
+that you can produce any symmetry by either rotat-
+ing through a multiple of 90◦ or reflecting and then
+rotating.)
+This suggests that we might be able to regard D4 as
+a product of the group {I, T , T 2 , T 3 }, consisting of four
+rotations, with the group {I, R}, consisting of the iden-
+(v1 , w1 ) + (v2 , w2 ) = (v1 + v2 , w1 + w2 )
+instead of T i R j . However, we have to be careful. For
+instance, (T R)(T R) does not equal T 2 R 2 = T 2 but I.
+λ(v, w) = (. ambda v, . ambda w).                       The correct rule for multiplication can be deduced from
+the fact that RT R = T −1 (which in geometrical terms is
+saying that if you reflect the square, rotate it counter-
+clockwise through 90◦ , and reflect back, then the result
+is a clockwise rotation through 90◦ ). It turns out to be
+j
+(T i , Rj )(T i , Rj ) = (T i+(−1) i , R j+j ).
+For example, the product of (T , R) with (T 3 , R) is
+T −2 R 2 , which equals T 2 .
+This is a simple example of a “semidirect product” of
+(x1 , y1 ) + (x2 , y2 ) = (x1 + x2 , y1 + y2 )
+may be several interesting ways of defining a binary
+operation on the set of pairs (g, h), and therefore
+(x1 , y1 )(x2 , y2 ) = (x1 x2 , y1 y2 ).
+3.3   Quotients
+Let us write Q[x] for the set of all polynomials in the
+variable x with rational coefficients: that is, expres-
+sions like 2 x 4 − 32 x + 6. Any two such polynomials
+can be added, subtracted, or multiplied together and
+the result will be another polynomial. This makes Q[x]
+into a commutative ring, but not a field, because if you
+divide one polynomial by another then the result is not
+(necessarily) a polynomial.
+We will now convert Q[x] into a field in what may at
+nomial x 3 − x − 1 as “equivalent” to the zero polyno-
+mial. To put this another way, whenever a polynomial
+involves x 3 we will allow ourselves to replace x 3 by
+x+1, and we will regard the new polynomial that results
+as equivalent to the old one. For example, writing “∼”
+for “is equivalent to”:
+x 5 = x 3 x 2 ∼ (x + 1)x 2 = x 3 + x 2
+∼ x + 1 + x 2 = x 2 + x + 1.
+Notice that in this way we can convert any polynomial
+into one of degree at most 2, since whenever the degree
+is higher, you can reduce it by taking out x 3 from the
 
 $I$ . $3$ .
 
@@ -490,190 +660,293 @@ It often happens that the object one starts with is extremely big, but that at t
 It might be better to say that one often starts with a hopelessly large and complicated structure but “divides out most of the mess” and ends up with a quotient object that has a structure that is simple enough to be manageable while still conveying important information. Good examples of this are the fundamental group [IV.6](/part-04/algebraic-topology) and the homology and cohomology groups [IV.6](/part-04/algebraic-topology) of a topological space; an even better example is the notion of a moduli space [IV.8](/part-04/moduli-spaces) .
 Many people find the idea of a quotient some what difficult to grasp, but it is of major importance through out mathematics, which is why it has been discussed at some length here.
 
-I.3.   Some Fundamental Mathematical Definitions                                                                                27
+I.3.   Some Fundamental Mathematical Definitions
 
-   4   Functions between Algebraic Structures               more accurate to say that f has collapsed the struc-
-                                                            ture. One can make this idea more precise: although
+   4   Functions between Algebraic Structures
 One rule with almost no exceptions is that mathemat-
-                                                            f (a)f (b) = f (c) whenever ab = c, the converse does
 ical structures are not studied in isolation: as well as
-                                                            not hold: it is perfectly possible for f (a)f (b) to equal
 the structures themselves one looks at certain functions
-                                                            f (c) with out ab equaling c, and indeed that happens
 defined on those structures. In this section we shall see
-                                                            in the example just given.
 which functions are worth considering, and why. (For a
-                                                               An isomorphism between two structures X and Y
 discussion of functions in general, see the language
-                                                            is a homomorphism f : X → Y that has an inverse
 and grammar of mathematics [I.2 §2.2](/part-01/language-and-grammar).)
-                                                            g : Y → X that is also a homomorphism. For most
-                                                            algebraic structures, if f has an inverse g, then g is
 4.1    Homomorphisms, Isomorphisms, and
-                                                            automatically a homomorphism; in such cases we can
-       Automorphisms
-                                                            simply say that an isomorphism is a homomorphism
-If X and Y are two examples of a particular mathemat-       that is also a bijection [I.2 §2.2](/part-01/language-and-grammar). That is, f is a one-to-
+
+If X and Y are two examples of a particular mathemat-
 ical structure, such as a group, field, or vector space,     one correspondence between X and Y that preserves
-then, as was suggested in the discussion of symme-          structure.1
-try in section 2.1, there is a class of functions from X       If X and Y are fields, then these considerations are
-to Y of particular interest, namely the functions that      less interesting: it is a simple exercise to show that
-“preserve the structure.” Roughly speaking, a function      every homomorphism f : X → Y that is not identically
-f : X → Y is said to preserve the structure of X if,        zero is automatically an isomorphism between X and
-given any relationship between elements of X that is        its image f (X), that is, the set of all values taken by
+then, as was suggested in the discussion of symme-
+try in section 2.1, there is a class of functions from X
+to Y of particular interest, namely the functions that
+“preserve the structure.” Roughly speaking, a function
+f : X → Y is said to preserve the structure of X if,
+given any relationship between elements of X that is
 expressed in terms of that structure, there is a corre-     the function f . So structure cannot be collapsed with-
-sponding relationship between the images of those ele-      out being lost. (The proof depends on the fact that the
+sponding relationship between the images of those ele-
 ments that is expressed in terms of the structure of Y .    zero in Y has no multiplicative inverse.)
-For example, if X and Y are groups and a, b, and c are         In general, if there is an isomorphism between two
+For example, if X and Y are groups and a, b, and c are
 elements of X such that ab = c, then, if f is to preserve   algebraic structures X and Y , then X and Y are said
 the algebraic structure of X, f (a)f (b) must equal f (c)   to be isomorphic (coming from the Greek words for
 in Y . (Here, as is usual, we are using the same notation   “same” and “shape”). Loosely, the word “isomorphic”
-for the binary operations that make X and Y groups          means “the same in all essential respects,” where what
+for the binary operations that make X and Y groups
 as is normally used for multiplication.) Similarly, if X    counts as essential is precisely the algebraic structure.
-and Y are fields, with binary operations that we shall       What is absolutely not essential is the nature of the
+and Y are fields, with binary operations that we shall
 write using the standard notation for addition and mul-     objects that have the structure: for example, one group
 tiplication, then a function f : X → Y will be interest-    might consist of certain complex numbers, another of
-ing only if f (a) + f (b) = f (c) whenever a + b = c        integers modulo a prime p, and a third of rotations of
-and f (a)f (b) = f (c) whenever ab = c. For vector          a geometrical figure, and they could all turn out to be
+ing only if f (a) + f (b) = f (c) whenever a + b = c
+and f (a)f (b) = f (c) whenever ab = c. For vector
 spaces, the functions of interest are ones that preserve    isomorphic. The idea that two mathematical con struc-
 linear combinations: if V and W are vector spaces, then     tions can have very different constituent parts and yet
-f (av + bw) should always equal af (v) + bf (w).            in a deeper sense be “the same” is one of the most
-   A function that preserves structure is called a ho-      important in mathematics.
-                                                               An automorphism of an algebraic structure X is an
+f (av + bw) should always equal af (v) + bf (w).
+   A function that preserves structure is called a ho-
 momorphism, though homomorphisms of particular
-                                                            isomorphism from X to itself. Since it is hardly sur-
 mathematical structures often have their own names:
-                                                            pr ising that X is isomorphic to itself, one might ask
 for example, a homomorphism of vector spaces is
-                                                            what the point is of automorphisms. The answer is that
 called a linear map.
-                                                            automorphisms are precisely the algebraic symmetries
    There are some useful properties that a homomor-
 phism may have if we are lucky. To see why further
-                                                              1. Let us see how this claim is proved for groups. If X and Y are
-properties can be desirable, consider the following         groups, f : X → Y is a homomorphism with inverse g : Y → X, and
+properties can be desirable, consider the following
 example. Let X and Y be groups and let f : X → Y be the     u, v, and w are elements of Y with uv = w, then we must show that
-                                                            g(u)g(v) = g(w). To do this, let a = g(u), b = g(v), and d = g(w).
-function that takes every element of X to the identity      Since f and g are inverse functions, f (a) = u, f (b) = v, and f (d) =
+function that takes every element of X to the identity
 element e of Y . Then, according to the definition above,    w. Now let c = ab. Then w = uv = f (a)f (b) = f (c), since f is a
-                                                            homomorphism. But then f (c) = f (d), which implies that c = d (just
-f preserves the structure of X, since whenever ab = c,      apply the function g to f (c) and f (d)). Therefore ab = d, which tells
-we have f (a)f (b) = ee = e = f (c). However, it seems      us that g(u)g(v) = g(w), as we needed to show.
+f preserves the structure of X, since whenever ab = c,
+we have f (a)f (b) = ee = e = f (c). However, it seems
 
-28                                                                                                       I. Introduction
+27
+more accurate to say that f has collapsed the struc-
+ture. One can make this idea more precise: although
+f (a)f (b) = f (c) whenever ab = c, the converse does
+not hold: it is perfectly possible for f (a)f (b) to equal
+f (c) with out ab equaling c, and indeed that happens
+in the example just given.
+An isomorphism between two structures X and Y
+is a homomorphism f : X → Y that has an inverse
+g : Y → X that is also a homomorphism. For most
+algebraic structures, if f has an inverse g, then g is
+automatically a homomorphism; in such cases we can
+Automorphisms
+simply say that an isomorphism is a homomorphism
+that is also a bijection [I.2 §2.2](/part-01/language-and-grammar). That is, f is a one-to-
+structure.1
+If X and Y are fields, then these considerations are
+less interesting: it is a simple exercise to show that
+every homomorphism f : X → Y that is not identically
+zero is automatically an isomorphism between X and
+its image f (X), that is, the set of all values taken by
+out being lost. (The proof depends on the fact that the
+In general, if there is an isomorphism between two
+means “the same in all essential respects,” where what
+What is absolutely not essential is the nature of the
+integers modulo a prime p, and a third of rotations of
+a geometrical figure, and they could all turn out to be
+in a deeper sense be “the same” is one of the most
+important in mathematics.
+An automorphism of an algebraic structure X is an
+isomorphism from X to itself. Since it is hardly sur-
+pr ising that X is isomorphic to itself, one might ask
+what the point is of automorphisms. The answer is that
+automorphisms are precisely the algebraic symmetries
+1. Let us see how this claim is proved for groups. If X and Y are
+groups, f : X → Y is a homomorphism with inverse g : Y → X, and
+g(u)g(v) = g(w). To do this, let a = g(u), b = g(v), and d = g(w).
+Since f and g are inverse functions, f (a) = u, f (b) = v, and f (d) =
+homomorphism. But then f (c) = f (d), which implies that c = d (just
+apply the function g to f (c) and f (d)). Therefore ab = d, which tells
+us that g(u)g(v) = g(w), as we needed to show.
 
-alluded to in our discussion of groups. An automor-          G; and conversely, if H is a normal subgroup of G, then
+28
+
+alluded to in our discussion of groups. An automor-
 phism of X is a function from X to itself that preserves     the quotient map, which takes each element g to the
-the structure (which now comes in the form of state-         left coset g H, is a homomorphism from G to the quo-
-ments like ab = c). The composition of two automor-          tient group G/H with kernel H. Similarly, the kernel of
-phisms is clearly a third, and as a result the automor-      any ring homomorphism is an ideal [III.81](/part-03/rings-ideals-and-modules), and every
-phisms of a structure X form a group. Although the           ideal I in a ring R is the kernel of a “quotient map”
-individual automorphisms may not be of much inter-           from R to R/I. (This quotient construction is discussed
+the structure (which now comes in the form of state-
+ments like ab = c). The composition of two automor-
+phisms is clearly a third, and as a result the automor-
+phisms of a structure X form a group. Although the
+individual automorphisms may not be of much inter-
 est, the group certainly is, as it often encapsulates what   in more detail in rings, ideals, and modules [III.81](/part-03/rings-ideals-and-modules).)
 one really wants to know about a structure X that is too
-complicated to analyze directly.                             4.2   Linear Maps and Matrices
+complicated to analyze directly.
    A spectacular example of this is when X is a field.
-                                                √            Homomorphisms between vector spaces have a dis-
 To illustrate, let us take the example of Q( 2). If f :
-   √tinctive geometrical property: they send straight lines
-Q( 2) → Q( 2) is an automorphism, then f (1) = 1.
+   . qrt{Q}( 2) → Q( 2) is an automorphism, then f (1) = 1.
 (This follows easily from the fact that 1 is the only mul-   to straight lines. For this reason they are called lin-
 tiplicative identity.) It follows that f (2) = f (1 + 1) =   ear maps, as was mentioned in the previous subsec-
-f (1) + f (1) = 1 + 1 = 2. Continuing like this, we          tion. From a more algebraic point of view, the struc-
-can show that f (n) = n for every positive integer n.        ture that linear maps preserve is that of linear combi-
-Then f (n) + f (−n) = f (n + (−n)) = f (0) = 0, so           nations: a function f from one vector space to another
-f (−n) = −f (n) = −n. Finally, f (p/q) = f (p)/f (q) =       is a linear map if f (au + bv) = af (u) + bf (v) for
-p/q when p and q are integers with q = 0. So f takes        every pair of vectors u, v ∈ V and every pair of scalars
-every rational number to itself. What can we say about       a and b. From this one can deduce the more general
-   √. qrt{f} ( 2)? Well, f ( 2)f ( 2) = f ( 2 · 2) = f (2) = 2,         assertion that f (a1 v1 + · · · + an vn ) is always equal to
-                                 √but this implies only that f ( 2) is 2 or − 2. It turns      a1 f (v1 ) + · · · + an f (vn ).
-out that both choices are possible: one automorphism            Suppose that we wish to define a linear map from V
-                               √is the “trivial” one, f (a+b 2) = a+b 2, and the other       to W . How much information do we need to provide? In
-                                          √is the more interesting one, f (a + b 2) = a − b 2.          order to see what sort of answer is required, let us begin
-This observation demonstrates that there is no alge-         with a similar but slightly easier question: how much
-braic difference between the two square roots; in this        information is needed to specify a point in space? The
-                       √
-sense, the field Q( 2) does not know which square root        answer is that, once one has devised a sensible coordi-
-of 2 is positive and which negative. These two automor-      nate system, three numbers will suffice. If the point is
-phisms form a group, which is isomorphic to the group        not too far from Earth’s surface then one might wish
-consisting of the elements ±1 under multiplication, or       to use its latitude, its longitude, and its height above
-the group of integers modulo 2, or the group of sym-         sea level, for instance. Can a linear map from V to W
+f (1) + f (1) = 1 + 1 = 2. Continuing like this, we
+can show that f (n) = n for every positive integer n.
+Then f (n) + f (−n) = f (n + (−n)) = f (0) = 0, so
+f (−n) = −f (n) = −n. Finally, f (p/q) = f (p)/f (q) =
+p/q when p and q are integers with q = 0. So f takes
+every rational number to itself. What can we say about
+   . qrt{f} ( 2)? Well, f ( 2)f ( 2) = f ( 2 · 2) = f (2) = 2,
+but this implies only that f ( 2) is 2 or − 2. It turns
+out that both choices are possible: one automorphism
+is the “trivial” one, f (a+b 2) = a+b 2, and the other
+is the more interesting one, f (a + b 2) = a − b 2.
+This observation demonstrates that there is no alge-
+braic difference between the two square roots; in this
+sense, the field Q( 2) does not know which square root
+of 2 is positive and which negative. These two automor-
+phisms form a group, which is isomorphic to the group
+consisting of the elements ±1 under multiplication, or
+the group of integers modulo 2, or the group of sym-
 me tries of an isosceles triangle that is not equilateral,    similarly be specified by just a few numbers?
-or. . . . The list is end less.                                  The answer is that it can, at least if V and W are finite
-   The automorphism groups associated with certain           dimensional. Suppose that V has a basis v1 , . . . , vn , that
+or. . . . The list is end less.
+   The automorphism groups associated with certain
 field extensions are called Galois groups, and are a vital    W has a basis w1 , . . . , wm , and that f : V → W is the lin-
-component of the proof of the insolubility of the            ear map we would like to specify. Since every vector in
-quintic [V.21](/part-05/the-insolubility-of-the-quintic), as well as large parts of algebraic          V can be written in the form a1 v1 +· · ·+an vn and since
-number theory [IV.1](/part-04/number-theory).                                        f (a1 v1 +· · ·+an vn ) is always equal to a1 f (v1 )+· · ·+
-   An important concept associated with a homomor-           an f (vn ), once we decide what f (v1 ), . . . , f (vn ) are we
-phism φ between algebraic structures is that of a ker-       have specified f completely. But each vector f (vj ) is
+component of the proof of the insolubility of the
+quintic [V.21](/part-05/the-insolubility-of-the-quintic), as well as large parts of algebraic
+number theory [IV.1](/part-04/number-theory).
+   An important concept associated with a homomor-
+phism φ between algebraic structures is that of a ker-
 nel. This is defined to be the set of all elements x of X     a linear combination of the basis vectors w1 , . . . , wm :
-such that φ(x) is the identity element of Y (where this      that is, it can be written in the form
+such that φ(x) is the identity element of Y (where this
 means the additive identity if X and Y are structures
-                                                                          f (vj ) = a1 j w1 + · · · + amj wm .
 that involve both additive and multiplicative binary
-operations). The kernel of a homomorphism tends to           Thus, to specify an individual f (vj ) needs m numbers,
-be a substructure of X with interesting properties. For      the scalars a1 j , . . . , amj . Since there are n different vec-
-instance, if G and K are groups, then the kernel of a        tors vj , the linear map is determined by the mn num-
-homomorphism from G to K is a normal subgroup of             bers aij , where i runs from 1 to m and j from 1 to n.
+operations). The kernel of a homomorphism tends to
+be a substructure of X with interesting properties. For
+instance, if G and K are groups, then the kernel of a
+homomorphism from G to K is a normal subgroup of
 
-I.3.   Some Fundamental Mathematical Definitions                                                                        29
+I. Introduction
+G; and conversely, if H is a normal subgroup of G, then
+left coset g H, is a homomorphism from G to the quo-
+tient group G/H with kernel H. Similarly, the kernel of
+any ring homomorphism is an ideal [III.81](/part-03/rings-ideals-and-modules), and every
+ideal I in a ring R is the kernel of a “quotient map”
+from R to R/I. (This quotient construction is discussed
+4.2   Linear Maps and Matrices
+√            Homomorphisms between vector spaces have a dis-
+√
+tion. From a more algebraic point of view, the struc-
+ture that linear maps preserve is that of linear combi-
+nations: a function f from one vector space to another
+is a linear map if f (au + bv) = af (u) + bf (v) for
+every pair of vectors u, v ∈ V and every pair of scalars
+a and b. From this one can deduce the more general
+√assertion that f (a1 v1 + · · · + an vn ) is always equal to
+√a1 f (v1 ) + · · · + an f (vn ).
+Suppose that we wish to define a linear map from V
+√to W . How much information do we need to provide? In
+√order to see what sort of answer is required, let us begin
+with a similar but slightly easier question: how much
+information is needed to specify a point in space? The
+√
+answer is that, once one has devised a sensible coordi-
+nate system, three numbers will suffice. If the point is
+not too far from Earth’s surface then one might wish
+to use its latitude, its longitude, and its height above
+sea level, for instance. Can a linear map from V to W
+The answer is that it can, at least if V and W are finite
+dimensional. Suppose that V has a basis v1 , . . . , vn , that
+ear map we would like to specify. Since every vector in
+V can be written in the form a1 v1 +· · ·+an vn and since
+f (a1 v1 +· · ·+an vn ) is always equal to a1 f (v1 )+· · ·+
+an f (vn ), once we decide what f (v1 ), . . . , f (vn ) are we
+have specified f completely. But each vector f (vj ) is
+that is, it can be written in the form
+f (vj ) = a1 j w1 + · · · + amj wm .
+Thus, to specify an individual f (vj ) needs m numbers,
+the scalars a1 j , . . . , amj . Since there are n different vec-
+tors vj , the linear map is determined by the mn num-
+bers aij , where i runs from 1 to m and j from 1 to n.
 
-These numbers can be written in an array, as follows:          difficult problems in mathematics arise when one tries
-           ⎛                          ⎞                        to understand the structure of the general linear groups
-             a11   a12 · · ·     a1 n
-           ⎜                          ⎟                        (and related groups) for certain interesting fields F (see
-           ⎜ a21   a22 · · ·     a2 n ⎟
-           ⎜                          ⎟                        representation theory [IV.9 §§5,6]).
-           ⎜ .       ..    ..      .. ⎟ .
-           ⎜ .                .       ⎟
-           ⎝ .        .             . ⎠                           While matrices are very useful, many interesting
-             am1 am2 · · · amn                                 linear maps are between infinite-dimensional vector
-An array like this is called a matrix. It is important to      spaces, and we close this section with two examples
-note that a different choice of basis vectors for V and         for the reader who is familiar with elementary calcu-
-W would lead to a different matrix, so one often talks          lus. (There will be a brief discussion of calculus later in
-of the matrix of f relative to a given pair of bases (a        this article.) For the first, let V be the set of all func-
-basis for V and a basis for W ).                               tions from R to R that can be differentiated and let W
-   Now suppose that f is a linear map from V to W and          be the set of all functions from R to R. These can be
-that g is a linear map from U to V . Then f g stands for       made into vector spaces in a simple way: if f and g
-the linear map from U to W obtained by doing first g,           are functions, then their sum is the function h defined
-then f . If the matrices of f and g, relative to certain       by the formula h(x) = f (x) + g(x), and if a is a real
-bases of U , V , and W , are A and B, then what is the         number then af is the function k defined by the for-
+I.3.   Some Fundamental Mathematical Definitions
+
+These numbers can be written in an array, as follows:
+
+An array like this is called a matrix. It is important to
+note that a different choice of basis vectors for V and
+W would lead to a different matrix, so one often talks
+of the matrix of f relative to a given pair of bases (a
+basis for V and a basis for W ).
+   Now suppose that f is a linear map from V to W and
+that g is a linear map from U to V . Then f g stands for
+the linear map from U to W obtained by doing first g,
+then f . If the matrices of f and g, relative to certain
+bases of U , V , and W , are A and B, then what is the
 matrix of f g? To work it out, one takes a basis vector uk     mula k(x) = af (x). (So, for example, we could regard
-of U and applies to it the function g, obtaining a linear      the polynomial x 2 + 3 x + 2 as a linear combination of
-combination b1 k v1 +· · ·+bnk vn of the basis vectors of       the functions x 2 , x, and the constant function 1.) Then
-V . To this linear combination one applies the function        differentiation is a linear map (from V to W ), since the
-f , obtaining a rather complicated linear combination          derivative (af + bg) is af + bg . This is clearer if we
+of U and applies to it the function g, obtaining a linear
+combination b1 k v1 +· · ·+bnk vn of the basis vectors of
+V . To this linear combination one applies the function
+f , obtaining a rather complicated linear combination
 of linear combinations of the basis vectors w1 , . . . , wm    write Df for the derivative of f : then we are saying that
-of W .                                                         D(af + bg) = a Df + b Dg.
-   Pursuing this idea, one can calculate that the entry in        A second example uses integration. Let V be another
-row i and column j of the matrix P of f g is ai1 b1 j +         vector space of functions, and let u be a function of two
+of W .
+   Pursuing this idea, one can calculate that the entry in
+row i and column j of the matrix P of f g is ai1 b1 j +
 ai2 b2 j +· · ·+ain bnj . This matrix P is called the product   variables. (The functions involved have to have certain
-of A and B and is written AB. If you have not seen this        properties for the definition to work, but let us ignore
-definition then you will find it hard to grasp, but the          the technicalities.) Then we can define a linear map T
-main point to remember is that there is a way of calcu-        on the space V by the formula
+of A and B and is written AB. If you have not seen this
+definition then you will find it hard to grasp, but the
+main point to remember is that there is a way of calcu-
 lating the matrix for f g from the matrices A and B of f
-                                                                            (T f )(x) =   u(x, y)f (y) dy.
 and g, and that this matrix is denoted AB. Matrix mul-
-tiplication of this kind is associative but not commuta-       Definitions like this one can be hard to take in, because
-tive. That is, A(BC) is always equal to (AB)C but AB is        they involve holding in one’s mind three different lev-
-not necessarily the same as BA. The associativity fol-         els of complexity. At the bottom we have real numbers,
-lows from the fact that composition of the underlying          denoted by x and y. In the middle are functions like f ,
+tiplication of this kind is associative but not commuta-
+tive. That is, A(BC) is always equal to (AB)C but AB is
+not necessarily the same as BA. The associativity fol-
+lows from the fact that composition of the underlying
 linear maps is associative: if A, B, and C are the matrices    u, and T f , which turn real numbers (or pairs of them)
-of f , g, and h, respectively, then A(BC) is the matrix        into real numbers. At the top is another function, T , but
-of the linear map “do h-then-g, then f ” and (AB)C is          the “objects” that it transforms are themselves func-
-the matrix of the linear map “do h, then g-then-f ,” and       tions: it turns a function like f into a different func-
-these are the same linear map.                                 tion T f . This is just one example where it is important
-   Let us now confine our attention to automorphisms            to think of a function as a single, elementary “thing”
-from a vector space V to itself. These are linear maps         rather than as a process of transformation. (See the dis-
-f : V → V that can be inverted; that is, for which there       cussion of functions in the language and grammar
-exists a linear map g : V → V such that f g(v) =               of mathematics [I.2 §2.2](/part-01/language-and-grammar).) Another remark that may
-gf (v) = v for every vector v in V . These we can think        help to clarify the definition is that there is a very close
-of as “symmetries” of the vector space V , and as such         analogy between the role of the two-variable function
-they form a group under composition. If V is n dimen-          u(x, y) and the role of a matrix aij (which can itself
-sional and the scalars come from the field F, then this         be thought of as a function of the two integer vari-
+of f , g, and h, respectively, then A(BC) is the matrix
+of the linear map “do h-then-g, then f ” and (AB)C is
+the matrix of the linear map “do h, then g-then-f ,” and
+these are the same linear map.
+   Let us now confine our attention to automorphisms
+from a vector space V to itself. These are linear maps
+f : V → V that can be inverted; that is, for which there
+exists a linear map g : V → V such that f g(v) =
+gf (v) = v for every vector v in V . These we can think
+of as “symmetries” of the vector space V , and as such
+they form a group under composition. If V is n dimen-
+sional and the scalars come from the field F, then this
 group is called GLn (F). The letters “G” and “L” stand for     ables i and j). Functions like u are some times called
-“general” and “linear”; some of the most important and         kernels (which should not be confused with kernels of
+“general” and “linear”; some of the most important and
+
+29
+difficult problems in mathematics arise when one tries
+⎛
+a11   a12 · · ·     a1 n
+⎜
+⎜ a21   a22 · · ·     a2 n ⎟
+⎜
+⎜ .
+⎜ .
+⎝ .
+am1 am2 · · · amn
+spaces, and we close this section with two examples
+for the reader who is familiar with elementary calcu-
+lus. (There will be a brief discussion of calculus later in
+this article.) For the first, let V be the set of all func-
+tions from R to R that can be differentiated and let W
+be the set of all functions from R to R. These can be
+made into vector spaces in a simple way: if f and g
+are functions, then their sum is the function h defined
+by the formula h(x) = f (x) + g(x), and if a is a real
+number then af is the function k defined by the for-
+the polynomial x 2 + 3 x + 2 as a linear combination of
+the functions x 2 , x, and the constant function 1.) Then
+differentiation is a linear map (from V to W ), since the
+derivative (af + bg) is af + bg . This is clearer if we
+D(af + bg) = a Df + b Dg.
+A second example uses integration. Let V be another
+vector space of functions, and let u be a function of two
+properties for the definition to work, but let us ignore
+the technicalities.) Then we can define a linear map T
+on the space V by the formula
+(T f )(x) =   u(x, y)f (y) dy.
+Definitions like this one can be hard to take in, because
+they involve holding in one’s mind three different lev-
+els of complexity. At the bottom we have real numbers,
+denoted by x and y. In the middle are functions like f ,
+into real numbers. At the top is another function, T , but
+the “objects” that it transforms are themselves func-
+tions: it turns a function like f into a different func-
+tion T f . This is just one example where it is important
+to think of a function as a single, elementary “thing”
+rather than as a process of transformation. (See the dis-
+cussion of functions in the language and grammar
+of mathematics [I.2 §2.2](/part-01/language-and-grammar).) Another remark that may
+help to clarify the definition is that there is a very close
+analogy between the role of the two-variable function
+u(x, y) and the role of a matrix aij (which can itself
+be thought of as a function of the two integer vari-
+kernels (which should not be confused with kernels of
 
 $30$
 
@@ -712,60 +985,103 @@ Limits
 In our discussion of real numbers (section $1$ . 4) there was a brief discussion of the square root of $2$ . How do we know that $2$ has a square root? One answer is the one given there: that we can calculate its decimal expansion. If we are asked to be more precise, we may well end up saying something like this. The real numbers $1$ , $1$ . $4$ , $1$ . $41$ , $1$ . $414$ , $1$ . 4142 , $1$ . 41421 , . . . , which have terminating decimal expansions (and are therefore rational), approach another real number x =1 . 4142135 . . . .
 We cannot actually write down x properly because it has an infinite decimal expansion but we can at least explain how its digits are defined: for example, the third digit after the decimal point is $a_{4}$ because $1$ . $414$ is the largest multiple of $0$ . $001$ that squares to
 
-I.3.   Some Fundamental Mathematical Definitions                                                                                  31
+I.3.   Some Fundamental Mathematical Definitions
 
-less than 2. It follows that the squares of the origi-                   translate English words like “eventually” into mathe-
-nal numbers, 1, 1.96, 1.9881, 1.999396, 1.99996164,                      matics, and for this we need quantifiers [I.2 §3.2](/part-01/language-and-grammar).
-1.9999899241, . . . , approach 2, and this is why we are                    Suppose δ is a positive number (which one usually
-entitled to say that x 2 = 2.                                            imagines as small). Let us say that an is δ-close to l if
-   Suppose that we are asked to determine the length                     |an − l|, the difference between an and l, is less than δ.
-of a curve drawn on a piece of paper, and that we                        What would it mean to say that eventually the sequence
-are given a ruler to help us. We face a problem: the                     gets δ-close to l and stays there? It means that from
-ruler is straight and the curve is not. One way of tack-                 some point onwards, all the an are δ-close to l. And
-ling the problem is as follows. First, draw a few points                 what is the meaning of “from some point onwards”?
-P0 , P1 , P2 , . . . , Pn along the curve, with P0 at one end and        It is that there is some number N (the point in ques-
-Pn at the other. Next, measure the distance from P0                      tion) with the property that an is δ-close to l from N
-to P1 , the distance from P1 to P2 , and so on up to Pn .                onwards—that is, for every n that is greater than or
-Finally, add all these distances up. The result will not                 equal to N. In symbols:
+less than 2. It follows that the squares of the origi-
+nal numbers, 1, 1.96, 1.9881, 1.999396, 1.99996164,
+1.9999899241, . . . , approach 2, and this is why we are
+entitled to say that x 2 = 2.
+   Suppose that we are asked to determine the length
+of a curve drawn on a piece of paper, and that we
+are given a ruler to help us. We face a problem: the
+ruler is straight and the curve is not. One way of tack-
+ling the problem is as follows. First, draw a few points
+P0 , P1 , P2 , . . . , Pn along the curve, with P0 at one end and
+Pn at the other. Next, measure the distance from P0
+to P1 , the distance from P1 to P2 , and so on up to Pn .
+Finally, add all these distances up. The result will not
 be an exactly correct answer, but if there are enough
-                                                                                    ∃N    ∀n ⩾ N     an is δ-close to l.
 points, spaced reasonably evenly, and if the curve does
-not wiggle too much, then our procedure will give us a                   It remains to capture the idea of “as close as you like.”
-good notion of the “approximate length” of the curve.                    What this means is that the above sentence is true for
-More over, it gives us a way to define what we mean by                     any δ you might wish to specify. In symbols:
+not wiggle too much, then our procedure will give us a
+good notion of the “approximate length” of the curve.
+More over, it gives us a way to define what we mean by
 the “exact length”: suppose that, as we take more and
-                                                                               ∀δ > 0 ∃N       ∀n ⩾ N     an is δ-close to l.
 more points, we find that the approximate lengths, in
-the sense just defined, approach some number l. Then                      Finally, let us stop using the nonstandard phrase “δ-
-we say that l is the length of the curve.                                close”:
+the sense just defined, approach some number l. Then
+we say that l is the length of the curve.
    In both these examples there is a number that we
-                                                                                  ∀δ > 0 ∃N       ∀n ⩾ N     |an − l| < δ.
 reach by means of better and better approximations.
-I used the word “approach” in both cases, but this is                    This sentence is not particularly easy to understand.
-rather vague, and it is important to make it precise. Let                Unfortunately (and interestingly in the light of the dis-
-a1 , a2 , a3 , . . . be a sequence of real numbers. What does            cussion in [I.2 §4](/part-01/language-and-grammar)), using a less symbolic language does
-it mean to say that these numbers approach a specified                    not necessarily make things much easier: “Whatever
-real number l?                                                           positive δ you choose, there is some number N such
-  The following two examples are worth bearing in                        that for all bigger numbers n the difference between
+I used the word “approach” in both cases, but this is
+rather vague, and it is important to make it precise. Let
+a1 , a2 , a3 , . . . be a sequence of real numbers. What does
+it mean to say that these numbers approach a specified
+real number l?
+  The following two examples are worth bearing in
 mind. The first is the sequence 12 , 23 , 34 , 45 , . . . . In a sense,   an and l is less than δ.”
-the numbers in this sequence approach 2, since each                         The notion of limit applies much more generally than
-one is closer to 2 than the one before, but it is clear                  just to real numbers. If you have any collection of math-
-that this is not what we mean. What matters is not so                    ematical objects and can say what you mean by the dis-
-much that we get closer and closer, but that we get arbi-                tance between any two of those objects, then you can
-trarily close, and the only number that is approached in                 talk of a sequence of those objects having a limit. Two
-this stronger sense is the obvious “limit,” 1.                           objects are now called δ-close if the distance between
-   A second sequence illustrates this in a different way:                 them is less than δ, rather than the difference. (The
+the numbers in this sequence approach 2, since each
+one is closer to 2 than the one before, but it is clear
+that this is not what we mean. What matters is not so
+much that we get closer and closer, but that we get arbi-
+trarily close, and the only number that is approached in
+this stronger sense is the obvious “limit,” 1.
+   A second sequence illustrates this in a different way:
 1, 0, 12 , 0, 13 , 0, 14 , 0, . . . . Here, we would like to say that    idea of distance is discussed further in metric spaces
-the numbers approach 0, even though it is not true that                  [III.56](/part-03/metric-spaces).) For example, a sequence of points in space can
-each one is closer than the one before. Nevertheless, it                 have a limit, as can a sequence of functions. (In the
-is true that eventually the sequence gets as close as you                second case it is less obvious how to define distance—
-like to 0 and remains at least that close.                               there are many natural ways to do it.) A further example
-  This last phrase serves as a definition of the mathe-                   comes in the theory of fractals (see dynamics [IV.14](/part-04/dynamics)):
-mat ical notion of a limit : the limit of the sequence of                 the very complicated shapes that appear there are best
-numbers a1 , a2 , a3 , . . . is l if eventually the sequence             defined as limits of simpler ones.
-gets as close as you like to l and remains that close.                     Two other ways of saying “the limit of the sequence
-However, in order to meet the standards of precision                     a1 , a2 , . . . is l” are “an converges to l” and “an tends
-demanded by mathematics, we need to know how to                          to l.” One some times says that this happens as n tends
+the numbers approach 0, even though it is not true that
+each one is closer than the one before. Nevertheless, it
+is true that eventually the sequence gets as close as you
+like to 0 and remains at least that close.
+  This last phrase serves as a definition of the mathe-
+mat ical notion of a limit : the limit of the sequence of
+numbers a1 , a2 , a3 , . . . is l if eventually the sequence
+gets as close as you like to l and remains that close.
+However, in order to meet the standards of precision
+demanded by mathematics, we need to know how to
+
+31
+translate English words like “eventually” into mathe-
+matics, and for this we need quantifiers [I.2 §3.2](/part-01/language-and-grammar).
+Suppose δ is a positive number (which one usually
+imagines as small). Let us say that an is δ-close to l if
+|an − l|, the difference between an and l, is less than δ.
+What would it mean to say that eventually the sequence
+gets δ-close to l and stays there? It means that from
+some point onwards, all the an are δ-close to l. And
+what is the meaning of “from some point onwards”?
+It is that there is some number N (the point in ques-
+tion) with the property that an is δ-close to l from N
+onwards—that is, for every n that is greater than or
+equal to N. In symbols:
+∃N    ∀n ⩾ N     an is δ-close to l.
+It remains to capture the idea of “as close as you like.”
+What this means is that the above sentence is true for
+any δ you might wish to specify. In symbols:
+∀δ > 0 ∃N       ∀n ⩾ N     an is δ-close to l.
+Finally, let us stop using the nonstandard phrase “δ-
+close”:
+∀δ > 0 ∃N       ∀n ⩾ N     |an − l| < δ.
+This sentence is not particularly easy to understand.
+Unfortunately (and interestingly in the light of the dis-
+cussion in [I.2 §4](/part-01/language-and-grammar)), using a less symbolic language does
+not necessarily make things much easier: “Whatever
+positive δ you choose, there is some number N such
+that for all bigger numbers n the difference between
+The notion of limit applies much more generally than
+just to real numbers. If you have any collection of math-
+ematical objects and can say what you mean by the dis-
+tance between any two of those objects, then you can
+talk of a sequence of those objects having a limit. Two
+objects are now called δ-close if the distance between
+them is less than δ, rather than the difference. (The
+[III.56](/part-03/metric-spaces).) For example, a sequence of points in space can
+have a limit, as can a sequence of functions. (In the
+second case it is less obvious how to define distance—
+there are many natural ways to do it.) A further example
+comes in the theory of fractals (see dynamics [IV.14](/part-04/dynamics)):
+the very complicated shapes that appear there are best
+defined as limits of simpler ones.
+Two other ways of saying “the limit of the sequence
+a1 , a2 , . . . is l” are “an converges to l” and “an tends
+to l.” One some times says that this happens as n tends
 
 $32$
 
@@ -791,414 +1107,621 @@ What we have just shown is that the function f (x)  =  $x^{2}$ is continuous at 
 Roughly speaking, what this means is that f has no “sudden jumps.” (It also rules out certain kinds of very rapid oscillations that would also make accurate estimates difficult .) As with limits, the idea of continuity applies in much more general contexts, and for the same reason. Let f be a function from a set X to a set Y , and suppose that we have two notions of distance, one for elements of X and the other for elements of Y .
 Using the expression d (x , a) to denote the distance between $x$ and $a$, and similarly for d (f (x), f (a)), one says that f is continuous at a if ∀  $> 0$ ∃δ $> 0 (d(x$ , $a) < δ$ ⇒  d(f(x), f( a )$) <$ ) and that f is continuous if it is continuous at every a in X. In other words, we replace differences such as $|x - a|$ by distances such as d (x , a). Like homomorphisms (which are discussed in section $4$ . $1$ above), continuous functions can be regarded as preserving a certain sort of structure. It can be shown that a function f is continuous if and only if, whenever
 
-I.3.   Some Fundamental Mathematical Definitions                                                                       33
+I.3.   Some Fundamental Mathematical Definitions
 
-an → x, we also have f (an ) → f (x). That is, continu-       therefore be regarded as functions defined on a vec-
-ous functions are functions that preserve the structure       tor space of dimension greater than 1. As soon as we
-provided by convergent sequences and their limits.            look at them this way, we can ask ourselves whether, in
-                                                              a small neighborhood of a point, they can be approx i-
-5.3    Differentiation                                         mated by linear maps. It is very useful if they can: a gen-
-                                                              eral function can behave in very complicated ways, but
+an → x, we also have f (an ) → f (x). That is, continu-
+ous functions are functions that preserve the structure
+provided by convergent sequences and their limits.
+5.3    Differentiation
 The derivative of a function f at a value a is usually pre-
-                                                              if it can be approximated by a linear function, then at
 sented as a number that measures the rate of change of
-                                                              least in small regions of n-dimensional space its behav-
 f (x) as x passes through a. The purpose of this sec-
-                                                              ior is much easier to understand. In this situation one
 tion is to promote a slightly different way of regarding
-                                                              can use the machinery of linear algebra and matrices,
 it, one that is more general and that opens the door
-                                                              which leads to calculations that are feasible, especially
 to much of modern mathematics. This is the idea of
-                                                              if one has the help of a computer.
 differentiation as linear approximation.
-                                                                 Imagine, for instance, a meteorologist interested in
    Intuitively speaking, to say that f (a) = m is to say
-                                                              how the direction and speed of the wind change as
 that if one looks through a very powerful microscope
-                                                              one looks at different parts of some three-dimensional
 at the graph of f in a tiny region that includes the
-                                                              region above Earth’s surface. Wind behaves in compli-
 point (a, f (a)), then what one sees is almost exactly
-                                                              cated, chaotic ways, but to get some sort of handle on
 a straight line of gradient m. In other words, in a suffi-
-                                                              this behavior one can describe it as follows. To each
 ciently small neighborhood of the point a, the function
-                                                              point (x, y, z) in the region (think of x and y as hori-
 f is approximately linear. We can even write down a
-                                                              zontal coordinates and z as a vertical one) one can asso-
 formula for the linear function g that approximates f :
-                                                              ciate a vector (u, v, w) representing the velocity of the
-               g(x) = f (a) + m(x − a).                       wind at that point: u, v, and w are the components of
-This is the equation of the straight line of gradient m       the velocity in the x-, y-, and z-directions.
-that passes through the point (a, f (a)). Another way            Now let us change the point (x, y, z) very slightly by
-of writing it, which is a little clearer, is                  choosing three small numbers h, k, and l and looking
-                                                              at (x + h, y + k, z + l). At this new point, we would
-                g(a + h) = f (a) + mh,
-                                                              expect the wind vector to be slightly different as well,
-and to say that g approximates f in a small neighbor-         so let us write it (u + p, v + q, w + r ). How does the
-hood of a is to say that f (a+h) is approximately equal       small change (p, q, r ) in the wind vector depend on the
-to f (a) + mh when h is small.                                small change (h, k, l) in the position vector? Provided
-   One must be a little careful here: after all, if f does    the wind is not too turbulent and h, k, and l are small
-not jump suddenly, then, when h is small, f (a + h)           enough, we expect the dependence to be roughly linear:
-will be close to f (a) and mh will be small, so f (a +        that is how nature seems to work. In other words, we
-h) is approximately equal to f (a) + mh. This line of         expect there to be some linear map T such that (p, q, r )
-reasoning seems to work regard less of the value of m,         is roughly T (h, k, l) when h, k, and l are small. Notice
-and yet we wanted there to be something special about         that each of p, q, and r depends on each of h, k, and l,
-the choice m = f (a). What singles out that particular        so nine numbers will be needed in order to specify this
-value is that f (a+h) is not just close to f (a)+mh, but      linear map. In fact, we can express it in matrix form:
-so close that the difference (h) = f (a+h)−f (a)−mh                       ⎛ ⎞ ⎛                     ⎞⎛ ⎞
-                                                                            p        a     a12 a13       h
-is small compared with h. That is, (h)/h → 0 as h →                      ⎜ ⎟ ⎜ 11                  ⎟⎜ ⎟
-                                                                          ⎜ q ⎟ = ⎜a21 a22 a23 ⎟ ⎜ k ⎟ .
-0. (This is a slightly more general notion of limit than                  ⎝ ⎠ ⎝                     ⎠⎝ ⎠
-                                                                            r        a31 a32 a33         l
-the one discussed in section 5.1. It means that you can
-make (h)/h as small as you like if you make h small          The matrix entries aij express individual depend en-
-enough.)                                                      cies. For example, if x and z are held fixed, then we are
-   The reason these ideas can be generalized is that the      setting h = l = 0, from which it follows that the rate
-notion of a linear map is much more general than sim-         of change of u as just y varies is given by the entry
-ply a function from R to R of the form g(x) = mx + c.         a12 . That is, a12 is the partial derivative ∂u/∂y at the
-Many functions that arise naturally in mathematics—           point (x, y, z).
-and also in science, engineering, economics, and many           This tells us how to calculate the matrix, but from
-other areas—are functions of several variables, and can       the conceptual point of view it is easier to use vector
 
-34                                                                                                      I. Introduction
+This is the equation of the straight line of gradient m
+that passes through the point (a, f (a)). Another way
+of writing it, which is a little clearer, is
+
+and to say that g approximates f in a small neighbor-
+hood of a is to say that f (a+h) is approximately equal
+to f (a) + mh when h is small.
+   One must be a little careful here: after all, if f does    the wind is not too turbulent and h, k, and l are small
+not jump suddenly, then, when h is small, f (a + h)
+will be close to f (a) and mh will be small, so f (a +
+h) is approximately equal to f (a) + mh. This line of
+reasoning seems to work regard less of the value of m,
+and yet we wanted there to be something special about
+the choice m = f (a). What singles out that particular
+value is that f (a+h) is not just close to f (a)+mh, but
+so close that the difference (h) = f (a+h)−f (a)−mh
+is small compared with h. That is, (h)/h → 0 as h →
+0. (This is a slightly more general notion of limit than
+the one discussed in section 5.1. It means that you can
+make (h)/h as small as you like if you make h small
+enough.)
+   The reason these ideas can be generalized is that the
+notion of a linear map is much more general than sim-
+ply a function from R to R of the form g(x) = mx + c.
+Many functions that arise naturally in mathematics—
+and also in science, engineering, economics, and many
+other areas—are functions of several variables, and can
+
+33
+therefore be regarded as functions defined on a vec-
+tor space of dimension greater than 1. As soon as we
+look at them this way, we can ask ourselves whether, in
+a small neighborhood of a point, they can be approx i-
+mated by linear maps. It is very useful if they can: a gen-
+eral function can behave in very complicated ways, but
+if it can be approximated by a linear function, then at
+least in small regions of n-dimensional space its behav-
+ior is much easier to understand. In this situation one
+can use the machinery of linear algebra and matrices,
+which leads to calculations that are feasible, especially
+if one has the help of a computer.
+Imagine, for instance, a meteorologist interested in
+how the direction and speed of the wind change as
+one looks at different parts of some three-dimensional
+region above Earth’s surface. Wind behaves in compli-
+cated, chaotic ways, but to get some sort of handle on
+this behavior one can describe it as follows. To each
+point (x, y, z) in the region (think of x and y as hori-
+zontal coordinates and z as a vertical one) one can asso-
+ciate a vector (u, v, w) representing the velocity of the
+g(x) = f (a) + m(x − a).
+the velocity in the x-, y-, and z-directions.
+Now let us change the point (x, y, z) very slightly by
+choosing three small numbers h, k, and l and looking
+at (x + h, y + k, z + l). At this new point, we would
+g(a + h) = f (a) + mh,
+expect the wind vector to be slightly different as well,
+so let us write it (u + p, v + q, w + r ). How does the
+small change (p, q, r ) in the wind vector depend on the
+small change (h, k, l) in the position vector? Provided
+enough, we expect the dependence to be roughly linear:
+that is how nature seems to work. In other words, we
+expect there to be some linear map T such that (p, q, r )
+is roughly T (h, k, l) when h, k, and l are small. Notice
+that each of p, q, and r depends on each of h, k, and l,
+so nine numbers will be needed in order to specify this
+linear map. In fact, we can express it in matrix form:
+⎛ ⎞ ⎛
+p        a     a12 a13       h
+⎜ ⎟ ⎜ 11
+⎜ q ⎟ = ⎜a21 a22 a23 ⎟ ⎜ k ⎟ .
+⎝ ⎠ ⎝
+r        a31 a32 a33         l
+The matrix entries aij express individual depend en-
+cies. For example, if x and z are held fixed, then we are
+setting h = l = 0, from which it follows that the rate
+of change of u as just y varies is given by the entry
+a12 . That is, a12 is the partial derivative ∂u/∂y at the
+point (x, y, z).
+This tells us how to calculate the matrix, but from
+the conceptual point of view it is easier to use vector
+
+34
 
 notation. Write x for (x, y, z), u(x) for (u, v, w), h for    that have interesting interpretations. So let us try to
 (h, k, l), and p for (p, q, r ). Then what we are saying is   interpret the expressions involved in the heat equation.
-that                                                             The left-hand side, ∂T /∂t, is quite simple. It is the
-                     p = T (h) + (h)                         rate of change of the temperature T (x, y, z, t) when
-                                                              the spatial coordinates x, y, and z are kept fixed and
+that
 for some vector (h) that is small relative to h. Alter-
-                                                              t varies. In other words, it tells us how fast the point
 native ly, we can write
-                                                              (x, y, z) is heating up or cooling down at time t. What
-            u(x + h) = u(x) + T (h) + (h),                   would we expect this to depend on? Well, heat takes
-a formula that is closely analogous to our earlier for-       time to travel through a medium, so although the tem-
-mula g(x + h) = g(x) + mh + (h). This tells us that          per at ure at some distant point (x , y , z ) will even-
-if we add a small vector h to x, then u(x) will change        tually affect the temperature at (x, y, z), the way the
-by roughly T (h).                                             temperature is changing right now (that is, at time t)
-   More generally, let u be a function from Rn to Rm .        will be affected only by the temperatures of points very
-Then u is defined to be differentiable at a point x ∈ Rn        close to (x, y, z): if points in the immediate neighbor-
-if there is a linear map T : Rn → Rm such that, once          hood of (x, y, z) are hotter, on average, than (x, y, z)
-again, the formula                                            itself, then we expect the temperature at (x, y, z) to be
-                                                              increasing, and if they are colder then we expect it to
-            u(x + h) = u(x) + T (h) + (h)
-                                                              be decreasing.
-holds, with (h) small relative to h. The linear map T           The expression in brackets on the right-hand side
-is the derivative of u at x.                                  appears so often that it has its own shorthand. The
-   An important special case of this is when m = 1. If        symbol Δ, defined by
-f : Rn → R is differentiable at x, then the derivative                               ∂2 f   ∂2 f    ∂2 f
-of f at x is a linear map from Rn to R. The matrix of                        Δf =        +      +      ,
-                                                                                    ∂x 2   ∂y 2   ∂z 2
+
+a formula that is closely analogous to our earlier for-
+mula g(x + h) = g(x) + mh + (h). This tells us that
+if we add a small vector h to x, then u(x) will change
+by roughly T (h).
+   More generally, let u be a function from Rn to Rm .
+Then u is defined to be differentiable at a point x ∈ Rn
+if there is a linear map T : Rn → Rm such that, once
+again, the formula
+
+holds, with (h) small relative to h. The linear map T
+is the derivative of u at x.
+   An important special case of this is when m = 1. If
+f : Rn → R is differentiable at x, then the derivative
+of f at x is a linear map from Rn to R. The matrix of
 T is a row vector of length n, which is often denoted
-                                                              is known as the Laplacian. What information does Δf
 ∇f (x) and referred to as the gradient of f at x. This
-                                                              give us about a function f ? The answer is that it cap-
 vector points in the direction in which f increases most
-                                                              tures the idea in the last paragraph: it tells us how the
 rapidly and its magnitude is the rate of change in that
-                                                              value of f at (x, y, z) compares with the average value
 direction.
-                                                              of f in a small neighborhood of (x, y, z), or, more pre-
-                                                              cisely, with the limit of the average value in a neigh-
 5.4   Partial Differential Equations
-                                                              borhood of (x, y, z) as the size of that neighborhood
-Partial differential equations are of immense impor-           shrinks to zero.
-tance in physics, and have inspired a vast amount of             This is not immediately obvious from the formula,
-mathematical research. Three basic examples will be           but the following (not wholly rigorous) argument in
-discussed here, as an introduction to more advanced           one dimension gives a clue about why second deriva-
+Partial differential equations are of immense impor-
+tance in physics, and have inspired a vast amount of
+mathematical research. Three basic examples will be
+discussed here, as an introduction to more advanced
 articles later in the volume (see, in particular, partial     tives should be involved. Let f be a function that takes
-differential equations [IV.12](/part-04/analysis)).                              real numbers to real numbers. Then to obtain a good
-  The first is the heat equation, which, as its name sug-      approximation to the second derivative of f at a point
-gests, describes the way the distribution of heat in a        x, one can look at the expression (f (x)−f (x −h))/h
-physical medium changes with time:                            for some small h. (If one substitutes −h for h in the
-             ∂T    ∂2 T   ∂2 T    ∂2 T                          above expression, one obtains the more usual formula,
-                =κ      +      +      .                       but this one is more convenient here.) The derivatives
-             ∂t    ∂x 2   ∂y 2   ∂z 2
+differential equations [IV.12](/part-04/analysis)).
+  The first is the heat equation, which, as its name sug-
+gests, describes the way the distribution of heat in a
+physical medium changes with time:
+
 Here, T (x, y, z, t) is a function that specifies the tem-     f (x) and f (x − h) can themselves be approximated
-per at ure at the point (x, y, z) at time t.                    by (f (x+h)−f (x))/h and (f (x)−f (x−h))/h, respec-
-                                                              tively, and if we substitute these approximations into
+per at ure at the point (x, y, z) at time t.
   It is one thing to read an equation like this and under-
-                                                              the earlier expression, then we obtain
 stand the symbols that make it up, but quite another
-to see what it really means. However, it is important to            1 f (x + h) − f (x)   f (x) − f (x − h)
-                                                                                        −                   ,
-do so, since of the many expressions one could write                h         h                   h
-down that involve partial derivatives, only a minority        which equals (f (x+h)−2 f (x)+f (x−h))/h2 . Dividing
-                                                                                                            1
-are of much significance, and these tend to be the ones        the top of this last fraction by 2, we obtain 2 (f (x + h)+
+to see what it really means. However, it is important to
+do so, since of the many expressions one could write
+down that involve partial derivatives, only a minority
+are of much significance, and these tend to be the ones
 
-I.3.   Some Fundamental Mathematical Definitions                                                                     35
+I. Introduction
+The left-hand side, ∂T /∂t, is quite simple. It is the
+p = T (h) + (h)                         rate of change of the temperature T (x, y, z, t) when
+the spatial coordinates x, y, and z are kept fixed and
+t varies. In other words, it tells us how fast the point
+(x, y, z) is heating up or cooling down at time t. What
+u(x + h) = u(x) + T (h) + (h),
+time to travel through a medium, so although the tem-
+per at ure at some distant point (x , y , z ) will even-
+tually affect the temperature at (x, y, z), the way the
+temperature is changing right now (that is, at time t)
+will be affected only by the temperatures of points very
+close to (x, y, z): if points in the immediate neighbor-
+hood of (x, y, z) are hotter, on average, than (x, y, z)
+itself, then we expect the temperature at (x, y, z) to be
+increasing, and if they are colder then we expect it to
+u(x + h) = u(x) + T (h) + (h)
+be decreasing.
+The expression in brackets on the right-hand side
+appears so often that it has its own shorthand. The
+symbol Δ, defined by
+∂2 f   ∂2 f    ∂2 f
+Δf =
+∂x 2   ∂y 2   ∂z 2
+is known as the Laplacian. What information does Δf
+give us about a function f ? The answer is that it cap-
+tures the idea in the last paragraph: it tells us how the
+value of f at (x, y, z) compares with the average value
+of f in a small neighborhood of (x, y, z), or, more pre-
+cisely, with the limit of the average value in a neigh-
+borhood of (x, y, z) as the size of that neighborhood
+shrinks to zero.
+This is not immediately obvious from the formula,
+but the following (not wholly rigorous) argument in
+one dimension gives a clue about why second deriva-
+real numbers to real numbers. Then to obtain a good
+approximation to the second derivative of f at a point
+x, one can look at the expression (f (x)−f (x −h))/h
+for some small h. (If one substitutes −h for h in the
+∂T    ∂2 T   ∂2 T    ∂2 T
+=κ
+∂t    ∂x 2   ∂y 2   ∂z 2
+by (f (x+h)−f (x))/h and (f (x)−f (x−h))/h, respec-
+tively, and if we substitute these approximations into
+the earlier expression, then we obtain
+1 f (x + h) − f (x)   f (x) − f (x − h)
+−                   ,
+h
+which equals (f (x+h)−2 f (x)+f (x−h))/h2 . Dividing
+1
+the top of this last fraction by 2, we obtain 2 (f (x + h)+
 
-f (x − h)) − f (x): that is, the difference between the        A and B. Suppose that the height of the string at dis-
-value of f at x and the average value of f at the two         tance x from A and at time t is written h(x, t). Then
-surrounding points x + h and x − h.                           the wave equation says that
-   In other words, the second derivative conveys just                                1 ∂2 h   ∂2 h
-                                                                                           =      .
-the idea we want—a comparison between the value at                                    2
-                                                                                    v ∂t 2   ∂x 2
-x and the average value near x. It is worth noting that       Ignoring the constant 1/v 2 for a moment, the left-hand
+I.3.   Some Fundamental Mathematical Definitions
+
+f (x − h)) − f (x): that is, the difference between the
+value of f at x and the average value of f at the two
+surrounding points x + h and x − h.
+   In other words, the second derivative conveys just
+the idea we want—a comparison between the value at
+x and the average value near x. It is worth noting that
 if f is linear, then the average of f (x − h) and f (x + h)   side of this equation represents the acceleration (in a
-will be equal to f (x), which fits with the familiar fact      vertical direction) of the piece of string at distance x
+will be equal to f (x), which fits with the familiar fact
 that the second derivative of a linear function f is zero.    from A. This should be proportional to the force acting
-   Just as, when defining the first derivative, we have         on it. What will govern this force? Well, suppose for a
-to divide the difference f (x + h) − f (x) by h so that        moment that the portion of string containing x were
-it is not automatically tiny, so with the second deriva-      absolutely straight. Then the pull of the string on the
+   Just as, when defining the first derivative, we have
+to divide the difference f (x + h) − f (x) by h so that
+it is not automatically tiny, so with the second deriva-
 tive it is appropriate to divide by h2 . (This is ap propri-   left of x would exactly cancel out the pull on the right
-ate, since, where as the first derivative concerns linear       and the net force would be zero. So, once again, what
-approximations, the second derivative concerns quad-          matters is how the height at x compares with the aver-
-ratic ones: the best quadratic approximation for a func-      age height on either side: if the string lies above the
-tion f near a value x is f (x + h) ≈ f (x) + hf (x) +         tangent line at x, then there will be an upwards force,
+ate, since, where as the first derivative concerns linear
+approximations, the second derivative concerns quad-
+ratic ones: the best quadratic approximation for a func-
+tion f near a value x is f (x + h) ≈ f (x) + hf (x) +
 1 2
-2 h f (x), an approximation that one can check is             and if it lies below, then there will be a downwards one.
-exact if f was a quadratic function to start with.)           This is why the second derivative appears on the right-
-  It is possible to pursue thoughts of this kind and          hand side once again. How much force results from this
-show that if f is a function of three variables then the      second derivative depends on factors such as the den-
-value of Δf at (x, y, z) does indeed tell us how the          sity and tautness of the string, which is where the con-
-value of f at (x, y, z) compares with the average values      stant comes in. Since h and x are both distances, v 2
-of f at points nearby. (There is nothing special about        has dimensions of (distance/time)2 , which means that
-the number 3 here—the ideas can easily be generalized         v represents a speed, which is, in fact, the speed of
+2 h f (x), an approximation that one can check is
+exact if f was a quadratic function to start with.)
+  It is possible to pursue thoughts of this kind and
+show that if f is a function of three variables then the
+value of Δf at (x, y, z) does indeed tell us how the
+value of f at (x, y, z) compares with the average values
+of f at points nearby. (There is nothing special about
+the number 3 here—the ideas can easily be generalized
 to functions of any number of variables.) All that is left    propagation of the wave.
-to discuss in the heat equation is the parameter κ. This         Similar considerations yield the three-dimensional
-measures the conductivity of the medium. If κ is small,       wave equation, which is, as one might now expect,
-then the medium does not conduct heat very well and                        1 ∂2 h    ∂2 h    ∂2 h   ∂2 h
-                                                                                  =      +      +      ,
-ΔT has less of an effect on the rate of change of the                        2
-                                                                           v ∂t 2   ∂x 2   ∂y 2   ∂z 2
+to discuss in the heat equation is the parameter κ. This
+measures the conductivity of the medium. If κ is small,
+then the medium does not conduct heat very well and
+ΔT has less of an effect on the rate of change of the
 temperature; if it is large then heat is conducted better     or, more concisely,
 and the effect is greater.
-                                                                                   1 ∂2 h
-  A second equation of great importance is the Laplace                                     = Δh.
-                                                                                  v 2 ∂t 2
+  A second equation of great importance is the Laplace
 equation, Δf = 0. Intuitively speaking, this says of a
-                                                              One can be more concise still and write this equation
 function f that its value at a point (x, y, z) is always
-                                                              as 2 h = 0, where 2 h is shorthand for
 equal to the average value at the immediately sur round-
-ing points. If f is a function of just one variable x,                                  1 ∂2 h
-                                                                                    Δh −        .
-this says that the second derivative of f is zero, which                               v 2 ∂t 2
-implies that f is of the form ax + b. However, for two        The operation 2 is called the d’Alembertian, after
-or more variables, a function has more flexibility—it          d’alembert [VI.20](/part-06/jean-le-rond-dalembert-17171783), who was the first to formulate the
-can lie above the tangent lines in some directions and        wave equation.
+ing points. If f is a function of just one variable x,
+this says that the second derivative of f is zero, which
+implies that f is of the form ax + b. However, for two
+or more variables, a function has more flexibility—it
+can lie above the tangent lines in some directions and
 below it in others. As a result, one can impose a variety
-                                                              5.5   Integration
 of boundary conditions on f (that is, specifications of
 the values f takes on the boundaries of certain regions),     Suppose that a car drives down a long straight road for
-and there is a much wider and more interesting class          one minute, and that you are told where it starts and
-of solutions.                                                 what its speed is during that minute. How can you work
-  A third fundamental equation is the wave equation.          out how far it has gone? If it travels at the same speed
-In its one-dimensional formulation it describes the           for the whole minute then the problem is very simple
-motion of a vibrating string that connects two points         indeed—for example, if that speed is thirty miles per
+and there is a much wider and more interesting class
+of solutions.
+  A third fundamental equation is the wave equation.
+In its one-dimensional formulation it describes the
+motion of a vibrating string that connects two points
 
-36                                                                                                     I. Introduction
+35
+A and B. Suppose that the height of the string at dis-
+tance x from A and at time t is written h(x, t). Then
+the wave equation says that
+1 ∂2 h   ∂2 h
+=      .
+2
+v ∂t 2   ∂x 2
+Ignoring the constant 1/v 2 for a moment, the left-hand
+vertical direction) of the piece of string at distance x
+on it. What will govern this force? Well, suppose for a
+moment that the portion of string containing x were
+absolutely straight. Then the pull of the string on the
+and the net force would be zero. So, once again, what
+matters is how the height at x compares with the aver-
+age height on either side: if the string lies above the
+tangent line at x, then there will be an upwards force,
+and if it lies below, then there will be a downwards one.
+This is why the second derivative appears on the right-
+hand side once again. How much force results from this
+second derivative depends on factors such as the den-
+sity and tautness of the string, which is where the con-
+stant comes in. Since h and x are both distances, v 2
+has dimensions of (distance/time)2 , which means that
+v represents a speed, which is, in fact, the speed of
+Similar considerations yield the three-dimensional
+wave equation, which is, as one might now expect,
+1 ∂2 h    ∂2 h    ∂2 h   ∂2 h
+=      +      +      ,
+2
+v ∂t 2   ∂x 2   ∂y 2   ∂z 2
+1 ∂2 h
+= Δh.
+v 2 ∂t 2
+One can be more concise still and write this equation
+as 2 h = 0, where 2 h is shorthand for
+1 ∂2 h
+Δh −        .
+v 2 ∂t 2
+The operation 2 is called the d’Alembertian, after
+d’alembert [VI.20](/part-06/jean-le-rond-dalembert-17171783), who was the first to formulate the
+wave equation.
+5.5   Integration
+one minute, and that you are told where it starts and
+what its speed is during that minute. How can you work
+out how far it has gone? If it travels at the same speed
+for the whole minute then the problem is very simple
+indeed—for example, if that speed is thirty miles per
 
-hour then we can divide by sixty and see that it has             Suppose that you have a lump of impure rock and
-gone half a mile—but the problem becomes more inter-          wish to calculate its mass from its density. Suppose also
+36
+
+hour then we can divide by sixty and see that it has
+gone half a mile—but the problem becomes more inter-
 esting if the speed varies. Then, instead of trying to give   that this density is not constant but varies rather irreg-
-an exact answer, one can use the following technique to       ularly through the rock. Perhaps there are even holes
+an exact answer, one can use the following technique to
 approximate it. First, write down the speed of the car at     inside, so that the density is zero in places. What should
 the beginning of each of the sixty seconds that it is trav-   you do?
-eling. Next, for each of those seconds, do a simple cal-         Riemann’s approach would be this. First, you enclose
-culation to see how far the car would have gone during        the rock in a cuboid. For each point (x, y, z) in this
-that second if the speed had remained exactly as it was       cuboid there is then an associated density d(x, y, z)
+eling. Next, for each of those seconds, do a simple cal-
+culation to see how far the car would have gone during
+that second if the speed had remained exactly as it was
 at the beginning of the second. Finally, add up all these     (which will be zero if (x, y, z) lies out side the rock or
-distances. Since one second is a short time, the speed        inside a hole). Second, you divide the cuboid into a large
-will not change very much during any one second, so           number of smaller cuboids. Third, in each of the small
-this procedure gives quite an accurate answer. More-          cuboids you look for the point of lowest density (if any
-over, if you are not satisfied with this accuracy, then        point in the cuboid is not in the rock, then this density
-you can improve it by using intervals that are shorter        will be zero) and the point of highest density. Let C be
-than a second.                                                one of the small cuboids and suppose that the lowest
-   If you have done a first course in calculus, then you       and highest densities in C are a and b, respectively, and
-may well have solved such problems in a completely            that the volume of C is V . Then the mass of the part of
-different way. In a typical question, one is given an          the rock that lies in C must lie between a V and b V .
-explicit formula for the speed at time t—something like       Fourth, add up all the numbers a V that are obtained
-at + u, for example—and in order to work out how far          in this way, and then add up all the numbers b V . If
+distances. Since one second is a short time, the speed
+will not change very much during any one second, so
+this procedure gives quite an accurate answer. More-
+over, if you are not satisfied with this accuracy, then
+you can improve it by using intervals that are shorter
+than a second.
+   If you have done a first course in calculus, then you
+may well have solved such problems in a completely
+different way. In a typical question, one is given an
+explicit formula for the speed at time t—something like
+at + u, for example—and in order to work out how far
 the car has gone one “integrates” this function to obtain     the totals are M1 and M2 , respectively, then the total
 the formula 12 at 2 + ut for the distance traveled at time    mass of rock has to lie between M1 and M2 . Finally,
-t. Here, integration simply means the opposite of differ-      repeat this calculation for subdivisions into smaller and
-entiation: to find the integral of a function f is to find      smaller cuboids. As you do this, the resulting numbers
-a function g such that g (t) = f (t). This makes sense,       M1 and M2 will become closer and closer to each other,
+t. Here, integration simply means the opposite of differ-
+entiation: to find the integral of a function f is to find
+a function g such that g (t) = f (t). This makes sense,
 because if g(t) is the distance traveled and f (t) is the     and you will have better and better approximations to
-speed, then f (t) is indeed the rate of change of g(t).       the mass of the rock.
-   However, anti differentiation is not the definition of           Similarly, his approach to the problem about the car
-integration. To see why not, consider the following           would be to divide the minute up into small intervals
-question: what is the distance traveled if the speed at       and look at the minimum and maximum speeds during
-              2
+speed, then f (t) is indeed the rate of change of g(t).
+   However, anti differentiation is not the definition of
+integration. To see why not, consider the following
+question: what is the distance traveled if the speed at
+
 time t is e−t ? It is known that there is no nice function    those intervals. For each interval, this would give him
-(which means, roughly speaking, a function built up out       a pair of numbers a and b for which he could say that
-of standard ones such as polynomials, exponentials,           the car had traveled a distance of at least a and at most
-                                                       2
-logarithms, and trigonometric functions) with e−t as          b. Adding up these sets of numbers, he could then say
-its derivative, yet the question still makes good sense       that over the full minute the car must have traveled a
-and has a definite answer. (It is possible that you have       distance of at least D1 (the sum of the as) and at most
-                                                         2
-heard of a function Φ(t) that differentiates to e−t /2 ,       D2 (the sum of the bs).
-                                 √from which it follows that Φ(t 2)/ 2 differentiates to            With both these problems we had a function (den-
+(which means, roughly speaking, a function built up out
+of standard ones such as polynomials, exponentials,
+logarithms, and trigonometric functions) with e−t as
+its derivative, yet the question still makes good sense
+and has a definite answer. (It is possible that you have
+heard of a function Φ(t) that differentiates to e−t /2 ,
+from which it follows that Φ(t 2)/ 2 differentiates to
     2
-e−t . However, this does not remove the difficulty, since       sity/speed) defined on a set (the cuboid/a minute of
-                                       2
-Φ(t) is defined as the integral of e−t /2 .)                   time) and in a certain sense we wanted to work out the
-   In order to define integration in situations like this      “total amount” of the function. We did so by dividing
-where anti differentiation runs into difficulties, we must        the set into small parts and doing simple calculations
-fall back on messy approximations of the kind dis-            in those parts to obtain approximations to this amount
-cussed earlier. A formal definition along such lines was       from below and above. This process is what is known as
-given by riemann [VI.49] in the mid nineteenth cen-           (Riemann) integration. The following notation is com-
-tury. To see what Riemann’s basic idea is, and to see         mon: if S is the set and f is the function, then the
+e−t . However, this does not remove the difficulty, since
+Φ(t) is defined as the integral of e−t /2 .)
+   In order to define integration in situations like this
+where anti differentiation runs into difficulties, we must
+fall back on messy approximations of the kind dis-
+cussed earlier. A formal definition along such lines was
+given by riemann [VI.49] in the mid nineteenth cen-
+tury. To see what Riemann’s basic idea is, and to see
 also that integration, like differentiation, is a procedure    total amount of f in S, known as the integral, is written
-that can usefully be applied to functions of more than         S f (x) dx. Here, x denotes a typical element of S. If,
-one variable, let us look at another physical problem.        as in the density example, the elements of S are points
+that can usefully be applied to functions of more than
+one variable, let us look at another physical problem.
 
-I.3.   Some Fundamental Mathematical Definitions                                                                      37
+I. Introduction
+Suppose that you have a lump of impure rock and
+wish to calculate its mass from its density. Suppose also
+ularly through the rock. Perhaps there are even holes
+Riemann’s approach would be this. First, you enclose
+the rock in a cuboid. For each point (x, y, z) in this
+cuboid there is then an associated density d(x, y, z)
+inside a hole). Second, you divide the cuboid into a large
+number of smaller cuboids. Third, in each of the small
+cuboids you look for the point of lowest density (if any
+point in the cuboid is not in the rock, then this density
+will be zero) and the point of highest density. Let C be
+one of the small cuboids and suppose that the lowest
+and highest densities in C are a and b, respectively, and
+that the volume of C is V . Then the mass of the part of
+the rock that lies in C must lie between a V and b V .
+Fourth, add up all the numbers a V that are obtained
+in this way, and then add up all the numbers b V . If
+repeat this calculation for subdivisions into smaller and
+smaller cuboids. As you do this, the resulting numbers
+M1 and M2 will become closer and closer to each other,
+the mass of the rock.
+Similarly, his approach to the problem about the car
+would be to divide the minute up into small intervals
+and look at the minimum and maximum speeds during
+2
+a pair of numbers a and b for which he could say that
+the car had traveled a distance of at least a and at most
+2
+b. Adding up these sets of numbers, he could then say
+that over the full minute the car must have traveled a
+distance of at least D1 (the sum of the as) and at most
+2
+D2 (the sum of the bs).
+√With both these problems we had a function (den-
+sity/speed) defined on a set (the cuboid/a minute of
+2
+time) and in a certain sense we wanted to work out the
+“total amount” of the function. We did so by dividing
+the set into small parts and doing simple calculations
+in those parts to obtain approximations to this amount
+from below and above. This process is what is known as
+(Riemann) integration. The following notation is com-
+mon: if S is the set and f is the function, then the
+S f (x) dx. Here, x denotes a typical element of S. If,
+as in the density example, the elements of S are points
 
-(x, y, z), then vector notation such as S f (x) dx can        this means that we would like to approximate it by func-
+I.3.   Some Fundamental Mathematical Definitions
+
+(x, y, z), then vector notation such as S f (x) dx can
 be used, though often it is not and the reader is left to     tions of the form g(w) = . ambda w + μ, where . ambda and \mu are
-deduce from the context that an ordinary “x” denotes          complex numbers. (The approximation near z will be
-a vector rather than a real number.                           g(w) = f (z) + f (z)(w − z), which gives λ = f (z)
-   We have been at pains to distinguish integration from      and μ = f (z) − zf (z).)
-anti differentiation, but a famous theorem, known as               Let us regard this situation geometrically. If λ = 0
-the fundamental theorem of calculus, asserts that the         then the effect of multiplying by . ambda is to expand z
-two procedures do, in fact, give the same answer, at          by some factor r and to rotate it by some angle θ.
-least when the function in question has certain continu-      This means that many transformations of the plane
+deduce from the context that an ordinary “x” denotes
+a vector rather than a real number.
+   We have been at pains to distinguish integration from
+anti differentiation, but a famous theorem, known as
+the fundamental theorem of calculus, asserts that the
+two procedures do, in fact, give the same answer, at
+least when the function in question has certain continu-
 ity properties that all “sensible” functions have. So it is   that we would ordinarily consider to be linear, such
-usually legitimate to regard integration as the opposite      as reflections, shears, or stretches, are ruled out. We
+usually legitimate to regard integration as the opposite
 of differentiation. More precisely, if f is continuous and     need two real numbers to specify λ (whether we write
-                         x
-F (x) is defined to be a f (t) dt for some a, then F can       it in the form a + bi or r eiθ ), but to specify a gen-
+F (x) is defined to be a f (t) dt for some a, then F can
 be differentiated and F (x) = f (x). That is, if you inte-     eral linear transformation of the plane takes four (see
-grate a continuous function and differentiate it again,        the discussion of matrices in section 4.2). This reduc-
-you get back to where you started. Going the other way        tion in the number of degrees of freedom is expressed
-around, if F has a continuous derivative f and a < x,         by a pair of differential equations called the Cauchy–
-       x                                                      Riemann equations. Instead of writing f (z) let us write
+grate a continuous function and differentiate it again,
+you get back to where you started. Going the other way
+around, if F has a continuous derivative f and a < x,
+
 then a f (t) dt = F (x) − F (a). This almost says that if
-you differentiate F and then integrate it again, you get       u(x + iy) + iv(x + iy), where x and y are the real
-back to F . Actually, you have to choose an arbitrary         and imaginary parts of z and u(x + iy) and v(x + iy)
-number a and what you get is the function F with the          are the real and imaginary parts of f (x + iy). Then the
-constant F (a) subtracted.                                    linear approximation to f near z has the matrix
-                                                                                   ⎛           ⎞
-   To get an idea of the sort of exceptions that arise if                            ∂u     ∂u
+you differentiate F and then integrate it again, you get
+back to F . Actually, you have to choose an arbitrary
+number a and what you get is the function F with the
+constant F (a) subtracted.
+   To get an idea of the sort of exceptions that arise if
 one does not assume continuity, consider the so-called
-                                                                                   ⎜ ∂x
-                                                                                   ⎜        ∂y ⎟
-                                                                                               ⎟
-                                                                                   ⎜           ⎟.
-Heaviside step function H(x), which is 0 when x < 0                                ⎝ ∂v     ∂v ⎠
-and 1 when x ⩾ 0. This function has a jump at 0 and                                  ∂x     ∂y
-is therefore not continuous. The integral J(x) of this        The matrix of an expansion and rotation always has the
-function is 0 when x < 0 and x when x ⩾ 0, and for                   a b
-                                                              form ( −b a ), from which we deduce that
-almost all values of x we have J (x) = H(x). However,                      ∂u   ∂v            ∂u    ∂v
-the gradient of J suddenly changes at 0, so J is not                          =        and       =−    .
-                                                                           ∂x   ∂y            ∂y    ∂x
+Heaviside step function H(x), which is 0 when x < 0
+and 1 when x ⩾ 0. This function has a jump at 0 and
+is therefore not continuous. The integral J(x) of this
+function is 0 when x < 0 and x when x ⩾ 0, and for
+almost all values of x we have J (x) = H(x). However,
+the gradient of J suddenly changes at 0, so J is not
 differentiable there and one cannot say that J (0) =
-                                                              These are the Cauchy–Riemann equations. One conse-
 H(0) = 1.
-                                                              quence of these equations is that
-                                                                         ∂2 u    ∂2 u     ∂2 v    ∂2 v
-5.6    Holomorphic Functions                                                  +      =       −      = 0.
-                                                                         ∂x 2   ∂y 2   ∂x∂y    ∂y∂x
-One of the jewels in the crown of mathematics is com-         (It is not obvious that the necessary conditions hold
-plex analysis, which is the study of differentiable func-      for the symmetry of the mixed partial derivatives, but
-tions that take complex numbers to complex numbers.           when f is holomorphic they do.) Therefore, u sat-
-Functions of this kind are called holomorphic.                isfies the Laplace equation (which was discussed in
-   At first, there seems to be nothing special about such      section 5.4). A similar argument shows that v does
-functions, since the definition of a derivative in this        as well.
-context is no different from the definition for functions          These facts begin to suggest that complex differ en-
+5.6    Holomorphic Functions
+One of the jewels in the crown of mathematics is com-
+plex analysis, which is the study of differentiable func-
+tions that take complex numbers to complex numbers.
+Functions of this kind are called holomorphic.
+   At first, there seems to be nothing special about such
+functions, since the definition of a derivative in this
+context is no different from the definition for functions
 of a real variable: if f is a function then the derivative    ti ability is a much stronger condition than real differ en-
-f (z) at a complex number z is defined to be the limit         ti ability and that we should expect holomorphic func-
-as h tends to zero of (f (z + h) − f (z))/h. However, if      tions to have interesting properties. For the remainder
+f (z) at a complex number z is defined to be the limit
+as h tends to zero of (f (z + h) − f (z))/h. However, if
 we look at this definition in a slightly different way (one     of this subsection, let us look at a few of the remarkable
-that we saw in section 5.3), we find that it is not alto-      properties that they do indeed have.
-gether easy for a complex function to be differentiable.          The first is related to the fundamental theorem of cal-
-Recall from that section that differentiation means lin-       culus (discussed in the previous subsection). Suppose
-ear approximation. In the case of a complex function,         that F is a holomorphic function and that we are given
+that we saw in section 5.3), we find that it is not alto-
+gether easy for a complex function to be differentiable.
+Recall from that section that differentiation means lin-
+ear approximation. In the case of a complex function,
 
-38                                                                                                             I. Introduction
+37
+this means that we would like to approximate it by func-
+complex numbers. (The approximation near z will be
+g(w) = f (z) + f (z)(w − z), which gives λ = f (z)
+and μ = f (z) − zf (z).)
+Let us regard this situation geometrically. If λ = 0
+then the effect of multiplying by . ambda is to expand z
+by some factor r and to rotate it by some angle θ.
+This means that many transformations of the plane
+as reflections, shears, or stretches, are ruled out. We
+x
+it in the form a + bi or r eiθ ), but to specify a gen-
+the discussion of matrices in section 4.2). This reduc-
+tion in the number of degrees of freedom is expressed
+by a pair of differential equations called the Cauchy–
+x
+u(x + iy) + iv(x + iy), where x and y are the real
+and imaginary parts of z and u(x + iy) and v(x + iy)
+are the real and imaginary parts of f (x + iy). Then the
+linear approximation to f near z has the matrix
+⎛           ⎞
+∂u     ∂u
+⎜ ∂x
+⎜        ∂y ⎟
+⎟
+⎜           ⎟.
+⎝ ∂v     ∂v ⎠
+∂x     ∂y
+The matrix of an expansion and rotation always has the
+a b
+form ( −b a ), from which we deduce that
+∂u   ∂v
+=
+∂x   ∂y            ∂y    ∂x
+These are the Cauchy–Riemann equations. One conse-
+quence of these equations is that
+∂2 u    ∂2 u     ∂2 v    ∂2 v
++
+∂x 2   ∂y 2   ∂x∂y    ∂y∂x
+(It is not obvious that the necessary conditions hold
+for the symmetry of the mixed partial derivatives, but
+when f is holomorphic they do.) Therefore, u sat-
+isfies the Laplace equation (which was discussed in
+section 5.4). A similar argument shows that v does
+as well.
+These facts begin to suggest that complex differ en-
+ti ability and that we should expect holomorphic func-
+tions to have interesting properties. For the remainder
+properties that they do indeed have.
+The first is related to the fundamental theorem of cal-
+culus (discussed in the previous subsection). Suppose
+that F is a holomorphic function and that we are given
 
-its derivative f and the value of F (u) for some complex           real-valued functions: consider, for example, the func-
-number u. How can we reconstruct F ? An approximate                tion f where f (x) = 0 when x < 0 and f (x) = x2
-method is as follows. Let w be another complex num-                when x ⩾ 0.) It follows that f is holomorphic, so it
-ber and let us try to work out F (w). We take a sequence           too can be differentiated twice. Continuing, one finds
-of points z0 , z1 , . . . , zn with z0 = u and zn = w, and         that f can be differentiated any number of times. Thus,
+38
+
+its derivative f and the value of F (u) for some complex
+number u. How can we reconstruct F ? An approximate
+method is as follows. Let w be another complex num-
+ber and let us try to work out F (w). We take a sequence
+of points z0 , z1 , . . . , zn with z0 = u and zn = w, and
 with the differences |z1 − z0 |, |z2 − z1 |, . . . , |zn − zn−1 |   for complex functions different i ability implies infinite
-all small. We can then approximate F (zi+1 ) − F (zi ) by          different i ability. (This property is what is used to estab-
-(zi+1 − zi )f (zi ). It follows that F (w) − F (u), which          lish the symmetry, and even the existence, of the mixed
-equals F (zn ) − F (z0 ), is approximated by the sum of            partial derivatives mentioned earlier.)
-all the (zi+1 − zi )f (zi ). (Since we have added together            A closely related fact is that wherever a holomorphic
-many small errors, it is not obvious that this approx-             function is defined it can be expanded in a power series.
-imation is a good one, but it turns out that it is.) We            That is, if f is defined and differentiable every where on
-can imagine a number z that starts at u and follows a              an open disk of radius R about w, then it will be given
-path P to w by jumping from one zi to another in small             by a formula of the form
-steps of δz = zi+1 − zi . In the limit as n goes to infinity                                  . nfty
-                                                                                             
-and the steps δz go to zero we obtain a so-called path                             f (z) =         an (z − w)n ,
-                                                                                             n=0
+all small. We can then approximate F (zi+1 ) − F (zi ) by
+(zi+1 − zi )f (zi ). It follows that F (w) − F (u), which
+equals F (zn ) − F (z0 ), is approximated by the sum of
+all the (zi+1 − zi )f (zi ). (Since we have added together
+many small errors, it is not obvious that this approx-
+imation is a good one, but it turns out that it is.) We
+can imagine a number z that starts at u and follows a
+path P to w by jumping from one zi to another in small
+steps of δz = zi+1 − zi . In the limit as n goes to infinity
+and the steps δz go to zero we obtain a so-called path
 integral, which is denoted P f (z) dz.
-                                                                   valid every where in that disk. This is called the Taylor
    The above argument has the consequence that if the
-                                                                   expansion of f .
 path P begins and ends at the same point u, then the
-                                                                      Another fundamental property of holomorphic func-
 path integral P f (z) dz is zero. Equivalently, if two
-                                                                   tions, one that shows just how “rigid” they are, is that
 paths P1 and P2 have the same starting point u and the
-                                                                   their entire behavior is determined just by what they
 same endpoint w, then the path integrals P1 f (z) dz
-                                                                   do in a small region. That is, if f and g are holomor-
 and P2 f (z) dz are the same, since they both give the
-                                                                   phic and they take the same values in some tiny disk,
 value F (w) − F (u).
-                                                                   then they must take the same values every where. This
    Of course, in order to establish this, we made the
-                                                                   remarkable fact allows a process of analytic continua-
 big assumption that f was the derivative of a function
-                                                                   tion. If it is difficult to define a holomorphic function
 F . Cauchy’s theorem says that the same conclusion is
-                                                                   f every where you want it defined, then you can sim-
 true if f is holomorphic. That is, rather than requiring
-                                                                   ply define it in some small region and say that else-
 f to be the derivative of another function, it asks for
-                                                                   where it takes the only possible values that are consis-
 f itself to have a derivative. If that is the case, then
-                                                                   tent with the ones that you have just specified. This is
 any path integral of f depends only on where the path
-                                                                   how the famous riemann zeta function [IV.2 §3](/part-04/number-theory) is
 begins and ends. What is more, these path integrals
-                                                                   conventionally defined.
 can be used to define a function F that differentiates
-                                                                      Finally, we mention a theorem of liouville [VI.39](/part-06/joseph-liouville-18091882),
 to f , so a function with a derivative automatically has
-                                                                   which states that if f is a holomorphic function defined
 an antiderivative.
-                                                                   on the whole complex plane, and if f is bounded (that
    It is not necessary for the function f to be defined
-                                                                   is, if there is some constant C such that |f (z)| ⩽ C
 on the whole of C for Cauchy’s theorem to be valid:
-                                                                   for every complex number z), then f must be constant.
 everything remains true if we restrict attention to a
-                                                                   Once again, this is obviously false for real functions.
 simply connected domain, which means an open set
-                                                                   For example, the function sin(x) has no difficulty com-
 [III.90](/part-03/topological-spaces) with no holes in it. If there are holes, then
-                                                                   bining boundedness with very good behavior: it can be
 two path integrals may differ if the paths go around
-                                                                   expanded in a power series that converges every where.
 the holes in different ways. Thus, path integrals have
-                                                                   (However, if you use the power series to define an exten-
 a close connection with the topology of subsets of
-                                                                   sion of the function sin(x) to the complex plane, then
 the plane, an observation that has many ramifications
-                                                                   the function you obtain is unbounded, as Liouville’s
 through out modern geometry. For more on topology,
-                                                                   theorem predicts.)
 see section 6.4 of this article and algebraic topology
 [IV.6](/part-04/algebraic-topology).
-                                                                                  6   What Is Geometry?
    A very surprising fact, which can be deduced from
-Cauchy’s theorem, is that if f is holomorphic then it can          It is not easy to do justice to geometry in this arti-
-be differentiated twice. (This is completely untrue of              cle because the fundamental concepts of the subject
+Cauchy’s theorem, is that if f is holomorphic then it can
+be differentiated twice. (This is completely untrue of
+
+I. Introduction
+real-valued functions: consider, for example, the func-
+tion f where f (x) = 0 when x < 0 and f (x) = x2
+when x ⩾ 0.) It follows that f is holomorphic, so it
+too can be differentiated twice. Continuing, one finds
+that f can be differentiated any number of times. Thus,
+different i ability. (This property is what is used to estab-
+lish the symmetry, and even the existence, of the mixed
+partial derivatives mentioned earlier.)
+A closely related fact is that wherever a holomorphic
+function is defined it can be expanded in a power series.
+That is, if f is defined and differentiable every where on
+an open disk of radius R about w, then it will be given
+by a formula of the form
+. nfty
+
+f (z) =
+n=0
+valid every where in that disk. This is called the Taylor
+expansion of f .
+Another fundamental property of holomorphic func-
+tions, one that shows just how “rigid” they are, is that
+their entire behavior is determined just by what they
+do in a small region. That is, if f and g are holomor-
+phic and they take the same values in some tiny disk,
+then they must take the same values every where. This
+remarkable fact allows a process of analytic continua-
+tion. If it is difficult to define a holomorphic function
+f every where you want it defined, then you can sim-
+ply define it in some small region and say that else-
+where it takes the only possible values that are consis-
+tent with the ones that you have just specified. This is
+how the famous riemann zeta function [IV.2 §3](/part-04/number-theory) is
+conventionally defined.
+Finally, we mention a theorem of liouville [VI.39](/part-06/joseph-liouville-18091882),
+which states that if f is a holomorphic function defined
+on the whole complex plane, and if f is bounded (that
+is, if there is some constant C such that |f (z)| ⩽ C
+for every complex number z), then f must be constant.
+Once again, this is obviously false for real functions.
+For example, the function sin(x) has no difficulty com-
+bining boundedness with very good behavior: it can be
+expanded in a power series that converges every where.
+(However, if you use the power series to define an exten-
+sion of the function sin(x) to the complex plane, then
+the function you obtain is unbounded, as Liouville’s
+theorem predicts.)
+6   What Is Geometry?
+It is not easy to do justice to geometry in this arti-
+cle because the fundamental concepts of the subject
 
 $I$ . $3$ .
 
@@ -1243,7 +1766,7 @@ Topology
 
 The idea that the geometry associated with a group of transformations “studies the concepts that are preserved by all the transformations” can be made more precise using the notion of equivalence relations [I.2](/part-01/language-and-grammar). Indeed, let $G$ be a group of transformations of R n . We might think of an n-dimensional “shape” as being a subset S of R n , but if we are doing G-geometry, then we do not want to distinguish between a set S and any other set we can obtain from it using a transformation in G. So in that case we say that the two shapes are equivalent.
 For example, two shapes are equivalent in Euclidean geometry if and only if they are congruent in the usual sense, where as in two-dimensional affine geometry all parallelograms are equivalent, as are all ellipses. One can think of the basic objects of G-geometry as equivalence classes of shapes rather than the shapes themselves. Topology can be thought of as the geometry that arises when we use a particularly generous notion of equivalence, saying that two shapes are equivalent, or homeomorphic, to use the technical term, if each can be “continuously deformed” into the other.
-For example, a sphere and a cube are equivalent in this sense, as figure $1$ illustrates. Because there are very many continuous deformations, it is quite hard to prove that two shapes are not equivalent in this sense. For example, it may seem obvious that a sphere (this means the surface of a ball rather than the solid ball) cannot be continuously deformed into a torus (the shape of the surface of a doughnut of the kind that has a hole in it) , since they are fundamentally different shapes--one has a “hole” and the other does not.
+For example, a sphere and a cube are equivalent in this sense, as figure $1$ illustrates. Because there are very many continuous deformations, it is quite hard to prove that two shapes are not equivalent in this sense. For example, it may seem obvious that a sphere (this means the surface of a ball rather than the solid ball) cannot be continuously deformed into a torus (the shape of the surface of a doughnut of the kind that has a hole in it), since they are fundamentally different shapes--one has a “hole” and the other does not.
 However, it is not easy to turn this intuition into a rigorous argument. For more on this kind of problem, see invariants [I.4](/part-01/general-goals), algebraic topology [IV.6](/part-04/algebraic-topology), and differential topology [IV.7](/part-04/dierential-topology).
 
 $6$ . $5$
@@ -1257,62 +1780,103 @@ We have been steadily relaxing our requirements for two shapes to be equivalent,
 This produces a great circle, that is, a circle of radius $1$ , which is as large as it can be given that it lives inside a sphere of radius $1$ . The reason that a great circle deserves to be thought of as some sort of line is that the shortest path between any two points $x$ and $y$ in $S^{2}$ will always be along a great circle, provided that the path is confined to $S^{2}$ .
 This is a very natural restriction to make, since we are regarding $S^{2}$ as our “universe.” It is also a restriction of some practical relevance, since the shortest sensible route between two distant points on Earth’s surface will
 
-I.3.   Some Fundamental Mathematical Definitions                                                                       41
+I.3.   Some Fundamental Mathematical Definitions
 
-not be the straight-line route that burrows hundreds of       ad − bc equal to 1. (These form a group because the
-miles under ground.                                            product of two matrices with determinant 1 again has
-   The distance between two points x and y is defined          determinant 1.) To make this “projective,” one then
-to be the length of the shortest path from x to y that        regards each matrix A as equivalent to −A: for example,
-                                                                                3 −1        −3 1
+not be the straight-line route that burrows hundreds of
+miles under ground.
+   The distance between two points x and y is defined
+to be the length of the shortest path from x to y that
 lies entirely in S 2 . (If x and y are opposite each other,   the matrices ( −5    2 ) and ( 5 −2 ) are equivalent.
-then there are infinitely many shortest paths, all of             To get from this group to the geometry one must first
-length π , so the distance between x and y is π .) How        interpret it as a group of transformations of some two-
-about the angle between two spherical lines? Well, the        dimensional set of points. Once we have done this, we
+then there are infinitely many shortest paths, all of
+length π , so the distance between x and y is π .) How
+about the angle between two spherical lines? Well, the
 lines are intersections of S 2 with two planes, so one can    have what is called a model of two-dimensional hyper-
-define it to be the angle between these two planes in          bolic geometry. The subtlety is that there is no single
-the Euclidean sense. A more aesthetically pleasing way        model of hyperbolic geometry that is clearly the most
-to view this, because it does not involve ideas exter-        natural in the way that the sphere is the most natural
+define it to be the angle between these two planes in
+the Euclidean sense. A more aesthetically pleasing way
+to view this, because it does not involve ideas exter-
 nal to the sphere, is to notice that if you look at a very    model of spherical geometry. (One might think that the
-small region about one of the two points where two            sphere was the only sensible model of spherical geom-
-spherical lines cross, then that portion of the sphere        etry, but this is not in fact the case. For example, there
+small region about one of the two points where two
+spherical lines cross, then that portion of the sphere
 will be almost flat, and the lines almost straight. So you     is a natural way of associating with each rotation of R3
-can define the angle to be the usual angle between the         a transformation of R2 with a “point at infinity” added,
-“limiting” straight lines inside the “limiting” plane.        so the extended plane can be used as a model of spher-
-   Spherical geometry differs from Euclidean geometry          ical geometry.) The three most commonly used models
-in several interesting ways. For example, the angles of       of hyperbolic geometry are called the half-plane model,
-a spherical triangle always add up to more than 180◦ .        the disk model, and the hyperboloid model.
-Indeed, if you take as the vertices the North Pole, a point      The half-plane model is the one most directly asso-
-on the equator, and a second point a quarter of the way       ciated with the group PSL2 (R). The set in question is
-around the equator from the first, then you obtain a           the upper half-plane of the complex numbers C, that
+can define the angle to be the usual angle between the
+“limiting” straight lines inside the “limiting” plane.
+   Spherical geometry differs from Euclidean geometry
+in several interesting ways. For example, the angles of
+a spherical triangle always add up to more than 180◦ .
+Indeed, if you take as the vertices the North Pole, a point
+on the equator, and a second point a quarter of the way
+around the equator from the first, then you obtain a
 triangle with three right angles. The smaller a triangle,     is, the set of all complex numbers z = x + iy such that
-the flatter it becomes, and so the closer the sum of its       y > 0. Given a matrix ( ac d b
-                                                                                             ), the corresponding trans-
-angles comes to 180◦ . There is a beautiful theorem that      formation is the one that takes the point z to the point
+the flatter it becomes, and so the closer the sum of its
+angles comes to 180◦ . There is a beautiful theorem that
 gives a precise expression to this: if we switch to radi-     (az + b)/(cz + d). (Notice that if we replace a, b, c,
-ans, and if we have a spherical triangle with angles α,       and d by their negatives, then we get the same trans-
-β, and γ, then its area is α + β + γ − π . (For example,      formation.) The condition ad − bc = 1 can be used
+ans, and if we have a spherical triangle with angles α,
+β, and γ, then its area is α + β + γ − π . (For example,
 this formula tells us that the triangle with three angles     to show that the transformed point will still lie in the
-of 12 π has area 12 π , which indeed it does as the sur-      upper half-plane, and also that the transformation can
-face area of a ball of radius 1 is 4π and this triangle       be inverted.
-occupies one-eighth of the surface.)                             What this does not yet do is tell us anything about dis-
-                                                              tances, and it is here that we need the group to “gener-
-6.6    Hyperbolic Geometry                                    ate” the geometry. If we are to have a notion of distance
-                                                              d that is sensible from the perspective of our group
-So far, the idea of defining geometries with refer-            of transformations, then it is important that the trans-
-ence to sets of transformations may look like nothing         formations should preserve it. That is, if T is one of
-more than a useful way to view the subject, a unified          the transformations and z and w are two points in the
-approach to what would otherwise be rather different-          upper half-plane, then d(T (z), T (w)) should always be
-looking aspects. However, when it comes to hyperbolic         the same as d(z, w). It turns out that there is essentially
-geometry, the transformation al approach becomes in-           only one definition of distance that has this property,
-dis pens able, for reasons that will be explained in a          and that is the sense in which the group defines the
-moment.                                                       geometry. (One could of course multiply all distances
-   The group of transformations that produces hyper-          by some constant factor such as 3, but this would be
+of 12 π has area 12 π , which indeed it does as the sur-
+face area of a ball of radius 1 is 4π and this triangle
+occupies one-eighth of the surface.)
+6.6    Hyperbolic Geometry
+So far, the idea of defining geometries with refer-
+ence to sets of transformations may look like nothing
+more than a useful way to view the subject, a unified
+approach to what would otherwise be rather different-
+looking aspects. However, when it comes to hyperbolic
+geometry, the transformation al approach becomes in-
+dis pens able, for reasons that will be explained in a
+moment.
+   The group of transformations that produces hyper-
 bolic geometry is called PSL2 (R), the projective special     like measuring distances in feet instead of yards, rather
-linear group in two dimensions. One way to present this       than a genuine difference in the geometry.)
-group is as follows. The special linear group SL2 (R) is         This distance has some properties that at first seem
+linear group in two dimensions. One way to present this
+group is as follows. The special linear group SL2 (R) is
 the set of all matrices ( ac d
-                             b
-                               ) with determinant [III.15](/part-03/determinants)    odd. For example, a typical hyperbolic line takes the
+
+41
+ad − bc equal to 1. (These form a group because the
+product of two matrices with determinant 1 again has
+determinant 1.) To make this “projective,” one then
+regards each matrix A as equivalent to −A: for example,
+3 −1        −3 1
+To get from this group to the geometry one must first
+interpret it as a group of transformations of some two-
+dimensional set of points. Once we have done this, we
+bolic geometry. The subtlety is that there is no single
+model of hyperbolic geometry that is clearly the most
+natural in the way that the sphere is the most natural
+sphere was the only sensible model of spherical geom-
+etry, but this is not in fact the case. For example, there
+a transformation of R2 with a “point at infinity” added,
+so the extended plane can be used as a model of spher-
+ical geometry.) The three most commonly used models
+of hyperbolic geometry are called the half-plane model,
+the disk model, and the hyperboloid model.
+The half-plane model is the one most directly asso-
+ciated with the group PSL2 (R). The set in question is
+the upper half-plane of the complex numbers C, that
+y > 0. Given a matrix ( ac d b
+), the corresponding trans-
+formation is the one that takes the point z to the point
+and d by their negatives, then we get the same trans-
+formation.) The condition ad − bc = 1 can be used
+upper half-plane, and also that the transformation can
+be inverted.
+What this does not yet do is tell us anything about dis-
+tances, and it is here that we need the group to “gener-
+ate” the geometry. If we are to have a notion of distance
+d that is sensible from the perspective of our group
+of transformations, then it is important that the trans-
+formations should preserve it. That is, if T is one of
+the transformations and z and w are two points in the
+upper half-plane, then d(T (z), T (w)) should always be
+the same as d(z, w). It turns out that there is essentially
+only one definition of distance that has this property,
+and that is the sense in which the group defines the
+geometry. (One could of course multiply all distances
+by some constant factor such as 3, but this would be
+than a genuine difference in the geometry.)
+This distance has some properties that at first seem
+b
+) with determinant [III.15](/part-03/determinants)    odd. For example, a typical hyperbolic line takes the
 
 $42$
 
@@ -1330,73 +1894,106 @@ from a hyperbolic perspective, the diameter of the disk is infinite and it does 
 The hyperboloid model is the model that explains why the geometry is called hyperbolic. This time the set is the hyperboloid consisting of all points (x , y, z) $\inR^{3}$ such that $z > 0$ and $x^{2} + y^{2} + 1 = z^{2}$ . This is the hyperboloid of revolution about the z-axis of the hyperbola $x^{2} + 1 = z^{2}$ in the plane $y = 0$ . $A$ general transformation in the group is a sort of “rotation” of the hyperboloid, and can be built up from genuine rotations about the zaxis, and “hyperbolic rotations” of the xz-plane, which have matrices of the form cosh $\theta$ sinh $\theta$ .
 sinh $\theta$ cosh $\theta$ Just as an ordinary rotation preserves the unit circle, one of these hyperbolic rotations preserves the hyperbola $x^{2} + 1 = z^{2}$ , moving points around inside it. Again, it is not quite obvious that this gives the same group
 
-I.3.   Some Fundamental Mathematical Definitions                                                                           43
+I.3.   Some Fundamental Mathematical Definitions
 
-of transformations, but it does, and the hyperboloid             plane to itself. If one invertible linear map is a multiple
-model is equivalent to the other two.                            of another, then they will have the same effect on all
-                                                                 lines, so the resulting group of transformations is like
-6.7    Projective Geometry                                       GL3 (R), except that all nonzero multiples of any given
-                                                                 matrix are regarded as equivalent. This group is called
+of transformations, but it does, and the hyperboloid
+model is equivalent to the other two.
+6.7    Projective Geometry
 Projective geometry is regarded by many as an old-fash-
-                                                                 the projective special linear group PSL3 (R), and it is
 ioned subject, and it is no longer taught in schools, but
-                                                                 the three-dimensional equivalent of PSL2 (R), which we
 it still has an important role to play in modern mathe-
-                                                                 have already met. Since PSL3 (R) is bigger than PSL2 (R),
 matics. We shall concentrate here on the real projective
-                                                                 the projective plane comes with a richer set of trans for-
 plane, but projective geometry is possible in any num-
-                                                                 ma tions than the hyperbolic plane, which is why fewer
 ber of dimensions and with scalars in any field. This
-                                                                 geometrical properties are preserved. (For example, we
 makes it particularly useful to algebraic geometers.
-                                                                 have seen that there is a useful notion of hyperbolic
    Here are two ways of regarding the projective plane.
-                                                                 distance, but there is no obvious notion of projective
 The first is that the set of points is the ordinary plane,
-                                                                 distance.)
 together with a “line at infinity.” The group of trans for-
 ma tions consists of functions known as projections. To
-                                                                 6.8    Lorentz Geometry
 understand what a projection is, imagine two planes P
-and P in space, and a point x that is not in either of           This is a geometry used in the theory of special rel-
-them. We can “project” P onto P as follows. If a is a            ativity to model four-dimensional spacetime, other-
-point in P, then its image φ(a) is the point where the           wise known as Minkowski space. The main difference
+and P in space, and a point x that is not in either of
+them. We can “project” P onto P as follows. If a is a
+point in P, then its image φ(a) is the point where the
 line joining x to a meets P . (If this line is parallel to P ,   between it and four-dimensional Euclidean geometry is
-then φ(a) is a point on the line at infinity of P .) Thus,        that, instead of the usual notion of distance between
-if you are at x and a picture is drawn on the plane P,           two points (t, x, y, z) and (t , x , y , z ), one considers
-then its image under the projection φ will be the picture        the quantity
+then φ(a) is a point on the line at infinity of P .) Thus,
+if you are at x and a picture is drawn on the plane P,
+then its image under the projection φ will be the picture
 drawn on P that to you looks exactly the same. In fact,
-                                                                       −(t − t )2 + (x − x )2 + (y − y )2 + (z − z )2 ,
 however, it will have been distorted, so the transforma-
-tion φ has made a difference to the shape. To turn φ              which would be the square of the Euclidean distance
-into a transformation of P itself, one can follow it by a        were it not for the all-important minus sign before
-rigid transformation that moves P back to where P is.            (t − t )2 . This reflects the fact that space and time are
-   Such projections clearly do not preserve distances,           significantly different (though intertwined).
-but they do preserve other interesting concepts, such               A Lorentz transformation is a linear map from R4 to
-                                                                   4
-                                                                 R that preserves these “generalized distances.” Let-
+tion φ has made a difference to the shape. To turn φ
+into a transformation of P itself, one can follow it by a
+rigid transformation that moves P back to where P is.
+   Such projections clearly do not preserve distances,
+but they do preserve other interesting concepts, such
 as points, lines, quantities known as cross-ratios, and,
-most famously, conic sections. A conic section is the            ting g be the linear map that sends (t, x, y, z) to
+most famously, conic sections. A conic section is the
 intersection of a plane with a cone, and it can be a circle,     (−t, x, y, z) and letting G be the corresponding matrix
-an ellipse, a parabola, or a hyperbola. From the point of        (which has −1, 1, 1, 1 down the diagonal and 0 every-
-view of projective geometry, these are all the same kind         where else), we can define a Lorentz transformation
-of object (just as, in affine geometry, one can talk about         abstractly as one whose matrix Λ satisfies ΛT GΛ = G,
-ellipses but there is no special ellipse called a circle).       where I is the 4 . imes 4 identity matrix and ΛT is the trans-
-   A second view of the projective plane is that it is the       pose of Λ. (The transpose of a matrix A is the matrix B
-set of all lines in R3 that go through the origin. Since a       defined by Bij = Aji .)
-line is determined by the two points where it intersects            A point (t, x, y, z) is said to be spacelike if −t 2 +
-the unit sphere, one can regard this set as a sphere, but        x + y 2 + z 2 > 0, and timelike if −t 2 + x 2 + y 2 +
-                                                                   2
+an ellipse, a parabola, or a hyperbola. From the point of
+view of projective geometry, these are all the same kind
+of object (just as, in affine geometry, one can talk about
+ellipses but there is no special ellipse called a circle).
+   A second view of the projective plane is that it is the
+set of all lines in R3 that go through the origin. Since a
+line is determined by the two points where it intersects
+the unit sphere, one can regard this set as a sphere, but
 
-with the significant difference that opposite points are           z2 < 0. If −t 2 + x 2 + y 2 + z2 = 0, then the point
-regarded as the same—because they correspond to the              lies in the light cone. All these are genuine concepts
-same line.                                                       of Lorentzian geometry because they are preserved by
-   Under this view, a typical transformation of the pro-         Lorentz transformations.
-jective plane is obtained as follows. Take any invertible           Lorentzian geometry is also of fundamental impor-
-linear map, and apply it to R3 . This takes lines through        tance to general relativity, which can be thought of as
-the origin to lines through the origin, and can there-           the study of Lorentzian manifolds. These are closely
-fore be thought of as a function from the projective             related to Riemannian manifolds, which are discussed
+with the significant difference that opposite points are
+regarded as the same—because they correspond to the
+same line.
+   Under this view, a typical transformation of the pro-
+jective plane is obtained as follows. Take any invertible
+linear map, and apply it to R3 . This takes lines through
+the origin to lines through the origin, and can there-
+fore be thought of as a function from the projective
+
+43
+plane to itself. If one invertible linear map is a multiple
+of another, then they will have the same effect on all
+lines, so the resulting group of transformations is like
+GL3 (R), except that all nonzero multiples of any given
+matrix are regarded as equivalent. This group is called
+the projective special linear group PSL3 (R), and it is
+the three-dimensional equivalent of PSL2 (R), which we
+have already met. Since PSL3 (R) is bigger than PSL2 (R),
+the projective plane comes with a richer set of trans for-
+ma tions than the hyperbolic plane, which is why fewer
+geometrical properties are preserved. (For example, we
+have seen that there is a useful notion of hyperbolic
+distance, but there is no obvious notion of projective
+distance.)
+6.8    Lorentz Geometry
+This is a geometry used in the theory of special rel-
+ativity to model four-dimensional spacetime, other-
+wise known as Minkowski space. The main difference
+that, instead of the usual notion of distance between
+two points (t, x, y, z) and (t , x , y , z ), one considers
+the quantity
+−(t − t )2 + (x − x )2 + (y − y )2 + (z − z )2 ,
+which would be the square of the Euclidean distance
+were it not for the all-important minus sign before
+(t − t )2 . This reflects the fact that space and time are
+significantly different (though intertwined).
+A Lorentz transformation is a linear map from R4 to
+4
+R that preserves these “generalized distances.” Let-
+ting g be the linear map that sends (t, x, y, z) to
+(which has −1, 1, 1, 1 down the diagonal and 0 every-
+where else), we can define a Lorentz transformation
+abstractly as one whose matrix Λ satisfies ΛT GΛ = G,
+where I is the 4 . imes 4 identity matrix and ΛT is the trans-
+pose of Λ. (The transpose of a matrix A is the matrix B
+defined by Bij = Aji .)
+A point (t, x, y, z) is said to be spacelike if −t 2 +
+x + y 2 + z 2 > 0, and timelike if −t 2 + x 2 + y 2 +
+2
+z2 < 0. If −t 2 + x 2 + y 2 + z2 = 0, then the point
+lies in the light cone. All these are genuine concepts
+of Lorentzian geometry because they are preserved by
+Lorentz transformations.
+Lorentzian geometry is also of fundamental impor-
+tance to general relativity, which can be thought of as
+the study of Lorentzian manifolds. These are closely
+related to Riemannian manifolds, which are discussed
 
 $44$
 
@@ -1420,58 +2017,104 @@ Now imagine setting off a three-dimensional wave in space--it could, for example
 (Notice that in the two-dimensional example, what you want to call the inside of the circle changes when the circle passes the equator .) With a bit of effort, one can visualize this possibility, and there is no need to appeal to the existence of a fourth dimension in order to do so. More to the point, this account can be turned into a mathematically coherent and genuinely three-dimensional description of the $3$ - sphere . A different and more general approach is to use what is called an atlas.
 An atlas of the world (in the normal, everyday sense) consists of a number of flat pages, together with an indication of their overlaps: that is, of how parts of some pages correspond to parts of others. Now, although such an atlas is mapping out an external object that lives in a three-dimensional universe, the spherical geometry of Earth’s surface can be read off from the atlas alone. It may be much less convenient to do this but it is possible: rotations, for example, might be described by saying that such-and-such a
 
-I.3.   Some Fundamental Mathematical Definitions                                                                     45
+I.3.   Some Fundamental Mathematical Definitions
 
 part of page 17 moved to a similar but slightly distorted    one wishes to reason about manifolds in general rather
-part of page 24, and so on.                                  than discussing specific examples. For the purposes of
-   Not only is this possible, but one can define a sur-       this book, it may be better to think of a d-manifold
-face by means of two-dimensional atlases. For example,       in the “extrinsic” way that we first thought about
-there is a mathematically neat “atlas” of the 2-sphere       the 3-sphere: as a d-dimensional “hypersurface” living
-that consists of just two pages, both of them circular.      in some higher-dimensional space. Indeed, there is a
-One is a map of the Northern Hemisphere plus a lit-          famous theorem of Nash that states that all manifolds
-tle bit of the Southern Hemisphere near the equator (to      arise in this way. Note, however, that it is not always
-provide a small overlap) and the other is a map of the       easy to find a simple formula for defining such a hyper-
-Southern Hemisphere with a bit of the Northern Hemi-         surface. For example, while the 2-sphere is described by
-sphere. Because these maps are flat, they necessarily         the simple formula x 2 +y 2 +z 2 = 1 and the torus by the
-involve some distortion, but one can specify what this       slightly more complicated and more artificial   formula
-distortion is.                                               (r − 2)2 + z2 = 1, where r is shorthand for x 2 + y 2 , it
+part of page 24, and so on.
+   Not only is this possible, but one can define a sur-
+face by means of two-dimensional atlases. For example,
+there is a mathematically neat “atlas” of the 2-sphere
+that consists of just two pages, both of them circular.
+One is a map of the Northern Hemisphere plus a lit-
+tle bit of the Southern Hemisphere near the equator (to
+provide a small overlap) and the other is a map of the
+Southern Hemisphere with a bit of the Northern Hemi-
+sphere. Because these maps are flat, they necessarily
+involve some distortion, but one can specify what this
+distortion is.
    The idea of an atlas can easily be generalized to three   is not easy to come up with a formula that describes a
-dimensions. A “page” now becomes a portion of three-         two-holed torus. Even the usual torus is far more easily
-dimensional space. The technical term is not “page” but      described using quotients, as we did in section 3.3. Quo-
+dimensions. A “page” now becomes a portion of three-
+dimensional space. The technical term is not “page” but
 “chart,” and a three-dimensional atlas is a collection of    tients can also be used to define a two-holed torus (see
-charts, again with specifications of which parts of one       fuchsian groups [III.28](/part-03/fuchsian-groups)), and the reason one is con-
-chart correspond to which parts of another. A possible       fident that the result is a manifold is that every point
-atlas of the 3-sphere, generalizing the simple atlas of      has a small neighborhood that looks like a small part of
+charts, again with specifications of which parts of one
+chart correspond to which parts of another. A possible
+atlas of the 3-sphere, generalizing the simple atlas of
 the 2-sphere just discussed, consists of two solid three-    the Euclidean plane. In general, a d-dimensional man-
-dimensional balls. There is a correspondence between         ifold can be thought of as any construction that gives
-points toward the edge of one of these balls and points      rise to an object that is “locally like Euclidean space of
-toward the edge of the other, and this can be used to        d dimensions.”
-describe the geometry: as you travel toward the edge            An extremely important feature of manifolds is that
-of one ball you find your self in the overlapping region,      calculus is possible for functions defined on them.
+dimensional balls. There is a correspondence between
+points toward the edge of one of these balls and points
+toward the edge of the other, and this can be used to
+describe the geometry: as you travel toward the edge
+of one ball you find your self in the overlapping region,
 so you are also in the other ball. As you go further, you    Roughly speaking, if M is a manifold and f is a function
 are off the map as far as the first ball is concerned, but     from M to R, then to see whether f is differentiable at a
-the second ball has by that stage taken over.                point x in M you first find a chart that contains x (or a
-   The 2-sphere and the 3-sphere are basic examples of       representation of it), and regard f as a function defined
-manifolds. Other examples that we have already met           on the chart instead. Since the chart is a portion of the
-in this section are the torus and the projective plane.      d-dimensional Euclidean space Rd and we can differ-
-Informally, a d-dimensional manifold, or d-manifold, is      entiate functions defined on such sets, the notion of
-any geometrical object M with the property that every        different i ability now makes sense for f . Of course, for
-point x in M is surrounded by what feels like a portion      this definition to work for the manifold, it is important
-of d-dimensional Euclidean space. So, because small          that if x belongs to two overlapping charts, then the
-parts of a sphere, torus, or projective plane are very       answer will be the same for both. This is guaranteed
-close to planar, they are all 2-manifolds, though when       if the function that gives the correspondence between
-the dimension is two the word surface is more usual.         the overlapping parts (known as a transition function)
-(However, it is important to remember that a “surface”       is itself differentiable. Manifolds with this property are
-need not be the surface of anything.) Similarly, the         called differentiable manifolds: manifolds for which the
-3-sphere is a 3-manifold.                                    transition functions are continuous but not ne ces sar-
-   The formal definition of a manifold uses the idea          ily differentiable are called topological manifolds. The
-of atlases: indeed, one says that the atlas is a mani-       availability of calculus makes the theory of differ en-
-fold. This is a typical mathematician’s use of the word      tiable manifolds very different from that of topological
-“is,” and it should not be confused with the normal          manifolds.
-use. In practice, it is unusual to think of a manifold          The above ideas generalize easily from real-valued
-as a collection of charts with rules for how parts of        functions to functions from M to Rd , or from M to
-them correspond, but the definition in terms of charts        M , where M is another manifold. However, it is eas-
-and atlases turns out to be the most convenient when         ier to judge whether a function defined on a manifold
+the second ball has by that stage taken over.
+   The 2-sphere and the 3-sphere are basic examples of
+manifolds. Other examples that we have already met
+in this section are the torus and the projective plane.
+Informally, a d-dimensional manifold, or d-manifold, is
+any geometrical object M with the property that every
+point x in M is surrounded by what feels like a portion
+of d-dimensional Euclidean space. So, because small
+parts of a sphere, torus, or projective plane are very
+close to planar, they are all 2-manifolds, though when
+the dimension is two the word surface is more usual.
+(However, it is important to remember that a “surface”
+need not be the surface of anything.) Similarly, the
+3-sphere is a 3-manifold.
+   The formal definition of a manifold uses the idea
+of atlases: indeed, one says that the atlas is a mani-
+fold. This is a typical mathematician’s use of the word
+“is,” and it should not be confused with the normal
+use. In practice, it is unusual to think of a manifold
+as a collection of charts with rules for how parts of
+them correspond, but the definition in terms of charts
+and atlases turns out to be the most convenient when
+
+45
+than discussing specific examples. For the purposes of
+this book, it may be better to think of a d-manifold
+in the “extrinsic” way that we first thought about
+the 3-sphere: as a d-dimensional “hypersurface” living
+in some higher-dimensional space. Indeed, there is a
+famous theorem of Nash that states that all manifolds
+arise in this way. Note, however, that it is not always
+easy to find a simple formula for defining such a hyper-
+surface. For example, while the 2-sphere is described by
+the simple formula x 2 +y 2 +z 2 = 1 and the torus by the
+slightly more complicated and more artificial   formula
+(r − 2)2 + z2 = 1, where r is shorthand for x 2 + y 2 , it
+two-holed torus. Even the usual torus is far more easily
+described using quotients, as we did in section 3.3. Quo-
+fuchsian groups [III.28](/part-03/fuchsian-groups)), and the reason one is con-
+fident that the result is a manifold is that every point
+has a small neighborhood that looks like a small part of
+ifold can be thought of as any construction that gives
+rise to an object that is “locally like Euclidean space of
+d dimensions.”
+An extremely important feature of manifolds is that
+calculus is possible for functions defined on them.
+point x in M you first find a chart that contains x (or a
+representation of it), and regard f as a function defined
+on the chart instead. Since the chart is a portion of the
+d-dimensional Euclidean space Rd and we can differ-
+entiate functions defined on such sets, the notion of
+different i ability now makes sense for f . Of course, for
+this definition to work for the manifold, it is important
+that if x belongs to two overlapping charts, then the
+answer will be the same for both. This is guaranteed
+if the function that gives the correspondence between
+the overlapping parts (known as a transition function)
+is itself differentiable. Manifolds with this property are
+called differentiable manifolds: manifolds for which the
+transition functions are continuous but not ne ces sar-
+ily differentiable are called topological manifolds. The
+availability of calculus makes the theory of differ en-
+tiable manifolds very different from that of topological
+manifolds.
+The above ideas generalize easily from real-valued
+functions to functions from M to Rd , or from M to
+M , where M is another manifold. However, it is eas-
+ier to judge whether a function defined on a manifold
 
 $46$
 

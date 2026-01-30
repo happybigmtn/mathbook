@@ -1,57 +1,102 @@
 # Permutation Groups
 
-III.68.   Permutation Groups                                                                                         259
+III.68.   Permutation Groups
 
-Note that this does express our intuitive idea that there      ing structures other than the natural numbers that
-are no “extra” natural numbers, since we can take A to         satisfy the axioms of first-order Peano arithmetic.
-be the set of all the numbers 0, s(0), s(s(0)), . . . that        Actually, one also allows parameters in the state-
-were on our list.                                              ments p(x); for example, p(x) could be the statement
+Note that this does express our intuitive idea that there
+are no “extra” natural numbers, since we can take A to
+be the set of all the numbers 0, s(0), s(s(0)), . . . that
+were on our list.
   Rules (i), (ii), and (iii) are called the Peano axioms for   “there exists z with x = y+z,” which would correspond
-the natural numbers. As explained above, they “charac-         to the set of all natural numbers greater than or equal
-terize” the natural numbers, in the sense that all rea-        to y, and would therefore depend on y. And one also
-soning about the natural numbers may be reduced or             adds some axioms saying how plus and times behave
-rewritten in such a way that the only assumptions one          (for example, commutativity of addition). This whole
-needs are the Peano axioms.                                    collection of axioms is known as Peano arithmetic, or
-  There is a related system used in logic, called the          PA for short.
-first-order Peano axioms. The idea here is that we want            See model theory [IV.23](/part-04/logic-and-model-theory) for more on some of the
-to express the Peano axioms in the language of first-           topics discussed in this article.
+the natural numbers. As explained above, they “charac-
+terize” the natural numbers, in the sense that all rea-
+soning about the natural numbers may be reduced or
+rewritten in such a way that the only assumptions one
+needs are the Peano axioms.
+  There is a related system used in logic, called the
+first-order Peano axioms. The idea here is that we want
+to express the Peano axioms in the language of first-
 order logic [IV.23 §1](/part-04/logic-and-model-theory). This means that we are allowed
-variables (that are interpreted as ranging over the nat-       III.68 Permutation Groups
-ural numbers), as well as the symbols 0 and s, logical                  Martin W. Liebeck
+variables (that are interpreted as ranging over the nat-
+ural numbers), as well as the symbols 0 and s, logical
 connectives, and the like, but nothing more: so there is
-no “member of” symbol, and no sets are allowed. (How-          Let S be a set. A permutation of S is a function from
-ever, for technical reasons one does allow symbols for         S to S that is both injective and surjective—in other
-“plus” and “times.”)                                           words, a function that “rearranges” the elements of S.
-  To give an idea of what is allowed and what is not,          For example, if S = {1, 2, 3}, then the function a : S → S
-consider the statements “there are infinitely many per-         that sends 1 to 3, 2 to 1, and 3 to 2 is a permutation
-fect squares” and “every infinite set of positive inte-         of S; so is the function b that sends 1 to 3, 2 to 2, and
-gers contains either infinitely many odd numbers or             3 to 1; where as the function c that sends 1 to 3, 2 to
-infinitely many even numbers.” With a little effort, we          1, and 3 to 1 is not a permutation. An example of a
-can express the first of these statements in first-order         permutation of the set of real numbers R is the function
-logic, as follows:                                             x → 8 − 2 x.
-                                                                  From the point of view of finite group theory, the
-             (∀m)(∃n)(∃x)       xx = m + n.
-                                                               most important permutations to study are those of the
-In words, this says that for every m you can find a per-        set In = {1, 2, . . . , n}, where n is a positive integer.
-fect square of the form m + n (which is how we express         Let Sn denote the set of all permutations of In . So, for
-the fact that it is larger than m). However, in order to       example, the permutations a and b defined in the pre-
-express the second statement, we find ourselves want-           vious paragraph lie in S3 . To count how many permuta-
-ing to write (∀A), where A ranges over all possible sub-       tions there are altogether in Sn , observe that, for a per-
-sets of the natural numbers, rather than all possible          mutation f : In → In , there are n choices for f (1), then
-elements: this is the main thing that is not allowed in        n − 1 choices for f (2) (we can choose anything differ-
-first-order logic.                                              ent from f (1)), then n − 2 for f (3), and so on, until we
+no “member of” symbol, and no sets are allowed. (How-
+ever, for technical reasons one does allow symbols for
+“plus” and “times.”)
+  To give an idea of what is allowed and what is not,
+consider the statements “there are infinitely many per-
+fect squares” and “every infinite set of positive inte-
+gers contains either infinitely many odd numbers or
+infinitely many even numbers.” With a little effort, we
+can express the first of these statements in first-order
+logic, as follows:
+
+In words, this says that for every m you can find a per-
+fect square of the form m + n (which is how we express
+the fact that it is larger than m). However, in order to
+express the second statement, we find ourselves want-
+ing to write (∀A), where A ranges over all possible sub-
+sets of the natural numbers, rather than all possible
+elements: this is the main thing that is not allowed in
+first-order logic.
    By this criterion, rules (i) and (ii) are fine, but rule     have just 1 choice for f (n). Therefore the total number
-(iii) is not. Instead, we have to use an “axiom scheme,”       of permutations in Sn is n(n − 1)(n − 2) · · · 1 = n!.
-which is an infinite set of axioms, one for each first-             If f and g are permutations of a set S, their com posi-
+(iii) is not. Instead, we have to use an “axiom scheme,”
+which is an infinite set of axioms, one for each first-
 order statement p(x). So our version of rule (iii) is this:    tion f ◦ g is defined by f ◦ g(s) = f (g(s)) for all s ∈ S,
-for each statement p(x), we have an axiom saying that          and it is quite easy to see that f ◦ g is also a permuta-
-if p(0) is true, and p(x) implies p(s(x)), then p(x) is        tion of S. It is usual to drop the “◦” symbol and write
-true for all x.                                                just f g instead of f ◦ g. For example, if a, b ∈ S3 are
-  Note that these axioms do not have the full strength         as in the first paragraph, then ab ∈ S3 sends 1 to 2, 2
-of the usual Peano axioms. For instance, there are only        to 1, and 3 to 3, while ba sends 1 to 1, 2 to 3, and 3 to
-countably many possible formulas p(x), where as there           2. Notice that ab = ba.
-are uncountably many sets A. It turns out that in fact            For any set S, the identity function ι : S → S, defined
-there are “nonstandard” models of these axioms, mean-          by ι(s) = s for all s ∈ S, is a permutation of S; and if f
+for each statement p(x), we have an axiom saying that
+if p(0) is true, and p(x) implies p(s(x)), then p(x) is
+true for all x.
+  Note that these axioms do not have the full strength
+of the usual Peano axioms. For instance, there are only
+countably many possible formulas p(x), where as there
+are uncountably many sets A. It turns out that in fact
+there are “nonstandard” models of these axioms, mean-
+
+259
+ing structures other than the natural numbers that
+satisfy the axioms of first-order Peano arithmetic.
+Actually, one also allows parameters in the state-
+ments p(x); for example, p(x) could be the statement
+to the set of all natural numbers greater than or equal
+to y, and would therefore depend on y. And one also
+adds some axioms saying how plus and times behave
+(for example, commutativity of addition). This whole
+collection of axioms is known as Peano arithmetic, or
+PA for short.
+See model theory [IV.23](/part-04/logic-and-model-theory) for more on some of the
+topics discussed in this article.
+III.68 Permutation Groups
+Martin W. Liebeck
+Let S be a set. A permutation of S is a function from
+S to S that is both injective and surjective—in other
+words, a function that “rearranges” the elements of S.
+For example, if S = {1, 2, 3}, then the function a : S → S
+that sends 1 to 3, 2 to 1, and 3 to 2 is a permutation
+of S; so is the function b that sends 1 to 3, 2 to 2, and
+3 to 1; where as the function c that sends 1 to 3, 2 to
+1, and 3 to 1 is not a permutation. An example of a
+permutation of the set of real numbers R is the function
+x → 8 − 2 x.
+From the point of view of finite group theory, the
+(∀m)(∃n)(∃x)
+most important permutations to study are those of the
+set In = {1, 2, . . . , n}, where n is a positive integer.
+Let Sn denote the set of all permutations of In . So, for
+example, the permutations a and b defined in the pre-
+vious paragraph lie in S3 . To count how many permuta-
+tions there are altogether in Sn , observe that, for a per-
+mutation f : In → In , there are n choices for f (1), then
+n − 1 choices for f (2) (we can choose anything differ-
+ent from f (1)), then n − 2 for f (3), and so on, until we
+of permutations in Sn is n(n − 1)(n − 2) · · · 1 = n!.
+If f and g are permutations of a set S, their com posi-
+and it is quite easy to see that f ◦ g is also a permuta-
+tion of S. It is usual to drop the “◦” symbol and write
+just f g instead of f ◦ g. For example, if a, b ∈ S3 are
+as in the first paragraph, then ab ∈ S3 sends 1 to 2, 2
+to 1, and 3 to 3, while ba sends 1 to 1, 2 to 3, and 3 to
+2. Notice that ab = ba.
+For any set S, the identity function ι : S → S, defined
+by ι(s) = s for all s ∈ S, is a permutation of S; and if f
 
 $260$
 

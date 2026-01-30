@@ -74,183 +74,307 @@ Ulam (1991) Children also find delight--if less profound and more short-lived--i
 This delight in a double-edged strategy, which points in two directions at once, has much in common with the pleasure we derive from (i) puns and double entendres in ordinary language, in humor, and in poetry, (ii) the almost physical response when we recognize subtle variations on a theme in music, and (iii) the more cerebral appreciation we feel when we meet counting methods based on unanticipated isomorphisms, or the essentially two-faced idea of “proof by contradiction” in mathematics.
 This enjoyment of hidden ambiguities and double meanings is related to the evident (but poorly understood) way in which analogy guides, and delights, mathematicians of all ages.
 
-VIII.1.   The Art of Problem Solving                                                                                     959
+VIII.1.   The Art of Problem Solving
 
-  Banach once told me, “Good mathematicians see analo-        Similar claims have been widely used to justify the
+  Banach once told me, “Good mathematicians see analo-
   gies between theorems or theories; the very best ones     introduction of a whole new branch of school mathe-
-  see analogies between analogies.”                         matics called “problem-solving” (see NCTM (1980) and
-                                           Ulam (1991)
-                                                            www.pisa.oecd.org), which has grown at the expense
-   Koestler, in his thought-provoking book The Act of       of mastery of the “particular mathematical facts” on
+  see analogies between analogies.”
+   Koestler, in his thought-provoking book The Act of
 Creation (1976), shows how scientific and literary “cre-     which the activity itself depends.
-ativity” often flows from the identification and exploit a-      Pólya and others were right to insist that school
-tion of “double meanings with a built-in tension.”          mathematics should include a regular diet of good
+ativity” often flows from the identification and exploit a-
+tion of “double meanings with a built-in tension.”
 (Koestler calls them bisociations: “the perceiving of a     problems, and that educators have a duty to convey
-situation or idea L in two self-consistent but habitu-      not just the techniques and inner logical structure of
-ally incompatible frames of reference ... the event L is      the subject, but also the experience of struggling to
-made to vibrate simultaneously on two different wave-        uncover the mathematics hidden in multistep prob-
+situation or idea L in two self-consistent but habitu-
+ally incompatible frames of reference ... the event L is
+made to vibrate simultaneously on two different wave-
 lengths, as it were.”) His study begins with an analysis    lems and carefully structured investigations. Fortu-
-in precisely this vein of the human response to humor,      nately, the four volumes that Pólya wrote to illustrate
-both comic and tragic, including a selection of jokes       this broader thesis remain in print (Pólya 1981, 1990).
-attributed to von neumann [VI.91](/part-06/john-von-neumann-19031957)!                          There the focus is on mathematics, and the rhetoric is
-   Ulam’s innocent-sounding question (in the extract        more restrained:
+in precisely this vein of the human response to humor,
+both comic and tragic, including a selection of jokes
+attributed to von neumann [VI.91](/part-06/john-von-neumann-19031957)!
+   Ulam’s innocent-sounding question (in the extract
 before last) challenges us not only to provide children
-                                                              [L]et us learn proving, but also let us learn guessing. . . .
-with “satisfying experiences with numbers,” but also          I do not believe there is a foolproof method to learn
-to identify other quintessential aspects of mathemat-         guessing. At any rate, if there is such a method, I do not
-ics and to ensure that they are experienced memorably         know it, and quite certainly I do not pretend to offer
+with “satisfying experiences with numbers,” but also
+to identify other quintessential aspects of mathemat-
+ics and to ensure that they are experienced memorably
 at school (and undergraduate) level. In particular, inso-     it in the following pages. . . . [P]lausible reasoning is a
-far as there is such a thing as an “art of problem solv-      practical skill and it is learned, as any other practical
-                                                              skill, by imitation and practice.
+far as there is such a thing as an “art of problem solv-
 ing,” we need to learn how to convey it faithfully and
-                                                                                                 Pólya (1990, volume 1)
 effectively through the medium of classical elementary
-mathematics to those who are near the beginning of          These four books should be compulsory reading for
-their mathematical studies, or who may not yet have         all serious mathematics educators, graduate students,
-any commitment to mathematics.                              and mathematics lecturers. However, Pólya and others
-   It is often claimed that Pólya’s little book How to      failed to show how problem solving could be devel-
-Solve It provides an answer. It does not. Pólya was a       oped within the standard school mathematics curricu-
-pioneer who sought to provoke a debate among mathe-         lum. Instead they concentrated on proposing general
-maticians about “heuristics.” This debate never really      rules that might “help students become better prob-
-got started. Instead his first low-level attempt at a        lem solvers.” What is needed is to clarify (i) which
-theoretical framework has been embraced uncritically.       aspects of elementary mathematics have the potential
-   Much of what Pólya writes about specific problems         to captivate young minds—not because they are more
-in How to Solve It makes sense; but his general con-        “enjoyable” in some superficial sense, but because they
-clusions on “how to help students solve problems” are       are more “pregnant with meaning”; and (ii) how to
-less convincing. As a result, much of the book’s gen-       teach such material so as to convey this deeper mean-
-eral theorizing needs to be read extremely carefully.       ing on an elementary level. This is not the place for
-For example, Pólya’s suggestion that “when the teacher      a detailed analysis, but we suspect such an analysis
-solves a problem before the class, he should drama-         would strengthen the position of many traditionally
+mathematics to those who are near the beginning of
+their mathematical studies, or who may not yet have
+any commitment to mathematics.
+   It is often claimed that Pólya’s little book How to
+Solve It provides an answer. It does not. Pólya was a
+pioneer who sought to provoke a debate among mathe-
+maticians about “heuristics.” This debate never really
+got started. Instead his first low-level attempt at a
+theoretical framework has been embraced uncritically.
+   Much of what Pólya writes about specific problems
+in How to Solve It makes sense; but his general con-
+clusions on “how to help students solve problems” are
+less convincing. As a result, much of the book’s gen-
+eral theorizing needs to be read extremely carefully.
+For example, Pólya’s suggestion that “when the teacher
+solves a problem before the class, he should drama-
 tize his ideas a little and he should put to himself the    important topics and themes, encouraging them to be
-same questions which he uses when helping students”         taught in such a way as to bring out their inherent
+same questions which he uses when helping students”
 is spot on. But alarm bells should start ringing when he    richness, while recognizing that these goals depend
-confidently concludes that “[thanks] to such guidance,       on prior mastery of certain basic techniques with-
+confidently concludes that “[thanks] to such guidance,
 the student will eventually ... acquire something that is     out which this richness can scarcely be appreciated.
-more important than the knowledge of any particular         In contrast, recent “reforms,” whose declared inten-
-mathematical fact.” In the right setting the claim may      tion was to enrich school mathematics, have regularly
+more important than the knowledge of any particular
+mathematical fact.” In the right setting the claim may
 occasionally be true; but as a statement about the effect    reduced both the emphasis on, and the time available
-on students in general it is false.                         for, serious elementary mathematics.
+on students in general it is false.
 
-960                                                                                             VIII. Final Perspectives
+959
+Similar claims have been widely used to justify the
+matics called “problem-solving” (see NCTM (1980) and
+Ulam (1991)
+www.pisa.oecd.org), which has grown at the expense
+of mastery of the “particular mathematical facts” on
+Pólya and others were right to insist that school
+mathematics should include a regular diet of good
+not just the techniques and inner logical structure of
+the subject, but also the experience of struggling to
+uncover the mathematics hidden in multistep prob-
+nately, the four volumes that Pólya wrote to illustrate
+this broader thesis remain in print (Pólya 1981, 1990).
+There the focus is on mathematics, and the rhetoric is
+more restrained:
+[L]et us learn proving, but also let us learn guessing. . . .
+I do not believe there is a foolproof method to learn
+guessing. At any rate, if there is such a method, I do not
+know it, and quite certainly I do not pretend to offer
+practical skill and it is learned, as any other practical
+skill, by imitation and practice.
+Pólya (1990, volume 1)
+These four books should be compulsory reading for
+all serious mathematics educators, graduate students,
+and mathematics lecturers. However, Pólya and others
+failed to show how problem solving could be devel-
+oped within the standard school mathematics curricu-
+lum. Instead they concentrated on proposing general
+rules that might “help students become better prob-
+lem solvers.” What is needed is to clarify (i) which
+aspects of elementary mathematics have the potential
+to captivate young minds—not because they are more
+“enjoyable” in some superficial sense, but because they
+are more “pregnant with meaning”; and (ii) how to
+teach such material so as to convey this deeper mean-
+ing on an elementary level. This is not the place for
+a detailed analysis, but we suspect such an analysis
+would strengthen the position of many traditionally
+taught in such a way as to bring out their inherent
+on prior mastery of certain basic techniques with-
+In contrast, recent “reforms,” whose declared inten-
+tion was to enrich school mathematics, have regularly
+for, serious elementary mathematics.
 
-   Those who want good problems to enrich school                The role of sleep and sleeplessness in creative problem
-mathematics often fail to recognize that well-inten-            solving is well documented (if poorly understood). It
-tioned “reforms” are usually unstable under the kind            often features within the “incubation” phase of hada-
-of distortions that routinely affect large-scale educa-          mard’s [VI.65](/part-06/jacques-hadamard-18651963) “four phases” (discussed below), which
-tional change (where the cultivation of professional            summarize the process through which the initial expe-
-competence, sensitivity, independence, and responsi-            rience of helplessness and leaden frustration is some-
-bility among teachers is regularly replaced by central-         times transmuted into golden success.
-ized control via a fragmented list of separate “out-               Such success is neither mechanical, nor the result of
-comes,” which are then assessed in ways that actively           pure chance. In solving a good problem—as with a good
-discourage good teaching).                                      puzzle—there is no magic problem-solving method
-   Small-scale experiments can also have unintended             that might relieve us of the need to struggle: the strug-
-side effects! As a little-known example of a radical             gle may some times be fruit less, but it is an important
-attempt to cultivate the art of problem solving at school       part of the process. Thus, a successful out come gen-
-level we offer Eisenstein’s account of his own education         erally presupposes a certain kind of preparatory hard
-at lower secondary school (1833–37).                            work. When asked how he made his discoveries, gauss
-  [E]ach student had to prove the theorems consecu-             [VI.26](/part-06/carl-friedrich-gauss-17771855) is said to have answered, “Durch planmässiges
-  tively. No lecture took place at all. No one was allowed      Tattonieren,” that is, through systematic and persistent
-  to tell his solutions to any body else and each student        groping around!
-  received the next theorem to prove, independent of               Having discovered a way into a problem, one may
+960
+
+   Those who want good problems to enrich school
+mathematics often fail to recognize that well-inten-
+tioned “reforms” are usually unstable under the kind
+of distortions that routinely affect large-scale educa-
+tional change (where the cultivation of professional
+competence, sensitivity, independence, and responsi-
+bility among teachers is regularly replaced by central-
+ized control via a fragmented list of separate “out-
+comes,” which are then assessed in ways that actively
+discourage good teaching).
+   Small-scale experiments can also have unintended
+side effects! As a little-known example of a radical
+attempt to cultivate the art of problem solving at school
+level we offer Eisenstein’s account of his own education
+at lower secondary school (1833–37).
+  [E]ach student had to prove the theorems consecu-
+  tively. No lecture took place at all. No one was allowed
+  to tell his solutions to any body else and each student
+  received the next theorem to prove, independent of
   the other students, as soon as he had proved the pre-
-                                                                realize that it “should have been obvious” where to
   ceding one correctly, and as long as he had under-
-                                                                begin; but things are often obvious only in retrospect.
   stood the reasoning. . . . While my peers were still strug-
-  gling with the eleventh or twelfth, I had already proved      One learns by experience how a certain kind of persis-
-  the hundredth. . . . [T]his method ... can probably not be      tence can cause the fog that initially surrounds an unfa-
-  adapted. . . . One does not obtain that over view of the       miliar problem to magically evaporate; what was at first
-  whole subject, which can only be achieved by a good           invisible then stands out so clearly that one can scarcely
-  lecture. . . . In the end, the best mathematical genius       understand how it could ever have been missed.
+  gling with the eleventh or twelfth, I had already proved
+  the hundredth. . . . [T]his method ... can probably not be
+  adapted. . . . One does not obtain that over view of the
+  whole subject, which can only be achieved by a good
+  lecture. . . . In the end, the best mathematical genius
   cannot discover alone what has been discovered by the
-                                                                   When faced with an unfamiliar mathematical prob-
   collaboration of many outstanding minds. . . . For stu-
   dents this method is only practicable if it deals with
-                                                                lem, the mathematician, young or old, is like some one
-  small fields of easily understandable knowledge, espe-         who is trying to open some fiendishly difficult Chinese
-  cially geometric theorems, which do not require new           puzzle box with a hopelessly small bunch of keys. At
-  insights and ideas.                                           first glance the surface seems totally smooth, with out
-                                          Eisenstein (1975)
-                                                                a single visible crack. If you were not convinced that
-Eisenstein was a remarkable mathematician. Yet at the           it was indeed a Chinese puzzle box, and that it could
-tender age of twenty, on the threshold of the mathe-            in fact be opened, you would soon give up. Knowing
-mat ical world that he longed to in habit, he could see the       (or rather believing) that it can be opened, you may
-limitations of this approach—even for students such as          be willing to keep searching until you eventually begin
-himself.                                                        to discern the slightest hint of a crack here and there.
-   Problems that cultivate a taste for problem solving          You may still have no idea how the pieces are meant to
-tend to incorporate certain characteristic features, such       move, or which of your “keys” may help you to open
-as simplicity, rhythm, naturalness, elegance, and sur-          up the first layer of the puzzle, but by trying the most
-prise; and their solutions are often double-edged. But          appropriate-looking keys in the most promising cracks,
-their most important feature is that, while their solu-         you eventually stumble on one that fits exactly, and the
-tion should be within reach of those in the target audi-        pieces begin to move. The job is certainly not done; but
-ence, the statement of the problem should convey no             the mood has changed and you feel you are well on
-direct hint as to how to begin. Indeed, a good prob-            the way.
-lem may continue to frustrate the would-be solver for              As we have already seen, this experience of initial
-a disturbingly long period.                                     confusion, giving way as one grapples with a problem
+  small fields of easily understandable knowledge, espe-
+  cially geometric theorems, which do not require new
+  insights and ideas.
+Eisenstein was a remarkable mathematician. Yet at the
+tender age of twenty, on the threshold of the mathe-
+mat ical world that he longed to in habit, he could see the
+limitations of this approach—even for students such as
+himself.
+   Problems that cultivate a taste for problem solving
+tend to incorporate certain characteristic features, such
+as simplicity, rhythm, naturalness, elegance, and sur-
+prise; and their solutions are often double-edged. But
+their most important feature is that, while their solu-
+tion should be within reach of those in the target audi-
+ence, the statement of the problem should convey no
+direct hint as to how to begin. Indeed, a good prob-
+lem may continue to frustrate the would-be solver for
+a disturbingly long period.
   A tacit rite of passage for the mathematician is the first     to unexpected insight, is in no way confined to begin-
-  sleepless night caused by an unsolved problem.                ners. It is part of the very nature of mathematics and of
-                                            Reznick (1994)      the way human beings do mathematics. If a problem is
+  sleepless night caused by an unsolved problem.
 
-VIII.1.   The Art of Problem Solving                                                                                   961
+VIII. Final Perspectives
+The role of sleep and sleeplessness in creative problem
+solving is well documented (if poorly understood). It
+often features within the “incubation” phase of hada-
+mard’s [VI.65](/part-06/jacques-hadamard-18651963) “four phases” (discussed below), which
+summarize the process through which the initial expe-
+rience of helplessness and leaden frustration is some-
+times transmuted into golden success.
+Such success is neither mechanical, nor the result of
+pure chance. In solving a good problem—as with a good
+puzzle—there is no magic problem-solving method
+that might relieve us of the need to struggle: the strug-
+gle may some times be fruit less, but it is an important
+part of the process. Thus, a successful out come gen-
+erally presupposes a certain kind of preparatory hard
+work. When asked how he made his discoveries, gauss
+[VI.26](/part-06/carl-friedrich-gauss-17771855) is said to have answered, “Durch planmässiges
+Tattonieren,” that is, through systematic and persistent
+groping around!
+Having discovered a way into a problem, one may
+realize that it “should have been obvious” where to
+begin; but things are often obvious only in retrospect.
+One learns by experience how a certain kind of persis-
+tence can cause the fog that initially surrounds an unfa-
+miliar problem to magically evaporate; what was at first
+invisible then stands out so clearly that one can scarcely
+understand how it could ever have been missed.
+When faced with an unfamiliar mathematical prob-
+lem, the mathematician, young or old, is like some one
+who is trying to open some fiendishly difficult Chinese
+puzzle box with a hopelessly small bunch of keys. At
+first glance the surface seems totally smooth, with out
+Eisenstein (1975)
+a single visible crack. If you were not convinced that
+it was indeed a Chinese puzzle box, and that it could
+in fact be opened, you would soon give up. Knowing
+(or rather believing) that it can be opened, you may
+be willing to keep searching until you eventually begin
+to discern the slightest hint of a crack here and there.
+You may still have no idea how the pieces are meant to
+move, or which of your “keys” may help you to open
+up the first layer of the puzzle, but by trying the most
+appropriate-looking keys in the most promising cracks,
+you eventually stumble on one that fits exactly, and the
+pieces begin to move. The job is certainly not done; but
+the mood has changed and you feel you are well on
+the way.
+As we have already seen, this experience of initial
+confusion, giving way as one grapples with a problem
+ners. It is part of the very nature of mathematics and of
+Reznick (1994)      the way human beings do mathematics. If a problem is
 
-unfamiliar, its solution may require persistence, faith,         Reymond in the phrase “ignoramus et ignorabimus”—
-and much time. So one should never give up too eas-              ignorant we are and ignorant we shall remain. As the
-ily, and should always be prepared to look back after            new century dawned, Hilbert felt that it was impor-
-solving a problem to see what one could perhaps have             tant to state as clearly as he could that mathemat-
-done differently.                                                 ics is different. In mathematics, he said, we can tackle
-                                                                 problems with “the firm conviction that their solution
+VIII.1.   The Art of Problem Solving
+
+unfamiliar, its solution may require persistence, faith,
+and much time. So one should never give up too eas-
+ily, and should always be prepared to look back after
+solving a problem to see what one could perhaps have
+done differently.
   It is most important in creative science not to give up.
-                                                                 must follow by a finite number of purely logical pro-
   If you are an optimist you will be willing to “try” more
   than if you are a pessimist. It is the same in games
-                                                                 cesses.” As if to under line his assertion, one of his prob-
-  like chess. A really good chess player tends to believe        lems was solved almost immediately (though the most
-  (some times mistakenly) that he holds a better position         famous, the riemann hypothesis [IV.2 §3](/part-04/number-theory), remains
-  than his opponent. This, of course, helps to keep the          unresolved).
-  game moving and does not increase the fatigue that                Hilbert was talking about mathematical research: but
-  self-doubt engenders. Physical and mental stamina are          his principle applies even more strongly when tack-
+  like chess. A really good chess player tends to believe
+  (some times mistakenly) that he holds a better position
+  than his opponent. This, of course, helps to keep the
+  game moving and does not increase the fatigue that
+  self-doubt engenders. Physical and mental stamina are
   of crucial importance in chess and also in creative
-                                                                 ling problems from textbooks, Olympiads, or univer-
   scientific work.
-                                              Ulam (1991)        sity courses. When faced with an unfamiliar and appar-
-                                                                 ently very difficult mathematical problem, we have little
-Persistence is of course easier to sustain if one has            choice about how to proceed: we must either tackle
-a degree of optimism about the likely out come, or                the problem using the “bunch of keys” or mathemat-
-if one has cultivated the sheer “bloody-mindedness”              ical techniques that we already know (no matter how
-that makes one refuse to give up (as with Littlewood’s           limited they may be), or put off trying. Of course it is
-surviving rat). However, there are dangers.                      important to learn new tricks, and to revise old ones, as
-  I learned, subconsciously, from Mazur how to con-              we go along. And of course there is always the tempta-
-  trol my inborn optimism and how to verify details. I           tion to imagine that the problem we face is simply too
-  learned to go more slowly over intermediate steps with         hard, that progress toward a solution requires some
-  a skeptical mind and not to let myself be carried away.        trick or technique that we have not yet learned and
-                                                Ulam (1991)      that the solution is therefore beyond our powers. This
-                                                                 defeatist view is all the more plausible because it must
-  At the International Congress of Mathematicians in             some times be true! Mathematicians know perfectly well
-Paris in 1900, hilbert [VI.63](/part-06/david-hilbert-18621943) presented twenty-three            that, strictly speaking, the assumption that every prob-
-major research problems, which he judged would be                lem can be solved is irrational (in that it cannot be
-important for the development of mathematics in the              justified logically, and is in general clearly false: we
-twentieth century. These problems seemed very hard;              now know that some problems are intrinsically insol-
-yet in bringing them to the attention of his fellow              uble as stated). It is nevertheless an invaluable working
-mathematicians Hilbert felt the need to stress that this         hypothesis. Thus we should never let such doubts inter-
-should not be used as an excuse for putting off trying            fere with the basic hypothesis that every problem we
-to solve them.                                                   tackle has to be solved using essentially the techniques
+Persistence is of course easier to sustain if one has
+a degree of optimism about the likely out come, or
+if one has cultivated the sheer “bloody-mindedness”
+that makes one refuse to give up (as with Littlewood’s
+surviving rat). However, there are dangers.
+  I learned, subconsciously, from Mazur how to con-
+  trol my inborn optimism and how to verify details. I
+  learned to go more slowly over intermediate steps with
+  a skeptical mind and not to let myself be carried away.
+  At the International Congress of Mathematicians in
+Paris in 1900, hilbert [VI.63](/part-06/david-hilbert-18621943) presented twenty-three
+major research problems, which he judged would be
+important for the development of mathematics in the
+twentieth century. These problems seemed very hard;
+yet in bringing them to the attention of his fellow
+mathematicians Hilbert felt the need to stress that this
+should not be used as an excuse for putting off trying
+to solve them.
   However unapproachable these problems may seem to
-                                                                 that we already know (deployed with sufficient ingenu-
-  us and however help less we stand before them, we               ity!). Though strictly illogical, the assumption that every
-  have, nevertheless, the firm conviction that their solu-        problem can be solved has justified itself so often in
-  tion must follow by a finite number of purely logical           practice that it becomes a powerful conviction—a con-
+  us and however help less we stand before them, we
+  have, nevertheless, the firm conviction that their solu-
+  tion must follow by a finite number of purely logical
   processes. . . . This conviction of the solvability of every   viction that is psychologically invaluable each time we
-  mathematical problem is a powerful incentive to the            experience that feeling of helplessness when trying to
+  mathematical problem is a powerful incentive to the
   worker. We hear within us the perpetual call: There is
-                                                                 get to grips with a hard mathematical problem.
   the problem. Seek its solution. You can find it by pure
-  reason; for in mathematics there is no ignorabimus.               Hilbert’s judgment that his problems would play a
-                                                                 central role in the mathematics of the twentieth cen-
-During the nineteenth century it became clear that the           tury was remarkably astute. But the most interesting
-more that scientists discovered about nature, the more           thing for us here is his rallying call: however unap-
-they realized how little they knew, and that one could           proachable these problems may seem at first sight, and
-never hope to discover “the whole truth.” This realiza-          however help less we stand before them, we have the
-tion was summed up by the physiologist Emil du Bois-             firm conviction that their solution must be possible by
+  reason; for in mathematics there is no ignorabimus.
+During the nineteenth century it became clear that the
+more that scientists discovered about nature, the more
+they realized how little they knew, and that one could
+never hope to discover “the whole truth.” This realiza-
+tion was summed up by the physiologist Emil du Bois-
+
+961
+Reymond in the phrase “ignoramus et ignorabimus”—
+ignorant we are and ignorant we shall remain. As the
+new century dawned, Hilbert felt that it was impor-
+tant to state as clearly as he could that mathemat-
+ics is different. In mathematics, he said, we can tackle
+problems with “the firm conviction that their solution
+must follow by a finite number of purely logical pro-
+cesses.” As if to under line his assertion, one of his prob-
+lems was solved almost immediately (though the most
+famous, the riemann hypothesis [IV.2 §3](/part-04/number-theory), remains
+unresolved).
+Hilbert was talking about mathematical research: but
+his principle applies even more strongly when tack-
+ling problems from textbooks, Olympiads, or univer-
+Ulam (1991)        sity courses. When faced with an unfamiliar and appar-
+ently very difficult mathematical problem, we have little
+choice about how to proceed: we must either tackle
+the problem using the “bunch of keys” or mathemat-
+ical techniques that we already know (no matter how
+limited they may be), or put off trying. Of course it is
+important to learn new tricks, and to revise old ones, as
+we go along. And of course there is always the tempta-
+tion to imagine that the problem we face is simply too
+hard, that progress toward a solution requires some
+trick or technique that we have not yet learned and
+Ulam (1991)      that the solution is therefore beyond our powers. This
+defeatist view is all the more plausible because it must
+some times be true! Mathematicians know perfectly well
+that, strictly speaking, the assumption that every prob-
+lem can be solved is irrational (in that it cannot be
+justified logically, and is in general clearly false: we
+now know that some problems are intrinsically insol-
+uble as stated). It is nevertheless an invaluable working
+hypothesis. Thus we should never let such doubts inter-
+fere with the basic hypothesis that every problem we
+tackle has to be solved using essentially the techniques
+that we already know (deployed with sufficient ingenu-
+ity!). Though strictly illogical, the assumption that every
+problem can be solved has justified itself so often in
+practice that it becomes a powerful conviction—a con-
+experience that feeling of helplessness when trying to
+get to grips with a hard mathematical problem.
+Hilbert’s judgment that his problems would play a
+central role in the mathematics of the twentieth cen-
+tury was remarkably astute. But the most interesting
+thing for us here is his rallying call: however unap-
+proachable these problems may seem at first sight, and
+however help less we stand before them, we have the
+firm conviction that their solution must be possible by
 
 $962$
 
@@ -268,151 +392,210 @@ It seems to me that a good memory--at least for mathematicians and physicists--f
 And many would-be mathematicians are drawn to the subject precisely because they see it as requiring markedly less memorizing than most other disciplines. The important point would seem to be not how much one remembers, but what one makes automatic, and how accessibly this and other information is stored. It is clearly worth making a serious effort to organize in one’s mind that material which is central to one’s own work--so that it is available for instant use.
 It is also important, as we shall see, to collect a penumbra of possibly useful ideas, information, and examples--so that the mind is in a position to make incidental connections which might be fruitful. But it is not necessarily wise to learn in a uniform way everything that might conceivably be needed for the problem at hand: knowing slightly less some times forces the mind to get by on less, and hence to be more ingenious or inventive.
 
-VIII.1.   The Art of Problem Solving                                                                                      963
+VIII.1.   The Art of Problem Solving
 
-Hadamard’s Four Phases                                            Incubation is the work of the subconscious during
-                                                                  the waiting time, which may be several years. Illumi-
-Littlewood’s (1986) numerous perceptive observations              nation, which can happen in a fraction of a second,
-concerning his contemporaries highlight other differ-              is the emergence of the creative idea into the con-
-ences in style—such as speed and working habits. Sim-             scious. This almost always occurs when the mind is
-ilar insights may be found in many of the livelier math-          in a state of relaxation and engaged lightly with ordi-
-ematical autobiographies, but Littlewood’s remarks are            nary matters. . . . Illumination implies some mysterious
-                                                                  rapport between the subconscious and the conscious,
+Hadamard’s Four Phases
+Littlewood’s (1986) numerous perceptive observations
+concerning his contemporaries highlight other differ-
+ences in style—such as speed and working habits. Sim-
+ilar insights may be found in many of the livelier math-
+ematical autobiographies, but Littlewood’s remarks are
 especially valuable.
-                                                                  otherwise emergence could not happen. What rings the
-  With a good deal of diffidence I will try to give some            bell at the right moment?
-  practical advice about research and the strategy it calls                                              Littlewood (1986)
+  With a good deal of diffidence I will try to give some
+  practical advice about research and the strategy it calls
   for. In the first place research work is of a different
-  “order” from the learning process of pre-research edu-           Pólya’s How to Solve It proposes a less convinc-
+  “order” from the learning process of pre-research edu-
   cation (essential as it is). The latter can easily be rote-
-                                                                ing four-stage “recipe” for the problem-solving process
   memory, with little associative power: on the other
-  hand, after a month’s immersion in research the mind          (“understand, plan, act, reflect”), which has never the-
-  knows its problem as much as the tongue knows the             less been widely used at school level. Hadamard’s four
-  inside of one’s mouth. You must acquire the art of            phases provide a useful framework for thinking and
-  “thinking vaguely”, an elusive idea that I can’t elabo-       communicating about the creative process; they also
+  hand, after a month’s immersion in research the mind
+  knows its problem as much as the tongue knows the
+  inside of one’s mouth. You must acquire the art of
+  “thinking vaguely”, an elusive idea that I can’t elabo-
   rate in short form. . . . I should stress the importance of   separate the relatively routine aspects (which one may
   giving the subconscious every chance. There should be
-                                                                be able to influence more easily) from the more elu-
   relaxed periods during the working day, profitably I say
-  spent in walking.                                             sive ones. The “conscious preparation” phase is per-
-                                            Littlewood (1986)   haps the most mundane stage, requiring a combina-
-                                                                tion of method and discipline. Littlewood again offers
+  spent in walking.
 At one stage Poincaré thought there might be just two
-                                                                sound advice. He recognizes that his advice may not
 main styles of mathematical thinking:
-                                                                suit all tastes, but he insists that we would all bene-
-  The one sort are above all preoccupied with logic. . . .      fit from trying different patterns of working in order
-  The other sort are guided by intuition and at the             to identify and cultivate habits that are as effective as
+  The one sort are above all preoccupied with logic. . . .
+  The other sort are guided by intuition and at the
   first stroke make quick but some times precarious
-                                                                possible.
   conquests. . . . [O]ne often says of the first that they are
   analysts and calls the others geometers.
-                                                                  Most people need half an hour or so before being able
-                                            Poincaré (1904)       to concentrate fully. . . . The natural impulse towards
-                                                                  the end of a day’s work is to finish the immediate job:
-But in identifying the label “logical” with that of “ana-         this is of course right if stopping would mean doing
-lyst,” and the label “intuitive” with that of “geome-             work all over again. But try to end in the middle of
-ter,” he noticed that hermite [VI.47](/part-06/charles-hermite-18221901) constituted a               something; in a job of writing out, stop in the middle
-counterexample—an “intuitive analyst”! Clearly, the               of a sentence. The usual recipe for warming up is to
-range of mathematical styles is more complex (see                 run over the latter part of the previous day’s work; this
-                                                                  dodge is a further improvement. . . . When I am working
+But in identifying the label “logical” with that of “ana-
+lyst,” and the label “intuitive” with that of “geome-
+ter,” he noticed that hermite [VI.47](/part-06/charles-hermite-18221901) constituted a
+counterexample—an “intuitive analyst”! Clearly, the
+range of mathematical styles is more complex (see
 Hadamard 1945, chapter VII). One consequence is that
-                                                                  really hard I wake around 5.30 a.m. ready and eager to
-any analysis of the art of problem solving in gen-                start; if I am slack I sleep till I am called.
+any analysis of the art of problem solving in gen-
 eral needs to be drawn with a broad brush. Despite
-                                                                                                         Littlewood (1986)
 this caveat, Hadamard’s “four-phase” model of math-
 ematical creativity has found widespread acceptance,
-                                                                At some ill-defined stage, this preparation achieves a
 so it may help if one’s work habits respect these
-                                                                sufficiently clear understanding of the immediate prob-
 phases:
-                                                                lem, together with a level of saturation in relevant back-
   It is usual to distinguish four phases in creation: prepa-    ground information, to enable the mind to begin try-
-  ration, incubation, illumination and verification, or          ing different approaches and combinations of ideas. We
-  working out. . . . Preparation is largely conscious, and      have reached the incubation phase.
+  ration, incubation, illumination and verification, or
+  working out. . . . Preparation is largely conscious, and
   anyhow directed by the conscious. The essential prob-
-  lem has to be stripped of accidentals and brought               We cannot know all the facts, since they are practically
-  clearly into view; all relevant knowledge surveyed; pos-        infinite in number. . . . Method is precisely the selection
-  sible analogues pondered. It should be kept constantly          of facts.
-  before the mind during intervals of other work. . . .                                                     Poincaré (1908)
+  lem has to be stripped of accidentals and brought
+  clearly into view; all relevant knowledge surveyed; pos-
+  sible analogues pondered. It should be kept constantly
+  before the mind during intervals of other work. . . .
 
-964                                                                                               VIII. Final Perspectives
+963
+Incubation is the work of the subconscious during
+the waiting time, which may be several years. Illumi-
+nation, which can happen in a fraction of a second,
+is the emergence of the creative idea into the con-
+scious. This almost always occurs when the mind is
+in a state of relaxation and engaged lightly with ordi-
+nary matters. . . . Illumination implies some mysterious
+rapport between the subconscious and the conscious,
+otherwise emergence could not happen. What rings the
+bell at the right moment?
+Littlewood (1986)
+Pólya’s How to Solve It proposes a less convinc-
+ing four-stage “recipe” for the problem-solving process
+(“understand, plan, act, reflect”), which has never the-
+less been widely used at school level. Hadamard’s four
+phases provide a useful framework for thinking and
+communicating about the creative process; they also
+be able to influence more easily) from the more elu-
+sive ones. The “conscious preparation” phase is per-
+Littlewood (1986)   haps the most mundane stage, requiring a combina-
+tion of method and discipline. Littlewood again offers
+sound advice. He recognizes that his advice may not
+suit all tastes, but he insists that we would all bene-
+fit from trying different patterns of working in order
+to identify and cultivate habits that are as effective as
+possible.
+Most people need half an hour or so before being able
+Poincaré (1904)       to concentrate fully. . . . The natural impulse towards
+the end of a day’s work is to finish the immediate job:
+this is of course right if stopping would mean doing
+work all over again. But try to end in the middle of
+something; in a job of writing out, stop in the middle
+of a sentence. The usual recipe for warming up is to
+run over the latter part of the previous day’s work; this
+dodge is a further improvement. . . . When I am working
+really hard I wake around 5.30 a.m. ready and eager to
+start; if I am slack I sleep till I am called.
+Littlewood (1986)
+At some ill-defined stage, this preparation achieves a
+sufficiently clear understanding of the immediate prob-
+lem, together with a level of saturation in relevant back-
+ing different approaches and combinations of ideas. We
+have reached the incubation phase.
+We cannot know all the facts, since they are practically
+infinite in number. . . . Method is precisely the selection
+of facts.
+Poincaré (1908)
 
-  I’ve often observed too that once the first hurdle of         during periods of “official work.” However, this need
-  preparation has been surmounted, one runs up against         not be so, especially when the corner to be illumi-
+964
+
+  I’ve often observed too that once the first hurdle of
+  preparation has been surmounted, one runs up against
   a wall. The main error to be avoided is trying to attack     nated is especially dark or unfamiliar, or if the leap of
   the problem head-on. During the incubation phase you
-                                                               imagination required is large. In such cases it seems
   have to proceed indirectly, obliquely. . . . Thought needs
-                                                               that, after the hard graft of the preparation and incu-
   to be liberated in such a way that subconscious work
-  can take place.                                              bation phases, the mind often needs to “step back”
-                                                               in order to see the way forward more clearly. That
-          Alain Connes, in Changeux and Connes (1995)
-                                                               is, hard work needs to be combined with relaxation,
-  Temperament, general character, and “hormonal” fac-          as Connes implies when he warns against “trying to
-  tors must play a very important role in what is consid-      attack the problem head-on.” In one oft-quoted exam-
+  can take place.
+
+  Temperament, general character, and “hormonal” fac-
+  tors must play a very important role in what is consid-
   ered to be purely “mental” activity. . . . A “subconscious   ple, Poincaré recalls how he realized the profound con-
-  brewing” (or pondering) some times produces better            nection between Fuchsian functions and hyperbolic
+  brewing” (or pondering) some times produces better
   results than forced, systematic thinking. . . . [W]hat we
-                                                               geometry as he stepped aboard a bus while on a
   call originality ... might to some extent consist of a
-  methodical way of exploring all avenues—an almost            day out! The first three extracts below show that the
-  automatic sorting of attempts. ...                             mind may achieve this in-between state as a result of
-      When I remember a mathematical proof, it seems           sleeplessness, or in the very act of waking. The fourth
-  to me that I remember only salient points, markers, as       extract concerns strenuous hill walking. What is com-
-  it were, of pleasure or difficulty. What is easy is eas-       mon to them all is that the moment of enlighten-
+  methodical way of exploring all avenues—an almost
+  automatic sorting of attempts. ...
+
+  to me that I remember only salient points, markers, as
+  it were, of pleasure or difficulty. What is easy is eas-
   ily passed over because it can be reconstructed log-
-                                                               ment does not occur while the beneficiary is officially
   ically with ease. If, on the other hand, I want to do
-                                                               working!
   something new or original, then it is no longer a ques-
   tion of syllogism chains. When I was a boy I felt that
-                                                                 It was his custom to tell his friends that if others would
   the role of rhyme in poetry was to compel one to
-                                                                 meditate as long and as deeply as he did on mathemat-
   find the unobvious because of the necessity of find-
-                                                                 ical truths, they would be able to make his discoveries.
   ing a word which rhymes. This forces novel associa-
-                                                                 He said that often he meditated for days on a piece
   tions and almost guarantees deviations from routine
-                                                                 of research with out finding a solution, which finally
   chains or trains of thought. It becomes paradoxically
-                                                                 became clear to him after a sleepless night.
   a sort of automatic mechanism of originality. . . . What
-  people think of as inspiration or illumination is really                                            Dunnington (1955)
+  people think of as inspiration or illumination is really
   the result of much subconscious work and association
-  through channels in the brain of which one is not aware        One phenomenon is certain and I can vouch for its
-  at all.                                                        absolute certainty: the sudden and immediate appear-
-                                                 Ulam (1991)     ance of a solution at the very moment of sudden awak-
-                                                                 ening. On being very abruptly awakened by an external
-  It takes two to invent anything. The one makes up com-         noise a solution long searched for appeared to me with-
-  bi nations; the other one chooses, recognizes what he           out the slightest instant of reflection on my part ... and
-  wishes and what is important to him in the mass of the         in a quite different direction from any of those which
-  things which the former has imparted to him. What we           I had previously tried to follow.
+  through channels in the brain of which one is not aware
+  at all.
+  It takes two to invent anything. The one makes up com-
+  bi nations; the other one chooses, recognizes what he
+  wishes and what is important to him in the mass of the
+  things which the former has imparted to him. What we
   call genius is much less the work of the first one than
-                                                                                                        Hadamard (1945)
   the readiness of the second one to grasp the value of
   what has been laid before him and to choose it.
-                                                                 Most striking at first is this appearance of sudden
-                 Paul Valéry, quoted in Hadamard (1945)          illumination, a manifest sign of long, conscious prior
-                                                                 work. . . . The role of this unconscious work in mathe-
-  We have reached a double conclusion: that invention is         mat ical invention appears to me incontestable. . . .
-  choice [and] that this choice is imperatively governed             For a fortnight I had been attempting to prove that
-  by the sense of scientific beauty.                              there could not be any function analogous to what I
-                                         Hadamard (1945)         have since called Fuchsian functions. I was at that time
-                                                                 very ignorant. Every day I sat down at my table and
-   Part of the pleasure (and pain), the magic (and mas-          spent an hour or two trying a great number of combina-
-                                                                 tions, and I arrived at no result. One night I took some
+
+  We have reached a double conclusion: that invention is
+  choice [and] that this choice is imperatively governed
+  by the sense of scientific beauty.
+   Part of the pleasure (and pain), the magic (and mas-
 ochism) of mathematics stems from the fact that the
-                                                                 black coffee, contrary to my custom, and was unable
 next step—from incubation to illumination—remains
-                                                                 to sleep. A host of ideas kept surging in my head; I
-so mysteriously elusive. Illumination can occur at any           could feel them jostling one another, until two of them
-time. In most cases—especially where the realization             coalesced, so to speak, to form a stable combination.
-is of something relatively straightforward—this occurs           When morning came, I had established the existence of
+so mysteriously elusive. Illumination can occur at any
+time. In most cases—especially where the realization
+is of something relatively straightforward—this occurs
+
+VIII. Final Perspectives
+during periods of “official work.” However, this need
+not be so, especially when the corner to be illumi-
+imagination required is large. In such cases it seems
+that, after the hard graft of the preparation and incu-
+bation phases, the mind often needs to “step back”
+in order to see the way forward more clearly. That
+Alain Connes, in Changeux and Connes (1995)
+is, hard work needs to be combined with relaxation,
+as Connes implies when he warns against “trying to
+attack the problem head-on.” In one oft-quoted exam-
+nection between Fuchsian functions and hyperbolic
+geometry as he stepped aboard a bus while on a
+day out! The first three extracts below show that the
+mind may achieve this in-between state as a result of
+When I remember a mathematical proof, it seems
+extract concerns strenuous hill walking. What is com-
+mon to them all is that the moment of enlighten-
+ment does not occur while the beneficiary is officially
+working!
+It was his custom to tell his friends that if others would
+meditate as long and as deeply as he did on mathemat-
+ical truths, they would be able to make his discoveries.
+He said that often he meditated for days on a piece
+of research with out finding a solution, which finally
+became clear to him after a sleepless night.
+Dunnington (1955)
+One phenomenon is certain and I can vouch for its
+absolute certainty: the sudden and immediate appear-
+Ulam (1991)     ance of a solution at the very moment of sudden awak-
+ening. On being very abruptly awakened by an external
+noise a solution long searched for appeared to me with-
+out the slightest instant of reflection on my part ... and
+in a quite different direction from any of those which
+I had previously tried to follow.
+Hadamard (1945)
+Most striking at first is this appearance of sudden
+Paul Valéry, quoted in Hadamard (1945)
+work. . . . The role of this unconscious work in mathe-
+mat ical invention appears to me incontestable. . . .
+For a fortnight I had been attempting to prove that
+there could not be any function analogous to what I
+Hadamard (1945)         have since called Fuchsian functions. I was at that time
+very ignorant. Every day I sat down at my table and
+spent an hour or two trying a great number of combina-
+tions, and I arrived at no result. One night I took some
+black coffee, contrary to my custom, and was unable
+to sleep. A host of ideas kept surging in my head; I
+could feel them jostling one another, until two of them
+coalesced, so to speak, to form a stable combination.
+When morning came, I had established the existence of
 
 VIII . $1$ .
 

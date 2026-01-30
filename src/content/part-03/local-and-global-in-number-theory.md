@@ -107,78 +107,101 @@ The best answers always raise new questions. Having discovered that any rational
 Hensel’s next move, then, was to point out that the set Q p of all possible p-adic expansions is a new realm of numbers, which he called the p-adic numbers. It includes not only all the rational numbers, but also a lot more. The best way to think of Q p is by analogy with the set R of all real numbers. Real numbers are usually given by their decimal expansions. When we write $e = 2$ . $718$ . . . , what we mean is that $e = 2 + 7$ · $10 - 1 + 1$ · $10 - 2 + 8$ · $10 - 3 +$ · · · . The set of all such expansions is the set of all real numbers.
 It contains all the rational numbers, but is much bigger.
 
-III.51.   Local and Global in Number Theory                                                                         243
+III.51.   Local and Global in Number Theory
 
-  Of course, except for the fact that both contain the      y, so x = y 2 . Since all rational numbers are also p-adic,
-rationals, these two realms are almost completely dif-      it is true that for every prime number p the number x,
-ferent. For example, in both Qp and R there is a nat-       thought of as a p-adic number, is a square. And simi-
-ural notion of “distance between two numbers.” But          larly, the real number x is a square. In other words, the
-these distances are completely different, even when the      rational number y is a kind of “global” square root, in
+  Of course, except for the fact that both contain the
+rationals, these two realms are almost completely dif-
+ferent. For example, in both Qp and R there is a nat-
+ural notion of “distance between two numbers.” But
+these distances are completely different, even when the
 numbers in question are rational. So, in the reals, 2 is    that it serves as a square root in each local setting.
-very close to 2001/1000. In the 5-adics, however, the          So far, so boring. But now reverse the thing. Suppose
-distance between these two numbers is quite large!          that we know that for every prime number p the num-
+very close to 2001/1000. In the 5-adics, however, the
+distance between these two numbers is quite large!
   It turns out that we can do calculus with p-adic num-     ber x, thought of as a p-adic number, is the square of
-bers, just as we do it with reals. Many other math-         some p-adic number (which may depend on p), and also
-ematical ideas also extend. So Hensel’s ideas led to        that x, thought of as a real number, is the square of
-a system of “parallel (numerical) universes”—one for        some real number. A priori, these local square roots of
-each prime, plus the real numbers—in which we can do        x could all be different! But it turns out that under these
-mathematics.                                                assumptions x must be the square of some rational
-                                                            number, so that in fact all the local roots must come
-            4   The Local–Global Principle                  from a “global” root.
-                                                               This leads us to think of the rational numbers as
+bers, just as we do it with reals. Many other math-
+ematical ideas also extend. So Hensel’s ideas led to
+a system of “parallel (numerical) universes”—one for
+each prime, plus the real numbers—in which we can do
+mathematics.
+
 At first, most mathematicians seem to have found
-                                                            “global” and of the various Qp and of R as “local.”
 Hensel’s new numbers interesting in a formal way, but
-                                                            Then the previous paragraph claims that the property
 also to have wondered what the point of them was.
-                                                            of “being a square” is true globally if and only if it is
 One does not adopt a new number system just for fun;
-                                                            true “every where locally.” This turns out to be a pow-
 it needs to be useful for something. Hensel was fas-
-                                                            erful and illuminating idea, and it has become known
 cinated by his numbers and kept writing about them,
-                                                            as the Hasse principle or the local–global principle.
 but to begin with he had trouble demonstrating their
-                                                               Our example, of course, demonstrates the principle
 usefulness. He showed, for example, that they could be
-                                                            in its strongest case: solve a problem locally in all cases,
 used to develop the basics of algebraic number theory
-                                                            and you have solved it globally. That is often too much
 in a new way—but most folks seemed happy with the
-                                                            to hope for. Nevertheless, attacking a problem locally
 old way.
-                                                            and then putting the local pieces together has become
    One can demonstrate the power of a new idea by
-                                                            a fundamental technique in modern number theory. It
 giving a beautiful and easy proof of a difficult result.
-                                                            has been used to simplify older proofs, as in class
 Hensel wrote a paper purporting to do just that: he
-                                                            field theory [V.28](/part-05/from-quadratic-reciprocity-to-vi38-augustus-de-morgan-18061871), and also to obtain new results,
 gave an easy and elegant p-adic proof that the num-
-                                                            as in Wiles’s proof of fermat’s last theorem [V.10](/part-05/fermats-last-theorem).
 ber e is transcendental. This did get people’s attention.
-                                                            So Hensel was right after all: his new numbers have
 Unfortunately, when they looked hard at the proof they
-                                                            earned their place along with the real numbers in every
 realized that it contained a subtle error. As a result,
-                                                            number theorist’s heart.
 mathematicians’ attitude of suspicion about Hensel’s
 strange new numbers was reinforced.
-                                                            Further Reading
    The tide was turned by Helmut Hasse. He had been
-studying in Göttingen. At one point, he walked into a       Gouvêa, F. Q. 2003. p-adic Numbers: An Introduction, re-
-used bookstore and found a copy of Hensel (1913), a           vised 3 rd printing of the 2 nd edn. New York: Springer.
+studying in Göttingen. At one point, he walked into a
+used bookstore and found a copy of Hensel (1913), a
 book written a few years earlier. Hasse was fascinated,     Hasse, H. 1962. Kurt Hensels entscheidener Anstoss zur
-and moved to Marburg to study with Hensel. A cou-             Entdeckung des Lokal–Global-Prinzips. Journal für die
-ple of years later, in 1920, he found the idea that was       reine und angewandte Mathematik 209:3–4.
-                                                            Hensel, K. 1913. Zahlentheorie. Leipzig: G. J. Göschenische.
+and moved to Marburg to study with Hensel. A cou-
+ple of years later, in 1920, he found the idea that was
 to make the p-adic numbers a crucial tool for number
-                                                            Roquette, P. 2002. History of valuation theory. I. In Valua-
 theorists.
-                                                              tion Theory and Its Applications, volume I, pp. 291–355.
    What Hasse showed was that it was possible to
-                                                              Providence, RI: American Mathematical Society.
-answer some questions in number theory by answer-           Ullrich, P. 1995. On the origins of p-adic analysis. Proceed-
-ing them “locally.” Here is a (not very important, but        ings of the 2 nd Gauss Symposium. Conference A: Mathe-
-fairly easy to follow) example. Suppose x is a rational       matics and Theoretical Physics, Munich, 1993, pp. 459–73.
-number that is a square of some other rational number         Symposia Gaussian a. Berlin: Walter de Gruyter.
+answer some questions in number theory by answer-
+ing them “locally.” Here is a (not very important, but
+fairly easy to follow) example. Suppose x is a rational
+number that is a square of some other rational number
+
+243
+y, so x = y 2 . Since all rational numbers are also p-adic,
+it is true that for every prime number p the number x,
+thought of as a p-adic number, is a square. And simi-
+larly, the real number x is a square. In other words, the
+rational number y is a kind of “global” square root, in
+So far, so boring. But now reverse the thing. Suppose
+that we know that for every prime number p the num-
+some p-adic number (which may depend on p), and also
+that x, thought of as a real number, is the square of
+some real number. A priori, these local square roots of
+x could all be different! But it turns out that under these
+assumptions x must be the square of some rational
+number, so that in fact all the local roots must come
+4   The Local–Global Principle
+This leads us to think of the rational numbers as
+“global” and of the various Qp and of R as “local.”
+Then the previous paragraph claims that the property
+of “being a square” is true globally if and only if it is
+true “every where locally.” This turns out to be a pow-
+erful and illuminating idea, and it has become known
+as the Hasse principle or the local–global principle.
+Our example, of course, demonstrates the principle
+in its strongest case: solve a problem locally in all cases,
+and you have solved it globally. That is often too much
+to hope for. Nevertheless, attacking a problem locally
+and then putting the local pieces together has become
+a fundamental technique in modern number theory. It
+has been used to simplify older proofs, as in class
+field theory [V.28](/part-05/from-quadratic-reciprocity-to-vi38-augustus-de-morgan-18061871), and also to obtain new results,
+as in Wiles’s proof of fermat’s last theorem [V.10](/part-05/fermats-last-theorem).
+So Hensel was right after all: his new numbers have
+earned their place along with the real numbers in every
+number theorist’s heart.
+Further Reading
+Gouvêa, F. Q. 2003. p-adic Numbers: An Introduction, re-
+vised 3 rd printing of the 2 nd edn. New York: Springer.
+Entdeckung des Lokal–Global-Prinzips. Journal für die
+reine und angewandte Mathematik 209:3–4.
+Hensel, K. 1913. Zahlentheorie. Leipzig: G. J. Göschenische.
+Roquette, P. 2002. History of valuation theory. I. In Valua-
+tion Theory and Its Applications, volume I, pp. 291–355.
+Providence, RI: American Mathematical Society.
+Ullrich, P. 1995. On the origins of p-adic analysis. Proceed-
+ings of the 2 nd Gauss Symposium. Conference A: Mathe-
+matics and Theoretical Physics, Munich, 1993, pp. 459–73.
+Symposia Gaussian a. Berlin: Walter de Gruyter.

@@ -1,62 +1,105 @@
 # Fixed Point Theorems
 
-V.11.   Fixed Point Theorems                                                                                               693
+V.11.   Fixed Point Theorems
 
-curve, it is not at all clear how to set about finding a          What we have just proved is a slightly disguised form
-modular form associated with it in this way. However, it       of one of the simplest of all fixed point theorems. We
-always seemed to be possible, even if the phenomenon           could state it more formally as follows: if f is a contin-
-was a mysterious one. For instance, if E is the ellip-         uous function from the closed interval [0, 1] to itself,
-tic curve y 2 + y = x 3 − x 2 − 10 x − 20, then there is        then there must exist an x such that f (x) = x. This x
-a modular form f such that ap (E) = ap (f ) for every          we call a fixed point of f . (We deduced the result from
-prime p apart from 11. This modular form is the unique         the intermediate value theorem, a basic result in analy-
-complex function (up to scaling) that satisfies a certain       sis that states that if g is a continuous function from
-periodicity property with respect to the group Γ0 (11),        [0, 1] to R such that g(0) ⩽ 0 and g(1) ⩾ 0, then there
+curve, it is not at all clear how to set about finding a
+modular form associated with it in this way. However, it
+always seemed to be possible, even if the phenomenon
+was a mysterious one. For instance, if E is the ellip-
+tic curve y 2 + y = x 3 − x 2 − 10 x − 20, then there is
+a modular form f such that ap (E) = ap (f ) for every
+prime p apart from 11. This modular form is the unique
+complex function (up to scaling) that satisfies a certain
+periodicity property with respect to the group Γ0 (11),
 which consists of all matrices ( ac d
-                                    b
-                                      ) such that a, b, c,     must be some x such that g(x) = 0.)
-and d are integers, c is a multiple of 11, and the deter-        In general, a fixed point theorem is a theorem that
-minant [III.15](/part-03/determinants) ad−bc is 1. It is far from obvious that a      asserts that a function that satisfies certain conditions
-definition of this type should have anything to do with         must have a fixed point. There are many such the-
-elliptic curves.                                               orems, a small sample of which we shall discuss in
-   Wiles proved that all “semistable” elliptic curves are      this article. On the whole, they tend to have a noncon-
-modular, not by showing how to associate a modular             struc tive nature: they establish the existence of a fixed
-form with each such elliptic curve, but by using a sub-        point rather than defining one or telling you how to
-tle counting argument that guaranteed that the modu-           find it. This is part of the reason that they are impor-
-lar form had to exist. The full conjecture was proved          tant, since there are many examples of equations for
-a few years later, by Christophe Breuil, Brian Conrad,         which one would like to prove that a solution exists
-Fred Diamond, and Richard Taylor, which put the icing          even when one cannot solve it explicitly. As we shall
-on the cake of one of the most celebrated mathematical         see, one way of going about this is to try to rewrite the
-achievements of all time.                                      equation in the form f (x) = x and apply a fixed point
-                                                               theorem.
+and d are integers, c is a multiple of 11, and the deter-
+minant [III.15](/part-03/determinants) ad−bc is 1. It is far from obvious that a
+definition of this type should have anything to do with
+elliptic curves.
+   Wiles proved that all “semistable” elliptic curves are
+modular, not by showing how to associate a modular
+form with each such elliptic curve, but by using a sub-
+tle counting argument that guaranteed that the modu-
+lar form had to exist. The full conjecture was proved
+a few years later, by Christophe Breuil, Brian Conrad,
+Fred Diamond, and Richard Taylor, which put the icing
+on the cake of one of the most celebrated mathematical
+achievements of all time.
 V.11     Fixed Point Theorems
-                                                                       2    Brouwer’s Fixed Point Theorem
-                    1   Introduction
-The following is a variant of a well-known mathematical        The fixed point theorem we have just proved is the one-
-puzzle. A man is on a train from London to Cambridge           dimensional version of Brouwer’s fixed point theorem,
+The following is a variant of a well-known mathematical
+puzzle. A man is on a train from London to Cambridge
 and has a bottle of water with him. Prove that there is at     which states that if B n is the unit ball of Rn (that is, the
-least one moment on the journey when the volume of             set of all (x1 , . . . , xn ) such that x12 + · · · + xn
-                                                                                                                      2 ⩽ 1) and
-                                                                                                          n       n
-                                                               f is a continuous function from B to B , then f must
+least one moment on the journey when the volume of
 air in the bottle, as a fraction of the volume of the bottle
 itself, is exactly equal to the fraction of his journey that   have a fixed point. The set B n is an n-dimensional solid
-he has completed. (For instance, the bottle might be           sphere, but all that matters is its topological character,
-two fifths full, and therefore three fifths empty, at the        so we could take it to be another shape such as an n-
-precise moment when he is three fifths of the way from          dimensional cube or simplex.
-London to Cambridge. Note that we do not assume that              In two dimensions this says that a continuous func-
+he has completed. (For instance, the bottle might be
+two fifths full, and therefore three fifths empty, at the
+precise moment when he is three fifths of the way from
+London to Cambridge. Note that we do not assume that
 the bottle is full at the start of the journey or empty at     tion from the closed unit disk to itself must have a fixed
-the end.)                                                      point. In other words, if you had a circular sheet of rub-
-   The solution, if you have not seen this sort of ques-       ber on a table and you picked it up and put it back down
-tion before, is surprisingly simple. For each x between        within the circle where it started, having folded it and
-0 and 1 let f (x) be the proportion of air in the bottle       stretched it as much as you liked, there would always
-when the proportion of the journey that has been com-          have to be a point that ended up in the same place as
-pleted is x. Then 0 ⩽ f (x) ⩽ 1 for every x, since the         before.
-volume of air in the bottle cannot be negative and can-           To see why this is true, it is helpful to reformulate
-not exceed the volume of the bottle. If we now set g(x)        the statement. Let D = B 2 be the closed unit disk. If
-to be x − f (x), then we see that g(0) ⩽ 0 and g(1) ⩾ 0.       we had a continuous function f from D to D with no
-Since g(x) varies continuously with x, there must be           fixed point, then we could define a continuous function
-some moment at which g(x) = 0, so that f (x) = x,              g from D to its boundary ∂D as follows: for each x,
-which is what we wanted.                                       follow a straight path from f (x) to x and continue on
+the end.)
+   The solution, if you have not seen this sort of ques-
+tion before, is surprisingly simple. For each x between
+0 and 1 let f (x) be the proportion of air in the bottle
+when the proportion of the journey that has been com-
+pleted is x. Then 0 ⩽ f (x) ⩽ 1 for every x, since the
+volume of air in the bottle cannot be negative and can-
+not exceed the volume of the bottle. If we now set g(x)
+to be x − f (x), then we see that g(0) ⩽ 0 and g(1) ⩾ 0.
+Since g(x) varies continuously with x, there must be
+some moment at which g(x) = 0, so that f (x) = x,
+which is what we wanted.
+
+693
+What we have just proved is a slightly disguised form
+of one of the simplest of all fixed point theorems. We
+could state it more formally as follows: if f is a contin-
+uous function from the closed interval [0, 1] to itself,
+then there must exist an x such that f (x) = x. This x
+we call a fixed point of f . (We deduced the result from
+the intermediate value theorem, a basic result in analy-
+sis that states that if g is a continuous function from
+[0, 1] to R such that g(0) ⩽ 0 and g(1) ⩾ 0, then there
+b
+) such that a, b, c,     must be some x such that g(x) = 0.)
+In general, a fixed point theorem is a theorem that
+asserts that a function that satisfies certain conditions
+must have a fixed point. There are many such the-
+orems, a small sample of which we shall discuss in
+this article. On the whole, they tend to have a noncon-
+struc tive nature: they establish the existence of a fixed
+point rather than defining one or telling you how to
+find it. This is part of the reason that they are impor-
+tant, since there are many examples of equations for
+which one would like to prove that a solution exists
+even when one cannot solve it explicitly. As we shall
+see, one way of going about this is to try to rewrite the
+equation in the form f (x) = x and apply a fixed point
+theorem.
+2    Brouwer’s Fixed Point Theorem
+1   Introduction
+The fixed point theorem we have just proved is the one-
+dimensional version of Brouwer’s fixed point theorem,
+set of all (x1 , . . . , xn ) such that x12 + · · · + xn
+2 ⩽ 1) and
+n       n
+f is a continuous function from B to B , then f must
+sphere, but all that matters is its topological character,
+so we could take it to be another shape such as an n-
+dimensional cube or simplex.
+In two dimensions this says that a continuous func-
+point. In other words, if you had a circular sheet of rub-
+ber on a table and you picked it up and put it back down
+within the circle where it started, having folded it and
+stretched it as much as you liked, there would always
+have to be a point that ended up in the same place as
+before.
+To see why this is true, it is helpful to reformulate
+the statement. Let D = B 2 be the closed unit disk. If
+we had a continuous function f from D to D with no
+fixed point, then we could define a continuous function
+g from D to its boundary ∂D as follows: for each x,
+follow a straight path from f (x) to x and continue on
 
 $694$
 
