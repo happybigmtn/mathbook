@@ -185,7 +185,7 @@ $\infty$
 
 we consider the sum $r = - \infty\text{a}^{r}z^{r}$ , where the complex number z belongs to the unit circle (or , in other words, $|z| = 1)$ . Since any such z can be written
 
-$z = ei\theta =$ cos $\theta + i$ sin $\theta305$
+$z = ei\theta =$ cos $\theta + i$ sin $\theta 305$
 
 with $\theta \in R$ , it is more usual to talk about the $2\pi - \infty$
 
@@ -223,7 +223,7 @@ $r = - \infty 2\pi- \pi$
 
 If we write
 
-$\pi1$
+$\pi 1$
 
 f ˆ(k) =f(. heta)e - ik. hetad. heta,2\pi- \pi
 
@@ -261,9 +261,9 @@ III. Mathematical Concepts
 
 By rescaling the Fourier sum formula ( $1$ ), we obtain the formula
 
-$\infty\piN1F(s)e - ir^{s}/ N$ dse  irt/ NF(t) =r = - . nfty 2\pi N - \pi N
+$\infty\pi N1F(s)e - ir^{s}/ N$ dse  irt/ NF(t) =r = - . nfty 2\pi N - \pi N
 
-when $|t| < \piN.$ If we let $N \to \infty,$ we obtain, more or less formally,
+when $|t| < \pi N.$ If we let $N \to \infty,$ we obtain, more or less formally,
 
 $\infty 1$
 
@@ -271,8 +271,8 @@ $\infty 1$
 
 $F(t) =2\pi - \infty$
 
-which translates to the marvelous formula $(FFF)(t) = 2\piF( - t)$ . Like the Fourier sum formula, this Fourier in version formula can be proved under a wide range of circumstances, though often at the price of reinterpreting the formula in novel ways. Beautiful though the Fourier in version formula is, it should be noted that, both in practice and in theory, we often need only the observation that F $F = F$ G implies $F = G$. The uniqueness of the Fourier transform is often easier to prove and more convenient to use, and it holds over a wider range of conditions than the in version formula.
-A similar observation holds for other transforms. When we talked about the Fourier sums associated with $2\pi$ - periodic functions, we said that f ˆ (r) measured the proportion of the signal f with frequency $2\pir$ . In the same way, $(FF)(\lambda)$ gives a measure of the proportion of F composed of frequencies close to $\lambda.$ There is a family of inequalities, known generically as Heisenberg uncertainty principles, which say, in effect, that if most of F F is concentrated in a narrow band, then the signal F must be very spread out.
+which translates to the marvelous formula $(FFF)(t) = 2\pi F( - t)$ . Like the Fourier sum formula, this Fourier in version formula can be proved under a wide range of circumstances, though often at the price of reinterpreting the formula in novel ways. Beautiful though the Fourier in version formula is, it should be noted that, both in practice and in theory, we often need only the observation that F $F = F$ G implies $F = G$. The uniqueness of the Fourier transform is often easier to prove and more convenient to use, and it holds over a wider range of conditions than the in version formula.
+A similar observation holds for other transforms. When we talked about the Fourier sums associated with $2\pi$ - periodic functions, we said that f ˆ (r) measured the proportion of the signal f with frequency $2\pi r$ . In the same way, $(FF)(\lambda)$ gives a measure of the proportion of F composed of frequencies close to $\lambda.$ There is a family of inequalities, known generically as Heisenberg uncertainty principles, which say, in effect, that if most of F F is concentrated in a narrow band, then the signal F must be very spread out.
 This fact places strong restrictions on our ability to manipulate signals and occupies a central place in quantum theory. At the beginning of this article we talked about transformations of sequences and saw that it was easier to handle one-sided sequences than two-sided sequences. In the same way, we can apply Fourier transforms to a wider range of functions F : R $\to$ C if we know that $F(t) = 0$ for $t < 0$ . More specifically, if F is such a one sided function, and if it does not grow too fast, then we can compute the Laplace transform
 
 $\infty F(s)e - (x + iy)$ s $ds$

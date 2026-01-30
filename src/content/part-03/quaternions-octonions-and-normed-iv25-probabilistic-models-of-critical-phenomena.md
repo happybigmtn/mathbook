@@ -144,15 +144,15 @@ $IV$ . $25$ .
 
 Probabilistic Models of Critical Phenomena
 
-$1\theta01p = 012$
+$1\theta 01p = 012$
 
 Figure $2$ The survival probability $\theta$ versus  p. shown that P k (p) goes to zero exponentially rapidly, but at the critical value itself we have
 
 $2$
 
-P k (p c) ∼ √ / $\pik$
+P k (p c) ∼ √ / $\pi k$
 
-The symbol “∼” denotes asymptotic behavior, and means that the ratio of the left- and right-hand sides in the above formula goes to $1$ as k goes to infinity. √ In other words, $P^{k}(p^{c})$ behaves essentially like $2/ \pik$ when k is large. There is a pronounced difference between the exponential decay of P k (p c) for p $<$ p c and the square-root
+The symbol “∼” denotes asymptotic behavior, and means that the ratio of the left- and right-hand sides in the above formula goes to $1$ as k goes to infinity. √ In other words, $P^{k}(p^{c})$ behaves essentially like $2/ \pi k$ when k is large. There is a pronounced difference between the exponential decay of P k (p c) for p $<$ p c and the square-root
 
 $1$
 

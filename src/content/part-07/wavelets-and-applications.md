@@ -817,7 +817,7 @@ j
 
 $(2 x - k)$ constitute an orthonormal basis for
 
-$2 \psi860$
+$2 \psi 860$
 
 Difference between
 

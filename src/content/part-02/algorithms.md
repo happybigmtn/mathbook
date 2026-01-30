@@ -1158,7 +1158,7 @@ $= 1 - {}^{2}1 - 1 -$
 
 ··· .
 
-$4\pi29\pi2$
+$4\pi 29\pi 2$
 
 x
 
@@ -1170,7 +1170,7 @@ $1111 + +$
 
  +  ···  =  ,
 
-$\pi24\pi29\pi26$
+$\pi 24\pi 29\pi 26$
 
 and multiplying both sides by $\pi^{2}$ gives the required sum. We now think of this approach as having several problems. The product of the infinitely many terms may or may not represent a finite value, and today we would specify conditions for when it does. Also, applying a result about (finite) polynomials to (infinite) power series is a step that requires justification. Euler himself was to provide alternative arguments for this result later in his life.
 But the fact that he may have known counterexamples--situations in which such usages would not work--was not, for him, a decisive obstacle. This view, in which one reasoned in a generic situation that might admit a few exceptions, was common at his time, and it was only in the late nineteenth century that a concerted effort was made to state the results of analysis in ways that set out precisely the conditions under which the theorems would hold. Euler did not dwell on the interpretation of infinite sums or infinitesimals.

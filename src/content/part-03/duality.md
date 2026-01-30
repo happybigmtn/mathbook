@@ -206,7 +206,7 @@ identified with) the unit ball of the dual space. $6$ Duals of Abelian Groups If
 It is not hard to show that the continuous homomorphisms from $T$ to $T$ all have the form  ei. heta\to ein. heta for some integer n (which may be negative or zero). Thus, the dual of T is (isomorphic to) Z . This form of duality between groups is called Pontryagin duality. Note that there is an easily defined pairing between G and Ĝ: given an element g $\in$ G and a character $\psi\in$ Ĝ, we define  g, $\psi$ to be $\psi(g)$ . Under suitable conditions, this pairing extends to functions defined on G and Ĝ. For instance, if G and Ĝ are finite, and f : G $\to$ C and F :
 Ĝ $\to$ C , then we can define  f , F   to be the complex number $|G| - 1^{g}\in^{G} \psi\in$ Ĝ $f(g)F(\psi)$ . In general, one obtains a pairing between a complex hilbert space [III.37](/part-03/bayesian-analysis) of functions on G and a Hilbert space of functions on Ĝ. This extended pairing leads to another important duality. Given a function in the Hilbert space $L^{2}$ (T), its Fourier transform is the function f ˆ $\in{}^{2}$ (Z) that is defined by the formula
 
-$2\pi1$
+$2\pi 1$
 
 f ${}^{(}n) =f(ei\theta)e -$ in . hetad. heta.2\pi 0
 

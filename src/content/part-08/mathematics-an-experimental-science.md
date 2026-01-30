@@ -247,7 +247,7 @@ $(5)n!2n \ge 0$
 
 in which I ν (t) is (the modified Bessel function)
 
-$\infty(1t)2j + \nu2$
+$\infty(1t)2j + \nu 2$
 
 I $\nu(t) =$ / j ! (j  +  ν) !
 

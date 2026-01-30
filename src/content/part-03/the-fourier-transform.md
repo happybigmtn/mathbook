@@ -118,7 +118,7 @@ f j (z)
 
 $j = 0$
 
-for every z  (  use the fact that $jω - jk = n$ if $k = 0$ and $0$ otherwise), and that f j (ω z)  =  ω j f j (z) for every z. Thus, f can be decomposed as a sum of harmonics. The group associated with this Fourier transform is the multiplicative group of the nth roots of unity $1$ , ω, . . . , ω n $- {}^{1}$ , or the cyclic group of order n. The root ω j is associated with the rotation of the complex plane through an angle of $2\pij/n$ . Now let us consider infinite groups. Let f be a complex-valued function defined on the unit circle T  =  {z $\in C$ : $|z| = 1$ .
+for every z  (  use the fact that $jω - jk = n$ if $k = 0$ and $0$ otherwise), and that f j (ω z)  =  ω j f j (z) for every z. Thus, f can be decomposed as a sum of harmonics. The group associated with this Fourier transform is the multiplicative group of the nth roots of unity $1$ , ω, . . . , ω n $- {}^{1}$ , or the cyclic group of order n. The root ω j is associated with the rotation of the complex plane through an angle of $2\pi j/n$ . Now let us consider infinite groups. Let f be a complex-valued function defined on the unit circle T  =  {z $\in C$ : $|z| = 1$ .
 To avoid technical issues we shall assume that f is smooth--that is, it is infinitely differentiable. Now if f is a function of the simple form f (z)  =  cz n for some integer n and some constant c, then f will have rotational symmetry of order n. That is, if $ω = e^{2}\pi^{i}/ n$ again, then f $(ωz) = f(z)$ for all complex numbers z. After our earlier examples, it should come as no surprise that an arbitrary smooth function f can be expressed as a superposition of such rotationally symmetric functions. Indeed, one can write
 
 $\infty$
@@ -129,11 +129,11 @@ $f(z) =n = - \infty$
 
 where the numbers f ˆ (n), called the Fourier coefficients of f at the frequencies n, are given by the formula
 
-$2\pi1$
+$2\pi 1$
 
 f ${}^{(}n) =f(ei\theta)e -$ in . hetad. heta.2\pi0
 
-This formula can be thought of as the limiting case n $\to\infty$ of the previous decomposition, restricted to the unit circle. It can also be regarded as a generalization of the Taylor series expansion of a holomorphic function [I.3](/part-01/fundamental-definitions). If f is holomorphic on the closed unit disk {z $\inC$ : $|z| \le 1$ , then one can write $\infty$ n $f(z) =$ a n z , $n = 0$ where the Taylor coefficient a n is given by the formula $1$ f (z) $a^{n} =$ dz. $n + 12\pii|z| = 1 z205$ In general, there are very strong links between Fourier analysis and complex analysis.
+This formula can be thought of as the limiting case n $\to\infty$ of the previous decomposition, restricted to the unit circle. It can also be regarded as a generalization of the Taylor series expansion of a holomorphic function [I.3](/part-01/fundamental-definitions). If f is holomorphic on the closed unit disk {z $\inC$ : $|z| \le 1$ , then one can write $\infty$ n $f(z) =$ a n z , $n = 0$ where the Taylor coefficient a n is given by the formula $1$ f (z) $a^{n} =$ dz. $n + 12\pi\text{i}|z| = 1 z205$ In general, there are very strong links between Fourier analysis and complex analysis.
 If f is smooth, then its Fourier coefficients decay to zero very quickly and it is easy to show that the Fourier $\infty$ series $n = - \infty f^{(}n)z^{n}$ converges. The issue becomes more subtle if f is not smooth (for instance, if it is merely continuous). Then one must be careful to specify the precise sense in which the series converges. In fact, a significant portion of harmonic analysis [IV.11](/part-04/harmonic-analysis) is devoted to questions of this kind, and to developing tools for answering them.
 The group of symmetries associated with this version of Fourier analysis is the circle group T . (Notice that we can think of the number e $i\theta$ both as a point in the circle and as a rotation through an angle of $\theta.$ Thus, the circle can be identified with its own group of rotational symmetries .) But there is a second group that is important here as well, namely the additive group Z of all integers.
 If we take two of our basic symmetric functions, z $m$ and $z$ n , and multiply them together, then we obtain the function z m + n , so the map n $\to$ z n is an isomorphism from Z to the set of all these functions under multiplication. The group Z is known as the Pontryagin dual of T . In the theory of partial differential equations and in related areas of harmonic analysis, the most important Fourier transform is defined on the Euclidean space R d . Among all functions f :

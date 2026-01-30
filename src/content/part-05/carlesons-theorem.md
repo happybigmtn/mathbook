@@ -21,9 +21,9 @@ p
 ${}^{0} |f(\theta)| d\theta$ is finite. (See function spaces [III.29](/part-03/function-spaces) for a slight, technical correction to this definition .) We now turn to the impact of Lebesgue’s theory on Fourier analysis. The Lebesgue space $L^{2}$ [0 , 2 π ], which is also a hilbert space [III.37](/part-03/bayesian-analysis), plays a fundamental role. If f belongs to $L^{2}$ [0 , 2 π ], then its Fourier coefficients a n are such that . nfty|an|2 < . nfty.(4)n = - .
 nfty Conversely, any sequence of complex numbers a n $( - \infty < n < \infty)$ satisfying (4) arises as the sequence of Fourier coefficients of a function $f$ in $L^{2}$ [0 , 2 π ]. More over, the size of a function f and its Fourier coefficients a n are related by the Plancherel formula:
 
-$\infty 2\pi1|f(\theta)|^{2}d\theta =|a^{n}|^{2}$ .
+$\infty 2\pi 1|f(\theta)|^{2}d\theta =|a^{n}|^{2}$ .
 
-$2\pi0n = - \infty$
+$2\pi 0n = - \infty$
 
 Finally, the partial sums S N f (see ( $2$ )) converge to the function f in the $L^{2}$ - norm . In other words,
 

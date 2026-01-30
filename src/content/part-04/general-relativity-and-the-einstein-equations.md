@@ -425,13 +425,13 @@ Lorentzian case.
 
 $488$
 
-One begins by defining the so-called Christoffel sym$\lambda$ by bols Γ μν $= \frac{1}{2}g\lambdaρ($ ∂ $\mu gρ\nu +$ ∂ $\nug\muρ -$ ∂ ρ$g$μν ).
+One begins by defining the so-called Christoffel sym$\lambda$ by bols Γ μν $= \frac{1}{2}g\lambdaρ($ ∂ $\mu gρ\nu +$ ∂ $\nu g\muρ -$ ∂ ρ$g$μν ).
 
 $\lambda$
 
 Γ μν
 
-Here, the numbers g μν are the components of the “inverse metric” of g: that is, they are the unique solu\mu tion to the equation  g\mu. ug\nu. ambda = δ. ambda$, where, \text{as usual}, \mu$δ. ambda = 1$if$. ambda = \mu$and$0 otherwise. (It turns out that g $\mu\nu$ is very useful for the calculational gymnastics that are typical of tensor analysis when it exploits the Einstein summation convention .) One can then define a differential operator $\nabla$ \mu called a connection, which acts on vector fields by ν
+Here, the numbers g μν are the components of the “inverse metric” of g: that is, they are the unique solu\mu tion to the equation  g\mu\nu g\nu. ambda = δ. ambda$, where, \text{as usual}, \mu$δ. ambda = 1$if$. ambda = \mu$and$0 otherwise. (It turns out that g $\mu\nu$ is very useful for the calculational gymnastics that are typical of tensor analysis when it exploits the Einstein summation convention .) One can then define a differential operator $\nabla$ \mu called a connection, which acts on vector fields by ν
 
 $\nabla\mu v\nu =$ ∂ \mu v\nu + Γ\mu. ambda v. ambda(16)
 
@@ -460,7 +460,7 @@ Curvature and the Einstein Equations
 
 It remains, then, to give a set of equations for the metric g that relate it to T . In anticipation of a Newtonian limit, we expect these equations to be second order, and we expect them to implement “general covariance” in the simplest way possible: they should refer to no other structure but g itself and T . Again, Riemannian geometry provides ready-made tensorial objects that are invariantly associated with g. One can define the Riemann curvature tensor
 
- R\mu\nu. ambdaρdx\mu$dx$. udx. ambda dxρ
+ R\mu\nu. ambdaρdx\mu$dx$\nu dx. ambda dxρ
 
 with components given by
 

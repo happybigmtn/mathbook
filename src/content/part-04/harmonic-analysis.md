@@ -292,7 +292,7 @@ $2$
 
 The precise form of this expression is less important than two properties of the function sin ${}^{2}(\frac{1}{2}Ny ) u(y) =1N$ sin ${}^{2}(2y)$
 
-that we shall use. One is that u (y) is always nonneg$\pi$ ative and the other is that $- \piu(y)dy = 1$ . These two facts allow us to say that
+that we shall use. One is that u (y) is always nonneg$\pi$ ative and the other is that $- \pi u(y)dy = 1$ . These two facts allow us to say that
 
 $\pi$
 
@@ -344,7 +344,7 @@ Another basic theme in harmonic analysis is the attempt to quantify the elusive 
 
 Fourier coefficient
 
-$\pi1$
+$\pi 1$
 
 f ${}^{(}n) =$
 
@@ -352,7 +352,7 @@ f (x) e  -  inx
 
 $2\pi - \pi\pi$
 
-will be very small since $- \pie -$ inx $= 0$ and the comparatively slow variation in f (x) is not enough to stop the cancellation occurring. This assertion can easily be proved rigorously by repeated integration by parts. Generalizations of this phenomenon include the so-called principle of stationary phase, which among other things allows one to obtain precise control on the Airy function Ai (x) discussed earlier. It also yields the Heisenberg uncertainty principle, which relates the decay and smoothness of a function to the decay and smoothness of its Fourier transform.
+will be very small since $- \pi e -$ inx $= 0$ and the comparatively slow variation in f (x) is not enough to stop the cancellation occurring. This assertion can easily be proved rigorously by repeated integration by parts. Generalizations of this phenomenon include the so-called principle of stationary phase, which among other things allows one to obtain precise control on the Airy function Ai (x) discussed earlier. It also yields the Heisenberg uncertainty principle, which relates the decay and smoothness of a function to the decay and smoothness of its Fourier transform.
 A some what different manifestation of oscillation lies in the principle that if one has a sequence of functions that oscillate in different ways, then their sum should be significantly smaller than the bound that follows from the triangle inequality. Again, this is the result of cancellation that is simply not noticed by the triangle inequality. For instance, the Plancherel theorem in Fourier analysis implies, among other things, N that a trigonometric polynomial n $= -$ N c n e inx has an $L^{2}$ - norm of
 
 $2 1/2{}^{2}\pi$
@@ -371,7 +371,7 @@ $|c^{n}|^{2}$
 
 This bound (which can also be proved by direct calcu N lation) is smaller than the upper bound of $n = - N|c^{n}|$ that would be obtained if we simply applied the triangle inequality to the functions c n e inx . This identity can be viewed as a special case of the Pythagorean theorem, together with the observation that the harmonics e inx are all orthogonal to each other with respect to the inner product [III.37](/part-03/bayesian-analysis)
 
-$2\pi1$
+$2\pi 1$
 
 f , $g = f$ (x) g (x) dx.
 

@@ -230,7 +230,7 @@ One would expect not, but if we want to think about this question precisely then
 
 exp  - 
 
-$2\theta22$
+$2\theta 22$
 
 , - . nfty < . heta1 < . nfty, 0 < . heta2 < . nfty,2\pi. heta22
 

@@ -693,7 +693,7 @@ root
 
 leaves
 
-$\nu2$ ●
+$\nu 2$ ●
 
 ●
 

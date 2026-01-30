@@ -1270,7 +1270,7 @@ Analytic Number Theory
 
 for the Goldbach problem. Also useful is the “discrete analogue” of the above: using the identity ⎧ ⎨ $1$ if $n$ ≡ 0 ( mod m  ),
 
-$12i\pijn/ mm - 1dt =$
+$12i\pi\text{jn}/ mm - 1dt =$
 
 e
 
@@ -1292,16 +1292,10 @@ p, q $\le n$
 
 both prime
 
-m - 1 e - 2 i. ijn/m P(j/m)2 = j = 0
+m - 1 e - 2 i\pi jn/m P(j/m)2 = j = 0
 
 provided m $>$ n. A similar analysis can be used here but working mod m some times has advantages, as it allows us to use properties of the multiplicative group mod m. Sums like P (j  /  m) in the paragraph above or more k simple sums like $n \le Ne^{2i}\pi^{n} / m$ are called exponential sums. They play a central role in many of the calculations one does in analytic number theory. There are several techniques for investigating them. (1) It is easy to calculate the sum $n \le Ne^{2i}\pi^{n}/ m$ , since it is a geometric progression.
-With higher-degree polynomials one can often reduce to this case; for example, by writing $n^{1} - n^{2} = h$ we hav$e^{2}e2i\pin /m2n \le N22e2i\pi(n^{1} - n^{2})/m = n^{1}$ , n ${}^{2} \le N2e2i\pih /me4i\pihn^{2}/m$ ,
-
- = 
-
-$|h| \le N$
-
-max 0 , $- h < n^{2} \le min\\{N,N - h\\}$
+With higher-degree polynomials one can often reduce to this case; for example, by writing $n^{1} - n^{2} = h$ we hav$e^{2}e2i\pi n /m2n \le N22e2i\pi(n^{1} - n^{2})/m = n^{1}$ , n {}2 \le N2 e2 i\pi h /me4 i\pi hn2/m$, =$|h| \le N$max 0 ,$- h < n2 \le min. N, N - h\}
 
 and the inner sum is now a geometric progression. ( $2$ ) The work of Weil and Deligne, which gives very accurate results on the number of solutions to equations mod p, is ideally suited to many applications in analytic number theory. For example, the “Kloosterman sum” $a^{1}a^{2}$ ···$a^{k}$ ≡b (mod $p)e2i\pi(a^{1} + a^{2} +$ · · · $+ a^{k})/p$ , where the a i run over the integers mod p and (b , p) $= 1$ , appears naturally in many questions;
 Deligne showed that it has absolute value less than or equal to $kp(k - {}^{1})/ {}^{2}$ , an extraordinary amount of cancellation in this sum which has about $p^{k} - {}^{1}$ summands, each of absolute value $1$ . (See the weil conjectures [V.35](/part-05/the-weil-conjectures).) ( $3$ ) We discussed earlier the fact that the values of ζ (s) satisfy a symmetry about the line Re (s) $= \frac{1}{2}$ , given by the “functional equation.” There are other functions (called “modular functions ”) that also have symme-

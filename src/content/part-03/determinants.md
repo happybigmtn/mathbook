@@ -19,7 +19,7 @@ We still need to explain why the particular choice of products and minus signs t
 
 III. Mathematical Concepts
 
-ume V times the determinant of A. We could write this symbolically as follows: vol (α X)  =  det A · vol (X). For example, consider the $2 \times 2$ matrix cos $\theta -$ sin $\thetaA =$ / sin $\theta$
+ume V times the determinant of A. We could write this symbolically as follows: vol (α X)  =  det A · vol (X). For example, consider the $2 \times 2$ matrix cos $\theta -$ sin $\theta A =$ / sin $\theta$
 
 cos $\theta$
 
